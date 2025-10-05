@@ -11,18 +11,20 @@ on:
       - '.github/workflows/nhl-pipeline.yml'
   workflow_dispatch: {}
 
-# Needed to commit back to the repo with GITHUB_TOKEN
 permissions:
   contents: write
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
-      # Secrets are read by your Python via os.getenv(...)
       ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+      PYTHONUNBUFFERED: "1"
+      # Ensure `from scripts import ...` works when running modules directly.
+      PYTHONPATH: ${{ github.workspace }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,16 +40,90 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # We create outputs/ and a heartbeat file so there's always something to commit.
-      # `|| true` ensures later steps (artifacts/commit) still run even if the scrape fails.
-      - name: Run pipeline
+      - name: Prepare outputs dir
         run: |
           mkdir -p outputs
-          echo "Fetching NHL data..."
-          python main.py || true
+          echo "Starting NHL pipeline chain..."
+
+      # -------------------------
+      # SCRAPERS (best-effort)
+      # -------------------------
+      - name: Scrape team stats
+        run: |
+          echo "Running scripts/scrape_team.py"
+          python -u scripts/scrape_team.py || echo "[warn] scrape_team.py failed (continuing)"
+
+      - name: Scrape players (rosters)
+        run: |
+          echo "Running scripts/scrape_players.py"
+          python -u scripts/scrape_players.py || echo "[warn] scrape_players.py failed (continuing)"
+
+      - name: Scrape player stats
+        run: |
+          echo "Running scripts/scrape_stats.py"
+          python -u scripts/scrape_stats.py || echo "[warn] scrape_stats.py failed (continuing)"
+
+      - name: Fetch odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          echo "Running scripts/fetch_odds.py"
+          python -u scripts/fetch_odds.py || echo "[warn] fetch_odds.py failed (continuing)"
+
+      - name: Scrape injury/news
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          echo "Running scripts/scrape_news.py"
+          python -u scripts/scrape_news.py || echo "[warn] scrape_news.py failed (continuing)"
+
+      # -------------------------
+      # PROCESSING
+      # -------------------------
+      - name: Build projections
+        run: |
+          echo "Running scripts/projections.py"
+          python -u scripts/projections.py || echo "[warn] projections.py failed (continuing)"
+
+      - name: Process modeling outputs
+        run: |
+          echo "Running scripts/process_data.py"
+          python -u scripts/process_data.py || echo "[warn] process_data.py failed (continuing)"
+
+      - name: Repo summary (CSV inventory)
+        run: |
+          echo "Running scripts/process_nhl.py"
+          python -u scripts/process_nhl.py || echo "[warn] process_nhl.py failed (continuing)"
+
+      # -------------------------
+      # OPTIONAL ORCHESTRATOR
+      # If main.py performs additional consolidation, keep it last.
+      # -------------------------
+      - name: Run main orchestrator
+        run: |
+          if [ -f "main.py" ]; then
+            echo "Running main.py"
+            python -u main.py || echo "[warn] main.py failed (continuing)"
+          else
+            echo "main.py not found, skipping"
+          fi
+
+      # -------------------------
+      # COLLECT OUTPUTS
+      # Copy any top-level CSVs into outputs/ so artifacts & commits catch them.
+      # -------------------------
+      - name: Collect CSV outputs
+        run: |
+          echo "Collecting CSVs into outputs/"
+          find . -maxdepth 1 -type f -name "*.csv" -print -exec cp -f {} outputs/ \; || true
+          # Also capture common subfolder CSVs if scripts write there:
+          if [ -d "data" ]; then
+            find data -type f -name "*.csv" -print -exec cp -f {} outputs/ \; || true
+          fi
+          echo "Heartbeat to guarantee a commit:"
           date -u +"%Y-%m-%dT%H:%M:%SZ" > outputs/_run_heartbeat.txt
           echo "Run completed at: $(cat outputs/_run_heartbeat.txt)"
-          echo "Listing outputs/"
+          echo "Outputs listing:"
           ls -la outputs || true
 
       - name: Upload artifacts
@@ -57,7 +133,6 @@ jobs:
           name: nhl-outputs
           path: |
             outputs/**
-            *.csv
           if-no-files-found: warn
           retention-days: 7
 
@@ -69,12 +144,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage generated files from outputs/ and any top-level CSVs
           git add outputs/** || true
+          # Also stage any root-level CSVs (in case something new was written post-collection)
           git add *.csv || true
 
-          # Only commit if there are changes
-          git diff --cached --quiet && echo "Nothing to commit" || git commit -m "CI: update outputs [skip ci]"
-
-          # Push back to the same branch this workflow ran on
-          git push
+          # Commit only if there are staged changes
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "CI: update outputs [skip ci]"
+            git push
+          fi
