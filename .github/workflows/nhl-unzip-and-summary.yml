@@ -1,0 +1,106 @@
+name: NHL ZIP → Unzip & Summary
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'nhl.zip'
+      - '.github/workflows/nhl-unzip-and-summary.yml'
+  workflow_dispatch: {}  # allow manual run
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Verify archive exists
+        run: |
+          if [ ! -f "nhl.zip" ]; then
+            echo "ERROR: nhl.zip not found at repo root."
+            exit 1
+          fi
+          echo "Found nhl.zip"
+
+      - name: Unzip archive
+        run: |
+          mkdir -p data/nhl_unzipped
+          unzip -o nhl.zip -d data/nhl_unzipped
+          echo "Unzipped to data/nhl_unzipped"
+          find data/nhl_unzipped -type f | sort
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Summarize CSV/TSV (no external deps)
+        shell: bash
+        run: |
+          python - << 'PY'
+          import csv, os
+          from pathlib import Path
+
+          DATA_DIR = Path("data/nhl_unzipped")
+          OUT_DIR = Path("outputs")
+          OUT_DIR.mkdir(parents=True, exist_ok=True)
+          summary_path = OUT_DIR / "nhl_file_summary.csv"
+
+          rows = []
+          for p in sorted(DATA_DIR.rglob("*")):
+            if not p.is_file():
+              continue
+            ext = p.suffix.lower()
+            if ext not in [".csv", ".tsv"]:
+              continue
+            sep = "," if ext == ".csv" else "\t"
+            n_rows = 0
+            headers = []
+            try:
+              with open(p, "r", newline="", encoding="utf-8") as f:
+                reader = csv.reader(f, delimiter=sep)
+                try:
+                  headers = next(reader, [])
+                except Exception:
+                  headers = []
+                for _ in reader:
+                  n_rows += 1
+            except Exception as e:
+              rows.append({
+                "file": str(p.relative_to(DATA_DIR)),
+                "rows": "",
+                "cols": "",
+                "columns": f"ERROR: {e}"
+              })
+              continue
+
+            rows.append({
+              "file": str(p.relative_to(DATA_DIR)),
+              "rows": n_rows,                   # data rows (excluding header)
+              "cols": len(headers),
+              "columns": ", ".join(headers[:20]) + ("..." if len(headers) > 20 else "")
+            })
+
+          # write CSV summary
+          with open(summary_path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["file","rows","cols","columns"])
+            w.writeheader()
+            w.writerows(rows)
+
+          print(f"Wrote {summary_path}")
+          PY
+
+      - name: Upload summary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nhl-summary
+          path: outputs/nhl_file_summary.csv
+          if-no-files-found: error
+
+      - name: Upload unzipped files (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: nhl-unzipped
+          path: data/nhl_unzipped/
+          if-no-files-found: warn
