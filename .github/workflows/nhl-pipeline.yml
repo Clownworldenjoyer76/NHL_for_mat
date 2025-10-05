@@ -10,13 +10,22 @@ on:
       - '.github/workflows/nhl-pipeline.yml'
   workflow_dispatch: {}   # allow manual run
 
+permissions:
+  contents: write   # required to push commits back to the repo
+
 jobs:
   build-run:
     runs-on: ubuntu-latest
+    env:
+      # Make secrets available to your scripts
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,9 +37,69 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run NHL processing
+      # Run your scripts. Adjust ordering if your code expects a different sequence.
+      - name: Run NHL data pipeline scripts
+        shell: bash
         run: |
-          python scripts/process_nhl.py
+          set -euo pipefail
+          mkdir -p outputs
+
+          echo "Running scrape_team.py ..."
+          python scripts/scrape_team.py
+
+          echo "Running scrape_players.py ..."
+          python scripts/scrape_players.py
+
+          echo "Running scrape_stats.py ..."
+          python scripts/scrape_stats.py
+
+          echo "Running scrape_news.py ..."
+          python scripts/scrape_news.py
+
+          echo "Running fetch_odds.py ..."
+          python scripts/fetch_odds.py
+
+          echo "Running projections.py ..."
+          python scripts/projections.py
+
+          echo "Running process_data.py ..."
+          python scripts/process_data.py
+
+      # Force any CSV outputs into the repo under data/, then commit & push
+      - name: Commit CSV outputs into data/ and push
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data
+
+          echo "Collecting CSVs to data/ ..."
+          shopt -s nullglob
+
+          # Copy CSVs from common locations into data/
+          found=0
+          for f in outputs/*.csv *.csv scripts/*.csv; do
+            if [ -f "$f" ]; then
+              echo " - copying $f -> data/"
+              cp -f "$f" data/
+              found=1
+            fi
+          done
+
+          if [ "$found" -eq 0 ]; then
+            echo "No CSV files found to copy."
+          fi
+
+          echo "Preparing commit ..."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.csv 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No CSV changes to commit."
+          else
+            git commit -m "chore: update data CSV outputs [skip ci]"
+            git push
+          fi
 
       - name: Upload outputs as artifact
         if: always()
