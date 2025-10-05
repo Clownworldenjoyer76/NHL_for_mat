@@ -7,131 +7,66 @@ on:
       - 'scripts/**'
       - 'data/nhl/**'
       - 'requirements.txt'
+      - 'main.py'
       - '.github/workflows/nhl-pipeline.yml'
   workflow_dispatch: {}
 
+# Needed only if you plan to commit back to the repo in this job.
 permissions:
-  contents: write  # needed to commit back to the repo
+  contents: write
 
 jobs:
-  build-run:
+  run-pipeline:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
-      # Secrets injected for runtime use
+      # Make your secrets available to Python via os.getenv(...)
       ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
       NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || true
-          # Ensure required libs for your scripts:
-          pip install pandas requests sportsipy
+          pip install -r requirements.txt
 
-      # Run your scripts (they return DataFrames; we save them to CSVs)
-      - name: Run NHL pipeline (call script functions, save CSVs)
-        shell: bash
+      - name: Run pipeline
         run: |
-          set -euo pipefail
           mkdir -p outputs
+          python main.py
+        # If your scripts write CSVs elsewhere, copy them into outputs/ so they're captured.
+        # Example:
+        # run: |
+        #   python main.py
+        #   mkdir -p outputs
+        #   cp *.csv outputs/ || true
 
-          python - << 'PY'
-          import os
-          import pandas as pd
-
-          # Import your modules
-          from scripts.scrape_team import get_team_stats
-          from scripts.scrape_players import get_players
-          from scripts.scrape_stats import get_player_stats
-          import scripts.fetch_odds as fetch_odds_mod
-          import scripts.scrape_news as scrape_news_mod
-          from scripts.projections import calculate_projections
-          from scripts.process_data import process_data
-
-          # Monkey-patch API keys from secrets if present
-          odds_key = os.environ.get("ODDS_API_KEY")
-          news_key = os.environ.get("NEWS_API_KEY")
-          if odds_key:
-            try:
-              fetch_odds_mod.ODDS_API_KEY = odds_key
-            except Exception:
-              pass
-          if news_key:
-            try:
-              scrape_news_mod.NEWS_API_KEY = news_key
-            except Exception:
-              pass
-
-          # 1) Teams / players / player stats
-          team_stats = get_team_stats()              # DataFrame
-          players = get_players()                    # DataFrame
-          player_stats = get_player_stats(players)   # DataFrame
-
-          # 2) Optional external pulls (may be empty if key missing/invalid or API down)
-          try:
-            odds_df = fetch_odds_mod.fetch_odds()
-          except Exception as e:
-            print("fetch_odds() failed:", e)
-            odds_df = pd.DataFrame()
-
-          try:
-            injury_news = scrape_news_mod.get_injury_news()
-          except Exception as e:
-            print("get_injury_news() failed:", e)
-            injury_news = pd.DataFrame()
-
-          # 3) Projections (player-level)
-          projections = calculate_projections(player_stats, team_stats, injury_news)
-
-          # 4) “Edges” placeholder (as implemented in your process_data.py)
-          picks = process_data(projections, odds_df)
-
-          # Persist all CSVs to outputs/
-          team_stats.to_csv("outputs/team_stats.csv", index=False)
-          players.to_csv("outputs/players.csv", index=False)
-          player_stats.to_csv("outputs/player_stats.csv", index=False)
-          injury_news.to_csv("outputs/injury_news.csv", index=False)
-          odds_df.to_csv("outputs/odds_raw.csv", index=False)
-          projections.to_csv("outputs/projections.csv", index=False)
-          picks.to_csv("outputs/picks.csv", index=False)
-          PY
-
-      - name: Commit CSV outputs into data/ and push
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p data
-
-          echo "Copying CSVs to data/ …"
-          shopt -s nullglob
-          cp -f outputs/*.csv data/ || true
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.csv 2>/dev/null || true
-
-          if git diff --cached --quiet; then
-            echo "No CSV changes to commit."
-          else
-            git commit -m "chore: update data CSV outputs [skip ci]"
-            git push
-          fi
-
-      - name: Upload outputs as artifact
+      - name: Upload artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: nhl-outputs
-          path: outputs/
+          path: |
+            outputs/**
+            *.csv
           if-no-files-found: warn
+          retention-days: 7
+
+      # Optional: commit generated CSVs back to the repo (requires contents: write).
+      # - name: Commit outputs
+      #   if: success()
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #     mkdir -p outputs
+      #     git add outputs/*.csv || true
+      #     git commit -m "CI: update outputs [skip ci]" || echo "Nothing to commit"
+      #     git push
