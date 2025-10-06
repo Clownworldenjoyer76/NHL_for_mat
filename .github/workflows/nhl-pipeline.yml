@@ -78,6 +78,24 @@ jobs:
           python -u scripts/scrape_news.py || echo "[warn] scrape_news.py failed (continuing)"
 
       # -------------------------
+      # REFRESH REFERENCE DATA (rink, goalie, injuries)
+      # -------------------------
+      - name: Refresh rink data
+        run: |
+          echo "Running scripts/refresh_rinks.py"
+          python -u scripts/refresh_rinks.py || echo "[warn] refresh_rinks.py failed (continuing)"
+
+      - name: Refresh goalie data
+        run: |
+          echo "Running scripts/refresh_goalies.py"
+          python -u scripts/refresh_goalies.py || echo "[warn] refresh_goalies.py failed (continuing)"
+
+      - name: Refresh injury data
+        run: |
+          echo "Running scripts/refresh_injuries.py"
+          python -u scripts/refresh_injuries.py || echo "[warn] refresh_injuries.py failed (continuing)"
+
+      # -------------------------
       # PROCESSING
       # -------------------------
       - name: Build projections
