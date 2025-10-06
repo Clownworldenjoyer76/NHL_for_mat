@@ -1,1 +1,1 @@
-name,team,opponent,home,proj_points_raw,player_id
+name,team,proj_points_raw,goalie_factor,rink_factor,injury_factor,proj_points_final
