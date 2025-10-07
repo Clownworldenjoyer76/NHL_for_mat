@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, sys, time, math, json
+import sys, time, json
 from pathlib import Path
 from datetime import datetime, timezone
 import requests
@@ -17,10 +17,9 @@ def http_get(url, params=None, timeout=20):
             r.raise_for_status()
             return r
         except requests.RequestException as e:
-            if attempt == 2:
-                raise
+            last = e
             time.sleep(0.5 * (attempt + 1))
-    raise RuntimeError("unreachable")
+    raise last
 
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -38,7 +37,7 @@ def current_season_code(today=None):
 
 OUT = Path("outputs/players.csv")
 
-def fetch_rosters_nhlapi():
+def fetch_rosters_statsapi():
     url = "https://statsapi.web.nhl.com/api/v1/teams"
     params = {"expand": "team.roster"}
     data = http_get(url, params=params).json()
@@ -55,6 +54,40 @@ def fetch_rosters_nhlapi():
                 "team": team_abbr,
                 "position": pos.get("abbreviation"),
             })
+    return pd.DataFrame(rows)
+
+def fetch_rosters_nhle():
+    season = current_season_code()
+    st = http_get("https://api-web.nhle.com/v1/standings/now").json()
+    teams = []
+    for conf in st.get("standings", []):
+        for t in conf.get("teamRecords", []):
+            abbr = t.get("teamAbbrev") or t.get("teamAbbrevDefault") or (t.get("team") or {}).get("abbrev")
+            if abbr:
+                teams.append(abbr)
+    teams = sorted(set([x for x in teams if x]))
+    rows = []
+    for abbr in teams:
+        try:
+            r = http_get(f"https://api-web.nhle.com/v1/roster/{abbr}/{season}")
+            js = r.json()
+            for grp_key in ("forwards","defensemen","goalies","roster"):
+                group = js.get(grp_key, [])
+                if not isinstance(group, list):
+                    continue
+                for p in group:
+                    pid = p.get("playerId") or p.get("id") or (p.get("person") or {}).get("id")
+                    name = p.get("firstLastName") or p.get("fullName") or (p.get("person") or {}).get("fullName")
+                    pos = p.get("positionCode") or p.get("positionAbbrev") or (p.get("position") or {}).get("abbreviation")
+                    rows.append({
+                        "player_id": pid,
+                        "name": name,
+                        "team": abbr,
+                        "position": pos,
+                    })
+        except Exception:
+            continue
+        time.sleep(0.15)
     return pd.DataFrame(rows)
 
 def fetch_rosters_sportsipy_fallback():
@@ -77,14 +110,21 @@ def fetch_rosters_sportsipy_fallback():
         return pd.DataFrame()
 
 def main():
+    df = pd.DataFrame()
     try:
-        df = fetch_rosters_nhlapi()
+        df = fetch_rosters_statsapi()
     except Exception as e:
-        print(f"[players] NHL API failed, using sportsipy fallback: {e}")
+        print(f"[players] statsapi failed: {e}")
+    if df.empty:
+        try:
+            df = fetch_rosters_nhle()
+        except Exception as e:
+            print(f"[players] api-web.nhle.com failed: {e}")
+    if df.empty:
         df = fetch_rosters_sportsipy_fallback()
 
     if not df.empty:
-        df = df.drop_duplicates(subset=["player_id"]).reset_index(drop=True)
+        df = df.dropna(subset=["player_id","name"]).drop_duplicates(subset=["player_id"]).reset_index(drop=True)
     ensure_outdir(OUT)
     df.to_csv(OUT, index=False)
     print(f"[players] wrote {len(df)} rows to {OUT}")
