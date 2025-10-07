@@ -34,8 +34,8 @@ def current_season_code(today=None):
         start = year - 1
         end = year
     return f"{start}{end}"
-
 OUT = Path("outputs/players.csv")
+TEAM_ABBRS = ['ANA', 'ARI', 'BOS', 'BUF', 'CAR', 'CBJ', 'CGY', 'CHI', 'COL', 'DAL', 'DET', 'EDM', 'FLA', 'LAK', 'MIN', 'MTL', 'NJD', 'NSH', 'NYI', 'NYR', 'OTT', 'PHI', 'PIT', 'SEA', 'SJS', 'STL', 'TBL', 'TOR', 'VAN', 'VGK', 'WPG', 'WSH']
 
 def fetch_rosters_statsapi():
     url = "https://statsapi.web.nhl.com/api/v1/teams"
@@ -58,36 +58,27 @@ def fetch_rosters_statsapi():
 
 def fetch_rosters_nhle():
     season = current_season_code()
-    st = http_get("https://api-web.nhle.com/v1/standings/now").json()
-    teams = []
-    for conf in st.get("standings", []):
-        for t in conf.get("teamRecords", []):
-            abbr = t.get("teamAbbrev") or t.get("teamAbbrevDefault") or (t.get("team") or {}).get("abbrev")
-            if abbr:
-                teams.append(abbr)
-    teams = sorted(set([x for x in teams if x]))
     rows = []
-    for abbr in teams:
+    for abbr in TEAM_ABBRS:
         try:
-            r = http_get(f"https://api-web.nhle.com/v1/roster/{abbr}/{season}")
-            js = r.json()
-            for grp_key in ("forwards","defensemen","goalies","roster"):
-                group = js.get(grp_key, [])
-                if not isinstance(group, list):
-                    continue
-                for p in group:
-                    pid = p.get("playerId") or p.get("id") or (p.get("person") or {}).get("id")
-                    name = p.get("firstLastName") or p.get("fullName") or (p.get("person") or {}).get("fullName")
-                    pos = p.get("positionCode") or p.get("positionAbbrev") or (p.get("position") or {}).get("abbreviation")
-                    rows.append({
-                        "player_id": pid,
-                        "name": name,
-                        "team": abbr,
-                        "position": pos,
-                    })
+            js = http_get(f"https://api-web.nhle.com/v1/roster/{abbr}/{season}").json()
         except Exception:
             continue
-        time.sleep(0.15)
+        for grp_key in ("forwards","defensemen","goalies","roster"):
+            group = js.get(grp_key, [])
+            if not isinstance(group, list):
+                continue
+            for p in group:
+                pid = p.get("playerId") or p.get("id") or (p.get("person") or {}).get("id")
+                name = p.get("firstLastName") or p.get("fullName") or (p.get("person") or {}).get("fullName")
+                pos = p.get("positionCode") or p.get("positionAbbrev") or (p.get("position") or {}).get("abbreviation")
+                rows.append({
+                    "player_id": pid,
+                    "name": name,
+                    "team": abbr,
+                    "position": pos,
+                })
+        time.sleep(0.12)
     return pd.DataFrame(rows)
 
 def fetch_rosters_sportsipy_fallback():

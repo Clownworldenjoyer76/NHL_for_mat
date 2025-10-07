@@ -24,60 +24,49 @@ def http_get(url, params=None, timeout=20):
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
 
+def current_season_code(today=None):
+    d = today or datetime.now(timezone.utc)
+    year = d.year
+    if d.month >= 8:
+        start = year
+        end = year + 1
+    else:
+        start = year - 1
+        end = year
+    return f"{start}{end}"
 OUT = Path("outputs/team_stats.csv")
+
+def parse_many_shapes(js):
+    rows = []
+    containers = js.get("standings") or js.get("records") or js.get("teamRecords") or []
+    if isinstance(containers, dict):
+        containers = [containers]
+    def add_row(tr):
+        team_fields = tr.get("team") or {}
+        abbr = tr.get("teamAbbrev") or tr.get("teamAbbrevDefault") or team_fields.get("abbrev") or team_fields.get("abbreviation")
+        wins = tr.get("wins") or (tr.get("leagueRecord") or {}).get("wins")
+        losses = tr.get("losses") or (tr.get("leagueRecord") or {}).get("losses")
+        ot = tr.get("ot") or tr.get("otLosses") or (tr.get("leagueRecord") or {}).get("ot")
+        gf = tr.get("goalsFor") or tr.get("goalsScored") or tr.get("gf")
+        ga = tr.get("goalsAgainst") or tr.get("ga")
+        if abbr:
+            rows.append({"Team": abbr, "Wins": wins, "Losses": losses, "OT": ot, "GF": gf, "GA": ga})
+    for cont in containers:
+        team_records = cont.get("teamRecords") or cont.get("teamrecords") or cont.get("teams") or []
+        for tr in team_records:
+            add_row(tr)
+    if not rows and isinstance(js, list):
+        for tr in js:
+            add_row(tr)
+    return pd.DataFrame(rows)
 
 def fetch_standings_statsapi():
     url = "https://statsapi.web.nhl.com/api/v1/standings"
-    data = http_get(url).json()
-    rows = []
-    for rec in data.get("records", []):
-        for tr in rec.get("teamRecords", []):
-            team = tr.get("team", {}) or {}
-            team_abbr = team.get("abbreviation") or team.get("name")
-            lr = tr.get("leagueRecord", {}) or {}
-            rows.append({
-                "Team": team_abbr,
-                "Wins": lr.get("wins"),
-                "Losses": lr.get("losses"),
-                "OT": lr.get("ot"),
-                "GF": tr.get("goalsScored"),
-                "GA": tr.get("goalsAgainst"),
-            })
-    return pd.DataFrame(rows)
+    return parse_many_shapes(http_get(url).json())
 
 def fetch_standings_nhle():
-    js = http_get("https://api-web.nhle.com/v1/standings/now").json()
-    rows = []
-    containers = js.get("standings") or js.get("records") or []
-    for cont in containers:
-        team_records = cont.get("teamRecords") or cont.get("teamrecords") or []
-        for tr in team_records:
-            abbr = tr.get("teamAbbrev") or tr.get("teamAbbrevDefault") or (tr.get("team") or {}).get("abbrev") or (tr.get("team") or {}).get("abbreviation")
-            wins = tr.get("wins") or (tr.get("leagueRecord") or {}).get("wins")
-            losses = tr.get("losses") or (tr.get("leagueRecord") or {}).get("losses")
-            ot = tr.get("ot") or tr.get("otLosses") or (tr.get("leagueRecord") or {}).get("ot")
-            gf = tr.get("goalsFor") or tr.get("goalsScored")
-            ga = tr.get("goalsAgainst")
-            rows.append({
-                "Team": abbr,
-                "Wins": wins,
-                "Losses": losses,
-                "OT": ot,
-                "GF": gf,
-                "GA": ga,
-            })
-    if not rows and isinstance(js, list):
-        for tr in js:
-            abbr = tr.get("teamAbbrev") or (tr.get("team") or {}).get("abbrev")
-            rows.append({
-                "Team": abbr,
-                "Wins": tr.get("wins"),
-                "Losses": tr.get("losses"),
-                "OT": tr.get("ot") or tr.get("otLosses"),
-                "GF": tr.get("goalsFor"),
-                "GA": tr.get("goalsAgainst"),
-            })
-    return pd.DataFrame(rows)
+    url = "https://api-web.nhle.com/v1/standings/now"
+    return parse_many_shapes(http_get(url).json())
 
 def fetch_team_sportsipy_fallback():
     try:
@@ -97,6 +86,7 @@ def fetch_team_sportsipy_fallback():
         return pd.DataFrame()
 
 def main():
+    import pandas as pd
     df = pd.DataFrame()
     try:
         df = fetch_standings_statsapi()
