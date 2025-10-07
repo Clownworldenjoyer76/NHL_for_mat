@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, sys, time, math, json
+import sys, time, json
 from pathlib import Path
 from datetime import datetime, timezone
 import requests
@@ -17,10 +17,9 @@ def http_get(url, params=None, timeout=20):
             r.raise_for_status()
             return r
         except requests.RequestException as e:
-            if attempt == 2:
-                raise
+            last = e
             time.sleep(0.5 * (attempt + 1))
-    raise RuntimeError("unreachable")
+    raise last
 
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -39,8 +38,7 @@ def current_season_code(today=None):
 OUT = Path("outputs/player_stats.csv")
 
 def load_players():
-    candidates = [Path("outputs/players.csv"), Path("players.csv")]
-    for p in candidates:
+    for p in (Path("outputs/players.csv"), Path("players.csv")):
         if p.exists():
             try:
                 df = pd.read_csv(p)
@@ -50,11 +48,10 @@ def load_players():
                 pass
     return pd.DataFrame()
 
-def fetch_player_stat(person_id, season_code):
+def fetch_player_stat_statsapi(person_id, season_code):
     url = f"https://statsapi.web.nhl.com/api/v1/people/{person_id}/stats"
     params = {"stats": "statsSingleSeason", "season": season_code}
-    r = http_get(url, params=params)
-    js = r.json()
+    js = http_get(url, params=params).json()
     splits = ((js.get("stats") or [{}])[0].get("splits") or [])
     if not splits:
         return None
@@ -70,7 +67,42 @@ def fetch_player_stat(person_id, season_code):
         "time_on_ice": stat.get("timeOnIce"),
     }
 
-def fetch_stats_nhlapi(players_df):
+def fetch_player_stat_nhle(person_id, season_code):
+    js = http_get(f"https://api-web.nhle.com/v1/player/{person_id}/landing", params={"season": season_code}).json()
+    def first_nonempty(*paths):
+        for path in paths:
+            cur = js
+            ok = True
+            for key in path:
+                if isinstance(cur, dict) and key in cur:
+                    cur = cur[key]
+                else:
+                    ok = False
+                    break
+            if ok and cur:
+                return cur
+        return None
+
+    totals = first_nonempty(["seasonTotals"], ["skaterStats","regularSeason","seasonTotals"], ["careerTotals","regularSeason"])
+    if isinstance(totals, list):
+        totals = totals[-1] if totals else None
+        if isinstance(totals, dict) and "stat" in totals:
+            totals = totals["stat"]
+    if not isinstance(totals, dict):
+        return None
+
+    return {
+        "games_played": totals.get("gamesPlayed") or totals.get("games"),
+        "goals": totals.get("goals"),
+        "assists": totals.get("assists"),
+        "points": totals.get("points"),
+        "shots": totals.get("shots"),
+        "plus_minus": totals.get("plusMinus"),
+        "penalty_minutes": totals.get("pim") or totals.get("penaltyMinutes"),
+        "time_on_ice": totals.get("timeOnIce"),
+    }
+
+def fetch_stats(players_df):
     season = current_season_code()
     rows = []
     for _, r in players_df.iterrows():
@@ -79,15 +111,21 @@ def fetch_stats_nhlapi(players_df):
         team = r.get("team")
         if pd.isna(pid):
             continue
+        stat = None
         try:
-            s = fetch_player_stat(int(pid), season)
-            if not s:
-                continue
+            stat = fetch_player_stat_statsapi(int(pid), season)
+        except Exception:
+            pass
+        if not stat:
+            try:
+                stat = fetch_player_stat_nhle(int(pid), season)
+            except Exception:
+                pass
+        if stat:
+            s = dict(stat)
             s.update({"player_id": pid, "name": name, "team": team})
             rows.append(s)
-        except Exception:
-            continue
-        time.sleep(0.2)
+        time.sleep(0.15)
     return pd.DataFrame(rows)
 
 def fetch_stats_sportsipy_fallback():
@@ -125,18 +163,16 @@ def main():
         pd.DataFrame(columns=cols).to_csv(OUT, index=False)
         return 0
 
-    try:
-        df_stats = fetch_stats_nhlapi(players)
-    except Exception as e:
-        print(f"[player_stats] NHL API failed, using sportsipy fallback: {e}")
-        df_stats = fetch_stats_sportsipy_fallback()
+    df = fetch_stats(players)
+    if df.empty:
+        df = fetch_stats_sportsipy_fallback()
 
-    if not df_stats.empty:
-        df_stats = df_stats.drop_duplicates(subset=["player_id"]).reset_index(drop=True)
+    if not df.empty:
+        df = df.drop_duplicates(subset=["player_id"]).reset_index(drop=True)
 
     ensure_outdir(OUT)
-    df_stats.to_csv(OUT, index=False)
-    print(f"[player_stats] wrote {len(df_stats)} rows to {OUT}")
+    df.to_csv(OUT, index=False)
+    print(f"[player_stats] wrote {len(df)} rows to {OUT}")
     return 0
 
 if __name__ == "__main__":
