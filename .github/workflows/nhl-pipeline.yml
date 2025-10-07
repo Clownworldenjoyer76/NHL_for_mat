@@ -1,14 +1,6 @@
 name: NHL Data Pipeline
 
 on:
-  push:
-    branches: [ main, master ]
-    paths:
-      - 'scripts/**'
-      - 'data/nhl/**'
-      - 'requirements.txt'
-      - 'main.py'
-      - '.github/workflows/nhl-pipeline.yml'
   workflow_dispatch: {}
 
 permissions:
@@ -135,7 +127,6 @@ jobs:
           echo "Collecting CSVs into outputs/ (without clobbering outputs/projections.csv)"
           mkdir -p outputs
 
-          # 1) Copy top-level CSVs except projections.csv unless enhanced is missing
           shopt -s nullglob
           for f in ./*.csv; do
             base="$(basename "$f")"
@@ -148,7 +139,6 @@ jobs:
             fi
           done
 
-          # 2) Copy CSVs from data/, excluding projections.csv unless enhanced is missing
           if [[ -d "data" ]]; then
             while IFS= read -r -d '' f; do
               base="$(basename "$f")"
@@ -162,7 +152,6 @@ jobs:
             done < <(find data -type f -name "*.csv" -print0)
           fi
 
-          # Heartbeat for deterministic commits
           date -u +"%Y-%m-%dT%H:%M:%SZ" > outputs/_run_heartbeat.txt
           echo "Run completed at: $(cat outputs/_run_heartbeat.txt)"
           echo "Outputs listing:"
@@ -178,24 +167,6 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      # -------------------------
-      # DEBUG GIT STATE
-      # -------------------------
-      - name: Debug git state before commit
-        shell: bash
-        run: |
-          echo "Branch: ${{ github.ref_name }}"
-          echo "--- .gitignore (if present) ---"
-          [[ -f .gitignore ]] && cat .gitignore || echo "(none)"
-          echo "--- check-ignore outputs/* ---"
-          git check-ignore -v outputs/* || true
-          echo "--- git status ---"
-          git status
-          echo "--- unstaged changes (name-only) ---"
-          git diff --name-only || true
-          echo "--- staged changes (name-only) ---"
-          git diff --name-only --cached || true
-
       - name: Commit outputs
         if: always()
         env:
@@ -204,15 +175,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Stage everything under outputs and any root CSVs
           git add -A outputs || true
           git add *.csv || true
-
           if git diff --cached --quiet; then
             echo "Nothing to commit"
           else
             git commit -m "CI: update outputs [skip ci]"
-            # Push explicitly to the same branch
             git push origin HEAD:${{ github.ref_name }}
           fi
