@@ -7,7 +7,6 @@ import pandas as pd
 
 OUT = Path("outputs/players.csv")
 
-# Static 32-team list so we don’t depend on standings shape
 TEAM_ABBRS = [
     "ANA","ARI","BOS","BUF","CAR","CBJ","CGY","CHI","COL","DAL","DET","EDM","FLA","LAK",
     "MIN","MTL","NJD","NSH","NYI","NYR","OTT","PHI","PIT","SEA","SJS","STL","TBL","TOR",
@@ -38,7 +37,6 @@ def http_get(url, params=None, timeout=20):
                 time.sleep(0.5 * (attempt + 1))
                 continue
             r.raise_for_status()
-            # Some hosts may 200 with empty body — guard that
             if not r.content:
                 raise requests.RequestException("Empty body")
             return r
@@ -51,7 +49,8 @@ def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
 
 def fetch_rosters_statsapi():
-    url = "https://statsapi.web.nhl.com/api/v1/teams"
+    # Fixed domain (no .web.)
+    url = "https://statsapi.nhl.com/api/v1/teams"
     params = {"expand": "team.roster"}
     data = http_get(url, params=params).json()
     rows = []
@@ -70,7 +69,6 @@ def fetch_rosters_statsapi():
     return pd.DataFrame(rows)
 
 def try_roster_nhle(abbr: str, season: str):
-    # Try seasoned URL first, then ‘current’
     urls = [
         f"https://api-web.nhle.com/v1/roster/{abbr}/{season}",
         f"https://api-web.nhle.com/v1/roster/{abbr}/current",
@@ -78,7 +76,6 @@ def try_roster_nhle(abbr: str, season: str):
     for u in urls:
         try:
             js = http_get(u).json()
-            # Many NHLE endpoints 200 with {}, guard for that
             if isinstance(js, dict) and any(k in js for k in ("forwards","defensemen","goalies","roster")):
                 return js
         except Exception:
@@ -106,27 +103,8 @@ def fetch_rosters_nhle():
                     "team": abbr,
                     "position": pos,
                 })
-        time.sleep(0.10)
+        time.sleep(0.1)
     return pd.DataFrame(rows)
-
-def fetch_rosters_sportsipy_fallback():
-    try:
-        from sportsipy.nhl.teams import Teams
-        rows = []
-        for team in Teams():
-            roster = getattr(team, "roster", None)
-            if not roster or not getattr(roster, "players", None):
-                continue
-            for p in roster.players:
-                rows.append({
-                    "player_id": getattr(p, "player_id", None),
-                    "name": getattr(p, "name", None),
-                    "team": team.abbreviation,
-                    "position": getattr(p, "position", None),
-                })
-        return pd.DataFrame(rows)
-    except Exception:
-        return pd.DataFrame()
 
 def main():
     df = pd.DataFrame()
@@ -139,8 +117,6 @@ def main():
             df = fetch_rosters_nhle()
         except Exception as e:
             print(f"[players] api-web.nhle.com failed: {e}")
-    if df.empty:
-        df = fetch_rosters_sportsipy_fallback()
 
     if not df.empty:
         df = df.dropna(subset=["player_id","name"]).drop_duplicates(subset=["player_id"]).reset_index(drop=True)
