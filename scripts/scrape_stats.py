@@ -1,41 +1,46 @@
 #!/usr/bin/env python3
-import sys, time, json
+import sys, time
 from pathlib import Path
 from datetime import datetime, timezone
 import requests
 import pandas as pd
 
-SESSION = requests.Session()
+OUT = Path("outputs/player_stats.csv")
 
-def http_get(url, params=None, timeout=20):
-    for attempt in range(3):
-        try:
-            r = SESSION.get(url, params=params, timeout=timeout)
-            if r.status_code in (429, 503, 502):
-                time.sleep(0.5 * (attempt + 1))
-                continue
-            r.raise_for_status()
-            return r
-        except requests.RequestException as e:
-            last = e
-            time.sleep(0.5 * (attempt + 1))
-    raise last
+SESSION = requests.Session()
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://www.nhl.com/",
+}
 
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
 
 def current_season_code(today=None):
     d = today or datetime.now(timezone.utc)
-    year = d.year
+    y = d.year
     if d.month >= 8:
-        start = year
-        end = year + 1
+        a, b = y, y + 1
     else:
-        start = year - 1
-        end = year
-    return f"{start}{end}"
+        a, b = y - 1, y
+    return f"{a}{b}"
 
-OUT = Path("outputs/player_stats.csv")
+def http_get(url, params=None, timeout=20):
+    for attempt in range(3):
+        try:
+            r = SESSION.get(url, params=params, headers=HEADERS, timeout=timeout)
+            if r.status_code in (429, 503, 502):
+                time.sleep(0.5 * (attempt + 1))
+                continue
+            r.raise_for_status()
+            if not r.content:
+                raise requests.RequestException("Empty body")
+            return r
+        except requests.RequestException as e:
+            last = e
+            time.sleep(0.5 * (attempt + 1))
+    raise last
 
 def load_players():
     for p in (Path("outputs/players.csv"), Path("players.csv")):
@@ -68,7 +73,23 @@ def fetch_player_stat_statsapi(person_id, season_code):
     }
 
 def fetch_player_stat_nhle(person_id, season_code):
-    js = http_get(f"https://api-web.nhle.com/v1/player/{person_id}/landing", params={"season": season_code}).json()
+    # NHLE landing sometimes requires season param, sometimes not; try both
+    urls = [
+        (f"https://api-web.nhle.com/v1/player/{person_id}/landing", {"season": season_code}),
+        (f"https://api-web.nhle.com/v1/player/{person_id}/landing", None),
+    ]
+    js = None
+    for u, q in urls:
+        try:
+            js = http_get(u, params=q).json()
+            if js:
+                break
+        except Exception:
+            continue
+    if not isinstance(js, dict):
+        return None
+
+    # Try several shapes for totals
     def first_nonempty(*paths):
         for path in paths:
             cur = js
@@ -83,7 +104,11 @@ def fetch_player_stat_nhle(person_id, season_code):
                 return cur
         return None
 
-    totals = first_nonempty(["seasonTotals"], ["skaterStats","regularSeason","seasonTotals"], ["careerTotals","regularSeason"])
+    totals = first_nonempty(
+        ["seasonTotals"],
+        ["skaterStats", "regularSeason", "seasonTotals"],
+        ["careerTotals", "regularSeason"]
+    )
     if isinstance(totals, list):
         totals = totals[-1] if totals else None
         if isinstance(totals, dict) and "stat" in totals:
@@ -125,7 +150,7 @@ def fetch_stats(players_df):
             s = dict(stat)
             s.update({"player_id": pid, "name": name, "team": team})
             rows.append(s)
-        time.sleep(0.15)
+        time.sleep(0.12)
     return pd.DataFrame(rows)
 
 def fetch_stats_sportsipy_fallback():
