@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0        # ensure we can push back to the same branch
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,22 +39,60 @@ jobs:
           echo "Starting NHL pipeline chain..."
 
       # -------------------------
+      # CONNECTIVITY DIAGNOSTICS
+      # -------------------------
+      - name: Connectivity check (DNS + HTTP)
+        shell: bash
+        run: |
+          set -x
+          echo "DNS check:"
+          getent hosts statsapi.web.nhl.com || echo "DNS fail: statsapi.web.nhl.com"
+          getent hosts api-web.nhle.com || echo "DNS fail: api-web.nhle.com"
+
+          echo "HTTP HEAD (statsapi) status:"
+          curl -I -sS --max-time 12 https://statsapi.web.nhl.com/api/v1/teams | head -n 1 || echo "HTTP fail statsapi"
+
+          echo "HTTP sample (nhle alt) bytes for BOS/current:"
+          curl -sS --max-time 12 https://api-web.nhle.com/v1/roster/BOS/current | wc -c || echo "HTTP fail nhle (BOS/current)"
+
+      # -------------------------
       # SCRAPERS (best-effort)
       # -------------------------
       - name: Scrape team stats
         run: |
           echo "Running scripts/scrape_team.py"
           python -u scripts/scrape_team.py || echo "[warn] scrape_team.py failed (continuing)"
+          echo "--- team_stats.csv summary ---"
+          if [ -f outputs/team_stats.csv ]; then
+            wc -l outputs/team_stats.csv || true
+            head -n 10 outputs/team_stats.csv || true
+          else
+            echo "outputs/team_stats.csv not found"
+          fi
 
       - name: Scrape players (rosters)
         run: |
           echo "Running scripts/scrape_players.py"
           python -u scripts/scrape_players.py || echo "[warn] scrape_players.py failed (continuing)"
+          echo "--- players.csv summary ---"
+          if [ -f outputs/players.csv ]; then
+            wc -l outputs/players.csv || true
+            head -n 10 outputs/players.csv || true
+          else
+            echo "outputs/players.csv not found"
+          fi
 
       - name: Scrape player stats
         run: |
           echo "Running scripts/scrape_stats.py"
           python -u scripts/scrape_stats.py || echo "[warn] scrape_stats.py failed (continuing)"
+          echo "--- player_stats.csv summary ---"
+          if [ -f outputs/player_stats.csv ]; then
+            wc -l outputs/player_stats.csv || true
+            head -n 10 outputs/player_stats.csv || true
+          else
+            echo "outputs/player_stats.csv not found"
+          fi
 
       - name: Fetch odds
         env:
@@ -153,7 +191,6 @@ jobs:
           fi
 
           date -u +"%Y-%m-%dT%H:%M:%SZ" > outputs/_run_heartbeat.txt
-          echo "Run completed at: $(cat outputs/_run_heartbeat.txt)"
           echo "Outputs listing:"
           ls -la outputs || true
 
