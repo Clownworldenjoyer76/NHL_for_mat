@@ -61,7 +61,8 @@ def parse_many_shapes(js):
     return pd.DataFrame(rows)
 
 def fetch_standings_statsapi():
-    url = "https://statsapi.web.nhl.com/api/v1/standings"
+    # Fixed mirror domain (no .web.)
+    url = "https://statsapi.nhl.com/api/v1/standings"
     return parse_many_shapes(http_get(url).json())
 
 def fetch_standings_nhle():
