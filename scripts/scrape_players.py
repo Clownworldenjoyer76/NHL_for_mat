@@ -15,7 +15,7 @@ TEAM_ABBRS = [
 
 SESSION = requests.Session()
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0",
     "Accept": "application/json, text/plain, */*",
     "Referer": "https://www.nhl.com/",
 }
@@ -29,7 +29,7 @@ def current_season_code(today=None):
         a, b = y - 1, y
     return f"{a}{b}"
 
-def http_get(url, params=None, timeout=20):
+def http_get(url, params=None, timeout=20, allow_empty=False):
     for attempt in range(3):
         try:
             r = SESSION.get(url, params=params, headers=HEADERS, timeout=timeout)
@@ -37,7 +37,7 @@ def http_get(url, params=None, timeout=20):
                 time.sleep(0.5 * (attempt + 1))
                 continue
             r.raise_for_status()
-            if not r.content:
+            if not allow_empty and not r.content:
                 raise requests.RequestException("Empty body")
             return r
         except requests.RequestException as e:
@@ -48,8 +48,8 @@ def http_get(url, params=None, timeout=20):
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
 
+# --- NHL sources ---
 def fetch_rosters_statsapi():
-    # Fixed domain (no .web.)
     url = "https://statsapi.nhl.com/api/v1/teams"
     params = {"expand": "team.roster"}
     data = http_get(url, params=params).json()
@@ -89,7 +89,7 @@ def fetch_rosters_nhle():
         js = try_roster_nhle(abbr, season)
         if not js:
             continue
-        for grp_key in ("forwards", "defensemen", "goalies", "roster"):
+        for grp_key in ("forwards","defensemen","goalies","roster"):
             group = js.get(grp_key, [])
             if not isinstance(group, list):
                 continue
@@ -106,6 +106,45 @@ def fetch_rosters_nhle():
         time.sleep(0.1)
     return pd.DataFrame(rows)
 
+# --- NEW: ESPN fallback (works from GitHub runners) ---
+def fetch_rosters_espn():
+    base = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl"
+    teams_js = http_get(f"{base}/teams", allow_empty=True).json()
+    # teams can be under ['sports'][0]['leagues'][0]['teams'] or ['teams']
+    buckets = []
+    if isinstance(teams_js, dict):
+        if teams_js.get("teams"):
+            buckets = teams_js["teams"]
+        else:
+            try:
+                buckets = teams_js["sports"][0]["leagues"][0]["teams"]
+            except Exception:
+                buckets = []
+    rows = []
+    for b in buckets:
+        team = b.get("team") or b  # some shapes wrap under 'team'
+        tid = team.get("id")
+        abbr = team.get("abbreviation") or team.get("shortDisplayName") or team.get("name")
+        if not tid or not abbr:
+            continue
+        # roster endpoint
+        rjs = http_get(f"{base}/teams/{tid}", params={"enable":"roster"}, allow_empty=True).json()
+        athletes = (((rjs.get("team") or {}).get("roster") or {}).get("entries")) or []
+        for ent in athletes:
+            ath = ent.get("athlete") or {}
+            pid = ath.get("id")
+            name = ath.get("displayName") or ath.get("shortName")
+            pos = ((ath.get("position") or {}).get("abbreviation")) or None
+            if pid and name:
+                rows.append({
+                    "player_id": pid,
+                    "name": name,
+                    "team": abbr,
+                    "position": pos,
+                })
+        time.sleep(0.06)
+    return pd.DataFrame(rows)
+
 def main():
     df = pd.DataFrame()
     try:
@@ -117,6 +156,12 @@ def main():
             df = fetch_rosters_nhle()
         except Exception as e:
             print(f"[players] api-web.nhle.com failed: {e}")
+    if df.empty:
+        try:
+            df = fetch_rosters_espn()
+        except Exception as e:
+            print(f"[players] espn failed: {e}")
+            df = pd.DataFrame()
 
     if not df.empty:
         df = df.dropna(subset=["player_id","name"]).drop_duplicates(subset=["player_id"]).reset_index(drop=True)
