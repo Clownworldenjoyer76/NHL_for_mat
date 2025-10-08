@@ -1,46 +1,43 @@
 #!/usr/bin/env python3
-import sys, time, json
+import sys, time
 from pathlib import Path
-from datetime import datetime, timezone
 import requests
 import pandas as pd
 
+OUT = Path("outputs/team_stats.csv")
+
 SESSION = requests.Session()
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://www.nhl.com/",
+}
+
+def ensure_outdir(p: Path):
+    p.parent.mkdir(parents=True, exist_ok=True)
 
 def http_get(url, params=None, timeout=20):
     for attempt in range(3):
         try:
-            r = SESSION.get(url, params=params, timeout=timeout)
+            r = SESSION.get(url, params=params, headers=HEADERS, timeout=timeout)
             if r.status_code in (429, 503, 502):
                 time.sleep(0.5 * (attempt + 1))
                 continue
             r.raise_for_status()
+            if not r.content:
+                raise requests.RequestException("Empty body")
             return r
         except requests.RequestException as e:
             last = e
             time.sleep(0.5 * (attempt + 1))
     raise last
 
-def ensure_outdir(p: Path):
-    p.parent.mkdir(parents=True, exist_ok=True)
-
-def current_season_code(today=None):
-    d = today or datetime.now(timezone.utc)
-    year = d.year
-    if d.month >= 8:
-        start = year
-        end = year + 1
-    else:
-        start = year - 1
-        end = year
-    return f"{start}{end}"
-OUT = Path("outputs/team_stats.csv")
-
 def parse_many_shapes(js):
     rows = []
     containers = js.get("standings") or js.get("records") or js.get("teamRecords") or []
     if isinstance(containers, dict):
         containers = [containers]
+
     def add_row(tr):
         team_fields = tr.get("team") or {}
         abbr = tr.get("teamAbbrev") or tr.get("teamAbbrevDefault") or team_fields.get("abbrev") or team_fields.get("abbreviation")
@@ -51,13 +48,16 @@ def parse_many_shapes(js):
         ga = tr.get("goalsAgainst") or tr.get("ga")
         if abbr:
             rows.append({"Team": abbr, "Wins": wins, "Losses": losses, "OT": ot, "GF": gf, "GA": ga})
+
     for cont in containers:
         team_records = cont.get("teamRecords") or cont.get("teamrecords") or cont.get("teams") or []
         for tr in team_records:
             add_row(tr)
+
     if not rows and isinstance(js, list):
         for tr in js:
             add_row(tr)
+
     return pd.DataFrame(rows)
 
 def fetch_standings_statsapi():
@@ -86,7 +86,6 @@ def fetch_team_sportsipy_fallback():
         return pd.DataFrame()
 
 def main():
-    import pandas as pd
     df = pd.DataFrame()
     try:
         df = fetch_standings_statsapi()
