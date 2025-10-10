@@ -1,8 +1,16 @@
+
 #!/usr/bin/env python3
 import sys, time
 from pathlib import Path
 import requests
 import pandas as pd
+
+# Diagnostic logging
+try:
+    from scripts.netlog import log_event
+except Exception:
+    def log_event(msg: str):
+        pass
 
 OUT = Path("outputs/team_stats.csv")
 
@@ -20,6 +28,7 @@ def http_get(url, params=None, timeout=20, allow_empty=False):
     for attempt in range(3):
         try:
             r = SESSION.get(url, params=params, headers=HEADERS, timeout=timeout)
+            log_event(f"GET {url} params={params} -> status {r.status_code}, bytes {len(r.content)}")
             if r.status_code in (429, 503, 502):
                 time.sleep(0.5 * (attempt + 1))
                 continue
@@ -28,6 +37,7 @@ def http_get(url, params=None, timeout=20, allow_empty=False):
                 raise requests.RequestException("Empty body")
             return r
         except requests.RequestException as e:
+            log_event(f"ERROR {url} -> {type(e).__name__}: {e}")
             last = e
             time.sleep(0.5 * (attempt + 1))
     raise last
@@ -40,10 +50,7 @@ def parse_many_shapes(js):
 
     def add_row(tr):
         team_fields = tr.get("team") or {}
-        abbr = (
-            tr.get("teamAbbrev") or tr.get("teamAbbrevDefault")
-            or team_fields.get("abbrev") or team_fields.get("abbreviation")
-        )
+        abbr = tr.get("teamAbbrev") or tr.get("teamAbbrevDefault") or team_fields.get("abbrev") or team_fields.get("abbreviation")
         wins = tr.get("wins") or (tr.get("leagueRecord") or {}).get("wins")
         losses = tr.get("losses") or (tr.get("leagueRecord") or {}).get("losses")
         ot = tr.get("ot") or tr.get("otLosses") or (tr.get("leagueRecord") or {}).get("ot")
@@ -71,15 +78,13 @@ def fetch_standings_nhle():
     url = "https://api-web.nhle.com/v1/standings/now"
     return parse_many_shapes(http_get(url).json())
 
-# --- NEW: ESPN fallback (very tolerant parser)
 def fetch_standings_espn():
-    # Public, GitHub-friendly
     url = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/standings"
     js = http_get(url, timeout=20, allow_empty=True).json()
     rows = []
     leagues = js.get("children") or js.get("leagues") or []
     if not leagues and "standings" in js:
-        leagues = [js]  # some shapes flatten
+        leagues = [js]
 
     def num(v):
         try:
@@ -109,24 +114,23 @@ def main():
     try:
         df = fetch_standings_statsapi()
     except Exception as e:
+        log_event(f"[teams] statsapi failed: {e}")
         print(f"[teams] statsapi failed: {e}")
     if df.empty:
         try:
             df = fetch_standings_nhle()
         except Exception as e:
+            log_event(f"[teams] nhle failed: {e}")
             print(f"[teams] api-web.nhle.com failed: {e}")
     if df.empty:
         try:
             df = fetch_standings_espn()
             if df.empty:
-                print("[teams] ESPN standings empty; writing team list only")
+                log_event("[teams] ESPN standings empty")
         except Exception as e:
+            log_event(f"[teams] espn failed: {e}")
             print(f"[teams] espn failed: {e}")
-            df = pd.DataFrame()
-
-    if df.empty:
-        # absolute fallback: write headers so downstream won’t break
-        df = pd.DataFrame(columns=["Team","Wins","Losses","OT","GF","GA"])
+            df = pd.DataFrame(columns=["Team","Wins","Losses","OT","GF","GA"])
 
     for c in ("Wins","Losses","OT","GF","GA"):
         if c in df.columns:
@@ -135,6 +139,7 @@ def main():
     ensure_outdir(OUT)
     df.to_csv(OUT, index=False)
     print(f"[teams] wrote {len(df)} rows to {OUT}")
+    log_event(f"[teams] wrote {len(df)} rows to {OUT}")
     return 0
 
 if __name__ == "__main__":

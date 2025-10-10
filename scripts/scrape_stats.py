@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 import sys, time
 from pathlib import Path
@@ -5,11 +6,18 @@ from datetime import datetime, timezone
 import requests
 import pandas as pd
 
+# Diagnostic logging
+try:
+    from scripts.netlog import log_event
+except Exception:
+    def log_event(msg: str):
+        pass
+
 OUT = Path("outputs/player_stats.csv")
 
 SESSION = requests.Session()
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0",
     "Accept": "application/json, text/plain, */*",
     "Referer": "https://www.nhl.com/",
 }
@@ -26,18 +34,20 @@ def current_season_code(today=None):
         a, b = y - 1, y
     return f"{a}{b}"
 
-def http_get(url, params=None, timeout=20):
+def http_get(url, params=None, timeout=20, allow_empty=False):
     for attempt in range(3):
         try:
             r = SESSION.get(url, params=params, headers=HEADERS, timeout=timeout)
+            log_event(f"GET {url} params={params} -> status {r.status_code}, bytes {len(r.content)}")
             if r.status_code in (429, 503, 502):
                 time.sleep(0.5 * (attempt + 1))
                 continue
             r.raise_for_status()
-            if not r.content:
+            if not allow_empty and not r.content:
                 raise requests.RequestException("Empty body")
             return r
         except requests.RequestException as e:
+            log_event(f"ERROR {url} -> {type(e).__name__}: {e}")
             last = e
             time.sleep(0.5 * (attempt + 1))
     raise last
@@ -49,12 +59,12 @@ def load_players():
                 df = pd.read_csv(p)
                 if not df.empty:
                     return df
-            except Exception:
-                pass
+            except Exception as e:
+                log_event(f"load_players read error: {e}")
     return pd.DataFrame()
 
 def fetch_player_stat_statsapi(person_id, season_code):
-    url = f"https://statsapi.web.nhl.com/api/v1/people/{person_id}/stats"
+    url = f"https://statsapi.nhl.com/api/v1/people/{person_id}/stats"
     params = {"stats": "statsSingleSeason", "season": season_code}
     js = http_get(url, params=params).json()
     splits = ((js.get("stats") or [{}])[0].get("splits") or [])
@@ -73,7 +83,6 @@ def fetch_player_stat_statsapi(person_id, season_code):
     }
 
 def fetch_player_stat_nhle(person_id, season_code):
-    # NHLE landing sometimes requires season param, sometimes not; try both
     urls = [
         (f"https://api-web.nhle.com/v1/player/{person_id}/landing", {"season": season_code}),
         (f"https://api-web.nhle.com/v1/player/{person_id}/landing", None),
@@ -89,7 +98,6 @@ def fetch_player_stat_nhle(person_id, season_code):
     if not isinstance(js, dict):
         return None
 
-    # Try several shapes for totals
     def first_nonempty(*paths):
         for path in paths:
             cur = js
@@ -106,8 +114,8 @@ def fetch_player_stat_nhle(person_id, season_code):
 
     totals = first_nonempty(
         ["seasonTotals"],
-        ["skaterStats", "regularSeason", "seasonTotals"],
-        ["careerTotals", "regularSeason"]
+        ["skaterStats","regularSeason","seasonTotals"],
+        ["careerTotals","regularSeason"]
     )
     if isinstance(totals, list):
         totals = totals[-1] if totals else None
@@ -139,13 +147,13 @@ def fetch_stats(players_df):
         stat = None
         try:
             stat = fetch_player_stat_statsapi(int(pid), season)
-        except Exception:
-            pass
+        except Exception as e:
+            log_event(f"statsapi player {pid} failed: {e}")
         if not stat:
             try:
                 stat = fetch_player_stat_nhle(int(pid), season)
-            except Exception:
-                pass
+            except Exception as e:
+                log_event(f"nhle player {pid} failed: {e}")
         if stat:
             s = dict(stat)
             s.update({"player_id": pid, "name": name, "team": team})
@@ -176,13 +184,15 @@ def fetch_stats_sportsipy_fallback():
                     "time_on_ice": getattr(p, "time_on_ice", None),
                 })
         return pd.DataFrame(rows)
-    except Exception:
+    except Exception as e:
+        log_event(f"sportsipy fallback failed: {e}")
         return pd.DataFrame()
 
 def main():
     players = load_players()
     if players.empty:
         print("[player_stats] no players available yet; writing empty headers")
+        log_event("[player_stats] no players available yet; writing empty headers")
         ensure_outdir(OUT)
         cols = ["player_id","name","team","games_played","goals","assists","points","shots","plus_minus","penalty_minutes","time_on_ice"]
         pd.DataFrame(columns=cols).to_csv(OUT, index=False)
@@ -198,6 +208,7 @@ def main():
     ensure_outdir(OUT)
     df.to_csv(OUT, index=False)
     print(f"[player_stats] wrote {len(df)} rows to {OUT}")
+    log_event(f"[player_stats] wrote {len(df)} rows to {OUT}")
     return 0
 
 if __name__ == "__main__":
