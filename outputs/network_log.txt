@@ -56,3 +56,68 @@
 [2025-10-10T11:32:12.948479+00:00] NHLE roster teams_ok=31
 [2025-10-10T11:32:12.951926+00:00] [players] wrote 0 rows to outputs/players.csv
 [2025-10-10T11:32:13.368988+00:00] [player_stats] no players available yet; writing empty headers
+[2025-10-10T15:23:01.240818+00:00] === START scrape_team ===
+[2025-10-10T15:23:01.265834+00:00] ERROR https://statsapi.nhl.com/api/v1/standings -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/standings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f417e67b710>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:01.877970+00:00] ERROR https://statsapi.nhl.com/api/v1/standings -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/standings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f417e04c910>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:03.012249+00:00] ERROR https://statsapi.nhl.com/api/v1/standings -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/standings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f417e04dc90>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:04.512560+00:00] [teams] statsapi failed: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/standings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f417e04dc90>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:04.667860+00:00] GET https://api-web.nhle.com/v1/standings/now params=None -> status 200, bytes 55698
+[2025-10-10T15:23:04.973932+00:00] GET https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/standings params=None -> status 200, bytes 86
+[2025-10-10T15:23:04.974553+00:00] [teams] ESPN standings empty
+[2025-10-10T15:23:04.975561+00:00] [teams] wrote 0 rows to outputs/team_stats.csv
+[2025-10-10T15:23:04.975616+00:00] === END scrape_team ===
+[2025-10-10T15:23:05.375453+00:00] === START scrape_players ===
+[2025-10-10T15:23:05.396374+00:00] ERROR https://statsapi.nhl.com/api/v1/teams -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/teams?expand=team.roster (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa12c36e0d0>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:05.988040+00:00] ERROR https://statsapi.nhl.com/api/v1/teams -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/teams?expand=team.roster (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa12be35990>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:07.030316+00:00] ERROR https://statsapi.nhl.com/api/v1/teams -> ConnectionError: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/teams?expand=team.roster (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa12be36d10>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:08.530646+00:00] [players] statsapi failed: HTTPSConnectionPool(host='statsapi.nhl.com', port=443): Max retries exceeded with url: /api/v1/teams?expand=team.roster (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa12be36d10>: Failed to resolve 'statsapi.nhl.com' ([Errno -2] Name or service not known)"))
+[2025-10-10T15:23:08.718942+00:00] GET https://api-web.nhle.com/v1/roster/ANA/20252026 params=None -> status 200, bytes 10133
+[2025-10-10T15:23:08.909740+00:00] GET https://api-web.nhle.com/v1/roster/ARI/20252026 params=None -> status 404, bytes 94
+[2025-10-10T15:23:08.909821+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/20252026 -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:09.475204+00:00] GET https://api-web.nhle.com/v1/roster/ARI/20252026 params=None -> status 404, bytes 94
+[2025-10-10T15:23:09.475297+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/20252026 -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:10.525140+00:00] GET https://api-web.nhle.com/v1/roster/ARI/20252026 params=None -> status 404, bytes 94
+[2025-10-10T15:23:10.525242+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/20252026 -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:12.149420+00:00] GET https://api-web.nhle.com/v1/roster/ARI/current params=None -> status 404, bytes 94
+[2025-10-10T15:23:12.149505+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/current -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:12.731698+00:00] GET https://api-web.nhle.com/v1/roster/ARI/current params=None -> status 404, bytes 94
+[2025-10-10T15:23:12.731795+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/current -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:13.801780+00:00] GET https://api-web.nhle.com/v1/roster/ARI/current params=None -> status 404, bytes 94
+[2025-10-10T15:23:13.801885+00:00] ERROR https://api-web.nhle.com/v1/roster/ARI/current -> HTTPError: 404 Client Error: Not Found for url: https://api-web.nhle.com/v1/roster/ARI/20252026
+[2025-10-10T15:23:15.432845+00:00] GET https://api-web.nhle.com/v1/roster/BOS/20252026 params=None -> status 200, bytes 9728
+[2025-10-10T15:23:15.672074+00:00] GET https://api-web.nhle.com/v1/roster/BUF/20252026 params=None -> status 200, bytes 10572
+[2025-10-10T15:23:15.895485+00:00] GET https://api-web.nhle.com/v1/roster/CAR/20252026 params=None -> status 200, bytes 9607
+[2025-10-10T15:23:16.106833+00:00] GET https://api-web.nhle.com/v1/roster/CBJ/20252026 params=None -> status 200, bytes 9438
+[2025-10-10T15:23:16.331168+00:00] GET https://api-web.nhle.com/v1/roster/CGY/20252026 params=None -> status 200, bytes 10556
+[2025-10-10T15:23:16.474891+00:00] GET https://api-web.nhle.com/v1/roster/CHI/20252026 params=None -> status 200, bytes 10224
+[2025-10-10T15:23:16.701869+00:00] GET https://api-web.nhle.com/v1/roster/COL/20252026 params=None -> status 200, bytes 9351
+[2025-10-10T15:23:16.928897+00:00] GET https://api-web.nhle.com/v1/roster/DAL/20252026 params=None -> status 200, bytes 10032
+[2025-10-10T15:23:17.227318+00:00] GET https://api-web.nhle.com/v1/roster/DET/20252026 params=None -> status 200, bytes 9706
+[2025-10-10T15:23:17.458104+00:00] GET https://api-web.nhle.com/v1/roster/EDM/20252026 params=None -> status 200, bytes 11403
+[2025-10-10T15:23:17.671233+00:00] GET https://api-web.nhle.com/v1/roster/FLA/20252026 params=None -> status 200, bytes 10620
+[2025-10-10T15:23:17.965109+00:00] GET https://api-web.nhle.com/v1/roster/LAK/20252026 params=None -> status 200, bytes 9730
+[2025-10-10T15:23:18.203085+00:00] GET https://api-web.nhle.com/v1/roster/MIN/20252026 params=None -> status 200, bytes 10155
+[2025-10-10T15:23:18.433022+00:00] GET https://api-web.nhle.com/v1/roster/MTL/20252026 params=None -> status 200, bytes 9276
+[2025-10-10T15:23:18.658435+00:00] GET https://api-web.nhle.com/v1/roster/NJD/20252026 params=None -> status 200, bytes 10664
+[2025-10-10T15:23:18.916937+00:00] GET https://api-web.nhle.com/v1/roster/NSH/20252026 params=None -> status 200, bytes 10028
+[2025-10-10T15:23:19.059264+00:00] GET https://api-web.nhle.com/v1/roster/NYI/20252026 params=None -> status 200, bytes 11160
+[2025-10-10T15:23:19.281986+00:00] GET https://api-web.nhle.com/v1/roster/NYR/20252026 params=None -> status 200, bytes 9882
+[2025-10-10T15:23:19.507977+00:00] GET https://api-web.nhle.com/v1/roster/OTT/20252026 params=None -> status 200, bytes 9950
+[2025-10-10T15:23:19.771157+00:00] GET https://api-web.nhle.com/v1/roster/PHI/20252026 params=None -> status 200, bytes 10222
+[2025-10-10T15:23:19.962927+00:00] GET https://api-web.nhle.com/v1/roster/PIT/20252026 params=None -> status 200, bytes 10916
+[2025-10-10T15:23:20.229426+00:00] GET https://api-web.nhle.com/v1/roster/SEA/20252026 params=None -> status 200, bytes 10442
+[2025-10-10T15:23:20.375417+00:00] GET https://api-web.nhle.com/v1/roster/SJS/20252026 params=None -> status 200, bytes 10446
+[2025-10-10T15:23:20.610342+00:00] GET https://api-web.nhle.com/v1/roster/STL/20252026 params=None -> status 200, bytes 9875
+[2025-10-10T15:23:20.846003+00:00] GET https://api-web.nhle.com/v1/roster/TBL/20252026 params=None -> status 200, bytes 10614
+[2025-10-10T15:23:21.066272+00:00] GET https://api-web.nhle.com/v1/roster/TOR/20252026 params=None -> status 200, bytes 10162
+[2025-10-10T15:23:21.291484+00:00] GET https://api-web.nhle.com/v1/roster/VAN/20252026 params=None -> status 200, bytes 10702
+[2025-10-10T15:23:21.483091+00:00] GET https://api-web.nhle.com/v1/roster/VGK/20252026 params=None -> status 200, bytes 9886
+[2025-10-10T15:23:21.707382+00:00] GET https://api-web.nhle.com/v1/roster/WPG/20252026 params=None -> status 200, bytes 10601
+[2025-10-10T15:23:21.961355+00:00] GET https://api-web.nhle.com/v1/roster/WSH/20252026 params=None -> status 200, bytes 9810
+[2025-10-10T15:23:22.061712+00:00] NHLE roster teams_ok=31
+[2025-10-10T15:23:22.064871+00:00] [players] wrote 0 rows to outputs/players.csv
+[2025-10-10T15:23:22.064933+00:00] === END scrape_players ===
+[2025-10-10T15:23:22.455458+00:00] === START scrape_stats ===
+[2025-10-10T15:23:22.457440+00:00] [player_stats] no players available yet; writing empty headers
+[2025-10-10T15:23:22.458894+00:00] === END scrape_stats ===
+[2025-10-10T15:23:25.577678+00:00] === START scrape_players ===
