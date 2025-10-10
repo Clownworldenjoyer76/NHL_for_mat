@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 import sys, time
 from pathlib import Path
@@ -6,12 +5,20 @@ from datetime import datetime, timezone
 import requests
 import pandas as pd
 
-# Diagnostic logging
+# --- guaranteed logger import (or safe no-op) ---
 try:
     from scripts.netlog import log_event
 except Exception:
     def log_event(msg: str):
-        pass
+        try:
+            p = Path("outputs/network_log.txt")
+            p.parent.mkdir(parents=True, exist_ok=True)
+            with p.open("a", encoding="utf-8") as f:
+                f.write(f"[{datetime.now(timezone.utc).isoformat()}] {msg}\n")
+        except Exception:
+            pass
+
+log_event("=== START scrape_players ===")
 
 OUT = Path("outputs/players.csv")
 
@@ -58,7 +65,7 @@ def http_get(url, params=None, timeout=20, allow_empty=False):
 def ensure_outdir(p: Path):
     p.parent.mkdir(parents=True, exist_ok=True)
 
-# --- NHL sources ---
+# --- NHL (statsapi) ---
 def fetch_rosters_statsapi():
     url = "https://statsapi.nhl.com/api/v1/teams"
     params = {"expand": "team.roster"}
@@ -78,6 +85,7 @@ def fetch_rosters_statsapi():
             })
     return pd.DataFrame(rows)
 
+# --- NHL (api-web) ---
 def try_roster_nhle(abbr: str, season: str):
     urls = [
         f"https://api-web.nhle.com/v1/roster/{abbr}/{season}",
@@ -188,6 +196,7 @@ def main():
     df.to_csv(OUT, index=False)
     print(f"[players] wrote {len(df)} rows to {OUT}")
     log_event(f"[players] wrote {len(df)} rows to {OUT}")
+    log_event("=== END scrape_players ===")
     return 0
 
 if __name__ == "__main__":
