@@ -1,16 +1,24 @@
-
 #!/usr/bin/env python3
 import sys, time
 from pathlib import Path
 import requests
 import pandas as pd
+from datetime import datetime, timezone
 
-# Diagnostic logging
+# --- guaranteed logger import (or safe no-op) ---
 try:
     from scripts.netlog import log_event
 except Exception:
     def log_event(msg: str):
-        pass
+        try:
+            p = Path("outputs/network_log.txt")
+            p.parent.mkdir(parents=True, exist_ok=True)
+            with p.open("a", encoding="utf-8") as f:
+                f.write(f"[{datetime.now(timezone.utc).isoformat()}] {msg}\n")
+        except Exception:
+            pass
+
+log_event("=== START scrape_team ===")
 
 OUT = Path("outputs/team_stats.csv")
 
@@ -140,6 +148,7 @@ def main():
     df.to_csv(OUT, index=False)
     print(f"[teams] wrote {len(df)} rows to {OUT}")
     log_event(f"[teams] wrote {len(df)} rows to {OUT}")
+    log_event("=== END scrape_team ===")
     return 0
 
 if __name__ == "__main__":
