@@ -1,3 +1,0 @@
-pandas>=2.1
-requests>=2.31
-sportsipy>=0.6
