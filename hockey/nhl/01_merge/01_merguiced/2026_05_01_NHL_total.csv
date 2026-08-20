@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_05_01,19:10,666be81702350734d3483a03c4603f67,Tampa Bay Lightning,Montreal Canadiens,5.5,6.26,0.5951286166410181,0.40487138335898193,1.6803090492339752,2.469920179844727,-112,-108,1.89,1.93
+hockey,nhl,2026_05_01,19:40,e8e7f71bd27bb8061fbbd5af896ae23c,Buffalo Sabres,Boston Bruins,5.5,6.27,0.5966581855410921,0.40334181445890793,1.6760014766128264,2.4792867095654896,-122,102,1.82,2.02
+hockey,nhl,2026_05_01,22:10,c5c914c5b8c28d64ff00b6e65dbd3831,Vegas Golden Knights,Utah Mammoth,5.5,6.05,0.5623176853602883,0.4376823146397118,1.7783541688881435,2.2847621814995493,-122,102,1.82,2.02

@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_07,7:00 PM EST,2025_11_07_New York Islanders_Minnesota Wild,Minnesota Wild,New York Islanders,6.0,6.23,0.5125637844243718,0.48743621557562816,1.950976698681584,2.051550475828042,-110,-110,,
+hockey,nhl,2025_11_07,7:00 PM EST,2025_11_07_Detroit Red Wings_New York Rangers,New York Rangers,Detroit Red Wings,6.0,5.82,0.4343930455840169,0.5656069544159831,2.3020626369732886,1.7680122074039013,-110,-110,,
+hockey,nhl,2025_11_07,9:00 PM EST,2025_11_07_Calgary Flames_Chicago Blackhawks,Chicago Blackhawks,Calgary Flames,6.0,5.69,0.4092287708049937,0.5907712291950062,2.4436209556647266,1.6927026073402645,-110,-110,,
+hockey,nhl,2025_11_07,10:00 PM EST,2025_11_07_San Jose Sharks_Winnipeg Jets,Winnipeg Jets,San Jose Sharks,6.0,6.1,0.488088890083461,0.5119111099165391,2.0488071339403042,1.9534641476389092,-118,-102,,

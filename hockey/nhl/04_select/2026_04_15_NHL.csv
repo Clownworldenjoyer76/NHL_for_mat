@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_04_15,19:10,7db68d6db2127f93ee8278eca727ff32,New York Rangers,Tampa Bay Lightning,moneyline,home,,home_moneyline,-125.0,1.8,0.6449043501657554,0.1608278302983599,0.1608278302983599,0.2010347878729497
+hockey,nhl,2026_04_15,19:10,7db68d6db2127f93ee8278eca727ff32,New York Rangers,Tampa Bay Lightning,puck_line,away,1.5,away_puck_line,-204.0,1.49,0.7063024283357086,0.0523906182202056,0.0523906182202056,0.106919629020828
+hockey,nhl,2026_04_15,19:10,aab12987f6385f068a9b1c6feb785ecc,Detroit Red Wings,Florida Panthers,puck_line,home,1.5,home_puck_line,-217.0,1.46,0.7999791339629662,0.1679695355859305,0.1679695355859305,0.3651511643172404
+hockey,nhl,2026_04_15,19:10,aab12987f6385f068a9b1c6feb785ecc,Detroit Red Wings,Florida Panthers,total,under,6.5,under_total,-130.0,1.77,0.5961312306670308,0.0551522782806443,0.0551522782806443,0.0716263354294084
+hockey,nhl,2026_04_15,19:10,c36f011df8ff2ff994bb46373c5831ea,Dallas Stars,Buffalo Sabres,puck_line,away,1.5,away_puck_line,-263.0,1.38,0.8142200967933279,0.1236237335747922,0.1236237335747922,0.3253256146705062
+hockey,nhl,2026_04_15,20:40,c6dc2eb7ca9bcce1e2735b4673fc88b1,San Jose Sharks,Chicago Blackhawks,puck_line,home,1.5,home_puck_line,-238.0,1.42,0.8261671060312169,0.1731572905643279,0.1731572905643279,0.4122792632483999
+hockey,nhl,2026_04_15,20:40,c6dc2eb7ca9bcce1e2735b4673fc88b1,San Jose Sharks,Chicago Blackhawks,total,under,6.5,under_total,-115.0,1.87,0.565503981092307,0.0574924446426141,0.0574924446426141,0.0660832697041542

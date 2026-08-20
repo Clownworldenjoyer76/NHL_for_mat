@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_02_25,7:00 PM,2026_02_25_New Jersey Devils_Buffalo Sabres,Buffalo Sabres,New Jersey Devils,0.477,0.523,2.0964360587002098,1.9120458891013383,-102,-118,,
+hockey,nhl,2026_02_25,7:00 PM,2026_02_25_Washington Capitals_Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,0.436,0.564,2.293577981651376,1.773049645390071,136,-162,,
+hockey,nhl,2026_02_25,7:30 PM,2026_02_25_Tampa Bay Lightning_Toronto Maple Leafs,Toronto Maple Leafs,Tampa Bay Lightning,0.373,0.627,2.680965147453083,1.594896331738437,195,-238,,
+hockey,nhl,2026_02_25,8:00 PM,2026_02_25_Dallas Stars_Seattle Kraken,Seattle Kraken,Dallas Stars,0.352,0.648,2.8409090909090913,1.5432098765432098,150,-180,,
+hockey,nhl,2026_02_25,9:00 PM,2026_02_25_Utah Mammoth_Colorado Avalanche,Colorado Avalanche,Utah Mammoth,0.572,0.428,1.7482517482517483,2.336448598130841,-130,110,,
+hockey,nhl,2026_02_25,10:00 PM,2026_02_25_Vancouver Canucks_Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,0.564,0.436,1.773049645390071,2.293577981651376,-135,114,,
+hockey,nhl,2026_02_25,10:00 PM,2026_02_25_Los Angeles Kings_Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,0.474,0.526,2.109704641350211,1.9011406844106462,-102,-118,,
+hockey,nhl,2026_02_25,10:30 PM,2026_02_25_Anaheim Ducks_Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,0.531,0.469,1.8832391713747645,2.1321961620469083,-135,114,,

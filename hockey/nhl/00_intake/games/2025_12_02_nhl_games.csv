@@ -1,0 +1,11 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2025_12_02_Detroit Red Wings_Boston Bruins,hockey,nhl,2025_12_02,7:00 PM EST,Detroit Red Wings,Boston Bruins
+2025_12_02_Montreal Canadiens_Ottawa Senators,hockey,nhl,2025_12_02,7:00 PM EST,Montreal Canadiens,Ottawa Senators
+2025_12_02_New York Islanders_Tampa Bay Lightning,hockey,nhl,2025_12_02,7:00 PM EST,New York Islanders,Tampa Bay Lightning
+2025_12_02_New York Rangers_Dallas Stars,hockey,nhl,2025_12_02,7:00 PM EST,New York Rangers,Dallas Stars
+2025_12_02_Florida Panthers_Toronto Maple Leafs,hockey,nhl,2025_12_02,7:30 PM EST,Florida Panthers,Toronto Maple Leafs
+2025_12_02_Nashville Predators_Calgary Flames,hockey,nhl,2025_12_02,8:00 PM EST,Nashville Predators,Calgary Flames
+2025_12_02_Colorado Avalanche_Vancouver Canucks,hockey,nhl,2025_12_02,9:00 PM EST,Colorado Avalanche,Vancouver Canucks
+2025_12_02_Edmonton Oilers_Minnesota Wild,hockey,nhl,2025_12_02,9:00 PM EST,Edmonton Oilers,Minnesota Wild
+2025_12_02_Vegas Golden Knights_Chicago Blackhawks,hockey,nhl,2025_12_02,10:00 PM EST,Vegas Golden Knights,Chicago Blackhawks
+2025_12_02_Los Angeles Kings_Washington Capitals,hockey,nhl,2025_12_02,10:30 PM EST,Los Angeles Kings,Washington Capitals

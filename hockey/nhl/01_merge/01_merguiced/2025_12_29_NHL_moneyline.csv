@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_29,7:00 PM EST,2025_12_29_Carolina Hurricanes_New York Rangers,New York Rangers,Carolina Hurricanes,0.368,0.632,2.717391304347826,1.5822784810126582,150,-185,,
+hockey,nhl,2025_12_29,7:00 PM EST,2025_12_29_Florida Panthers_Washington Capitals,Washington Capitals,Florida Panthers,0.441,0.559,2.2675736961451247,1.7889087656529514,110,-135,,
+hockey,nhl,2025_12_29,7:30 PM EST,2025_12_29_Winnipeg Jets_Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,0.508,0.492,1.968503937007874,2.032520325203252,-125,105,,
+hockey,nhl,2025_12_29,7:30 PM EST,2025_12_29_Ottawa Senators_Columbus Blue Jackets,Columbus Blue Jackets,Ottawa Senators,0.377,0.623,2.6525198938992043,1.6051364365971108,180,-220,,
+hockey,nhl,2025_12_29,8:00 PM EST,2025_12_29_St Louis Blues_Buffalo Sabres,Buffalo Sabres,St Louis Blues,0.535,0.465,1.8691588785046729,2.150537634408602,-118,-102,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Colorado Avalanche_Los Angeles Kings,Los Angeles Kings,Colorado Avalanche,0.312,0.688,3.2051282051282053,1.4534883720930234,195,-235,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Utah Mammoth_Nashville Predators,Nashville Predators,Utah Mammoth,0.39,0.61,2.564102564102564,1.639344262295082,135,-160,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Calgary Flames_Boston Bruins,Boston Bruins,Calgary Flames,0.45,0.55,2.2222222222222223,1.8181818181818181,110,-135,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Seattle Kraken_Vancouver Canucks,Vancouver Canucks,Seattle Kraken,0.534,0.466,1.8726591760299625,2.1459227467811157,-120,100,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Vegas Golden Knights_Minnesota Wild,Minnesota Wild,Vegas Golden Knights,0.468,0.532,2.1367521367521367,1.8796992481203008,105,-125,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Anaheim Ducks_San Jose Sharks,San Jose Sharks,Anaheim Ducks,0.385,0.615,2.5974025974025974,1.6260162601626016,165,-200,,

@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_09,4:10 PM,2026_03_09_Columbus Blue Jackets_Los Angeles Kings,Los Angeles Kings,Columbus Blue Jackets,1.5,-1.5,0.6739474860872363,0.3260525139127638,1.483795133365271,3.0669906144859618,-250,205,,
+hockey,nhl,2026_03_09,7:10 PM,2026_03_09_Washington Capitals_Calgary Flames,Calgary Flames,Washington Capitals,1.5,-1.5,0.5736786066657644,0.42632139333423547,1.7431362933542651,2.345648179133251,-162,136,,
+hockey,nhl,2026_03_09,7:10 PM,2026_03_09_Philadelphia Flyers_New York Rangers,New York Rangers,Philadelphia Flyers,1.5,-1.5,0.6570851405473656,0.3429148594526342,1.5218727959164915,2.916175757434994,-218,180,,
+hockey,nhl,2026_03_09,8:40 PM,2026_03_09_Chicago Blackhawks_Utah Mammoth,Utah Mammoth,Chicago Blackhawks,-1.5,1.5,0.45611085817466257,0.5438891418253372,2.1924494496841405,1.8386099723261928,130,-155,,
+hockey,nhl,2026_03_09,9:10 PM,2026_03_09_Vancouver Canucks_Ottawa Senators,Ottawa Senators,Vancouver Canucks,-1.5,1.5,0.43854696138818927,0.5614530386118111,2.2802575049991702,1.7810928630335556,114,-135,,

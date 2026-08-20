@@ -1,0 +1,12 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2025_10_30,2025_10_30_Ottawa Senators_Calgary Flames,Calgary Flames,Ottawa Senators,1,1,1,matched
+2025_10_30,2025_10_30_Boston Bruins_Buffalo Sabres,Buffalo Sabres,Boston Bruins,1,1,1,matched
+2025_10_30,2025_10_30_Philadelphia Flyers_Nashville Predators,Nashville Predators,Philadelphia Flyers,1,1,1,matched
+2025_10_30,2025_10_30_Tampa Bay Lightning_Dallas Stars,Dallas Stars,Tampa Bay Lightning,1,1,1,matched
+2025_10_30,2025_10_30_Carolina Hurricanes_New York Islanders,New York Islanders,Carolina Hurricanes,1,1,1,matched
+2025_10_30,2025_10_30_Minnesota Wild_Pittsburgh Penguins,Pittsburgh Penguins,Minnesota Wild,1,1,1,matched
+2025_10_30,2025_10_30_Winnipeg Jets_Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,1,1,1,matched
+2025_10_30,2025_10_30_St Louis Blues_Vancouver Canucks,Vancouver Canucks,St Louis Blues,1,1,1,matched
+2025_10_30,2025_10_30_Edmonton Oilers_New York Rangers,New York Rangers,Edmonton Oilers,1,1,1,matched
+2025_10_30,2025_10_30_San Jose Sharks_New Jersey Devils,New Jersey Devils,San Jose Sharks,1,1,1,matched
+2025_10_30,2025_10_30_Los Angeles Kings_Detroit Red Wings,Detroit Red Wings,Los Angeles Kings,1,1,1,matched

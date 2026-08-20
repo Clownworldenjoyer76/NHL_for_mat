@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Washington Capitals_San Jose Sharks,San Jose Sharks,Washington Capitals,0.362,0.638,2.7624309392265194,1.567398119122257,165,-200,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Buffalo Sabres_Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,0.508,0.492,1.968503937007874,2.032520325203252,-105,-115,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Pittsburgh Penguins_Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,0.445,0.555,2.247191011235955,1.8018018018018016,125,-150,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Columbus Blue Jackets_Vancouver Canucks,Vancouver Canucks,Columbus Blue Jackets,0.39,0.61,2.564102564102564,1.639344262295082,145,-175,,
+hockey,nhl,2026_01_15,8:00 PM EST,2026_01_15_Minnesota Wild_Winnipeg Jets,Winnipeg Jets,Minnesota Wild,0.417,0.583,2.3980815347721824,1.7152658662092626,135,-160,,
+hockey,nhl,2026_01_15,8:00 PM EST,2026_01_15_Boston Bruins_Seattle Kraken,Seattle Kraken,Boston Bruins,0.397,0.603,2.5188916876574305,1.658374792703151,140,-170,,
+hockey,nhl,2026_01_15,8:30 PM EST,2026_01_15_Chicago Blackhawks_Calgary Flames,Calgary Flames,Chicago Blackhawks,0.515,0.485,1.941747572815534,2.061855670103093,-110,-110,,
+hockey,nhl,2026_01_15,9:00 PM EST,2026_01_15_Utah Mammoth_Dallas Stars,Dallas Stars,Utah Mammoth,0.471,0.529,2.1231422505307855,1.8903591682419658,-110,-110,,
+hockey,nhl,2026_01_15,9:00 PM EST,2026_01_15_Edmonton Oilers_New York Islanders,New York Islanders,Edmonton Oilers,0.435,0.565,2.2988505747126435,1.7699115044247788,150,-185,,
+hockey,nhl,2026_01_15,9:30 PM EST,2026_01_15_Vegas Golden Knights_Toronto Maple Leafs,Toronto Maple Leafs,Vegas Golden Knights,0.443,0.557,2.2573363431151243,1.7953321364452421,115,-140,,

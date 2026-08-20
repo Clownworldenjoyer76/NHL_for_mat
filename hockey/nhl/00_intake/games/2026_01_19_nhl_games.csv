@@ -1,0 +1,11 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2026_01_19_Carolina Hurricanes_Buffalo Sabres,hockey,nhl,2026_01_19,1:30 PM EST,Carolina Hurricanes,Buffalo Sabres
+2026_01_19_Colorado Avalanche_Washington Capitals,hockey,nhl,2026_01_19,4:00 PM EST,Colorado Avalanche,Washington Capitals
+2026_01_19_Seattle Kraken_Pittsburgh Penguins,hockey,nhl,2026_01_19,5:00 PM EST,Seattle Kraken,Pittsburgh Penguins
+2026_01_19_Florida Panthers_San Jose Sharks,hockey,nhl,2026_01_19,6:00 PM EST,Florida Panthers,San Jose Sharks
+2026_01_19_Toronto Maple Leafs_Minnesota Wild,hockey,nhl,2026_01_19,7:30 PM EST,Toronto Maple Leafs,Minnesota Wild
+2026_01_19_Vegas Golden Knights_Philadelphia Flyers,hockey,nhl,2026_01_19,8:00 PM EST,Vegas Golden Knights,Philadelphia Flyers
+2026_01_19_Chicago Blackhawks_Winnipeg Jets,hockey,nhl,2026_01_19,8:30 PM EST,Chicago Blackhawks,Winnipeg Jets
+2026_01_19_Calgary Flames_New Jersey Devils,hockey,nhl,2026_01_19,9:00 PM EST,Calgary Flames,New Jersey Devils
+2026_01_19_Anaheim Ducks_New York Rangers,hockey,nhl,2026_01_19,10:00 PM EST,Anaheim Ducks,New York Rangers
+2026_01_19_Vancouver Canucks_New York Islanders,hockey,nhl,2026_01_19,10:00 PM EST,Vancouver Canucks,New York Islanders

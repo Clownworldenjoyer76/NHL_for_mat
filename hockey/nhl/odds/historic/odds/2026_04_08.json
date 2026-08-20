@@ -1,0 +1,191 @@
+[
+  {
+    "id": "6fa535997519071d94f8b99009c37323",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-08T23:10:00Z",
+    "home_team": "New York Rangers",
+    "away_team": "Buffalo Sabres",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-08T10:07:44Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 1.65
+              },
+              {
+                "name": "New York Rangers",
+                "price": 2.3
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 2.7,
+                "point": -1.5
+              },
+              {
+                "name": "New York Rangers",
+                "price": 1.49,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.1,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.77,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ddad431e590f1bcd2f9d5838a22cd080",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-08T23:40:00Z",
+    "home_team": "Toronto Maple Leafs",
+    "away_team": "Washington Capitals",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-08T10:07:44Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Toronto Maple Leafs",
+                "price": 2.3
+              },
+              {
+                "name": "Washington Capitals",
+                "price": 1.65
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Toronto Maple Leafs",
+                "price": 1.49,
+                "point": 1.5
+              },
+              {
+                "name": "Washington Capitals",
+                "price": 2.7,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.95,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.87,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a02ab4eeac994c0c08264e1685e2e7bc",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-09T02:10:00Z",
+    "home_team": "San Jose Sharks",
+    "away_team": "Edmonton Oilers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-08T10:07:44Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Edmonton Oilers",
+                "price": 1.8
+              },
+              {
+                "name": "San Jose Sharks",
+                "price": 2.05
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Edmonton Oilers",
+                "price": 2.95,
+                "point": -1.5
+              },
+              {
+                "name": "San Jose Sharks",
+                "price": 1.42,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-08T10:07:44Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.87,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.95,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

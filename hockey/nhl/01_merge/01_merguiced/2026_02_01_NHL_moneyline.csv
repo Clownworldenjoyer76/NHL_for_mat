@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_02_01,3:00 PM EST,2026_02_01_Carolina Hurricanes_Los Angeles Kings,Los Angeles Kings,Carolina Hurricanes,0.373,0.627,2.680965147453083,1.594896331738437,155,-190,,
+hockey,nhl,2026_02_01,6:30 PM EST,2026_02_01_Boston Bruins_Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,0.61,0.39,1.639344262295082,2.564102564102564,-210,183,,
+hockey,nhl,2026_02_01,9:30 PM EST,2026_02_01_Anaheim Ducks_Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,0.507,0.493,1.9723865877712032,2.028397565922921,-135,110,,

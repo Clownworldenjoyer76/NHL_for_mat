@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_10,7:00 PM EST,2025_11_10_New Jersey Devils_New York Islanders,New York Islanders,New Jersey Devils,0.447,0.553,2.237136465324385,1.8083182640144664,150,-185,,
+hockey,nhl,2025_11_10,7:00 PM EST,2025_11_10_New York Rangers_Nashville Predators,Nashville Predators,New York Rangers,0.387,0.613,2.5839793281653747,1.6313213703099512,150,-185,,
+hockey,nhl,2025_11_10,8:30 PM EST,2025_11_10_Edmonton Oilers_Columbus Blue Jackets,Columbus Blue Jackets,Edmonton Oilers,0.436,0.564,2.293577981651376,1.773049645390071,154,-190,,
+hockey,nhl,2025_11_10,10:00 PM EST,2025_11_10_Vegas Golden Knights_Florida Panthers,Florida Panthers,Vegas Golden Knights,0.504,0.496,1.9841269841269842,2.0161290322580645,118,-145,,

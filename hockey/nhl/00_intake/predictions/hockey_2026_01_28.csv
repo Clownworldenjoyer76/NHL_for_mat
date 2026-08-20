@@ -1,0 +1,4 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_01_28_New York Islanders_New York Rangers","2026_01_28","07:07 PM","New York Islanders","New York Rangers","0.561","0.439","2.55","3.20","5.75"
+"hockey","nhl","2026_01_28_Columbus Blue Jackets_Philadelphia Flyers","2026_01_28","07:37 PM","Columbus Blue Jackets","Philadelphia Flyers","0.549","0.451","2.80","3.32","6.12"
+"hockey","nhl","2026_01_28_Ottawa Senators_Colorado Avalanche","2026_01_28","07:37 PM","Ottawa Senators","Colorado Avalanche","0.396","0.604","3.79","2.76","6.55"

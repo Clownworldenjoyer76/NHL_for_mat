@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_19,15:10,56ea1b51afea8960ca60b6d48714a1a3,Los Angeles Kings,Colorado Avalanche,5.5,5.97,0.5494896985828706,0.45051030141712944,1.8198703316531535,2.2197050696829588,-130,110,1.77,2.1
+hockey,nhl,2026_04_19,17:45,bedd26005f98ad01c4994501ba28ddf3,Montreal Canadiens,Tampa Bay Lightning,6.5,6.38,0.4544974787430923,0.5455025212569077,2.2002322273942836,1.8331720955127244,114,-135,2.14,1.74
+hockey,nhl,2026_04_19,19:30,e9eba9dd49f3a5847fe4689a6014e1c0,Boston Bruins,Buffalo Sabres,6.5,6.44,0.4640063738283795,0.5359936261716205,2.1551428092448286,1.8656938276348247,114,-135,2.14,1.74
+hockey,nhl,2026_04_19,22:00,bd7a28ff5a090949dde37ef2292ead64,Utah Mammoth,Vegas Golden Knights,6.5,5.99,0.3920909906423934,0.6079090093576066,2.550428405308731,1.6449830231282905,114,-135,2.14,1.74

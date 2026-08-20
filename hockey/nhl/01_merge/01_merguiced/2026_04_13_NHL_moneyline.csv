@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_13,19:10,efd342f9176c794b9effd595260264d0,Carolina Hurricanes,Philadelphia Flyers,0.585,0.415,1.7094017094017095,2.4096385542168677,-115,-105,1.87,1.95
+hockey,nhl,2026_04_13,19:10,f85edd1853a7f222a98966be1584348d,Detroit Red Wings,Tampa Bay Lightning,0.374,0.626,2.6737967914438503,1.597444089456869,170,-204,2.7,1.49
+hockey,nhl,2026_04_13,19:10,71a2a22f2aeb6a68b093f9d31ffe835a,New York Rangers,Florida Panthers,0.543,0.457,1.8416206261510129,2.1881838074398248,-130,110,1.77,2.1
+hockey,nhl,2026_04_13,19:40,7c23e65aed95672326f5b51d78a18746,Dallas Stars,Toronto Maple Leafs,0.587,0.413,1.7035775127768313,2.4213075060532687,-169,142,1.59,2.42
+hockey,nhl,2026_04_13,20:10,3f7ae1ea8cc82f1934f0db4da52eb8cb,Minnesota Wild,St Louis Blues,0.553,0.447,1.8083182640144664,2.237136465324385,-118,-102,1.85,1.98
+hockey,nhl,2026_04_13,20:10,472be2fa83d65418ccd23cfe75d5ae49,San Jose Sharks,Nashville Predators,0.398,0.602,2.5125628140703515,1.6611295681063123,130,-154,2.3,1.65
+hockey,nhl,2026_04_13,20:40,543fd68bbc58d6300577c48ced1fe675,Buffalo Sabres,Chicago Blackhawks,0.633,0.367,1.5797788309636651,2.7247956403269757,-217,180,1.46,2.8
+hockey,nhl,2026_04_13,21:40,63a04dd550f7203005f749be9394826c,Colorado Avalanche,Edmonton Oilers,0.621,0.379,1.6103059581320451,2.638522427440633,-115,-105,1.87,1.95
+hockey,nhl,2026_04_13,21:40,a4e642bde213d01b2ee7c67659ab1b7f,Los Angeles Kings,Seattle Kraken,0.547,0.453,1.8281535648994514,2.2075055187637966,-147,124,1.68,2.24
+hockey,nhl,2026_04_13,22:10,02cd436c4433adc651fc51ef06898b6d,Winnipeg Jets,Vegas Golden Knights,0.395,0.605,2.531645569620253,1.6528925619834711,154,-185,2.54,1.54

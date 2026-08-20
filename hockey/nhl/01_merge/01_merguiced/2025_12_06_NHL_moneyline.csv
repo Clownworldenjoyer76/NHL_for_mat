@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_06,12:30 PM EST,2025_12_06_New York Rangers_Colorado Avalanche,Colorado Avalanche,New York Rangers,0.612,0.388,1.6339869281045751,2.5773195876288657,-170,140,,
+hockey,nhl,2025_12_06,3:30 PM EST,2025_12_06_Florida Panthers_Columbus Blue Jackets,Columbus Blue Jackets,Florida Panthers,0.394,0.606,2.5380710659898478,1.6501650165016502,140,-170,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Calgary Flames_Utah Mammoth,Utah Mammoth,Calgary Flames,0.538,0.462,1.858736059479554,2.1645021645021645,-105,-115,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Boston Bruins_New Jersey Devils,New Jersey Devils,Boston Bruins,0.504,0.496,1.9841269841269842,2.0161290322580645,-115,-105,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Carolina Hurricanes_Nashville Predators,Nashville Predators,Carolina Hurricanes,0.297,0.703,3.367003367003367,1.4224751066856332,200,-250,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Tampa Bay Lightning_New York Islanders,New York Islanders,Tampa Bay Lightning,0.448,0.552,2.232142857142857,1.8115942028985506,170,-210,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Ottawa Senators_St Louis Blues,St Louis Blues,Ottawa Senators,0.372,0.628,2.6881720430107525,1.5923566878980893,125,-155,,
+hockey,nhl,2025_12_06,7:00 PM EST,2025_12_06_Toronto Maple Leafs_Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,0.423,0.577,2.3640661938534278,1.733102253032929,115,-140,,
+hockey,nhl,2025_12_06,9:00 PM EST,2025_12_06_Los Angeles Kings_Chicago Blackhawks,Chicago Blackhawks,Los Angeles Kings,0.368,0.632,2.717391304347826,1.5822784810126582,180,-220,,
+hockey,nhl,2025_12_06,10:00 PM EST,2025_12_06_Vancouver Canucks_Minnesota Wild,Minnesota Wild,Vancouver Canucks,0.564,0.436,1.773049645390071,2.293577981651376,-140,115,,
+hockey,nhl,2025_12_06,10:00 PM EST,2025_12_06_Seattle Kraken_Detroit Red Wings,Detroit Red Wings,Seattle Kraken,0.516,0.484,1.937984496124031,2.066115702479339,-115,-105,,
+hockey,nhl,2025_12_06,10:00 PM EST,2025_12_06_Edmonton Oilers_Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,0.425,0.575,2.3529411764705883,1.7391304347826089,170,-210,,

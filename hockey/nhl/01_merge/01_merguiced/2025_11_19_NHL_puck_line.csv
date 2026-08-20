@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_19,7:00 PM EST,2025_11_19_Washington Capitals_Edmonton Oilers,Edmonton Oilers,Washington Capitals,1.5,-1.5,0.6783484418266406,0.32165155817335955,1.4741686400977405,3.108954315903028,-265,219,,
+hockey,nhl,2025_11_19,7:30 PM EST,2025_11_19_Buffalo Sabres_Calgary Flames,Calgary Flames,Buffalo Sabres,1.5,-1.5,0.5864125337171471,0.41358746628285314,1.7052841515190815,2.4178682419648045,-190,165,,
+hockey,nhl,2025_11_19,9:30 PM EST,2025_11_19_Minnesota Wild_Carolina Hurricanes,Carolina Hurricanes,Minnesota Wild,-1.5,1.5,0.40980554356211685,0.5901944564378833,2.440181729382642,1.6943568159475721,177,-205,,
+hockey,nhl,2025_11_19,10:00 PM EST,2025_11_19_Anaheim Ducks_Boston Bruins,Boston Bruins,Anaheim Ducks,1.5,-1.5,0.5797538326913738,0.42024616730862596,1.724870011393853,2.3795576921124106,-180,157,,

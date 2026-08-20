@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_16,19:30,2aa3249b78d693529c951547a82f134f,St Louis Blues,Utah Mammoth,0.389,0.611,2.570694087403599,1.6366612111292962,-105,-115,1.95,1.87
+hockey,nhl,2026_04_16,20:00,112a39ac7f4a08fcb78fe38362f343ed,Anaheim Ducks,Nashville Predators,0.468,0.532,2.1367521367521367,1.8796992481203008,-110,-110,1.91,1.91
+hockey,nhl,2026_04_16,20:00,72aacc9aeb0595468a61d147df27e838,San Jose Sharks,Winnipeg Jets,0.392,0.608,2.5510204081632653,1.6447368421052633,136,-161,2.36,1.62
+hockey,nhl,2026_04_16,21:00,88586e525b98a2c062f1f6d75e8d0fe1,Los Angeles Kings,Calgary Flames,0.534,0.466,1.8726591760299625,2.1459227467811157,-143,120,1.7,2.2
+hockey,nhl,2026_04_16,21:00,9d37384a47dfd1b17638086559bb3726,Vancouver Canucks,Edmonton Oilers,0.304,0.696,3.2894736842105265,1.4367816091954024,260,-323,3.6,1.31
+hockey,nhl,2026_04_16,22:10,96784cc6006a3540914823666e6561d1,Seattle Kraken,Colorado Avalanche,0.219,0.781,4.566210045662101,1.2804097311139564,150,-179,2.5,1.56

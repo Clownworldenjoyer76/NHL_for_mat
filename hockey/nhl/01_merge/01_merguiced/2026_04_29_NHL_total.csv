@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_29,19:20,380c27de2b84a263be1c51bd96c29a4c,Montreal Canadiens,Tampa Bay Lightning,5.5,6.29,0.5997080251822161,0.4002919748177839,1.667478102691987,2.4981764884374913,-118,-102,1.85,1.98
+hockey,nhl,2026_04_29,19:50,5c15c0058458a00ae3cce4d5171e658e,Pittsburgh Penguins,Philadelphia Flyers,5.5,6.03,0.5591269264214039,0.44087307357859606,1.78850266861646,2.2682265257955843,-122,102,1.82,2.02
+hockey,nhl,2026_04_29,22:20,4868659ab89eec9f59b336ce39d0d61e,Utah Mammoth,Vegas Golden Knights,5.5,6.02,0.5575274436745259,0.4424725563254741,1.7936336791050977,2.260027171638685,-135,114,1.74,2.14

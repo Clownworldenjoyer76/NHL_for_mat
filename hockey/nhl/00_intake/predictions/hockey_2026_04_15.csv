@@ -1,0 +1,7 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","c36f011df8ff2ff994bb46373c5831ea","2026_04_15","07:07 PM","Buffalo Sabres","Dallas Stars","0.519000","0.481000","2.95","3.15","6.10"
+"hockey","nhl","7db68d6db2127f93ee8278eca727ff32","2026_04_15","07:07 PM","Tampa Bay Lightning","New York Rangers","0.644000","0.356000","2.45","3.64","6.09"
+"hockey","nhl","aab12987f6385f068a9b1c6feb785ecc","2026_04_15","07:07 PM","Florida Panthers","Detroit Red Wings","0.459000","0.541000","3.23","2.79","6.02"
+"hockey","nhl","ecf6c5f973a42e5dcd559cd2ac2e0d3a","2026_04_15","07:37 PM","Ottawa Senators","Toronto Maple Leafs","0.642000","0.358000","2.48","3.65","6.13"
+"hockey","nhl","c6dc2eb7ca9bcce1e2735b4673fc88b1","2026_04_15","08:37 PM","Chicago Blackhawks","San Jose Sharks","0.495000","0.505000","3.13","3.08","6.21"
+"hockey","nhl","95e2cb9751126776827294c1530f4823","2026_04_15","10:07 PM","Vegas Golden Knights","Seattle Kraken","0.676000","0.324000","2.49","3.79","6.28"

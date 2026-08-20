@@ -1,0 +1,335 @@
+[
+  {
+    "id": "666be81702350734d3483a03c4603f67",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-01T23:10:00Z",
+    "home_team": "Montr\u00e9al Canadiens",
+    "away_team": "Tampa Bay Lightning",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-05-01T10:51:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 1.95
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 1.87
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 1.36,
+                "point": 1.5
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 3.25,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.89,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 1.93,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e8e7f71bd27bb8061fbbd5af896ae23c",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-01T23:40:00Z",
+    "home_team": "Boston Bruins",
+    "away_team": "Buffalo Sabres",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-05-01T10:51:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 1.98
+              },
+              {
+                "name": "Buffalo Sabres",
+                "price": 1.85
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 1.38,
+                "point": 1.5
+              },
+              {
+                "name": "Buffalo Sabres",
+                "price": 3.15,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.82,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.02,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5c914c5b8c28d64ff00b6e65dbd3831",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-02T02:10:00Z",
+    "home_team": "Utah Mammoth",
+    "away_team": "Vegas Golden Knights",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-05-01T10:51:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Utah Mammoth",
+                "price": 1.95
+              },
+              {
+                "name": "Vegas Golden Knights",
+                "price": 1.87
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Utah Mammoth",
+                "price": 1.38,
+                "point": 1.5
+              },
+              {
+                "name": "Vegas Golden Knights",
+                "price": 3.15,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.82,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.02,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e525b26df615c89d31e7affabdb475e3",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-02T23:00:00Z",
+    "home_team": "Carolina Hurricanes",
+    "away_team": "Philadelphia Flyers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-05-01T10:51:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 1.49
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 2.7
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 2.24,
+                "point": -1.5
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 1.68,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.8,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.05,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dd40fd7156c9a60a0ce8365206fc9310",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-03T23:00:15Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Minnesota Wild",
+    "bookmakers": []
+  },
+  {
+    "id": "5c45bb4b4310c3efc4baaf7a5f5046d4",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-05T02:10:00Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Minnesota Wild",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-05-01T10:51:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 1.59
+              },
+              {
+                "name": "Minnesota Wild",
+                "price": 2.42
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 2.36,
+                "point": -1.5
+              },
+              {
+                "name": "Minnesota Wild",
+                "price": 1.62,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-05-01T10:51:41Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.8,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.05,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fbc314d1e8c60127f6b1a302f544af53",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-05-05T23:00:00Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Minnesota Wild",
+    "bookmakers": []
+  }
+]

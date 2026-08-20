@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_17,7:00 PM EST,2025_12_17_Florida Panthers_Los Angeles Kings,Los Angeles Kings,Florida Panthers,0.407,0.593,2.4570024570024573,1.6863406408094437,115,-140,,
+hockey,nhl,2025_12_17,7:30 PM EST,2025_12_17_Detroit Red Wings_Utah Mammoth,Utah Mammoth,Detroit Red Wings,0.523,0.477,1.9120458891013383,2.0964360587002098,105,-125,,
+hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_St Louis Blues_Winnipeg Jets,Winnipeg Jets,St Louis Blues,0.582,0.418,1.718213058419244,2.3923444976076556,-145,118,,
+hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_Nashville Predators_Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,0.646,0.354,1.547987616099071,2.824858757062147,-185,150,,
+hockey,nhl,2025_12_17,10:00 PM EST,2025_12_17_Vegas Golden Knights_New Jersey Devils,New Jersey Devils,Vegas Golden Knights,0.41,0.59,2.4390243902439024,1.6949152542372883,155,-190,,

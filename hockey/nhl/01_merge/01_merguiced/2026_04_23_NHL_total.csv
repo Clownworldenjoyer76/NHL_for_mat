@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_23,19:10,d618bdbd532e173a5e9e0f985de4af4c,Buffalo Sabres,Boston Bruins,6.5,6.26,0.43538259686070013,0.5646174031392999,2.2968304365182246,1.7711108344162827,114,-135,2.14,1.74
+hockey,nhl,2026_04_23,19:40,51287ae15947cf3f02665904d8b8be9d,Carolina Hurricanes,Ottawa Senators,5.5,6.17,0.5812254620754628,0.4187745379245372,1.720502739899179,2.3879197741009723,-122,102,1.82,2.02
+hockey,nhl,2026_04_23,22:10,524a4ecbfee90fb1259c3e30014629ab,Colorado Avalanche,Los Angeles Kings,5.5,5.93,0.5430121891283849,0.4569878108716151,1.8415792868391192,2.1882421723518073,-115,-105,1.87,1.95

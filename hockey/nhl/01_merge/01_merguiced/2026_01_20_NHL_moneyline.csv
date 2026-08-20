@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_20,7:00 PM EST,2026_01_20_Montreal Canadiens_Minnesota Wild,Minnesota Wild,Montreal Canadiens,0.438,0.562,2.2831050228310503,1.779359430604982,120,-145,,
+hockey,nhl,2026_01_20,7:00 PM EST,2026_01_20_Tampa Bay Lightning_San Jose Sharks,San Jose Sharks,Tampa Bay Lightning,0.27,0.73,3.7037037037037033,1.36986301369863,240,-300,,
+hockey,nhl,2026_01_20,7:00 PM EST,2026_01_20_Columbus Blue Jackets_Ottawa Senators,Ottawa Senators,Columbus Blue Jackets,0.508,0.492,1.968503937007874,2.032520325203252,-110,-110,,
+hockey,nhl,2026_01_20,7:30 PM EST,2026_01_20_Dallas Stars_Boston Bruins,Boston Bruins,Dallas Stars,0.384,0.616,2.6041666666666665,1.6233766233766234,165,-200,,
+hockey,nhl,2026_01_20,8:00 PM EST,2026_01_20_Winnipeg Jets_St Louis Blues,St Louis Blues,Winnipeg Jets,0.439,0.561,2.277904328018223,1.7825311942959,135,-160,,
+hockey,nhl,2026_01_20,8:00 PM EST,2026_01_20_Nashville Predators_Buffalo Sabres,Buffalo Sabres,Nashville Predators,0.486,0.514,2.05761316872428,1.9455252918287937,110,-135,,
+hockey,nhl,2026_01_20,10:00 PM EST,2026_01_20_Edmonton Oilers_New Jersey Devils,New Jersey Devils,Edmonton Oilers,0.409,0.591,2.444987775061125,1.6920473773265652,125,-150,,
+hockey,nhl,2026_01_20,10:00 PM EST,2026_01_20_Los Angeles Kings_New York Rangers,New York Rangers,Los Angeles Kings,0.407,0.593,2.4570024570024573,1.6863406408094437,140,-170,,

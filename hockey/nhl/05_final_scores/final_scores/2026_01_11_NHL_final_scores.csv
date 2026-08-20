@@ -1,0 +1,6 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_01_11","2026_01_11_Winnipeg Jets_New Jersey Devils","New Jersey Devils","Winnipeg Jets","3","4","7","-1","1"
+"hockey","nhl","2026_01_11","2026_01_11_Boston Bruins_Pittsburgh Penguins","Pittsburgh Penguins","Boston Bruins","0","1","1","-1","1"
+"hockey","nhl","2026_01_11","2026_01_11_Nashville Predators_Washington Capitals","Washington Capitals","Nashville Predators","2","3","5","-1","1"
+"hockey","nhl","2026_01_11","2026_01_11_Utah Mammoth_Columbus Blue Jackets","Columbus Blue Jackets","Utah Mammoth","3","2","5","1","-1"
+"hockey","nhl","2026_01_11","2026_01_11_San Jose Sharks_Vegas Golden Knights","Vegas Golden Knights","San Jose Sharks","7","2","9","5","-5"

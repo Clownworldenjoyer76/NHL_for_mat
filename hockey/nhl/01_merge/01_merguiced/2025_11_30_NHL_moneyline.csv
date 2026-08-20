@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_30,1:00 PM EST,2025_11_30_New York Islanders_Washington Capitals,Washington Capitals,New York Islanders,0.499,0.501,2.004008016032064,1.996007984031936,-125,105,,
+hockey,nhl,2025_11_30,3:30 PM EST,2025_11_30_Chicago Blackhawks_Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,0.57,0.43,1.7543859649122808,2.3255813953488373,-125,105,,
+hockey,nhl,2025_11_30,5:00 PM EST,2025_11_30_Carolina Hurricanes_Calgary Flames,Calgary Flames,Carolina Hurricanes,0.306,0.694,3.2679738562091503,1.4409221902017293,200,-250,,
+hockey,nhl,2025_11_30,6:00 PM EST,2025_11_30_Dallas Stars_Ottawa Senators,Ottawa Senators,Dallas Stars,0.424,0.576,2.358490566037736,1.7361111111111112,125,-150,,

@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_30,19:00,0edf2e1dfaf8c8ff0b583a60913e17f8,Pittsburgh Penguins,New York Islanders,1.5,-1.5,0.6656563635214188,0.33434363647858145,1.502276632209831,2.990934747651647,-250,205,1.4,3.05
+hockey,nhl,2026_03_30,20:30,29827972b39eb13518d4cd9fd2962bbe,Calgary Flames,Colorado Avalanche,1.5,-1.5,0.4831783578135511,0.5168216421864489,2.0696291210664697,1.9349034915980539,114,-135,2.14,1.74
+hockey,nhl,2026_03_30,22:00,13095d16b56b868a3d8966899240afe5,Toronto Maple Leafs,Anaheim Ducks,1.5,-1.5,0.6143354803247365,0.3856645196752636,1.6277751033871624,2.5929271399972644,-143,120,1.7,2.2
+hockey,nhl,2026_03_30,22:00,f4d072c37cf82f7ed923377f6bbd4879,St Louis Blues,San Jose Sharks,1.5,-1.5,0.7747364170334949,0.2252635829665054,1.290761577762216,4.43924395959151,-278,225,1.36,3.25
+hockey,nhl,2026_03_30,22:00,92e007535e73b24db74fa534ef960845,Vancouver Canucks,Vegas Golden Knights,1.5,-1.5,0.5201272422377048,0.4798727577622951,1.9226064677900243,2.0838857464281184,114,-135,2.14,1.74

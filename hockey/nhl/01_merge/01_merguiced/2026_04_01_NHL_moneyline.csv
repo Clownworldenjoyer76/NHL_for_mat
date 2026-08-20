@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_01,20:40,902c8f6ff45c6855541ed7cef351aed8,Vancouver Canucks,Colorado Avalanche,0.212,0.788,4.716981132075472,1.2690355329949239,340,-435,4.4,1.23
+hockey,nhl,2026_04_01,21:10,96ceffc5fa63fb301b4128bb29041f01,Anaheim Ducks,San Jose Sharks,0.541,0.459,1.8484288354898335,2.178649237472767,-115,-105,1.87,1.95
+hockey,nhl,2026_04_01,21:10,643d656ddcc5756af5e6115f9f134a28,St Louis Blues,Los Angeles Kings,0.436,0.564,2.293577981651376,1.773049645390071,124,-147,2.24,1.68

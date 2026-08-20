@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_New Jersey Devils_Boston Bruins,Boston Bruins,New Jersey Devils,5.5,5.92,0.5413863951583133,0.4586136048416867,1.8471095855808826,2.180484812144201,-125,105,,
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_Detroit Red Wings_Calgary Flames,Calgary Flames,Detroit Red Wings,5.5,5.82,0.5249926429178641,0.47500735708213593,1.904788597497454,2.105230550833521,-125,105,,
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_New York Rangers_Los Angeles Kings,Los Angeles Kings,New York Rangers,5.5,5.64,0.4949126859086821,0.5050873140913179,2.0205584307542144,1.9798557043529383,-130,110,,
+hockey,nhl,2026_03_16,8:10 PM,2026_03_16_Dallas Stars_Utah Mammoth,Utah Mammoth,Dallas Stars,5.5,5.82,0.5249926429178641,0.47500735708213593,1.904788597497454,2.105230550833521,-125,105,,
+hockey,nhl,2026_03_16,9:40 PM,2026_03_16_Colorado Avalanche_Pittsburgh Penguins,Pittsburgh Penguins,Colorado Avalanche,6.5,6.67,0.5000562993851677,0.4999437006148323,1.9997748278134404,2.0002252229004926,-120,100,,

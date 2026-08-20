@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_10_08,7:00 PM EDT,2025_10_08_Toronto Maple Leafs_Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,5.5,5.84,0.5282906666453085,0.47170933335469145,1.8928973444677464,2.1199495733701585,-125,105,,
+hockey,nhl,2025_10_08,7:30 PM EDT,2025_10_08_Washington Capitals_Boston Bruins,Boston Bruins,Washington Capitals,5.5,5.72,0.5083663776750106,0.4916336223249894,1.9670852438618234,2.0340350101990383,-110,-110,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Edmonton Oilers_Calgary Flames,Calgary Flames,Edmonton Oilers,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-120,100,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Vegas Golden Knights_Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,5.5,5.5,0.4710813134741374,0.5289186865258626,2.122775774367243,1.890649783180052,-120,100,,

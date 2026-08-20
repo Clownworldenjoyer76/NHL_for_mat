@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_12_15_New York Rangers_Anaheim Ducks","2025_12_15","07:07 PM","New York Rangers","Anaheim Ducks","0.56","0.44","2.78","3.42","6.20"
+"hockey","nhl","2025_12_15_Winnipeg Jets_Ottawa Senators","2025_12_15","07:37 PM","Winnipeg Jets","Ottawa Senators","0.538","0.462","2.69","3.09","5.78"
+"hockey","nhl","2025_12_15_Tampa Bay Lightning_Florida Panthers","2025_12_15","07:07 PM","Tampa Bay Lightning","Florida Panthers","0.508","0.492","2.96","3.05","6.01"
+"hockey","nhl","2025_12_15_St Louis Blues_Nashville Predators","2025_12_15","08:07 PM","St Louis Blues","Nashville Predators","0.501","0.499","2.89","2.91","5.80"
+"hockey","nhl","2025_12_15_Dallas Stars_Los Angeles Kings","2025_12_15","08:07 PM","Dallas Stars","Los Angeles Kings","0.586","0.414","2.30","3.22","5.52"

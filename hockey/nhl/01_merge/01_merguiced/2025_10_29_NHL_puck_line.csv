@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_29,7:30 PM EDT,2025_10_29_Columbus Blue Jackets_Toronto Maple Leafs,Toronto Maple Leafs,Columbus Blue Jackets,-1.5,-1.5,0.29899458666845835,0.24082470291482616,3.3445421575771035,4.152397938818077,-220,-220,,

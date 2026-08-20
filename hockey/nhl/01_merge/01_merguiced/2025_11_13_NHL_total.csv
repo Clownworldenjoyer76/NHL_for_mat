@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_13,7:00 PM EST,2025_11_13_Toronto Maple Leafs_Los Angeles Kings,Los Angeles Kings,Toronto Maple Leafs,6.0,5.96,0.46136922880815306,0.5386307711918469,2.1674614117271807,1.8565593602966008,-110,-110,,
+hockey,nhl,2025_11_13,7:00 PM EST,2025_11_13_Ottawa Senators_Boston Bruins,Boston Bruins,Ottawa Senators,6.0,6.03,0.4747689755734489,0.5252310244265511,2.1062875871199287,1.9039240895790632,-110,-110,,
+hockey,nhl,2025_11_13,7:00 PM EST,2025_11_13_Montreal Canadiens_Dallas Stars,Dallas Stars,Montreal Canadiens,6.0,6.01,0.4709479546045673,0.5290520453954327,2.1233768832049664,1.8901732045144324,100,-120,,
+hockey,nhl,2025_11_13,7:00 PM EST,2025_11_13_Detroit Red Wings_Anaheim Ducks,Anaheim Ducks,Detroit Red Wings,6.0,6.35,0.5347894380127141,0.46521056198728594,1.8698948201296115,2.1495642655407505,-125,105,,
+hockey,nhl,2025_11_13,7:00 PM EST,2025_11_13_Florida Panthers_Washington Capitals,Washington Capitals,Florida Panthers,5.5,5.57,0.4830396651122708,0.5169603348877292,2.07022336305979,1.934384386022914,-115,-105,,
+hockey,nhl,2025_11_13,7:30 PM EST,2025_11_13_Columbus Blue Jackets_Edmonton Oilers,Edmonton Oilers,Columbus Blue Jackets,6.5,6.5,0.47347637748200033,0.5265236225179997,2.112037785956948,1.89925001886466,-120,100,,
+hockey,nhl,2025_11_13,9:00 PM EST,2025_11_13_Colorado Avalanche_Buffalo Sabres,Buffalo Sabres,Colorado Avalanche,6.5,6.6,0.4891605790710861,0.5108394209289139,2.0443184565260673,1.9575623161219493,-120,100,,
+hockey,nhl,2025_11_13,9:00 PM EST,2025_11_13_Calgary Flames_San Jose Sharks,San Jose Sharks,Calgary Flames,6.0,6.07,0.4823911013931748,0.5176088986068251,2.073006730663023,1.9319606032499808,-110,-110,,
+hockey,nhl,2025_11_13,10:00 PM EST,2025_11_13_Seattle Kraken_Winnipeg Jets,Winnipeg Jets,Seattle Kraken,5.5,5.54,0.47792459016145084,0.5220754098385492,2.0923803055670005,1.9154321026329282,-120,100,,
+hockey,nhl,2025_11_13,10:00 PM EST,2025_11_13_Vegas Golden Knights_New York Islanders,New York Islanders,Vegas Golden Knights,6.0,6.23,0.5125637844243718,0.48743621557562816,1.950976698681584,2.051550475828042,-118,-102,,

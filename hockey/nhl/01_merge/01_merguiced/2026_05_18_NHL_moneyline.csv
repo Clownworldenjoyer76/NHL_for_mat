@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,NHL,2026_05_18,19:30,70558184,Montreal Canadiens,Buffalo Sabres,0.478,0.522,2.092050209205021,1.9157088122605364,-104,-115,1.96,1.87

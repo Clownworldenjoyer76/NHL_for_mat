@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,NHL,2026_05_23,19:00,70558000,Montreal Canadiens,Carolina Hurricanes,5.5,6.38,0.6132763759904885,0.3867236240095116,1.630586207376606,2.5858259954023515,-133,110,1.75,2.1

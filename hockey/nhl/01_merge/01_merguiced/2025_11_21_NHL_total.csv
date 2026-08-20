@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Buffalo Sabres_Chicago Blackhawks,Chicago Blackhawks,Buffalo Sabres,6.0,6.21,0.5088233096062543,0.49117669039374573,1.9653187680686952,2.035927232618393,-110,-110,,
+hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Pittsburgh Penguins_Minnesota Wild,Minnesota Wild,Pittsburgh Penguins,6.0,6.61,0.5814397331671511,0.41856026683284897,1.7198687034216185,2.3891422078038467,-120,100,,
+hockey,nhl,2025_11_21,8:00 PM EST,2025_11_21_Winnipeg Jets_Carolina Hurricanes,Carolina Hurricanes,Winnipeg Jets,6.0,5.87,0.44404877295568873,0.5559512270443113,2.252004871770672,1.7987189367607896,-110,-110,,
+hockey,nhl,2025_11_21,10:30 PM EST,2025_11_21_Los Angeles Kings_Boston Bruins,Boston Bruins,Los Angeles Kings,5.5,5.81,0.5233401306016409,0.47665986939835914,1.9108032071807348,2.0979320144198454,-115,-105,,

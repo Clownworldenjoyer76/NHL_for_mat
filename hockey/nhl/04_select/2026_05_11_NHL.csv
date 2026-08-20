@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,NHL,2026_05_11,20:00,70558034,Colorado Avalanche,Minnesota Wild,puck_line,home,1.5,home_puck_line,-222.0,1.45,0.7690659784398133,0.1151456687377292,0.1151456687377292,0.2558792638616206

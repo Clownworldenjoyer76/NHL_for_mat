@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_25,9:00 PM EST,2025_11_25_Edmonton Oilers_Dallas Stars,Dallas Stars,Edmonton Oilers,6.0,6.09,0.4861915046380302,0.5138084953619698,2.0568027011177428,1.9462504201989033,-115,-105,,

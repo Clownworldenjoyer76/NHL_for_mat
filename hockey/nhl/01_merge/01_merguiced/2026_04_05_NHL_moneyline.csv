@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_05,13:10,c36637b0713ec3bed157fe2f29f74598,Minnesota Wild,Detroit Red Wings,0.524,0.476,1.9083969465648853,2.100840336134454,-115,-105,1.87,1.95
+hockey,nhl,2026_04_05,15:10,d3523216577286ba8513401af981de1e,Florida Panthers,Pittsburgh Penguins,0.404,0.596,2.4752475247524752,1.6778523489932886,195,-238,2.95,1.42
+hockey,nhl,2026_04_05,15:40,4ee0a58e1700d2f73d808677a7499755,Boston Bruins,Philadelphia Flyers,0.449,0.551,2.2271714922048997,1.8148820326678765,120,-143,2.2,1.7
+hockey,nhl,2026_04_05,17:10,5525381fbde73b776cadf83541822b62,Carolina Hurricanes,Ottawa Senators,0.541,0.459,1.8484288354898335,2.178649237472767,-125,105,1.8,2.05
+hockey,nhl,2026_04_05,19:10,e9ee86ad4d39a43c99e29bc6c07b424c,New Jersey Devils,Montreal Canadiens,0.434,0.566,2.3041474654377883,1.76678445229682,130,-154,2.3,1.65
+hockey,nhl,2026_04_05,19:10,a47587923d1b10469803a4ec5171b621,Washington Capitals,New York Rangers,0.46,0.54,2.1739130434782608,1.8518518518518516,-115,-105,1.87,1.95
+hockey,nhl,2026_04_05,21:40,6e1c8f2b345c36cffadaf88c2bb4b58a,St Louis Blues,Colorado Avalanche,0.292,0.708,3.4246575342465757,1.4124293785310735,190,-233,2.9,1.43

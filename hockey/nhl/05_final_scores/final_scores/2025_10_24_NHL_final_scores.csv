@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_10_24","2025_10_24_New Jersey Devils_San Jose Sharks","San Jose Sharks","New Jersey Devils","1","3","4","-2","2"
+"hockey","nhl","2025_10_24","2025_10_24_Buffalo Sabres_Toronto Maple Leafs","Toronto Maple Leafs","Buffalo Sabres","3","5","8","-2","2"
+"hockey","nhl","2025_10_24","2025_10_24_Columbus Blue Jackets_Washington Capitals","Washington Capitals","Columbus Blue Jackets","5","1","6","4","-4"
+"hockey","nhl","2025_10_24","2025_10_24_Winnipeg Jets_Calgary Flames","Calgary Flames","Winnipeg Jets","3","5","8","-2","2"

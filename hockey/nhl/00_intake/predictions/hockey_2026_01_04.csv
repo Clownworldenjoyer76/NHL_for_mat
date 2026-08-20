@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_01_04_New Jersey Devils_Carolina Hurricanes","2026_01_04","07:07 PM","New Jersey Devils","Carolina Hurricanes","0.474","0.526","3.08","2.81","5.89"
+"hockey","nhl","2026_01_04_Columbus Blue Jackets_Pittsburgh Penguins","2026_01_04","03:07 PM","Columbus Blue Jackets","Pittsburgh Penguins","0.553","0.447","3.03","3.61","6.64"
+"hockey","nhl","2026_01_04_Dallas Stars_Montreal Canadiens","2026_01_04","02:07 PM","Dallas Stars","Montreal Canadiens","0.641","0.359","2.39","3.57","5.96"
+"hockey","nhl","2026_01_04_Florida Panthers_Colorado Avalanche","2026_01_04","05:07 PM","Florida Panthers","Colorado Avalanche","0.429","0.571","3.42","2.65","6.07"
+"hockey","nhl","2026_01_04_Chicago Blackhawks_Vegas Golden Knights","2026_01_04","07:07 PM","Chicago Blackhawks","Vegas Golden Knights","0.354","0.646","3.53","2.34","5.87"

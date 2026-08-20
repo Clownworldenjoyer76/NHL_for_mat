@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_08,2:10 PM,2026_03_08_Colorado Avalanche_Minnesota Wild,Minnesota Wild,Colorado Avalanche,6.5,6.45,0.465587537563809,0.534412462436191,2.14782381253697,1.8712138475239999,-102,-118,,
+hockey,nhl,2026_03_08,4:40 PM,2026_03_08_Pittsburgh Penguins_Boston Bruins,Boston Bruins,Pittsburgh Penguins,6.5,6.47,0.4687465348304315,0.5312534651695685,2.1333491038216397,1.8823406632854889,102,-122,,
+hockey,nhl,2026_03_08,6:10 PM,2026_03_08_Dallas Stars_Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,5.5,6.04,0.560723679391425,0.4392763206085751,1.7834096128869366,2.276471444248568,-135,114,,
+hockey,nhl,2026_03_08,6:10 PM,2026_03_08_Buffalo Sabres_Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,6.5,6.24,0.4321863818176488,0.5678136181823512,2.31381654321058,1.761141275901653,-105,-115,,
+hockey,nhl,2026_03_08,7:10 PM,2026_03_08_New Jersey Devils_Detroit Red Wings,Detroit Red Wings,New Jersey Devils,5.5,5.78,0.5183688466593043,0.48163115334069573,1.9291282769877676,2.0762776516090957,-115,-105,,
+hockey,nhl,2026_03_08,9:10 PM,2026_03_08_Anaheim Ducks_St Louis Blues,St Louis Blues,Anaheim Ducks,6.5,6.28,0.4385761581209362,0.5614238418790638,2.2801057045245323,1.7811854884057627,-105,-115,,
+hockey,nhl,2026_03_08,9:40 PM,2026_03_08_Vegas Golden Knights_Edmonton Oilers,Edmonton Oilers,Vegas Golden Knights,6.5,6.54,0.4797657764483878,0.5202342235516122,2.0843504249152667,1.9222111017092487,-142,120,,

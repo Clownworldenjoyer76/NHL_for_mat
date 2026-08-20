@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_15,3:10 PM,2026_03_15_Winnipeg Jets_St Louis Blues,St Louis Blues,Winnipeg Jets,0.493,0.507,2.028397565922921,1.9723865877712032,-105,-115,,
+hockey,nhl,2026_03_15,5:10 PM,2026_03_15_Ottawa Senators_San Jose Sharks,San Jose Sharks,Ottawa Senators,0.347,0.653,2.8818443804034586,1.5313935681470137,170,-205,,
+hockey,nhl,2026_03_15,7:10 PM,2026_03_15_Montreal Canadiens_Anaheim Ducks,Anaheim Ducks,Montreal Canadiens,0.45,0.55,2.2222222222222223,1.8181818181818181,124,-148,,
+hockey,nhl,2026_03_15,7:40 PM,2026_03_15_Minnesota Wild_Toronto Maple Leafs,Toronto Maple Leafs,Minnesota Wild,0.362,0.638,2.7624309392265194,1.567398119122257,205,-250,,
+hockey,nhl,2026_03_15,8:10 PM,2026_03_15_Edmonton Oilers_Nashville Predators,Nashville Predators,Edmonton Oilers,0.393,0.607,2.544529262086514,1.6474464579901154,154,-185,,
+hockey,nhl,2026_03_15,8:10 PM,2026_03_15_Seattle Kraken_Florida Panthers,Florida Panthers,Seattle Kraken,0.556,0.444,1.7985611510791366,2.2522522522522523,-130,110,,

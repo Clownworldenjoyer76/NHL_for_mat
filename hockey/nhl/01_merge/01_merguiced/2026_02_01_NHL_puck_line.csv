@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_02_01,3:00 PM EST,2026_02_01_Carolina Hurricanes_Los Angeles Kings,Los Angeles Kings,Carolina Hurricanes,1.5,-1.5,0.5729020485655196,0.42709795143448037,1.7454990822670022,2.341383274355055,-160,140,,
+hockey,nhl,2026_02_01,6:30 PM EST,2026_02_01_Boston Bruins_Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,-1.5,1.5,0.14372682093905198,0.8562731790609477,6.957643628839843,1.1678515974267392,120,-140,,
+hockey,nhl,2026_02_01,9:30 PM EST,2026_02_01_Anaheim Ducks_Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,-1.5,1.5,0.28308309445159363,0.7169169055484063,3.532531682745884,1.3948617925742022,189,-225,,

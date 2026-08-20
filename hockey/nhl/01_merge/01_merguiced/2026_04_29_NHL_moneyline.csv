@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_29,19:20,380c27de2b84a263be1c51bd96c29a4c,Montreal Canadiens,Tampa Bay Lightning,0.399,0.601,2.506265664160401,1.663893510815308,142,-169,2.42,1.59
+hockey,nhl,2026_04_29,19:50,5c15c0058458a00ae3cce4d5171e658e,Pittsburgh Penguins,Philadelphia Flyers,0.483,0.517,2.070393374741201,1.9342359767891681,102,-122,2.02,1.82
+hockey,nhl,2026_04_29,22:20,4868659ab89eec9f59b336ce39d0d61e,Utah Mammoth,Vegas Golden Knights,0.461,0.539,2.1691973969631237,1.8552875695732838,140,-167,2.4,1.6

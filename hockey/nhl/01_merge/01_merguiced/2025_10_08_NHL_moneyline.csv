@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_08,7:00 PM EDT,2025_10_08_Toronto Maple Leafs_Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,0.369,0.631,2.710027100271003,1.5847860538827259,135,-160,,
+hockey,nhl,2025_10_08,7:30 PM EDT,2025_10_08_Washington Capitals_Boston Bruins,Boston Bruins,Washington Capitals,0.371,0.629,2.6954177897574123,1.589825119236884,165,-200,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Edmonton Oilers_Calgary Flames,Calgary Flames,Edmonton Oilers,0.34,0.66,2.941176470588235,1.5151515151515151,180,-220,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Vegas Golden Knights_Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,0.401,0.599,2.4937655860349124,1.669449081803005,155,-190,,

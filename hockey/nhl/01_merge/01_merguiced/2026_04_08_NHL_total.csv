@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_08,19:10,6fa535997519071d94f8b99009c37323,Buffalo Sabres,New York Rangers,6.5,6.21,0.4273875089726009,0.5726124910273991,2.3397969734864392,1.746381742748519,110,-130,2.1,1.77
+hockey,nhl,2026_04_08,19:40,ddad431e590f1bcd2f9d5838a22cd080,Washington Capitals,Toronto Maple Leafs,6.5,6.04,0.4001218586364651,0.5998781413635349,2.499238615475293,1.6670052316408466,-105,-115,1.95,1.87
+hockey,nhl,2026_04_08,22:10,a02ab4eeac994c0c08264e1685e2e7bc,Edmonton Oilers,San Jose Sharks,6.5,7.34,0.5996269282711499,0.4003730717288501,1.6677036217889838,2.497670474395049,-115,-105,1.87,1.95

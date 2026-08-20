@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_18,15:00,76d3bd29c4c5d001c2404fb6d3010c36,Ottawa Senators,Carolina Hurricanes,6.5,6.3,0.44176687300635464,0.5582331269936454,2.2636373641932526,1.7913662798649774,114,-135,2.14,1.74
+hockey,nhl,2026_04_18,17:30,ccf74c5469950496a135719b827ce942,Minnesota Wild,Dallas Stars,5.5,5.93,0.5430121891283849,0.4569878108716151,1.8415792868391192,2.1882421723518073,-125,105,1.8,2.05
+hockey,nhl,2026_04_18,20:00,7de0e0d303dfec588c53877e7150225b,Philadelphia Flyers,Pittsburgh Penguins,6.5,6.02,0.396909644774064,0.603090355225936,2.519465105387494,1.6581263343622359,110,-130,2.1,1.77

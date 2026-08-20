@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Washington Capitals_San Jose Sharks,San Jose Sharks,Washington Capitals,6.5,6.21,0.4273875089726009,0.5726124910273991,2.3397969734864392,1.746381742748519,-110,-110,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Buffalo Sabres_Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,6.0,6.31,0.5274242338224197,0.47257576617758046,1.8960069254927212,2.116062802137485,-110,-110,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Pittsburgh Penguins_Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,-110,-110,,
+hockey,nhl,2026_01_15,7:00 PM EST,2026_01_15_Columbus Blue Jackets_Vancouver Canucks,Vancouver Canucks,Columbus Blue Jackets,6.0,6.21,0.5088233096062543,0.49117669039374573,1.9653187680686952,2.035927232618393,-120,100,,
+hockey,nhl,2026_01_15,8:00 PM EST,2026_01_15_Minnesota Wild_Winnipeg Jets,Winnipeg Jets,Minnesota Wild,6.0,5.69,0.4092287708049937,0.5907712291950062,2.4436209556647266,1.6927026073402645,100,-120,,
+hockey,nhl,2026_01_15,8:00 PM EST,2026_01_15_Boston Bruins_Seattle Kraken,Seattle Kraken,Boston Bruins,6.0,5.81,0.4324597778958163,0.5675402221041836,2.3123537751085594,1.7619896547463194,-110,-110,,
+hockey,nhl,2026_01_15,8:30 PM EST,2026_01_15_Chicago Blackhawks_Calgary Flames,Calgary Flames,Chicago Blackhawks,6.0,5.71,0.41310282116383307,0.586897178836167,2.420704843367333,1.7038759702049124,-110,-110,,
+hockey,nhl,2026_01_15,9:00 PM EST,2026_01_15_Utah Mammoth_Dallas Stars,Dallas Stars,Utah Mammoth,6.0,5.71,0.41310282116383307,0.586897178836167,2.420704843367333,1.7038759702049124,-120,100,,
+hockey,nhl,2026_01_15,9:00 PM EST,2026_01_15_Edmonton Oilers_New York Islanders,New York Islanders,Edmonton Oilers,6.0,6.1,0.488088890083461,0.5119111099165391,2.0488071339403042,1.9534641476389092,-115,-105,,
+hockey,nhl,2026_01_15,9:30 PM EST,2026_01_15_Vegas Golden Knights_Toronto Maple Leafs,Toronto Maple Leafs,Vegas Golden Knights,6.0,5.93,0.4556058728148892,0.5443941271851108,2.1948795212442223,1.836904459588281,-115,-105,,

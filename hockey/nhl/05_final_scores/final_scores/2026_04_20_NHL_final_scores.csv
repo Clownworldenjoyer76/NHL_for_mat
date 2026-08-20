@@ -1,0 +1,4 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_04_20","dae0fa13fc78fd0dde5c02e1626ff783","Anaheim Ducks","Edmonton Oilers","3","4","7","-1","1"
+"hockey","nhl","2026_04_20","f9880d72af7d608cd1aaa81db25e2604","Minnesota Wild","Dallas Stars","2","4","6","-2","2"
+"hockey","nhl","2026_04_20","f8d13ed95a66c1dc6b5999ccab91bd36","Ottawa Senators","Carolina Hurricanes","2","3","5","-1","1"

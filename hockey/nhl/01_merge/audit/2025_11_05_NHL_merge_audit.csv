@@ -1,0 +1,6 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2025_11_05,2025_11_05_Toronto Maple Leafs_Utah Mammoth,Utah Mammoth,Toronto Maple Leafs,1,1,1,matched
+2025_11_05,2025_11_05_Washington Capitals_St Louis Blues,St Louis Blues,Washington Capitals,1,1,1,matched
+2025_11_05,2025_11_05_Calgary Flames_Columbus Blue Jackets,Columbus Blue Jackets,Calgary Flames,1,1,1,matched
+2025_11_05,2025_11_05_Vancouver Canucks_Chicago Blackhawks,Chicago Blackhawks,Vancouver Canucks,1,1,1,matched
+2025_11_05,2025_11_05_Seattle Kraken_San Jose Sharks,San Jose Sharks,Seattle Kraken,1,1,1,matched

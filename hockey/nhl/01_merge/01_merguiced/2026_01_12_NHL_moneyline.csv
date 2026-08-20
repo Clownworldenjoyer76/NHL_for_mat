@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_12,7:00 PM EST,2026_01_12_New York Rangers_Seattle Kraken,Seattle Kraken,New York Rangers,0.393,0.607,2.544529262086514,1.6474464579901154,125,-150,,
+hockey,nhl,2026_01_12,7:00 PM EST,2026_01_12_Philadelphia Flyers_Tampa Bay Lightning,Tampa Bay Lightning,Philadelphia Flyers,0.571,0.429,1.7513134851138354,2.331002331002331,-150,125,,
+hockey,nhl,2026_01_12,7:00 PM EST,2026_01_12_Detroit Red Wings_Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,0.573,0.427,1.7452006980802794,2.34192037470726,-150,125,,
+hockey,nhl,2026_01_12,7:00 PM EST,2026_01_12_Buffalo Sabres_Florida Panthers,Florida Panthers,Buffalo Sabres,0.515,0.485,1.941747572815534,2.061855670103093,-105,-115,,
+hockey,nhl,2026_01_12,7:30 PM EST,2026_01_12_Montreal Canadiens_Vancouver Canucks,Vancouver Canucks,Montreal Canadiens,0.377,0.623,2.6525198938992043,1.6051364365971108,154,-190,,
+hockey,nhl,2026_01_12,8:00 PM EST,2026_01_12_Minnesota Wild_New Jersey Devils,New Jersey Devils,Minnesota Wild,0.395,0.605,2.531645569620253,1.6528925619834711,145,-175,,
+hockey,nhl,2026_01_12,8:30 PM EST,2026_01_12_Chicago Blackhawks_Edmonton Oilers,Edmonton Oilers,Chicago Blackhawks,0.596,0.404,1.6778523489932886,2.4752475247524752,-170,140,,
+hockey,nhl,2026_01_12,10:00 PM EST,2026_01_12_Colorado Avalanche_Toronto Maple Leafs,Toronto Maple Leafs,Colorado Avalanche,0.306,0.694,3.2679738562091503,1.4409221902017293,200,-250,,
+hockey,nhl,2026_01_12,10:00 PM EST,2026_01_12_Los Angeles Kings_Dallas Stars,Dallas Stars,Los Angeles Kings,0.524,0.476,1.9083969465648853,2.100840336134454,-115,-105,,

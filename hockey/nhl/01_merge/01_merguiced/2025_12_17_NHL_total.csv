@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_17,7:00 PM EST,2025_12_17_Florida Panthers_Los Angeles Kings,Los Angeles Kings,Florida Panthers,5.5,5.49,0.4693665320322882,0.5306334679677118,2.130531113222212,1.884540008058535,-120,100,,
+hockey,nhl,2025_12_17,7:30 PM EST,2025_12_17_Detroit Red Wings_Utah Mammoth,Utah Mammoth,Detroit Red Wings,6.0,6.02,0.47285925798061623,0.5271407420193838,2.1147941657536347,1.897026581874843,-110,-110,,
+hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_St Louis Blues_Winnipeg Jets,Winnipeg Jets,St Louis Blues,5.5,5.85,0.5299361362247547,0.47006386377524534,1.8870198343595943,2.127370506570436,-110,-110,,
+hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_Nashville Predators_Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,6.0,6.03,0.4747689755734489,0.5252310244265511,2.1062875871199287,1.9039240895790632,-110,-110,,
+hockey,nhl,2025_12_17,10:00 PM EST,2025_12_17_Vegas Golden Knights_New Jersey Devils,New Jersey Devils,Vegas Golden Knights,5.5,6.0,0.5543203586353891,0.44567964136461097,1.8040109557977864,2.2437641462332336,100,-120,,

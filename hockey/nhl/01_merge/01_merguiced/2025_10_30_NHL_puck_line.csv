@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Ottawa Senators_Calgary Flames,Calgary Flames,Ottawa Senators,,,,,,,,,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Boston Bruins_Buffalo Sabres,Buffalo Sabres,Boston Bruins,-1.5,-1.5,0.2922541680520597,0.24731314472964838,3.421679172842005,4.043456732124591,-250.0,-210.0,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Philadelphia Flyers_Nashville Predators,Nashville Predators,Philadelphia Flyers,,,,,,,,,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Tampa Bay Lightning_Dallas Stars,Dallas Stars,Tampa Bay Lightning,,,,,,,,,,
+hockey,nhl,2025_10_30,7:30 PM EDT,2025_10_30_Carolina Hurricanes_New York Islanders,New York Islanders,Carolina Hurricanes,-1.5,-1.5,0.12594311281651738,0.45037473382247006,7.940092773924597,2.2203732245649968,-130.0,-130.0,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_Minnesota Wild_Pittsburgh Penguins,Pittsburgh Penguins,Minnesota Wild,-1.5,-1.5,0.21171752184373793,0.3284803867283932,4.723274631648431,3.0443217933339155,-170.0,-160.0,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_Winnipeg Jets_Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,,,,,,,,,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_St Louis Blues_Vancouver Canucks,Vancouver Canucks,St Louis Blues,-1.5,-1.5,0.15914874932140866,0.38445493628882865,6.283429836953674,2.601085083347017,-200.0,-170.0,,
+hockey,nhl,2025_10_30,9:00 PM EDT,2025_10_30_Edmonton Oilers_New York Rangers,New York Rangers,Edmonton Oilers,-1.5,-1.5,0.17106387888255348,0.3800174195681728,5.845769466542761,2.6314583187695324,-170.0,-185.0,,
+hockey,nhl,2025_10_30,10:00 PM EDT,2025_10_30_San Jose Sharks_New Jersey Devils,New Jersey Devils,San Jose Sharks,,,,,,,,,,
+hockey,nhl,2025_10_30,10:30 PM EDT,2025_10_30_Los Angeles Kings_Detroit Red Wings,Detroit Red Wings,Los Angeles Kings,,,,,,,,,,

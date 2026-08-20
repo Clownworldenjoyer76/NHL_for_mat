@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_01,1:10 PM,2026_03_01_Pittsburgh Penguins_Vegas Golden Knights,Vegas Golden Knights,Pittsburgh Penguins,6.5,6.32,0.4449545506795517,0.5550454493204483,2.2474205477228213,1.801654263131636,100,-120,,
+hockey,nhl,2026_03_01,4:10 PM,2026_03_01_Utah Mammoth_Chicago Blackhawks,Chicago Blackhawks,Utah Mammoth,6.5,5.86,0.3712223596047519,0.6287776403952481,2.6938032532973515,1.5903873416545196,105,-125,,
+hockey,nhl,2026_03_01,4:10 PM,2026_03_01_San Jose Sharks_Winnipeg Jets,Winnipeg Jets,San Jose Sharks,6.5,6.12,0.4129643635027249,0.5870356364972751,2.42151645124556,1.7034740956559318,100,-120,,
+hockey,nhl,2026_03_01,5:10 PM,2026_03_01_Minnesota Wild_St Louis Blues,St Louis Blues,Minnesota Wild,5.5,5.8,0.5216853128418241,0.47831468715817593,1.9168643919695738,2.090673832203078,-135,114,,
+hockey,nhl,2026_03_01,6:40 PM,2026_03_01_New York Islanders_Florida Panthers,Florida Panthers,New York Islanders,5.5,5.76,0.5150434175302715,0.4849565824697285,1.9415838858696322,2.0620402653518393,-130,110,,
+hockey,nhl,2026_03_01,8:10 PM,2026_03_01_Anaheim Ducks_Calgary Flames,Calgary Flames,Anaheim Ducks,6.5,6.45,0.465587537563809,0.534412462436191,2.14782381253697,1.8712138475239999,100,-120,,

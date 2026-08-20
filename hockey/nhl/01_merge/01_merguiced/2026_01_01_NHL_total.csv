@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_01_01,1:00 PM EST,2026_01_01_Ottawa Senators_Washington Capitals,Washington Capitals,Ottawa Senators,5.5,5.75,0.5133773967717442,0.4866226032282558,1.9478847457801418,2.0549805811854958,-118,-102,,
+hockey,nhl,2026_01_01,3:00 PM EST,2026_01_01_New York Islanders_Utah Mammoth,Utah Mammoth,New York Islanders,6.0,5.86,0.4421192059272913,0.5578807940727087,2.2618334299742116,1.7924976278528595,-110,-110,,
+hockey,nhl,2026_01_01,7:00 PM EST,2026_01_01_Los Angeles Kings_Tampa Bay Lightning,Tampa Bay Lightning,Los Angeles Kings,5.5,5.56,0.48133634791191393,0.5186636520880861,2.0775493152306113,1.928031771600157,-125,105,,
+hockey,nhl,2026_01_01,7:00 PM EST,2026_01_01_Pittsburgh Penguins_Detroit Red Wings,Detroit Red Wings,Pittsburgh Penguins,6.0,6.47,0.5565981254229028,0.44340187457709723,1.7966284008595985,2.2552904201268174,-110,-110,,
+hockey,nhl,2026_01_01,7:00 PM EST,2026_01_01_Carolina Hurricanes_Montreal Canadiens,Montreal Canadiens,Carolina Hurricanes,6.0,6.07,0.4823911013931748,0.5176088986068251,2.073006730663023,1.9319606032499808,-105,-115,,
+hockey,nhl,2026_01_01,7:00 PM EST,2026_01_01_Toronto Maple Leafs_Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,6.0,6.11,0.4899843412170889,0.5100156587829111,2.0408815463695547,1.9607241126407287,-110,-110,,
+hockey,nhl,2026_01_01,8:30 PM EST,2026_01_01_Chicago Blackhawks_Dallas Stars,Dallas Stars,Chicago Blackhawks,5.5,5.86,0.5315792166968157,0.46842078330318426,1.8811871656945278,2.134832688140467,-118,-102,,
+hockey,nhl,2026_01_01,10:00 PM EST,2026_01_01_Seattle Kraken_Nashville Predators,Nashville Predators,Seattle Kraken,5.5,5.8,0.5216853128418241,0.47831468715817593,1.9168643919695738,2.090673832203078,-118,-102,,

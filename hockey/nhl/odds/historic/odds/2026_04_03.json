@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1de936f832a2d7aed41e05852cacadcb",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-03T23:10:00Z",
+    "home_team": "New York Islanders",
+    "away_team": "Philadelphia Flyers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-03T10:27:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "New York Islanders",
+                "price": 1.68
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 2.24
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "New York Islanders",
+                "price": 2.8,
+                "point": -1.5
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 1.46,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.8,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.05,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d45f9e5f21f7e0880b1a5c17ccf1d1c7",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-04T02:10:00Z",
+    "home_team": "Anaheim Ducks",
+    "away_team": "St Louis Blues",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-03T10:27:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 1.7
+              },
+              {
+                "name": "St Louis Blues",
+                "price": 2.2
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 2.8,
+                "point": -1.5
+              },
+              {
+                "name": "St Louis Blues",
+                "price": 1.46,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-03T10:27:15Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.1,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.77,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_06_11,20:00,70558078,Vegas Golden Knights,Carolina Hurricanes,0.395,0.605,2.531645569620253,1.6528925619834711,132,-159,2.32,1.63

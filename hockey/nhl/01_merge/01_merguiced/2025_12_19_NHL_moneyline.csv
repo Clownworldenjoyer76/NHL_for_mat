@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_19,7:00 PM EST,2025_12_19_New York Islanders_Vancouver Canucks,Vancouver Canucks,New York Islanders,0.372,0.628,2.6881720430107525,1.5923566878980893,120,-145,,
+hockey,nhl,2025_12_19,7:00 PM EST,2025_12_19_Florida Panthers_Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,0.463,0.537,2.159827213822894,1.8621973929236497,-115,-105,,
+hockey,nhl,2025_12_19,9:00 PM EST,2025_12_19_Utah Mammoth_New Jersey Devils,New Jersey Devils,Utah Mammoth,0.445,0.555,2.247191011235955,1.8018018018018016,110,-135,,
+hockey,nhl,2025_12_19,9:00 PM EST,2025_12_19_Colorado Avalanche_Winnipeg Jets,Winnipeg Jets,Colorado Avalanche,0.287,0.713,3.4843205574912894,1.402524544179523,190,-235,,
+hockey,nhl,2025_12_19,10:00 PM EST,2025_12_19_Anaheim Ducks_Dallas Stars,Dallas Stars,Anaheim Ducks,0.525,0.475,1.9047619047619047,2.1052631578947367,-115,-105,,

@@ -1,0 +1,117 @@
+## NHL Pipeline Audit — Findings & Proposed Changes
+
+### Issues & Bugs
+
+* **Bookmaker mismatch: FanDuel data is labeled as DraftKings.**
+  The odds pull is hardcoded to `BOOKMAKER = "FanDuel"`, but the transformed sportsbook columns are named `home_dk_*`, `away_dk_*`, and `dk_total_*`. This carries through merge, juice, edge, selection, grading, and reports. That makes the output misleading and can corrupt later backtests if you think the prices came from DraftKings. Proposed change: rename columns to neutral names like `book_odds_*` plus a `bookmaker` column, or rename everything to `fanduel_*`.
+
+* **The games table is built from sportsbook odds, not from an independent NHL schedule source.**
+  `build_games.py` reads sportsbook files and creates game files from those rows. If a game has no odds, stale odds, missing odds, or a bad sportsbook row, the game can disappear from the pipeline. Proposed change: use an NHL schedule/API file as the game source of truth, then join sportsbook/predictions to that.
+
+* **Workflow ordering can create stale or missing game files.**
+  The intake workflow runs `build_games.py` before scraping predictions, but `build_games.py` depends on existing sportsbook files from the separate odds workflow. If odds were not pulled first, intake can fail or use old sportsbook files. Proposed change: make one ordered workflow: odds pull → odds transform/name normalization → build games → scrape predictions → prediction transform/name normalization → merge.
+
+* **Odds pull only captures today’s pending ET slate.**
+  `nhl_odds_pull.py` builds a one-day ET window and requests only `status=pending` events. If the workflow misses a day or runs after status changes, the pipeline cannot reliably backfill the pregame odds. Proposed change: add date-controlled backfill support and save timestamped odds snapshots.
+
+* **Total-line selection can pick the wrong market row.**
+  The total parser chooses the total row with the closest over/under odds inside `4.5–7.5`, not necessarily the sportsbook’s main total. That can select an alternate total if its over/under prices are more balanced. Proposed change: identify the primary total explicitly from the odds payload if possible; otherwise log all candidate totals and apply a fixed priority rule.
+
+* **Puck-line probability math needs validation.**
+  The Skellam calculation uses a threshold based on `floor(-line)` for both home and away puck-line probabilities. It may be mathematically valid for some lines, but this is fragile enough that it needs unit tests for `-1.5`, `+1.5`, and edge cases. Proposed change: add test fixtures with known score-margin probabilities before trusting puck-line EV.
+
+* **The juice layer may be distorting model probabilities instead of correcting market price.**
+  The juice scripts apply `extra_juice` to the model fair decimal, then normalize the resulting probabilities. That means the config can materially change the model probability before EV/Kelly is computed. This is not clearly “removing juice”; it is a model adjustment layer. Proposed change: rename it to “probability adjustment” or rebuild it as true vig removal from sportsbook odds.
+
+* **Moneyline juice config contains extreme negative adjustments.**
+  Example: one home underdog band has `extra_juice = -0.7231`, which makes the fair decimal much larger and the implied model probability much lower. That can radically alter edges. Proposed change: audit every `extra_juice` value, cap allowed adjustments, and require a reason/source for outliers.
+
+* **Puck-line juice behavior is inconsistent with moneyline and totals.**
+  Moneyline and total rows with bad juiced decimals are skipped, but puck-line rows are capped to `1.01`, creating near-99% implied probability before normalization. Proposed change: use one consistent behavior across markets: either fail the row, cap with a warning threshold, or exclude it from edge calculation.
+
+* **Skipped/bad rows are still written downstream.**
+  The juice scripts initialize derived fields as blank/NA, skip bad rows, then still write the entire dataframe. Later stages may silently carry rows with missing model probabilities/edges. Proposed change: split outputs into `valid.csv` and `rejected.csv`, or hard-fail if skipped rows exceed zero.
+
+* **`edge_decimal` and `ev` are effectively the same formula.**
+  `compute_edges.py` calculates decimal edge as `model_prob * book_decimal - 1`; `compute_ev_kelly.py` later calculates EV the same way. Proposed change: keep one canonical field, or define “edge” as probability edge and “EV” as payout-weighted expected value.
+
+* **Some scripts log errors but still allow workflows to succeed.**
+  `compute_edges.py` and `compute_ev_kelly.py` catch schema/file errors per file and continue; the summary can show errors without a non-zero exit. Stage 05 scripts also return normally when key input files are missing or empty. Proposed change: fail the workflow when schema errors, empty core outputs, or unmatched rows exist.
+
+* **Selection config can allow both sides of a market.**
+  `markets.yaml` has `pick_preference: all` for moneyline and puck line. That means both sides can be selected if both pass filters. Proposed change: use `best_ev` or add a hard rule: one side per game per market.
+
+* **Puck-line selection currently only allows heavy negative odds.**
+  Both home and away puck-line odds bands are `-999` to `-200`, which excludes most plus-money puck-line plays. That may be intended, but it is very restrictive and should be explicitly confirmed by backtest results.
+
+* **The under-total EV band has suspicious formatting.**
+  The config uses `[0.05, 00.075]`. YAML likely parses it as `0.075`, but the leading zeros are sloppy and should be cleaned. Proposed change: normalize config formatting and validate all config values before selection runs.
+
+* **Final score transform can silently do nothing.**
+  If no raw files exist, `transform_final_scores.py` logs and returns `0`, so the workflow can pass without producing final score data. Proposed change: fail when final-score mode expects completed games but none are found.
+
+---
+
+### Code Efficiency
+
+* **The pipeline reprocesses the full season every run.**
+  The latest merge log shows 211 dates processed and 1,393 rows merged in one run. That is manageable now, but it will grow across seasons. Proposed change: process only changed dates by default and add explicit full-season rebuild mode.
+
+* **Many stages wipe and rewrite all CSV outputs.**
+  Merge, build-juice, edge, EV/Kelly, and select stages clear whole output folders before rebuilding. Proposed change: use date-partitioned incremental writes and only rewrite dates affected by changed input files.
+
+* **Several scripts use row-by-row pandas loops.**
+  `apply_moneyline_juice.py`, `apply_puck_line_juice.py`, `apply_total_juice.py`, and the report prep use row-wise processing. Proposed change: vectorize band joins with pandas merges/cuts and calculate all sides in column operations.
+
+* **Selection repeatedly scans dataframes by `game_id`.**
+  `row_for_game()` filters the dataframe for each game. Proposed change: set `game_id` as an index or prebuild dictionaries for moneyline/puck-line/total rows per slate.
+
+* **Pipeline workflow installs Playwright even when it does not scrape.**
+  `pipeline_nhl.yml` installs Playwright and Chromium, but that workflow only runs merge/juice/edges/select. Proposed change: remove Playwright from the non-intake pipeline workflow.
+
+* **CSV-only storage causes repeated parsing and larger commits.**
+  Every stage reads/writes CSV files. Proposed change: keep CSV exports for GitHub Pages/manual viewing, but store internal stage data as Parquet or SQLite for faster incremental processing.
+
+---
+
+### Ideas for Improvement Before Next Season
+
+* **Create one canonical schema.**
+  Add a schema file defining required columns, types, accepted market names, side names, date format, sportsbook naming, and allowed nulls. Then every stage validates against the same schema.
+
+* **Add a real schedule source.**
+  Use NHL schedule data as the base table. Odds, predictions, final scores, and selections should all join to schedule by `game_id`, not create the schedule from odds.
+
+* **Add timestamped odds snapshots.**
+  Store each odds pull with `pulled_at`, `bookmaker`, `game_id`, `market`, `side`, `line`, and odds. Then select from latest pregame snapshot, closing snapshot, or user-selected snapshot.
+
+* **Add a backfill mode.**
+  Support a date range for odds transform, predictions transform, final scores, grading, and reports. After next season, you should be able to rebuild any slate or full season without relying on today’s files.
+
+* **Separate rejected rows from valid rows.**
+  Every stage should write a rejected-row CSV with reason codes. Examples: missing game ID, missing odds, missing model probability, no juice band, invalid total, duplicate game, unmatched final score.
+
+* **Add unit tests for calculation logic.**
+  Minimum tests: American/decimal conversion, moneyline EV, Kelly, puck-line Skellam probability, total push handling, juice band lookup, config range parsing, grading outcomes, and one-side-per-market selection.
+
+* **Calibrate markets separately.**
+  Backtest moneyline, puck line, over, and under independently. Do not use one broad “juice” adjustment without validating ROI, Brier score, log loss, and calibration by probability band.
+
+* **Track closing-line value.**
+  Add closing odds and line movement. For each selected bet, store open, selected, and closing price. This will tell whether the model beats the market even when short-term results are noisy.
+
+* **Make config safer.**
+  Add a config validator that checks for overlapping bands, missing bands, impossible ranges, extreme `extra_juice`, unsupported `pick_preference`, and suspicious values like leading-zero decimals.
+
+* **Fix reporting labels.**
+  Reports still use `dk_odds_*`, so results reports inherit the FanDuel/DK mismatch. Rename report fields after the bookmaker cleanup so ROI reports do not mislabel the sportsbook source.
+
+## Priority Order
+
+1. **Fix bookmaker naming/source-of-truth issue.**
+2. **Move games schedule away from sportsbook-derived files.**
+3. **Add hard failure gates for empty outputs, schema errors, missing game IDs, and skipped rows.**
+4. **Validate/rebuild juice logic and config values.**
+5. **Fix total-line selection logic.**
+6. **Convert full-season rebuilds into date-partitioned incremental processing.**
+7. **Add tests before next season starts.**

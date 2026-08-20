@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_09,4:10 PM,2026_03_09_Columbus Blue Jackets_Los Angeles Kings,Los Angeles Kings,Columbus Blue Jackets,0.457,0.543,2.1881838074398248,1.8416206261510129,114,-135,,
+hockey,nhl,2026_03_09,7:10 PM,2026_03_09_Washington Capitals_Calgary Flames,Calgary Flames,Washington Capitals,0.378,0.622,2.6455026455026456,1.607717041800643,160,-192,,
+hockey,nhl,2026_03_09,7:10 PM,2026_03_09_Philadelphia Flyers_New York Rangers,New York Rangers,Philadelphia Flyers,0.447,0.553,2.237136465324385,1.8083182640144664,120,-142,,
+hockey,nhl,2026_03_09,8:40 PM,2026_03_09_Chicago Blackhawks_Utah Mammoth,Utah Mammoth,Chicago Blackhawks,0.67,0.33,1.4925373134328357,3.0303030303030303,-192,160,,
+hockey,nhl,2026_03_09,9:10 PM,2026_03_09_Vancouver Canucks_Ottawa Senators,Ottawa Senators,Vancouver Canucks,0.638,0.362,1.567398119122257,2.7624309392265194,-218,180,,

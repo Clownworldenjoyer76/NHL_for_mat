@@ -1,0 +1,11 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2026_01_13_Pittsburgh Penguins_Tampa Bay Lightning,hockey,nhl,2026_01_13,7:00 PM EST,Pittsburgh Penguins,Tampa Bay Lightning
+2026_01_13_Ottawa Senators_Vancouver Canucks,hockey,nhl,2026_01_13,7:00 PM EST,Ottawa Senators,Vancouver Canucks
+2026_01_13_Washington Capitals_Montreal Canadiens,hockey,nhl,2026_01_13,7:00 PM EST,Washington Capitals,Montreal Canadiens
+2026_01_13_Columbus Blue Jackets_Calgary Flames,hockey,nhl,2026_01_13,7:00 PM EST,Columbus Blue Jackets,Calgary Flames
+2026_01_13_Boston Bruins_Detroit Red Wings,hockey,nhl,2026_01_13,7:30 PM EST,Boston Bruins,Detroit Red Wings
+2026_01_13_St Louis Blues_Carolina Hurricanes,hockey,nhl,2026_01_13,7:30 PM EST,St Louis Blues,Carolina Hurricanes
+2026_01_13_Nashville Predators_Edmonton Oilers,hockey,nhl,2026_01_13,8:00 PM EST,Nashville Predators,Edmonton Oilers
+2026_01_13_Winnipeg Jets_New York Islanders,hockey,nhl,2026_01_13,8:00 PM EST,Winnipeg Jets,New York Islanders
+2026_01_13_Anaheim Ducks_Dallas Stars,hockey,nhl,2026_01_13,10:00 PM EST,Anaheim Ducks,Dallas Stars
+2026_01_13_Utah Mammoth_Toronto Maple Leafs,hockey,nhl,2026_01_13,10:00 PM EST,Utah Mammoth,Toronto Maple Leafs

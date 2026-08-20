@@ -1,0 +1,6 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+0edf2e1dfaf8c8ff0b583a60913e17f8,hockey,nhl,2026_03_30,19:00,New York Islanders,Pittsburgh Penguins
+29827972b39eb13518d4cd9fd2962bbe,hockey,nhl,2026_03_30,20:30,Colorado Avalanche,Calgary Flames
+13095d16b56b868a3d8966899240afe5,hockey,nhl,2026_03_30,22:00,Anaheim Ducks,Toronto Maple Leafs
+f4d072c37cf82f7ed923377f6bbd4879,hockey,nhl,2026_03_30,22:00,San Jose Sharks,St Louis Blues
+92e007535e73b24db74fa534ef960845,hockey,nhl,2026_03_30,22:00,Vegas Golden Knights,Vancouver Canucks

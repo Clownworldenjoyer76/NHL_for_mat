@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_23,1:00 PM EST,2025_11_23_Buffalo Sabres_Carolina Hurricanes,Carolina Hurricanes,Buffalo Sabres,0.568,0.432,1.7605633802816902,2.314814814814815,-190,155,,
+hockey,nhl,2025_11_23,4:00 PM EST,2025_11_23_Winnipeg Jets_Minnesota Wild,Minnesota Wild,Winnipeg Jets,0.411,0.589,2.4330900243309004,1.697792869269949,100,-120,,
+hockey,nhl,2025_11_23,5:00 PM EST,2025_11_23_New York Islanders_Seattle Kraken,Seattle Kraken,New York Islanders,0.423,0.577,2.3640661938534278,1.733102253032929,135,-160,,
+hockey,nhl,2025_11_23,7:00 PM EST,2025_11_23_Chicago Blackhawks_Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,0.639,0.361,1.5649452269170578,2.770083102493075,-210,170,,
+hockey,nhl,2025_11_23,8:00 PM EST,2025_11_23_San Jose Sharks_Boston Bruins,Boston Bruins,San Jose Sharks,0.521,0.479,1.9193857965451055,2.0876826722338206,-135,110,,
+hockey,nhl,2025_11_23,9:00 PM EST,2025_11_23_Vancouver Canucks_Calgary Flames,Calgary Flames,Vancouver Canucks,0.419,0.581,2.3866348448687353,1.721170395869191,125,-155,,

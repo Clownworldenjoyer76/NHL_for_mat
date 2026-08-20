@@ -1,0 +1,5 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+fe2964a4d81fc7d5106b2adb91a0eea7,hockey,nhl,2026_04_06,19:00,Buffalo Sabres,Tampa Bay Lightning
+6d82b1e5218e93552d9ecf472339de25,hockey,nhl,2026_04_06,19:30,Winnipeg Jets,Seattle Kraken
+8ebdedac2e58e94bed89333cd792d164,hockey,nhl,2026_04_06,22:00,San Jose Sharks,Chicago Blackhawks
+39339d355c5e85fc42b06ea3c942c5b4,hockey,nhl,2026_04_06,22:30,Los Angeles Kings,Nashville Predators

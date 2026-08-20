@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_22,19:10,f0b24d77783a06281b031dd344143437,Pittsburgh Penguins,Philadelphia Flyers,0.475,0.525,2.1052631578947367,1.9047619047619047,-105,-115,1.95,1.87
+hockey,nhl,2026_04_22,21:40,5f5b84958bdfdccd00b3c51b7c26f1a1,Dallas Stars,Minnesota Wild,0.502,0.498,1.9920318725099602,2.0080321285140563,110,-130,2.1,1.77
+hockey,nhl,2026_04_22,22:10,36ed21131d3e0f66cdddfaf605807019,Anaheim Ducks,Edmonton Oilers,0.45,0.55,2.2222222222222223,1.8181818181818181,164,-196,2.64,1.51

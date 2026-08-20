@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_21,1:10 PM,2026_03_21_Pittsburgh Penguins_Winnipeg Jets,Winnipeg Jets,Pittsburgh Penguins,1.5,-1.5,0.640899821523382,0.3591001784766181,1.5603062544518387,2.784738242799599,-192,160,,
+hockey,nhl,2026_03_21,2:10 PM,2026_03_21_Nashville Predators_Vegas Golden Knights,Vegas Golden Knights,Nashville Predators,-1.5,1.5,0.33035155943835204,0.6696484405616479,3.0270781881585553,1.4933208821650947,195,-238,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Minnesota Wild_Dallas Stars,Dallas Stars,Minnesota Wild,-1.5,1.5,0.27446053675456095,0.725539463245439,3.643511055632234,1.3782847807159389,215,-265,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Los Angeles Kings_Buffalo Sabres,Buffalo Sabres,Los Angeles Kings,-1.5,1.5,0.2742537314916992,0.7257462685083012,3.6462585014281452,1.3778920311301082,210,-258,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_San Jose Sharks_Philadelphia Flyers,Philadelphia Flyers,San Jose Sharks,1.5,-1.5,0.796523705364461,0.20347629463553907,1.255455416160446,4.914577404661174,-265,215,,
+hockey,nhl,2026_03_21,5:10 PM,2026_03_21_Columbus Blue Jackets_Seattle Kraken,Seattle Kraken,Columbus Blue Jackets,1.5,-1.5,0.5755601040248199,0.42443989597518017,1.73743800692078,2.3560461904798804,-170,142,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Ottawa Senators_Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,1.5,-1.5,0.5499982899145972,0.4500017100854028,1.8181874713742807,2.2222137773881276,-110,-110,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Vancouver Canucks_St Louis Blues,St Louis Blues,Vancouver Canucks,-1.5,1.5,0.30972592077902716,0.6902740792209727,3.228660996421563,1.448699915153379,190,-230,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Montreal Canadiens_New York Islanders,New York Islanders,Montreal Canadiens,1.5,-1.5,0.6630206252103821,0.33697937478961804,1.5082487059624903,2.9675406710702013,-230,190,,
+hockey,nhl,2026_03_21,8:10 PM,2026_03_21_Detroit Red Wings_Boston Bruins,Boston Bruins,Detroit Red Wings,1.5,-1.5,0.6852498243941857,0.3147501756058143,1.4593217895153465,3.1771229295591445,-250,205,,
+hockey,nhl,2026_03_21,10:10 PM,2026_03_21_Edmonton Oilers_Tampa Bay Lightning,Tampa Bay Lightning,Edmonton Oilers,-1.5,1.5,0.4269135801248556,0.5730864198751444,2.342394448327315,1.7449375265564053,170,-205,,

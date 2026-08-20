@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_02_27,7:10 PM,2026_02_27_Florida Panthers_Buffalo Sabres,Buffalo Sabres,Florida Panthers,6.5,6.12,0.4129643635027249,0.5870356364972751,2.42151645124556,1.7034740956559318,105,-125,,
+hockey,nhl,2026_02_27,7:10 PM,2026_02_27_Washington Capitals_Vegas Golden Knights,Vegas Golden Knights,Washington Capitals,5.5,6.11,0.5718230918727744,0.42817690812722564,1.7487926147314303,2.335483257081362,-130,110,,
+hockey,nhl,2026_02_27,9:10 PM,2026_02_27_Utah Mammoth_Minnesota Wild,Minnesota Wild,Utah Mammoth,6.5,5.9,0.3776394016576141,0.6223605983423859,2.64802876927193,1.6067855237999167,-105,-115,,
+hockey,nhl,2026_02_27,10:10 PM,2026_02_27_Anaheim Ducks_Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,6.5,6.13,0.4145685323253435,0.5854314676746565,2.4121464173629654,1.7081418666680432,110,-130,,

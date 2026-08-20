@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_10_15,7:00 PM EDT,2025_10_15_Buffalo Sabres_Ottawa Senators,Ottawa Senators,Buffalo Sabres,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,-115,-105,,
+hockey,nhl,2025_10_15,7:00 PM EDT,2025_10_15_Detroit Red Wings_Florida Panthers,Florida Panthers,Detroit Red Wings,6.0,6.04,0.47667706284082856,0.5233229371591714,2.097856343328856,1.9108659854055752,-102,-118,,
+hockey,nhl,2025_10_15,9:30 PM EDT,2025_10_15_Utah Mammoth_Calgary Flames,Calgary Flames,Utah Mammoth,5.5,5.85,0.5299361362247547,0.47006386377524534,1.8870198343595943,2.127370506570436,-120,100,,
+hockey,nhl,2025_10_15,9:30 PM EDT,2025_10_15_St Louis Blues_Chicago Blackhawks,Chicago Blackhawks,St Louis Blues,6.0,5.72,0.41503974434075647,0.5849602556592436,2.4094078064460707,1.7095178524103511,100,-120,,

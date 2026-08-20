@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_23,6:45 PM EDT,2025_10_23_Tampa Bay Lightning_Chicago Blackhawks,Chicago Blackhawks,Tampa Bay Lightning,0.294,0.706,3.4013605442176873,1.41643059490085,240,-300,,
+hockey,nhl,2025_10_23,7:00 PM EDT,2025_10_23_Florida Panthers_Pittsburgh Penguins,Pittsburgh Penguins,Florida Panthers,0.362,0.638,2.7624309392265194,1.567398119122257,180,-220,,
+hockey,nhl,2025_10_23,7:00 PM EDT,2025_10_23_Boston Bruins_Anaheim Ducks,Anaheim Ducks,Boston Bruins,0.461,0.539,2.1691973969631237,1.8552875695732838,100,-120,,
+hockey,nhl,2025_10_23,7:00 PM EDT,2025_10_23_Ottawa Senators_Philadelphia Flyers,Philadelphia Flyers,Ottawa Senators,0.443,0.557,2.2573363431151243,1.7953321364452421,135,-160,,
+hockey,nhl,2025_10_23,7:00 PM EDT,2025_10_23_New York Islanders_Detroit Red Wings,Detroit Red Wings,New York Islanders,0.486,0.514,2.05761316872428,1.9455252918287937,115,-140,,
+hockey,nhl,2025_10_23,7:00 PM EDT,2025_10_23_New York Rangers_San Jose Sharks,San Jose Sharks,New York Rangers,0.28,0.72,3.571428571428571,1.3888888888888888,240,-300,,
+hockey,nhl,2025_10_23,8:00 PM EDT,2025_10_23_St Louis Blues_Utah Mammoth,Utah Mammoth,St Louis Blues,0.482,0.518,2.074688796680498,1.9305019305019304,100,-120,,
+hockey,nhl,2025_10_23,8:00 PM EDT,2025_10_23_Nashville Predators_Vancouver Canucks,Vancouver Canucks,Nashville Predators,0.48,0.52,2.0833333333333335,1.923076923076923,-105,-115,,
+hockey,nhl,2025_10_23,8:00 PM EDT,2025_10_23_Winnipeg Jets_Seattle Kraken,Seattle Kraken,Winnipeg Jets,0.364,0.636,2.7472527472527473,1.572327044025157,195,-235,,
+hockey,nhl,2025_10_23,9:00 PM EDT,2025_10_23_Edmonton Oilers_Montreal Canadiens,Montreal Canadiens,Edmonton Oilers,0.374,0.626,2.6737967914438503,1.597444089456869,195,-235,,
+hockey,nhl,2025_10_23,9:00 PM EDT,2025_10_23_Dallas Stars_Los Angeles Kings,Los Angeles Kings,Dallas Stars,0.467,0.533,2.141327623126338,1.8761726078799248,135,-165,,
+hockey,nhl,2025_10_23,9:00 PM EDT,2025_10_23_Colorado Avalanche_Carolina Hurricanes,Carolina Hurricanes,Colorado Avalanche,0.462,0.538,2.1645021645021645,1.858736059479554,105,-130,,

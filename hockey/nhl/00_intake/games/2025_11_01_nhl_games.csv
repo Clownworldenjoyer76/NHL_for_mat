@@ -1,0 +1,14 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2025_11_01_Boston Bruins_Carolina Hurricanes,hockey,nhl,2025_11_01,1:00 PM EDT,Boston Bruins,Carolina Hurricanes
+2025_11_01_Winnipeg Jets_Pittsburgh Penguins,hockey,nhl,2025_11_01,3:00 PM EDT,Winnipeg Jets,Pittsburgh Penguins
+2025_11_01_Nashville Predators_Calgary Flames,hockey,nhl,2025_11_01,3:30 PM EDT,Nashville Predators,Calgary Flames
+2025_11_01_San Jose Sharks_Colorado Avalanche,hockey,nhl,2025_11_01,4:00 PM EDT,San Jose Sharks,Colorado Avalanche
+2025_11_01_Florida Panthers_Dallas Stars,hockey,nhl,2025_11_01,6:00 PM EDT,Florida Panthers,Dallas Stars
+2025_11_01_Buffalo Sabres_Washington Capitals,hockey,nhl,2025_11_01,7:00 PM EDT,Buffalo Sabres,Washington Capitals
+2025_11_01_Philadelphia Flyers_Toronto Maple Leafs,hockey,nhl,2025_11_01,7:00 PM EDT,Philadelphia Flyers,Toronto Maple Leafs
+2025_11_01_Montreal Canadiens_Ottawa Senators,hockey,nhl,2025_11_01,7:00 PM EDT,Montreal Canadiens,Ottawa Senators
+2025_11_01_Minnesota Wild_Vancouver Canucks,hockey,nhl,2025_11_01,7:00 PM EDT,Minnesota Wild,Vancouver Canucks
+2025_11_01_Columbus Blue Jackets_St Louis Blues,hockey,nhl,2025_11_01,7:00 PM EDT,Columbus Blue Jackets,St Louis Blues
+2025_11_01_Los Angeles Kings_New Jersey Devils,hockey,nhl,2025_11_01,9:00 PM EDT,Los Angeles Kings,New Jersey Devils
+2025_11_01_Seattle Kraken_New York Rangers,hockey,nhl,2025_11_01,10:00 PM EDT,Seattle Kraken,New York Rangers
+2025_11_01_Edmonton Oilers_Chicago Blackhawks,hockey,nhl,2025_11_01,10:00 PM EDT,Edmonton Oilers,Chicago Blackhawks

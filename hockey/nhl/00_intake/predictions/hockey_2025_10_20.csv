@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_10_20_New York Rangers_Minnesota Wild","2025_10_20","07:07 PM","New York Rangers","Minnesota Wild","0.56","0.44","2.62","3.27","5.89"
+"hockey","nhl","2025_10_20_Philadelphia Flyers_Seattle Kraken","2025_10_20","07:07 PM","Philadelphia Flyers","Seattle Kraken","0.569","0.431","2.49","3.23","5.72"
+"hockey","nhl","2025_10_20_Montreal Canadiens_Buffalo Sabres","2025_10_20","07:37 PM","Montreal Canadiens","Buffalo Sabres","0.557","0.443","2.77","3.38","6.15"
+"hockey","nhl","2025_10_20_Vegas Golden Knights_Carolina Hurricanes","2025_10_20","10:07 PM","Vegas Golden Knights","Carolina Hurricanes","0.513","0.487","2.89","3.03","5.92"
+"hockey","nhl","2025_10_20_Calgary Flames_Winnipeg Jets","2025_10_20","09:37 PM","Calgary Flames","Winnipeg Jets","0.437","0.563","3.09","2.41","5.50"

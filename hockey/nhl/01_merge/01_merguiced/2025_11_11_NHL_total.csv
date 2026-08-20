@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Ottawa Senators_Dallas Stars,Dallas Stars,Ottawa Senators,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-118,-102,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Boston Bruins_Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,6.0,6.19,0.5050733030763073,0.4949266969236928,1.9799106266539659,2.0205012302138528,-125,105,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Carolina Hurricanes_Washington Capitals,Washington Capitals,Carolina Hurricanes,6.0,5.94,0.4575282269247561,0.5424717730752439,2.185657498601627,1.8434138873826609,-120,100,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Montreal Canadiens_Los Angeles Kings,Los Angeles Kings,Montreal Canadiens,6.0,5.78,0.4266566216693116,0.5733433783306884,2.343805180117582,1.7441554883070927,-118,-102,,
+hockey,nhl,2025_11_11,8:00 PM EST,2025_11_11_St Louis Blues_Calgary Flames,Calgary Flames,St Louis Blues,6.0,5.68,0.40729174712268545,0.5927082528773145,2.455242481745591,1.6871707035383414,100,-120,,
+hockey,nhl,2025_11_11,8:00 PM EST,2025_11_11_Minnesota Wild_San Jose Sharks,San Jose Sharks,Minnesota Wild,6.5,6.31,0.44336110335278356,0.5566388966472164,2.2554978152972915,1.7964968061399678,-110,-110,,
+hockey,nhl,2025_11_11,9:30 PM EST,2025_11_11_Colorado Avalanche_Anaheim Ducks,Anaheim Ducks,Colorado Avalanche,6.5,6.55,0.4813349384539424,0.5186650615460576,2.0775553987666475,1.9280265322270984,-135,110,,
+hockey,nhl,2025_11_11,10:00 PM EST,2025_11_11_Vancouver Canucks_Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,6.0,5.73,0.4169765307902427,0.5830234692097572,2.3982165089839156,1.7151968193586133,100,-120,,
+hockey,nhl,2025_11_11,10:00 PM EST,2025_11_11_Seattle Kraken_Columbus Blue Jackets,Columbus Blue Jackets,Seattle Kraken,6.0,6.34,0.5329523988236977,0.4670476011763022,1.8763401801120385,2.141109380460168,-118,-102,,

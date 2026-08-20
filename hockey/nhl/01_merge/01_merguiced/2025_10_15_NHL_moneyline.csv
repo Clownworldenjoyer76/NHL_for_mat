@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_15,7:00 PM EDT,2025_10_15_Buffalo Sabres_Ottawa Senators,Ottawa Senators,Buffalo Sabres,0.511,0.489,1.9569471624266144,2.044989775051125,-120,100,,
+hockey,nhl,2025_10_15,7:00 PM EDT,2025_10_15_Detroit Red Wings_Florida Panthers,Florida Panthers,Detroit Red Wings,0.57,0.43,1.7543859649122808,2.3255813953488373,-145,118,,
+hockey,nhl,2025_10_15,9:30 PM EDT,2025_10_15_Utah Mammoth_Calgary Flames,Calgary Flames,Utah Mammoth,0.34,0.66,2.941176470588235,1.5151515151515151,185,-225,,
+hockey,nhl,2025_10_15,9:30 PM EDT,2025_10_15_St Louis Blues_Chicago Blackhawks,Chicago Blackhawks,St Louis Blues,0.345,0.655,2.8985507246376816,1.5267175572519083,195,-235,,

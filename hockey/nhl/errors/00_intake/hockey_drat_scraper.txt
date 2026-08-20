@@ -1,0 +1,15 @@
+=== hockey_drat_scraper RUN 2026-06-15T05:41:10.944534-04:00 ===
+2026-06-15T05:41:14.315271-04:00 | Column count distribution: {8: 16, 6: 3, 11: 32}
+2026-06-15T05:41:14.316472-04:00 | Upcoming games: 0
+2026-06-15T05:41:14.316513-04:00 | Completed games retained in raw JSON only: 16
+2026-06-15T05:41:14.316544-04:00 | No upcoming games found.
+2026-06-15T05:41:14.361479-04:00 | --- SUMMARY ---
+2026-06-15T05:41:14.361553-04:00 | Raw rows scraped: 51
+2026-06-15T05:41:14.361588-04:00 | Games parsed: 16
+2026-06-15T05:41:14.361620-04:00 | Parse errors: 0
+2026-06-15T05:41:14.361650-04:00 | Upcoming: 0
+2026-06-15T05:41:14.361679-04:00 | Completed retained in raw JSON only: 16
+2026-06-15T05:41:14.361706-04:00 | Files written: 2
+2026-06-15T05:41:14.361734-04:00 |   FILE: docs/win/hockey/nhl/00_intake/drat_raw/rows/2026_06_15_nhl_raw_rows.json (51 rows)
+2026-06-15T05:41:14.361760-04:00 |   FILE: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_15_nhl_raw.json (16 rows)
+2026-06-15T05:41:14.361787-04:00 | STATUS: SUCCESS

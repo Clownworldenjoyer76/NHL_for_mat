@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_01_07_Montreal Canadiens_Calgary Flames","2026_01_07","07:37 PM","Montreal Canadiens","Calgary Flames","0.573","0.427","2.52","3.31","5.83"
+"hockey","nhl","2026_01_07_Utah Mammoth_Ottawa Senators","2026_01_07","09:37 PM","Utah Mammoth","Ottawa Senators","0.549","0.451","2.65","3.18","5.83"
+"hockey","nhl","2026_01_07_Washington Capitals_Dallas Stars","2026_01_07","07:07 PM","Washington Capitals","Dallas Stars","0.524","0.476","2.79","3.05","5.84"
+"hockey","nhl","2026_01_07_Chicago Blackhawks_St Louis Blues","2026_01_07","09:37 PM","Chicago Blackhawks","St Louis Blues","0.497","0.503","2.83","2.81","5.64"
+"hockey","nhl","2026_01_07_Los Angeles Kings_San Jose Sharks","2026_01_07","10:37 PM","Los Angeles Kings","San Jose Sharks","0.657","0.343","2.32","3.54","5.86"

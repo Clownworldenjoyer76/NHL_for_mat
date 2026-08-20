@@ -1,0 +1,14 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2025_10_18_Buffalo Sabres_Florida Panthers,hockey,nhl,2025_10_18,1:00 PM EDT,Buffalo Sabres,Florida Panthers
+2025_10_18_Ottawa Senators_New York Islanders,hockey,nhl,2025_10_18,3:00 PM EDT,Ottawa Senators,New York Islanders
+2025_10_18_New Jersey Devils_Edmonton Oilers,hockey,nhl,2025_10_18,3:30 PM EDT,New Jersey Devils,Edmonton Oilers
+2025_10_18_St Louis Blues_Dallas Stars,hockey,nhl,2025_10_18,7:00 PM EDT,St Louis Blues,Dallas Stars
+2025_10_18_Columbus Blue Jackets_Tampa Bay Lightning,hockey,nhl,2025_10_18,7:00 PM EDT,Columbus Blue Jackets,Tampa Bay Lightning
+2025_10_18_Toronto Maple Leafs_Seattle Kraken,hockey,nhl,2025_10_18,7:00 PM EDT,Toronto Maple Leafs,Seattle Kraken
+2025_10_18_Montreal Canadiens_New York Rangers,hockey,nhl,2025_10_18,7:00 PM EDT,Montreal Canadiens,New York Rangers
+2025_10_18_Philadelphia Flyers_Minnesota Wild,hockey,nhl,2025_10_18,7:00 PM EDT,Philadelphia Flyers,Minnesota Wild
+2025_10_18_Winnipeg Jets_Nashville Predators,hockey,nhl,2025_10_18,7:00 PM EDT,Winnipeg Jets,Nashville Predators
+2025_10_18_Colorado Avalanche_Boston Bruins,hockey,nhl,2025_10_18,9:00 PM EDT,Colorado Avalanche,Boston Bruins
+2025_10_18_Los Angeles Kings_Carolina Hurricanes,hockey,nhl,2025_10_18,9:00 PM EDT,Los Angeles Kings,Carolina Hurricanes
+2025_10_18_Vegas Golden Knights_Calgary Flames,hockey,nhl,2025_10_18,10:00 PM EDT,Vegas Golden Knights,Calgary Flames
+2025_10_18_San Jose Sharks_Pittsburgh Penguins,hockey,nhl,2025_10_18,10:00 PM EDT,San Jose Sharks,Pittsburgh Penguins

@@ -1,0 +1,5 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","56ea1b51afea8960ca60b6d48714a1a3","2026_04_19","03:00 PM","Colorado Avalanche","Los Angeles Kings","0.685000","0.315000","2.32","3.65","5.97"
+"hockey","nhl","bedd26005f98ad01c4994501ba28ddf3","2026_04_19","05:45 PM","Tampa Bay Lightning","Montreal Canadiens","0.606000","0.394000","2.67","3.71","6.38"
+"hockey","nhl","e9eba9dd49f3a5847fe4689a6014e1c0","2026_04_19","07:30 PM","Buffalo Sabres","Boston Bruins","0.575000","0.425000","2.82","3.62","6.44"
+"hockey","nhl","bd7a28ff5a090949dde37ef2292ead64","2026_04_19","10:00 PM","Vegas Golden Knights","Utah Mammoth","0.551000","0.449000","2.72","3.27","5.99"

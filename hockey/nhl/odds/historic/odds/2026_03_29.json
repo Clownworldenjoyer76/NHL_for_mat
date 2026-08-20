@@ -1,0 +1,380 @@
+[
+  {
+    "id": "234e07ca5a6aa75da94b75dabce4eade",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T17:10:00Z",
+    "home_team": "New York Rangers",
+    "away_team": "Florida Panthers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": 2.3
+              },
+              {
+                "name": "New York Rangers",
+                "price": 1.65
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": 1.49,
+                "point": 1.5
+              },
+              {
+                "name": "New York Rangers",
+                "price": 2.7,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.74,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.14,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "709a97a11c79cdacda229a81aa0f7fdd",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T21:10:00Z",
+    "home_team": "Columbus Blue Jackets",
+    "away_team": "Boston Bruins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 2.3
+              },
+              {
+                "name": "Columbus Blue Jackets",
+                "price": 1.65
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 1.52,
+                "point": 1.5
+              },
+              {
+                "name": "Columbus Blue Jackets",
+                "price": 2.6,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.1,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.77,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "24108b60bfa8824523b3cfb70ea6fd53",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T21:10:00Z",
+    "home_team": "Carolina Hurricanes",
+    "away_team": "Montr\u00e9al Canadiens",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 1.56
+              },
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 2.5
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 2.42,
+                "point": -1.5
+              },
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 1.59,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.95,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.87,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1790fa92fa3f53f9547a2114c06cfbed",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T21:10:00Z",
+    "home_team": "Tampa Bay Lightning",
+    "away_team": "Nashville Predators",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Nashville Predators",
+                "price": 2.7
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 1.49
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Nashville Predators",
+                "price": 1.65,
+                "point": 1.5
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 2.3,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.91,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.91,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4b1b7e72da2cb32b6056a2feee9187c4",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T23:10:00Z",
+    "home_team": "New Jersey Devils",
+    "away_team": "Chicago Blackhawks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Chicago Blackhawks",
+                "price": 2.36
+              },
+              {
+                "name": "New Jersey Devils",
+                "price": 1.62
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Chicago Blackhawks",
+                "price": 1.54,
+                "point": 1.5
+              },
+              {
+                "name": "New Jersey Devils",
+                "price": 2.54,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.77,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.1,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b221479b627d3a8d9e9aff945d63cf46",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-03-29T23:10:00Z",
+    "home_team": "Philadelphia Flyers",
+    "away_team": "Dallas Stars",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-03-29T09:38:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Dallas Stars",
+                "price": 1.65
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 2.3
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Dallas Stars",
+                "price": 2.7,
+                "point": -1.5
+              },
+              {
+                "name": "Philadelphia Flyers",
+                "price": 1.49,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-03-29T09:38:17Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.8,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.05,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

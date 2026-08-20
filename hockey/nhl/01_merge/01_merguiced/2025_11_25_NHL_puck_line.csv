@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_25,9:00 PM EST,2025_11_25_Edmonton Oilers_Dallas Stars,Dallas Stars,Edmonton Oilers,1.5,-1.5,0.6909711877931157,0.30902881220688416,1.4472383475118369,3.235944224289787,-205,177,,

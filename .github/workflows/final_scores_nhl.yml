@@ -1,0 +1,109 @@
+name: Final Scores NHL
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  transform-final-scores:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy
+
+      - name: Create required NHL Stage 05 folders
+        run: |
+          mkdir -p docs/win/hockey/nhl/05_final_scores/final_scores
+          mkdir -p docs/win/hockey/nhl/05_final_scores/graded
+          mkdir -p docs/win/hockey/nhl/05_final_scores/intermediate
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/moneyline
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/puckline
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/total
+          mkdir -p docs/win/hockey/nhl/05_final_scores/errors
+          mkdir -p docs/win/hockey/nhl/errors/05_final_scores
+
+      - name: Run NHL final-score transform
+        run: |
+          python docs/win/hockey/nhl/scripts/05_final_scores/transform_final_scores.py
+
+      - name: Run NHL results grade
+        run: |
+          python docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py
+
+      - name: Run NHL results analyze
+        run: |
+          python docs/win/hockey/nhl/scripts/05_final_scores/02_nhl_results_analyze.py
+
+      - name: Run NHL results reports
+        run: |
+          python docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py
+
+      - name: Print Stage 05 logs
+        if: always()
+        run: |
+          echo "===== transform_final_scores log ====="
+          if [ -f docs/win/hockey/nhl/errors/05_final_scores/transform_final_scores.txt ]; then
+            cat docs/win/hockey/nhl/errors/05_final_scores/transform_final_scores.txt
+          else
+            echo "No transform_final_scores.txt log found."
+          fi
+
+          echo ""
+          echo "===== Stage 05 result-script logs ====="
+          find docs/win/hockey/nhl/05_final_scores/errors -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+      - name: Show generated Stage 05 files
+        if: always()
+        run: |
+          echo "===== Final score outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/final_scores -type f -name "*.csv" -print || true
+
+          echo ""
+          echo "===== Graded outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/graded -type f -name "*.csv" -print || true
+
+          echo ""
+          echo "===== Intermediate outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/intermediate -type f -name "*.csv" -print || true
+
+          echo ""
+          echo "===== Report outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/reports -type f -name "*.csv" -print || true
+
+          echo ""
+          echo "===== Market tally ====="
+          find docs/win/hockey/nhl/05_final_scores -maxdepth 1 -type f -name "nhl_market_tally.csv" -print || true
+
+      - name: Commit NHL Stage 05 outputs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs/win/hockey/nhl/05_final_scores/final_scores
+          git add docs/win/hockey/nhl/05_final_scores/graded
+          git add docs/win/hockey/nhl/05_final_scores/intermediate
+          git add docs/win/hockey/nhl/05_final_scores/reports
+          git add docs/win/hockey/nhl/05_final_scores/nhl_market_tally.csv
+          git add docs/win/hockey/nhl/05_final_scores/errors
+          git add docs/win/hockey/nhl/errors/05_final_scores
+
+          if git diff --cached --quiet; then
+            echo "No NHL Stage 05 changes to commit."
+          else
+            git commit -m "Run NHL stage 05 final scores reports"
+            git push
+          fi

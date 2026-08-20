@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_14,2:00 PM EST,2025_11_14_Nashville Predators_Pittsburgh Penguins,Pittsburgh Penguins,Nashville Predators,6.5,6.07,0.40493931612944056,0.5950606838705594,2.469505825115647,1.6805008751301154,-102,-118,,
+hockey,nhl,2025_11_14,7:00 PM EST,2025_11_14_Carolina Hurricanes_Vancouver Canucks,Vancouver Canucks,Carolina Hurricanes,6.0,6.08,0.48429222745408307,0.5157077725459168,2.0648689846974935,1.939082661219661,-120,100,,
+hockey,nhl,2025_11_14,8:00 PM EST,2025_11_14_St Louis Blues_Philadelphia Flyers,Philadelphia Flyers,St Louis Blues,5.5,5.69,0.5033364008980011,0.49666359910199886,1.9867428586843763,2.0134352543815717,-115,-105,,
+hockey,nhl,2025_11_14,9:00 PM EST,2025_11_14_Utah Mammoth_New York Islanders,New York Islanders,Utah Mammoth,6.5,6.17,0.42098155167208096,0.579018448327919,2.3754010027948667,1.7270606884595565,-105,-115,,

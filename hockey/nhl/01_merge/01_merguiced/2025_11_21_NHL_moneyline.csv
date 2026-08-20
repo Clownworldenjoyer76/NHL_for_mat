@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Buffalo Sabres_Chicago Blackhawks,Chicago Blackhawks,Buffalo Sabres,0.443,0.557,2.2573363431151243,1.7953321364452421,150,-185,,
+hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Pittsburgh Penguins_Minnesota Wild,Minnesota Wild,Pittsburgh Penguins,0.476,0.524,2.100840336134454,1.9083969465648853,-110,-110,,
+hockey,nhl,2025_11_21,8:00 PM EST,2025_11_21_Winnipeg Jets_Carolina Hurricanes,Carolina Hurricanes,Winnipeg Jets,0.485,0.515,2.061855670103093,1.941747572815534,-125,105,,
+hockey,nhl,2025_11_21,10:30 PM EST,2025_11_21_Los Angeles Kings_Boston Bruins,Boston Bruins,Los Angeles Kings,0.385,0.615,2.5974025974025974,1.6260162601626016,145,-175,,

@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_01,7:00 PM EST,2025_12_01_Philadelphia Flyers_Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,0.416,0.584,2.4038461538461537,1.7123287671232879,125,-150,,
+hockey,nhl,2025_12_01,7:00 PM EST,2025_12_01_New Jersey Devils_Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,0.41,0.59,2.4390243902439024,1.6949152542372883,135,-160,,
+hockey,nhl,2025_12_01,7:30 PM EST,2025_12_01_Buffalo Sabres_Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,0.528,0.472,1.8939393939393938,2.1186440677966103,-105,-115,,
+hockey,nhl,2025_12_01,8:00 PM EST,2025_12_01_St Louis Blues_Anaheim Ducks,Anaheim Ducks,St Louis Blues,0.466,0.534,2.1459227467811157,1.8726591760299625,135,-160,,
+hockey,nhl,2025_12_01,10:00 PM EST,2025_12_01_San Jose Sharks_Utah Mammoth,Utah Mammoth,San Jose Sharks,0.592,0.408,1.6891891891891893,2.450980392156863,-150,125,,

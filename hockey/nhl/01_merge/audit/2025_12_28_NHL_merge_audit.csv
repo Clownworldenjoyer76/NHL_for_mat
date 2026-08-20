@@ -1,0 +1,6 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2025_12_28,2025_12_28_Columbus Blue Jackets_New York Islanders,New York Islanders,Columbus Blue Jackets,1,1,1,matched
+2025_12_28,2025_12_28_Tampa Bay Lightning_Montreal Canadiens,Montreal Canadiens,Tampa Bay Lightning,1,1,1,matched
+2025_12_28,2025_12_28_Chicago Blackhawks_Pittsburgh Penguins,Pittsburgh Penguins,Chicago Blackhawks,1,1,1,matched
+2025_12_28,2025_12_28_Detroit Red Wings_Toronto Maple Leafs,Toronto Maple Leafs,Detroit Red Wings,1,1,1,matched
+2025_12_28,2025_12_28_Seattle Kraken_Philadelphia Flyers,Philadelphia Flyers,Seattle Kraken,1,1,1,matched

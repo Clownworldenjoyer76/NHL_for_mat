@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_25,15:10,ba2e152d04d7eb0f5891169a17d654d6,Carolina Hurricanes,Ottawa Senators,0.531,0.469,1.8832391713747645,2.1321961620469083,-125,105,1.8,2.05
+hockey,nhl,2026_04_25,17:40,6031286e148baa9052fdb432c6534b8e,Dallas Stars,Minnesota Wild,0.5,0.5,2.0,2.0,114,-135,2.14,1.74
+hockey,nhl,2026_04_25,20:10,63dc13d149982e8f2c908b42b236c912,Pittsburgh Penguins,Philadelphia Flyers,0.48,0.52,2.0833333333333335,1.923076923076923,100,-120,2.0,1.83

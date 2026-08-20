@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_06_11,20:00,70558078,Vegas Golden Knights,Carolina Hurricanes,1.5,-1.5,0.5790043838364721,0.420995616163528,1.7271026401804057,2.375321646132221,-200,158,1.5,2.58

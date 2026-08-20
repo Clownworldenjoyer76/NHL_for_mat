@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_New Jersey Devils_Florida Panthers,Florida Panthers,New Jersey Devils,0.461,0.539,2.60,3.02,5.62,,,6.0,135,-160,,,,,,,-110,-110,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Columbus Blue Jackets_Colorado Avalanche,Colorado Avalanche,Columbus Blue Jackets,0.595,0.405,3.71,2.71,6.42,,,6.0,-165,135,,,,,,,-118,-102,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Montreal Canadiens_Nashville Predators,Nashville Predators,Montreal Canadiens,0.457,0.543,2.70,3.17,5.87,-1.5,-1.5,6.0,135,-160,,,-180,-200,,,100,-120,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Philadelphia Flyers_Winnipeg Jets,Winnipeg Jets,Philadelphia Flyers,0.502,0.498,2.77,2.75,5.52,-1.5,-1.5,5.5,-140,115,,,-210,-210,,,-120,100,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Ottawa Senators_Seattle Kraken,Seattle Kraken,Ottawa Senators,0.451,0.549,2.66,3.18,5.84,-1.5,-1.5,6.0,125,-155,,,-190,-175,,,-102,-118,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Toronto Maple Leafs_New York Rangers,New York Rangers,Toronto Maple Leafs,0.427,0.573,2.59,3.38,5.97,,,6.0,125,-150,,,,,,,-110,-110,,
+hockey,nhl,2025_10_16,7:30 PM EDT,2025_10_16_New York Islanders_Edmonton Oilers,Edmonton Oilers,New York Islanders,0.583,0.417,3.52,2.63,6.15,,,6.0,-180,145,,,,,,,100,-120,,
+hockey,nhl,2025_10_16,8:00 PM EDT,2025_10_16_Dallas Stars_Vancouver Canucks,Vancouver Canucks,Dallas Stars,0.373,0.627,2.36,3.48,5.84,-1.5,-1.5,6.0,165,-200,,,-145,-175,,,100,-120,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Los Angeles Kings_Pittsburgh Penguins,Pittsburgh Penguins,Los Angeles Kings,0.363,0.637,2.35,3.52,5.87,-1.5,-1.5,6.0,170,-210,,,-140,-140,,,-105,-115,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Anaheim Ducks_Carolina Hurricanes,Carolina Hurricanes,Anaheim Ducks,0.619,0.381,3.58,2.50,6.08,-1.5,-1.5,6.0,-175,145,,,-160,-145,,,-110,-110,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Vegas Golden Knights_Boston Bruins,Boston Bruins,Vegas Golden Knights,0.346,0.654,2.28,3.51,5.79,,,6.0,185,-225,,,,,,,-115,-105,,

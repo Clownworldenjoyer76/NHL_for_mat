@@ -1,0 +1,6 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_12_28","2025_12_28_Columbus Blue Jackets_New York Islanders","New York Islanders","Columbus Blue Jackets","2","4","6","-2","2"
+"hockey","nhl","2025_12_28","2025_12_28_Seattle Kraken_Philadelphia Flyers","Philadelphia Flyers","Seattle Kraken","1","4","5","-3","3"
+"hockey","nhl","2025_12_28","2025_12_28_Chicago Blackhawks_Pittsburgh Penguins","Pittsburgh Penguins","Chicago Blackhawks","7","3","10","4","-4"
+"hockey","nhl","2025_12_28","2025_12_28_Tampa Bay Lightning_Montreal Canadiens","Montreal Canadiens","Tampa Bay Lightning","4","5","9","-1","1"
+"hockey","nhl","2025_12_28","2025_12_28_Detroit Red Wings_Toronto Maple Leafs","Toronto Maple Leafs","Detroit Red Wings","2","3","5","-1","1"

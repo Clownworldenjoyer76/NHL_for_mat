@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_10_20,7:00 PM EDT,2025_10_20_Philadelphia Flyers_Seattle Kraken,Seattle Kraken,Philadelphia Flyers,6.0,5.72,0.41503974434075647,0.5849602556592436,2.4094078064460707,1.7095178524103511,-102,-118,,
+hockey,nhl,2025_10_20,7:00 PM EDT,2025_10_20_New York Rangers_Minnesota Wild,Minnesota Wild,New York Rangers,5.5,5.89,0.5364939197656627,0.46350608023433726,1.8639540228839757,2.1574690012575988,-120,100,,
+hockey,nhl,2025_10_20,7:30 PM EDT,2025_10_20_Montreal Canadiens_Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,6.0,6.15,0.4975459613780877,0.5024540386219123,2.0098645705619442,1.9902317886481995,-110,-110,,
+hockey,nhl,2025_10_20,9:30 PM EDT,2025_10_20_Calgary Flames_Winnipeg Jets,Winnipeg Jets,Calgary Flames,6.0,5.5,0.3724883870460777,0.6275116129539223,2.6846474541937804,1.5935960058055996,100,-120,,
+hockey,nhl,2025_10_20,10:00 PM EDT,2025_10_20_Vegas Golden Knights_Carolina Hurricanes,Carolina Hurricanes,Vegas Golden Knights,6.0,5.92,0.45368234569202104,0.546317654307979,2.204185394242435,1.830436911775624,-110,-110,,

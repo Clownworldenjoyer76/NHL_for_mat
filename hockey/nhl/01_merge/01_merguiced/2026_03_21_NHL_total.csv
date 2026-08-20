@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_21,1:10 PM,2026_03_21_Pittsburgh Penguins_Winnipeg Jets,Winnipeg Jets,Pittsburgh Penguins,6.5,5.98,0.3904847905197315,0.6095152094802685,2.5609192067865423,1.6406481486371711,110,-130,,
+hockey,nhl,2026_03_21,2:10 PM,2026_03_21_Nashville Predators_Vegas Golden Knights,Vegas Golden Knights,Nashville Predators,6.5,6.17,0.42098155167208096,0.579018448327919,2.3754010027948667,1.7270606884595565,110,-130,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Minnesota Wild_Dallas Stars,Dallas Stars,Minnesota Wild,5.5,6.1,0.5702459197218777,0.4297540802781224,1.7536293823684412,2.32691217114875,-115,-105,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Los Angeles Kings_Buffalo Sabres,Buffalo Sabres,Los Angeles Kings,6.5,6.01,0.3953034445398603,0.6046965554601397,2.529702216898252,1.6537220048145584,105,-125,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_San Jose Sharks_Philadelphia Flyers,Philadelphia Flyers,San Jose Sharks,5.5,6.08,0.5670830516729668,0.43291694832703315,1.7634101337535542,2.3099118753941283,-135,114,,
+hockey,nhl,2026_03_21,5:10 PM,2026_03_21_Columbus Blue Jackets_Seattle Kraken,Seattle Kraken,Columbus Blue Jackets,6.5,6.17,0.42098155167208096,0.579018448327919,2.3754010027948667,1.7270606884595565,105,-125,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Ottawa Senators_Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,5.5,6.23,0.5905214731145457,0.4094785268854543,1.6934185216428634,2.4421305009718752,-142,120,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Vancouver Canucks_St Louis Blues,St Louis Blues,Vancouver Canucks,5.5,5.95,0.5462561148966317,0.45374388510336827,1.8306431227579583,2.203886449670144,-125,105,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Montreal Canadiens_New York Islanders,New York Islanders,Montreal Canadiens,5.5,6.12,0.5733974013945751,0.42660259860542493,1.743991161396744,2.3441019892261,-130,110,,
+hockey,nhl,2026_03_21,8:10 PM,2026_03_21_Detroit Red Wings_Boston Bruins,Boston Bruins,Detroit Red Wings,5.5,6.09,0.5686659009331669,0.43133409906683307,1.7585017817298774,2.3183884653762443,-130,110,,
+hockey,nhl,2026_03_21,10:10 PM,2026_03_21_Edmonton Oilers_Tampa Bay Lightning,Tampa Bay Lightning,Edmonton Oilers,6.5,7.01,0.5517779051136633,0.4482220948863367,1.8123233836157417,2.231036826182313,-130,110,,

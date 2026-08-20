@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_19,12:30 PM EDT,2025_10_19_Washington Capitals_Vancouver Canucks,Vancouver Canucks,Washington Capitals,0.398,0.602,2.5125628140703515,1.6611295681063123,125,-155,,
+hockey,nhl,2025_10_19,3:00 PM EDT,2025_10_19_Detroit Red Wings_Edmonton Oilers,Edmonton Oilers,Detroit Red Wings,0.506,0.494,1.976284584980237,2.0242914979757085,-140,115,,
+hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Chicago Blackhawks_Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,0.508,0.492,1.968503937007874,2.032520325203252,-135,110,,
+hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Utah Mammoth_Boston Bruins,Boston Bruins,Utah Mammoth,0.373,0.627,2.680965147453083,1.594896331738437,195,-235,,

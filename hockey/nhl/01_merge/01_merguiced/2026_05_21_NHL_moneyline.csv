@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,NHL,2026_05_21,20:00,70558006,Montreal Canadiens,Carolina Hurricanes,0.406,0.594,2.463054187192118,1.6835016835016836,162,-196,2.62,1.51

@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_05_02,20:10,e525b26df615c89d31e7affabdb475e3,Philadelphia Flyers,Carolina Hurricanes,1.5,-1.5,0.5660648139703915,0.43393518602960857,1.7665821568840803,2.3044916203955106,-147,124,1.68,2.24

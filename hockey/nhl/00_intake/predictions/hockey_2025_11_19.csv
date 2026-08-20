@@ -1,0 +1,5 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_11_19_Anaheim Ducks_Boston Bruins","2025_11_19","10:07 PM","Anaheim Ducks","Boston Bruins","0.602","0.398","2.71","3.74","6.45"
+"hockey","nhl","2025_11_19_Buffalo Sabres_Calgary Flames","2025_11_19","07:37 PM","Buffalo Sabres","Calgary Flames","0.594","0.406","2.49","3.50","5.99"
+"hockey","nhl","2025_11_19_Minnesota Wild_Carolina Hurricanes","2025_11_19","09:55 PM","Minnesota Wild","Carolina Hurricanes","0.411","0.589","3.63","2.66","6.29"
+"hockey","nhl","2025_11_19_Washington Capitals_Edmonton Oilers","2025_11_19","07:07 PM","Washington Capitals","Edmonton Oilers","0.538","0.462","2.78","3.19","5.97"

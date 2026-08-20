@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_29,2:00 PM EST,2025_11_29_New York Rangers_Tampa Bay Lightning,Tampa Bay Lightning,New York Rangers,0.46,0.54,2.1739130434782608,1.8518518518518516,105,-125,,
+hockey,nhl,2025_11_29,3:00 PM EST,2025_11_29_Colorado Avalanche_Montreal Canadiens,Montreal Canadiens,Colorado Avalanche,0.288,0.712,3.4722222222222223,1.404494382022472,170,-210,,
+hockey,nhl,2025_11_29,4:00 PM EST,2025_11_29_Seattle Kraken_Edmonton Oilers,Edmonton Oilers,Seattle Kraken,0.548,0.452,1.824817518248175,2.2123893805309733,-160,135,,
+hockey,nhl,2025_11_29,7:00 PM EST,2025_11_29_Pittsburgh Penguins_Toronto Maple Leafs,Toronto Maple Leafs,Pittsburgh Penguins,0.487,0.513,2.053388090349076,1.949317738791423,-135,110,,
+hockey,nhl,2025_11_29,7:00 PM EST,2025_11_29_New Jersey Devils_Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,0.436,0.564,2.293577981651376,1.773049645390071,125,-150,,
+hockey,nhl,2025_11_29,7:00 PM EST,2025_11_29_Boston Bruins_Detroit Red Wings,Detroit Red Wings,Boston Bruins,0.525,0.475,1.9047619047619047,2.1052631578947367,-120,100,,
+hockey,nhl,2025_11_29,7:00 PM EST,2025_11_29_Nashville Predators_Winnipeg Jets,Winnipeg Jets,Nashville Predators,0.605,0.395,1.6528925619834711,2.531645569620253,-125,105,,
+hockey,nhl,2025_11_29,8:00 PM EST,2025_11_29_Minnesota Wild_Buffalo Sabres,Buffalo Sabres,Minnesota Wild,0.436,0.564,2.293577981651376,1.773049645390071,125,-150,,
+hockey,nhl,2025_11_29,8:00 PM EST,2025_11_29_St Louis Blues_Utah Mammoth,Utah Mammoth,St Louis Blues,0.561,0.439,1.7825311942959,2.277904328018223,105,-125,,
+hockey,nhl,2025_11_29,10:00 PM EST,2025_11_29_Los Angeles Kings_Vancouver Canucks,Vancouver Canucks,Los Angeles Kings,0.388,0.612,2.5773195876288657,1.6339869281045751,140,-170,,
+hockey,nhl,2025_11_29,10:00 PM EST,2025_11_29_Vegas Golden Knights_San Jose Sharks,San Jose Sharks,Vegas Golden Knights,0.323,0.677,3.095975232198142,1.4771048744460855,280,-350,,

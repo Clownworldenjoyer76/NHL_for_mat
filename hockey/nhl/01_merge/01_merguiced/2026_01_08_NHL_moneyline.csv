@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Montreal Canadiens_Florida Panthers,Florida Panthers,Montreal Canadiens,0.538,0.462,1.858736059479554,2.1645021645021645,-145,120,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Detroit Red Wings_Vancouver Canucks,Vancouver Canucks,Detroit Red Wings,0.401,0.599,2.4937655860349124,1.669449081803005,140,-170,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Pittsburgh Penguins_New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,0.497,0.503,2.0120724346076457,1.9880715705765408,-110,-110,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Philadelphia Flyers_Toronto Maple Leafs,Toronto Maple Leafs,Philadelphia Flyers,0.454,0.546,2.202643171806167,1.8315018315018314,105,-130,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Carolina Hurricanes_Anaheim Ducks,Anaheim Ducks,Carolina Hurricanes,0.345,0.655,2.8985507246376816,1.5267175572519083,180,-220,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_New York Rangers_Buffalo Sabres,Buffalo Sabres,New York Rangers,0.447,0.553,2.237136465324385,1.8083182640144664,-110,-110,,
+hockey,nhl,2026_01_08,7:00 PM EST,2026_01_08_Boston Bruins_Calgary Flames,Calgary Flames,Boston Bruins,0.445,0.555,2.247191011235955,1.8018018018018016,125,-150,,
+hockey,nhl,2026_01_08,8:00 PM EST,2026_01_08_Nashville Predators_New York Islanders,New York Islanders,Nashville Predators,0.523,0.477,1.9120458891013383,2.0964360587002098,100,-120,,
+hockey,nhl,2026_01_08,8:00 PM EST,2026_01_08_Winnipeg Jets_Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,0.503,0.497,1.9880715705765408,2.0120724346076457,-115,-105,,
+hockey,nhl,2026_01_08,9:00 PM EST,2026_01_08_Colorado Avalanche_Ottawa Senators,Ottawa Senators,Colorado Avalanche,0.301,0.699,3.3222591362126246,1.430615164520744,200,-250,,
+hockey,nhl,2026_01_08,10:00 PM EST,2026_01_08_Seattle Kraken_Minnesota Wild,Minnesota Wild,Seattle Kraken,0.583,0.417,1.7152658662092626,2.3980815347721824,-150,125,,
+hockey,nhl,2026_01_08,10:00 PM EST,2026_01_08_Vegas Golden Knights_Columbus Blue Jackets,Columbus Blue Jackets,Vegas Golden Knights,0.397,0.603,2.5188916876574305,1.658374792703151,150,-185,,

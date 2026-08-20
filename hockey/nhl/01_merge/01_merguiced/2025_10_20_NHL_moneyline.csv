@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_20,7:00 PM EDT,2025_10_20_Philadelphia Flyers_Seattle Kraken,Seattle Kraken,Philadelphia Flyers,0.431,0.569,2.320185614849188,1.7574692442882252,115,-140,,
+hockey,nhl,2025_10_20,7:00 PM EDT,2025_10_20_New York Rangers_Minnesota Wild,Minnesota Wild,New York Rangers,0.44,0.56,2.272727272727273,1.7857142857142856,100,-120,,
+hockey,nhl,2025_10_20,7:30 PM EDT,2025_10_20_Montreal Canadiens_Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,0.443,0.557,2.2573363431151243,1.7953321364452421,125,-150,,
+hockey,nhl,2025_10_20,9:30 PM EDT,2025_10_20_Calgary Flames_Winnipeg Jets,Winnipeg Jets,Calgary Flames,0.563,0.437,1.7761989342806397,2.288329519450801,-155,125,,
+hockey,nhl,2025_10_20,10:00 PM EDT,2025_10_20_Vegas Golden Knights_Carolina Hurricanes,Carolina Hurricanes,Vegas Golden Knights,0.487,0.513,2.053388090349076,1.949317738791423,100,-120,,

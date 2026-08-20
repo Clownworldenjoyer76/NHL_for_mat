@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_Montreal Canadiens_Philadelphia Flyers,Philadelphia Flyers,Montreal Canadiens,5.5,5.9,0.5381272410127839,0.46187275898721614,1.858296558482985,2.1650984617338698,-120,100,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_Buffalo Sabres_Utah Mammoth,Utah Mammoth,Buffalo Sabres,6.0,6.19,0.5050733030763073,0.4949266969236928,1.9799106266539659,2.0205012302138528,-125,105,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_New York Islanders_Boston Bruins,Boston Bruins,New York Islanders,6.0,6.12,0.4918778157560807,0.5081221842439193,2.0330252106671427,1.9680305859662277,-110,-110,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_New York Rangers_Carolina Hurricanes,Carolina Hurricanes,New York Rangers,6.0,5.79,0.4285915160101015,0.5714084839898985,2.3332239735152176,1.7500615199435474,100,-120,,
+hockey,nhl,2025_11_04,8:00 PM EST,2025_11_04_Dallas Stars_Edmonton Oilers,Edmonton Oilers,Dallas Stars,6.0,6.2,0.5069494782091658,0.49305052179083414,1.9725831527286888,2.028189720533808,-110,-110,,
+hockey,nhl,2025_11_04,8:00 PM EST,2025_11_04_Minnesota Wild_Nashville Predators,Nashville Predators,Minnesota Wild,6.0,5.89,0.4479051987820881,0.5520948012179119,2.2326153005571907,1.8112831307123645,-115,-105,,
+hockey,nhl,2025_11_04,9:30 PM EST,2025_11_04_Colorado Avalanche_Tampa Bay Lightning,Tampa Bay Lightning,Colorado Avalanche,6.0,6.36,0.5366235776987821,0.46337642230121784,1.8635036579800088,2.1580726853425225,-118,-102,,
+hockey,nhl,2025_11_04,10:00 PM EST,2025_11_04_Vegas Golden Knights_Detroit Red Wings,Detroit Red Wings,Vegas Golden Knights,6.0,5.91,0.45175769268870103,0.548242307311299,2.2135760302129133,1.8240110014570388,-110,-110,,
+hockey,nhl,2025_11_04,10:00 PM EST,2025_11_04_Anaheim Ducks_Florida Panthers,Florida Panthers,Anaheim Ducks,6.0,6.21,0.5088233096062543,0.49117669039374573,1.9653187680686952,2.035927232618393,-120,100,,
+hockey,nhl,2025_11_04,10:30 PM EST,2025_11_04_Los Angeles Kings_Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,5.5,5.64,0.4949126859086821,0.5050873140913179,2.0205584307542144,1.9798557043529383,100,-120,,

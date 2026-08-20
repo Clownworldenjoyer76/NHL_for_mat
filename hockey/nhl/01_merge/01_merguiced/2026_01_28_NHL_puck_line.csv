@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_01_28,7:00 PM EST,2026_01_28_New York Islanders_New York Rangers,New York Rangers,New York Islanders,1.5,-1.5,0.6453730038597099,0.35462699614029025,1.549491525086132,2.8198642824259226,-205,177,,
+hockey,nhl,2026_01_28,7:30 PM EST,2026_01_28_Ottawa Senators_Colorado Avalanche,Colorado Avalanche,Ottawa Senators,-1.5,1.5,0.4209495617478618,0.5790504382521381,2.3755815206168927,1.7269652761484766,157,-180,,
+hockey,nhl,2026_01_28,7:30 PM EST,2026_01_28_Columbus Blue Jackets_Philadelphia Flyers,Philadelphia Flyers,Columbus Blue Jackets,1.5,-1.5,0.6600749040750098,0.33992509592499054,1.5149795785697098,2.9418245724954204,-230,192,,

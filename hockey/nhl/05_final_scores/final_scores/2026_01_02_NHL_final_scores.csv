@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_01_02","2026_01_02_New York Rangers_Florida Panthers","Florida Panthers","New York Rangers","5","1","6","4","-4"
+"hockey","nhl","2026_01_02","2026_01_02_St Louis Blues_Vegas Golden Knights","Vegas Golden Knights","St Louis Blues","3","4","7","-1","1"
+"hockey","nhl","2026_01_02","2026_01_02_Anaheim Ducks_Minnesota Wild","Minnesota Wild","Anaheim Ducks","5","2","7","3","-3"
+"hockey","nhl","2026_01_02","2026_01_02_Vancouver Canucks_Seattle Kraken","Seattle Kraken","Vancouver Canucks","4","3","7","1","-1"

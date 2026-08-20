@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Boston Bruins_Winnipeg Jets,Winnipeg Jets,Boston Bruins,0.455,0.545,2.1978021978021975,1.8348623853211008,114,-135,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Columbus Blue Jackets_New York Rangers,New York Rangers,Columbus Blue Jackets,0.372,0.628,2.6881720430107525,1.5923566878980893,180,-218,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Detroit Red Wings_Montreal Canadiens,Montreal Canadiens,Detroit Red Wings,0.496,0.504,2.0161290322580645,1.9841269841269842,-110,-110,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Ottawa Senators_New York Islanders,New York Islanders,Ottawa Senators,0.488,0.512,2.0491803278688523,1.953125,114,-135,,
+hockey,nhl,2026_03_19,7:40 PM,2026_03_19_Minnesota Wild_Chicago Blackhawks,Chicago Blackhawks,Minnesota Wild,0.312,0.688,3.2051282051282053,1.4534883720930234,205,-250,,
+hockey,nhl,2026_03_19,8:10 PM,2026_03_19_Nashville Predators_Seattle Kraken,Seattle Kraken,Nashville Predators,0.436,0.564,2.293577981651376,1.773049645390071,114,-135,,
+hockey,nhl,2026_03_19,9:10 PM,2026_03_19_Edmonton Oilers_Florida Panthers,Florida Panthers,Edmonton Oilers,0.473,0.527,2.1141649048625792,1.8975332068311195,130,-155,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_San Jose Sharks_Buffalo Sabres,Buffalo Sabres,San Jose Sharks,0.592,0.408,1.6891891891891893,2.450980392156863,-142,120,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_Vancouver Canucks_Tampa Bay Lightning,Tampa Bay Lightning,Vancouver Canucks,0.702,0.298,1.4245014245014247,3.3557046979865772,-290,235,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_Vegas Golden Knights_Utah Mammoth,Utah Mammoth,Vegas Golden Knights,0.472,0.528,2.1186440677966103,1.8939393939393938,114,-135,,
+hockey,nhl,2026_03_19,10:40 PM,2026_03_19_Los Angeles Kings_Philadelphia Flyers,Philadelphia Flyers,Los Angeles Kings,0.397,0.603,2.5188916876574305,1.658374792703151,142,-170,,

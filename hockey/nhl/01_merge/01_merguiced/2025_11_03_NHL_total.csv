@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_03,7:30 PM EST,2025_11_03_Toronto Maple Leafs_Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,6.5,6.22,0.42898770731972924,0.5710122926802708,2.3310691260779857,1.7512757830590768,-105,-115,,
+hockey,nhl,2025_11_03,8:30 PM EST,2025_11_03_St Louis Blues_Edmonton Oilers,Edmonton Oilers,St Louis Blues,6.0,6.01,0.4709479546045673,0.5290520453954327,2.1233768832049664,1.8901732045144324,-110,-110,,
+hockey,nhl,2025_11_03,8:30 PM EST,2025_11_03_Nashville Predators_Vancouver Canucks,Vancouver Canucks,Nashville Predators,6.0,5.76,0.42278555732337764,0.5772144426766224,2.3652652808930417,1.7324583829934386,100,-120,,
+hockey,nhl,2025_11_03,10:00 PM EST,2025_11_03_Seattle Kraken_Chicago Blackhawks,Chicago Blackhawks,Seattle Kraken,6.0,5.83,0.43632567153774926,0.5636743284622507,2.2918660652619516,1.7740740521713683,-105,-115,,

@@ -1,0 +1,6 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_01_05","2026_01_05_New York Rangers_Utah Mammoth","Utah Mammoth","New York Rangers","3","2","5","1","-1"
+"hockey","nhl","2026_01_05","2026_01_05_Ottawa Senators_Detroit Red Wings","Detroit Red Wings","Ottawa Senators","5","3","8","2","-2"
+"hockey","nhl","2026_01_05","2026_01_05_Washington Capitals_Anaheim Ducks","Anaheim Ducks","Washington Capitals","4","7","11","-3","3"
+"hockey","nhl","2026_01_05","2026_01_05_Calgary Flames_Seattle Kraken","Seattle Kraken","Calgary Flames","5","1","6","4","-4"
+"hockey","nhl","2026_01_05","2026_01_05_Los Angeles Kings_Minnesota Wild","Minnesota Wild","Los Angeles Kings","2","4","6","-2","2"

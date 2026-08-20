@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_02_03,7:00 PM EST,2026_02_03_Carolina Hurricanes_Ottawa Senators,Ottawa Senators,Carolina Hurricanes,0.335,0.665,2.9850746268656714,1.5037593984962405,180,-220,,
+hockey,nhl,2026_02_03,7:00 PM EST,2026_02_03_Philadelphia Flyers_Washington Capitals,Washington Capitals,Philadelphia Flyers,0.488,0.512,2.0491803278688523,1.953125,110,-135,,
+hockey,nhl,2026_02_03,7:00 PM EST,2026_02_03_New Jersey Devils_Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,0.47,0.53,2.127659574468085,1.8867924528301885,100,-120,,
+hockey,nhl,2026_02_03,7:30 PM EST,2026_02_03_New York Islanders_Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,0.456,0.544,2.1929824561403506,1.838235294117647,110,-135,,
+hockey,nhl,2026_02_03,7:30 PM EST,2026_02_03_Tampa Bay Lightning_Buffalo Sabres,Buffalo Sabres,Tampa Bay Lightning,0.359,0.641,2.785515320334262,1.5600624024960998,190,-235,,
+hockey,nhl,2026_02_03,8:30 PM EST,2026_02_03_Edmonton Oilers_Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,0.395,0.605,2.531645569620253,1.6528925619834711,170,-210,,
+hockey,nhl,2026_02_03,10:00 PM EST,2026_02_03_Anaheim Ducks_Seattle Kraken,Seattle Kraken,Anaheim Ducks,0.431,0.569,2.320185614849188,1.7574692442882252,120,-145,,

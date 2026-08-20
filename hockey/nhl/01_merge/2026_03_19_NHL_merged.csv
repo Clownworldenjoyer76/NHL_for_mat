@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Boston Bruins_Winnipeg Jets,Winnipeg Jets,Boston Bruins,0.455,0.545,2.69,3.18,5.87,+1.5,-1.5,5.5,+114,-135,,,-218,+180,,,-130,+110,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Columbus Blue Jackets_New York Rangers,New York Rangers,Columbus Blue Jackets,0.372,0.628,2.47,3.60,6.07,+1.5,-1.5,6.5,+180,-218,,,-142,+120,,,+114,-135,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Detroit Red Wings_Montreal Canadiens,Montreal Canadiens,Detroit Red Wings,0.496,0.504,3.11,3.15,6.26,-1.5,+1.5,6.5,-110,-110,,,+230,-285,,,+110,-130,,
+hockey,nhl,2026_03_19,7:10 PM,2026_03_19_Ottawa Senators_New York Islanders,New York Islanders,Ottawa Senators,0.488,0.512,2.93,3.05,5.98,+1.5,-1.5,5.5,+114,-135,,,-218,+180,,,-135,+114,,
+hockey,nhl,2026_03_19,7:40 PM,2026_03_19_Minnesota Wild_Chicago Blackhawks,Chicago Blackhawks,Minnesota Wild,0.312,0.688,2.33,3.67,6.00,+1.5,-1.5,6.5,+205,-250,,,-125,+105,,,+114,-135,,
+hockey,nhl,2026_03_19,8:10 PM,2026_03_19_Nashville Predators_Seattle Kraken,Seattle Kraken,Nashville Predators,0.436,0.564,2.66,3.34,6.00,+1.5,-1.5,5.5,+114,-135,,,-230,+190,,,-130,+110,,
+hockey,nhl,2026_03_19,9:10 PM,2026_03_19_Edmonton Oilers_Florida Panthers,Florida Panthers,Edmonton Oilers,0.473,0.527,3.38,3.67,7.05,+1.5,-1.5,6.5,+130,-155,,,-198,+164,,,-115,-105,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_San Jose Sharks_Buffalo Sabres,Buffalo Sabres,San Jose Sharks,0.592,0.408,3.83,2.85,6.68,-1.5,+1.5,6.5,-142,+120,,,+170,-205,,,-130,+110,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_Vancouver Canucks_Tampa Bay Lightning,Tampa Bay Lightning,Vancouver Canucks,0.702,0.298,3.76,2.37,6.13,-1.5,+1.5,6.5,-290,+235,,,-118,-102,,,+110,-130,,
+hockey,nhl,2026_03_19,10:10 PM,2026_03_19_Vegas Golden Knights_Utah Mammoth,Utah Mammoth,Vegas Golden Knights,0.472,0.528,2.84,3.14,5.98,+1.5,-1.5,5.5,+114,-135,,,-230,+190,,,-135,+114,,
+hockey,nhl,2026_03_19,10:40 PM,2026_03_19_Los Angeles Kings_Philadelphia Flyers,Philadelphia Flyers,Los Angeles Kings,0.397,0.603,2.28,3.32,5.60,+1.5,-1.5,5.5,+142,-170,,,-192,+160,,,-135,+114,,

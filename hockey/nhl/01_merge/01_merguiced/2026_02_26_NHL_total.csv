@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Pittsburgh Penguins_New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,5.5,6.06,0.563908927280899,0.43609107271910097,1.7733359973956782,2.2930989936685298,-125,105,,
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Florida Panthers_Toronto Maple Leafs,Toronto Maple Leafs,Florida Panthers,6.5,6.1,0.4097551078467234,0.5902448921532766,2.440482085153332,1.6942120351976158,105,-125,,
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Boston Bruins_Columbus Blue Jackets,Columbus Blue Jackets,Boston Bruins,6.5,6.37,0.45290922072978557,0.5470907792702144,2.207947982133531,1.8278502177169549,100,-120,,
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Montreal Canadiens_New York Islanders,New York Islanders,Montreal Canadiens,6.5,6.06,0.4033336471871902,0.5966663528128098,2.4793369136790426,1.6759785352161911,110,-130,,
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Carolina Hurricanes_Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,6.5,6.09,0.4081500724881062,0.5918499275118938,2.450079192449833,1.6896175086207204,110,-130,,
+hockey,nhl,2026_02_26,7:10 PM,2026_02_26_Ottawa Senators_Detroit Red Wings,Detroit Red Wings,Ottawa Senators,5.5,6.17,0.5812254620754628,0.4187745379245372,1.720502739899179,2.3879197741009723,-135,114,,
+hockey,nhl,2026_02_26,8:10 PM,2026_02_26_New York Rangers_Philadelphia Flyers,Philadelphia Flyers,New York Rangers,5.5,5.82,0.5249926429178641,0.47500735708213593,1.904788597497454,2.105230550833521,-135,114,,
+hockey,nhl,2026_02_26,8:10 PM,2026_02_26_St Louis Blues_Seattle Kraken,Seattle Kraken,St Louis Blues,5.5,5.54,0.47792459016145084,0.5220754098385492,2.0923803055670005,1.9154321026329282,-125,105,,
+hockey,nhl,2026_02_26,8:10 PM,2026_02_26_Nashville Predators_Chicago Blackhawks,Chicago Blackhawks,Nashville Predators,6.5,6.0,0.3936972175874086,0.6063027824125914,2.540023031221906,1.6493409382368562,114,-135,,
+hockey,nhl,2026_02_26,9:10 PM,2026_02_26_Colorado Avalanche_Minnesota Wild,Minnesota Wild,Colorado Avalanche,6.5,6.46,0.46716759855368784,0.5328324014463122,2.14055941185972,1.8767627443181294,-105,-115,,
+hockey,nhl,2026_02_26,10:10 PM,2026_02_26_San Jose Sharks_Calgary Flames,Calgary Flames,San Jose Sharks,6.5,6.4,0.45767113489946387,0.5423288651005361,2.1849750262700507,1.8438996416217335,-102,-118,,
+hockey,nhl,2026_02_26,10:40 PM,2026_02_26_Los Angeles Kings_Edmonton Oilers,Edmonton Oilers,Los Angeles Kings,6.5,6.19,0.4241855134068493,0.5758144865931507,2.357459103137427,1.736670443837866,-112,-108,,

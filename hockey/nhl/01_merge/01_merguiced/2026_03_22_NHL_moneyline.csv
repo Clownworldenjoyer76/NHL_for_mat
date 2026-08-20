@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_22,12:10 PM,2026_03_22_New York Rangers_Winnipeg Jets,Winnipeg Jets,New York Rangers,0.408,0.592,2.450980392156863,1.6891891891891893,105,-125,,
+hockey,nhl,2026_03_22,12:40 PM,2026_03_22_Washington Capitals_Colorado Avalanche,Colorado Avalanche,Washington Capitals,0.571,0.429,1.7513134851138354,2.331002331002331,-162,136,,
+hockey,nhl,2026_03_22,3:10 PM,2026_03_22_Pittsburgh Penguins_Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,0.59,0.41,1.6949152542372883,2.4390243902439024,-142,120,,
+hockey,nhl,2026_03_22,3:10 PM,2026_03_22_Chicago Blackhawks_Nashville Predators,Nashville Predators,Chicago Blackhawks,0.492,0.508,2.032520325203252,1.968503937007874,-110,-110,,
+hockey,nhl,2026_03_22,7:10 PM,2026_03_22_Dallas Stars_Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,0.429,0.571,2.331002331002331,1.7513134851138354,120,-142,,
+hockey,nhl,2026_03_22,7:10 PM,2026_03_22_New York Islanders_Columbus Blue Jackets,Columbus Blue Jackets,New York Islanders,0.493,0.507,2.028397565922921,1.9723865877712032,-122,102,,
+hockey,nhl,2026_03_22,8:10 PM,2026_03_22_Anaheim Ducks_Buffalo Sabres,Buffalo Sabres,Anaheim Ducks,0.498,0.502,2.0080321285140563,1.9920318725099602,-112,-108,,
+hockey,nhl,2026_03_22,8:10 PM,2026_03_22_Calgary Flames_Tampa Bay Lightning,Tampa Bay Lightning,Calgary Flames,0.598,0.402,1.6722408026755853,2.487562189054726,-175,145,,
+hockey,nhl,2026_03_22,9:10 PM,2026_03_22_Utah Mammoth_Los Angeles Kings,Los Angeles Kings,Utah Mammoth,0.398,0.602,2.5125628140703515,1.6611295681063123,145,-175,,

@@ -1,0 +1,7 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_03_18_New York Rangers_New Jersey Devils","2026_03_18","07:07 PM","New York Rangers","New Jersey Devils","0.541","0.459","2.64","3.07","5.71"
+"hockey","nhl","2026_03_18_Anaheim Ducks_Philadelphia Flyers","2026_03_18","10:07 PM","Anaheim Ducks","Philadelphia Flyers","0.543","0.457","2.83","3.29","6.12"
+"hockey","nhl","2026_03_18_Carolina Hurricanes_Pittsburgh Penguins","2026_03_18","07:07 PM","Carolina Hurricanes","Pittsburgh Penguins","0.597","0.403","2.77","3.79","6.56"
+"hockey","nhl","2026_03_18_Washington Capitals_Ottawa Senators","2026_03_18","07:37 PM","Washington Capitals","Ottawa Senators","0.521","0.479","2.90","3.12","6.02"
+"hockey","nhl","2026_03_18_Calgary Flames_St Louis Blues","2026_03_18","09:37 PM","Calgary Flames","St Louis Blues","0.518","0.482","2.68","2.87","5.55"
+"hockey","nhl","2026_03_18_Colorado Avalanche_Dallas Stars","2026_03_18","09:50 PM","Colorado Avalanche","Dallas Stars","0.591","0.409","2.66","3.64","6.30"

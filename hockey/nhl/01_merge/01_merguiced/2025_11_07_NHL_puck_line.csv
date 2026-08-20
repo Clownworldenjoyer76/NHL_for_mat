@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_07,7:00 PM EST,2025_11_07_New York Islanders_Minnesota Wild,Minnesota Wild,New York Islanders,1.5,-1.5,0.66301342071068,0.3369865792893204,1.508265095038508,2.967477227457917,-245,203,,
+hockey,nhl,2025_11_07,7:00 PM EST,2025_11_07_Detroit Red Wings_New York Rangers,New York Rangers,Detroit Red Wings,1.5,-1.5,0.7081658003695872,0.29183419963041257,1.412098691405468,3.426603192039965,-265,219,,
+hockey,nhl,2025_11_07,9:00 PM EST,2025_11_07_Calgary Flames_Chicago Blackhawks,Chicago Blackhawks,Calgary Flames,1.5,-1.5,0.6147316416747907,0.38526835832520956,1.626726090226256,2.5955933789815364,-205,177,,
+hockey,nhl,2025_11_07,10:00 PM EST,2025_11_07_San Jose Sharks_Winnipeg Jets,Winnipeg Jets,San Jose Sharks,-1.5,1.5,0.44772007903588473,0.5522799209641156,2.2335384246187675,1.810676003310602,135,-155,,

@@ -1,0 +1,8 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_02_03_New Jersey Devils_Columbus Blue Jackets","2026_02_03","07:07 PM","New Jersey Devils","Columbus Blue Jackets","0.53","0.47","2.96","3.29","6.25"
+"hockey","nhl","2026_02_03_New York Islanders_Pittsburgh Penguins","2026_02_03","07:37 PM","New York Islanders","Pittsburgh Penguins","0.544","0.456","2.79","3.25","6.04"
+"hockey","nhl","2026_02_03_Philadelphia Flyers_Washington Capitals","2026_02_03","07:07 PM","Philadelphia Flyers","Washington Capitals","0.512","0.488","2.82","2.96","5.78"
+"hockey","nhl","2026_02_03_Tampa Bay Lightning_Buffalo Sabres","2026_02_03","07:37 PM","Tampa Bay Lightning","Buffalo Sabres","0.641","0.359","2.55","3.71","6.26"
+"hockey","nhl","2026_02_03_Carolina Hurricanes_Ottawa Senators","2026_02_03","07:07 PM","Carolina Hurricanes","Ottawa Senators","0.665","0.335","2.50","3.75","6.25"
+"hockey","nhl","2026_02_03_Edmonton Oilers_Toronto Maple Leafs","2026_02_03","08:37 PM","Edmonton Oilers","Toronto Maple Leafs","0.605","0.395","2.74","3.77","6.51"
+"hockey","nhl","2026_02_03_Anaheim Ducks_Seattle Kraken","2026_02_03","10:17 PM","Anaheim Ducks","Seattle Kraken","0.569","0.431","2.75","3.49","6.24"

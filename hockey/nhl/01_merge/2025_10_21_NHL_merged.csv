@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Toronto Maple Leafs_New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,0.436,0.564,2.56,3.24,5.80,,,6.0,105,-125,,,,,,,-105,-115,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Washington Capitals_Seattle Kraken,Seattle Kraken,Washington Capitals,0.35,0.65,2.23,3.44,5.67,,,6.0,225,-275,,,,,,,-105,-115,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Pittsburgh Penguins_Vancouver Canucks,Vancouver Canucks,Pittsburgh Penguins,0.481,0.519,2.84,3.04,5.88,-1.5,-1.5,6.0,-115,-105,,,-275,-250,,,100,-120,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Ottawa Senators_Edmonton Oilers,Edmonton Oilers,Ottawa Senators,0.516,0.484,3.17,2.99,6.16,,,6.0,-140,115,,,,,,,-105,-115,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_New York Islanders_San Jose Sharks,San Jose Sharks,New York Islanders,0.327,0.673,2.41,3.70,6.11,-1.5,-1.5,6.0,180,-220,,,-135,-130,,,-120,100,,
+hockey,nhl,2025_10_21,7:30 PM EDT,2025_10_21_Boston Bruins_Florida Panthers,Florida Panthers,Boston Bruins,0.579,0.421,3.24,2.40,5.64,-1.5,-1.5,5.5,-155,125,,,-190,-185,,,-120,100,,
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_Dallas Stars_Columbus Blue Jackets,Columbus Blue Jackets,Dallas Stars,0.384,0.616,2.69,3.77,6.46,,,6.0,170,-210,,,,,,,-118,-102,,
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_St Louis Blues_Los Angeles Kings,Los Angeles Kings,St Louis Blues,0.515,0.485,2.89,2.74,5.63,,,5.5,105,-125,,,,,,,-115,-105,,
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_Nashville Predators_Anaheim Ducks,Anaheim Ducks,Nashville Predators,0.427,0.573,2.70,3.49,6.19,,,5.5,110,-135,,,,,,,-120,100,,
+hockey,nhl,2025_10_21,10:00 PM EDT,2025_10_21_Utah Mammoth_Colorado Avalanche,Colorado Avalanche,Utah Mammoth,0.542,0.458,3.24,2.79,6.03,,,6.0,-140,115,,,,,,,-110,-110,,

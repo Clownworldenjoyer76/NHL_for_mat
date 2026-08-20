@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_08,7:00 PM EDT,2025_10_08_Toronto Maple Leafs_Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,,,,,,,,,,
+hockey,nhl,2025_10_08,7:30 PM EDT,2025_10_08_Washington Capitals_Boston Bruins,Boston Bruins,Washington Capitals,,,,,,,,,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Edmonton Oilers_Calgary Flames,Calgary Flames,Edmonton Oilers,,,,,,,,,,
+hockey,nhl,2025_10_08,10:00 PM EDT,2025_10_08_Vegas Golden Knights_Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,,,,,,,,,,

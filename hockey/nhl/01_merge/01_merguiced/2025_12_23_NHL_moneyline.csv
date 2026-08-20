@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_23,4:00 PM EST,2025_12_23_Toronto Maple Leafs_Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,0.395,0.605,2.531645569620253,1.6528925619834711,118,-145,,
+hockey,nhl,2025_12_23,6:30 PM EST,2025_12_23_Detroit Red Wings_Dallas Stars,Dallas Stars,Detroit Red Wings,0.569,0.431,1.7574692442882252,2.320185614849188,-135,110,,
+hockey,nhl,2025_12_23,7:00 PM EST,2025_12_23_Boston Bruins_Montreal Canadiens,Montreal Canadiens,Boston Bruins,0.462,0.538,2.1645021645021645,1.858736059479554,100,-120,,
+hockey,nhl,2025_12_23,7:00 PM EST,2025_12_23_Washington Capitals_New York Rangers,New York Rangers,Washington Capitals,0.404,0.596,2.4752475247524752,1.6778523489932886,140,-170,,
+hockey,nhl,2025_12_23,7:00 PM EST,2025_12_23_New York Islanders_New Jersey Devils,New Jersey Devils,New York Islanders,0.492,0.508,2.032520325203252,1.968503937007874,-120,100,,
+hockey,nhl,2025_12_23,7:00 PM EST,2025_12_23_Ottawa Senators_Buffalo Sabres,Buffalo Sabres,Ottawa Senators,0.421,0.579,2.375296912114014,1.7271157167530227,135,-160,,
+hockey,nhl,2025_12_23,7:00 PM EST,2025_12_23_Carolina Hurricanes_Florida Panthers,Florida Panthers,Carolina Hurricanes,0.456,0.544,2.1929824561403506,1.838235294117647,125,-150,,
+hockey,nhl,2025_12_23,8:00 PM EST,2025_12_23_Minnesota Wild_Nashville Predators,Nashville Predators,Minnesota Wild,0.38,0.62,2.6315789473684212,1.6129032258064517,165,-200,,
+hockey,nhl,2025_12_23,9:00 PM EST,2025_12_23_Colorado Avalanche_Utah Mammoth,Utah Mammoth,Colorado Avalanche,0.317,0.683,3.1545741324921135,1.4641288433382136,220,-275,,
+hockey,nhl,2025_12_23,9:00 PM EST,2025_12_23_Edmonton Oilers_Calgary Flames,Calgary Flames,Edmonton Oilers,0.385,0.615,2.5974025974025974,1.6260162601626016,154,-190,,
+hockey,nhl,2025_12_23,9:00 PM EST,2025_12_23_Chicago Blackhawks_Philadelphia Flyers,Philadelphia Flyers,Chicago Blackhawks,0.543,0.457,1.8416206261510129,2.1881838074398248,-125,105,,
+hockey,nhl,2025_12_23,10:00 PM EST,2025_12_23_Los Angeles Kings_Seattle Kraken,Seattle Kraken,Los Angeles Kings,0.322,0.678,3.1055900621118013,1.4749262536873156,220,-275,,

@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_22,7:00 PM EST,2025_12_22_Tampa Bay Lightning_St Louis Blues,St Louis Blues,Tampa Bay Lightning,0.325,0.675,3.0769230769230766,1.4814814814814814,195,-235,,
+hockey,nhl,2025_12_22,7:30 PM EST,2025_12_22_Philadelphia Flyers_Vancouver Canucks,Vancouver Canucks,Philadelphia Flyers,0.419,0.581,2.3866348448687353,1.721170395869191,110,-135,,
+hockey,nhl,2025_12_22,10:00 PM EST,2025_12_22_Anaheim Ducks_Seattle Kraken,Seattle Kraken,Anaheim Ducks,0.365,0.635,2.73972602739726,1.574803149606299,170,-210,,
+hockey,nhl,2025_12_22,10:00 PM EST,2025_12_22_Los Angeles Kings_Columbus Blue Jackets,Columbus Blue Jackets,Los Angeles Kings,0.405,0.595,2.4691358024691357,1.680672268907563,154,-190,,

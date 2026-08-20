@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_06,19:00,fe2964a4d81fc7d5106b2adb91a0eea7,Tampa Bay Lightning,Buffalo Sabres,6.5,6.51,0.47505059760095514,0.5249494023990449,2.1050389264850584,1.9049454965182364,-108,-112,1.93,1.89
+hockey,nhl,2026_04_06,19:30,6d82b1e5218e93552d9ecf472339de25,Seattle Kraken,Winnipeg Jets,5.5,5.73,0.5100388542862305,0.4899611457137695,1.960634942997512,2.0409781647955207,-120,100,1.83,2.0
+hockey,nhl,2026_04_06,22:00,8ebdedac2e58e94bed89333cd792d164,Chicago Blackhawks,San Jose Sharks,6.5,6.21,0.4273875089726009,0.5726124910273991,2.3397969734864392,1.746381742748519,100,-120,2.0,1.83
+hockey,nhl,2026_04_06,22:30,39339d355c5e85fc42b06ea3c942c5b4,Nashville Predators,Los Angeles Kings,5.5,5.77,0.516707241526556,0.483292758473444,1.9353318855094956,2.0691392173113807,-130,110,1.77,2.1

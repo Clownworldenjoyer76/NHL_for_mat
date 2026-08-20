@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_12_05,7:00 PM EST,2025_12_05_New Jersey Devils_Vegas Golden Knights,Vegas Golden Knights,New Jersey Devils,-1.5,1.5,0.2585497631902334,0.7414502368097668,3.867727387026184,1.3487081807441232,200,-240,,
+hockey,nhl,2025_12_05,7:00 PM EST,2025_12_05_Winnipeg Jets_Buffalo Sabres,Buffalo Sabres,Winnipeg Jets,1.5,-1.5,0.6205596693514408,0.3794403306485591,1.6114485832524692,2.6354604906936174,-200,174,,
+hockey,nhl,2025_12_05,8:00 PM EST,2025_12_05_Dallas Stars_San Jose Sharks,San Jose Sharks,Dallas Stars,1.5,-1.5,0.5328549320841921,0.4671450679158077,1.8766833893957429,2.1406626520998127,-105,-115,,
+hockey,nhl,2025_12_05,9:00 PM EST,2025_12_05_Vancouver Canucks_Utah Mammoth,Utah Mammoth,Vancouver Canucks,-1.5,1.5,0.3628687723789058,0.6371312276210946,2.7558171882473395,1.5695353745786031,192,-230,,
+hockey,nhl,2025_12_05,10:00 PM EST,2025_12_05_Anaheim Ducks_Washington Capitals,Washington Capitals,Anaheim Ducks,-1.5,1.5,0.40347781857615406,0.5965221814238459,2.478450992743374,1.6763835966888743,183,-215,,

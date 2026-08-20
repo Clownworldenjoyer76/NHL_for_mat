@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_12_10","2025_12_10_Chicago Blackhawks_New York Rangers","New York Rangers","Chicago Blackhawks","0","3","3","-3","3"
+"hockey","nhl","2025_12_10","2025_12_10_Utah Mammoth_Florida Panthers","Florida Panthers","Utah Mammoth","4","3","7","1","-1"
+"hockey","nhl","2025_12_10","2025_12_10_Calgary Flames_Detroit Red Wings","Detroit Red Wings","Calgary Flames","4","3","7","1","-1"
+"hockey","nhl","2025_12_10","2025_12_10_Seattle Kraken_Los Angeles Kings","Los Angeles Kings","Seattle Kraken","2","3","5","-1","1"

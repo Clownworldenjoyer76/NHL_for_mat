@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_11_05_Toronto Maple Leafs_Utah Mammoth","2025_11_05","07:07 PM","Toronto Maple Leafs","Utah Mammoth","0.577","0.423","2.62","3.44","6.06"
+"hockey","nhl","2025_11_05_Washington Capitals_St Louis Blues","2025_11_05","07:37 PM","Washington Capitals","St Louis Blues","0.557","0.443","2.58","3.20","5.78"
+"hockey","nhl","2025_11_05_Vancouver Canucks_Chicago Blackhawks","2025_11_05","10:07 PM","Vancouver Canucks","Chicago Blackhawks","0.581","0.419","2.46","3.33","5.79"
+"hockey","nhl","2025_11_05_Calgary Flames_Columbus Blue Jackets","2025_11_05","09:49 PM","Calgary Flames","Columbus Blue Jackets","0.495","0.505","3.04","2.99","6.03"
+"hockey","nhl","2025_11_05_Seattle Kraken_San Jose Sharks","2025_11_05","10:07 PM","Seattle Kraken","San Jose Sharks","0.659","0.341","2.42","3.66","6.08"

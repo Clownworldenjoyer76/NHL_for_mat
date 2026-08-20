@@ -1,0 +1,11 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+daebb8d0910fcac722afe480770ebf09,hockey,nhl,2026_03_31,19:10,Boston Bruins,Dallas Stars
+de03c565dccad66683fabb7adbde6a03,hockey,nhl,2026_03_31,19:10,Buffalo Sabres,New York Islanders
+ff972e427e6e1837407bfcfc6d64844d,hockey,nhl,2026_03_31,19:10,Pittsburgh Penguins,Detroit Red Wings
+12be8eff2290751a9e28c2cb3da3ba42,hockey,nhl,2026_03_31,19:10,Florida Panthers,Ottawa Senators
+8b316c9640300bedb485a6556bbdd1f5,hockey,nhl,2026_03_31,19:10,Tampa Bay Lightning,Montreal Canadiens
+e8b33f9489e018bf61d55e3862f41831,hockey,nhl,2026_03_31,19:10,New York Rangers,New Jersey Devils
+b5c10ea05734cf28866ef55dd068ba63,hockey,nhl,2026_03_31,19:10,Washington Capitals,Philadelphia Flyers
+ade39773836ad914294bb9660ae31a85,hockey,nhl,2026_03_31,19:40,Columbus Blue Jackets,Carolina Hurricanes
+6ab93a48138c49071cc0c76f5fa04c81,hockey,nhl,2026_03_31,20:40,Chicago Blackhawks,Winnipeg Jets
+8a5ff06eaed1de4d1a11137b32051fd8,hockey,nhl,2026_03_31,21:10,Edmonton Oilers,Seattle Kraken

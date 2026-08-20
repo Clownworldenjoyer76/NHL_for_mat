@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_01_22,7:00 PM EST,2026_01_22_Boston Bruins_Vegas Golden Knights,Vegas Golden Knights,Boston Bruins,6.0,5.94,0.4575282269247561,0.5424717730752439,2.185657498601627,1.8434138873826609,-110,-110,,
+hockey,nhl,2026_01_22,7:00 PM EST,2026_01_22_Montreal Canadiens_Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,6.5,6.36,0.4513200399197346,0.5486799600802654,2.2157225727841507,1.82255608506954,-110,-110,,
+hockey,nhl,2026_01_22,7:00 PM EST,2026_01_22_Carolina Hurricanes_Chicago Blackhawks,Chicago Blackhawks,Carolina Hurricanes,6.0,5.98,0.4652049792555631,0.5347950207444369,2.149590061568632,1.8698753002748527,-115,-105,,
+hockey,nhl,2026_01_22,7:00 PM EST,2026_01_22_Columbus Blue Jackets_Dallas Stars,Dallas Stars,Columbus Blue Jackets,6.5,6.3,0.44176687300635464,0.5582331269936454,2.2636373641932526,1.7913662798649774,-105,-115,,
+hockey,nhl,2026_01_22,8:00 PM EST,2026_01_22_Nashville Predators_Ottawa Senators,Ottawa Senators,Nashville Predators,6.0,6.16,0.4994311125927389,0.5005688874072611,2.0022781416412276,1.9977270364915898,-120,100,,
+hockey,nhl,2026_01_22,8:00 PM EST,2026_01_22_Winnipeg Jets_Florida Panthers,Florida Panthers,Winnipeg Jets,6.0,5.69,0.4092287708049937,0.5907712291950062,2.4436209556647266,1.6927026073402645,-105,-115,,
+hockey,nhl,2026_01_22,9:00 PM EST,2026_01_22_Edmonton Oilers_Pittsburgh Penguins,Pittsburgh Penguins,Edmonton Oilers,6.5,6.75,0.5124147065971711,0.48758529340282886,1.9515443002031914,2.0509232200607594,-105,-115,,
+hockey,nhl,2026_01_22,9:30 PM EST,2026_01_22_Minnesota Wild_Detroit Red Wings,Detroit Red Wings,Minnesota Wild,6.0,6.0,0.469035110258994,0.5309648897410059,2.1320365536128314,1.8833637012944118,-110,-110,,

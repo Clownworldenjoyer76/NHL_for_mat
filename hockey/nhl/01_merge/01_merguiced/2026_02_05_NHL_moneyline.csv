@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_02_05,7:00 PM EST,2026_02_05_New York Rangers_Carolina Hurricanes,Carolina Hurricanes,New York Rangers,0.611,0.389,1.6366612111292962,2.570694087403599,-235,190,,
+hockey,nhl,2026_02_05,7:00 PM EST,2026_02_05_Philadelphia Flyers_Ottawa Senators,Ottawa Senators,Philadelphia Flyers,0.503,0.497,1.9880715705765408,2.0120724346076457,-120,100,,
+hockey,nhl,2026_02_05,7:00 PM EST,2026_02_05_Washington Capitals_Nashville Predators,Nashville Predators,Washington Capitals,0.352,0.648,2.8409090909090913,1.5432098765432098,155,-190,,
+hockey,nhl,2026_02_05,7:00 PM EST,2026_02_05_Buffalo Sabres_Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,0.432,0.568,2.314814814814815,1.7605633802816902,115,-140,,
+hockey,nhl,2026_02_05,7:00 PM EST,2026_02_05_New Jersey Devils_New York Islanders,New York Islanders,New Jersey Devils,0.483,0.517,2.070393374741201,1.9342359767891681,-105,-115,,
+hockey,nhl,2026_02_05,7:30 PM EST,2026_02_05_Tampa Bay Lightning_Florida Panthers,Florida Panthers,Tampa Bay Lightning,0.364,0.636,2.7472527472527473,1.572327044025157,180,-220,,
+hockey,nhl,2026_02_05,10:00 PM EST,2026_02_05_Vegas Golden Knights_Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,0.429,0.571,2.331002331002331,1.7513134851138354,125,-150,,

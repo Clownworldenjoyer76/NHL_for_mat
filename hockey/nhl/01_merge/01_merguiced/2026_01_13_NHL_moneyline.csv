@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_13,7:00 PM EST,2026_01_13_Pittsburgh Penguins_Tampa Bay Lightning,Tampa Bay Lightning,Pittsburgh Penguins,0.556,0.444,1.7985611510791366,2.2522522522522523,-120,100,,
+hockey,nhl,2026_01_13,7:00 PM EST,2026_01_13_Ottawa Senators_Vancouver Canucks,Vancouver Canucks,Ottawa Senators,0.326,0.674,3.067484662576687,1.4836795252225519,195,-235,,
+hockey,nhl,2026_01_13,7:00 PM EST,2026_01_13_Washington Capitals_Montreal Canadiens,Montreal Canadiens,Washington Capitals,0.414,0.586,2.4154589371980677,1.7064846416382253,145,-180,,
+hockey,nhl,2026_01_13,7:00 PM EST,2026_01_13_Columbus Blue Jackets_Calgary Flames,Calgary Flames,Columbus Blue Jackets,0.444,0.556,2.2522522522522523,1.7985611510791366,120,-145,,
+hockey,nhl,2026_01_13,7:30 PM EST,2026_01_13_Boston Bruins_Detroit Red Wings,Detroit Red Wings,Boston Bruins,0.475,0.525,2.1052631578947367,1.9047619047619047,105,-125,,
+hockey,nhl,2026_01_13,7:30 PM EST,2026_01_13_St Louis Blues_Carolina Hurricanes,Carolina Hurricanes,St Louis Blues,0.628,0.372,1.5923566878980893,2.6881720430107525,-150,125,,
+hockey,nhl,2026_01_13,8:00 PM EST,2026_01_13_Nashville Predators_Edmonton Oilers,Edmonton Oilers,Nashville Predators,0.514,0.486,1.9455252918287937,2.05761316872428,-115,-105,,
+hockey,nhl,2026_01_13,8:00 PM EST,2026_01_13_Winnipeg Jets_New York Islanders,New York Islanders,Winnipeg Jets,0.481,0.519,2.079002079002079,1.9267822736030829,118,-145,,
+hockey,nhl,2026_01_13,10:00 PM EST,2026_01_13_Anaheim Ducks_Dallas Stars,Dallas Stars,Anaheim Ducks,0.537,0.463,1.8621973929236497,2.159827213822894,-110,-110,,
+hockey,nhl,2026_01_13,10:00 PM EST,2026_01_13_Utah Mammoth_Toronto Maple Leafs,Toronto Maple Leafs,Utah Mammoth,0.413,0.587,2.4213075060532687,1.7035775127768313,125,-150,,

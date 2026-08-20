@@ -1,0 +1,7 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_01_21_Seattle Kraken_New York Islanders","2026_01_21","09:52 PM","Seattle Kraken","New York Islanders","0.459","0.541","3.05","2.61","5.66"
+"hockey","nhl","2026_01_21_Utah Mammoth_Philadelphia Flyers","2026_01_21","09:07 PM","Utah Mammoth","Philadelphia Flyers","0.621","0.379","2.29","3.39","5.68"
+"hockey","nhl","2026_01_21_Calgary Flames_Pittsburgh Penguins","2026_01_21","09:37 PM","Calgary Flames","Pittsburgh Penguins","0.527","0.473","2.92","3.21","6.13"
+"hockey","nhl","2026_01_21_Toronto Maple Leafs_Detroit Red Wings","2026_01_21","07:07 PM","Toronto Maple Leafs","Detroit Red Wings","0.535","0.465","2.88","3.27","6.15"
+"hockey","nhl","2026_01_21_Vancouver Canucks_Washington Capitals","2026_01_21","10:07 PM","Vancouver Canucks","Washington Capitals","0.394","0.606","3.52","2.47","5.99"
+"hockey","nhl","2026_01_21_Colorado Avalanche_Anaheim Ducks","2026_01_21","09:07 PM","Colorado Avalanche","Anaheim Ducks","0.714","0.286","2.66","4.10","6.76"

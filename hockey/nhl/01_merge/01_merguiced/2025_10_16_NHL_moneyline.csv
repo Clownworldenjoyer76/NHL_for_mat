@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_New Jersey Devils_Florida Panthers,Florida Panthers,New Jersey Devils,0.461,0.539,2.1691973969631237,1.8552875695732838,135,-160,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Columbus Blue Jackets_Colorado Avalanche,Colorado Avalanche,Columbus Blue Jackets,0.595,0.405,1.680672268907563,2.4691358024691357,-165,135,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Montreal Canadiens_Nashville Predators,Nashville Predators,Montreal Canadiens,0.457,0.543,2.1881838074398248,1.8416206261510129,135,-160,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Philadelphia Flyers_Winnipeg Jets,Winnipeg Jets,Philadelphia Flyers,0.502,0.498,1.9920318725099602,2.0080321285140563,-140,115,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Ottawa Senators_Seattle Kraken,Seattle Kraken,Ottawa Senators,0.451,0.549,2.2172949002217295,1.8214936247723132,125,-155,,
+hockey,nhl,2025_10_16,7:00 PM EDT,2025_10_16_Toronto Maple Leafs_New York Rangers,New York Rangers,Toronto Maple Leafs,0.427,0.573,2.34192037470726,1.7452006980802794,125,-150,,
+hockey,nhl,2025_10_16,7:30 PM EDT,2025_10_16_New York Islanders_Edmonton Oilers,Edmonton Oilers,New York Islanders,0.583,0.417,1.7152658662092626,2.3980815347721824,-180,145,,
+hockey,nhl,2025_10_16,8:00 PM EDT,2025_10_16_Dallas Stars_Vancouver Canucks,Vancouver Canucks,Dallas Stars,0.373,0.627,2.680965147453083,1.594896331738437,165,-200,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Los Angeles Kings_Pittsburgh Penguins,Pittsburgh Penguins,Los Angeles Kings,0.363,0.637,2.7548209366391188,1.5698587127158556,170,-210,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Anaheim Ducks_Carolina Hurricanes,Carolina Hurricanes,Anaheim Ducks,0.619,0.381,1.6155088852988693,2.6246719160104988,-175,145,,
+hockey,nhl,2025_10_16,10:00 PM EDT,2025_10_16_Vegas Golden Knights_Boston Bruins,Boston Bruins,Vegas Golden Knights,0.346,0.654,2.8901734104046244,1.529051987767584,185,-225,,

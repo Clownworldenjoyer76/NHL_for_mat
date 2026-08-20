@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_16,9:00 AM EST,2025_11_16_Pittsburgh Penguins_Nashville Predators,Nashville Predators,Pittsburgh Penguins,6.0,6.25,0.5162944171118963,0.4837055828881038,1.9368793596372946,2.0673732852724407,-120,100,,
+hockey,nhl,2025_11_16,5:00 PM EST,2025_11_16_Tampa Bay Lightning_Vancouver Canucks,Vancouver Canucks,Tampa Bay Lightning,6.0,6.06,0.4804881696028873,0.5195118303971127,2.0812166943183588,1.9248839804776037,-125,105,,
+hockey,nhl,2025_11_16,6:00 PM EST,2025_11_16_Minnesota Wild_Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,6.0,6.11,0.4899843412170889,0.5100156587829111,2.0408815463695547,1.9607241126407287,-118,-102,,
+hockey,nhl,2025_11_16,7:00 PM EST,2025_11_16_New York Rangers_Detroit Red Wings,Detroit Red Wings,New York Rangers,6.0,5.79,0.4285915160101015,0.5714084839898985,2.3332239735152176,1.7500615199435474,-110,-110,,
+hockey,nhl,2025_11_16,9:00 PM EST,2025_11_16_Colorado Avalanche_New York Islanders,New York Islanders,Colorado Avalanche,6.0,6.37,0.5384547834148421,0.4615452165851579,1.857166155453334,2.166634955939347,-125,105,,

@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_23,19:10,d618bdbd532e173a5e9e0f985de4af4c,Buffalo Sabres,Boston Bruins,0.501,0.499,1.996007984031936,2.004008016032064,-110,-110,1.91,1.91
+hockey,nhl,2026_04_23,19:40,51287ae15947cf3f02665904d8b8be9d,Carolina Hurricanes,Ottawa Senators,0.505,0.495,1.9801980198019802,2.0202020202020203,102,-122,2.02,1.82
+hockey,nhl,2026_04_23,22:10,524a4ecbfee90fb1259c3e30014629ab,Colorado Avalanche,Los Angeles Kings,0.646,0.354,1.547987616099071,2.824858757062147,-167,140,1.6,2.4

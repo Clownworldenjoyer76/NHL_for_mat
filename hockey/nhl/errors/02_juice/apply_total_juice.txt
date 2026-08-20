@@ -1,0 +1,435 @@
+=== apply_total_juice RUN 2026-06-15T10:16:28.078111+00:00 ===
+2026-06-15T10:16:28.084966+00:00 | Wiped total output CSVs: 211
+2026-06-15T10:16:28.085009+00:00 | INPUT_DIR: docs/win/hockey/nhl/01_merge/01_merguiced
+2026-06-15T10:16:28.085036+00:00 | OUTPUT_DIR: docs/win/hockey/nhl/02_juice
+2026-06-15T10:16:28.085062+00:00 | JUICE_FILE: docs/win/hockey/nhl/config/juice/nhl_total_juice.csv
+2026-06-15T10:16:28.089298+00:00 | Input files found: 211
+2026-06-15T10:16:28.089340+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_07_NHL_total.csv
+2026-06-15T10:16:28.098659+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_07_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.098717+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_08_NHL_total.csv
+2026-06-15T10:16:28.107752+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_08_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.107831+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_09_NHL_total.csv
+2026-06-15T10:16:28.129026+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_09_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.129084+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_11_NHL_total.csv
+2026-06-15T10:16:28.151690+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_11_NHL_total.csv rows=16 applied=16 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.151748+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_12_NHL_total.csv
+2026-06-15T10:16:28.158462+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_12_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.158537+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_13_NHL_total.csv
+2026-06-15T10:16:28.174655+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_13_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.174714+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_14_NHL_total.csv
+2026-06-15T10:16:28.187881+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_14_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.187941+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_15_NHL_total.csv
+2026-06-15T10:16:28.196577+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_15_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.196633+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_16_NHL_total.csv
+2026-06-15T10:16:28.216138+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_16_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.216198+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_17_NHL_total.csv
+2026-06-15T10:16:28.225377+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_17_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.225434+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_18_NHL_total.csv
+2026-06-15T10:16:28.245919+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_18_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.245977+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_19_NHL_total.csv
+2026-06-15T10:16:28.254919+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_19_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.254976+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_20_NHL_total.csv
+2026-06-15T10:16:28.264584+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_20_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.264641+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_21_NHL_total.csv
+2026-06-15T10:16:28.280149+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_21_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.280214+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_22_NHL_total.csv
+2026-06-15T10:16:28.287501+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_22_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.287557+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_23_NHL_total.csv
+2026-06-15T10:16:28.305707+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_23_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.305765+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_24_NHL_total.csv
+2026-06-15T10:16:28.314271+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_24_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.314326+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_25_NHL_total.csv
+2026-06-15T10:16:28.333239+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_25_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.333296+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_26_NHL_total.csv
+2026-06-15T10:16:28.346507+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_26_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.346566+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_27_NHL_total.csv
+2026-06-15T10:16:28.352602+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_27_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.352657+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_28_NHL_total.csv
+2026-06-15T10:16:28.374981+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_28_NHL_total.csv rows=16 applied=16 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.375045+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_29_NHL_total.csv
+2026-06-15T10:16:28.379903+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_29_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.379958+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_30_NHL_total.csv
+2026-06-15T10:16:28.396546+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_30_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.396608+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_31_NHL_total.csv
+2026-06-15T10:16:28.403821+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_31_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.403878+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_01_NHL_total.csv
+2026-06-15T10:16:28.422518+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_01_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.422575+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_02_NHL_total.csv
+2026-06-15T10:16:28.432125+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_02_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.432181+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_03_NHL_total.csv
+2026-06-15T10:16:28.440515+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_03_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.440570+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_04_NHL_total.csv
+2026-06-15T10:16:28.455873+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_04_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.455930+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_05_NHL_total.csv
+2026-06-15T10:16:28.465537+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_05_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.465593+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_06_NHL_total.csv
+2026-06-15T10:16:28.479699+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_06_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.479766+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_07_NHL_total.csv
+2026-06-15T10:16:28.488152+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_07_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.488208+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_08_NHL_total.csv
+2026-06-15T10:16:28.507154+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_08_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.507218+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_09_NHL_total.csv
+2026-06-15T10:16:28.520341+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_09_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.520398+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_10_NHL_total.csv
+2026-06-15T10:16:28.529177+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_10_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.529232+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_11_NHL_total.csv
+2026-06-15T10:16:28.543318+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_11_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.543373+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_12_NHL_total.csv
+2026-06-15T10:16:28.551833+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_12_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.551890+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_13_NHL_total.csv
+2026-06-15T10:16:28.567145+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_13_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.567201+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_14_NHL_total.csv
+2026-06-15T10:16:28.575502+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_14_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.575557+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_15_NHL_total.csv
+2026-06-15T10:16:28.594523+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_15_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.594580+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_16_NHL_total.csv
+2026-06-15T10:16:28.604121+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_16_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.604176+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_17_NHL_total.csv
+2026-06-15T10:16:28.614826+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_17_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.614883+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_18_NHL_total.csv
+2026-06-15T10:16:28.627766+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_18_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.627846+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_19_NHL_total.csv
+2026-06-15T10:16:28.636086+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_19_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.636141+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_20_NHL_total.csv
+2026-06-15T10:16:28.653602+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_20_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.653658+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_21_NHL_total.csv
+2026-06-15T10:16:28.662110+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_21_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.662171+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_22_NHL_total.csv
+2026-06-15T10:16:28.679634+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_22_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.679691+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_23_NHL_total.csv
+2026-06-15T10:16:28.690438+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_23_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.690493+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_24_NHL_total.csv
+2026-06-15T10:16:28.702342+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_24_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.702398+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_25_NHL_total.csv
+2026-06-15T10:16:28.707196+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_25_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.707252+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_26_NHL_total.csv
+2026-06-15T10:16:28.728353+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_26_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.728410+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_28_NHL_total.csv
+2026-06-15T10:16:28.749507+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_28_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.749564+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_29_NHL_total.csv
+2026-06-15T10:16:28.765945+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_29_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.766001+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_30_NHL_total.csv
+2026-06-15T10:16:28.774219+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_30_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.774273+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_01_NHL_total.csv
+2026-06-15T10:16:28.783725+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_01_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.783781+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_02_NHL_total.csv
+2026-06-15T10:16:28.798958+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_02_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.799013+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_03_NHL_total.csv
+2026-06-15T10:16:28.808471+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_03_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.808526+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_04_NHL_total.csv
+2026-06-15T10:16:28.823828+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_04_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.823887+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_05_NHL_total.csv
+2026-06-15T10:16:28.833410+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_05_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.833466+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_06_NHL_total.csv
+2026-06-15T10:16:28.851141+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_06_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.851198+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_07_NHL_total.csv
+2026-06-15T10:16:28.864243+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_07_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.864299+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_08_NHL_total.csv
+2026-06-15T10:16:28.873735+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_08_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.873809+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_09_NHL_total.csv
+2026-06-15T10:16:28.889069+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_09_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.889126+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_10_NHL_total.csv
+2026-06-15T10:16:28.897625+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_10_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.897679+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_11_NHL_total.csv
+2026-06-15T10:16:28.916495+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_11_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.916552+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_12_NHL_total.csv
+2026-06-15T10:16:28.922617+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_12_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.922673+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_13_NHL_total.csv
+2026-06-15T10:16:28.941987+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_13_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.942044+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_14_NHL_total.csv
+2026-06-15T10:16:28.952701+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_14_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.952757+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_15_NHL_total.csv
+2026-06-15T10:16:28.962324+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_15_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.962380+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_16_NHL_total.csv
+2026-06-15T10:16:28.977823+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_16_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.977882+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_17_NHL_total.csv
+2026-06-15T10:16:28.987467+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_17_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:28.987522+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_18_NHL_total.csv
+2026-06-15T10:16:29.002811+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_18_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.002870+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_19_NHL_total.csv
+2026-06-15T10:16:29.012371+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_19_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.012426+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_20_NHL_total.csv
+2026-06-15T10:16:29.031255+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_20_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.031311+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_21_NHL_total.csv
+2026-06-15T10:16:29.045481+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_21_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.045537+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_22_NHL_total.csv
+2026-06-15T10:16:29.053893+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_22_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.053948+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_23_NHL_total.csv
+2026-06-15T10:16:29.071484+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_23_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.071546+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_27_NHL_total.csv
+2026-06-15T10:16:29.090252+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_27_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.090309+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_28_NHL_total.csv
+2026-06-15T10:16:29.099818+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_28_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.099876+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_29_NHL_total.csv
+2026-06-15T10:16:29.116256+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_29_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.116311+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_30_NHL_total.csv
+2026-06-15T10:16:29.125728+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_30_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.125782+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_31_NHL_total.csv
+2026-06-15T10:16:29.141230+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_31_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.141286+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_01_NHL_total.csv
+2026-06-15T10:16:29.154232+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_01_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.154287+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_02_NHL_total.csv
+2026-06-15T10:16:29.162605+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_02_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.162660+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_03_NHL_total.csv
+2026-06-15T10:16:29.181472+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_03_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.181529+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_04_NHL_total.csv
+2026-06-15T10:16:29.191241+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_04_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.191296+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_05_NHL_total.csv
+2026-06-15T10:16:29.200748+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_05_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.200828+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_06_NHL_total.csv
+2026-06-15T10:16:29.215978+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_06_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.216035+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_07_NHL_total.csv
+2026-06-15T10:16:29.225988+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_07_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.226043+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_08_NHL_total.csv
+2026-06-15T10:16:29.243665+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_08_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.243722+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_09_NHL_total.csv
+2026-06-15T10:16:29.251034+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_09_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.251089+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_10_NHL_total.csv
+2026-06-15T10:16:29.270968+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_10_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.271026+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_11_NHL_total.csv
+2026-06-15T10:16:29.280453+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_11_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.280513+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_12_NHL_total.csv
+2026-06-15T10:16:29.294737+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_12_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.294815+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_13_NHL_total.csv
+2026-06-15T10:16:29.310368+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_13_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.310425+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_14_NHL_total.csv
+2026-06-15T10:16:29.319448+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_14_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.319503+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_15_NHL_total.csv
+2026-06-15T10:16:29.334841+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_15_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.334898+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_16_NHL_total.csv
+2026-06-15T10:16:29.344502+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_16_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.344558+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_17_NHL_total.csv
+2026-06-15T10:16:29.363431+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_17_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.363487+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_18_NHL_total.csv
+2026-06-15T10:16:29.370706+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_18_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.370760+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_19_NHL_total.csv
+2026-06-15T10:16:29.390458+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_19_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.390514+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_20_NHL_total.csv
+2026-06-15T10:16:29.403606+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_20_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.403662+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_21_NHL_total.csv
+2026-06-15T10:16:29.414410+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_21_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.414465+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_22_NHL_total.csv
+2026-06-15T10:16:29.429454+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_22_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.429574+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_23_NHL_total.csv
+2026-06-15T10:16:29.449858+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_23_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.449913+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_24_NHL_total.csv
+2026-06-15T10:16:29.464101+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_24_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.464157+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_25_NHL_total.csv
+2026-06-15T10:16:29.474855+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_25_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.474911+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_26_NHL_total.csv
+2026-06-15T10:16:29.483245+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_26_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.483300+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_27_NHL_total.csv
+2026-06-15T10:16:29.498610+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_27_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.498666+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_28_NHL_total.csv
+2026-06-15T10:16:29.505844+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_28_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.505899+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_29_NHL_total.csv
+2026-06-15T10:16:29.526879+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_29_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.526937+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_30_NHL_total.csv
+2026-06-15T10:16:29.531760+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_30_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.531840+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_31_NHL_total.csv
+2026-06-15T10:16:29.551775+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_31_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.551855+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_01_NHL_total.csv
+2026-06-15T10:16:29.559036+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_01_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.559091+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_02_NHL_total.csv
+2026-06-15T10:16:29.574324+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_02_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.574380+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_03_NHL_total.csv
+2026-06-15T10:16:29.586531+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_03_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.586587+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_04_NHL_total.csv
+2026-06-15T10:16:29.601956+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_04_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.602014+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_05_NHL_total.csv
+2026-06-15T10:16:29.613911+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_05_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.613968+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_25_NHL_total.csv
+2026-06-15T10:16:29.626872+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_25_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.626929+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_26_NHL_total.csv
+2026-06-15T10:16:29.644595+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_26_NHL_total.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.644653+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_27_NHL_total.csv
+2026-06-15T10:16:29.653048+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_27_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.653104+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_28_NHL_total.csv
+2026-06-15T10:16:29.671942+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_28_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.671999+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_01_NHL_total.csv
+2026-06-15T10:16:29.682734+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_01_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.682809+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_02_NHL_total.csv
+2026-06-15T10:16:29.693592+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_02_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.693654+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_03_NHL_total.csv
+2026-06-15T10:16:29.710175+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_03_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.710233+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_04_NHL_total.csv
+2026-06-15T10:16:29.719780+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_04_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.719860+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_05_NHL_total.csv
+2026-06-15T10:16:29.732821+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_05_NHL_total.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.732879+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_06_NHL_total.csv
+2026-06-15T10:16:29.744813+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_06_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.744885+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_07_NHL_total.csv
+2026-06-15T10:16:29.761521+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_07_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.761578+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_08_NHL_total.csv
+2026-06-15T10:16:29.773493+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_08_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.773549+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_09_NHL_total.csv
+2026-06-15T10:16:29.783096+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_09_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.783152+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_10_NHL_total.csv
+2026-06-15T10:16:29.802033+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_10_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.802091+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_11_NHL_total.csv
+2026-06-15T10:16:29.808114+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_11_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.808169+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_12_NHL_total.csv
+2026-06-15T10:16:29.828177+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_12_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.828234+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_13_NHL_total.csv
+2026-06-15T10:16:29.834252+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_13_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.834308+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_14_NHL_total.csv
+2026-06-15T10:16:29.854240+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_14_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.854296+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_15_NHL_total.csv
+2026-06-15T10:16:29.865057+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_15_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.865114+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_16_NHL_total.csv
+2026-06-15T10:16:29.874696+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_16_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.874751+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_17_NHL_total.csv
+2026-06-15T10:16:29.888838+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_17_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.888896+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_18_NHL_total.csv
+2026-06-15T10:16:29.899468+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_18_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.899524+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_19_NHL_total.csv
+2026-06-15T10:16:29.916025+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_19_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.916081+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_20_NHL_total.csv
+2026-06-15T10:16:29.925521+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_20_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.925577+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_21_NHL_total.csv
+2026-06-15T10:16:29.942169+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_21_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.942251+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_22_NHL_total.csv
+2026-06-15T10:16:29.956445+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_22_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.956524+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_23_NHL_total.csv
+2026-06-15T10:16:29.961395+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_23_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.961450+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_24_NHL_total.csv
+2026-06-15T10:16:29.982613+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_24_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.982671+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_25_NHL_total.csv
+2026-06-15T10:16:29.988691+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_25_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:29.988746+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_26_NHL_total.csv
+2026-06-15T10:16:30.007623+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_26_NHL_total.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.007681+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_27_NHL_total.csv
+2026-06-15T10:16:30.013644+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_27_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.013698+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_28_NHL_total.csv
+2026-06-15T10:16:30.034852+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_28_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.034911+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_29_NHL_total.csv
+2026-06-15T10:16:30.045651+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_29_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.045708+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_30_NHL_total.csv
+2026-06-15T10:16:30.055172+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_30_NHL_total.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.055229+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_31_NHL_total.csv
+2026-06-15T10:16:30.070559+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_31_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.070618+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_01_NHL_total.csv
+2026-06-15T10:16:30.077772+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_01_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.077852+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_02_NHL_total.csv
+2026-06-15T10:16:30.097900+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_02_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.097963+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_03_NHL_total.csv
+2026-06-15T10:16:30.103945+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_03_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.104012+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_04_NHL_total.csv
+2026-06-15T10:16:30.124969+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_04_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.125026+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_05_NHL_total.csv
+2026-06-15T10:16:30.136967+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_05_NHL_total.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.137024+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_06_NHL_total.csv
+2026-06-15T10:16:30.145347+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_06_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.145402+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_07_NHL_total.csv
+2026-06-15T10:16:30.161842+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_07_NHL_total.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.161905+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_08_NHL_total.csv
+2026-06-15T10:16:30.169100+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_08_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.169156+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_09_NHL_total.csv
+2026-06-15T10:16:30.189094+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_09_NHL_total.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.189176+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_11_NHL_total.csv
+2026-06-15T10:16:30.210429+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_11_NHL_total.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.210486+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_12_NHL_total.csv
+2026-06-15T10:16:30.221158+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_12_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.221214+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_13_NHL_total.csv
+2026-06-15T10:16:30.236480+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_13_NHL_total.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.236537+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_14_NHL_total.csv
+2026-06-15T10:16:30.250601+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_14_NHL_total.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.250659+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_15_NHL_total.csv
+2026-06-15T10:16:30.261322+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_15_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.261379+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_16_NHL_total.csv
+2026-06-15T10:16:30.271961+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_16_NHL_total.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.272017+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_18_NHL_total.csv
+2026-06-15T10:16:30.279225+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_18_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.279282+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_19_NHL_total.csv
+2026-06-15T10:16:30.287609+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_19_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.287664+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_20_NHL_total.csv
+2026-06-15T10:16:30.296009+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_20_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.296064+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_21_NHL_total.csv
+2026-06-15T10:16:30.304346+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_21_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.304400+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_22_NHL_total.csv
+2026-06-15T10:16:30.311479+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_22_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.311535+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_23_NHL_total.csv
+2026-06-15T10:16:30.318659+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_23_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.318714+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_24_NHL_total.csv
+2026-06-15T10:16:30.325811+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_24_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.325870+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_25_NHL_total.csv
+2026-06-15T10:16:30.332999+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_25_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.333054+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_26_NHL_total.csv
+2026-06-15T10:16:30.341422+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_26_NHL_total.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.341477+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_27_NHL_total.csv
+2026-06-15T10:16:30.347465+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_27_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.347520+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_28_NHL_total.csv
+2026-06-15T10:16:30.354641+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_28_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.354696+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_29_NHL_total.csv
+2026-06-15T10:16:30.361968+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_29_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.362024+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_30_NHL_total.csv
+2026-06-15T10:16:30.368015+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_30_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.368071+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_01_NHL_total.csv
+2026-06-15T10:16:30.375196+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_01_NHL_total.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.375251+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_02_NHL_total.csv
+2026-06-15T10:16:30.380068+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_02_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.380124+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_03_NHL_total.csv
+2026-06-15T10:16:30.386149+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_03_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.386204+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_04_NHL_total.csv
+2026-06-15T10:16:30.392152+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_04_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.392207+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_05_NHL_total.csv
+2026-06-15T10:16:30.396970+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_05_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.397031+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_06_NHL_total.csv
+2026-06-15T10:16:30.403023+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_06_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.403077+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_07_NHL_total.csv
+2026-06-15T10:16:30.407833+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_07_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.407889+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_08_NHL_total.csv
+2026-06-15T10:16:30.413879+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_08_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.413935+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_09_NHL_total.csv
+2026-06-15T10:16:30.419928+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_09_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.419984+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_10_NHL_total.csv
+2026-06-15T10:16:30.425951+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_10_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.426006+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_11_NHL_total.csv
+2026-06-15T10:16:30.430762+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_11_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.430840+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_12_NHL_total.csv
+2026-06-15T10:16:30.436775+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_12_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.436855+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_13_NHL_total.csv
+2026-06-15T10:16:30.441612+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_13_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.441667+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_14_NHL_total.csv
+2026-06-15T10:16:30.447663+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_14_NHL_total.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.447718+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_16_NHL_total.csv
+2026-06-15T10:16:30.452478+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_16_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.452533+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_18_NHL_total.csv
+2026-06-15T10:16:30.457286+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_18_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.457341+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_20_NHL_total.csv
+2026-06-15T10:16:30.462103+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_20_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.462158+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_21_NHL_total.csv
+2026-06-15T10:16:30.467042+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_21_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.467097+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_22_NHL_total.csv
+2026-06-15T10:16:30.471849+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_22_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.471905+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_23_NHL_total.csv
+2026-06-15T10:16:30.476681+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_23_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.476739+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_24_NHL_total.csv
+2026-06-15T10:16:30.481514+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_24_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.481568+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_25_NHL_total.csv
+2026-06-15T10:16:30.486395+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_25_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.486450+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_26_NHL_total.csv
+2026-06-15T10:16:30.491339+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_26_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.491406+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_27_NHL_total.csv
+2026-06-15T10:16:30.496436+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_27_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.496490+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_29_NHL_total.csv
+2026-06-15T10:16:30.501233+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_29_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.501288+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_02_NHL_total.csv
+2026-06-15T10:16:30.506041+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_02_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.506096+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_04_NHL_total.csv
+2026-06-15T10:16:30.511422+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_04_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.511533+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_06_NHL_total.csv
+2026-06-15T10:16:30.516295+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_06_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.516349+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_09_NHL_total.csv
+2026-06-15T10:16:30.521110+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_09_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.521164+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_11_NHL_total.csv
+2026-06-15T10:16:30.525992+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_11_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.526046+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_14_NHL_total.csv
+2026-06-15T10:16:30.530851+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_14_NHL_total.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:30.530901+00:00 | --- SUMMARY ---
+2026-06-15T10:16:30.530928+00:00 | Files processed: 211
+2026-06-15T10:16:30.530950+00:00 | Files written: 211
+2026-06-15T10:16:30.530971+00:00 | Rows applied: 1393
+2026-06-15T10:16:30.530991+00:00 | Rows skipped bad: 0
+2026-06-15T10:16:30.531012+00:00 | Rows skipped no band: 0
+2026-06-15T10:16:30.531031+00:00 | STATUS: SUCCESS

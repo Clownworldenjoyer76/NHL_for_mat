@@ -1,0 +1,2 @@
+﻿sport,league,game_id,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+hockey,nhl,70558080,2026_06_14,08:00 PM,Vegas Golden Knights,Carolina Hurricanes,0.433000,0.567000,3.47,2.76,6.23

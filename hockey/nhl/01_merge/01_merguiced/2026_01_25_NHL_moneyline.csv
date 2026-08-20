@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_25,1:30 PM EST,2026_01_25_Toronto Maple Leafs_Colorado Avalanche,Colorado Avalanche,Toronto Maple Leafs,0.608,0.392,1.6447368421052633,2.5510204081632653,-160,135,,
+hockey,nhl,2026_01_25,3:00 PM EST,2026_01_25_Seattle Kraken_New Jersey Devils,New Jersey Devils,Seattle Kraken,0.538,0.462,1.858736059479554,2.1645021645021645,-120,100,,
+hockey,nhl,2026_01_25,5:00 PM EST,2026_01_25_Ottawa Senators_Vegas Golden Knights,Vegas Golden Knights,Ottawa Senators,0.571,0.429,1.7513134851138354,2.331002331002331,-140,115,,
+hockey,nhl,2026_01_25,6:00 PM EST,2026_01_25_Vancouver Canucks_Pittsburgh Penguins,Pittsburgh Penguins,Vancouver Canucks,0.552,0.448,1.8115942028985506,2.232142857142857,-140,115,,
+hockey,nhl,2026_01_25,7:00 PM EST,2026_01_25_Chicago Blackhawks_Florida Panthers,Florida Panthers,Chicago Blackhawks,0.571,0.429,1.7513134851138354,2.331002331002331,-145,120,,
+hockey,nhl,2026_01_25,8:00 PM EST,2026_01_25_Calgary Flames_Anaheim Ducks,Anaheim Ducks,Calgary Flames,0.491,0.509,2.0366598778004072,1.9646365422396856,-105,-115,,

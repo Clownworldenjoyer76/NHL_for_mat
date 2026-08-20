@@ -1,0 +1,15 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2026_01_10_Boston Bruins_New York Rangers,hockey,nhl,2026_01_10,1:00 PM EST,Boston Bruins,New York Rangers
+2026_01_10_Pittsburgh Penguins_Calgary Flames,hockey,nhl,2026_01_10,3:30 PM EST,Pittsburgh Penguins,Calgary Flames
+2026_01_10_San Jose Sharks_Dallas Stars,hockey,nhl,2026_01_10,4:00 PM EST,San Jose Sharks,Dallas Stars
+2026_01_10_Colorado Avalanche_Columbus Blue Jackets,hockey,nhl,2026_01_10,4:00 PM EST,Colorado Avalanche,Columbus Blue Jackets
+2026_01_10_Buffalo Sabres_Anaheim Ducks,hockey,nhl,2026_01_10,7:00 PM EST,Buffalo Sabres,Anaheim Ducks
+2026_01_10_Philadelphia Flyers_Tampa Bay Lightning,hockey,nhl,2026_01_10,7:00 PM EST,Philadelphia Flyers,Tampa Bay Lightning
+2026_01_10_Ottawa Senators_Florida Panthers,hockey,nhl,2026_01_10,7:00 PM EST,Ottawa Senators,Florida Panthers
+2026_01_10_Toronto Maple Leafs_Vancouver Canucks,hockey,nhl,2026_01_10,7:00 PM EST,Toronto Maple Leafs,Vancouver Canucks
+2026_01_10_Montreal Canadiens_Detroit Red Wings,hockey,nhl,2026_01_10,7:00 PM EST,Montreal Canadiens,Detroit Red Wings
+2026_01_10_Carolina Hurricanes_Seattle Kraken,hockey,nhl,2026_01_10,7:00 PM EST,Carolina Hurricanes,Seattle Kraken
+2026_01_10_Minnesota Wild_New York Islanders,hockey,nhl,2026_01_10,8:00 PM EST,Minnesota Wild,New York Islanders
+2026_01_10_Nashville Predators_Chicago Blackhawks,hockey,nhl,2026_01_10,8:00 PM EST,Nashville Predators,Chicago Blackhawks
+2026_01_10_Vegas Golden Knights_St Louis Blues,hockey,nhl,2026_01_10,10:00 PM EST,Vegas Golden Knights,St Louis Blues
+2026_01_10_Edmonton Oilers_Los Angeles Kings,hockey,nhl,2026_01_10,10:00 PM EST,Edmonton Oilers,Los Angeles Kings

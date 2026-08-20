@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_29,7:00 PM EST,2025_12_29_Carolina Hurricanes_New York Rangers,New York Rangers,Carolina Hurricanes,6.0,5.82,0.4343930455840169,0.5656069544159831,2.3020626369732886,1.7680122074039013,100,-120,,
+hockey,nhl,2025_12_29,7:00 PM EST,2025_12_29_Florida Panthers_Washington Capitals,Washington Capitals,Florida Panthers,5.5,5.69,0.5033364008980011,0.49666359910199886,1.9867428586843763,2.0134352543815717,-118,-102,,
+hockey,nhl,2025_12_29,7:30 PM EST,2025_12_29_Winnipeg Jets_Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,6.0,6.14,0.49565866738382314,0.5043413326161769,2.01751742843151,1.9827841490061622,-120,100,,
+hockey,nhl,2025_12_29,7:30 PM EST,2025_12_29_Ottawa Senators_Columbus Blue Jackets,Columbus Blue Jackets,Ottawa Senators,6.0,6.2,0.5069494782091658,0.49305052179083414,1.9725831527286888,2.028189720533808,-125,105,,
+hockey,nhl,2025_12_29,8:00 PM EST,2025_12_29_St Louis Blues_Buffalo Sabres,Buffalo Sabres,St Louis Blues,6.0,6.01,0.4709479546045673,0.5290520453954327,2.1233768832049664,1.8901732045144324,-115,-105,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Colorado Avalanche_Los Angeles Kings,Los Angeles Kings,Colorado Avalanche,6.0,5.83,0.43632567153774926,0.5636743284622507,2.2918660652619516,1.7740740521713683,-118,-102,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Utah Mammoth_Nashville Predators,Nashville Predators,Utah Mammoth,5.5,5.91,0.5397580726618482,0.46024192733815183,1.8526818785098333,2.172770320565066,-120,100,,
+hockey,nhl,2025_12_29,9:00 PM EST,2025_12_29_Calgary Flames_Boston Bruins,Boston Bruins,Calgary Flames,6.0,5.64,0.3995448771852035,0.6004551228147965,2.502847757791333,1.665403394865262,-105,-115,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Seattle Kraken_Vancouver Canucks,Vancouver Canucks,Seattle Kraken,5.5,6.01,0.5559252485526245,0.4440747514473755,1.7988029912358603,2.251873128883581,-115,-105,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Vegas Golden Knights_Minnesota Wild,Minnesota Wild,Vegas Golden Knights,6.0,5.9,0.4498319611803465,0.5501680388196535,2.223052353541149,1.8176264876189994,-110,-110,,
+hockey,nhl,2025_12_29,10:00 PM EST,2025_12_29_Anaheim Ducks_San Jose Sharks,San Jose Sharks,Anaheim Ducks,6.5,6.61,0.4907215296337537,0.5092784703662463,2.0378156237537457,1.963562290942424,-115,-105,,

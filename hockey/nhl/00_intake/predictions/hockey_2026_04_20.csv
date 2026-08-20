@@ -1,0 +1,5 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","c6747886204aa9fee72f8f417533d92d","2026_04_20","07:00 PM","Pittsburgh Penguins","Philadelphia Flyers","0.559000","0.441000","2.69","3.32","6.01"
+"hockey","nhl","f8d13ed95a66c1dc6b5999ccab91bd36","2026_04_20","07:30 PM","Carolina Hurricanes","Ottawa Senators","0.587000","0.413000","2.59","3.52","6.11"
+"hockey","nhl","f9880d72af7d608cd1aaa81db25e2604","2026_04_20","09:30 PM","Dallas Stars","Minnesota Wild","0.561000","0.439000","2.61","3.26","5.87"
+"hockey","nhl","dae0fa13fc78fd0dde5c02e1626ff783","2026_04_20","10:00 PM","Edmonton Oilers","Anaheim Ducks","0.597000","0.403000","2.93","3.95","6.88"

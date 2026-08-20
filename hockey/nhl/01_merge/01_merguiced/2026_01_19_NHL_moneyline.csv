@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_19,1:30 PM EST,2026_01_19_Carolina Hurricanes_Buffalo Sabres,Buffalo Sabres,Carolina Hurricanes,0.35,0.65,2.857142857142857,1.5384615384615383,165,-200,,
+hockey,nhl,2026_01_19,4:00 PM EST,2026_01_19_Colorado Avalanche_Washington Capitals,Washington Capitals,Colorado Avalanche,0.339,0.661,2.949852507374631,1.51285930408472,170,-210,,
+hockey,nhl,2026_01_19,5:00 PM EST,2026_01_19_Seattle Kraken_Pittsburgh Penguins,Pittsburgh Penguins,Seattle Kraken,0.502,0.498,1.9920318725099602,2.0080321285140563,-118,-102,,
+hockey,nhl,2026_01_19,6:00 PM EST,2026_01_19_Florida Panthers_San Jose Sharks,San Jose Sharks,Florida Panthers,0.348,0.652,2.873563218390805,1.5337423312883436,165,-200,,
+hockey,nhl,2026_01_19,7:30 PM EST,2026_01_19_Toronto Maple Leafs_Minnesota Wild,Minnesota Wild,Toronto Maple Leafs,0.47,0.53,2.127659574468085,1.8867924528301885,105,-125,,
+hockey,nhl,2026_01_19,8:00 PM EST,2026_01_19_Vegas Golden Knights_Philadelphia Flyers,Philadelphia Flyers,Vegas Golden Knights,0.359,0.641,2.785515320334262,1.5600624024960998,170,-210,,
+hockey,nhl,2026_01_19,8:30 PM EST,2026_01_19_Chicago Blackhawks_Winnipeg Jets,Winnipeg Jets,Chicago Blackhawks,0.558,0.442,1.7921146953405016,2.262443438914027,-145,118,,
+hockey,nhl,2026_01_19,9:00 PM EST,2026_01_19_Calgary Flames_New Jersey Devils,New Jersey Devils,Calgary Flames,0.5,0.5,2.0,2.0,-130,105,,
+hockey,nhl,2026_01_19,10:00 PM EST,2026_01_19_Anaheim Ducks_New York Rangers,New York Rangers,Anaheim Ducks,0.482,0.518,2.074688796680498,1.9305019305019304,115,-140,,
+hockey,nhl,2026_01_19,10:00 PM EST,2026_01_19_Vancouver Canucks_New York Islanders,New York Islanders,Vancouver Canucks,0.571,0.429,1.7513134851138354,2.331002331002331,-145,120,,

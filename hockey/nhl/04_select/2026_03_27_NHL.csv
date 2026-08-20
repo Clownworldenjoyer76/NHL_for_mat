@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_03_27,19:10,d1b771dc57d6a0d3b0c0ec52d0b99dbf,Chicago Blackhawks,New York Rangers,moneyline,home,,home_moneyline,-175.0,1.57,0.6632470431794208,0.0412978577916907,0.0412978577916907,0.0724523820906855

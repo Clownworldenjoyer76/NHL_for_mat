@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_14,7:00 PM EDT,2025_10_14_Toronto Maple Leafs_Nashville Predators,Nashville Predators,Toronto Maple Leafs,,,,,,,,,,
+hockey,nhl,2025_10_14,7:00 PM EDT,2025_10_14_Montreal Canadiens_Seattle Kraken,Seattle Kraken,Montreal Canadiens,-1.5,-1.5,0.1643288263292043,0.3849333539221852,6.085359594771726,2.5978523030304914,-175.0,-185.0,,
+hockey,nhl,2025_10_14,7:00 PM EDT,2025_10_14_Washington Capitals_Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,,,,,,,,,,
+hockey,nhl,2025_10_14,7:00 PM EDT,2025_10_14_New York Rangers_Edmonton Oilers,Edmonton Oilers,New York Rangers,,,,,,,,,,
+hockey,nhl,2025_10_14,9:00 PM EDT,2025_10_14_Calgary Flames_Vegas Golden Knights,Vegas Golden Knights,Calgary Flames,-1.5,-1.5,0.4139131458824813,0.14284783859586625,2.415965788832233,7.00045593849775,-190.0,-160.0,,
+hockey,nhl,2025_10_14,9:30 PM EDT,2025_10_14_Dallas Stars_Minnesota Wild,Minnesota Wild,Dallas Stars,-1.5,-1.5,0.13723620644850598,0.43128563883643245,7.286706809221092,2.318648964750843,-150.0,-150.0,,
+hockey,nhl,2025_10_14,10:00 PM EDT,2025_10_14_San Jose Sharks_Carolina Hurricanes,Carolina Hurricanes,San Jose Sharks,,,,,,,,,,
+hockey,nhl,2025_10_14,10:30 PM EDT,2025_10_14_Anaheim Ducks_Pittsburgh Penguins,Pittsburgh Penguins,Anaheim Ducks,-1.5,-1.5,0.23978465253412984,0.3029860734844597,4.170408695601003,3.3004817300663505,-175.0,-190.0,,

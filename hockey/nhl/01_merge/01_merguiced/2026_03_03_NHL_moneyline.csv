@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Boston Bruins_Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,0.471,0.529,2.1231422505307855,1.8903591682419658,100,-120,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Buffalo Sabres_Vegas Golden Knights,Vegas Golden Knights,Buffalo Sabres,0.475,0.525,2.1052631578947367,1.9047619047619047,120,-142,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Washington Capitals_Utah Mammoth,Utah Mammoth,Washington Capitals,0.518,0.482,1.9305019305019304,2.074688796680498,105,-125,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Columbus Blue Jackets_Nashville Predators,Nashville Predators,Columbus Blue Jackets,0.394,0.606,2.5380710659898478,1.6501650165016502,120,-142,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_New Jersey Devils_Florida Panthers,Florida Panthers,New Jersey Devils,0.526,0.474,1.9011406844106462,2.109704641350211,-115,-105,,
+hockey,nhl,2026_03_03,8:10 PM,2026_03_03_Winnipeg Jets_Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,0.387,0.613,2.5839793281653747,1.6313213703099512,136,-162,,
+hockey,nhl,2026_03_03,9:10 PM,2026_03_03_Edmonton Oilers_Ottawa Senators,Ottawa Senators,Edmonton Oilers,0.5,0.5,2.0,2.0,100,-120,,
+hockey,nhl,2026_03_03,9:10 PM,2026_03_03_Calgary Flames_Dallas Stars,Dallas Stars,Calgary Flames,0.55,0.45,1.8181818181818181,2.2222222222222223,-135,114,,
+hockey,nhl,2026_03_03,9:40 PM,2026_03_03_Minnesota Wild_Tampa Bay Lightning,Tampa Bay Lightning,Minnesota Wild,0.534,0.466,1.8726591760299625,2.1459227467811157,-142,120,,
+hockey,nhl,2026_03_03,10:10 PM,2026_03_03_Anaheim Ducks_Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,0.611,0.389,1.6366612111292962,2.570694087403599,-148,124,,
+hockey,nhl,2026_03_03,10:10 PM,2026_03_03_San Jose Sharks_Montreal Canadiens,Montreal Canadiens,San Jose Sharks,0.586,0.414,1.7064846416382253,2.4154589371980677,-135,114,,

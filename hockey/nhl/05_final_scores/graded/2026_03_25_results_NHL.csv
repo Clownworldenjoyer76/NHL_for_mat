@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_03_25,19:40,91a31dec3fbc976904dd2e42901f5fa8,New York Rangers,Toronto Maple Leafs,puck_line,home,1.5,home_puck_line,-244.0,1.41,0.8242425172814245,0.1621819493668084,0.1621819493668084,0.3955657301629475,2026_03_25_NHL.csv,3,4,7,-1,1,2026_03_25_NHL_final_scores.csv,Win

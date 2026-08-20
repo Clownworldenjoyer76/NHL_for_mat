@@ -1,0 +1,8 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2026_03_08_New Jersey Devils_Detroit Red Wings","2026_03_08","07:07 PM","New Jersey Devils","Detroit Red Wings","0.498","0.502","2.90","2.88","5.78"
+"hockey","nhl","2026_03_08_Pittsburgh Penguins_Boston Bruins","2026_03_08","04:37 PM","Pittsburgh Penguins","Boston Bruins","0.522","0.478","3.12","3.35","6.47"
+"hockey","nhl","2026_03_08_Buffalo Sabres_Tampa Bay Lightning","2026_03_08","06:07 PM","Buffalo Sabres","Tampa Bay Lightning","0.47","0.53","3.28","2.96","6.24"
+"hockey","nhl","2026_03_08_Dallas Stars_Chicago Blackhawks","2026_03_08","06:07 PM","Dallas Stars","Chicago Blackhawks","0.729","0.271","2.28","3.76","6.04"
+"hockey","nhl","2026_03_08_Anaheim Ducks_St Louis Blues","2026_03_08","09:07 PM","Anaheim Ducks","St Louis Blues","0.613","0.387","2.61","3.67","6.28"
+"hockey","nhl","2026_03_08_Colorado Avalanche_Minnesota Wild","2026_03_08","02:07 PM","Colorado Avalanche","Minnesota Wild","0.631","0.369","2.66","3.79","6.45"
+"hockey","nhl","2026_03_08_Vegas Golden Knights_Edmonton Oilers","2026_03_08","09:45 PM","Vegas Golden Knights","Edmonton Oilers","0.526","0.474","3.13","3.41","6.54"

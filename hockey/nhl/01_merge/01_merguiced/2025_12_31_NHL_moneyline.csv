@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_31,12:30 PM EST,2025_12_31_Washington Capitals_New York Rangers,New York Rangers,Washington Capitals,0.419,0.581,2.3866348448687353,1.721170395869191,135,-160,,
+hockey,nhl,2025_12_31,3:00 PM EST,2025_12_31_Vegas Golden Knights_Nashville Predators,Nashville Predators,Vegas Golden Knights,0.388,0.612,2.5773195876288657,1.6339869281045751,185,-225,,
+hockey,nhl,2025_12_31,4:00 PM EST,2025_12_31_Anaheim Ducks_Tampa Bay Lightning,Tampa Bay Lightning,Anaheim Ducks,0.544,0.456,1.838235294117647,2.1929824561403506,-145,120,,
+hockey,nhl,2025_12_31,4:00 PM EST,2025_12_31_San Jose Sharks_Minnesota Wild,Minnesota Wild,San Jose Sharks,0.624,0.376,1.6025641025641026,2.6595744680851063,-175,145,,
+hockey,nhl,2025_12_31,6:30 PM EST,2025_12_31_Detroit Red Wings_Winnipeg Jets,Winnipeg Jets,Detroit Red Wings,0.467,0.533,2.141327623126338,1.8761726078799248,110,-135,,
+hockey,nhl,2025_12_31,7:00 PM EST,2025_12_31_Columbus Blue Jackets_New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,0.477,0.523,2.0964360587002098,1.9120458891013383,-105,-115,,
+hockey,nhl,2025_12_31,8:00 PM EST,2025_12_31_Dallas Stars_Buffalo Sabres,Buffalo Sabres,Dallas Stars,0.378,0.622,2.6455026455026456,1.607717041800643,150,-185,,
+hockey,nhl,2025_12_31,9:00 PM EST,2025_12_31_Colorado Avalanche_St Louis Blues,St Louis Blues,Colorado Avalanche,0.216,0.784,4.62962962962963,1.2755102040816326,280,-350,,
+hockey,nhl,2025_12_31,9:30 PM EST,2025_12_31_Edmonton Oilers_Boston Bruins,Boston Bruins,Edmonton Oilers,0.377,0.623,2.6525198938992043,1.6051364365971108,165,-200,,
+hockey,nhl,2025_12_31,9:30 PM EST,2025_12_31_Calgary Flames_Philadelphia Flyers,Philadelphia Flyers,Calgary Flames,0.462,0.538,2.1645021645021645,1.858736059479554,118,-145,,

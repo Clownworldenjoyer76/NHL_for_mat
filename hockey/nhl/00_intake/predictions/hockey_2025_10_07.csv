@@ -1,0 +1,4 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_10_07_New York Rangers_Pittsburgh Penguins","2025_10_07","08:07 PM","New York Rangers","Pittsburgh Penguins","0.638","0.362","2.57","3.73","6.30"
+"hockey","nhl","2025_10_07_Florida Panthers_Chicago Blackhawks","2025_10_07","05:20 PM","Florida Panthers","Chicago Blackhawks","0.735","0.265","2.21","3.73","5.94"
+"hockey","nhl","2025_10_07_Los Angeles Kings_Colorado Avalanche","2025_10_07","10:37 PM","Los Angeles Kings","Colorado Avalanche","0.532","0.468","2.60","2.94","5.54"

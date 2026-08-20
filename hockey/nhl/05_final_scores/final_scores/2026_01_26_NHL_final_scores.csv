@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_01_26","2026_01_26_Philadelphia Flyers_New York Islanders","New York Islanders","Philadelphia Flyers","4","0","4","4","-4"
+"hockey","nhl","2026_01_26","2026_01_26_New York Rangers_Boston Bruins","Boston Bruins","New York Rangers","3","4","7","-1","1"
+"hockey","nhl","2026_01_26","2026_01_26_Tampa Bay Lightning_Utah Mammoth","Utah Mammoth","Tampa Bay Lightning","0","2","2","-2","2"
+"hockey","nhl","2026_01_26","2026_01_26_Edmonton Oilers_Anaheim Ducks","Anaheim Ducks","Edmonton Oilers","4","7","11","-3","3"

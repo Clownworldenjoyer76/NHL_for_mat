@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_11_19","2025_11_19_Anaheim Ducks_Boston Bruins","Boston Bruins","Anaheim Ducks","3","4","7","-1","1"
+"hockey","nhl","2025_11_19","2025_11_19_Buffalo Sabres_Calgary Flames","Calgary Flames","Buffalo Sabres","6","2","8","4","-4"
+"hockey","nhl","2025_11_19","2025_11_19_Minnesota Wild_Carolina Hurricanes","Carolina Hurricanes","Minnesota Wild","3","4","7","-1","1"
+"hockey","nhl","2025_11_19","2025_11_19_Washington Capitals_Edmonton Oilers","Edmonton Oilers","Washington Capitals","4","7","11","-3","3"

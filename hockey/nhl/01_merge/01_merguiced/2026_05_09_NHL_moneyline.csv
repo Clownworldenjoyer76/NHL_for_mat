@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,NHL,2026_05_09,18:00,70558162,Carolina Hurricanes,Philadelphia Flyers,0.611,0.389,1.6366612111292962,2.570694087403599,-189,155,1.53,2.55
+hockey,NHL,2026_05_09,21:00,70558038,Colorado Avalanche,Minnesota Wild,0.584,0.416,1.7123287671232879,2.4038461538461537,-128,106,1.78,2.06

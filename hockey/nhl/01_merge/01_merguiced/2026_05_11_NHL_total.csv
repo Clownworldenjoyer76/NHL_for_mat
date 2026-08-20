@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,NHL,2026_05_11,20:00,70558034,Colorado Avalanche,Minnesota Wild,5.5,6.1,0.5702459197218777,0.4297540802781224,1.7536293823684412,2.32691217114875,-167,130,1.6,2.3

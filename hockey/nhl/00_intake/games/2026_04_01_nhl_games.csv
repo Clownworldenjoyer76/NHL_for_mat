@@ -1,0 +1,4 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+902c8f6ff45c6855541ed7cef351aed8,hockey,nhl,2026_04_01,20:40,Colorado Avalanche,Vancouver Canucks
+96ceffc5fa63fb301b4128bb29041f01,hockey,nhl,2026_04_01,21:10,San Jose Sharks,Anaheim Ducks
+643d656ddcc5756af5e6115f9f134a28,hockey,nhl,2026_04_01,21:10,Los Angeles Kings,St Louis Blues

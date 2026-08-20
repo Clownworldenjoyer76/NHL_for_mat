@@ -1,0 +1,5 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2026_01_26,2026_01_26_New York Rangers_Boston Bruins,Boston Bruins,New York Rangers,1,1,1,matched
+2026_01_26,2026_01_26_Tampa Bay Lightning_Utah Mammoth,Utah Mammoth,Tampa Bay Lightning,1,1,1,matched
+2026_01_26,2026_01_26_Philadelphia Flyers_New York Islanders,New York Islanders,Philadelphia Flyers,1,1,1,matched
+2026_01_26,2026_01_26_Edmonton Oilers_Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,1,1,1,matched

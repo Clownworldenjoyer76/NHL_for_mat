@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_12_19,7:00 PM EST,2025_12_19_New York Islanders_Vancouver Canucks,Vancouver Canucks,New York Islanders,1.5,-1.5,0.5664761284824591,0.4335238715175409,1.765299453445486,2.3066780532742563,-215,183,,
+hockey,nhl,2025_12_19,7:00 PM EST,2025_12_19_Florida Panthers_Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,-1.5,1.5,0.21726042389140288,0.7827395761085969,4.602771098798223,1.2775641228868444,203,-245,,
+hockey,nhl,2025_12_19,9:00 PM EST,2025_12_19_Utah Mammoth_New Jersey Devils,New Jersey Devils,Utah Mammoth,1.5,-1.5,0.6524159187415812,0.34758408125841855,1.5327645621045847,2.8770017210786167,-220,186,,
+hockey,nhl,2025_12_19,9:00 PM EST,2025_12_19_Colorado Avalanche_Winnipeg Jets,Winnipeg Jets,Colorado Avalanche,1.5,-1.5,0.5182215005554108,0.48177849944458917,1.9296767867181053,2.075642647301269,-125,105,,
+hockey,nhl,2025_12_19,10:00 PM EST,2025_12_19_Anaheim Ducks_Dallas Stars,Dallas Stars,Anaheim Ducks,-1.5,1.5,0.3070073529895918,0.6929926470104082,3.257250975464103,1.443016753949744,209,-252,,

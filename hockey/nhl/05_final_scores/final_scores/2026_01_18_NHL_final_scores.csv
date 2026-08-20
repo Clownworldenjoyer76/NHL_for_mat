@@ -1,0 +1,4 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_01_18","2026_01_18_Detroit Red Wings_Ottawa Senators","Ottawa Senators","Detroit Red Wings","3","4","7","-1","1"
+"hockey","nhl","2026_01_18","2026_01_18_Dallas Stars_Tampa Bay Lightning","Tampa Bay Lightning","Dallas Stars","4","1","5","3","-3"
+"hockey","nhl","2026_01_18","2026_01_18_Edmonton Oilers_St Louis Blues","St Louis Blues","Edmonton Oilers","0","5","5","-5","5"

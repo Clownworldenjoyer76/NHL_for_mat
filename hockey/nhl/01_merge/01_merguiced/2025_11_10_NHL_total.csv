@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_10,7:00 PM EST,2025_11_10_New Jersey Devils_New York Islanders,New York Islanders,New Jersey Devils,6.0,6.1,0.488088890083461,0.5119111099165391,2.0488071339403042,1.9534641476389092,-110,-110,,
+hockey,nhl,2025_11_10,7:00 PM EST,2025_11_10_New York Rangers_Nashville Predators,Nashville Predators,New York Rangers,5.5,5.68,0.5016556369817712,0.4983443630182288,1.9933993087699269,2.0066445498520094,-120,100,,
+hockey,nhl,2025_11_10,8:30 PM EST,2025_11_10_Edmonton Oilers_Columbus Blue Jackets,Columbus Blue Jackets,Edmonton Oilers,6.5,6.39,0.45608479106093924,0.5439152089390608,2.192574757149458,1.8385218570198836,-120,100,,
+hockey,nhl,2025_11_10,10:00 PM EST,2025_11_10_Vegas Golden Knights_Florida Panthers,Florida Panthers,Vegas Golden Knights,6.0,5.82,0.4343930455840169,0.5656069544159831,2.3020626369732886,1.7680122074039013,-110,-110,,

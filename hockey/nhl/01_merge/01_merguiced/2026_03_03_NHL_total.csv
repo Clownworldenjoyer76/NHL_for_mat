@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Boston Bruins_Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,6.5,6.37,0.45290922072978557,0.5470907792702144,2.207947982133531,1.8278502177169549,-105,-115,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Buffalo Sabres_Vegas Golden Knights,Vegas Golden Knights,Buffalo Sabres,6.5,6.22,0.42898770731972924,0.5710122926802708,2.3310691260779857,1.7512757830590768,105,-125,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Washington Capitals_Utah Mammoth,Utah Mammoth,Washington Capitals,6.5,5.96,0.38727257844189866,0.6127274215581013,2.582160616750269,1.6320470813222383,105,-125,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_Columbus Blue Jackets_Nashville Predators,Nashville Predators,Columbus Blue Jackets,6.5,6.42,0.46084082658010317,0.5391591734198968,2.169946633029442,1.8547398417743337,100,-120,,
+hockey,nhl,2026_03_03,7:10 PM,2026_03_03_New Jersey Devils_Florida Panthers,Florida Panthers,New Jersey Devils,5.5,5.79,0.5200282110097941,0.47997178899020587,1.922972598079234,2.0834557841490255,-125,105,,
+hockey,nhl,2026_03_03,8:10 PM,2026_03_03_Winnipeg Jets_Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,5.5,5.74,0.5117092015348796,0.48829079846512036,1.9542349385168072,2.0479599516177083,-120,100,,
+hockey,nhl,2026_03_03,9:10 PM,2026_03_03_Edmonton Oilers_Ottawa Senators,Ottawa Senators,Edmonton Oilers,6.5,6.89,0.5337733071756109,0.4662266928243891,1.873454491929101,2.1448793374356714,-142,120,,
+hockey,nhl,2026_03_03,9:10 PM,2026_03_03_Calgary Flames_Dallas Stars,Dallas Stars,Calgary Flames,5.5,5.8,0.5216853128418241,0.47831468715817593,1.9168643919695738,2.090673832203078,-108,-112,,
+hockey,nhl,2026_03_03,9:40 PM,2026_03_03_Minnesota Wild_Tampa Bay Lightning,Tampa Bay Lightning,Minnesota Wild,6.5,6.08,0.4065447999220446,0.5934552000779554,2.4597535134916275,1.6850471608785995,105,-125,,
+hockey,nhl,2026_03_03,10:10 PM,2026_03_03_Anaheim Ducks_Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,6.5,6.79,0.5185534919583676,0.48144650804163236,1.9284413575606305,2.077073949643283,-130,110,,
+hockey,nhl,2026_03_03,10:10 PM,2026_03_03_San Jose Sharks_Montreal Canadiens,Montreal Canadiens,San Jose Sharks,6.5,6.53,0.47819531827656636,0.5218046817234336,2.0911957139271817,1.9164258869758837,-120,100,,

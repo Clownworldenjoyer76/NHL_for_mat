@@ -1,0 +1,11 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2025_11_13_Toronto Maple Leafs_Los Angeles Kings,hockey,nhl,2025_11_13,7:00 PM EST,Toronto Maple Leafs,Los Angeles Kings
+2025_11_13_Ottawa Senators_Boston Bruins,hockey,nhl,2025_11_13,7:00 PM EST,Ottawa Senators,Boston Bruins
+2025_11_13_Montreal Canadiens_Dallas Stars,hockey,nhl,2025_11_13,7:00 PM EST,Montreal Canadiens,Dallas Stars
+2025_11_13_Detroit Red Wings_Anaheim Ducks,hockey,nhl,2025_11_13,7:00 PM EST,Detroit Red Wings,Anaheim Ducks
+2025_11_13_Florida Panthers_Washington Capitals,hockey,nhl,2025_11_13,7:00 PM EST,Florida Panthers,Washington Capitals
+2025_11_13_Columbus Blue Jackets_Edmonton Oilers,hockey,nhl,2025_11_13,7:30 PM EST,Columbus Blue Jackets,Edmonton Oilers
+2025_11_13_Colorado Avalanche_Buffalo Sabres,hockey,nhl,2025_11_13,9:00 PM EST,Colorado Avalanche,Buffalo Sabres
+2025_11_13_Calgary Flames_San Jose Sharks,hockey,nhl,2025_11_13,9:00 PM EST,Calgary Flames,San Jose Sharks
+2025_11_13_Seattle Kraken_Winnipeg Jets,hockey,nhl,2025_11_13,10:00 PM EST,Seattle Kraken,Winnipeg Jets
+2025_11_13_Vegas Golden Knights_New York Islanders,hockey,nhl,2025_11_13,10:00 PM EST,Vegas Golden Knights,New York Islanders

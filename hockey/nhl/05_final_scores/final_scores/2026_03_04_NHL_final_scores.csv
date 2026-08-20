@@ -1,0 +1,6 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_03_04","2026_03_04_New Jersey Devils_Toronto Maple Leafs","Toronto Maple Leafs","New Jersey Devils","3","4","7","-1","1"
+"hockey","nhl","2026_03_04","2026_03_04_Anaheim Ducks_New York Islanders","New York Islanders","Anaheim Ducks","1","5","6","-4","4"
+"hockey","nhl","2026_03_04","2026_03_04_Vancouver Canucks_Carolina Hurricanes","Carolina Hurricanes","Vancouver Canucks","6","4","10","2","-2"
+"hockey","nhl","2026_03_04","2026_03_04_Detroit Red Wings_Vegas Golden Knights","Vegas Golden Knights","Detroit Red Wings","4","3","7","1","-1"
+"hockey","nhl","2026_03_04","2026_03_04_Seattle Kraken_St Louis Blues","St Louis Blues","Seattle Kraken","3","2","5","1","-1"

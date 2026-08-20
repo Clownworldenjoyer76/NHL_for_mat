@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_07,5:00 PM EDT,2025_10_07_Florida Panthers_Chicago Blackhawks,Chicago Blackhawks,Florida Panthers,,,,,,,,,,
+hockey,nhl,2025_10_07,8:00 PM EDT,2025_10_07_New York Rangers_Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,-1.5,-1.5,0.13933100788688624,0.4393910113608809,7.177153278126251,2.275877234954812,-145.0,-120.0,,
+hockey,nhl,2025_10_07,10:30 PM EDT,2025_10_07_Los Angeles Kings_Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,,,,,,,,,,

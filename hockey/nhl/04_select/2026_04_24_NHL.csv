@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_04_24,21:40,863fdb33769ad2bb155134384e205a7a,Vegas Golden Knights,Utah Mammoth,puck_line,home,1.5,home_puck_line,-270.0,1.37,0.851821683716618,0.1669957066917669,0.1669957066917669,0.4513397478155858
+hockey,nhl,2026_04_24,19:10,ae9003a3e6fcbb6dcb1aa2bb4ce6947a,Tampa Bay Lightning,Montreal Canadiens,puck_line,home,1.5,home_puck_line,-244.0,1.41,0.8058638433344413,0.1362680191015621,0.1362680191015621,0.332361022198932
+hockey,nhl,2026_04_24,22:10,e2d2c01a1afa073fc70698a37554c36e,Edmonton Oilers,Anaheim Ducks,puck_line,home,1.5,home_puck_line,-204.0,1.49,0.8012530395333676,0.1938670289047177,0.1938670289047177,0.39564699776473

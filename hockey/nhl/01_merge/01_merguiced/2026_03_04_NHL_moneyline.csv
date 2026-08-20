@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_04,7:00 PM,2026_03_04_Detroit Red Wings_Vegas Golden Knights,Vegas Golden Knights,Detroit Red Wings,0.469,0.531,2.1321961620469083,1.8832391713747645,114,-135,,
+hockey,nhl,2026_03_04,7:10 PM,2026_03_04_New Jersey Devils_Toronto Maple Leafs,Toronto Maple Leafs,New Jersey Devils,0.499,0.501,2.004008016032064,1.996007984031936,102,-122,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Vancouver Canucks_Carolina Hurricanes,Carolina Hurricanes,Vancouver Canucks,0.693,0.307,1.443001443001443,3.257328990228013,-278,225,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Seattle Kraken_St Louis Blues,St Louis Blues,Seattle Kraken,0.484,0.516,2.066115702479339,1.937984496124031,124,-148,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Anaheim Ducks_New York Islanders,New York Islanders,Anaheim Ducks,0.519,0.481,1.9267822736030829,2.079002079002079,-110,-110,,

@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Montreal Canadiens_Boston Bruins,Boston Bruins,Montreal Canadiens,0.409,0.591,2.444987775061125,1.6920473773265652,142,-170,,
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Columbus Blue Jackets_Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,0.572,0.428,1.7482517482517483,2.336448598130841,-135,114,,
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Toronto Maple Leafs_New York Islanders,New York Islanders,Toronto Maple Leafs,0.513,0.487,1.949317738791423,2.053388090349076,-142,120,,
+hockey,nhl,2026_03_17,7:40 PM,2026_03_17_Chicago Blackhawks_Minnesota Wild,Minnesota Wild,Chicago Blackhawks,0.617,0.383,1.6207455429497568,2.6109660574412534,-175,145,,
+hockey,nhl,2026_03_17,8:10 PM,2026_03_17_Winnipeg Jets_Nashville Predators,Nashville Predators,Winnipeg Jets,0.445,0.555,2.247191011235955,1.8018018018018016,114,-135,,
+hockey,nhl,2026_03_17,9:10 PM,2026_03_17_Edmonton Oilers_San Jose Sharks,San Jose Sharks,Edmonton Oilers,0.4,0.6,2.5,1.6666666666666667,145,-175,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Vegas Golden Knights_Buffalo Sabres,Buffalo Sabres,Vegas Golden Knights,0.451,0.549,2.2172949002217295,1.8214936247723132,105,-125,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Vancouver Canucks_Florida Panthers,Florida Panthers,Vancouver Canucks,0.597,0.403,1.6750418760469012,2.4813895781637716,-148,124,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Seattle Kraken_Tampa Bay Lightning,Tampa Bay Lightning,Seattle Kraken,0.633,0.367,1.5797788309636651,2.7247956403269757,-185,154,,

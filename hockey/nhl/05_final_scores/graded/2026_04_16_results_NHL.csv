@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_04_16,22:10,96784cc6006a3540914823666e6561d1,Seattle Kraken,Colorado Avalanche,moneyline,home,,home_moneyline,-179.0,1.56,0.772138184804155,0.2045355682944818,0.2045355682944818,0.365242086240146,2026_04_16_NHL.csv,0,2,2,-2,2,2026_04_16_NHL_final_scores.csv,Win

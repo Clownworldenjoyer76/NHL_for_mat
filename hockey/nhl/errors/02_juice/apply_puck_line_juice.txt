@@ -1,0 +1,985 @@
+=== apply_puck_line_juice RUN 2026-06-15T10:16:24.902106+00:00 ===
+2026-06-15T10:16:24.908961+00:00 | Wiped puck_line output CSVs: 211
+2026-06-15T10:16:24.909005+00:00 | INPUT_DIR: docs/win/hockey/nhl/01_merge/01_merguiced
+2026-06-15T10:16:24.909032+00:00 | OUTPUT_DIR: docs/win/hockey/nhl/02_juice
+2026-06-15T10:16:24.909060+00:00 | JUICE_FILE: docs/win/hockey/nhl/config/juice/nhl_puck_line_juice.csv
+2026-06-15T10:16:24.913761+00:00 | Input files found: 211
+2026-06-15T10:16:24.913825+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_07_NHL_puck_line.csv
+2026-06-15T10:16:24.917265+00:00 | ROW SKIP: 2025_10_07_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.919464+00:00 | ROW SKIP: 2025_10_07_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:24.921245+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_07_NHL_puck_line.csv rows=3 applied=1 skipped_bad=2 skipped_noband=0
+2026-06-15T10:16:24.921303+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_08_NHL_puck_line.csv
+2026-06-15T10:16:24.924191+00:00 | ROW SKIP: 2025_10_08_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.924329+00:00 | ROW SKIP: 2025_10_08_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:24.924455+00:00 | ROW SKIP: 2025_10_08_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:24.924576+00:00 | ROW SKIP: 2025_10_08_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:24.925939+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_08_NHL_puck_line.csv rows=4 applied=0 skipped_bad=4 skipped_noband=0
+2026-06-15T10:16:24.925997+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_09_NHL_puck_line.csv
+2026-06-15T10:16:24.928751+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.930653+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:24.937022+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:24.937152+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:24.937270+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:24.937387+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:24.937502+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:24.937617+00:00 | ROW SKIP: 2025_10_09_NHL_puck_line.csv idx=12 reason=bad_puck_line_values
+2026-06-15T10:16:24.940607+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_09_NHL_puck_line.csv rows=14 applied=6 skipped_bad=8 skipped_noband=0
+2026-06-15T10:16:24.940666+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_11_NHL_puck_line.csv
+2026-06-15T10:16:24.943592+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.948360+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:24.951510+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:24.954635+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:24.954761+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:24.959405+00:00 | ROW SKIP: 2025_10_11_NHL_puck_line.csv idx=15 reason=bad_puck_line_values
+2026-06-15T10:16:24.960882+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_11_NHL_puck_line.csv rows=16 applied=10 skipped_bad=6 skipped_noband=0
+2026-06-15T10:16:24.960941+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_12_NHL_puck_line.csv
+2026-06-15T10:16:24.966292+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_12_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:24.966347+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_13_NHL_puck_line.csv
+2026-06-15T10:16:24.973871+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:24.974005+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:24.975664+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:24.975823+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:24.975965+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:24.976081+00:00 | ROW SKIP: 2025_10_13_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:24.977394+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_13_NHL_puck_line.csv rows=10 applied=4 skipped_bad=6 skipped_noband=0
+2026-06-15T10:16:24.977451+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_14_NHL_puck_line.csv
+2026-06-15T10:16:24.980229+00:00 | ROW SKIP: 2025_10_14_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.981948+00:00 | ROW SKIP: 2025_10_14_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:24.982072+00:00 | ROW SKIP: 2025_10_14_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:24.985198+00:00 | ROW SKIP: 2025_10_14_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:24.988027+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_14_NHL_puck_line.csv rows=8 applied=4 skipped_bad=4 skipped_noband=0
+2026-06-15T10:16:24.988086+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_15_NHL_puck_line.csv
+2026-06-15T10:16:24.993769+00:00 | ROW SKIP: 2025_10_15_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:24.993925+00:00 | ROW SKIP: 2025_10_15_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:24.995238+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_15_NHL_puck_line.csv rows=4 applied=2 skipped_bad=2 skipped_noband=0
+2026-06-15T10:16:24.995294+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_16_NHL_puck_line.csv
+2026-06-15T10:16:24.997966+00:00 | ROW SKIP: 2025_10_16_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:24.998095+00:00 | ROW SKIP: 2025_10_16_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.002879+00:00 | ROW SKIP: 2025_10_16_NHL_puck_line.csv idx=5 reason=bad_puck_line_values
+2026-06-15T10:16:25.003019+00:00 | ROW SKIP: 2025_10_16_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:25.007642+00:00 | ROW SKIP: 2025_10_16_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:25.009009+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_16_NHL_puck_line.csv rows=11 applied=6 skipped_bad=5 skipped_noband=0
+2026-06-15T10:16:25.009066+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_17_NHL_puck_line.csv
+2026-06-15T10:16:25.011720+00:00 | ROW SKIP: 2025_10_17_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.014909+00:00 | ROW SKIP: 2025_10_17_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.016157+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_17_NHL_puck_line.csv rows=4 applied=2 skipped_bad=2 skipped_noband=0
+2026-06-15T10:16:25.016211+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_18_NHL_puck_line.csv
+2026-06-15T10:16:25.020438+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.020563+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.020681+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.022350+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=5 reason=bad_puck_line_values
+2026-06-15T10:16:25.024018+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:25.024140+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:25.024255+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:25.024377+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:25.024489+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:25.024601+00:00 | ROW SKIP: 2025_10_18_NHL_puck_line.csv idx=12 reason=bad_puck_line_values
+2026-06-15T10:16:25.025952+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_18_NHL_puck_line.csv rows=13 applied=3 skipped_bad=10 skipped_noband=0
+2026-06-15T10:16:25.026009+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_19_NHL_puck_line.csv
+2026-06-15T10:16:25.028610+00:00 | ROW SKIP: 2025_10_19_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.030330+00:00 | ROW SKIP: 2025_10_19_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.030457+00:00 | ROW SKIP: 2025_10_19_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.031667+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_19_NHL_puck_line.csv rows=4 applied=1 skipped_bad=3 skipped_noband=0
+2026-06-15T10:16:25.031721+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_20_NHL_puck_line.csv
+2026-06-15T10:16:25.035988+00:00 | ROW SKIP: 2025_10_20_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.036114+00:00 | ROW SKIP: 2025_10_20_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.037749+00:00 | ROW SKIP: 2025_10_20_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:25.039023+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_20_NHL_puck_line.csv rows=5 applied=2 skipped_bad=3 skipped_noband=0
+2026-06-15T10:16:25.039078+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_21_NHL_puck_line.csv
+2026-06-15T10:16:25.041695+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.041845+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.043542+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.046673+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:25.046820+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:25.046944+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:25.047057+00:00 | ROW SKIP: 2025_10_21_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:25.048336+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_21_NHL_puck_line.csv rows=10 applied=3 skipped_bad=7 skipped_noband=0
+2026-06-15T10:16:25.048392+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_22_NHL_puck_line.csv
+2026-06-15T10:16:25.051049+00:00 | ROW SKIP: 2025_10_22_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.055375+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_22_NHL_puck_line.csv rows=3 applied=2 skipped_bad=1 skipped_noband=0
+2026-06-15T10:16:25.055430+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_23_NHL_puck_line.csv
+2026-06-15T10:16:25.058609+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.060404+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.062108+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:25.063764+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:25.065456+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:25.068628+00:00 | ROW SKIP: 2025_10_23_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:25.070076+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_23_NHL_puck_line.csv rows=12 applied=6 skipped_bad=6 skipped_noband=0
+2026-06-15T10:16:25.070136+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_24_NHL_puck_line.csv
+2026-06-15T10:16:25.077542+00:00 | ROW SKIP: 2025_10_24_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.078914+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_24_NHL_puck_line.csv rows=4 applied=3 skipped_bad=1 skipped_noband=0
+2026-06-15T10:16:25.078971+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_25_NHL_puck_line.csv
+2026-06-15T10:16:25.081696+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.083470+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.083597+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.085316+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=5 reason=bad_puck_line_values
+2026-06-15T10:16:25.085449+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:25.087141+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:25.087267+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:25.087391+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:25.087508+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:25.087623+00:00 | ROW SKIP: 2025_10_25_NHL_puck_line.csv idx=12 reason=bad_puck_line_values
+2026-06-15T10:16:25.088979+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_25_NHL_puck_line.csv rows=13 applied=3 skipped_bad=10 skipped_noband=0
+2026-06-15T10:16:25.089036+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_26_NHL_puck_line.csv
+2026-06-15T10:16:25.091714+00:00 | ROW SKIP: 2025_10_26_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.095003+00:00 | ROW SKIP: 2025_10_26_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.095133+00:00 | ROW SKIP: 2025_10_26_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:25.098289+00:00 | ROW SKIP: 2025_10_26_NHL_puck_line.csv idx=7 reason=bad_puck_line_values
+2026-06-15T10:16:25.099654+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_26_NHL_puck_line.csv rows=8 applied=4 skipped_bad=4 skipped_noband=0
+2026-06-15T10:16:25.099712+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_27_NHL_puck_line.csv
+2026-06-15T10:16:25.104012+00:00 | ROW SKIP: 2025_10_27_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.105289+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_27_NHL_puck_line.csv rows=2 applied=1 skipped_bad=1 skipped_noband=0
+2026-06-15T10:16:25.105345+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_28_NHL_puck_line.csv
+2026-06-15T10:16:25.109655+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.112864+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:25.117483+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=8 reason=bad_puck_line_values
+2026-06-15T10:16:25.122130+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=12 reason=bad_puck_line_values
+2026-06-15T10:16:25.122258+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=13 reason=bad_puck_line_values
+2026-06-15T10:16:25.122375+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=14 reason=bad_puck_line_values
+2026-06-15T10:16:25.122490+00:00 | ROW SKIP: 2025_10_28_NHL_puck_line.csv idx=15 reason=bad_puck_line_values
+2026-06-15T10:16:25.123927+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_28_NHL_puck_line.csv rows=16 applied=9 skipped_bad=7 skipped_noband=0
+2026-06-15T10:16:25.123986+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_29_NHL_puck_line.csv
+2026-06-15T10:16:25.129305+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_29_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.129366+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_30_NHL_puck_line.csv
+2026-06-15T10:16:25.132081+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.133787+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.133943+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.137135+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=6 reason=bad_puck_line_values
+2026-06-15T10:16:25.140285+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=9 reason=bad_puck_line_values
+2026-06-15T10:16:25.140409+00:00 | ROW SKIP: 2025_10_30_NHL_puck_line.csv idx=10 reason=bad_puck_line_values
+2026-06-15T10:16:25.141735+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_30_NHL_puck_line.csv rows=11 applied=5 skipped_bad=6 skipped_noband=0
+2026-06-15T10:16:25.141815+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_10_31_NHL_puck_line.csv
+2026-06-15T10:16:25.144489+00:00 | ROW SKIP: 2025_10_31_NHL_puck_line.csv idx=0 reason=bad_puck_line_values
+2026-06-15T10:16:25.144617+00:00 | ROW SKIP: 2025_10_31_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.147471+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_10_31_NHL_puck_line.csv rows=3 applied=1 skipped_bad=2 skipped_noband=0
+2026-06-15T10:16:25.147528+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_01_NHL_puck_line.csv
+2026-06-15T10:16:25.151833+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=1 reason=bad_puck_line_values
+2026-06-15T10:16:25.151974+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=2 reason=bad_puck_line_values
+2026-06-15T10:16:25.152091+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=3 reason=bad_puck_line_values
+2026-06-15T10:16:25.152207+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=4 reason=bad_puck_line_values
+2026-06-15T10:16:25.162055+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=11 reason=bad_puck_line_values
+2026-06-15T10:16:25.162194+00:00 | ROW SKIP: 2025_11_01_NHL_puck_line.csv idx=12 reason=bad_puck_line_values
+2026-06-15T10:16:25.164176+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_01_NHL_puck_line.csv rows=13 applied=7 skipped_bad=6 skipped_noband=0
+2026-06-15T10:16:25.164237+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_02_NHL_puck_line.csv
+2026-06-15T10:16:25.168484+00:00 | ROW CAP: 2025_11_02_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9139341329915595 capped_to=1.01
+2026-06-15T10:16:25.173195+00:00 | ROW CAP: 2025_11_02_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9109587870056787 capped_to=1.01
+2026-06-15T10:16:25.176146+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_02_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.176204+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_03_NHL_puck_line.csv
+2026-06-15T10:16:25.181969+00:00 | ROW CAP: 2025_11_03_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.909401007133067 capped_to=1.01
+2026-06-15T10:16:25.183562+00:00 | ROW CAP: 2025_11_03_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9437645240190387 capped_to=1.01
+2026-06-15T10:16:25.186561+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_03_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.186618+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_04_NHL_puck_line.csv
+2026-06-15T10:16:25.192567+00:00 | ROW CAP: 2025_11_04_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9028363627888043 capped_to=1.01
+2026-06-15T10:16:25.195697+00:00 | ROW CAP: 2025_11_04_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9190450494813669 capped_to=1.01
+2026-06-15T10:16:25.204884+00:00 | ROW CAP: 2025_11_04_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9718115168721582 capped_to=1.01
+2026-06-15T10:16:25.206510+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_04_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.206586+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_05_NHL_puck_line.csv
+2026-06-15T10:16:25.214248+00:00 | ROW CAP: 2025_11_05_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8927213996300932 capped_to=1.01
+2026-06-15T10:16:25.219143+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_05_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.219208+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_06_NHL_puck_line.csv
+2026-06-15T10:16:25.226725+00:00 | ROW CAP: 2025_11_06_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9964944367300641 capped_to=1.01
+2026-06-15T10:16:25.229928+00:00 | ROW CAP: 2025_11_06_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8258209764249295 capped_to=1.01
+2026-06-15T10:16:25.233032+00:00 | ROW CAP: 2025_11_06_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9416970428872369 capped_to=1.01
+2026-06-15T10:16:25.234589+00:00 | ROW CAP: 2025_11_06_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9721759921303995 capped_to=1.01
+2026-06-15T10:16:25.236207+00:00 | ROW CAP: 2025_11_06_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.903108447695012 capped_to=1.01
+2026-06-15T10:16:25.237777+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_06_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.237865+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_07_NHL_puck_line.csv
+2026-06-15T10:16:25.243535+00:00 | ROW CAP: 2025_11_07_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9602271101557182 capped_to=1.01
+2026-06-15T10:16:25.247962+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_07_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.248020+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_08_NHL_puck_line.csv
+2026-06-15T10:16:25.253844+00:00 | ROW CAP: 2025_11_08_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8758120316959119 capped_to=1.01
+2026-06-15T10:16:25.264632+00:00 | ROW CAP: 2025_11_08_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.948856055259959 capped_to=1.01
+2026-06-15T10:16:25.266286+00:00 | ROW CAP: 2025_11_08_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9178982908590964 capped_to=1.01
+2026-06-15T10:16:25.269483+00:00 | ROW CAP: 2025_11_08_NHL_puck_line.csv idx=11 side=home original_juiced_decimal=0.9175856204622584 capped_to=1.01
+2026-06-15T10:16:25.272814+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_08_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.272882+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_09_NHL_puck_line.csv
+2026-06-15T10:16:25.281731+00:00 | ROW CAP: 2025_11_09_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9979831569499374 capped_to=1.01
+2026-06-15T10:16:25.283339+00:00 | ROW CAP: 2025_11_09_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8717206249416165 capped_to=1.01
+2026-06-15T10:16:25.289348+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_09_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.289409+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_10_NHL_puck_line.csv
+2026-06-15T10:16:25.298159+00:00 | ROW CAP: 2025_11_10_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9138840835741667 capped_to=1.01
+2026-06-15T10:16:25.299544+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_10_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.299602+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_11_NHL_puck_line.csv
+2026-06-15T10:16:25.303746+00:00 | ROW CAP: 2025_11_11_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8277108009579286 capped_to=1.01
+2026-06-15T10:16:25.308409+00:00 | ROW CAP: 2025_11_11_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9196022109761092 capped_to=1.01
+2026-06-15T10:16:25.314493+00:00 | ROW CAP: 2025_11_11_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9833918555943788 capped_to=1.01
+2026-06-15T10:16:25.316101+00:00 | ROW CAP: 2025_11_11_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.9004025441028796 capped_to=1.01
+2026-06-15T10:16:25.317745+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_11_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.317831+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_12_NHL_puck_line.csv
+2026-06-15T10:16:25.323567+00:00 | ROW CAP: 2025_11_12_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8892230028118339 capped_to=1.01
+2026-06-15T10:16:25.326687+00:00 | ROW CAP: 2025_11_12_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9254211221872828 capped_to=1.01
+2026-06-15T10:16:25.328103+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_12_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.328160+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_13_NHL_puck_line.csv
+2026-06-15T10:16:25.332286+00:00 | ROW CAP: 2025_11_13_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8928686342249937 capped_to=1.01
+2026-06-15T10:16:25.335402+00:00 | ROW CAP: 2025_11_13_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.863972651815182 capped_to=1.01
+2026-06-15T10:16:25.337001+00:00 | ROW CAP: 2025_11_13_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9978412764887531 capped_to=1.01
+2026-06-15T10:16:25.340119+00:00 | ROW CAP: 2025_11_13_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8394224080452934 capped_to=1.01
+2026-06-15T10:16:25.344646+00:00 | ROW CAP: 2025_11_13_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9769690835193989 capped_to=1.01
+2026-06-15T10:16:25.347764+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_13_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.347850+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_14_NHL_puck_line.csv
+2026-06-15T10:16:25.352023+00:00 | ROW CAP: 2025_11_14_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9326171485759305 capped_to=1.01
+2026-06-15T10:16:25.357969+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_14_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.358028+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_15_NHL_puck_line.csv
+2026-06-15T10:16:25.363676+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.964544165199002 capped_to=1.01
+2026-06-15T10:16:25.365263+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9532106108375386 capped_to=1.01
+2026-06-15T10:16:25.368375+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.8951046261439861 capped_to=1.01
+2026-06-15T10:16:25.371428+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.8686866337987144 capped_to=1.01
+2026-06-15T10:16:25.377502+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.985144488879556 capped_to=1.01
+2026-06-15T10:16:25.380540+00:00 | ROW CAP: 2025_11_15_NHL_puck_line.csv idx=12 side=home original_juiced_decimal=0.995081977470211 capped_to=1.01
+2026-06-15T10:16:25.382219+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_15_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.382281+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_16_NHL_puck_line.csv
+2026-06-15T10:16:25.386457+00:00 | ROW CAP: 2025_11_16_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.975629882685599 capped_to=1.01
+2026-06-15T10:16:25.389554+00:00 | ROW CAP: 2025_11_16_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9529704767659853 capped_to=1.01
+2026-06-15T10:16:25.393983+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_16_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.394045+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_17_NHL_puck_line.csv
+2026-06-15T10:16:25.398166+00:00 | ROW CAP: 2025_11_17_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.948923588362762 capped_to=1.01
+2026-06-15T10:16:25.401280+00:00 | ROW CAP: 2025_11_17_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9006712578221603 capped_to=1.01
+2026-06-15T10:16:25.405826+00:00 | ROW CAP: 2025_11_17_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8819720768859687 capped_to=1.01
+2026-06-15T10:16:25.407252+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_17_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.407310+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_18_NHL_puck_line.csv
+2026-06-15T10:16:25.412980+00:00 | ROW CAP: 2025_11_18_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9990185441418176 capped_to=1.01
+2026-06-15T10:16:25.423437+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_18_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.423498+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_19_NHL_puck_line.csv
+2026-06-15T10:16:25.433619+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_19_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.433676+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_20_NHL_puck_line.csv
+2026-06-15T10:16:25.437828+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9780861259123662 capped_to=1.01
+2026-06-15T10:16:25.440958+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.984122076308049 capped_to=1.01
+2026-06-15T10:16:25.444002+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9628557602259984 capped_to=1.01
+2026-06-15T10:16:25.450016+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9048041754426644 capped_to=1.01
+2026-06-15T10:16:25.451675+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9164041766552802 capped_to=1.01
+2026-06-15T10:16:25.453254+00:00 | ROW CAP: 2025_11_20_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.8846899467445023 capped_to=1.01
+2026-06-15T10:16:25.456353+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_20_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.456413+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_21_NHL_puck_line.csv
+2026-06-15T10:16:25.462103+00:00 | ROW CAP: 2025_11_21_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9830692514117686 capped_to=1.01
+2026-06-15T10:16:25.463683+00:00 | ROW CAP: 2025_11_21_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8579546129571325 capped_to=1.01
+2026-06-15T10:16:25.466580+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_21_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.466638+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_22_NHL_puck_line.csv
+2026-06-15T10:16:25.470741+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9385677447195947 capped_to=1.01
+2026-06-15T10:16:25.475380+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9787660803245563 capped_to=1.01
+2026-06-15T10:16:25.476969+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.961946305718559 capped_to=1.01
+2026-06-15T10:16:25.478504+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9979458765513178 capped_to=1.01
+2026-06-15T10:16:25.480064+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.8808725282423976 capped_to=1.01
+2026-06-15T10:16:25.484649+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9688549008924443 capped_to=1.01
+2026-06-15T10:16:25.486218+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.9735788884775033 capped_to=1.01
+2026-06-15T10:16:25.487754+00:00 | ROW CAP: 2025_11_22_NHL_puck_line.csv idx=11 side=home original_juiced_decimal=0.9542127500654584 capped_to=1.01
+2026-06-15T10:16:25.489611+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_22_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.489700+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_23_NHL_puck_line.csv
+2026-06-15T10:16:25.500657+00:00 | ROW CAP: 2025_11_23_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9308596689148938 capped_to=1.01
+2026-06-15T10:16:25.503614+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_23_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.503673+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_24_NHL_puck_line.csv
+2026-06-15T10:16:25.516908+00:00 | ROW CAP: 2025_11_24_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.9058956453754549 capped_to=1.01
+2026-06-15T10:16:25.518336+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_24_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.518394+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_25_NHL_puck_line.csv
+2026-06-15T10:16:25.522481+00:00 | ROW CAP: 2025_11_25_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.984122076308049 capped_to=1.01
+2026-06-15T10:16:25.523821+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_25_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.523880+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_26_NHL_puck_line.csv
+2026-06-15T10:16:25.534047+00:00 | ROW CAP: 2025_11_26_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9415325561701566 capped_to=1.01
+2026-06-15T10:16:25.537129+00:00 | ROW CAP: 2025_11_26_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9937427803206691 capped_to=1.01
+2026-06-15T10:16:25.541622+00:00 | ROW CAP: 2025_11_26_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9576140992065592 capped_to=1.01
+2026-06-15T10:16:25.547577+00:00 | ROW CAP: 2025_11_26_NHL_puck_line.csv idx=13 side=home original_juiced_decimal=0.9434893506836767 capped_to=1.01
+2026-06-15T10:16:25.550652+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_26_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.550711+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_28_NHL_puck_line.csv
+2026-06-15T10:16:25.554973+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9582096160635312 capped_to=1.01
+2026-06-15T10:16:25.556665+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9838864012801434 capped_to=1.01
+2026-06-15T10:16:25.559765+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8564820397454249 capped_to=1.01
+2026-06-15T10:16:25.561348+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9200374680426522 capped_to=1.01
+2026-06-15T10:16:25.564417+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.9738962835400617 capped_to=1.01
+2026-06-15T10:16:25.568966+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9152790648101174 capped_to=1.01
+2026-06-15T10:16:25.575282+00:00 | ROW CAP: 2025_11_28_NHL_puck_line.csv idx=13 side=home original_juiced_decimal=0.7861921067426432 capped_to=1.01
+2026-06-15T10:16:25.578764+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_28_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.578852+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_29_NHL_puck_line.csv
+2026-06-15T10:16:25.586206+00:00 | ROW CAP: 2025_11_29_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9795076622653385 capped_to=1.01
+2026-06-15T10:16:25.587769+00:00 | ROW CAP: 2025_11_29_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8690100024042301 capped_to=1.01
+2026-06-15T10:16:25.590883+00:00 | ROW CAP: 2025_11_29_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9334564181082093 capped_to=1.01
+2026-06-15T10:16:25.595407+00:00 | ROW CAP: 2025_11_29_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.832611707070862 capped_to=1.01
+2026-06-15T10:16:25.599983+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_29_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.600046+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_11_30_NHL_puck_line.csv
+2026-06-15T10:16:25.604274+00:00 | ROW CAP: 2025_11_30_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8798821276655533 capped_to=1.01
+2026-06-15T10:16:25.610250+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_11_30_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.610307+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_01_NHL_puck_line.csv
+2026-06-15T10:16:25.617543+00:00 | ROW CAP: 2025_12_01_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.8788971435043009 capped_to=1.01
+2026-06-15T10:16:25.622022+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_01_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.622080+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_02_NHL_puck_line.csv
+2026-06-15T10:16:25.627732+00:00 | ROW CAP: 2025_12_02_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9431765571933799 capped_to=1.01
+2026-06-15T10:16:25.629313+00:00 | ROW CAP: 2025_12_02_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8855006213878817 capped_to=1.01
+2026-06-15T10:16:25.630879+00:00 | ROW CAP: 2025_12_02_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9165234275188305 capped_to=1.01
+2026-06-15T10:16:25.633951+00:00 | ROW CAP: 2025_12_02_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9114907257248633 capped_to=1.01
+2026-06-15T10:16:25.640262+00:00 | ROW CAP: 2025_12_02_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.908141339369525 capped_to=1.01
+2026-06-15T10:16:25.642126+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_02_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.642187+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_03_NHL_puck_line.csv
+2026-06-15T10:16:25.648030+00:00 | ROW CAP: 2025_12_03_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.8683598679323767 capped_to=1.01
+2026-06-15T10:16:25.652566+00:00 | ROW CAP: 2025_12_03_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9865994422984566 capped_to=1.01
+2026-06-15T10:16:25.654011+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_03_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.654069+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_04_NHL_puck_line.csv
+2026-06-15T10:16:25.660371+00:00 | ROW CAP: 2025_12_04_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.7582111742356855 capped_to=1.01
+2026-06-15T10:16:25.665075+00:00 | ROW CAP: 2025_12_04_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.97360885587478 capped_to=1.01
+2026-06-15T10:16:25.671171+00:00 | ROW CAP: 2025_12_04_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9659053608879663 capped_to=1.01
+2026-06-15T10:16:25.674405+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_04_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.674473+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_05_NHL_puck_line.csv
+2026-06-15T10:16:25.678745+00:00 | ROW CAP: 2025_12_05_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8766603174836801 capped_to=1.01
+2026-06-15T10:16:25.686378+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_05_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.686446+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_06_NHL_puck_line.csv
+2026-06-15T10:16:25.693915+00:00 | ROW CAP: 2025_12_06_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.8550525315532629 capped_to=1.01
+2026-06-15T10:16:25.695490+00:00 | ROW CAP: 2025_12_06_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8909848660654495 capped_to=1.01
+2026-06-15T10:16:25.705949+00:00 | ROW CAP: 2025_12_06_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.9107779266847428 capped_to=1.01
+2026-06-15T10:16:25.709286+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_06_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.709351+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_07_NHL_puck_line.csv
+2026-06-15T10:16:25.722815+00:00 | ROW CAP: 2025_12_07_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.9253276607475052 capped_to=1.01
+2026-06-15T10:16:25.725839+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_07_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.725901+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_08_NHL_puck_line.csv
+2026-06-15T10:16:25.730012+00:00 | ROW CAP: 2025_12_08_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9830220893211732 capped_to=1.01
+2026-06-15T10:16:25.731593+00:00 | ROW CAP: 2025_12_08_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9846657332356205 capped_to=1.01
+2026-06-15T10:16:25.733178+00:00 | ROW CAP: 2025_12_08_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9416082623787791 capped_to=1.01
+2026-06-15T10:16:25.734712+00:00 | ROW CAP: 2025_12_08_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8837343321515764 capped_to=1.01
+2026-06-15T10:16:25.737593+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_08_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.737653+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_09_NHL_puck_line.csv
+2026-06-15T10:16:25.741735+00:00 | ROW CAP: 2025_12_09_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.925690808523348 capped_to=1.01
+2026-06-15T10:16:25.746383+00:00 | ROW CAP: 2025_12_09_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9792141204564776 capped_to=1.01
+2026-06-15T10:16:25.747974+00:00 | ROW CAP: 2025_12_09_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9112154036842466 capped_to=1.01
+2026-06-15T10:16:25.751069+00:00 | ROW CAP: 2025_12_09_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9509657020501836 capped_to=1.01
+2026-06-15T10:16:25.752616+00:00 | ROW CAP: 2025_12_09_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9589606420279063 capped_to=1.01
+2026-06-15T10:16:25.757118+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_09_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.757177+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_10_NHL_puck_line.csv
+2026-06-15T10:16:25.762776+00:00 | ROW CAP: 2025_12_10_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.8936714099802677 capped_to=1.01
+2026-06-15T10:16:25.764381+00:00 | ROW CAP: 2025_12_10_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8884239667938977 capped_to=1.01
+2026-06-15T10:16:25.767284+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_10_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.767342+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_11_NHL_puck_line.csv
+2026-06-15T10:16:25.771505+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8845365252910684 capped_to=1.01
+2026-06-15T10:16:25.773142+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9507491446752957 capped_to=1.01
+2026-06-15T10:16:25.777756+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8744047078331054 capped_to=1.01
+2026-06-15T10:16:25.779346+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9268099982978288 capped_to=1.01
+2026-06-15T10:16:25.780925+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9389956515547183 capped_to=1.01
+2026-06-15T10:16:25.789934+00:00 | ROW CAP: 2025_12_11_NHL_puck_line.csv idx=12 side=home original_juiced_decimal=0.9311179048459135 capped_to=1.01
+2026-06-15T10:16:25.791531+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_11_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.791595+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_12_NHL_puck_line.csv
+2026-06-15T10:16:25.795739+00:00 | ROW CAP: 2025_12_12_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9451741519209348 capped_to=1.01
+2026-06-15T10:16:25.798629+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_12_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.798685+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_13_NHL_puck_line.csv
+2026-06-15T10:16:25.804338+00:00 | ROW CAP: 2025_12_13_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9509503515533341 capped_to=1.01
+2026-06-15T10:16:25.807439+00:00 | ROW CAP: 2025_12_13_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8790839899365971 capped_to=1.01
+2026-06-15T10:16:25.809021+00:00 | ROW CAP: 2025_12_13_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9978705332835146 capped_to=1.01
+2026-06-15T10:16:25.813532+00:00 | ROW CAP: 2025_12_13_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9380373023469069 capped_to=1.01
+2026-06-15T10:16:25.815106+00:00 | ROW CAP: 2025_12_13_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9598225404002706 capped_to=1.01
+2026-06-15T10:16:25.822720+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_13_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.822782+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_14_NHL_puck_line.csv
+2026-06-15T10:16:25.831474+00:00 | ROW CAP: 2025_12_14_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9903411262097506 capped_to=1.01
+2026-06-15T10:16:25.833048+00:00 | ROW CAP: 2025_12_14_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9478868860316737 capped_to=1.01
+2026-06-15T10:16:25.834602+00:00 | ROW CAP: 2025_12_14_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9334362915647467 capped_to=1.01
+2026-06-15T10:16:25.836109+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_14_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.836169+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_15_NHL_puck_line.csv
+2026-06-15T10:16:25.841781+00:00 | ROW CAP: 2025_12_15_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9405033584683716 capped_to=1.01
+2026-06-15T10:16:25.843411+00:00 | ROW CAP: 2025_12_15_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9960127161586604 capped_to=1.01
+2026-06-15T10:16:25.846483+00:00 | ROW CAP: 2025_12_15_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9234641452556637 capped_to=1.01
+2026-06-15T10:16:25.847961+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_15_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.848019+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_16_NHL_puck_line.csv
+2026-06-15T10:16:25.852124+00:00 | ROW CAP: 2025_12_16_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9286542649393184 capped_to=1.01
+2026-06-15T10:16:25.853709+00:00 | ROW CAP: 2025_12_16_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9430249841839147 capped_to=1.01
+2026-06-15T10:16:25.856785+00:00 | ROW CAP: 2025_12_16_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9123010206182832 capped_to=1.01
+2026-06-15T10:16:25.862910+00:00 | ROW CAP: 2025_12_16_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9001087225215061 capped_to=1.01
+2026-06-15T10:16:25.865986+00:00 | ROW CAP: 2025_12_16_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9278837127868691 capped_to=1.01
+2026-06-15T10:16:25.867532+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_16_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.867596+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_17_NHL_puck_line.csv
+2026-06-15T10:16:25.873304+00:00 | ROW CAP: 2025_12_17_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.8845909867936609 capped_to=1.01
+2026-06-15T10:16:25.879225+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_17_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.879283+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_18_NHL_puck_line.csv
+2026-06-15T10:16:25.884955+00:00 | ROW CAP: 2025_12_18_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9835373303365084 capped_to=1.01
+2026-06-15T10:16:25.889494+00:00 | ROW CAP: 2025_12_18_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8897115610636428 capped_to=1.01
+2026-06-15T10:16:25.892510+00:00 | ROW CAP: 2025_12_18_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9686582311429228 capped_to=1.01
+2026-06-15T10:16:25.898624+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_18_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.898683+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_19_NHL_puck_line.csv
+2026-06-15T10:16:25.904384+00:00 | ROW CAP: 2025_12_19_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8304166798764488 capped_to=1.01
+2026-06-15T10:16:25.908990+00:00 | ROW CAP: 2025_12_19_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9379608900673336 capped_to=1.01
+2026-06-15T10:16:25.910332+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_19_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.910389+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_20_NHL_puck_line.csv
+2026-06-15T10:16:25.917506+00:00 | ROW CAP: 2025_12_20_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9349877115197747 capped_to=1.01
+2026-06-15T10:16:25.925004+00:00 | ROW CAP: 2025_12_20_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9803616588756189 capped_to=1.01
+2026-06-15T10:16:25.928039+00:00 | ROW CAP: 2025_12_20_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9516363811381073 capped_to=1.01
+2026-06-15T10:16:25.929573+00:00 | ROW CAP: 2025_12_20_NHL_puck_line.csv idx=10 side=away original_juiced_decimal=0.9781651793677878 capped_to=1.01
+2026-06-15T10:16:25.933996+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_20_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.934054+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_21_NHL_puck_line.csv
+2026-06-15T10:16:25.938141+00:00 | ROW CAP: 2025_12_21_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.902989541988802 capped_to=1.01
+2026-06-15T10:16:25.942761+00:00 | ROW CAP: 2025_12_21_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9726334200726117 capped_to=1.01
+2026-06-15T10:16:25.947307+00:00 | ROW CAP: 2025_12_21_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9008268304793413 capped_to=1.01
+2026-06-15T10:16:25.948895+00:00 | ROW CAP: 2025_12_21_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9443958610230133 capped_to=1.01
+2026-06-15T10:16:25.951849+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_21_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.951908+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_22_NHL_puck_line.csv
+2026-06-15T10:16:25.961742+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_22_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.961820+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_23_NHL_puck_line.csv
+2026-06-15T10:16:25.971982+00:00 | ROW CAP: 2025_12_23_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8708644980691396 capped_to=1.01
+2026-06-15T10:16:25.980958+00:00 | ROW CAP: 2025_12_23_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.9637955277829482 capped_to=1.01
+2026-06-15T10:16:25.983920+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_23_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:25.983979+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_27_NHL_puck_line.csv
+2026-06-15T10:16:25.994136+00:00 | ROW CAP: 2025_12_27_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9309448574961277 capped_to=1.01
+2026-06-15T10:16:25.995702+00:00 | ROW CAP: 2025_12_27_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9468006061562344 capped_to=1.01
+2026-06-15T10:16:25.997288+00:00 | ROW CAP: 2025_12_27_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.878994529223556 capped_to=1.01
+2026-06-15T10:16:26.000324+00:00 | ROW CAP: 2025_12_27_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.916723722552118 capped_to=1.01
+2026-06-15T10:16:26.004855+00:00 | ROW CAP: 2025_12_27_NHL_puck_line.csv idx=11 side=home original_juiced_decimal=0.9867647459527408 capped_to=1.01
+2026-06-15T10:16:26.007861+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_27_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.007919+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_28_NHL_puck_line.csv
+2026-06-15T10:16:26.011962+00:00 | ROW CAP: 2025_12_28_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9889284976112427 capped_to=1.01
+2026-06-15T10:16:26.015048+00:00 | ROW CAP: 2025_12_28_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9610399054963437 capped_to=1.01
+2026-06-15T10:16:26.018079+00:00 | ROW CAP: 2025_12_28_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9540125458921903 capped_to=1.01
+2026-06-15T10:16:26.019392+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_28_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.019448+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_29_NHL_puck_line.csv
+2026-06-15T10:16:26.026597+00:00 | ROW CAP: 2025_12_29_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9000916658705049 capped_to=1.01
+2026-06-15T10:16:26.029643+00:00 | ROW CAP: 2025_12_29_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9508909925871749 capped_to=1.01
+2026-06-15T10:16:26.035625+00:00 | ROW CAP: 2025_12_29_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9508909925871749 capped_to=1.01
+2026-06-15T10:16:26.037201+00:00 | ROW CAP: 2025_12_29_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9860582889459468 capped_to=1.01
+2026-06-15T10:16:26.040073+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_29_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.040131+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_30_NHL_puck_line.csv
+2026-06-15T10:16:26.047234+00:00 | ROW CAP: 2025_12_30_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.897772149332539 capped_to=1.01
+2026-06-15T10:16:26.050318+00:00 | ROW CAP: 2025_12_30_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9417062884285989 capped_to=1.01
+2026-06-15T10:16:26.051652+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_30_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.051708+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2025_12_31_NHL_puck_line.csv
+2026-06-15T10:16:26.058834+00:00 | ROW CAP: 2025_12_31_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9776492558590213 capped_to=1.01
+2026-06-15T10:16:26.061895+00:00 | ROW CAP: 2025_12_31_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9924570575187985 capped_to=1.01
+2026-06-15T10:16:26.063433+00:00 | ROW CAP: 2025_12_31_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9726083278236066 capped_to=1.01
+2026-06-15T10:16:26.069462+00:00 | ROW CAP: 2025_12_31_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.99182235053793 capped_to=1.01
+2026-06-15T10:16:26.070879+00:00 | WROTE docs/win/hockey/nhl/02_juice/2025_12_31_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.070936+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_01_NHL_puck_line.csv
+2026-06-15T10:16:26.076485+00:00 | ROW CAP: 2026_01_01_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9851520193821971 capped_to=1.01
+2026-06-15T10:16:26.078061+00:00 | ROW CAP: 2026_01_01_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9823082237176041 capped_to=1.01
+2026-06-15T10:16:26.079597+00:00 | ROW CAP: 2026_01_01_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9763610833019485 capped_to=1.01
+2026-06-15T10:16:26.085603+00:00 | ROW CAP: 2026_01_01_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.8795751539216143 capped_to=1.01
+2026-06-15T10:16:26.087052+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_01_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.087109+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_02_NHL_puck_line.csv
+2026-06-15T10:16:26.095704+00:00 | ROW CAP: 2026_01_02_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9719117693570714 capped_to=1.01
+2026-06-15T10:16:26.097035+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_02_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.097090+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_03_NHL_puck_line.csv
+2026-06-15T10:16:26.102690+00:00 | ROW CAP: 2026_01_03_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9229930386596037 capped_to=1.01
+2026-06-15T10:16:26.104356+00:00 | ROW CAP: 2026_01_03_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8662666088311176 capped_to=1.01
+2026-06-15T10:16:26.111970+00:00 | ROW CAP: 2026_01_03_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.8318956419540158 capped_to=1.01
+2026-06-15T10:16:26.118031+00:00 | ROW CAP: 2026_01_03_NHL_puck_line.csv idx=11 side=away original_juiced_decimal=0.9818245543974204 capped_to=1.01
+2026-06-15T10:16:26.119589+00:00 | ROW CAP: 2026_01_03_NHL_puck_line.csv idx=12 side=home original_juiced_decimal=0.9238535597004468 capped_to=1.01
+2026-06-15T10:16:26.121060+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_03_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.121119+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_04_NHL_puck_line.csv
+2026-06-15T10:16:26.129690+00:00 | ROW CAP: 2026_01_04_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9287594817930604 capped_to=1.01
+2026-06-15T10:16:26.132565+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_04_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.132623+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_05_NHL_puck_line.csv
+2026-06-15T10:16:26.136667+00:00 | ROW CAP: 2026_01_05_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9210912138319722 capped_to=1.01
+2026-06-15T10:16:26.142817+00:00 | ROW CAP: 2026_01_05_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9411648473444332 capped_to=1.01
+2026-06-15T10:16:26.144148+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_05_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.144206+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_06_NHL_puck_line.csv
+2026-06-15T10:16:26.154408+00:00 | ROW CAP: 2026_01_06_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8409443570230462 capped_to=1.01
+2026-06-15T10:16:26.156198+00:00 | ROW CAP: 2026_01_06_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9674556174164376 capped_to=1.01
+2026-06-15T10:16:26.157748+00:00 | ROW CAP: 2026_01_06_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.9090113328420873 capped_to=1.01
+2026-06-15T10:16:26.160814+00:00 | ROW CAP: 2026_01_06_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.912642517312459 capped_to=1.01
+2026-06-15T10:16:26.162352+00:00 | ROW CAP: 2026_01_06_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9594790247423012 capped_to=1.01
+2026-06-15T10:16:26.163755+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_06_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.163836+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_07_NHL_puck_line.csv
+2026-06-15T10:16:26.167869+00:00 | ROW CAP: 2026_01_07_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9684972875892977 capped_to=1.01
+2026-06-15T10:16:26.170955+00:00 | ROW CAP: 2026_01_07_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.879073640141943 capped_to=1.01
+2026-06-15T10:16:26.175258+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_07_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.175314+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_08_NHL_puck_line.csv
+2026-06-15T10:16:26.179422+00:00 | ROW CAP: 2026_01_08_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9573654861650025 capped_to=1.01
+2026-06-15T10:16:26.182498+00:00 | ROW CAP: 2026_01_08_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9349038835813195 capped_to=1.01
+2026-06-15T10:16:26.187043+00:00 | ROW CAP: 2026_01_08_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8068443193352415 capped_to=1.01
+2026-06-15T10:16:26.190207+00:00 | ROW CAP: 2026_01_08_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.8853621752773636 capped_to=1.01
+2026-06-15T10:16:26.191753+00:00 | ROW CAP: 2026_01_08_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.8946762284464985 capped_to=1.01
+2026-06-15T10:16:26.197696+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_08_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.197755+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_09_NHL_puck_line.csv
+2026-06-15T10:16:26.201820+00:00 | ROW CAP: 2026_01_09_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9605626674651547 capped_to=1.01
+2026-06-15T10:16:26.206151+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_09_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.206214+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_10_NHL_puck_line.csv
+2026-06-15T10:16:26.210293+00:00 | ROW CAP: 2026_01_10_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.8845725132462028 capped_to=1.01
+2026-06-15T10:16:26.219358+00:00 | ROW CAP: 2026_01_10_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9526083710608674 capped_to=1.01
+2026-06-15T10:16:26.231166+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_10_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.231225+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_11_NHL_puck_line.csv
+2026-06-15T10:16:26.235263+00:00 | ROW CAP: 2026_01_11_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9622364849543039 capped_to=1.01
+2026-06-15T10:16:26.236897+00:00 | ROW CAP: 2026_01_11_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8463733162436319 capped_to=1.01
+2026-06-15T10:16:26.242815+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_11_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.242875+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_12_NHL_puck_line.csv
+2026-06-15T10:16:26.251493+00:00 | ROW CAP: 2026_01_12_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9021179086249067 capped_to=1.01
+2026-06-15T10:16:26.259027+00:00 | ROW CAP: 2026_01_12_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9229406307096528 capped_to=1.01
+2026-06-15T10:16:26.260406+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_12_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.260463+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_13_NHL_puck_line.csv
+2026-06-15T10:16:26.270521+00:00 | ROW CAP: 2026_01_13_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9743450853091007 capped_to=1.01
+2026-06-15T10:16:26.273557+00:00 | ROW CAP: 2026_01_13_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.91690467749287 capped_to=1.01
+2026-06-15T10:16:26.275125+00:00 | ROW CAP: 2026_01_13_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9523452843629424 capped_to=1.01
+2026-06-15T10:16:26.276696+00:00 | ROW CAP: 2026_01_13_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9670645578143046 capped_to=1.01
+2026-06-15T10:16:26.279612+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_13_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.279670+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_14_NHL_puck_line.csv
+2026-06-15T10:16:26.286807+00:00 | ROW CAP: 2026_01_14_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9493006909828253 capped_to=1.01
+2026-06-15T10:16:26.288370+00:00 | ROW CAP: 2026_01_14_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9276872437941837 capped_to=1.01
+2026-06-15T10:16:26.289680+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_14_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.289737+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_15_NHL_puck_line.csv
+2026-06-15T10:16:26.295343+00:00 | ROW CAP: 2026_01_15_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9167732081123181 capped_to=1.01
+2026-06-15T10:16:26.302913+00:00 | ROW CAP: 2026_01_15_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.8938020945176852 capped_to=1.01
+2026-06-15T10:16:26.304465+00:00 | ROW CAP: 2026_01_15_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.975507661126342 capped_to=1.01
+2026-06-15T10:16:26.308875+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_15_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.308933+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_16_NHL_puck_line.csv
+2026-06-15T10:16:26.320292+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_16_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.320349+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_17_NHL_puck_line.csv
+2026-06-15T10:16:26.325976+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9559691596454967 capped_to=1.01
+2026-06-15T10:16:26.327534+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9124047435680162 capped_to=1.01
+2026-06-15T10:16:26.330600+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9842384251642596 capped_to=1.01
+2026-06-15T10:16:26.335177+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9637869251075903 capped_to=1.01
+2026-06-15T10:16:26.336743+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.9877741238108548 capped_to=1.01
+2026-06-15T10:16:26.338322+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9883993332119813 capped_to=1.01
+2026-06-15T10:16:26.339894+00:00 | ROW CAP: 2026_01_17_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.8686372171393091 capped_to=1.01
+2026-06-15T10:16:26.344394+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_17_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.344456+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_18_NHL_puck_line.csv
+2026-06-15T10:16:26.348542+00:00 | ROW CAP: 2026_01_18_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9357556117691167 capped_to=1.01
+2026-06-15T10:16:26.352950+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_18_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.353007+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_19_NHL_puck_line.csv
+2026-06-15T10:16:26.360081+00:00 | ROW CAP: 2026_01_19_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8892863471366075 capped_to=1.01
+2026-06-15T10:16:26.363211+00:00 | ROW CAP: 2026_01_19_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9823892348641508 capped_to=1.01
+2026-06-15T10:16:26.366303+00:00 | ROW CAP: 2026_01_19_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.9998014644524204 capped_to=1.01
+2026-06-15T10:16:26.367877+00:00 | ROW CAP: 2026_01_19_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.8786002305016217 capped_to=1.01
+2026-06-15T10:16:26.369417+00:00 | ROW CAP: 2026_01_19_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.966220399118516 capped_to=1.01
+2026-06-15T10:16:26.372359+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_19_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.372417+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_20_NHL_puck_line.csv
+2026-06-15T10:16:26.379516+00:00 | ROW CAP: 2026_01_20_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9078517179260899 capped_to=1.01
+2026-06-15T10:16:26.384061+00:00 | ROW CAP: 2026_01_20_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9582940087160955 capped_to=1.01
+2026-06-15T10:16:26.388452+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_20_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.388510+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_21_NHL_puck_line.csv
+2026-06-15T10:16:26.397052+00:00 | ROW CAP: 2026_01_21_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9577736896080438 capped_to=1.01
+2026-06-15T10:16:26.398588+00:00 | ROW CAP: 2026_01_21_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8437989580191062 capped_to=1.01
+2026-06-15T10:16:26.401456+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_21_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.401514+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_22_NHL_puck_line.csv
+2026-06-15T10:16:26.405590+00:00 | ROW CAP: 2026_01_22_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9900452226139133 capped_to=1.01
+2026-06-15T10:16:26.410187+00:00 | ROW CAP: 2026_01_22_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9753351710248415 capped_to=1.01
+2026-06-15T10:16:26.411776+00:00 | ROW CAP: 2026_01_22_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8809516329287104 capped_to=1.01
+2026-06-15T10:16:26.413359+00:00 | ROW CAP: 2026_01_22_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9091659363891351 capped_to=1.01
+2026-06-15T10:16:26.417716+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_22_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.417773+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_23_NHL_puck_line.csv
+2026-06-15T10:16:26.423358+00:00 | ROW CAP: 2026_01_23_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8876842238390544 capped_to=1.01
+2026-06-15T10:16:26.427944+00:00 | ROW CAP: 2026_01_23_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9728948754656476 capped_to=1.01
+2026-06-15T10:16:26.430998+00:00 | ROW CAP: 2026_01_23_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.8639357907214646 capped_to=1.01
+2026-06-15T10:16:26.432563+00:00 | ROW CAP: 2026_01_23_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9136666544335764 capped_to=1.01
+2026-06-15T10:16:26.433962+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_23_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.434020+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_24_NHL_puck_line.csv
+2026-06-15T10:16:26.438100+00:00 | ROW CAP: 2026_01_24_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9756610169717426 capped_to=1.01
+2026-06-15T10:16:26.439701+00:00 | ROW CAP: 2026_01_24_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9934049760017134 capped_to=1.01
+2026-06-15T10:16:26.441292+00:00 | ROW CAP: 2026_01_24_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9490992256117585 capped_to=1.01
+2026-06-15T10:16:26.444369+00:00 | ROW CAP: 2026_01_24_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9577551876627214 capped_to=1.01
+2026-06-15T10:16:26.448896+00:00 | ROW CAP: 2026_01_24_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9729321697972548 capped_to=1.01
+2026-06-15T10:16:26.451826+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_24_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.451885+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_25_NHL_puck_line.csv
+2026-06-15T10:16:26.457476+00:00 | ROW CAP: 2026_01_25_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9512574535415982 capped_to=1.01
+2026-06-15T10:16:26.460570+00:00 | ROW CAP: 2026_01_25_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9991785978829307 capped_to=1.01
+2026-06-15T10:16:26.463631+00:00 | ROW CAP: 2026_01_25_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9466743490127201 capped_to=1.01
+2026-06-15T10:16:26.464982+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_25_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.465038+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_26_NHL_puck_line.csv
+2026-06-15T10:16:26.469166+00:00 | ROW CAP: 2026_01_26_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8351301176102481 capped_to=1.01
+2026-06-15T10:16:26.472272+00:00 | ROW CAP: 2026_01_26_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9754189940744189 capped_to=1.01
+2026-06-15T10:16:26.475119+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_26_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.475176+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_27_NHL_puck_line.csv
+2026-06-15T10:16:26.479272+00:00 | ROW CAP: 2026_01_27_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9677619895207319 capped_to=1.01
+2026-06-15T10:16:26.480898+00:00 | ROW CAP: 2026_01_27_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9879833623009985 capped_to=1.01
+2026-06-15T10:16:26.484072+00:00 | ROW CAP: 2026_01_27_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9166571343076199 capped_to=1.01
+2026-06-15T10:16:26.485641+00:00 | ROW CAP: 2026_01_27_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.977325453590435 capped_to=1.01
+2026-06-15T10:16:26.491817+00:00 | ROW CAP: 2026_01_27_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.8792893918334714 capped_to=1.01
+2026-06-15T10:16:26.494735+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_27_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.494814+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_28_NHL_puck_line.csv
+2026-06-15T10:16:26.503266+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_28_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.503323+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_29_NHL_puck_line.csv
+2026-06-15T10:16:26.508988+00:00 | ROW CAP: 2026_01_29_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9823892348641508 capped_to=1.01
+2026-06-15T10:16:26.512094+00:00 | ROW CAP: 2026_01_29_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9224566020661596 capped_to=1.01
+2026-06-15T10:16:26.519653+00:00 | ROW CAP: 2026_01_29_NHL_puck_line.csv idx=8 side=away original_juiced_decimal=0.9716825502568165 capped_to=1.01
+2026-06-15T10:16:26.525685+00:00 | ROW CAP: 2026_01_29_NHL_puck_line.csv idx=12 side=away original_juiced_decimal=0.9724727777189981 capped_to=1.01
+2026-06-15T10:16:26.528736+00:00 | ROW CAP: 2026_01_29_NHL_puck_line.csv idx=14 side=home original_juiced_decimal=0.9257694660780053 capped_to=1.01
+2026-06-15T10:16:26.530245+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_29_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.530304+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_30_NHL_puck_line.csv
+2026-06-15T10:16:26.535643+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_30_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.535698+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_01_31_NHL_puck_line.csv
+2026-06-15T10:16:26.539775+00:00 | ROW CAP: 2026_01_31_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8935592395300115 capped_to=1.01
+2026-06-15T10:16:26.554834+00:00 | ROW CAP: 2026_01_31_NHL_puck_line.csv idx=10 side=away original_juiced_decimal=0.908338779971269 capped_to=1.01
+2026-06-15T10:16:26.556423+00:00 | ROW CAP: 2026_01_31_NHL_puck_line.csv idx=11 side=away original_juiced_decimal=0.9644313748907325 capped_to=1.01
+2026-06-15T10:16:26.560922+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_01_31_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.560982+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_01_NHL_puck_line.csv
+2026-06-15T10:16:26.566586+00:00 | ROW CAP: 2026_02_01_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.7591035383273805 capped_to=1.01
+2026-06-15T10:16:26.568191+00:00 | ROW CAP: 2026_02_01_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9066601651732314 capped_to=1.01
+2026-06-15T10:16:26.569499+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_01_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.569554+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_02_NHL_puck_line.csv
+2026-06-15T10:16:26.573636+00:00 | ROW CAP: 2026_02_02_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9449989581695022 capped_to=1.01
+2026-06-15T10:16:26.577156+00:00 | ROW CAP: 2026_02_02_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9608363669030228 capped_to=1.01
+2026-06-15T10:16:26.581685+00:00 | ROW CAP: 2026_02_02_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8703808082924418 capped_to=1.01
+2026-06-15T10:16:26.587691+00:00 | ROW CAP: 2026_02_02_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9403639859623889 capped_to=1.01
+2026-06-15T10:16:26.589130+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_02_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.589189+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_03_NHL_puck_line.csv
+2026-06-15T10:16:26.594946+00:00 | ROW CAP: 2026_02_03_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9442361900947626 capped_to=1.01
+2026-06-15T10:16:26.596590+00:00 | ROW CAP: 2026_02_03_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9916355115408277 capped_to=1.01
+2026-06-15T10:16:26.604030+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_03_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.604088+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_04_NHL_puck_line.csv
+2026-06-15T10:16:26.608201+00:00 | ROW CAP: 2026_02_04_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9224032216678871 capped_to=1.01
+2026-06-15T10:16:26.612903+00:00 | ROW CAP: 2026_02_04_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9672294800858917 capped_to=1.01
+2026-06-15T10:16:26.618993+00:00 | ROW CAP: 2026_02_04_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9440997654732313 capped_to=1.01
+2026-06-15T10:16:26.623443+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_04_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.623501+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_05_NHL_puck_line.csv
+2026-06-15T10:16:26.629121+00:00 | ROW CAP: 2026_02_05_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8921394345050452 capped_to=1.01
+2026-06-15T10:16:26.633671+00:00 | ROW CAP: 2026_02_05_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9497787423675961 capped_to=1.01
+2026-06-15T10:16:26.638049+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_05_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.638106+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_25_NHL_puck_line.csv
+2026-06-15T10:16:26.642164+00:00 | ROW CAP: 2026_02_25_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9699898573042243 capped_to=1.01
+2026-06-15T10:16:26.651184+00:00 | ROW CAP: 2026_02_25_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9715485167502458 capped_to=1.01
+2026-06-15T10:16:26.652725+00:00 | ROW CAP: 2026_02_25_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.962186437233267 capped_to=1.01
+2026-06-15T10:16:26.654180+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_25_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.654239+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_26_NHL_puck_line.csv
+2026-06-15T10:16:26.661315+00:00 | ROW CAP: 2026_02_26_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.974286155367573 capped_to=1.01
+2026-06-15T10:16:26.668976+00:00 | ROW CAP: 2026_02_26_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9903749140304456 capped_to=1.01
+2026-06-15T10:16:26.673588+00:00 | ROW CAP: 2026_02_26_NHL_puck_line.csv idx=10 side=away original_juiced_decimal=0.9334560867844544 capped_to=1.01
+2026-06-15T10:16:26.675219+00:00 | ROW CAP: 2026_02_26_NHL_puck_line.csv idx=11 side=home original_juiced_decimal=0.8800147849515467 capped_to=1.01
+2026-06-15T10:16:26.676751+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_26_NHL_puck_line.csv rows=12 applied=12 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.676848+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_27_NHL_puck_line.csv
+2026-06-15T10:16:26.680909+00:00 | ROW CAP: 2026_02_27_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9992783841589599 capped_to=1.01
+2026-06-15T10:16:26.682494+00:00 | ROW CAP: 2026_02_27_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9254829535787877 capped_to=1.01
+2026-06-15T10:16:26.685524+00:00 | ROW CAP: 2026_02_27_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9849920659134991 capped_to=1.01
+2026-06-15T10:16:26.686848+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_27_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.686906+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_02_28_NHL_puck_line.csv
+2026-06-15T10:16:26.691048+00:00 | ROW CAP: 2026_02_28_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.858596979596975 capped_to=1.01
+2026-06-15T10:16:26.692624+00:00 | ROW CAP: 2026_02_28_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9321072444992393 capped_to=1.01
+2026-06-15T10:16:26.695669+00:00 | ROW CAP: 2026_02_28_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9032250478965236 capped_to=1.01
+2026-06-15T10:16:26.697258+00:00 | ROW CAP: 2026_02_28_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9896120724737398 capped_to=1.01
+2026-06-15T10:16:26.703268+00:00 | ROW CAP: 2026_02_28_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.854612997368042 capped_to=1.01
+2026-06-15T10:16:26.710673+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_02_28_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.710737+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_01_NHL_puck_line.csv
+2026-06-15T10:16:26.720810+00:00 | ROW CAP: 2026_03_01_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9355454932974988 capped_to=1.01
+2026-06-15T10:16:26.723691+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_01_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.723748+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_02_NHL_puck_line.csv
+2026-06-15T10:16:26.727774+00:00 | ROW CAP: 2026_03_02_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8925659727040953 capped_to=1.01
+2026-06-15T10:16:26.729379+00:00 | ROW CAP: 2026_03_02_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8477785808781492 capped_to=1.01
+2026-06-15T10:16:26.736642+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_02_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.736700+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_03_NHL_puck_line.csv
+2026-06-15T10:16:26.740777+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9900751562336135 capped_to=1.01
+2026-06-15T10:16:26.742410+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9769476634895524 capped_to=1.01
+2026-06-15T10:16:26.743986+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.8920380642869065 capped_to=1.01
+2026-06-15T10:16:26.747051+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9265570432363404 capped_to=1.01
+2026-06-15T10:16:26.750078+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.945104370777852 capped_to=1.01
+2026-06-15T10:16:26.751623+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9826261244860248 capped_to=1.01
+2026-06-15T10:16:26.753193+00:00 | ROW CAP: 2026_03_03_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9503452042047862 capped_to=1.01
+2026-06-15T10:16:26.757577+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_03_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.757636+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_04_NHL_puck_line.csv
+2026-06-15T10:16:26.761673+00:00 | ROW CAP: 2026_03_04_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9891739629395738 capped_to=1.01
+2026-06-15T10:16:26.763275+00:00 | ROW CAP: 2026_03_04_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9200732786926772 capped_to=1.01
+2026-06-15T10:16:26.766306+00:00 | ROW CAP: 2026_03_04_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9411648473444332 capped_to=1.01
+2026-06-15T10:16:26.767883+00:00 | ROW CAP: 2026_03_04_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.8974080109655564 capped_to=1.01
+2026-06-15T10:16:26.769258+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_04_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.769315+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_05_NHL_puck_line.csv
+2026-06-15T10:16:26.773364+00:00 | ROW CAP: 2026_03_05_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9005330253638696 capped_to=1.01
+2026-06-15T10:16:26.775028+00:00 | ROW CAP: 2026_03_05_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9721759921303995 capped_to=1.01
+2026-06-15T10:16:26.776582+00:00 | ROW CAP: 2026_03_05_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9434893506836767 capped_to=1.01
+2026-06-15T10:16:26.778153+00:00 | ROW CAP: 2026_03_05_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9726012482625511 capped_to=1.01
+2026-06-15T10:16:26.779687+00:00 | ROW CAP: 2026_03_05_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9533075539648669 capped_to=1.01
+2026-06-15T10:16:26.785510+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_05_NHL_puck_line.csv rows=8 applied=8 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.785574+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_06_NHL_puck_line.csv
+2026-06-15T10:16:26.791212+00:00 | ROW CAP: 2026_03_06_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9526282373866055 capped_to=1.01
+2026-06-15T10:16:26.795815+00:00 | ROW CAP: 2026_03_06_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9426301463921287 capped_to=1.01
+2026-06-15T10:16:26.797400+00:00 | ROW CAP: 2026_03_06_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9365134737908735 capped_to=1.01
+2026-06-15T10:16:26.798987+00:00 | ROW CAP: 2026_03_06_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.8402659353254023 capped_to=1.01
+2026-06-15T10:16:26.800341+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_06_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.800398+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_07_NHL_puck_line.csv
+2026-06-15T10:16:26.804465+00:00 | ROW CAP: 2026_03_07_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9170098548792508 capped_to=1.01
+2026-06-15T10:16:26.815067+00:00 | ROW CAP: 2026_03_07_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9883209976585281 capped_to=1.01
+2026-06-15T10:16:26.821108+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_07_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.821166+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_08_NHL_puck_line.csv
+2026-06-15T10:16:26.826837+00:00 | ROW CAP: 2026_03_08_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9763610833019485 capped_to=1.01
+2026-06-15T10:16:26.829920+00:00 | ROW CAP: 2026_03_08_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9457321018545896 capped_to=1.01
+2026-06-15T10:16:26.831461+00:00 | ROW CAP: 2026_03_08_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.9162527594851353 capped_to=1.01
+2026-06-15T10:16:26.834527+00:00 | ROW CAP: 2026_03_08_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9875484687825338 capped_to=1.01
+2026-06-15T10:16:26.835900+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_08_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.835957+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_09_NHL_puck_line.csv
+2026-06-15T10:16:26.847348+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_09_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.847404+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_10_NHL_puck_line.csv
+2026-06-15T10:16:26.859157+00:00 | ROW CAP: 2026_03_10_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9769476634895524 capped_to=1.01
+2026-06-15T10:16:26.860745+00:00 | ROW CAP: 2026_03_10_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9870053431701367 capped_to=1.01
+2026-06-15T10:16:26.862330+00:00 | ROW CAP: 2026_03_10_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9161221957588459 capped_to=1.01
+2026-06-15T10:16:26.869860+00:00 | ROW CAP: 2026_03_10_NHL_puck_line.csv idx=12 side=away original_juiced_decimal=0.8915831918877566 capped_to=1.01
+2026-06-15T10:16:26.871307+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_10_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.871365+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_11_NHL_puck_line.csv
+2026-06-15T10:16:26.876972+00:00 | ROW CAP: 2026_03_11_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.929128701004295 capped_to=1.01
+2026-06-15T10:16:26.878258+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_11_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.878314+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_12_NHL_puck_line.csv
+2026-06-15T10:16:26.888395+00:00 | ROW CAP: 2026_03_12_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8469029934817344 capped_to=1.01
+2026-06-15T10:16:26.891479+00:00 | ROW CAP: 2026_03_12_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9934793617180049 capped_to=1.01
+2026-06-15T10:16:26.903403+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_12_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.903462+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_13_NHL_puck_line.csv
+2026-06-15T10:16:26.909149+00:00 | ROW CAP: 2026_03_13_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9248106551622632 capped_to=1.01
+2026-06-15T10:16:26.910420+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_13_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.910476+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_14_NHL_puck_line.csv
+2026-06-15T10:16:26.922025+00:00 | ROW CAP: 2026_03_14_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9809597484934722 capped_to=1.01
+2026-06-15T10:16:26.928022+00:00 | ROW CAP: 2026_03_14_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.8798239911603604 capped_to=1.01
+2026-06-15T10:16:26.934024+00:00 | ROW CAP: 2026_03_14_NHL_puck_line.csv idx=13 side=home original_juiced_decimal=0.9058956453754549 capped_to=1.01
+2026-06-15T10:16:26.935479+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_14_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.935537+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_15_NHL_puck_line.csv
+2026-06-15T10:16:26.939591+00:00 | ROW CAP: 2026_03_15_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9300732706355803 capped_to=1.01
+2026-06-15T10:16:26.947206+00:00 | ROW CAP: 2026_03_15_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9992202075319933 capped_to=1.01
+2026-06-15T10:16:26.948591+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_15_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.948648+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_16_NHL_puck_line.csv
+2026-06-15T10:16:26.952670+00:00 | ROW CAP: 2026_03_16_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9366782469536109 capped_to=1.01
+2026-06-15T10:16:26.955753+00:00 | ROW CAP: 2026_03_16_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8344488393553494 capped_to=1.01
+2026-06-15T10:16:26.960121+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_16_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.960177+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_17_NHL_puck_line.csv
+2026-06-15T10:16:26.967223+00:00 | ROW CAP: 2026_03_17_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9056873085930655 capped_to=1.01
+2026-06-15T10:16:26.977595+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_17_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.977654+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_18_NHL_puck_line.csv
+2026-06-15T10:16:26.983209+00:00 | ROW CAP: 2026_03_18_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8166295224528081 capped_to=1.01
+2026-06-15T10:16:26.984765+00:00 | ROW CAP: 2026_03_18_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8511405435502493 capped_to=1.01
+2026-06-15T10:16:26.987895+00:00 | ROW CAP: 2026_03_18_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8448935189047756 capped_to=1.01
+2026-06-15T10:16:26.990861+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_18_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:26.990919+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_19_NHL_puck_line.csv
+2026-06-15T10:16:26.998012+00:00 | ROW CAP: 2026_03_19_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8830425417237568 capped_to=1.01
+2026-06-15T10:16:26.999585+00:00 | ROW CAP: 2026_03_19_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9452102428024809 capped_to=1.01
+2026-06-15T10:16:27.004179+00:00 | ROW CAP: 2026_03_19_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9993524610578498 capped_to=1.01
+2026-06-15T10:16:27.008686+00:00 | ROW CAP: 2026_03_19_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9796677782124876 capped_to=1.01
+2026-06-15T10:16:27.011630+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_19_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.011688+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_20_NHL_puck_line.csv
+2026-06-15T10:16:27.020240+00:00 | ROW CAP: 2026_03_20_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8311447394706099 capped_to=1.01
+2026-06-15T10:16:27.023085+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_20_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.023141+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_21_NHL_puck_line.csv
+2026-06-15T10:16:27.028700+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9706585734073117 capped_to=1.01
+2026-06-15T10:16:27.030293+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8958851074653603 capped_to=1.01
+2026-06-15T10:16:27.031866+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8956298202345704 capped_to=1.01
+2026-06-15T10:16:27.033406+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.8537096829891032 capped_to=1.01
+2026-06-15T10:16:27.037919+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=7 side=home original_juiced_decimal=0.9416549448496964 capped_to=1.01
+2026-06-15T10:16:27.041041+00:00 | ROW CAP: 2026_03_21_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9923388168704353 capped_to=1.01
+2026-06-15T10:16:27.043930+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_21_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.043988+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_22_NHL_puck_line.csv
+2026-06-15T10:16:27.052495+00:00 | ROW CAP: 2026_03_22_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8725709470861114 capped_to=1.01
+2026-06-15T10:16:27.055550+00:00 | ROW CAP: 2026_03_22_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8726389702771891 capped_to=1.01
+2026-06-15T10:16:27.057128+00:00 | ROW CAP: 2026_03_22_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9407316093052027 capped_to=1.01
+2026-06-15T10:16:27.061474+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_22_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.061530+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_23_NHL_puck_line.csv
+2026-06-15T10:16:27.065531+00:00 | ROW CAP: 2026_03_23_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9560862973541844 capped_to=1.01
+2026-06-15T10:16:27.066825+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_23_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.066883+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_24_NHL_puck_line.csv
+2026-06-15T10:16:27.077004+00:00 | ROW CAP: 2026_03_24_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9052482266027095 capped_to=1.01
+2026-06-15T10:16:27.078568+00:00 | ROW CAP: 2026_03_24_NHL_puck_line.csv idx=5 side=away original_juiced_decimal=0.9630919877181117 capped_to=1.01
+2026-06-15T10:16:27.086192+00:00 | ROW CAP: 2026_03_24_NHL_puck_line.csv idx=10 side=home original_juiced_decimal=0.9470935106862696 capped_to=1.01
+2026-06-15T10:16:27.087756+00:00 | ROW CAP: 2026_03_24_NHL_puck_line.csv idx=11 side=home original_juiced_decimal=0.9452450107438484 capped_to=1.01
+2026-06-15T10:16:27.089335+00:00 | ROW CAP: 2026_03_24_NHL_puck_line.csv idx=12 side=home original_juiced_decimal=0.9082660914494792 capped_to=1.01
+2026-06-15T10:16:27.093916+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_24_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.093974+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_25_NHL_puck_line.csv
+2026-06-15T10:16:27.099517+00:00 | ROW CAP: 2026_03_25_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9011301760782472 capped_to=1.01
+2026-06-15T10:16:27.100785+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_25_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.100867+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_26_NHL_puck_line.csv
+2026-06-15T10:16:27.107929+00:00 | ROW CAP: 2026_03_26_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9867246499435102 capped_to=1.01
+2026-06-15T10:16:27.115512+00:00 | ROW CAP: 2026_03_26_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.9392077869940407 capped_to=1.01
+2026-06-15T10:16:27.118581+00:00 | ROW CAP: 2026_03_26_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9570094867371077 capped_to=1.01
+2026-06-15T10:16:27.124509+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_26_NHL_puck_line.csv rows=13 applied=13 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.124567+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_27_NHL_puck_line.csv
+2026-06-15T10:16:27.131330+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_27_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.131385+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_28_NHL_puck_line.csv
+2026-06-15T10:16:27.138486+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9983717519615091 capped_to=1.01
+2026-06-15T10:16:27.140102+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9065080812684411 capped_to=1.01
+2026-06-15T10:16:27.144674+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=6 side=home original_juiced_decimal=0.985420778032578 capped_to=1.01
+2026-06-15T10:16:27.149187+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9429516374767896 capped_to=1.01
+2026-06-15T10:16:27.150709+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=10 side=away original_juiced_decimal=0.9959098313306033 capped_to=1.01
+2026-06-15T10:16:27.152268+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=11 side=away original_juiced_decimal=0.9750358671852342 capped_to=1.01
+2026-06-15T10:16:27.153825+00:00 | ROW CAP: 2026_03_28_NHL_puck_line.csv idx=12 side=away original_juiced_decimal=0.8920333074357925 capped_to=1.01
+2026-06-15T10:16:27.158539+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_28_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.158596+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_29_NHL_puck_line.csv
+2026-06-15T10:16:27.171472+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_29_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.171529+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_30_NHL_puck_line.csv
+2026-06-15T10:16:27.180156+00:00 | ROW CAP: 2026_03_30_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.8777178728783067 capped_to=1.01
+2026-06-15T10:16:27.183006+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_30_NHL_puck_line.csv rows=5 applied=5 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.183063+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_03_31_NHL_puck_line.csv
+2026-06-15T10:16:27.187115+00:00 | ROW CAP: 2026_03_31_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9513101887654345 capped_to=1.01
+2026-06-15T10:16:27.190345+00:00 | ROW CAP: 2026_03_31_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9526924588768517 capped_to=1.01
+2026-06-15T10:16:27.194924+00:00 | ROW CAP: 2026_03_31_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8154923485528583 capped_to=1.01
+2026-06-15T10:16:27.202333+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_03_31_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.202391+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_01_NHL_puck_line.csv
+2026-06-15T10:16:27.207976+00:00 | ROW CAP: 2026_04_01_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9771408965509689 capped_to=1.01
+2026-06-15T10:16:27.210823+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_01_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.210881+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_02_NHL_puck_line.csv
+2026-06-15T10:16:27.214918+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9292725422187864 capped_to=1.01
+2026-06-15T10:16:27.219556+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9612900064613052 capped_to=1.01
+2026-06-15T10:16:27.221137+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8732916908856811 capped_to=1.01
+2026-06-15T10:16:27.224211+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9001835332776655 capped_to=1.01
+2026-06-15T10:16:27.231679+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=11 side=away original_juiced_decimal=0.8689735118572011 capped_to=1.01
+2026-06-15T10:16:27.234690+00:00 | ROW CAP: 2026_04_02_NHL_puck_line.csv idx=13 side=away original_juiced_decimal=0.982398575576486 capped_to=1.01
+2026-06-15T10:16:27.236198+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_02_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.236256+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_03_NHL_puck_line.csv
+2026-06-15T10:16:27.243014+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_03_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.243071+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_04_NHL_puck_line.csv
+2026-06-15T10:16:27.247128+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.8934484067091577 capped_to=1.01
+2026-06-15T10:16:27.248722+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9810001236133016 capped_to=1.01
+2026-06-15T10:16:27.250310+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9372182862288959 capped_to=1.01
+2026-06-15T10:16:27.254857+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8582282374141017 capped_to=1.01
+2026-06-15T10:16:27.260903+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=9 side=home original_juiced_decimal=0.9484314153272563 capped_to=1.01
+2026-06-15T10:16:27.266894+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=13 side=away original_juiced_decimal=0.8982821422866627 capped_to=1.01
+2026-06-15T10:16:27.268425+00:00 | ROW CAP: 2026_04_04_NHL_puck_line.csv idx=14 side=away original_juiced_decimal=0.8928464039637293 capped_to=1.01
+2026-06-15T10:16:27.269962+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_04_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.270020+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_05_NHL_puck_line.csv
+2026-06-15T10:16:27.274062+00:00 | ROW CAP: 2026_04_05_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9283842936261879 capped_to=1.01
+2026-06-15T10:16:27.278673+00:00 | ROW CAP: 2026_04_05_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9730692333664968 capped_to=1.01
+2026-06-15T10:16:27.281758+00:00 | ROW CAP: 2026_04_05_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.8232913569397484 capped_to=1.01
+2026-06-15T10:16:27.284614+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_05_NHL_puck_line.csv rows=7 applied=7 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.284677+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_06_NHL_puck_line.csv
+2026-06-15T10:16:27.288697+00:00 | ROW CAP: 2026_04_06_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9304130072540137 capped_to=1.01
+2026-06-15T10:16:27.294459+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_06_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.294516+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_07_NHL_puck_line.csv
+2026-06-15T10:16:27.300135+00:00 | ROW CAP: 2026_04_07_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9774285293232838 capped_to=1.01
+2026-06-15T10:16:27.303204+00:00 | ROW CAP: 2026_04_07_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.9719221703040737 capped_to=1.01
+2026-06-15T10:16:27.315003+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_07_NHL_puck_line.csv rows=11 applied=11 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.315062+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_08_NHL_puck_line.csv
+2026-06-15T10:16:27.319066+00:00 | ROW CAP: 2026_04_08_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9136300188644163 capped_to=1.01
+2026-06-15T10:16:27.320649+00:00 | ROW CAP: 2026_04_08_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9617393859904075 capped_to=1.01
+2026-06-15T10:16:27.322255+00:00 | ROW CAP: 2026_04_08_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8943345956155665 capped_to=1.01
+2026-06-15T10:16:27.323611+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_08_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.323667+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_09_NHL_puck_line.csv
+2026-06-15T10:16:27.330748+00:00 | ROW CAP: 2026_04_09_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9913112123526051 capped_to=1.01
+2026-06-15T10:16:27.333885+00:00 | ROW CAP: 2026_04_09_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9126842238043137 capped_to=1.01
+2026-06-15T10:16:27.335440+00:00 | ROW CAP: 2026_04_09_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9156876425008468 capped_to=1.01
+2026-06-15T10:16:27.337012+00:00 | ROW CAP: 2026_04_09_NHL_puck_line.csv idx=6 side=away original_juiced_decimal=0.9049578014624531 capped_to=1.01
+2026-06-15T10:16:27.348907+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_09_NHL_puck_line.csv rows=14 applied=14 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.348966+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_11_NHL_puck_line.csv
+2026-06-15T10:16:27.353038+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9819266335876158 capped_to=1.01
+2026-06-15T10:16:27.354638+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9670255210470005 capped_to=1.01
+2026-06-15T10:16:27.357687+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=3 side=away original_juiced_decimal=0.929082764222601 capped_to=1.01
+2026-06-15T10:16:27.359249+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=4 side=away original_juiced_decimal=0.8613327820261606 capped_to=1.01
+2026-06-15T10:16:27.360809+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.9998512755825403 capped_to=1.01
+2026-06-15T10:16:27.365308+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.990806749855922 capped_to=1.01
+2026-06-15T10:16:27.366879+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=9 side=away original_juiced_decimal=0.9571362673839051 capped_to=1.01
+2026-06-15T10:16:27.371368+00:00 | ROW CAP: 2026_04_11_NHL_puck_line.csv idx=12 side=away original_juiced_decimal=0.9889387185555064 capped_to=1.01
+2026-06-15T10:16:27.375920+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_11_NHL_puck_line.csv rows=15 applied=15 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.375979+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_12_NHL_puck_line.csv
+2026-06-15T10:16:27.383073+00:00 | ROW CAP: 2026_04_12_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9501038213772804 capped_to=1.01
+2026-06-15T10:16:27.384631+00:00 | ROW CAP: 2026_04_12_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9713643686089896 capped_to=1.01
+2026-06-15T10:16:27.387699+00:00 | ROW CAP: 2026_04_12_NHL_puck_line.csv idx=5 side=home original_juiced_decimal=0.99807163208003 capped_to=1.01
+2026-06-15T10:16:27.389062+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_12_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.389120+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_13_NHL_puck_line.csv
+2026-06-15T10:16:27.396161+00:00 | ROW CAP: 2026_04_13_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.966989172120171 capped_to=1.01
+2026-06-15T10:16:27.399228+00:00 | ROW CAP: 2026_04_13_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.9883731923600549 capped_to=1.01
+2026-06-15T10:16:27.405207+00:00 | ROW CAP: 2026_04_13_NHL_puck_line.csv idx=8 side=home original_juiced_decimal=0.9715939576934272 capped_to=1.01
+2026-06-15T10:16:27.408108+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_13_NHL_puck_line.csv rows=10 applied=10 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.408166+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_14_NHL_puck_line.csv
+2026-06-15T10:16:27.413702+00:00 | ROW CAP: 2026_04_14_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.8178352849144647 capped_to=1.01
+2026-06-15T10:16:27.415304+00:00 | ROW CAP: 2026_04_14_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9598455224284012 capped_to=1.01
+2026-06-15T10:16:27.416881+00:00 | ROW CAP: 2026_04_14_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9411820112478985 capped_to=1.01
+2026-06-15T10:16:27.422966+00:00 | ROW CAP: 2026_04_14_NHL_puck_line.csv idx=7 side=away original_juiced_decimal=0.8479156376309466 capped_to=1.01
+2026-06-15T10:16:27.426032+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_14_NHL_puck_line.csv rows=9 applied=9 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.426089+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_15_NHL_puck_line.csv
+2026-06-15T10:16:27.430101+00:00 | ROW CAP: 2026_04_15_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9627406045434846 capped_to=1.01
+2026-06-15T10:16:27.431672+00:00 | ROW CAP: 2026_04_15_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9655022832860255 capped_to=1.01
+2026-06-15T10:16:27.436374+00:00 | ROW CAP: 2026_04_15_NHL_puck_line.csv idx=4 side=home original_juiced_decimal=0.8965391367123648 capped_to=1.01
+2026-06-15T10:16:27.439239+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_15_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.439295+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_16_NHL_puck_line.csv
+2026-06-15T10:16:27.444832+00:00 | ROW CAP: 2026_04_16_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8435234818331288 capped_to=1.01
+2026-06-15T10:16:27.447891+00:00 | ROW CAP: 2026_04_16_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.9416833697188438 capped_to=1.01
+2026-06-15T10:16:27.452271+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_16_NHL_puck_line.csv rows=6 applied=6 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.452329+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_18_NHL_puck_line.csv
+2026-06-15T10:16:27.460631+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_18_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.460687+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_19_NHL_puck_line.csv
+2026-06-15T10:16:27.470482+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_19_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.470537+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_20_NHL_puck_line.csv
+2026-06-15T10:16:27.480330+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_20_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.480387+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_21_NHL_puck_line.csv
+2026-06-15T10:16:27.490202+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_21_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.490259+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_22_NHL_puck_line.csv
+2026-06-15T10:16:27.494247+00:00 | ROW CAP: 2026_04_22_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9756509438950711 capped_to=1.01
+2026-06-15T10:16:27.495846+00:00 | ROW CAP: 2026_04_22_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.918126480986939 capped_to=1.01
+2026-06-15T10:16:27.498639+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_22_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.498695+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_23_NHL_puck_line.csv
+2026-06-15T10:16:27.502695+00:00 | ROW CAP: 2026_04_23_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9304570398161699 capped_to=1.01
+2026-06-15T10:16:27.504323+00:00 | ROW CAP: 2026_04_23_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9201911370348947 capped_to=1.01
+2026-06-15T10:16:27.507190+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_23_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.507245+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_24_NHL_puck_line.csv
+2026-06-15T10:16:27.511215+00:00 | ROW CAP: 2026_04_24_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9486909578141632 capped_to=1.01
+2026-06-15T10:16:27.512818+00:00 | ROW CAP: 2026_04_24_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8412569279788102 capped_to=1.01
+2026-06-15T10:16:27.514376+00:00 | ROW CAP: 2026_04_24_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9617915277811675 capped_to=1.01
+2026-06-15T10:16:27.515650+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_24_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.515707+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_25_NHL_puck_line.csv
+2026-06-15T10:16:27.519721+00:00 | ROW CAP: 2026_04_25_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9446083870490455 capped_to=1.01
+2026-06-15T10:16:27.521342+00:00 | ROW CAP: 2026_04_25_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9195635074954124 capped_to=1.01
+2026-06-15T10:16:27.522909+00:00 | ROW CAP: 2026_04_25_NHL_puck_line.csv idx=2 side=away original_juiced_decimal=0.9630919877181117 capped_to=1.01
+2026-06-15T10:16:27.524188+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_25_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.524243+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_26_NHL_puck_line.csv
+2026-06-15T10:16:27.528229+00:00 | ROW CAP: 2026_04_26_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9205276062535189 capped_to=1.01
+2026-06-15T10:16:27.531326+00:00 | ROW CAP: 2026_04_26_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.9518269022485706 capped_to=1.01
+2026-06-15T10:16:27.532916+00:00 | ROW CAP: 2026_04_26_NHL_puck_line.csv idx=3 side=home original_juiced_decimal=0.8667188983208824 capped_to=1.01
+2026-06-15T10:16:27.534259+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_26_NHL_puck_line.csv rows=4 applied=4 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.534315+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_27_NHL_puck_line.csv
+2026-06-15T10:16:27.539876+00:00 | ROW CAP: 2026_04_27_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8348095424301719 capped_to=1.01
+2026-06-15T10:16:27.541150+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_27_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.541212+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_28_NHL_puck_line.csv
+2026-06-15T10:16:27.549465+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_28_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.549521+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_29_NHL_puck_line.csv
+2026-06-15T10:16:27.555101+00:00 | ROW CAP: 2026_04_29_NHL_puck_line.csv idx=1 side=away original_juiced_decimal=0.9555342103893147 capped_to=1.01
+2026-06-15T10:16:27.557956+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_29_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.558012+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_04_30_NHL_puck_line.csv
+2026-06-15T10:16:27.561989+00:00 | ROW CAP: 2026_04_30_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9268968337203597 capped_to=1.01
+2026-06-15T10:16:27.563574+00:00 | ROW CAP: 2026_04_30_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.8738951527657489 capped_to=1.01
+2026-06-15T10:16:27.564875+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_04_30_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.564931+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_01_NHL_puck_line.csv
+2026-06-15T10:16:27.568944+00:00 | ROW CAP: 2026_05_01_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9422666490909706 capped_to=1.01
+2026-06-15T10:16:27.570536+00:00 | ROW CAP: 2026_05_01_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.914869022634602 capped_to=1.01
+2026-06-15T10:16:27.572119+00:00 | ROW CAP: 2026_05_01_NHL_puck_line.csv idx=2 side=home original_juiced_decimal=0.8239458082430567 capped_to=1.01
+2026-06-15T10:16:27.573410+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_01_NHL_puck_line.csv rows=3 applied=3 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.573466+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_02_NHL_puck_line.csv
+2026-06-15T10:16:27.579345+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_02_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.579402+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_03_NHL_puck_line.csv
+2026-06-15T10:16:27.586209+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_03_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.586265+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_04_NHL_puck_line.csv
+2026-06-15T10:16:27.593046+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_04_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.593103+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_05_NHL_puck_line.csv
+2026-06-15T10:16:27.598268+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_05_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.598323+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_06_NHL_puck_line.csv
+2026-06-15T10:16:27.605021+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_06_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.605077+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_07_NHL_puck_line.csv
+2026-06-15T10:16:27.610256+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_07_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.610312+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_08_NHL_puck_line.csv
+2026-06-15T10:16:27.615812+00:00 | ROW CAP: 2026_05_08_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9276168780580866 capped_to=1.01
+2026-06-15T10:16:27.617101+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_08_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.617156+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_09_NHL_puck_line.csv
+2026-06-15T10:16:27.623936+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_09_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.623991+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_10_NHL_puck_line.csv
+2026-06-15T10:16:27.627991+00:00 | ROW CAP: 2026_05_10_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.982917771615177 capped_to=1.01
+2026-06-15T10:16:27.629584+00:00 | ROW CAP: 2026_05_10_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9734520809582454 capped_to=1.01
+2026-06-15T10:16:27.630859+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_10_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.630915+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_11_NHL_puck_line.csv
+2026-06-15T10:16:27.636081+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_11_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.636136+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_12_NHL_puck_line.csv
+2026-06-15T10:16:27.642874+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_12_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.642939+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_13_NHL_puck_line.csv
+2026-06-15T10:16:27.648153+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_13_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.648208+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_14_NHL_puck_line.csv
+2026-06-15T10:16:27.652200+00:00 | ROW CAP: 2026_05_14_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9913105856748119 capped_to=1.01
+2026-06-15T10:16:27.653835+00:00 | ROW CAP: 2026_05_14_NHL_puck_line.csv idx=1 side=home original_juiced_decimal=0.9308596689148938 capped_to=1.01
+2026-06-15T10:16:27.655255+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_14_NHL_puck_line.csv rows=2 applied=2 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.655311+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_16_NHL_puck_line.csv
+2026-06-15T10:16:27.660637+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_16_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.660693+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_18_NHL_puck_line.csv
+2026-06-15T10:16:27.664666+00:00 | ROW CAP: 2026_05_18_NHL_puck_line.csv idx=0 side=away original_juiced_decimal=0.9755355975149723 capped_to=1.01
+2026-06-15T10:16:27.665939+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_18_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.665993+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_20_NHL_puck_line.csv
+2026-06-15T10:16:27.671167+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_20_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.671222+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_21_NHL_puck_line.csv
+2026-06-15T10:16:27.676393+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_21_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.676449+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_22_NHL_puck_line.csv
+2026-06-15T10:16:27.681595+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_22_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.681650+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_23_NHL_puck_line.csv
+2026-06-15T10:16:27.686858+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_23_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.686914+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_24_NHL_puck_line.csv
+2026-06-15T10:16:27.692269+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_24_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.692330+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_25_NHL_puck_line.csv
+2026-06-15T10:16:27.696278+00:00 | ROW CAP: 2026_05_25_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9216430263357315 capped_to=1.01
+2026-06-15T10:16:27.697530+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_25_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.697585+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_26_NHL_puck_line.csv
+2026-06-15T10:16:27.702751+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_26_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.702831+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_27_NHL_puck_line.csv
+2026-06-15T10:16:27.706823+00:00 | ROW CAP: 2026_05_27_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9345412327453688 capped_to=1.01
+2026-06-15T10:16:27.708082+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_27_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.708137+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_05_29_NHL_puck_line.csv
+2026-06-15T10:16:27.713324+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_05_29_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.713379+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_02_NHL_puck_line.csv
+2026-06-15T10:16:27.718575+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_02_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.718630+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_04_NHL_puck_line.csv
+2026-06-15T10:16:27.723764+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_04_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.723845+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_06_NHL_puck_line.csv
+2026-06-15T10:16:27.727860+00:00 | ROW CAP: 2026_06_06_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.966190919348054 capped_to=1.01
+2026-06-15T10:16:27.729123+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_06_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.729178+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_09_NHL_puck_line.csv
+2026-06-15T10:16:27.733158+00:00 | ROW CAP: 2026_06_09_NHL_puck_line.csv idx=0 side=home original_juiced_decimal=0.9556058109177952 capped_to=1.01
+2026-06-15T10:16:27.734424+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_09_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.734479+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_11_NHL_puck_line.csv
+2026-06-15T10:16:27.739730+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_11_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.739785+00:00 | Processing input: docs/win/hockey/nhl/01_merge/01_merguiced/2026_06_14_NHL_puck_line.csv
+2026-06-15T10:16:27.745007+00:00 | WROTE docs/win/hockey/nhl/02_juice/2026_06_14_NHL_puck_line.csv rows=1 applied=1 skipped_bad=0 skipped_noband=0
+2026-06-15T10:16:27.745058+00:00 | --- SUMMARY ---
+2026-06-15T10:16:27.745085+00:00 | Files processed: 211
+2026-06-15T10:16:27.745109+00:00 | Files written: 211
+2026-06-15T10:16:27.745130+00:00 | Rows applied: 1287
+2026-06-15T10:16:27.745152+00:00 | Rows skipped bad: 106
+2026-06-15T10:16:27.745173+00:00 | Rows skipped no band: 0
+2026-06-15T10:16:27.745193+00:00 | STATUS: SUCCESS

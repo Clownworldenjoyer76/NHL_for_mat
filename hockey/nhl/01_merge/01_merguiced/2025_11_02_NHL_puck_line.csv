@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_02,3:30 PM EST,2025_11_02_Utah Mammoth_Tampa Bay Lightning,Tampa Bay Lightning,Utah Mammoth,-1.5,1.5,0.28878900947449004,0.7112109905255098,3.4627356554174344,1.4060525122947067,219,-265,,
+hockey,nhl,2025_11_02,5:00 PM EST,2025_11_02_New York Islanders_Columbus Blue Jackets,Columbus Blue Jackets,New York Islanders,1.5,-1.5,0.6747849537928253,0.3252150462071749,1.481953612597923,3.0748884827516876,-200,174,,
+hockey,nhl,2025_11_02,7:00 PM EST,2025_11_02_Philadelphia Flyers_Calgary Flames,Calgary Flames,Philadelphia Flyers,1.5,-1.5,0.6475374925298935,0.35246250747010655,1.5443121232919732,2.8371812002864254,-210,180,,
+hockey,nhl,2025_11_02,8:00 PM EST,2025_11_02_Anaheim Ducks_New Jersey Devils,New Jersey Devils,Anaheim Ducks,-1.5,1.5,0.2864660736886355,0.7135339263113646,3.4908147660337456,1.4014750569318133,183,-215,,
+hockey,nhl,2025_11_02,8:00 PM EST,2025_11_02_San Jose Sharks_Detroit Red Wings,Detroit Red Wings,San Jose Sharks,-1.5,1.5,0.44171003257683217,0.5582899674231683,2.263928655109407,1.791183897886576,140,-160,,

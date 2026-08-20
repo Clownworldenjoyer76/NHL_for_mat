@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_01_04,2:00 PM EST,2026_01_04_Dallas Stars_Montreal Canadiens,Montreal Canadiens,Dallas Stars,6.0,5.96,0.46136922880815306,0.5386307711918469,2.1674614117271807,1.8565593602966008,-105,-115,,
+hockey,nhl,2026_01_04,3:00 PM EST,2026_01_04_Columbus Blue Jackets_Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,6.0,6.64,0.5866714460665111,0.413328553933489,1.7045315682308317,2.419382814188336,-135,110,,
+hockey,nhl,2026_01_04,5:00 PM EST,2026_01_04_Florida Panthers_Colorado Avalanche,Colorado Avalanche,Florida Panthers,6.0,6.07,0.4823911013931748,0.5176088986068251,2.073006730663023,1.9319606032499808,-120,100,,
+hockey,nhl,2026_01_04,7:00 PM EST,2026_01_04_New Jersey Devils_Carolina Hurricanes,Carolina Hurricanes,New Jersey Devils,6.0,5.89,0.4479051987820881,0.5520948012179119,2.2326153005571907,1.8112831307123645,-120,100,,
+hockey,nhl,2026_01_04,7:00 PM EST,2026_01_04_Chicago Blackhawks_Vegas Golden Knights,Vegas Golden Knights,Chicago Blackhawks,6.0,5.87,0.44404877295568873,0.5559512270443113,2.252004871770672,1.7987189367607896,-110,-110,,

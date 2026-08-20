@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Ottawa Senators_Dallas Stars,Dallas Stars,Ottawa Senators,-1.5,1.5,0.21470156092231718,0.7852984390776829,4.657627991637274,1.273401232242967,215,-260,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Boston Bruins_Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,-1.5,1.5,0.35415678697192765,0.6458432130280722,2.8236081780334916,1.5483634105426978,186,-220,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Carolina Hurricanes_Washington Capitals,Washington Capitals,Carolina Hurricanes,1.5,-1.5,0.5979158146333546,0.40208418536664525,1.6724762508802442,2.487041361967863,-185,161,,
+hockey,nhl,2025_11_11,7:00 PM EST,2025_11_11_Montreal Canadiens_Los Angeles Kings,Los Angeles Kings,Montreal Canadiens,1.5,-1.5,0.7394501577787811,0.2605498422212187,1.3523561926119254,3.8380372502814812,-270,222,,
+hockey,nhl,2025_11_11,8:00 PM EST,2025_11_11_St Louis Blues_Calgary Flames,Calgary Flames,St Louis Blues,1.5,-1.5,0.6416439566795937,0.35835604332040605,1.558496717049814,2.7905208203950957,-200,174,,
+hockey,nhl,2025_11_11,8:00 PM EST,2025_11_11_Minnesota Wild_San Jose Sharks,San Jose Sharks,Minnesota Wild,1.5,-1.5,0.5961795967121132,0.4038204032878868,1.6773469027033578,2.4763483763030467,-135,115,,
+hockey,nhl,2025_11_11,9:30 PM EST,2025_11_11_Colorado Avalanche_Anaheim Ducks,Anaheim Ducks,Colorado Avalanche,1.5,-1.5,0.5514954255979785,0.4485045744020213,1.8132516673474028,2.2296316628058306,-132,112,,
+hockey,nhl,2025_11_11,10:00 PM EST,2025_11_11_Vancouver Canucks_Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,-1.5,1.5,0.33902238837728715,0.6609776116227126,2.949657704868541,1.512910547068275,200,-240,,
+hockey,nhl,2025_11_11,10:00 PM EST,2025_11_11_Seattle Kraken_Columbus Blue Jackets,Columbus Blue Jackets,Seattle Kraken,1.5,-1.5,0.7552177683788325,0.24478223162116763,1.3241213883865877,4.085263841975386,-240,200,,

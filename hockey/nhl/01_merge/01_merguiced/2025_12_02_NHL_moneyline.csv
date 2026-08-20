@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_02,7:00 PM EST,2025_12_02_Detroit Red Wings_Boston Bruins,Boston Bruins,Detroit Red Wings,0.393,0.607,2.544529262086514,1.6474464579901154,165,-200,,
+hockey,nhl,2025_12_02,7:00 PM EST,2025_12_02_Montreal Canadiens_Ottawa Senators,Ottawa Senators,Montreal Canadiens,0.49,0.51,2.0408163265306123,1.9607843137254901,-105,-115,,
+hockey,nhl,2025_12_02,7:00 PM EST,2025_12_02_New York Islanders_Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,0.498,0.502,2.0080321285140563,1.9920318725099602,-140,115,,
+hockey,nhl,2025_12_02,7:00 PM EST,2025_12_02_New York Rangers_Dallas Stars,Dallas Stars,New York Rangers,0.52,0.48,1.923076923076923,2.0833333333333335,-135,110,,
+hockey,nhl,2025_12_02,7:30 PM EST,2025_12_02_Florida Panthers_Toronto Maple Leafs,Toronto Maple Leafs,Florida Panthers,0.394,0.606,2.5380710659898478,1.6501650165016502,140,-170,,
+hockey,nhl,2025_12_02,8:00 PM EST,2025_12_02_Nashville Predators_Calgary Flames,Calgary Flames,Nashville Predators,0.502,0.498,1.9920318725099602,2.0080321285140563,100,-120,,
+hockey,nhl,2025_12_02,9:00 PM EST,2025_12_02_Colorado Avalanche_Vancouver Canucks,Vancouver Canucks,Colorado Avalanche,0.245,0.755,4.081632653061225,1.3245033112582782,260,-325,,
+hockey,nhl,2025_12_02,9:00 PM EST,2025_12_02_Edmonton Oilers_Minnesota Wild,Minnesota Wild,Edmonton Oilers,0.427,0.573,2.34192037470726,1.7452006980802794,135,-160,,
+hockey,nhl,2025_12_02,10:00 PM EST,2025_12_02_Vegas Golden Knights_Chicago Blackhawks,Chicago Blackhawks,Vegas Golden Knights,0.339,0.661,2.949852507374631,1.51285930408472,230,-295,,
+hockey,nhl,2025_12_02,10:30 PM EST,2025_12_02_Los Angeles Kings_Washington Capitals,Washington Capitals,Los Angeles Kings,0.504,0.496,1.9841269841269842,2.0161290322580645,105,-125,,

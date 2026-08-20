@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_Tampa Bay Lightning_Pittsburgh Penguins,Pittsburgh Penguins,Tampa Bay Lightning,0.381,0.619,2.6246719160104988,1.6155088852988693,170,-210,,
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_Boston Bruins_St Louis Blues,St Louis Blues,Boston Bruins,0.407,0.593,2.4570024570024573,1.6863406408094437,-140,115,,
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_Florida Panthers_Nashville Predators,Nashville Predators,Florida Panthers,0.295,0.705,3.3898305084745766,1.4184397163120568,185,-225,,
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_Carolina Hurricanes_Toronto Maple Leafs,Toronto Maple Leafs,Carolina Hurricanes,0.366,0.634,2.73224043715847,1.5772870662460567,165,-200,,
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_Ottawa Senators_New York Rangers,New York Rangers,Ottawa Senators,0.472,0.528,2.1186440677966103,1.8939393939393938,125,-155,,
+hockey,nhl,2025_12_04,7:00 PM EST,2025_12_04_New York Islanders_Colorado Avalanche,Colorado Avalanche,New York Islanders,0.636,0.364,1.572327044025157,2.7472527472527473,-190,155,,
+hockey,nhl,2025_12_04,7:30 PM EST,2025_12_04_Columbus Blue Jackets_Detroit Red Wings,Detroit Red Wings,Columbus Blue Jackets,0.441,0.559,2.2675736961451247,1.7889087656529514,105,-125,,
+hockey,nhl,2025_12_04,9:00 PM EST,2025_12_04_Edmonton Oilers_Seattle Kraken,Seattle Kraken,Edmonton Oilers,0.359,0.641,2.785515320334262,1.5600624024960998,200,-250,,
+hockey,nhl,2025_12_04,9:00 PM EST,2025_12_04_Calgary Flames_Minnesota Wild,Minnesota Wild,Calgary Flames,0.545,0.455,1.8348623853211008,2.1978021978021975,-120,100,,
+hockey,nhl,2025_12_04,10:00 PM EST,2025_12_04_Los Angeles Kings_Chicago Blackhawks,Chicago Blackhawks,Los Angeles Kings,0.358,0.642,2.793296089385475,1.557632398753894,195,-235,,

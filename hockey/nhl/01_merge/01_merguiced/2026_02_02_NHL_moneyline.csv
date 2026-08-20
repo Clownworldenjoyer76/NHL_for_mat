@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_02_02,7:00 PM EST,2026_02_02_Pittsburgh Penguins_Ottawa Senators,Ottawa Senators,Pittsburgh Penguins,0.494,0.506,2.0242914979757085,1.976284584980237,-105,-115,,
+hockey,nhl,2026_02_02,7:00 PM EST,2026_02_02_Florida Panthers_Buffalo Sabres,Buffalo Sabres,Florida Panthers,0.452,0.548,2.2123893805309733,1.824817518248175,110,-135,,
+hockey,nhl,2026_02_02,7:00 PM EST,2026_02_02_Washington Capitals_New York Islanders,New York Islanders,Washington Capitals,0.481,0.519,2.079002079002079,1.9267822736030829,110,-135,,
+hockey,nhl,2026_02_02,7:30 PM EST,2026_02_02_Minnesota Wild_Montreal Canadiens,Montreal Canadiens,Minnesota Wild,0.448,0.552,2.232142857142857,1.8115942028985506,120,-145,,
+hockey,nhl,2026_02_02,8:00 PM EST,2026_02_02_Nashville Predators_St Louis Blues,St Louis Blues,Nashville Predators,0.417,0.583,2.3980815347721824,1.7152658662092626,125,-150,,
+hockey,nhl,2026_02_02,8:30 PM EST,2026_02_02_Chicago Blackhawks_San Jose Sharks,San Jose Sharks,Chicago Blackhawks,0.49,0.51,2.0408163265306123,1.9607843137254901,-115,-105,,
+hockey,nhl,2026_02_02,8:30 PM EST,2026_02_02_Dallas Stars_Winnipeg Jets,Winnipeg Jets,Dallas Stars,0.38,0.62,2.6315789473684212,1.6129032258064517,145,-175,,
+hockey,nhl,2026_02_02,9:00 PM EST,2026_02_02_Colorado Avalanche_Detroit Red Wings,Detroit Red Wings,Colorado Avalanche,0.329,0.671,3.03951367781155,1.4903129657228018,180,-220,,
+hockey,nhl,2026_02_02,9:30 PM EST,2026_02_02_Utah Mammoth_Vancouver Canucks,Vancouver Canucks,Utah Mammoth,0.305,0.695,3.278688524590164,1.4388489208633095,220,-275,,
+hockey,nhl,2026_02_02,10:00 PM EST,2026_02_02_Calgary Flames_Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,0.531,0.469,1.8832391713747645,2.1321961620469083,-120,100,,

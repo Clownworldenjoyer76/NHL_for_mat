@@ -1,0 +1,1503 @@
+{
+  "run_date": "2026_05_28",
+  "generated_at_et": "2026-05-28T05:25:25.062283-04:00",
+  "source": "odds-api.io",
+  "sport_slug": "ice-hockey",
+  "league_slug": "usa-nhl",
+  "bookmaker": "FanDuel",
+  "rows": [
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558002",
+      "game_date": "2026_05_29",
+      "game_time": "20:00",
+      "home_team": "Carolina Hurricanes",
+      "away_team": "Montreal Canadiens",
+      "home_puck_line": "-1.5",
+      "away_puck_line": "1.5",
+      "total": "5.5",
+      "home_dk_puck_line_decimal": "2.02",
+      "away_dk_puck_line_decimal": "1.81",
+      "dk_total_over_decimal": "1.91",
+      "dk_total_under_decimal": "1.91",
+      "home_dk_moneyline_decimal": "1.42",
+      "away_dk_moneyline_decimal": "2.95",
+      "home_dk_puck_line_american": "+102",
+      "away_dk_puck_line_american": "-123",
+      "dk_total_over_american": "-110",
+      "dk_total_under_american": "-110",
+      "home_dk_moneyline_american": "-238",
+      "away_dk_moneyline_american": "+195"
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70557996",
+      "game_date": "2026_05_31",
+      "game_time": "19:00",
+      "home_team": "Montreal Canadiens",
+      "away_team": "Carolina Hurricanes",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558010",
+      "game_date": "2026_06_02",
+      "game_time": "20:00",
+      "home_team": "Carolina Hurricanes",
+      "away_team": "Montreal Canadiens",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558084",
+      "game_date": "2026_06_06",
+      "game_time": "19:00",
+      "home_team": "Eastern Conference Champion",
+      "away_team": "Vegas Golden Knights",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558076",
+      "game_date": "2026_06_08",
+      "game_time": "19:00",
+      "home_team": "Eastern Conference Champion",
+      "away_team": "Vegas Golden Knights",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558086",
+      "game_date": "2026_06_10",
+      "game_time": "19:00",
+      "home_team": "Vegas Golden Knights",
+      "away_team": "Eastern Conference Champion",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558082",
+      "game_date": "2026_06_12",
+      "game_time": "19:00",
+      "home_team": "Vegas Golden Knights",
+      "away_team": "Eastern Conference Champion",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558078",
+      "game_date": "2026_06_14",
+      "game_time": "19:00",
+      "home_team": "Eastern Conference Champion",
+      "away_team": "Vegas Golden Knights",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558080",
+      "game_date": "2026_06_16",
+      "game_time": "19:00",
+      "home_team": "Vegas Golden Knights",
+      "away_team": "Eastern Conference Champion",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    },
+    {
+      "bookmaker": "FanDuel",
+      "sport": "hockey",
+      "league": "NHL",
+      "game_id": "70558088",
+      "game_date": "2026_06_18",
+      "game_time": "19:00",
+      "home_team": "Eastern Conference Champion",
+      "away_team": "Vegas Golden Knights",
+      "home_puck_line": "",
+      "away_puck_line": "",
+      "total": "",
+      "home_dk_puck_line_decimal": "",
+      "away_dk_puck_line_decimal": "",
+      "dk_total_over_decimal": "",
+      "dk_total_under_decimal": "",
+      "home_dk_moneyline_decimal": "",
+      "away_dk_moneyline_decimal": "",
+      "home_dk_puck_line_american": "",
+      "away_dk_puck_line_american": "",
+      "dk_total_over_american": "",
+      "dk_total_under_american": "",
+      "home_dk_moneyline_american": "",
+      "away_dk_moneyline_american": ""
+    }
+  ],
+  "raw": [
+    {
+      "event": {
+        "id": 70558002,
+        "home": "Carolina Hurricanes",
+        "away": "Montreal Canadiens",
+        "homeId": 3680,
+        "awayId": 3690,
+        "date": "2026-05-30T00:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558002,
+        "home": "Carolina Hurricanes",
+        "away": "Montreal Canadiens",
+        "date": "2026-05-30T00:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {
+          "FanDuel": "https://sportsbook.fanduel.com/event/35659116"
+        },
+        "bookmakerIds": {
+          "FanDuel": "35659116"
+        },
+        "bookmakers": {
+          "FanDuel": [
+            {
+              "name": "ML",
+              "updatedAt": "2026-05-28T03:17:54.406Z",
+              "odds": [
+                {
+                  "home": "1.42",
+                  "away": "2.95"
+                }
+              ]
+            },
+            {
+              "name": "3-Way Result",
+              "updatedAt": "2026-05-28T04:58:19.498Z",
+              "odds": [
+                {
+                  "home": "1.69",
+                  "draw": "4.60",
+                  "away": "3.90"
+                }
+              ]
+            },
+            {
+              "name": "Spread",
+              "updatedAt": "2026-05-28T04:58:19.498Z",
+              "odds": [
+                {
+                  "hdp": -1.5,
+                  "home": "2.02",
+                  "away": "1.81"
+                }
+              ]
+            },
+            {
+              "name": "Totals",
+              "updatedAt": "2026-05-28T04:58:19.498Z",
+              "odds": [
+                {
+                  "hdp": 5.5,
+                  "over": "1.91",
+                  "under": "1.91"
+                }
+              ]
+            },
+            {
+              "name": "Player Props",
+              "updatedAt": "2026-05-28T08:52:22.187Z",
+              "odds": [
+                {
+                  "label": "Sebastian Aho (CAR) (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.10",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Logan Stankoven (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.30",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Juraj Slafkovsky (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.60",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jordan Martinook (Goals)",
+                  "hdp": 0.5,
+                  "over": "6.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Lane Hutson (Goals)",
+                  "hdp": 0.5,
+                  "over": "9.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alexander Nikishin (Goals)",
+                  "hdp": 0.5,
+                  "over": "10.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Sean Walker (Goals)",
+                  "hdp": 0.5,
+                  "over": "10.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "William Carrier (Goals)",
+                  "hdp": 0.5,
+                  "over": "12.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Phillip Danault (Goals)",
+                  "hdp": 0.5,
+                  "over": "12.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Joe Veleno (Goals)",
+                  "hdp": 0.5,
+                  "over": "14.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Seth Jarvis (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Cole Caufield (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.20",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jackson Blake (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.90",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jordan Staal (Goals)",
+                  "hdp": 0.5,
+                  "over": "5.40",
+                  "under": "N/A"
+                },
+                {
+                  "label": "K'Andre Miller (Goals)",
+                  "hdp": 0.5,
+                  "over": "10.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Zachary Bolduc (Goals)",
+                  "hdp": 0.5,
+                  "over": "9.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Kaiden Guhle (Goals)",
+                  "hdp": 0.5,
+                  "over": "20.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Juraj Slafkovsky (Goals)",
+                  "hdp": 1.5,
+                  "over": "23.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nick Suzuki (Goals)",
+                  "hdp": 1.5,
+                  "over": "26.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jordan Martinook (Goals)",
+                  "hdp": 1.5,
+                  "over": "71.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nikolaj Ehlers (Goals)",
+                  "hdp": 2.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Andrei Svechnikov (Goals)",
+                  "hdp": 0.5,
+                  "over": "2.95",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Taylor Hall (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.60",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Ivan Demidov (Goals)",
+                  "hdp": 0.5,
+                  "over": "4.60",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alex Newhook (Goals)",
+                  "hdp": 0.5,
+                  "over": "5.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Shayne Gostisbehere (Goals)",
+                  "hdp": 0.5,
+                  "over": "6.25",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Josh Anderson (Goals)",
+                  "hdp": 0.5,
+                  "over": "6.25",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alexandre Texier (Goals)",
+                  "hdp": 0.5,
+                  "over": "8.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Eric Robinson (Goals)",
+                  "hdp": 0.5,
+                  "over": "8.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Mark Jankowski (Goals)",
+                  "hdp": 0.5,
+                  "over": "9.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jake Evans (Goals)",
+                  "hdp": 0.5,
+                  "over": "9.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Noah Dobson (Goals)",
+                  "hdp": 0.5,
+                  "over": "11.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jalen Chatfield (Goals)",
+                  "hdp": 0.5,
+                  "over": "16.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jaccob Slavin (Goals)",
+                  "hdp": 0.5,
+                  "over": "15.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jayden Struble (Goals)",
+                  "hdp": 0.5,
+                  "over": "27.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alexandre Carrier (Goals)",
+                  "hdp": 0.5,
+                  "over": "22.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Sebastian Aho (CAR) (Goals)",
+                  "hdp": 1.5,
+                  "over": "17.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Logan Stankoven (Goals)",
+                  "hdp": 1.5,
+                  "over": "20.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Taylor Hall (Goals)",
+                  "hdp": 1.5,
+                  "over": "23.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Ivan Demidov (Goals)",
+                  "hdp": 1.5,
+                  "over": "34.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jordan Staal (Goals)",
+                  "hdp": 1.5,
+                  "over": "46.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Shayne Gostisbehere (Goals)",
+                  "hdp": 1.5,
+                  "over": "71.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Josh Anderson (Goals)",
+                  "hdp": 1.5,
+                  "over": "61.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Sebastian Aho (CAR) (Goals)",
+                  "hdp": 2.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Juraj Slafkovsky (Goals)",
+                  "hdp": 2.5,
+                  "over": "126.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nick Suzuki (Goals)",
+                  "hdp": 2.5,
+                  "over": "151.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Taylor Hall (Goals)",
+                  "hdp": 2.5,
+                  "over": "176.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jackson Blake (Goals)",
+                  "hdp": 2.5,
+                  "over": "201.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nikolaj Ehlers (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.20",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nick Suzuki (Goals)",
+                  "hdp": 0.5,
+                  "over": "3.90",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Kirby Dach (Goals)",
+                  "hdp": 0.5,
+                  "over": "9.50",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Mike Matheson (Goals)",
+                  "hdp": 0.5,
+                  "over": "13.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Cole Caufield (Goals)",
+                  "hdp": 1.5,
+                  "over": "18.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Seth Jarvis (Goals)",
+                  "hdp": 2.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Ivan Demidov (Goals)",
+                  "hdp": 2.5,
+                  "over": "251.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Seth Jarvis (Goals)",
+                  "hdp": 1.5,
+                  "over": "16.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Andrei Svechnikov (Goals)",
+                  "hdp": 1.5,
+                  "over": "16.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Nikolaj Ehlers (Goals)",
+                  "hdp": 1.5,
+                  "over": "18.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jackson Blake (Goals)",
+                  "hdp": 1.5,
+                  "over": "26.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alex Newhook (Goals)",
+                  "hdp": 1.5,
+                  "over": "41.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Alexandre Texier (Goals)",
+                  "hdp": 1.5,
+                  "over": "81.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Jake Evans (Goals)",
+                  "hdp": 1.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Eric Robinson (Goals)",
+                  "hdp": 1.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Andrei Svechnikov (Goals)",
+                  "hdp": 2.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Cole Caufield (Goals)",
+                  "hdp": 2.5,
+                  "over": "101.00",
+                  "under": "N/A"
+                },
+                {
+                  "label": "Logan Stankoven (Goals)",
+                  "hdp": 2.5,
+                  "over": "126.00",
+                  "under": "N/A"
+                }
+              ]
+            },
+            {
+              "name": "Correct Score",
+              "updatedAt": "2026-05-28T09:24:58.16Z",
+              "odds": [
+                {
+                  "label": "1-0",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "2-0",
+                  "odds": "56.00"
+                },
+                {
+                  "label": "2-1",
+                  "odds": "31.00"
+                },
+                {
+                  "label": "3-0",
+                  "odds": "23.00"
+                },
+                {
+                  "label": "3-1",
+                  "odds": "19.00"
+                },
+                {
+                  "label": "3-2",
+                  "odds": "26.00"
+                },
+                {
+                  "label": "4-0",
+                  "odds": "31.00"
+                },
+                {
+                  "label": "4-1",
+                  "odds": "13.00"
+                },
+                {
+                  "label": "4-2",
+                  "odds": "18.00"
+                },
+                {
+                  "label": "4-3",
+                  "odds": "41.00"
+                },
+                {
+                  "label": "5-0",
+                  "odds": "51.00"
+                },
+                {
+                  "label": "5-1",
+                  "odds": "23.00"
+                },
+                {
+                  "label": "5-2",
+                  "odds": "16.00"
+                },
+                {
+                  "label": "5-3",
+                  "odds": "36.00"
+                },
+                {
+                  "label": "5-4",
+                  "odds": "81.00"
+                },
+                {
+                  "label": "6-1",
+                  "odds": "51.00"
+                },
+                {
+                  "label": "6-2",
+                  "odds": "36.00"
+                },
+                {
+                  "label": "6-3",
+                  "odds": "36.00"
+                },
+                {
+                  "label": "6-4",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "7-2",
+                  "odds": "81.00"
+                },
+                {
+                  "label": "7-3",
+                  "odds": "81.00"
+                },
+                {
+                  "label": "7-4",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "0-0",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "1-1",
+                  "odds": "20.00"
+                },
+                {
+                  "label": "2-2",
+                  "odds": "12.00"
+                },
+                {
+                  "label": "3-3",
+                  "odds": "16.00"
+                },
+                {
+                  "label": "4-4",
+                  "odds": "34.00"
+                },
+                {
+                  "label": "5-5",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "6-6",
+                  "odds": "351.00"
+                },
+                {
+                  "label": "6-0",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "7-0",
+                  "odds": "176.00"
+                },
+                {
+                  "label": "7-1",
+                  "odds": "101.00"
+                },
+                {
+                  "label": "7-5",
+                  "odds": "351.00"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558002",
+        "game_date": "2026_05_29",
+        "game_time": "20:00",
+        "home_team": "Carolina Hurricanes",
+        "away_team": "Montreal Canadiens",
+        "home_puck_line": "-1.5",
+        "away_puck_line": "1.5",
+        "total": "5.5",
+        "home_dk_puck_line_decimal": "2.02",
+        "away_dk_puck_line_decimal": "1.81",
+        "dk_total_over_decimal": "1.91",
+        "dk_total_under_decimal": "1.91",
+        "home_dk_moneyline_decimal": "1.42",
+        "away_dk_moneyline_decimal": "2.95",
+        "home_dk_puck_line_american": "+102",
+        "away_dk_puck_line_american": "-123",
+        "dk_total_over_american": "-110",
+        "dk_total_under_american": "-110",
+        "home_dk_moneyline_american": "-238",
+        "away_dk_moneyline_american": "+195"
+      }
+    },
+    {
+      "event": {
+        "id": 70557996,
+        "home": "Montreal Canadiens",
+        "away": "Carolina Hurricanes",
+        "homeId": 3690,
+        "awayId": 3680,
+        "date": "2026-05-31T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70557996,
+        "home": "Montreal Canadiens",
+        "away": "Carolina Hurricanes",
+        "date": "2026-05-31T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70557996",
+        "game_date": "2026_05_31",
+        "game_time": "19:00",
+        "home_team": "Montreal Canadiens",
+        "away_team": "Carolina Hurricanes",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558010,
+        "home": "Carolina Hurricanes",
+        "away": "Montreal Canadiens",
+        "homeId": 3680,
+        "awayId": 3690,
+        "date": "2026-06-03T00:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558010,
+        "home": "Carolina Hurricanes",
+        "away": "Montreal Canadiens",
+        "date": "2026-06-03T00:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558010",
+        "game_date": "2026_06_02",
+        "game_time": "20:00",
+        "home_team": "Carolina Hurricanes",
+        "away_team": "Montreal Canadiens",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558084,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "homeId": 1005805,
+        "awayId": 344158,
+        "date": "2026-06-06T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558084,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "date": "2026-06-06T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558084",
+        "game_date": "2026_06_06",
+        "game_time": "19:00",
+        "home_team": "Eastern Conference Champion",
+        "away_team": "Vegas Golden Knights",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558076,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "homeId": 1005805,
+        "awayId": 344158,
+        "date": "2026-06-08T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558076,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "date": "2026-06-08T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558076",
+        "game_date": "2026_06_08",
+        "game_time": "19:00",
+        "home_team": "Eastern Conference Champion",
+        "away_team": "Vegas Golden Knights",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558086,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "homeId": 344158,
+        "awayId": 1005805,
+        "date": "2026-06-10T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558086,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "date": "2026-06-10T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558086",
+        "game_date": "2026_06_10",
+        "game_time": "19:00",
+        "home_team": "Vegas Golden Knights",
+        "away_team": "Eastern Conference Champion",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558082,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "homeId": 344158,
+        "awayId": 1005805,
+        "date": "2026-06-12T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558082,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "date": "2026-06-12T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558082",
+        "game_date": "2026_06_12",
+        "game_time": "19:00",
+        "home_team": "Vegas Golden Knights",
+        "away_team": "Eastern Conference Champion",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558078,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "homeId": 1005805,
+        "awayId": 344158,
+        "date": "2026-06-14T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558078,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "date": "2026-06-14T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558078",
+        "game_date": "2026_06_14",
+        "game_time": "19:00",
+        "home_team": "Eastern Conference Champion",
+        "away_team": "Vegas Golden Knights",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558080,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "homeId": 344158,
+        "awayId": 1005805,
+        "date": "2026-06-16T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558080,
+        "home": "Vegas Golden Knights",
+        "away": "Eastern Conference Champion",
+        "date": "2026-06-16T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558080",
+        "game_date": "2026_06_16",
+        "game_time": "19:00",
+        "home_team": "Vegas Golden Knights",
+        "away_team": "Eastern Conference Champion",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    },
+    {
+      "event": {
+        "id": 70558088,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "homeId": 1005805,
+        "awayId": 344158,
+        "date": "2026-06-18T23:00:00Z",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "status": "pending",
+        "scores": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "id": 70558088,
+        "home": "Eastern Conference Champion",
+        "away": "Vegas Golden Knights",
+        "date": "2026-06-18T23:00:00Z",
+        "status": "pending",
+        "sport": {
+          "name": "Ice Hockey",
+          "slug": "ice-hockey"
+        },
+        "league": {
+          "name": "USA - NHL",
+          "slug": "usa-nhl"
+        },
+        "urls": {},
+        "bookmakers": {}
+      },
+      "normalized": {
+        "bookmaker": "FanDuel",
+        "sport": "hockey",
+        "league": "NHL",
+        "game_id": "70558088",
+        "game_date": "2026_06_18",
+        "game_time": "19:00",
+        "home_team": "Eastern Conference Champion",
+        "away_team": "Vegas Golden Knights",
+        "home_puck_line": "",
+        "away_puck_line": "",
+        "total": "",
+        "home_dk_puck_line_decimal": "",
+        "away_dk_puck_line_decimal": "",
+        "dk_total_over_decimal": "",
+        "dk_total_under_decimal": "",
+        "home_dk_moneyline_decimal": "",
+        "away_dk_moneyline_decimal": "",
+        "home_dk_puck_line_american": "",
+        "away_dk_puck_line_american": "",
+        "dk_total_over_american": "",
+        "dk_total_under_american": "",
+        "home_dk_moneyline_american": "",
+        "away_dk_moneyline_american": ""
+      }
+    }
+  ]
+}

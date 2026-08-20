@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_04,7:00 PM,2026_03_04_Detroit Red Wings_Vegas Golden Knights,Vegas Golden Knights,Detroit Red Wings,5.5,6.04,0.560723679391425,0.4392763206085751,1.7834096128869366,2.276471444248568,-130,110,,
+hockey,nhl,2026_03_04,7:10 PM,2026_03_04_New Jersey Devils_Toronto Maple Leafs,Toronto Maple Leafs,New Jersey Devils,5.5,5.8,0.5216853128418241,0.47831468715817593,1.9168643919695738,2.090673832203078,-125,105,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Vancouver Canucks_Carolina Hurricanes,Carolina Hurricanes,Vancouver Canucks,6.5,6.29,0.44017188332917234,0.5598281166708277,2.27183979230262,1.7862625513466095,114,-135,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Seattle Kraken_St Louis Blues,St Louis Blues,Seattle Kraken,5.5,5.5,0.4710813134741374,0.5289186865258626,2.122775774367243,1.890649783180052,-125,105,,
+hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Anaheim Ducks_New York Islanders,New York Islanders,Anaheim Ducks,6.5,6.27,0.436979721291578,0.563020278708422,2.2884357128617014,1.7761349596394944,-115,-105,,

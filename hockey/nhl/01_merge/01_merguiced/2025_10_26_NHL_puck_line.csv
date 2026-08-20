@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_26,1:00 PM EDT,2025_10_26_New Jersey Devils_Colorado Avalanche,Colorado Avalanche,New Jersey Devils,,,,,,,,,,
+hockey,nhl,2025_10_26,5:00 PM EDT,2025_10_26_Tampa Bay Lightning_Vegas Golden Knights,Vegas Golden Knights,Tampa Bay Lightning,-1.5,-1.5,0.17214809608603188,0.3907371795483474,5.808951842837954,2.5592650311800345,-210.0,-210.0,,
+hockey,nhl,2025_10_26,6:00 PM EDT,2025_10_26_Minnesota Wild_San Jose Sharks,San Jose Sharks,Minnesota Wild,-1.5,-1.5,0.1415743472408042,0.4363881102438797,7.063426528106093,2.29153814351436,-125.0,-150.0,,
+hockey,nhl,2025_10_26,6:00 PM EDT,2025_10_26_Winnipeg Jets_Utah Mammoth,Utah Mammoth,Winnipeg Jets,,,,,,,,,,
+hockey,nhl,2025_10_26,7:00 PM EDT,2025_10_26_Nashville Predators_Dallas Stars,Dallas Stars,Nashville Predators,,,,,,,,,,
+hockey,nhl,2025_10_26,7:00 PM EDT,2025_10_26_Chicago Blackhawks_Los Angeles Kings,Los Angeles Kings,Chicago Blackhawks,-1.5,-1.5,0.37065513782597814,0.16933007224127983,2.6979256401660834,5.905625544026767,-200.0,-185.0,,
+hockey,nhl,2025_10_26,8:00 PM EDT,2025_10_26_Calgary Flames_New York Rangers,New York Rangers,Calgary Flames,-1.5,-1.5,0.29754612601236585,0.22730669951900662,3.360823457531558,4.399342395609344,-220.0,-225.0,,
+hockey,nhl,2025_10_26,10:00 PM EDT,2025_10_26_Vancouver Canucks_Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,,,,,,,,,,

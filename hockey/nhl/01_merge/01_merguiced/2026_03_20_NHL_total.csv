@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_20,7:10 PM,2026_03_20_Toronto Maple Leafs_Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,6.5,6.23,0.4305873397877651,0.5694126602122349,2.3224092015638367,1.756195585161865,105,-125,,
+hockey,nhl,2026_03_20,7:10 PM,2026_03_20_Washington Capitals_New Jersey Devils,New Jersey Devils,Washington Capitals,5.5,5.81,0.5233401306016409,0.47665986939835914,1.9108032071807348,2.0979320144198454,-135,114,,
+hockey,nhl,2026_03_20,8:40 PM,2026_03_20_Chicago Blackhawks_Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,6.5,6.44,0.4640063738283795,0.5359936261716205,2.1551428092448286,1.8656938276348247,100,-120,,
+hockey,nhl,2026_03_20,9:10 PM,2026_03_20_Calgary Flames_Florida Panthers,Florida Panthers,Calgary Flames,5.5,5.91,0.5397580726618482,0.46024192733815183,1.8526818785098333,2.172770320565066,-125,105,,
+hockey,nhl,2026_03_20,10:10 PM,2026_03_20_Utah Mammoth_Anaheim Ducks,Anaheim Ducks,Utah Mammoth,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,-115,-105,,

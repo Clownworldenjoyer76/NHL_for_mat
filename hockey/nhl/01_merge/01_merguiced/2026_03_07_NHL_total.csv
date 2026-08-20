@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_07,12:40 PM,2026_03_07_Boston Bruins_Washington Capitals,Washington Capitals,Boston Bruins,5.5,6.1,0.5702459197218777,0.4297540802781224,1.7536293823684412,2.32691217114875,-135,114,,
+hockey,nhl,2026_03_07,3:10 PM,2026_03_07_New Jersey Devils_New York Rangers,New York Rangers,New Jersey Devils,5.5,5.92,0.5413863951583133,0.4586136048416867,1.8471095855808826,2.180484812144201,-115,-105,,
+hockey,nhl,2026_03_07,5:40 PM,2026_03_07_Buffalo Sabres_Nashville Predators,Nashville Predators,Buffalo Sabres,6.5,6.31,0.44336110335278356,0.5566388966472164,2.2554978152972915,1.7964968061399678,102,-122,,
+hockey,nhl,2026_03_07,5:40 PM,2026_03_07_Pittsburgh Penguins_Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,5.5,6.13,0.5749688324706508,0.42503116752934916,1.7392247084124248,2.3527686353282506,-130,110,,
+hockey,nhl,2026_03_07,7:10 PM,2026_03_07_Toronto Maple Leafs_Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,6.5,6.11,0.41135988011377966,0.5886401198862203,2.4309614241510524,1.698830858136704,-108,-112,,
+hockey,nhl,2026_03_07,7:10 PM,2026_03_07_Winnipeg Jets_Vancouver Canucks,Vancouver Canucks,Winnipeg Jets,5.5,5.9,0.5381272410127839,0.46187275898721614,1.858296558482985,2.1650984617338698,-130,110,,
+hockey,nhl,2026_03_07,7:10 PM,2026_03_07_Los Angeles Kings_Montreal Canadiens,Montreal Canadiens,Los Angeles Kings,5.5,5.91,0.5397580726618482,0.46024192733815183,1.8526818785098333,2.172770320565066,-130,110,,
+hockey,nhl,2026_03_07,7:10 PM,2026_03_07_Columbus Blue Jackets_Utah Mammoth,Utah Mammoth,Columbus Blue Jackets,6.5,6.19,0.4241855134068493,0.5758144865931507,2.357459103137427,1.736670443837866,110,-130,,
+hockey,nhl,2026_03_07,10:10 PM,2026_03_07_Calgary Flames_Carolina Hurricanes,Carolina Hurricanes,Calgary Flames,5.5,5.9,0.5381272410127839,0.46187275898721614,1.858296558482985,2.1650984617338698,-130,110,,
+hockey,nhl,2026_03_07,10:10 PM,2026_03_07_San Jose Sharks_New York Islanders,New York Islanders,San Jose Sharks,6.5,6.14,0.4161723609925141,0.5838276390074859,2.4028505824248803,1.7128342907848833,102,-122,,
+hockey,nhl,2026_03_07,10:10 PM,2026_03_07_Seattle Kraken_Ottawa Senators,Ottawa Senators,Seattle Kraken,5.5,5.79,0.5200282110097941,0.47997178899020587,1.922972598079234,2.0834557841490255,-125,105,,

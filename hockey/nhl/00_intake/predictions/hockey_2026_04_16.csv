@@ -1,0 +1,7 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2aa3249b78d693529c951547a82f134f","2026_04_16","07:37 PM","Utah Mammoth","St Louis Blues","0.611000","0.389000","2.34","3.41","5.75"
+"hockey","nhl","72aacc9aeb0595468a61d147df27e838","2026_04_16","08:07 PM","Winnipeg Jets","San Jose Sharks","0.608000","0.392000","2.52","3.57","6.09"
+"hockey","nhl","112a39ac7f4a08fcb78fe38362f343ed","2026_04_16","08:07 PM","Nashville Predators","Anaheim Ducks","0.532000","0.468000","3.08","3.43","6.51"
+"hockey","nhl","9d37384a47dfd1b17638086559bb3726","2026_04_16","09:07 PM","Edmonton Oilers","Vancouver Canucks","0.696000","0.304000","2.72","4.09","6.81"
+"hockey","nhl","88586e525b98a2c062f1f6d75e8d0fe1","2026_04_16","09:07 PM","Calgary Flames","Los Angeles Kings","0.466000","0.534000","2.98","2.61","5.59"
+"hockey","nhl","96784cc6006a3540914823666e6561d1","2026_04_16","10:07 PM","Colorado Avalanche","Seattle Kraken","0.781000","0.219000","2.14","4.14","6.28"

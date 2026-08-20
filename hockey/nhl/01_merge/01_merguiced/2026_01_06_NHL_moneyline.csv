@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_06,7:00 PM EST,2026_01_06_Tampa Bay Lightning_Colorado Avalanche,Colorado Avalanche,Tampa Bay Lightning,0.574,0.426,1.7421602787456447,2.347417840375587,-120,100,,
+hockey,nhl,2026_01_06,7:00 PM EST,2026_01_06_Philadelphia Flyers_Anaheim Ducks,Anaheim Ducks,Philadelphia Flyers,0.415,0.585,2.4096385542168677,1.7094017094017095,125,-150,,
+hockey,nhl,2026_01_06,7:00 PM EST,2026_01_06_Buffalo Sabres_Vancouver Canucks,Vancouver Canucks,Buffalo Sabres,0.412,0.588,2.4271844660194177,1.7006802721088436,145,-175,,
+hockey,nhl,2026_01_06,7:00 PM EST,2026_01_06_Carolina Hurricanes_Dallas Stars,Dallas Stars,Carolina Hurricanes,0.445,0.555,2.247191011235955,1.8018018018018016,110,-135,,
+hockey,nhl,2026_01_06,7:30 PM EST,2026_01_06_New York Islanders_New Jersey Devils,New Jersey Devils,New York Islanders,0.475,0.525,2.1052631578947367,1.9047619047619047,105,-125,,
+hockey,nhl,2026_01_06,7:30 PM EST,2026_01_06_Toronto Maple Leafs_Florida Panthers,Florida Panthers,Toronto Maple Leafs,0.543,0.457,1.8416206261510129,2.1881838074398248,-125,105,,
+hockey,nhl,2026_01_06,8:00 PM EST,2026_01_06_Winnipeg Jets_Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,0.516,0.484,1.937984496124031,2.066115702479339,-115,-105,,
+hockey,nhl,2026_01_06,9:00 PM EST,2026_01_06_Edmonton Oilers_Nashville Predators,Nashville Predators,Edmonton Oilers,0.405,0.595,2.4691358024691357,1.680672268907563,154,-190,,
+hockey,nhl,2026_01_06,10:00 PM EST,2026_01_06_Seattle Kraken_Boston Bruins,Boston Bruins,Seattle Kraken,0.519,0.481,1.9267822736030829,2.079002079002079,-135,110,,
+hockey,nhl,2026_01_06,10:00 PM EST,2026_01_06_San Jose Sharks_Columbus Blue Jackets,Columbus Blue Jackets,San Jose Sharks,0.534,0.466,1.8726591760299625,2.1459227467811157,-135,110,,

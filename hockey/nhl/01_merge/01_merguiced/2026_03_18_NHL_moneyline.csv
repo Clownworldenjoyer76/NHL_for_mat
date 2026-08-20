@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_18,7:10 PM,2026_03_18_Carolina Hurricanes_Pittsburgh Penguins,Pittsburgh Penguins,Carolina Hurricanes,0.403,0.597,2.4813895781637716,1.6750418760469012,136,-162,,
+hockey,nhl,2026_03_18,7:10 PM,2026_03_18_New York Rangers_New Jersey Devils,New Jersey Devils,New York Rangers,0.459,0.541,2.178649237472767,1.8484288354898335,-115,-105,,
+hockey,nhl,2026_03_18,7:40 PM,2026_03_18_Washington Capitals_Ottawa Senators,Ottawa Senators,Washington Capitals,0.479,0.521,2.0876826722338206,1.9193857965451055,-125,105,,
+hockey,nhl,2026_03_18,8:40 PM,2026_03_18_Colorado Avalanche_Dallas Stars,Dallas Stars,Colorado Avalanche,0.409,0.591,2.444987775061125,1.6920473773265652,130,-155,,
+hockey,nhl,2026_03_18,8:40 PM,2026_03_18_Calgary Flames_St Louis Blues,St Louis Blues,Calgary Flames,0.482,0.518,2.074688796680498,1.9305019305019304,-125,105,,
+hockey,nhl,2026_03_18,10:10 PM,2026_03_18_Anaheim Ducks_Philadelphia Flyers,Philadelphia Flyers,Anaheim Ducks,0.457,0.543,2.1881838074398248,1.8416206261510129,130,-155,,

@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_18,7:00 PM EST,2025_11_18_Toronto Maple Leafs_St Louis Blues,St Louis Blues,Toronto Maple Leafs,0.452,0.548,2.2123893805309733,1.824817518248175,110,-135,,
+hockey,nhl,2025_11_18,7:00 PM EST,2025_11_18_Tampa Bay Lightning_New Jersey Devils,New Jersey Devils,Tampa Bay Lightning,0.464,0.536,2.155172413793103,1.8656716417910446,140,-170,,
+hockey,nhl,2025_11_18,7:00 PM EST,2025_11_18_Detroit Red Wings_Seattle Kraken,Seattle Kraken,Detroit Red Wings,0.418,0.582,2.3923444976076556,1.718213058419244,135,-165,,
+hockey,nhl,2025_11_18,8:00 PM EST,2025_11_18_Dallas Stars_New York Islanders,New York Islanders,Dallas Stars,0.445,0.555,2.247191011235955,1.8018018018018016,140,-170,,
+hockey,nhl,2025_11_18,8:00 PM EST,2025_11_18_Winnipeg Jets_Columbus Blue Jackets,Columbus Blue Jackets,Winnipeg Jets,0.375,0.625,2.6666666666666665,1.6,155,-190,,
+hockey,nhl,2025_11_18,8:30 PM EST,2025_11_18_Chicago Blackhawks_Calgary Flames,Calgary Flames,Chicago Blackhawks,0.452,0.548,2.2123893805309733,1.824817518248175,-110,-110,,
+hockey,nhl,2025_11_18,10:00 PM EST,2025_11_18_San Jose Sharks_Utah Mammoth,Utah Mammoth,San Jose Sharks,0.555,0.445,1.8018018018018016,2.247191011235955,-150,125,,
+hockey,nhl,2025_11_18,10:00 PM EST,2025_11_18_Vegas Golden Knights_New York Rangers,New York Rangers,Vegas Golden Knights,0.443,0.557,2.2573363431151243,1.7953321364452421,125,-150,,

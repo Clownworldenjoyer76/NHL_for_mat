@@ -1,0 +1,7 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_11_23_New York Islanders_Seattle Kraken","2025_11_23","05:07 PM","New York Islanders","Seattle Kraken","0.577","0.423","2.61","3.43","6.04"
+"hockey","nhl","2025_11_23_San Jose Sharks_Boston Bruins","2025_11_23","08:07 PM","San Jose Sharks","Boston Bruins","0.479","0.521","3.33","3.11","6.44"
+"hockey","nhl","2025_11_23_Buffalo Sabres_Carolina Hurricanes","2025_11_23","01:07 PM","Buffalo Sabres","Carolina Hurricanes","0.432","0.568","3.54","2.82","6.36"
+"hockey","nhl","2025_11_23_Winnipeg Jets_Minnesota Wild","2025_11_23","04:07 PM","Winnipeg Jets","Minnesota Wild","0.589","0.411","2.45","3.41","5.86"
+"hockey","nhl","2025_11_23_Chicago Blackhawks_Colorado Avalanche","2025_11_23","07:07 PM","Chicago Blackhawks","Colorado Avalanche","0.361","0.639","3.68","2.51","6.19"
+"hockey","nhl","2025_11_23_Vancouver Canucks_Calgary Flames","2025_11_23","09:07 PM","Vancouver Canucks","Calgary Flames","0.581","0.419","2.42","3.28","5.70"

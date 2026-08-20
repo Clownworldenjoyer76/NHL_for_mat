@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_15,7:00 PM EST,2025_12_15_New York Rangers_Anaheim Ducks,Anaheim Ducks,New York Rangers,0.44,0.56,2.272727272727273,1.7857142857142856,105,-130,,
+hockey,nhl,2025_12_15,7:00 PM EST,2025_12_15_Tampa Bay Lightning_Florida Panthers,Florida Panthers,Tampa Bay Lightning,0.492,0.508,2.032520325203252,1.968503937007874,120,-145,,
+hockey,nhl,2025_12_15,7:30 PM EST,2025_12_15_Winnipeg Jets_Ottawa Senators,Ottawa Senators,Winnipeg Jets,0.462,0.538,2.1645021645021645,1.858736059479554,110,-135,,
+hockey,nhl,2025_12_15,8:00 PM EST,2025_12_15_Dallas Stars_Los Angeles Kings,Los Angeles Kings,Dallas Stars,0.414,0.586,2.4154589371980677,1.7064846416382253,118,-145,,
+hockey,nhl,2025_12_15,8:00 PM EST,2025_12_15_St Louis Blues_Nashville Predators,Nashville Predators,St Louis Blues,0.499,0.501,2.004008016032064,1.996007984031936,100,-120,,

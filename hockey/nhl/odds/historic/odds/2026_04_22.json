@@ -1,0 +1,506 @@
+[
+  {
+    "id": "f0b24d77783a06281b031dd344143437",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-22T23:10:19Z",
+    "home_team": "Philadelphia Flyers",
+    "away_team": "Pittsburgh Penguins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Philadelphia Flyers",
+                "price": 1.87
+              },
+              {
+                "name": "Pittsburgh Penguins",
+                "price": 1.95
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Philadelphia Flyers",
+                "price": 3.05,
+                "point": -1.5
+              },
+              {
+                "name": "Pittsburgh Penguins",
+                "price": 1.4,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.82,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.02,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5f5b84958bdfdccd00b3c51b7c26f1a1",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-23T01:40:00Z",
+    "home_team": "Minnesota Wild",
+    "away_team": "Dallas Stars",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Dallas Stars",
+                "price": 2.1
+              },
+              {
+                "name": "Minnesota Wild",
+                "price": 1.77
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Dallas Stars",
+                "price": 1.43,
+                "point": 1.5
+              },
+              {
+                "name": "Minnesota Wild",
+                "price": 2.9,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.77,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.1,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "36ed21131d3e0f66cdddfaf605807019",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-23T02:10:00Z",
+    "home_team": "Edmonton Oilers",
+    "away_team": "Anaheim Ducks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 2.64
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": 1.51
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 1.65,
+                "point": 1.5
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": 2.3,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.7,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 2.2,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d618bdbd532e173a5e9e0f985de4af4c",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-23T23:00:08Z",
+    "home_team": "Boston Bruins",
+    "away_team": "Buffalo Sabres",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 1.91
+              },
+              {
+                "name": "Buffalo Sabres",
+                "price": 1.91
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 3.25,
+                "point": -1.5
+              },
+              {
+                "name": "Buffalo Sabres",
+                "price": 1.36,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.14,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.74,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "51287ae15947cf3f02665904d8b8be9d",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-23T23:40:00Z",
+    "home_team": "Ottawa Senators",
+    "away_team": "Carolina Hurricanes",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 2.02
+              },
+              {
+                "name": "Ottawa Senators",
+                "price": 1.82
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Carolina Hurricanes",
+                "price": 1.4,
+                "point": 1.5
+              },
+              {
+                "name": "Ottawa Senators",
+                "price": 3.05,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.82,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.02,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "524a4ecbfee90fb1259c3e30014629ab",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-24T02:00:00Z",
+    "home_team": "Los Angeles Kings",
+    "away_team": "Colorado Avalanche",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 1.65
+              },
+              {
+                "name": "Los Angeles Kings",
+                "price": 2.3
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 2.64,
+                "point": -1.5
+              },
+              {
+                "name": "Los Angeles Kings",
+                "price": 1.51,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.87,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 1.95,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ae9003a3e6fcbb6dcb1aa2bb4ce6947a",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-24T23:10:00Z",
+    "home_team": "Montr\u00e9al Canadiens",
+    "away_team": "Tampa Bay Lightning",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 2.02
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 1.82
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Montr\u00e9al Canadiens",
+                "price": 1.41,
+                "point": 1.5
+              },
+              {
+                "name": "Tampa Bay Lightning",
+                "price": 3.0,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.74,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.14,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "863fdb33769ad2bb155134384e205a7a",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-25T01:40:00Z",
+    "home_team": "Utah Mammoth",
+    "away_team": "Vegas Golden Knights",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-22T13:14:50Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Utah Mammoth",
+                "price": 1.93
+              },
+              {
+                "name": "Vegas Golden Knights",
+                "price": 1.89
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Utah Mammoth",
+                "price": 1.37,
+                "point": 1.5
+              },
+              {
+                "name": "Vegas Golden Knights",
+                "price": 3.2,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-22T13:14:50Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.77,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 2.1,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

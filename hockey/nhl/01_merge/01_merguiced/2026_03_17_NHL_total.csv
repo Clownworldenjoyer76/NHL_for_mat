@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Montreal Canadiens_Boston Bruins,Boston Bruins,Montreal Canadiens,6.5,6.37,0.45290922072978557,0.5470907792702144,2.207947982133531,1.8278502177169549,100,-120,,
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Columbus Blue Jackets_Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,-105,-115,,
+hockey,nhl,2026_03_17,7:10 PM,2026_03_17_Toronto Maple Leafs_New York Islanders,New York Islanders,Toronto Maple Leafs,5.5,5.92,0.5413863951583133,0.4586136048416867,1.8471095855808826,2.180484812144201,-135,114,,
+hockey,nhl,2026_03_17,7:40 PM,2026_03_17_Chicago Blackhawks_Minnesota Wild,Minnesota Wild,Chicago Blackhawks,5.5,6.05,0.5623176853602883,0.4376823146397118,1.7783541688881435,2.2847621814995493,-135,114,,
+hockey,nhl,2026_03_17,8:10 PM,2026_03_17_Winnipeg Jets_Nashville Predators,Nashville Predators,Winnipeg Jets,5.5,5.86,0.5315792166968157,0.46842078330318426,1.8811871656945278,2.134832688140467,-125,105,,
+hockey,nhl,2026_03_17,9:10 PM,2026_03_17_Edmonton Oilers_San Jose Sharks,San Jose Sharks,Edmonton Oilers,6.5,7.23,0.5839671978330571,0.41603280216694294,1.7124249507690281,2.403656622245682,-148,124,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Vegas Golden Knights_Buffalo Sabres,Buffalo Sabres,Vegas Golden Knights,6.5,6.31,0.44336110335278356,0.5566388966472164,2.2554978152972915,1.7964968061399678,-110,-110,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Vancouver Canucks_Florida Panthers,Florida Panthers,Vancouver Canucks,5.5,6.26,0.5951286166410181,0.40487138335898193,1.6803090492339752,2.469920179844727,-130,110,,
+hockey,nhl,2026_03_17,10:10 PM,2026_03_17_Seattle Kraken_Tampa Bay Lightning,Tampa Bay Lightning,Seattle Kraken,6.5,5.78,0.3584084660981537,0.6415915339018463,2.7901126635946714,1.5586240577684816,110,-130,,

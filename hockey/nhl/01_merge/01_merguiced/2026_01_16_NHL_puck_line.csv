@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_01_16,7:00 PM EST,2026_01_16_Detroit Red Wings_San Jose Sharks,San Jose Sharks,Detroit Red Wings,1.5,-1.5,0.5557473695678641,0.44425263043213603,1.7993787371005934,2.250971477709145,-125,105,,
+hockey,nhl,2026_01_16,7:00 PM EST,2026_01_16_Carolina Hurricanes_Florida Panthers,Florida Panthers,Carolina Hurricanes,1.5,-1.5,0.5969856300800371,0.40301436991996276,1.6750821956400044,2.481301101493221,-185,161,,
+hockey,nhl,2026_01_16,8:00 PM EST,2026_01_16_St Louis Blues_Tampa Bay Lightning,Tampa Bay Lightning,St Louis Blues,-1.5,1.5,0.42694112369696124,0.5730588763030388,2.342243331681936,1.7450213954476659,145,-165,,
+hockey,nhl,2026_01_16,9:00 PM EST,2026_01_16_Colorado Avalanche_Nashville Predators,Nashville Predators,Colorado Avalanche,1.5,-1.5,0.5101661816058611,0.489833818394139,1.9601456075592434,2.0415086963133318,100,-120,,
+hockey,nhl,2026_01_16,10:30 PM EST,2026_01_16_Los Angeles Kings_Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,1.5,-1.5,0.6124139860009727,0.3875860139990269,1.6328823685591198,2.580072458451792,-180,157,,

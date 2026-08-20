@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_23,19:50,ad8a6f75d8948ad130c35a041d855645,Ottawa Senators,New York Rangers,-1.5,1.5,0.32014505196992094,0.6798549480300793,3.123584118657422,1.4709019959295144,124,-147,2.24,1.68

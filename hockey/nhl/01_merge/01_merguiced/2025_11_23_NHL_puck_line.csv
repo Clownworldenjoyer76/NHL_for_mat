@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_23,1:00 PM EST,2025_11_23_Buffalo Sabres_Carolina Hurricanes,Carolina Hurricanes,Buffalo Sabres,-1.5,1.5,0.37250068742555564,0.6274993125744445,2.684558804203147,1.59362724382485,135,-155,,
+hockey,nhl,2025_11_23,4:00 PM EST,2025_11_23_Winnipeg Jets_Minnesota Wild,Minnesota Wild,Winnipeg Jets,1.5,-1.5,0.595489235197473,0.404510764802527,1.6792914815133229,2.4721220966472357,-250,207,,
+hockey,nhl,2025_11_23,5:00 PM EST,2025_11_23_New York Islanders_Seattle Kraken,Seattle Kraken,New York Islanders,1.5,-1.5,0.6156744420083955,0.38432555799160484,1.6242350368449496,2.6019607054648284,-171,150,,
+hockey,nhl,2025_11_23,7:00 PM EST,2025_11_23_Chicago Blackhawks_Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,-1.5,1.5,0.4403080901323059,0.5596919098676941,2.2711370115854908,1.7866972567754116,105,-125,,
+hockey,nhl,2025_11_23,8:00 PM EST,2025_11_23_San Jose Sharks_Boston Bruins,Boston Bruins,San Jose Sharks,-1.5,1.5,0.30172074083120703,0.6982792591687931,3.314323030114242,1.4320917983306058,177,-205,,
+hockey,nhl,2025_11_23,9:00 PM EST,2025_11_23_Vancouver Canucks_Calgary Flames,Calgary Flames,Vancouver Canucks,1.5,-1.5,0.6130284449761267,0.38697155502387304,1.631245675784169,2.584169267785866,-200,174,,

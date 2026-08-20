@@ -1,0 +1,16 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+b9f8b0e5f73a2b853613de9f9349f802,hockey,nhl,2026_04_11,12:30,Boston Bruins,Tampa Bay Lightning
+705a57dffd10478fbab59b211c54ee19,hockey,nhl,2026_04_11,13:00,New York Islanders,Ottawa Senators
+6b7f5c39f42d1d9e4091b0c5f011711e,hockey,nhl,2026_04_11,15:00,Pittsburgh Penguins,Washington Capitals
+c41c5268371cb927b4a4817e53ebe98c,hockey,nhl,2026_04_11,16:00,Los Angeles Kings,Edmonton Oilers
+7fe1fbea33dee61b8d438e780410bdb4,hockey,nhl,2026_04_11,17:00,Utah Mammoth,Carolina Hurricanes
+1202108d90d74b3dcae725f88457dd39,hockey,nhl,2026_04_11,17:00,Chicago Blackhawks,St Louis Blues
+5ef60096243b0d089602fdf1f288c8bb,hockey,nhl,2026_04_11,17:00,Dallas Stars,New York Rangers
+a3ce07b80e1bdb4c4be7fead2bc1bb34,hockey,nhl,2026_04_11,17:00,Detroit Red Wings,New Jersey Devils
+71e645a6f544e0eb4543265a1613ca61,hockey,nhl,2026_04_11,17:00,Nashville Predators,Minnesota Wild
+f8cbbebc53cf688786fb747d110376c4,hockey,nhl,2026_04_11,19:00,Seattle Kraken,Calgary Flames
+bc41d925859e950fdee85ddc0d04f5f7,hockey,nhl,2026_04_11,19:00,Montreal Canadiens,Columbus Blue Jackets
+eebb39173865292b81fa96bc35dfb2da,hockey,nhl,2026_04_11,19:00,Toronto Maple Leafs,Florida Panthers
+6916a35afd0031cd8bac65ce41826fb8,hockey,nhl,2026_04_11,19:00,Winnipeg Jets,Philadelphia Flyers
+589e8e7f45909b6c4b71110f0aa61d3b,hockey,nhl,2026_04_11,20:00,Colorado Avalanche,Vegas Golden Knights
+0b2041c964c8c6d47aa6eb31e9095564,hockey,nhl,2026_04_11,22:00,San Jose Sharks,Vancouver Canucks

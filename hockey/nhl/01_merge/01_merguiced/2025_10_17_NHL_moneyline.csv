@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_17,7:00 PM EDT,2025_10_17_Washington Capitals_Minnesota Wild,Minnesota Wild,Washington Capitals,0.437,0.563,2.288329519450801,1.7761989342806397,105,-125,,
+hockey,nhl,2025_10_17,7:00 PM EDT,2025_10_17_Detroit Red Wings_Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,0.528,0.472,1.8939393939393938,2.1186440677966103,-170,140,,
+hockey,nhl,2025_10_17,8:30 PM EDT,2025_10_17_Chicago Blackhawks_Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,0.525,0.475,1.9047619047619047,2.1052631578947367,-145,120,,
+hockey,nhl,2025_10_17,9:00 PM EDT,2025_10_17_Utah Mammoth_San Jose Sharks,San Jose Sharks,Utah Mammoth,0.293,0.707,3.4129692832764507,1.4144271570014144,195,-235,,

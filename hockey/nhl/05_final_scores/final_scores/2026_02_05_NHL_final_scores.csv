@@ -1,0 +1,8 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_02_05","2026_02_05_New Jersey Devils_New York Islanders","New York Islanders","New Jersey Devils","3","1","4","2","-2"
+"hockey","nhl","2026_02_05","2026_02_05_New York Rangers_Carolina Hurricanes","Carolina Hurricanes","New York Rangers","2","0","2","2","-2"
+"hockey","nhl","2026_02_05","2026_02_05_Philadelphia Flyers_Ottawa Senators","Ottawa Senators","Philadelphia Flyers","2","1","3","1","-1"
+"hockey","nhl","2026_02_05","2026_02_05_Buffalo Sabres_Pittsburgh Penguins","Pittsburgh Penguins","Buffalo Sabres","5","2","7","3","-3"
+"hockey","nhl","2026_02_05","2026_02_05_Tampa Bay Lightning_Florida Panthers","Florida Panthers","Tampa Bay Lightning","1","6","7","-5","5"
+"hockey","nhl","2026_02_05","2026_02_05_Washington Capitals_Nashville Predators","Nashville Predators","Washington Capitals","2","4","6","-2","2"
+"hockey","nhl","2026_02_05","2026_02_05_Vegas Golden Knights_Los Angeles Kings","Los Angeles Kings","Vegas Golden Knights","1","4","5","-3","3"

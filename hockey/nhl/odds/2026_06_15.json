@@ -1,0 +1,18 @@
+{
+  "run_date": "2026_06_15",
+  "generated_at_et": "2026-06-15T05:25:32.446875-04:00",
+  "source": "odds-api.io",
+  "sport_slug": "ice-hockey",
+  "league_slugs": [
+    "usa-nhl",
+    "usa-nhl-playoffs"
+  ],
+  "bookmaker": "FanDuel",
+  "date_window": {
+    "timezone": "America/New_York",
+    "from_utc": "2026-06-15T04:00:00Z",
+    "to_utc": "2026-06-16T04:00:00Z"
+  },
+  "events": [],
+  "odds": []
+}

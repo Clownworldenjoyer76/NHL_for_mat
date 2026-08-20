@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_18,7:10 PM,2026_03_18_Carolina Hurricanes_Pittsburgh Penguins,Pittsburgh Penguins,Carolina Hurricanes,1.5,-1.5,0.5805004278467136,0.4194995721532867,1.7226516157952927,2.383792657682607,-185,154,,
+hockey,nhl,2026_03_18,7:10 PM,2026_03_18_New York Rangers_New Jersey Devils,New Jersey Devils,New York Rangers,-1.5,1.5,0.20404543048152812,0.7959545695184717,4.900869368356319,1.2563531114658586,225,-278,,
+hockey,nhl,2026_03_18,7:40 PM,2026_03_18_Washington Capitals_Ottawa Senators,Ottawa Senators,Washington Capitals,-1.5,1.5,0.2363188372054964,0.7636811627945034,4.231571261204317,1.3094469900773065,215,-265,,
+hockey,nhl,2026_03_18,8:40 PM,2026_03_18_Colorado Avalanche_Dallas Stars,Dallas Stars,Colorado Avalanche,1.5,-1.5,0.588571945744875,0.41142805425512474,1.6990276332903307,2.430558610813409,-205,170,,
+hockey,nhl,2026_03_18,8:40 PM,2026_03_18_Calgary Flames_St Louis Blues,St Louis Blues,Calgary Flames,-1.5,1.5,0.23067228537557438,0.7693277146244256,4.335154517465447,1.2998361829304241,215,-265,,
+hockey,nhl,2026_03_18,10:10 PM,2026_03_18_Anaheim Ducks_Philadelphia Flyers,Philadelphia Flyers,Anaheim Ducks,1.5,-1.5,0.6688834855237655,0.33111651447623425,1.4950286883177502,3.0200849437601054,-198,164,,

@@ -1,0 +1,5 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_11_10_New Jersey Devils_New York Islanders","2025_11_10","07:07 PM","New Jersey Devils","New York Islanders","0.553","0.447","2.77","3.33","6.10"
+"hockey","nhl","2025_11_10_New York Rangers_Nashville Predators","2025_11_10","07:07 PM","New York Rangers","Nashville Predators","0.613","0.387","2.31","3.37","5.68"
+"hockey","nhl","2025_11_10_Vegas Golden Knights_Florida Panthers","2025_11_10","10:07 PM","Vegas Golden Knights","Florida Panthers","0.496","0.504","2.93","2.89","5.82"
+"hockey","nhl","2025_11_10_Edmonton Oilers_Columbus Blue Jackets","2025_11_10","08:37 PM","Edmonton Oilers","Columbus Blue Jackets","0.564","0.436","2.85","3.54","6.39"

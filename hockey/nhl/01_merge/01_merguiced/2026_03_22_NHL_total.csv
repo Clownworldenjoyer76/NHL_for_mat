@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_03_22,12:10 PM,2026_03_22_New York Rangers_Winnipeg Jets,Winnipeg Jets,New York Rangers,5.5,5.74,0.5117092015348796,0.48829079846512036,1.9542349385168072,2.0479599516177083,-135,114,,
+hockey,nhl,2026_03_22,12:40 PM,2026_03_22_Washington Capitals_Colorado Avalanche,Colorado Avalanche,Washington Capitals,6.5,6.32,0.4449545506795517,0.5550454493204483,2.2474205477228213,1.801654263131636,114,-135,,
+hockey,nhl,2026_03_22,3:10 PM,2026_03_22_Pittsburgh Penguins_Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,6.5,6.49,0.47190094596579835,0.5280990540342017,2.119088780280759,1.8935841531260087,-118,-102,,
+hockey,nhl,2026_03_22,3:10 PM,2026_03_22_Chicago Blackhawks_Nashville Predators,Nashville Predators,Chicago Blackhawks,5.5,6.13,0.5749688324706508,0.42503116752934916,1.7392247084124248,2.3527686353282506,-135,114,,
+hockey,nhl,2026_03_22,7:10 PM,2026_03_22_Dallas Stars_Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,5.5,6.03,0.5591269264214039,0.44087307357859606,1.78850266861646,2.2682265257955843,-135,114,,
+hockey,nhl,2026_03_22,7:10 PM,2026_03_22_New York Islanders_Columbus Blue Jackets,Columbus Blue Jackets,New York Islanders,6.5,5.99,0.3920909906423934,0.6079090093576066,2.550428405308731,1.6449830231282905,110,-130,,
+hockey,nhl,2026_03_22,8:10 PM,2026_03_22_Anaheim Ducks_Buffalo Sabres,Buffalo Sabres,Anaheim Ducks,6.5,6.67,0.5000562993851677,0.4999437006148323,1.9997748278134404,2.0002252229004926,-120,100,,
+hockey,nhl,2026_03_22,8:10 PM,2026_03_22_Calgary Flames_Tampa Bay Lightning,Tampa Bay Lightning,Calgary Flames,6.5,5.88,0.3744302257716412,0.6255697742283588,2.670724560067657,1.5985427065006481,100,-120,,
+hockey,nhl,2026_03_22,9:10 PM,2026_03_22_Utah Mammoth_Los Angeles Kings,Los Angeles Kings,Utah Mammoth,5.5,5.72,0.5083663776750106,0.4916336223249894,1.9670852438618234,2.0340350101990383,-122,102,,

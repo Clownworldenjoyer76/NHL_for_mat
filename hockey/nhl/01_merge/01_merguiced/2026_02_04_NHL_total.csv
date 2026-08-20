@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_02_04,7:00 PM EST,2026_02_04_Winnipeg Jets_Montreal Canadiens,Montreal Canadiens,Winnipeg Jets,6.0,5.9,0.4498319611803465,0.5501680388196535,2.223052353541149,1.8176264876189994,-115,-105,,
+hockey,nhl,2026_02_04,7:00 PM EST,2026_02_04_Columbus Blue Jackets_Chicago Blackhawks,Chicago Blackhawks,Columbus Blue Jackets,6.0,6.24,0.5144303502399507,0.48556964976004924,1.9438977492940697,2.059436788304548,-130,105,,
+hockey,nhl,2026_02_04,7:00 PM EST,2026_02_04_Florida Panthers_Boston Bruins,Boston Bruins,Florida Panthers,6.0,6.02,0.47285925798061623,0.5271407420193838,2.1147941657536347,1.897026581874843,-115,-105,,
+hockey,nhl,2026_02_04,8:00 PM EST,2026_02_04_Nashville Predators_Minnesota Wild,Minnesota Wild,Nashville Predators,6.0,5.9,0.4498319611803465,0.5501680388196535,2.223052353541149,1.8176264876189994,-118,-102,,
+hockey,nhl,2026_02_04,9:00 PM EST,2026_02_04_Colorado Avalanche_San Jose Sharks,San Jose Sharks,Colorado Avalanche,6.5,6.7,0.5047029134299077,0.4952970865700923,1.981363636686988,2.0189902729389146,-135,110,,
+hockey,nhl,2026_02_04,9:00 PM EST,2026_02_04_Utah Mammoth_Detroit Red Wings,Detroit Red Wings,Utah Mammoth,6.0,5.94,0.4575282269247561,0.5424717730752439,2.185657498601627,1.8434138873826609,-110,-110,,
+hockey,nhl,2026_02_04,9:30 PM EST,2026_02_04_Dallas Stars_St Louis Blues,St Louis Blues,Dallas Stars,6.0,5.59,0.38986798303118525,0.6101320169688147,2.5649708196736194,1.6389895501109433,-105,-115,,
+hockey,nhl,2026_02_04,10:00 PM EST,2026_02_04_Calgary Flames_Edmonton Oilers,Edmonton Oilers,Calgary Flames,6.5,6.16,0.4193788960039456,0.5806211039960544,2.384478593292381,1.7222935803015447,-110,-110,,
+hockey,nhl,2026_02_04,10:00 PM EST,2026_02_04_Los Angeles Kings_Seattle Kraken,Seattle Kraken,Los Angeles Kings,5.5,5.61,0.4898352574913525,0.5101647425086475,2.041502698522378,1.9601511368321372,-115,-105,,
+hockey,nhl,2026_02_04,10:00 PM EST,2026_02_04_Vegas Golden Knights_Vancouver Canucks,Vancouver Canucks,Vegas Golden Knights,6.0,6.08,0.48429222745408307,0.5157077725459168,2.0648689846974935,1.939082661219661,-125,105,,

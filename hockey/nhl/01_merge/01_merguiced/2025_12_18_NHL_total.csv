@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Montreal Canadiens_Chicago Blackhawks,Chicago Blackhawks,Montreal Canadiens,5.5,6.08,0.5670830516729668,0.43291694832703315,1.7634101337535542,2.3099118753941283,-118,-102,,
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Boston Bruins_Edmonton Oilers,Edmonton Oilers,Boston Bruins,6.0,6.06,0.4804881696028873,0.5195118303971127,2.0812166943183588,1.9248839804776037,-125,105,,
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Ottawa Senators_Pittsburgh Penguins,Pittsburgh Penguins,Ottawa Senators,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-118,-102,,
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Tampa Bay Lightning_Los Angeles Kings,Los Angeles Kings,Tampa Bay Lightning,5.5,5.7,0.5050151278750382,0.4949848721249618,1.9801387023943602,2.0202637622176547,-120,100,,
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Columbus Blue Jackets_Minnesota Wild,Minnesota Wild,Columbus Blue Jackets,6.0,6.12,0.4918778157560807,0.5081221842439193,2.0330252106671427,1.9680305859662277,-115,-105,,
+hockey,nhl,2025_12_18,7:00 PM EST,2025_12_18_Washington Capitals_Toronto Maple Leafs,Toronto Maple Leafs,Washington Capitals,6.0,5.95,0.45944936113503565,0.5405506388649644,2.1765184252940823,1.8499654391303222,-110,-110,,
+hockey,nhl,2025_12_18,7:30 PM EST,2025_12_18_Buffalo Sabres_Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,6.0,6.02,0.47285925798061623,0.5271407420193838,2.1147941657536347,1.897026581874843,-110,-110,,
+hockey,nhl,2025_12_18,8:00 PM EST,2025_12_18_St Louis Blues_New York Rangers,New York Rangers,St Louis Blues,5.5,5.75,0.5133773967717442,0.4866226032282558,1.9478847457801418,2.0549805811854958,100,-120,,
+hockey,nhl,2025_12_18,9:00 PM EST,2025_12_18_Calgary Flames_Seattle Kraken,Seattle Kraken,Calgary Flames,5.5,5.61,0.4898352574913525,0.5101647425086475,2.041502698522378,1.9601511368321372,-105,-115,,
+hockey,nhl,2025_12_18,10:00 PM EST,2025_12_18_San Jose Sharks_Dallas Stars,Dallas Stars,San Jose Sharks,6.0,6.0,0.469035110258994,0.5309648897410059,2.1320365536128314,1.8833637012944118,-120,100,,

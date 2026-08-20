@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_28,5:00 PM EST,2025_12_28_Columbus Blue Jackets_New York Islanders,New York Islanders,Columbus Blue Jackets,6.0,6.51,0.5637650816090605,0.43623491839093964,1.773788467256374,2.2923428589543406,-110,-110,,
+hockey,nhl,2025_12_28,5:00 PM EST,2025_12_28_Tampa Bay Lightning_Montreal Canadiens,Montreal Canadiens,Tampa Bay Lightning,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,-110,-110,,
+hockey,nhl,2025_12_28,7:00 PM EST,2025_12_28_Chicago Blackhawks_Pittsburgh Penguins,Pittsburgh Penguins,Chicago Blackhawks,6.0,6.31,0.5274242338224197,0.47257576617758046,1.8960069254927212,2.116062802137485,-110,-110,,
+hockey,nhl,2025_12_28,7:00 PM EST,2025_12_28_Detroit Red Wings_Toronto Maple Leafs,Toronto Maple Leafs,Detroit Red Wings,6.0,6.51,0.5637650816090605,0.43623491839093964,1.773788467256374,2.2923428589543406,-125,105,,
+hockey,nhl,2025_12_28,8:00 PM EST,2025_12_28_Seattle Kraken_Philadelphia Flyers,Philadelphia Flyers,Seattle Kraken,5.5,5.68,0.5016556369817712,0.4983443630182288,1.9933993087699269,2.0066445498520094,-115,-105,,

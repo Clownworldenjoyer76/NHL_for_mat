@@ -1,0 +1,5 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2025_11_03,2025_11_03_Toronto Maple Leafs_Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,1,1,1,matched
+2025_11_03,2025_11_03_St Louis Blues_Edmonton Oilers,Edmonton Oilers,St Louis Blues,1,1,1,matched
+2025_11_03,2025_11_03_Nashville Predators_Vancouver Canucks,Vancouver Canucks,Nashville Predators,1,1,1,matched
+2025_11_03,2025_11_03_Seattle Kraken_Chicago Blackhawks,Chicago Blackhawks,Seattle Kraken,1,1,1,matched

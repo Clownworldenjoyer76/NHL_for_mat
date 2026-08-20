@@ -1,0 +1,137 @@
+[
+  {
+    "id": "b9f8b0e5f73a2b853613de9f9349f802",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T16:30:00Z",
+    "home_team": "Boston Bruins",
+    "away_team": "Tampa Bay Lightning",
+    "bookmakers": []
+  },
+  {
+    "id": "705a57dffd10478fbab59b211c54ee19",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T17:00:00Z",
+    "home_team": "New York Islanders",
+    "away_team": "Ottawa Senators",
+    "bookmakers": []
+  },
+  {
+    "id": "6b7f5c39f42d1d9e4091b0c5f011711e",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T19:00:00Z",
+    "home_team": "Pittsburgh Penguins",
+    "away_team": "Washington Capitals",
+    "bookmakers": []
+  },
+  {
+    "id": "c41c5268371cb927b4a4817e53ebe98c",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T20:00:00Z",
+    "home_team": "Los Angeles Kings",
+    "away_team": "Edmonton Oilers",
+    "bookmakers": []
+  },
+  {
+    "id": "7fe1fbea33dee61b8d438e780410bdb4",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T21:00:00Z",
+    "home_team": "Utah Mammoth",
+    "away_team": "Carolina Hurricanes",
+    "bookmakers": []
+  },
+  {
+    "id": "1202108d90d74b3dcae725f88457dd39",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T21:00:00Z",
+    "home_team": "Chicago Blackhawks",
+    "away_team": "St Louis Blues",
+    "bookmakers": []
+  },
+  {
+    "id": "5ef60096243b0d089602fdf1f288c8bb",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T21:00:00Z",
+    "home_team": "Dallas Stars",
+    "away_team": "New York Rangers",
+    "bookmakers": []
+  },
+  {
+    "id": "a3ce07b80e1bdb4c4be7fead2bc1bb34",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T21:00:00Z",
+    "home_team": "Detroit Red Wings",
+    "away_team": "New Jersey Devils",
+    "bookmakers": []
+  },
+  {
+    "id": "71e645a6f544e0eb4543265a1613ca61",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T21:00:00Z",
+    "home_team": "Nashville Predators",
+    "away_team": "Minnesota Wild",
+    "bookmakers": []
+  },
+  {
+    "id": "f8cbbebc53cf688786fb747d110376c4",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T23:00:00Z",
+    "home_team": "Seattle Kraken",
+    "away_team": "Calgary Flames",
+    "bookmakers": []
+  },
+  {
+    "id": "bc41d925859e950fdee85ddc0d04f5f7",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T23:00:00Z",
+    "home_team": "Montr\u00e9al Canadiens",
+    "away_team": "Columbus Blue Jackets",
+    "bookmakers": []
+  },
+  {
+    "id": "eebb39173865292b81fa96bc35dfb2da",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T23:00:00Z",
+    "home_team": "Toronto Maple Leafs",
+    "away_team": "Florida Panthers",
+    "bookmakers": []
+  },
+  {
+    "id": "6916a35afd0031cd8bac65ce41826fb8",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-11T23:00:00Z",
+    "home_team": "Winnipeg Jets",
+    "away_team": "Philadelphia Flyers",
+    "bookmakers": []
+  },
+  {
+    "id": "589e8e7f45909b6c4b71110f0aa61d3b",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-12T00:00:00Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Vegas Golden Knights",
+    "bookmakers": []
+  },
+  {
+    "id": "0b2041c964c8c6d47aa6eb31e9095564",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-12T02:00:00Z",
+    "home_team": "San Jose Sharks",
+    "away_team": "Vancouver Canucks",
+    "bookmakers": []
+  }
+]

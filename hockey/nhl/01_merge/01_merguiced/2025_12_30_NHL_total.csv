@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_30,7:00 PM EST,2025_12_30_Florida Panthers_Montreal Canadiens,Montreal Canadiens,Florida Panthers,6.0,5.89,0.4479051987820881,0.5520948012179119,2.2326153005571907,1.8112831307123645,-110,-110,,
+hockey,nhl,2025_12_30,7:00 PM EST,2025_12_30_Pittsburgh Penguins_Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,6.0,6.35,0.5347894380127141,0.46521056198728594,1.8698948201296115,2.1495642655407505,-105,-115,,
+hockey,nhl,2025_12_30,7:00 PM EST,2025_12_30_Toronto Maple Leafs_New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,6.0,6.11,0.4899843412170889,0.5100156587829111,2.0408815463695547,1.9607241126407287,-105,-115,,
+hockey,nhl,2025_12_30,8:30 PM EST,2025_12_30_Chicago Blackhawks_New York Islanders,New York Islanders,Chicago Blackhawks,5.5,6.03,0.5591269264214039,0.44087307357859606,1.78850266861646,2.2682265257955843,-125,105,,
+hockey,nhl,2025_12_30,10:00 PM EST,2025_12_30_Vancouver Canucks_Philadelphia Flyers,Philadelphia Flyers,Vancouver Canucks,5.5,5.77,0.516707241526556,0.483292758473444,1.9353318855094956,2.0691392173113807,-102,-118,,

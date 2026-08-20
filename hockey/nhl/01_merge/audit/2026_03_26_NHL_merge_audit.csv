@@ -1,0 +1,14 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2026_03_26,0d07b0bc16914cd16d27e6efdda5709c,Chicago Blackhawks,Philadelphia Flyers,1,1,1,matched
+2026_03_26,e177659727b1af9292acb2a8a17a5a8a,Columbus Blue Jackets,Montreal Canadiens,1,1,1,matched
+2026_03_26,6f154e5425ac7de91c666137975d388d,Dallas Stars,New York Islanders,1,1,1,matched
+2026_03_26,86b9d3367318cc518bb08f3eb5b94e7b,Minnesota Wild,Florida Panthers,1,1,1,matched
+2026_03_26,8642b100ab8ed115ed6acecb443e230e,Pittsburgh Penguins,Ottawa Senators,1,1,1,matched
+2026_03_26,63ff0b1c118990abba7fba4bdded8c57,Seattle Kraken,Tampa Bay Lightning,1,1,1,matched
+2026_03_26,6d199999a290c76b534d073c7abfdcd7,Colorado Avalanche,Winnipeg Jets,1,1,1,matched
+2026_03_26,e22bc7bc35798e005e96cc45e87a2d42,New Jersey Devils,Nashville Predators,1,1,1,matched
+2026_03_26,10559c030c7293bc53b2d0f326c45262,San Jose Sharks,St Louis Blues,1,1,1,matched
+2026_03_26,6fd356a13c8665331b6f21b565459901,Anaheim Ducks,Calgary Flames,1,1,1,matched
+2026_03_26,3959df0512860392efd8dc3a1066f611,Washington Capitals,Utah Mammoth,1,1,1,matched
+2026_03_26,f6d65306910a9e6269ab476bdfa69cb1,Edmonton Oilers,Vegas Golden Knights,1,1,1,matched
+2026_03_26,cd42b2a632ccfc158be49e864b62b3c8,Los Angeles Kings,Vancouver Canucks,1,1,1,matched

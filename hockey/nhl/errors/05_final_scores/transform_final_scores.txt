@@ -1,0 +1,53 @@
+2026-06-15T07:50:40.004104+00:00 | === transform_final_scores START ===
+2026-06-15T07:50:40.004162+00:00 | RAW_DIR=docs/win/hockey/nhl/00_intake/drat_raw
+2026-06-15T07:50:40.004195+00:00 | GAMES_DIR=docs/win/hockey/nhl/00_intake/games
+2026-06-15T07:50:40.004220+00:00 | OUT_DIR=docs/win/hockey/nhl/05_final_scores/final_scores
+2026-06-15T07:50:40.004528+00:00 | Processing raw file: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_10_nhl_raw.json
+2026-06-15T07:50:40.043729+00:00 | raw_rows=17, completed_rows=16, built_rows=16, skipped_missing_date=0, skipped_missing_team=0, skipped_missing_score=0
+2026-06-15T07:50:40.045423+00:00 | Processing raw file: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_11_nhl_raw.json
+2026-06-15T07:50:40.079564+00:00 | raw_rows=17, completed_rows=16, built_rows=16, skipped_missing_date=0, skipped_missing_team=0, skipped_missing_score=0
+2026-06-15T07:50:40.081105+00:00 | Processing raw file: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_12_nhl_raw.json
+2026-06-15T07:50:40.116065+00:00 | raw_rows=17, completed_rows=16, built_rows=16, skipped_missing_date=0, skipped_missing_team=0, skipped_missing_score=0
+2026-06-15T07:50:40.117514+00:00 | Processing raw file: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_13_nhl_raw.json
+2026-06-15T07:50:40.150136+00:00 | raw_rows=17, completed_rows=16, built_rows=16, skipped_missing_date=0, skipped_missing_team=0, skipped_missing_score=0
+2026-06-15T07:50:40.151605+00:00 | Processing raw file: docs/win/hockey/nhl/00_intake/drat_raw/2026_06_14_nhl_raw.json
+2026-06-15T07:50:40.184007+00:00 | raw_rows=17, completed_rows=16, built_rows=16, skipped_missing_date=0, skipped_missing_team=0, skipped_missing_score=0
+2026-06-15T07:50:40.190755+00:00 | Skipped existing final score: 2026_05_14 | Vegas Golden Knights at Anaheim Ducks | game_id=70558018
+2026-06-15T07:50:40.190808+00:00 | No new final-score rows to add for 2026_05_14: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_14_NHL_final_scores.csv
+2026-06-15T07:50:40.193179+00:00 | Skipped existing final score: 2026_05_16 | Buffalo Sabres at Montreal Canadiens | game_id=70558176
+2026-06-15T07:50:40.193228+00:00 | No new final-score rows to add for 2026_05_16: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_16_NHL_final_scores.csv
+2026-06-15T07:50:40.195496+00:00 | Skipped existing final score: 2026_05_18 | Montreal Canadiens at Buffalo Sabres | game_id=70558184
+2026-06-15T07:50:40.195544+00:00 | No new final-score rows to add for 2026_05_18: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_18_NHL_final_scores.csv
+2026-06-15T07:50:40.197822+00:00 | Skipped existing final score: 2026_05_20 | Vegas Golden Knights at Colorado Avalanche | game_id=70557984
+2026-06-15T07:50:40.197872+00:00 | No new final-score rows to add for 2026_05_20: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_20_NHL_final_scores.csv
+2026-06-15T07:50:40.200105+00:00 | Skipped existing final score: 2026_05_21 | Montreal Canadiens at Carolina Hurricanes | game_id=70558006
+2026-06-15T07:50:40.200152+00:00 | No new final-score rows to add for 2026_05_21: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_21_NHL_final_scores.csv
+2026-06-15T07:50:40.202466+00:00 | Skipped existing final score: 2026_05_22 | Vegas Golden Knights at Colorado Avalanche | game_id=70557980
+2026-06-15T07:50:40.202526+00:00 | No new final-score rows to add for 2026_05_22: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_22_NHL_final_scores.csv
+2026-06-15T07:50:40.204807+00:00 | Skipped existing final score: 2026_05_23 | Montreal Canadiens at Carolina Hurricanes | game_id=70558000
+2026-06-15T07:50:40.204862+00:00 | No new final-score rows to add for 2026_05_23: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_23_NHL_final_scores.csv
+2026-06-15T07:50:40.207186+00:00 | Skipped existing final score: 2026_05_24 | Colorado Avalanche at Vegas Golden Knights | game_id=70557986
+2026-06-15T07:50:40.207234+00:00 | No new final-score rows to add for 2026_05_24: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_24_NHL_final_scores.csv
+2026-06-15T07:50:40.209697+00:00 | Skipped existing final score: 2026_05_25 | Carolina Hurricanes at Montreal Canadiens | game_id=70558004
+2026-06-15T07:50:40.209752+00:00 | No new final-score rows to add for 2026_05_25: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_25_NHL_final_scores.csv
+2026-06-15T07:50:40.212258+00:00 | Skipped existing final score: 2026_05_26 | Colorado Avalanche at Vegas Golden Knights | game_id=70557982
+2026-06-15T07:50:40.212307+00:00 | No new final-score rows to add for 2026_05_26: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_26_NHL_final_scores.csv
+2026-06-15T07:50:40.214571+00:00 | Skipped existing final score: 2026_05_27 | Carolina Hurricanes at Montreal Canadiens | game_id=70557998
+2026-06-15T07:50:40.214619+00:00 | No new final-score rows to add for 2026_05_27: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_27_NHL_final_scores.csv
+2026-06-15T07:50:40.216882+00:00 | Skipped existing final score: 2026_05_29 | Montreal Canadiens at Carolina Hurricanes | game_id=70558002
+2026-06-15T07:50:40.216929+00:00 | No new final-score rows to add for 2026_05_29: docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_29_NHL_final_scores.csv
+2026-06-15T07:50:40.219298+00:00 | Skipped existing final score: 2026_06_02 | Vegas Golden Knights at Carolina Hurricanes | game_id=70558084
+2026-06-15T07:50:40.219350+00:00 | No new final-score rows to add for 2026_06_02: docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_02_NHL_final_scores.csv
+2026-06-15T07:50:40.221688+00:00 | Skipped existing final score: 2026_06_04 | Vegas Golden Knights at Carolina Hurricanes | game_id=70558076
+2026-06-15T07:50:40.221737+00:00 | No new final-score rows to add for 2026_06_04: docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_04_NHL_final_scores.csv
+2026-06-15T07:50:40.224054+00:00 | Skipped existing final score: 2026_06_06 | Carolina Hurricanes at Vegas Golden Knights | game_id=70558086
+2026-06-15T07:50:40.224102+00:00 | No new final-score rows to add for 2026_06_06: docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_06_NHL_final_scores.csv
+2026-06-15T07:50:40.226350+00:00 | Skipped existing final score: 2026_06_09 | Carolina Hurricanes at Vegas Golden Knights | game_id=70558082
+2026-06-15T07:50:40.226398+00:00 | No new final-score rows to add for 2026_06_09: docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_09_NHL_final_scores.csv
+2026-06-15T07:50:40.228728+00:00 | Skipped existing final score: 2026_06_11 | Vegas Golden Knights at Carolina Hurricanes | game_id=70558078
+2026-06-15T07:50:40.228776+00:00 | No new final-score rows to add for 2026_06_11: docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_11_NHL_final_scores.csv
+2026-06-15T07:50:40.228861+00:00 | Files processed: 5
+2026-06-15T07:50:40.228894+00:00 | New final-score rows added: 0
+2026-06-15T07:50:40.228918+00:00 | Existing final-score rows skipped: 17
+2026-06-15T07:50:40.228940+00:00 | Output files written: 0
+2026-06-15T07:50:40.228962+00:00 | === transform_final_scores END ===

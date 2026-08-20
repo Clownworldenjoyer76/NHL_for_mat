@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_Montreal Canadiens_Philadelphia Flyers,Philadelphia Flyers,Montreal Canadiens,0.432,0.568,2.314814814814815,1.7605633802816902,135,-160,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_Buffalo Sabres_Utah Mammoth,Utah Mammoth,Buffalo Sabres,0.508,0.492,1.968503937007874,2.032520325203252,-130,105,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_New York Islanders_Boston Bruins,Boston Bruins,New York Islanders,0.411,0.589,2.4330900243309004,1.697792869269949,135,-160,,
+hockey,nhl,2025_11_04,7:00 PM EST,2025_11_04_New York Rangers_Carolina Hurricanes,Carolina Hurricanes,New York Rangers,0.521,0.479,1.9193857965451055,2.0876826722338206,-125,105,,
+hockey,nhl,2025_11_04,8:00 PM EST,2025_11_04_Dallas Stars_Edmonton Oilers,Edmonton Oilers,Dallas Stars,0.461,0.539,2.1691973969631237,1.8552875695732838,115,-140,,
+hockey,nhl,2025_11_04,8:00 PM EST,2025_11_04_Minnesota Wild_Nashville Predators,Nashville Predators,Minnesota Wild,0.403,0.597,2.4813895781637716,1.6750418760469012,195,-235,,
+hockey,nhl,2025_11_04,9:30 PM EST,2025_11_04_Colorado Avalanche_Tampa Bay Lightning,Tampa Bay Lightning,Colorado Avalanche,0.456,0.544,2.1929824561403506,1.838235294117647,118,-145,,
+hockey,nhl,2025_11_04,10:00 PM EST,2025_11_04_Vegas Golden Knights_Detroit Red Wings,Detroit Red Wings,Vegas Golden Knights,0.407,0.593,2.4570024570024573,1.6863406408094437,155,-190,,
+hockey,nhl,2025_11_04,10:00 PM EST,2025_11_04_Anaheim Ducks_Florida Panthers,Florida Panthers,Anaheim Ducks,0.576,0.424,1.7361111111111112,2.358490566037736,-145,118,,
+hockey,nhl,2025_11_04,10:30 PM EST,2025_11_04_Los Angeles Kings_Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,0.472,0.528,2.1186440677966103,1.8939393939393938,100,-120,,

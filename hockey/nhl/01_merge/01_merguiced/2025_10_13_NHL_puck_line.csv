@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_10_13,12:30 PM EDT,2025_10_13_Buffalo Sabres_Colorado Avalanche,Colorado Avalanche,Buffalo Sabres,-1.5,-1.5,0.3940897371212222,0.16645150280607102,2.5374931286079128,6.007755911732909,-170.0,-155.0,,
+hockey,nhl,2025_10_13,1:00 PM EDT,2025_10_13_Boston Bruins_Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,-1.5,-1.5,0.3692160444526239,0.17062681088253773,2.7084413449110425,5.8607436593796285,-180.0,-175.0,,
+hockey,nhl,2025_10_13,1:00 PM EDT,2025_10_13_New York Islanders_Winnipeg Jets,Winnipeg Jets,New York Islanders,-1.5,-1.5,0.2803565384798029,0.23091159767019442,3.566886670174952,4.330661647529183,-250.0,-275.0,,
+hockey,nhl,2025_10_13,1:00 PM EDT,2025_10_13_Ottawa Senators_Nashville Predators,Nashville Predators,Ottawa Senators,,,,,,,,,,
+hockey,nhl,2025_10_13,2:00 PM EDT,2025_10_13_Toronto Maple Leafs_Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,,,,,,,,,,
+hockey,nhl,2025_10_13,7:00 PM EDT,2025_10_13_Columbus Blue Jackets_New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,-1.5,-1.5,0.3412773313259245,0.1937625630512385,2.9301682479607365,5.160955678190324,-210.0,-220.0,,
+hockey,nhl,2025_10_13,7:00 PM EDT,2025_10_13_Philadelphia Flyers_Florida Panthers,Florida Panthers,Philadelphia Flyers,,,,,,,,,,
+hockey,nhl,2025_10_13,7:30 PM EDT,2025_10_13_Vancouver Canucks_St Louis Blues,St Louis Blues,Vancouver Canucks,,,,,,,,,,
+hockey,nhl,2025_10_13,8:00 PM EDT,2025_10_13_Minnesota Wild_Los Angeles Kings,Los Angeles Kings,Minnesota Wild,,,,,,,,,,
+hockey,nhl,2025_10_13,8:30 PM EDT,2025_10_13_Chicago Blackhawks_Utah Mammoth,Utah Mammoth,Chicago Blackhawks,,,,,,,,,,

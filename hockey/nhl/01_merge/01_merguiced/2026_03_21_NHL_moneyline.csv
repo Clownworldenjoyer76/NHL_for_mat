@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_21,1:10 PM,2026_03_21_Pittsburgh Penguins_Winnipeg Jets,Winnipeg Jets,Pittsburgh Penguins,0.439,0.561,2.277904328018223,1.7825311942959,136,-162,,
+hockey,nhl,2026_03_21,2:10 PM,2026_03_21_Nashville Predators_Vegas Golden Knights,Vegas Golden Knights,Nashville Predators,0.542,0.458,1.8450184501845017,2.1834061135371177,-130,110,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Minnesota Wild_Dallas Stars,Dallas Stars,Minnesota Wild,0.506,0.494,1.976284584980237,2.0242914979757085,-122,102,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_Los Angeles Kings_Buffalo Sabres,Buffalo Sabres,Los Angeles Kings,0.506,0.494,1.976284584980237,2.0242914979757085,-115,-105,,
+hockey,nhl,2026_03_21,4:10 PM,2026_03_21_San Jose Sharks_Philadelphia Flyers,Philadelphia Flyers,San Jose Sharks,0.546,0.454,1.8315018315018314,2.202643171806167,-105,-115,,
+hockey,nhl,2026_03_21,5:10 PM,2026_03_21_Columbus Blue Jackets_Seattle Kraken,Seattle Kraken,Columbus Blue Jackets,0.386,0.614,2.5906735751295336,1.6286644951140066,142,-170,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Ottawa Senators_Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,0.344,0.656,2.906976744186047,1.524390243902439,205,-250,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Vancouver Canucks_St Louis Blues,St Louis Blues,Vancouver Canucks,0.53,0.47,1.8867924528301885,2.127659574468085,-135,114,,
+hockey,nhl,2026_03_21,7:10 PM,2026_03_21_Montreal Canadiens_New York Islanders,New York Islanders,Montreal Canadiens,0.453,0.547,2.2075055187637966,1.8281535648994514,114,-135,,
+hockey,nhl,2026_03_21,8:10 PM,2026_03_21_Detroit Red Wings_Boston Bruins,Boston Bruins,Detroit Red Wings,0.468,0.532,2.1367521367521367,1.8796992481203008,105,-125,,
+hockey,nhl,2026_03_21,10:10 PM,2026_03_21_Edmonton Oilers_Tampa Bay Lightning,Tampa Bay Lightning,Edmonton Oilers,0.605,0.395,1.6528925619834711,2.531645569620253,-142,120,,

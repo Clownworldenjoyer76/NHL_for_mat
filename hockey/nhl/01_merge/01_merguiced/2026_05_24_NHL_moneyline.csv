@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,NHL,2026_05_24,20:00,70557986,Colorado Avalanche,Vegas Golden Knights,0.571,0.429,1.7513134851138354,2.331002331002331,-143,118,1.7,2.18

@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,NHL,2026_05_23,19:00,70558000,Montreal Canadiens,Carolina Hurricanes,1.5,-1.5,0.578716947960962,0.42128305203903804,1.7279604537647932,2.373700995470702,-149,122,1.67,2.22

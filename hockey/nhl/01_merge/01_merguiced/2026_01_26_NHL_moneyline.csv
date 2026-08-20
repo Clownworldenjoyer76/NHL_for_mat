@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_New York Rangers_Boston Bruins,Boston Bruins,New York Rangers,0.473,0.527,2.1141649048625792,1.8975332068311195,-105,-115,,
+hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_Tampa Bay Lightning_Utah Mammoth,Utah Mammoth,Tampa Bay Lightning,0.427,0.573,2.34192037470726,1.7452006980802794,145,-175,,
+hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_Philadelphia Flyers_New York Islanders,New York Islanders,Philadelphia Flyers,0.47,0.53,2.127659574468085,1.8867924528301885,100,-120,,
+hockey,nhl,2026_01_26,8:30 PM EST,2026_01_26_Edmonton Oilers_Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,0.378,0.622,2.6455026455026456,1.607717041800643,220,-275,,

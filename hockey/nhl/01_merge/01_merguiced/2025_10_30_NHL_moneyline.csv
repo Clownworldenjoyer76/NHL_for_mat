@@ -1,0 +1,12 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Ottawa Senators_Calgary Flames,Calgary Flames,Ottawa Senators,0.407,0.593,2.4570024570024573,1.6863406408094437,140,-170,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Boston Bruins_Buffalo Sabres,Buffalo Sabres,Boston Bruins,0.517,0.483,1.9342359767891681,2.070393374741201,-110,-110,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Philadelphia Flyers_Nashville Predators,Nashville Predators,Philadelphia Flyers,0.432,0.568,2.314814814814815,1.7605633802816902,125,-150,,
+hockey,nhl,2025_10_30,7:00 PM EDT,2025_10_30_Tampa Bay Lightning_Dallas Stars,Dallas Stars,Tampa Bay Lightning,0.411,0.589,2.4330900243309004,1.697792869269949,115,-140,,
+hockey,nhl,2025_10_30,7:30 PM EDT,2025_10_30_Carolina Hurricanes_New York Islanders,New York Islanders,Carolina Hurricanes,0.34,0.66,2.941176470588235,1.5151515151515151,185,-225,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_Minnesota Wild_Pittsburgh Penguins,Pittsburgh Penguins,Minnesota Wild,0.46,0.54,2.1739130434782608,1.8518518518518516,140,-170,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_Winnipeg Jets_Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,0.324,0.676,3.0864197530864197,1.4792899408284024,225,-275,,
+hockey,nhl,2025_10_30,8:00 PM EDT,2025_10_30_St Louis Blues_Vancouver Canucks,Vancouver Canucks,St Louis Blues,0.421,0.579,2.375296912114014,1.7271157167530227,118,-145,,
+hockey,nhl,2025_10_30,9:00 PM EDT,2025_10_30_Edmonton Oilers_New York Rangers,New York Rangers,Edmonton Oilers,0.426,0.574,2.347417840375587,1.7421602787456447,140,-170,,
+hockey,nhl,2025_10_30,10:00 PM EDT,2025_10_30_San Jose Sharks_New Jersey Devils,New Jersey Devils,San Jose Sharks,0.656,0.344,1.524390243902439,2.906976744186047,-250,200,,
+hockey,nhl,2025_10_30,10:30 PM EDT,2025_10_30_Los Angeles Kings_Detroit Red Wings,Detroit Red Wings,Los Angeles Kings,0.406,0.594,2.463054187192118,1.6835016835016836,125,-150,,

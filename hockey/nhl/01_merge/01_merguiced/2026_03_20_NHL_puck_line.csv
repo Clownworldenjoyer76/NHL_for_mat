@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_20,7:10 PM,2026_03_20_Toronto Maple Leafs_Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,-1.5,1.5,0.43112628964367505,0.5688737103563253,2.3195059638476185,1.7578594014717788,120,-142,,
+hockey,nhl,2026_03_20,7:10 PM,2026_03_20_Washington Capitals_New Jersey Devils,New Jersey Devils,Washington Capitals,1.5,-1.5,0.6007395611311063,0.3992604388688936,1.6646148592530574,2.504630819003766,-238,195,,
+hockey,nhl,2026_03_20,8:40 PM,2026_03_20_Chicago Blackhawks_Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,-1.5,1.5,0.5058040749545445,0.4941959250454556,1.9770501059918661,2.0234889632244966,-122,102,,
+hockey,nhl,2026_03_20,9:10 PM,2026_03_20_Calgary Flames_Florida Panthers,Florida Panthers,Calgary Flames,-1.5,1.5,0.21794608191346843,0.7820539180865318,4.588290788347514,1.2786842145701687,220,-270,,
+hockey,nhl,2026_03_20,10:10 PM,2026_03_20_Utah Mammoth_Anaheim Ducks,Anaheim Ducks,Utah Mammoth,1.5,-1.5,0.6336788488743,0.3663211511257002,1.5780864420146765,2.729845101564605,-250,205,,

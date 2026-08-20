@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_11_17,7:00 PM EST,2025_11_17_Buffalo Sabres_Edmonton Oilers,Edmonton Oilers,Buffalo Sabres,6.5,6.4,0.45767113489946387,0.5423288651005361,2.1849750262700507,1.8438996416217335,-120,100,,
+hockey,nhl,2025_11_17,7:00 PM EST,2025_11_17_Florida Panthers_Vancouver Canucks,Vancouver Canucks,Florida Panthers,5.5,5.71,0.5066917945331001,0.4933082054668999,1.9735863315518407,2.027130278632874,-125,105,,
+hockey,nhl,2025_11_17,7:00 PM EST,2025_11_17_Washington Capitals_Los Angeles Kings,Los Angeles Kings,Washington Capitals,5.5,5.54,0.47792459016145084,0.5220754098385492,2.0923803055670005,1.9154321026329282,-110,-110,,
+hockey,nhl,2025_11_17,7:00 PM EST,2025_11_17_Boston Bruins_Carolina Hurricanes,Carolina Hurricanes,Boston Bruins,6.0,6.16,0.4994311125927389,0.5005688874072611,2.0022781416412276,1.9977270364915898,-125,105,,
+hockey,nhl,2025_11_17,7:30 PM EST,2025_11_17_Columbus Blue Jackets_Montreal Canadiens,Montreal Canadiens,Columbus Blue Jackets,6.0,6.37,0.5384547834148421,0.4615452165851579,1.857166155453334,2.166634955939347,-125,105,,
+hockey,nhl,2025_11_17,10:00 PM EST,2025_11_17_Anaheim Ducks_Utah Mammoth,Utah Mammoth,Anaheim Ducks,6.5,6.36,0.4513200399197346,0.5486799600802654,2.2157225727841507,1.82255608506954,-110,-110,,

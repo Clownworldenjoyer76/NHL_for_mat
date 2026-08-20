@@ -1,0 +1,13 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_20,7:00 PM EST,2025_11_20_Toronto Maple Leafs_Columbus Blue Jackets,Columbus Blue Jackets,Toronto Maple Leafs,0.477,0.523,2.0964360587002098,1.9120458891013383,100,-120,,
+hockey,nhl,2025_11_20,7:00 PM EST,2025_11_20_Florida Panthers_New Jersey Devils,New Jersey Devils,Florida Panthers,0.398,0.602,2.5125628140703515,1.6611295681063123,118,-145,,
+hockey,nhl,2025_11_20,7:00 PM EST,2025_11_20_Detroit Red Wings_New York Islanders,New York Islanders,Detroit Red Wings,0.471,0.529,2.1231422505307855,1.8903591682419658,110,-135,,
+hockey,nhl,2025_11_20,7:00 PM EST,2025_11_20_Philadelphia Flyers_St Louis Blues,St Louis Blues,Philadelphia Flyers,0.447,0.553,2.237136465324385,1.8083182640144664,105,-125,,
+hockey,nhl,2025_11_20,7:00 PM EST,2025_11_20_Montreal Canadiens_Washington Capitals,Washington Capitals,Montreal Canadiens,0.479,0.521,2.0876826722338206,1.9193857965451055,110,-135,,
+hockey,nhl,2025_11_20,7:30 PM EST,2025_11_20_Tampa Bay Lightning_Edmonton Oilers,Edmonton Oilers,Tampa Bay Lightning,0.42,0.58,2.380952380952381,1.7241379310344829,125,-155,,
+hockey,nhl,2025_11_20,8:00 PM EST,2025_11_20_Chicago Blackhawks_Seattle Kraken,Seattle Kraken,Chicago Blackhawks,0.438,0.562,2.2831050228310503,1.779359430604982,-105,-115,,
+hockey,nhl,2025_11_20,9:00 PM EST,2025_11_20_Colorado Avalanche_New York Rangers,New York Rangers,Colorado Avalanche,0.363,0.637,2.7548209366391188,1.5698587127158556,165,-200,,
+hockey,nhl,2025_11_20,9:00 PM EST,2025_11_20_Utah Mammoth_Vegas Golden Knights,Vegas Golden Knights,Utah Mammoth,0.511,0.489,1.9569471624266144,2.044989775051125,-115,-105,,
+hockey,nhl,2025_11_20,10:00 PM EST,2025_11_20_Vancouver Canucks_Dallas Stars,Dallas Stars,Vancouver Canucks,0.518,0.482,1.9305019305019304,2.074688796680498,-150,125,,
+hockey,nhl,2025_11_20,10:00 PM EST,2025_11_20_Anaheim Ducks_Ottawa Senators,Ottawa Senators,Anaheim Ducks,0.496,0.504,2.0161290322580645,1.9841269841269842,-125,105,,
+hockey,nhl,2025_11_20,10:00 PM EST,2025_11_20_San Jose Sharks_Los Angeles Kings,Los Angeles Kings,San Jose Sharks,0.601,0.399,1.663893510815308,2.506265664160401,-180,145,,

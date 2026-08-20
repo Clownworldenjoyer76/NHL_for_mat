@@ -1,0 +1,6 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_11_05","2025_11_05_Toronto Maple Leafs_Utah Mammoth","Utah Mammoth","Toronto Maple Leafs","3","5","8","-2","2"
+"hockey","nhl","2025_11_05","2025_11_05_Washington Capitals_St Louis Blues","St Louis Blues","Washington Capitals","1","6","7","-5","5"
+"hockey","nhl","2025_11_05","2025_11_05_Vancouver Canucks_Chicago Blackhawks","Chicago Blackhawks","Vancouver Canucks","5","2","7","3","-3"
+"hockey","nhl","2025_11_05","2025_11_05_Calgary Flames_Columbus Blue Jackets","Columbus Blue Jackets","Calgary Flames","1","5","6","-4","4"
+"hockey","nhl","2025_11_05","2025_11_05_Seattle Kraken_San Jose Sharks","San Jose Sharks","Seattle Kraken","6","1","7","5","-5"

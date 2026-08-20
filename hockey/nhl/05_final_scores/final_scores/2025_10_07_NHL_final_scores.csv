@@ -1,0 +1,4 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_10_07","2025_10_07_New York Rangers_Pittsburgh Penguins","Pittsburgh Penguins","New York Rangers","3","0","3","3","-3"
+"hockey","nhl","2025_10_07","2025_10_07_Florida Panthers_Chicago Blackhawks","Chicago Blackhawks","Florida Panthers","2","3","5","-1","1"
+"hockey","nhl","2025_10_07","2025_10_07_Los Angeles Kings_Colorado Avalanche","Colorado Avalanche","Los Angeles Kings","4","1","5","3","-3"

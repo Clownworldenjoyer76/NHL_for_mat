@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_04_16,20:00,112a39ac7f4a08fcb78fe38362f343ed,Anaheim Ducks,Nashville Predators,puck_line,home,1.5,home_puck_line,-270.0,1.37,0.8506705888425468,0.1654187067142891,0.1654187067142891,0.4470775857142949
+hockey,nhl,2026_04_16,20:00,72aacc9aeb0595468a61d147df27e838,San Jose Sharks,Winnipeg Jets,total,under,6.5,under_total,-122.0,1.82,0.5848293934143862,0.0643894960141828,0.0643894960141828,0.0785237756270524
+hockey,nhl,2026_04_16,21:00,88586e525b98a2c062f1f6d75e8d0fe1,Los Angeles Kings,Calgary Flames,puck_line,home,1.5,home_puck_line,-233.0,1.43,0.8084053458909066,0.1560196446239963,0.1560196446239963,0.3628363828465034
+hockey,nhl,2026_04_16,22:10,96784cc6006a3540914823666e6561d1,Seattle Kraken,Colorado Avalanche,moneyline,home,,home_moneyline,-179.0,1.56,0.772138184804155,0.2045355682944818,0.2045355682944818,0.365242086240146

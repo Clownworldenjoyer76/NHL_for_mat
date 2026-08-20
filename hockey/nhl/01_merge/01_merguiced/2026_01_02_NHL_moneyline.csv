@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_02,3:00 PM EST,2026_01_02_St Louis Blues_Vegas Golden Knights,Vegas Golden Knights,St Louis Blues,0.604,0.396,1.6556291390728477,2.525252525252525,-145,120,,
+hockey,nhl,2026_01_02,8:00 PM EST,2026_01_02_New York Rangers_Florida Panthers,Florida Panthers,New York Rangers,0.564,0.436,1.773049645390071,2.293577981651376,130,-155,,
+hockey,nhl,2026_01_02,10:30 PM EST,2026_01_02_Vancouver Canucks_Seattle Kraken,Seattle Kraken,Vancouver Canucks,0.414,0.586,2.4154589371980677,1.7064846416382253,155,-190,,
+hockey,nhl,2026_01_02,10:30 PM EST,2026_01_02_Anaheim Ducks_Minnesota Wild,Minnesota Wild,Anaheim Ducks,0.541,0.459,1.8484288354898335,2.178649237472767,-115,-105,,

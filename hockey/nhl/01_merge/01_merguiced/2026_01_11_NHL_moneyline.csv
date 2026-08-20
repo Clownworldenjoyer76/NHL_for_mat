@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_11,2:00 PM EST,2026_01_11_Winnipeg Jets_New Jersey Devils,New Jersey Devils,Winnipeg Jets,0.478,0.522,2.092050209205021,1.9157088122605364,100,-120,,
+hockey,nhl,2026_01_11,5:00 PM EST,2026_01_11_Boston Bruins_Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,0.471,0.529,2.1231422505307855,1.8903591682419658,-120,100,,
+hockey,nhl,2026_01_11,7:00 PM EST,2026_01_11_Utah Mammoth_Columbus Blue Jackets,Columbus Blue Jackets,Utah Mammoth,0.362,0.638,2.7624309392265194,1.567398119122257,150,-185,,
+hockey,nhl,2026_01_11,7:00 PM EST,2026_01_11_Nashville Predators_Washington Capitals,Washington Capitals,Nashville Predators,0.561,0.439,1.7825311942959,2.277904328018223,-150,125,,
+hockey,nhl,2026_01_11,8:00 PM EST,2026_01_11_San Jose Sharks_Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,0.606,0.394,1.6501650165016502,2.5380710659898478,-170,140,,

@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_31,12:30 PM EST,2025_12_31_Washington Capitals_New York Rangers,New York Rangers,Washington Capitals,5.5,5.65,0.49660136013371514,0.5033986398662849,2.0136875978969115,1.9864972226894073,-120,100,,
+hockey,nhl,2025_12_31,3:00 PM EST,2025_12_31_Vegas Golden Knights_Nashville Predators,Nashville Predators,Vegas Golden Knights,6.0,6.07,0.4823911013931748,0.5176088986068251,2.073006730663023,1.9319606032499808,-105,-115,,
+hockey,nhl,2025_12_31,4:00 PM EST,2025_12_31_Anaheim Ducks_Tampa Bay Lightning,Tampa Bay Lightning,Anaheim Ducks,6.5,6.31,0.44336110335278356,0.5566388966472164,2.2554978152972915,1.7964968061399678,-110,-110,,
+hockey,nhl,2025_12_31,4:00 PM EST,2025_12_31_San Jose Sharks_Minnesota Wild,Minnesota Wild,San Jose Sharks,6.0,6.05,0.47858347551453745,0.5214165244854625,2.0894996404229675,1.9178525287183927,-125,105,,
+hockey,nhl,2025_12_31,6:30 PM EST,2025_12_31_Detroit Red Wings_Winnipeg Jets,Winnipeg Jets,Detroit Red Wings,6.0,6.0,0.469035110258994,0.5309648897410059,2.1320365536128314,1.8833637012944118,-118,-102,,
+hockey,nhl,2025_12_31,7:00 PM EST,2025_12_31_Columbus Blue Jackets_New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,6.0,6.2,0.5069494782091658,0.49305052179083414,1.9725831527286888,2.028189720533808,-115,-105,,
+hockey,nhl,2025_12_31,8:00 PM EST,2025_12_31_Dallas Stars_Buffalo Sabres,Buffalo Sabres,Dallas Stars,6.0,6.08,0.48429222745408307,0.5157077725459168,2.0648689846974935,1.939082661219661,-118,-102,,
+hockey,nhl,2025_12_31,9:00 PM EST,2025_12_31_Colorado Avalanche_St Louis Blues,St Louis Blues,Colorado Avalanche,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-115,-105,,
+hockey,nhl,2025_12_31,9:30 PM EST,2025_12_31_Edmonton Oilers_Boston Bruins,Boston Bruins,Edmonton Oilers,6.0,6.21,0.5088233096062543,0.49117669039374573,1.9653187680686952,2.035927232618393,-118,-102,,
+hockey,nhl,2025_12_31,9:30 PM EST,2025_12_31_Calgary Flames_Philadelphia Flyers,Philadelphia Flyers,Calgary Flames,5.5,5.51,0.47279453674286653,0.5272054632571335,2.115083661687611,1.8967936975119526,-110,-110,,

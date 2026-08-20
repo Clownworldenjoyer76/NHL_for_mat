@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2025_11_09,1:00 PM EST,2025_11_09_Detroit Red Wings_Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,1.5,-1.5,0.5977304301783629,0.4022695698216373,1.6729949648064593,2.485895218083215,-160,140,,
+hockey,nhl,2025_11_09,2:00 PM EST,2025_11_09_Pittsburgh Penguins_Los Angeles Kings,Los Angeles Kings,Pittsburgh Penguins,-1.5,1.5,0.3996857656437188,0.600314234356281,2.5019655088027406,1.6657942503600693,161,-185,,
+hockey,nhl,2025_11_09,7:00 PM EST,2025_11_09_Dallas Stars_Seattle Kraken,Seattle Kraken,Dallas Stars,1.5,-1.5,0.5844162425212387,0.4155837574787612,1.7111091842449233,2.4062538104634803,-120,100,,
+hockey,nhl,2025_11_09,7:00 PM EST,2025_11_09_Ottawa Senators_Utah Mammoth,Utah Mammoth,Ottawa Senators,1.5,-1.5,0.6813742248699206,0.31862577513007917,1.467622289632261,3.138478045574779,-250,207,,
+hockey,nhl,2025_11_09,7:00 PM EST,2025_11_09_Toronto Maple Leafs_Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,-1.5,1.5,0.25434826089662155,0.7456517391033782,3.9316172104925244,1.341108653756333,200,-240,,
+hockey,nhl,2025_11_09,8:00 PM EST,2025_11_09_Minnesota Wild_Calgary Flames,Calgary Flames,Minnesota Wild,1.5,-1.5,0.661847920767829,0.3381520792321713,1.5109211174069581,2.957249301174374,-165,145,,
+hockey,nhl,2025_11_09,10:00 PM EST,2025_11_09_Vancouver Canucks_Colorado Avalanche,Colorado Avalanche,Vancouver Canucks,-1.5,1.5,0.42295556243833377,0.5770444375616665,2.364314572989682,1.7329687887219847,145,-165,,
+hockey,nhl,2025_11_09,10:00 PM EST,2025_11_09_Anaheim Ducks_Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,-1.5,1.5,0.37486090319598264,0.6251390968040174,2.6676561665252825,1.5996439914131662,174,-200,,

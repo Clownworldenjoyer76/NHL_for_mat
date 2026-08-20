@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,NHL,2026_05_20,20:00,70557984,Vegas Golden Knights,Colorado Avalanche,5.5,6.2,0.5858869614156224,0.41411303858437765,1.7068138836607596,2.4147996001730454,-167,130,1.6,2.3

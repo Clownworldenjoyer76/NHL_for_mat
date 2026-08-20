@@ -1,0 +1,6 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_12_05_New Jersey Devils_Vegas Golden Knights","2025_12_05","07:07 PM","New Jersey Devils","Vegas Golden Knights","0.503","0.497","2.96","3.00","5.96"
+"hockey","nhl","2025_12_05_Winnipeg Jets_Buffalo Sabres","2025_12_05","07:07 PM","Winnipeg Jets","Buffalo Sabres","0.571","0.429","2.69","3.47","6.16"
+"hockey","nhl","2025_12_05_Anaheim Ducks_Washington Capitals","2025_12_05","10:07 PM","Anaheim Ducks","Washington Capitals","0.413","0.587","3.60","2.67","6.27"
+"hockey","nhl","2025_12_05_Vancouver Canucks_Utah Mammoth","2025_12_05","09:07 PM","Vancouver Canucks","Utah Mammoth","0.436","0.564","3.36","2.68","6.04"
+"hockey","nhl","2025_12_05_Dallas Stars_San Jose Sharks","2025_12_05","08:07 PM","Dallas Stars","San Jose Sharks","0.688","0.312","2.41","3.75","6.16"

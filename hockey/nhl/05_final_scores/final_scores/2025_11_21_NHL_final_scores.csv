@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_11_21","2025_11_21_Pittsburgh Penguins_Minnesota Wild","Minnesota Wild","Pittsburgh Penguins","5","0","5","5","-5"
+"hockey","nhl","2025_11_21","2025_11_21_Los Angeles Kings_Boston Bruins","Boston Bruins","Los Angeles Kings","2","1","3","1","-1"
+"hockey","nhl","2025_11_21","2025_11_21_Buffalo Sabres_Chicago Blackhawks","Chicago Blackhawks","Buffalo Sabres","3","9","12","-6","6"
+"hockey","nhl","2025_11_21","2025_11_21_Winnipeg Jets_Carolina Hurricanes","Carolina Hurricanes","Winnipeg Jets","4","3","7","1","-1"

@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_04_21,19:10,1d633a4529dd3295143cce78465e6313,Montreal Canadiens,Tampa Bay Lightning,0.402,0.598,2.487562189054726,1.6722408026755853,160,-192,2.6,1.52
+hockey,nhl,2026_04_21,19:40,dd192d18a37648709a73ed89dfbf6c26,Boston Bruins,Buffalo Sabres,0.413,0.587,2.4213075060532687,1.7035775127768313,150,-179,2.5,1.56
+hockey,nhl,2026_04_21,21:40,2aad80ef484a176946601aba6b11c312,Utah Mammoth,Vegas Golden Knights,0.454,0.546,2.202643171806167,1.8315018315018314,130,-154,2.3,1.65
+hockey,nhl,2026_04_21,22:10,f2408a67fccdac7c1dd7821143e730c6,Los Angeles Kings,Colorado Avalanche,0.306,0.694,3.2679738562091503,1.4409221902017293,240,-294,3.4,1.34

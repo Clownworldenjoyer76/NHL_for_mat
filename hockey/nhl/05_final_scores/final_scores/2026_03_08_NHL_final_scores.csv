@@ -1,0 +1,8 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2026_03_08","2026_03_08_New Jersey Devils_Detroit Red Wings","Detroit Red Wings","New Jersey Devils","3","0","3","3","-3"
+"hockey","nhl","2026_03_08","2026_03_08_Pittsburgh Penguins_Boston Bruins","Boston Bruins","Pittsburgh Penguins","4","5","9","-1","1"
+"hockey","nhl","2026_03_08","2026_03_08_Buffalo Sabres_Tampa Bay Lightning","Tampa Bay Lightning","Buffalo Sabres","7","8","15","-1","1"
+"hockey","nhl","2026_03_08","2026_03_08_Dallas Stars_Chicago Blackhawks","Chicago Blackhawks","Dallas Stars","3","4","7","-1","1"
+"hockey","nhl","2026_03_08","2026_03_08_Anaheim Ducks_St Louis Blues","St Louis Blues","Anaheim Ducks","4","0","4","4","-4"
+"hockey","nhl","2026_03_08","2026_03_08_Colorado Avalanche_Minnesota Wild","Minnesota Wild","Colorado Avalanche","2","3","5","-1","1"
+"hockey","nhl","2026_03_08","2026_03_08_Vegas Golden Knights_Edmonton Oilers","Edmonton Oilers","Vegas Golden Knights","4","2","6","2","-2"

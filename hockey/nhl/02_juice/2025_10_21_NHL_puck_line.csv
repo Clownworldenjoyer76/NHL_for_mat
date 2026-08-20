@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,away_juiced_decimal_puck_line,home_juiced_decimal_puck_line,away_juiced_prob_puck_line,home_juiced_prob_puck_line,away_normalized_prob_puck_line,home_normalized_prob_puck_line
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Toronto Maple Leafs_New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Washington Capitals_Seattle Kraken,Seattle Kraken,Washington Capitals,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Pittsburgh Penguins_Vancouver Canucks,Vancouver Canucks,Pittsburgh Penguins,-1.5,-1.5,0.2361347866762286,0.2900270072307029,4.234869474657833,3.4479547596219087,-275.0,-250.0,,,5.59002770654834,4.4823411875084815,0.17888998990623384,0.2230976978697715,0.4450136045109782,0.5549863954890217
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_Ottawa Senators_Edmonton Oilers,Edmonton Oilers,Ottawa Senators,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,7:00 PM EDT,2025_10_21_New York Islanders_San Jose Sharks,San Jose Sharks,New York Islanders,-1.5,-1.5,0.1238685905965401,0.4589449989509319,8.07307159292028,2.178910331926103,-135.0,-130.0,,,10.656454502654771,2.8325834315039344,0.09383984136101521,0.35303461457763985,0.2099915090557271,0.790008490944273
+hockey,nhl,2025_10_21,7:30 PM EDT,2025_10_21_Boston Bruins_Florida Panthers,Florida Panthers,Boston Bruins,-1.5,-1.5,0.383111337183644,0.1564580363472466,2.61020727643111,6.391490161493376,-190.0,-185.0,,,3.4454736048890653,8.308937209941389,0.2902358615027606,0.12035233565172819,0.7068782383765304,0.2931217616234696
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_Dallas Stars_Columbus Blue Jackets,Columbus Blue Jackets,Dallas Stars,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_St Louis Blues_Los Angeles Kings,Los Angeles Kings,St Louis Blues,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,8:00 PM EDT,2025_10_21_Nashville Predators_Anaheim Ducks,Anaheim Ducks,Nashville Predators,,,,,,,,,,,,,,,,
+hockey,nhl,2025_10_21,10:00 PM EDT,2025_10_21_Utah Mammoth_Colorado Avalanche,Colorado Avalanche,Utah Mammoth,,,,,,,,,,,,,,,,

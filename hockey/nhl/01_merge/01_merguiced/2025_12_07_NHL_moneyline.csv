@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_07,1:00 PM EST,2025_12_07_Philadelphia Flyers_Colorado Avalanche,Colorado Avalanche,Philadelphia Flyers,0.62,0.38,1.6129032258064517,2.6315789473684212,-160,135,,
+hockey,nhl,2025_12_07,5:00 PM EST,2025_12_07_Carolina Hurricanes_San Jose Sharks,San Jose Sharks,Carolina Hurricanes,0.286,0.714,3.4965034965034967,1.400560224089636,230,-295,,
+hockey,nhl,2025_12_07,5:00 PM EST,2025_12_07_Florida Panthers_New York Islanders,New York Islanders,Florida Panthers,0.408,0.592,2.450980392156863,1.6891891891891893,140,-170,,
+hockey,nhl,2025_12_07,6:00 PM EST,2025_12_07_Dallas Stars_Pittsburgh Penguins,Pittsburgh Penguins,Dallas Stars,0.357,0.643,2.801120448179272,1.5552099533437014,170,-210,,
+hockey,nhl,2025_12_07,7:00 PM EST,2025_12_07_Montreal Canadiens_St Louis Blues,St Louis Blues,Montreal Canadiens,0.396,0.604,2.525252525252525,1.6556291390728477,115,-140,,
+hockey,nhl,2025_12_07,7:00 PM EST,2025_12_07_Washington Capitals_Columbus Blue Jackets,Columbus Blue Jackets,Washington Capitals,0.363,0.637,2.7548209366391188,1.5698587127158556,170,-210,,
+hockey,nhl,2025_12_07,7:00 PM EST,2025_12_07_New York Rangers_Vegas Golden Knights,Vegas Golden Knights,New York Rangers,0.524,0.476,1.9083969465648853,2.100840336134454,-150,125,,
+hockey,nhl,2025_12_07,8:00 PM EST,2025_12_07_Anaheim Ducks_Chicago Blackhawks,Chicago Blackhawks,Anaheim Ducks,0.356,0.644,2.808988764044944,1.5527950310559007,180,-220,,

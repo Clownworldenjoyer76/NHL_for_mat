@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_Boston Bruins_Nashville Predators,Nashville Predators,Boston Bruins,0.477,0.523,2.0964360587002098,1.9120458891013383,-110,-110,,
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_Detroit Red Wings_Los Angeles Kings,Los Angeles Kings,Detroit Red Wings,0.466,0.534,2.1459227467811157,1.8726591760299625,115,-140,,
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_New Jersey Devils_Winnipeg Jets,Winnipeg Jets,New Jersey Devils,0.449,0.551,2.2271714922048997,1.8148820326678765,105,-125,,
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_Montreal Canadiens_Vegas Golden Knights,Vegas Golden Knights,Montreal Canadiens,0.517,0.483,1.9342359767891681,2.070393374741201,-118,-102,,
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_Toronto Maple Leafs_Buffalo Sabres,Buffalo Sabres,Toronto Maple Leafs,0.477,0.523,2.0964360587002098,1.9120458891013383,-105,-115,,
+hockey,nhl,2026_01_27,7:00 PM EST,2026_01_27_Florida Panthers_Utah Mammoth,Utah Mammoth,Florida Panthers,0.445,0.555,2.247191011235955,1.8018018018018016,145,-175,,
+hockey,nhl,2026_01_27,8:00 PM EST,2026_01_27_Minnesota Wild_Chicago Blackhawks,Chicago Blackhawks,Minnesota Wild,0.345,0.655,2.8985507246376816,1.5267175572519083,195,-235,,
+hockey,nhl,2026_01_27,8:00 PM EST,2026_01_27_St Louis Blues_Dallas Stars,Dallas Stars,St Louis Blues,0.609,0.391,1.6420361247947455,2.557544757033248,-155,125,,
+hockey,nhl,2026_01_27,10:00 PM EST,2026_01_27_Vancouver Canucks_San Jose Sharks,San Jose Sharks,Vancouver Canucks,0.492,0.508,2.032520325203252,1.968503937007874,-125,105,,
+hockey,nhl,2026_01_27,10:00 PM EST,2026_01_27_Seattle Kraken_Washington Capitals,Washington Capitals,Seattle Kraken,0.568,0.432,1.7605633802816902,2.314814814814815,-150,125,,

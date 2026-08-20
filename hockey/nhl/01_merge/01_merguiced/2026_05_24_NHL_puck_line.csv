@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,NHL,2026_05_24,20:00,70557986,Colorado Avalanche,Vegas Golden Knights,-1.5,1.5,0.3776633285118859,0.622336671488114,2.647861003450664,1.606847299563479,176,-222,2.76,1.45

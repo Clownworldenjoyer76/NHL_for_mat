@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_12_14,12:30 PM EST,2025_12_14_New Jersey Devils_Vancouver Canucks,Vancouver Canucks,New Jersey Devils,0.388,0.612,2.5773195876288657,1.6339869281045751,125,-150,,
+hockey,nhl,2025_12_14,3:00 PM EST,2025_12_14_Pittsburgh Penguins_Utah Mammoth,Utah Mammoth,Pittsburgh Penguins,0.594,0.406,1.6835016835016836,2.463054187192118,-145,120,,
+hockey,nhl,2025_12_14,5:00 PM EST,2025_12_14_Carolina Hurricanes_Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,0.339,0.661,2.949852507374631,1.51285930408472,195,-235,,
+hockey,nhl,2025_12_14,6:00 PM EST,2025_12_14_Minnesota Wild_Boston Bruins,Boston Bruins,Minnesota Wild,0.464,0.536,2.155172413793103,1.8656716417910446,125,-155,,
+hockey,nhl,2025_12_14,7:00 PM EST,2025_12_14_Montreal Canadiens_Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,0.531,0.469,1.8832391713747645,2.1321961620469083,-125,105,,
+hockey,nhl,2025_12_14,8:00 PM EST,2025_12_14_Seattle Kraken_Buffalo Sabres,Buffalo Sabres,Seattle Kraken,0.524,0.476,1.9083969465648853,2.100840336134454,-120,100,,

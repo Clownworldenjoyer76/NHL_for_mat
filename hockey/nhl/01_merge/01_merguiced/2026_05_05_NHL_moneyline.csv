@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,NHL,2026_05_05,20:00,70558036,Minnesota Wild,Colorado Avalanche,0.352,0.648,2.8409090909090913,1.5432098765432098,162,-196,2.62,1.51

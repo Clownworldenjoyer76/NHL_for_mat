@@ -1,0 +1,6 @@
+game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
+2025_12_01,2025_12_01_Philadelphia Flyers_Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,1,1,1,matched
+2025_12_01,2025_12_01_New Jersey Devils_Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,1,1,1,matched
+2025_12_01,2025_12_01_Buffalo Sabres_Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,1,1,1,matched
+2025_12_01,2025_12_01_St Louis Blues_Anaheim Ducks,Anaheim Ducks,St Louis Blues,1,1,1,matched
+2025_12_01,2025_12_01_San Jose Sharks_Utah Mammoth,Utah Mammoth,San Jose Sharks,1,1,1,matched

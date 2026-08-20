@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_New Jersey Devils_Boston Bruins,Boston Bruins,New Jersey Devils,1.5,-1.5,0.7259696723091266,0.2740303276908733,1.3774680102258983,3.6492311213380537,-250,205,,
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_Detroit Red Wings_Calgary Flames,Calgary Flames,Detroit Red Wings,1.5,-1.5,0.6022321273105328,0.39776787268946723,1.6604892941627534,2.5140290824359472,-170,142,,
+hockey,nhl,2026_03_16,7:10 PM,2026_03_16_New York Rangers_Los Angeles Kings,Los Angeles Kings,New York Rangers,-1.5,1.5,0.22104271784696183,0.778957282153038,4.524012415972674,1.283767445162076,205,-250,,
+hockey,nhl,2026_03_16,8:10 PM,2026_03_16_Dallas Stars_Utah Mammoth,Utah Mammoth,Dallas Stars,1.5,-1.5,0.6398374487451808,0.3601625512548192,1.5628969544704723,2.7765240903474395,-185,154,,
+hockey,nhl,2026_03_16,9:40 PM,2026_03_16_Colorado Avalanche_Pittsburgh Penguins,Pittsburgh Penguins,Colorado Avalanche,1.5,-1.5,0.5263991779590655,0.47360082204093445,1.899699015255231,2.1114828215259465,-130,110,,

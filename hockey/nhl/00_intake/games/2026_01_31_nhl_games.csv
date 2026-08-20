@@ -1,0 +1,15 @@
+game_id,sport,league,game_date,game_time,home_team,away_team
+2026_01_31_Philadelphia Flyers_Los Angeles Kings,hockey,nhl,2026_01_31,12:30 PM EST,Philadelphia Flyers,Los Angeles Kings
+2026_01_31_Detroit Red Wings_Colorado Avalanche,hockey,nhl,2026_01_31,1:00 PM EST,Detroit Red Wings,Colorado Avalanche
+2026_01_31_Pittsburgh Penguins_New York Rangers,hockey,nhl,2026_01_31,3:30 PM EST,Pittsburgh Penguins,New York Rangers
+2026_01_31_Florida Panthers_Winnipeg Jets,hockey,nhl,2026_01_31,4:00 PM EST,Florida Panthers,Winnipeg Jets
+2026_01_31_Calgary Flames_San Jose Sharks,hockey,nhl,2026_01_31,4:00 PM EST,Calgary Flames,San Jose Sharks
+2026_01_31_Washington Capitals_Carolina Hurricanes,hockey,nhl,2026_01_31,5:00 PM EST,Washington Capitals,Carolina Hurricanes
+2026_01_31_Ottawa Senators_New Jersey Devils,hockey,nhl,2026_01_31,7:00 PM EST,Ottawa Senators,New Jersey Devils
+2026_01_31_Buffalo Sabres_Montreal Canadiens,hockey,nhl,2026_01_31,7:00 PM EST,Buffalo Sabres,Montreal Canadiens
+2026_01_31_New York Islanders_Nashville Predators,hockey,nhl,2026_01_31,7:00 PM EST,New York Islanders,Nashville Predators
+2026_01_31_Vancouver Canucks_Toronto Maple Leafs,hockey,nhl,2026_01_31,7:00 PM EST,Vancouver Canucks,Toronto Maple Leafs
+2026_01_31_St Louis Blues_Columbus Blue Jackets,hockey,nhl,2026_01_31,7:00 PM EST,St Louis Blues,Columbus Blue Jackets
+2026_01_31_Utah Mammoth_Dallas Stars,hockey,nhl,2026_01_31,9:00 PM EST,Utah Mammoth,Dallas Stars
+2026_01_31_Edmonton Oilers_Minnesota Wild,hockey,nhl,2026_01_31,10:00 PM EST,Edmonton Oilers,Minnesota Wild
+2026_01_31_Vegas Golden Knights_Seattle Kraken,hockey,nhl,2026_01_31,10:00 PM EST,Vegas Golden Knights,Seattle Kraken

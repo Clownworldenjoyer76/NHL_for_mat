@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2026_04_28,19:40,dd8f3e272072c61a152ca09488cca7c8,Boston Bruins,Buffalo Sabres,5.5,6.22,0.5889796582813537,0.4110203417186463,1.6978515063117905,2.4329696087998607,-130,110,1.77,2.1
+hockey,nhl,2026_04_28,20:10,e8322a50bcedf7972380cade07b6278d,Minnesota Wild,Dallas Stars,5.5,5.85,0.5299361362247547,0.47006386377524534,1.8870198343595943,2.127370506570436,-122,102,1.82,2.02
+hockey,nhl,2026_04_28,22:10,31e4aee667b88ad646e816ee99e31915,Anaheim Ducks,Edmonton Oilers,6.5,6.82,0.5231389392311369,0.47686106076886314,1.9115380733648142,2.0970468806734983,-167,140,1.6,2.4

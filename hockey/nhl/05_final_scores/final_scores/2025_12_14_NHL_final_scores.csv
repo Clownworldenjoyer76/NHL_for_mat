@@ -1,0 +1,7 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_12_14","2025_12_14_New Jersey Devils_Vancouver Canucks","Vancouver Canucks","New Jersey Devils","2","1","3","1","-1"
+"hockey","nhl","2025_12_14","2025_12_14_Carolina Hurricanes_Philadelphia Flyers","Philadelphia Flyers","Carolina Hurricanes","2","3","5","-1","1"
+"hockey","nhl","2025_12_14","2025_12_14_Pittsburgh Penguins_Utah Mammoth","Utah Mammoth","Pittsburgh Penguins","5","4","9","1","-1"
+"hockey","nhl","2025_12_14","2025_12_14_Minnesota Wild_Boston Bruins","Boston Bruins","Minnesota Wild","2","6","8","-4","4"
+"hockey","nhl","2025_12_14","2025_12_14_Seattle Kraken_Buffalo Sabres","Buffalo Sabres","Seattle Kraken","3","1","4","2","-2"
+"hockey","nhl","2025_12_14","2025_12_14_Montreal Canadiens_Edmonton Oilers","Edmonton Oilers","Montreal Canadiens","1","4","5","-3","3"

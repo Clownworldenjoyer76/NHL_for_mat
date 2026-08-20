@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_01_11,2:00 PM EST,2026_01_11_Winnipeg Jets_New Jersey Devils,New Jersey Devils,Winnipeg Jets,1.5,-1.5,0.7066869845745797,0.29331301542542,1.4150536543445646,3.4093270581586848,-250,207,,
+hockey,nhl,2026_01_11,5:00 PM EST,2026_01_11_Boston Bruins_Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,-1.5,1.5,0.23201737634543396,0.7679826236545659,4.310022015382038,1.302112794220972,215,-260,,
+hockey,nhl,2026_01_11,7:00 PM EST,2026_01_11_Utah Mammoth_Columbus Blue Jackets,Columbus Blue Jackets,Utah Mammoth,1.5,-1.5,0.5595727086752751,0.440427291324725,1.787077862262773,2.270522330694318,-165,145,,
+hockey,nhl,2026_01_11,7:00 PM EST,2026_01_11_Nashville Predators_Washington Capitals,Washington Capitals,Nashville Predators,-1.5,1.5,0.3575944801483103,0.6424055198516896,2.7964637473857414,1.5566491399869467,175,-202,,
+hockey,nhl,2026_01_11,8:00 PM EST,2026_01_11_San Jose Sharks_Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,-1.5,1.5,0.4225023708042345,0.5774976291957659,2.366850624048564,1.7316088403559664,153,-175,,

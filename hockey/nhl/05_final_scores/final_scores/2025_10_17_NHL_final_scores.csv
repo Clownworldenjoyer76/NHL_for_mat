@@ -1,0 +1,5 @@
+﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
+"hockey","nhl","2025_10_17","2025_10_17_Detroit Red Wings_Tampa Bay Lightning","Tampa Bay Lightning","Detroit Red Wings","1","2","3","-1","1"
+"hockey","nhl","2025_10_17","2025_10_17_Washington Capitals_Minnesota Wild","Minnesota Wild","Washington Capitals","1","5","6","-4","4"
+"hockey","nhl","2025_10_17","2025_10_17_Chicago Blackhawks_Vancouver Canucks","Vancouver Canucks","Chicago Blackhawks","3","2","5","1","-1"
+"hockey","nhl","2025_10_17","2025_10_17_Utah Mammoth_San Jose Sharks","San Jose Sharks","Utah Mammoth","3","6","9","-3","3"

@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_01_14,7:00 PM EST,2026_01_14_New Jersey Devils_Seattle Kraken,Seattle Kraken,New Jersey Devils,1.5,-1.5,0.585427313856373,0.41457268614362697,1.7081539865516713,2.4121222488197263,-190,165,,
+hockey,nhl,2026_01_14,7:30 PM EST,2026_01_14_Buffalo Sabres_Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,1.5,-1.5,0.6573829453976476,0.34261705460235226,1.5211833635189684,2.9187105153321062,-195,170,,
+hockey,nhl,2026_01_14,7:30 PM EST,2026_01_14_New York Rangers_Ottawa Senators,Ottawa Senators,New York Rangers,1.5,-1.5,0.7163167650241419,0.28368323497585834,1.3960304279159195,3.5250585043740803,-275,226,,
+hockey,nhl,2026_01_14,10:00 PM EST,2026_01_14_Los Angeles Kings_Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,-1.5,1.5,0.29933282542342576,0.700667174576574,3.3407629069262113,1.4272111442987439,230,-280,,

@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
+hockey,nhl,2026_01_04,2:00 PM EST,2026_01_04_Dallas Stars_Montreal Canadiens,Montreal Canadiens,Dallas Stars,1.5,-1.5,0.5595074250883367,0.44049257491166316,1.7872863793400364,2.270185825948465,-140,120,,
+hockey,nhl,2026_01_04,3:00 PM EST,2026_01_04_Columbus Blue Jackets_Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,1.5,-1.5,0.6449639576599921,0.3550360423400073,1.5504742367745972,2.8166154439112696,-225,189,,
+hockey,nhl,2026_01_04,5:00 PM EST,2026_01_04_Florida Panthers_Colorado Avalanche,Colorado Avalanche,Florida Panthers,-1.5,1.5,0.3769469715958633,0.6230530284041366,2.652893046908814,1.6049998225052537,203,-245,,
+hockey,nhl,2026_01_04,7:00 PM EST,2026_01_04_New Jersey Devils_Carolina Hurricanes,Carolina Hurricanes,New Jersey Devils,-1.5,1.5,0.30014173449393833,0.6998582655060619,3.3317592492962556,1.4288607412200927,203,-245,,
+hockey,nhl,2026_01_04,7:00 PM EST,2026_01_04_Chicago Blackhawks_Vegas Golden Knights,Vegas Golden Knights,Chicago Blackhawks,-1.5,1.5,0.44153988289615986,0.5584601171038399,2.264801071741864,1.7906381662238922,105,-125,,

@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2026_03_31,19:10,daebb8d0910fcac722afe480770ebf09,Dallas Stars,Boston Bruins,0.535,0.465,1.8691588785046729,2.150537634408602,-120,100,1.83,2.0
+hockey,nhl,2026_03_31,19:10,de03c565dccad66683fabb7adbde6a03,New York Islanders,Buffalo Sabres,0.388,0.612,2.5773195876288657,1.6339869281045751,164,-196,2.64,1.51
+hockey,nhl,2026_03_31,19:10,ff972e427e6e1837407bfcfc6d64844d,Detroit Red Wings,Pittsburgh Penguins,0.489,0.511,2.044989775051125,1.9569471624266144,-115,-105,1.87,1.95
+hockey,nhl,2026_03_31,19:10,12be8eff2290751a9e28c2cb3da3ba42,Ottawa Senators,Florida Panthers,0.559,0.441,1.7889087656529514,2.2675736961451247,-169,142,1.59,2.42
+hockey,nhl,2026_03_31,19:10,8b316c9640300bedb485a6556bbdd1f5,Montreal Canadiens,Tampa Bay Lightning,0.382,0.618,2.6178010471204187,1.6181229773462784,142,-169,2.42,1.59
+hockey,nhl,2026_03_31,19:10,e8b33f9489e018bf61d55e3862f41831,New Jersey Devils,New York Rangers,0.459,0.541,2.178649237472767,1.8484288354898335,-120,100,1.83,2.0
+hockey,nhl,2026_03_31,19:10,b5c10ea05734cf28866ef55dd068ba63,Philadelphia Flyers,Washington Capitals,0.435,0.565,2.2988505747126435,1.7699115044247788,114,-135,2.14,1.74
+hockey,nhl,2026_03_31,19:40,ade39773836ad914294bb9660ae31a85,Carolina Hurricanes,Columbus Blue Jackets,0.578,0.422,1.7301038062283738,2.3696682464454977,-143,120,1.7,2.2
+hockey,nhl,2026_03_31,20:40,6ab93a48138c49071cc0c76f5fa04c81,Winnipeg Jets,Chicago Blackhawks,0.561,0.439,1.7825311942959,2.277904328018223,-143,120,1.7,2.2
+hockey,nhl,2026_03_31,21:10,8a5ff06eaed1de4d1a11137b32051fd8,Seattle Kraken,Edmonton Oilers,0.414,0.586,2.4154589371980677,1.7064846416382253,154,-185,2.54,1.54

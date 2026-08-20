@@ -1,0 +1,191 @@
+[
+  {
+    "id": "902c8f6ff45c6855541ed7cef351aed8",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-02T00:40:00Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Vancouver Canucks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-01T10:06:01Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 1.23
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 4.4
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Colorado Avalanche",
+                "price": 1.59,
+                "point": -1.5
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 2.42,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.95,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 1.87,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "96ceffc5fa63fb301b4128bb29041f01",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-02T01:10:00Z",
+    "home_team": "San Jose Sharks",
+    "away_team": "Anaheim Ducks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-01T10:06:01Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 1.87
+              },
+              {
+                "name": "San Jose Sharks",
+                "price": 1.95
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 3.15,
+                "point": -1.5
+              },
+              {
+                "name": "San Jose Sharks",
+                "price": 1.38,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.77,
+                "point": 6.5
+              },
+              {
+                "name": "Under",
+                "price": 2.1,
+                "point": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "643d656ddcc5756af5e6115f9f134a28",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-04-02T01:10:00Z",
+    "home_team": "Los Angeles Kings",
+    "away_team": "St Louis Blues",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-04-01T10:06:01Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 1.68
+              },
+              {
+                "name": "St Louis Blues",
+                "price": 2.24
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 2.8,
+                "point": -1.5
+              },
+              {
+                "name": "St Louis Blues",
+                "price": 1.46,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2026-04-01T10:06:01Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.87,
+                "point": 5.5
+              },
+              {
+                "name": "Under",
+                "price": 1.95,
+                "point": 5.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

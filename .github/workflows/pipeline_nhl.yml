@@ -1,0 +1,129 @@
+name: Pipeline NHL
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline-nhl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set date
+        run: echo "DATE=$(TZ='America/New_York' date +%Y_%m_%d)" >> $GITHUB_ENV
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+          pip install pandas numpy scipy pyyaml playwright
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Playwright system deps
+        run: python -m playwright install-deps chromium
+
+      - name: Install Playwright browsers
+        run: python -m playwright install chromium
+
+      - name: Create NHL output and error folders
+        run: |
+          mkdir -p docs/win/hockey/nhl/errors/01_merge
+          mkdir -p docs/win/hockey/nhl/errors/02_juice
+          mkdir -p docs/win/hockey/nhl/errors/03_edges
+          mkdir -p docs/win/hockey/nhl/errors/04_select
+
+          mkdir -p docs/win/hockey/nhl/01_merge
+          mkdir -p docs/win/hockey/nhl/01_merge/01_merguiced
+          mkdir -p docs/win/hockey/nhl/02_juice
+          mkdir -p docs/win/hockey/nhl/03_edges
+          mkdir -p docs/win/hockey/nhl/03_edges/ev_kelly
+          mkdir -p docs/win/hockey/nhl/04_select
+
+          mkdir -p docs/win/hockey/nhl/config/mapping
+
+      - name: 01 Merge - NHL Merge Intake
+        run: python docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
+
+      - name: 01 Merge - NHL Build Juice Files
+        run: python docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py
+
+      - name: 02 Juice - NHL Moneyline Juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py
+
+      - name: 02 Juice - NHL Puck Line Juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py
+
+      - name: 02 Juice - NHL Total Juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py
+
+      - name: 03 Edges - NHL Compute Edges
+        run: python docs/win/hockey/nhl/scripts/03_edges/compute_edges.py
+
+      - name: 03 Edges - NHL Compute EV Kelly
+        run: python docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py
+
+      - name: 04 Select - NHL Select Bets
+        run: python docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
+
+      - name: Print NHL logs
+        if: always()
+        run: |
+
+          echo "===== NHL 01 Merge Logs ====="
+          find docs/win/hockey/nhl/errors/01_merge -type f -name "*.txt" -print -exec cat {} \; || true
+
+          echo "===== NHL 02 Juice Logs ====="
+          find docs/win/hockey/nhl/errors/02_juice -type f -name "*.txt" -print -exec cat {} \; || true
+
+          echo "===== NHL 03 Edges Logs ====="
+          find docs/win/hockey/nhl/errors/03_edges -type f -name "*.txt" -print -exec cat {} \; || true
+
+          echo "===== NHL 04 Select Logs ====="
+          find docs/win/hockey/nhl/errors/04_select -type f -name "*.txt" -print -exec cat {} \; || true
+
+      - name: Commit NHL pipeline outputs
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/win/hockey/nhl/errors/01_merge/ || true
+          git add docs/win/hockey/nhl/errors/02_juice/ || true
+          git add docs/win/hockey/nhl/errors/03_edges/ || true
+          git add docs/win/hockey/nhl/errors/04_select/ || true
+
+          git add docs/win/hockey/nhl/01_merge/ || true
+          git add docs/win/hockey/nhl/02_juice/ || true
+          git add docs/win/hockey/nhl/03_edges/ || true
+          git add docs/win/hockey/nhl/03_edges/ev_kelly/ || true
+          git add docs/win/hockey/nhl/04_select/ || true
+
+          git add docs/win/hockey/nhl/config/mapping/ || true
+
+          if git diff --cached --quiet; then
+            echo "No NHL pipeline output changes to commit."
+          else
+            git commit -m "Update NHL pipeline outputs"
+            git pull --rebase origin main
+            git push
+          fi

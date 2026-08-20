@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
+hockey,nhl,2025_12_22,7:00 PM EST,2025_12_22_Tampa Bay Lightning_St Louis Blues,St Louis Blues,Tampa Bay Lightning,5.5,5.97,0.5494896985828706,0.45051030141712944,1.8198703316531535,2.2197050696829588,-120,100,,
+hockey,nhl,2025_12_22,7:30 PM EST,2025_12_22_Philadelphia Flyers_Vancouver Canucks,Vancouver Canucks,Philadelphia Flyers,5.5,5.93,0.5430121891283849,0.4569878108716151,1.8415792868391192,2.1882421723518073,-110,-110,,
+hockey,nhl,2025_12_22,10:00 PM EST,2025_12_22_Anaheim Ducks_Seattle Kraken,Seattle Kraken,Anaheim Ducks,6.5,6.25,0.43378480895699234,0.5662151910430077,2.305290501998988,1.7661129828712836,-105,-115,,
+hockey,nhl,2025_12_22,10:00 PM EST,2025_12_22_Los Angeles Kings_Columbus Blue Jackets,Columbus Blue Jackets,Los Angeles Kings,5.5,5.91,0.5397580726618482,0.46024192733815183,1.8526818785098333,2.172770320565066,-120,100,,

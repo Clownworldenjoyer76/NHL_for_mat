@@ -1,0 +1,10 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_prob_moneyline,home_prob_moneyline,away_fair_decimal_moneyline,home_fair_decimal_moneyline,away_dk_moneyline_american,home_dk_moneyline_american,away_dk_moneyline_decimal,home_dk_moneyline_decimal
+hockey,nhl,2025_11_06,7:00 PM EST,2025_11_06_Buffalo Sabres_St Louis Blues,St Louis Blues,Buffalo Sabres,0.442,0.558,2.262443438914027,1.7921146953405016,105,-125,,
+hockey,nhl,2025_11_06,7:00 PM EST,2025_11_06_New Jersey Devils_Montreal Canadiens,Montreal Canadiens,New Jersey Devils,0.458,0.542,2.1834061135371177,1.8450184501845017,135,-160,,
+hockey,nhl,2025_11_06,7:00 PM EST,2025_11_06_Boston Bruins_Ottawa Senators,Ottawa Senators,Boston Bruins,0.553,0.447,1.8083182640144664,2.237136465324385,-135,110,,
+hockey,nhl,2025_11_06,7:00 PM EST,2025_11_06_Carolina Hurricanes_Minnesota Wild,Minnesota Wild,Carolina Hurricanes,0.365,0.635,2.73972602739726,1.574803149606299,150,-185,,
+hockey,nhl,2025_11_06,7:30 PM EST,2025_11_06_Pittsburgh Penguins_Washington Capitals,Washington Capitals,Pittsburgh Penguins,0.461,0.539,2.1691973969631237,1.8552875695732838,-115,-105,,
+hockey,nhl,2025_11_06,8:00 PM EST,2025_11_06_Dallas Stars_Anaheim Ducks,Anaheim Ducks,Dallas Stars,0.401,0.599,2.4937655860349124,1.669449081803005,155,-190,,
+hockey,nhl,2025_11_06,8:00 PM EST,2025_11_06_Nashville Predators_Philadelphia Flyers,Philadelphia Flyers,Nashville Predators,0.487,0.513,2.053388090349076,1.949317738791423,-105,-115,,
+hockey,nhl,2025_11_06,10:00 PM EST,2025_11_06_Vegas Golden Knights_Tampa Bay Lightning,Tampa Bay Lightning,Vegas Golden Knights,0.477,0.523,2.0964360587002098,1.9120458891013383,105,-125,,
+hockey,nhl,2025_11_06,10:00 PM EST,2025_11_06_Los Angeles Kings_Florida Panthers,Florida Panthers,Los Angeles Kings,0.508,0.492,1.968503937007874,2.032520325203252,-105,-115,,

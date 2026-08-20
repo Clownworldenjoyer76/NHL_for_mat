@@ -1,0 +1,4 @@
+﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
+"hockey","nhl","2025_10_31_Washington Capitals_New York Islanders","2025_10_31","07:07 PM","Washington Capitals","New York Islanders","0.625","0.375","2.37","3.48","5.85"
+"hockey","nhl","2025_10_31_Anaheim Ducks_Detroit Red Wings","2025_10_31","10:07 PM","Anaheim Ducks","Detroit Red Wings","0.499","0.501","3.11","3.10","6.21"
+"hockey","nhl","2025_10_31_Vegas Golden Knights_Colorado Avalanche","2025_10_31","04:07 PM","Vegas Golden Knights","Colorado Avalanche","0.498","0.502","3.09","3.07","6.16"
