@@ -3,14 +3,14 @@
 Single-entry SportsDataverse NHL puller.
 
 Default:
-    python docs/win/hockey/nhl/scripts/00_intake/sdv_pull.py
+    python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py
 
 Historical:
-    python docs/win/hockey/nhl/scripts/00_intake/sdv_pull.py --season 2024
-    python docs/win/hockey/nhl/scripts/00_intake/sdv_pull.py --start-season 2021 --end-season 2024
+    python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py --season 2024
+    python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py --start-season 2021 --end-season 2024
 
 Optional category subset:
-    python docs/win/hockey/nhl/scripts/00_intake/sdv_pull.py --categories schedule,goalie,odds
+    python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py --categories schedule,goalie,odds
 
 Current mode never requires a date. It uses the current America/New_York date.
 """
@@ -228,6 +228,23 @@ def frame_empty(obj: Any) -> bool:
     if is_pandas_frame(obj):
         return obj.empty
     return False
+
+
+def clean_war_rows(war: Any) -> Any:
+    """Remove invalid/missing NHL player IDs from SDV WAR output."""
+    if is_polars_frame(war):
+        if "player_id" not in war.columns:
+            return war
+        player_id = pl.col("player_id").cast(pl.Int64, strict=False)
+        return war.filter(player_id.is_not_null() & (player_id != 0))
+
+    if is_pandas_frame(war):
+        if "player_id" not in war.columns:
+            return war
+        player_id = pd.to_numeric(war["player_id"], errors="coerce")
+        return war.loc[player_id.notna() & player_id.ne(0)].copy()
+
+    return war
 
 
 def first_col(df: Any, names: tuple[str, ...]) -> str | None:
@@ -1057,6 +1074,8 @@ def pull_advanced_player_strength(
         shifts,
     )
     if war is not None:
+        war = clean_war_rows(war)
+
         save_object(
             "lineup-strength",
             "skater_war",
