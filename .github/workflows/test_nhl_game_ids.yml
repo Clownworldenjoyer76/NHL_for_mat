@@ -1,0 +1,468 @@
+name: Test NHL Game ID Reconciliation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  test-nhl-game-ids:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas requests
+
+      - name: Syntax check new and modified scripts
+        run: |
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/build_games.py
+
+      - name: Select isolated test date
+        run: |
+          $base = "docs/win/hockey/nhl"
+
+          $oddsDir = Join-Path $base "odds"
+          $scraperDir = Join-Path $base "00_intake/predictions/scraper"
+          $sportsbookDir = Join-Path $base "00_intake/sportsbook"
+          $predictionsDir = Join-Path $base "00_intake/predictions"
+
+          $oddsDates = @(
+              Get-ChildItem $oddsDir -File -Filter "*.json" |
+              Where-Object {
+                  $_.BaseName -match '^\d{4}_\d{2}_\d{2}$' -and
+                  $_.Length -gt 1000
+              } |
+              ForEach-Object {
+                  $_.BaseName
+              }
+          )
+
+          $scraperDates = @(
+              Get-ChildItem $scraperDir -File -Filter "*_nhl_predictions.csv" |
+              ForEach-Object {
+                  if ($_.Name -match '^(\d{4}_\d{2}_\d{2})_nhl_predictions\.csv$') {
+                      $Matches[1]
+                  }
+              }
+          )
+
+          $sportsbookDates = @(
+              Get-ChildItem $sportsbookDir -File -Filter "NHL_*.csv" |
+              ForEach-Object {
+                  if ($_.Name -match '^NHL_(\d{4}_\d{2}_\d{2})\.csv$') {
+                      $Matches[1]
+                  }
+              }
+          )
+
+          $commonDates = @(
+              $oddsDates |
+              Where-Object {
+                  ($scraperDates -contains $_) -and
+                  ($sportsbookDates -contains $_)
+              } |
+              Sort-Object -Descending -Unique
+          )
+
+          if ($commonDates.Count -eq 0) {
+              throw "No test date exists with odds JSON + D-Ratings scraper input + sportsbook CSV."
+          }
+
+          $testDate = $commonDates[0]
+
+          "TEST_DATE=$testDate" |
+              Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+          Write-Host "TEST DATE: $testDate"
+
+      - name: Isolate one game date
+        run: |
+          $base = "docs/win/hockey/nhl"
+
+          $oddsDir = Join-Path $base "odds"
+          $scraperDir = Join-Path $base "00_intake/predictions/scraper"
+          $sportsbookDir = Join-Path $base "00_intake/sportsbook"
+          $predictionsDir = Join-Path $base "00_intake/predictions"
+
+          $backupDir = Join-Path $env:RUNNER_TEMP "nhl_game_id_test_backup"
+
+          New-Item -ItemType Directory -Force -Path $backupDir | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $backupDir "odds") | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $backupDir "scraper") | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $backupDir "sportsbook") | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $backupDir "predictions") | Out-Null
+
+          Get-ChildItem $oddsDir -File -Filter "*.json" |
+          Where-Object {
+              $_.Name -ne "$env:TEST_DATE.json"
+          } |
+          ForEach-Object {
+              Move-Item $_.FullName (Join-Path $backupDir "odds")
+          }
+
+          Get-ChildItem $scraperDir -File -Filter "*_nhl_predictions.csv" |
+          Where-Object {
+              $_.Name -ne "$env:TEST_DATE`_nhl_predictions.csv"
+          } |
+          ForEach-Object {
+              Move-Item $_.FullName (Join-Path $backupDir "scraper")
+          }
+
+          Get-ChildItem $sportsbookDir -File -Filter "*.csv" |
+          Where-Object {
+              $_.Name -ne "NHL_$env:TEST_DATE.csv"
+          } |
+          ForEach-Object {
+              Move-Item $_.FullName (Join-Path $backupDir "sportsbook")
+          }
+
+          Get-ChildItem $predictionsDir -File -Filter "hockey_*.csv" |
+          ForEach-Object {
+              Move-Item $_.FullName (Join-Path $backupDir "predictions")
+          }
+
+          $cleanDirs = @(
+              (Join-Path $base "00_intake/nhl_schedule"),
+              (Join-Path $base "00_intake/reconciled"),
+              (Join-Path $base "00_intake/games")
+          )
+
+          foreach ($dir in $cleanDirs) {
+              if (Test-Path $dir) {
+                  Remove-Item $dir -Recurse -Force
+              }
+
+              New-Item -ItemType Directory -Force -Path $dir | Out-Null
+          }
+
+          New-Item `
+              -ItemType Directory `
+              -Force `
+              -Path (Join-Path $base "00_intake/reconciled/audit") |
+              Out-Null
+
+          Write-Host "Isolated files:"
+          Write-Host ""
+          Write-Host "Odds:"
+          Get-ChildItem $oddsDir -File
+          Write-Host ""
+          Write-Host "Scraper:"
+          Get-ChildItem $scraperDir -File
+          Write-Host ""
+          Write-Host "Sportsbook:"
+          Get-ChildItem $sportsbookDir -File
+
+      - name: Test transform_hockey_odds.py
+        run: |
+          python docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+
+          $path = "docs/win/hockey/nhl/00_intake/sportsbook/NHL_$env:TEST_DATE.csv"
+
+          if (-not (Test-Path $path)) {
+              throw "Sportsbook output missing: $path"
+          }
+
+          $header = Get-Content $path -First 1
+
+          if ($header -notmatch "sportsbook_event_id") {
+              throw "sportsbook_event_id was not created."
+          }
+
+          if ($header -match '(^|,)game_id(,|$)') {
+              throw "transform_hockey_odds.py still emitted sportsbook ID as game_id."
+          }
+
+          Write-Host "transform_hockey_odds.py PASS"
+          Get-Content $path
+
+      - name: Test transform_hockey.py
+        run: |
+          python docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+
+          $path = "docs/win/hockey/nhl/00_intake/predictions/hockey_$env:TEST_DATE.csv"
+
+          if (-not (Test-Path $path)) {
+              throw "Prediction output missing: $path"
+          }
+
+          $rows = Import-Csv $path
+
+          if ($rows.Count -eq 0) {
+              throw "Prediction output contains zero rows."
+          }
+
+          foreach ($row in $rows) {
+              if (-not [string]::IsNullOrWhiteSpace($row.game_id)) {
+                  throw "transform_hockey.py assigned game_id before reconciliation."
+              }
+          }
+
+          Write-Host "transform_hockey.py PASS"
+          Get-Content $path
+
+      - name: Test pull_nhl_schedule.py
+        run: |
+          python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+
+          $path = "docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_$env:TEST_DATE.csv"
+
+          if (-not (Test-Path $path)) {
+              throw "Official NHL schedule output missing: $path"
+          }
+
+          $rows = Import-Csv $path
+
+          if ($rows.Count -eq 0) {
+              throw "Official NHL schedule contains zero games for test date $env:TEST_DATE."
+          }
+
+          foreach ($row in $rows) {
+              if ([string]::IsNullOrWhiteSpace($row.game_id)) {
+                  throw "Official NHL schedule contains blank game_id."
+              }
+
+              if ($row.game_id -notmatch '^\d{10}$') {
+                  throw "Invalid official NHL game_id: $($row.game_id)"
+              }
+          }
+
+          Write-Host "pull_nhl_schedule.py PASS"
+          Get-Content $path
+
+      - name: Test reconcile_game_ids.py
+        run: |
+          python docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+
+          $reconciled = "docs/win/hockey/nhl/00_intake/reconciled/NHL_$env:TEST_DATE.csv"
+          $sportsbook = "docs/win/hockey/nhl/00_intake/sportsbook/NHL_$env:TEST_DATE.csv"
+          $prediction = "docs/win/hockey/nhl/00_intake/predictions/hockey_$env:TEST_DATE.csv"
+          $audit = "docs/win/hockey/nhl/00_intake/reconciled/audit/NHL_$env:TEST_DATE`_reconciliation.csv"
+
+          foreach ($path in @($reconciled, $sportsbook, $prediction, $audit)) {
+              if (-not (Test-Path $path)) {
+                  throw "Expected reconciliation output missing: $path"
+              }
+          }
+
+          $reconciledRows = Import-Csv $reconciled
+
+          if ($reconciledRows.Count -eq 0) {
+              throw "Reconciliation produced zero games."
+          }
+
+          foreach ($row in $reconciledRows) {
+              if ([string]::IsNullOrWhiteSpace($row.game_id)) {
+                  throw "Reconciled row has blank official game_id."
+              }
+
+              if ([string]::IsNullOrWhiteSpace($row.sportsbook_event_id)) {
+                  throw "Reconciled row lost sportsbook_event_id."
+              }
+
+              if ($row.game_id -eq $row.sportsbook_event_id) {
+                  throw "Official game_id equals sportsbook_event_id."
+              }
+          }
+
+          $auditRows = Import-Csv $audit
+          $badAudit = @(
+              $auditRows |
+              Where-Object {
+                  $_.status -ne "reconciled"
+              }
+          )
+
+          if ($badAudit.Count -gt 0) {
+              $badAudit | Format-Table -AutoSize
+              throw "Reconciliation audit contains rejected/unreconciled rows."
+          }
+
+          Write-Host "reconcile_game_ids.py PASS"
+          Get-Content $reconciled
+
+      - name: Test build_games.py
+        run: |
+          python docs/win/hockey/nhl/scripts/00_intake/build_games.py
+
+          $path = "docs/win/hockey/nhl/00_intake/games/$env:TEST_DATE`_nhl_games.csv"
+
+          if (-not (Test-Path $path)) {
+              throw "Games output missing: $path"
+          }
+
+          $rows = Import-Csv $path
+
+          if ($rows.Count -eq 0) {
+              throw "Games output contains zero rows."
+          }
+
+          foreach ($row in $rows) {
+              if ([string]::IsNullOrWhiteSpace($row.game_id)) {
+                  throw "Games output has blank game_id."
+              }
+
+              if ([string]::IsNullOrWhiteSpace($row.sportsbook_event_id)) {
+                  throw "Games output lost sportsbook_event_id."
+              }
+
+              if ($row.game_id -eq $row.sportsbook_event_id) {
+                  throw "Games output is still using sportsbook_event_id as game_id."
+              }
+          }
+
+          Write-Host "build_games.py PASS"
+          Get-Content $path
+
+      - name: Cross-check all IDs
+        run: |
+          @'
+          import csv
+          import os
+          from pathlib import Path
+
+          date = os.environ["TEST_DATE"]
+
+          base = Path("docs/win/hockey/nhl")
+
+          paths = {
+              "schedule": base / "00_intake" / "nhl_schedule" / f"NHL_{date}.csv",
+              "sportsbook": base / "00_intake" / "sportsbook" / f"NHL_{date}.csv",
+              "prediction": base / "00_intake" / "predictions" / f"hockey_{date}.csv",
+              "reconciled": base / "00_intake" / "reconciled" / f"NHL_{date}.csv",
+              "games": base / "00_intake" / "games" / f"{date}_nhl_games.csv",
+          }
+
+          def read_rows(path):
+              with path.open("r", newline="", encoding="utf-8-sig") as f:
+                  return list(csv.DictReader(f))
+
+          data = {name: read_rows(path) for name, path in paths.items()}
+
+          for name, rows in data.items():
+              if not rows:
+                  raise SystemExit(f"{name} has zero rows: {paths[name]}")
+
+          schedule_ids = {row["game_id"].strip() for row in data["schedule"]}
+          sportsbook_ids = {row["game_id"].strip() for row in data["sportsbook"]}
+          prediction_ids = {row["game_id"].strip() for row in data["prediction"]}
+          reconciled_ids = {row["game_id"].strip() for row in data["reconciled"]}
+          games_ids = {row["game_id"].strip() for row in data["games"]}
+
+          if not sportsbook_ids:
+              raise SystemExit("No sportsbook official game IDs.")
+
+          if sportsbook_ids != prediction_ids:
+              raise SystemExit(
+                  f"Sportsbook/prediction game_id mismatch: "
+                  f"{sportsbook_ids} != {prediction_ids}"
+              )
+
+          if sportsbook_ids != reconciled_ids:
+              raise SystemExit(
+                  f"Sportsbook/reconciled game_id mismatch: "
+                  f"{sportsbook_ids} != {reconciled_ids}"
+              )
+
+          if sportsbook_ids != games_ids:
+              raise SystemExit(
+                  f"Sportsbook/games game_id mismatch: "
+                  f"{sportsbook_ids} != {games_ids}"
+              )
+
+          if not games_ids.issubset(schedule_ids):
+              raise SystemExit(
+                  f"Pipeline contains game IDs absent from official NHL schedule: "
+                  f"{games_ids - schedule_ids}"
+              )
+
+          sportsbook_event_ids = {
+              row["sportsbook_event_id"].strip()
+              for row in data["sportsbook"]
+          }
+
+          if "" in sportsbook_event_ids:
+              raise SystemExit("Blank sportsbook_event_id found.")
+
+          if sportsbook_event_ids & games_ids:
+              raise SystemExit(
+                  "A sportsbook_event_id is still being used as an official game_id."
+              )
+
+          print("========================================")
+          print("NHL GAME ID TEST PASSED")
+          print("========================================")
+          print(f"Test date: {date}")
+          print(f"Official NHL IDs: {sorted(games_ids)}")
+          print(f"Sportsbook event IDs: {sorted(sportsbook_event_ids)}")
+          print("All pipeline sources use the official NHL game_id.")
+          '@ | python -
+
+      - name: Print diagnostics
+        if: always()
+        run: |
+          Write-Host "=== transform_hockey_odds log ==="
+          $path = "docs/win/hockey/nhl/errors/00_intake/transform_hockey_odds.txt"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+          Write-Host "=== transform_hockey log ==="
+          $path = "docs/win/hockey/nhl/errors/00_intake/transform_hockey.txt"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+          Write-Host "=== pull_nhl_schedule log ==="
+          $path = "docs/win/hockey/nhl/errors/00_intake/pull_nhl_schedule.txt"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+          Write-Host "=== reconcile_game_ids log ==="
+          $path = "docs/win/hockey/nhl/errors/00_intake/reconcile_game_ids.txt"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+          Write-Host "=== build_games log ==="
+          $path = "docs/win/hockey/nhl/errors/00_intake/build_games.txt"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+          Write-Host "=== Reconciliation audit ==="
+          $path = "docs/win/hockey/nhl/00_intake/reconciled/audit/NHL_$env:TEST_DATE`_reconciliation.csv"
+          if (Test-Path $path) {
+              Get-Content $path
+          }
+
+      - name: Upload test diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nhl-game-id-test
+          if-no-files-found: ignore
+          path: |
+            docs/win/hockey/nhl/errors/00_intake/*.txt
+            docs/win/hockey/nhl/00_intake/nhl_schedule/
+            docs/win/hockey/nhl/00_intake/reconciled/
+            docs/win/hockey/nhl/00_intake/games/
