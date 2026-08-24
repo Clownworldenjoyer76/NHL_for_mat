@@ -24,7 +24,7 @@ SPORTSBOOK_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
 FIELDS = [
-    "game_id",
+    "sportsbook_event_id",
     "sport",
     "league",
     "game_date",
@@ -128,13 +128,13 @@ def find_market(markets: list, market_name: str) -> dict:
     return {}
 
 
-def parse_moneyline(game_id: str, markets: list, counters: dict) -> dict:
+def parse_moneyline(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
     market = find_market(markets, "ML")
     odds = market.get("odds", [])
 
     if not isinstance(odds, list) or not odds or not isinstance(odds[0], dict):
         counters["warnings"] += 1
-        log(f"WARNING game_id={game_id} missing ML market")
+        log(f"WARNING sportsbook_event_id={sportsbook_event_id} missing ML market")
         return {
             "home_decimal": "",
             "away_decimal": "",
@@ -167,7 +167,7 @@ def pick_standard_puck_line_row(rows: list) -> dict:
     return {}
 
 
-def parse_spread(game_id: str, markets: list, counters: dict) -> dict:
+def parse_spread(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
     market = find_market(markets, "Spread")
     odds = market.get("odds", [])
 
@@ -178,7 +178,10 @@ def parse_spread(game_id: str, markets: list, counters: dict) -> dict:
 
     if not row:
         counters["warnings"] += 1
-        log(f"WARNING game_id={game_id} no Spread row with abs(hdp)==1.5")
+        log(
+            f"WARNING sportsbook_event_id={sportsbook_event_id} "
+            "no Spread row with abs(hdp)==1.5"
+        )
         return {
             "home_line": "",
             "away_line": "",
@@ -206,7 +209,7 @@ def parse_spread(game_id: str, markets: list, counters: dict) -> dict:
 
     except Exception:
         counters["warnings"] += 1
-        log(f"WARNING game_id={game_id} invalid Spread row")
+        log(f"WARNING sportsbook_event_id={sportsbook_event_id} invalid Spread row")
         home_line = ""
         away_line = ""
         home_decimal = ""
@@ -251,7 +254,7 @@ def pick_total_row_closest_odds(rows: list) -> dict:
     return candidates[0][2]
 
 
-def parse_totals(game_id: str, markets: list, counters: dict) -> dict:
+def parse_totals(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
     market = find_market(markets, "Totals")
     odds = market.get("odds", [])
 
@@ -263,7 +266,7 @@ def parse_totals(game_id: str, markets: list, counters: dict) -> dict:
     if not row:
         counters["warnings"] += 1
         log(
-            f"WARNING game_id={game_id} no valid Totals row with "
+            f"WARNING sportsbook_event_id={sportsbook_event_id} no valid Totals row with "
             f"{TOTAL_MIN} <= hdp <= {TOTAL_MAX} and numeric over/under odds"
         )
         return {
@@ -289,16 +292,19 @@ def parse_totals(game_id: str, markets: list, counters: dict) -> dict:
 
 
 def build_row(event: dict, odds_payload: dict, counters: dict) -> dict:
-    game_id = str(odds_payload.get("id") or event.get("id") or "").strip()
+    sportsbook_event_id = str(odds_payload.get("id") or event.get("id") or "").strip()
 
     markets = get_markets(odds_payload)
     if not markets:
         counters["warnings"] += 1
-        log(f"WARNING game_id={game_id} missing {BOOKMAKER} bookmaker")
+        log(
+            f"WARNING sportsbook_event_id={sportsbook_event_id} "
+            f"missing {BOOKMAKER} bookmaker"
+        )
 
-    moneyline = parse_moneyline(game_id, markets, counters)
-    spread = parse_spread(game_id, markets, counters)
-    totals = parse_totals(game_id, markets, counters)
+    moneyline = parse_moneyline(sportsbook_event_id, markets, counters)
+    spread = parse_spread(sportsbook_event_id, markets, counters)
+    totals = parse_totals(sportsbook_event_id, markets, counters)
 
     home_team = str(odds_payload.get("home") or event.get("home") or "").strip()
     away_team = str(odds_payload.get("away") or event.get("away") or "").strip()
@@ -308,7 +314,7 @@ def build_row(event: dict, odds_payload: dict, counters: dict) -> dict:
     )
 
     return {
-        "game_id": game_id,
+        "sportsbook_event_id": sportsbook_event_id,
         "sport": "hockey",
         "league": "nhl",
         "game_date": game_date,
@@ -342,9 +348,19 @@ def read_existing_csv(path: Path) -> dict[str, dict]:
         rows = {}
 
         for row in reader:
-            game_id = str(row.get("game_id", "")).strip()
-            if game_id:
-                rows[game_id] = {field: row.get(field, "") for field in FIELDS}
+            sportsbook_event_id = str(
+                row.get("sportsbook_event_id") or row.get("game_id") or ""
+            ).strip()
+
+            if not sportsbook_event_id:
+                continue
+
+            normalized_row = {
+                field: row.get(field, "")
+                for field in FIELDS
+            }
+            normalized_row["sportsbook_event_id"] = sportsbook_event_id
+            rows[sportsbook_event_id] = normalized_row
 
     return rows
 
@@ -356,8 +372,8 @@ def row_changed(existing: dict, new: dict) -> bool:
     return False
 
 
-def write_csv(path: Path, rows_by_game_id: dict[str, dict]) -> None:
-    rows = list(rows_by_game_id.values())
+def write_csv(path: Path, rows_by_event_id: dict[str, dict]) -> None:
+    rows = list(rows_by_event_id.values())
 
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
@@ -393,7 +409,7 @@ def main() -> None:
         log(f"JSON files found: {len(json_files)}")
 
         new_rows_by_date = defaultdict(dict)
-        status_by_date_game = {}
+        status_by_date_event = {}
 
         for json_file in json_files:
             file_rows_built = 0
@@ -434,18 +450,21 @@ def main() -> None:
                     log(f"WARNING {json_file} contains non-dict odds payload")
                     continue
 
-                game_id = str(odds_payload.get("id", "")).strip()
-                if not game_id:
+                sportsbook_event_id = str(odds_payload.get("id", "")).strip()
+                if not sportsbook_event_id:
                     counters["warnings"] += 1
-                    log(f"WARNING {json_file} odds payload missing game_id")
+                    log(f"WARNING {json_file} odds payload missing sportsbook_event_id")
                     continue
 
-                odds_ids.add(game_id)
+                odds_ids.add(sportsbook_event_id)
 
-                event = events_by_id.get(game_id, {})
+                event = events_by_id.get(sportsbook_event_id, {})
                 if not event:
                     counters["warnings"] += 1
-                    log(f"WARNING odds game_id={game_id} has no matching event payload")
+                    log(
+                        f"WARNING odds sportsbook_event_id={sportsbook_event_id} "
+                        "has no matching event payload"
+                    )
 
                 row = build_row(event, odds_payload, counters)
                 game_date = row.get("game_date", "")
@@ -453,11 +472,14 @@ def main() -> None:
 
                 if not game_date:
                     counters["warnings"] += 1
-                    log(f"WARNING game_id={game_id} skipped because game_date was blank")
+                    log(
+                        f"WARNING sportsbook_event_id={sportsbook_event_id} "
+                        "skipped because game_date was blank"
+                    )
                     continue
 
-                new_rows_by_date[game_date][game_id] = row
-                status_by_date_game[(game_date, game_id)] = current_status
+                new_rows_by_date[game_date][sportsbook_event_id] = row
+                status_by_date_event[(game_date, sportsbook_event_id)] = current_status
 
                 counters["rows_built"] += 1
                 file_rows_built += 1
@@ -465,7 +487,10 @@ def main() -> None:
             for event_id in events_by_id:
                 if event_id not in odds_ids:
                     counters["warnings"] += 1
-                    log(f"WARNING event game_id={event_id} has no matching odds payload")
+                    log(
+                        f"WARNING event sportsbook_event_id={event_id} "
+                        "has no matching odds payload"
+                    )
 
             file_warnings = counters["warnings"] - file_warnings_before
             log(
@@ -479,17 +504,19 @@ def main() -> None:
 
             merged_rows = dict(existing_rows)
 
-            for game_id, new_row in new_rows.items():
-                current_status = status_by_date_game.get((game_date, game_id), "")
+            for sportsbook_event_id, new_row in new_rows.items():
+                current_status = status_by_date_event.get(
+                    (game_date, sportsbook_event_id), ""
+                )
 
-                existing_row = existing_rows.get(game_id)
+                existing_row = existing_rows.get(sportsbook_event_id)
 
                 if existing_row and current_status != "pending":
-                    merged_rows[game_id] = existing_row
+                    merged_rows[sportsbook_event_id] = existing_row
                     counters["rows_preserved_status_changed"] += 1
                     log(
-                        f"PRESERVED game_id={game_id} date={game_date} "
-                        f"because current_status={current_status}"
+                        f"PRESERVED sportsbook_event_id={sportsbook_event_id} "
+                        f"date={game_date} because current_status={current_status}"
                     )
                     continue
 
@@ -497,21 +524,22 @@ def main() -> None:
                     counters["rows_skipped_non_pending_no_existing"] += 1
                     counters["warnings"] += 1
                     log(
-                        f"WARNING skipped new game_id={game_id} date={game_date} "
-                        f"because current_status={current_status} and no existing row"
+                        f"WARNING skipped new sportsbook_event_id={sportsbook_event_id} "
+                        f"date={game_date} because current_status={current_status} "
+                        "and no existing row"
                     )
                     continue
 
                 if not existing_row:
-                    merged_rows[game_id] = new_row
+                    merged_rows[sportsbook_event_id] = new_row
                     counters["rows_added"] += 1
                     continue
 
                 if row_changed(existing_row, new_row):
-                    merged_rows[game_id] = new_row
+                    merged_rows[sportsbook_event_id] = new_row
                     counters["rows_updated"] += 1
                 else:
-                    merged_rows[game_id] = existing_row
+                    merged_rows[sportsbook_event_id] = existing_row
                     counters["rows_unchanged"] += 1
 
             write_csv(csv_path, merged_rows)
@@ -532,8 +560,14 @@ def main() -> None:
         log(f"Rows added: {counters['rows_added']}")
         log(f"Rows updated: {counters['rows_updated']}")
         log(f"Rows unchanged: {counters['rows_unchanged']}")
-        log(f"Rows preserved due to non-pending status: {counters['rows_preserved_status_changed']}")
-        log(f"Rows skipped non-pending with no existing row: {counters['rows_skipped_non_pending_no_existing']}")
+        log(
+            "Rows preserved due to non-pending status: "
+            f"{counters['rows_preserved_status_changed']}"
+        )
+        log(
+            "Rows skipped non-pending with no existing row: "
+            f"{counters['rows_skipped_non_pending_no_existing']}"
+        )
         log(f"CSV files written: {counters['csv_files_written']}")
         log(f"Warnings: {counters['warnings']}")
         log(f"Errors: {counters['errors']}")

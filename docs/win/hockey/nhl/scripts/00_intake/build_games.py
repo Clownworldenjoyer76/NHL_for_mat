@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # docs/win/hockey/nhl/scripts/00_intake/build_games.py
 
 from __future__ import annotations
@@ -9,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-SPORTBOOK_DIR = Path("docs/win/hockey/nhl/00_intake/sportsbook")
+RECONCILED_DIR = Path("docs/win/hockey/nhl/00_intake/reconciled")
 GAMES_DIR = Path("docs/win/hockey/nhl/00_intake/games")
 LOG_PATH = Path("docs/win/hockey/nhl/errors/00_intake/build_games.txt")
 
@@ -18,6 +19,7 @@ OUTPUT_SUFFIX = "_nhl_games.csv"
 
 REQUIRED_COLUMNS = [
     "game_id",
+    "sportsbook_event_id",
     "sport",
     "league",
     "game_date",
@@ -28,6 +30,7 @@ REQUIRED_COLUMNS = [
 
 OUTPUT_COLUMNS = [
     "game_id",
+    "sportsbook_event_id",
     "sport",
     "league",
     "game_date",
@@ -59,34 +62,30 @@ def fail(lines: list[str], message: str) -> None:
 
 
 def is_valid_input_file(path: Path) -> bool:
-    name = path.name
-
-    if not name.endswith(INPUT_SUFFIX):
+    if not path.is_file() or path.suffix.lower() != INPUT_SUFFIX:
         return False
 
-    return name.startswith("NHL_") or name.startswith("nhl")
+    return path.name.startswith("NHL_")
 
 
 def extract_date_from_input_name(path: Path) -> str:
     name = path.name
 
-    if not name.endswith(INPUT_SUFFIX):
-        raise ValueError(f"Invalid sportsbook filename format: {name}")
+    if not name.startswith("NHL_") or not name.endswith(INPUT_SUFFIX):
+        raise ValueError(f"Invalid reconciled filename format: {name}")
 
-    if name.startswith("NHL_"):
-        date_value = name[len("NHL_") : -len(INPUT_SUFFIX)]
-    elif name.startswith("nhl"):
-        date_value = name[len("nhl") : -len(INPUT_SUFFIX)].lstrip("_-")
-    else:
-        raise ValueError(f"Invalid sportsbook filename format: {name}")
+    date_value = name[len("NHL_") : -len(INPUT_SUFFIX)]
 
     if not date_value:
-        raise ValueError(f"Missing date in sportsbook filename: {name}")
+        raise ValueError(f"Missing date in reconciled filename: {name}")
 
     return date_value
 
 
-def read_sportsbook_file(path: Path, log_lines: list[str]) -> tuple[str, list[dict[str, str]]]:
+def read_reconciled_file(
+    path: Path,
+    log_lines: list[str],
+) -> tuple[str, list[dict[str, str]]]:
     file_date = extract_date_from_input_name(path)
 
     with path.open("r", newline="", encoding="utf-8-sig") as infile:
@@ -104,6 +103,8 @@ def read_sportsbook_file(path: Path, log_lines: list[str]) -> tuple[str, list[di
 
         rows: list[dict[str, str]] = []
         game_dates_seen: set[str] = set()
+        game_ids_seen: set[str] = set()
+        sportsbook_ids_seen: set[str] = set()
 
         for row_number, row in enumerate(reader, start=2):
             output_row = {col: (row.get(col) or "").strip() for col in OUTPUT_COLUMNS}
@@ -115,11 +116,25 @@ def read_sportsbook_file(path: Path, log_lines: list[str]) -> tuple[str, list[di
                     f"{path} row {row_number} missing values for: {', '.join(missing_values)}",
                 )
 
+            game_id = output_row["game_id"]
+            sportsbook_event_id = output_row["sportsbook_event_id"]
+
+            if game_id in game_ids_seen:
+                fail(log_lines, f"{path} has duplicate official game_id: {game_id}")
+            game_ids_seen.add(game_id)
+
+            if sportsbook_event_id in sportsbook_ids_seen:
+                fail(
+                    log_lines,
+                    f"{path} has duplicate sportsbook_event_id: {sportsbook_event_id}",
+                )
+            sportsbook_ids_seen.add(sportsbook_event_id)
+
             game_dates_seen.add(output_row["game_date"])
             rows.append(output_row)
 
     if not rows:
-        fail(log_lines, f"{path} contains no game rows.")
+        fail(log_lines, f"{path} contains no reconciled game rows.")
 
     if len(game_dates_seen) != 1:
         fail(
@@ -166,31 +181,33 @@ def main() -> None:
     log_lines = [
         "NHL build_games.py summary",
         f"Started: {now_stamp()}",
-        f"Input directory: {SPORTBOOK_DIR}",
+        f"Input directory: {RECONCILED_DIR}",
         f"Output directory: {GAMES_DIR}",
         f"Log path: {LOG_PATH}",
+        "Canonical game_id source: official NHL schedule via reconcile_game_ids.py",
         "",
     ]
 
-    if not SPORTBOOK_DIR.exists():
-        fail(log_lines, f"Sportsbook directory does not exist: {SPORTBOOK_DIR}")
+    if not RECONCILED_DIR.exists():
+        fail(log_lines, f"Reconciled directory does not exist: {RECONCILED_DIR}")
 
-    sportsbook_files = sorted(
-        path for path in SPORTBOOK_DIR.iterdir()
-        if path.is_file() and is_valid_input_file(path)
+    reconciled_files = sorted(
+        path
+        for path in RECONCILED_DIR.iterdir()
+        if is_valid_input_file(path)
     )
 
-    if not sportsbook_files:
-        fail(log_lines, f"No sportsbook files found in {SPORTBOOK_DIR}")
+    if not reconciled_files:
+        fail(log_lines, f"No reconciled NHL files found in {RECONCILED_DIR}")
 
     valid_dates: set[str] = set()
     written_files: list[Path] = []
     total_rows = 0
 
-    for sportsbook_path in sportsbook_files:
-        log_lines.append(f"Processing sportsbook file: {sportsbook_path}")
+    for reconciled_path in reconciled_files:
+        log_lines.append(f"Processing reconciled file: {reconciled_path}")
 
-        game_date, rows = read_sportsbook_file(sportsbook_path, log_lines)
+        game_date, rows = read_reconciled_file(reconciled_path, log_lines)
 
         valid_dates.add(game_date)
         total_rows += len(rows)
@@ -208,9 +225,9 @@ def main() -> None:
     log_lines.extend(
         [
             "Completed successfully.",
-            f"Sportsbook files processed: {len(sportsbook_files)}",
+            f"Reconciled files processed: {len(reconciled_files)}",
             f"Games files written: {len(written_files)}",
-            f"Total rows written: {total_rows}",
+            f"Total official NHL game rows written: {total_rows}",
             f"Finished: {now_stamp()}",
         ]
     )
@@ -228,9 +245,10 @@ if __name__ == "__main__":
         lines = [
             "NHL build_games.py summary",
             f"Started: {now_stamp()}",
-            f"Input directory: {SPORTBOOK_DIR}",
+            f"Input directory: {RECONCILED_DIR}",
             f"Output directory: {GAMES_DIR}",
             f"Log path: {LOG_PATH}",
+            "Canonical game_id source: official NHL schedule via reconcile_game_ids.py",
             "",
             f"ERROR: Unhandled exception: {exc}",
             "",

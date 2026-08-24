@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+
 import re
 import traceback
 from pathlib import Path
@@ -10,7 +13,6 @@ BASE_DIR = Path("docs/win/hockey/nhl")
 
 INPUT_DIR = BASE_DIR / "00_intake" / "predictions" / "scraper"
 OUTPUT_DIR = BASE_DIR / "00_intake" / "predictions"
-SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
 
 MAP_PATH = BASE_DIR / "config" / "mapping" / "team_map_nhl.csv"
 NO_MAP_PATH = BASE_DIR / "config" / "mapping" / "no_map_nhl_pred.csv"
@@ -137,7 +139,12 @@ def load_team_map() -> dict:
         raw_value = str(row.get(source_col, "")).strip()
         mapped_value = str(row.get(target_col, "")).strip()
 
-        if raw_value and mapped_value and raw_value.lower() != "nan" and mapped_value.lower() != "nan":
+        if (
+            raw_value
+            and mapped_value
+            and raw_value.lower() != "nan"
+            and mapped_value.lower() != "nan"
+        ):
             raw_key = hardcoded_normalize_team(strip_record(raw_value))
             mapped_clean = hardcoded_normalize_team(strip_record(mapped_value))
             mapping[raw_key] = mapped_clean
@@ -197,64 +204,6 @@ def parse_float(value):
         return float(str(value).strip())
     except Exception:
         return ""
-
-
-def load_sportsbook_for_date(date_val: str, team_map: dict, no_map_records: list) -> pd.DataFrame:
-    sportsbook_path = SPORTSBOOK_DIR / f"NHL_{date_val}.csv"
-
-    if not sportsbook_path.exists():
-        log(f"WARNING: sportsbook missing for game_id match: {sportsbook_path}")
-        return pd.DataFrame()
-
-    sportsbook = pd.read_csv(sportsbook_path)
-
-    required_columns = ["game_id", "game_date", "home_team", "away_team"]
-    missing_columns = [col for col in required_columns if col not in sportsbook.columns]
-
-    if missing_columns:
-        log(
-            f"WARNING: sportsbook file missing required columns for game_id match: "
-            f"{sportsbook_path} | missing={missing_columns}"
-        )
-        return pd.DataFrame()
-
-    sportsbook["home_team_norm"] = sportsbook["home_team"].apply(
-        lambda value: normalize_team(value, team_map, no_map_records, str(sportsbook_path))
-    )
-    sportsbook["away_team_norm"] = sportsbook["away_team"].apply(
-        lambda value: normalize_team(value, team_map, no_map_records, str(sportsbook_path))
-    )
-    sportsbook["game_date_norm"] = sportsbook["game_date"].astype(str).str.strip()
-
-    log(f"Loaded sportsbook file for game_id match: {sportsbook_path} ({len(sportsbook)} rows)")
-
-    return sportsbook
-
-
-def get_game_id(
-    sportsbook: pd.DataFrame,
-    date_val: str,
-    home_team: str,
-    away_team: str,
-) -> str:
-    if sportsbook.empty:
-        return ""
-
-    matches = sportsbook[
-        (sportsbook["game_date_norm"] == date_val)
-        & (sportsbook["home_team_norm"] == home_team)
-        & (sportsbook["away_team_norm"] == away_team)
-    ]
-
-    if matches.empty:
-        log(f"NO GAME_ID MATCH: {away_team} @ {home_team} on {date_val}")
-        return ""
-
-    if len(matches) > 1:
-        log(f"WARNING: MULTIPLE GAME_ID MATCHES: {away_team} @ {home_team} on {date_val}")
-        return ""
-
-    return str(matches.iloc[0]["game_id"]).strip()
 
 
 def write_no_map_file(no_map_records: list) -> None:
@@ -328,7 +277,6 @@ def transform_prediction_file(
         return
 
     for date_val, group in upcoming.groupby("game_date"):
-        sportsbook = load_sportsbook_for_date(date_val, team_map, no_map_records)
         output_rows = []
 
         for _, row in group.iterrows():
@@ -339,22 +287,19 @@ def transform_prediction_file(
             home_projected_goals = parse_float(row["proj_score_2"])
 
             if away_projected_goals != "" and home_projected_goals != "":
-                total_projected_goals = round(away_projected_goals + home_projected_goals, 2)
+                total_projected_goals = round(
+                    away_projected_goals + home_projected_goals,
+                    2,
+                )
             else:
                 total_projected_goals = ""
-
-            game_id = get_game_id(
-                sportsbook=sportsbook,
-                date_val=date_val,
-                home_team=home_team,
-                away_team=away_team,
-            )
 
             output_rows.append(
                 {
                     "sport": "hockey",
                     "league": "nhl",
-                    "game_id": game_id,
+                    # Official NHL game_id is assigned only by reconcile_game_ids.py.
+                    "game_id": "",
                     "game_date": date_val,
                     "game_time": row["game_time"],
                     "home_team": home_team,
@@ -374,7 +319,10 @@ def transform_prediction_file(
         output.to_csv(output_path, index=False)
 
         files_written.append((str(output_path), len(output)))
-        log(f"WROTE prediction output: {output_path} ({len(output)} rows)")
+        log(
+            f"WROTE unreconciled prediction output: {output_path} "
+            f"({len(output)} rows); game_id left blank for reconcile_game_ids.py"
+        )
 
 
 def main():
@@ -383,9 +331,9 @@ def main():
     try:
         log(f"Input directory: {INPUT_DIR}")
         log(f"Output directory: {OUTPUT_DIR}")
-        log(f"Sportsbook directory: {SPORTSBOOK_DIR}")
         log(f"Mapping file: {MAP_PATH}")
         log(f"No-map file: {NO_MAP_PATH}")
+        log("Official NHL game_id assignment is deferred to reconcile_game_ids.py")
 
         team_map = load_team_map()
         no_map_records = []
