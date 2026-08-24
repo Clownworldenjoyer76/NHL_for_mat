@@ -1,0 +1,8 @@
+=== pull_nhl_schedule RUN 2026-08-24T13:16:43.090867-04:00 ===
+2026-08-24T13:16:43.092274-04:00 | Target dates discovered: 1
+2026-08-24T13:16:43.092309-04:00 | Target date: 2026_06_14
+2026-08-24T13:16:43.372069-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_14.csv rows=1 using official NHL game_id values
+2026-08-24T13:16:43.372105-04:00 | --- SUMMARY ---
+2026-08-24T13:16:43.372127-04:00 | Schedule files written: 1
+2026-08-24T13:16:43.372150-04:00 | Official NHL games written: 1
+2026-08-24T13:16:43.372170-04:00 | STATUS: SUCCESS

@@ -1,0 +1,13 @@
+NHL GAME ID RECONCILIATION TEST
+TEST_DATE=2026_06_14
+STATUS=PASSED
+
+schedule_rows=1
+sportsbook_rows=1
+prediction_rows=1
+reconciled_rows=1
+audit_rows=2
+games_rows=1
+
+official_nhl_game_ids=2025030416
+sportsbook_event_ids=70558080
