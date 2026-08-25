@@ -43,44 +43,55 @@ jobs:
 
       - name: Create output directories
         run: |
-          mkdir -p docs/win/hockey/nhl/errors/00_intake/
-          mkdir -p docs/win/hockey/nhl/00_intake/games/
-          mkdir -p docs/win/hockey/nhl/00_intake/drat_raw/
-          mkdir -p docs/win/hockey/nhl/00_intake/drat_raw/rows/
-          mkdir -p docs/win/hockey/nhl/00_intake/predictions/
-          mkdir -p docs/win/hockey/nhl/00_intake/predictions/scraper/
-          mkdir -p docs/win/hockey/nhl/config/mapping/
-
-      - name: NHL Build Games
-        run: python docs/win/hockey/nhl/scripts/00_intake/build_games.py
+          mkdir -p hockey/nhl/errors/00_intake/
+          mkdir -p hockey/nhl/00_intake/games/
+          mkdir -p hockey/nhl/00_intake/drat_raw/
+          mkdir -p hockey/nhl/00_intake/drat_raw/rows/
+          mkdir -p hockey/nhl/00_intake/predictions/
+          mkdir -p hockey/nhl/00_intake/predictions/scraper/
+          mkdir -p hockey/nhl/00_intake/nhl_schedule/
+          mkdir -p hockey/nhl/00_intake/reconciled/
+          mkdir -p hockey/nhl/00_intake/reconciled/audit/
+          mkdir -p hockey/nhl/config/mapping/
 
       - name: NHL Drat Scraper
-        run: python docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
+        run: python hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
 
       - name: NHL Transform
-        run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+        run: python hockey/nhl/scripts/00_intake/transform_hockey.py
 
       - name: NHL Prediction Name Normalization
-        run: python docs/win/hockey/nhl/scripts/00_intake/pred_name_normalization.py
-     
+        run: python hockey/nhl/scripts/00_intake/pred_name_normalization.py
+
+      - name: Pull Official NHL Schedule
+        run: python hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+
+      - name: Reconcile NHL Game IDs
+        run: python hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+
+      - name: NHL Build Games
+        run: python hockey/nhl/scripts/00_intake/build_games.py
+
       - name: Print NHL intake logs on failure
         if: failure()
         run: |
           echo "=== NHL intake logs ==="
-          find docs/win/hockey/nhl/errors/00_intake -type f -name "*.txt" -print -exec cat {} \;
+          find hockey/nhl/errors/00_intake -type f -name "*.txt" -print -exec cat {} \;
 
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add docs/win/hockey/nhl/errors/00_intake/
-          git add docs/win/hockey/nhl/00_intake/games/
-          git add docs/win/hockey/nhl/00_intake/drat_raw/
-          git add docs/win/hockey/nhl/00_intake/drat_raw/rows/
-          git add docs/win/hockey/nhl/00_intake/predictions/
-          git add docs/win/hockey/nhl/00_intake/predictions/scraper/
-          git add docs/win/hockey/nhl/config/mapping/
+          git add hockey/nhl/errors/00_intake/
+          git add hockey/nhl/00_intake/games/
+          git add hockey/nhl/00_intake/drat_raw/
+          git add hockey/nhl/00_intake/drat_raw/rows/
+          git add hockey/nhl/00_intake/predictions/
+          git add hockey/nhl/00_intake/predictions/scraper/
+          git add hockey/nhl/00_intake/nhl_schedule/
+          git add hockey/nhl/00_intake/reconciled/
+          git add hockey/nhl/config/mapping/
 
           git diff --cached --quiet || git commit -m "chore: nhl intake run $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main
