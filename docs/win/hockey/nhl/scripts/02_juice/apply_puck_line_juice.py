@@ -19,8 +19,6 @@ JUICE_FILE = BASE_DIR / "config" / "juice" / "nhl_puck_line_juice.csv"
 ERROR_DIR = BASE_DIR / "errors" / "02_juice"
 LOG_FILE = ERROR_DIR / "apply_puck_line_juice.txt"
 
-MIN_DECIMAL = 1.01
-
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -89,9 +87,7 @@ def wipe_outputs() -> int:
         path.unlink()
         removed += 1
 
-    log(
-        f"Wiped puck_line output/quarantine CSVs: {removed}"
-    )
+    log(f"Wiped puck_line output/quarantine CSVs: {removed}")
     return removed
 
 
@@ -405,6 +401,8 @@ def process_file(
             or not math.isfinite(
                 home_juiced_decimal
             )
+            or away_juiced_decimal <= 1
+            or home_juiced_decimal <= 1
         ):
             reason = "bad_juiced_decimal"
             skipped_bad += 1
@@ -417,33 +415,11 @@ def process_file(
             log(
                 f"ROW QUARANTINE: "
                 f"{path.name} idx={idx} "
-                f"reason={reason}"
+                f"reason={reason} "
+                f"away_juiced_decimal={away_juiced_decimal} "
+                f"home_juiced_decimal={home_juiced_decimal}"
             )
             continue
-
-        if away_juiced_decimal <= 1:
-            log(
-                f"ROW CAP: {path.name} "
-                f"idx={idx} side=away "
-                f"original_juiced_decimal="
-                f"{away_juiced_decimal} "
-                f"capped_to={MIN_DECIMAL}"
-            )
-            away_juiced_decimal = (
-                MIN_DECIMAL
-            )
-
-        if home_juiced_decimal <= 1:
-            log(
-                f"ROW CAP: {path.name} "
-                f"idx={idx} side=home "
-                f"original_juiced_decimal="
-                f"{home_juiced_decimal} "
-                f"capped_to={MIN_DECIMAL}"
-            )
-            home_juiced_decimal = (
-                MIN_DECIMAL
-            )
 
         away_juiced_prob = (
             1 / away_juiced_decimal

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-# docs/win/hockey/nhl/scripts/03_edges/compute_edges.py
+# hockey/nhl/scripts/03_edges/compute_edges.py
 
+import sys
 import traceback
 from datetime import datetime, UTC
 from pathlib import Path
@@ -8,9 +9,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-INPUT_DIR = Path("docs/win/hockey/nhl/02_juice")
-OUTPUT_DIR = Path("docs/win/hockey/nhl/03_edges")
-ERROR_DIR = Path("docs/win/hockey/nhl/errors/03_edges")
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+INPUT_DIR = BASE_DIR / "02_juice"
+OUTPUT_DIR = BASE_DIR / "03_edges"
+ERROR_DIR = BASE_DIR / "errors" / "03_edges"
 LOG_FILE = ERROR_DIR / "compute_edges.txt"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -33,11 +37,13 @@ def _log(msg: str, level: str = "INFO"):
 def _write_summary(summary: dict, per_file: list) -> None:
     lines = [
         "",
-        "=" * 60,
+        "=" * 72,
         f"SUMMARY  {_now()}",
-        "=" * 60,
+        "=" * 72,
         f"  files_processed  : {summary['files_processed']}",
         f"  rows_processed   : {summary['rows_processed']}",
+        f"  rows_accepted    : {summary['rows_accepted']}",
+        f"  rows_quarantined : {summary['rows_quarantined']}",
         f"  moneyline_files  : {summary['moneyline_files']}",
         f"  puck_line_files  : {summary['puck_line_files']}",
         f"  total_files      : {summary['total_files']}",
@@ -46,22 +52,34 @@ def _write_summary(summary: dict, per_file: list) -> None:
         f"  schema_errors    : {summary['schema_errors']}",
         f"  errors           : {summary['errors']}",
         "",
-        f"  {'file':<48} {'market':<12} {'rows':>5} {'null_edges':>10} {'status':>12}",
+        (
+            f"  {'file':<42} {'market':<12} {'rows':>5} "
+            f"{'accepted':>8} {'quarantine':>10} {'null_edges':>10} {'status':>12}"
+        ),
     ]
 
     for pf in per_file:
         lines.append(
-            f"  {pf['name']:<48} {pf['market']:<12} {pf['rows']:>5} "
-            f"{pf['null_edges']:>10} {pf['status']:>12}"
+            f"  {pf['name']:<42} "
+            f"{pf['market']:<12} "
+            f"{pf['rows']:>5} "
+            f"{pf['accepted']:>8} "
+            f"{pf['quarantined']:>10} "
+            f"{pf['null_edges']:>10} "
+            f"{pf['status']:>12}"
         )
 
     status = (
         "SUCCESS"
         if summary["errors"] == 0 and summary["schema_errors"] == 0
-        else "COMPLETED WITH ERRORS"
+        else "FAILED"
     )
 
-    lines += ["", f"STATUS: {status}", "=" * 60]
+    lines += [
+        "",
+        f"STATUS: {status}",
+        "=" * 72,
+    ]
 
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
@@ -72,9 +90,16 @@ def _write_summary(summary: dict, per_file: list) -> None:
 # =========================
 
 def validate_columns(df, required_cols, file_path):
-    missing = [c for c in required_cols if c not in df.columns]
+    missing = [
+        col
+        for col in required_cols
+        if col not in df.columns
+    ]
+
     if missing:
-        raise ValueError(f"{file_path.name} missing required columns: {missing}")
+        raise ValueError(
+            f"{file_path.name} missing required columns: {missing}"
+        )
 
 
 def atomic_write_csv(df, output_path):
@@ -86,34 +111,147 @@ def atomic_write_csv(df, output_path):
 def to_numeric(df, cols):
     for col in cols:
         if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce")
+            df[col] = pd.to_numeric(
+                df[col],
+                errors="coerce",
+            )
+
     return df
 
 
 def safe_edge_decimal(book_decimal, model_prob):
-    d = pd.to_numeric(book_decimal, errors="coerce")
-    p = pd.to_numeric(model_prob, errors="coerce")
+    d = pd.to_numeric(
+        book_decimal,
+        errors="coerce",
+    )
+    p = pd.to_numeric(
+        model_prob,
+        errors="coerce",
+    )
 
-    out = pd.Series(np.nan, index=p.index, dtype="float64")
-    valid = d.notna() & p.notna() & np.isfinite(d) & np.isfinite(p) & (d > 1) & (p > 0) & (p < 1)
+    out = pd.Series(
+        np.nan,
+        index=p.index,
+        dtype="float64",
+    )
 
-    out.loc[valid] = (p.loc[valid] * d.loc[valid]) - 1
+    valid = (
+        d.notna()
+        & p.notna()
+        & np.isfinite(d)
+        & np.isfinite(p)
+        & (d > 1)
+        & (p > 0)
+        & (p < 1)
+    )
+
+    out.loc[valid] = (
+        p.loc[valid] * d.loc[valid]
+    ) - 1
+
     return out
 
 
 def safe_edge_pct(book_decimal, model_prob):
-    d = pd.to_numeric(book_decimal, errors="coerce")
-    p = pd.to_numeric(model_prob, errors="coerce")
+    d = pd.to_numeric(
+        book_decimal,
+        errors="coerce",
+    )
+    p = pd.to_numeric(
+        model_prob,
+        errors="coerce",
+    )
 
-    out = pd.Series(np.nan, index=p.index, dtype="float64")
-    valid = d.notna() & p.notna() & np.isfinite(d) & np.isfinite(p) & (d > 1) & (p > 0) & (p < 1)
+    out = pd.Series(
+        np.nan,
+        index=p.index,
+        dtype="float64",
+    )
 
-    out.loc[valid] = p.loc[valid] - (1 / d.loc[valid])
+    valid = (
+        d.notna()
+        & p.notna()
+        & np.isfinite(d)
+        & np.isfinite(p)
+        & (d > 1)
+        & (p > 0)
+        & (p < 1)
+    )
+
+    out.loc[valid] = (
+        p.loc[valid]
+        - (1 / d.loc[valid])
+    )
+
     return out
 
 
-def count_null_edges(df, cols):
-    return sum(df[c].isna().sum() for c in cols if c in df.columns)
+def split_null_edge_rows(
+    df: pd.DataFrame,
+    edge_columns: list[str],
+    input_path: Path,
+):
+    null_mask = df[edge_columns].isna().any(axis=1)
+
+    null_edge_values = int(
+        df[edge_columns]
+        .isna()
+        .sum()
+        .sum()
+    )
+
+    accepted_df = df.loc[
+        ~null_mask
+    ].copy()
+
+    quarantine_df = df.loc[
+        null_mask
+    ].copy()
+
+    quarantine_path = (
+        ERROR_DIR
+        / f"{input_path.stem}_null_edges_quarantine.csv"
+    )
+
+    if quarantine_df.empty:
+        if quarantine_path.exists():
+            quarantine_path.unlink()
+
+        return (
+            accepted_df,
+            quarantine_df,
+            null_edge_values,
+            None,
+        )
+
+    def rejection_reason(row):
+        missing = [
+            col
+            for col in edge_columns
+            if pd.isna(row[col])
+        ]
+
+        return (
+            "null_edge:"
+            + "|".join(missing)
+        )
+
+    quarantine_df["rejection_reason"] = quarantine_df.apply(
+        rejection_reason,
+        axis=1,
+    )
+
+    atomic_write_csv(
+        quarantine_df,
+        quarantine_path,
+    )
+
+    return (
+        accepted_df,
+        quarantine_df,
+        null_edge_values,
+        quarantine_path,
+    )
 
 
 # =========================
@@ -128,12 +266,24 @@ def compute_moneyline_edges(df, file_path):
         "away_dk_moneyline_decimal",
         "home_dk_moneyline_decimal",
     ]
-    validate_columns(df, required_cols, file_path)
 
-    df = to_numeric(df, required_cols[1:])
+    validate_columns(
+        df,
+        required_cols,
+        file_path,
+    )
 
-    df["away_model_prob_moneyline"] = df["away_normalized_prob_moneyline"]
-    df["home_model_prob_moneyline"] = df["home_normalized_prob_moneyline"]
+    df = to_numeric(
+        df,
+        required_cols[1:],
+    )
+
+    df["away_model_prob_moneyline"] = (
+        df["away_normalized_prob_moneyline"]
+    )
+    df["home_model_prob_moneyline"] = (
+        df["home_normalized_prob_moneyline"]
+    )
 
     df["away_edge_decimal_moneyline"] = safe_edge_decimal(
         df["away_dk_moneyline_decimal"],
@@ -153,17 +303,14 @@ def compute_moneyline_edges(df, file_path):
         df["home_model_prob_moneyline"],
     )
 
-    null_edges = count_null_edges(
-        df,
-        [
-            "away_edge_decimal_moneyline",
-            "home_edge_decimal_moneyline",
-            "away_edge_pct_moneyline",
-            "home_edge_pct_moneyline",
-        ],
-    )
+    edge_columns = [
+        "away_edge_decimal_moneyline",
+        "home_edge_decimal_moneyline",
+        "away_edge_pct_moneyline",
+        "home_edge_pct_moneyline",
+    ]
 
-    return df, null_edges
+    return df, edge_columns
 
 
 # =========================
@@ -178,12 +325,24 @@ def compute_puck_line_edges(df, file_path):
         "away_dk_puck_line_decimal",
         "home_dk_puck_line_decimal",
     ]
-    validate_columns(df, required_cols, file_path)
 
-    df = to_numeric(df, required_cols[1:])
+    validate_columns(
+        df,
+        required_cols,
+        file_path,
+    )
 
-    df["away_model_prob_puck_line"] = df["away_normalized_prob_puck_line"]
-    df["home_model_prob_puck_line"] = df["home_normalized_prob_puck_line"]
+    df = to_numeric(
+        df,
+        required_cols[1:],
+    )
+
+    df["away_model_prob_puck_line"] = (
+        df["away_normalized_prob_puck_line"]
+    )
+    df["home_model_prob_puck_line"] = (
+        df["home_normalized_prob_puck_line"]
+    )
 
     df["away_edge_decimal_puck_line"] = safe_edge_decimal(
         df["away_dk_puck_line_decimal"],
@@ -203,17 +362,14 @@ def compute_puck_line_edges(df, file_path):
         df["home_model_prob_puck_line"],
     )
 
-    null_edges = count_null_edges(
-        df,
-        [
-            "away_edge_decimal_puck_line",
-            "home_edge_decimal_puck_line",
-            "away_edge_pct_puck_line",
-            "home_edge_pct_puck_line",
-        ],
-    )
+    edge_columns = [
+        "away_edge_decimal_puck_line",
+        "home_edge_decimal_puck_line",
+        "away_edge_pct_puck_line",
+        "home_edge_pct_puck_line",
+    ]
 
-    return df, null_edges
+    return df, edge_columns
 
 
 # =========================
@@ -228,12 +384,24 @@ def compute_total_edges(df, file_path):
         "dk_total_over_decimal",
         "dk_total_under_decimal",
     ]
-    validate_columns(df, required_cols, file_path)
 
-    df = to_numeric(df, required_cols[1:])
+    validate_columns(
+        df,
+        required_cols,
+        file_path,
+    )
 
-    df["over_model_prob_total"] = df["over_normalized_prob_total"]
-    df["under_model_prob_total"] = df["under_normalized_prob_total"]
+    df = to_numeric(
+        df,
+        required_cols[1:],
+    )
+
+    df["over_model_prob_total"] = (
+        df["over_normalized_prob_total"]
+    )
+    df["under_model_prob_total"] = (
+        df["under_normalized_prob_total"]
+    )
 
     df["over_edge_decimal_total"] = safe_edge_decimal(
         df["dk_total_over_decimal"],
@@ -253,28 +421,36 @@ def compute_total_edges(df, file_path):
         df["under_model_prob_total"],
     )
 
-    null_edges = count_null_edges(
-        df,
-        [
-            "over_edge_decimal_total",
-            "under_edge_decimal_total",
-            "over_edge_pct_total",
-            "under_edge_pct_total",
-        ],
-    )
+    edge_columns = [
+        "over_edge_decimal_total",
+        "under_edge_decimal_total",
+        "over_edge_pct_total",
+        "under_edge_pct_total",
+    ]
 
-    return df, null_edges
+    return df, edge_columns
 
 
 # =========================
 # DRIVER
 # =========================
 
-def process_pattern(pattern, compute_fn, market_label, summary, per_file):
-    input_files = sorted(INPUT_DIR.glob(pattern))
+def process_pattern(
+    pattern,
+    compute_fn,
+    market_label,
+    summary,
+    per_file,
+):
+    input_files = sorted(
+        INPUT_DIR.glob(pattern)
+    )
 
     if not input_files:
-        _log(f"No input files found for pattern: {pattern}", "WARN")
+        _log(
+            f"No input files found for pattern: {pattern}",
+            "WARN",
+        )
         return
 
     for input_path in input_files:
@@ -282,17 +458,26 @@ def process_pattern(pattern, compute_fn, market_label, summary, per_file):
             "name": input_path.name,
             "market": market_label,
             "rows": 0,
+            "accepted": 0,
+            "quarantined": 0,
             "null_edges": 0,
             "status": "ok",
         }
 
-        _log(f"--- FILE: {input_path.name}  market={market_label}")
+        _log(
+            f"--- FILE: {input_path.name} "
+            f"market={market_label}"
+        )
 
         try:
-            df = pd.read_csv(input_path)
+            df = pd.read_csv(
+                input_path
+            )
 
             if df.empty:
-                _log(f"{input_path.name} empty — skipping")
+                _log(
+                    f"{input_path.name} empty — skipping"
+                )
                 pf["status"] = "empty"
                 summary["skipped"] += 1
                 per_file.append(pf)
@@ -301,29 +486,91 @@ def process_pattern(pattern, compute_fn, market_label, summary, per_file):
             pf["rows"] = len(df)
             summary["rows_processed"] += len(df)
 
-            out_df, null_edges = compute_fn(df, input_path)
+            out_df, edge_columns = compute_fn(
+                df,
+                input_path,
+            )
 
-            pf["null_edges"] = null_edges
-            summary["null_edges"] += null_edges
+            (
+                accepted_df,
+                quarantine_df,
+                null_edges,
+                quarantine_path,
+            ) = split_null_edge_rows(
+                out_df,
+                edge_columns,
+                input_path,
+            )
 
-            if null_edges > 0:
-                _log(f"{input_path.name} | {null_edges} null edge values", "WARN")
+            pf["accepted"] = len(
+                accepted_df
+            )
+            pf["quarantined"] = len(
+                quarantine_df
+            )
+            pf["null_edges"] = (
+                null_edges
+            )
 
-            output_path = OUTPUT_DIR / input_path.name
-            atomic_write_csv(out_df, output_path)
+            summary["rows_accepted"] += len(
+                accepted_df
+            )
+            summary["rows_quarantined"] += len(
+                quarantine_df
+            )
+            summary["null_edges"] += (
+                null_edges
+            )
+
+            if not quarantine_df.empty:
+                pf["status"] = "quarantined"
+
+                _log(
+                    f"{input_path.name} | "
+                    f"quarantined_rows={len(quarantine_df)} "
+                    f"null_edge_values={null_edges}",
+                    "WARN",
+                )
+
+                _log(
+                    f"WROTE QUARANTINE: "
+                    f"{quarantine_path}"
+                )
+
+            output_path = (
+                OUTPUT_DIR
+                / input_path.name
+            )
+
+            atomic_write_csv(
+                accepted_df,
+                output_path,
+            )
 
             summary["files_processed"] += 1
-            summary[f"{market_label}_files"] += 1
+            summary[
+                f"{market_label}_files"
+            ] += 1
 
-            _log(f"WROTE: {output_path} ({len(out_df)} rows, {null_edges} null edge values)")
+            _log(
+                f"WROTE: {output_path} "
+                f"({len(accepted_df)} accepted rows)"
+            )
 
         except ValueError as e:
-            _log(f"{input_path.name} schema error: {e}", "ERROR")
+            _log(
+                f"{input_path.name} schema error: {e}",
+                "ERROR",
+            )
             pf["status"] = "schema_error"
             summary["schema_errors"] += 1
 
         except Exception as e:
-            _log(f"{input_path.name} FAILED: {e}\n{traceback.format_exc()}", "ERROR")
+            _log(
+                f"{input_path.name} FAILED: {e}\n"
+                f"{traceback.format_exc()}",
+                "ERROR",
+            )
             pf["status"] = "error"
             summary["errors"] += 1
 
@@ -335,12 +582,20 @@ def process_pattern(pattern, compute_fn, market_label, summary, per_file):
 # =========================
 
 def main():
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(f"=== compute_edges RUN {_now()} ===\n")
+    with open(
+        LOG_FILE,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            f"=== compute_edges RUN {_now()} ===\n"
+        )
 
     summary = {
         "files_processed": 0,
         "rows_processed": 0,
+        "rows_accepted": 0,
+        "rows_quarantined": 0,
         "moneyline_files": 0,
         "puck_line_files": 0,
         "total_files": 0,
@@ -352,11 +607,25 @@ def main():
 
     per_file = []
 
-    _log(f"INPUT_DIR : {INPUT_DIR}")
-    _log(f"OUTPUT_DIR: {OUTPUT_DIR}")
+    _log(
+        f"INPUT_DIR : {INPUT_DIR}"
+    )
+    _log(
+        f"OUTPUT_DIR: {OUTPUT_DIR}"
+    )
+    _log(
+        f"QUARANTINE_DIR: {ERROR_DIR}"
+    )
 
-    for output_file in OUTPUT_DIR.glob("*.csv"):
+    for output_file in OUTPUT_DIR.glob(
+        "*.csv"
+    ):
         output_file.unlink()
+
+    for quarantine_file in ERROR_DIR.glob(
+        "*_null_edges_quarantine.csv"
+    ):
+        quarantine_file.unlink()
 
     try:
         process_pattern(
@@ -366,6 +635,7 @@ def main():
             summary,
             per_file,
         )
+
         process_pattern(
             "*_NHL_puck_line.csv",
             compute_puck_line_edges,
@@ -373,6 +643,7 @@ def main():
             summary,
             per_file,
         )
+
         process_pattern(
             "*_NHL_total.csv",
             compute_total_edges,
@@ -382,12 +653,38 @@ def main():
         )
 
     except Exception as e:
-        _log(f"FATAL: {e}\n{traceback.format_exc()}", "ERROR")
-        _write_summary(summary, per_file)
+        summary["errors"] += 1
+
+        _log(
+            f"FATAL: {e}\n"
+            f"{traceback.format_exc()}",
+            "ERROR",
+        )
+
+        _write_summary(
+            summary,
+            per_file,
+        )
+
         raise
 
-    _write_summary(summary, per_file)
-    print("compute_edges complete.")
+    _write_summary(
+        summary,
+        per_file,
+    )
+
+    if (
+        summary["schema_errors"] > 0
+        or summary["errors"] > 0
+    ):
+        print(
+            "compute_edges failed."
+        )
+        sys.exit(1)
+
+    print(
+        "compute_edges complete."
+    )
 
 
 if __name__ == "__main__":
