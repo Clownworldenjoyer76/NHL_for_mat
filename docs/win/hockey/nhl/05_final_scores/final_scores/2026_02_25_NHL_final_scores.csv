@@ -1,9 +1,9 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_02_25","2026_02_25_New Jersey Devils_Buffalo Sabres","Buffalo Sabres","New Jersey Devils","2","1","3","1","-1"
-"hockey","nhl","2026_02_25","2026_02_25_Washington Capitals_Philadelphia Flyers","Philadelphia Flyers","Washington Capitals","1","3","4","-2","2"
-"hockey","nhl","2026_02_25","2026_02_25_Tampa Bay Lightning_Toronto Maple Leafs","Toronto Maple Leafs","Tampa Bay Lightning","2","4","6","-2","2"
-"hockey","nhl","2026_02_25","2026_02_25_Vancouver Canucks_Winnipeg Jets","Winnipeg Jets","Vancouver Canucks","3","2","5","1","-1"
-"hockey","nhl","2026_02_25","2026_02_25_Utah Mammoth_Colorado Avalanche","Colorado Avalanche","Utah Mammoth","4","2","6","2","-2"
-"hockey","nhl","2026_02_25","2026_02_25_Anaheim Ducks_Edmonton Oilers","Edmonton Oilers","Anaheim Ducks","5","6","11","-1","1"
-"hockey","nhl","2026_02_25","2026_02_25_Dallas Stars_Seattle Kraken","Seattle Kraken","Dallas Stars","1","4","5","-3","3"
-"hockey","nhl","2026_02_25","2026_02_25_Los Angeles Kings_Vegas Golden Knights","Vegas Golden Knights","Los Angeles Kings","6","4","10","2","-2"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_02_25,2025020910,Sabres,Devils,2,1,3,1,-1
+hockey,nhl,2026_02_25,2025020911,Flyers,Capitals,1,3,4,-2,2
+hockey,nhl,2026_02_25,2025020912,Maple Leafs,Lightning,2,4,6,-2,2
+hockey,nhl,2026_02_25,2025020913,Kraken,Stars,1,4,5,-3,3
+hockey,nhl,2026_02_25,2025020914,Avalanche,Mammoth,4,2,6,2,-2
+hockey,nhl,2026_02_25,2025020915,Jets,Canucks,3,2,5,1,-1
+hockey,nhl,2026_02_25,2025020916,Golden Knights,Kings,6,4,10,2,-2
+hockey,nhl,2026_02_25,2025020917,Oilers,Ducks,5,6,11,-1,1

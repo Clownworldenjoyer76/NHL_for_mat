@@ -1,2 +1,0 @@
-sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
-hockey,NHL,2026_05_08,21:30,70558022,Vegas Golden Knights,Anaheim Ducks,puck_line,home,1.5,home_puck_line,-250.0,1.4,0.8136734258569597,0.1391427961997435,0.1391427961997435,0.3478569904993587,2026_05_08_NHL.csv,6,2,8,4,-4,2026_05_08_NHL_final_scores.csv,Loss

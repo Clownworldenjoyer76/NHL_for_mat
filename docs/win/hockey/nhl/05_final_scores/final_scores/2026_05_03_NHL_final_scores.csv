@@ -1,2 +1,3 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_05_03","dd40fd7156c9a60a0ce8365206fc9310","Minnesota Wild","Colorado Avalanche","6","9","15","-3","3"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_05_03,2025030127,Canadiens,Lightning,2,1,3,1,-1
+hockey,nhl,2026_05_03,2025030231,Wild,Avalanche,6,9,15,-3,3

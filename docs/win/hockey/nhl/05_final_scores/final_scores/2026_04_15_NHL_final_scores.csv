@@ -1,4 +1,7 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_04_15","95e2cb9751126776827294c1530f4823","Seattle Kraken","Vegas Golden Knights","1","4","5","-3","3"
-"hockey","nhl","2026_04_15","c6dc2eb7ca9bcce1e2735b4673fc88b1","San Jose Sharks","Chicago Blackhawks","2","5","7","-3","3"
-"hockey","nhl","2026_04_15","ecf6c5f973a42e5dcd559cd2ac2e0d3a","Toronto Maple Leafs","Ottawa Senators","1","3","4","-2","2"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_04_15,2025021301,Stars,Sabres,4,3,7,1,-1
+hockey,nhl,2026_04_15,2025021302,Rangers,Lightning,4,2,6,2,-2
+hockey,nhl,2026_04_15,2025021303,Red Wings,Panthers,1,8,9,-7,7
+hockey,nhl,2026_04_15,2025021304,Maple Leafs,Senators,1,3,4,-2,2
+hockey,nhl,2026_04_15,2025021305,Sharks,Blackhawks,2,5,7,-3,3
+hockey,nhl,2026_04_15,2025021306,Kraken,Golden Knights,1,4,5,-3,3

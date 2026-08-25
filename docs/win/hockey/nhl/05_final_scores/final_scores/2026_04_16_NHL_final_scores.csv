@@ -1,2 +1,7 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_04_16","96784cc6006a3540914823666e6561d1","Seattle Kraken","Colorado Avalanche","0","2","2","-2","2"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_04_16,2025021307,Ducks,Predators,5,4,9,1,-1
+hockey,nhl,2026_04_16,2025021308,Sharks,Jets,6,1,7,5,-5
+hockey,nhl,2026_04_16,2025021309,Blues,Mammoth,5,3,8,2,-2
+hockey,nhl,2026_04_16,2025021310,Kings,Flames,1,3,4,-2,2
+hockey,nhl,2026_04_16,2025021311,Canucks,Oilers,1,6,7,-5,5
+hockey,nhl,2026_04_16,2025021312,Kraken,Avalanche,0,2,2,-2,2

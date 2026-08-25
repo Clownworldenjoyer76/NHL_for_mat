@@ -1,14 +1,14 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2025_12_27","2025_12_27_New Jersey Devils_Washington Capitals","Washington Capitals","New Jersey Devils","4","3","7","1","-1"
-"hockey","nhl","2025_12_27","2025_12_27_New York Islanders_New York Rangers","New York Rangers","New York Islanders","0","2","2","-2","2"
-"hockey","nhl","2025_12_27","2025_12_27_Buffalo Sabres_Boston Bruins","Boston Bruins","Buffalo Sabres","1","4","5","-3","3"
-"hockey","nhl","2025_12_27","2025_12_27_Toronto Maple Leafs_Ottawa Senators","Ottawa Senators","Toronto Maple Leafs","5","7","12","-2","2"
-"hockey","nhl","2025_12_27","2025_12_27_Carolina Hurricanes_Detroit Red Wings","Detroit Red Wings","Carolina Hurricanes","2","5","7","-3","3"
-"hockey","nhl","2025_12_27","2025_12_27_Florida Panthers_Tampa Bay Lightning","Tampa Bay Lightning","Florida Panthers","4","2","6","2","-2"
-"hockey","nhl","2025_12_27","2025_12_27_Winnipeg Jets_Minnesota Wild","Minnesota Wild","Winnipeg Jets","4","3","7","1","-1"
-"hockey","nhl","2025_12_27","2025_12_27_Dallas Stars_Chicago Blackhawks","Chicago Blackhawks","Dallas Stars","4","3","7","1","-1"
-"hockey","nhl","2025_12_27","2025_12_27_St Louis Blues_Nashville Predators","Nashville Predators","St Louis Blues","2","3","5","-1","1"
-"hockey","nhl","2025_12_27","2025_12_27_Calgary Flames_Edmonton Oilers","Edmonton Oilers","Calgary Flames","2","3","5","-1","1"
-"hockey","nhl","2025_12_27","2025_12_27_Vegas Golden Knights_Colorado Avalanche","Colorado Avalanche","Vegas Golden Knights","6","5","11","1","-1"
-"hockey","nhl","2025_12_27","2025_12_27_Vancouver Canucks_San Jose Sharks","San Jose Sharks","Vancouver Canucks","6","3","9","3","-3"
-"hockey","nhl","2025_12_27","2025_12_27_Los Angeles Kings_Anaheim Ducks","Anaheim Ducks","Los Angeles Kings","1","6","7","-5","5"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2025_12_27,2025020588,Rangers,Islanders,0,2,2,-2,2
+hockey,nhl,2025_12_27,2025020589,Bruins,Sabres,1,4,5,-3,3
+hockey,nhl,2025_12_27,2025020590,Senators,Maple Leafs,5,7,12,-2,2
+hockey,nhl,2025_12_27,2025020591,Lightning,Panthers,4,2,6,2,-2
+hockey,nhl,2025_12_27,2025020592,Capitals,Devils,4,3,7,1,-1
+hockey,nhl,2025_12_27,2025020593,Red Wings,Hurricanes,2,5,7,-3,3
+hockey,nhl,2025_12_27,2025020594,Wild,Jets,4,3,7,1,-1
+hockey,nhl,2025_12_27,2025020595,Predators,Blues,2,3,5,-1,1
+hockey,nhl,2025_12_27,2025020596,Blackhawks,Stars,4,3,7,1,-1
+hockey,nhl,2025_12_27,2025020597,Ducks,Kings,1,6,7,-5,5
+hockey,nhl,2025_12_27,2025020598,Oilers,Flames,2,3,5,-1,1
+hockey,nhl,2025_12_27,2025020599,Sharks,Canucks,6,3,9,3,-3
+hockey,nhl,2025_12_27,2025020600,Avalanche,Golden Knights,6,5,11,1,-1

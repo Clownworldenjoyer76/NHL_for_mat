@@ -1,11 +1,11 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2025_11_13","2025_11_13_Vegas Golden Knights_New York Islanders","New York Islanders","Vegas Golden Knights","4","3","7","1","-1"
-"hockey","nhl","2025_11_13","2025_11_13_Ottawa Senators_Boston Bruins","Boston Bruins","Ottawa Senators","3","5","8","-2","2"
-"hockey","nhl","2025_11_13","2025_11_13_Colorado Avalanche_Buffalo Sabres","Buffalo Sabres","Colorado Avalanche","3","6","9","-3","3"
-"hockey","nhl","2025_11_13","2025_11_13_Montreal Canadiens_Dallas Stars","Dallas Stars","Montreal Canadiens","7","0","7","7","-7"
-"hockey","nhl","2025_11_13","2025_11_13_Toronto Maple Leafs_Los Angeles Kings","Los Angeles Kings","Toronto Maple Leafs","4","3","7","1","-1"
-"hockey","nhl","2025_11_13","2025_11_13_Florida Panthers_Washington Capitals","Washington Capitals","Florida Panthers","3","6","9","-3","3"
-"hockey","nhl","2025_11_13","2025_11_13_Seattle Kraken_Winnipeg Jets","Winnipeg Jets","Seattle Kraken","3","5","8","-2","2"
-"hockey","nhl","2025_11_13","2025_11_13_Columbus Blue Jackets_Edmonton Oilers","Edmonton Oilers","Columbus Blue Jackets","4","5","9","-1","1"
-"hockey","nhl","2025_11_13","2025_11_13_Detroit Red Wings_Anaheim Ducks","Anaheim Ducks","Detroit Red Wings","3","6","9","-3","3"
-"hockey","nhl","2025_11_13","2025_11_13_Calgary Flames_San Jose Sharks","San Jose Sharks","Calgary Flames","0","2","2","-2","2"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2025_11_13,2025020269,Kings,Maple Leafs,4,3,7,1,-1
+hockey,nhl,2025_11_13,2025020270,Stars,Canadiens,7,0,7,7,-7
+hockey,nhl,2025_11_13,2025020271,Bruins,Senators,3,5,8,-2,2
+hockey,nhl,2025_11_13,2025020272,Ducks,Red Wings,3,6,9,-3,3
+hockey,nhl,2025_11_13,2025020273,Capitals,Panthers,3,6,9,-3,3
+hockey,nhl,2025_11_13,2025020274,Oilers,Blue Jackets,4,5,9,-1,1
+hockey,nhl,2025_11_13,2025020275,Sabres,Avalanche,3,6,9,-3,3
+hockey,nhl,2025_11_13,2025020276,Sharks,Flames,0,2,2,-2,2
+hockey,nhl,2025_11_13,2025020277,Islanders,Golden Knights,4,3,7,1,-1
+hockey,nhl,2025_11_13,2025020278,Jets,Kraken,3,5,8,-2,2

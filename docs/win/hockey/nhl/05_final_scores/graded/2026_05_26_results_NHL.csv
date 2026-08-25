@@ -1,2 +1,0 @@
-sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
-hockey,NHL,2026_05_26,21:00,70557982,Colorado Avalanche,Vegas Golden Knights,puck_line,home,1.5,home_puck_line,-263.0,1.38,0.7726758584351257,0.0662926846404732,0.0662926846404732,0.1744544332644035,2026_05_26_NHL.csv,1,2,3,-1,1,2026_05_26_NHL_final_scores.csv,Win

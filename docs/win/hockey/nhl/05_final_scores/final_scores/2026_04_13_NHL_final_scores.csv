@@ -1,2 +1,11 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_04_13","02cd436c4433adc651fc51ef06898b6d","Winnipeg Jets","Vegas Golden Knights","2","6","8","-4","4"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_04_13,2025021282,Red Wings,Lightning,3,4,7,-1,1
+hockey,nhl,2026_04_13,2025021283,Rangers,Panthers,2,3,5,-1,1
+hockey,nhl,2026_04_13,2025021284,Hurricanes,Flyers,2,3,5,-1,1
+hockey,nhl,2026_04_13,2025021285,Stars,Maple Leafs,6,5,11,1,-1
+hockey,nhl,2026_04_13,2025021286,Wild,Blues,3,6,9,-3,3
+hockey,nhl,2026_04_13,2025021287,Sharks,Predators,3,2,5,1,-1
+hockey,nhl,2026_04_13,2025021288,Sabres,Blackhawks,5,1,6,4,-4
+hockey,nhl,2026_04_13,2025021289,Avalanche,Oilers,2,1,3,1,-1
+hockey,nhl,2026_04_13,2025021290,Jets,Golden Knights,2,6,8,-4,4
+hockey,nhl,2026_04_13,2025021291,Kings,Kraken,5,3,8,2,-2

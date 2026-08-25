@@ -1,2 +1,2 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_05_18","70558184","Montreal Canadiens","Buffalo Sabres","3","2","5","1","-1"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_05_18,2025030217,Canadiens,Sabres,3,2,5,1,-1

@@ -1,2 +1,10 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_04_14","7b0380f27550cb8fe448fe638e0f94e1","Los Angeles Kings","Vancouver Canucks","3","4","7","-1","1"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_04_14,2025021292,Devils,Bruins,0,4,4,-4,4
+hockey,nhl,2026_04_14,2025021293,Hurricanes,Islanders,2,1,3,1,-1
+hockey,nhl,2026_04_14,2025021294,Canadiens,Flyers,2,4,6,-2,2
+hockey,nhl,2026_04_14,2025021295,Capitals,Blue Jackets,2,1,3,1,-1
+hockey,nhl,2026_04_14,2025021296,Ducks,Wild,2,3,5,-1,1
+hockey,nhl,2026_04_14,2025021297,Jets,Mammoth,3,5,8,-2,2
+hockey,nhl,2026_04_14,2025021298,Avalanche,Flames,3,1,4,2,-2
+hockey,nhl,2026_04_14,2025021299,Penguins,Blues,5,7,12,-2,2
+hockey,nhl,2026_04_14,2025021300,Kings,Canucks,3,4,7,-1,1

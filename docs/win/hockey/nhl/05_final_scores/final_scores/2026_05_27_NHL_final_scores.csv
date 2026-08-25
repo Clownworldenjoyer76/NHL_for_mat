@@ -1,2 +1,2 @@
-﻿"sport","league","game_date","game_id","away_team","home_team","away_score","home_score","total_score","away_puck_line_result","home_puck_line_result"
-"hockey","nhl","2026_05_27","70557998","Carolina Hurricanes","Montreal Canadiens","4","0","4","4","-4"
+sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
+hockey,nhl,2026_05_27,2025030314,Hurricanes,Canadiens,4,0,4,4,-4
