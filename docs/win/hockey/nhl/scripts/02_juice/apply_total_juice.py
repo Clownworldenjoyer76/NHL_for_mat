@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py
+# hockey/nhl/scripts/02_juice/apply_total_juice.py
 
 import math
 import sys
@@ -10,7 +10,7 @@ from pathlib import Path
 import pandas as pd
 
 
-BASE_DIR = Path("docs/win/hockey/nhl")
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 INPUT_DIR = BASE_DIR / "01_merge" / "01_merguiced"
 OUTPUT_DIR = BASE_DIR / "02_juice"
@@ -82,36 +82,90 @@ def wipe_outputs() -> int:
         path.unlink()
         removed += 1
 
-    log(f"Wiped total output CSVs: {removed}")
+    for path in ERROR_DIR.glob("*total*_quarantine.csv"):
+        path.unlink()
+        removed += 1
+
+    log(
+        f"Wiped total output/quarantine CSVs: {removed}"
+    )
     return removed
 
 
-def validate_columns(path: Path, df: pd.DataFrame, required_columns: list[str]) -> None:
-    missing = [col for col in required_columns if col not in df.columns]
+def validate_columns(
+    path: Path,
+    df: pd.DataFrame,
+    required_columns: list[str],
+) -> None:
+    missing = [
+        col
+        for col in required_columns
+        if col not in df.columns
+    ]
 
     if missing:
-        raise ValueError(f"{path} missing required columns: {missing}")
+        raise ValueError(
+            f"{path} missing required columns: {missing}"
+        )
 
 
 def load_config() -> pd.DataFrame:
     if not JUICE_FILE.exists():
-        raise FileNotFoundError(f"Missing config file: {JUICE_FILE}")
+        raise FileNotFoundError(
+            f"Missing config file: {JUICE_FILE}"
+        )
 
     juice_df = pd.read_csv(JUICE_FILE)
-    validate_columns(JUICE_FILE, juice_df, REQUIRED_CONFIG_COLUMNS)
 
-    juice_df["band_min"] = pd.to_numeric(juice_df["band_min"], errors="coerce")
-    juice_df["band_max"] = pd.to_numeric(juice_df["band_max"], errors="coerce")
-    juice_df["extra_juice"] = pd.to_numeric(juice_df["extra_juice"], errors="coerce")
-    juice_df["side"] = juice_df["side"].astype(str).str.strip()
+    validate_columns(
+        JUICE_FILE,
+        juice_df,
+        REQUIRED_CONFIG_COLUMNS,
+    )
 
-    if juice_df[["band_min", "band_max", "extra_juice"]].isna().any().any():
-        raise ValueError(f"{JUICE_FILE} has non-numeric band_min, band_max, or extra_juice values")
+    juice_df["band_min"] = pd.to_numeric(
+        juice_df["band_min"],
+        errors="coerce",
+    )
+    juice_df["band_max"] = pd.to_numeric(
+        juice_df["band_max"],
+        errors="coerce",
+    )
+    juice_df["extra_juice"] = pd.to_numeric(
+        juice_df["extra_juice"],
+        errors="coerce",
+    )
+    juice_df["side"] = (
+        juice_df["side"]
+        .astype(str)
+        .str.strip()
+    )
+
+    if (
+        juice_df[
+            [
+                "band_min",
+                "band_max",
+                "extra_juice",
+            ]
+        ]
+        .isna()
+        .any()
+        .any()
+    ):
+        raise ValueError(
+            f"{JUICE_FILE} has non-numeric "
+            "band_min, band_max, or extra_juice values"
+        )
 
     return juice_df
 
 
-def find_extra_juice(juice_df: pd.DataFrame, total_line: float, side: str):
+def find_extra_juice(
+    juice_df: pd.DataFrame,
+    total_line: float,
+    side: str,
+):
     band = juice_df[
         (juice_df["band_min"] <= total_line)
         & (total_line <= juice_df["band_max"])
@@ -121,12 +175,71 @@ def find_extra_juice(juice_df: pd.DataFrame, total_line: float, side: str):
     if len(band) != 1:
         return None
 
-    return float(band.iloc[0]["extra_juice"])
+    return float(
+        band.iloc[0]["extra_juice"]
+    )
 
 
-def process_file(path: Path, juice_df: pd.DataFrame) -> tuple[int, int, int]:
-    df = pd.read_csv(path)
-    validate_columns(path, df, REQUIRED_INPUT_COLUMNS)
+def quarantine_row(
+    original_df: pd.DataFrame,
+    idx,
+    reason: str,
+    quarantine_rows: list[dict],
+) -> None:
+    rejected = original_df.loc[idx].to_dict()
+    rejected["rejection_reason"] = reason
+    quarantine_rows.append(rejected)
+
+
+def write_quarantine(
+    path: Path,
+    original_columns: list[str],
+    quarantine_rows: list[dict],
+) -> Path | None:
+    quarantine_path = (
+        ERROR_DIR
+        / f"{path.stem}_quarantine.csv"
+    )
+
+    if not quarantine_rows:
+        if quarantine_path.exists():
+            quarantine_path.unlink()
+        return None
+
+    quarantine_columns = (
+        original_columns
+        + ["rejection_reason"]
+    )
+
+    quarantine_df = pd.DataFrame(
+        quarantine_rows
+    )
+
+    quarantine_df = quarantine_df.reindex(
+        columns=quarantine_columns
+    )
+
+    quarantine_df.to_csv(
+        quarantine_path,
+        index=False,
+    )
+
+    return quarantine_path
+
+
+def process_file(
+    path: Path,
+    juice_df: pd.DataFrame,
+) -> tuple[int, int, int]:
+    original_df = pd.read_csv(path)
+
+    validate_columns(
+        path,
+        original_df,
+        REQUIRED_INPUT_COLUMNS,
+    )
+
+    df = original_df.copy()
 
     for col in [
         "total",
@@ -140,7 +253,10 @@ def process_file(path: Path, juice_df: pd.DataFrame) -> tuple[int, int, int]:
         "dk_total_over_decimal",
         "dk_total_under_decimal",
     ]:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
+        df[col] = pd.to_numeric(
+            df[col],
+            errors="coerce",
+        )
 
     for col in [
         "over_juiced_decimal_total",
@@ -152,18 +268,42 @@ def process_file(path: Path, juice_df: pd.DataFrame) -> tuple[int, int, int]:
     ]:
         df[col] = pd.NA
 
+    accepted_indices = []
+    quarantine_rows = []
+
     applied = 0
     skipped_bad = 0
     skipped_noband = 0
 
     for idx, row in df.iterrows():
         try:
-            total_line = float(row["total"])
-            over_fair = float(row["over_fair_decimal_total"])
-            under_fair = float(row["under_fair_decimal_total"])
+            total_line = float(
+                row["total"]
+            )
+            over_fair = float(
+                row[
+                    "over_fair_decimal_total"
+                ]
+            )
+            under_fair = float(
+                row[
+                    "under_fair_decimal_total"
+                ]
+            )
         except Exception:
+            reason = "bad_numeric_parse"
             skipped_bad += 1
-            log(f"ROW SKIP: {path.name} idx={idx} reason=bad_numeric_parse")
+            quarantine_row(
+                original_df,
+                idx,
+                reason,
+                quarantine_rows,
+            )
+            log(
+                f"ROW QUARANTINE: "
+                f"{path.name} idx={idx} "
+                f"reason={reason}"
+            )
             continue
 
         if (
@@ -173,59 +313,204 @@ def process_file(path: Path, juice_df: pd.DataFrame) -> tuple[int, int, int]:
             or over_fair <= 1
             or under_fair <= 1
         ):
+            reason = "bad_total_values"
             skipped_bad += 1
-            log(f"ROW SKIP: {path.name} idx={idx} reason=bad_total_values")
+            quarantine_row(
+                original_df,
+                idx,
+                reason,
+                quarantine_rows,
+            )
+            log(
+                f"ROW QUARANTINE: "
+                f"{path.name} idx={idx} "
+                f"reason={reason}"
+            )
             continue
 
-        over_extra = find_extra_juice(juice_df, total_line, "over")
-        under_extra = find_extra_juice(juice_df, total_line, "under")
+        over_extra = find_extra_juice(
+            juice_df,
+            total_line,
+            "over",
+        )
 
-        if over_extra is None or under_extra is None:
-            skipped_noband += 1
-            log(f"ROW SKIP: {path.name} idx={idx} reason=no_config_band total={total_line}")
-            continue
-
-        over_juiced_decimal = over_fair * (1 - over_extra)
-        under_juiced_decimal = under_fair * (1 - under_extra)
+        under_extra = find_extra_juice(
+            juice_df,
+            total_line,
+            "under",
+        )
 
         if (
-            not math.isfinite(over_juiced_decimal)
-            or not math.isfinite(under_juiced_decimal)
+            over_extra is None
+            or under_extra is None
+        ):
+            reason = "no_config_band"
+            skipped_noband += 1
+            quarantine_row(
+                original_df,
+                idx,
+                reason,
+                quarantine_rows,
+            )
+            log(
+                f"ROW QUARANTINE: "
+                f"{path.name} idx={idx} "
+                f"reason={reason} "
+                f"total={total_line}"
+            )
+            continue
+
+        over_juiced_decimal = (
+            over_fair
+            * (1 - over_extra)
+        )
+
+        under_juiced_decimal = (
+            under_fair
+            * (1 - under_extra)
+        )
+
+        if (
+            not math.isfinite(
+                over_juiced_decimal
+            )
+            or not math.isfinite(
+                under_juiced_decimal
+            )
             or over_juiced_decimal <= 1
             or under_juiced_decimal <= 1
         ):
+            reason = "bad_juiced_decimal"
             skipped_bad += 1
-            log(f"ROW SKIP: {path.name} idx={idx} reason=bad_juiced_decimal")
+            quarantine_row(
+                original_df,
+                idx,
+                reason,
+                quarantine_rows,
+            )
+            log(
+                f"ROW QUARANTINE: "
+                f"{path.name} idx={idx} "
+                f"reason={reason}"
+            )
             continue
 
-        over_juiced_prob = 1 / over_juiced_decimal
-        under_juiced_prob = 1 / under_juiced_decimal
-        prob_total = over_juiced_prob + under_juiced_prob
+        over_juiced_prob = (
+            1 / over_juiced_decimal
+        )
+        under_juiced_prob = (
+            1 / under_juiced_decimal
+        )
+        prob_total = (
+            over_juiced_prob
+            + under_juiced_prob
+        )
 
-        if not math.isfinite(prob_total) or prob_total <= 0:
+        if (
+            not math.isfinite(prob_total)
+            or prob_total <= 0
+        ):
+            reason = "bad_probability_total"
             skipped_bad += 1
-            log(f"ROW SKIP: {path.name} idx={idx} reason=bad_probability_total")
+            quarantine_row(
+                original_df,
+                idx,
+                reason,
+                quarantine_rows,
+            )
+            log(
+                f"ROW QUARANTINE: "
+                f"{path.name} idx={idx} "
+                f"reason={reason}"
+            )
             continue
 
-        df.at[idx, "over_juiced_decimal_total"] = over_juiced_decimal
-        df.at[idx, "under_juiced_decimal_total"] = under_juiced_decimal
-        df.at[idx, "over_juiced_prob_total"] = over_juiced_prob
-        df.at[idx, "under_juiced_prob_total"] = under_juiced_prob
-        df.at[idx, "over_normalized_prob_total"] = over_juiced_prob / prob_total
-        df.at[idx, "under_normalized_prob_total"] = under_juiced_prob / prob_total
+        df.at[
+            idx,
+            "over_juiced_decimal_total",
+        ] = over_juiced_decimal
 
+        df.at[
+            idx,
+            "under_juiced_decimal_total",
+        ] = under_juiced_decimal
+
+        df.at[
+            idx,
+            "over_juiced_prob_total",
+        ] = over_juiced_prob
+
+        df.at[
+            idx,
+            "under_juiced_prob_total",
+        ] = under_juiced_prob
+
+        df.at[
+            idx,
+            "over_normalized_prob_total",
+        ] = (
+            over_juiced_prob
+            / prob_total
+        )
+
+        df.at[
+            idx,
+            "under_normalized_prob_total",
+        ] = (
+            under_juiced_prob
+            / prob_total
+        )
+
+        accepted_indices.append(idx)
         applied += 1
 
-    out_path = OUTPUT_DIR / path.name
-    df = df[OUTPUT_COLUMNS]
-    df.to_csv(out_path, index=False)
-
-    log(
-        f"WROTE {out_path} rows={len(df)} applied={applied} "
-        f"skipped_bad={skipped_bad} skipped_noband={skipped_noband}"
+    out_path = (
+        OUTPUT_DIR
+        / path.name
     )
 
-    return applied, skipped_bad, skipped_noband
+    accepted_df = df.loc[
+        accepted_indices,
+        OUTPUT_COLUMNS,
+    ].copy()
+
+    accepted_df.to_csv(
+        out_path,
+        index=False,
+    )
+
+    quarantine_path = write_quarantine(
+        path,
+        list(original_df.columns),
+        quarantine_rows,
+    )
+
+    log(
+        f"WROTE {out_path} "
+        f"rows={len(accepted_df)} "
+        f"applied={applied}"
+    )
+
+    if quarantine_path is not None:
+        log(
+            f"WROTE {quarantine_path} "
+            f"rows={len(quarantine_rows)}"
+        )
+
+    log(
+        f"FILE SUMMARY: {path.name} "
+        f"input={len(original_df)} "
+        f"accepted={len(accepted_df)} "
+        f"quarantined={len(quarantine_rows)} "
+        f"bad={skipped_bad} "
+        f"no_band={skipped_noband}"
+    )
+
+    return (
+        applied,
+        skipped_bad,
+        skipped_noband,
+    )
 
 
 def main() -> None:
@@ -237,14 +522,26 @@ def main() -> None:
         log(f"INPUT_DIR: {INPUT_DIR}")
         log(f"OUTPUT_DIR: {OUTPUT_DIR}")
         log(f"JUICE_FILE: {JUICE_FILE}")
+        log(f"QUARANTINE_DIR: {ERROR_DIR}")
 
         juice_df = load_config()
-        input_files = sorted(INPUT_DIR.glob("*_NHL_total.csv"))
 
-        log(f"Input files found: {len(input_files)}")
+        input_files = sorted(
+            INPUT_DIR.glob(
+                "*_NHL_total.csv"
+            )
+        )
+
+        log(
+            f"Input files found: "
+            f"{len(input_files)}"
+        )
 
         if not input_files:
-            raise FileNotFoundError(f"No total input files found in {INPUT_DIR}")
+            raise FileNotFoundError(
+                "No total input files "
+                f"found in {INPUT_DIR}"
+            )
 
         files_written = 0
         total_applied = 0
@@ -252,26 +549,69 @@ def main() -> None:
         total_skipped_noband = 0
 
         for path in input_files:
-            log(f"Processing input: {path}")
-            applied, skipped_bad, skipped_noband = process_file(path, juice_df)
+            log(
+                f"Processing input: {path}"
+            )
+
+            (
+                applied,
+                skipped_bad,
+                skipped_noband,
+            ) = process_file(
+                path,
+                juice_df,
+            )
 
             files_written += 1
             total_applied += applied
-            total_skipped_bad += skipped_bad
-            total_skipped_noband += skipped_noband
+            total_skipped_bad += (
+                skipped_bad
+            )
+            total_skipped_noband += (
+                skipped_noband
+            )
+
+        total_quarantined = (
+            total_skipped_bad
+            + total_skipped_noband
+        )
 
         log("--- SUMMARY ---")
-        log(f"Files processed: {len(input_files)}")
-        log(f"Files written: {files_written}")
-        log(f"Rows applied: {total_applied}")
-        log(f"Rows skipped bad: {total_skipped_bad}")
-        log(f"Rows skipped no band: {total_skipped_noband}")
+        log(
+            f"Files processed: "
+            f"{len(input_files)}"
+        )
+        log(
+            f"Files written: "
+            f"{files_written}"
+        )
+        log(
+            f"Rows applied: "
+            f"{total_applied}"
+        )
+        log(
+            f"Rows quarantined bad: "
+            f"{total_skipped_bad}"
+        )
+        log(
+            f"Rows quarantined no band: "
+            f"{total_skipped_noband}"
+        )
+        log(
+            f"Rows quarantined total: "
+            f"{total_quarantined}"
+        )
         log("STATUS: SUCCESS")
 
-        print("apply_total_juice complete.")
+        print(
+            "apply_total_juice complete."
+        )
 
     except Exception as e:
-        log(f"FATAL ERROR: {e}\n{traceback.format_exc()}")
+        log(
+            f"FATAL ERROR: {e}\n"
+            f"{traceback.format_exc()}"
+        )
         log("STATUS: FAILED")
         sys.exit(1)
 

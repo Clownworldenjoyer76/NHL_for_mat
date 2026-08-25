@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+# hockey/nhl/scripts/00_intake/transform_hockey_odds.py
 
 import csv
 import json
@@ -12,12 +12,14 @@ from zoneinfo import ZoneInfo
 BOOKMAKER = "FanDuel"
 ET = ZoneInfo("America/New_York")
 
-TOTAL_MIN = 4.5
+TOTAL_MIN = 5.5
 TOTAL_MAX = 7.5
 
-ODDS_DIR = Path("docs/win/hockey/nhl/odds")
-SPORTSBOOK_DIR = Path("docs/win/hockey/nhl/00_intake/sportsbook")
-ERROR_DIR = Path("docs/win/hockey/nhl/errors/00_intake")
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+ODDS_DIR = BASE_DIR / "odds"
+SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
+ERROR_DIR = BASE_DIR / "errors" / "00_intake"
 LOG_FILE = ERROR_DIR / "transform_hockey_odds.txt"
 
 SPORTSBOOK_DIR.mkdir(parents=True, exist_ok=True)
