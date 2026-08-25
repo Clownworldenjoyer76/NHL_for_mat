@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# hockey/nhl/scripts/05_final_scores/transform_final_scores.py
+# docs/win/hockey/nhl/scripts/05_final_scores/transform_final_scores.py
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import json
 import re
 import sys
 import traceback
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -21,20 +21,19 @@ LEAGUE_OUT = "NHL"
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
+SELECT_DIR = BASE_DIR / "04_select"
 RAW_DIR = BASE_DIR / "00_intake" / "drat_raw"
 OUT_DIR = BASE_DIR / "05_final_scores" / "final_scores"
 ERROR_DIR = BASE_DIR / "errors" / "05_final_scores"
 LOG_FILE = ERROR_DIR / "transform_final_scores.txt"
 
+SELECT_PATTERN = "*_NHL.csv"
 RAW_PATTERN = "*_nhl_raw.json"
 
 NHL_SCORE_URL = "https://api-web.nhle.com/v1/score/{date}"
 REQUEST_TIMEOUT = 30
 
-FINAL_GAME_STATES = {
-    "FINAL",
-    "OFF",
-}
+FINAL_GAME_STATES = {"FINAL", "OFF"}
 
 OUTPUT_COLUMNS = [
     "sport",
@@ -67,40 +66,27 @@ def reset_log() -> None:
 def log(msg: str) -> None:
     stamp = datetime.now(UTC).isoformat()
 
-    with LOG_FILE.open(
-        "a",
-        encoding="utf-8",
-    ) as f:
-        f.write(
-            f"{stamp} | {msg}\n"
-        )
+    with LOG_FILE.open("a", encoding="utf-8") as f:
+        f.write(f"{stamp} | {msg}\n")
 
 
 def fail(msg: str) -> None:
-    log(
-        f"ERROR: {msg}"
-    )
-    raise RuntimeError(
-        msg
-    )
+    log(f"ERROR: {msg}")
+    raise RuntimeError(msg)
 
 
 def atomic_write_csv(
     df: pd.DataFrame,
     output_path: Path,
 ) -> None:
-    tmp_path = output_path.with_suffix(
-        ".tmp"
-    )
+    tmp_path = output_path.with_suffix(".tmp")
 
     df.to_csv(
         tmp_path,
         index=False,
     )
 
-    tmp_path.replace(
-        output_path
-    )
+    tmp_path.replace(output_path)
 
 
 # ============================================================
@@ -111,21 +97,10 @@ def norm_key(value: Any) -> str:
     if value is None:
         return ""
 
-    value = str(
-        value
-    ).strip().lower()
+    value = str(value).strip().lower()
+    value = re.sub(r"[^a-z0-9]+", " ", value)
 
-    value = re.sub(
-        r"[^a-z0-9]+",
-        " ",
-        value,
-    )
-
-    return re.sub(
-        r"\s+",
-        " ",
-        value,
-    ).strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def first_present(
@@ -133,10 +108,7 @@ def first_present(
     names: list[str],
 ) -> Any:
     for name in names:
-        if (
-            name in row
-            and row[name] not in [None, ""]
-        ):
+        if name in row and row[name] not in [None, ""]:
             return row[name]
 
     lower_map = {
@@ -145,84 +117,51 @@ def first_present(
     }
 
     for name in names:
-        key = lower_map.get(
-            name.lower()
-        )
+        key = lower_map.get(name.lower())
 
-        if (
-            key is not None
-            and row[key] not in [None, ""]
-        ):
+        if key is not None and row[key] not in [None, ""]:
             return row[key]
 
     return None
 
 
-def parse_int_score(
-    value: Any,
-) -> int | None:
-    if value is None:
+def parse_int_score(value: Any) -> int | None:
+    if value is None or isinstance(value, bool):
         return None
 
-    if isinstance(
-        value,
-        bool,
-    ):
-        return None
-
-    if isinstance(
-        value,
-        int,
-    ):
+    if isinstance(value, int):
         return value
 
-    if isinstance(
-        value,
-        float,
-    ):
-        if pd.isna(
-            value
-        ):
+    if isinstance(value, float):
+        if pd.isna(value):
             return None
 
         if value.is_integer():
-            return int(
-                value
-            )
+            return int(value)
 
         return None
 
-    text = str(
-        value
-    ).strip()
+    text = str(value).strip()
 
     if not text:
         return None
 
     try:
-        number = float(
-            text
-        )
+        number = float(text)
     except Exception:
         return None
 
     if not number.is_integer():
         return None
 
-    return int(
-        number
-    )
+    return int(number)
 
 
-def normalize_game_date(
-    value: Any,
-) -> str:
+def normalize_game_date(value: Any) -> str:
     if value is None:
         return ""
 
-    text = str(
-        value
-    ).strip()
+    text = str(value).strip()
 
     if not text:
         return ""
@@ -240,9 +179,7 @@ def normalize_game_date(
             return datetime.strptime(
                 text,
                 fmt,
-            ).strftime(
-                "%Y_%m_%d"
-            )
+            ).strftime("%Y_%m_%d")
         except ValueError:
             pass
 
@@ -253,10 +190,7 @@ def normalize_game_date(
 
     if match:
         year, month, day = match.groups()
-
-        return (
-            f"{year}_{month}_{day}"
-        )
+        return f"{year}_{month}_{day}"
 
     match = re.search(
         r"(\d{2})/(\d{2})/(\d{4})",
@@ -265,57 +199,88 @@ def normalize_game_date(
 
     if match:
         month, day, year = match.groups()
-
-        return (
-            f"{year}_{month}_{day}"
-        )
+        return f"{year}_{month}_{day}"
 
     return ""
 
 
-def api_date_from_game_date(
-    game_date: str,
-) -> str:
+def api_date_from_game_date(game_date: str) -> str:
     return datetime.strptime(
         game_date,
         "%Y_%m_%d",
-    ).strftime(
-        "%Y-%m-%d"
+    ).strftime("%Y-%m-%d")
+
+
+def parse_date_from_filename(path: Path) -> str:
+    match = re.search(
+        r"(\d{4})[_-](\d{2})[_-](\d{2})",
+        path.stem,
     )
 
+    if not match:
+        return ""
+
+    year, month, day = match.groups()
+
+    return f"{year}_{month}_{day}"
+
 
 # ============================================================
-# D-RATINGS — CHECK SOURCE ONLY
+# STAGE 04 — TARGET DATE SOURCE
 # ============================================================
 
-def load_json(
-    path: Path,
-) -> Any:
-    try:
-        return json.loads(
-            path.read_text(
-                encoding="utf-8"
-            )
-        )
-    except Exception as e:
+def discover_target_dates() -> set[str]:
+    if not SELECT_DIR.exists():
         fail(
-            f"Failed reading JSON {path}: {e}"
+            f"Stage 04 select folder does not exist: {SELECT_DIR}"
         )
 
+    select_files = sorted(
+        SELECT_DIR.glob(SELECT_PATTERN)
+    )
+
+    if not select_files:
+        fail(
+            f"No Stage 04 select files found matching "
+            f"{SELECT_PATTERN} in {SELECT_DIR}"
+        )
+
+    target_dates: set[str] = set()
+
+    for select_path in select_files:
+        game_date = parse_date_from_filename(
+            select_path
+        )
+
+        if not game_date:
+            log(
+                "SELECT DATE SKIP: could not determine date from "
+                f"{select_path}"
+            )
+            continue
+
+        target_dates.add(game_date)
+
+    if not target_dates:
+        fail(
+            "Could not determine any target dates "
+            "from Stage 04 select filenames"
+        )
+
+    return target_dates
+
+
+# ============================================================
+# D-RATINGS — OPTIONAL RECONCILIATION/CHECK SOURCE ONLY
+# ============================================================
 
 def flatten_raw_payload(
     payload: Any,
 ) -> list[dict[str, Any]]:
-    if isinstance(
-        payload,
-        list,
-    ):
+    if isinstance(payload, list):
         rows = payload
 
-    elif isinstance(
-        payload,
-        dict,
-    ):
+    elif isinstance(payload, dict):
         rows = None
 
         for key in [
@@ -325,23 +290,15 @@ def flatten_raw_payload(
             "events",
             "raw_rows",
         ]:
-            if (
-                key in payload
-                and isinstance(
-                    payload[key],
-                    list,
-                )
-            ):
+            if key in payload and isinstance(payload[key], list):
                 rows = payload[key]
                 break
 
         if rows is None:
-            rows = [
-                payload
-            ]
+            rows = [payload]
 
     else:
-        fail(
+        raise ValueError(
             "Unsupported raw JSON payload type: "
             f"{type(payload).__name__}"
         )
@@ -349,10 +306,7 @@ def flatten_raw_payload(
     return [
         row
         for row in rows
-        if isinstance(
-            row,
-            dict,
-        )
+        if isinstance(row, dict)
     ]
 
 
@@ -371,27 +325,7 @@ def parse_dratings_game_date(
         ],
     )
 
-    return normalize_game_date(
-        raw_date
-    )
-
-
-def parse_date_from_filename(
-    path: Path,
-) -> str:
-    match = re.search(
-        r"(\d{4})[_-](\d{2})[_-](\d{2})",
-        path.stem,
-    )
-
-    if not match:
-        return ""
-
-    year, month, day = match.groups()
-
-    return (
-        f"{year}_{month}_{day}"
-    )
+    return normalize_game_date(raw_date)
 
 
 def dratings_is_completed(
@@ -419,9 +353,7 @@ def dratings_is_completed(
         "closed",
     }
 
-    return norm_key(
-        status
-    ) in completed_values
+    return norm_key(status) in completed_values
 
 
 def get_dratings_team(
@@ -450,7 +382,7 @@ def get_dratings_team(
         ]
 
     else:
-        fail(
+        raise ValueError(
             f"Invalid side: {side}"
         )
 
@@ -462,9 +394,7 @@ def get_dratings_team(
     if value is None:
         return ""
 
-    return str(
-        value
-    ).strip()
+    return str(value).strip()
 
 
 def get_dratings_score(
@@ -492,7 +422,7 @@ def get_dratings_score(
         ]
 
     else:
-        fail(
+        raise ValueError(
             f"Invalid side: {side}"
         )
 
@@ -506,15 +436,10 @@ def get_dratings_score(
 
 def collect_dratings_checks(
     raw_files: list[Path],
-) -> tuple[
-    set[str],
-    dict[
-        tuple[str, str, str],
-        list[dict[str, Any]],
-    ],
+) -> dict[
+    tuple[str, str, str],
+    list[dict[str, Any]],
 ]:
-    target_dates: set[str] = set()
-
     checks: dict[
         tuple[str, str, str],
         list[dict[str, Any]],
@@ -525,137 +450,117 @@ def collect_dratings_checks(
             f"Reading D-Ratings check source: {raw_path}"
         )
 
-        payload = load_json(
-            raw_path
-        )
+        try:
+            payload = json.loads(
+                raw_path.read_text(
+                    encoding="utf-8"
+                )
+            )
 
-        raw_rows = flatten_raw_payload(
-            payload
-        )
+            raw_rows = flatten_raw_payload(
+                payload
+            )
+
+        except Exception as e:
+            log(
+                "DRAT CHECK FILE ERROR: "
+                f"{raw_path} | {e}"
+            )
+            continue
 
         filename_date = parse_date_from_filename(
             raw_path
         )
 
-        if filename_date:
-            target_dates.add(
-                filename_date
-            )
-
         for raw in raw_rows:
-            game_date = parse_dratings_game_date(
-                raw
-            )
-
-            if game_date:
-                target_dates.add(
-                    game_date
+            try:
+                game_date = (
+                    parse_dratings_game_date(raw)
+                    or filename_date
                 )
 
-            if not dratings_is_completed(
-                raw
-            ):
-                continue
+                if not dratings_is_completed(raw):
+                    continue
 
-            away_team = get_dratings_team(
-                raw,
-                "away",
-            )
+                away_team = get_dratings_team(
+                    raw,
+                    "away",
+                )
 
-            home_team = get_dratings_team(
-                raw,
-                "home",
-            )
+                home_team = get_dratings_team(
+                    raw,
+                    "home",
+                )
 
-            away_score = get_dratings_score(
-                raw,
-                "away",
-            )
+                away_score = get_dratings_score(
+                    raw,
+                    "away",
+                )
 
-            home_score = get_dratings_score(
-                raw,
-                "home",
-            )
+                home_score = get_dratings_score(
+                    raw,
+                    "home",
+                )
 
-            if (
-                not game_date
-                or not away_team
-                or not home_team
-                or away_score is None
-                or home_score is None
-            ):
+                if (
+                    not game_date
+                    or not away_team
+                    or not home_team
+                    or away_score is None
+                    or home_score is None
+                ):
+                    log(
+                        "DRAT CHECK SKIP: "
+                        f"{raw_path} | "
+                        "completed row missing date/team/score"
+                    )
+                    continue
+
+                key = (
+                    game_date,
+                    norm_key(away_team),
+                    norm_key(home_team),
+                )
+
+                checks.setdefault(
+                    key,
+                    [],
+                ).append(
+                    {
+                        "game_date": game_date,
+                        "away_team": away_team,
+                        "home_team": home_team,
+                        "away_score": away_score,
+                        "home_score": home_score,
+                    }
+                )
+
+            except Exception as e:
                 log(
-                    "DRAT CHECK SKIP: "
-                    "completed row missing date/team/score"
+                    "DRAT CHECK ROW ERROR: "
+                    f"{raw_path} | {e}"
                 )
-                continue
 
-            key = (
-                game_date,
-                norm_key(
-                    away_team
-                ),
-                norm_key(
-                    home_team
-                ),
-            )
-
-            checks.setdefault(
-                key,
-                [],
-            ).append(
-                {
-                    "game_date": game_date,
-                    "away_team": away_team,
-                    "home_team": home_team,
-                    "away_score": away_score,
-                    "home_score": home_score,
-                }
-            )
-
-    return (
-        target_dates,
-        checks,
-    )
+    return checks
 
 
 # ============================================================
-# OFFICIAL NHL API
+# OFFICIAL NHL API — AUTHORITATIVE FINAL-SCORE SOURCE
 # ============================================================
 
-def localized_text(
-    value: Any,
-) -> str:
-    if isinstance(
-        value,
-        str,
-    ):
+def localized_text(value: Any) -> str:
+    if isinstance(value, str):
         return value.strip()
 
-    if isinstance(
-        value,
-        dict,
-    ):
-        default = value.get(
-            "default"
-        )
+    if isinstance(value, dict):
+        default = value.get("default")
 
-        if default not in [
-            None,
-            "",
-        ]:
-            return str(
-                default
-            ).strip()
+        if default not in [None, ""]:
+            return str(default).strip()
 
         for candidate in value.values():
-            if candidate not in [
-                None,
-                "",
-            ]:
-                return str(
-                    candidate
-                ).strip()
+            if candidate not in [None, ""]:
+                return str(candidate).strip()
 
     return ""
 
@@ -664,30 +569,21 @@ def official_team_name(
     team: dict[str, Any],
 ) -> str:
     direct_name = localized_text(
-        team.get(
-            "name"
-        )
+        team.get("name")
     )
 
     if direct_name:
         return direct_name
 
     place_name = localized_text(
-        team.get(
-            "placeName"
-        )
+        team.get("placeName")
     )
 
     common_name = localized_text(
-        team.get(
-            "commonName"
-        )
+        team.get("commonName")
     )
 
-    if (
-        place_name
-        and common_name
-    ):
+    if place_name and common_name:
         return (
             f"{place_name} {common_name}"
         ).strip()
@@ -698,14 +594,12 @@ def official_team_name(
     if common_name:
         return common_name
 
-    abbrev = str(
+    return str(
         team.get(
             "abbrev",
             "",
         )
     ).strip()
-
-    return abbrev
 
 
 def fetch_official_score_payload(
@@ -732,9 +626,11 @@ def fetch_official_score_payload(
                 "Accept": "application/json",
             },
         )
+
     except Exception as e:
         fail(
-            f"Official NHL API request failed for {game_date}: {e}"
+            f"Official NHL API request failed "
+            f"for {game_date}: {e}"
         )
 
     if response.status_code != 200:
@@ -746,15 +642,14 @@ def fetch_official_score_payload(
 
     try:
         payload = response.json()
+
     except Exception as e:
         fail(
-            f"Official NHL API returned invalid JSON for {game_date}: {e}"
+            f"Official NHL API returned invalid JSON "
+            f"for {game_date}: {e}"
         )
 
-    if not isinstance(
-        payload,
-        dict,
-    ):
+    if not isinstance(payload, dict):
         fail(
             "Official NHL API payload was not an object "
             f"for {game_date}"
@@ -785,15 +680,13 @@ def build_official_final_rows(
 ) -> pd.DataFrame:
     games = payload.get(
         "games",
-        []
+        [],
     )
 
-    if not isinstance(
-        games,
-        list,
-    ):
+    if not isinstance(games, list):
         fail(
-            f"Official NHL API games field was not a list for {game_date}"
+            f"Official NHL API games field was not a list "
+            f"for {game_date}"
         )
 
     rows: list[
@@ -801,16 +694,11 @@ def build_official_final_rows(
     ] = []
 
     for game in games:
-        if not isinstance(
-            game,
-            dict,
-        ):
+        if not isinstance(game, dict):
             continue
 
         official_date = normalize_game_date(
-            game.get(
-                "gameDate"
-            )
+            game.get("gameDate")
         )
 
         if (
@@ -819,9 +707,7 @@ def build_official_final_rows(
         ):
             continue
 
-        if not is_official_final(
-            game
-        ):
+        if not is_official_final(game):
             continue
 
         game_id = str(
@@ -839,12 +725,12 @@ def build_official_final_rows(
 
         away_team_data = game.get(
             "awayTeam",
-            {}
+            {},
         )
 
         home_team_data = game.get(
             "homeTeam",
-            {}
+            {},
         )
 
         if not isinstance(
@@ -852,7 +738,8 @@ def build_official_final_rows(
             dict,
         ):
             fail(
-                f"Official final game {game_id} has invalid awayTeam data"
+                f"Official final game {game_id} "
+                "has invalid awayTeam data"
             )
 
         if not isinstance(
@@ -860,7 +747,8 @@ def build_official_final_rows(
             dict,
         ):
             fail(
-                f"Official final game {game_id} has invalid homeTeam data"
+                f"Official final game {game_id} "
+                "has invalid homeTeam data"
             )
 
         away_team = official_team_name(
@@ -872,15 +760,11 @@ def build_official_final_rows(
         )
 
         away_score = parse_int_score(
-            away_team_data.get(
-                "score"
-            )
+            away_team_data.get("score")
         )
 
         home_score = parse_int_score(
-            home_team_data.get(
-                "score"
-            )
+            home_team_data.get("score")
         )
 
         if (
@@ -901,31 +785,29 @@ def build_official_final_rows(
                 f"game_id={game_id}"
             )
 
-        row = {
-            "sport": SPORT,
-            "league": LEAGUE,
-            "game_date": game_date,
-            "game_id": game_id,
-            "away_team": away_team,
-            "home_team": home_team,
-            "away_score": away_score,
-            "home_score": home_score,
-            "total_score": (
-                away_score
-                + home_score
-            ),
-            "away_puck_line_result": (
-                away_score
-                - home_score
-            ),
-            "home_puck_line_result": (
-                home_score
-                - away_score
-            ),
-        }
-
         rows.append(
-            row
+            {
+                "sport": SPORT,
+                "league": LEAGUE,
+                "game_date": game_date,
+                "game_id": game_id,
+                "away_team": away_team,
+                "home_team": home_team,
+                "away_score": away_score,
+                "home_score": home_score,
+                "total_score": (
+                    away_score
+                    + home_score
+                ),
+                "away_puck_line_result": (
+                    away_score
+                    - home_score
+                ),
+                "home_puck_line_result": (
+                    home_score
+                    - away_score
+                ),
+            }
         )
 
     df = pd.DataFrame(
@@ -945,7 +827,8 @@ def build_official_final_rows(
 
     if blank_ids.any():
         fail(
-            "Blank official NHL game_id reached final-score dataset"
+            "Blank official NHL game_id "
+            "reached final-score dataset"
         )
 
     duplicate_ids = df.duplicated(
@@ -1026,22 +909,14 @@ def compare_with_dratings(
 
         exact_key = (
             game_date,
-            norm_key(
-                away_team
-            ),
-            norm_key(
-                home_team
-            ),
+            norm_key(away_team),
+            norm_key(home_team),
         )
 
         reverse_key = (
             game_date,
-            norm_key(
-                home_team
-            ),
-            norm_key(
-                away_team
-            ),
+            norm_key(home_team),
+            norm_key(away_team),
         )
 
         exact_matches = dratings_checks.get(
@@ -1098,6 +973,7 @@ def compare_with_dratings(
                 f"{away_team} at {home_team} "
                 f"| official_game_id={row['game_id']}"
             )
+
             continue
 
         else:
@@ -1108,6 +984,7 @@ def compare_with_dratings(
                 f"| exact={len(exact_matches)} "
                 f"| reverse={len(reverse_matches)}"
             )
+
             continue
 
         if (
@@ -1150,11 +1027,7 @@ def normalize_output_df(
         OUTPUT_COLUMNS
     ]
 
-    df = df.fillna(
-        ""
-    )
-
-    return df
+    return df.fillna("")
 
 
 def write_official_scores_for_date(
@@ -1165,6 +1038,7 @@ def write_official_scores_for_date(
         log(
             f"No officially final NHL games for {game_date}"
         )
+
         return 0
 
     df = normalize_output_df(
@@ -1204,14 +1078,12 @@ def write_official_scores_for_date(
     )
 
     log(
-        f"WROTE OFFICIAL FINAL SCORES: "
+        "WROTE OFFICIAL FINAL SCORES: "
         f"{output_path} "
         f"| rows={len(df)}"
     )
 
-    return len(
-        df
-    )
+    return len(df)
 
 
 # ============================================================
@@ -1227,6 +1099,10 @@ def main() -> int:
     )
 
     log(
+        f"TARGET_DATE_SOURCE={SELECT_DIR}"
+    )
+
+    log(
         f"DRAT_CHECK_DIR={RAW_DIR}"
     )
 
@@ -1234,45 +1110,40 @@ def main() -> int:
         f"OUT_DIR={OUT_DIR}"
     )
 
-    if not RAW_DIR.exists():
-        fail(
-            f"D-Ratings check-source folder does not exist: {RAW_DIR}"
-        )
-
-    raw_files = sorted(
-        RAW_DIR.glob(
-            RAW_PATTERN
-        )
-    )
-
-    if not raw_files:
-        log(
-            f"No D-Ratings check files found matching "
-            f"{RAW_PATTERN} in {RAW_DIR}"
-        )
-
-        log(
-            "=== transform_final_scores END ==="
-        )
-
-        return 0
-
-    (
-        target_dates,
-        dratings_checks,
-    ) = collect_dratings_checks(
-        raw_files
-    )
-
-    if not target_dates:
-        fail(
-            "Could not determine any target dates "
-            "from D-Ratings check files"
-        )
+    target_dates = discover_target_dates()
 
     log(
-        f"Target dates discovered: {len(target_dates)}"
+        f"Stage 04 target dates discovered: "
+        f"{len(target_dates)}"
     )
+
+    if RAW_DIR.exists():
+        raw_files = sorted(
+            RAW_DIR.glob(
+                RAW_PATTERN
+            )
+        )
+
+    else:
+        raw_files = []
+
+        log(
+            "DRAT CHECK SOURCE UNAVAILABLE: "
+            f"{RAW_DIR}"
+        )
+
+    if raw_files:
+        dratings_checks = collect_dratings_checks(
+            raw_files
+        )
+
+    else:
+        dratings_checks = {}
+
+        log(
+            "No D-Ratings check files found; "
+            "official NHL final-score processing will continue"
+        )
 
     total_official_games = 0
     files_written = 0
@@ -1281,7 +1152,8 @@ def main() -> int:
         target_dates
     ):
         log(
-            f"Processing official NHL final scores for {game_date}"
+            f"Processing official NHL final scores "
+            f"for {game_date}"
         )
 
         payload = fetch_official_score_payload(
@@ -1311,19 +1183,23 @@ def main() -> int:
             files_written += 1
 
     log(
-        f"D-Ratings check files processed: {len(raw_files)}"
+        f"Stage 04 dates queried: "
+        f"{len(target_dates)}"
     )
 
     log(
-        f"Official NHL dates queried: {len(target_dates)}"
+        f"D-Ratings check files processed: "
+        f"{len(raw_files)}"
     )
 
     log(
-        f"Official final-score rows written: {total_official_games}"
+        f"Official final-score rows written: "
+        f"{total_official_games}"
     )
 
     log(
-        f"Official final-score files written: {files_written}"
+        f"Official final-score files written: "
+        f"{files_written}"
     )
 
     log(
