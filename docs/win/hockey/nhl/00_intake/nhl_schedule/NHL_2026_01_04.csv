@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020657,hockey,nhl,2026_01_04,14:00,Dallas Stars,Montréal Canadiens,DAL,MTL,25,8,20252026,2,OFF,OK,2026-01-04T19:00:00Z
+2025020658,hockey,nhl,2026_01_04,15:00,Columbus Blue Jackets,Pittsburgh Penguins,CBJ,PIT,29,5,20252026,2,OFF,OK,2026-01-04T20:00:00Z
+2025020659,hockey,nhl,2026_01_04,17:00,Florida Panthers,Colorado Avalanche,FLA,COL,13,21,20252026,2,OFF,OK,2026-01-04T22:00:00Z
+2025020660,hockey,nhl,2026_01_04,19:00,New Jersey Devils,Carolina Hurricanes,NJD,CAR,1,12,20252026,2,OFF,OK,2026-01-05T00:00:00Z
+2025020661,hockey,nhl,2026_01_04,19:00,Chicago Blackhawks,Vegas Golden Knights,CHI,VGK,16,54,20252026,2,OFF,OK,2026-01-05T00:00:00Z

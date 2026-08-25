@@ -1,0 +1,12 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020959,hockey,nhl,2026_03_03,19:00,Boston Bruins,Pittsburgh Penguins,BOS,PIT,6,5,20252026,2,OFF,OK,2026-03-04T00:00:00Z
+2025020960,hockey,nhl,2026_03_03,19:00,Buffalo Sabres,Vegas Golden Knights,BUF,VGK,7,54,20252026,2,OFF,OK,2026-03-04T00:00:00Z
+2025020961,hockey,nhl,2026_03_03,19:00,New Jersey Devils,Florida Panthers,NJD,FLA,1,13,20252026,2,OFF,OK,2026-03-04T00:00:00Z
+2025020962,hockey,nhl,2026_03_03,19:00,Washington Capitals,Utah Mammoth,WSH,UTA,15,68,20252026,2,OFF,OK,2026-03-04T00:00:00Z
+2025020963,hockey,nhl,2026_03_03,19:00,Columbus Blue Jackets,Nashville Predators,CBJ,NSH,29,18,20252026,2,OFF,OK,2026-03-04T00:00:00Z
+2025020964,hockey,nhl,2026_03_03,20:00,Winnipeg Jets,Chicago Blackhawks,WPG,CHI,52,16,20252026,2,OFF,OK,2026-03-04T01:00:00Z
+2025020965,hockey,nhl,2026_03_03,21:00,Calgary Flames,Dallas Stars,CGY,DAL,20,25,20252026,2,OFF,OK,2026-03-04T02:00:00Z
+2025020966,hockey,nhl,2026_03_03,21:00,Edmonton Oilers,Ottawa Senators,EDM,OTT,22,9,20252026,2,OFF,OK,2026-03-04T02:00:00Z
+2025020967,hockey,nhl,2026_03_03,21:30,Minnesota Wild,Tampa Bay Lightning,MIN,TBL,30,14,20252026,2,OFF,OK,2026-03-04T02:30:00Z
+2025020968,hockey,nhl,2026_03_03,22:00,Anaheim Ducks,Colorado Avalanche,ANA,COL,24,21,20252026,2,OFF,OK,2026-03-04T03:00:00Z
+2025020969,hockey,nhl,2026_03_03,22:00,San Jose Sharks,Montréal Canadiens,SJS,MTL,28,8,20252026,2,OFF,OK,2026-03-04T03:00:00Z

@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020534,hockey,nhl,2025_12_18,19:00,Boston Bruins,Edmonton Oilers,BOS,EDM,6,22,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020536,hockey,nhl,2025_12_18,19:00,Montréal Canadiens,Chicago Blackhawks,MTL,CHI,8,16,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020537,hockey,nhl,2025_12_18,19:00,Ottawa Senators,Pittsburgh Penguins,OTT,PIT,9,5,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020538,hockey,nhl,2025_12_18,19:00,Tampa Bay Lightning,Los Angeles Kings,TBL,LAK,14,26,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020539,hockey,nhl,2025_12_18,19:00,Washington Capitals,Toronto Maple Leafs,WSH,TOR,15,10,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020540,hockey,nhl,2025_12_18,19:00,Columbus Blue Jackets,Minnesota Wild,CBJ,MIN,29,30,20252026,2,OFF,OK,2025-12-19T00:00:00Z
+2025020535,hockey,nhl,2025_12_18,19:30,Buffalo Sabres,Philadelphia Flyers,BUF,PHI,7,4,20252026,2,OFF,OK,2025-12-19T00:30:00Z
+2025020541,hockey,nhl,2025_12_18,20:00,St. Louis Blues,New York Rangers,STL,NYR,19,3,20252026,2,OFF,OK,2025-12-19T01:00:00Z
+2025020542,hockey,nhl,2025_12_18,21:00,Calgary Flames,Seattle Kraken,CGY,SEA,20,55,20252026,2,OFF,OK,2025-12-19T02:00:00Z
+2025020543,hockey,nhl,2025_12_18,22:00,San Jose Sharks,Dallas Stars,SJS,DAL,28,25,20252026,2,OFF,OK,2025-12-19T03:00:00Z

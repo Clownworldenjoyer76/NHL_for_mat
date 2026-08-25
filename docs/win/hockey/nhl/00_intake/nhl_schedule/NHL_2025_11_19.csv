@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020315,hockey,nhl,2025_11_19,19:00,Washington Capitals,Edmonton Oilers,WSH,EDM,15,22,20252026,2,OFF,OK,2025-11-20T00:00:00Z
+2025020316,hockey,nhl,2025_11_19,19:30,Buffalo Sabres,Calgary Flames,BUF,CGY,7,20,20252026,2,OFF,OK,2025-11-20T00:30:00Z
+2025020317,hockey,nhl,2025_11_19,21:30,Minnesota Wild,Carolina Hurricanes,MIN,CAR,30,12,20252026,2,OFF,OK,2025-11-20T02:30:00Z
+2025020318,hockey,nhl,2025_11_19,22:00,Anaheim Ducks,Boston Bruins,ANA,BOS,24,6,20252026,2,OFF,OK,2025-11-20T03:00:00Z

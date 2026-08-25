@@ -1,0 +1,12 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021233,hockey,nhl,2026_04_07,19:00,Montréal Canadiens,Florida Panthers,MTL,FLA,8,13,20252026,2,OFF,OK,2026-04-07T23:00:00Z
+2025021234,hockey,nhl,2026_04_07,19:00,Ottawa Senators,Tampa Bay Lightning,OTT,TBL,9,14,20252026,2,OFF,OK,2026-04-07T23:00:00Z
+2025021235,hockey,nhl,2026_04_07,19:00,Detroit Red Wings,Columbus Blue Jackets,DET,CBJ,17,29,20252026,2,OFF,OK,2026-04-07T23:00:00Z
+2025021236,hockey,nhl,2026_04_07,19:00,New Jersey Devils,Philadelphia Flyers,NJD,PHI,1,4,20252026,2,OFF,OK,2026-04-07T23:00:00Z
+2025021237,hockey,nhl,2026_04_07,19:00,Carolina Hurricanes,Boston Bruins,CAR,BOS,12,6,20252026,2,OFF,OK,2026-04-07T23:00:00Z
+2025021238,hockey,nhl,2026_04_07,20:00,St. Louis Blues,Colorado Avalanche,STL,COL,19,21,20252026,2,OFF,OK,2026-04-08T00:00:00Z
+2025021239,hockey,nhl,2026_04_07,20:00,Dallas Stars,Calgary Flames,DAL,CGY,25,20,20252026,2,OFF,OK,2026-04-08T00:00:00Z
+2025021240,hockey,nhl,2026_04_07,20:00,Minnesota Wild,Seattle Kraken,MIN,SEA,30,55,20252026,2,OFF,OK,2026-04-08T00:00:00Z
+2025021241,hockey,nhl,2026_04_07,21:30,Utah Mammoth,Edmonton Oilers,UTA,EDM,68,22,20252026,2,OFF,OK,2026-04-08T01:30:00Z
+2025021242,hockey,nhl,2026_04_07,22:00,Vancouver Canucks,Vegas Golden Knights,VAN,VGK,23,54,20252026,2,OFF,OK,2026-04-08T02:00:00Z
+2025021243,hockey,nhl,2026_04_07,22:00,Anaheim Ducks,Nashville Predators,ANA,NSH,24,18,20252026,2,OFF,OK,2026-04-08T02:00:00Z

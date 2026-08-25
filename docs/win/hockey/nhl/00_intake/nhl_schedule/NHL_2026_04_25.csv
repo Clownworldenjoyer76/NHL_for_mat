@@ -1,0 +1,4 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025030134,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes,OTT,CAR,9,12,20252026,3,OFF,OK,2026-04-25T19:00:00Z
+2025030164,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars,MIN,DAL,30,25,20252026,3,OFF,OK,2026-04-25T21:30:00Z
+2025030144,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins,PHI,PIT,4,5,20252026,3,OFF,OK,2026-04-26T00:00:00Z

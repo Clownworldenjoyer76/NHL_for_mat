@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020049,hockey,nhl,2025_10_14,19:00,Toronto Maple Leafs,Nashville Predators,TOR,NSH,10,18,20252026,2,OFF,OK,2025-10-14T23:00:00Z
+2025020050,hockey,nhl,2025_10_14,19:00,Montréal Canadiens,Seattle Kraken,MTL,SEA,8,55,20252026,2,OFF,OK,2025-10-14T23:00:00Z
+2025020051,hockey,nhl,2025_10_14,19:00,New York Rangers,Edmonton Oilers,NYR,EDM,3,22,20252026,2,OFF,OK,2025-10-14T23:00:00Z
+2025020052,hockey,nhl,2025_10_14,19:00,Washington Capitals,Tampa Bay Lightning,WSH,TBL,15,14,20252026,2,OFF,OK,2025-10-14T23:00:00Z
+2025020053,hockey,nhl,2025_10_14,21:00,Calgary Flames,Vegas Golden Knights,CGY,VGK,20,54,20252026,2,OFF,OK,2025-10-15T01:00:00Z
+2025020054,hockey,nhl,2025_10_14,21:30,Dallas Stars,Minnesota Wild,DAL,MIN,25,30,20252026,2,OFF,OK,2025-10-15T01:30:00Z
+2025020055,hockey,nhl,2025_10_14,22:00,San Jose Sharks,Carolina Hurricanes,SJS,CAR,28,12,20252026,2,OFF,OK,2025-10-15T02:00:00Z
+2025020056,hockey,nhl,2025_10_14,22:30,Anaheim Ducks,Pittsburgh Penguins,ANA,PIT,24,5,20252026,2,OFF,OK,2025-10-15T02:30:00Z

@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020127,hockey,nhl,2025_10_25,12:30,Philadelphia Flyers,New York Islanders,PHI,NYI,4,2,20252026,2,OFF,OK,2025-10-25T16:30:00Z
+2025020128,hockey,nhl,2025_10_25,15:00,Boston Bruins,Colorado Avalanche,BOS,COL,6,21,20252026,2,OFF,OK,2025-10-25T19:00:00Z
+2025020129,hockey,nhl,2025_10_25,17:00,Tampa Bay Lightning,Anaheim Ducks,TBL,ANA,14,24,20252026,2,OFF,OK,2025-10-25T21:00:00Z
+2025020132,hockey,nhl,2025_10_25,17:00,Toronto Maple Leafs,Buffalo Sabres,TOR,BUF,10,7,20252026,2,OFF,OK,2025-10-25T21:00:00Z
+2025020130,hockey,nhl,2025_10_25,18:00,Florida Panthers,Vegas Golden Knights,FLA,VGK,13,54,20252026,2,OFF,OK,2025-10-25T22:00:00Z
+2025020131,hockey,nhl,2025_10_25,18:00,Minnesota Wild,Utah Mammoth,MIN,UTA,30,68,20252026,2,OFF,OK,2025-10-25T22:00:00Z
+2025020133,hockey,nhl,2025_10_25,19:00,Detroit Red Wings,St. Louis Blues,DET,STL,17,19,20252026,2,OFF,OK,2025-10-25T23:00:00Z
+2025020134,hockey,nhl,2025_10_25,19:00,Pittsburgh Penguins,Columbus Blue Jackets,PIT,CBJ,5,29,20252026,2,OFF,OK,2025-10-25T23:00:00Z
+2025020135,hockey,nhl,2025_10_25,19:00,Washington Capitals,Ottawa Senators,WSH,OTT,15,9,20252026,2,OFF,OK,2025-10-25T23:00:00Z
+2025020136,hockey,nhl,2025_10_25,19:00,Vancouver Canucks,Montréal Canadiens,VAN,MTL,23,8,20252026,2,OFF,OK,2025-10-25T23:00:00Z
+2025020137,hockey,nhl,2025_10_25,20:00,Nashville Predators,Los Angeles Kings,NSH,LAK,18,26,20252026,2,OFF,OK,2025-10-26T00:00:00Z
+2025020138,hockey,nhl,2025_10_25,20:00,Dallas Stars,Carolina Hurricanes,DAL,CAR,25,12,20252026,2,OFF,OK,2025-10-26T00:00:00Z
+2025020139,hockey,nhl,2025_10_25,22:00,Seattle Kraken,Edmonton Oilers,SEA,EDM,55,22,20252026,2,OFF,OK,2025-10-26T02:00:00Z

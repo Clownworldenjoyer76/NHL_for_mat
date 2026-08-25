@@ -1,0 +1,10 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021110,hockey,nhl,2026_03_22,12:00,New York Rangers,Winnipeg Jets,NYR,WPG,3,52,20252026,2,OFF,OK,2026-03-22T16:00:00Z
+2025021111,hockey,nhl,2026_03_22,12:30,Washington Capitals,Colorado Avalanche,WSH,COL,15,21,20252026,2,OFF,OK,2026-03-22T16:30:00Z
+2025021112,hockey,nhl,2026_03_22,15:00,Pittsburgh Penguins,Carolina Hurricanes,PIT,CAR,5,12,20252026,2,OFF,OK,2026-03-22T19:00:00Z
+2025021113,hockey,nhl,2026_03_22,15:00,Chicago Blackhawks,Nashville Predators,CHI,NSH,16,18,20252026,2,OFF,OK,2026-03-22T19:00:00Z
+2025021114,hockey,nhl,2026_03_22,19:00,New York Islanders,Columbus Blue Jackets,NYI,CBJ,2,29,20252026,2,OFF,OK,2026-03-22T23:00:00Z
+2025021115,hockey,nhl,2026_03_22,19:00,Dallas Stars,Vegas Golden Knights,DAL,VGK,25,54,20252026,2,OFF,OK,2026-03-22T23:00:00Z
+2025021116,hockey,nhl,2026_03_22,20:00,Calgary Flames,Tampa Bay Lightning,CGY,TBL,20,14,20252026,2,OFF,OK,2026-03-23T00:00:00Z
+2025021117,hockey,nhl,2026_03_22,20:00,Anaheim Ducks,Buffalo Sabres,ANA,BUF,24,7,20252026,2,OFF,OK,2026-03-23T00:00:00Z
+2025021118,hockey,nhl,2026_03_22,21:00,Utah Mammoth,Los Angeles Kings,UTA,LAK,68,26,20252026,2,OFF,OK,2026-03-23T01:00:00Z

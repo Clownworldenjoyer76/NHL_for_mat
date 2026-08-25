@@ -1,0 +1,15 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021191,hockey,nhl,2026_04_02,19:00,Ottawa Senators,Buffalo Sabres,OTT,BUF,9,7,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021192,hockey,nhl,2026_04_02,19:00,Tampa Bay Lightning,Pittsburgh Penguins,TBL,PIT,14,5,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021193,hockey,nhl,2026_04_02,19:00,Florida Panthers,Boston Bruins,FLA,BOS,13,6,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021195,hockey,nhl,2026_04_02,19:00,New York Rangers,Montréal Canadiens,NYR,MTL,3,8,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021196,hockey,nhl,2026_04_02,19:00,Philadelphia Flyers,Detroit Red Wings,PHI,DET,4,17,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021197,hockey,nhl,2026_04_02,19:00,Carolina Hurricanes,Columbus Blue Jackets,CAR,CBJ,12,29,20252026,2,OFF,OK,2026-04-02T23:00:00Z
+2025021194,hockey,nhl,2026_04_02,19:30,New Jersey Devils,Washington Capitals,NJD,WSH,1,15,20252026,2,OFF,OK,2026-04-02T23:30:00Z
+2025021198,hockey,nhl,2026_04_02,20:00,Dallas Stars,Winnipeg Jets,DAL,WPG,25,52,20252026,2,OFF,OK,2026-04-03T00:00:00Z
+2025021199,hockey,nhl,2026_04_02,20:00,Minnesota Wild,Vancouver Canucks,MIN,VAN,30,23,20252026,2,OFF,OK,2026-04-03T00:00:00Z
+2025021200,hockey,nhl,2026_04_02,21:00,Edmonton Oilers,Chicago Blackhawks,EDM,CHI,22,16,20252026,2,OFF,OK,2026-04-03T01:00:00Z
+2025021201,hockey,nhl,2026_04_02,22:00,Vegas Golden Knights,Calgary Flames,VGK,CGY,54,20,20252026,2,OFF,OK,2026-04-03T02:00:00Z
+2025021202,hockey,nhl,2026_04_02,22:00,San Jose Sharks,Toronto Maple Leafs,SJS,TOR,28,10,20252026,2,OFF,OK,2026-04-03T02:00:00Z
+2025021203,hockey,nhl,2026_04_02,22:00,Seattle Kraken,Utah Mammoth,SEA,UTA,55,68,20252026,2,OFF,OK,2026-04-03T02:00:00Z
+2025021204,hockey,nhl,2026_04_02,22:30,Los Angeles Kings,Nashville Predators,LAK,NSH,26,18,20252026,2,OFF,OK,2026-04-03T02:30:00Z

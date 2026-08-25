@@ -1,0 +1,3 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020148,hockey,nhl,2025_10_27,19:00,Pittsburgh Penguins,St. Louis Blues,PIT,STL,5,19,20252026,2,OFF,OK,2025-10-27T23:00:00Z
+2025020149,hockey,nhl,2025_10_27,19:30,Ottawa Senators,Boston Bruins,OTT,BOS,9,6,20252026,2,OFF,OK,2025-10-27T23:30:00Z

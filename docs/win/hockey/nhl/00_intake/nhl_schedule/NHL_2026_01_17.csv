@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020754,hockey,nhl,2026_01_17,12:30,Buffalo Sabres,Minnesota Wild,BUF,MIN,7,30,20252026,2,OFF,OK,2026-01-17T17:30:00Z
+2025020755,hockey,nhl,2026_01_17,13:00,Philadelphia Flyers,New York Rangers,PHI,NYR,4,3,20252026,2,OFF,OK,2026-01-17T18:00:00Z
+2025020756,hockey,nhl,2026_01_17,15:00,Calgary Flames,New York Islanders,CGY,NYI,20,2,20252026,2,OFF,OK,2026-01-17T20:00:00Z
+2025020757,hockey,nhl,2026_01_17,17:00,Utah Mammoth,Seattle Kraken,UTA,SEA,68,55,20252026,2,OFF,OK,2026-01-17T22:00:00Z
+2025020758,hockey,nhl,2026_01_17,19:00,Ottawa Senators,Montréal Canadiens,OTT,MTL,9,8,20252026,2,OFF,OK,2026-01-18T00:00:00Z
+2025020759,hockey,nhl,2026_01_17,19:00,New Jersey Devils,Carolina Hurricanes,NJD,CAR,1,12,20252026,2,OFF,OK,2026-01-18T00:00:00Z
+2025020760,hockey,nhl,2026_01_17,19:00,Pittsburgh Penguins,Columbus Blue Jackets,PIT,CBJ,5,29,20252026,2,OFF,OK,2026-01-18T00:00:00Z
+2025020761,hockey,nhl,2026_01_17,19:00,Washington Capitals,Florida Panthers,WSH,FLA,15,13,20252026,2,OFF,OK,2026-01-18T00:00:00Z
+2025020762,hockey,nhl,2026_01_17,19:00,Winnipeg Jets,Toronto Maple Leafs,WPG,TOR,52,10,20252026,2,OFF,OK,2026-01-18T00:00:00Z
+2025020763,hockey,nhl,2026_01_17,20:00,Chicago Blackhawks,Boston Bruins,CHI,BOS,16,6,20252026,2,OFF,OK,2026-01-18T01:00:00Z
+2025020764,hockey,nhl,2026_01_17,22:00,Vancouver Canucks,Edmonton Oilers,VAN,EDM,23,22,20252026,2,OFF,OK,2026-01-18T03:00:00Z
+2025020765,hockey,nhl,2026_01_17,22:00,Vegas Golden Knights,Nashville Predators,VGK,NSH,54,18,20252026,2,OFF,OK,2026-01-18T03:00:00Z
+2025020766,hockey,nhl,2026_01_17,22:00,Anaheim Ducks,Los Angeles Kings,ANA,LAK,24,26,20252026,2,OFF,OK,2026-01-18T03:00:00Z

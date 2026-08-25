@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020508,hockey,nhl,2025_12_14,12:30,New Jersey Devils,Vancouver Canucks,NJD,VAN,1,23,20252026,2,OFF,OK,2025-12-14T17:30:00Z
+2025020509,hockey,nhl,2025_12_14,15:00,Pittsburgh Penguins,Utah Mammoth,PIT,UTA,5,68,20252026,2,OFF,OK,2025-12-14T20:00:00Z
+2025020510,hockey,nhl,2025_12_14,17:00,Carolina Hurricanes,Philadelphia Flyers,CAR,PHI,12,4,20252026,2,OFF,OK,2025-12-14T22:00:00Z
+2025020511,hockey,nhl,2025_12_14,18:00,Minnesota Wild,Boston Bruins,MIN,BOS,30,6,20252026,2,OFF,OK,2025-12-14T23:00:00Z
+2025020512,hockey,nhl,2025_12_14,19:00,Montréal Canadiens,Edmonton Oilers,MTL,EDM,8,22,20252026,2,OFF,OK,2025-12-15T00:00:00Z
+2025020513,hockey,nhl,2025_12_14,20:00,Seattle Kraken,Buffalo Sabres,SEA,BUF,55,7,20252026,2,OFF,OK,2025-12-15T01:00:00Z

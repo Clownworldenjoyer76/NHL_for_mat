@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020076,hockey,nhl,2025_10_18,13:00,Buffalo Sabres,Florida Panthers,BUF,FLA,7,13,20252026,2,OFF,OK,2025-10-18T17:00:00Z
+2025020077,hockey,nhl,2025_10_18,15:00,Ottawa Senators,New York Islanders,OTT,NYI,9,2,20252026,2,OFF,OK,2025-10-18T19:00:00Z
+2025020078,hockey,nhl,2025_10_18,15:30,New Jersey Devils,Edmonton Oilers,NJD,EDM,1,22,20252026,2,OFF,OK,2025-10-18T19:30:00Z
+2025020079,hockey,nhl,2025_10_18,19:00,Toronto Maple Leafs,Seattle Kraken,TOR,SEA,10,55,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020080,hockey,nhl,2025_10_18,19:00,Montréal Canadiens,New York Rangers,MTL,NYR,8,3,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020081,hockey,nhl,2025_10_18,19:00,Philadelphia Flyers,Minnesota Wild,PHI,MIN,4,30,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020082,hockey,nhl,2025_10_18,19:00,Columbus Blue Jackets,Tampa Bay Lightning,CBJ,TBL,29,14,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020083,hockey,nhl,2025_10_18,19:00,St. Louis Blues,Dallas Stars,STL,DAL,19,25,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020084,hockey,nhl,2025_10_18,19:00,Winnipeg Jets,Nashville Predators,WPG,NSH,52,18,20252026,2,OFF,OK,2025-10-18T23:00:00Z
+2025020085,hockey,nhl,2025_10_18,21:00,Colorado Avalanche,Boston Bruins,COL,BOS,21,6,20252026,2,OFF,OK,2025-10-19T01:00:00Z
+2025020086,hockey,nhl,2025_10_18,21:00,Los Angeles Kings,Carolina Hurricanes,LAK,CAR,26,12,20252026,2,OFF,OK,2025-10-19T01:00:00Z
+2025020087,hockey,nhl,2025_10_18,22:00,Vegas Golden Knights,Calgary Flames,VGK,CGY,54,20,20252026,2,OFF,OK,2025-10-19T02:00:00Z
+2025020088,hockey,nhl,2025_10_18,22:00,San Jose Sharks,Pittsburgh Penguins,SJS,PIT,28,5,20252026,2,OFF,OK,2025-10-19T02:00:00Z

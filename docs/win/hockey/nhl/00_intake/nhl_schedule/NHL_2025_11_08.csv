@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020231,hockey,nhl,2025_11_08,12:30,New Jersey Devils,Pittsburgh Penguins,NJD,PIT,1,5,20252026,2,OFF,OK,2025-11-08T17:30:00Z
+2025020232,hockey,nhl,2025_11_08,13:00,Philadelphia Flyers,Ottawa Senators,PHI,OTT,4,9,20252026,2,OFF,OK,2025-11-08T18:00:00Z
+2025020233,hockey,nhl,2025_11_08,15:30,Nashville Predators,Dallas Stars,NSH,DAL,18,25,20252026,2,OFF,OK,2025-11-08T20:30:00Z
+2025020234,hockey,nhl,2025_11_08,19:00,Toronto Maple Leafs,Boston Bruins,TOR,BOS,10,6,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020235,hockey,nhl,2025_11_08,19:00,Montréal Canadiens,Utah Mammoth,MTL,UTA,8,68,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020236,hockey,nhl,2025_11_08,19:00,Tampa Bay Lightning,Washington Capitals,TBL,WSH,14,15,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020237,hockey,nhl,2025_11_08,19:00,New York Rangers,New York Islanders,NYR,NYI,3,2,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020238,hockey,nhl,2025_11_08,19:00,Carolina Hurricanes,Buffalo Sabres,CAR,BUF,12,7,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020239,hockey,nhl,2025_11_08,19:00,St. Louis Blues,Seattle Kraken,STL,SEA,19,55,20252026,2,OFF,OK,2025-11-09T00:00:00Z
+2025020240,hockey,nhl,2025_11_08,22:00,Edmonton Oilers,Colorado Avalanche,EDM,COL,22,21,20252026,2,OFF,OK,2025-11-09T03:00:00Z
+2025020241,hockey,nhl,2025_11_08,22:00,Vancouver Canucks,Columbus Blue Jackets,VAN,CBJ,23,29,20252026,2,OFF,OK,2025-11-09T03:00:00Z
+2025020242,hockey,nhl,2025_11_08,22:00,Vegas Golden Knights,Anaheim Ducks,VGK,ANA,54,24,20252026,2,OFF,OK,2025-11-09T03:00:00Z
+2025020243,hockey,nhl,2025_11_08,22:00,San Jose Sharks,Florida Panthers,SJS,FLA,28,13,20252026,2,OFF,OK,2025-11-09T03:00:00Z

@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020072,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning,DET,TBL,17,14,20252026,2,OFF,OK,2025-10-17T23:00:00Z
+2025020073,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild,WSH,MIN,15,30,20252026,2,OFF,OK,2025-10-17T23:00:00Z
+2025020074,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks,CHI,VAN,16,23,20252026,2,OFF,OK,2025-10-18T00:30:00Z
+2025020075,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks,UTA,SJS,68,28,20252026,2,OFF,OK,2025-10-18T01:00:00Z

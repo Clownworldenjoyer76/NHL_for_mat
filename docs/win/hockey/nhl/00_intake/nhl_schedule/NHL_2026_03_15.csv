@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021057,hockey,nhl,2026_03_15,15:00,Winnipeg Jets,St. Louis Blues,WPG,STL,52,19,20252026,2,OFF,OK,2026-03-15T19:00:00Z
+2025021058,hockey,nhl,2026_03_15,17:00,Ottawa Senators,San Jose Sharks,OTT,SJS,9,28,20252026,2,OFF,OK,2026-03-15T21:00:00Z
+2025021059,hockey,nhl,2026_03_15,19:00,Montréal Canadiens,Anaheim Ducks,MTL,ANA,8,24,20252026,2,OFF,OK,2026-03-15T23:00:00Z
+2025021060,hockey,nhl,2026_03_15,19:30,Minnesota Wild,Toronto Maple Leafs,MIN,TOR,30,10,20252026,2,OFF,OK,2026-03-15T23:30:00Z
+2025021061,hockey,nhl,2026_03_15,20:00,Edmonton Oilers,Nashville Predators,EDM,NSH,22,18,20252026,2,OFF,OK,2026-03-16T00:00:00Z
+2025021062,hockey,nhl,2026_03_15,20:00,Seattle Kraken,Florida Panthers,SEA,FLA,55,13,20252026,2,OFF,OK,2026-03-16T00:00:00Z

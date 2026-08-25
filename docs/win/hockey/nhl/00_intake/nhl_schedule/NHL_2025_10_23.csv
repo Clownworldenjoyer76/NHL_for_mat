@@ -1,0 +1,13 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020113,hockey,nhl,2025_10_23,18:45,Tampa Bay Lightning,Chicago Blackhawks,TBL,CHI,14,16,20252026,2,OFF,OK,2025-10-23T22:45:00Z
+2025020111,hockey,nhl,2025_10_23,19:00,Boston Bruins,Anaheim Ducks,BOS,ANA,6,24,20252026,2,OFF,OK,2025-10-23T23:00:00Z
+2025020112,hockey,nhl,2025_10_23,19:00,Ottawa Senators,Philadelphia Flyers,OTT,PHI,9,4,20252026,2,OFF,OK,2025-10-23T23:00:00Z
+2025020114,hockey,nhl,2025_10_23,19:00,Florida Panthers,Pittsburgh Penguins,FLA,PIT,13,5,20252026,2,OFF,OK,2025-10-23T23:00:00Z
+2025020115,hockey,nhl,2025_10_23,19:00,New York Islanders,Detroit Red Wings,NYI,DET,2,17,20252026,2,OFF,OK,2025-10-23T23:00:00Z
+2025020116,hockey,nhl,2025_10_23,19:00,New York Rangers,San Jose Sharks,NYR,SJS,3,28,20252026,2,OFF,OK,2025-10-23T23:00:00Z
+2025020117,hockey,nhl,2025_10_23,20:00,St. Louis Blues,Utah Mammoth,STL,UTA,19,68,20252026,2,OFF,OK,2025-10-24T00:00:00Z
+2025020118,hockey,nhl,2025_10_23,20:00,Nashville Predators,Vancouver Canucks,NSH,VAN,18,23,20252026,2,OFF,OK,2025-10-24T00:00:00Z
+2025020120,hockey,nhl,2025_10_23,20:00,Winnipeg Jets,Seattle Kraken,WPG,SEA,52,55,20252026,2,OFF,OK,2025-10-24T00:00:00Z
+2025020119,hockey,nhl,2025_10_23,21:00,Dallas Stars,Los Angeles Kings,DAL,LAK,25,26,20252026,2,OFF,OK,2025-10-24T01:00:00Z
+2025020121,hockey,nhl,2025_10_23,21:00,Colorado Avalanche,Carolina Hurricanes,COL,CAR,21,12,20252026,2,OFF,OK,2025-10-24T01:00:00Z
+2025020122,hockey,nhl,2025_10_23,21:00,Edmonton Oilers,Montréal Canadiens,EDM,MTL,22,8,20252026,2,OFF,OK,2025-10-24T01:00:00Z

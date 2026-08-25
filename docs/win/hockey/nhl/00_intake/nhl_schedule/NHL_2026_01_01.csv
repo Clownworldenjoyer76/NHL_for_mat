@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020632,hockey,nhl,2026_01_01,13:00,Ottawa Senators,Washington Capitals,OTT,WSH,9,15,20252026,2,OFF,OK,2026-01-01T18:00:00Z
+2025020633,hockey,nhl,2026_01_01,15:00,New York Islanders,Utah Mammoth,NYI,UTA,2,68,20252026,2,OFF,OK,2026-01-01T20:00:00Z
+2025020634,hockey,nhl,2026_01_01,19:00,Toronto Maple Leafs,Winnipeg Jets,TOR,WPG,10,52,20252026,2,OFF,OK,2026-01-02T00:00:00Z
+2025020635,hockey,nhl,2026_01_01,19:00,Pittsburgh Penguins,Detroit Red Wings,PIT,DET,5,17,20252026,2,OFF,OK,2026-01-02T00:00:00Z
+2025020636,hockey,nhl,2026_01_01,19:00,Carolina Hurricanes,Montréal Canadiens,CAR,MTL,12,8,20252026,2,OFF,OK,2026-01-02T00:00:00Z
+2025020639,hockey,nhl,2026_01_01,19:00,Los Angeles Kings,Tampa Bay Lightning,LAK,TBL,26,14,20252026,2,OFF,OK,2026-01-02T00:00:00Z
+2025020637,hockey,nhl,2026_01_01,20:30,Chicago Blackhawks,Dallas Stars,CHI,DAL,16,25,20252026,2,OFF,OK,2026-01-02T01:30:00Z
+2025020638,hockey,nhl,2026_01_01,22:00,Seattle Kraken,Nashville Predators,SEA,NSH,55,18,20252026,2,OFF,OK,2026-01-02T03:00:00Z

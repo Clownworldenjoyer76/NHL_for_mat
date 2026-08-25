@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021012,hockey,nhl,2026_03_10,19:00,Boston Bruins,Los Angeles Kings,BOS,LAK,6,26,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021013,hockey,nhl,2026_03_10,19:00,Buffalo Sabres,San Jose Sharks,BUF,SJS,7,28,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021014,hockey,nhl,2026_03_10,19:00,Montréal Canadiens,Toronto Maple Leafs,MTL,TOR,8,10,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021015,hockey,nhl,2026_03_10,19:00,Tampa Bay Lightning,Columbus Blue Jackets,TBL,CBJ,14,29,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021016,hockey,nhl,2026_03_10,19:00,Florida Panthers,Detroit Red Wings,FLA,DET,13,17,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021017,hockey,nhl,2026_03_10,19:00,New York Rangers,Calgary Flames,NYR,CGY,3,20,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021018,hockey,nhl,2026_03_10,19:00,Carolina Hurricanes,Pittsburgh Penguins,CAR,PIT,12,5,20252026,2,OFF,OK,2026-03-10T23:00:00Z
+2025021019,hockey,nhl,2026_03_10,19:30,St. Louis Blues,New York Islanders,STL,NYI,19,2,20252026,2,OFF,OK,2026-03-10T23:30:00Z
+2025021020,hockey,nhl,2026_03_10,20:00,Dallas Stars,Vegas Golden Knights,DAL,VGK,25,54,20252026,2,OFF,OK,2026-03-11T00:00:00Z
+2025021021,hockey,nhl,2026_03_10,20:00,Minnesota Wild,Utah Mammoth,MIN,UTA,30,68,20252026,2,OFF,OK,2026-03-11T00:00:00Z
+2025021022,hockey,nhl,2026_03_10,20:30,Winnipeg Jets,Anaheim Ducks,WPG,ANA,52,24,20252026,2,OFF,OK,2026-03-11T00:30:00Z
+2025021023,hockey,nhl,2026_03_10,22:00,Colorado Avalanche,Edmonton Oilers,COL,EDM,21,22,20252026,2,OFF,OK,2026-03-11T02:00:00Z
+2025021024,hockey,nhl,2026_03_10,22:00,Seattle Kraken,Nashville Predators,SEA,NSH,55,18,20252026,2,OFF,OK,2026-03-11T02:00:00Z

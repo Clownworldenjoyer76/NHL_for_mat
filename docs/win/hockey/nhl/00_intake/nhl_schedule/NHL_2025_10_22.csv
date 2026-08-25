@@ -1,0 +1,4 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020108,hockey,nhl,2025_10_22,19:00,New Jersey Devils,Minnesota Wild,NJD,MIN,1,30,20252026,2,OFF,OK,2025-10-22T23:00:00Z
+2025020109,hockey,nhl,2025_10_22,19:30,Buffalo Sabres,Detroit Red Wings,BUF,DET,7,17,20252026,2,OFF,OK,2025-10-22T23:30:00Z
+2025020110,hockey,nhl,2025_10_22,20:30,Calgary Flames,Montréal Canadiens,CGY,MTL,20,8,20252026,2,OFF,OK,2025-10-23T00:30:00Z

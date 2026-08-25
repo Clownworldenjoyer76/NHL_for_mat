@@ -1,0 +1,15 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021043,hockey,nhl,2026_03_14,13:00,Ottawa Senators,Anaheim Ducks,OTT,ANA,9,24,20252026,2,OFF,OK,2026-03-14T17:00:00Z
+2025021044,hockey,nhl,2026_03_14,15:00,Washington Capitals,Boston Bruins,WSH,BOS,15,6,20252026,2,OFF,OK,2026-03-14T19:00:00Z
+2025021045,hockey,nhl,2026_03_14,16:00,Winnipeg Jets,Colorado Avalanche,WPG,COL,52,21,20252026,2,OFF,OK,2026-03-14T20:00:00Z
+2025021046,hockey,nhl,2026_03_14,18:00,Minnesota Wild,New York Rangers,MIN,NYR,30,3,20252026,2,OFF,OK,2026-03-14T22:00:00Z
+2025021047,hockey,nhl,2026_03_14,19:00,Buffalo Sabres,Toronto Maple Leafs,BUF,TOR,7,10,20252026,2,OFF,OK,2026-03-14T23:00:00Z
+2025021048,hockey,nhl,2026_03_14,19:00,Montréal Canadiens,San Jose Sharks,MTL,SJS,8,28,20252026,2,OFF,OK,2026-03-14T23:00:00Z
+2025021049,hockey,nhl,2026_03_14,19:00,Tampa Bay Lightning,Carolina Hurricanes,TBL,CAR,14,12,20252026,2,OFF,OK,2026-03-14T23:00:00Z
+2025021050,hockey,nhl,2026_03_14,19:00,New Jersey Devils,Los Angeles Kings,NJD,LAK,1,26,20252026,2,OFF,OK,2026-03-14T23:00:00Z
+2025021051,hockey,nhl,2026_03_14,19:00,New York Islanders,Calgary Flames,NYI,CGY,2,20,20252026,2,OFF,OK,2026-03-14T23:00:00Z
+2025021052,hockey,nhl,2026_03_14,19:30,Philadelphia Flyers,Columbus Blue Jackets,PHI,CBJ,4,29,20252026,2,OFF,OK,2026-03-14T23:30:00Z
+2025021053,hockey,nhl,2026_03_14,20:00,Dallas Stars,Detroit Red Wings,DAL,DET,25,17,20252026,2,OFF,OK,2026-03-15T00:00:00Z
+2025021054,hockey,nhl,2026_03_14,21:00,Utah Mammoth,Pittsburgh Penguins,UTA,PIT,68,5,20252026,2,OFF,OK,2026-03-15T01:00:00Z
+2025021055,hockey,nhl,2026_03_14,22:00,Vancouver Canucks,Seattle Kraken,VAN,SEA,23,55,20252026,2,OFF,OK,2026-03-15T02:00:00Z
+2025021056,hockey,nhl,2026_03_14,22:00,Vegas Golden Knights,Chicago Blackhawks,VGK,CHI,54,16,20252026,2,OFF,OK,2026-03-15T02:00:00Z

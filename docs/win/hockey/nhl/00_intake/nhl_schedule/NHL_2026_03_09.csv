@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020828,hockey,nhl,2026_03_09,16:00,Columbus Blue Jackets,Los Angeles Kings,CBJ,LAK,29,26,20252026,2,OFF,OK,2026-03-09T20:00:00Z
+2025021008,hockey,nhl,2026_03_09,19:00,Philadelphia Flyers,New York Rangers,PHI,NYR,4,3,20252026,2,OFF,OK,2026-03-09T23:00:00Z
+2025021009,hockey,nhl,2026_03_09,19:00,Washington Capitals,Calgary Flames,WSH,CGY,15,20,20252026,2,OFF,OK,2026-03-09T23:00:00Z
+2025021010,hockey,nhl,2026_03_09,20:30,Chicago Blackhawks,Utah Mammoth,CHI,UTA,16,68,20252026,2,OFF,OK,2026-03-10T00:30:00Z
+2025021011,hockey,nhl,2026_03_09,21:00,Vancouver Canucks,Ottawa Senators,VAN,OTT,23,9,20252026,2,OFF,OK,2026-03-10T01:00:00Z

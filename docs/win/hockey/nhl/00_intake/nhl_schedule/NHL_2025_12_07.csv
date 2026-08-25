@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020453,hockey,nhl,2025_12_07,13:00,Philadelphia Flyers,Colorado Avalanche,PHI,COL,4,21,20252026,2,OFF,OK,2025-12-07T18:00:00Z
+2025020454,hockey,nhl,2025_12_07,17:00,Florida Panthers,New York Islanders,FLA,NYI,13,2,20252026,2,OFF,OK,2025-12-07T22:00:00Z
+2025020455,hockey,nhl,2025_12_07,17:00,Carolina Hurricanes,San Jose Sharks,CAR,SJS,12,28,20252026,2,OFF,OK,2025-12-07T22:00:00Z
+2025020456,hockey,nhl,2025_12_07,18:00,Dallas Stars,Pittsburgh Penguins,DAL,PIT,25,5,20252026,2,OFF,OK,2025-12-07T23:00:00Z
+2025020457,hockey,nhl,2025_12_07,19:00,Montréal Canadiens,St. Louis Blues,MTL,STL,8,19,20252026,2,OFF,OK,2025-12-08T00:00:00Z
+2025020458,hockey,nhl,2025_12_07,19:00,New York Rangers,Vegas Golden Knights,NYR,VGK,3,54,20252026,2,OFF,OK,2025-12-08T00:00:00Z
+2025020459,hockey,nhl,2025_12_07,19:00,Washington Capitals,Columbus Blue Jackets,WSH,CBJ,15,29,20252026,2,OFF,OK,2025-12-08T00:00:00Z
+2025020460,hockey,nhl,2025_12_07,20:00,Anaheim Ducks,Chicago Blackhawks,ANA,CHI,24,16,20252026,2,OFF,OK,2025-12-08T01:00:00Z

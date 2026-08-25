@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020402,hockey,nhl,2025_11_30,13:00,New York Islanders,Washington Capitals,NYI,WSH,2,15,20252026,2,OFF,OK,2025-11-30T18:00:00Z
+2025020403,hockey,nhl,2025_11_30,15:30,Chicago Blackhawks,Anaheim Ducks,CHI,ANA,16,24,20252026,2,OFF,OK,2025-11-30T20:30:00Z
+2025020404,hockey,nhl,2025_11_30,17:00,Carolina Hurricanes,Calgary Flames,CAR,CGY,12,20,20252026,2,OFF,OK,2025-11-30T22:00:00Z
+2025020405,hockey,nhl,2025_11_30,18:00,Dallas Stars,Ottawa Senators,DAL,OTT,25,9,20252026,2,OFF,OK,2025-11-30T23:00:00Z

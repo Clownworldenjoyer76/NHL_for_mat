@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020466,hockey,nhl,2025_12_09,19:00,Montréal Canadiens,Tampa Bay Lightning,MTL,TBL,8,14,20252026,2,OFF,OK,2025-12-10T00:00:00Z
+2025020467,hockey,nhl,2025_12_09,19:00,Ottawa Senators,New Jersey Devils,OTT,NJD,9,1,20252026,2,OFF,OK,2025-12-10T00:00:00Z
+2025020468,hockey,nhl,2025_12_09,19:00,New York Islanders,Vegas Golden Knights,NYI,VGK,2,54,20252026,2,OFF,OK,2025-12-10T00:00:00Z
+2025020469,hockey,nhl,2025_12_09,19:00,Philadelphia Flyers,San Jose Sharks,PHI,SJS,4,28,20252026,2,OFF,OK,2025-12-10T00:00:00Z
+2025020470,hockey,nhl,2025_12_09,19:00,Pittsburgh Penguins,Anaheim Ducks,PIT,ANA,5,24,20252026,2,OFF,OK,2025-12-10T00:00:00Z
+2025020471,hockey,nhl,2025_12_09,19:30,Carolina Hurricanes,Columbus Blue Jackets,CAR,CBJ,12,29,20252026,2,OFF,OK,2025-12-10T00:30:00Z
+2025020472,hockey,nhl,2025_12_09,20:00,St. Louis Blues,Boston Bruins,STL,BOS,19,6,20252026,2,OFF,OK,2025-12-10T01:00:00Z
+2025020473,hockey,nhl,2025_12_09,20:00,Winnipeg Jets,Dallas Stars,WPG,DAL,52,25,20252026,2,OFF,OK,2025-12-10T01:00:00Z
+2025020474,hockey,nhl,2025_12_09,21:00,Edmonton Oilers,Buffalo Sabres,EDM,BUF,22,7,20252026,2,OFF,OK,2025-12-10T02:00:00Z
+2025020475,hockey,nhl,2025_12_09,21:30,Nashville Predators,Colorado Avalanche,NSH,COL,18,21,20252026,2,OFF,OK,2025-12-10T02:30:00Z

@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020819,hockey,nhl,2026_01_25,13:30,Toronto Maple Leafs,Colorado Avalanche,TOR,COL,10,21,20252026,2,OFF,OK,2026-01-25T18:30:00Z
+2025020820,hockey,nhl,2026_01_25,15:00,Seattle Kraken,New Jersey Devils,SEA,NJD,55,1,20252026,2,OFF,OK,2026-01-25T20:00:00Z
+2025020821,hockey,nhl,2026_01_25,17:00,Ottawa Senators,Vegas Golden Knights,OTT,VGK,9,54,20252026,2,OFF,OK,2026-01-25T22:00:00Z
+2025020822,hockey,nhl,2026_01_25,18:00,Vancouver Canucks,Pittsburgh Penguins,VAN,PIT,23,5,20252026,2,OFF,OK,2026-01-25T23:00:00Z
+2025020823,hockey,nhl,2026_01_25,19:00,Chicago Blackhawks,Florida Panthers,CHI,FLA,16,13,20252026,2,OFF,OK,2026-01-26T00:00:00Z
+2025020824,hockey,nhl,2026_01_25,20:00,Calgary Flames,Anaheim Ducks,CGY,ANA,20,24,20252026,2,OFF,OK,2026-01-26T01:00:00Z

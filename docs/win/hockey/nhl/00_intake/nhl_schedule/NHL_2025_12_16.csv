@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020519,hockey,nhl,2025_12_16,19:00,Boston Bruins,Utah Mammoth,BOS,UTA,6,68,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020520,hockey,nhl,2025_12_16,19:00,Toronto Maple Leafs,Chicago Blackhawks,TOR,CHI,10,16,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020521,hockey,nhl,2025_12_16,19:00,Montréal Canadiens,Philadelphia Flyers,MTL,PHI,8,4,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020522,hockey,nhl,2025_12_16,19:00,Detroit Red Wings,New York Islanders,DET,NYI,17,2,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020523,hockey,nhl,2025_12_16,19:00,New York Rangers,Vancouver Canucks,NYR,VAN,3,23,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020525,hockey,nhl,2025_12_16,19:00,Columbus Blue Jackets,Anaheim Ducks,CBJ,ANA,29,24,20252026,2,OFF,OK,2025-12-17T00:00:00Z
+2025020524,hockey,nhl,2025_12_16,19:30,Pittsburgh Penguins,Edmonton Oilers,PIT,EDM,5,22,20252026,2,OFF,OK,2025-12-17T00:30:00Z
+2025020526,hockey,nhl,2025_12_16,20:00,Minnesota Wild,Washington Capitals,MIN,WSH,30,15,20252026,2,OFF,OK,2025-12-17T01:00:00Z
+2025020527,hockey,nhl,2025_12_16,22:00,San Jose Sharks,Calgary Flames,SJS,CGY,28,20,20252026,2,OFF,OK,2025-12-17T03:00:00Z
+2025020528,hockey,nhl,2025_12_16,22:00,Seattle Kraken,Colorado Avalanche,SEA,COL,55,21,20252026,2,OFF,OK,2025-12-17T03:00:00Z

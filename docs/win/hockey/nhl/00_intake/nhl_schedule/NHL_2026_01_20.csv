@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020780,hockey,nhl,2026_01_20,19:00,Montréal Canadiens,Minnesota Wild,MTL,MIN,8,30,20252026,2,OFF,OK,2026-01-21T00:00:00Z
+2025020781,hockey,nhl,2026_01_20,19:00,Tampa Bay Lightning,San Jose Sharks,TBL,SJS,14,28,20252026,2,OFF,OK,2026-01-21T00:00:00Z
+2025020782,hockey,nhl,2026_01_20,19:00,Columbus Blue Jackets,Ottawa Senators,CBJ,OTT,29,9,20252026,2,OFF,OK,2026-01-21T00:00:00Z
+2025020783,hockey,nhl,2026_01_20,19:30,Dallas Stars,Boston Bruins,DAL,BOS,25,6,20252026,2,OFF,OK,2026-01-21T00:30:00Z
+2025020784,hockey,nhl,2026_01_20,20:00,Nashville Predators,Buffalo Sabres,NSH,BUF,18,7,20252026,2,OFF,OK,2026-01-21T01:00:00Z
+2025020785,hockey,nhl,2026_01_20,20:00,Winnipeg Jets,St. Louis Blues,WPG,STL,52,19,20252026,2,OFF,OK,2026-01-21T01:00:00Z
+2025020786,hockey,nhl,2026_01_20,22:00,Edmonton Oilers,New Jersey Devils,EDM,NJD,22,1,20252026,2,OFF,OK,2026-01-21T03:00:00Z
+2025020787,hockey,nhl,2026_01_20,22:00,Los Angeles Kings,New York Rangers,LAK,NYR,26,3,20252026,2,OFF,OK,2026-01-21T03:00:00Z

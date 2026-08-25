@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020436,hockey,nhl,2025_12_05,19:00,New Jersey Devils,Vegas Golden Knights,NJD,VGK,1,54,20252026,2,OFF,OK,2025-12-06T00:00:00Z
+2025020437,hockey,nhl,2025_12_05,19:00,Winnipeg Jets,Buffalo Sabres,WPG,BUF,52,7,20252026,2,OFF,OK,2025-12-06T00:00:00Z
+2025020438,hockey,nhl,2025_12_05,20:00,Dallas Stars,San Jose Sharks,DAL,SJS,25,28,20252026,2,OFF,OK,2025-12-06T01:00:00Z
+2025020439,hockey,nhl,2025_12_05,21:00,Vancouver Canucks,Utah Mammoth,VAN,UTA,23,68,20252026,2,OFF,OK,2025-12-06T02:00:00Z
+2025020440,hockey,nhl,2025_12_05,22:00,Anaheim Ducks,Washington Capitals,ANA,WSH,24,15,20252026,2,OFF,OK,2025-12-06T03:00:00Z

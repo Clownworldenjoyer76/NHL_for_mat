@@ -1,0 +1,12 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021099,hockey,nhl,2026_03_21,13:00,Pittsburgh Penguins,Winnipeg Jets,PIT,WPG,5,52,20252026,2,OFF,OK,2026-03-21T17:00:00Z
+2025021100,hockey,nhl,2026_03_21,14:00,Nashville Predators,Vegas Golden Knights,NSH,VGK,18,54,20252026,2,OFF,OK,2026-03-21T18:00:00Z
+2025021101,hockey,nhl,2026_03_21,16:00,Minnesota Wild,Dallas Stars,MIN,DAL,30,25,20252026,2,OFF,OK,2026-03-21T20:00:00Z
+2025021102,hockey,nhl,2026_03_21,16:00,Los Angeles Kings,Buffalo Sabres,LAK,BUF,26,7,20252026,2,OFF,OK,2026-03-21T20:00:00Z
+2025021103,hockey,nhl,2026_03_21,16:00,San Jose Sharks,Philadelphia Flyers,SJS,PHI,28,4,20252026,2,OFF,OK,2026-03-21T20:00:00Z
+2025021104,hockey,nhl,2026_03_21,17:00,Columbus Blue Jackets,Seattle Kraken,CBJ,SEA,29,55,20252026,2,OFF,OK,2026-03-21T21:00:00Z
+2025021105,hockey,nhl,2026_03_21,19:00,Montréal Canadiens,New York Islanders,MTL,NYI,8,2,20252026,2,OFF,OK,2026-03-21T23:00:00Z
+2025021106,hockey,nhl,2026_03_21,19:00,Ottawa Senators,Toronto Maple Leafs,OTT,TOR,9,10,20252026,2,OFF,OK,2026-03-21T23:00:00Z
+2025021107,hockey,nhl,2026_03_21,19:00,Vancouver Canucks,St. Louis Blues,VAN,STL,23,19,20252026,2,OFF,OK,2026-03-21T23:00:00Z
+2025021108,hockey,nhl,2026_03_21,20:00,Detroit Red Wings,Boston Bruins,DET,BOS,17,6,20252026,2,OFF,OK,2026-03-22T00:00:00Z
+2025021109,hockey,nhl,2026_03_21,22:00,Edmonton Oilers,Tampa Bay Lightning,EDM,TBL,22,14,20252026,2,OFF,OK,2026-03-22T02:00:00Z

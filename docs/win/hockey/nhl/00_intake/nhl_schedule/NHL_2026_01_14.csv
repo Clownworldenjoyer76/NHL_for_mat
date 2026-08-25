@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020735,hockey,nhl,2026_01_14,19:00,New Jersey Devils,Seattle Kraken,NJD,SEA,1,55,20252026,2,OFF,OK,2026-01-15T00:00:00Z
+2025020736,hockey,nhl,2026_01_14,19:30,Buffalo Sabres,Philadelphia Flyers,BUF,PHI,7,4,20252026,2,OFF,OK,2026-01-15T00:30:00Z
+2025020737,hockey,nhl,2026_01_14,19:30,New York Rangers,Ottawa Senators,NYR,OTT,3,9,20252026,2,OFF,OK,2026-01-15T00:30:00Z
+2025020738,hockey,nhl,2026_01_14,22:00,Los Angeles Kings,Vegas Golden Knights,LAK,VGK,26,54,20252026,2,OFF,OK,2026-01-15T03:00:00Z

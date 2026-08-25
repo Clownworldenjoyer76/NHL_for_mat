@@ -1,0 +1,16 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021261,hockey,nhl,2026_04_11,12:30,Boston Bruins,Tampa Bay Lightning,BOS,TBL,6,14,20252026,2,OFF,OK,2026-04-11T16:30:00Z
+2025021262,hockey,nhl,2026_04_11,13:00,New York Islanders,Ottawa Senators,NYI,OTT,2,9,20252026,2,OFF,OK,2026-04-11T17:00:00Z
+2025021263,hockey,nhl,2026_04_11,15:00,Pittsburgh Penguins,Washington Capitals,PIT,WSH,5,15,20252026,2,OFF,OK,2026-04-11T19:00:00Z
+2025021264,hockey,nhl,2026_04_11,16:00,Los Angeles Kings,Edmonton Oilers,LAK,EDM,26,22,20252026,2,OFF,OK,2026-04-11T20:00:00Z
+2025021265,hockey,nhl,2026_04_11,17:00,Detroit Red Wings,New Jersey Devils,DET,NJD,17,1,20252026,2,OFF,OK,2026-04-11T21:00:00Z
+2025021266,hockey,nhl,2026_04_11,17:00,Chicago Blackhawks,St. Louis Blues,CHI,STL,16,19,20252026,2,OFF,OK,2026-04-11T21:00:00Z
+2025021267,hockey,nhl,2026_04_11,17:00,Nashville Predators,Minnesota Wild,NSH,MIN,18,30,20252026,2,OFF,OK,2026-04-11T21:00:00Z
+2025021268,hockey,nhl,2026_04_11,17:00,Dallas Stars,New York Rangers,DAL,NYR,25,3,20252026,2,OFF,OK,2026-04-11T21:00:00Z
+2025021269,hockey,nhl,2026_04_11,17:00,Utah Mammoth,Carolina Hurricanes,UTA,CAR,68,12,20252026,2,OFF,OK,2026-04-11T21:00:00Z
+2025021270,hockey,nhl,2026_04_11,19:00,Toronto Maple Leafs,Florida Panthers,TOR,FLA,10,13,20252026,2,OFF,OK,2026-04-11T23:00:00Z
+2025021271,hockey,nhl,2026_04_11,19:00,Montréal Canadiens,Columbus Blue Jackets,MTL,CBJ,8,29,20252026,2,OFF,OK,2026-04-11T23:00:00Z
+2025021272,hockey,nhl,2026_04_11,19:00,Winnipeg Jets,Philadelphia Flyers,WPG,PHI,52,4,20252026,2,OFF,OK,2026-04-11T23:00:00Z
+2025021273,hockey,nhl,2026_04_11,19:00,Seattle Kraken,Calgary Flames,SEA,CGY,55,20,20252026,2,OFF,OK,2026-04-11T23:00:00Z
+2025021274,hockey,nhl,2026_04_11,20:00,Colorado Avalanche,Vegas Golden Knights,COL,VGK,21,54,20252026,2,OFF,OK,2026-04-12T00:00:00Z
+2025021275,hockey,nhl,2026_04_11,22:00,San Jose Sharks,Vancouver Canucks,SJS,VAN,28,23,20252026,2,OFF,OK,2026-04-12T02:00:00Z

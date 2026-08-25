@@ -1,0 +1,12 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020061,hockey,nhl,2025_10_16,19:00,Toronto Maple Leafs,New York Rangers,TOR,NYR,10,3,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020062,hockey,nhl,2025_10_16,19:00,Montréal Canadiens,Nashville Predators,MTL,NSH,8,18,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020063,hockey,nhl,2025_10_16,19:00,Ottawa Senators,Seattle Kraken,OTT,SEA,9,55,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020064,hockey,nhl,2025_10_16,19:00,New Jersey Devils,Florida Panthers,NJD,FLA,1,13,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020066,hockey,nhl,2025_10_16,19:00,Philadelphia Flyers,Winnipeg Jets,PHI,WPG,4,52,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020067,hockey,nhl,2025_10_16,19:00,Columbus Blue Jackets,Colorado Avalanche,CBJ,COL,29,21,20252026,2,OFF,OK,2025-10-16T23:00:00Z
+2025020065,hockey,nhl,2025_10_16,19:30,New York Islanders,Edmonton Oilers,NYI,EDM,2,22,20252026,2,OFF,OK,2025-10-16T23:30:00Z
+2025020068,hockey,nhl,2025_10_16,20:00,Dallas Stars,Vancouver Canucks,DAL,VAN,25,23,20252026,2,OFF,OK,2025-10-17T00:00:00Z
+2025020069,hockey,nhl,2025_10_16,22:00,Vegas Golden Knights,Boston Bruins,VGK,BOS,54,6,20252026,2,OFF,OK,2025-10-17T02:00:00Z
+2025020070,hockey,nhl,2025_10_16,22:00,Anaheim Ducks,Carolina Hurricanes,ANA,CAR,24,12,20252026,2,OFF,OK,2025-10-17T02:00:00Z
+2025020071,hockey,nhl,2025_10_16,22:00,Los Angeles Kings,Pittsburgh Penguins,LAK,PIT,26,5,20252026,2,OFF,OK,2025-10-17T02:00:00Z

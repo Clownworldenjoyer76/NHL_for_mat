@@ -1,0 +1,12 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020391,hockey,nhl,2025_11_29,14:00,New York Rangers,Tampa Bay Lightning,NYR,TBL,3,14,20252026,2,OFF,OK,2025-11-29T19:00:00Z
+2025020392,hockey,nhl,2025_11_29,15:00,Colorado Avalanche,Montréal Canadiens,COL,MTL,21,8,20252026,2,OFF,OK,2025-11-29T20:00:00Z
+2025020393,hockey,nhl,2025_11_29,16:00,Seattle Kraken,Edmonton Oilers,SEA,EDM,55,22,20252026,2,OFF,OK,2025-11-29T21:00:00Z
+2025020394,hockey,nhl,2025_11_29,19:00,Boston Bruins,Detroit Red Wings,BOS,DET,6,17,20252026,2,OFF,OK,2025-11-30T00:00:00Z
+2025020395,hockey,nhl,2025_11_29,19:00,New Jersey Devils,Philadelphia Flyers,NJD,PHI,1,4,20252026,2,OFF,OK,2025-11-30T00:00:00Z
+2025020396,hockey,nhl,2025_11_29,19:00,Pittsburgh Penguins,Toronto Maple Leafs,PIT,TOR,5,10,20252026,2,OFF,OK,2025-11-30T00:00:00Z
+2025020397,hockey,nhl,2025_11_29,19:00,Nashville Predators,Winnipeg Jets,NSH,WPG,18,52,20252026,2,OFF,OK,2025-11-30T00:00:00Z
+2025020398,hockey,nhl,2025_11_29,20:00,St. Louis Blues,Utah Mammoth,STL,UTA,19,68,20252026,2,OFF,OK,2025-11-30T01:00:00Z
+2025020399,hockey,nhl,2025_11_29,20:00,Minnesota Wild,Buffalo Sabres,MIN,BUF,30,7,20252026,2,OFF,OK,2025-11-30T01:00:00Z
+2025020400,hockey,nhl,2025_11_29,22:00,Vegas Golden Knights,San Jose Sharks,VGK,SJS,54,28,20252026,2,OFF,OK,2025-11-30T03:00:00Z
+2025020401,hockey,nhl,2025_11_29,22:00,Los Angeles Kings,Vancouver Canucks,LAK,VAN,26,23,20252026,2,OFF,OK,2025-11-30T03:00:00Z

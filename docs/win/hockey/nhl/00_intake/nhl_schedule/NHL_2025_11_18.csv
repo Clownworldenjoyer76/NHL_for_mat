@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020307,hockey,nhl,2025_11_18,19:00,Toronto Maple Leafs,St. Louis Blues,TOR,STL,10,19,20252026,2,OFF,OK,2025-11-19T00:00:00Z
+2025020308,hockey,nhl,2025_11_18,19:00,Detroit Red Wings,Seattle Kraken,DET,SEA,17,55,20252026,2,OFF,OK,2025-11-19T00:00:00Z
+2025020309,hockey,nhl,2025_11_18,19:00,Tampa Bay Lightning,New Jersey Devils,TBL,NJD,14,1,20252026,2,OFF,OK,2025-11-19T00:00:00Z
+2025020310,hockey,nhl,2025_11_18,20:00,Dallas Stars,New York Islanders,DAL,NYI,25,2,20252026,2,OFF,OK,2025-11-19T01:00:00Z
+2025020311,hockey,nhl,2025_11_18,20:00,Winnipeg Jets,Columbus Blue Jackets,WPG,CBJ,52,29,20252026,2,OFF,OK,2025-11-19T01:00:00Z
+2025020312,hockey,nhl,2025_11_18,20:30,Chicago Blackhawks,Calgary Flames,CHI,CGY,16,20,20252026,2,OFF,OK,2025-11-19T01:30:00Z
+2025020313,hockey,nhl,2025_11_18,22:00,Vegas Golden Knights,New York Rangers,VGK,NYR,54,3,20252026,2,OFF,OK,2025-11-19T03:00:00Z
+2025020314,hockey,nhl,2025_11_18,22:00,San Jose Sharks,Utah Mammoth,SJS,UTA,28,68,20252026,2,OFF,OK,2025-11-19T03:00:00Z

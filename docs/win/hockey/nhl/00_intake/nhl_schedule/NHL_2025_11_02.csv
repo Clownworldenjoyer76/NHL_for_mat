@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020194,hockey,nhl,2025_11_02,15:30,Utah Mammoth,Tampa Bay Lightning,UTA,TBL,68,14,20252026,2,OFF,OK,2025-11-02T20:30:00Z
+2025020195,hockey,nhl,2025_11_02,17:00,New York Islanders,Columbus Blue Jackets,NYI,CBJ,2,29,20252026,2,OFF,OK,2025-11-02T22:00:00Z
+2025020196,hockey,nhl,2025_11_02,19:00,Philadelphia Flyers,Calgary Flames,PHI,CGY,4,20,20252026,2,OFF,OK,2025-11-03T00:00:00Z
+2025020197,hockey,nhl,2025_11_02,20:00,Anaheim Ducks,New Jersey Devils,ANA,NJD,24,1,20252026,2,OFF,OK,2025-11-03T01:00:00Z
+2025020198,hockey,nhl,2025_11_02,20:00,San Jose Sharks,Detroit Red Wings,SJS,DET,28,17,20252026,2,OFF,OK,2025-11-03T01:00:00Z

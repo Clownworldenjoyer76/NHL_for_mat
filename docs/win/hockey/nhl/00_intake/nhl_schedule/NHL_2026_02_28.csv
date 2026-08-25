@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020934,hockey,nhl,2026_02_28,12:30,New York Rangers,Pittsburgh Penguins,NYR,PIT,3,5,20252026,2,OFF,OK,2026-02-28T17:30:00Z
+2025020935,hockey,nhl,2026_02_28,15:00,Philadelphia Flyers,Boston Bruins,PHI,BOS,4,6,20252026,2,OFF,OK,2026-02-28T20:00:00Z
+2025020936,hockey,nhl,2026_02_28,16:00,San Jose Sharks,Edmonton Oilers,SJS,EDM,28,22,20252026,2,OFF,OK,2026-02-28T21:00:00Z
+2025020943,hockey,nhl,2026_02_28,17:00,St. Louis Blues,New Jersey Devils,STL,NJD,19,1,20252026,2,OFF,OK,2026-02-28T22:00:00Z
+2025020937,hockey,nhl,2026_02_28,18:00,Columbus Blue Jackets,New York Islanders,CBJ,NYI,29,2,20252026,2,OFF,OK,2026-02-28T23:00:00Z
+2025020938,hockey,nhl,2026_02_28,18:00,Colorado Avalanche,Chicago Blackhawks,COL,CHI,21,16,20252026,2,OFF,OK,2026-02-28T23:00:00Z
+2025020939,hockey,nhl,2026_02_28,19:00,Toronto Maple Leafs,Ottawa Senators,TOR,OTT,10,9,20252026,2,OFF,OK,2026-03-01T00:00:00Z
+2025020940,hockey,nhl,2026_02_28,19:00,Montréal Canadiens,Washington Capitals,MTL,WSH,8,15,20252026,2,OFF,OK,2026-03-01T00:00:00Z
+2025020941,hockey,nhl,2026_02_28,19:00,Tampa Bay Lightning,Buffalo Sabres,TBL,BUF,14,7,20252026,2,OFF,OK,2026-03-01T00:00:00Z
+2025020942,hockey,nhl,2026_02_28,19:00,Carolina Hurricanes,Detroit Red Wings,CAR,DET,12,17,20252026,2,OFF,OK,2026-03-01T00:00:00Z
+2025020944,hockey,nhl,2026_02_28,19:00,Los Angeles Kings,Calgary Flames,LAK,CGY,26,20,20252026,2,OFF,OK,2026-03-01T00:00:00Z
+2025020945,hockey,nhl,2026_02_28,20:00,Dallas Stars,Nashville Predators,DAL,NSH,25,18,20252026,2,OFF,OK,2026-03-01T01:00:00Z
+2025020946,hockey,nhl,2026_02_28,22:00,Seattle Kraken,Vancouver Canucks,SEA,VAN,55,23,20252026,2,OFF,OK,2026-03-01T03:00:00Z

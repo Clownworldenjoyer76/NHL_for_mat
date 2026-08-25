@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020662,hockey,nhl,2026_01_05,19:00,New York Rangers,Utah Mammoth,NYR,UTA,3,68,20252026,2,OFF,OK,2026-01-06T00:00:00Z
+2025020663,hockey,nhl,2026_01_05,19:00,Washington Capitals,Anaheim Ducks,WSH,ANA,15,24,20252026,2,OFF,OK,2026-01-06T00:00:00Z
+2025020664,hockey,nhl,2026_01_05,19:30,Ottawa Senators,Detroit Red Wings,OTT,DET,9,17,20252026,2,OFF,OK,2026-01-06T00:30:00Z
+2025020665,hockey,nhl,2026_01_05,21:30,Calgary Flames,Seattle Kraken,CGY,SEA,20,55,20252026,2,OFF,OK,2026-01-06T02:30:00Z
+2025020666,hockey,nhl,2026_01_05,22:30,Los Angeles Kings,Minnesota Wild,LAK,MIN,26,30,20252026,2,OFF,OK,2026-01-06T03:30:00Z

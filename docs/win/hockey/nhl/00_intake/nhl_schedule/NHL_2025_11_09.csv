@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020244,hockey,nhl,2025_11_09,13:00,Detroit Red Wings,Chicago Blackhawks,DET,CHI,17,16,20252026,2,OFF,OK,2025-11-09T18:00:00Z
+2025020245,hockey,nhl,2025_11_09,14:00,Pittsburgh Penguins,Los Angeles Kings,PIT,LAK,5,26,20252026,2,OFF,OK,2025-11-09T19:00:00Z
+2025020246,hockey,nhl,2025_11_09,19:00,Toronto Maple Leafs,Carolina Hurricanes,TOR,CAR,10,12,20252026,2,OFF,OK,2025-11-10T00:00:00Z
+2025020247,hockey,nhl,2025_11_09,19:00,Ottawa Senators,Utah Mammoth,OTT,UTA,9,68,20252026,2,OFF,OK,2025-11-10T00:00:00Z
+2025020248,hockey,nhl,2025_11_09,19:00,Dallas Stars,Seattle Kraken,DAL,SEA,25,55,20252026,2,OFF,OK,2025-11-10T00:00:00Z
+2025020249,hockey,nhl,2025_11_09,20:00,Minnesota Wild,Calgary Flames,MIN,CGY,30,20,20252026,2,OFF,OK,2025-11-10T01:00:00Z
+2025020250,hockey,nhl,2025_11_09,22:00,Vancouver Canucks,Colorado Avalanche,VAN,COL,23,21,20252026,2,OFF,OK,2025-11-10T03:00:00Z
+2025020251,hockey,nhl,2025_11_09,22:00,Anaheim Ducks,Winnipeg Jets,ANA,WPG,24,52,20252026,2,OFF,OK,2025-11-10T03:00:00Z

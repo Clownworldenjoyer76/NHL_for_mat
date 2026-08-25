@@ -1,0 +1,17 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020150,hockey,nhl,2025_10_28,18:00,Philadelphia Flyers,Pittsburgh Penguins,PHI,PIT,4,5,20252026,2,OFF,OK,2025-10-28T22:00:00Z
+2025020151,hockey,nhl,2025_10_28,18:00,Toronto Maple Leafs,Calgary Flames,TOR,CGY,10,20,20252026,2,OFF,OK,2025-10-28T22:00:00Z
+2025020155,hockey,nhl,2025_10_28,18:30,Carolina Hurricanes,Vegas Golden Knights,CAR,VGK,12,54,20252026,2,OFF,OK,2025-10-28T22:30:00Z
+2025020152,hockey,nhl,2025_10_28,18:45,Buffalo Sabres,Columbus Blue Jackets,BUF,CBJ,7,29,20252026,2,OFF,OK,2025-10-28T22:45:00Z
+2025020153,hockey,nhl,2025_10_28,19:00,Florida Panthers,Anaheim Ducks,FLA,ANA,13,24,20252026,2,OFF,OK,2025-10-28T23:00:00Z
+2025020154,hockey,nhl,2025_10_28,19:15,Boston Bruins,New York Islanders,BOS,NYI,6,2,20252026,2,OFF,OK,2025-10-28T23:15:00Z
+2025020156,hockey,nhl,2025_10_28,19:45,Nashville Predators,Tampa Bay Lightning,NSH,TBL,18,14,20252026,2,OFF,OK,2025-10-28T23:45:00Z
+2025020157,hockey,nhl,2025_10_28,20:00,Minnesota Wild,Winnipeg Jets,MIN,WPG,30,52,20252026,2,OFF,OK,2025-10-29T00:00:00Z
+2025020158,hockey,nhl,2025_10_28,20:15,St. Louis Blues,Detroit Red Wings,STL,DET,19,17,20252026,2,OFF,OK,2025-10-29T00:15:00Z
+2025020159,hockey,nhl,2025_10_28,20:30,Dallas Stars,Washington Capitals,DAL,WSH,25,15,20252026,2,OFF,OK,2025-10-29T00:30:00Z
+2025020160,hockey,nhl,2025_10_28,20:45,Chicago Blackhawks,Ottawa Senators,CHI,OTT,16,9,20252026,2,OFF,OK,2025-10-29T00:45:00Z
+2025020161,hockey,nhl,2025_10_28,21:00,Colorado Avalanche,New Jersey Devils,COL,NJD,21,1,20252026,2,OFF,OK,2025-10-29T01:00:00Z
+2025020162,hockey,nhl,2025_10_28,21:30,Edmonton Oilers,Utah Mammoth,EDM,UTA,22,68,20252026,2,OFF,OK,2025-10-29T01:30:00Z
+2025020163,hockey,nhl,2025_10_28,22:00,Vancouver Canucks,New York Rangers,VAN,NYR,23,3,20252026,2,OFF,OK,2025-10-29T02:00:00Z
+2025020164,hockey,nhl,2025_10_28,22:30,Seattle Kraken,Montréal Canadiens,SEA,MTL,55,8,20252026,2,OFF,OK,2025-10-29T02:30:00Z
+2025020165,hockey,nhl,2025_10_28,23:00,San Jose Sharks,Los Angeles Kings,SJS,LAK,28,26,20252026,2,OFF,OK,2025-10-29T03:00:00Z

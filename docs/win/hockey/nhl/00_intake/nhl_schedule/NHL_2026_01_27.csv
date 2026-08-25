@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020830,hockey,nhl,2026_01_27,19:00,Boston Bruins,Nashville Predators,BOS,NSH,6,18,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020831,hockey,nhl,2026_01_27,19:00,Toronto Maple Leafs,Buffalo Sabres,TOR,BUF,10,7,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020832,hockey,nhl,2026_01_27,19:00,Montréal Canadiens,Vegas Golden Knights,MTL,VGK,8,54,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020833,hockey,nhl,2026_01_27,19:00,Detroit Red Wings,Los Angeles Kings,DET,LAK,17,26,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020834,hockey,nhl,2026_01_27,19:00,Florida Panthers,Utah Mammoth,FLA,UTA,13,68,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020835,hockey,nhl,2026_01_27,19:00,New Jersey Devils,Winnipeg Jets,NJD,WPG,1,52,20252026,2,OFF,OK,2026-01-28T00:00:00Z
+2025020836,hockey,nhl,2026_01_27,20:00,St. Louis Blues,Dallas Stars,STL,DAL,19,25,20252026,2,OFF,OK,2026-01-28T01:00:00Z
+2025020837,hockey,nhl,2026_01_27,20:00,Minnesota Wild,Chicago Blackhawks,MIN,CHI,30,16,20252026,2,OFF,OK,2026-01-28T01:00:00Z
+2025020838,hockey,nhl,2026_01_27,22:00,Vancouver Canucks,San Jose Sharks,VAN,SJS,23,28,20252026,2,OFF,OK,2026-01-28T03:00:00Z
+2025020839,hockey,nhl,2026_01_27,22:00,Seattle Kraken,Washington Capitals,SEA,WSH,55,15,20252026,2,OFF,OK,2026-01-28T03:00:00Z

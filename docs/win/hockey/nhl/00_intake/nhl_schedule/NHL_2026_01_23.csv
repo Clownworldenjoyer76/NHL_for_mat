@@ -1,0 +1,9 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020802,hockey,nhl,2026_01_23,19:00,Toronto Maple Leafs,Vegas Golden Knights,TOR,VGK,10,54,20252026,2,OFF,OK,2026-01-24T00:00:00Z
+2025020803,hockey,nhl,2026_01_23,19:00,Chicago Blackhawks,Tampa Bay Lightning,CHI,TBL,16,14,20252026,2,OFF,OK,2026-01-24T00:00:00Z
+2025020804,hockey,nhl,2026_01_23,20:00,Dallas Stars,St. Louis Blues,DAL,STL,25,19,20252026,2,OFF,OK,2026-01-24T01:00:00Z
+2025020805,hockey,nhl,2026_01_23,21:00,Colorado Avalanche,Philadelphia Flyers,COL,PHI,21,4,20252026,2,OFF,OK,2026-01-24T02:00:00Z
+2025020806,hockey,nhl,2026_01_23,21:00,Calgary Flames,Washington Capitals,CGY,WSH,20,15,20252026,2,OFF,OK,2026-01-24T02:00:00Z
+2025020807,hockey,nhl,2026_01_23,22:00,Vancouver Canucks,New Jersey Devils,VAN,NJD,23,1,20252026,2,OFF,OK,2026-01-24T03:00:00Z
+2025020808,hockey,nhl,2026_01_23,22:00,San Jose Sharks,New York Rangers,SJS,NYR,28,3,20252026,2,OFF,OK,2026-01-24T03:00:00Z
+2025020809,hockey,nhl,2026_01_23,22:00,Seattle Kraken,Anaheim Ducks,SEA,ANA,55,24,20252026,2,OFF,OK,2026-01-24T03:00:00Z

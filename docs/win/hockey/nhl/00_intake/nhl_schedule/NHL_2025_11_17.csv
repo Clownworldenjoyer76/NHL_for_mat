@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020301,hockey,nhl,2025_11_17,19:00,Boston Bruins,Carolina Hurricanes,BOS,CAR,6,12,20252026,2,OFF,OK,2025-11-18T00:00:00Z
+2025020302,hockey,nhl,2025_11_17,19:00,Buffalo Sabres,Edmonton Oilers,BUF,EDM,7,22,20252026,2,OFF,OK,2025-11-18T00:00:00Z
+2025020303,hockey,nhl,2025_11_17,19:00,Florida Panthers,Vancouver Canucks,FLA,VAN,13,23,20252026,2,OFF,OK,2025-11-18T00:00:00Z
+2025020304,hockey,nhl,2025_11_17,19:00,Washington Capitals,Los Angeles Kings,WSH,LAK,15,26,20252026,2,OFF,OK,2025-11-18T00:00:00Z
+2025020305,hockey,nhl,2025_11_17,19:30,Columbus Blue Jackets,Montréal Canadiens,CBJ,MTL,29,8,20252026,2,OFF,OK,2025-11-18T00:30:00Z
+2025020306,hockey,nhl,2025_11_17,22:00,Anaheim Ducks,Utah Mammoth,ANA,UTA,24,68,20252026,2,OFF,OK,2025-11-18T03:00:00Z

@@ -1,0 +1,15 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021252,hockey,nhl,2026_04_09,18:45,New York Islanders,Toronto Maple Leafs,NYI,TOR,2,10,20252026,2,OFF,OK,2026-04-09T22:45:00Z
+2025021247,hockey,nhl,2026_04_09,19:00,Buffalo Sabres,Columbus Blue Jackets,BUF,CBJ,7,29,20252026,2,OFF,OK,2026-04-09T23:00:00Z
+2025021248,hockey,nhl,2026_04_09,19:00,Montréal Canadiens,Tampa Bay Lightning,MTL,TBL,8,14,20252026,2,OFF,OK,2026-04-09T23:00:00Z
+2025021249,hockey,nhl,2026_04_09,19:00,Ottawa Senators,Florida Panthers,OTT,FLA,9,13,20252026,2,OFF,OK,2026-04-09T23:00:00Z
+2025021250,hockey,nhl,2026_04_09,19:00,Detroit Red Wings,Philadelphia Flyers,DET,PHI,17,4,20252026,2,OFF,OK,2026-04-09T23:00:00Z
+2025021251,hockey,nhl,2026_04_09,19:00,New Jersey Devils,Pittsburgh Penguins,NJD,PIT,1,5,20252026,2,OFF,OK,2026-04-09T23:00:00Z
+2025021253,hockey,nhl,2026_04_09,20:00,St. Louis Blues,Winnipeg Jets,STL,WPG,19,52,20252026,2,OFF,OK,2026-04-10T00:00:00Z
+2025021255,hockey,nhl,2026_04_09,20:30,Chicago Blackhawks,Carolina Hurricanes,CHI,CAR,16,12,20252026,2,OFF,OK,2026-04-10T00:30:00Z
+2025021254,hockey,nhl,2026_04_09,21:00,Dallas Stars,Minnesota Wild,DAL,MIN,25,30,20252026,2,OFF,OK,2026-04-10T01:00:00Z
+2025021256,hockey,nhl,2026_04_09,21:00,Colorado Avalanche,Calgary Flames,COL,CGY,21,20,20252026,2,OFF,OK,2026-04-10T01:00:00Z
+2025021257,hockey,nhl,2026_04_09,21:00,Utah Mammoth,Nashville Predators,UTA,NSH,68,18,20252026,2,OFF,OK,2026-04-10T01:00:00Z
+2025021258,hockey,nhl,2026_04_09,22:00,Anaheim Ducks,San Jose Sharks,ANA,SJS,24,28,20252026,2,OFF,OK,2026-04-10T02:00:00Z
+2025021259,hockey,nhl,2026_04_09,22:00,Seattle Kraken,Vegas Golden Knights,SEA,VGK,55,54,20252026,2,OFF,OK,2026-04-10T02:00:00Z
+2025021260,hockey,nhl,2026_04_09,22:30,Los Angeles Kings,Vancouver Canucks,LAK,VAN,26,23,20252026,2,OFF,OK,2026-04-10T02:30:00Z

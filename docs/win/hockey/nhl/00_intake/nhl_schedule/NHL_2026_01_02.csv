@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020640,hockey,nhl,2026_01_02,15:00,St. Louis Blues,Vegas Golden Knights,STL,VGK,19,54,20252026,2,OFF,OK,2026-01-02T20:00:00Z
+2025020641,hockey,nhl,2026_01_02,20:00,Florida Panthers,New York Rangers,FLA,NYR,13,3,20252026,2,OFF,OK,2026-01-03T01:00:00Z
+2025020642,hockey,nhl,2026_01_02,22:30,Vancouver Canucks,Seattle Kraken,VAN,SEA,23,55,20252026,2,OFF,OK,2026-01-03T03:30:00Z
+2025020643,hockey,nhl,2026_01_02,22:30,Anaheim Ducks,Minnesota Wild,ANA,MIN,24,30,20252026,2,OFF,OK,2026-01-03T03:30:00Z

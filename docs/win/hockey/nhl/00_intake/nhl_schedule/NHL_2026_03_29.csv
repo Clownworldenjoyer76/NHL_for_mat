@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021167,hockey,nhl,2026_03_29,13:00,New York Rangers,Florida Panthers,NYR,FLA,3,13,20252026,2,OFF,OK,2026-03-29T17:00:00Z
+2025021168,hockey,nhl,2026_03_29,17:00,Tampa Bay Lightning,Nashville Predators,TBL,NSH,14,18,20252026,2,OFF,OK,2026-03-29T21:00:00Z
+2025021169,hockey,nhl,2026_03_29,17:00,Carolina Hurricanes,Montréal Canadiens,CAR,MTL,12,8,20252026,2,OFF,OK,2026-03-29T21:00:00Z
+2025021170,hockey,nhl,2026_03_29,17:00,Columbus Blue Jackets,Boston Bruins,CBJ,BOS,29,6,20252026,2,OFF,OK,2026-03-29T21:00:00Z
+2025021171,hockey,nhl,2026_03_29,19:00,New Jersey Devils,Chicago Blackhawks,NJD,CHI,1,16,20252026,2,OFF,OK,2026-03-29T23:00:00Z
+2025021172,hockey,nhl,2026_03_29,19:00,Philadelphia Flyers,Dallas Stars,PHI,DAL,4,25,20252026,2,OFF,OK,2026-03-29T23:00:00Z

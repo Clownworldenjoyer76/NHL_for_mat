@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020970,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights,DET,VGK,17,54,20252026,2,OFF,OK,2026-03-05T00:00:00Z
+2025020971,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs,NJD,TOR,1,10,20252026,2,OFF,OK,2026-03-05T00:00:00Z
+2025020972,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes,VAN,CAR,23,12,20252026,2,OFF,OK,2026-03-05T03:00:00Z
+2025020973,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders,ANA,NYI,24,2,20252026,2,OFF,OK,2026-03-05T03:00:00Z
+2025020974,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St. Louis Blues,SEA,STL,55,19,20252026,2,OFF,OK,2026-03-05T03:00:00Z

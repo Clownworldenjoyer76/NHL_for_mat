@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020283,hockey,nhl,2025_11_15,17:00,Florida Panthers,Tampa Bay Lightning,FLA,TBL,13,14,20252026,2,OFF,OK,2025-11-15T22:00:00Z
+2025020284,hockey,nhl,2025_11_15,18:00,Minnesota Wild,Anaheim Ducks,MIN,ANA,30,24,20252026,2,OFF,OK,2025-11-15T23:00:00Z
+2025020285,hockey,nhl,2025_11_15,19:00,Montréal Canadiens,Boston Bruins,MTL,BOS,8,6,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020286,hockey,nhl,2025_11_15,19:00,Ottawa Senators,Los Angeles Kings,OTT,LAK,9,26,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020287,hockey,nhl,2025_11_15,19:00,Detroit Red Wings,Buffalo Sabres,DET,BUF,17,7,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020288,hockey,nhl,2025_11_15,19:00,Washington Capitals,New Jersey Devils,WSH,NJD,15,1,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020289,hockey,nhl,2025_11_15,19:00,Carolina Hurricanes,Edmonton Oilers,CAR,EDM,12,22,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020290,hockey,nhl,2025_11_15,19:00,Columbus Blue Jackets,New York Rangers,CBJ,NYR,29,3,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020291,hockey,nhl,2025_11_15,19:00,Chicago Blackhawks,Toronto Maple Leafs,CHI,TOR,16,10,20252026,2,OFF,OK,2025-11-16T00:00:00Z
+2025020292,hockey,nhl,2025_11_15,20:00,St. Louis Blues,Vegas Golden Knights,STL,VGK,19,54,20252026,2,OFF,OK,2025-11-16T01:00:00Z
+2025020293,hockey,nhl,2025_11_15,20:00,Dallas Stars,Philadelphia Flyers,DAL,PHI,25,4,20252026,2,OFF,OK,2025-11-16T01:00:00Z
+2025020294,hockey,nhl,2025_11_15,22:00,Calgary Flames,Winnipeg Jets,CGY,WPG,20,52,20252026,2,OFF,OK,2025-11-16T03:00:00Z
+2025020295,hockey,nhl,2025_11_15,22:00,Seattle Kraken,San Jose Sharks,SEA,SJS,55,28,20252026,2,OFF,OK,2025-11-16T03:00:00Z

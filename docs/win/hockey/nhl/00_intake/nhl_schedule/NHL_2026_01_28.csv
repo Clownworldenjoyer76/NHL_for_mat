@@ -1,0 +1,4 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020842,hockey,nhl,2026_01_28,19:00,New York Islanders,New York Rangers,NYI,NYR,2,3,20252026,2,OFF,OK,2026-01-29T00:00:00Z
+2025020840,hockey,nhl,2026_01_28,19:30,Columbus Blue Jackets,Philadelphia Flyers,CBJ,PHI,29,4,20252026,2,OFF,OK,2026-01-29T00:30:00Z
+2025020841,hockey,nhl,2026_01_28,19:30,Ottawa Senators,Colorado Avalanche,OTT,COL,9,21,20252026,2,OFF,OK,2026-01-29T00:30:00Z

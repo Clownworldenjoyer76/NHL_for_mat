@@ -1,0 +1,4 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020874,hockey,nhl,2026_02_01,15:00,Carolina Hurricanes,Los Angeles Kings,CAR,LAK,12,26,20252026,2,OFF,OK,2026-02-01T20:00:00Z
+2025020873,hockey,nhl,2026_02_01,18:30,Tampa Bay Lightning,Boston Bruins,TBL,BOS,14,6,20252026,2,OFF,OK,2026-02-01T23:30:00Z
+2025020875,hockey,nhl,2026_02_01,21:30,Anaheim Ducks,Vegas Golden Knights,ANA,VGK,24,54,20252026,2,OFF,OK,2026-02-02T02:30:00Z

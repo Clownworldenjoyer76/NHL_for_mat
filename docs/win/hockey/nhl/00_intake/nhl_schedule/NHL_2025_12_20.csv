@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020549,hockey,nhl,2025_12_20,12:30,New York Rangers,Philadelphia Flyers,NYR,PHI,3,4,20252026,2,OFF,OK,2025-12-20T17:30:00Z
+2025020550,hockey,nhl,2025_12_20,12:30,Washington Capitals,Detroit Red Wings,WSH,DET,15,17,20252026,2,OFF,OK,2025-12-20T17:30:00Z
+2025020551,hockey,nhl,2025_12_20,15:00,Ottawa Senators,Chicago Blackhawks,OTT,CHI,9,16,20252026,2,OFF,OK,2025-12-20T20:00:00Z
+2025020552,hockey,nhl,2025_12_20,15:00,Minnesota Wild,Edmonton Oilers,MIN,EDM,30,22,20252026,2,OFF,OK,2025-12-20T20:00:00Z
+2025020553,hockey,nhl,2025_12_20,17:00,Buffalo Sabres,New York Islanders,BUF,NYI,7,2,20252026,2,OFF,OK,2025-12-20T22:00:00Z
+2025020554,hockey,nhl,2025_12_20,18:00,Florida Panthers,St. Louis Blues,FLA,STL,13,19,20252026,2,OFF,OK,2025-12-20T23:00:00Z
+2025020555,hockey,nhl,2025_12_20,19:00,Boston Bruins,Vancouver Canucks,BOS,VAN,6,23,20252026,2,OFF,OK,2025-12-21T00:00:00Z
+2025020556,hockey,nhl,2025_12_20,19:00,Montréal Canadiens,Pittsburgh Penguins,MTL,PIT,8,5,20252026,2,OFF,OK,2025-12-21T00:00:00Z
+2025020557,hockey,nhl,2025_12_20,19:00,Tampa Bay Lightning,Carolina Hurricanes,TBL,CAR,14,12,20252026,2,OFF,OK,2025-12-21T00:00:00Z
+2025020558,hockey,nhl,2025_12_20,19:00,Nashville Predators,Toronto Maple Leafs,NSH,TOR,18,10,20252026,2,OFF,OK,2025-12-21T00:00:00Z
+2025020559,hockey,nhl,2025_12_20,22:00,Calgary Flames,Vegas Golden Knights,CGY,VGK,20,54,20252026,2,OFF,OK,2025-12-21T03:00:00Z
+2025020560,hockey,nhl,2025_12_20,22:00,Anaheim Ducks,Columbus Blue Jackets,ANA,CBJ,24,29,20252026,2,OFF,OK,2025-12-21T03:00:00Z
+2025020561,hockey,nhl,2025_12_20,22:00,San Jose Sharks,Seattle Kraken,SJS,SEA,28,55,20252026,2,OFF,OK,2025-12-21T03:00:00Z

@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020725,hockey,nhl,2026_01_13,19:00,Ottawa Senators,Vancouver Canucks,OTT,VAN,9,23,20252026,2,OFF,OK,2026-01-14T00:00:00Z
+2025020726,hockey,nhl,2026_01_13,19:00,Pittsburgh Penguins,Tampa Bay Lightning,PIT,TBL,5,14,20252026,2,OFF,OK,2026-01-14T00:00:00Z
+2025020727,hockey,nhl,2026_01_13,19:00,Washington Capitals,Montréal Canadiens,WSH,MTL,15,8,20252026,2,OFF,OK,2026-01-14T00:00:00Z
+2025020728,hockey,nhl,2026_01_13,19:00,Columbus Blue Jackets,Calgary Flames,CBJ,CGY,29,20,20252026,2,OFF,OK,2026-01-14T00:00:00Z
+2025020729,hockey,nhl,2026_01_13,19:30,Boston Bruins,Detroit Red Wings,BOS,DET,6,17,20252026,2,OFF,OK,2026-01-14T00:30:00Z
+2025020730,hockey,nhl,2026_01_13,19:30,St. Louis Blues,Carolina Hurricanes,STL,CAR,19,12,20252026,2,OFF,OK,2026-01-14T00:30:00Z
+2025020731,hockey,nhl,2026_01_13,20:00,Nashville Predators,Edmonton Oilers,NSH,EDM,18,22,20252026,2,OFF,OK,2026-01-14T01:00:00Z
+2025020732,hockey,nhl,2026_01_13,20:00,Winnipeg Jets,New York Islanders,WPG,NYI,52,2,20252026,2,OFF,OK,2026-01-14T01:00:00Z
+2025020733,hockey,nhl,2026_01_13,22:00,Utah Mammoth,Toronto Maple Leafs,UTA,TOR,68,10,20252026,2,OFF,OK,2026-01-14T03:00:00Z
+2025020734,hockey,nhl,2026_01_13,22:00,Anaheim Ducks,Dallas Stars,ANA,DAL,24,25,20252026,2,OFF,OK,2026-01-14T03:00:00Z

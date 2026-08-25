@@ -1,0 +1,2 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020038,hockey,nhl,2025_10_12,19:00,New York Rangers,Washington Capitals,NYR,WSH,3,15,20252026,2,OFF,OK,2025-10-12T23:00:00Z

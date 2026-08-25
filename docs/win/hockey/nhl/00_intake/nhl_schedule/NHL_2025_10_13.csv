@@ -1,0 +1,11 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020039,hockey,nhl,2025_10_13,12:30,Buffalo Sabres,Colorado Avalanche,BUF,COL,7,21,20252026,2,OFF,OK,2025-10-13T16:30:00Z
+2025020040,hockey,nhl,2025_10_13,13:00,Boston Bruins,Tampa Bay Lightning,BOS,TBL,6,14,20252026,2,OFF,OK,2025-10-13T17:00:00Z
+2025020041,hockey,nhl,2025_10_13,13:00,Ottawa Senators,Nashville Predators,OTT,NSH,9,18,20252026,2,OFF,OK,2025-10-13T17:00:00Z
+2025020042,hockey,nhl,2025_10_13,13:00,New York Islanders,Winnipeg Jets,NYI,WPG,2,52,20252026,2,OFF,OK,2025-10-13T17:00:00Z
+2025020043,hockey,nhl,2025_10_13,14:00,Toronto Maple Leafs,Detroit Red Wings,TOR,DET,10,17,20252026,2,OFF,OK,2025-10-13T18:00:00Z
+2025020044,hockey,nhl,2025_10_13,19:00,Philadelphia Flyers,Florida Panthers,PHI,FLA,4,13,20252026,2,OFF,OK,2025-10-13T23:00:00Z
+2025020045,hockey,nhl,2025_10_13,19:00,Columbus Blue Jackets,New Jersey Devils,CBJ,NJD,29,1,20252026,2,OFF,OK,2025-10-13T23:00:00Z
+2025020046,hockey,nhl,2025_10_13,19:30,Vancouver Canucks,St. Louis Blues,VAN,STL,23,19,20252026,2,OFF,OK,2025-10-13T23:30:00Z
+2025020047,hockey,nhl,2025_10_13,20:00,Minnesota Wild,Los Angeles Kings,MIN,LAK,30,26,20252026,2,OFF,OK,2025-10-14T00:00:00Z
+2025020048,hockey,nhl,2025_10_13,20:30,Chicago Blackhawks,Utah Mammoth,CHI,UTA,16,68,20252026,2,OFF,OK,2025-10-14T00:30:00Z

@@ -1,0 +1,14 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020181,hockey,nhl,2025_11_01,13:00,Boston Bruins,Carolina Hurricanes,BOS,CAR,6,12,20252026,2,OFF,OK,2025-11-01T17:00:00Z
+2025020182,hockey,nhl,2025_11_01,15:00,Winnipeg Jets,Pittsburgh Penguins,WPG,PIT,52,5,20252026,2,OFF,OK,2025-11-01T19:00:00Z
+2025020183,hockey,nhl,2025_11_01,15:30,Nashville Predators,Calgary Flames,NSH,CGY,18,20,20252026,2,OFF,OK,2025-11-01T19:30:00Z
+2025020184,hockey,nhl,2025_11_01,16:00,San Jose Sharks,Colorado Avalanche,SJS,COL,28,21,20252026,2,OFF,OK,2025-11-01T20:00:00Z
+2025020185,hockey,nhl,2025_11_01,18:00,Florida Panthers,Dallas Stars,FLA,DAL,13,25,20252026,2,OFF,OK,2025-11-01T22:00:00Z
+2025020186,hockey,nhl,2025_11_01,19:00,Buffalo Sabres,Washington Capitals,BUF,WSH,7,15,20252026,2,OFF,OK,2025-11-01T23:00:00Z
+2025020187,hockey,nhl,2025_11_01,19:00,Montréal Canadiens,Ottawa Senators,MTL,OTT,8,9,20252026,2,OFF,OK,2025-11-01T23:00:00Z
+2025020188,hockey,nhl,2025_11_01,19:00,Philadelphia Flyers,Toronto Maple Leafs,PHI,TOR,4,10,20252026,2,OFF,OK,2025-11-01T23:00:00Z
+2025020189,hockey,nhl,2025_11_01,19:00,Columbus Blue Jackets,St. Louis Blues,CBJ,STL,29,19,20252026,2,OFF,OK,2025-11-01T23:00:00Z
+2025020190,hockey,nhl,2025_11_01,19:00,Minnesota Wild,Vancouver Canucks,MIN,VAN,30,23,20252026,2,OFF,OK,2025-11-01T23:00:00Z
+2025020191,hockey,nhl,2025_11_01,21:00,Los Angeles Kings,New Jersey Devils,LAK,NJD,26,1,20252026,2,OFF,OK,2025-11-02T01:00:00Z
+2025020192,hockey,nhl,2025_11_01,22:00,Edmonton Oilers,Chicago Blackhawks,EDM,CHI,22,16,20252026,2,OFF,OK,2025-11-02T02:00:00Z
+2025020193,hockey,nhl,2025_11_01,22:00,Seattle Kraken,New York Rangers,SEA,NYR,55,3,20252026,2,OFF,OK,2025-11-02T02:00:00Z

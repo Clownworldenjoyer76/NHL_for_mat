@@ -1,0 +1,7 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021276,hockey,nhl,2026_04_12,15:00,Washington Capitals,Pittsburgh Penguins,WSH,PIT,15,5,20252026,2,OFF,OK,2026-04-12T19:00:00Z
+2025021277,hockey,nhl,2026_04_12,18:00,New York Islanders,Montréal Canadiens,NYI,MTL,2,8,20252026,2,OFF,OK,2026-04-12T22:00:00Z
+2025021278,hockey,nhl,2026_04_12,18:00,Columbus Blue Jackets,Boston Bruins,CBJ,BOS,29,6,20252026,2,OFF,OK,2026-04-12T22:00:00Z
+2025021279,hockey,nhl,2026_04_12,19:00,New Jersey Devils,Ottawa Senators,NJD,OTT,1,9,20252026,2,OFF,OK,2026-04-12T23:00:00Z
+2025021280,hockey,nhl,2026_04_12,20:00,Anaheim Ducks,Vancouver Canucks,ANA,VAN,24,23,20252026,2,OFF,OK,2026-04-13T00:00:00Z
+2025021281,hockey,nhl,2026_04_12,21:00,Calgary Flames,Utah Mammoth,CGY,UTA,20,68,20252026,2,OFF,OK,2026-04-13T01:00:00Z

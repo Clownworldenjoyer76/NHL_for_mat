@@ -1,0 +1,16 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020377,hockey,nhl,2025_11_28,12:00,Detroit Red Wings,Tampa Bay Lightning,DET,TBL,17,14,20252026,2,OFF,OK,2025-11-28T17:00:00Z
+2025020376,hockey,nhl,2025_11_28,13:00,Boston Bruins,New York Rangers,BOS,NYR,6,3,20252026,2,OFF,OK,2025-11-28T18:00:00Z
+2025020378,hockey,nhl,2025_11_28,15:30,Minnesota Wild,Colorado Avalanche,MIN,COL,30,21,20252026,2,OFF,OK,2025-11-28T20:30:00Z
+2025020379,hockey,nhl,2025_11_28,16:00,Buffalo Sabres,New Jersey Devils,BUF,NJD,7,1,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020380,hockey,nhl,2025_11_28,16:00,Florida Panthers,Calgary Flames,FLA,CGY,13,20,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020381,hockey,nhl,2025_11_28,16:00,New York Islanders,Philadelphia Flyers,NYI,PHI,2,4,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020382,hockey,nhl,2025_11_28,16:00,St. Louis Blues,Ottawa Senators,STL,OTT,19,9,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020383,hockey,nhl,2025_11_28,16:00,Vegas Golden Knights,Montréal Canadiens,VGK,MTL,54,8,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020384,hockey,nhl,2025_11_28,16:00,Anaheim Ducks,Los Angeles Kings,ANA,LAK,24,26,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020385,hockey,nhl,2025_11_28,16:00,San Jose Sharks,Vancouver Canucks,SJS,VAN,28,23,20252026,2,OFF,OK,2025-11-28T21:00:00Z
+2025020386,hockey,nhl,2025_11_28,17:00,Washington Capitals,Toronto Maple Leafs,WSH,TOR,15,10,20252026,2,OFF,OK,2025-11-28T22:00:00Z
+2025020387,hockey,nhl,2025_11_28,17:00,Carolina Hurricanes,Winnipeg Jets,CAR,WPG,12,52,20252026,2,OFF,OK,2025-11-28T22:00:00Z
+2025020388,hockey,nhl,2025_11_28,19:00,Columbus Blue Jackets,Pittsburgh Penguins,CBJ,PIT,29,5,20252026,2,OFF,OK,2025-11-29T00:00:00Z
+2025020389,hockey,nhl,2025_11_28,20:00,Chicago Blackhawks,Nashville Predators,CHI,NSH,16,18,20252026,2,OFF,OK,2025-11-29T01:00:00Z
+2025020390,hockey,nhl,2025_11_28,20:00,Dallas Stars,Utah Mammoth,DAL,UTA,25,68,20252026,2,OFF,OK,2025-11-29T01:00:00Z

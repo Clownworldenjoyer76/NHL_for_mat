@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025021063,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames,DET,CGY,17,20,20252026,2,OFF,OK,2026-03-16T23:00:00Z
+2025021064,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins,NJD,BOS,1,6,20252026,2,OFF,OK,2026-03-16T23:00:00Z
+2025021065,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings,NYR,LAK,3,26,20252026,2,OFF,OK,2026-03-16T23:00:00Z
+2025021066,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth,DAL,UTA,25,68,20252026,2,OFF,OK,2026-03-17T00:00:00Z
+2025021067,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins,COL,PIT,21,5,20252026,2,OFF,OK,2026-03-17T01:30:00Z

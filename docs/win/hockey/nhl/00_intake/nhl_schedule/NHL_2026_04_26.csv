@@ -1,0 +1,5 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025030114,hockey,nhl,2026_04_26,14:00,Boston Bruins,Buffalo Sabres,BOS,BUF,6,7,20252026,3,OFF,OK,2026-04-26T18:00:00Z
+2025030154,hockey,nhl,2026_04_26,16:30,Los Angeles Kings,Colorado Avalanche,LAK,COL,26,21,20252026,3,OFF,OK,2026-04-26T20:30:00Z
+2025030124,hockey,nhl,2026_04_26,19:00,Montréal Canadiens,Tampa Bay Lightning,MTL,TBL,8,14,20252026,3,OFF,OK,2026-04-26T23:00:00Z
+2025030184,hockey,nhl,2026_04_26,21:30,Anaheim Ducks,Edmonton Oilers,ANA,EDM,24,22,20252026,3,OFF,OK,2026-04-27T01:30:00Z

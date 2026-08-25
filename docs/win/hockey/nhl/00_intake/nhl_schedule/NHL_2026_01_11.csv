@@ -1,0 +1,6 @@
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_team_abbrev,away_team_abbrev,home_team_id,away_team_id,season,game_type,game_state,schedule_state,start_time_utc
+2025020711,hockey,nhl,2026_01_11,14:00,Winnipeg Jets,New Jersey Devils,WPG,NJD,52,1,20252026,2,OFF,OK,2026-01-11T19:00:00Z
+2025020712,hockey,nhl,2026_01_11,17:00,Boston Bruins,Pittsburgh Penguins,BOS,PIT,6,5,20252026,2,OFF,OK,2026-01-11T22:00:00Z
+2025020713,hockey,nhl,2026_01_11,19:00,Nashville Predators,Washington Capitals,NSH,WSH,18,15,20252026,2,OFF,OK,2026-01-12T00:00:00Z
+2025020714,hockey,nhl,2026_01_11,19:00,Utah Mammoth,Columbus Blue Jackets,UTA,CBJ,68,29,20252026,2,OFF,OK,2026-01-12T00:00:00Z
+2025020715,hockey,nhl,2026_01_11,20:00,San Jose Sharks,Vegas Golden Knights,SJS,VGK,28,54,20252026,2,OFF,OK,2026-01-12T01:00:00Z
