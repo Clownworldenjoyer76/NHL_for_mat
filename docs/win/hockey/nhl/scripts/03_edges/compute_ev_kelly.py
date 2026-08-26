@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# hockey/nhl/scripts/03_edges/compute_ev_kelly.py
+# docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py
 
 import sys
 import traceback
@@ -269,8 +269,6 @@ def process_moneyline(
         "home_model_prob_moneyline",
         "away_dk_moneyline_decimal",
         "home_dk_moneyline_decimal",
-        "away_edge_decimal_moneyline",
-        "home_edge_decimal_moneyline",
         "away_edge_pct_moneyline",
         "home_edge_pct_moneyline",
     ]
@@ -333,8 +331,6 @@ def process_puck_line(
         "home_model_prob_puck_line",
         "away_dk_puck_line_decimal",
         "home_dk_puck_line_decimal",
-        "away_edge_decimal_puck_line",
-        "home_edge_decimal_puck_line",
         "away_edge_pct_puck_line",
         "home_edge_pct_puck_line",
     ]
@@ -397,8 +393,6 @@ def process_total(
         "under_model_prob_total",
         "dk_total_over_decimal",
         "dk_total_under_decimal",
-        "over_edge_decimal_total",
-        "under_edge_decimal_total",
         "over_edge_pct_total",
         "under_edge_pct_total",
     ]

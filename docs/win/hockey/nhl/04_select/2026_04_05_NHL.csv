@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_05,15:30,2025021224,Boston Bruins,Philadelphia Flyers,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.7882148335385238,0.1507936569662447,0.1507936569662447,0.3278122977527061
+hockey,nhl,2026_04_05,15:30,2025021224,Boston Bruins,Philadelphia Flyers,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.7882148335385238,0.1032833266892088,0.1507936569662447,0.3278122977527061

@@ -71,11 +71,6 @@ def assert_read_path(path: Path):
     if blocked:
         fail(f"Blocked read path contains forbidden folder(s): {path} | blocked={blocked}")
 
-    allowed_roots = [
-        INPUT_DIR.as_posix(),
-        CONFIG_PATH.as_posix(),
-    ]
-
     p = path.as_posix()
     if not (p.startswith(INPUT_DIR.as_posix() + "/") or p == CONFIG_PATH.as_posix()):
         fail(f"Blocked read path outside allowed Stage 04 inputs/config: {path}")
@@ -273,7 +268,7 @@ def process_moneyline(row, config, slate_key):
         odds = fv(row.get(f"{side}_dk_moneyline_american"))
         dec = fv(row.get(f"{side}_dk_moneyline_decimal"))
         prob = fv(row.get(f"{side}_model_prob_moneyline"))
-        edge = fv(row.get(f"{side}_edge_decimal_moneyline"))
+        edge = fv(row.get(f"{side}_edge_pct_moneyline"))
         ev = fv(row.get(f"{side}_ev_moneyline"))
         kelly = fv(row.get(f"{side}_kelly_moneyline"))
 
@@ -332,7 +327,7 @@ def process_puck_line(row, config, slate_key):
         dec = fv(row.get(f"{side}_dk_puck_line_decimal"))
         line = fv(row.get(f"{side}_puck_line"))
         prob = fv(row.get(f"{side}_model_prob_puck_line"))
-        edge = fv(row.get(f"{side}_edge_decimal_puck_line"))
+        edge = fv(row.get(f"{side}_edge_pct_puck_line"))
         ev = fv(row.get(f"{side}_ev_puck_line"))
         kelly = fv(row.get(f"{side}_kelly_puck_line"))
 
@@ -391,7 +386,7 @@ def process_total(row, config, slate_key):
         dec = fv(row.get(f"dk_total_{side}_decimal"))
         line = fv(row.get("total"))
         prob = fv(row.get(f"{side}_model_prob_total"))
-        edge = fv(row.get(f"{side}_edge_decimal_total"))
+        edge = fv(row.get(f"{side}_edge_pct_total"))
         ev = fv(row.get(f"{side}_ev_total"))
         kelly = fv(row.get(f"{side}_kelly_total"))
 
@@ -479,8 +474,8 @@ def validate_market_columns(df, market_type, path):
             "home_dk_moneyline_decimal",
             "away_model_prob_moneyline",
             "home_model_prob_moneyline",
-            "away_edge_decimal_moneyline",
-            "home_edge_decimal_moneyline",
+            "away_edge_pct_moneyline",
+            "home_edge_pct_moneyline",
             "away_ev_moneyline",
             "home_ev_moneyline",
             "away_kelly_moneyline",
@@ -496,8 +491,8 @@ def validate_market_columns(df, market_type, path):
             "home_dk_puck_line_decimal",
             "away_model_prob_puck_line",
             "home_model_prob_puck_line",
-            "away_edge_decimal_puck_line",
-            "home_edge_decimal_puck_line",
+            "away_edge_pct_puck_line",
+            "home_edge_pct_puck_line",
             "away_ev_puck_line",
             "home_ev_puck_line",
             "away_kelly_puck_line",
@@ -512,8 +507,8 @@ def validate_market_columns(df, market_type, path):
             "dk_total_under_decimal",
             "over_model_prob_total",
             "under_model_prob_total",
-            "over_edge_decimal_total",
-            "under_edge_decimal_total",
+            "over_edge_pct_total",
+            "under_edge_pct_total",
             "over_ev_total",
             "under_ev_total",
             "over_kelly_total",

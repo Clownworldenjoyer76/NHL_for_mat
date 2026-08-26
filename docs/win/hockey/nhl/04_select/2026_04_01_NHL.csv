@@ -1,3 +1,3 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_01,21:00,2025021189,St Louis Blues,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.77596654664087,0.1329111580956701,0.1329111580956701,0.2889373002079785
-hockey,nhl,2026_04_01,21:00,2025021189,St Louis Blues,Los Angeles Kings,total,under,5.5,under_total,-105.0,1.95,0.5395590638534408,0.0521401745142093,0.0521401745142093,0.0548843942254836
+hockey,nhl,2026_04_01,21:00,2025021189,St Louis Blues,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.77596654664087,0.0910350397915549,0.1329111580956701,0.2889373002079785
+hockey,nhl,2026_04_01,21:00,2025021189,St Louis Blues,Los Angeles Kings,total,under,5.5,under_total,-105.0,1.95,0.5395590638534408,0.0267385510329278,0.0521401745142093,0.0548843942254836

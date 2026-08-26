@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_05_12,19:00,2025030214,Buffalo Sabres,Montreal Canadiens,puck_line,away,1.5,away_puck_line,-227.0,1.44,0.788051877586402,0.1347947037244188,0.1347947037244188,0.3063515993736794
+hockey,nhl,2026_05_12,19:00,2025030214,Buffalo Sabres,Montreal Canadiens,puck_line,away,1.5,away_puck_line,-227.0,1.44,0.788051877586402,0.0936074331419576,0.1347947037244188,0.3063515993736794

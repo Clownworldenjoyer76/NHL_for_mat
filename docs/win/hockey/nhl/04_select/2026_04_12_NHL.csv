@@ -1,3 +1,3 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_12,15:00,2025021276,Pittsburgh Penguins,Washington Capitals,total,under,6.5,under_total,102.0,2.02,0.5303625633135098,0.0713323778932899,0.0713323778932899,0.0699337038169508
-hockey,nhl,2026_04_12,18:00,2025021278,Boston Bruins,Columbus Blue Jackets,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.7895840308174839,0.1527926849935263,0.1527926849935263,0.3321580108554922
+hockey,nhl,2026_04_12,15:00,2025021276,Pittsburgh Penguins,Washington Capitals,total,under,6.5,under_total,102.0,2.02,0.5303625633135098,0.0353130583630147,0.0713323778932899,0.0699337038169508
+hockey,nhl,2026_04_12,18:00,2025021278,Boston Bruins,Columbus Blue Jackets,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.7895840308174839,0.1046525239681688,0.1527926849935263,0.3321580108554922

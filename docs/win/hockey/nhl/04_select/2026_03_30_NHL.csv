@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_03_30,19:00,2025021173,Pittsburgh Penguins,New York Islanders,puck_line,away,1.5,away_puck_line,-250.0,1.4,0.7919353640369803,0.1087095096517722,0.1087095096517722,0.2717737741294309
+hockey,nhl,2026_03_30,19:00,2025021173,Pittsburgh Penguins,New York Islanders,puck_line,away,1.5,away_puck_line,-250.0,1.4,0.7919353640369803,0.0776496497512659,0.1087095096517722,0.2717737741294309

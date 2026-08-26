@@ -1,4 +1,4 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_09,19:00,2025021247,Columbus Blue Jackets,Buffalo Sabres,puck_line,away,1.5,away_puck_line,-244.0,1.41,0.7932732297494276,0.1185152539466929,0.1185152539466929,0.2890615949919339
-hockey,nhl,2026_04_09,21:00,2025021254,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-250.0,1.4,0.7867816355037704,0.1014942897052786,0.1014942897052786,0.2537357242631965
-hockey,nhl,2026_04_09,21:00,2025021257,Nashville Predators,Utah Mammoth,total,under,6.5,under_total,-130.0,1.77,0.5993625655193264,0.0608717409692078,0.0608717409692078,0.0790542090509191
+hockey,nhl,2026_04_09,19:00,2025021247,Columbus Blue Jackets,Buffalo Sabres,puck_line,away,1.5,away_puck_line,-244.0,1.41,0.7932732297494276,0.0840533715933992,0.1185152539466929,0.2890615949919339
+hockey,nhl,2026_04_09,21:00,2025021254,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-250.0,1.4,0.7867816355037704,0.0724959212180561,0.1014942897052786,0.2537357242631965
+hockey,nhl,2026_04_09,21:00,2025021257,Nashville Predators,Utah Mammoth,total,under,6.5,under_total,-130.0,1.77,0.5993625655193264,0.034390814106897,0.0608717409692078,0.0790542090509191

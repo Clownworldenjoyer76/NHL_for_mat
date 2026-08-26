@@ -1,4 +1,4 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_03_31,19:00,2025021184,Philadelphia Flyers,Washington Capitals,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7711399919175184,0.1027301884420512,0.1027301884420512,0.2389074149815145
-hockey,nhl,2026_03_31,19:30,2025021185,Carolina Hurricanes,Columbus Blue Jackets,puck_line,home,1.5,home_puck_line,-233.0,1.43,0.7618045191538557,0.0893804623900136,0.0893804623900136,0.2078615404418921
-hockey,nhl,2026_03_31,20:30,2025021186,Winnipeg Jets,Chicago Blackhawks,puck_line,home,1.5,home_puck_line,-204.0,1.49,0.7861980271434039,0.1714350604436718,0.1714350604436718,0.3498674702932078
+hockey,nhl,2026_03_31,19:00,2025021184,Philadelphia Flyers,Washington Capitals,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7711399919175184,0.0718392926168189,0.1027301884420512,0.2389074149815145
+hockey,nhl,2026_03_31,19:30,2025021185,Carolina Hurricanes,Columbus Blue Jackets,puck_line,home,1.5,home_puck_line,-233.0,1.43,0.7618045191538557,0.0625038198531563,0.0893804623900136,0.2078615404418921
+hockey,nhl,2026_03_31,20:30,2025021186,Winnipeg Jets,Chicago Blackhawks,puck_line,home,1.5,home_puck_line,-204.0,1.49,0.7861980271434039,0.1150570875460884,0.1714350604436718,0.3498674702932078

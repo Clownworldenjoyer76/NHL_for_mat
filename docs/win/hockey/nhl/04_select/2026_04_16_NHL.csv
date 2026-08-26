@@ -1,3 +1,3 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_16,20:00,2025021308,San Jose Sharks,Winnipeg Jets,total,under,6.5,under_total,-122.0,1.82,0.5848293934143862,0.0643894960141828,0.0643894960141828,0.0785237756270524
-hockey,nhl,2026_04_16,22:00,2025021312,Seattle Kraken,Colorado Avalanche,moneyline,home,,home_moneyline,-179.0,1.56,0.772138184804155,0.2045355682944818,0.2045355682944818,0.365242086240146
+hockey,nhl,2026_04_16,20:00,2025021308,San Jose Sharks,Winnipeg Jets,total,under,6.5,under_total,-122.0,1.82,0.5848293934143862,0.0353788439638368,0.0643894960141828,0.0785237756270524
+hockey,nhl,2026_04_16,22:00,2025021312,Seattle Kraken,Colorado Avalanche,moneyline,home,,home_moneyline,-179.0,1.56,0.772138184804155,0.131112543778514,0.2045355682944818,0.365242086240146

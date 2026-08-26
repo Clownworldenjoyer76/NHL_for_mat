@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# hockey/nhl/scripts/03_edges/compute_edges.py
+# docs/win/hockey/nhl/scripts/03_edges/compute_edges.py
 
 import sys
 import traceback
@@ -117,39 +117,6 @@ def to_numeric(df, cols):
             )
 
     return df
-
-
-def safe_edge_decimal(book_decimal, model_prob):
-    d = pd.to_numeric(
-        book_decimal,
-        errors="coerce",
-    )
-    p = pd.to_numeric(
-        model_prob,
-        errors="coerce",
-    )
-
-    out = pd.Series(
-        np.nan,
-        index=p.index,
-        dtype="float64",
-    )
-
-    valid = (
-        d.notna()
-        & p.notna()
-        & np.isfinite(d)
-        & np.isfinite(p)
-        & (d > 1)
-        & (p > 0)
-        & (p < 1)
-    )
-
-    out.loc[valid] = (
-        p.loc[valid] * d.loc[valid]
-    ) - 1
-
-    return out
 
 
 def safe_edge_pct(book_decimal, model_prob):
@@ -285,15 +252,6 @@ def compute_moneyline_edges(df, file_path):
         df["home_normalized_prob_moneyline"]
     )
 
-    df["away_edge_decimal_moneyline"] = safe_edge_decimal(
-        df["away_dk_moneyline_decimal"],
-        df["away_model_prob_moneyline"],
-    )
-    df["home_edge_decimal_moneyline"] = safe_edge_decimal(
-        df["home_dk_moneyline_decimal"],
-        df["home_model_prob_moneyline"],
-    )
-
     df["away_edge_pct_moneyline"] = safe_edge_pct(
         df["away_dk_moneyline_decimal"],
         df["away_model_prob_moneyline"],
@@ -304,8 +262,6 @@ def compute_moneyline_edges(df, file_path):
     )
 
     edge_columns = [
-        "away_edge_decimal_moneyline",
-        "home_edge_decimal_moneyline",
         "away_edge_pct_moneyline",
         "home_edge_pct_moneyline",
     ]
@@ -344,15 +300,6 @@ def compute_puck_line_edges(df, file_path):
         df["home_normalized_prob_puck_line"]
     )
 
-    df["away_edge_decimal_puck_line"] = safe_edge_decimal(
-        df["away_dk_puck_line_decimal"],
-        df["away_model_prob_puck_line"],
-    )
-    df["home_edge_decimal_puck_line"] = safe_edge_decimal(
-        df["home_dk_puck_line_decimal"],
-        df["home_model_prob_puck_line"],
-    )
-
     df["away_edge_pct_puck_line"] = safe_edge_pct(
         df["away_dk_puck_line_decimal"],
         df["away_model_prob_puck_line"],
@@ -363,8 +310,6 @@ def compute_puck_line_edges(df, file_path):
     )
 
     edge_columns = [
-        "away_edge_decimal_puck_line",
-        "home_edge_decimal_puck_line",
         "away_edge_pct_puck_line",
         "home_edge_pct_puck_line",
     ]
@@ -403,15 +348,6 @@ def compute_total_edges(df, file_path):
         df["under_normalized_prob_total"]
     )
 
-    df["over_edge_decimal_total"] = safe_edge_decimal(
-        df["dk_total_over_decimal"],
-        df["over_model_prob_total"],
-    )
-    df["under_edge_decimal_total"] = safe_edge_decimal(
-        df["dk_total_under_decimal"],
-        df["under_model_prob_total"],
-    )
-
     df["over_edge_pct_total"] = safe_edge_pct(
         df["dk_total_over_decimal"],
         df["over_model_prob_total"],
@@ -422,8 +358,6 @@ def compute_total_edges(df, file_path):
     )
 
     edge_columns = [
-        "over_edge_decimal_total",
-        "under_edge_decimal_total",
         "over_edge_pct_total",
         "under_edge_pct_total",
     ]

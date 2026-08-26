@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_06,22:30,2025021232,Nashville Predators,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7834844201441656,0.1203827208061567,0.1203827208061567,0.2799598158282717
+hockey,nhl,2026_04_06,22:30,2025021232,Nashville Predators,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7834844201441656,0.0841837208434662,0.1203827208061567,0.2799598158282717

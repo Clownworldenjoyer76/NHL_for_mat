@@ -85,6 +85,9 @@ jobs:
       - name: 03 Edges - NHL Compute EV Kelly
         run: python docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py
 
+      - name: 04 Select - Validate Markets Config
+        run: python docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py
+
       - name: 04 Select - NHL Select Bets
         run: python docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
 
