@@ -67,6 +67,9 @@ jobs:
       - name: 01 Merge - NHL Build Juice Files
         run: python docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py
 
+      - name: 02 Juice - Validate Calibration Config
+        run: python docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py
+
       - name: 02 Juice - NHL Moneyline Juice
         run: python docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py
 

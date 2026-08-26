@@ -1,0 +1,611 @@
+=== validate_juice_config RUN 2026-08-26T17:11:10.662173+00:00 ===
+2026-08-26T17:11:10.663039+00:00 | CONFIG_DIR=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\config\juice
+2026-08-26T17:11:10.663404+00:00 | INPUT_DIR=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced
+2026-08-26T17:11:10.663730+00:00 | MONEYLINE SUPPORTED ODDS=-999..-100 and +100..+599
+2026-08-26T17:11:10.664014+00:00 | PUCK-LINE SUPPORTED LINES=-1.5,+1.5
+2026-08-26T17:11:10.664323+00:00 | TOTAL SUPPORTED LINES=5.5,6.0,6.5,7.0,7.5
+2026-08-26T17:11:13.879950+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_10_14_NHL_moneyline.csv | row=8 | away_fair_decimal_moneyline | fair_decimal=1.4104372355430184 | adjustment=0.3368 | adjusted_decimal=0.9354019746121298
+2026-08-26T17:11:14.392644+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_08_NHL_moneyline.csv | row=14 | away_fair_decimal_moneyline | fair_decimal=1.430615164520744 | adjustment=0.3368 | adjusted_decimal=0.9487839771101575
+2026-08-26T17:11:15.159430+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_moneyline.csv | row=11 | away_fair_decimal_moneyline | fair_decimal=1.3477088948787062 | adjustment=0.3368 | adjusted_decimal=0.8938005390835579
+2026-08-26T17:11:17.599255+00:00 | RUNTIME MONEYLINE SIDES CHECKED | 2783 | files=211
+2026-08-26T17:11:17.616371+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.616678+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.616937+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.617189+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.620277+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.620557+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.620813+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.621073+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_07_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.623768+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.624050+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.624331+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.624581+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.624941+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.625192+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.625439+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.625684+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.626040+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.626291+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.626542+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.626820+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.627177+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.627429+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.627677+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.627923+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_08_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.637978+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.638248+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.638502+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.638751+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.641534+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.641790+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.642041+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.642289+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.645037+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.645294+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.645543+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.645789+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.646148+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.646408+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.646655+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.646902+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.647258+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.647510+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.647757+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.648002+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.648359+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.648609+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.648901+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.649150+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.649555+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=13 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.649824+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=13 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.650075+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=13 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.650324+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=13 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.653170+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=15 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.653433+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=15 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.653685+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=15 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.653932+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_09_NHL_puck_line.csv | row=15 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.656896+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.657156+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.657407+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.657655+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.665172+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.665470+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.665726+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.665974+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.671180+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.671444+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.671693+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.671940+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.677036+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.677293+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.677544+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.677793+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.678148+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=13 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.678432+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=13 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.678685+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=13 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.678933+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=13 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.684057+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=16 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.684315+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=16 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.684566+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=16 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.684814+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_11_NHL_puck_line.csv | row=16 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.699128+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.699399+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.699677+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.699927+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.702678+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.702969+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.703253+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.703502+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.703867+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.704119+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.704366+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.704615+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.707370+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.707679+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.707929+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.708178+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.708538+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.708787+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.709035+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.709281+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.709687+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.709940+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.710186+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.710437+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_13_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.713392+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.713655+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.713906+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.714154+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.716948+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.717204+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.717458+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.717707+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.718064+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.718315+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.718568+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.718815+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.724002+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=8 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.724261+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=8 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.724540+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=8 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.724791+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_14_NHL_puck_line.csv | row=8 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.734761+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.735022+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.735272+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.735520+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.735878+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.736130+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.736424+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.736711+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_15_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.739547+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.739802+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.740078+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.740325+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.745862+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.746134+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.746387+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.746638+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.749432+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.749689+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.749938+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.750185+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.750548+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=8 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.750797+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=8 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.751045+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=8 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.751290+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=8 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.754127+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.754390+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.754640+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.754888+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_16_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.765017+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.765294+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.765544+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.765795+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.768545+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.768802+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.769080+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.769364+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_17_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.775255+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.775538+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.775791+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.776040+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.776396+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.776650+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.776899+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.777163+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.777539+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.777789+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.778037+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.778283+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.781035+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.781293+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.781543+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.781794+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.784561+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.784829+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.785076+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.785323+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.785677+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.785926+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.786173+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.786524+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.787009+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.787330+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.787679+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.787936+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.788297+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.788552+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.788801+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.789049+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.789407+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=13 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.789676+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=13 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.789948+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=13 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.790196+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=13 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.790557+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=14 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.790809+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=14 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.791056+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=14 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.791303+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_18_NHL_puck_line.csv | row=14 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.794263+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.794541+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.794791+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.795037+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.797871+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.798129+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.798380+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.798630+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.798988+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.799238+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.799485+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.799731+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_19_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.802567+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.802917+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.803229+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.803510+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.806482+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.806747+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.806996+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.807243+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.809985+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.810240+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.810489+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.810741+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_20_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.813627+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.813888+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.814138+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.814385+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.814795+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.815046+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.815321+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.815569+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.821143+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.821457+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.821714+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.821967+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.824880+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=8 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.825140+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=8 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.825392+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=8 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.825642+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=8 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.826038+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.826294+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.826544+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.826795+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.827151+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.827421+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.827669+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.827915+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.828296+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.828545+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.828798+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.829044+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_21_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.831942+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_22_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.832198+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_22_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.832447+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_22_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.832695+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_22_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.840794+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.841111+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.841374+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.841638+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.842007+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.842262+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.842514+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.842768+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.848050+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.848314+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.848637+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.848919+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.851696+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=8 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.851977+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=8 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.852246+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=8 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.852497+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=8 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.855377+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.855639+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.855894+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.856150+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.858889+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.859181+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.859432+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.859680+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_23_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.872483+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_24_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.872770+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_24_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.873024+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_24_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.873272+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_24_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.876186+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.876445+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.876698+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.876944+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.879707+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.879991+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.880240+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.880487+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.880845+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.881096+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.881377+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.881627+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.884377+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.884670+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.884919+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.885169+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.888605+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.888996+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.889290+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.889542+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.889930+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.890202+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.890481+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.890739+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.891110+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.891382+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.891646+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.891896+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.892254+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.892547+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.892806+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.893055+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.893413+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=13 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.893665+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=13 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.893916+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=13 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.894164+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=13 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.894543+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=14 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.894798+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=14 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.895099+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=14 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.895352+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_25_NHL_puck_line.csv | row=14 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.898599+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.898865+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.899118+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.899368+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.905614+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.905992+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.906329+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.906688+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.909838+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=7 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.910108+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=7 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.910360+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=7 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.910610+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=7 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.913366+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.913623+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.913904+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.914155+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_26_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.919484+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_27_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.919775+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_27_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.920112+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_27_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.920449+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_27_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.925964+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.926226+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.926482+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.926734+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.931843+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.932135+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.932388+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.932636+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.940204+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=10 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.940467+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=10 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.940718+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=10 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.940968+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=10 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.948471+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=14 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.948727+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=14 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.949034+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=14 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.949282+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=14 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.949640+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=15 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.949891+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=15 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.950140+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=15 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.950388+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=15 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.950749+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=16 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.951000+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=16 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.951247+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=16 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.951493+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=16 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.951849+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=17 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.952114+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=17 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.952377+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=17 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.952625+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_28_NHL_puck_line.csv | row=17 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.962188+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.962457+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.962735+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.962987+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.963374+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.963629+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.963879+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.964125+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.964483+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.964733+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.964983+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.965229+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.973180+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=9 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.973484+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=9 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.973744+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=9 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.973994+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=9 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.976753+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=11 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.977013+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=11 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.977263+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=11 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.977509+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=11 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.977898+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=12 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.978150+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=12 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.978397+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=12 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.978643+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_30_NHL_puck_line.csv | row=12 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.981525+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=2 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.981781+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=2 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.982031+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=2 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.982293+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=2 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.982650+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.982908+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.983155+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.983438+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_10_31_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.991608+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=3 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.991891+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=3 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.992144+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=3 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.992394+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=3 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.992751+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=4 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.993006+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=4 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.993282+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=4 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.993531+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=4 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.993888+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=5 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.994140+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=5 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.994392+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=5 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.994640+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=5 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.994998+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=6 | column=away_puck_line | value=nan
+2026-08-26T17:11:17.995246+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=6 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:17.995493+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=6 | column=home_puck_line | value=nan
+2026-08-26T17:11:17.995739+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=6 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:18.010671+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=13 | column=away_puck_line | value=nan
+2026-08-26T17:11:18.010952+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=13 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:18.011204+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=13 | column=home_puck_line | value=nan
+2026-08-26T17:11:18.011452+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=13 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:18.011812+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=14 | column=away_puck_line | value=nan
+2026-08-26T17:11:18.012063+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=14 | column=away_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:18.012325+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=14 | column=home_puck_line | value=nan
+2026-08-26T17:11:18.012616+00:00 | ERROR | RUNTIME NON-FINITE VALUE | 2025_11_01_NHL_puck_line.csv | row=14 | column=home_fair_decimal_puck_line | value=nan
+2026-08-26T17:11:18.017305+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_02_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.4060525122947067 | adjustment=0.35 | adjusted_decimal=0.9139341329915595
+2026-08-26T17:11:18.025130+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_02_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4014750569318133 | adjustment=0.35 | adjusted_decimal=0.9109587870056787
+2026-08-26T17:11:18.034539+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_03_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.3990784725124108 | adjustment=0.35 | adjusted_decimal=0.909401007133067
+2026-08-26T17:11:18.036118+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_03_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.387889005910351 | adjustment=0.32 | adjusted_decimal=0.9437645240190387
+2026-08-26T17:11:18.044899+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_04_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.3889790196750835 | adjustment=0.35 | adjusted_decimal=0.9028363627888043
+2026-08-26T17:11:18.052310+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_04_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4139154607405644 | adjustment=0.35 | adjusted_decimal=0.9190450494813669
+2026-08-26T17:11:18.065607+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_04_NHL_puck_line.csv | row=11 | away_fair_decimal_puck_line | fair_decimal=1.429134583635527 | adjustment=0.32 | adjusted_decimal=0.9718115168721582
+2026-08-26T17:11:18.076174+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_05_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.3734175378924511 | adjustment=0.35 | adjusted_decimal=0.8927213996300932
+2026-08-26T17:11:18.085788+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_06_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.5330683642000986 | adjustment=0.35 | adjusted_decimal=0.9964944367300641
+2026-08-26T17:11:18.096239+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_06_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.2704938098845067 | adjustment=0.35 | adjusted_decimal=0.8258209764249294
+2026-08-26T17:11:18.097823+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_06_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.3848485924812308 | adjustment=0.32 | adjusted_decimal=0.9416970428872369
+2026-08-26T17:11:18.102927+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_06_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.4296705766623525 | adjustment=0.32 | adjusted_decimal=0.9721759921303996
+2026-08-26T17:11:18.105956+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_06_NHL_puck_line.csv | row=10 | away_fair_decimal_puck_line | fair_decimal=1.3281006583750175 | adjustment=0.32 | adjusted_decimal=0.9031084476950118
+2026-08-26T17:11:18.110849+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_07_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.412098691405468 | adjustment=0.32 | adjusted_decimal=0.9602271101557182
+2026-08-26T17:11:18.126375+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_08_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.3474031256860184 | adjustment=0.35 | adjusted_decimal=0.8758120316959119
+2026-08-26T17:11:18.132643+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_08_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.395376551852881 | adjustment=0.32 | adjusted_decimal=0.948856055259959
+2026-08-26T17:11:18.145991+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_08_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.4116701853265514 | adjustment=0.35 | adjusted_decimal=0.9175856204622584
+2026-08-26T17:11:18.147506+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_08_NHL_puck_line.csv | row=12 | away_fair_decimal_puck_line | fair_decimal=1.3498504277339654 | adjustment=0.32 | adjusted_decimal=0.9178982908590964
+2026-08-26T17:11:18.163400+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_09_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.341108653756333 | adjustment=0.35 | adjusted_decimal=0.8717206249416165
+2026-08-26T17:11:18.164956+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_09_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.467622289632261 | adjustment=0.32 | adjusted_decimal=0.9979831569499374
+2026-08-26T17:11:18.186294+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_10_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.3439471817267161 | adjustment=0.32 | adjusted_decimal=0.9138840835741668
+2026-08-26T17:11:18.193358+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_11_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.3523561926119254 | adjustment=0.32 | adjusted_decimal=0.9196022109761092
+2026-08-26T17:11:18.197147+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_11_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.273401232242967 | adjustment=0.35 | adjusted_decimal=0.8277108009579286
+2026-08-26T17:11:18.209259+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_11_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.512910547068275 | adjustment=0.35 | adjusted_decimal=0.9833918555943788
+2026-08-26T17:11:18.210768+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_11_NHL_puck_line.csv | row=10 | away_fair_decimal_puck_line | fair_decimal=1.3241213883865877 | adjustment=0.32 | adjusted_decimal=0.9004025441028796
+2026-08-26T17:11:18.218850+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_12_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.3680353889412828 | adjustment=0.35 | adjusted_decimal=0.8892230028118339
+2026-08-26T17:11:18.223901+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_12_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4237248033650505 | adjustment=0.35 | adjusted_decimal=0.9254211221872828
+2026-08-26T17:11:18.228450+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_13_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.3736440526538365 | adjustment=0.35 | adjusted_decimal=0.8928686342249937
+2026-08-26T17:11:18.231099+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_13_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.32918869510028 | adjustment=0.35 | adjusted_decimal=0.863972651815182
+2026-08-26T17:11:18.234972+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_13_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.4674136418952253 | adjustment=0.32 | adjusted_decimal=0.9978412764887531
+2026-08-26T17:11:18.241188+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_13_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.2914190893004514 | adjustment=0.35 | adjusted_decimal=0.8394224080452934
+2026-08-26T17:11:18.250886+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_13_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.5030293592606137 | adjustment=0.35 | adjusted_decimal=0.9769690835193989
+2026-08-26T17:11:18.255532+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_14_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.4347956131937392 | adjustment=0.35 | adjusted_decimal=0.9326171485759305
+2026-08-26T17:11:18.268468+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4184473017632384 | adjustment=0.32 | adjusted_decimal=0.964544165199002
+2026-08-26T17:11:18.273532+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.3163303325646856 | adjustment=0.32 | adjusted_decimal=0.8951046261439861
+2026-08-26T17:11:18.284353+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.336440975074945 | adjustment=0.35 | adjusted_decimal=0.8686866337987144
+2026-08-26T17:11:18.287080+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.4664778628269823 | adjustment=0.35 | adjusted_decimal=0.9532106108375386
+2026-08-26T17:11:18.289743+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.5156069059685477 | adjustment=0.35 | adjusted_decimal=0.9851444888795561
+2026-08-26T17:11:18.294759+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_15_NHL_puck_line.csv | row=13 | home_fair_decimal_puck_line | fair_decimal=1.5308953499541706 | adjustment=0.35 | adjusted_decimal=0.995081977470211
+2026-08-26T17:11:18.300633+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_16_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.4347498274788222 | adjustment=0.32 | adjusted_decimal=0.975629882685599
+2026-08-26T17:11:18.306876+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_16_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.4661084257938235 | adjustment=0.35 | adjusted_decimal=0.9529704767659853
+2026-08-26T17:11:18.318598+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_17_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.4598824436350184 | adjustment=0.35 | adjusted_decimal=0.948923588362762
+2026-08-26T17:11:18.322543+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_17_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.324516555620824 | adjustment=0.32 | adjusted_decimal=0.9006712578221603
+2026-08-26T17:11:18.328668+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_17_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.3568801182861057 | adjustment=0.35 | adjusted_decimal=0.8819720768859687
+2026-08-26T17:11:18.336811+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_18_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.4691449178556142 | adjustment=0.32 | adjusted_decimal=0.9990185441418176
+2026-08-26T17:11:18.364647+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.4383619498711269 | adjustment=0.32 | adjusted_decimal=0.9780861259123662
+2026-08-26T17:11:18.367341+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4159643532735273 | adjustment=0.32 | adjusted_decimal=0.9628557602259985
+2026-08-26T17:11:18.369991+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.4472383475118369 | adjustment=0.32 | adjusted_decimal=0.984122076308049
+2026-08-26T17:11:18.385598+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.3920064237579453 | adjustment=0.35 | adjusted_decimal=0.9048041754426644
+2026-08-26T17:11:18.388333+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.4098525794696617 | adjustment=0.35 | adjusted_decimal=0.9164041766552802
+2026-08-26T17:11:18.391023+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_20_NHL_puck_line.csv | row=12 | home_fair_decimal_puck_line | fair_decimal=1.3610614565300034 | adjustment=0.35 | adjusted_decimal=0.8846899467445023
+2026-08-26T17:11:18.399232+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_21_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4456900756055422 | adjustment=0.32 | adjusted_decimal=0.9830692514117686
+2026-08-26T17:11:18.403022+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_21_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.3199301737802038 | adjustment=0.35 | adjusted_decimal=0.8579546129571325
+2026-08-26T17:11:18.409166+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.3802466834111689 | adjustment=0.32 | adjusted_decimal=0.9385677447195947
+2026-08-26T17:11:18.414242+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.4146269201743515 | adjustment=0.32 | adjusted_decimal=0.961946305718559
+2026-08-26T17:11:18.420404+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.3551885049883041 | adjustment=0.35 | adjusted_decimal=0.8808725282423977
+2026-08-26T17:11:18.422021+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.4393618828302301 | adjustment=0.32 | adjusted_decimal=0.9787660803245564
+2026-08-26T17:11:18.424670+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=8 | away_fair_decimal_puck_line | fair_decimal=1.467567465516644 | adjustment=0.32 | adjusted_decimal=0.9979458765513178
+2026-08-26T17:11:18.432084+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=11 | away_fair_decimal_puck_line | fair_decimal=1.4247866189594771 | adjustment=0.32 | adjusted_decimal=0.9688549008924443
+2026-08-26T17:11:18.435855+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=12 | home_fair_decimal_puck_line | fair_decimal=1.4978136745807742 | adjustment=0.35 | adjusted_decimal=0.9735788884775033
+2026-08-26T17:11:18.438699+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_22_NHL_puck_line.csv | row=13 | home_fair_decimal_puck_line | fair_decimal=1.4680196154853205 | adjustment=0.35 | adjusted_decimal=0.9542127500654584
+2026-08-26T17:11:18.452837+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_23_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.4320917983306058 | adjustment=0.35 | adjusted_decimal=0.9308596689148938
+2026-08-26T17:11:18.471649+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_24_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.3936856082699305 | adjustment=0.35 | adjusted_decimal=0.9058956453754549
+2026-08-26T17:11:18.477383+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_25_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.4472383475118369 | adjustment=0.32 | adjusted_decimal=0.984122076308049
+2026-08-26T17:11:18.493840+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_26_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.3846067002502305 | adjustment=0.32 | adjusted_decimal=0.9415325561701566
+2026-08-26T17:11:18.496489+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_26_NHL_puck_line.csv | row=8 | away_fair_decimal_puck_line | fair_decimal=1.4613864416480429 | adjustment=0.32 | adjusted_decimal=0.9937427803206691
+2026-08-26T17:11:18.505063+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_26_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.4732524603177832 | adjustment=0.35 | adjusted_decimal=0.9576140992065592
+2026-08-26T17:11:18.517114+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_26_NHL_puck_line.csv | row=16 | home_fair_decimal_puck_line | fair_decimal=1.4515220779748872 | adjustment=0.35 | adjusted_decimal=0.9434893506836767
+2026-08-26T17:11:18.521831+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.4741686400977405 | adjustment=0.35 | adjusted_decimal=0.9582096160635314
+2026-08-26T17:11:18.524487+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.513671386584836 | adjustment=0.35 | adjusted_decimal=0.9838864012801434
+2026-08-26T17:11:18.529492+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4154422585271573 | adjustment=0.35 | adjusted_decimal=0.9200374680426523
+2026-08-26T17:11:18.536887+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=8 | home_fair_decimal_puck_line | fair_decimal=1.498301974677018 | adjustment=0.35 | adjusted_decimal=0.9738962835400617
+2026-08-26T17:11:18.541989+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.3176646765314228 | adjustment=0.35 | adjusted_decimal=0.8564820397454249
+2026-08-26T17:11:18.544882+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.4081216381694117 | adjustment=0.35 | adjusted_decimal=0.9152790648101177
+2026-08-26T17:11:18.555056+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_28_NHL_puck_line.csv | row=15 | home_fair_decimal_puck_line | fair_decimal=1.2095263180656048 | adjustment=0.35 | adjusted_decimal=0.7861921067426432
+2026-08-26T17:11:18.567137+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_29_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.5069348650235976 | adjustment=0.35 | adjusted_decimal=0.9795076622653385
+2026-08-26T17:11:18.569801+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_29_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4360867970895528 | adjustment=0.35 | adjusted_decimal=0.9334564181082093
+2026-08-26T17:11:18.575018+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_29_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.336938465237277 | adjustment=0.35 | adjusted_decimal=0.8690100024042301
+2026-08-26T17:11:18.578910+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_29_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.2244289809865618 | adjustment=0.32 | adjusted_decimal=0.832611707070862
+2026-08-26T17:11:18.592189+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_11_30_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.353664811793159 | adjustment=0.35 | adjusted_decimal=0.8798821276655533
+2026-08-26T17:11:18.607812+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_01_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.2924957992710309 | adjustment=0.32 | adjusted_decimal=0.8788971435043009
+2026-08-26T17:11:18.617371+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_02_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.3870243488137939 | adjustment=0.32 | adjusted_decimal=0.9431765571933798
+2026-08-26T17:11:18.623871+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_02_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.3623086482890487 | adjustment=0.35 | adjusted_decimal=0.8855006213878817
+2026-08-26T17:11:18.626604+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_02_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4100360423366622 | adjustment=0.35 | adjusted_decimal=0.9165234275188305
+2026-08-26T17:11:18.630537+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_02_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.3404275378306816 | adjustment=0.32 | adjusted_decimal=0.9114907257248633
+2026-08-26T17:11:18.640470+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_02_NHL_puck_line.csv | row=11 | away_fair_decimal_puck_line | fair_decimal=1.3355019696610664 | adjustment=0.32 | adjusted_decimal=0.908141339369525
+2026-08-26T17:11:18.647673+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_03_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.276999805782907 | adjustment=0.32 | adjusted_decimal=0.8683598679323767
+2026-08-26T17:11:18.652848+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_03_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.450881532791848 | adjustment=0.32 | adjusted_decimal=0.9865994422984566
+2026-08-26T17:11:18.663755+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_04_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.1664787295933623 | adjustment=0.35 | adjusted_decimal=0.7582111742356855
+2026-08-26T17:11:18.665286+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_04_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4317777292276177 | adjustment=0.32 | adjusted_decimal=0.97360885587478
+2026-08-26T17:11:18.681812+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_04_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.486008247519948 | adjustment=0.35 | adjusted_decimal=0.9659053608879663
+2026-08-26T17:11:18.691396+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_05_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.3487081807441232 | adjustment=0.35 | adjusted_decimal=0.8766603174836801
+2026-08-26T17:11:18.710245+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_06_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.370745947792999 | adjustment=0.35 | adjusted_decimal=0.8909848660654495
+2026-08-26T17:11:18.721320+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_06_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.2574301934606809 | adjustment=0.32 | adjusted_decimal=0.8550525315532629
+2026-08-26T17:11:18.732137+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_06_NHL_puck_line.csv | row=13 | home_fair_decimal_puck_line | fair_decimal=1.4011968102842196 | adjustment=0.35 | adjusted_decimal=0.9107779266847428
+2026-08-26T17:11:18.748578+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_07_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.4235810165346232 | adjustment=0.35 | adjusted_decimal=0.9253276607475052
+2026-08-26T17:11:18.756811+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_08_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.4456207195899606 | adjustment=0.32 | adjusted_decimal=0.9830220893211732
+2026-08-26T17:11:18.759478+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_08_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4480378429935596 | adjustment=0.32 | adjusted_decimal=0.9846657332356205
+2026-08-26T17:11:18.762144+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_08_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.3847180329099695 | adjustment=0.32 | adjusted_decimal=0.9416082623787791
+2026-08-26T17:11:18.765921+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_08_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.3595912802331944 | adjustment=0.35 | adjusted_decimal=0.8837343321515764
+2026-08-26T17:11:18.774626+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_09_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.440020765377173 | adjustment=0.32 | adjusted_decimal=0.9792141204564776
+2026-08-26T17:11:18.778427+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_09_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.4018698518219175 | adjustment=0.35 | adjusted_decimal=0.9112154036842464
+2026-08-26T17:11:18.782277+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_09_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.3613100125343354 | adjustment=0.32 | adjusted_decimal=0.925690808523348
+2026-08-26T17:11:18.787434+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_09_NHL_puck_line.csv | row=8 | away_fair_decimal_puck_line | fair_decimal=1.3984789736032113 | adjustment=0.32 | adjusted_decimal=0.9509657020501836
+2026-08-26T17:11:18.791349+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_09_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.4753240646583174 | adjustment=0.35 | adjusted_decimal=0.9589606420279063
+2026-08-26T17:11:18.801935+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_10_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.314222661735688 | adjustment=0.32 | adjusted_decimal=0.8936714099802677
+2026-08-26T17:11:18.806214+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_10_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.3668061027598426 | adjustment=0.35 | adjusted_decimal=0.8884239667938977
+2026-08-26T17:11:18.815707+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=3 | home_fair_decimal_puck_line | fair_decimal=1.3608254235247206 | adjustment=0.35 | adjusted_decimal=0.8845365252910684
+2026-08-26T17:11:18.820845+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4626909918081472 | adjustment=0.35 | adjusted_decimal=0.9507491446752957
+2026-08-26T17:11:18.822536+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.3808759581687036 | adjustment=0.32 | adjusted_decimal=0.9389956515547183
+2026-08-26T17:11:18.826323+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.3452380120509313 | adjustment=0.35 | adjusted_decimal=0.8744047078331054
+2026-08-26T17:11:18.828956+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=8 | home_fair_decimal_puck_line | fair_decimal=1.4258615358428137 | adjustment=0.35 | adjusted_decimal=0.926809998297829
+2026-08-26T17:11:18.843615+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_11_NHL_puck_line.csv | row=14 | home_fair_decimal_puck_line | fair_decimal=1.4324890843783284 | adjustment=0.35 | adjusted_decimal=0.9311179048459135
+2026-08-26T17:11:18.847200+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_12_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.389961988119022 | adjustment=0.32 | adjusted_decimal=0.9451741519209348
+2026-08-26T17:11:18.856917+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_13_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.3984563993431385 | adjustment=0.32 | adjusted_decimal=0.9509503515533341
+2026-08-26T17:11:18.863128+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_13_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.3524369075947646 | adjustment=0.35 | adjusted_decimal=0.8790839899365971
+2026-08-26T17:11:18.865774+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_13_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.4431343113029336 | adjustment=0.35 | adjusted_decimal=0.9380373023469069
+2026-08-26T17:11:18.873611+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_13_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.5351854358207917 | adjustment=0.35 | adjusted_decimal=0.9978705332835146
+2026-08-26T17:11:18.876288+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_13_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.4766500621542624 | adjustment=0.35 | adjusted_decimal=0.9598225404002706
+2026-08-26T17:11:18.897519+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_14_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.4563840091319862 | adjustment=0.32 | adjusted_decimal=0.9903411262097506
+2026-08-26T17:11:18.901357+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_14_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.4582875169718055 | adjustment=0.35 | adjusted_decimal=0.9478868860316736
+2026-08-26T17:11:18.904148+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_14_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.4360558331765334 | adjustment=0.35 | adjusted_decimal=0.9334362915647467
+2026-08-26T17:11:18.908304+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_15_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.3830931742181938 | adjustment=0.32 | adjusted_decimal=0.9405033584683716
+2026-08-26T17:11:18.913425+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_15_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.4647245825862654 | adjustment=0.32 | adjusted_decimal=0.9960127161586604
+2026-08-26T17:11:18.916076+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_15_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.3580355077289172 | adjustment=0.32 | adjusted_decimal=0.9234641452556637
+2026-08-26T17:11:18.925115+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.4508076679752533 | adjustment=0.35 | adjusted_decimal=0.9430249841839147
+2026-08-26T17:11:18.929193+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.3656680366754685 | adjustment=0.32 | adjusted_decimal=0.9286542649393186
+2026-08-26T17:11:18.931887+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.3416191479680637 | adjustment=0.32 | adjusted_decimal=0.9123010206182832
+2026-08-26T17:11:18.941870+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.3236892978257444 | adjustment=0.32 | adjusted_decimal=0.9001087225215061
+2026-08-26T17:11:18.945699+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_16_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.4275134042874909 | adjustment=0.35 | adjusted_decimal=0.9278837127868691
+2026-08-26T17:11:18.954116+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_17_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.3008690982259719 | adjustment=0.32 | adjusted_decimal=0.8845909867936608
+2026-08-26T17:11:18.967228+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_18_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.5131343543638587 | adjustment=0.35 | adjusted_decimal=0.9835373303365081
+2026-08-26T17:11:18.980040+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_18_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.3687870170209888 | adjustment=0.35 | adjusted_decimal=0.8897115610636428
+2026-08-26T17:11:18.982213+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_18_NHL_puck_line.csv | row=8 | away_fair_decimal_puck_line | fair_decimal=1.4244973987395926 | adjustment=0.32 | adjusted_decimal=0.9686582311429228
+2026-08-26T17:11:18.995889+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_19_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.2775641228868444 | adjustment=0.35 | adjusted_decimal=0.8304166798764488
+2026-08-26T17:11:19.006355+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_19_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.443016753949744 | adjustment=0.35 | adjusted_decimal=0.9379608900673336
+2026-08-26T17:11:19.017312+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_20_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.3749819287055511 | adjustment=0.32 | adjusted_decimal=0.9349877115197747
+2026-08-26T17:11:19.030095+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_20_NHL_puck_line.csv | row=10 | away_fair_decimal_puck_line | fair_decimal=1.3994652663795695 | adjustment=0.32 | adjusted_decimal=0.9516363811381071
+2026-08-26T17:11:19.033927+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_20_NHL_puck_line.csv | row=11 | home_fair_decimal_puck_line | fair_decimal=1.5082487059624903 | adjustment=0.35 | adjusted_decimal=0.9803616588756188
+2026-08-26T17:11:19.037958+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_20_NHL_puck_line.csv | row=13 | away_fair_decimal_puck_line | fair_decimal=1.4384782049526292 | adjustment=0.32 | adjusted_decimal=0.9781651793677878
+2026-08-26T17:11:19.045252+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_21_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.327925797042356 | adjustment=0.32 | adjusted_decimal=0.902989541988802
+2026-08-26T17:11:19.051557+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_21_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.4529167092661743 | adjustment=0.35 | adjusted_decimal=0.9443958610230133
+2026-08-26T17:11:19.055628+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_21_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.324745338940208 | adjustment=0.32 | adjusted_decimal=0.9008268304793413
+2026-08-26T17:11:19.059428+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_21_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.496359107804018 | adjustment=0.35 | adjusted_decimal=0.9726334200726117
+2026-08-26T17:11:19.094459+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_23_NHL_puck_line.csv | row=7 | home_fair_decimal_puck_line | fair_decimal=1.339791535490984 | adjustment=0.35 | adjusted_decimal=0.8708644980691396
+2026-08-26T17:11:19.101847+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_23_NHL_puck_line.csv | row=10 | home_fair_decimal_puck_line | fair_decimal=1.4827623504353047 | adjustment=0.35 | adjusted_decimal=0.9637955277829481
+2026-08-26T17:11:19.117337+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_27_NHL_puck_line.csv | row=4 | away_fair_decimal_puck_line | fair_decimal=1.3923538325826978 | adjustment=0.32 | adjusted_decimal=0.9468006061562344
+2026-08-26T17:11:19.122495+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_27_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.3690365551413644 | adjustment=0.32 | adjusted_decimal=0.9309448574961277
+2026-08-26T17:11:19.128624+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_27_NHL_puck_line.csv | row=8 | home_fair_decimal_puck_line | fair_decimal=1.3522992757285477 | adjustment=0.35 | adjusted_decimal=0.878994529223556
+2026-08-26T17:11:19.130131+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_27_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.3481231214001737 | adjustment=0.32 | adjusted_decimal=0.916723722552118
+2026-08-26T17:11:19.138821+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_27_NHL_puck_line.csv | row=12 | home_fair_decimal_puck_line | fair_decimal=1.5180996091580627 | adjustment=0.35 | adjusted_decimal=0.9867647459527408
+2026-08-26T17:11:19.149437+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_28_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4543066141341803 | adjustment=0.32 | adjusted_decimal=0.9889284976112425
+2026-08-26T17:11:19.159327+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_28_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4785229315328365 | adjustment=0.35 | adjusted_decimal=0.9610399054963438
+2026-08-26T17:11:19.162674+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_28_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.467711609064908 | adjustment=0.35 | adjusted_decimal=0.9540125458921903
+2026-08-26T17:11:19.178940+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_29_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.384756409031546 | adjustment=0.35 | adjusted_decimal=0.9000916658705049
+2026-08-26T17:11:19.182851+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_29_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.4629092193648843 | adjustment=0.35 | adjusted_decimal=0.9508909925871748
+2026-08-26T17:11:19.196131+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_29_NHL_puck_line.csv | row=10 | away_fair_decimal_puck_line | fair_decimal=1.4500857190381573 | adjustment=0.32 | adjusted_decimal=0.9860582889459468
+2026-08-26T17:11:19.202453+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_29_NHL_puck_line.csv | row=12 | home_fair_decimal_puck_line | fair_decimal=1.4629092193648843 | adjustment=0.35 | adjusted_decimal=0.9508909925871748
+2026-08-26T17:11:19.207292+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_30_NHL_puck_line.csv | row=2 | home_fair_decimal_puck_line | fair_decimal=1.38118792205006 | adjustment=0.35 | adjusted_decimal=0.897772149332539
+2026-08-26T17:11:19.217100+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_30_NHL_puck_line.csv | row=6 | home_fair_decimal_puck_line | fair_decimal=1.4487789052747675 | adjustment=0.35 | adjusted_decimal=0.9417062884285989
+2026-08-26T17:11:19.226553+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_31_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.5040757782446479 | adjustment=0.35 | adjusted_decimal=0.9776492558590212
+2026-08-26T17:11:19.230408+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_31_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.4594956728217627 | adjustment=0.32 | adjusted_decimal=0.9924570575187985
+2026-08-26T17:11:19.233128+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_31_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.4303063644464804 | adjustment=0.32 | adjusted_decimal=0.9726083278236066
+2026-08-26T17:11:19.240581+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2025_12_31_NHL_puck_line.csv | row=10 | away_fair_decimal_puck_line | fair_decimal=1.4585622802028384 | adjustment=0.32 | adjusted_decimal=0.99182235053793
+2026-08-26T17:11:19.249965+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_01_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.4487529696797017 | adjustment=0.32 | adjusted_decimal=0.9851520193821971
+2026-08-26T17:11:19.255412+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_01_NHL_puck_line.csv | row=5 | away_fair_decimal_puck_line | fair_decimal=1.4358251225028655 | adjustment=0.32 | adjusted_decimal=0.9763610833019485
+2026-08-26T17:11:19.261040+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_01_NHL_puck_line.csv | row=7 | away_fair_decimal_puck_line | fair_decimal=1.4445709172317707 | adjustment=0.32 | adjusted_decimal=0.982308223717604
+2026-08-26T17:11:19.266436+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_01_NHL_puck_line.csv | row=9 | away_fair_decimal_puck_line | fair_decimal=1.2934928734141389 | adjustment=0.32 | adjusted_decimal=0.8795751539216143
+2026-08-26T17:11:19.280411+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_02_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.495248875933956 | adjustment=0.35 | adjusted_decimal=0.9719117693570714
+2026-08-26T17:11:19.287011+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_03_NHL_puck_line.csv | row=3 | away_fair_decimal_puck_line | fair_decimal=1.357342703911182 | adjustment=0.32 | adjusted_decimal=0.9229930386596037
+2026-08-26T17:11:19.291164+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_03_NHL_puck_line.csv | row=4 | home_fair_decimal_puck_line | fair_decimal=1.332717859740181 | adjustment=0.35 | adjusted_decimal=0.8662666088311176
+2026-08-26T17:11:19.304421+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_03_NHL_puck_line.csv | row=9 | home_fair_decimal_puck_line | fair_decimal=1.2798394491600242 | adjustment=0.35 | adjusted_decimal=0.8318956419540158
+2026-08-26T17:11:19.314114+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_03_NHL_puck_line.csv | row=13 | away_fair_decimal_puck_line | fair_decimal=1.443859638819736 | adjustment=0.32 | adjusted_decimal=0.9818245543974204
+2026-08-26T17:11:19.318071+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_03_NHL_puck_line.csv | row=14 | home_fair_decimal_puck_line | fair_decimal=1.4213131687699179 | adjustment=0.35 | adjusted_decimal=0.9238535597004467
+2026-08-26T17:11:19.330956+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_04_NHL_puck_line.csv | row=5 | home_fair_decimal_puck_line | fair_decimal=1.4288607412200927 | adjustment=0.35 | adjusted_decimal=0.9287594817930602
+2026-08-26T17:11:19.337159+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_05_NHL_puck_line.csv | row=2 | away_fair_decimal_puck_line | fair_decimal=1.354545902694077 | adjustment=0.32 | adjusted_decimal=0.9210912138319722
+2026-08-26T17:11:19.347978+00:00 | ERROR | INVALID ADJUSTED DECIMAL | 2026_01_05_NHL_puck_line.csv | row=6 | away_fair_decimal_puck_line | fair_decimal=1.3840659519771077 | adjustment=0.32 | adjusted_decimal=0.9411648473444332
