@@ -1,491 +1,495 @@
-2026-08-26T11:28:02.670721+00:00 | === transform_final_scores START ===
-2026-08-26T11:28:02.671008+00:00 | TARGET_DATE_SOURCE=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\04_select
-2026-08-26T11:28:02.671289+00:00 | DRAT_CHECK_DIR=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\00_intake\drat_raw
-2026-08-26T11:28:02.671527+00:00 | OUT_DIR=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores
-2026-08-26T11:28:02.674252+00:00 | Stage 04 target dates discovered: 68
-2026-08-26T11:28:02.674825+00:00 | No D-Ratings check files found; official NHL final-score processing will continue
-2026-08-26T11:28:02.675084+00:00 | Processing official NHL final scores for 2026_03_23
-2026-08-26T11:28:02.675651+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-23
-2026-08-26T11:28:03.208538+00:00 | DRAT CHECK MISSING: 2026_03_23 | Senators at Rangers | official_game_id=2025021119
-2026-08-26T11:28:03.214601+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_23_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:03.214860+00:00 | Processing official NHL final scores for 2026_03_24
-2026-08-26T11:28:03.215155+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-24
-2026-08-26T11:28:03.764817+00:00 | DRAT CHECK MISSING: 2026_03_24 | Maple Leafs at Bruins | official_game_id=2025021120
-2026-08-26T11:28:03.765432+00:00 | DRAT CHECK MISSING: 2026_03_24 | Hurricanes at Canadiens | official_game_id=2025021121
-2026-08-26T11:28:03.765764+00:00 | DRAT CHECK MISSING: 2026_03_24 | Senators at Red Wings | official_game_id=2025021122
-2026-08-26T11:28:03.766113+00:00 | DRAT CHECK MISSING: 2026_03_24 | Kraken at Panthers | official_game_id=2025021123
-2026-08-26T11:28:03.766432+00:00 | DRAT CHECK MISSING: 2026_03_24 | Blackhawks at Islanders | official_game_id=2025021124
-2026-08-26T11:28:03.766761+00:00 | DRAT CHECK MISSING: 2026_03_24 | Blue Jackets at Flyers | official_game_id=2025021125
-2026-08-26T11:28:03.767078+00:00 | DRAT CHECK MISSING: 2026_03_24 | Avalanche at Penguins | official_game_id=2025021126
-2026-08-26T11:28:03.767393+00:00 | DRAT CHECK MISSING: 2026_03_24 | Wild at Lightning | official_game_id=2025021127
-2026-08-26T11:28:03.767709+00:00 | DRAT CHECK MISSING: 2026_03_24 | Capitals at Blues | official_game_id=2025021128
-2026-08-26T11:28:03.768024+00:00 | DRAT CHECK MISSING: 2026_03_24 | Sharks at Predators | official_game_id=2025021129
-2026-08-26T11:28:03.768337+00:00 | DRAT CHECK MISSING: 2026_03_24 | Devils at Stars | official_game_id=2025021130
-2026-08-26T11:28:03.768655+00:00 | DRAT CHECK MISSING: 2026_03_24 | Golden Knights at Jets | official_game_id=2025021131
-2026-08-26T11:28:03.768970+00:00 | DRAT CHECK MISSING: 2026_03_24 | Kings at Flames | official_game_id=2025021133
-2026-08-26T11:28:03.769377+00:00 | DRAT CHECK MISSING: 2026_03_24 | Oilers at Mammoth | official_game_id=2025021132
-2026-08-26T11:28:03.769726+00:00 | DRAT CHECK MISSING: 2026_03_24 | Ducks at Canucks | official_game_id=2025021134
-2026-08-26T11:28:03.775942+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_24_NHL_final_scores.csv | rows=15
-2026-08-26T11:28:03.776251+00:00 | Processing official NHL final scores for 2026_03_25
-2026-08-26T11:28:03.776564+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-25
-2026-08-26T11:28:04.284431+00:00 | DRAT CHECK MISSING: 2026_03_25 | Bruins at Sabres | official_game_id=2025021135
-2026-08-26T11:28:04.284963+00:00 | DRAT CHECK MISSING: 2026_03_25 | Rangers at Maple Leafs | official_game_id=2025021136
-2026-08-26T11:28:04.289067+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_25_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:04.289330+00:00 | Processing official NHL final scores for 2026_03_26
-2026-08-26T11:28:04.289605+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-26
-2026-08-26T11:28:04.869488+00:00 | DRAT CHECK MISSING: 2026_03_26 | Blue Jackets at Canadiens | official_game_id=2025021137
-2026-08-26T11:28:04.870026+00:00 | DRAT CHECK MISSING: 2026_03_26 | Penguins at Senators | official_game_id=2025021138
-2026-08-26T11:28:04.870360+00:00 | DRAT CHECK MISSING: 2026_03_26 | Kraken at Lightning | official_game_id=2025021139
-2026-08-26T11:28:04.870746+00:00 | DRAT CHECK MISSING: 2026_03_26 | Wild at Panthers | official_game_id=2025021140
-2026-08-26T11:28:04.871087+00:00 | DRAT CHECK MISSING: 2026_03_26 | Stars at Islanders | official_game_id=2025021141
-2026-08-26T11:28:04.871490+00:00 | DRAT CHECK MISSING: 2026_03_26 | Blackhawks at Flyers | official_game_id=2025021142
-2026-08-26T11:28:04.871888+00:00 | DRAT CHECK MISSING: 2026_03_26 | Sharks at Blues | official_game_id=2025021143
-2026-08-26T11:28:04.872222+00:00 | DRAT CHECK MISSING: 2026_03_26 | Devils at Predators | official_game_id=2025021144
-2026-08-26T11:28:04.872541+00:00 | DRAT CHECK MISSING: 2026_03_26 | Avalanche at Jets | official_game_id=2025021145
-2026-08-26T11:28:04.872866+00:00 | DRAT CHECK MISSING: 2026_03_26 | Capitals at Mammoth | official_game_id=2025021146
-2026-08-26T11:28:04.873190+00:00 | DRAT CHECK MISSING: 2026_03_26 | Ducks at Flames | official_game_id=2025021147
-2026-08-26T11:28:04.873507+00:00 | DRAT CHECK MISSING: 2026_03_26 | Oilers at Golden Knights | official_game_id=2025021148
-2026-08-26T11:28:04.873823+00:00 | DRAT CHECK MISSING: 2026_03_26 | Kings at Canucks | official_game_id=2025021149
-2026-08-26T11:28:04.878066+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_26_NHL_final_scores.csv | rows=13
-2026-08-26T11:28:04.878326+00:00 | Processing official NHL final scores for 2026_03_27
-2026-08-26T11:28:04.878604+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-27
-2026-08-26T11:28:05.622686+00:00 | DRAT CHECK MISSING: 2026_03_27 | Red Wings at Sabres | official_game_id=2025021150
-2026-08-26T11:28:05.623406+00:00 | DRAT CHECK MISSING: 2026_03_27 | Blackhawks at Rangers | official_game_id=2025021151
-2026-08-26T11:28:05.628201+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_27_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:05.628477+00:00 | Processing official NHL final scores for 2026_03_28
-2026-08-26T11:28:05.628763+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-28
-2026-08-26T11:28:06.201794+00:00 | DRAT CHECK MISSING: 2026_03_28 | Senators at Lightning | official_game_id=2025021152
-2026-08-26T11:28:06.202338+00:00 | DRAT CHECK MISSING: 2026_03_28 | Panthers at Islanders | official_game_id=2025021153
-2026-08-26T11:28:06.202670+00:00 | DRAT CHECK MISSING: 2026_03_28 | Ducks at Oilers | official_game_id=2025021154
-2026-08-26T11:28:06.202991+00:00 | DRAT CHECK MISSING: 2026_03_28 | Wild at Bruins | official_game_id=2025021155
-2026-08-26T11:28:06.203313+00:00 | DRAT CHECK MISSING: 2026_03_28 | Stars at Penguins | official_game_id=2025021156
-2026-08-26T11:28:06.203631+00:00 | DRAT CHECK MISSING: 2026_03_28 | Devils at Hurricanes | official_game_id=2025021157
-2026-08-26T11:28:06.203952+00:00 | DRAT CHECK MISSING: 2026_03_28 | Sharks at Blue Jackets | official_game_id=2025021158
-2026-08-26T11:28:06.204294+00:00 | DRAT CHECK MISSING: 2026_03_28 | Kraken at Sabres | official_game_id=2025021159
-2026-08-26T11:28:06.204641+00:00 | DRAT CHECK MISSING: 2026_03_28 | Maple Leafs at Blues | official_game_id=2025021160
-2026-08-26T11:28:06.204992+00:00 | DRAT CHECK MISSING: 2026_03_28 | Canadiens at Predators | official_game_id=2025021161
-2026-08-26T11:28:06.205378+00:00 | DRAT CHECK MISSING: 2026_03_28 | Jets at Avalanche | official_game_id=2025021162
-2026-08-26T11:28:06.205714+00:00 | DRAT CHECK MISSING: 2026_03_28 | Flyers at Red Wings | official_game_id=2025021163
-2026-08-26T11:28:06.206105+00:00 | DRAT CHECK MISSING: 2026_03_28 | Mammoth at Kings | official_game_id=2025021164
-2026-08-26T11:28:06.206507+00:00 | DRAT CHECK MISSING: 2026_03_28 | Canucks at Flames | official_game_id=2025021165
-2026-08-26T11:28:06.206852+00:00 | DRAT CHECK MISSING: 2026_03_28 | Capitals at Golden Knights | official_game_id=2025021166
-2026-08-26T11:28:06.211440+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_28_NHL_final_scores.csv | rows=15
-2026-08-26T11:28:06.211728+00:00 | Processing official NHL final scores for 2026_03_29
-2026-08-26T11:28:06.212014+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-29
-2026-08-26T11:28:06.731321+00:00 | DRAT CHECK MISSING: 2026_03_29 | Panthers at Rangers | official_game_id=2025021167
-2026-08-26T11:28:06.731891+00:00 | DRAT CHECK MISSING: 2026_03_29 | Predators at Lightning | official_game_id=2025021168
-2026-08-26T11:28:06.732216+00:00 | DRAT CHECK MISSING: 2026_03_29 | Canadiens at Hurricanes | official_game_id=2025021169
-2026-08-26T11:28:06.732540+00:00 | DRAT CHECK MISSING: 2026_03_29 | Bruins at Blue Jackets | official_game_id=2025021170
-2026-08-26T11:28:06.732862+00:00 | DRAT CHECK MISSING: 2026_03_29 | Blackhawks at Devils | official_game_id=2025021171
-2026-08-26T11:28:06.733178+00:00 | DRAT CHECK MISSING: 2026_03_29 | Stars at Flyers | official_game_id=2025021172
-2026-08-26T11:28:06.737353+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_29_NHL_final_scores.csv | rows=6
-2026-08-26T11:28:06.737620+00:00 | Processing official NHL final scores for 2026_03_30
-2026-08-26T11:28:06.737916+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-30
-2026-08-26T11:28:07.259689+00:00 | DRAT CHECK MISSING: 2026_03_30 | Penguins at Islanders | official_game_id=2025021173
-2026-08-26T11:28:07.260290+00:00 | DRAT CHECK MISSING: 2026_03_30 | Flames at Avalanche | official_game_id=2025021174
-2026-08-26T11:28:07.260623+00:00 | DRAT CHECK MISSING: 2026_03_30 | Canucks at Golden Knights | official_game_id=2025021175
-2026-08-26T11:28:07.260947+00:00 | DRAT CHECK MISSING: 2026_03_30 | Maple Leafs at Ducks | official_game_id=2025021176
-2026-08-26T11:28:07.261297+00:00 | DRAT CHECK MISSING: 2026_03_30 | Blues at Sharks | official_game_id=2025021177
-2026-08-26T11:28:07.265861+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_30_NHL_final_scores.csv | rows=5
-2026-08-26T11:28:07.266238+00:00 | Processing official NHL final scores for 2026_03_31
-2026-08-26T11:28:07.266651+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-31
-2026-08-26T11:28:07.826028+00:00 | DRAT CHECK MISSING: 2026_03_31 | Stars at Bruins | official_game_id=2025021178
-2026-08-26T11:28:07.826575+00:00 | DRAT CHECK MISSING: 2026_03_31 | Islanders at Sabres | official_game_id=2025021179
-2026-08-26T11:28:07.826916+00:00 | DRAT CHECK MISSING: 2026_03_31 | Canadiens at Lightning | official_game_id=2025021180
-2026-08-26T11:28:07.827241+00:00 | DRAT CHECK MISSING: 2026_03_31 | Senators at Panthers | official_game_id=2025021181
-2026-08-26T11:28:07.827572+00:00 | DRAT CHECK MISSING: 2026_03_31 | Devils at Rangers | official_game_id=2025021182
-2026-08-26T11:28:07.827894+00:00 | DRAT CHECK MISSING: 2026_03_31 | Red Wings at Penguins | official_game_id=2025021183
-2026-08-26T11:28:07.828213+00:00 | DRAT CHECK MISSING: 2026_03_31 | Flyers at Capitals | official_game_id=2025021184
-2026-08-26T11:28:07.828533+00:00 | DRAT CHECK MISSING: 2026_03_31 | Hurricanes at Blue Jackets | official_game_id=2025021185
-2026-08-26T11:28:07.828849+00:00 | DRAT CHECK MISSING: 2026_03_31 | Jets at Blackhawks | official_game_id=2025021186
-2026-08-26T11:28:07.829163+00:00 | DRAT CHECK MISSING: 2026_03_31 | Kraken at Oilers | official_game_id=2025021187
-2026-08-26T11:28:07.833263+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_03_31_NHL_final_scores.csv | rows=10
-2026-08-26T11:28:07.833539+00:00 | Processing official NHL final scores for 2026_04_01
-2026-08-26T11:28:07.833842+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-01
-2026-08-26T11:28:08.331293+00:00 | DRAT CHECK MISSING: 2026_04_01 | Canucks at Avalanche | official_game_id=2025021188
-2026-08-26T11:28:08.331946+00:00 | DRAT CHECK MISSING: 2026_04_01 | Blues at Kings | official_game_id=2025021189
-2026-08-26T11:28:08.332379+00:00 | DRAT CHECK MISSING: 2026_04_01 | Ducks at Sharks | official_game_id=2025021190
-2026-08-26T11:28:08.338086+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_01_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:08.338440+00:00 | Processing official NHL final scores for 2026_04_02
-2026-08-26T11:28:08.338806+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-02
-2026-08-26T11:28:09.096858+00:00 | DRAT CHECK MISSING: 2026_04_02 | Sabres at Senators | official_game_id=2025021191
-2026-08-26T11:28:09.097402+00:00 | DRAT CHECK MISSING: 2026_04_02 | Penguins at Lightning | official_game_id=2025021192
-2026-08-26T11:28:09.097733+00:00 | DRAT CHECK MISSING: 2026_04_02 | Bruins at Panthers | official_game_id=2025021193
-2026-08-26T11:28:09.098053+00:00 | DRAT CHECK MISSING: 2026_04_02 | Canadiens at Rangers | official_game_id=2025021195
-2026-08-26T11:28:09.098373+00:00 | DRAT CHECK MISSING: 2026_04_02 | Red Wings at Flyers | official_game_id=2025021196
-2026-08-26T11:28:09.098694+00:00 | DRAT CHECK MISSING: 2026_04_02 | Blue Jackets at Hurricanes | official_game_id=2025021197
-2026-08-26T11:28:09.099008+00:00 | DRAT CHECK MISSING: 2026_04_02 | Capitals at Devils | official_game_id=2025021194
-2026-08-26T11:28:09.099353+00:00 | DRAT CHECK MISSING: 2026_04_02 | Jets at Stars | official_game_id=2025021198
-2026-08-26T11:28:09.099668+00:00 | DRAT CHECK MISSING: 2026_04_02 | Canucks at Wild | official_game_id=2025021199
-2026-08-26T11:28:09.099983+00:00 | DRAT CHECK MISSING: 2026_04_02 | Blackhawks at Oilers | official_game_id=2025021200
-2026-08-26T11:28:09.100301+00:00 | DRAT CHECK MISSING: 2026_04_02 | Flames at Golden Knights | official_game_id=2025021201
-2026-08-26T11:28:09.100616+00:00 | DRAT CHECK MISSING: 2026_04_02 | Maple Leafs at Sharks | official_game_id=2025021202
-2026-08-26T11:28:09.100934+00:00 | DRAT CHECK MISSING: 2026_04_02 | Mammoth at Kraken | official_game_id=2025021203
-2026-08-26T11:28:09.101245+00:00 | DRAT CHECK MISSING: 2026_04_02 | Predators at Kings | official_game_id=2025021204
-2026-08-26T11:28:09.105639+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_02_NHL_final_scores.csv | rows=14
-2026-08-26T11:28:09.105903+00:00 | Processing official NHL final scores for 2026_04_03
-2026-08-26T11:28:09.106199+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-03
-2026-08-26T11:28:09.594513+00:00 | DRAT CHECK MISSING: 2026_04_03 | Flyers at Islanders | official_game_id=2025021205
-2026-08-26T11:28:09.595054+00:00 | DRAT CHECK MISSING: 2026_04_03 | Blues at Ducks | official_game_id=2025021206
-2026-08-26T11:28:09.599131+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_03_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:09.599384+00:00 | Processing official NHL final scores for 2026_04_04
-2026-08-26T11:28:09.599660+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-04
-2026-08-26T11:28:10.197270+00:00 | DRAT CHECK MISSING: 2026_04_04 | Red Wings at Rangers | official_game_id=2025021207
-2026-08-26T11:28:10.197852+00:00 | DRAT CHECK MISSING: 2026_04_04 | Wild at Senators | official_game_id=2025021208
-2026-08-26T11:28:10.198199+00:00 | DRAT CHECK MISSING: 2026_04_04 | Avalanche at Stars | official_game_id=2025021209
-2026-08-26T11:28:10.198554+00:00 | DRAT CHECK MISSING: 2026_04_04 | Bruins at Lightning | official_game_id=2025021210
-2026-08-26T11:28:10.198925+00:00 | DRAT CHECK MISSING: 2026_04_04 | Panthers at Penguins | official_game_id=2025021211
-2026-08-26T11:28:10.199253+00:00 | DRAT CHECK MISSING: 2026_04_04 | Canadiens at Devils | official_game_id=2025021212
-2026-08-26T11:28:10.199575+00:00 | DRAT CHECK MISSING: 2026_04_04 | Sabres at Capitals | official_game_id=2025021213
-2026-08-26T11:28:10.199897+00:00 | DRAT CHECK MISSING: 2026_04_04 | Islanders at Hurricanes | official_game_id=2025021214
-2026-08-26T11:28:10.200218+00:00 | DRAT CHECK MISSING: 2026_04_04 | Jets at Blue Jackets | official_game_id=2025021215
-2026-08-26T11:28:10.200538+00:00 | DRAT CHECK MISSING: 2026_04_04 | Mammoth at Canucks | official_game_id=2025021216
-2026-08-26T11:28:10.200856+00:00 | DRAT CHECK MISSING: 2026_04_04 | Maple Leafs at Kings | official_game_id=2025021217
-2026-08-26T11:28:10.201193+00:00 | DRAT CHECK MISSING: 2026_04_04 | Golden Knights at Oilers | official_game_id=2025021218
-2026-08-26T11:28:10.201540+00:00 | DRAT CHECK MISSING: 2026_04_04 | Flames at Ducks | official_game_id=2025021219
-2026-08-26T11:28:10.201970+00:00 | DRAT CHECK MISSING: 2026_04_04 | Predators at Sharks | official_game_id=2025021220
-2026-08-26T11:28:10.202330+00:00 | DRAT CHECK MISSING: 2026_04_04 | Blackhawks at Kraken | official_game_id=2025021221
-2026-08-26T11:28:10.206635+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_04_NHL_final_scores.csv | rows=15
-2026-08-26T11:28:10.206889+00:00 | Processing official NHL final scores for 2026_04_05
-2026-08-26T11:28:10.207167+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-05
-2026-08-26T11:28:10.738867+00:00 | DRAT CHECK MISSING: 2026_04_05 | Wild at Red Wings | official_game_id=2025021222
-2026-08-26T11:28:10.739433+00:00 | DRAT CHECK MISSING: 2026_04_05 | Panthers at Penguins | official_game_id=2025021223
-2026-08-26T11:28:10.739819+00:00 | DRAT CHECK MISSING: 2026_04_05 | Bruins at Flyers | official_game_id=2025021224
-2026-08-26T11:28:10.740191+00:00 | DRAT CHECK MISSING: 2026_04_05 | Hurricanes at Senators | official_game_id=2025021225
-2026-08-26T11:28:10.740562+00:00 | DRAT CHECK MISSING: 2026_04_05 | Devils at Canadiens | official_game_id=2025021226
-2026-08-26T11:28:10.740932+00:00 | DRAT CHECK MISSING: 2026_04_05 | Capitals at Rangers | official_game_id=2025021227
-2026-08-26T11:28:10.741301+00:00 | DRAT CHECK MISSING: 2026_04_05 | Blues at Avalanche | official_game_id=2025021228
-2026-08-26T11:28:10.746725+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_05_NHL_final_scores.csv | rows=7
-2026-08-26T11:28:10.746991+00:00 | Processing official NHL final scores for 2026_04_06
-2026-08-26T11:28:10.747270+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-06
-2026-08-26T11:28:11.275656+00:00 | DRAT CHECK MISSING: 2026_04_06 | Lightning at Sabres | official_game_id=2025021229
-2026-08-26T11:28:11.276530+00:00 | DRAT CHECK MISSING: 2026_04_06 | Kraken at Jets | official_game_id=2025021230
-2026-08-26T11:28:11.276994+00:00 | DRAT CHECK MISSING: 2026_04_06 | Blackhawks at Sharks | official_game_id=2025021231
-2026-08-26T11:28:11.277365+00:00 | DRAT CHECK MISSING: 2026_04_06 | Predators at Kings | official_game_id=2025021232
-2026-08-26T11:28:11.282391+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_06_NHL_final_scores.csv | rows=4
-2026-08-26T11:28:11.282664+00:00 | Processing official NHL final scores for 2026_04_07
-2026-08-26T11:28:11.282947+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-07
-2026-08-26T11:28:11.828626+00:00 | DRAT CHECK MISSING: 2026_04_07 | Panthers at Canadiens | official_game_id=2025021233
-2026-08-26T11:28:11.829208+00:00 | DRAT CHECK MISSING: 2026_04_07 | Lightning at Senators | official_game_id=2025021234
-2026-08-26T11:28:11.829570+00:00 | DRAT CHECK MISSING: 2026_04_07 | Blue Jackets at Red Wings | official_game_id=2025021235
-2026-08-26T11:28:11.829932+00:00 | DRAT CHECK MISSING: 2026_04_07 | Flyers at Devils | official_game_id=2025021236
-2026-08-26T11:28:11.830251+00:00 | DRAT CHECK MISSING: 2026_04_07 | Bruins at Hurricanes | official_game_id=2025021237
-2026-08-26T11:28:11.830565+00:00 | DRAT CHECK MISSING: 2026_04_07 | Avalanche at Blues | official_game_id=2025021238
-2026-08-26T11:28:11.830879+00:00 | DRAT CHECK MISSING: 2026_04_07 | Flames at Stars | official_game_id=2025021239
-2026-08-26T11:28:11.831195+00:00 | DRAT CHECK MISSING: 2026_04_07 | Kraken at Wild | official_game_id=2025021240
-2026-08-26T11:28:11.831510+00:00 | DRAT CHECK MISSING: 2026_04_07 | Oilers at Mammoth | official_game_id=2025021241
-2026-08-26T11:28:11.831827+00:00 | DRAT CHECK MISSING: 2026_04_07 | Golden Knights at Canucks | official_game_id=2025021242
-2026-08-26T11:28:11.832139+00:00 | DRAT CHECK MISSING: 2026_04_07 | Predators at Ducks | official_game_id=2025021243
-2026-08-26T11:28:11.836254+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_07_NHL_final_scores.csv | rows=11
-2026-08-26T11:28:11.836507+00:00 | Processing official NHL final scores for 2026_04_08
-2026-08-26T11:28:11.836794+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-08
-2026-08-26T11:28:12.344064+00:00 | DRAT CHECK MISSING: 2026_04_08 | Sabres at Rangers | official_game_id=2025021244
-2026-08-26T11:28:12.344698+00:00 | DRAT CHECK MISSING: 2026_04_08 | Capitals at Maple Leafs | official_game_id=2025021245
-2026-08-26T11:28:12.345130+00:00 | DRAT CHECK MISSING: 2026_04_08 | Oilers at Sharks | official_game_id=2025021246
-2026-08-26T11:28:12.349788+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_08_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:12.350062+00:00 | Processing official NHL final scores for 2026_04_09
-2026-08-26T11:28:12.350348+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-09
-2026-08-26T11:28:12.721166+00:00 | DRAT CHECK MISSING: 2026_04_09 | Maple Leafs at Islanders | official_game_id=2025021252
-2026-08-26T11:28:12.721758+00:00 | DRAT CHECK MISSING: 2026_04_09 | Blue Jackets at Sabres | official_game_id=2025021247
-2026-08-26T11:28:12.722095+00:00 | DRAT CHECK MISSING: 2026_04_09 | Lightning at Canadiens | official_game_id=2025021248
-2026-08-26T11:28:12.722508+00:00 | DRAT CHECK MISSING: 2026_04_09 | Panthers at Senators | official_game_id=2025021249
-2026-08-26T11:28:12.722830+00:00 | DRAT CHECK MISSING: 2026_04_09 | Flyers at Red Wings | official_game_id=2025021250
-2026-08-26T11:28:12.723149+00:00 | DRAT CHECK MISSING: 2026_04_09 | Penguins at Devils | official_game_id=2025021251
-2026-08-26T11:28:12.723469+00:00 | DRAT CHECK MISSING: 2026_04_09 | Jets at Blues | official_game_id=2025021253
-2026-08-26T11:28:12.723793+00:00 | DRAT CHECK MISSING: 2026_04_09 | Hurricanes at Blackhawks | official_game_id=2025021255
-2026-08-26T11:28:12.724110+00:00 | DRAT CHECK MISSING: 2026_04_09 | Wild at Stars | official_game_id=2025021254
-2026-08-26T11:28:12.724424+00:00 | DRAT CHECK MISSING: 2026_04_09 | Flames at Avalanche | official_game_id=2025021256
-2026-08-26T11:28:12.724768+00:00 | DRAT CHECK MISSING: 2026_04_09 | Predators at Mammoth | official_game_id=2025021257
-2026-08-26T11:28:12.725081+00:00 | DRAT CHECK MISSING: 2026_04_09 | Sharks at Ducks | official_game_id=2025021258
-2026-08-26T11:28:12.725399+00:00 | DRAT CHECK MISSING: 2026_04_09 | Golden Knights at Kraken | official_game_id=2025021259
-2026-08-26T11:28:12.725715+00:00 | DRAT CHECK MISSING: 2026_04_09 | Canucks at Kings | official_game_id=2025021260
-2026-08-26T11:28:12.730819+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_09_NHL_final_scores.csv | rows=14
-2026-08-26T11:28:12.731129+00:00 | Processing official NHL final scores for 2026_04_11
-2026-08-26T11:28:12.731462+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-11
-2026-08-26T11:28:13.243007+00:00 | DRAT CHECK MISSING: 2026_04_11 | Lightning at Bruins | official_game_id=2025021261
-2026-08-26T11:28:13.243538+00:00 | DRAT CHECK MISSING: 2026_04_11 | Senators at Islanders | official_game_id=2025021262
-2026-08-26T11:28:13.243870+00:00 | DRAT CHECK MISSING: 2026_04_11 | Capitals at Penguins | official_game_id=2025021263
-2026-08-26T11:28:13.244213+00:00 | DRAT CHECK MISSING: 2026_04_11 | Oilers at Kings | official_game_id=2025021264
-2026-08-26T11:28:13.244535+00:00 | DRAT CHECK MISSING: 2026_04_11 | Devils at Red Wings | official_game_id=2025021265
-2026-08-26T11:28:13.244861+00:00 | DRAT CHECK MISSING: 2026_04_11 | Blues at Blackhawks | official_game_id=2025021266
-2026-08-26T11:28:13.245183+00:00 | DRAT CHECK MISSING: 2026_04_11 | Wild at Predators | official_game_id=2025021267
-2026-08-26T11:28:13.245579+00:00 | DRAT CHECK MISSING: 2026_04_11 | Rangers at Stars | official_game_id=2025021268
-2026-08-26T11:28:13.245912+00:00 | DRAT CHECK MISSING: 2026_04_11 | Hurricanes at Mammoth | official_game_id=2025021269
-2026-08-26T11:28:13.246256+00:00 | DRAT CHECK MISSING: 2026_04_11 | Panthers at Maple Leafs | official_game_id=2025021270
-2026-08-26T11:28:13.246594+00:00 | DRAT CHECK MISSING: 2026_04_11 | Blue Jackets at Canadiens | official_game_id=2025021271
-2026-08-26T11:28:13.246926+00:00 | DRAT CHECK MISSING: 2026_04_11 | Flyers at Jets | official_game_id=2025021272
-2026-08-26T11:28:13.247263+00:00 | DRAT CHECK MISSING: 2026_04_11 | Flames at Kraken | official_game_id=2025021273
-2026-08-26T11:28:13.247584+00:00 | DRAT CHECK MISSING: 2026_04_11 | Golden Knights at Avalanche | official_game_id=2025021274
-2026-08-26T11:28:13.247911+00:00 | DRAT CHECK MISSING: 2026_04_11 | Canucks at Sharks | official_game_id=2025021275
-2026-08-26T11:28:13.252226+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_11_NHL_final_scores.csv | rows=15
-2026-08-26T11:28:13.252480+00:00 | Processing official NHL final scores for 2026_04_12
-2026-08-26T11:28:13.252754+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-12
-2026-08-26T11:28:13.610490+00:00 | DRAT CHECK MISSING: 2026_04_12 | Penguins at Capitals | official_game_id=2025021276
-2026-08-26T11:28:13.611030+00:00 | DRAT CHECK MISSING: 2026_04_12 | Canadiens at Islanders | official_game_id=2025021277
-2026-08-26T11:28:13.611462+00:00 | DRAT CHECK MISSING: 2026_04_12 | Bruins at Blue Jackets | official_game_id=2025021278
-2026-08-26T11:28:13.611911+00:00 | DRAT CHECK MISSING: 2026_04_12 | Senators at Devils | official_game_id=2025021279
-2026-08-26T11:28:13.612296+00:00 | DRAT CHECK MISSING: 2026_04_12 | Canucks at Ducks | official_game_id=2025021280
-2026-08-26T11:28:13.612648+00:00 | DRAT CHECK MISSING: 2026_04_12 | Mammoth at Flames | official_game_id=2025021281
-2026-08-26T11:28:13.616921+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_12_NHL_final_scores.csv | rows=6
-2026-08-26T11:28:13.617184+00:00 | Processing official NHL final scores for 2026_04_13
-2026-08-26T11:28:13.617466+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-13
-2026-08-26T11:28:13.996207+00:00 | DRAT CHECK MISSING: 2026_04_13 | Red Wings at Lightning | official_game_id=2025021282
-2026-08-26T11:28:13.997110+00:00 | DRAT CHECK MISSING: 2026_04_13 | Rangers at Panthers | official_game_id=2025021283
-2026-08-26T11:28:13.997487+00:00 | DRAT CHECK MISSING: 2026_04_13 | Hurricanes at Flyers | official_game_id=2025021284
-2026-08-26T11:28:13.997821+00:00 | DRAT CHECK MISSING: 2026_04_13 | Stars at Maple Leafs | official_game_id=2025021285
-2026-08-26T11:28:13.998154+00:00 | DRAT CHECK MISSING: 2026_04_13 | Wild at Blues | official_game_id=2025021286
-2026-08-26T11:28:13.998518+00:00 | DRAT CHECK MISSING: 2026_04_13 | Sharks at Predators | official_game_id=2025021287
-2026-08-26T11:28:13.999112+00:00 | DRAT CHECK MISSING: 2026_04_13 | Sabres at Blackhawks | official_game_id=2025021288
-2026-08-26T11:28:13.999489+00:00 | DRAT CHECK MISSING: 2026_04_13 | Avalanche at Oilers | official_game_id=2025021289
-2026-08-26T11:28:13.999846+00:00 | DRAT CHECK MISSING: 2026_04_13 | Kings at Kraken | official_game_id=2025021291
-2026-08-26T11:28:14.000166+00:00 | DRAT CHECK MISSING: 2026_04_13 | Jets at Golden Knights | official_game_id=2025021290
-2026-08-26T11:28:14.005142+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_13_NHL_final_scores.csv | rows=10
-2026-08-26T11:28:14.005418+00:00 | Processing official NHL final scores for 2026_04_14
-2026-08-26T11:28:14.005701+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-14
-2026-08-26T11:28:14.365754+00:00 | DRAT CHECK MISSING: 2026_04_14 | Devils at Bruins | official_game_id=2025021292
-2026-08-26T11:28:14.366342+00:00 | DRAT CHECK MISSING: 2026_04_14 | Hurricanes at Islanders | official_game_id=2025021293
-2026-08-26T11:28:14.366686+00:00 | DRAT CHECK MISSING: 2026_04_14 | Canadiens at Flyers | official_game_id=2025021294
-2026-08-26T11:28:14.367017+00:00 | DRAT CHECK MISSING: 2026_04_14 | Capitals at Blue Jackets | official_game_id=2025021295
-2026-08-26T11:28:14.367335+00:00 | DRAT CHECK MISSING: 2026_04_14 | Ducks at Wild | official_game_id=2025021296
-2026-08-26T11:28:14.367653+00:00 | DRAT CHECK MISSING: 2026_04_14 | Jets at Mammoth | official_game_id=2025021297
-2026-08-26T11:28:14.367968+00:00 | DRAT CHECK MISSING: 2026_04_14 | Avalanche at Flames | official_game_id=2025021298
-2026-08-26T11:28:14.368283+00:00 | DRAT CHECK MISSING: 2026_04_14 | Penguins at Blues | official_game_id=2025021299
-2026-08-26T11:28:14.368646+00:00 | DRAT CHECK MISSING: 2026_04_14 | Kings at Canucks | official_game_id=2025021300
-2026-08-26T11:28:14.373066+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_14_NHL_final_scores.csv | rows=9
-2026-08-26T11:28:14.373328+00:00 | Processing official NHL final scores for 2026_04_15
-2026-08-26T11:28:14.373608+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-15
-2026-08-26T11:28:14.761851+00:00 | DRAT CHECK MISSING: 2026_04_15 | Stars at Sabres | official_game_id=2025021301
-2026-08-26T11:28:14.762376+00:00 | DRAT CHECK MISSING: 2026_04_15 | Rangers at Lightning | official_game_id=2025021302
-2026-08-26T11:28:14.762707+00:00 | DRAT CHECK MISSING: 2026_04_15 | Red Wings at Panthers | official_game_id=2025021303
-2026-08-26T11:28:14.763049+00:00 | DRAT CHECK MISSING: 2026_04_15 | Maple Leafs at Senators | official_game_id=2025021304
-2026-08-26T11:28:14.763366+00:00 | DRAT CHECK MISSING: 2026_04_15 | Sharks at Blackhawks | official_game_id=2025021305
-2026-08-26T11:28:14.763703+00:00 | DRAT CHECK MISSING: 2026_04_15 | Kraken at Golden Knights | official_game_id=2025021306
-2026-08-26T11:28:14.767879+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_15_NHL_final_scores.csv | rows=6
-2026-08-26T11:28:14.768165+00:00 | Processing official NHL final scores for 2026_04_16
-2026-08-26T11:28:14.768441+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-16
-2026-08-26T11:28:15.172605+00:00 | DRAT CHECK MISSING: 2026_04_16 | Blues at Mammoth | official_game_id=2025021309
-2026-08-26T11:28:15.173121+00:00 | DRAT CHECK MISSING: 2026_04_16 | Ducks at Predators | official_game_id=2025021307
-2026-08-26T11:28:15.173446+00:00 | DRAT CHECK MISSING: 2026_04_16 | Sharks at Jets | official_game_id=2025021308
-2026-08-26T11:28:15.173764+00:00 | DRAT CHECK MISSING: 2026_04_16 | Kings at Flames | official_game_id=2025021310
-2026-08-26T11:28:15.174119+00:00 | DRAT CHECK MISSING: 2026_04_16 | Canucks at Oilers | official_game_id=2025021311
-2026-08-26T11:28:15.174439+00:00 | DRAT CHECK MISSING: 2026_04_16 | Kraken at Avalanche | official_game_id=2025021312
-2026-08-26T11:28:15.178773+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_16_NHL_final_scores.csv | rows=6
-2026-08-26T11:28:15.179027+00:00 | Processing official NHL final scores for 2026_04_18
-2026-08-26T11:28:15.179300+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-18
-2026-08-26T11:28:15.561208+00:00 | DRAT CHECK MISSING: 2026_04_18 | Senators at Hurricanes | official_game_id=2025030131
-2026-08-26T11:28:15.561904+00:00 | DRAT CHECK MISSING: 2026_04_18 | Wild at Stars | official_game_id=2025030161
-2026-08-26T11:28:15.562343+00:00 | DRAT CHECK MISSING: 2026_04_18 | Flyers at Penguins | official_game_id=2025030141
-2026-08-26T11:28:15.568402+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_18_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:15.568755+00:00 | Processing official NHL final scores for 2026_04_19
-2026-08-26T11:28:15.569142+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-19
-2026-08-26T11:28:15.937527+00:00 | DRAT CHECK MISSING: 2026_04_19 | Kings at Avalanche | official_game_id=2025030151
-2026-08-26T11:28:15.938216+00:00 | DRAT CHECK MISSING: 2026_04_19 | Canadiens at Lightning | official_game_id=2025030121
-2026-08-26T11:28:15.938652+00:00 | DRAT CHECK MISSING: 2026_04_19 | Bruins at Sabres | official_game_id=2025030111
-2026-08-26T11:28:15.939065+00:00 | DRAT CHECK MISSING: 2026_04_19 | Mammoth at Golden Knights | official_game_id=2025030171
-2026-08-26T11:28:15.945210+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_19_NHL_final_scores.csv | rows=4
-2026-08-26T11:28:15.945539+00:00 | Processing official NHL final scores for 2026_04_20
-2026-08-26T11:28:15.945874+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-20
-2026-08-26T11:28:16.311169+00:00 | DRAT CHECK MISSING: 2026_04_20 | Flyers at Penguins | official_game_id=2025030142
-2026-08-26T11:28:16.311682+00:00 | DRAT CHECK MISSING: 2026_04_20 | Senators at Hurricanes | official_game_id=2025030132
-2026-08-26T11:28:16.312007+00:00 | DRAT CHECK MISSING: 2026_04_20 | Wild at Stars | official_game_id=2025030162
-2026-08-26T11:28:16.312327+00:00 | DRAT CHECK MISSING: 2026_04_20 | Ducks at Oilers | official_game_id=2025030181
-2026-08-26T11:28:16.316881+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_20_NHL_final_scores.csv | rows=4
-2026-08-26T11:28:16.317187+00:00 | Processing official NHL final scores for 2026_04_21
-2026-08-26T11:28:16.317499+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-21
-2026-08-26T11:28:16.708664+00:00 | DRAT CHECK MISSING: 2026_04_21 | Canadiens at Lightning | official_game_id=2025030122
-2026-08-26T11:28:16.709189+00:00 | DRAT CHECK MISSING: 2026_04_21 | Bruins at Sabres | official_game_id=2025030112
-2026-08-26T11:28:16.709514+00:00 | DRAT CHECK MISSING: 2026_04_21 | Mammoth at Golden Knights | official_game_id=2025030172
-2026-08-26T11:28:16.709839+00:00 | DRAT CHECK MISSING: 2026_04_21 | Kings at Avalanche | official_game_id=2025030152
-2026-08-26T11:28:16.714037+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_21_NHL_final_scores.csv | rows=4
-2026-08-26T11:28:16.714293+00:00 | Processing official NHL final scores for 2026_04_22
-2026-08-26T11:28:16.714566+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-22
-2026-08-26T11:28:17.069993+00:00 | DRAT CHECK MISSING: 2026_04_22 | Penguins at Flyers | official_game_id=2025030143
-2026-08-26T11:28:17.070962+00:00 | DRAT CHECK MISSING: 2026_04_22 | Stars at Wild | official_game_id=2025030163
-2026-08-26T11:28:17.071315+00:00 | DRAT CHECK MISSING: 2026_04_22 | Ducks at Oilers | official_game_id=2025030182
-2026-08-26T11:28:17.075390+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_22_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:17.075645+00:00 | Processing official NHL final scores for 2026_04_23
-2026-08-26T11:28:17.075919+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-23
-2026-08-26T11:28:17.445190+00:00 | DRAT CHECK MISSING: 2026_04_23 | Sabres at Bruins | official_game_id=2025030113
-2026-08-26T11:28:17.445693+00:00 | DRAT CHECK MISSING: 2026_04_23 | Hurricanes at Senators | official_game_id=2025030133
-2026-08-26T11:28:17.446016+00:00 | DRAT CHECK MISSING: 2026_04_23 | Avalanche at Kings | official_game_id=2025030153
-2026-08-26T11:28:17.449991+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_23_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:17.450245+00:00 | Processing official NHL final scores for 2026_04_24
-2026-08-26T11:28:17.450519+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-24
-2026-08-26T11:28:17.827095+00:00 | DRAT CHECK MISSING: 2026_04_24 | Lightning at Canadiens | official_game_id=2025030123
-2026-08-26T11:28:17.827644+00:00 | DRAT CHECK MISSING: 2026_04_24 | Golden Knights at Mammoth | official_game_id=2025030173
-2026-08-26T11:28:17.827974+00:00 | DRAT CHECK MISSING: 2026_04_24 | Oilers at Ducks | official_game_id=2025030183
-2026-08-26T11:28:17.831994+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_24_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:17.832252+00:00 | Processing official NHL final scores for 2026_04_25
-2026-08-26T11:28:17.832524+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-25
-2026-08-26T11:28:18.195391+00:00 | DRAT CHECK MISSING: 2026_04_25 | Hurricanes at Senators | official_game_id=2025030134
-2026-08-26T11:28:18.195904+00:00 | DRAT CHECK MISSING: 2026_04_25 | Stars at Wild | official_game_id=2025030164
-2026-08-26T11:28:18.196226+00:00 | DRAT CHECK MISSING: 2026_04_25 | Penguins at Flyers | official_game_id=2025030144
-2026-08-26T11:28:18.200441+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_25_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:18.200703+00:00 | Processing official NHL final scores for 2026_04_26
-2026-08-26T11:28:18.200985+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-26
-2026-08-26T11:28:18.558873+00:00 | DRAT CHECK MISSING: 2026_04_26 | Sabres at Bruins | official_game_id=2025030114
-2026-08-26T11:28:18.559387+00:00 | DRAT CHECK MISSING: 2026_04_26 | Avalanche at Kings | official_game_id=2025030154
-2026-08-26T11:28:18.559716+00:00 | DRAT CHECK MISSING: 2026_04_26 | Lightning at Canadiens | official_game_id=2025030124
-2026-08-26T11:28:18.560032+00:00 | DRAT CHECK MISSING: 2026_04_26 | Oilers at Ducks | official_game_id=2025030184
-2026-08-26T11:28:18.564245+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_26_NHL_final_scores.csv | rows=4
-2026-08-26T11:28:18.564502+00:00 | Processing official NHL final scores for 2026_04_27
-2026-08-26T11:28:18.564780+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-27
-2026-08-26T11:28:18.937345+00:00 | DRAT CHECK MISSING: 2026_04_27 | Flyers at Penguins | official_game_id=2025030145
-2026-08-26T11:28:18.937939+00:00 | DRAT CHECK MISSING: 2026_04_27 | Golden Knights at Mammoth | official_game_id=2025030174
-2026-08-26T11:28:18.942131+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_27_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:18.942437+00:00 | Processing official NHL final scores for 2026_04_28
-2026-08-26T11:28:18.942718+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-28
-2026-08-26T11:28:19.313272+00:00 | DRAT CHECK MISSING: 2026_04_28 | Bruins at Sabres | official_game_id=2025030115
-2026-08-26T11:28:19.313797+00:00 | DRAT CHECK MISSING: 2026_04_28 | Wild at Stars | official_game_id=2025030165
-2026-08-26T11:28:19.314118+00:00 | DRAT CHECK MISSING: 2026_04_28 | Ducks at Oilers | official_game_id=2025030185
-2026-08-26T11:28:19.318194+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_28_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:19.318483+00:00 | Processing official NHL final scores for 2026_04_29
-2026-08-26T11:28:19.318776+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-29
-2026-08-26T11:28:19.714894+00:00 | DRAT CHECK MISSING: 2026_04_29 | Canadiens at Lightning | official_game_id=2025030125
-2026-08-26T11:28:19.715591+00:00 | DRAT CHECK MISSING: 2026_04_29 | Penguins at Flyers | official_game_id=2025030146
-2026-08-26T11:28:19.716037+00:00 | DRAT CHECK MISSING: 2026_04_29 | Mammoth at Golden Knights | official_game_id=2025030175
-2026-08-26T11:28:19.721798+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_29_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:19.722144+00:00 | Processing official NHL final scores for 2026_04_30
-2026-08-26T11:28:19.722510+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-30
-2026-08-26T11:28:20.209225+00:00 | DRAT CHECK MISSING: 2026_04_30 | Stars at Wild | official_game_id=2025030166
-2026-08-26T11:28:20.209762+00:00 | DRAT CHECK MISSING: 2026_04_30 | Oilers at Ducks | official_game_id=2025030186
-2026-08-26T11:28:20.213773+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_04_30_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:20.214026+00:00 | Processing official NHL final scores for 2026_05_01
-2026-08-26T11:28:20.214298+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-01
-2026-08-26T11:28:20.625943+00:00 | DRAT CHECK MISSING: 2026_05_01 | Lightning at Canadiens | official_game_id=2025030126
-2026-08-26T11:28:20.626467+00:00 | DRAT CHECK MISSING: 2026_05_01 | Sabres at Bruins | official_game_id=2025030116
-2026-08-26T11:28:20.626798+00:00 | DRAT CHECK MISSING: 2026_05_01 | Golden Knights at Mammoth | official_game_id=2025030176
-2026-08-26T11:28:20.631086+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_01_NHL_final_scores.csv | rows=3
-2026-08-26T11:28:20.631358+00:00 | Processing official NHL final scores for 2026_05_02
-2026-08-26T11:28:20.631630+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-02
-2026-08-26T11:28:21.070954+00:00 | DRAT CHECK MISSING: 2026_05_02 | Flyers at Hurricanes | official_game_id=2025030221
-2026-08-26T11:28:21.076242+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_02_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:21.076532+00:00 | Processing official NHL final scores for 2026_05_03
-2026-08-26T11:28:21.076889+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-03
-2026-08-26T11:28:21.489503+00:00 | DRAT CHECK MISSING: 2026_05_03 | Canadiens at Lightning | official_game_id=2025030127
-2026-08-26T11:28:21.490023+00:00 | DRAT CHECK MISSING: 2026_05_03 | Wild at Avalanche | official_game_id=2025030231
-2026-08-26T11:28:21.494037+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_03_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:21.494327+00:00 | Processing official NHL final scores for 2026_05_04
-2026-08-26T11:28:21.494606+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-04
-2026-08-26T11:28:21.855441+00:00 | DRAT CHECK MISSING: 2026_05_04 | Flyers at Hurricanes | official_game_id=2025030222
-2026-08-26T11:28:21.855975+00:00 | DRAT CHECK MISSING: 2026_05_04 | Ducks at Golden Knights | official_game_id=2025030241
-2026-08-26T11:28:21.859968+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_04_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:21.860222+00:00 | Processing official NHL final scores for 2026_05_05
-2026-08-26T11:28:21.860534+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-05
-2026-08-26T11:28:22.226288+00:00 | DRAT CHECK MISSING: 2026_05_05 | Wild at Avalanche | official_game_id=2025030232
-2026-08-26T11:28:22.230487+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_05_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:22.230755+00:00 | Processing official NHL final scores for 2026_05_06
-2026-08-26T11:28:22.231034+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-06
-2026-08-26T11:28:22.587625+00:00 | DRAT CHECK MISSING: 2026_05_06 | Canadiens at Sabres | official_game_id=2025030211
-2026-08-26T11:28:22.588156+00:00 | DRAT CHECK MISSING: 2026_05_06 | Ducks at Golden Knights | official_game_id=2025030242
-2026-08-26T11:28:22.592120+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_06_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:22.592377+00:00 | Processing official NHL final scores for 2026_05_07
-2026-08-26T11:28:22.592706+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-07
-2026-08-26T11:28:22.949562+00:00 | DRAT CHECK MISSING: 2026_05_07 | Hurricanes at Flyers | official_game_id=2025030223
-2026-08-26T11:28:22.953735+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_07_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:22.953996+00:00 | Processing official NHL final scores for 2026_05_08
-2026-08-26T11:28:22.954270+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-08
-2026-08-26T11:28:23.310022+00:00 | DRAT CHECK MISSING: 2026_05_08 | Canadiens at Sabres | official_game_id=2025030212
-2026-08-26T11:28:23.310549+00:00 | DRAT CHECK MISSING: 2026_05_08 | Golden Knights at Ducks | official_game_id=2025030243
-2026-08-26T11:28:23.314738+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_08_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:23.315003+00:00 | Processing official NHL final scores for 2026_05_09
-2026-08-26T11:28:23.315286+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-09
-2026-08-26T11:28:23.684218+00:00 | DRAT CHECK MISSING: 2026_05_09 | Hurricanes at Flyers | official_game_id=2025030224
-2026-08-26T11:28:23.684738+00:00 | DRAT CHECK MISSING: 2026_05_09 | Avalanche at Wild | official_game_id=2025030233
-2026-08-26T11:28:23.688722+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_09_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:23.688986+00:00 | Processing official NHL final scores for 2026_05_10
-2026-08-26T11:28:23.689279+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-10
-2026-08-26T11:28:24.048637+00:00 | DRAT CHECK MISSING: 2026_05_10 | Sabres at Canadiens | official_game_id=2025030213
-2026-08-26T11:28:24.049178+00:00 | DRAT CHECK MISSING: 2026_05_10 | Golden Knights at Ducks | official_game_id=2025030244
-2026-08-26T11:28:24.053227+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_10_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:24.053484+00:00 | Processing official NHL final scores for 2026_05_11
-2026-08-26T11:28:24.053761+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-11
-2026-08-26T11:28:24.411391+00:00 | DRAT CHECK MISSING: 2026_05_11 | Avalanche at Wild | official_game_id=2025030234
-2026-08-26T11:28:24.415486+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_11_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:24.415740+00:00 | Processing official NHL final scores for 2026_05_12
-2026-08-26T11:28:24.416011+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-12
-2026-08-26T11:28:24.770238+00:00 | DRAT CHECK MISSING: 2026_05_12 | Sabres at Canadiens | official_game_id=2025030214
-2026-08-26T11:28:24.770744+00:00 | DRAT CHECK MISSING: 2026_05_12 | Ducks at Golden Knights | official_game_id=2025030245
-2026-08-26T11:28:24.774737+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_12_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:24.774994+00:00 | Processing official NHL final scores for 2026_05_13
-2026-08-26T11:28:24.775270+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-13
-2026-08-26T11:28:25.130109+00:00 | DRAT CHECK MISSING: 2026_05_13 | Wild at Avalanche | official_game_id=2025030235
-2026-08-26T11:28:25.134218+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_13_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:25.134475+00:00 | Processing official NHL final scores for 2026_05_14
-2026-08-26T11:28:25.134777+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-14
-2026-08-26T11:28:25.508689+00:00 | DRAT CHECK MISSING: 2026_05_14 | Canadiens at Sabres | official_game_id=2025030215
-2026-08-26T11:28:25.509212+00:00 | DRAT CHECK MISSING: 2026_05_14 | Golden Knights at Ducks | official_game_id=2025030246
-2026-08-26T11:28:25.513152+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_14_NHL_final_scores.csv | rows=2
-2026-08-26T11:28:25.513408+00:00 | Processing official NHL final scores for 2026_05_16
-2026-08-26T11:28:25.513684+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-16
-2026-08-26T11:28:25.887143+00:00 | DRAT CHECK MISSING: 2026_05_16 | Sabres at Canadiens | official_game_id=2025030216
-2026-08-26T11:28:25.891249+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_16_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:25.891510+00:00 | Processing official NHL final scores for 2026_05_18
-2026-08-26T11:28:25.891785+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-18
-2026-08-26T11:28:26.241684+00:00 | DRAT CHECK MISSING: 2026_05_18 | Canadiens at Sabres | official_game_id=2025030217
-2026-08-26T11:28:26.245828+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_18_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:26.246086+00:00 | Processing official NHL final scores for 2026_05_20
-2026-08-26T11:28:26.246363+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-20
-2026-08-26T11:28:26.615035+00:00 | DRAT CHECK MISSING: 2026_05_20 | Golden Knights at Avalanche | official_game_id=2025030321
-2026-08-26T11:28:26.619207+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_20_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:26.619473+00:00 | Processing official NHL final scores for 2026_05_21
-2026-08-26T11:28:26.619785+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-21
-2026-08-26T11:28:26.977202+00:00 | DRAT CHECK MISSING: 2026_05_21 | Canadiens at Hurricanes | official_game_id=2025030311
-2026-08-26T11:28:26.981333+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_21_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:26.981589+00:00 | Processing official NHL final scores for 2026_05_22
-2026-08-26T11:28:26.981864+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-22
-2026-08-26T11:28:27.341242+00:00 | DRAT CHECK MISSING: 2026_05_22 | Golden Knights at Avalanche | official_game_id=2025030322
-2026-08-26T11:28:27.345454+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_22_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:27.345722+00:00 | Processing official NHL final scores for 2026_05_23
-2026-08-26T11:28:27.346004+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-23
-2026-08-26T11:28:27.707509+00:00 | DRAT CHECK MISSING: 2026_05_23 | Canadiens at Hurricanes | official_game_id=2025030312
-2026-08-26T11:28:27.711672+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_23_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:27.711930+00:00 | Processing official NHL final scores for 2026_05_24
-2026-08-26T11:28:27.712207+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-24
-2026-08-26T11:28:28.072590+00:00 | DRAT CHECK MISSING: 2026_05_24 | Avalanche at Golden Knights | official_game_id=2025030323
-2026-08-26T11:28:28.076733+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_24_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:28.077020+00:00 | Processing official NHL final scores for 2026_05_25
-2026-08-26T11:28:28.077295+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-25
-2026-08-26T11:28:28.448068+00:00 | DRAT CHECK MISSING: 2026_05_25 | Hurricanes at Canadiens | official_game_id=2025030313
-2026-08-26T11:28:28.452234+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_25_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:28.452492+00:00 | Processing official NHL final scores for 2026_05_26
-2026-08-26T11:28:28.452767+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-26
-2026-08-26T11:28:28.822103+00:00 | DRAT CHECK MISSING: 2026_05_26 | Avalanche at Golden Knights | official_game_id=2025030324
-2026-08-26T11:28:28.826457+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_26_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:28.826742+00:00 | Processing official NHL final scores for 2026_05_27
-2026-08-26T11:28:28.827130+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-27
-2026-08-26T11:28:29.188575+00:00 | DRAT CHECK MISSING: 2026_05_27 | Hurricanes at Canadiens | official_game_id=2025030314
-2026-08-26T11:28:29.192708+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_27_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:29.192966+00:00 | Processing official NHL final scores for 2026_05_29
-2026-08-26T11:28:29.193240+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-29
-2026-08-26T11:28:29.572198+00:00 | DRAT CHECK MISSING: 2026_05_29 | Canadiens at Hurricanes | official_game_id=2025030315
-2026-08-26T11:28:29.576642+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_05_29_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:29.576944+00:00 | Processing official NHL final scores for 2026_06_02
-2026-08-26T11:28:29.577230+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-02
-2026-08-26T11:28:29.959098+00:00 | DRAT CHECK MISSING: 2026_06_02 | Golden Knights at Hurricanes | official_game_id=2025030411
-2026-08-26T11:28:29.963823+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_02_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:29.964156+00:00 | Processing official NHL final scores for 2026_06_04
-2026-08-26T11:28:29.964454+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-04
-2026-08-26T11:28:30.386148+00:00 | DRAT CHECK MISSING: 2026_06_04 | Golden Knights at Hurricanes | official_game_id=2025030412
-2026-08-26T11:28:30.390833+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_04_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:30.391113+00:00 | Processing official NHL final scores for 2026_06_06
-2026-08-26T11:28:30.391417+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-06
-2026-08-26T11:28:30.780832+00:00 | DRAT CHECK MISSING: 2026_06_06 | Hurricanes at Golden Knights | official_game_id=2025030413
-2026-08-26T11:28:30.785747+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_06_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:30.786025+00:00 | Processing official NHL final scores for 2026_06_09
-2026-08-26T11:28:30.786335+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-09
-2026-08-26T11:28:31.163558+00:00 | DRAT CHECK MISSING: 2026_06_09 | Hurricanes at Golden Knights | official_game_id=2025030414
-2026-08-26T11:28:31.169067+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_09_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:31.169381+00:00 | Processing official NHL final scores for 2026_06_11
-2026-08-26T11:28:31.169675+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-11
-2026-08-26T11:28:31.563170+00:00 | DRAT CHECK MISSING: 2026_06_11 | Golden Knights at Hurricanes | official_game_id=2025030415
-2026-08-26T11:28:31.569446+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_11_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:31.569819+00:00 | Processing official NHL final scores for 2026_06_14
-2026-08-26T11:28:31.570206+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-14
-2026-08-26T11:28:31.979448+00:00 | DRAT CHECK MISSING: 2026_06_14 | Hurricanes at Golden Knights | official_game_id=2025030416
-2026-08-26T11:28:31.984993+00:00 | WROTE OFFICIAL FINAL SCORES: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\05_final_scores\final_scores\2026_06_14_NHL_final_scores.csv | rows=1
-2026-08-26T11:28:31.985292+00:00 | Stage 04 dates queried: 68
-2026-08-26T11:28:31.985530+00:00 | D-Ratings check files processed: 0
-2026-08-26T11:28:31.985763+00:00 | Official final-score rows written: 276
-2026-08-26T11:28:31.985992+00:00 | Official final-score files written: 68
-2026-08-26T11:28:31.986218+00:00 | === transform_final_scores END ===
+2026-08-26T16:04:54.616721+00:00 | === transform_final_scores START ===
+2026-08-26T16:04:54.616777+00:00 | TARGET_DATE_SOURCE=/home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/04_select
+2026-08-26T16:04:54.616811+00:00 | DRAT_CHECK_DIR=/home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/00_intake/drat_raw
+2026-08-26T16:04:54.616836+00:00 | OUT_DIR=/home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores
+2026-08-26T16:04:54.616863+00:00 | STATUS_FILE=/home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/intermediate/nhl_game_status.csv
+2026-08-26T16:04:54.617541+00:00 | Stage 04 target dates discovered: 68
+2026-08-26T16:04:54.617598+00:00 | DRAT CHECK SOURCE UNAVAILABLE: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/00_intake/drat_raw
+2026-08-26T16:04:54.617630+00:00 | No D-Ratings check files found; official NHL final-score processing will continue
+2026-08-26T16:04:54.617663+00:00 | Processing official NHL final scores for 2026_03_23
+2026-08-26T16:04:54.617939+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-23
+2026-08-26T16:04:54.986827+00:00 | DRAT CHECK MISSING: 2026_03_23 | Senators at Rangers | official_game_id=2025021119
+2026-08-26T16:04:54.990377+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_23_NHL_final_scores.csv | rows=1
+2026-08-26T16:04:54.990429+00:00 | Processing official NHL final scores for 2026_03_24
+2026-08-26T16:04:54.990497+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-24
+2026-08-26T16:04:55.402324+00:00 | DRAT CHECK MISSING: 2026_03_24 | Maple Leafs at Bruins | official_game_id=2025021120
+2026-08-26T16:04:55.402481+00:00 | DRAT CHECK MISSING: 2026_03_24 | Hurricanes at Canadiens | official_game_id=2025021121
+2026-08-26T16:04:55.402598+00:00 | DRAT CHECK MISSING: 2026_03_24 | Senators at Red Wings | official_game_id=2025021122
+2026-08-26T16:04:55.402704+00:00 | DRAT CHECK MISSING: 2026_03_24 | Kraken at Panthers | official_game_id=2025021123
+2026-08-26T16:04:55.402807+00:00 | DRAT CHECK MISSING: 2026_03_24 | Blackhawks at Islanders | official_game_id=2025021124
+2026-08-26T16:04:55.402915+00:00 | DRAT CHECK MISSING: 2026_03_24 | Blue Jackets at Flyers | official_game_id=2025021125
+2026-08-26T16:04:55.403016+00:00 | DRAT CHECK MISSING: 2026_03_24 | Avalanche at Penguins | official_game_id=2025021126
+2026-08-26T16:04:55.403114+00:00 | DRAT CHECK MISSING: 2026_03_24 | Wild at Lightning | official_game_id=2025021127
+2026-08-26T16:04:55.403210+00:00 | DRAT CHECK MISSING: 2026_03_24 | Capitals at Blues | official_game_id=2025021128
+2026-08-26T16:04:55.403326+00:00 | DRAT CHECK MISSING: 2026_03_24 | Sharks at Predators | official_game_id=2025021129
+2026-08-26T16:04:55.403430+00:00 | DRAT CHECK MISSING: 2026_03_24 | Devils at Stars | official_game_id=2025021130
+2026-08-26T16:04:55.403527+00:00 | DRAT CHECK MISSING: 2026_03_24 | Golden Knights at Jets | official_game_id=2025021131
+2026-08-26T16:04:55.403623+00:00 | DRAT CHECK MISSING: 2026_03_24 | Kings at Flames | official_game_id=2025021133
+2026-08-26T16:04:55.403721+00:00 | DRAT CHECK MISSING: 2026_03_24 | Oilers at Mammoth | official_game_id=2025021132
+2026-08-26T16:04:55.403816+00:00 | DRAT CHECK MISSING: 2026_03_24 | Ducks at Canucks | official_game_id=2025021134
+2026-08-26T16:04:55.406959+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_24_NHL_final_scores.csv | rows=15
+2026-08-26T16:04:55.407008+00:00 | Processing official NHL final scores for 2026_03_25
+2026-08-26T16:04:55.407066+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-25
+2026-08-26T16:04:55.690025+00:00 | DRAT CHECK MISSING: 2026_03_25 | Bruins at Sabres | official_game_id=2025021135
+2026-08-26T16:04:55.690173+00:00 | DRAT CHECK MISSING: 2026_03_25 | Rangers at Maple Leafs | official_game_id=2025021136
+2026-08-26T16:04:55.692826+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_25_NHL_final_scores.csv | rows=2
+2026-08-26T16:04:55.692881+00:00 | Processing official NHL final scores for 2026_03_26
+2026-08-26T16:04:55.692940+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-26
+2026-08-26T16:04:56.105985+00:00 | DRAT CHECK MISSING: 2026_03_26 | Blue Jackets at Canadiens | official_game_id=2025021137
+2026-08-26T16:04:56.106132+00:00 | DRAT CHECK MISSING: 2026_03_26 | Penguins at Senators | official_game_id=2025021138
+2026-08-26T16:04:56.106237+00:00 | DRAT CHECK MISSING: 2026_03_26 | Kraken at Lightning | official_game_id=2025021139
+2026-08-26T16:04:56.106368+00:00 | DRAT CHECK MISSING: 2026_03_26 | Wild at Panthers | official_game_id=2025021140
+2026-08-26T16:04:56.106485+00:00 | DRAT CHECK MISSING: 2026_03_26 | Stars at Islanders | official_game_id=2025021141
+2026-08-26T16:04:56.106583+00:00 | DRAT CHECK MISSING: 2026_03_26 | Blackhawks at Flyers | official_game_id=2025021142
+2026-08-26T16:04:56.106678+00:00 | DRAT CHECK MISSING: 2026_03_26 | Sharks at Blues | official_game_id=2025021143
+2026-08-26T16:04:56.106772+00:00 | DRAT CHECK MISSING: 2026_03_26 | Devils at Predators | official_game_id=2025021144
+2026-08-26T16:04:56.106865+00:00 | DRAT CHECK MISSING: 2026_03_26 | Avalanche at Jets | official_game_id=2025021145
+2026-08-26T16:04:56.106958+00:00 | DRAT CHECK MISSING: 2026_03_26 | Capitals at Mammoth | official_game_id=2025021146
+2026-08-26T16:04:56.107052+00:00 | DRAT CHECK MISSING: 2026_03_26 | Ducks at Flames | official_game_id=2025021147
+2026-08-26T16:04:56.107147+00:00 | DRAT CHECK MISSING: 2026_03_26 | Oilers at Golden Knights | official_game_id=2025021148
+2026-08-26T16:04:56.107241+00:00 | DRAT CHECK MISSING: 2026_03_26 | Kings at Canucks | official_game_id=2025021149
+2026-08-26T16:04:56.109962+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_26_NHL_final_scores.csv | rows=13
+2026-08-26T16:04:56.110011+00:00 | Processing official NHL final scores for 2026_03_27
+2026-08-26T16:04:56.110070+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-27
+2026-08-26T16:04:56.445071+00:00 | DRAT CHECK MISSING: 2026_03_27 | Red Wings at Sabres | official_game_id=2025021150
+2026-08-26T16:04:56.445223+00:00 | DRAT CHECK MISSING: 2026_03_27 | Blackhawks at Rangers | official_game_id=2025021151
+2026-08-26T16:04:56.447830+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_27_NHL_final_scores.csv | rows=2
+2026-08-26T16:04:56.447881+00:00 | Processing official NHL final scores for 2026_03_28
+2026-08-26T16:04:56.447940+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-28
+2026-08-26T16:04:56.867752+00:00 | DRAT CHECK MISSING: 2026_03_28 | Senators at Lightning | official_game_id=2025021152
+2026-08-26T16:04:56.867896+00:00 | DRAT CHECK MISSING: 2026_03_28 | Panthers at Islanders | official_game_id=2025021153
+2026-08-26T16:04:56.867999+00:00 | DRAT CHECK MISSING: 2026_03_28 | Ducks at Oilers | official_game_id=2025021154
+2026-08-26T16:04:56.868098+00:00 | DRAT CHECK MISSING: 2026_03_28 | Wild at Bruins | official_game_id=2025021155
+2026-08-26T16:04:56.868194+00:00 | DRAT CHECK MISSING: 2026_03_28 | Stars at Penguins | official_game_id=2025021156
+2026-08-26T16:04:56.868290+00:00 | DRAT CHECK MISSING: 2026_03_28 | Devils at Hurricanes | official_game_id=2025021157
+2026-08-26T16:04:56.868430+00:00 | DRAT CHECK MISSING: 2026_03_28 | Sharks at Blue Jackets | official_game_id=2025021158
+2026-08-26T16:04:56.868528+00:00 | DRAT CHECK MISSING: 2026_03_28 | Kraken at Sabres | official_game_id=2025021159
+2026-08-26T16:04:56.868625+00:00 | DRAT CHECK MISSING: 2026_03_28 | Maple Leafs at Blues | official_game_id=2025021160
+2026-08-26T16:04:56.868722+00:00 | DRAT CHECK MISSING: 2026_03_28 | Canadiens at Predators | official_game_id=2025021161
+2026-08-26T16:04:56.868827+00:00 | DRAT CHECK MISSING: 2026_03_28 | Jets at Avalanche | official_game_id=2025021162
+2026-08-26T16:04:56.868925+00:00 | DRAT CHECK MISSING: 2026_03_28 | Flyers at Red Wings | official_game_id=2025021163
+2026-08-26T16:04:56.869019+00:00 | DRAT CHECK MISSING: 2026_03_28 | Mammoth at Kings | official_game_id=2025021164
+2026-08-26T16:04:56.869112+00:00 | DRAT CHECK MISSING: 2026_03_28 | Canucks at Flames | official_game_id=2025021165
+2026-08-26T16:04:56.869207+00:00 | DRAT CHECK MISSING: 2026_03_28 | Capitals at Golden Knights | official_game_id=2025021166
+2026-08-26T16:04:56.871881+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_28_NHL_final_scores.csv | rows=15
+2026-08-26T16:04:56.871932+00:00 | Processing official NHL final scores for 2026_03_29
+2026-08-26T16:04:56.871989+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-29
+2026-08-26T16:04:57.210083+00:00 | DRAT CHECK MISSING: 2026_03_29 | Panthers at Rangers | official_game_id=2025021167
+2026-08-26T16:04:57.210234+00:00 | DRAT CHECK MISSING: 2026_03_29 | Predators at Lightning | official_game_id=2025021168
+2026-08-26T16:04:57.210363+00:00 | DRAT CHECK MISSING: 2026_03_29 | Canadiens at Hurricanes | official_game_id=2025021169
+2026-08-26T16:04:57.210471+00:00 | DRAT CHECK MISSING: 2026_03_29 | Bruins at Blue Jackets | official_game_id=2025021170
+2026-08-26T16:04:57.210569+00:00 | DRAT CHECK MISSING: 2026_03_29 | Blackhawks at Devils | official_game_id=2025021171
+2026-08-26T16:04:57.210674+00:00 | DRAT CHECK MISSING: 2026_03_29 | Stars at Flyers | official_game_id=2025021172
+2026-08-26T16:04:57.213262+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_29_NHL_final_scores.csv | rows=6
+2026-08-26T16:04:57.213333+00:00 | Processing official NHL final scores for 2026_03_30
+2026-08-26T16:04:57.213398+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-30
+2026-08-26T16:04:57.595222+00:00 | DRAT CHECK MISSING: 2026_03_30 | Penguins at Islanders | official_game_id=2025021173
+2026-08-26T16:04:57.595400+00:00 | DRAT CHECK MISSING: 2026_03_30 | Flames at Avalanche | official_game_id=2025021174
+2026-08-26T16:04:57.595507+00:00 | DRAT CHECK MISSING: 2026_03_30 | Canucks at Golden Knights | official_game_id=2025021175
+2026-08-26T16:04:57.595609+00:00 | DRAT CHECK MISSING: 2026_03_30 | Maple Leafs at Ducks | official_game_id=2025021176
+2026-08-26T16:04:57.595708+00:00 | DRAT CHECK MISSING: 2026_03_30 | Blues at Sharks | official_game_id=2025021177
+2026-08-26T16:04:57.598366+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_30_NHL_final_scores.csv | rows=5
+2026-08-26T16:04:57.598416+00:00 | Processing official NHL final scores for 2026_03_31
+2026-08-26T16:04:57.598475+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-03-31
+2026-08-26T16:04:57.939967+00:00 | DRAT CHECK MISSING: 2026_03_31 | Stars at Bruins | official_game_id=2025021178
+2026-08-26T16:04:57.940114+00:00 | DRAT CHECK MISSING: 2026_03_31 | Islanders at Sabres | official_game_id=2025021179
+2026-08-26T16:04:57.940217+00:00 | DRAT CHECK MISSING: 2026_03_31 | Canadiens at Lightning | official_game_id=2025021180
+2026-08-26T16:04:57.940338+00:00 | DRAT CHECK MISSING: 2026_03_31 | Senators at Panthers | official_game_id=2025021181
+2026-08-26T16:04:57.940444+00:00 | DRAT CHECK MISSING: 2026_03_31 | Devils at Rangers | official_game_id=2025021182
+2026-08-26T16:04:57.940543+00:00 | DRAT CHECK MISSING: 2026_03_31 | Red Wings at Penguins | official_game_id=2025021183
+2026-08-26T16:04:57.940640+00:00 | DRAT CHECK MISSING: 2026_03_31 | Flyers at Capitals | official_game_id=2025021184
+2026-08-26T16:04:57.940739+00:00 | DRAT CHECK MISSING: 2026_03_31 | Hurricanes at Blue Jackets | official_game_id=2025021185
+2026-08-26T16:04:57.940835+00:00 | DRAT CHECK MISSING: 2026_03_31 | Jets at Blackhawks | official_game_id=2025021186
+2026-08-26T16:04:57.940940+00:00 | DRAT CHECK MISSING: 2026_03_31 | Kraken at Oilers | official_game_id=2025021187
+2026-08-26T16:04:57.943533+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_03_31_NHL_final_scores.csv | rows=10
+2026-08-26T16:04:57.943582+00:00 | Processing official NHL final scores for 2026_04_01
+2026-08-26T16:04:57.943640+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-01
+2026-08-26T16:04:58.256684+00:00 | DRAT CHECK MISSING: 2026_04_01 | Canucks at Avalanche | official_game_id=2025021188
+2026-08-26T16:04:58.256834+00:00 | DRAT CHECK MISSING: 2026_04_01 | Blues at Kings | official_game_id=2025021189
+2026-08-26T16:04:58.256937+00:00 | DRAT CHECK MISSING: 2026_04_01 | Ducks at Sharks | official_game_id=2025021190
+2026-08-26T16:04:58.259482+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_01_NHL_final_scores.csv | rows=3
+2026-08-26T16:04:58.259530+00:00 | Processing official NHL final scores for 2026_04_02
+2026-08-26T16:04:58.259589+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-02
+2026-08-26T16:04:58.623074+00:00 | DRAT CHECK MISSING: 2026_04_02 | Sabres at Senators | official_game_id=2025021191
+2026-08-26T16:04:58.623216+00:00 | DRAT CHECK MISSING: 2026_04_02 | Penguins at Lightning | official_game_id=2025021192
+2026-08-26T16:04:58.623342+00:00 | DRAT CHECK MISSING: 2026_04_02 | Bruins at Panthers | official_game_id=2025021193
+2026-08-26T16:04:58.623448+00:00 | DRAT CHECK MISSING: 2026_04_02 | Canadiens at Rangers | official_game_id=2025021195
+2026-08-26T16:04:58.623550+00:00 | DRAT CHECK MISSING: 2026_04_02 | Red Wings at Flyers | official_game_id=2025021196
+2026-08-26T16:04:58.623650+00:00 | DRAT CHECK MISSING: 2026_04_02 | Blue Jackets at Hurricanes | official_game_id=2025021197
+2026-08-26T16:04:58.623747+00:00 | DRAT CHECK MISSING: 2026_04_02 | Capitals at Devils | official_game_id=2025021194
+2026-08-26T16:04:58.623842+00:00 | DRAT CHECK MISSING: 2026_04_02 | Jets at Stars | official_game_id=2025021198
+2026-08-26T16:04:58.623948+00:00 | DRAT CHECK MISSING: 2026_04_02 | Canucks at Wild | official_game_id=2025021199
+2026-08-26T16:04:58.624042+00:00 | DRAT CHECK MISSING: 2026_04_02 | Blackhawks at Oilers | official_game_id=2025021200
+2026-08-26T16:04:58.624137+00:00 | DRAT CHECK MISSING: 2026_04_02 | Flames at Golden Knights | official_game_id=2025021201
+2026-08-26T16:04:58.624232+00:00 | DRAT CHECK MISSING: 2026_04_02 | Maple Leafs at Sharks | official_game_id=2025021202
+2026-08-26T16:04:58.624356+00:00 | DRAT CHECK MISSING: 2026_04_02 | Mammoth at Kraken | official_game_id=2025021203
+2026-08-26T16:04:58.624465+00:00 | DRAT CHECK MISSING: 2026_04_02 | Predators at Kings | official_game_id=2025021204
+2026-08-26T16:04:58.627213+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_02_NHL_final_scores.csv | rows=14
+2026-08-26T16:04:58.627262+00:00 | Processing official NHL final scores for 2026_04_03
+2026-08-26T16:04:58.627340+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-03
+2026-08-26T16:04:58.925079+00:00 | DRAT CHECK MISSING: 2026_04_03 | Flyers at Islanders | official_game_id=2025021205
+2026-08-26T16:04:58.925231+00:00 | DRAT CHECK MISSING: 2026_04_03 | Blues at Ducks | official_game_id=2025021206
+2026-08-26T16:04:58.927757+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_03_NHL_final_scores.csv | rows=2
+2026-08-26T16:04:58.927806+00:00 | Processing official NHL final scores for 2026_04_04
+2026-08-26T16:04:58.927864+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-04
+2026-08-26T16:04:59.363836+00:00 | DRAT CHECK MISSING: 2026_04_04 | Red Wings at Rangers | official_game_id=2025021207
+2026-08-26T16:04:59.363986+00:00 | DRAT CHECK MISSING: 2026_04_04 | Wild at Senators | official_game_id=2025021208
+2026-08-26T16:04:59.364099+00:00 | DRAT CHECK MISSING: 2026_04_04 | Avalanche at Stars | official_game_id=2025021209
+2026-08-26T16:04:59.364198+00:00 | DRAT CHECK MISSING: 2026_04_04 | Bruins at Lightning | official_game_id=2025021210
+2026-08-26T16:04:59.364294+00:00 | DRAT CHECK MISSING: 2026_04_04 | Panthers at Penguins | official_game_id=2025021211
+2026-08-26T16:04:59.364452+00:00 | DRAT CHECK MISSING: 2026_04_04 | Canadiens at Devils | official_game_id=2025021212
+2026-08-26T16:04:59.364556+00:00 | DRAT CHECK MISSING: 2026_04_04 | Sabres at Capitals | official_game_id=2025021213
+2026-08-26T16:04:59.364652+00:00 | DRAT CHECK MISSING: 2026_04_04 | Islanders at Hurricanes | official_game_id=2025021214
+2026-08-26T16:04:59.364750+00:00 | DRAT CHECK MISSING: 2026_04_04 | Jets at Blue Jackets | official_game_id=2025021215
+2026-08-26T16:04:59.364846+00:00 | DRAT CHECK MISSING: 2026_04_04 | Mammoth at Canucks | official_game_id=2025021216
+2026-08-26T16:04:59.364942+00:00 | DRAT CHECK MISSING: 2026_04_04 | Maple Leafs at Kings | official_game_id=2025021217
+2026-08-26T16:04:59.365039+00:00 | DRAT CHECK MISSING: 2026_04_04 | Golden Knights at Oilers | official_game_id=2025021218
+2026-08-26T16:04:59.365133+00:00 | DRAT CHECK MISSING: 2026_04_04 | Flames at Ducks | official_game_id=2025021219
+2026-08-26T16:04:59.365226+00:00 | DRAT CHECK MISSING: 2026_04_04 | Predators at Sharks | official_game_id=2025021220
+2026-08-26T16:04:59.365340+00:00 | DRAT CHECK MISSING: 2026_04_04 | Blackhawks at Kraken | official_game_id=2025021221
+2026-08-26T16:04:59.368289+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_04_NHL_final_scores.csv | rows=15
+2026-08-26T16:04:59.368380+00:00 | Processing official NHL final scores for 2026_04_05
+2026-08-26T16:04:59.368441+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-05
+2026-08-26T16:04:59.699236+00:00 | DRAT CHECK MISSING: 2026_04_05 | Wild at Red Wings | official_game_id=2025021222
+2026-08-26T16:04:59.699413+00:00 | DRAT CHECK MISSING: 2026_04_05 | Panthers at Penguins | official_game_id=2025021223
+2026-08-26T16:04:59.699517+00:00 | DRAT CHECK MISSING: 2026_04_05 | Bruins at Flyers | official_game_id=2025021224
+2026-08-26T16:04:59.699616+00:00 | DRAT CHECK MISSING: 2026_04_05 | Hurricanes at Senators | official_game_id=2025021225
+2026-08-26T16:04:59.699713+00:00 | DRAT CHECK MISSING: 2026_04_05 | Devils at Canadiens | official_game_id=2025021226
+2026-08-26T16:04:59.699809+00:00 | DRAT CHECK MISSING: 2026_04_05 | Capitals at Rangers | official_game_id=2025021227
+2026-08-26T16:04:59.699903+00:00 | DRAT CHECK MISSING: 2026_04_05 | Blues at Avalanche | official_game_id=2025021228
+2026-08-26T16:04:59.702446+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_05_NHL_final_scores.csv | rows=7
+2026-08-26T16:04:59.702495+00:00 | Processing official NHL final scores for 2026_04_06
+2026-08-26T16:04:59.702552+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-06
+2026-08-26T16:05:00.024141+00:00 | DRAT CHECK MISSING: 2026_04_06 | Lightning at Sabres | official_game_id=2025021229
+2026-08-26T16:05:00.024295+00:00 | DRAT CHECK MISSING: 2026_04_06 | Kraken at Jets | official_game_id=2025021230
+2026-08-26T16:05:00.024440+00:00 | DRAT CHECK MISSING: 2026_04_06 | Blackhawks at Sharks | official_game_id=2025021231
+2026-08-26T16:05:00.024540+00:00 | DRAT CHECK MISSING: 2026_04_06 | Predators at Kings | official_game_id=2025021232
+2026-08-26T16:05:00.027056+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_06_NHL_final_scores.csv | rows=4
+2026-08-26T16:05:00.027105+00:00 | Processing official NHL final scores for 2026_04_07
+2026-08-26T16:05:00.027162+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-07
+2026-08-26T16:05:00.441229+00:00 | DRAT CHECK MISSING: 2026_04_07 | Panthers at Canadiens | official_game_id=2025021233
+2026-08-26T16:05:00.441422+00:00 | DRAT CHECK MISSING: 2026_04_07 | Lightning at Senators | official_game_id=2025021234
+2026-08-26T16:05:00.441531+00:00 | DRAT CHECK MISSING: 2026_04_07 | Blue Jackets at Red Wings | official_game_id=2025021235
+2026-08-26T16:05:00.441629+00:00 | DRAT CHECK MISSING: 2026_04_07 | Flyers at Devils | official_game_id=2025021236
+2026-08-26T16:05:00.441728+00:00 | DRAT CHECK MISSING: 2026_04_07 | Bruins at Hurricanes | official_game_id=2025021237
+2026-08-26T16:05:00.441825+00:00 | DRAT CHECK MISSING: 2026_04_07 | Avalanche at Blues | official_game_id=2025021238
+2026-08-26T16:05:00.441919+00:00 | DRAT CHECK MISSING: 2026_04_07 | Flames at Stars | official_game_id=2025021239
+2026-08-26T16:05:00.442016+00:00 | DRAT CHECK MISSING: 2026_04_07 | Kraken at Wild | official_game_id=2025021240
+2026-08-26T16:05:00.442111+00:00 | DRAT CHECK MISSING: 2026_04_07 | Oilers at Mammoth | official_game_id=2025021241
+2026-08-26T16:05:00.442209+00:00 | DRAT CHECK MISSING: 2026_04_07 | Golden Knights at Canucks | official_game_id=2025021242
+2026-08-26T16:05:00.442338+00:00 | DRAT CHECK MISSING: 2026_04_07 | Predators at Ducks | official_game_id=2025021243
+2026-08-26T16:05:00.444849+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_07_NHL_final_scores.csv | rows=11
+2026-08-26T16:05:00.444898+00:00 | Processing official NHL final scores for 2026_04_08
+2026-08-26T16:05:00.444957+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-08
+2026-08-26T16:05:00.752953+00:00 | DRAT CHECK MISSING: 2026_04_08 | Sabres at Rangers | official_game_id=2025021244
+2026-08-26T16:05:00.753109+00:00 | DRAT CHECK MISSING: 2026_04_08 | Capitals at Maple Leafs | official_game_id=2025021245
+2026-08-26T16:05:00.753212+00:00 | DRAT CHECK MISSING: 2026_04_08 | Oilers at Sharks | official_game_id=2025021246
+2026-08-26T16:05:00.755724+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_08_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:00.755773+00:00 | Processing official NHL final scores for 2026_04_09
+2026-08-26T16:05:00.755831+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-09
+2026-08-26T16:05:01.125172+00:00 | DRAT CHECK MISSING: 2026_04_09 | Maple Leafs at Islanders | official_game_id=2025021252
+2026-08-26T16:05:01.125348+00:00 | DRAT CHECK MISSING: 2026_04_09 | Blue Jackets at Sabres | official_game_id=2025021247
+2026-08-26T16:05:01.125458+00:00 | DRAT CHECK MISSING: 2026_04_09 | Lightning at Canadiens | official_game_id=2025021248
+2026-08-26T16:05:01.125559+00:00 | DRAT CHECK MISSING: 2026_04_09 | Panthers at Senators | official_game_id=2025021249
+2026-08-26T16:05:01.125659+00:00 | DRAT CHECK MISSING: 2026_04_09 | Flyers at Red Wings | official_game_id=2025021250
+2026-08-26T16:05:01.125764+00:00 | DRAT CHECK MISSING: 2026_04_09 | Penguins at Devils | official_game_id=2025021251
+2026-08-26T16:05:01.125861+00:00 | DRAT CHECK MISSING: 2026_04_09 | Jets at Blues | official_game_id=2025021253
+2026-08-26T16:05:01.125956+00:00 | DRAT CHECK MISSING: 2026_04_09 | Hurricanes at Blackhawks | official_game_id=2025021255
+2026-08-26T16:05:01.126050+00:00 | DRAT CHECK MISSING: 2026_04_09 | Wild at Stars | official_game_id=2025021254
+2026-08-26T16:05:01.126157+00:00 | DRAT CHECK MISSING: 2026_04_09 | Flames at Avalanche | official_game_id=2025021256
+2026-08-26T16:05:01.126251+00:00 | DRAT CHECK MISSING: 2026_04_09 | Predators at Mammoth | official_game_id=2025021257
+2026-08-26T16:05:01.126385+00:00 | DRAT CHECK MISSING: 2026_04_09 | Sharks at Ducks | official_game_id=2025021258
+2026-08-26T16:05:01.126499+00:00 | DRAT CHECK MISSING: 2026_04_09 | Golden Knights at Kraken | official_game_id=2025021259
+2026-08-26T16:05:01.126595+00:00 | DRAT CHECK MISSING: 2026_04_09 | Canucks at Kings | official_game_id=2025021260
+2026-08-26T16:05:01.129263+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_09_NHL_final_scores.csv | rows=14
+2026-08-26T16:05:01.129331+00:00 | Processing official NHL final scores for 2026_04_11
+2026-08-26T16:05:01.129392+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-11
+2026-08-26T16:05:01.540528+00:00 | DRAT CHECK MISSING: 2026_04_11 | Lightning at Bruins | official_game_id=2025021261
+2026-08-26T16:05:01.540682+00:00 | DRAT CHECK MISSING: 2026_04_11 | Senators at Islanders | official_game_id=2025021262
+2026-08-26T16:05:01.540786+00:00 | DRAT CHECK MISSING: 2026_04_11 | Capitals at Penguins | official_game_id=2025021263
+2026-08-26T16:05:01.540888+00:00 | DRAT CHECK MISSING: 2026_04_11 | Oilers at Kings | official_game_id=2025021264
+2026-08-26T16:05:01.540989+00:00 | DRAT CHECK MISSING: 2026_04_11 | Devils at Red Wings | official_game_id=2025021265
+2026-08-26T16:05:01.541089+00:00 | DRAT CHECK MISSING: 2026_04_11 | Blues at Blackhawks | official_game_id=2025021266
+2026-08-26T16:05:01.541186+00:00 | DRAT CHECK MISSING: 2026_04_11 | Wild at Predators | official_game_id=2025021267
+2026-08-26T16:05:01.541283+00:00 | DRAT CHECK MISSING: 2026_04_11 | Rangers at Stars | official_game_id=2025021268
+2026-08-26T16:05:01.541420+00:00 | DRAT CHECK MISSING: 2026_04_11 | Hurricanes at Mammoth | official_game_id=2025021269
+2026-08-26T16:05:01.541531+00:00 | DRAT CHECK MISSING: 2026_04_11 | Panthers at Maple Leafs | official_game_id=2025021270
+2026-08-26T16:05:01.541629+00:00 | DRAT CHECK MISSING: 2026_04_11 | Blue Jackets at Canadiens | official_game_id=2025021271
+2026-08-26T16:05:01.541725+00:00 | DRAT CHECK MISSING: 2026_04_11 | Flyers at Jets | official_game_id=2025021272
+2026-08-26T16:05:01.541819+00:00 | DRAT CHECK MISSING: 2026_04_11 | Flames at Kraken | official_game_id=2025021273
+2026-08-26T16:05:01.541915+00:00 | DRAT CHECK MISSING: 2026_04_11 | Golden Knights at Avalanche | official_game_id=2025021274
+2026-08-26T16:05:01.542010+00:00 | DRAT CHECK MISSING: 2026_04_11 | Canucks at Sharks | official_game_id=2025021275
+2026-08-26T16:05:01.544565+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_11_NHL_final_scores.csv | rows=15
+2026-08-26T16:05:01.544614+00:00 | Processing official NHL final scores for 2026_04_12
+2026-08-26T16:05:01.544673+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-12
+2026-08-26T16:05:01.893552+00:00 | DRAT CHECK MISSING: 2026_04_12 | Penguins at Capitals | official_game_id=2025021276
+2026-08-26T16:05:01.893708+00:00 | DRAT CHECK MISSING: 2026_04_12 | Canadiens at Islanders | official_game_id=2025021277
+2026-08-26T16:05:01.893813+00:00 | DRAT CHECK MISSING: 2026_04_12 | Bruins at Blue Jackets | official_game_id=2025021278
+2026-08-26T16:05:01.893914+00:00 | DRAT CHECK MISSING: 2026_04_12 | Senators at Devils | official_game_id=2025021279
+2026-08-26T16:05:01.894011+00:00 | DRAT CHECK MISSING: 2026_04_12 | Canucks at Ducks | official_game_id=2025021280
+2026-08-26T16:05:01.894108+00:00 | DRAT CHECK MISSING: 2026_04_12 | Mammoth at Flames | official_game_id=2025021281
+2026-08-26T16:05:01.896684+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_12_NHL_final_scores.csv | rows=6
+2026-08-26T16:05:01.896732+00:00 | Processing official NHL final scores for 2026_04_13
+2026-08-26T16:05:01.896790+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-13
+2026-08-26T16:05:02.227095+00:00 | DRAT CHECK MISSING: 2026_04_13 | Red Wings at Lightning | official_game_id=2025021282
+2026-08-26T16:05:02.227247+00:00 | DRAT CHECK MISSING: 2026_04_13 | Rangers at Panthers | official_game_id=2025021283
+2026-08-26T16:05:02.227374+00:00 | DRAT CHECK MISSING: 2026_04_13 | Hurricanes at Flyers | official_game_id=2025021284
+2026-08-26T16:05:02.227479+00:00 | DRAT CHECK MISSING: 2026_04_13 | Stars at Maple Leafs | official_game_id=2025021285
+2026-08-26T16:05:02.227591+00:00 | DRAT CHECK MISSING: 2026_04_13 | Wild at Blues | official_game_id=2025021286
+2026-08-26T16:05:02.227688+00:00 | DRAT CHECK MISSING: 2026_04_13 | Sharks at Predators | official_game_id=2025021287
+2026-08-26T16:05:02.227786+00:00 | DRAT CHECK MISSING: 2026_04_13 | Sabres at Blackhawks | official_game_id=2025021288
+2026-08-26T16:05:02.227883+00:00 | DRAT CHECK MISSING: 2026_04_13 | Avalanche at Oilers | official_game_id=2025021289
+2026-08-26T16:05:02.227985+00:00 | DRAT CHECK MISSING: 2026_04_13 | Kings at Kraken | official_game_id=2025021291
+2026-08-26T16:05:02.228083+00:00 | DRAT CHECK MISSING: 2026_04_13 | Jets at Golden Knights | official_game_id=2025021290
+2026-08-26T16:05:02.230774+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_13_NHL_final_scores.csv | rows=10
+2026-08-26T16:05:02.230823+00:00 | Processing official NHL final scores for 2026_04_14
+2026-08-26T16:05:02.230880+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-14
+2026-08-26T16:05:02.556921+00:00 | DRAT CHECK MISSING: 2026_04_14 | Devils at Bruins | official_game_id=2025021292
+2026-08-26T16:05:02.557072+00:00 | DRAT CHECK MISSING: 2026_04_14 | Hurricanes at Islanders | official_game_id=2025021293
+2026-08-26T16:05:02.557176+00:00 | DRAT CHECK MISSING: 2026_04_14 | Canadiens at Flyers | official_game_id=2025021294
+2026-08-26T16:05:02.557279+00:00 | DRAT CHECK MISSING: 2026_04_14 | Capitals at Blue Jackets | official_game_id=2025021295
+2026-08-26T16:05:02.557404+00:00 | DRAT CHECK MISSING: 2026_04_14 | Ducks at Wild | official_game_id=2025021296
+2026-08-26T16:05:02.557503+00:00 | DRAT CHECK MISSING: 2026_04_14 | Jets at Mammoth | official_game_id=2025021297
+2026-08-26T16:05:02.557599+00:00 | DRAT CHECK MISSING: 2026_04_14 | Avalanche at Flames | official_game_id=2025021298
+2026-08-26T16:05:02.557693+00:00 | DRAT CHECK MISSING: 2026_04_14 | Penguins at Blues | official_game_id=2025021299
+2026-08-26T16:05:02.557788+00:00 | DRAT CHECK MISSING: 2026_04_14 | Kings at Canucks | official_game_id=2025021300
+2026-08-26T16:05:02.560422+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_14_NHL_final_scores.csv | rows=9
+2026-08-26T16:05:02.560471+00:00 | Processing official NHL final scores for 2026_04_15
+2026-08-26T16:05:02.560529+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-15
+2026-08-26T16:05:02.955375+00:00 | DRAT CHECK MISSING: 2026_04_15 | Stars at Sabres | official_game_id=2025021301
+2026-08-26T16:05:02.955520+00:00 | DRAT CHECK MISSING: 2026_04_15 | Rangers at Lightning | official_game_id=2025021302
+2026-08-26T16:05:02.955625+00:00 | DRAT CHECK MISSING: 2026_04_15 | Red Wings at Panthers | official_game_id=2025021303
+2026-08-26T16:05:02.955726+00:00 | DRAT CHECK MISSING: 2026_04_15 | Maple Leafs at Senators | official_game_id=2025021304
+2026-08-26T16:05:02.955824+00:00 | DRAT CHECK MISSING: 2026_04_15 | Sharks at Blackhawks | official_game_id=2025021305
+2026-08-26T16:05:02.955923+00:00 | DRAT CHECK MISSING: 2026_04_15 | Kraken at Golden Knights | official_game_id=2025021306
+2026-08-26T16:05:02.958504+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_15_NHL_final_scores.csv | rows=6
+2026-08-26T16:05:02.958553+00:00 | Processing official NHL final scores for 2026_04_16
+2026-08-26T16:05:02.958609+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-16
+2026-08-26T16:05:03.447172+00:00 | DRAT CHECK MISSING: 2026_04_16 | Blues at Mammoth | official_game_id=2025021309
+2026-08-26T16:05:03.447346+00:00 | DRAT CHECK MISSING: 2026_04_16 | Ducks at Predators | official_game_id=2025021307
+2026-08-26T16:05:03.447454+00:00 | DRAT CHECK MISSING: 2026_04_16 | Sharks at Jets | official_game_id=2025021308
+2026-08-26T16:05:03.447554+00:00 | DRAT CHECK MISSING: 2026_04_16 | Kings at Flames | official_game_id=2025021310
+2026-08-26T16:05:03.447672+00:00 | DRAT CHECK MISSING: 2026_04_16 | Canucks at Oilers | official_game_id=2025021311
+2026-08-26T16:05:03.447772+00:00 | DRAT CHECK MISSING: 2026_04_16 | Kraken at Avalanche | official_game_id=2025021312
+2026-08-26T16:05:03.450581+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_16_NHL_final_scores.csv | rows=6
+2026-08-26T16:05:03.450641+00:00 | Processing official NHL final scores for 2026_04_18
+2026-08-26T16:05:03.450707+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-18
+2026-08-26T16:05:03.840731+00:00 | DRAT CHECK MISSING: 2026_04_18 | Senators at Hurricanes | official_game_id=2025030131
+2026-08-26T16:05:03.840882+00:00 | DRAT CHECK MISSING: 2026_04_18 | Wild at Stars | official_game_id=2025030161
+2026-08-26T16:05:03.840985+00:00 | DRAT CHECK MISSING: 2026_04_18 | Flyers at Penguins | official_game_id=2025030141
+2026-08-26T16:05:03.843725+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_18_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:03.843774+00:00 | Processing official NHL final scores for 2026_04_19
+2026-08-26T16:05:03.843831+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-19
+2026-08-26T16:05:04.297732+00:00 | DRAT CHECK MISSING: 2026_04_19 | Kings at Avalanche | official_game_id=2025030151
+2026-08-26T16:05:04.297882+00:00 | DRAT CHECK MISSING: 2026_04_19 | Canadiens at Lightning | official_game_id=2025030121
+2026-08-26T16:05:04.297986+00:00 | DRAT CHECK MISSING: 2026_04_19 | Bruins at Sabres | official_game_id=2025030111
+2026-08-26T16:05:04.298089+00:00 | DRAT CHECK MISSING: 2026_04_19 | Mammoth at Golden Knights | official_game_id=2025030171
+2026-08-26T16:05:04.300765+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_19_NHL_final_scores.csv | rows=4
+2026-08-26T16:05:04.300813+00:00 | Processing official NHL final scores for 2026_04_20
+2026-08-26T16:05:04.300871+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-20
+2026-08-26T16:05:04.613269+00:00 | DRAT CHECK MISSING: 2026_04_20 | Flyers at Penguins | official_game_id=2025030142
+2026-08-26T16:05:04.613429+00:00 | DRAT CHECK MISSING: 2026_04_20 | Senators at Hurricanes | official_game_id=2025030132
+2026-08-26T16:05:04.613533+00:00 | DRAT CHECK MISSING: 2026_04_20 | Wild at Stars | official_game_id=2025030162
+2026-08-26T16:05:04.613632+00:00 | DRAT CHECK MISSING: 2026_04_20 | Ducks at Oilers | official_game_id=2025030181
+2026-08-26T16:05:04.616230+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_20_NHL_final_scores.csv | rows=4
+2026-08-26T16:05:04.616278+00:00 | Processing official NHL final scores for 2026_04_21
+2026-08-26T16:05:04.616357+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-21
+2026-08-26T16:05:04.897067+00:00 | DRAT CHECK MISSING: 2026_04_21 | Canadiens at Lightning | official_game_id=2025030122
+2026-08-26T16:05:04.897231+00:00 | DRAT CHECK MISSING: 2026_04_21 | Bruins at Sabres | official_game_id=2025030112
+2026-08-26T16:05:04.897361+00:00 | DRAT CHECK MISSING: 2026_04_21 | Mammoth at Golden Knights | official_game_id=2025030172
+2026-08-26T16:05:04.897466+00:00 | DRAT CHECK MISSING: 2026_04_21 | Kings at Avalanche | official_game_id=2025030152
+2026-08-26T16:05:04.900144+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_21_NHL_final_scores.csv | rows=4
+2026-08-26T16:05:04.900194+00:00 | Processing official NHL final scores for 2026_04_22
+2026-08-26T16:05:04.900275+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-22
+2026-08-26T16:05:05.238284+00:00 | DRAT CHECK MISSING: 2026_04_22 | Penguins at Flyers | official_game_id=2025030143
+2026-08-26T16:05:05.238475+00:00 | DRAT CHECK MISSING: 2026_04_22 | Stars at Wild | official_game_id=2025030163
+2026-08-26T16:05:05.238582+00:00 | DRAT CHECK MISSING: 2026_04_22 | Ducks at Oilers | official_game_id=2025030182
+2026-08-26T16:05:05.241084+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_22_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:05.241133+00:00 | Processing official NHL final scores for 2026_04_23
+2026-08-26T16:05:05.241191+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-23
+2026-08-26T16:05:05.639239+00:00 | DRAT CHECK MISSING: 2026_04_23 | Sabres at Bruins | official_game_id=2025030113
+2026-08-26T16:05:05.639419+00:00 | DRAT CHECK MISSING: 2026_04_23 | Hurricanes at Senators | official_game_id=2025030133
+2026-08-26T16:05:05.639524+00:00 | DRAT CHECK MISSING: 2026_04_23 | Avalanche at Kings | official_game_id=2025030153
+2026-08-26T16:05:05.642005+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_23_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:05.642055+00:00 | Processing official NHL final scores for 2026_04_24
+2026-08-26T16:05:05.642113+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-24
+2026-08-26T16:05:05.959202+00:00 | DRAT CHECK MISSING: 2026_04_24 | Lightning at Canadiens | official_game_id=2025030123
+2026-08-26T16:05:05.959374+00:00 | DRAT CHECK MISSING: 2026_04_24 | Golden Knights at Mammoth | official_game_id=2025030173
+2026-08-26T16:05:05.959482+00:00 | DRAT CHECK MISSING: 2026_04_24 | Oilers at Ducks | official_game_id=2025030183
+2026-08-26T16:05:05.962102+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_24_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:05.962152+00:00 | Processing official NHL final scores for 2026_04_25
+2026-08-26T16:05:05.962230+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-25
+2026-08-26T16:05:06.277763+00:00 | DRAT CHECK MISSING: 2026_04_25 | Hurricanes at Senators | official_game_id=2025030134
+2026-08-26T16:05:06.277916+00:00 | DRAT CHECK MISSING: 2026_04_25 | Stars at Wild | official_game_id=2025030164
+2026-08-26T16:05:06.278019+00:00 | DRAT CHECK MISSING: 2026_04_25 | Penguins at Flyers | official_game_id=2025030144
+2026-08-26T16:05:06.280710+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_25_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:06.280759+00:00 | Processing official NHL final scores for 2026_04_26
+2026-08-26T16:05:06.280826+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-26
+2026-08-26T16:05:06.644281+00:00 | DRAT CHECK MISSING: 2026_04_26 | Sabres at Bruins | official_game_id=2025030114
+2026-08-26T16:05:06.644457+00:00 | DRAT CHECK MISSING: 2026_04_26 | Avalanche at Kings | official_game_id=2025030154
+2026-08-26T16:05:06.644561+00:00 | DRAT CHECK MISSING: 2026_04_26 | Lightning at Canadiens | official_game_id=2025030124
+2026-08-26T16:05:06.644662+00:00 | DRAT CHECK MISSING: 2026_04_26 | Oilers at Ducks | official_game_id=2025030184
+2026-08-26T16:05:06.647345+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_26_NHL_final_scores.csv | rows=4
+2026-08-26T16:05:06.647396+00:00 | Processing official NHL final scores for 2026_04_27
+2026-08-26T16:05:06.647468+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-27
+2026-08-26T16:05:06.946710+00:00 | DRAT CHECK MISSING: 2026_04_27 | Flyers at Penguins | official_game_id=2025030145
+2026-08-26T16:05:06.946863+00:00 | DRAT CHECK MISSING: 2026_04_27 | Golden Knights at Mammoth | official_game_id=2025030174
+2026-08-26T16:05:06.949377+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_27_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:06.949433+00:00 | Processing official NHL final scores for 2026_04_28
+2026-08-26T16:05:06.949504+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-28
+2026-08-26T16:05:07.252285+00:00 | DRAT CHECK MISSING: 2026_04_28 | Bruins at Sabres | official_game_id=2025030115
+2026-08-26T16:05:07.252463+00:00 | DRAT CHECK MISSING: 2026_04_28 | Wild at Stars | official_game_id=2025030165
+2026-08-26T16:05:07.252567+00:00 | DRAT CHECK MISSING: 2026_04_28 | Ducks at Oilers | official_game_id=2025030185
+2026-08-26T16:05:07.255151+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_28_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:07.255200+00:00 | Processing official NHL final scores for 2026_04_29
+2026-08-26T16:05:07.255259+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-29
+2026-08-26T16:05:07.568952+00:00 | DRAT CHECK MISSING: 2026_04_29 | Canadiens at Lightning | official_game_id=2025030125
+2026-08-26T16:05:07.569103+00:00 | DRAT CHECK MISSING: 2026_04_29 | Penguins at Flyers | official_game_id=2025030146
+2026-08-26T16:05:07.569211+00:00 | DRAT CHECK MISSING: 2026_04_29 | Mammoth at Golden Knights | official_game_id=2025030175
+2026-08-26T16:05:07.571741+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_29_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:07.571791+00:00 | Processing official NHL final scores for 2026_04_30
+2026-08-26T16:05:07.571849+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-04-30
+2026-08-26T16:05:07.896487+00:00 | DRAT CHECK MISSING: 2026_04_30 | Stars at Wild | official_game_id=2025030166
+2026-08-26T16:05:07.896641+00:00 | DRAT CHECK MISSING: 2026_04_30 | Oilers at Ducks | official_game_id=2025030186
+2026-08-26T16:05:07.899149+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_04_30_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:07.899206+00:00 | Processing official NHL final scores for 2026_05_01
+2026-08-26T16:05:07.899287+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-01
+2026-08-26T16:05:08.207754+00:00 | DRAT CHECK MISSING: 2026_05_01 | Lightning at Canadiens | official_game_id=2025030126
+2026-08-26T16:05:08.207908+00:00 | DRAT CHECK MISSING: 2026_05_01 | Sabres at Bruins | official_game_id=2025030116
+2026-08-26T16:05:08.208015+00:00 | DRAT CHECK MISSING: 2026_05_01 | Golden Knights at Mammoth | official_game_id=2025030176
+2026-08-26T16:05:08.210708+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_01_NHL_final_scores.csv | rows=3
+2026-08-26T16:05:08.210758+00:00 | Processing official NHL final scores for 2026_05_02
+2026-08-26T16:05:08.210816+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-02
+2026-08-26T16:05:08.507557+00:00 | DRAT CHECK MISSING: 2026_05_02 | Flyers at Hurricanes | official_game_id=2025030221
+2026-08-26T16:05:08.510086+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_02_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:08.510135+00:00 | Processing official NHL final scores for 2026_05_03
+2026-08-26T16:05:08.510215+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-03
+2026-08-26T16:05:08.831764+00:00 | DRAT CHECK MISSING: 2026_05_03 | Canadiens at Lightning | official_game_id=2025030127
+2026-08-26T16:05:08.831904+00:00 | DRAT CHECK MISSING: 2026_05_03 | Wild at Avalanche | official_game_id=2025030231
+2026-08-26T16:05:08.834389+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_03_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:08.834446+00:00 | Processing official NHL final scores for 2026_05_04
+2026-08-26T16:05:08.834506+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-04
+2026-08-26T16:05:09.147721+00:00 | DRAT CHECK MISSING: 2026_05_04 | Flyers at Hurricanes | official_game_id=2025030222
+2026-08-26T16:05:09.147876+00:00 | DRAT CHECK MISSING: 2026_05_04 | Ducks at Golden Knights | official_game_id=2025030241
+2026-08-26T16:05:09.150401+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_04_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:09.150451+00:00 | Processing official NHL final scores for 2026_05_05
+2026-08-26T16:05:09.150509+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-05
+2026-08-26T16:05:09.287127+00:00 | DRAT CHECK MISSING: 2026_05_05 | Wild at Avalanche | official_game_id=2025030232
+2026-08-26T16:05:09.289662+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_05_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:09.289711+00:00 | Processing official NHL final scores for 2026_05_06
+2026-08-26T16:05:09.289769+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-06
+2026-08-26T16:05:09.436894+00:00 | DRAT CHECK MISSING: 2026_05_06 | Canadiens at Sabres | official_game_id=2025030211
+2026-08-26T16:05:09.437043+00:00 | DRAT CHECK MISSING: 2026_05_06 | Ducks at Golden Knights | official_game_id=2025030242
+2026-08-26T16:05:09.439587+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_06_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:09.439637+00:00 | Processing official NHL final scores for 2026_05_07
+2026-08-26T16:05:09.439696+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-07
+2026-08-26T16:05:09.767386+00:00 | DRAT CHECK MISSING: 2026_05_07 | Hurricanes at Flyers | official_game_id=2025030223
+2026-08-26T16:05:09.769905+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_07_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:09.769954+00:00 | Processing official NHL final scores for 2026_05_08
+2026-08-26T16:05:09.770013+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-08
+2026-08-26T16:05:10.088869+00:00 | DRAT CHECK MISSING: 2026_05_08 | Canadiens at Sabres | official_game_id=2025030212
+2026-08-26T16:05:10.089019+00:00 | DRAT CHECK MISSING: 2026_05_08 | Golden Knights at Ducks | official_game_id=2025030243
+2026-08-26T16:05:10.091576+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_08_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:10.091625+00:00 | Processing official NHL final scores for 2026_05_09
+2026-08-26T16:05:10.091683+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-09
+2026-08-26T16:05:10.412557+00:00 | DRAT CHECK MISSING: 2026_05_09 | Hurricanes at Flyers | official_game_id=2025030224
+2026-08-26T16:05:10.412711+00:00 | DRAT CHECK MISSING: 2026_05_09 | Avalanche at Wild | official_game_id=2025030233
+2026-08-26T16:05:10.415232+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_09_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:10.415281+00:00 | Processing official NHL final scores for 2026_05_10
+2026-08-26T16:05:10.415362+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-10
+2026-08-26T16:05:10.747213+00:00 | DRAT CHECK MISSING: 2026_05_10 | Sabres at Canadiens | official_game_id=2025030213
+2026-08-26T16:05:10.747392+00:00 | DRAT CHECK MISSING: 2026_05_10 | Golden Knights at Ducks | official_game_id=2025030244
+2026-08-26T16:05:10.749936+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_10_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:10.749990+00:00 | Processing official NHL final scores for 2026_05_11
+2026-08-26T16:05:10.750050+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-11
+2026-08-26T16:05:10.905603+00:00 | DRAT CHECK MISSING: 2026_05_11 | Avalanche at Wild | official_game_id=2025030234
+2026-08-26T16:05:10.908169+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_11_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:10.908221+00:00 | Processing official NHL final scores for 2026_05_12
+2026-08-26T16:05:10.908280+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-12
+2026-08-26T16:05:11.238442+00:00 | DRAT CHECK MISSING: 2026_05_12 | Sabres at Canadiens | official_game_id=2025030214
+2026-08-26T16:05:11.238594+00:00 | DRAT CHECK MISSING: 2026_05_12 | Ducks at Golden Knights | official_game_id=2025030245
+2026-08-26T16:05:11.241160+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_12_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:11.241210+00:00 | Processing official NHL final scores for 2026_05_13
+2026-08-26T16:05:11.241268+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-13
+2026-08-26T16:05:11.600905+00:00 | DRAT CHECK MISSING: 2026_05_13 | Wild at Avalanche | official_game_id=2025030235
+2026-08-26T16:05:11.603438+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_13_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:11.603488+00:00 | Processing official NHL final scores for 2026_05_14
+2026-08-26T16:05:11.603546+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-14
+2026-08-26T16:05:11.793518+00:00 | DRAT CHECK MISSING: 2026_05_14 | Canadiens at Sabres | official_game_id=2025030215
+2026-08-26T16:05:11.793671+00:00 | DRAT CHECK MISSING: 2026_05_14 | Golden Knights at Ducks | official_game_id=2025030246
+2026-08-26T16:05:11.796246+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_14_NHL_final_scores.csv | rows=2
+2026-08-26T16:05:11.796295+00:00 | Processing official NHL final scores for 2026_05_16
+2026-08-26T16:05:11.796376+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-16
+2026-08-26T16:05:12.109869+00:00 | DRAT CHECK MISSING: 2026_05_16 | Sabres at Canadiens | official_game_id=2025030216
+2026-08-26T16:05:12.112429+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_16_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:12.112479+00:00 | Processing official NHL final scores for 2026_05_18
+2026-08-26T16:05:12.112538+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-18
+2026-08-26T16:05:12.440857+00:00 | DRAT CHECK MISSING: 2026_05_18 | Canadiens at Sabres | official_game_id=2025030217
+2026-08-26T16:05:12.443383+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_18_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:12.443433+00:00 | Processing official NHL final scores for 2026_05_20
+2026-08-26T16:05:12.443491+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-20
+2026-08-26T16:05:12.782589+00:00 | DRAT CHECK MISSING: 2026_05_20 | Golden Knights at Avalanche | official_game_id=2025030321
+2026-08-26T16:05:12.785124+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_20_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:12.785173+00:00 | Processing official NHL final scores for 2026_05_21
+2026-08-26T16:05:12.785232+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-21
+2026-08-26T16:05:13.123992+00:00 | DRAT CHECK MISSING: 2026_05_21 | Canadiens at Hurricanes | official_game_id=2025030311
+2026-08-26T16:05:13.126528+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_21_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:13.126577+00:00 | Processing official NHL final scores for 2026_05_22
+2026-08-26T16:05:13.126636+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-22
+2026-08-26T16:05:13.422765+00:00 | DRAT CHECK MISSING: 2026_05_22 | Golden Knights at Avalanche | official_game_id=2025030322
+2026-08-26T16:05:13.425299+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_22_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:13.425369+00:00 | Processing official NHL final scores for 2026_05_23
+2026-08-26T16:05:13.425427+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-23
+2026-08-26T16:05:13.752735+00:00 | DRAT CHECK MISSING: 2026_05_23 | Canadiens at Hurricanes | official_game_id=2025030312
+2026-08-26T16:05:13.755335+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_23_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:13.755386+00:00 | Processing official NHL final scores for 2026_05_24
+2026-08-26T16:05:13.755444+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-24
+2026-08-26T16:05:14.061028+00:00 | DRAT CHECK MISSING: 2026_05_24 | Avalanche at Golden Knights | official_game_id=2025030323
+2026-08-26T16:05:14.063682+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_24_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:14.063732+00:00 | Processing official NHL final scores for 2026_05_25
+2026-08-26T16:05:14.063790+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-25
+2026-08-26T16:05:14.365666+00:00 | DRAT CHECK MISSING: 2026_05_25 | Hurricanes at Canadiens | official_game_id=2025030313
+2026-08-26T16:05:14.368203+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_25_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:14.368263+00:00 | Processing official NHL final scores for 2026_05_26
+2026-08-26T16:05:14.368344+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-26
+2026-08-26T16:05:14.685396+00:00 | DRAT CHECK MISSING: 2026_05_26 | Avalanche at Golden Knights | official_game_id=2025030324
+2026-08-26T16:05:14.688015+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_26_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:14.688065+00:00 | Processing official NHL final scores for 2026_05_27
+2026-08-26T16:05:14.688124+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-27
+2026-08-26T16:05:15.026272+00:00 | DRAT CHECK MISSING: 2026_05_27 | Hurricanes at Canadiens | official_game_id=2025030314
+2026-08-26T16:05:15.028801+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_27_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:15.028851+00:00 | Processing official NHL final scores for 2026_05_29
+2026-08-26T16:05:15.028915+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-05-29
+2026-08-26T16:05:15.352211+00:00 | DRAT CHECK MISSING: 2026_05_29 | Canadiens at Hurricanes | official_game_id=2025030315
+2026-08-26T16:05:15.354851+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_05_29_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:15.354900+00:00 | Processing official NHL final scores for 2026_06_02
+2026-08-26T16:05:15.354958+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-02
+2026-08-26T16:05:15.666825+00:00 | DRAT CHECK MISSING: 2026_06_02 | Golden Knights at Hurricanes | official_game_id=2025030411
+2026-08-26T16:05:15.669385+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_02_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:15.669436+00:00 | Processing official NHL final scores for 2026_06_04
+2026-08-26T16:05:15.669494+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-04
+2026-08-26T16:05:15.981963+00:00 | DRAT CHECK MISSING: 2026_06_04 | Golden Knights at Hurricanes | official_game_id=2025030412
+2026-08-26T16:05:15.984540+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_04_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:15.984590+00:00 | Processing official NHL final scores for 2026_06_06
+2026-08-26T16:05:15.984648+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-06
+2026-08-26T16:05:16.270117+00:00 | DRAT CHECK MISSING: 2026_06_06 | Hurricanes at Golden Knights | official_game_id=2025030413
+2026-08-26T16:05:16.272688+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_06_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:16.272739+00:00 | Processing official NHL final scores for 2026_06_09
+2026-08-26T16:05:16.272811+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-09
+2026-08-26T16:05:16.593287+00:00 | DRAT CHECK MISSING: 2026_06_09 | Hurricanes at Golden Knights | official_game_id=2025030414
+2026-08-26T16:05:16.595958+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_09_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:16.596009+00:00 | Processing official NHL final scores for 2026_06_11
+2026-08-26T16:05:16.596093+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-11
+2026-08-26T16:05:16.754346+00:00 | DRAT CHECK MISSING: 2026_06_11 | Golden Knights at Hurricanes | official_game_id=2025030415
+2026-08-26T16:05:16.756896+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_11_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:16.756946+00:00 | Processing official NHL final scores for 2026_06_14
+2026-08-26T16:05:16.757005+00:00 | Fetching official NHL scores: https://api-web.nhle.com/v1/score/2026-06-14
+2026-08-26T16:05:16.901323+00:00 | DRAT CHECK MISSING: 2026_06_14 | Hurricanes at Golden Knights | official_game_id=2025030416
+2026-08-26T16:05:16.903930+00:00 | WROTE OFFICIAL FINAL SCORES: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/final_scores/2026_06_14_NHL_final_scores.csv | rows=1
+2026-08-26T16:05:16.910980+00:00 | WROTE OFFICIAL NHL GAME STATUS: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/05_final_scores/intermediate/nhl_game_status.csv | rows=276
+2026-08-26T16:05:16.911033+00:00 | Stage 04 dates queried: 68
+2026-08-26T16:05:16.911064+00:00 | Official NHL status rows written: 276
+2026-08-26T16:05:16.911089+00:00 | D-Ratings check files processed: 0
+2026-08-26T16:05:16.911112+00:00 | Official final-score rows written: 276
+2026-08-26T16:05:16.911133+00:00 | Official final-score files written: 68
+2026-08-26T16:05:16.911153+00:00 | === transform_final_scores END ===
