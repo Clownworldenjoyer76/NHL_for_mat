@@ -1,648 +1,648 @@
-=== apply_total_juice RUN 2026-08-26T11:23:47.325589+00:00 ===
-2026-08-26T11:23:47.370426+00:00 | Wiped total output/quarantine CSVs: 211
-2026-08-26T11:23:47.370776+00:00 | INPUT_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced
-2026-08-26T11:23:47.371025+00:00 | OUTPUT_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice
-2026-08-26T11:23:47.371276+00:00 | JUICE_FILE: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\config\juice\nhl_total_juice.csv
-2026-08-26T11:23:47.371507+00:00 | QUARANTINE_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\errors\02_juice
-2026-08-26T11:23:47.386014+00:00 | Input files found: 211
-2026-08-26T11:23:47.386304+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_07_NHL_total.csv
-2026-08-26T11:23:47.400663+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_07_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:47.400929+00:00 | FILE SUMMARY: 2025_10_07_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.401221+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_08_NHL_total.csv
-2026-08-26T11:23:47.417111+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_08_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.417422+00:00 | FILE SUMMARY: 2025_10_08_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.417752+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_09_NHL_total.csv
-2026-08-26T11:23:47.444214+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_09_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:47.444467+00:00 | FILE SUMMARY: 2025_10_09_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.444747+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_11_NHL_total.csv
-2026-08-26T11:23:47.473290+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_11_NHL_total.csv rows=16 applied=16
-2026-08-26T11:23:47.473544+00:00 | FILE SUMMARY: 2025_10_11_NHL_total.csv input=16 accepted=16 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.473829+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_12_NHL_total.csv
-2026-08-26T11:23:47.482315+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_12_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:47.482562+00:00 | FILE SUMMARY: 2025_10_12_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.482846+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_13_NHL_total.csv
-2026-08-26T11:23:47.503097+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_13_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:47.503351+00:00 | FILE SUMMARY: 2025_10_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.503623+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_14_NHL_total.csv
-2026-08-26T11:23:47.521221+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_14_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:47.521473+00:00 | FILE SUMMARY: 2025_10_14_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.521749+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_15_NHL_total.csv
-2026-08-26T11:23:47.534178+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_15_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.534452+00:00 | FILE SUMMARY: 2025_10_15_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.534730+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_16_NHL_total.csv
-2026-08-26T11:23:47.556277+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_16_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:47.556524+00:00 | FILE SUMMARY: 2025_10_16_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.556798+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_17_NHL_total.csv
-2026-08-26T11:23:47.569091+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_17_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.569367+00:00 | FILE SUMMARY: 2025_10_17_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.569639+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_18_NHL_total.csv
-2026-08-26T11:23:47.594232+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_18_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:47.594498+00:00 | FILE SUMMARY: 2025_10_18_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.594802+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_19_NHL_total.csv
-2026-08-26T11:23:47.607588+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_19_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.607864+00:00 | FILE SUMMARY: 2025_10_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.608199+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_20_NHL_total.csv
-2026-08-26T11:23:47.622081+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_20_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:47.622348+00:00 | FILE SUMMARY: 2025_10_20_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.622631+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_21_NHL_total.csv
-2026-08-26T11:23:47.642995+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_21_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:47.643256+00:00 | FILE SUMMARY: 2025_10_21_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.643565+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_22_NHL_total.csv
-2026-08-26T11:23:47.654711+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_22_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:47.654960+00:00 | FILE SUMMARY: 2025_10_22_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.655235+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_23_NHL_total.csv
-2026-08-26T11:23:47.678295+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_23_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:47.678543+00:00 | FILE SUMMARY: 2025_10_23_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.678825+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_24_NHL_total.csv
-2026-08-26T11:23:47.691390+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_24_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.691641+00:00 | FILE SUMMARY: 2025_10_24_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.691936+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_25_NHL_total.csv
-2026-08-26T11:23:47.716607+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_25_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:47.716882+00:00 | FILE SUMMARY: 2025_10_25_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.717183+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_26_NHL_total.csv
-2026-08-26T11:23:47.735642+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_26_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:47.735896+00:00 | FILE SUMMARY: 2025_10_26_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.736182+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_27_NHL_total.csv
-2026-08-26T11:23:47.746131+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_27_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:47.746379+00:00 | FILE SUMMARY: 2025_10_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.746649+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_28_NHL_total.csv
-2026-08-26T11:23:47.774914+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_28_NHL_total.csv rows=16 applied=16
-2026-08-26T11:23:47.775167+00:00 | FILE SUMMARY: 2025_10_28_NHL_total.csv input=16 accepted=16 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.775447+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_29_NHL_total.csv
-2026-08-26T11:23:47.783989+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_29_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:47.784245+00:00 | FILE SUMMARY: 2025_10_29_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.784518+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_30_NHL_total.csv
-2026-08-26T11:23:47.806063+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_30_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:47.806336+00:00 | FILE SUMMARY: 2025_10_30_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.806612+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_31_NHL_total.csv
-2026-08-26T11:23:47.817885+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_31_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:47.818135+00:00 | FILE SUMMARY: 2025_10_31_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.818415+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_01_NHL_total.csv
-2026-08-26T11:23:47.842844+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_01_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:47.843123+00:00 | FILE SUMMARY: 2025_11_01_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.843405+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_02_NHL_total.csv
-2026-08-26T11:23:47.857301+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_02_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:47.857591+00:00 | FILE SUMMARY: 2025_11_02_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.857877+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_03_NHL_total.csv
-2026-08-26T11:23:47.870355+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_03_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.870634+00:00 | FILE SUMMARY: 2025_11_03_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.870914+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_04_NHL_total.csv
-2026-08-26T11:23:47.891178+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_04_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:47.891458+00:00 | FILE SUMMARY: 2025_11_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.891736+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_05_NHL_total.csv
-2026-08-26T11:23:47.905313+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_05_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:47.905558+00:00 | FILE SUMMARY: 2025_11_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.905837+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_06_NHL_total.csv
-2026-08-26T11:23:47.924887+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_06_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:47.925136+00:00 | FILE SUMMARY: 2025_11_06_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.925417+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_07_NHL_total.csv
-2026-08-26T11:23:47.937981+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_07_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.938232+00:00 | FILE SUMMARY: 2025_11_07_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.938544+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_08_NHL_total.csv
-2026-08-26T11:23:47.962992+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_08_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:47.963256+00:00 | FILE SUMMARY: 2025_11_08_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.963540+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_09_NHL_total.csv
-2026-08-26T11:23:47.981561+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_09_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:47.981820+00:00 | FILE SUMMARY: 2025_11_09_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.982115+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_10_NHL_total.csv
-2026-08-26T11:23:47.994660+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_10_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:47.994903+00:00 | FILE SUMMARY: 2025_11_10_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:47.995176+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_11_NHL_total.csv
-2026-08-26T11:23:48.014088+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_11_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:48.014339+00:00 | FILE SUMMARY: 2025_11_11_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.014619+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_12_NHL_total.csv
-2026-08-26T11:23:48.027234+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_12_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.027484+00:00 | FILE SUMMARY: 2025_11_12_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.027754+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_13_NHL_total.csv
-2026-08-26T11:23:48.048304+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_13_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.048563+00:00 | FILE SUMMARY: 2025_11_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.048908+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_14_NHL_total.csv
-2026-08-26T11:23:48.061468+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_14_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.061716+00:00 | FILE SUMMARY: 2025_11_14_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.061995+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_15_NHL_total.csv
-2026-08-26T11:23:48.086561+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_15_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.086815+00:00 | FILE SUMMARY: 2025_11_15_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.087098+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_16_NHL_total.csv
-2026-08-26T11:23:48.101157+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_16_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.101423+00:00 | FILE SUMMARY: 2025_11_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.101707+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_17_NHL_total.csv
-2026-08-26T11:23:48.117143+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_17_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:48.117415+00:00 | FILE SUMMARY: 2025_11_17_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.117780+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_18_NHL_total.csv
-2026-08-26T11:23:48.136216+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_18_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:48.136470+00:00 | FILE SUMMARY: 2025_11_18_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.136762+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_19_NHL_total.csv
-2026-08-26T11:23:48.149516+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_19_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.149768+00:00 | FILE SUMMARY: 2025_11_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.150047+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_20_NHL_total.csv
-2026-08-26T11:23:48.173500+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_20_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:48.173773+00:00 | FILE SUMMARY: 2025_11_20_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.174060+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_21_NHL_total.csv
-2026-08-26T11:23:48.186698+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_21_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.186969+00:00 | FILE SUMMARY: 2025_11_21_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.187282+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_22_NHL_total.csv
-2026-08-26T11:23:48.210602+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_22_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:48.210851+00:00 | FILE SUMMARY: 2025_11_22_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.211134+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_23_NHL_total.csv
-2026-08-26T11:23:48.226469+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_23_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:48.226721+00:00 | FILE SUMMARY: 2025_11_23_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.227003+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_24_NHL_total.csv
-2026-08-26T11:23:48.243617+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_24_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:48.243901+00:00 | FILE SUMMARY: 2025_11_24_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.244183+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_25_NHL_total.csv
-2026-08-26T11:23:48.252994+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_25_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:48.253252+00:00 | FILE SUMMARY: 2025_11_25_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.253546+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_26_NHL_total.csv
-2026-08-26T11:23:48.280819+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_26_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:48.281074+00:00 | FILE SUMMARY: 2025_11_26_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.281369+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_28_NHL_total.csv
-2026-08-26T11:23:48.308949+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_28_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:48.309203+00:00 | FILE SUMMARY: 2025_11_28_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.309497+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_29_NHL_total.csv
-2026-08-26T11:23:48.331430+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_29_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:48.331718+00:00 | FILE SUMMARY: 2025_11_29_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.332038+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_30_NHL_total.csv
-2026-08-26T11:23:48.344818+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_30_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.345073+00:00 | FILE SUMMARY: 2025_11_30_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.345355+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_01_NHL_total.csv
-2026-08-26T11:23:48.359124+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_01_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.359374+00:00 | FILE SUMMARY: 2025_12_01_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.359676+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_02_NHL_total.csv
-2026-08-26T11:23:48.380471+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_02_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.380726+00:00 | FILE SUMMARY: 2025_12_02_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.381010+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_03_NHL_total.csv
-2026-08-26T11:23:48.394827+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_03_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.395125+00:00 | FILE SUMMARY: 2025_12_03_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.395407+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_04_NHL_total.csv
-2026-08-26T11:23:48.415696+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_04_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.415946+00:00 | FILE SUMMARY: 2025_12_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.416225+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_05_NHL_total.csv
-2026-08-26T11:23:48.429921+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_05_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.430168+00:00 | FILE SUMMARY: 2025_12_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.430439+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_06_NHL_total.csv
-2026-08-26T11:23:48.453158+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_06_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:48.453403+00:00 | FILE SUMMARY: 2025_12_06_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.453680+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_07_NHL_total.csv
-2026-08-26T11:23:48.471277+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_07_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:48.471556+00:00 | FILE SUMMARY: 2025_12_07_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.471837+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_08_NHL_total.csv
-2026-08-26T11:23:48.485704+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_08_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.485963+00:00 | FILE SUMMARY: 2025_12_08_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.486250+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_09_NHL_total.csv
-2026-08-26T11:23:48.506550+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_09_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.506799+00:00 | FILE SUMMARY: 2025_12_09_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.507079+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_10_NHL_total.csv
-2026-08-26T11:23:48.524980+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_10_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.525297+00:00 | FILE SUMMARY: 2025_12_10_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.525629+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_11_NHL_total.csv
-2026-08-26T11:23:48.550211+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_11_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.550464+00:00 | FILE SUMMARY: 2025_12_11_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.550744+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_12_NHL_total.csv
-2026-08-26T11:23:48.560318+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_12_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:48.560586+00:00 | FILE SUMMARY: 2025_12_12_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.560855+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_13_NHL_total.csv
-2026-08-26T11:23:48.585105+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_13_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.585352+00:00 | FILE SUMMARY: 2025_12_13_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.585636+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_14_NHL_total.csv
-2026-08-26T11:23:48.601857+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_14_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:48.602108+00:00 | FILE SUMMARY: 2025_12_14_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.602393+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_15_NHL_total.csv
-2026-08-26T11:23:48.616306+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_15_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.616551+00:00 | FILE SUMMARY: 2025_12_15_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.616826+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_16_NHL_total.csv
-2026-08-26T11:23:48.637044+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_16_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.637311+00:00 | FILE SUMMARY: 2025_12_16_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.637618+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_17_NHL_total.csv
-2026-08-26T11:23:48.651234+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_17_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.651478+00:00 | FILE SUMMARY: 2025_12_17_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.651754+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_18_NHL_total.csv
-2026-08-26T11:23:48.672158+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_18_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.672406+00:00 | FILE SUMMARY: 2025_12_18_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.672683+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_19_NHL_total.csv
-2026-08-26T11:23:48.686408+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_19_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.686665+00:00 | FILE SUMMARY: 2025_12_19_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.686940+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_20_NHL_total.csv
-2026-08-26T11:23:48.710955+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_20_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.711208+00:00 | FILE SUMMARY: 2025_12_20_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.711483+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_21_NHL_total.csv
-2026-08-26T11:23:48.730340+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_21_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:48.730585+00:00 | FILE SUMMARY: 2025_12_21_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.730861+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_22_NHL_total.csv
-2026-08-26T11:23:48.743257+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_22_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.743504+00:00 | FILE SUMMARY: 2025_12_22_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.743780+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_23_NHL_total.csv
-2026-08-26T11:23:48.766554+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_23_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:48.766802+00:00 | FILE SUMMARY: 2025_12_23_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.767077+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_27_NHL_total.csv
-2026-08-26T11:23:48.791305+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_27_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.791552+00:00 | FILE SUMMARY: 2025_12_27_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.791835+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_28_NHL_total.csv
-2026-08-26T11:23:48.805521+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_28_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.805815+00:00 | FILE SUMMARY: 2025_12_28_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.806091+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_29_NHL_total.csv
-2026-08-26T11:23:48.827766+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_29_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:48.828039+00:00 | FILE SUMMARY: 2025_12_29_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.828322+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_30_NHL_total.csv
-2026-08-26T11:23:48.842160+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_30_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.842409+00:00 | FILE SUMMARY: 2025_12_30_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.842707+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_31_NHL_total.csv
-2026-08-26T11:23:48.862926+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_31_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.863230+00:00 | FILE SUMMARY: 2025_12_31_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.863521+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_01_NHL_total.csv
-2026-08-26T11:23:48.881146+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_01_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:48.881423+00:00 | FILE SUMMARY: 2026_01_01_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.881706+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_02_NHL_total.csv
-2026-08-26T11:23:48.894129+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_02_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:48.894375+00:00 | FILE SUMMARY: 2026_01_02_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.894648+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_03_NHL_total.csv
-2026-08-26T11:23:48.919044+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_03_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:48.919289+00:00 | FILE SUMMARY: 2026_01_03_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.919564+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_04_NHL_total.csv
-2026-08-26T11:23:48.933157+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_04_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.933402+00:00 | FILE SUMMARY: 2026_01_04_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.933675+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_05_NHL_total.csv
-2026-08-26T11:23:48.947906+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_05_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.948162+00:00 | FILE SUMMARY: 2026_01_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.948454+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_06_NHL_total.csv
-2026-08-26T11:23:48.969213+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_06_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:48.969467+00:00 | FILE SUMMARY: 2026_01_06_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.969751+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_07_NHL_total.csv
-2026-08-26T11:23:48.983517+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_07_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:48.983759+00:00 | FILE SUMMARY: 2026_01_07_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:48.984033+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_08_NHL_total.csv
-2026-08-26T11:23:49.007021+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_08_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:49.007277+00:00 | FILE SUMMARY: 2026_01_08_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.007556+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_09_NHL_total.csv
-2026-08-26T11:23:49.018908+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_09_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:49.019164+00:00 | FILE SUMMARY: 2026_01_09_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.019452+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_10_NHL_total.csv
-2026-08-26T11:23:49.045606+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_10_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:49.045885+00:00 | FILE SUMMARY: 2026_01_10_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.046175+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_11_NHL_total.csv
-2026-08-26T11:23:49.060155+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_11_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.060404+00:00 | FILE SUMMARY: 2026_01_11_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.060706+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_12_NHL_total.csv
-2026-08-26T11:23:49.079886+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_12_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:49.080134+00:00 | FILE SUMMARY: 2026_01_12_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.080421+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_13_NHL_total.csv
-2026-08-26T11:23:49.101115+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_13_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.101365+00:00 | FILE SUMMARY: 2026_01_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.101652+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_14_NHL_total.csv
-2026-08-26T11:23:49.114092+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_14_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:49.114343+00:00 | FILE SUMMARY: 2026_01_14_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.114615+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_15_NHL_total.csv
-2026-08-26T11:23:49.134866+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_15_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.135144+00:00 | FILE SUMMARY: 2026_01_15_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.135423+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_16_NHL_total.csv
-2026-08-26T11:23:49.149077+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_16_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.149321+00:00 | FILE SUMMARY: 2026_01_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.149595+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_17_NHL_total.csv
-2026-08-26T11:23:49.173666+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_17_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:49.173911+00:00 | FILE SUMMARY: 2026_01_17_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.174184+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_18_NHL_total.csv
-2026-08-26T11:23:49.185654+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_18_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:49.185910+00:00 | FILE SUMMARY: 2026_01_18_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.186237+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_19_NHL_total.csv
-2026-08-26T11:23:49.206755+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_19_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.207005+00:00 | FILE SUMMARY: 2026_01_19_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.207312+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_20_NHL_total.csv
-2026-08-26T11:23:49.225046+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_20_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:49.225322+00:00 | FILE SUMMARY: 2026_01_20_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.225602+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_21_NHL_total.csv
-2026-08-26T11:23:49.240540+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_21_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.240785+00:00 | FILE SUMMARY: 2026_01_21_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.241057+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_22_NHL_total.csv
-2026-08-26T11:23:49.258620+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_22_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:49.258870+00:00 | FILE SUMMARY: 2026_01_22_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.259146+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_23_NHL_total.csv
-2026-08-26T11:23:49.276802+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_23_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:49.277047+00:00 | FILE SUMMARY: 2026_01_23_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.277325+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_24_NHL_total.csv
-2026-08-26T11:23:49.296227+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_24_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:49.296482+00:00 | FILE SUMMARY: 2026_01_24_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.296791+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_25_NHL_total.csv
-2026-08-26T11:23:49.311902+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_25_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.312146+00:00 | FILE SUMMARY: 2026_01_25_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.312417+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_26_NHL_total.csv
-2026-08-26T11:23:49.324983+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_26_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:49.325236+00:00 | FILE SUMMARY: 2026_01_26_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.325556+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_27_NHL_total.csv
-2026-08-26T11:23:49.345794+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_27_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.346041+00:00 | FILE SUMMARY: 2026_01_27_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.346322+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_28_NHL_total.csv
-2026-08-26T11:23:49.357530+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_28_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:49.357778+00:00 | FILE SUMMARY: 2026_01_28_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.358052+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_29_NHL_total.csv
-2026-08-26T11:23:49.384848+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_29_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:49.385100+00:00 | FILE SUMMARY: 2026_01_29_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.385376+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_30_NHL_total.csv
-2026-08-26T11:23:49.393635+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_30_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:49.393882+00:00 | FILE SUMMARY: 2026_01_30_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.394151+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_31_NHL_total.csv
-2026-08-26T11:23:49.419477+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_31_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:49.419761+00:00 | FILE SUMMARY: 2026_01_31_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.420043+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_01_NHL_total.csv
-2026-08-26T11:23:49.430989+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_01_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:49.431234+00:00 | FILE SUMMARY: 2026_02_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.431503+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_02_NHL_total.csv
-2026-08-26T11:23:49.451834+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_02_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.452081+00:00 | FILE SUMMARY: 2026_02_02_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.452361+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_03_NHL_total.csv
-2026-08-26T11:23:49.469215+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_03_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:49.469505+00:00 | FILE SUMMARY: 2026_02_03_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.469842+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_04_NHL_total.csv
-2026-08-26T11:23:49.490791+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_04_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:49.491064+00:00 | FILE SUMMARY: 2026_02_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.491377+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_05_NHL_total.csv
-2026-08-26T11:23:49.508300+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_05_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:49.508563+00:00 | FILE SUMMARY: 2026_02_05_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.508858+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_25_NHL_total.csv
-2026-08-26T11:23:49.527168+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_25_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:49.527470+00:00 | FILE SUMMARY: 2026_02_25_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.527769+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_26_NHL_total.csv
-2026-08-26T11:23:49.551626+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_26_NHL_total.csv rows=12 applied=12
-2026-08-26T11:23:49.551905+00:00 | FILE SUMMARY: 2026_02_26_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.552209+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_27_NHL_total.csv
-2026-08-26T11:23:49.565113+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_27_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:49.565366+00:00 | FILE SUMMARY: 2026_02_27_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.565648+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_28_NHL_total.csv
-2026-08-26T11:23:49.593174+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_28_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:49.593483+00:00 | FILE SUMMARY: 2026_02_28_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.593780+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_01_NHL_total.csv
-2026-08-26T11:23:49.610172+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_01_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.610427+00:00 | FILE SUMMARY: 2026_03_01_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.610744+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_02_NHL_total.csv
-2026-08-26T11:23:49.626226+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_02_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.626478+00:00 | FILE SUMMARY: 2026_03_02_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.626759+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_03_NHL_total.csv
-2026-08-26T11:23:49.649040+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_03_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:49.649306+00:00 | FILE SUMMARY: 2026_03_03_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.649721+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_04_NHL_total.csv
-2026-08-26T11:23:49.665157+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_04_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.665424+00:00 | FILE SUMMARY: 2026_03_04_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.665715+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_05_NHL_total.csv
-2026-08-26T11:23:49.684063+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_05_NHL_total.csv rows=8 applied=8
-2026-08-26T11:23:49.684328+00:00 | FILE SUMMARY: 2026_03_05_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.684626+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_06_NHL_total.csv
-2026-08-26T11:23:49.701480+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_06_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:49.701758+00:00 | FILE SUMMARY: 2026_03_06_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.702053+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_07_NHL_total.csv
-2026-08-26T11:23:49.724151+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_07_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:49.724473+00:00 | FILE SUMMARY: 2026_03_07_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.724782+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_08_NHL_total.csv
-2026-08-26T11:23:49.741704+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_08_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:49.741961+00:00 | FILE SUMMARY: 2026_03_08_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.742249+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_09_NHL_total.csv
-2026-08-26T11:23:49.756908+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_09_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.757166+00:00 | FILE SUMMARY: 2026_03_09_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.757454+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_10_NHL_total.csv
-2026-08-26T11:23:49.782232+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_10_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:49.782485+00:00 | FILE SUMMARY: 2026_03_10_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.782772+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_11_NHL_total.csv
-2026-08-26T11:23:49.793227+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_11_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:49.793491+00:00 | FILE SUMMARY: 2026_03_11_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.793773+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_12_NHL_total.csv
-2026-08-26T11:23:49.819831+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_12_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:49.820089+00:00 | FILE SUMMARY: 2026_03_12_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.820387+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_13_NHL_total.csv
-2026-08-26T11:23:49.830375+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_13_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:49.830646+00:00 | FILE SUMMARY: 2026_03_13_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.830921+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_14_NHL_total.csv
-2026-08-26T11:23:49.856957+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_14_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:49.857209+00:00 | FILE SUMMARY: 2026_03_14_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.857498+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_15_NHL_total.csv
-2026-08-26T11:23:49.872929+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_15_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.873180+00:00 | FILE SUMMARY: 2026_03_15_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.873463+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_16_NHL_total.csv
-2026-08-26T11:23:49.888412+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_16_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.888920+00:00 | FILE SUMMARY: 2026_03_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.889372+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_17_NHL_total.csv
-2026-08-26T11:23:49.909008+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_17_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:49.909275+00:00 | FILE SUMMARY: 2026_03_17_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.909560+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_18_NHL_total.csv
-2026-08-26T11:23:49.929408+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_18_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:49.929839+00:00 | FILE SUMMARY: 2026_03_18_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.930460+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_19_NHL_total.csv
-2026-08-26T11:23:49.957221+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_19_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:49.957483+00:00 | FILE SUMMARY: 2026_03_19_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.957809+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_20_NHL_total.csv
-2026-08-26T11:23:49.975815+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_20_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:49.976157+00:00 | FILE SUMMARY: 2026_03_20_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:49.976591+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_21_NHL_total.csv
-2026-08-26T11:23:50.003776+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_21_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:50.004064+00:00 | FILE SUMMARY: 2026_03_21_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.004370+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_22_NHL_total.csv
-2026-08-26T11:23:50.024826+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_22_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:50.025114+00:00 | FILE SUMMARY: 2026_03_22_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.025410+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_23_NHL_total.csv
-2026-08-26T11:23:50.035144+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_23_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.035489+00:00 | FILE SUMMARY: 2026_03_23_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.035898+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_24_NHL_total.csv
-2026-08-26T11:23:50.068866+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_24_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:50.069220+00:00 | FILE SUMMARY: 2026_03_24_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.069544+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_25_NHL_total.csv
-2026-08-26T11:23:50.079802+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_25_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.080048+00:00 | FILE SUMMARY: 2026_03_25_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.080353+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_26_NHL_total.csv
-2026-08-26T11:23:50.106717+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_26_NHL_total.csv rows=13 applied=13
-2026-08-26T11:23:50.106988+00:00 | FILE SUMMARY: 2026_03_26_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.107292+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_27_NHL_total.csv
-2026-08-26T11:23:50.117693+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_27_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.117987+00:00 | FILE SUMMARY: 2026_03_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.118318+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_28_NHL_total.csv
-2026-08-26T11:23:50.146802+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_28_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:50.147055+00:00 | FILE SUMMARY: 2026_03_28_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.147343+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_29_NHL_total.csv
-2026-08-26T11:23:50.163758+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_29_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:50.164024+00:00 | FILE SUMMARY: 2026_03_29_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.164319+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_30_NHL_total.csv
-2026-08-26T11:23:50.179443+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_30_NHL_total.csv rows=5 applied=5
-2026-08-26T11:23:50.179713+00:00 | FILE SUMMARY: 2026_03_30_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.180033+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_31_NHL_total.csv
-2026-08-26T11:23:50.202690+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_31_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:50.202954+00:00 | FILE SUMMARY: 2026_03_31_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.203272+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_01_NHL_total.csv
-2026-08-26T11:23:50.215000+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_01_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.215248+00:00 | FILE SUMMARY: 2026_04_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.215537+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_02_NHL_total.csv
-2026-08-26T11:23:50.242641+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_02_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:50.242895+00:00 | FILE SUMMARY: 2026_04_02_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.243185+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_03_NHL_total.csv
-2026-08-26T11:23:50.253879+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_03_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.254133+00:00 | FILE SUMMARY: 2026_04_03_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.254435+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_04_NHL_total.csv
-2026-08-26T11:23:50.282682+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_04_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:50.282937+00:00 | FILE SUMMARY: 2026_04_04_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.283226+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_05_NHL_total.csv
-2026-08-26T11:23:50.302496+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_05_NHL_total.csv rows=7 applied=7
-2026-08-26T11:23:50.302771+00:00 | FILE SUMMARY: 2026_04_05_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.303096+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_06_NHL_total.csv
-2026-08-26T11:23:50.316361+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_06_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:50.316612+00:00 | FILE SUMMARY: 2026_04_06_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.316990+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_07_NHL_total.csv
-2026-08-26T11:23:50.341944+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_07_NHL_total.csv rows=11 applied=11
-2026-08-26T11:23:50.342195+00:00 | FILE SUMMARY: 2026_04_07_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.342516+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_08_NHL_total.csv
-2026-08-26T11:23:50.354502+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_08_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.354752+00:00 | FILE SUMMARY: 2026_04_08_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.355046+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_09_NHL_total.csv
-2026-08-26T11:23:50.381395+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_09_NHL_total.csv rows=14 applied=14
-2026-08-26T11:23:50.381669+00:00 | FILE SUMMARY: 2026_04_09_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.381954+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_11_NHL_total.csv
-2026-08-26T11:23:50.410364+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_11_NHL_total.csv rows=15 applied=15
-2026-08-26T11:23:50.410617+00:00 | FILE SUMMARY: 2026_04_11_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.410907+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_12_NHL_total.csv
-2026-08-26T11:23:50.427159+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_12_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:50.427429+00:00 | FILE SUMMARY: 2026_04_12_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.427713+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_13_NHL_total.csv
-2026-08-26T11:23:50.448827+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_13_NHL_total.csv rows=10 applied=10
-2026-08-26T11:23:50.449081+00:00 | FILE SUMMARY: 2026_04_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.449388+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_14_NHL_total.csv
-2026-08-26T11:23:50.469475+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_14_NHL_total.csv rows=9 applied=9
-2026-08-26T11:23:50.469757+00:00 | FILE SUMMARY: 2026_04_14_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.470071+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_15_NHL_total.csv
-2026-08-26T11:23:50.485955+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_15_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:50.486210+00:00 | FILE SUMMARY: 2026_04_15_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.486567+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_16_NHL_total.csv
-2026-08-26T11:23:50.502382+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_16_NHL_total.csv rows=6 applied=6
-2026-08-26T11:23:50.502661+00:00 | FILE SUMMARY: 2026_04_16_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.502956+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_18_NHL_total.csv
-2026-08-26T11:23:50.514182+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_18_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.514425+00:00 | FILE SUMMARY: 2026_04_18_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.514692+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_19_NHL_total.csv
-2026-08-26T11:23:50.527688+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_19_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:50.528777+00:00 | FILE SUMMARY: 2026_04_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.529088+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_20_NHL_total.csv
-2026-08-26T11:23:50.542684+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_20_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:50.542940+00:00 | FILE SUMMARY: 2026_04_20_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.543226+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_21_NHL_total.csv
-2026-08-26T11:23:50.556419+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_21_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:50.556668+00:00 | FILE SUMMARY: 2026_04_21_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.556989+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_22_NHL_total.csv
-2026-08-26T11:23:50.568563+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_22_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.568886+00:00 | FILE SUMMARY: 2026_04_22_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.569239+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_23_NHL_total.csv
-2026-08-26T11:23:50.581148+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_23_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.581418+00:00 | FILE SUMMARY: 2026_04_23_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.581699+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_24_NHL_total.csv
-2026-08-26T11:23:50.593897+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_24_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.594148+00:00 | FILE SUMMARY: 2026_04_24_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.594460+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_25_NHL_total.csv
-2026-08-26T11:23:50.606385+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_25_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.606667+00:00 | FILE SUMMARY: 2026_04_25_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.606974+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_26_NHL_total.csv
-2026-08-26T11:23:50.620133+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_26_NHL_total.csv rows=4 applied=4
-2026-08-26T11:23:50.620381+00:00 | FILE SUMMARY: 2026_04_26_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.620697+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_27_NHL_total.csv
-2026-08-26T11:23:50.630817+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_27_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.631065+00:00 | FILE SUMMARY: 2026_04_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.631339+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_28_NHL_total.csv
-2026-08-26T11:23:50.643012+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_28_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.643281+00:00 | FILE SUMMARY: 2026_04_28_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.643563+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_29_NHL_total.csv
-2026-08-26T11:23:50.655372+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_29_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.655623+00:00 | FILE SUMMARY: 2026_04_29_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.655912+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_30_NHL_total.csv
-2026-08-26T11:23:50.665909+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_30_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.666180+00:00 | FILE SUMMARY: 2026_04_30_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.666453+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_01_NHL_total.csv
-2026-08-26T11:23:50.681287+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_01_NHL_total.csv rows=3 applied=3
-2026-08-26T11:23:50.681537+00:00 | FILE SUMMARY: 2026_05_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.681837+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_02_NHL_total.csv
-2026-08-26T11:23:50.692485+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_02_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.692732+00:00 | FILE SUMMARY: 2026_05_02_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.693021+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_03_NHL_total.csv
-2026-08-26T11:23:50.703550+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_03_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.703801+00:00 | FILE SUMMARY: 2026_05_03_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.704096+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_04_NHL_total.csv
-2026-08-26T11:23:50.714176+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_04_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.714419+00:00 | FILE SUMMARY: 2026_05_04_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.714711+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_05_NHL_total.csv
-2026-08-26T11:23:50.723988+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_05_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.724236+00:00 | FILE SUMMARY: 2026_05_05_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.724516+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_06_NHL_total.csv
-2026-08-26T11:23:50.734625+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_06_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.734967+00:00 | FILE SUMMARY: 2026_05_06_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.735307+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_07_NHL_total.csv
-2026-08-26T11:23:50.744280+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_07_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.744527+00:00 | FILE SUMMARY: 2026_05_07_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.744802+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_08_NHL_total.csv
-2026-08-26T11:23:50.755366+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_08_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.755683+00:00 | FILE SUMMARY: 2026_05_08_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.755975+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_09_NHL_total.csv
-2026-08-26T11:23:50.765904+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_09_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.766200+00:00 | FILE SUMMARY: 2026_05_09_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.766475+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_10_NHL_total.csv
-2026-08-26T11:23:50.776895+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_10_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.777145+00:00 | FILE SUMMARY: 2026_05_10_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.777425+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_11_NHL_total.csv
-2026-08-26T11:23:50.786719+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_11_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.786973+00:00 | FILE SUMMARY: 2026_05_11_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.787277+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_12_NHL_total.csv
-2026-08-26T11:23:50.797410+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_12_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.797666+00:00 | FILE SUMMARY: 2026_05_12_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.797971+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_13_NHL_total.csv
-2026-08-26T11:23:50.807101+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_13_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.807369+00:00 | FILE SUMMARY: 2026_05_13_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.807651+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_14_NHL_total.csv
-2026-08-26T11:23:50.817804+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_14_NHL_total.csv rows=2 applied=2
-2026-08-26T11:23:50.818134+00:00 | FILE SUMMARY: 2026_05_14_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.818496+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_16_NHL_total.csv
-2026-08-26T11:23:50.827764+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_16_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.828012+00:00 | FILE SUMMARY: 2026_05_16_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.828341+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_18_NHL_total.csv
-2026-08-26T11:23:50.837468+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_18_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.837716+00:00 | FILE SUMMARY: 2026_05_18_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.838007+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_20_NHL_total.csv
-2026-08-26T11:23:50.846726+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_20_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.846967+00:00 | FILE SUMMARY: 2026_05_20_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.847243+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_21_NHL_total.csv
-2026-08-26T11:23:50.856269+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_21_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.856515+00:00 | FILE SUMMARY: 2026_05_21_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.856794+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_22_NHL_total.csv
-2026-08-26T11:23:50.865456+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_22_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.865734+00:00 | FILE SUMMARY: 2026_05_22_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.866012+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_23_NHL_total.csv
-2026-08-26T11:23:50.875176+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_23_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.875428+00:00 | FILE SUMMARY: 2026_05_23_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.875703+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_24_NHL_total.csv
-2026-08-26T11:23:50.884000+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_24_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.884303+00:00 | FILE SUMMARY: 2026_05_24_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.884633+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_25_NHL_total.csv
-2026-08-26T11:23:50.893585+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_25_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.893855+00:00 | FILE SUMMARY: 2026_05_25_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.894133+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_26_NHL_total.csv
-2026-08-26T11:23:50.902940+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_26_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.903206+00:00 | FILE SUMMARY: 2026_05_26_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.903506+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_27_NHL_total.csv
-2026-08-26T11:23:50.912150+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_27_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.912391+00:00 | FILE SUMMARY: 2026_05_27_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.912665+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_29_NHL_total.csv
-2026-08-26T11:23:50.921761+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_29_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.922039+00:00 | FILE SUMMARY: 2026_05_29_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.922322+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_02_NHL_total.csv
-2026-08-26T11:23:50.930721+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_02_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.930961+00:00 | FILE SUMMARY: 2026_06_02_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.931252+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_04_NHL_total.csv
-2026-08-26T11:23:50.940290+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_04_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.940536+00:00 | FILE SUMMARY: 2026_06_04_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.940811+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_06_NHL_total.csv
-2026-08-26T11:23:50.949056+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_06_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.949315+00:00 | FILE SUMMARY: 2026_06_06_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.949583+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_09_NHL_total.csv
-2026-08-26T11:23:50.958553+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_09_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.958799+00:00 | FILE SUMMARY: 2026_06_09_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.959125+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_11_NHL_total.csv
-2026-08-26T11:23:50.967461+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_11_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.967768+00:00 | FILE SUMMARY: 2026_06_11_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.968107+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_14_NHL_total.csv
-2026-08-26T11:23:50.977060+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_14_NHL_total.csv rows=1 applied=1
-2026-08-26T11:23:50.977304+00:00 | FILE SUMMARY: 2026_06_14_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
-2026-08-26T11:23:50.977631+00:00 | --- SUMMARY ---
-2026-08-26T11:23:50.977865+00:00 | Files processed: 211
-2026-08-26T11:23:50.978091+00:00 | Files written: 211
-2026-08-26T11:23:50.978317+00:00 | Rows applied: 1393
-2026-08-26T11:23:50.978542+00:00 | Rows quarantined bad: 0
-2026-08-26T11:23:50.978767+00:00 | Rows quarantined no band: 0
-2026-08-26T11:23:50.979039+00:00 | Rows quarantined total: 0
-2026-08-26T11:23:50.979280+00:00 | STATUS: SUCCESS
+=== apply_total_juice RUN 2026-08-26T16:57:24.081391+00:00 ===
+2026-08-26T16:57:24.145602+00:00 | Wiped total output/quarantine CSVs: 211
+2026-08-26T16:57:24.146008+00:00 | INPUT_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced
+2026-08-26T16:57:24.146338+00:00 | OUTPUT_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice
+2026-08-26T16:57:24.146683+00:00 | JUICE_FILE: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\config\juice\nhl_total_juice.csv
+2026-08-26T16:57:24.146981+00:00 | QUARANTINE_DIR: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\errors\02_juice
+2026-08-26T16:57:24.161077+00:00 | Input files found: 211
+2026-08-26T16:57:24.161378+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_07_NHL_total.csv
+2026-08-26T16:57:24.175878+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_07_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:24.176134+00:00 | FILE SUMMARY: 2025_10_07_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.176424+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_08_NHL_total.csv
+2026-08-26T16:57:24.190472+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_08_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.190735+00:00 | FILE SUMMARY: 2025_10_08_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.191020+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_09_NHL_total.csv
+2026-08-26T16:57:24.218061+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_09_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:24.218314+00:00 | FILE SUMMARY: 2025_10_09_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.218605+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_11_NHL_total.csv
+2026-08-26T16:57:24.247760+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_11_NHL_total.csv rows=16 applied=16
+2026-08-26T16:57:24.248011+00:00 | FILE SUMMARY: 2025_10_11_NHL_total.csv input=16 accepted=16 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.248290+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_12_NHL_total.csv
+2026-08-26T16:57:24.257138+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_12_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:24.257391+00:00 | FILE SUMMARY: 2025_10_12_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.257668+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_13_NHL_total.csv
+2026-08-26T16:57:24.279444+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_13_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:24.279697+00:00 | FILE SUMMARY: 2025_10_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.280006+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_14_NHL_total.csv
+2026-08-26T16:57:24.299231+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_14_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:24.299477+00:00 | FILE SUMMARY: 2025_10_14_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.299757+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_15_NHL_total.csv
+2026-08-26T16:57:24.312916+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_15_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.313208+00:00 | FILE SUMMARY: 2025_10_15_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.313499+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_16_NHL_total.csv
+2026-08-26T16:57:24.336837+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_16_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:24.337092+00:00 | FILE SUMMARY: 2025_10_16_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.337381+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_17_NHL_total.csv
+2026-08-26T16:57:24.350466+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_17_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.350719+00:00 | FILE SUMMARY: 2025_10_17_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.351002+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_18_NHL_total.csv
+2026-08-26T16:57:24.376493+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_18_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:24.376752+00:00 | FILE SUMMARY: 2025_10_18_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.377038+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_19_NHL_total.csv
+2026-08-26T16:57:24.390168+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_19_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.390457+00:00 | FILE SUMMARY: 2025_10_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.390732+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_20_NHL_total.csv
+2026-08-26T16:57:24.405092+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_20_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:24.405348+00:00 | FILE SUMMARY: 2025_10_20_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.405624+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_21_NHL_total.csv
+2026-08-26T16:57:24.427054+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_21_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:24.427301+00:00 | FILE SUMMARY: 2025_10_21_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.427581+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_22_NHL_total.csv
+2026-08-26T16:57:24.439464+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_22_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:24.439756+00:00 | FILE SUMMARY: 2025_10_22_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.440092+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_23_NHL_total.csv
+2026-08-26T16:57:24.464295+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_23_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:24.464553+00:00 | FILE SUMMARY: 2025_10_23_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.464860+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_24_NHL_total.csv
+2026-08-26T16:57:24.478085+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_24_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.478337+00:00 | FILE SUMMARY: 2025_10_24_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.478642+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_25_NHL_total.csv
+2026-08-26T16:57:24.503650+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_25_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:24.503901+00:00 | FILE SUMMARY: 2025_10_25_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.504181+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_26_NHL_total.csv
+2026-08-26T16:57:24.522897+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_26_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:24.523166+00:00 | FILE SUMMARY: 2025_10_26_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.523484+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_27_NHL_total.csv
+2026-08-26T16:57:24.533802+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_27_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:24.534050+00:00 | FILE SUMMARY: 2025_10_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.534326+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_28_NHL_total.csv
+2026-08-26T16:57:24.563409+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_28_NHL_total.csv rows=16 applied=16
+2026-08-26T16:57:24.563817+00:00 | FILE SUMMARY: 2025_10_28_NHL_total.csv input=16 accepted=16 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.564312+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_29_NHL_total.csv
+2026-08-26T16:57:24.606245+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_29_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:24.606504+00:00 | FILE SUMMARY: 2025_10_29_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.606785+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_30_NHL_total.csv
+2026-08-26T16:57:24.635695+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_30_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:24.635945+00:00 | FILE SUMMARY: 2025_10_30_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.636240+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_10_31_NHL_total.csv
+2026-08-26T16:57:24.650837+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_10_31_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:24.651088+00:00 | FILE SUMMARY: 2025_10_31_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.651367+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_01_NHL_total.csv
+2026-08-26T16:57:24.676749+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_01_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:24.677001+00:00 | FILE SUMMARY: 2025_11_01_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.677287+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_02_NHL_total.csv
+2026-08-26T16:57:24.691857+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_02_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:24.692111+00:00 | FILE SUMMARY: 2025_11_02_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.692394+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_03_NHL_total.csv
+2026-08-26T16:57:24.705962+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_03_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.706286+00:00 | FILE SUMMARY: 2025_11_03_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.706581+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_04_NHL_total.csv
+2026-08-26T16:57:24.727705+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_04_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:24.727956+00:00 | FILE SUMMARY: 2025_11_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.728240+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_05_NHL_total.csv
+2026-08-26T16:57:24.753666+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_05_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:24.753919+00:00 | FILE SUMMARY: 2025_11_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.754199+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_06_NHL_total.csv
+2026-08-26T16:57:24.776500+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_06_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:24.776751+00:00 | FILE SUMMARY: 2025_11_06_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.777048+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_07_NHL_total.csv
+2026-08-26T16:57:24.790157+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_07_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.790410+00:00 | FILE SUMMARY: 2025_11_07_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.790690+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_08_NHL_total.csv
+2026-08-26T16:57:24.816264+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_08_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:24.816610+00:00 | FILE SUMMARY: 2025_11_08_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.816912+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_09_NHL_total.csv
+2026-08-26T16:57:24.835869+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_09_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:24.836117+00:00 | FILE SUMMARY: 2025_11_09_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.836400+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_10_NHL_total.csv
+2026-08-26T16:57:24.850196+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_10_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.850452+00:00 | FILE SUMMARY: 2025_11_10_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.850773+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_11_NHL_total.csv
+2026-08-26T16:57:24.871282+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_11_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:24.871536+00:00 | FILE SUMMARY: 2025_11_11_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.871829+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_12_NHL_total.csv
+2026-08-26T16:57:24.884909+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_12_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.885225+00:00 | FILE SUMMARY: 2025_11_12_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.885515+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_13_NHL_total.csv
+2026-08-26T16:57:24.906945+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_13_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:24.907196+00:00 | FILE SUMMARY: 2025_11_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.907491+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_14_NHL_total.csv
+2026-08-26T16:57:24.920472+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_14_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:24.920722+00:00 | FILE SUMMARY: 2025_11_14_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.920999+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_15_NHL_total.csv
+2026-08-26T16:57:24.945976+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_15_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:24.946237+00:00 | FILE SUMMARY: 2025_11_15_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.946516+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_16_NHL_total.csv
+2026-08-26T16:57:24.961004+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_16_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:24.961255+00:00 | FILE SUMMARY: 2025_11_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.961562+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_17_NHL_total.csv
+2026-08-26T16:57:24.977206+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_17_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:24.977457+00:00 | FILE SUMMARY: 2025_11_17_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.977739+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_18_NHL_total.csv
+2026-08-26T16:57:24.995969+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_18_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:24.996233+00:00 | FILE SUMMARY: 2025_11_18_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:24.996513+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_19_NHL_total.csv
+2026-08-26T16:57:25.009423+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_19_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.009674+00:00 | FILE SUMMARY: 2025_11_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.009965+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_20_NHL_total.csv
+2026-08-26T16:57:25.033592+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_20_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:25.033842+00:00 | FILE SUMMARY: 2025_11_20_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.034128+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_21_NHL_total.csv
+2026-08-26T16:57:25.047123+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_21_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.047398+00:00 | FILE SUMMARY: 2025_11_21_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.047680+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_22_NHL_total.csv
+2026-08-26T16:57:25.071101+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_22_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:25.071351+00:00 | FILE SUMMARY: 2025_11_22_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.071636+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_23_NHL_total.csv
+2026-08-26T16:57:25.087293+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_23_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:25.087543+00:00 | FILE SUMMARY: 2025_11_23_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.087827+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_24_NHL_total.csv
+2026-08-26T16:57:25.104822+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_24_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:25.105073+00:00 | FILE SUMMARY: 2025_11_24_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.105352+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_25_NHL_total.csv
+2026-08-26T16:57:25.114088+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_25_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:25.114343+00:00 | FILE SUMMARY: 2025_11_25_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.114625+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_26_NHL_total.csv
+2026-08-26T16:57:25.142211+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_26_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:25.142466+00:00 | FILE SUMMARY: 2025_11_26_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.142787+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_28_NHL_total.csv
+2026-08-26T16:57:25.170774+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_28_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:25.171028+00:00 | FILE SUMMARY: 2025_11_28_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.171323+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_29_NHL_total.csv
+2026-08-26T16:57:25.195556+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_29_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:25.195809+00:00 | FILE SUMMARY: 2025_11_29_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.196104+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_11_30_NHL_total.csv
+2026-08-26T16:57:25.209268+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_11_30_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.209556+00:00 | FILE SUMMARY: 2025_11_30_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.209852+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_01_NHL_total.csv
+2026-08-26T16:57:25.224703+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_01_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.224955+00:00 | FILE SUMMARY: 2025_12_01_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.225266+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_02_NHL_total.csv
+2026-08-26T16:57:25.258793+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_02_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.259065+00:00 | FILE SUMMARY: 2025_12_02_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.259399+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_03_NHL_total.csv
+2026-08-26T16:57:25.288613+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_03_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.288869+00:00 | FILE SUMMARY: 2025_12_03_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.289167+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_04_NHL_total.csv
+2026-08-26T16:57:25.310247+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_04_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.310517+00:00 | FILE SUMMARY: 2025_12_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.310860+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_05_NHL_total.csv
+2026-08-26T16:57:25.325983+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_05_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.326284+00:00 | FILE SUMMARY: 2025_12_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.326656+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_06_NHL_total.csv
+2026-08-26T16:57:25.357375+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_06_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:25.357631+00:00 | FILE SUMMARY: 2025_12_06_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.357924+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_07_NHL_total.csv
+2026-08-26T16:57:25.391610+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_07_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:25.391871+00:00 | FILE SUMMARY: 2025_12_07_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.392188+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_08_NHL_total.csv
+2026-08-26T16:57:25.437316+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_08_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.437569+00:00 | FILE SUMMARY: 2025_12_08_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.437890+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_09_NHL_total.csv
+2026-08-26T16:57:25.480053+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_09_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.480311+00:00 | FILE SUMMARY: 2025_12_09_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.480603+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_10_NHL_total.csv
+2026-08-26T16:57:25.510363+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_10_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.510613+00:00 | FILE SUMMARY: 2025_12_10_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.510895+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_11_NHL_total.csv
+2026-08-26T16:57:25.536546+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_11_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:25.536824+00:00 | FILE SUMMARY: 2025_12_11_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.537113+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_12_NHL_total.csv
+2026-08-26T16:57:25.547694+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_12_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:25.547946+00:00 | FILE SUMMARY: 2025_12_12_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.548226+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_13_NHL_total.csv
+2026-08-26T16:57:25.573225+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_13_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:25.573486+00:00 | FILE SUMMARY: 2025_12_13_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.573770+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_14_NHL_total.csv
+2026-08-26T16:57:25.589362+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_14_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:25.589612+00:00 | FILE SUMMARY: 2025_12_14_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.590221+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_15_NHL_total.csv
+2026-08-26T16:57:25.605116+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_15_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.605369+00:00 | FILE SUMMARY: 2025_12_15_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.605656+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_16_NHL_total.csv
+2026-08-26T16:57:25.626610+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_16_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.626860+00:00 | FILE SUMMARY: 2025_12_16_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.627159+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_17_NHL_total.csv
+2026-08-26T16:57:25.641459+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_17_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.641710+00:00 | FILE SUMMARY: 2025_12_17_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.641991+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_18_NHL_total.csv
+2026-08-26T16:57:25.662931+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_18_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.663187+00:00 | FILE SUMMARY: 2025_12_18_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.663471+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_19_NHL_total.csv
+2026-08-26T16:57:25.678193+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_19_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.678445+00:00 | FILE SUMMARY: 2025_12_19_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.678731+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_20_NHL_total.csv
+2026-08-26T16:57:25.703502+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_20_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:25.703760+00:00 | FILE SUMMARY: 2025_12_20_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.704043+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_21_NHL_total.csv
+2026-08-26T16:57:25.723784+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_21_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:25.724267+00:00 | FILE SUMMARY: 2025_12_21_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.724566+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_22_NHL_total.csv
+2026-08-26T16:57:25.738009+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_22_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.738265+00:00 | FILE SUMMARY: 2025_12_22_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.738564+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_23_NHL_total.csv
+2026-08-26T16:57:25.762582+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_23_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:25.762844+00:00 | FILE SUMMARY: 2025_12_23_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.763142+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_27_NHL_total.csv
+2026-08-26T16:57:25.788722+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_27_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:25.788976+00:00 | FILE SUMMARY: 2025_12_27_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.789272+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_28_NHL_total.csv
+2026-08-26T16:57:25.803766+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_28_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.804015+00:00 | FILE SUMMARY: 2025_12_28_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.804329+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_29_NHL_total.csv
+2026-08-26T16:57:25.827301+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_29_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:25.827585+00:00 | FILE SUMMARY: 2025_12_29_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.827890+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_30_NHL_total.csv
+2026-08-26T16:57:25.843030+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_30_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.843342+00:00 | FILE SUMMARY: 2025_12_30_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.843699+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2025_12_31_NHL_total.csv
+2026-08-26T16:57:25.865612+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2025_12_31_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.865868+00:00 | FILE SUMMARY: 2025_12_31_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.866169+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_01_NHL_total.csv
+2026-08-26T16:57:25.885372+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_01_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:25.885647+00:00 | FILE SUMMARY: 2026_01_01_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.885947+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_02_NHL_total.csv
+2026-08-26T16:57:25.899152+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_02_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:25.899414+00:00 | FILE SUMMARY: 2026_01_02_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.899702+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_03_NHL_total.csv
+2026-08-26T16:57:25.924798+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_03_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:25.925050+00:00 | FILE SUMMARY: 2026_01_03_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.925335+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_04_NHL_total.csv
+2026-08-26T16:57:25.939609+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_04_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.939862+00:00 | FILE SUMMARY: 2026_01_04_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.940144+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_05_NHL_total.csv
+2026-08-26T16:57:25.954411+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_05_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.954661+00:00 | FILE SUMMARY: 2026_01_05_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.954940+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_06_NHL_total.csv
+2026-08-26T16:57:25.976054+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_06_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:25.976308+00:00 | FILE SUMMARY: 2026_01_06_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.976609+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_07_NHL_total.csv
+2026-08-26T16:57:25.991565+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_07_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:25.991835+00:00 | FILE SUMMARY: 2026_01_07_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:25.992133+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_08_NHL_total.csv
+2026-08-26T16:57:26.016528+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_08_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:26.016782+00:00 | FILE SUMMARY: 2026_01_08_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.017074+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_09_NHL_total.csv
+2026-08-26T16:57:26.028866+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_09_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:26.029150+00:00 | FILE SUMMARY: 2026_01_09_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.029438+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_10_NHL_total.csv
+2026-08-26T16:57:26.055928+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_10_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:26.056201+00:00 | FILE SUMMARY: 2026_01_10_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.056506+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_11_NHL_total.csv
+2026-08-26T16:57:26.070785+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_11_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:26.071035+00:00 | FILE SUMMARY: 2026_01_11_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.071315+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_12_NHL_total.csv
+2026-08-26T16:57:26.091545+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_12_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:26.091836+00:00 | FILE SUMMARY: 2026_01_12_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.092152+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_13_NHL_total.csv
+2026-08-26T16:57:26.113815+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_13_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.114083+00:00 | FILE SUMMARY: 2026_01_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.114371+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_14_NHL_total.csv
+2026-08-26T16:57:26.127469+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_14_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:26.127746+00:00 | FILE SUMMARY: 2026_01_14_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.128031+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_15_NHL_total.csv
+2026-08-26T16:57:26.148973+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_15_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.149223+00:00 | FILE SUMMARY: 2026_01_15_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.149555+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_16_NHL_total.csv
+2026-08-26T16:57:26.163901+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_16_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:26.164160+00:00 | FILE SUMMARY: 2026_01_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.164441+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_17_NHL_total.csv
+2026-08-26T16:57:26.189475+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_17_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:26.189785+00:00 | FILE SUMMARY: 2026_01_17_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.190106+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_18_NHL_total.csv
+2026-08-26T16:57:26.202686+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_18_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:26.202935+00:00 | FILE SUMMARY: 2026_01_18_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.203246+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_19_NHL_total.csv
+2026-08-26T16:57:26.224677+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_19_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.224949+00:00 | FILE SUMMARY: 2026_01_19_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.225267+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_20_NHL_total.csv
+2026-08-26T16:57:26.243697+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_20_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:26.243945+00:00 | FILE SUMMARY: 2026_01_20_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.244240+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_21_NHL_total.csv
+2026-08-26T16:57:26.259881+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_21_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:26.260130+00:00 | FILE SUMMARY: 2026_01_21_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.260412+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_22_NHL_total.csv
+2026-08-26T16:57:26.278767+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_22_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:26.279038+00:00 | FILE SUMMARY: 2026_01_22_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.279407+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_23_NHL_total.csv
+2026-08-26T16:57:26.299948+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_23_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:26.300200+00:00 | FILE SUMMARY: 2026_01_23_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.300492+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_24_NHL_total.csv
+2026-08-26T16:57:26.321008+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_24_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:26.321260+00:00 | FILE SUMMARY: 2026_01_24_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.321557+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_25_NHL_total.csv
+2026-08-26T16:57:26.337320+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_25_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:26.337569+00:00 | FILE SUMMARY: 2026_01_25_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.337859+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_26_NHL_total.csv
+2026-08-26T16:57:26.350787+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_26_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:26.351037+00:00 | FILE SUMMARY: 2026_01_26_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.351312+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_27_NHL_total.csv
+2026-08-26T16:57:26.372349+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_27_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.372599+00:00 | FILE SUMMARY: 2026_01_27_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.372919+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_28_NHL_total.csv
+2026-08-26T16:57:26.384709+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_28_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:26.384990+00:00 | FILE SUMMARY: 2026_01_28_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.385273+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_29_NHL_total.csv
+2026-08-26T16:57:26.412881+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_29_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:26.413136+00:00 | FILE SUMMARY: 2026_01_29_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.413434+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_30_NHL_total.csv
+2026-08-26T16:57:26.422170+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_30_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:26.422423+00:00 | FILE SUMMARY: 2026_01_30_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.422710+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_01_31_NHL_total.csv
+2026-08-26T16:57:26.449628+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_01_31_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:26.449909+00:00 | FILE SUMMARY: 2026_01_31_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.450194+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_01_NHL_total.csv
+2026-08-26T16:57:26.462125+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_01_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:26.462396+00:00 | FILE SUMMARY: 2026_02_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.462678+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_02_NHL_total.csv
+2026-08-26T16:57:26.483686+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_02_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.483939+00:00 | FILE SUMMARY: 2026_02_02_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.484227+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_03_NHL_total.csv
+2026-08-26T16:57:26.501870+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_03_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:26.502120+00:00 | FILE SUMMARY: 2026_02_03_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.502404+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_04_NHL_total.csv
+2026-08-26T16:57:26.524029+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_04_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:26.524282+00:00 | FILE SUMMARY: 2026_02_04_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.524606+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_05_NHL_total.csv
+2026-08-26T16:57:26.541863+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_05_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:26.542172+00:00 | FILE SUMMARY: 2026_02_05_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.542473+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_25_NHL_total.csv
+2026-08-26T16:57:26.561712+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_25_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:26.561964+00:00 | FILE SUMMARY: 2026_02_25_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.562315+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_26_NHL_total.csv
+2026-08-26T16:57:26.586113+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_26_NHL_total.csv rows=12 applied=12
+2026-08-26T16:57:26.586390+00:00 | FILE SUMMARY: 2026_02_26_NHL_total.csv input=12 accepted=12 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.586686+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_27_NHL_total.csv
+2026-08-26T16:57:26.605598+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_27_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:26.605954+00:00 | FILE SUMMARY: 2026_02_27_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.606378+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_02_28_NHL_total.csv
+2026-08-26T16:57:26.643159+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_02_28_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:26.643512+00:00 | FILE SUMMARY: 2026_02_28_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.643930+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_01_NHL_total.csv
+2026-08-26T16:57:26.666820+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_01_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:26.667169+00:00 | FILE SUMMARY: 2026_03_01_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.667582+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_02_NHL_total.csv
+2026-08-26T16:57:26.690380+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_02_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:26.690736+00:00 | FILE SUMMARY: 2026_03_02_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.691159+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_03_NHL_total.csv
+2026-08-26T16:57:26.724071+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_03_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:26.724413+00:00 | FILE SUMMARY: 2026_03_03_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.724829+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_04_NHL_total.csv
+2026-08-26T16:57:26.780005+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_04_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:26.780368+00:00 | FILE SUMMARY: 2026_03_04_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.780781+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_05_NHL_total.csv
+2026-08-26T16:57:26.849354+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_05_NHL_total.csv rows=8 applied=8
+2026-08-26T16:57:26.849872+00:00 | FILE SUMMARY: 2026_03_05_NHL_total.csv input=8 accepted=8 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.850347+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_06_NHL_total.csv
+2026-08-26T16:57:26.889491+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_06_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:26.889752+00:00 | FILE SUMMARY: 2026_03_06_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.890060+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_07_NHL_total.csv
+2026-08-26T16:57:26.922838+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_07_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:26.923265+00:00 | FILE SUMMARY: 2026_03_07_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.923690+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_08_NHL_total.csv
+2026-08-26T16:57:26.948660+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_08_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:26.949019+00:00 | FILE SUMMARY: 2026_03_08_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.949414+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_09_NHL_total.csv
+2026-08-26T16:57:26.970334+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_09_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:26.970684+00:00 | FILE SUMMARY: 2026_03_09_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:26.971094+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_10_NHL_total.csv
+2026-08-26T16:57:27.007586+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_10_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:27.007937+00:00 | FILE SUMMARY: 2026_03_10_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.008357+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_11_NHL_total.csv
+2026-08-26T16:57:27.023779+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_11_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:27.024133+00:00 | FILE SUMMARY: 2026_03_11_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.024521+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_12_NHL_total.csv
+2026-08-26T16:57:27.063249+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_12_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:27.063628+00:00 | FILE SUMMARY: 2026_03_12_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.064043+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_13_NHL_total.csv
+2026-08-26T16:57:27.078980+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_13_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:27.079331+00:00 | FILE SUMMARY: 2026_03_13_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.079734+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_14_NHL_total.csv
+2026-08-26T16:57:27.117986+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_14_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:27.118349+00:00 | FILE SUMMARY: 2026_03_14_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.118773+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_15_NHL_total.csv
+2026-08-26T16:57:27.142105+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_15_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:27.142461+00:00 | FILE SUMMARY: 2026_03_15_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.142863+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_16_NHL_total.csv
+2026-08-26T16:57:27.163782+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_16_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:27.164134+00:00 | FILE SUMMARY: 2026_03_16_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.164616+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_17_NHL_total.csv
+2026-08-26T16:57:27.193410+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_17_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:27.193763+00:00 | FILE SUMMARY: 2026_03_17_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.194180+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_18_NHL_total.csv
+2026-08-26T16:57:27.217182+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_18_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:27.217534+00:00 | FILE SUMMARY: 2026_03_18_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.217941+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_19_NHL_total.csv
+2026-08-26T16:57:27.250327+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_19_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:27.250659+00:00 | FILE SUMMARY: 2026_03_19_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.251080+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_20_NHL_total.csv
+2026-08-26T16:57:27.271966+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_20_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:27.272329+00:00 | FILE SUMMARY: 2026_03_20_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.272730+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_21_NHL_total.csv
+2026-08-26T16:57:27.305550+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_21_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:27.305904+00:00 | FILE SUMMARY: 2026_03_21_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.306325+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_22_NHL_total.csv
+2026-08-26T16:57:27.335486+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_22_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:27.335833+00:00 | FILE SUMMARY: 2026_03_22_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.336247+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_23_NHL_total.csv
+2026-08-26T16:57:27.348999+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_23_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:27.349350+00:00 | FILE SUMMARY: 2026_03_23_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.349778+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_24_NHL_total.csv
+2026-08-26T16:57:27.390126+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_24_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:27.390484+00:00 | FILE SUMMARY: 2026_03_24_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.390908+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_25_NHL_total.csv
+2026-08-26T16:57:27.406047+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_25_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:27.406395+00:00 | FILE SUMMARY: 2026_03_25_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.406766+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_26_NHL_total.csv
+2026-08-26T16:57:27.443258+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_26_NHL_total.csv rows=13 applied=13
+2026-08-26T16:57:27.443629+00:00 | FILE SUMMARY: 2026_03_26_NHL_total.csv input=13 accepted=13 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.444054+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_27_NHL_total.csv
+2026-08-26T16:57:27.459399+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_27_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:27.459764+00:00 | FILE SUMMARY: 2026_03_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.460208+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_28_NHL_total.csv
+2026-08-26T16:57:27.500964+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_28_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:27.501324+00:00 | FILE SUMMARY: 2026_03_28_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.501724+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_29_NHL_total.csv
+2026-08-26T16:57:27.524644+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_29_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:27.525037+00:00 | FILE SUMMARY: 2026_03_29_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.525446+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_30_NHL_total.csv
+2026-08-26T16:57:27.546637+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_30_NHL_total.csv rows=5 applied=5
+2026-08-26T16:57:27.546976+00:00 | FILE SUMMARY: 2026_03_30_NHL_total.csv input=5 accepted=5 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.547390+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_03_31_NHL_total.csv
+2026-08-26T16:57:27.578312+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_03_31_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:27.578669+00:00 | FILE SUMMARY: 2026_03_31_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.579097+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_01_NHL_total.csv
+2026-08-26T16:57:27.596133+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_01_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:27.596475+00:00 | FILE SUMMARY: 2026_04_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.596886+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_02_NHL_total.csv
+2026-08-26T16:57:27.635555+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_02_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:27.635897+00:00 | FILE SUMMARY: 2026_04_02_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.636360+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_03_NHL_total.csv
+2026-08-26T16:57:27.651425+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_03_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:27.651781+00:00 | FILE SUMMARY: 2026_04_03_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.652182+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_04_NHL_total.csv
+2026-08-26T16:57:27.692486+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_04_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:27.692847+00:00 | FILE SUMMARY: 2026_04_04_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.693267+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_05_NHL_total.csv
+2026-08-26T16:57:27.717968+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_05_NHL_total.csv rows=7 applied=7
+2026-08-26T16:57:27.718332+00:00 | FILE SUMMARY: 2026_04_05_NHL_total.csv input=7 accepted=7 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.718741+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_06_NHL_total.csv
+2026-08-26T16:57:27.738167+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_06_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:27.738502+00:00 | FILE SUMMARY: 2026_04_06_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.738911+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_07_NHL_total.csv
+2026-08-26T16:57:27.771368+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_07_NHL_total.csv rows=11 applied=11
+2026-08-26T16:57:27.771749+00:00 | FILE SUMMARY: 2026_04_07_NHL_total.csv input=11 accepted=11 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.772162+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_08_NHL_total.csv
+2026-08-26T16:57:27.789149+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_08_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:27.789483+00:00 | FILE SUMMARY: 2026_04_08_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.789892+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_09_NHL_total.csv
+2026-08-26T16:57:27.828937+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_09_NHL_total.csv rows=14 applied=14
+2026-08-26T16:57:27.829305+00:00 | FILE SUMMARY: 2026_04_09_NHL_total.csv input=14 accepted=14 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.829727+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_11_NHL_total.csv
+2026-08-26T16:57:27.870132+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_11_NHL_total.csv rows=15 applied=15
+2026-08-26T16:57:27.870489+00:00 | FILE SUMMARY: 2026_04_11_NHL_total.csv input=15 accepted=15 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.870895+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_12_NHL_total.csv
+2026-08-26T16:57:27.893934+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_12_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:27.894312+00:00 | FILE SUMMARY: 2026_04_12_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.894745+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_13_NHL_total.csv
+2026-08-26T16:57:27.925769+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_13_NHL_total.csv rows=10 applied=10
+2026-08-26T16:57:27.926119+00:00 | FILE SUMMARY: 2026_04_13_NHL_total.csv input=10 accepted=10 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.926538+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_14_NHL_total.csv
+2026-08-26T16:57:27.955643+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_14_NHL_total.csv rows=9 applied=9
+2026-08-26T16:57:27.956023+00:00 | FILE SUMMARY: 2026_04_14_NHL_total.csv input=9 accepted=9 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.956442+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_15_NHL_total.csv
+2026-08-26T16:57:27.979382+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_15_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:27.979768+00:00 | FILE SUMMARY: 2026_04_15_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:27.980186+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_16_NHL_total.csv
+2026-08-26T16:57:28.003294+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_16_NHL_total.csv rows=6 applied=6
+2026-08-26T16:57:28.003656+00:00 | FILE SUMMARY: 2026_04_16_NHL_total.csv input=6 accepted=6 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.004084+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_18_NHL_total.csv
+2026-08-26T16:57:28.021342+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_18_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.021729+00:00 | FILE SUMMARY: 2026_04_18_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.022140+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_19_NHL_total.csv
+2026-08-26T16:57:28.041167+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_19_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:28.041511+00:00 | FILE SUMMARY: 2026_04_19_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.041927+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_20_NHL_total.csv
+2026-08-26T16:57:28.060801+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_20_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:28.061147+00:00 | FILE SUMMARY: 2026_04_20_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.061553+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_21_NHL_total.csv
+2026-08-26T16:57:28.080379+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_21_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:28.080779+00:00 | FILE SUMMARY: 2026_04_21_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.081203+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_22_NHL_total.csv
+2026-08-26T16:57:28.133650+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_22_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.134006+00:00 | FILE SUMMARY: 2026_04_22_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.134600+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_23_NHL_total.csv
+2026-08-26T16:57:28.182664+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_23_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.183017+00:00 | FILE SUMMARY: 2026_04_23_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.183455+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_24_NHL_total.csv
+2026-08-26T16:57:28.218522+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_24_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.218883+00:00 | FILE SUMMARY: 2026_04_24_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.219334+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_25_NHL_total.csv
+2026-08-26T16:57:28.253190+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_25_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.253549+00:00 | FILE SUMMARY: 2026_04_25_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.254001+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_26_NHL_total.csv
+2026-08-26T16:57:28.272908+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_26_NHL_total.csv rows=4 applied=4
+2026-08-26T16:57:28.273259+00:00 | FILE SUMMARY: 2026_04_26_NHL_total.csv input=4 accepted=4 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.273675+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_27_NHL_total.csv
+2026-08-26T16:57:28.288570+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_27_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.288935+00:00 | FILE SUMMARY: 2026_04_27_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.289333+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_28_NHL_total.csv
+2026-08-26T16:57:28.306258+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_28_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.306613+00:00 | FILE SUMMARY: 2026_04_28_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.307011+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_29_NHL_total.csv
+2026-08-26T16:57:28.324251+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_29_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.324633+00:00 | FILE SUMMARY: 2026_04_29_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.325091+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_30_NHL_total.csv
+2026-08-26T16:57:28.340462+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_04_30_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.340814+00:00 | FILE SUMMARY: 2026_04_30_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.341212+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_01_NHL_total.csv
+2026-08-26T16:57:28.358238+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_01_NHL_total.csv rows=3 applied=3
+2026-08-26T16:57:28.358588+00:00 | FILE SUMMARY: 2026_05_01_NHL_total.csv input=3 accepted=3 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.358981+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_02_NHL_total.csv
+2026-08-26T16:57:28.371726+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_02_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.372078+00:00 | FILE SUMMARY: 2026_05_02_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.372486+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_03_NHL_total.csv
+2026-08-26T16:57:28.387416+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_03_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.387783+00:00 | FILE SUMMARY: 2026_05_03_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.388178+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_04_NHL_total.csv
+2026-08-26T16:57:28.403208+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_04_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.403562+00:00 | FILE SUMMARY: 2026_05_04_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.403969+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_05_NHL_total.csv
+2026-08-26T16:57:28.416739+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_05_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.417089+00:00 | FILE SUMMARY: 2026_05_05_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.417492+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_06_NHL_total.csv
+2026-08-26T16:57:28.432411+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_06_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.432745+00:00 | FILE SUMMARY: 2026_05_06_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.433152+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_07_NHL_total.csv
+2026-08-26T16:57:28.445867+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_07_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.446224+00:00 | FILE SUMMARY: 2026_05_07_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.446636+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_08_NHL_total.csv
+2026-08-26T16:57:28.461960+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_08_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.462366+00:00 | FILE SUMMARY: 2026_05_08_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.462807+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_09_NHL_total.csv
+2026-08-26T16:57:28.478136+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_09_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.478499+00:00 | FILE SUMMARY: 2026_05_09_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.478911+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_10_NHL_total.csv
+2026-08-26T16:57:28.493944+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_10_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.494301+00:00 | FILE SUMMARY: 2026_05_10_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.494735+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_11_NHL_total.csv
+2026-08-26T16:57:28.507487+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_11_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.507836+00:00 | FILE SUMMARY: 2026_05_11_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.508256+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_12_NHL_total.csv
+2026-08-26T16:57:28.523144+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_12_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.523465+00:00 | FILE SUMMARY: 2026_05_12_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.523898+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_13_NHL_total.csv
+2026-08-26T16:57:28.536655+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_13_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.537022+00:00 | FILE SUMMARY: 2026_05_13_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.537435+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_14_NHL_total.csv
+2026-08-26T16:57:28.552489+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_14_NHL_total.csv rows=2 applied=2
+2026-08-26T16:57:28.552842+00:00 | FILE SUMMARY: 2026_05_14_NHL_total.csv input=2 accepted=2 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.553243+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_16_NHL_total.csv
+2026-08-26T16:57:28.565963+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_16_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.566310+00:00 | FILE SUMMARY: 2026_05_16_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.566720+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_18_NHL_total.csv
+2026-08-26T16:57:28.579572+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_18_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.579937+00:00 | FILE SUMMARY: 2026_05_18_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.580392+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_20_NHL_total.csv
+2026-08-26T16:57:28.593374+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_20_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.593731+00:00 | FILE SUMMARY: 2026_05_20_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.594132+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_21_NHL_total.csv
+2026-08-26T16:57:28.607057+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_21_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.607406+00:00 | FILE SUMMARY: 2026_05_21_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.607814+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_22_NHL_total.csv
+2026-08-26T16:57:28.620733+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_22_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.621126+00:00 | FILE SUMMARY: 2026_05_22_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.621542+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_23_NHL_total.csv
+2026-08-26T16:57:28.634239+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_23_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.634589+00:00 | FILE SUMMARY: 2026_05_23_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.634991+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_24_NHL_total.csv
+2026-08-26T16:57:28.647703+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_24_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.648058+00:00 | FILE SUMMARY: 2026_05_24_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.648476+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_25_NHL_total.csv
+2026-08-26T16:57:28.661159+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_25_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.661542+00:00 | FILE SUMMARY: 2026_05_25_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.661944+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_26_NHL_total.csv
+2026-08-26T16:57:28.674685+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_26_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.675040+00:00 | FILE SUMMARY: 2026_05_26_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.675506+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_27_NHL_total.csv
+2026-08-26T16:57:28.688014+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_27_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.688405+00:00 | FILE SUMMARY: 2026_05_27_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.688811+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_05_29_NHL_total.csv
+2026-08-26T16:57:28.701646+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_05_29_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.701990+00:00 | FILE SUMMARY: 2026_05_29_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.702398+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_02_NHL_total.csv
+2026-08-26T16:57:28.715028+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_02_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.715391+00:00 | FILE SUMMARY: 2026_06_02_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.715800+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_04_NHL_total.csv
+2026-08-26T16:57:28.728459+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_04_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.728810+00:00 | FILE SUMMARY: 2026_06_04_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.729223+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_06_NHL_total.csv
+2026-08-26T16:57:28.742343+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_06_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.742694+00:00 | FILE SUMMARY: 2026_06_06_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.743108+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_09_NHL_total.csv
+2026-08-26T16:57:28.756091+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_09_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.756472+00:00 | FILE SUMMARY: 2026_06_09_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.756890+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_11_NHL_total.csv
+2026-08-26T16:57:28.769579+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_11_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.769923+00:00 | FILE SUMMARY: 2026_06_11_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.770326+00:00 | Processing input: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\01_merge\01_merguiced\2026_06_14_NHL_total.csv
+2026-08-26T16:57:28.782796+00:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\02_juice\2026_06_14_NHL_total.csv rows=1 applied=1
+2026-08-26T16:57:28.783156+00:00 | FILE SUMMARY: 2026_06_14_NHL_total.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-08-26T16:57:28.783576+00:00 | --- SUMMARY ---
+2026-08-26T16:57:28.783913+00:00 | Files processed: 211
+2026-08-26T16:57:28.784249+00:00 | Files written: 211
+2026-08-26T16:57:28.784586+00:00 | Rows applied: 1393
+2026-08-26T16:57:28.784920+00:00 | Rows quarantined bad: 0
+2026-08-26T16:57:28.785257+00:00 | Rows quarantined no band: 0
+2026-08-26T16:57:28.785590+00:00 | Rows quarantined total: 0
+2026-08-26T16:57:28.785915+00:00 | STATUS: SUCCESS
