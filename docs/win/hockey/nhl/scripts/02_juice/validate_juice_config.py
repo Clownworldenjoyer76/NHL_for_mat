@@ -11,7 +11,6 @@ import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 CONFIG_DIR = BASE_DIR / "config" / "juice"
-INPUT_DIR = BASE_DIR / "01_merge" / "01_merguiced"
 ERROR_DIR = BASE_DIR / "errors" / "02_juice"
 LOG_FILE = ERROR_DIR / "validate_juice_config.txt"
 
@@ -49,11 +48,7 @@ TOTAL_REQUIRED = [
     ADJUSTMENT_COLUMN,
 ]
 
-
-###############################################################
-###################### SUPPORTED DOMAIN #######################
-###############################################################
-
+# Supported Stage 02 lookup values.
 MONEYLINE_FAVORITE_RANGE = range(-999, -99)
 MONEYLINE_UNDERDOG_RANGE = range(100, 600)
 
@@ -84,6 +79,10 @@ VALID_TOTAL_SIDES = {
     "over",
     "under",
 }
+
+# build_juice_files.py clips puck-line and total probabilities
+# to 0.01..0.99. Their smallest possible fair decimal is 1 / 0.99.
+CLIPPED_MIN_FAIR_DECIMAL = 1 / 0.99
 
 
 ###############################################################
@@ -118,6 +117,16 @@ def fail(
     errors.append(msg)
     log(
         f"ERROR | {msg}"
+    )
+
+
+def warn(
+    warnings: list[str],
+    msg: str,
+) -> None:
+    warnings.append(msg)
+    log(
+        f"WARNING | {msg}"
     )
 
 
@@ -191,6 +200,7 @@ def load_config(
         }:
             df[col] = (
                 df[col]
+                .fillna("")
                 .astype(str)
                 .str.strip()
             )
@@ -207,13 +217,11 @@ def load_config(
 
             if (
                 pd.isna(value)
-                or not math.isfinite(
-                    float(value)
-                )
+                or not math.isfinite(float(value))
             ):
                 bad_numeric.append(
                     (
-                        idx + 2,
+                        int(idx) + 2,
                         col,
                     )
                 )
@@ -244,24 +252,9 @@ def load_config(
             f"rows={[(int(i) + 2) for i in bad_ranges.index]}",
         )
 
-    bad_adjustments = df[
-        df[ADJUSTMENT_COLUMN].notna()
-        & (
-            df[ADJUSTMENT_COLUMN]
-            >= 1
-        )
-    ]
-
-    if not bad_adjustments.empty:
-        fail(
-            errors,
-            "CALIBRATION ADJUSTMENT MUST BE < 1 | "
-            f"{path.name} | "
-            f"rows={[(int(i) + 2) for i in bad_adjustments.index]}",
-        )
-
     blank_band = (
         df["band"]
+        .fillna("")
         .astype(str)
         .str.strip()
         .eq("")
@@ -299,6 +292,36 @@ def validate_categories(
             errors,
             f"INVALID {column.upper()} VALUES | "
             f"{path.name} | {invalid}",
+        )
+
+
+def validate_expected_combinations(
+    df: pd.DataFrame,
+    path: Path,
+    columns: list[str],
+    expected: set[tuple[str, ...]],
+    errors: list[str],
+) -> None:
+
+    actual = {
+        tuple(
+            str(row[column]).strip()
+            for column in columns
+        )
+        for _, row in df.iterrows()
+    }
+
+    missing = sorted(
+        expected - actual
+    )
+
+    if missing:
+        fail(
+            errors,
+            "MISSING EXPECTED COMBINATIONS | "
+            f"{path.name} | "
+            f"columns={columns} | "
+            f"missing={missing}",
         )
 
 
@@ -349,7 +372,8 @@ def validate_duplicates_and_overlaps(
         group_arg,
         dropna=False,
     ):
-        group = group.sort_values(
+
+        ordered = group.sort_values(
             [
                 "band_min",
                 "band_max",
@@ -357,36 +381,37 @@ def validate_duplicates_and_overlaps(
             kind="stable",
         )
 
-        previous_idx = None
-        previous_max = None
+        active_idx = None
+        active_max = None
 
-        for idx, row in group.iterrows():
+        for idx, row in ordered.iterrows():
 
             band_min = float(
                 row["band_min"]
             )
+
             band_max = float(
                 row["band_max"]
             )
 
             if (
-                previous_max is not None
-                and band_min <= previous_max
+                active_max is not None
+                and band_min <= active_max
             ):
                 overlaps.append(
                     (
                         group_key,
-                        previous_idx + 2,
-                        idx + 2,
+                        int(active_idx) + 2,
+                        int(idx) + 2,
                     )
                 )
 
             if (
-                previous_max is None
-                or band_max > previous_max
+                active_max is None
+                or band_max > active_max
             ):
-                previous_idx = idx
-                previous_max = band_max
+                active_idx = idx
+                active_max = band_max
 
     if overlaps:
         fail(
@@ -471,12 +496,202 @@ def validate_coverage_cases(
 
 
 ###############################################################
+############### ADJUSTED DECIMAL SAFETY #######################
+###############################################################
+
+def validate_adjustment_value(
+    path: Path,
+    row_number: int,
+    band: str,
+    adjustment: float,
+    errors: list[str],
+) -> bool:
+
+    if not math.isfinite(
+        adjustment
+    ):
+        return False
+
+    if adjustment >= 1:
+        fail(
+            errors,
+            "INVALID CALIBRATION ADJUSTMENT | "
+            f"{path.name} | "
+            f"row={row_number} | "
+            f"band={band} | "
+            f"adjustment={adjustment} | "
+            "adjustment must be < 1",
+        )
+        return False
+
+    return True
+
+
+def validate_moneyline_adjusted_decimal(
+    df: pd.DataFrame,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    """
+    Moneyline fair decimal is 1 / model_probability.
+
+    Positive calibration adjustments can produce an adjusted decimal
+    of 1 or lower for sufficiently strong model probabilities.
+
+    That possibility is logged as a warning because the Stage 02
+    application script already rejects/quarantines an actual invalid
+    adjusted decimal when one occurs.
+
+    Structurally impossible calibration values such as adjustment >= 1
+    remain validation errors.
+    """
+
+    for idx, row in df.iterrows():
+
+        value = row[
+            ADJUSTMENT_COLUMN
+        ]
+
+        if pd.isna(
+            value
+        ):
+            continue
+
+        adjustment = float(
+            value
+        )
+
+        row_number = (
+            int(idx)
+            + 2
+        )
+
+        band = str(
+            row["band"]
+        )
+
+        if not validate_adjustment_value(
+            MONEYLINE_FILE,
+            row_number,
+            band,
+            adjustment,
+            errors,
+        ):
+            continue
+
+        if adjustment > 0:
+
+            threshold = (
+                1
+                / (
+                    1
+                    - adjustment
+                )
+            )
+
+            warn(
+                warnings,
+                "UNSAFE ADJUSTED DECIMAL POSSIBLE | "
+                f"{MONEYLINE_FILE.name} | "
+                f"row={row_number} | "
+                f"band={band} | "
+                f"adjustment={adjustment} | "
+                "fair_decimal at or below "
+                f"{threshold:.12g} can produce "
+                "adjusted_decimal <= 1",
+            )
+
+
+def validate_clipped_adjusted_decimal(
+    df: pd.DataFrame,
+    path: Path,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    """
+    build_juice_files.py clips puck-line and total model probabilities
+    to a maximum of 0.99.
+
+    Their smallest possible fair decimal is 1 / 0.99.
+
+    If a calibration adjustment could make that smallest possible fair
+    decimal become 1 or lower, the risk is logged as a warning.
+
+    The Stage 02 application scripts remain responsible for rejecting
+    or quarantining an actual invalid adjusted decimal.
+
+    Structurally impossible calibration values such as adjustment >= 1
+    remain validation errors.
+    """
+
+    for idx, row in df.iterrows():
+
+        value = row[
+            ADJUSTMENT_COLUMN
+        ]
+
+        if pd.isna(
+            value
+        ):
+            continue
+
+        adjustment = float(
+            value
+        )
+
+        row_number = (
+            int(idx)
+            + 2
+        )
+
+        band = str(
+            row["band"]
+        )
+
+        if not validate_adjustment_value(
+            path,
+            row_number,
+            band,
+            adjustment,
+            errors,
+        ):
+            continue
+
+        adjusted_decimal = (
+            CLIPPED_MIN_FAIR_DECIMAL
+            * (
+                1
+                - adjustment
+            )
+        )
+
+        if (
+            not math.isfinite(
+                adjusted_decimal
+            )
+            or adjusted_decimal <= 1
+        ):
+            warn(
+                warnings,
+                "UNSAFE ADJUSTED DECIMAL POSSIBLE | "
+                f"{path.name} | "
+                f"row={row_number} | "
+                f"band={band} | "
+                f"adjustment={adjustment} | "
+                f"minimum_supported_fair_decimal="
+                f"{CLIPPED_MIN_FAIR_DECIMAL:.12g} | "
+                f"adjusted_decimal={adjusted_decimal:.12g}",
+            )
+
+
+###############################################################
 ###################### MONEYLINE CONFIG #######################
 ###############################################################
 
 def validate_moneyline_static(
     df: pd.DataFrame,
     errors: list[str],
+    warnings: list[str],
 ) -> None:
 
     validate_categories(
@@ -492,6 +707,34 @@ def validate_moneyline_static(
         MONEYLINE_FILE,
         "fav_ud",
         VALID_FAV_UD,
+        errors,
+    )
+
+    validate_expected_combinations(
+        df,
+        MONEYLINE_FILE,
+        [
+            "fav_ud",
+            "venue",
+        ],
+        {
+            (
+                "favorite",
+                "away",
+            ),
+            (
+                "favorite",
+                "home",
+            ),
+            (
+                "underdog",
+                "away",
+            ),
+            (
+                "underdog",
+                "home",
+            ),
+        },
         errors,
     )
 
@@ -517,17 +760,22 @@ def validate_moneyline_static(
         band_min = float(
             row["band_min"]
         )
+
         band_max = float(
             row["band_max"]
         )
-        fav_ud = row["fav_ud"]
+
+        fav_ud = row[
+            "fav_ud"
+        ]
 
         if (
             band_max < 0
             and fav_ud != "favorite"
         ):
             sign_mismatches.append(
-                idx + 2
+                int(idx)
+                + 2
             )
 
         elif (
@@ -535,14 +783,18 @@ def validate_moneyline_static(
             and fav_ud != "underdog"
         ):
             sign_mismatches.append(
-                idx + 2
+                int(idx)
+                + 2
             )
 
         elif (
-            band_min <= 0 <= band_max
+            band_min
+            <= 0
+            <= band_max
         ):
             sign_mismatches.append(
-                idx + 2
+                int(idx)
+                + 2
             )
 
     if sign_mismatches:
@@ -556,10 +808,14 @@ def validate_moneyline_static(
     cases = []
 
     for odds in MONEYLINE_FAVORITE_RANGE:
+
         for venue in VALID_VENUES:
+
             cases.append(
                 (
-                    float(odds),
+                    float(
+                        odds
+                    ),
                     {
                         "fav_ud": "favorite",
                         "venue": venue,
@@ -568,10 +824,14 @@ def validate_moneyline_static(
             )
 
     for odds in MONEYLINE_UNDERDOG_RANGE:
+
         for venue in VALID_VENUES:
+
             cases.append(
                 (
-                    float(odds),
+                    float(
+                        odds
+                    ),
                     {
                         "fav_ud": "underdog",
                         "venue": venue,
@@ -586,6 +846,12 @@ def validate_moneyline_static(
         errors,
     )
 
+    validate_moneyline_adjusted_decimal(
+        df,
+        errors,
+        warnings,
+    )
+
 
 ###############################################################
 ###################### PUCK-LINE CONFIG #######################
@@ -594,6 +860,7 @@ def validate_moneyline_static(
 def validate_puck_line_static(
     df: pd.DataFrame,
     errors: list[str],
+    warnings: list[str],
 ) -> None:
 
     validate_categories(
@@ -683,6 +950,7 @@ def validate_puck_line_static(
         )
 
         for venue in VALID_VENUES:
+
             cases.append(
                 (
                     line,
@@ -700,6 +968,13 @@ def validate_puck_line_static(
         errors,
     )
 
+    validate_clipped_adjusted_decimal(
+        df,
+        PUCK_LINE_FILE,
+        errors,
+        warnings,
+    )
+
 
 ###############################################################
 ######################## TOTAL CONFIG #########################
@@ -708,6 +983,7 @@ def validate_puck_line_static(
 def validate_total_static(
     df: pd.DataFrame,
     errors: list[str],
+    warnings: list[str],
 ) -> None:
 
     validate_categories(
@@ -784,471 +1060,12 @@ def validate_total_static(
         errors,
     )
 
-
-###############################################################
-#################### RUNTIME VALIDATION #######################
-###############################################################
-
-def numeric_runtime_value(
-    value,
-    file_path: Path,
-    row_number: int,
-    column: str,
-    errors: list[str],
-) -> float | None:
-
-    try:
-        number = float(
-            value
-        )
-
-    except Exception:
-        fail(
-            errors,
-            "RUNTIME NON-NUMERIC VALUE | "
-            f"{file_path.name} | "
-            f"row={row_number} | "
-            f"column={column} | "
-            f"value={value!r}",
-        )
-        return None
-
-    if not math.isfinite(
-        number
-    ):
-        fail(
-            errors,
-            "RUNTIME NON-FINITE VALUE | "
-            f"{file_path.name} | "
-            f"row={row_number} | "
-            f"column={column} | "
-            f"value={value!r}",
-        )
-        return None
-
-    return number
-
-
-def check_runtime_calibration(
-    config: pd.DataFrame,
-    lookup_value: float,
-    filters: dict[str, str],
-    fair_decimal: float,
-    file_path: Path,
-    row_number: int,
-    label: str,
-    errors: list[str],
-) -> bool:
-
-    found = matches(
-        config,
-        lookup_value,
-        filters,
+    validate_clipped_adjusted_decimal(
+        df,
+        TOTAL_FILE,
+        errors,
+        warnings,
     )
-
-    if len(found) != 1:
-        fail(
-            errors,
-            "RUNTIME COVERAGE ERROR | "
-            f"{file_path.name} | "
-            f"row={row_number} | "
-            f"{label} | "
-            f"lookup={lookup_value} | "
-            f"filters={filters} | "
-            f"matches={len(found)}",
-        )
-        return False
-
-    if fair_decimal <= 1:
-        fail(
-            errors,
-            "INVALID FAIR DECIMAL | "
-            f"{file_path.name} | "
-            f"row={row_number} | "
-            f"{label}={fair_decimal}",
-        )
-        return False
-
-    adjustment = float(
-        found.iloc[0][
-            ADJUSTMENT_COLUMN
-        ]
-    )
-
-    adjusted_decimal = (
-        fair_decimal
-        * (
-            1
-            - adjustment
-        )
-    )
-
-    if (
-        not math.isfinite(
-            adjusted_decimal
-        )
-        or adjusted_decimal <= 1
-    ):
-        fail(
-            errors,
-            "INVALID ADJUSTED DECIMAL | "
-            f"{file_path.name} | "
-            f"row={row_number} | "
-            f"{label} | "
-            f"fair_decimal={fair_decimal} | "
-            f"adjustment={adjustment} | "
-            f"adjusted_decimal={adjusted_decimal}",
-        )
-        return False
-
-    return True
-
-
-def read_runtime_file(
-    file_path: Path,
-    required: list[str],
-    errors: list[str],
-) -> pd.DataFrame | None:
-
-    try:
-        df = pd.read_csv(
-            file_path,
-            dtype=str,
-        )
-
-    except Exception as e:
-        fail(
-            errors,
-            f"RUNTIME READ ERROR | "
-            f"{file_path} | {e}",
-        )
-        return None
-
-    missing = [
-        col
-        for col in required
-        if col not in df.columns
-    ]
-
-    if missing:
-        fail(
-            errors,
-            "RUNTIME MISSING COLUMNS | "
-            f"{file_path} | "
-            f"{missing}",
-        )
-        return None
-
-    return df
-
-
-###############################################################
-################### RUNTIME MONEYLINE #########################
-###############################################################
-
-def validate_runtime_moneyline(
-    config: pd.DataFrame,
-    errors: list[str],
-) -> int:
-
-    files = sorted(
-        INPUT_DIR.glob(
-            "*_NHL_moneyline.csv"
-        )
-    )
-
-    checked = 0
-
-    required = [
-        "away_dk_moneyline_american",
-        "home_dk_moneyline_american",
-        "away_fair_decimal_moneyline",
-        "home_fair_decimal_moneyline",
-    ]
-
-    for file_path in files:
-
-        df = read_runtime_file(
-            file_path,
-            required,
-            errors,
-        )
-
-        if df is None:
-            continue
-
-        for idx, row in df.iterrows():
-
-            row_number = idx + 2
-
-            for venue in (
-                "away",
-                "home",
-            ):
-
-                odds_col = (
-                    f"{venue}_dk_moneyline_american"
-                )
-                fair_col = (
-                    f"{venue}_fair_decimal_moneyline"
-                )
-
-                odds = numeric_runtime_value(
-                    row[odds_col],
-                    file_path,
-                    row_number,
-                    odds_col,
-                    errors,
-                )
-
-                fair = numeric_runtime_value(
-                    row[fair_col],
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                )
-
-                if (
-                    odds is None
-                    or fair is None
-                ):
-                    continue
-
-                if odds == 0:
-                    fail(
-                        errors,
-                        "UNSUPPORTED MONEYLINE ODDS | "
-                        f"{file_path.name} | "
-                        f"row={row_number} | "
-                        f"venue={venue} | "
-                        "odds=0",
-                    )
-                    continue
-
-                fav_ud = (
-                    "favorite"
-                    if odds < 0
-                    else "underdog"
-                )
-
-                if check_runtime_calibration(
-                    config,
-                    odds,
-                    {
-                        "fav_ud": fav_ud,
-                        "venue": venue,
-                    },
-                    fair,
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                ):
-                    checked += 1
-
-    log(
-        "RUNTIME MONEYLINE SIDES CHECKED | "
-        f"{checked} | "
-        f"files={len(files)}"
-    )
-
-    return checked
-
-
-###############################################################
-################### RUNTIME PUCK LINE #########################
-###############################################################
-
-def validate_runtime_puck_line(
-    config: pd.DataFrame,
-    errors: list[str],
-) -> int:
-
-    files = sorted(
-        INPUT_DIR.glob(
-            "*_NHL_puck_line.csv"
-        )
-    )
-
-    checked = 0
-
-    required = [
-        "away_puck_line",
-        "home_puck_line",
-        "away_fair_decimal_puck_line",
-        "home_fair_decimal_puck_line",
-    ]
-
-    for file_path in files:
-
-        df = read_runtime_file(
-            file_path,
-            required,
-            errors,
-        )
-
-        if df is None:
-            continue
-
-        for idx, row in df.iterrows():
-
-            row_number = idx + 2
-
-            for venue in (
-                "away",
-                "home",
-            ):
-
-                line_col = (
-                    f"{venue}_puck_line"
-                )
-                fair_col = (
-                    f"{venue}_fair_decimal_puck_line"
-                )
-
-                line = numeric_runtime_value(
-                    row[line_col],
-                    file_path,
-                    row_number,
-                    line_col,
-                    errors,
-                )
-
-                fair = numeric_runtime_value(
-                    row[fair_col],
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                )
-
-                if (
-                    line is None
-                    or fair is None
-                ):
-                    continue
-
-                fav_ud = (
-                    "favorite"
-                    if line < 0
-                    else "underdog"
-                )
-
-                if check_runtime_calibration(
-                    config,
-                    line,
-                    {
-                        "fav_ud": fav_ud,
-                        "venue": venue,
-                    },
-                    fair,
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                ):
-                    checked += 1
-
-    log(
-        "RUNTIME PUCK-LINE SIDES CHECKED | "
-        f"{checked} | "
-        f"files={len(files)}"
-    )
-
-    return checked
-
-
-###############################################################
-###################### RUNTIME TOTAL ##########################
-###############################################################
-
-def validate_runtime_total(
-    config: pd.DataFrame,
-    errors: list[str],
-) -> int:
-
-    files = sorted(
-        INPUT_DIR.glob(
-            "*_NHL_total.csv"
-        )
-    )
-
-    checked = 0
-
-    required = [
-        "total",
-        "over_fair_decimal_total",
-        "under_fair_decimal_total",
-    ]
-
-    for file_path in files:
-
-        df = read_runtime_file(
-            file_path,
-            required,
-            errors,
-        )
-
-        if df is None:
-            continue
-
-        for idx, row in df.iterrows():
-
-            row_number = idx + 2
-
-            total_line = numeric_runtime_value(
-                row["total"],
-                file_path,
-                row_number,
-                "total",
-                errors,
-            )
-
-            if total_line is None:
-                continue
-
-            for side in (
-                "over",
-                "under",
-            ):
-
-                fair_col = (
-                    f"{side}_fair_decimal_total"
-                )
-
-                fair = numeric_runtime_value(
-                    row[fair_col],
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                )
-
-                if fair is None:
-                    continue
-
-                if check_runtime_calibration(
-                    config,
-                    total_line,
-                    {
-                        "side": side,
-                    },
-                    fair,
-                    file_path,
-                    row_number,
-                    fair_col,
-                    errors,
-                ):
-                    checked += 1
-
-    log(
-        "RUNTIME TOTAL SIDES CHECKED | "
-        f"{checked} | "
-        f"files={len(files)}"
-    )
-
-    return checked
 
 
 ###############################################################
@@ -1260,25 +1077,35 @@ def main() -> None:
     reset_log()
 
     errors: list[str] = []
+    warnings: list[str] = []
 
     log(
         f"CONFIG_DIR={CONFIG_DIR}"
-    )
-    log(
-        f"INPUT_DIR={INPUT_DIR}"
     )
 
     log(
         "MONEYLINE SUPPORTED ODDS="
         "-999..-100 and +100..+599"
     )
+
     log(
         "PUCK-LINE SUPPORTED LINES="
         "-1.5,+1.5"
     )
+
     log(
         "TOTAL SUPPORTED LINES="
         "5.5,6.0,6.5,7.0,7.5"
+    )
+
+    log(
+        "MONEYLINE FAIR DECIMAL RULE="
+        ">1 with no upstream probability clip"
+    )
+
+    log(
+        "PUCK-LINE/TOTAL MIN FAIR DECIMAL="
+        f"{CLIPPED_MIN_FAIR_DECIMAL:.12g}"
     )
 
     moneyline = load_config(
@@ -1303,35 +1130,31 @@ def main() -> None:
         validate_moneyline_static(
             moneyline,
             errors,
-        )
-        validate_runtime_moneyline(
-            moneyline,
-            errors,
+            warnings,
         )
 
     if puck_line is not None:
         validate_puck_line_static(
             puck_line,
             errors,
-        )
-        validate_runtime_puck_line(
-            puck_line,
-            errors,
+            warnings,
         )
 
     if total is not None:
         validate_total_static(
             total,
             errors,
-        )
-        validate_runtime_total(
-            total,
-            errors,
+            warnings,
         )
 
     log(
         f"VALIDATION ERRORS | "
         f"{len(errors)}"
+    )
+
+    log(
+        f"VALIDATION WARNINGS | "
+        f"{len(warnings)}"
     )
 
     if errors:
@@ -1343,7 +1166,8 @@ def main() -> None:
         print(
             "NHL Stage 02 calibration "
             "validation FAILED: "
-            f"{len(errors)} error(s). "
+            f"{len(errors)} error(s), "
+            f"{len(warnings)} warning(s). "
             f"See {LOG_FILE}"
         )
 
@@ -1355,7 +1179,9 @@ def main() -> None:
 
     print(
         "NHL Stage 02 calibration "
-        "validation complete."
+        "validation complete: "
+        f"0 errors, "
+        f"{len(warnings)} warning(s)."
     )
 
 
