@@ -1,7 +1,7 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_03_02_Nashville Predators_Detroit Red Wings","hockey","nhl","2026_03_02","2:10 PM","Nashville Predators","Detroit Red Wings","-102","-118","+1.5","-1.5","6.5","-285","+230","+105","-125","","","","","",""
-"2026_03_02_New York Rangers_Columbus Blue Jackets","hockey","nhl","2026_03_02","7:10 PM","New York Rangers","Columbus Blue Jackets","+105","-125","+1.5","-1.5","6.5","-230","+190","+110","-130","","","","","",""
-"2026_03_02_Toronto Maple Leafs_Philadelphia Flyers","hockey","nhl","2026_03_02","7:40 PM","Toronto Maple Leafs","Philadelphia Flyers","-135","+114","-1.5","+1.5","6.5","+190","-230","+105","-125","","","","","",""
-"2026_03_02_Vancouver Canucks_Dallas Stars","hockey","nhl","2026_03_02","10:10 PM","Vancouver Canucks","Dallas Stars","+160","-192","+1.5","-1.5","5.5","-162","+136","-130","+110","","","","","",""
-"2026_03_02_Seattle Kraken_Carolina Hurricanes","hockey","nhl","2026_03_02","10:10 PM","Seattle Kraken","Carolina Hurricanes","+154","-185","+1.5","-1.5","5.5","-166","+140","-130","+110","","","","","",""
-"2026_03_02_Los Angeles Kings_Colorado Avalanche","hockey","nhl","2026_03_02","10:40 PM","Los Angeles Kings","Colorado Avalanche","+150","-180","+1.5","-1.5","5.5","-175","+145","-135","+114","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020955,,hockey,nhl,2026_03_02,14:00,Nashville Predators,Detroit Red Wings,-102,-118,+1.5,-1.5,6.5,-285,+230,+105,-125,,,,,,
+2025020953,,hockey,nhl,2026_03_02,19:00,New York Rangers,Columbus Blue Jackets,+105,-125,+1.5,-1.5,6.5,-230,+190,+110,-130,,,,,,
+2025020954,,hockey,nhl,2026_03_02,19:30,Toronto Maple Leafs,Philadelphia Flyers,-135,+114,-1.5,+1.5,6.5,+190,-230,+105,-125,,,,,,
+2025020956,,hockey,nhl,2026_03_02,22:00,Vancouver Canucks,Dallas Stars,+160,-192,+1.5,-1.5,5.5,-162,+136,-130,+110,,,,,,
+2025020957,,hockey,nhl,2026_03_02,22:00,Seattle Kraken,Carolina Hurricanes,+154,-185,+1.5,-1.5,5.5,-166,+140,-130,+110,,,,,,
+2025020958,,hockey,nhl,2026_03_02,22:30,Los Angeles Kings,Colorado Avalanche,+150,-180,+1.5,-1.5,5.5,-175,+145,-135,+114,,,,,,

@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_12_15,7:00 PM EST,2025_12_15_New York Rangers_Anaheim Ducks,Anaheim Ducks,New York Rangers,1.5,-1.5,0.641249254966787,0.358750745033213,1.5594560028795577,2.787450657161479,-235,195,,
-hockey,nhl,2025_12_15,7:00 PM EST,2025_12_15_Tampa Bay Lightning_Florida Panthers,Florida Panthers,Tampa Bay Lightning,1.5,-1.5,0.7230170885379861,0.27698291146201404,1.3830931742181938,3.610331029887892,-210,180,,
-hockey,nhl,2025_12_15,7:30 PM EST,2025_12_15_Winnipeg Jets_Ottawa Senators,Ottawa Senators,Winnipeg Jets,1.5,-1.5,0.6827222072249919,0.3172777927750082,1.4647245825862654,3.151812143086648,-225,189,,
-hockey,nhl,2025_12_15,8:00 PM EST,2025_12_15_Dallas Stars_Los Angeles Kings,Los Angeles Kings,Dallas Stars,1.5,-1.5,0.6053224152170896,0.39467758478290993,1.6520121754311134,2.5337136907586078,-215,183,,
-hockey,nhl,2025_12_15,8:00 PM EST,2025_12_15_St Louis Blues_Nashville Predators,Nashville Predators,St Louis Blues,1.5,-1.5,0.7363577714343637,0.26364222856563624,1.3580355077289172,3.7930190676985593,-245,203,,
+hockey,nhl,2025_12_15,19:00,2025020514,Florida Panthers,Tampa Bay Lightning,1.5,-1.5,0.7230170885379861,0.27698291146201404,1.3830931742181938,3.610331029887892,-210,180,,
+hockey,nhl,2025_12_15,19:00,2025020515,Anaheim Ducks,New York Rangers,1.5,-1.5,0.641249254966787,0.358750745033213,1.5594560028795577,2.787450657161479,-235,195,,
+hockey,nhl,2025_12_15,19:30,2025020516,Ottawa Senators,Winnipeg Jets,1.5,-1.5,0.6827222072249919,0.3172777927750082,1.4647245825862654,3.151812143086648,-225,189,,
+hockey,nhl,2025_12_15,20:00,2025020517,Nashville Predators,St Louis Blues,1.5,-1.5,0.7363577714343637,0.26364222856563624,1.3580355077289172,3.7930190676985593,-245,203,,
+hockey,nhl,2025_12_15,20:00,2025020518,Los Angeles Kings,Dallas Stars,1.5,-1.5,0.6053224152170896,0.39467758478290993,1.6520121754311134,2.5337136907586078,-215,183,,

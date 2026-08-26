@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_06,19:00,2025020443,New Jersey Devils,Boston Bruins,-1.5,1.5,0.2704702125072317,0.7295297874927684,3.697264814228896,1.370745947792999,211,-255,,,bad_juiced_decimal
+hockey,nhl,2025_12_06,19:00,2025020448,Utah Mammoth,Calgary Flames,1.5,-1.5,0.7952727755389861,0.204727224461014,1.2574301934606809,4.884548220847047,-240,200,,,bad_juiced_decimal
+hockey,nhl,2025_12_06,22:00,2025020452,Detroit Red Wings,Seattle Kraken,-1.5,1.5,0.2863243816568789,0.7136756183431215,3.4925422495048464,1.4011968102842196,215,-260,,,bad_juiced_decimal

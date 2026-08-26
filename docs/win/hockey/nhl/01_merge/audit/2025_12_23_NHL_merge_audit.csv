@@ -1,13 +1,14 @@
 game_date,game_id,away_team,home_team,source_present_games,source_present_sportsbook,source_present_predictions,status
-2025_12_23,2025_12_23_Toronto Maple Leafs_Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,1,1,1,matched
-2025_12_23,2025_12_23_Detroit Red Wings_Dallas Stars,Dallas Stars,Detroit Red Wings,1,1,1,matched
-2025_12_23,2025_12_23_Boston Bruins_Montreal Canadiens,Montreal Canadiens,Boston Bruins,1,1,1,matched
-2025_12_23,2025_12_23_Washington Capitals_New York Rangers,New York Rangers,Washington Capitals,1,1,1,matched
-2025_12_23,2025_12_23_New York Islanders_New Jersey Devils,New Jersey Devils,New York Islanders,1,1,1,matched
-2025_12_23,2025_12_23_Ottawa Senators_Buffalo Sabres,Buffalo Sabres,Ottawa Senators,1,1,1,matched
-2025_12_23,2025_12_23_Carolina Hurricanes_Florida Panthers,Florida Panthers,Carolina Hurricanes,1,1,1,matched
-2025_12_23,2025_12_23_Minnesota Wild_Nashville Predators,Nashville Predators,Minnesota Wild,1,1,1,matched
-2025_12_23,2025_12_23_Colorado Avalanche_Utah Mammoth,Utah Mammoth,Colorado Avalanche,1,1,1,matched
-2025_12_23,2025_12_23_Edmonton Oilers_Calgary Flames,Calgary Flames,Edmonton Oilers,1,1,1,matched
-2025_12_23,2025_12_23_Chicago Blackhawks_Philadelphia Flyers,Philadelphia Flyers,Chicago Blackhawks,1,1,1,matched
-2025_12_23,2025_12_23_Los Angeles Kings_Seattle Kraken,Seattle Kraken,Los Angeles Kings,1,1,1,matched
+2025_12_23,2025020575,Pittsburgh Penguins,Toronto Maple Leafs,1,1,1,matched
+2025_12_23,2025020579,Dallas Stars,Detroit Red Wings,1,1,1,matched
+2025_12_23,2025020576,New York Rangers,Washington Capitals,1,1,1,matched
+2025_12_23,2025020577,Montreal Canadiens,Boston Bruins,1,1,1,matched
+2025_12_23,2025020578,Buffalo Sabres,Ottawa Senators,1,1,1,matched
+2025_12_23,2025020580,New Jersey Devils,New York Islanders,1,1,1,matched
+2025_12_23,2025020581,Florida Panthers,Carolina Hurricanes,1,1,1,matched
+2025_12_23,2025020582,Nashville Predators,Minnesota Wild,1,1,1,matched
+2025_12_23,2025020583,Philadelphia Flyers,Chicago Blackhawks,1,1,1,matched
+2025_12_23,2025020584,Utah Mammoth,Colorado Avalanche,1,1,1,matched
+2025_12_23,2025020585,Calgary Flames,Edmonton Oilers,1,1,1,matched
+2025_12_23,2025020586,San Jose Sharks,Vegas Golden Knights,1,0,0,missing_sportsbook_and_prediction
+2025_12_23,2025020587,Seattle Kraken,Los Angeles Kings,1,1,1,matched

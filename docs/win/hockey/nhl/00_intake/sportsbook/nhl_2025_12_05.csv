@@ -1,6 +1,6 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_12_05_New Jersey Devils_Vegas Golden Knights","hockey","nhl","2025_12_05","7:00 PM EST","New Jersey Devils","Vegas Golden Knights","105","-130","+1.5","-1.5","6.0","-240","+200","-118","-102","","","","","",""
-"2025_12_05_Winnipeg Jets_Buffalo Sabres","hockey","nhl","2025_12_05","7:00 PM EST","Winnipeg Jets","Buffalo Sabres","-145","120","-1.5","+1.5","6.0","+174","-200","-118","-102","","","","","",""
-"2025_12_05_Dallas Stars_San Jose Sharks","hockey","nhl","2025_12_05","8:00 PM EST","Dallas Stars","San Jose Sharks","-300","240","-1.5","+1.5","6.0","-115","-105","-115","-105","","","","","",""
-"2025_12_05_Vancouver Canucks_Utah Mammoth","hockey","nhl","2025_12_05","9:00 PM EST","Vancouver Canucks","Utah Mammoth","105","-130","+1.5","-1.5","6.0","-230","+192","-125","105","","","","","",""
-"2025_12_05_Anaheim Ducks_Washington Capitals","hockey","nhl","2025_12_05","10:00 PM EST","Anaheim Ducks","Washington Capitals","115","-140","+1.5","-1.5","6.0","-215","+183","-125","105","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020436,,hockey,nhl,2025_12_05,19:00,New Jersey Devils,Vegas Golden Knights,105,-130,+1.5,-1.5,6.0,-240,+200,-118,-102,,,,,,
+2025020437,,hockey,nhl,2025_12_05,19:00,Winnipeg Jets,Buffalo Sabres,-145,120,-1.5,+1.5,6.0,+174,-200,-118,-102,,,,,,
+2025020438,,hockey,nhl,2025_12_05,20:00,Dallas Stars,San Jose Sharks,-300,240,-1.5,+1.5,6.0,-115,-105,-115,-105,,,,,,
+2025020439,,hockey,nhl,2025_12_05,21:00,Vancouver Canucks,Utah Mammoth,105,-130,+1.5,-1.5,6.0,-230,+192,-125,105,,,,,,
+2025020440,,hockey,nhl,2025_12_05,22:00,Anaheim Ducks,Washington Capitals,115,-140,+1.5,-1.5,6.0,-215,+183,-125,105,,,,,,

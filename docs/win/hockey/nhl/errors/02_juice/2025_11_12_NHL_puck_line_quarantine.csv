@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_12,19:30,2025020266,Edmonton Oilers,Philadelphia Flyers,-1.5,1.5,0.2690247576315289,0.7309752423684712,3.717130009906579,1.3680353889412828,177,-205,,,bad_juiced_decimal
+hockey,nhl,2025_11_12,21:30,2025020268,New Jersey Devils,Chicago Blackhawks,-1.5,1.5,0.2976170692282343,0.7023829307717657,3.3600223353893983,1.4237248033650505,161,-185,,,bad_juiced_decimal

@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_22,15:00,2025021113,Nashville Predators,Chicago Blackhawks,-1.5,1.5,0.2550749000174381,0.7449250999825616,3.920417100748193,1.3424168416709406,235,-290,,,bad_juiced_decimal
+hockey,nhl,2026_03_22,19:00,2025021114,Columbus Blue Jackets,New York Islanders,-1.5,1.5,0.2551329677684105,0.7448670322315897,3.919524821691098,1.342521492734137,205,-250,,,bad_juiced_decimal
+hockey,nhl,2026_03_22,20:00,2025021117,Buffalo Sabres,Anaheim Ducks,1.5,-1.5,0.7228416620360278,0.2771583379639719,1.3834288372135335,3.608045882170036,-278,225,,,bad_juiced_decimal

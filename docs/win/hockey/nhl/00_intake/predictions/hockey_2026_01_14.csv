@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_14_New Jersey Devils_Seattle Kraken","2026_01_14","07:07 PM","New Jersey Devils","Seattle Kraken","0.6","0.4","2.35","3.38","5.73"
-"hockey","nhl","2026_01_14_New York Rangers_Ottawa Senators","2026_01_14","07:37 PM","New York Rangers","Ottawa Senators","0.517","0.483","2.75","2.93","5.68"
-"hockey","nhl","2026_01_14_Buffalo Sabres_Philadelphia Flyers","2026_01_14","07:37 PM","Buffalo Sabres","Philadelphia Flyers","0.55","0.45","2.78","3.32","6.10"
-"hockey","nhl","2026_01_14_Los Angeles Kings_Vegas Golden Knights","2026_01_14","10:22 PM","Los Angeles Kings","Vegas Golden Knights","0.474","0.526","2.98","2.69","5.67"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020735,hockey,nhl,2026_01_14,19:00,New Jersey Devils,Seattle Kraken,0.6,0.4,2.35,3.38,5.73
+2025020736,hockey,nhl,2026_01_14,19:30,Buffalo Sabres,Philadelphia Flyers,0.55,0.45,2.78,3.32,6.10
+2025020737,hockey,nhl,2026_01_14,19:30,New York Rangers,Ottawa Senators,0.517,0.483,2.75,2.93,5.68
+2025020738,hockey,nhl,2026_01_14,22:00,Los Angeles Kings,Vegas Golden Knights,0.474,0.526,2.98,2.69,5.67

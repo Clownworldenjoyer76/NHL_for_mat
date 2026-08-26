@@ -1,4 +1,4 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2026_02_01,3:00 PM EST,2026_02_01_Carolina Hurricanes_Los Angeles Kings,Los Angeles Kings,Carolina Hurricanes,6.0,5.67,0.40535479370373634,0.5946452062962636,2.4669746492029274,1.681675038176934,-102,-118,,
-hockey,nhl,2026_02_01,6:30 PM EST,2026_02_01_Boston Bruins_Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,6.0,6.06,0.4804881696028873,0.5195118303971127,2.0812166943183588,1.9248839804776037,-110,-110,,
-hockey,nhl,2026_02_01,9:30 PM EST,2026_02_01_Anaheim Ducks_Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,6.5,6.46,0.46716759855368784,0.5328324014463122,2.14055941185972,1.8767627443181294,-120,100,,
+hockey,nhl,2026_02_01,15:00,2025020874,Los Angeles Kings,Carolina Hurricanes,6.0,5.67,0.40535479370373634,0.5946452062962636,2.4669746492029274,1.681675038176934,-102,-118,,
+hockey,nhl,2026_02_01,18:30,2025020873,Boston Bruins,Tampa Bay Lightning,6.0,6.06,0.4804881696028873,0.5195118303971127,2.0812166943183588,1.9248839804776037,-110,-110,,
+hockey,nhl,2026_02_01,21:30,2025020875,Vegas Golden Knights,Anaheim Ducks,6.5,6.46,0.46716759855368784,0.5328324014463122,2.14055941185972,1.8767627443181294,-120,100,,

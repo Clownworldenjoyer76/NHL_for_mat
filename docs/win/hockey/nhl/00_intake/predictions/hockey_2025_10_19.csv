@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_10_19_Utah Mammoth_Boston Bruins","2025_10_19","07:07 PM","Utah Mammoth","Boston Bruins","0.627","0.373","2.32","3.45","5.77"
-"hockey","nhl","2025_10_19_Washington Capitals_Vancouver Canucks","2025_10_19","12:37 PM","Washington Capitals","Vancouver Canucks","0.602","0.398","2.30","3.32","5.62"
-"hockey","nhl","2025_10_19_Chicago Blackhawks_Anaheim Ducks","2025_10_19","07:07 PM","Chicago Blackhawks","Anaheim Ducks","0.492","0.508","3.13","3.04","6.17"
-"hockey","nhl","2025_10_19_Detroit Red Wings_Edmonton Oilers","2025_10_19","03:07 PM","Detroit Red Wings","Edmonton Oilers","0.494","0.506","3.22","3.16","6.38"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020089,hockey,nhl,2025_10_19,12:30,Washington Capitals,Vancouver Canucks,0.602,0.398,2.30,3.32,5.62
+2025020090,hockey,nhl,2025_10_19,15:00,Detroit Red Wings,Edmonton Oilers,0.494,0.506,3.22,3.16,6.38
+2025020091,hockey,nhl,2025_10_19,19:00,Chicago Blackhawks,Anaheim Ducks,0.492,0.508,3.13,3.04,6.17
+2025020092,hockey,nhl,2025_10_19,19:00,Utah Mammoth,Boston Bruins,0.627,0.373,2.32,3.45,5.77

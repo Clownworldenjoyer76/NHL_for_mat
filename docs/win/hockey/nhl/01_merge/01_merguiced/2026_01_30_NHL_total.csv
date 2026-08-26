@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2026_01_30,8:30 PM EST,2026_01_30_Chicago Blackhawks_Columbus Blue Jackets,Columbus Blue Jackets,Chicago Blackhawks,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,-125,105,,
+hockey,nhl,2026_01_30,20:30,2025020858,Columbus Blue Jackets,Chicago Blackhawks,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,-125,105,,

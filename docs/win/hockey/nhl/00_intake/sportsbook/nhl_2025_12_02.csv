@@ -1,11 +1,11 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_12_02_Detroit Red Wings_Boston Bruins","hockey","nhl","2025_12_02","7:00 PM EST","Detroit Red Wings","Boston Bruins","-200","165","-1.5","+1.5","5.5","+140","-160","-115","-105","","","","","",""
-"2025_12_02_Montreal Canadiens_Ottawa Senators","hockey","nhl","2025_12_02","7:00 PM EST","Montreal Canadiens","Ottawa Senators","-115","-105","-1.5","+1.5","6.0","+226","-275","-115","-105","","","","","",""
-"2025_12_02_New York Islanders_Tampa Bay Lightning","hockey","nhl","2025_12_02","7:00 PM EST","New York Islanders","Tampa Bay Lightning","115","-140","+1.5","-1.5","6.0","-205","+177","-115","-105","","","","","",""
-"2025_12_02_New York Rangers_Dallas Stars","hockey","nhl","2025_12_02","7:00 PM EST","New York Rangers","Dallas Stars","110","-135","+1.5","-1.5","5.5","-260","+215","-110","-110","","","","","",""
-"2025_12_02_Florida Panthers_Toronto Maple Leafs","hockey","nhl","2025_12_02","7:30 PM EST","Florida Panthers","Toronto Maple Leafs","-170","140","-1.5","+1.5","6.0","+165","-190","-110","-110","","","","","",""
-"2025_12_02_Nashville Predators_Calgary Flames","hockey","nhl","2025_12_02","8:00 PM EST","Nashville Predators","Calgary Flames","-120","100","-1.5","+1.5","5.5","+215","-260","-120","100","","","","","",""
-"2025_12_02_Colorado Avalanche_Vancouver Canucks","hockey","nhl","2025_12_02","9:00 PM EST","Colorado Avalanche","Vancouver Canucks","-325","260","-1.5","+1.5","6.5","-125","+105","-110","-110","","","","","",""
-"2025_12_02_Edmonton Oilers_Minnesota Wild","hockey","nhl","2025_12_02","9:00 PM EST","Edmonton Oilers","Minnesota Wild","-160","135","-1.5","+1.5","6.0","+161","-185","-110","-110","","","","","",""
-"2025_12_02_Vegas Golden Knights_Chicago Blackhawks","hockey","nhl","2025_12_02","10:00 PM EST","Vegas Golden Knights","Chicago Blackhawks","-295","230","-1.5","+1.5","6.0","-110","-110","-120","100","","","","","",""
-"2025_12_02_Los Angeles Kings_Washington Capitals","hockey","nhl","2025_12_02","10:30 PM EST","Los Angeles Kings","Washington Capitals","-125","105","-1.5","+1.5","5.5","+218","-264","-115","-105","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020411,,hockey,nhl,2025_12_02,19:00,Montreal Canadiens,Ottawa Senators,-115,-105,-1.5,+1.5,6.0,+226,-275,-115,-105,,,,,,
+2025020412,,hockey,nhl,2025_12_02,19:00,Detroit Red Wings,Boston Bruins,-200,165,-1.5,+1.5,5.5,+140,-160,-115,-105,,,,,,
+2025020414,,hockey,nhl,2025_12_02,19:00,New York Islanders,Tampa Bay Lightning,115,-140,+1.5,-1.5,6.0,-205,+177,-115,-105,,,,,,
+2025020415,,hockey,nhl,2025_12_02,19:00,New York Rangers,Dallas Stars,110,-135,+1.5,-1.5,5.5,-260,+215,-110,-110,,,,,,
+2025020413,,hockey,nhl,2025_12_02,19:30,Florida Panthers,Toronto Maple Leafs,-170,140,-1.5,+1.5,6.0,+165,-190,-110,-110,,,,,,
+2025020416,,hockey,nhl,2025_12_02,20:00,Nashville Predators,Calgary Flames,-120,100,-1.5,+1.5,5.5,+215,-260,-120,100,,,,,,
+2025020417,,hockey,nhl,2025_12_02,21:00,Colorado Avalanche,Vancouver Canucks,-325,260,-1.5,+1.5,6.5,-125,+105,-110,-110,,,,,,
+2025020418,,hockey,nhl,2025_12_02,21:00,Edmonton Oilers,Minnesota Wild,-160,135,-1.5,+1.5,6.0,+161,-185,-110,-110,,,,,,
+2025020419,,hockey,nhl,2025_12_02,22:00,Vegas Golden Knights,Chicago Blackhawks,-295,230,-1.5,+1.5,6.0,-110,-110,-120,100,,,,,,
+2025020420,,hockey,nhl,2025_12_02,22:30,Los Angeles Kings,Washington Capitals,-125,105,-1.5,+1.5,5.5,+218,-264,-115,-105,,,,,,

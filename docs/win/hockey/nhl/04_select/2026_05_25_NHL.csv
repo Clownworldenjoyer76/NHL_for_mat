@@ -1,2 +1,1 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,NHL,2026_05_25,20:00,70558004,Carolina Hurricanes,Montreal Canadiens,puck_line,home,1.5,home_puck_line,-222.0,1.45,0.8159807781840556,0.1831721283668805,0.1831721283668805,0.4070491741486234

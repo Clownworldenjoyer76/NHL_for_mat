@@ -1,9 +1,9 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_23_Vancouver Canucks_New Jersey Devils","2026_01_23","10:07 PM","Vancouver Canucks","New Jersey Devils","0.433","0.567","3.32","2.61","5.93"
-"hockey","nhl","2026_01_23_San Jose Sharks_New York Rangers","2026_01_23","10:07 PM","San Jose Sharks","New York Rangers","0.462","0.538","3.25","2.83","6.08"
-"hockey","nhl","2026_01_23_Colorado Avalanche_Philadelphia Flyers","2026_01_23","09:22 PM","Colorado Avalanche","Philadelphia Flyers","0.709","0.291","2.35","3.76","6.11"
-"hockey","nhl","2026_01_23_Toronto Maple Leafs_Vegas Golden Knights","2026_01_23","07:07 PM","Toronto Maple Leafs","Vegas Golden Knights","0.498","0.502","2.99","2.96","5.95"
-"hockey","nhl","2026_01_23_Chicago Blackhawks_Tampa Bay Lightning","2026_01_23","07:07 PM","Chicago Blackhawks","Tampa Bay Lightning","0.315","0.685","3.62","2.30","5.92"
-"hockey","nhl","2026_01_23_Calgary Flames_Washington Capitals","2026_01_23","09:07 PM","Calgary Flames","Washington Capitals","0.453","0.547","3.13","2.63","5.76"
-"hockey","nhl","2026_01_23_Dallas Stars_St Louis Blues","2026_01_23","08:07 PM","Dallas Stars","St Louis Blues","0.642","0.358","2.26","3.44","5.70"
-"hockey","nhl","2026_01_23_Seattle Kraken_Anaheim Ducks","2026_01_23","10:07 PM","Seattle Kraken","Anaheim Ducks","0.49","0.51","3.17","3.07","6.24"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020802,hockey,nhl,2026_01_23,19:00,Toronto Maple Leafs,Vegas Golden Knights,0.498,0.502,2.99,2.96,5.95
+2025020803,hockey,nhl,2026_01_23,19:00,Chicago Blackhawks,Tampa Bay Lightning,0.315,0.685,3.62,2.30,5.92
+2025020804,hockey,nhl,2026_01_23,20:00,Dallas Stars,St Louis Blues,0.642,0.358,2.26,3.44,5.70
+2025020805,hockey,nhl,2026_01_23,21:00,Colorado Avalanche,Philadelphia Flyers,0.709,0.291,2.35,3.76,6.11
+2025020806,hockey,nhl,2026_01_23,21:00,Calgary Flames,Washington Capitals,0.453,0.547,3.13,2.63,5.76
+2025020807,hockey,nhl,2026_01_23,22:00,Vancouver Canucks,New Jersey Devils,0.433,0.567,3.32,2.61,5.93
+2025020808,hockey,nhl,2026_01_23,22:00,San Jose Sharks,New York Rangers,0.462,0.538,3.25,2.83,6.08
+2025020809,hockey,nhl,2026_01_23,22:00,Seattle Kraken,Anaheim Ducks,0.49,0.51,3.17,3.07,6.24

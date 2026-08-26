@@ -1,6 +1,6 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_12_08_Toronto Maple Leafs_Tampa Bay Lightning","hockey","nhl","2025_12_08","7:30 PM EST","Toronto Maple Leafs","Tampa Bay Lightning","-120","100","-1.5","+1.5","6.0","+219","-265","-118","-102","","","","","",""
-"2025_12_08_Utah Mammoth_Los Angeles Kings","hockey","nhl","2025_12_08","9:00 PM EST","Utah Mammoth","Los Angeles Kings","-120","100","-1.5","+1.5","6.0","+219","-265","100","-120","","","","","",""
-"2025_12_08_Calgary Flames_Buffalo Sabres","hockey","nhl","2025_12_08","9:00 PM EST","Calgary Flames","Buffalo Sabres","-115","-105","-1.5","+1.5","6.0","+215","-260","-110","-110","","","","","",""
-"2025_12_08_Vancouver Canucks_Detroit Red Wings","hockey","nhl","2025_12_08","10:00 PM EST","Vancouver Canucks","Detroit Red Wings","105","-125","+1.5","-1.5","6.0","-240","+200","-118","-102","","","","","",""
-"2025_12_08_Seattle Kraken_Minnesota Wild","hockey","nhl","2025_12_08","10:00 PM EST","Seattle Kraken","Minnesota Wild","110","-135","+1.5","-1.5","5.5","-230","+192","-110","-110","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020461,,hockey,nhl,2025_12_08,19:30,Toronto Maple Leafs,Tampa Bay Lightning,-120,100,-1.5,+1.5,6.0,+219,-265,-118,-102,,,,,,
+2025020462,,hockey,nhl,2025_12_08,21:00,Utah Mammoth,Los Angeles Kings,-120,100,-1.5,+1.5,6.0,+219,-265,100,-120,,,,,,
+2025020463,,hockey,nhl,2025_12_08,21:00,Calgary Flames,Buffalo Sabres,-115,-105,-1.5,+1.5,6.0,+215,-260,-110,-110,,,,,,
+2025020464,,hockey,nhl,2025_12_08,22:00,Vancouver Canucks,Detroit Red Wings,105,-125,+1.5,-1.5,6.0,-240,+200,-118,-102,,,,,,
+2025020465,,hockey,nhl,2025_12_08,22:00,Seattle Kraken,Minnesota Wild,110,-135,+1.5,-1.5,5.5,-230,+192,-110,-110,,,,,,

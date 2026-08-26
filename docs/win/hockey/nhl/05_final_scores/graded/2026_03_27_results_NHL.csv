@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_03_27,19:00,2025021151,Chicago Blackhawks,New York Rangers,moneyline,home,,home_moneyline,-175.0,1.57,0.6632470431794208,0.0412978577916907,0.0412978577916907,0.0724523820906855,2026_03_27_NHL.csv,1,6,7,-5,5,2026_03_27_NHL_final_scores.csv,Win

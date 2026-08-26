@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_08,19:00,2025021244,Buffalo Sabres,New York Rangers,-1.5,1.5,0.2885522732627499,0.7114477267372502,3.465576578873181,1.4055846444067943,170,-204,2.7,1.49,bad_juiced_decimal
+hockey,nhl,2026_04_08,19:30,2025021245,Washington Capitals,Toronto Maple Leafs,-1.5,1.5,0.3241412284154042,0.6758587715845955,3.0850749992174604,1.4795990553698577,170,-204,2.7,1.49,bad_juiced_decimal
+hockey,nhl,2026_04_08,22:00,2025021246,Edmonton Oilers,San Jose Sharks,-1.5,1.5,0.2732026657734203,0.7267973342265797,3.6602863927738776,1.3758993778701023,195,-238,2.95,1.42,bad_juiced_decimal

@@ -1,6 +1,6 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_16_Colorado Avalanche_New York Islanders","2025_11_16","09:07 PM","Colorado Avalanche","New York Islanders","0.649","0.351","2.58","3.79","6.37"
-"hockey","nhl","2025_11_16_New York Rangers_Detroit Red Wings","2025_11_16","07:07 PM","New York Rangers","Detroit Red Wings","0.577","0.423","2.48","3.31","5.79"
-"hockey","nhl","2025_11_16_Pittsburgh Penguins_Nashville Predators","2025_11_16","09:07 AM","Pittsburgh Penguins","Nashville Predators","0.523","0.477","3.00","3.25","6.25"
-"hockey","nhl","2025_11_16_Tampa Bay Lightning_Vancouver Canucks","2025_11_16","05:07 PM","Tampa Bay Lightning","Vancouver Canucks","0.574","0.426","2.63","3.43","6.06"
-"hockey","nhl","2025_11_16_Minnesota Wild_Vegas Golden Knights","2025_11_16","06:07 PM","Minnesota Wild","Vegas Golden Knights","0.465","0.535","3.24","2.87","6.11"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020296,hockey,nhl,2025_11_16,09:00,Pittsburgh Penguins,Nashville Predators,0.523,0.477,3.00,3.25,6.25
+2025020297,hockey,nhl,2025_11_16,17:00,Tampa Bay Lightning,Vancouver Canucks,0.574,0.426,2.63,3.43,6.06
+2025020298,hockey,nhl,2025_11_16,18:00,Minnesota Wild,Vegas Golden Knights,0.465,0.535,3.24,2.87,6.11
+2025020299,hockey,nhl,2025_11_16,19:00,New York Rangers,Detroit Red Wings,0.577,0.423,2.48,3.31,5.79
+2025020300,hockey,nhl,2025_11_16,21:00,Colorado Avalanche,New York Islanders,0.649,0.351,2.58,3.79,6.37

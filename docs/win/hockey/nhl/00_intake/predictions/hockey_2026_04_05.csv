@@ -1,8 +1,8 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","e9ee86ad4d39a43c99e29bc6c07b424c","2026_04_05","07:07 PM","Montreal Canadiens","New Jersey Devils","0.566","0.434","2.81","3.53","6.34"
-"hockey","nhl","a47587923d1b10469803a4ec5171b621","2026_04_05","07:07 PM","New York Rangers","Washington Capitals","0.54","0.46","2.77","3.19","5.96"
-"hockey","nhl","4ee0a58e1700d2f73d808677a7499755","2026_04_05","03:37 PM","Philadelphia Flyers","Boston Bruins","0.551","0.449","2.66","3.20","5.86"
-"hockey","nhl","d3523216577286ba8513401af981de1e","2026_04_05","03:07 PM","Pittsburgh Penguins","Florida Panthers","0.596","0.404","2.60","3.62","6.22"
-"hockey","nhl","5525381fbde73b776cadf83541822b62","2026_04_05","05:07 PM","Ottawa Senators","Carolina Hurricanes","0.459","0.541","3.42","2.98","6.40"
-"hockey","nhl","c36637b0713ec3bed157fe2f29f74598","2026_04_05","01:07 PM","Detroit Red Wings","Minnesota Wild","0.476","0.524","3.11","2.85","5.96"
-"hockey","nhl","6e1c8f2b345c36cffadaf88c2bb4b58a","2026_04_05","09:45 PM","Colorado Avalanche","St Louis Blues","0.708","0.292","2.41","3.81","6.22"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021222,hockey,nhl,2026_04_05,13:00,Detroit Red Wings,Minnesota Wild,0.476,0.524,3.11,2.85,5.96
+2025021223,hockey,nhl,2026_04_05,15:00,Pittsburgh Penguins,Florida Panthers,0.596,0.404,2.60,3.62,6.22
+2025021224,hockey,nhl,2026_04_05,15:30,Philadelphia Flyers,Boston Bruins,0.551,0.449,2.66,3.20,5.86
+2025021225,hockey,nhl,2026_04_05,17:00,Ottawa Senators,Carolina Hurricanes,0.459,0.541,3.42,2.98,6.40
+2025021226,hockey,nhl,2026_04_05,19:00,Montreal Canadiens,New Jersey Devils,0.566,0.434,2.81,3.53,6.34
+2025021227,hockey,nhl,2026_04_05,19:00,New York Rangers,Washington Capitals,0.54,0.46,2.77,3.19,5.96
+2025021228,hockey,nhl,2026_04_05,21:30,Colorado Avalanche,St Louis Blues,0.708,0.292,2.41,3.81,6.22

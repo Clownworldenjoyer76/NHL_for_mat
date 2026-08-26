@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_29,19:00,2025020844,Los Angeles Kings,Buffalo Sabres,1.5,-1.5,0.6921899954390618,0.3078100045609381,1.44469005127081,3.24875730217543,-230,192,,,bad_juiced_decimal
+hockey,nhl,2026_01_29,19:00,2025020849,New York Islanders,New York Rangers,-1.5,1.5,0.2953598049554845,0.7046401950445158,3.385701044022277,1.4191640031787072,207,-250,,,bad_juiced_decimal
+hockey,nhl,2026_01_29,19:30,2025020846,Washington Capitals,Detroit Red Wings,1.5,-1.5,0.6998170336806763,0.3001829663193237,1.4289449268482597,3.331301613350827,-245,203,,,bad_juiced_decimal
+hockey,nhl,2026_01_29,22:00,2025020856,Dallas Stars,Vegas Golden Knights,1.5,-1.5,0.6992483651778785,0.3007516348221215,1.4301070260573503,3.325002707271887,-220,186,,,bad_juiced_decimal
+hockey,nhl,2026_01_29,22:00,2025020857,Toronto Maple Leafs,Seattle Kraken,-1.5,1.5,0.2978813583540345,0.7021186416459657,3.357041224484721,1.424260717043085,219,-265,,,bad_juiced_decimal

@@ -1,16 +1,16 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_26_New Jersey Devils_St Louis Blues","2025_11_26","07:07 PM","New Jersey Devils","St Louis Blues","0.616","0.384","2.47","3.55","6.02"
-"hockey","nhl","2025_11_26_New York Islanders_Boston Bruins","2025_11_26","07:07 PM","New York Islanders","Boston Bruins","0.62","0.38","2.54","3.63","6.17"
-"hockey","nhl","2025_11_26_Carolina Hurricanes_New York Rangers","2025_11_26","07:07 PM","Carolina Hurricanes","New York Rangers","0.597","0.403","2.43","3.44","5.87"
-"hockey","nhl","2025_11_26_Florida Panthers_Philadelphia Flyers","2025_11_26","07:07 PM","Florida Panthers","Philadelphia Flyers","0.634","0.366","2.15","3.30","5.45"
-"hockey","nhl","2025_11_26_Pittsburgh Penguins_Buffalo Sabres","2025_11_26","07:07 PM","Pittsburgh Penguins","Buffalo Sabres","0.504","0.496","3.21","3.25","6.46"
-"hockey","nhl","2025_11_26_Utah Mammoth_Montreal Canadiens","2025_11_26","09:37 PM","Utah Mammoth","Montreal Canadiens","0.594","0.406","2.51","3.52","6.03"
-"hockey","nhl","2025_11_26_Vegas Golden Knights_Ottawa Senators","2025_11_26","10:07 PM","Vegas Golden Knights","Ottawa Senators","0.584","0.416","2.55","3.44","5.99"
-"hockey","nhl","2025_11_26_Columbus Blue Jackets_Toronto Maple Leafs","2025_11_26","07:07 PM","Columbus Blue Jackets","Toronto Maple Leafs","0.554","0.446","2.92","3.51","6.43"
-"hockey","nhl","2025_11_26_Tampa Bay Lightning_Calgary Flames","2025_11_26","07:07 PM","Tampa Bay Lightning","Calgary Flames","0.632","0.368","2.29","3.42","5.71"
-"hockey","nhl","2025_11_26_Washington Capitals_Winnipeg Jets","2025_11_26","07:07 PM","Washington Capitals","Winnipeg Jets","0.537","0.463","2.59","3.00","5.59"
-"hockey","nhl","2025_11_26_Chicago Blackhawks_Minnesota Wild","2025_11_26","08:37 PM","Chicago Blackhawks","Minnesota Wild","0.463","0.537","3.22","2.82","6.04"
-"hockey","nhl","2025_11_26_Detroit Red Wings_Nashville Predators","2025_11_26","07:07 PM","Detroit Red Wings","Nashville Predators","0.631","0.369","2.37","3.51","5.88"
-"hockey","nhl","2025_11_26_Colorado Avalanche_San Jose Sharks","2025_11_26","09:07 PM","Colorado Avalanche","San Jose Sharks","0.749","0.251","2.48","4.13","6.61"
-"hockey","nhl","2025_11_26_Anaheim Ducks_Vancouver Canucks","2025_11_26","10:07 PM","Anaheim Ducks","Vancouver Canucks","0.603","0.397","2.63","3.67","6.30"
-"hockey","nhl","2025_11_26_Seattle Kraken_Dallas Stars","2025_11_26","10:07 PM","Seattle Kraken","Dallas Stars","0.466","0.534","3.06","2.70","5.76"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020361,hockey,nhl,2025_11_26,19:00,Detroit Red Wings,Nashville Predators,0.631,0.369,2.37,3.51,5.88
+2025020362,hockey,nhl,2025_11_26,19:00,Tampa Bay Lightning,Calgary Flames,0.632,0.368,2.29,3.42,5.71
+2025020363,hockey,nhl,2025_11_26,19:00,Florida Panthers,Philadelphia Flyers,0.634,0.366,2.15,3.30,5.45
+2025020364,hockey,nhl,2025_11_26,19:00,New Jersey Devils,St Louis Blues,0.616,0.384,2.47,3.55,6.02
+2025020365,hockey,nhl,2025_11_26,19:00,New York Islanders,Boston Bruins,0.62,0.38,2.54,3.63,6.17
+2025020366,hockey,nhl,2025_11_26,19:00,Pittsburgh Penguins,Buffalo Sabres,0.504,0.496,3.21,3.25,6.46
+2025020367,hockey,nhl,2025_11_26,19:00,Washington Capitals,Winnipeg Jets,0.537,0.463,2.59,3.00,5.59
+2025020368,hockey,nhl,2025_11_26,19:00,Carolina Hurricanes,New York Rangers,0.597,0.403,2.43,3.44,5.87
+2025020369,hockey,nhl,2025_11_26,19:00,Columbus Blue Jackets,Toronto Maple Leafs,0.554,0.446,2.92,3.51,6.43
+2025020370,hockey,nhl,2025_11_26,20:30,Chicago Blackhawks,Minnesota Wild,0.463,0.537,3.22,2.82,6.04
+2025020371,hockey,nhl,2025_11_26,21:00,Colorado Avalanche,San Jose Sharks,0.749,0.251,2.48,4.13,6.61
+2025020372,hockey,nhl,2025_11_26,21:30,Utah Mammoth,Montreal Canadiens,0.594,0.406,2.51,3.52,6.03
+2025020373,hockey,nhl,2025_11_26,22:00,Vegas Golden Knights,Ottawa Senators,0.584,0.416,2.55,3.44,5.99
+2025020374,hockey,nhl,2025_11_26,22:00,Anaheim Ducks,Vancouver Canucks,0.603,0.397,2.63,3.67,6.30
+2025020375,hockey,nhl,2025_11_26,22:00,Seattle Kraken,Dallas Stars,0.466,0.534,3.06,2.70,5.76

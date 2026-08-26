@@ -1,16 +1,16 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","b9f8b0e5f73a2b853613de9f9349f802","2026_04_11","12:37 PM","Boston Bruins","Tampa Bay Lightning","0.455000","0.545000","3.40","2.91","6.31"
-"hockey","nhl","705a57dffd10478fbab59b211c54ee19","2026_04_11","01:07 PM","New York Islanders","Ottawa Senators","0.456000","0.544000","3.13","2.66","5.79"
-"hockey","nhl","6b7f5c39f42d1d9e4091b0c5f011711e","2026_04_11","03:07 PM","Pittsburgh Penguins","Washington Capitals","0.535000","0.465000","2.93","3.31","6.24"
-"hockey","nhl","c41c5268371cb927b4a4817e53ebe98c","2026_04_11","04:07 PM","Los Angeles Kings","Edmonton Oilers","0.497000","0.503000","3.23","3.20","6.43"
-"hockey","nhl","71e645a6f544e0eb4543265a1613ca61","2026_04_11","05:07 PM","Nashville Predators","Minnesota Wild","0.449000","0.551000","3.32","2.77","6.09"
-"hockey","nhl","5ef60096243b0d089602fdf1f288c8bb","2026_04_11","05:07 PM","Dallas Stars","New York Rangers","0.617000","0.383000","2.35","3.43","5.78"
-"hockey","nhl","1202108d90d74b3dcae725f88457dd39","2026_04_11","05:07 PM","Chicago Blackhawks","St Louis Blues","0.441000","0.559000","3.13","2.50","5.63"
-"hockey","nhl","a3ce07b80e1bdb4c4be7fead2bc1bb34","2026_04_11","05:07 PM","Detroit Red Wings","New Jersey Devils","0.540000","0.460000","2.71","3.14","5.85"
-"hockey","nhl","7fe1fbea33dee61b8d438e780410bdb4","2026_04_11","05:07 PM","Utah Mammoth","Carolina Hurricanes","0.459000","0.541000","3.26","2.82","6.08"
-"hockey","nhl","6916a35afd0031cd8bac65ce41826fb8","2026_04_11","07:07 PM","Winnipeg Jets","Philadelphia Flyers","0.536000","0.464000","2.59","2.98","5.57"
-"hockey","nhl","bc41d925859e950fdee85ddc0d04f5f7","2026_04_11","07:07 PM","Montreal Canadiens","Columbus Blue Jackets","0.574000","0.426000","2.79","3.59","6.38"
-"hockey","nhl","eebb39173865292b81fa96bc35dfb2da","2026_04_11","07:07 PM","Toronto Maple Leafs","Florida Panthers","0.568000","0.432000","2.75","3.47","6.22"
-"hockey","nhl","f8cbbebc53cf688786fb747d110376c4","2026_04_11","07:07 PM","Seattle Kraken","Calgary Flames","0.519000","0.481000","2.78","2.99","5.77"
-"hockey","nhl","589e8e7f45909b6c4b71110f0aa61d3b","2026_04_11","08:07 PM","Colorado Avalanche","Vegas Golden Knights","0.640000","0.360000","2.66","3.83","6.49"
-"hockey","nhl","0b2041c964c8c6d47aa6eb31e9095564","2026_04_11","10:07 PM","San Jose Sharks","Vancouver Canucks","0.613000","0.387000","2.72","3.79","6.51"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021261,hockey,nhl,2026_04_11,12:30,Boston Bruins,Tampa Bay Lightning,0.455000,0.545000,3.40,2.91,6.31
+2025021262,hockey,nhl,2026_04_11,13:00,New York Islanders,Ottawa Senators,0.456000,0.544000,3.13,2.66,5.79
+2025021263,hockey,nhl,2026_04_11,15:00,Pittsburgh Penguins,Washington Capitals,0.535000,0.465000,2.93,3.31,6.24
+2025021264,hockey,nhl,2026_04_11,16:00,Los Angeles Kings,Edmonton Oilers,0.497000,0.503000,3.23,3.20,6.43
+2025021265,hockey,nhl,2026_04_11,17:00,Detroit Red Wings,New Jersey Devils,0.540000,0.460000,2.71,3.14,5.85
+2025021266,hockey,nhl,2026_04_11,17:00,Chicago Blackhawks,St Louis Blues,0.441000,0.559000,3.13,2.50,5.63
+2025021267,hockey,nhl,2026_04_11,17:00,Nashville Predators,Minnesota Wild,0.449000,0.551000,3.32,2.77,6.09
+2025021268,hockey,nhl,2026_04_11,17:00,Dallas Stars,New York Rangers,0.617000,0.383000,2.35,3.43,5.78
+2025021269,hockey,nhl,2026_04_11,17:00,Utah Mammoth,Carolina Hurricanes,0.459000,0.541000,3.26,2.82,6.08
+2025021270,hockey,nhl,2026_04_11,19:00,Toronto Maple Leafs,Florida Panthers,0.568000,0.432000,2.75,3.47,6.22
+2025021271,hockey,nhl,2026_04_11,19:00,Montreal Canadiens,Columbus Blue Jackets,0.574000,0.426000,2.79,3.59,6.38
+2025021272,hockey,nhl,2026_04_11,19:00,Winnipeg Jets,Philadelphia Flyers,0.536000,0.464000,2.59,2.98,5.57
+2025021273,hockey,nhl,2026_04_11,19:00,Seattle Kraken,Calgary Flames,0.519000,0.481000,2.78,2.99,5.77
+2025021274,hockey,nhl,2026_04_11,20:00,Colorado Avalanche,Vegas Golden Knights,0.640000,0.360000,2.66,3.83,6.49
+2025021275,hockey,nhl,2026_04_11,22:00,San Jose Sharks,Vancouver Canucks,0.613000,0.387000,2.72,3.79,6.51

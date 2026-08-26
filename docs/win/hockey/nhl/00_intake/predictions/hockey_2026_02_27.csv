@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_02_27_Florida Panthers_Buffalo Sabres","2026_02_27","07:07 PM","Florida Panthers","Buffalo Sabres","0.535","0.465","2.87","3.25","6.12"
-"hockey","nhl","2026_02_27_Washington Capitals_Vegas Golden Knights","2026_02_27","07:07 PM","Washington Capitals","Vegas Golden Knights","0.499","0.501","3.06","3.05","6.11"
-"hockey","nhl","2026_02_27_Anaheim Ducks_Winnipeg Jets","2026_02_27","10:07 PM","Anaheim Ducks","Winnipeg Jets","0.529","0.471","2.91","3.22","6.13"
-"hockey","nhl","2026_02_27_Utah Mammoth_Minnesota Wild","2026_02_27","09:07 PM","Utah Mammoth","Minnesota Wild","0.566","0.434","2.59","3.31","5.90"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020930,hockey,nhl,2026_02_27,19:00,Florida Panthers,Buffalo Sabres,0.535,0.465,2.87,3.25,6.12
+2025020931,hockey,nhl,2026_02_27,19:00,Washington Capitals,Vegas Golden Knights,0.499,0.501,3.06,3.05,6.11
+2025020932,hockey,nhl,2026_02_27,21:00,Utah Mammoth,Minnesota Wild,0.566,0.434,2.59,3.31,5.90
+2025020933,hockey,nhl,2026_02_27,22:00,Anaheim Ducks,Winnipeg Jets,0.529,0.471,2.91,3.22,6.13

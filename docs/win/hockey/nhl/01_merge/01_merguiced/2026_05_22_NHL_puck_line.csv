@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,NHL,2026_05_22,20:00,70557980,Vegas Golden Knights,Colorado Avalanche,1.5,-1.5,0.5575932766537288,0.4424067233462713,1.793421911399786,2.2603634782857966,-149,120,1.67,2.2
+hockey,nhl,2026_05_22,20:00,2025030322,Vegas Golden Knights,Colorado Avalanche,1.5,-1.5,0.5575932766537288,0.4424067233462713,1.793421911399786,2.2603634782857966,-149,120,1.67,2.2

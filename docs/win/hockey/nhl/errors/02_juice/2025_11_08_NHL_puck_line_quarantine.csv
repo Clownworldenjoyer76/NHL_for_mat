@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_08,13:00,2025020232,Ottawa Senators,Philadelphia Flyers,-1.5,1.5,0.2578316162871756,0.7421683837128246,3.878500295658812,1.3474031256860184,222,-270,,,bad_juiced_decimal
+hockey,nhl,2025_11_08,19:00,2025020235,Utah Mammoth,Montreal Canadiens,1.5,-1.5,0.7166524324005075,0.2833475675994925,1.395376551852881,3.5292344609553337,-265,219,,,bad_juiced_decimal
+hockey,nhl,2025_11_08,22:00,2025020240,Colorado Avalanche,Edmonton Oilers,-1.5,1.5,0.2916192391152061,0.7083807608847935,3.429129034950068,1.4116701853265514,222,-270,,,bad_juiced_decimal
+hockey,nhl,2025_11_08,22:00,2025020241,Columbus Blue Jackets,Vancouver Canucks,1.5,-1.5,0.740822819665087,0.2591771803349131,1.3498504277339654,3.858364377248735,-255,211,,,bad_juiced_decimal

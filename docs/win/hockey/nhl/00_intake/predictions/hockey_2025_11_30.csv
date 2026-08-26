@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_30_New York Islanders_Washington Capitals","2025_11_30","01:07 PM","New York Islanders","Washington Capitals","0.501","0.499","2.94","2.95","5.89"
-"hockey","nhl","2025_11_30_Dallas Stars_Ottawa Senators","2025_11_30","06:07 PM","Dallas Stars","Ottawa Senators","0.576","0.424","2.54","3.37","5.91"
-"hockey","nhl","2025_11_30_Carolina Hurricanes_Calgary Flames","2025_11_30","05:07 PM","Carolina Hurricanes","Calgary Flames","0.694","0.306","2.24","3.61","5.85"
-"hockey","nhl","2025_11_30_Chicago Blackhawks_Anaheim Ducks","2025_11_30","03:37 PM","Chicago Blackhawks","Anaheim Ducks","0.43","0.57","3.53","2.78","6.31"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020402,hockey,nhl,2025_11_30,13:00,New York Islanders,Washington Capitals,0.501,0.499,2.94,2.95,5.89
+2025020403,hockey,nhl,2025_11_30,15:30,Chicago Blackhawks,Anaheim Ducks,0.43,0.57,3.53,2.78,6.31
+2025020404,hockey,nhl,2025_11_30,17:00,Carolina Hurricanes,Calgary Flames,0.694,0.306,2.24,3.61,5.85
+2025020405,hockey,nhl,2025_11_30,18:00,Dallas Stars,Ottawa Senators,0.576,0.424,2.54,3.37,5.91

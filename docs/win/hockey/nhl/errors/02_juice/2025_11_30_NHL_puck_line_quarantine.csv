@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_30,13:00,2025020402,Washington Capitals,New York Islanders,-1.5,1.5,0.2612646858454345,0.7387353141545655,3.827536035970836,1.353664811793159,203,-245,,,bad_juiced_decimal

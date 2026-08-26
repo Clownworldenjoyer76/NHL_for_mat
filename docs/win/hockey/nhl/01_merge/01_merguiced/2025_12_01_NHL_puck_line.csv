@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_12_01,7:00 PM EST,2025_12_01_Philadelphia Flyers_Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,1.5,-1.5,0.6031285603413326,0.39687143965866767,1.658021300523496,2.519707643513118,-200,174,,
-hockey,nhl,2025_12_01,7:00 PM EST,2025_12_01_New Jersey Devils_Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,1.5,-1.5,0.5893933109011531,0.4106066890988467,1.696659906898247,2.4354206264751492,-190,165,,
-hockey,nhl,2025_12_01,7:30 PM EST,2025_12_01_Buffalo Sabres_Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,1.5,-1.5,0.773696905292846,0.22630309470715415,1.2924957992710309,4.4188525185395395,-250,207,,
-hockey,nhl,2025_12_01,8:00 PM EST,2025_12_01_St Louis Blues_Anaheim Ducks,Anaheim Ducks,St Louis Blues,1.5,-1.5,0.6794809357370004,0.3205190642629998,1.4717116366412075,3.11993922202224,-198,173,,
-hockey,nhl,2025_12_01,10:00 PM EST,2025_12_01_San Jose Sharks_Utah Mammoth,Utah Mammoth,San Jose Sharks,-1.5,1.5,0.41273379587511305,0.5872662041248871,2.4228691955785098,1.7028052916652117,170,-195,,
+hockey,nhl,2025_12_01,19:00,2025020406,Columbus Blue Jackets,New Jersey Devils,1.5,-1.5,0.5893933109011531,0.4106066890988467,1.696659906898247,2.4354206264751492,-190,165,,
+hockey,nhl,2025_12_01,19:00,2025020407,Pittsburgh Penguins,Philadelphia Flyers,1.5,-1.5,0.6031285603413326,0.39687143965866767,1.658021300523496,2.519707643513118,-200,174,,
+hockey,nhl,2025_12_01,19:30,2025020408,Winnipeg Jets,Buffalo Sabres,1.5,-1.5,0.773696905292846,0.22630309470715415,1.2924957992710309,4.4188525185395395,-250,207,,
+hockey,nhl,2025_12_01,20:00,2025020409,Anaheim Ducks,St Louis Blues,1.5,-1.5,0.6794809357370004,0.3205190642629998,1.4717116366412075,3.11993922202224,-198,173,,
+hockey,nhl,2025_12_01,22:00,2025020410,Utah Mammoth,San Jose Sharks,-1.5,1.5,0.41273379587511305,0.5872662041248871,2.4228691955785098,1.7028052916652117,170,-195,,

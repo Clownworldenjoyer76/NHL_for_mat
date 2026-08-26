@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_05,19:00,2025020662,Utah Mammoth,New York Rangers,1.5,-1.5,0.738254789306944,0.261745210693056,1.354545902694077,3.820509255363921,-245,203,,,bad_juiced_decimal
+hockey,nhl,2026_01_05,22:30,2025020666,Minnesota Wild,Los Angeles Kings,1.5,-1.5,0.7225089227659434,0.2774910772340567,1.3840659519771077,3.60371947800154,-290,237,,,bad_juiced_decimal

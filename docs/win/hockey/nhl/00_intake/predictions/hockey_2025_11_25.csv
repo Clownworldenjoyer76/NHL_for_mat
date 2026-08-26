@@ -1,2 +1,2 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_25_Edmonton Oilers_Dallas Stars","2025_11_25","09:07 PM","Edmonton Oilers","Dallas Stars","0.528","0.472","2.89","3.20","6.09"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020360,hockey,nhl,2025_11_25,21:00,Edmonton Oilers,Dallas Stars,0.528,0.472,2.89,3.20,6.09

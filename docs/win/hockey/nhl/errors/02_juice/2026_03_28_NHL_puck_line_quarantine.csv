@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_28,15:30,2025021154,Anaheim Ducks,Edmonton Oilers,1.5,-1.5,0.6811090144167224,0.3188909855832774,1.4681937528845723,3.1358678834113767,-204,170,1.49,2.7,bad_juiced_decimal
+hockey,nhl,2026_03_28,17:00,2025021155,Minnesota Wild,Boston Bruins,-1.5,1.5,0.282962818058411,0.717037181941589,3.53403322338122,1.3946278173360631,205,-250,3.05,1.4,bad_juiced_decimal
+hockey,nhl,2026_03_28,17:00,2025021156,Dallas Stars,Pittsburgh Penguins,-1.5,1.5,0.3403833017426885,0.6596166982573114,2.937864445406744,1.516031966203966,210,-256,3.1,1.39,bad_juiced_decimal
+hockey,nhl,2026_03_28,19:00,2025021160,Toronto Maple Leafs,St Louis Blues,1.5,-1.5,0.6827927374624605,0.3172072625375396,1.4645732813685344,3.152512940594025,-217,180,1.46,2.8,bad_juiced_decimal
+hockey,nhl,2026_03_28,19:00,2025021161,Montreal Canadiens,Nashville Predators,-1.5,1.5,0.3106751458226301,0.6893248541773698,3.218796268211676,1.4506948268873685,200,-244,3.0,1.41,bad_juiced_decimal
+hockey,nhl,2026_03_28,20:00,2025021163,Philadelphia Flyers,Detroit Red Wings,1.5,-1.5,0.6974102419053019,0.302589758094698,1.4338762752724032,3.304804519150452,-227,185,1.44,2.85,bad_juiced_decimal
+hockey,nhl,2026_03_28,21:00,2025021164,Utah Mammoth,Los Angeles Kings,1.5,-1.5,0.762303374023896,0.2376966259761036,1.3118136874055772,4.207043309485314,-286,230,1.35,3.3,bad_juiced_decimal

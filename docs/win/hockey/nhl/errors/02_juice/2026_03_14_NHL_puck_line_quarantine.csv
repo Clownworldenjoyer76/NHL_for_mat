@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_14,19:00,2025021049,Carolina Hurricanes,Tampa Bay Lightning,1.5,-1.5,0.6931986771570628,0.3068013228429368,1.442587865431577,3.259438358132301,-218,180,,,bad_juiced_decimal
+hockey,nhl,2026_03_14,19:30,2025021052,Columbus Blue Jackets,Philadelphia Flyers,-1.5,1.5,0.26121587211694,0.73878412788306,3.8282512922963754,1.353575371015939,190,-230,,,bad_juiced_decimal
+hockey,nhl,2026_03_14,22:00,2025021055,Seattle Kraken,Vancouver Canucks,-1.5,1.5,0.2824780610016038,0.7175219389983963,3.5400979334615386,1.3936856082699305,185,-225,,,bad_juiced_decimal

@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_05_08,19:00,2025030212,Montreal Canadiens,Buffalo Sabres,puck_line,away,1.5,away_puck_line,-213.0,1.47,0.7903798758881754,0.1618584175556177,0.1618584175556177,0.3443796118204634,2026_05_08_NHL.csv,5,1,6,4,-4,2026_05_08_NHL_final_scores.csv,Win

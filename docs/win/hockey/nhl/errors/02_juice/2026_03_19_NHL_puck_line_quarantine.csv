@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_19,19:00,2025021084,New York Islanders,Ottawa Senators,1.5,-1.5,0.719416664364373,0.280583335635627,1.390015062944825,3.564003534759551,-218,180,,,bad_juiced_decimal
+hockey,nhl,2026_03_19,19:00,2025021085,Montreal Canadiens,Detroit Red Wings,-1.5,1.5,0.263908623551525,0.7360913764484749,3.7891903134599993,1.3585269872673182,230,-285,,,bad_juiced_decimal
+hockey,nhl,2026_03_19,21:00,2025021089,Florida Panthers,Edmonton Oilers,1.5,-1.5,0.680440611793957,0.3195593882060431,1.469635972143897,3.1293087823638825,-198,164,,,bad_juiced_decimal
+hockey,nhl,2026_03_19,22:00,2025021091,Utah Mammoth,Vegas Golden Knights,1.5,-1.5,0.6941128565448332,0.3058871434551664,1.4406879091360114,3.2691795696427137,-230,190,,,bad_juiced_decimal

@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_10_19,12:30 PM EDT,2025_10_19_Washington Capitals_Vancouver Canucks,Vancouver Canucks,Washington Capitals,,,,,,,,,,
-hockey,nhl,2025_10_19,3:00 PM EDT,2025_10_19_Detroit Red Wings_Edmonton Oilers,Edmonton Oilers,Detroit Red Wings,-1.5,-1.5,0.27913794154790206,0.26335523469325517,3.582458172667985,3.797152546311665,-200.0,-210.0,,
-hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Chicago Blackhawks_Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,,,,,,,,,,
-hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Utah Mammoth_Boston Bruins,Boston Bruins,Utah Mammoth,,,,,,,,,,
+hockey,nhl,2025_10_19,12:30,2025020089,Vancouver Canucks,Washington Capitals,,,,,,,,,,
+hockey,nhl,2025_10_19,15:00,2025020090,Edmonton Oilers,Detroit Red Wings,-1.5,-1.5,0.27913794154790206,0.26335523469325517,3.582458172667985,3.797152546311665,-200.0,-210.0,,
+hockey,nhl,2025_10_19,19:00,2025020091,Anaheim Ducks,Chicago Blackhawks,,,,,,,,,,
+hockey,nhl,2025_10_19,19:00,2025020092,Boston Bruins,Utah Mammoth,,,,,,,,,,

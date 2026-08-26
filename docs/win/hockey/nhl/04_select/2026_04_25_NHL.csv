@@ -1,4 +1,1 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_25,17:40,6031286e148baa9052fdb432c6534b8e,Dallas Stars,Minnesota Wild,puck_line,away,1.5,away_puck_line,-217.0,1.46,0.8316679147508792,0.2142351555362835,0.2142351555362835,0.4657285989919209
-hockey,nhl,2026_04_25,20:10,63dc13d149982e8f2c908b42b236c912,Pittsburgh Penguins,Philadelphia Flyers,puck_line,away,1.5,away_puck_line,-256.0,1.39,0.8140873867835777,0.1315814676291729,0.1315814676291729,0.3373883785363409
-hockey,nhl,2026_04_25,15:10,ba2e152d04d7eb0f5891169a17d654d6,Carolina Hurricanes,Ottawa Senators,puck_line,home,1.5,home_puck_line,-250.0,1.4,0.8073379707099925,0.1302731589939894,0.1302731589939894,0.3256828974849735

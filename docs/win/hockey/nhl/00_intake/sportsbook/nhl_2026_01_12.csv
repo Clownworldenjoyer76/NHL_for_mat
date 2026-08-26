@@ -1,10 +1,10 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_01_12_New York Rangers_Seattle Kraken","hockey","nhl","2026_01_12","7:00 PM EST","New York Rangers","Seattle Kraken","-150","125","-1.5","+1.5","5.5","+180","-210","-110","-110","","","","","",""
-"2026_01_12_Philadelphia Flyers_Tampa Bay Lightning","hockey","nhl","2026_01_12","7:00 PM EST","Philadelphia Flyers","Tampa Bay Lightning","125","-150","+1.5","-1.5","6.0","-190","+165","-110","-110","","","","","",""
-"2026_01_12_Detroit Red Wings_Carolina Hurricanes","hockey","nhl","2026_01_12","7:00 PM EST","Detroit Red Wings","Carolina Hurricanes","125","-150","+1.5","-1.5","6.0","-190","+165","-110","-110","","","","","",""
-"2026_01_12_Buffalo Sabres_Florida Panthers","hockey","nhl","2026_01_12","7:00 PM EST","Buffalo Sabres","Florida Panthers","-115","-105","-1.5","+1.5","6.0","+211","-255","-110","-110","","","","","",""
-"2026_01_12_Montreal Canadiens_Vancouver Canucks","hockey","nhl","2026_01_12","7:30 PM EST","Montreal Canadiens","Vancouver Canucks","-190","154","-1.5","+1.5","6.0","+140","-160","-110","-110","","","","","",""
-"2026_01_12_Minnesota Wild_New Jersey Devils","hockey","nhl","2026_01_12","8:00 PM EST","Minnesota Wild","New Jersey Devils","-175","145","-1.5","+1.5","6.0","+153","-175","-105","-115","","","","","",""
-"2026_01_12_Chicago Blackhawks_Edmonton Oilers","hockey","nhl","2026_01_12","8:30 PM EST","Chicago Blackhawks","Edmonton Oilers","140","-170","+1.5","-1.5","6.0","-170","+149","-115","-105","","","","","",""
-"2026_01_12_Colorado Avalanche_Toronto Maple Leafs","hockey","nhl","2026_01_12","10:00 PM EST","Colorado Avalanche","Toronto Maple Leafs","-250","200","-1.5","+1.5","6.5","+100","-120","-105","-115","","","","","",""
-"2026_01_12_Los Angeles Kings_Dallas Stars","hockey","nhl","2026_01_12","10:00 PM EST","Los Angeles Kings","Dallas Stars","-105","-115","+1.5","-1.5","5.5","-250","+207","-120","100","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020716,,hockey,nhl,2026_01_12,19:00,Buffalo Sabres,Florida Panthers,-115,-105,-1.5,+1.5,6.0,+211,-255,-110,-110,,,,,,
+2025020717,,hockey,nhl,2026_01_12,19:00,Detroit Red Wings,Carolina Hurricanes,125,-150,+1.5,-1.5,6.0,-190,+165,-110,-110,,,,,,
+2025020718,,hockey,nhl,2026_01_12,19:00,New York Rangers,Seattle Kraken,-150,125,-1.5,+1.5,5.5,+180,-210,-110,-110,,,,,,
+2025020719,,hockey,nhl,2026_01_12,19:00,Philadelphia Flyers,Tampa Bay Lightning,125,-150,+1.5,-1.5,6.0,-190,+165,-110,-110,,,,,,
+2025020720,,hockey,nhl,2026_01_12,19:30,Montreal Canadiens,Vancouver Canucks,-190,154,-1.5,+1.5,6.0,+140,-160,-110,-110,,,,,,
+2025020721,,hockey,nhl,2026_01_12,20:00,Minnesota Wild,New Jersey Devils,-175,145,-1.5,+1.5,6.0,+153,-175,-105,-115,,,,,,
+2025020722,,hockey,nhl,2026_01_12,20:30,Chicago Blackhawks,Edmonton Oilers,140,-170,+1.5,-1.5,6.0,-170,+149,-115,-105,,,,,,
+2025020723,,hockey,nhl,2026_01_12,22:00,Colorado Avalanche,Toronto Maple Leafs,-250,200,-1.5,+1.5,6.5,+100,-120,-105,-115,,,,,,
+2025020724,,hockey,nhl,2026_01_12,22:00,Los Angeles Kings,Dallas Stars,-105,-115,+1.5,-1.5,5.5,-250,+207,-120,100,,,,,,

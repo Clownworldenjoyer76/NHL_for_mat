@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_07,19:00,2025021235,Columbus Blue Jackets,Detroit Red Wings,1.5,-1.5,0.6957030407847757,0.3042969592152242,1.437394896063653,3.28626353210686,-250,205,1.4,3.05,bad_juiced_decimal
+hockey,nhl,2026_04_07,19:00,2025021236,Philadelphia Flyers,New Jersey Devils,1.5,-1.5,0.6996444990932315,0.3003555009067683,1.4292973092706966,3.3293879984918417,-244,200,1.41,3.0,bad_juiced_decimal

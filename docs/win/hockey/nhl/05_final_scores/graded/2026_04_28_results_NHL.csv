@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_04_28,20:00,2025030165,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-238.0,1.42,0.7757530537182967,0.1015693362799812,0.1015693362799812,0.2418317530475744,2026_04_28_NHL.csv,4,2,6,2,-2,2026_04_28_NHL_final_scores.csv,Win

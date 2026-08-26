@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2025_10_12,7:00 PM EDT,2025_10_12_New York Rangers_Washington Capitals,Washington Capitals,New York Rangers,6.0,6.03,0.4747689755734489,0.5252310244265511,2.1062875871199287,1.9039240895790632,-105,-115,,
+hockey,nhl,2025_10_12,19:00,2025020038,Washington Capitals,New York Rangers,6.0,6.03,0.4747689755734489,0.5252310244265511,2.1062875871199287,1.9039240895790632,-105,-115,,

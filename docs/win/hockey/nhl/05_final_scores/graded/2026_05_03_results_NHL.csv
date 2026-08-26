@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,puck_line,away,1.5,away_puck_line,-204.0,1.49,0.7249424070842855,0.0801641865555853,0.0801641865555853,0.1636003807256844,2026_05_03_NHL.csv,2,1,3,1,-1,2026_05_03_NHL_final_scores.csv,Win

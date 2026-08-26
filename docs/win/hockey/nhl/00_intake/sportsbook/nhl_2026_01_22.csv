@@ -1,9 +1,9 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_01_22_Boston Bruins_Vegas Golden Knights","hockey","nhl","2026_01_22","7:00 PM EST","Boston Bruins","Vegas Golden Knights","115","-140","+1.5","-1.5","6.0","-225","+189","-110","-110","","","","","",""
-"2026_01_22_Montreal Canadiens_Buffalo Sabres","hockey","nhl","2026_01_22","7:00 PM EST","Montreal Canadiens","Buffalo Sabres","-135","110","-1.5","+1.5","6.5","+189","-225","-110","-110","","","","","",""
-"2026_01_22_Carolina Hurricanes_Chicago Blackhawks","hockey","nhl","2026_01_22","7:00 PM EST","Carolina Hurricanes","Chicago Blackhawks","-300","240","-1.5","+1.5","6.0","-112","-108","-115","-105","","","","","",""
-"2026_01_22_Columbus Blue Jackets_Dallas Stars","hockey","nhl","2026_01_22","7:00 PM EST","Columbus Blue Jackets","Dallas Stars","105","-125","+1.5","-1.5","6.5","-235","+195","-105","-115","","","","","",""
-"2026_01_22_Nashville Predators_Ottawa Senators","hockey","nhl","2026_01_22","8:00 PM EST","Nashville Predators","Ottawa Senators","-110","-110","+1.5","-1.5","6.0","-275","+226","-120","100","","","","","",""
-"2026_01_22_Winnipeg Jets_Florida Panthers","hockey","nhl","2026_01_22","8:00 PM EST","Winnipeg Jets","Florida Panthers","-105","-115","-1.5","+1.5","6.0","+230","-280","-105","-115","","","","","",""
-"2026_01_22_Edmonton Oilers_Pittsburgh Penguins","hockey","nhl","2026_01_22","9:00 PM EST","Edmonton Oilers","Pittsburgh Penguins","-200","165","-1.5","+1.5","6.5","+135","-155","-105","-115","","","","","",""
-"2026_01_22_Minnesota Wild_Detroit Red Wings","hockey","nhl","2026_01_22","9:30 PM EST","Minnesota Wild","Detroit Red Wings","-160","135","-1.5","+1.5","6.0","+165","-190","-110","-110","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020794,,hockey,nhl,2026_01_22,19:00,Boston Bruins,Vegas Golden Knights,115,-140,+1.5,-1.5,6.0,-225,+189,-110,-110,,,,,,
+2025020795,,hockey,nhl,2026_01_22,19:00,Montreal Canadiens,Buffalo Sabres,-135,110,-1.5,+1.5,6.5,+189,-225,-110,-110,,,,,,
+2025020796,,hockey,nhl,2026_01_22,19:00,Carolina Hurricanes,Chicago Blackhawks,-300,240,-1.5,+1.5,6.0,-112,-108,-115,-105,,,,,,
+2025020797,,hockey,nhl,2026_01_22,19:00,Columbus Blue Jackets,Dallas Stars,105,-125,+1.5,-1.5,6.5,-235,+195,-105,-115,,,,,,
+2025020798,,hockey,nhl,2026_01_22,20:00,Nashville Predators,Ottawa Senators,-110,-110,+1.5,-1.5,6.0,-275,+226,-120,100,,,,,,
+2025020799,,hockey,nhl,2026_01_22,20:00,Winnipeg Jets,Florida Panthers,-105,-115,-1.5,+1.5,6.0,+230,-280,-105,-115,,,,,,
+2025020800,,hockey,nhl,2026_01_22,21:00,Edmonton Oilers,Pittsburgh Penguins,-200,165,-1.5,+1.5,6.5,+135,-155,-105,-115,,,,,,
+2025020801,,hockey,nhl,2026_01_22,21:30,Minnesota Wild,Detroit Red Wings,-160,135,-1.5,+1.5,6.0,+165,-190,-110,-110,,,,,,

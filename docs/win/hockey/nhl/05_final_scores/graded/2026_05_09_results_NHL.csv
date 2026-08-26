@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,puck_line,home,1.5,home_puck_line,-227.0,1.44,0.754929842885809,0.0870989737555649,0.0870989737555649,0.1979522130808293,2026_05_09_NHL.csv,1,5,6,-4,4,2026_05_09_NHL_final_scores.csv,Win

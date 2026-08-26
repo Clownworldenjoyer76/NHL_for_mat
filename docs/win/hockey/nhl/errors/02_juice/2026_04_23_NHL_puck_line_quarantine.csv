@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_23,19:00,2025030113,Buffalo Sabres,Boston Bruins,1.5,-1.5,0.7308236392454479,0.2691763607545522,1.36831917620025,3.7150364809034895,-278,225,1.36,3.25,bad_juiced_decimal
+hockey,nhl,2026_04_23,19:30,2025030133,Carolina Hurricanes,Ottawa Senators,1.5,-1.5,0.7389769066795668,0.2610230933204328,1.3532222603454336,3.831078650088621,-250,205,1.4,3.05,bad_juiced_decimal

@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_11,12:30,2025021261,Tampa Bay Lightning,Boston Bruins,-1.5,1.5,0.3380360835868889,0.661963916413111,2.9582640687024746,1.5106563593655626,200,-244,3.0,1.41,bad_juiced_decimal
+hockey,nhl,2026_04_11,13:00,2025021262,Ottawa Senators,New York Islanders,-1.5,1.5,0.3278357335427468,0.6721642664572531,3.050308119842613,1.487731570841539,205,-250,3.05,1.4,bad_juiced_decimal
+hockey,nhl,2026_04_11,16:00,2025021264,Edmonton Oilers,Los Angeles Kings,1.5,-1.5,0.7319046549840819,0.2680953450159182,1.3662981826802958,3.7300162743990377,-286,230,1.35,3.3,bad_juiced_decimal
+hockey,nhl,2026_04_11,17:00,2025021266,St Louis Blues,Chicago Blackhawks,-1.5,1.5,0.3499033147491935,0.6500966852508065,2.8579323425866594,1.5382327316654465,190,-233,2.9,1.43,bad_juiced_decimal
+hockey,nhl,2026_04_11,17:00,2025021267,Minnesota Wild,Nashville Predators,-1.5,1.5,0.3439689423850619,0.6560310576149382,2.9072392206867703,1.5243180767014184,190,-233,2.9,1.43,bad_juiced_decimal
+hockey,nhl,2026_04_11,17:00,2025021269,Carolina Hurricanes,Utah Mammoth,1.5,-1.5,0.7894741895233551,0.2105258104766448,1.2666658559208246,4.750011401148066,-256,210,1.39,3.1,bad_juiced_decimal
+hockey,nhl,2026_04_11,19:00,2025021272,Philadelphia Flyers,Winnipeg Jets,1.5,-1.5,0.6876058012909456,0.3123941987090542,1.4543216449345684,3.201083772145659,-233,190,1.43,2.9,bad_juiced_decimal
+hockey,nhl,2026_04_11,19:00,2025021273,Calgary Flames,Seattle Kraken,1.5,-1.5,0.7104526525346401,0.28954734746536,1.407553334388096,3.4536665894327867,-217,180,1.46,2.8,bad_juiced_decimal

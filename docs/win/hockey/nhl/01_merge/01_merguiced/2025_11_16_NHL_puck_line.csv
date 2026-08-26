@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_11_16,9:00 AM EST,2025_11_16_Pittsburgh Penguins_Nashville Predators,Nashville Predators,Pittsburgh Penguins,1.5,-1.5,0.6969856213589687,0.3030143786410313,1.4347498274788222,3.3001734257127744,-245,203,,
-hockey,nhl,2025_11_16,5:00 PM EST,2025_11_16_Tampa Bay Lightning_Vancouver Canucks,Vancouver Canucks,Tampa Bay Lightning,1.5,-1.5,0.6185503155653933,0.3814496844346068,1.6166833559626237,2.6215777356906775,-180,157,,
-hockey,nhl,2025_11_16,6:00 PM EST,2025_11_16_Minnesota Wild_Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,-1.5,1.5,0.31792220656630443,0.6820777934336955,3.1454235638347723,1.4661084257938235,189,-225,,
-hockey,nhl,2025_11_16,7:00 PM EST,2025_11_16_New York Rangers_Detroit Red Wings,Detroit Red Wings,New York Rangers,1.5,-1.5,0.6167938570761942,0.3832061429238056,1.6212872234822977,2.6095615074699725,-205,177,,
-hockey,nhl,2025_11_16,9:00 PM EST,2025_11_16_Colorado Avalanche_New York Islanders,New York Islanders,Colorado Avalanche,1.5,-1.5,0.5524096084248424,0.44759039157515745,1.810250916618613,2.2341855831194364,-115,-105,,
+hockey,nhl,2025_11_16,09:00,2025020296,Nashville Predators,Pittsburgh Penguins,1.5,-1.5,0.6969856213589687,0.3030143786410313,1.4347498274788222,3.3001734257127744,-245,203,,
+hockey,nhl,2025_11_16,17:00,2025020297,Vancouver Canucks,Tampa Bay Lightning,1.5,-1.5,0.6185503155653933,0.3814496844346068,1.6166833559626237,2.6215777356906775,-180,157,,
+hockey,nhl,2025_11_16,18:00,2025020298,Vegas Golden Knights,Minnesota Wild,-1.5,1.5,0.31792220656630443,0.6820777934336955,3.1454235638347723,1.4661084257938235,189,-225,,
+hockey,nhl,2025_11_16,19:00,2025020299,Detroit Red Wings,New York Rangers,1.5,-1.5,0.6167938570761942,0.3832061429238056,1.6212872234822977,2.6095615074699725,-205,177,,
+hockey,nhl,2025_11_16,21:00,2025020300,New York Islanders,Colorado Avalanche,1.5,-1.5,0.5524096084248424,0.44759039157515745,1.810250916618613,2.2341855831194364,-115,-105,,

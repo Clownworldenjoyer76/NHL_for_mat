@@ -1,2 +1,1 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,NHL,2026_06_09,20:00,70558082,Carolina Hurricanes,Vegas Golden Knights,puck_line,home,1.5,home_puck_line,-278.0,1.36,0.8034077892657845,0.0926345934014669,0.0926345934014669,0.2573183150040748

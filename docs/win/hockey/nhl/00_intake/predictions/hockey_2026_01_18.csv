@@ -1,4 +1,4 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_18_Detroit Red Wings_Ottawa Senators","2026_01_18","05:07 PM","Detroit Red Wings","Ottawa Senators","0.565","0.435","2.71","3.42","6.13"
-"hockey","nhl","2026_01_18_Dallas Stars_Tampa Bay Lightning","2026_01_18","02:07 PM","Dallas Stars","Tampa Bay Lightning","0.508","0.492","2.90","2.98","5.88"
-"hockey","nhl","2026_01_18_Edmonton Oilers_St Louis Blues","2026_01_18","08:07 PM","Edmonton Oilers","St Louis Blues","0.549","0.451","2.99","3.51","6.50"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020767,hockey,nhl,2026_01_18,14:00,Dallas Stars,Tampa Bay Lightning,0.508,0.492,2.90,2.98,5.88
+2025020768,hockey,nhl,2026_01_18,17:00,Detroit Red Wings,Ottawa Senators,0.565,0.435,2.71,3.42,6.13
+2025020769,hockey,nhl,2026_01_18,20:00,Edmonton Oilers,St Louis Blues,0.549,0.451,2.99,3.51,6.50

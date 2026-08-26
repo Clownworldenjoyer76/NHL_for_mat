@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2026_01_02,3:00 PM EST,2026_01_02_St Louis Blues_Vegas Golden Knights,Vegas Golden Knights,St Louis Blues,5.5,5.83,0.5266428286013927,0.47335717139860733,1.8988201218949543,2.112569662872846,-118,-102,,
-hockey,nhl,2026_01_02,8:00 PM EST,2026_01_02_New York Rangers_Florida Panthers,Florida Panthers,New York Rangers,5.5,5.66,0.49828809276358155,0.5017119072364185,2.0068711545039095,1.9931757360679432,-115,-105,,
-hockey,nhl,2026_01_02,10:30 PM EST,2026_01_02_Vancouver Canucks_Seattle Kraken,Seattle Kraken,Vancouver Canucks,6.0,5.89,0.4479051987820881,0.5520948012179119,2.2326153005571907,1.8112831307123645,-105,-115,,
-hockey,nhl,2026_01_02,10:30 PM EST,2026_01_02_Anaheim Ducks_Minnesota Wild,Minnesota Wild,Anaheim Ducks,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,-105,-115,,
+hockey,nhl,2026_01_02,15:00,2025020640,Vegas Golden Knights,St Louis Blues,5.5,5.83,0.5266428286013927,0.47335717139860733,1.8988201218949543,2.112569662872846,-118,-102,,
+hockey,nhl,2026_01_02,20:00,2025020641,New York Rangers,Florida Panthers,5.5,5.66,0.49828809276358155,0.5017119072364185,2.0068711545039095,1.9931757360679432,-115,-105,,
+hockey,nhl,2026_01_02,22:30,2025020642,Seattle Kraken,Vancouver Canucks,6.0,5.89,0.4479051987820881,0.5520948012179119,2.2326153005571907,1.8112831307123645,-105,-115,,
+hockey,nhl,2026_01_02,22:30,2025020643,Minnesota Wild,Anaheim Ducks,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,-105,-115,,

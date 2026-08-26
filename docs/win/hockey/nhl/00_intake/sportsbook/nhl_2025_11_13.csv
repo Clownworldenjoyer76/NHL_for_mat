@@ -1,11 +1,11 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_11_13_Toronto Maple Leafs_Los Angeles Kings","hockey","nhl","2025_11_13","7:00 PM EST","Toronto Maple Leafs","Los Angeles Kings","-115","-105","+1.5","-1.5","6.0","-250","+207","-110","-110","","","","","",""
-"2025_11_13_Ottawa Senators_Boston Bruins","hockey","nhl","2025_11_13","7:00 PM EST","Ottawa Senators","Boston Bruins","-175","145","-1.5","+1.5","6.0","+157","-180","-110","-110","","","","","",""
-"2025_11_13_Montreal Canadiens_Dallas Stars","hockey","nhl","2025_11_13","7:00 PM EST","Montreal Canadiens","Dallas Stars","-105","-115","+1.5","-1.5","6.0","-275","+226","100","-120","","","","","",""
-"2025_11_13_Detroit Red Wings_Anaheim Ducks","hockey","nhl","2025_11_13","7:00 PM EST","Detroit Red Wings","Anaheim Ducks","-125","105","-1.5","+1.5","6.0","+207","-250","-125","105","","","","","",""
-"2025_11_13_Florida Panthers_Washington Capitals","hockey","nhl","2025_11_13","7:00 PM EST","Florida Panthers","Washington Capitals","-140","115","-1.5","+1.5","5.5","+190","-227","-115","-105","","","","","",""
-"2025_11_13_Columbus Blue Jackets_Edmonton Oilers","hockey","nhl","2025_11_13","7:30 PM EST","Columbus Blue Jackets","Edmonton Oilers","105","-125","+1.5","-1.5","6.5","-250","+207","-120","100","","","","","",""
-"2025_11_13_Colorado Avalanche_Buffalo Sabres","hockey","nhl","2025_11_13","9:00 PM EST","Colorado Avalanche","Buffalo Sabres","-300","240","-1.5","+1.5","6.5","-120","+100","-120","100","","","","","",""
-"2025_11_13_Calgary Flames_San Jose Sharks","hockey","nhl","2025_11_13","9:00 PM EST","Calgary Flames","San Jose Sharks","-160","135","-1.5","+1.5","6.0","+165","-190","-110","-110","","","","","",""
-"2025_11_13_Seattle Kraken_Winnipeg Jets","hockey","nhl","2025_11_13","10:00 PM EST","Seattle Kraken","Winnipeg Jets","125","-150","+1.5","-1.5","5.5","-210","+180","-120","100","","","","","",""
-"2025_11_13_Vegas Golden Knights_New York Islanders","hockey","nhl","2025_11_13","10:00 PM EST","Vegas Golden Knights","New York Islanders","-190","155","-1.5","+1.5","6.0","+140","-160","-118","-102","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020269,,hockey,nhl,2025_11_13,19:00,Toronto Maple Leafs,Los Angeles Kings,-115,-105,+1.5,-1.5,6.0,-250,+207,-110,-110,,,,,,
+2025020270,,hockey,nhl,2025_11_13,19:00,Montreal Canadiens,Dallas Stars,-105,-115,+1.5,-1.5,6.0,-275,+226,100,-120,,,,,,
+2025020271,,hockey,nhl,2025_11_13,19:00,Ottawa Senators,Boston Bruins,-175,145,-1.5,+1.5,6.0,+157,-180,-110,-110,,,,,,
+2025020272,,hockey,nhl,2025_11_13,19:00,Detroit Red Wings,Anaheim Ducks,-125,105,-1.5,+1.5,6.0,+207,-250,-125,105,,,,,,
+2025020273,,hockey,nhl,2025_11_13,19:00,Florida Panthers,Washington Capitals,-140,115,-1.5,+1.5,5.5,+190,-227,-115,-105,,,,,,
+2025020274,,hockey,nhl,2025_11_13,19:30,Columbus Blue Jackets,Edmonton Oilers,105,-125,+1.5,-1.5,6.5,-250,+207,-120,100,,,,,,
+2025020275,,hockey,nhl,2025_11_13,21:00,Colorado Avalanche,Buffalo Sabres,-300,240,-1.5,+1.5,6.5,-120,+100,-120,100,,,,,,
+2025020276,,hockey,nhl,2025_11_13,21:00,Calgary Flames,San Jose Sharks,-160,135,-1.5,+1.5,6.0,+165,-190,-110,-110,,,,,,
+2025020277,,hockey,nhl,2025_11_13,22:00,Vegas Golden Knights,New York Islanders,-190,155,-1.5,+1.5,6.0,+140,-160,-118,-102,,,,,,
+2025020278,,hockey,nhl,2025_11_13,22:00,Seattle Kraken,Winnipeg Jets,125,-150,+1.5,-1.5,5.5,-210,+180,-120,100,,,,,,

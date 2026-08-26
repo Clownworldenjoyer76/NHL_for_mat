@@ -1,9 +1,9 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_12_07_Philadelphia Flyers_Colorado Avalanche","hockey","nhl","2025_12_07","1:00 PM EST","Philadelphia Flyers","Colorado Avalanche","135","-160","+1.5","-1.5","6.0","-200","+174","-118","-102","","","","","",""
-"2025_12_07_Carolina Hurricanes_San Jose Sharks","hockey","nhl","2025_12_07","5:00 PM EST","Carolina Hurricanes","San Jose Sharks","-295","230","-1.5","+1.5","6.0","-120","+100","-125","105","","","","","",""
-"2025_12_07_Florida Panthers_New York Islanders","hockey","nhl","2025_12_07","5:00 PM EST","Florida Panthers","New York Islanders","-170","140","-1.5","+1.5","6.0","+157","-180","-105","-115","","","","","",""
-"2025_12_07_Dallas Stars_Pittsburgh Penguins","hockey","nhl","2025_12_07","6:00 PM EST","Dallas Stars","Pittsburgh Penguins","-210","170","-1.5","+1.5","6.0","+135","-155","-118","-102","","","","","",""
-"2025_12_07_Montreal Canadiens_St Louis Blues","hockey","nhl","2025_12_07","7:00 PM EST","Montreal Canadiens","St Louis Blues","-140","115","-1.5","+1.5","6.0","+189","-225","-105","-115","","","","","",""
-"2025_12_07_Washington Capitals_Columbus Blue Jackets","hockey","nhl","2025_12_07","7:00 PM EST","Washington Capitals","Columbus Blue Jackets","-210","170","-1.5","+1.5","6.0","+130","-150","-125","105","","","","","",""
-"2025_12_07_New York Rangers_Vegas Golden Knights","hockey","nhl","2025_12_07","7:00 PM EST","New York Rangers","Vegas Golden Knights","125","-150","+1.5","-1.5","6.0","-185","+161","-110","-110","","","","","",""
-"2025_12_07_Anaheim Ducks_Chicago Blackhawks","hockey","nhl","2025_12_07","8:00 PM EST","Anaheim Ducks","Chicago Blackhawks","-220","180","-1.5","+1.5","6.5","+130","-150","-110","-110","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020453,,hockey,nhl,2025_12_07,13:00,Philadelphia Flyers,Colorado Avalanche,135,-160,+1.5,-1.5,6.0,-200,+174,-118,-102,,,,,,
+2025020454,,hockey,nhl,2025_12_07,17:00,Florida Panthers,New York Islanders,-170,140,-1.5,+1.5,6.0,+157,-180,-105,-115,,,,,,
+2025020455,,hockey,nhl,2025_12_07,17:00,Carolina Hurricanes,San Jose Sharks,-295,230,-1.5,+1.5,6.0,-120,+100,-125,105,,,,,,
+2025020456,,hockey,nhl,2025_12_07,18:00,Dallas Stars,Pittsburgh Penguins,-210,170,-1.5,+1.5,6.0,+135,-155,-118,-102,,,,,,
+2025020457,,hockey,nhl,2025_12_07,19:00,Montreal Canadiens,St Louis Blues,-140,115,-1.5,+1.5,6.0,+189,-225,-105,-115,,,,,,
+2025020458,,hockey,nhl,2025_12_07,19:00,New York Rangers,Vegas Golden Knights,125,-150,+1.5,-1.5,6.0,-185,+161,-110,-110,,,,,,
+2025020459,,hockey,nhl,2025_12_07,19:00,Washington Capitals,Columbus Blue Jackets,-210,170,-1.5,+1.5,6.0,+130,-150,-125,105,,,,,,
+2025020460,,hockey,nhl,2025_12_07,20:00,Anaheim Ducks,Chicago Blackhawks,-220,180,-1.5,+1.5,6.5,+130,-150,-110,-110,,,,,,

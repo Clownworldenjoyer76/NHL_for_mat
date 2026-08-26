@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_15,19:00,2025020514,Florida Panthers,Tampa Bay Lightning,1.5,-1.5,0.7230170885379861,0.276982911462014,1.3830931742181938,3.610331029887892,-210,180,,,bad_juiced_decimal
+hockey,nhl,2025_12_15,19:30,2025020516,Ottawa Senators,Winnipeg Jets,1.5,-1.5,0.6827222072249919,0.3172777927750082,1.4647245825862654,3.151812143086648,-225,189,,,bad_juiced_decimal
+hockey,nhl,2025_12_15,20:00,2025020517,Nashville Predators,St Louis Blues,1.5,-1.5,0.7363577714343637,0.2636422285656362,1.3580355077289172,3.7930190676985593,-245,203,,,bad_juiced_decimal

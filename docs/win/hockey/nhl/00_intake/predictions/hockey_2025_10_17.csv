@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_10_17_Detroit Red Wings_Tampa Bay Lightning","2025_10_17","07:07 PM","Detroit Red Wings","Tampa Bay Lightning","0.472","0.528","3.43","3.12","6.55"
-"hockey","nhl","2025_10_17_Washington Capitals_Minnesota Wild","2025_10_17","07:07 PM","Washington Capitals","Minnesota Wild","0.563","0.437","2.51","3.20","5.71"
-"hockey","nhl","2025_10_17_Chicago Blackhawks_Vancouver Canucks","2025_10_17","08:37 PM","Chicago Blackhawks","Vancouver Canucks","0.475","0.525","2.99","2.73","5.72"
-"hockey","nhl","2025_10_17_Utah Mammoth_San Jose Sharks","2025_10_17","09:07 PM","Utah Mammoth","San Jose Sharks","0.707","0.293","2.41","3.82","6.23"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020072,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning,0.472,0.528,3.43,3.12,6.55
+2025020073,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild,0.563,0.437,2.51,3.20,5.71
+2025020074,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks,0.475,0.525,2.99,2.73,5.72
+2025020075,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks,0.707,0.293,2.41,3.82,6.23

@@ -1,9 +1,9 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_18_Tampa Bay Lightning_New Jersey Devils","2025_11_18","07:07 PM","Tampa Bay Lightning","New Jersey Devils","0.536","0.464","2.81","3.20","6.01"
-"hockey","nhl","2025_11_18_Dallas Stars_New York Islanders","2025_11_18","08:07 PM","Dallas Stars","New York Islanders","0.555","0.445","2.74","3.34","6.08"
-"hockey","nhl","2025_11_18_Vegas Golden Knights_New York Rangers","2025_11_18","10:07 PM","Vegas Golden Knights","New York Rangers","0.557","0.443","2.61","3.22","5.83"
-"hockey","nhl","2025_11_18_Toronto Maple Leafs_St Louis Blues","2025_11_18","07:07 PM","Toronto Maple Leafs","St Louis Blues","0.548","0.452","2.82","3.33","6.15"
-"hockey","nhl","2025_11_18_Winnipeg Jets_Columbus Blue Jackets","2025_11_18","08:07 PM","Winnipeg Jets","Columbus Blue Jackets","0.625","0.375","2.50","3.62","6.12"
-"hockey","nhl","2025_11_18_Chicago Blackhawks_Calgary Flames","2025_11_18","08:37 PM","Chicago Blackhawks","Calgary Flames","0.548","0.452","2.61","3.12","5.73"
-"hockey","nhl","2025_11_18_Detroit Red Wings_Seattle Kraken","2025_11_18","07:07 PM","Detroit Red Wings","Seattle Kraken","0.582","0.418","2.49","3.37","5.86"
-"hockey","nhl","2025_11_18_San Jose Sharks_Utah Mammoth","2025_11_18","10:07 PM","San Jose Sharks","Utah Mammoth","0.445","0.555","3.47","2.88","6.35"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020307,hockey,nhl,2025_11_18,19:00,Toronto Maple Leafs,St Louis Blues,0.548,0.452,2.82,3.33,6.15
+2025020308,hockey,nhl,2025_11_18,19:00,Detroit Red Wings,Seattle Kraken,0.582,0.418,2.49,3.37,5.86
+2025020309,hockey,nhl,2025_11_18,19:00,Tampa Bay Lightning,New Jersey Devils,0.536,0.464,2.81,3.20,6.01
+2025020310,hockey,nhl,2025_11_18,20:00,Dallas Stars,New York Islanders,0.555,0.445,2.74,3.34,6.08
+2025020311,hockey,nhl,2025_11_18,20:00,Winnipeg Jets,Columbus Blue Jackets,0.625,0.375,2.50,3.62,6.12
+2025020312,hockey,nhl,2025_11_18,20:30,Chicago Blackhawks,Calgary Flames,0.548,0.452,2.61,3.12,5.73
+2025020313,hockey,nhl,2025_11_18,22:00,Vegas Golden Knights,New York Rangers,0.557,0.443,2.61,3.22,5.83
+2025020314,hockey,nhl,2025_11_18,22:00,San Jose Sharks,Utah Mammoth,0.445,0.555,3.47,2.88,6.35

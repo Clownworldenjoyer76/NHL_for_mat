@@ -1,7 +1,7 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","eb2e9eeee862cc6668c7304236c8b6a2","2026_04_12","03:07 PM","Washington Capitals","Pittsburgh Penguins","0.551000","0.449000","2.94","3.49","6.43"
-"hockey","nhl","1d4358a4cd2a67836ece95826721475d","2026_04_12","06:07 PM","Columbus Blue Jackets","Boston Bruins","0.545000","0.455000","2.89","3.38","6.27"
-"hockey","nhl","89ad13fce8722c03cc9adfd62246b139","2026_04_12","06:07 PM","New York Islanders","Montreal Canadiens","0.511000","0.489000","3.04","3.16","6.20"
-"hockey","nhl","ed6cfdc51af955fef6aef5a50b31a653","2026_04_12","07:07 PM","New Jersey Devils","Ottawa Senators","0.457000","0.543000","3.28","2.82","6.10"
-"hockey","nhl","85a783c58b0e8c374840728506c370ce","2026_04_12","08:07 PM","Anaheim Ducks","Vancouver Canucks","0.701000","0.299000","2.62","4.01","6.63"
-"hockey","nhl","89b1cd5af8c961cacf717aa39b626f47","2026_04_12","09:07 PM","Calgary Flames","Utah Mammoth","0.443000","0.557000","3.19","2.58","5.77"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021276,hockey,nhl,2026_04_12,15:00,Washington Capitals,Pittsburgh Penguins,0.551000,0.449000,2.94,3.49,6.43
+2025021277,hockey,nhl,2026_04_12,18:00,New York Islanders,Montreal Canadiens,0.511000,0.489000,3.04,3.16,6.20
+2025021278,hockey,nhl,2026_04_12,18:00,Columbus Blue Jackets,Boston Bruins,0.545000,0.455000,2.89,3.38,6.27
+2025021279,hockey,nhl,2026_04_12,19:00,New Jersey Devils,Ottawa Senators,0.457000,0.543000,3.28,2.82,6.10
+2025021280,hockey,nhl,2026_04_12,20:00,Anaheim Ducks,Vancouver Canucks,0.701000,0.299000,2.62,4.01,6.63
+2025021281,hockey,nhl,2026_04_12,21:00,Calgary Flames,Utah Mammoth,0.443000,0.557000,3.19,2.58,5.77

@@ -1,9 +1,9 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_10_14_Toronto Maple Leafs_Nashville Predators","hockey","nhl","2025_10_14","7:00 PM EDT","Toronto Maple Leafs","Nashville Predators","-220","180","","","6.5","","","-105","-115","","","","","",""
-"2025_10_14_Montreal Canadiens_Seattle Kraken","hockey","nhl","2025_10_14","7:00 PM EDT","Montreal Canadiens","Seattle Kraken","-160","135","-1.5","-1.5","6.0","-185","-175","-105","-115","","","","","",""
-"2025_10_14_Washington Capitals_Tampa Bay Lightning","hockey","nhl","2025_10_14","7:00 PM EDT","Washington Capitals","Tampa Bay Lightning","-120","100","","","6.0","","","100","-120","","","","","",""
-"2025_10_14_New York Rangers_Edmonton Oilers","hockey","nhl","2025_10_14","7:00 PM EDT","New York Rangers","Edmonton Oilers","110","-135","","","6.0","","","-105","-115","","","","","",""
-"2025_10_14_Calgary Flames_Vegas Golden Knights","hockey","nhl","2025_10_14","9:00 PM EDT","Calgary Flames","Vegas Golden Knights","125","-155","-1.5","-1.5","6.0","-160","-190","-102","-118","","","","","",""
-"2025_10_14_Dallas Stars_Minnesota Wild","hockey","nhl","2025_10_14","9:30 PM EDT","Dallas Stars","Minnesota Wild","-190","155","-1.5","-1.5","6.0","-150","-150","100","-120","","","","","",""
-"2025_10_14_San Jose Sharks_Carolina Hurricanes","hockey","nhl","2025_10_14","10:00 PM EDT","San Jose Sharks","Carolina Hurricanes","200","-250","","","6.0","","","-125","105","","","","","",""
-"2025_10_14_Anaheim Ducks_Pittsburgh Penguins","hockey","nhl","2025_10_14","10:30 PM EDT","Anaheim Ducks","Pittsburgh Penguins","-160","135","-1.5","-1.5","6.0","-190","-175","-118","-102","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020049,,hockey,nhl,2025_10_14,19:00,Toronto Maple Leafs,Nashville Predators,-220,180,,,6.5,,,-105,-115,,,,,,
+2025020050,,hockey,nhl,2025_10_14,19:00,Montreal Canadiens,Seattle Kraken,-160,135,-1.5,-1.5,6.0,-185,-175,-105,-115,,,,,,
+2025020051,,hockey,nhl,2025_10_14,19:00,New York Rangers,Edmonton Oilers,110,-135,,,6.0,,,-105,-115,,,,,,
+2025020052,,hockey,nhl,2025_10_14,19:00,Washington Capitals,Tampa Bay Lightning,-120,100,,,6.0,,,100,-120,,,,,,
+2025020053,,hockey,nhl,2025_10_14,21:00,Calgary Flames,Vegas Golden Knights,125,-155,-1.5,-1.5,6.0,-160,-190,-102,-118,,,,,,
+2025020054,,hockey,nhl,2025_10_14,21:30,Dallas Stars,Minnesota Wild,-190,155,-1.5,-1.5,6.0,-150,-150,100,-120,,,,,,
+2025020055,,hockey,nhl,2025_10_14,22:00,San Jose Sharks,Carolina Hurricanes,200,-250,,,6.0,,,-125,105,,,,,,
+2025020056,,hockey,nhl,2025_10_14,22:30,Anaheim Ducks,Pittsburgh Penguins,-160,135,-1.5,-1.5,6.0,-190,-175,-118,-102,,,,,,

@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_22,13:00,2025020335,Columbus Blue Jackets,Detroit Red Wings,1.5,-1.5,0.724508170907957,0.2754918290920427,1.3802466834111689,3.629871721770364,-215,183,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,19:00,2025020337,Toronto Maple Leafs,Montreal Canadiens,1.5,-1.5,0.7069001626780514,0.2930998373219485,1.4146269201743515,3.4118067384035213,-230,192,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,19:00,2025020339,New Jersey Devils,Philadelphia Flyers,-1.5,1.5,0.2620952758091537,0.7379047241908464,3.815406427730335,1.355188504988304,215,-260,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,19:00,2025020340,Seattle Kraken,Pittsburgh Penguins,1.5,-1.5,0.6947523148478068,0.3052476851521932,1.43936188283023,3.276028119595438,-270,222,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,19:00,2025020341,Tampa Bay Lightning,Washington Capitals,1.5,-1.5,0.6813996790586789,0.3186003209413212,1.467567465516644,3.138728790496658,-235,195,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,21:00,2025020344,New York Rangers,Utah Mammoth,1.5,-1.5,0.7018594831626793,0.2981405168373205,1.4247866189594771,3.3541231182129025,-235,195,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,22:00,2025020345,Dallas Stars,Calgary Flames,-1.5,1.5,0.3323602147777881,0.6676397852222119,3.0087837097728065,1.4978136745807742,165,-190,,,bad_juiced_decimal
+hockey,nhl,2025_11_22,22:00,2025020346,Vegas Golden Knights,Anaheim Ducks,-1.5,1.5,0.3188101920086371,0.681189807991363,3.136662581894208,1.4680196154853205,189,-225,,,bad_juiced_decimal

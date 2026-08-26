@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_02,19:00,2025021193,Boston Bruins,Florida Panthers,-1.5,1.5,0.3005281330619954,0.6994718669380044,3.3274755005838728,1.429650064951979,164,-196,2.64,1.51,bad_juiced_decimal
+hockey,nhl,2026_04_02,19:00,2025021195,Montreal Canadiens,New York Rangers,-1.5,1.5,0.25568970049311,0.7443102995068903,3.910990540766607,1.3435256782856633,170,-204,2.7,1.49,bad_juiced_decimal
+hockey,nhl,2026_04_02,19:00,2025021196,Detroit Red Wings,Philadelphia Flyers,1.5,-1.5,0.7073827829576755,0.292617217042324,1.413661774207802,3.4174339094181203,-263,215,1.38,3.15,bad_juiced_decimal
+hockey,nhl,2026_04_02,19:30,2025021194,Washington Capitals,New Jersey Devils,1.5,-1.5,0.7554015096499781,0.2445984903500222,1.323799313643626,4.088332673554088,-270,220,1.37,3.2,bad_juiced_decimal
+hockey,nhl,2026_04_02,22:00,2025021202,Toronto Maple Leafs,San Jose Sharks,1.5,-1.5,0.78253248312101,0.2174675168789898,1.2779022233194135,4.598387908003989,-250,205,1.4,3.05,bad_juiced_decimal
+hockey,nhl,2026_04_02,22:30,2025021204,Nashville Predators,Los Angeles Kings,1.5,-1.5,0.6921834140496039,0.3078165859503963,1.4447037876124795,3.2486878408856987,-250,205,1.4,3.05,bad_juiced_decimal

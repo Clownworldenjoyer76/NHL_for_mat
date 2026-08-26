@@ -1,10 +1,10 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_11_11_Ottawa Senators_Dallas Stars","hockey","nhl","2025_11_11","7:00 PM EST","Ottawa Senators","Dallas Stars","100","-120","+1.5","-1.5","6.0","-260","+215","-118","-102","","","","","",""
-"2025_11_11_Boston Bruins_Toronto Maple Leafs","hockey","nhl","2025_11_11","7:00 PM EST","Boston Bruins","Toronto Maple Leafs","115","-140","+1.5","-1.5","6.0","-220","+186","-125","105","","","","","",""
-"2025_11_11_Carolina Hurricanes_Washington Capitals","hockey","nhl","2025_11_11","7:00 PM EST","Carolina Hurricanes","Washington Capitals","-170","140","-1.5","+1.5","6.0","+161","-185","-120","100","","","","","",""
-"2025_11_11_Montreal Canadiens_Los Angeles Kings","hockey","nhl","2025_11_11","7:00 PM EST","Montreal Canadiens","Los Angeles Kings","-120","100","-1.5","+1.5","6.0","+222","-270","-118","-102","","","","","",""
-"2025_11_11_St Louis Blues_Calgary Flames","hockey","nhl","2025_11_11","8:00 PM EST","St Louis Blues","Calgary Flames","-150","125","-1.5","+1.5","6.0","+174","-200","100","-120","","","","","",""
-"2025_11_11_Minnesota Wild_San Jose Sharks","hockey","nhl","2025_11_11","8:00 PM EST","Minnesota Wild","San Jose Sharks","-220","180","-1.5","+1.5","6.5","+115","-135","-110","-110","","","","","",""
-"2025_11_11_Colorado Avalanche_Anaheim Ducks","hockey","nhl","2025_11_11","9:30 PM EST","Colorado Avalanche","Anaheim Ducks","-220","180","-1.5","+1.5","6.5","+112","-132","-135","110","","","","","",""
-"2025_11_11_Vancouver Canucks_Winnipeg Jets","hockey","nhl","2025_11_11","10:00 PM EST","Vancouver Canucks","Winnipeg Jets","105","-130","+1.5","-1.5","6.0","-240","+200","100","-120","","","","","",""
-"2025_11_11_Seattle Kraken_Columbus Blue Jackets","hockey","nhl","2025_11_11","10:00 PM EST","Seattle Kraken","Columbus Blue Jackets","-120","100","-1.5","+1.5","6.0","+200","-240","-118","-102","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020256,,hockey,nhl,2025_11_11,19:00,Boston Bruins,Toronto Maple Leafs,115,-140,+1.5,-1.5,6.0,-220,+186,-125,105,,,,,,
+2025020257,,hockey,nhl,2025_11_11,19:00,Montreal Canadiens,Los Angeles Kings,-120,100,-1.5,+1.5,6.0,+222,-270,-118,-102,,,,,,
+2025020258,,hockey,nhl,2025_11_11,19:00,Ottawa Senators,Dallas Stars,100,-120,+1.5,-1.5,6.0,-260,+215,-118,-102,,,,,,
+2025020259,,hockey,nhl,2025_11_11,19:00,Carolina Hurricanes,Washington Capitals,-170,140,-1.5,+1.5,6.0,+161,-185,-120,100,,,,,,
+2025020260,,hockey,nhl,2025_11_11,20:00,St Louis Blues,Calgary Flames,-150,125,-1.5,+1.5,6.0,+174,-200,100,-120,,,,,,
+2025020261,,hockey,nhl,2025_11_11,20:00,Minnesota Wild,San Jose Sharks,-220,180,-1.5,+1.5,6.5,+115,-135,-110,-110,,,,,,
+2025020262,,hockey,nhl,2025_11_11,21:30,Colorado Avalanche,Anaheim Ducks,-220,180,-1.5,+1.5,6.5,+112,-132,-135,110,,,,,,
+2025020263,,hockey,nhl,2025_11_11,22:00,Vancouver Canucks,Winnipeg Jets,105,-130,+1.5,-1.5,6.0,-240,+200,100,-120,,,,,,
+2025020264,,hockey,nhl,2025_11_11,22:00,Seattle Kraken,Columbus Blue Jackets,-120,100,-1.5,+1.5,6.0,+200,-240,-118,-102,,,,,,

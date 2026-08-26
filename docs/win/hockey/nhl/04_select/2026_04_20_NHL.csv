@@ -1,3 +1,3 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_20,19:40,f8d13ed95a66c1dc6b5999ccab91bd36,Ottawa Senators,Carolina Hurricanes,puck_line,away,1.5,away_puck_line,-204.0,1.49,0.739788954948467,0.1022855428732156,0.1022855428732156,0.2087460058637056
-hockey,nhl,2026_04_20,21:40,f9880d72af7d608cd1aaa81db25e2604,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-238.0,1.42,0.7755579301072881,0.1012922607523489,0.1012922607523489,0.241172049410355
+hockey,nhl,2026_04_20,19:30,2025030132,Ottawa Senators,Carolina Hurricanes,puck_line,away,1.5,away_puck_line,-204.0,1.49,0.739788954948467,0.1022855428732156,0.1022855428732156,0.2087460058637056
+hockey,nhl,2026_04_20,21:30,2025030162,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-238.0,1.42,0.7755579301072881,0.1012922607523489,0.1012922607523489,0.241172049410355

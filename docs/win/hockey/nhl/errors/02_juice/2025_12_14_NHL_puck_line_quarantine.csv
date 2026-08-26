@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_14,18:00,2025020511,Boston Bruins,Minnesota Wild,1.5,-1.5,0.6866320927239555,0.3133679072760446,1.4563840091319862,3.1911372440544903,-205,177,,,bad_juiced_decimal
+hockey,nhl,2025_12_14,19:00,2025020512,Edmonton Oilers,Montreal Canadiens,-1.5,1.5,0.3142641705686804,0.6857358294313192,3.182036304649169,1.4582875169718057,189,-225,,,bad_juiced_decimal
+hockey,nhl,2025_12_14,20:00,2025020513,Buffalo Sabres,Seattle Kraken,-1.5,1.5,0.3036482447983822,0.6963517552016173,3.2932843088356547,1.4360558331765334,215,-260,,,bad_juiced_decimal

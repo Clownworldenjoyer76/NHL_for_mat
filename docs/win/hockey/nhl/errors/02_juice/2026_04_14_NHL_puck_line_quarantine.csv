@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_14,19:00,2025021293,Carolina Hurricanes,New York Islanders,1.5,-1.5,0.831463269613171,0.168536730386829,1.2026989484036246,5.933424706322349,-238,195,1.42,2.95,bad_juiced_decimal
+hockey,nhl,2026_04_14,19:00,2025021294,Montreal Canadiens,Philadelphia Flyers,-1.5,1.5,0.3093790656515254,0.6906209343484744,3.232280755306074,1.4479723249967669,164,-196,2.64,1.51,bad_juiced_decimal
+hockey,nhl,2026_04_14,19:00,2025021295,Washington Capitals,Columbus Blue Jackets,1.5,-1.5,0.7084473325245146,0.2915526674754849,1.411537532982943,3.429912024674185,-244,200,1.41,3.0,bad_juiced_decimal
+hockey,nhl,2026_04_14,21:30,2025021299,Pittsburgh Penguins,St Louis Blues,1.5,-1.5,0.8019665752360713,0.1980334247639283,1.2469347612219803,5.04965260885671,-227,185,1.44,2.85,bad_juiced_decimal

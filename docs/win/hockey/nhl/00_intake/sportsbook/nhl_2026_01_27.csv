@@ -1,11 +1,11 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_01_27_Boston Bruins_Nashville Predators","hockey","nhl","2026_01_27","7:00 PM EST","Boston Bruins","Nashville Predators","-110","-110","-1.5","+1.5","6.0","+215","-260","-120","100","","","","","",""
-"2026_01_27_Detroit Red Wings_Los Angeles Kings","hockey","nhl","2026_01_27","7:00 PM EST","Detroit Red Wings","Los Angeles Kings","-140","115","-1.5","+1.5","5.5","+192","-230","-120","100","","","","","",""
-"2026_01_27_New Jersey Devils_Winnipeg Jets","hockey","nhl","2026_01_27","7:00 PM EST","New Jersey Devils","Winnipeg Jets","-125","105","-1.5","+1.5","6.0","+200","-240","100","-120","","","","","",""
-"2026_01_27_Montreal Canadiens_Vegas Golden Knights","hockey","nhl","2026_01_27","7:00 PM EST","Montreal Canadiens","Vegas Golden Knights","-102","-118","+1.5","-1.5","6.5","-235","+195","-110","-110","","","","","",""
-"2026_01_27_Toronto Maple Leafs_Buffalo Sabres","hockey","nhl","2026_01_27","7:00 PM EST","Toronto Maple Leafs","Buffalo Sabres","-115","-105","-1.5","+1.5","6.5","+200","-240","-110","-110","","","","","",""
-"2026_01_27_Florida Panthers_Utah Mammoth","hockey","nhl","2026_01_27","7:00 PM EST","Florida Panthers","Utah Mammoth","-175","145","-1.5","+1.5","6.0","+157","-180","-105","-115","","","","","",""
-"2026_01_27_Minnesota Wild_Chicago Blackhawks","hockey","nhl","2026_01_27","8:00 PM EST","Minnesota Wild","Chicago Blackhawks","-235","195","-1.5","+1.5","6.0","+113","-133","-118","-102","","","","","",""
-"2026_01_27_St Louis Blues_Dallas Stars","hockey","nhl","2026_01_27","8:00 PM EST","St Louis Blues","Dallas Stars","125","-155","+1.5","-1.5","5.5","-195","+170","-120","100","","","","","",""
-"2026_01_27_Vancouver Canucks_San Jose Sharks","hockey","nhl","2026_01_27","10:00 PM EST","Vancouver Canucks","San Jose Sharks","105","-125","+1.5","-1.5","6.0","-240","+200","-130","105","","","","","",""
-"2026_01_27_Seattle Kraken_Washington Capitals","hockey","nhl","2026_01_27","10:00 PM EST","Seattle Kraken","Washington Capitals","125","-150","+1.5","-1.5","6.0","-215","+183","100","-120","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020830,,hockey,nhl,2026_01_27,19:00,Boston Bruins,Nashville Predators,-110,-110,-1.5,+1.5,6.0,+215,-260,-120,100,,,,,,
+2025020831,,hockey,nhl,2026_01_27,19:00,Toronto Maple Leafs,Buffalo Sabres,-115,-105,-1.5,+1.5,6.5,+200,-240,-110,-110,,,,,,
+2025020832,,hockey,nhl,2026_01_27,19:00,Montreal Canadiens,Vegas Golden Knights,-102,-118,+1.5,-1.5,6.5,-235,+195,-110,-110,,,,,,
+2025020833,,hockey,nhl,2026_01_27,19:00,Detroit Red Wings,Los Angeles Kings,-140,115,-1.5,+1.5,5.5,+192,-230,-120,100,,,,,,
+2025020834,,hockey,nhl,2026_01_27,19:00,Florida Panthers,Utah Mammoth,-175,145,-1.5,+1.5,6.0,+157,-180,-105,-115,,,,,,
+2025020835,,hockey,nhl,2026_01_27,19:00,New Jersey Devils,Winnipeg Jets,-125,105,-1.5,+1.5,6.0,+200,-240,100,-120,,,,,,
+2025020836,,hockey,nhl,2026_01_27,20:00,St Louis Blues,Dallas Stars,125,-155,+1.5,-1.5,5.5,-195,+170,-120,100,,,,,,
+2025020837,,hockey,nhl,2026_01_27,20:00,Minnesota Wild,Chicago Blackhawks,-235,195,-1.5,+1.5,6.0,+113,-133,-118,-102,,,,,,
+2025020838,,hockey,nhl,2026_01_27,22:00,Vancouver Canucks,San Jose Sharks,105,-125,+1.5,-1.5,6.0,-240,+200,-130,105,,,,,,
+2025020839,,hockey,nhl,2026_01_27,22:00,Seattle Kraken,Washington Capitals,125,-150,+1.5,-1.5,6.0,-215,+183,100,-120,,,,,,

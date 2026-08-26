@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_31,12:30,2025020859,Los Angeles Kings,Philadelphia Flyers,-1.5,1.5,0.2725720117427438,0.7274279882572563,3.668755253359652,1.3747065223538637,234,-285,,,bad_juiced_decimal
+hockey,nhl,2026_01_31,19:00,2025020868,Columbus Blue Jackets,St Louis Blues,1.5,-1.5,0.7486193642657297,0.2513806357342703,1.3357923234871605,3.978031152157166,-250,207,,,bad_juiced_decimal
+hockey,nhl,2026_01_31,21:00,2025020870,Dallas Stars,Utah Mammoth,1.5,-1.5,0.7050786792134818,0.294921320786518,1.418281433662842,3.3907348486475173,-265,219,,,bad_juiced_decimal

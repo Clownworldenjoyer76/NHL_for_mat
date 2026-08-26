@@ -1,14 +1,14 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_03_10_Boston Bruins_Los Angeles Kings","hockey","nhl","2026_03_10","7:10 PM","Boston Bruins","Los Angeles Kings","-155","+130","-1.5","+1.5","5.5","+170","-205","-135","+114","","","","","",""
-"2026_03_10_Tampa Bay Lightning_Columbus Blue Jackets","hockey","nhl","2026_03_10","7:10 PM","Tampa Bay Lightning","Columbus Blue Jackets","-238","+195","-1.5","+1.5","6.5","+100","-120","-112","-108","","","","","",""
-"2026_03_10_Carolina Hurricanes_Pittsburgh Penguins","hockey","nhl","2026_03_10","7:10 PM","Carolina Hurricanes","Pittsburgh Penguins","-218","+180","-1.5","+1.5","6.5","+120","-142","+105","-125","","","","","",""
-"2026_03_10_Buffalo Sabres_San Jose Sharks","hockey","nhl","2026_03_10","7:10 PM","Buffalo Sabres","San Jose Sharks","-205","+170","-1.5","+1.5","6.5","+124","-148","-120","+100","","","","","",""
-"2026_03_10_Montreal Canadiens_Toronto Maple Leafs","hockey","nhl","2026_03_10","7:10 PM","Montreal Canadiens","Toronto Maple Leafs","-170","+142","-1.5","+1.5","6.5","+145","-175","-118","-102","","","","","",""
-"2026_03_10_Florida Panthers_Detroit Red Wings","hockey","nhl","2026_03_10","7:10 PM","Florida Panthers","Detroit Red Wings","-130","+110","-1.5","+1.5","5.5","+190","-230","-130","+110","","","","","",""
-"2026_03_10_New York Rangers_Calgary Flames","hockey","nhl","2026_03_10","7:10 PM","New York Rangers","Calgary Flames","-130","+110","-1.5","+1.5","5.5","+190","-230","-130","+110","","","","","",""
-"2026_03_10_St Louis Blues_New York Islanders","hockey","nhl","2026_03_10","7:40 PM","St Louis Blues","New York Islanders","+105","-125","+1.5","-1.5","5.5","-258","+210","-108","-112","","","","","",""
-"2026_03_10_Dallas Stars_Vegas Golden Knights","hockey","nhl","2026_03_10","8:10 PM","Dallas Stars","Vegas Golden Knights","-155","+130","-1.5","+1.5","5.5","+164","-198","-125","+105","","","","","",""
-"2026_03_10_Minnesota Wild_Utah Mammoth","hockey","nhl","2026_03_10","8:10 PM","Minnesota Wild","Utah Mammoth","-162","+136","-1.5","+1.5","5.5","+160","-192","-135","+114","","","","","",""
-"2026_03_10_Winnipeg Jets_Anaheim Ducks","hockey","nhl","2026_03_10","8:40 PM","Winnipeg Jets","Anaheim Ducks","-130","+110","-1.5","+1.5","6.5","+195","-238","+102","-122","","","","","",""
-"2026_03_10_Colorado Avalanche_Edmonton Oilers","hockey","nhl","2026_03_10","10:10 PM","Colorado Avalanche","Edmonton Oilers","-175","+145","-1.5","+1.5","6.5","+130","-155","-155","+130","","","","","",""
-"2026_03_10_Seattle Kraken_Nashville Predators","hockey","nhl","2026_03_10","10:10 PM","Seattle Kraken","Nashville Predators","-115","-105","-1.5","+1.5","5.5","+215","-265","-135","+114","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025021012,,hockey,nhl,2026_03_10,19:00,Boston Bruins,Los Angeles Kings,-155,+130,-1.5,+1.5,5.5,+170,-205,-135,+114,,,,,,
+2025021013,,hockey,nhl,2026_03_10,19:00,Buffalo Sabres,San Jose Sharks,-205,+170,-1.5,+1.5,6.5,+124,-148,-120,+100,,,,,,
+2025021014,,hockey,nhl,2026_03_10,19:00,Montreal Canadiens,Toronto Maple Leafs,-170,+142,-1.5,+1.5,6.5,+145,-175,-118,-102,,,,,,
+2025021015,,hockey,nhl,2026_03_10,19:00,Tampa Bay Lightning,Columbus Blue Jackets,-238,+195,-1.5,+1.5,6.5,+100,-120,-112,-108,,,,,,
+2025021016,,hockey,nhl,2026_03_10,19:00,Florida Panthers,Detroit Red Wings,-130,+110,-1.5,+1.5,5.5,+190,-230,-130,+110,,,,,,
+2025021017,,hockey,nhl,2026_03_10,19:00,New York Rangers,Calgary Flames,-130,+110,-1.5,+1.5,5.5,+190,-230,-130,+110,,,,,,
+2025021018,,hockey,nhl,2026_03_10,19:00,Carolina Hurricanes,Pittsburgh Penguins,-218,+180,-1.5,+1.5,6.5,+120,-142,+105,-125,,,,,,
+2025021019,,hockey,nhl,2026_03_10,19:30,St Louis Blues,New York Islanders,+105,-125,+1.5,-1.5,5.5,-258,+210,-108,-112,,,,,,
+2025021020,,hockey,nhl,2026_03_10,20:00,Dallas Stars,Vegas Golden Knights,-155,+130,-1.5,+1.5,5.5,+164,-198,-125,+105,,,,,,
+2025021021,,hockey,nhl,2026_03_10,20:00,Minnesota Wild,Utah Mammoth,-162,+136,-1.5,+1.5,5.5,+160,-192,-135,+114,,,,,,
+2025021022,,hockey,nhl,2026_03_10,20:30,Winnipeg Jets,Anaheim Ducks,-130,+110,-1.5,+1.5,6.5,+195,-238,+102,-122,,,,,,
+2025021023,,hockey,nhl,2026_03_10,22:00,Colorado Avalanche,Edmonton Oilers,-175,+145,-1.5,+1.5,6.5,+130,-155,-155,+130,,,,,,
+2025021024,,hockey,nhl,2026_03_10,22:00,Seattle Kraken,Nashville Predators,-115,-105,-1.5,+1.5,5.5,+215,-265,-135,+114,,,,,,

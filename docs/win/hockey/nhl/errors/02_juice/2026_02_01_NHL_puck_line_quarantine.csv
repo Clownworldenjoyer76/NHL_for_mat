@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_02_01,18:30,2025020873,Boston Bruins,Tampa Bay Lightning,1.5,-1.5,0.8562731790609477,0.1437268209390519,1.1678515974267392,6.957643628839843,-140,120,,,bad_juiced_decimal
+hockey,nhl,2026_02_01,21:30,2025020875,Vegas Golden Knights,Anaheim Ducks,-1.5,1.5,0.2830830944515936,0.7169169055484063,3.532531682745884,1.3948617925742022,189,-225,,,bad_juiced_decimal

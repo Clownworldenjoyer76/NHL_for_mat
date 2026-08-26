@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_10_13,13:00,2025020041,Nashville Predators,Ottawa Senators,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_13,14:00,2025020043,Detroit Red Wings,Toronto Maple Leafs,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_13,19:00,2025020044,Florida Panthers,Philadelphia Flyers,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_13,19:30,2025020046,St Louis Blues,Vancouver Canucks,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_13,20:00,2025020047,Los Angeles Kings,Minnesota Wild,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_13,20:30,2025020048,Utah Mammoth,Chicago Blackhawks,,,,,,,,,,,bad_puck_line_values

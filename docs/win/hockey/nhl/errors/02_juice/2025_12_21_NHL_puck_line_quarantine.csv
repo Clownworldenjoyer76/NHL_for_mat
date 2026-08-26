@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_21,13:00,2025020562,Washington Capitals,Detroit Red Wings,1.5,-1.5,0.7530541256350815,0.2469458743649185,1.327925797042356,4.049470365001009,-275,226,,,bad_juiced_decimal
+hockey,nhl,2025_12_21,19:00,2025020564,Ottawa Senators,Boston Bruins,-1.5,1.5,0.3117293003636316,0.6882706996363684,3.207911475865444,1.4529167092661743,192,-230,,,bad_juiced_decimal
+hockey,nhl,2025_12_21,19:00,2025020566,Montreal Canadiens,Pittsburgh Penguins,1.5,-1.5,0.7548620633758913,0.2451379366241086,1.324745338940208,4.079335959873837,-250,207,,,bad_juiced_decimal
+hockey,nhl,2025_12_21,19:00,2025020567,New York Rangers,Nashville Predators,-1.5,1.5,0.3317112217350354,0.6682887782649649,3.014670395440468,1.496359107804018,200,-240,,,bad_juiced_decimal

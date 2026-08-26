@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_22,19:00,2025030143,Pittsburgh Penguins,Philadelphia Flyers,1.5,-1.5,0.696970575649986,0.3030294243500141,1.434780799845693,3.3000095688560926,-250,205,1.4,3.05,bad_juiced_decimal
+hockey,nhl,2026_04_22,21:30,2025030163,Dallas Stars,Minnesota Wild,1.5,-1.5,0.7406386963907572,0.2593613036092429,1.3501860014513811,3.8556252844356953,-233,190,1.43,2.9,bad_juiced_decimal

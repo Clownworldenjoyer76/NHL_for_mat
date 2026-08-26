@@ -1,16 +1,16 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_29_New Jersey Devils_Nashville Predators","2026_01_29","07:07 PM","New Jersey Devils","Nashville Predators","0.563","0.437","2.58","3.25","5.83"
-"hockey","nhl","2026_01_29_New York Rangers_New York Islanders","2026_01_29","07:07 PM","New York Rangers","New York Islanders","0.477","0.523","3.05","2.81","5.86"
-"hockey","nhl","2026_01_29_Boston Bruins_Philadelphia Flyers","2026_01_29","07:07 PM","Boston Bruins","Philadelphia Flyers","0.578","0.422","2.54","3.38","5.92"
-"hockey","nhl","2026_01_29_Pittsburgh Penguins_Chicago Blackhawks","2026_01_29","07:07 PM","Pittsburgh Penguins","Chicago Blackhawks","0.616","0.384","2.54","3.62","6.16"
-"hockey","nhl","2026_01_29_Buffalo Sabres_Los Angeles Kings","2026_01_29","07:07 PM","Buffalo Sabres","Los Angeles Kings","0.529","0.471","2.80","3.12","5.92"
-"hockey","nhl","2026_01_29_Montreal Canadiens_Colorado Avalanche","2026_01_29","07:07 PM","Montreal Canadiens","Colorado Avalanche","0.431","0.569","3.60","2.86","6.46"
-"hockey","nhl","2026_01_29_Seattle Kraken_Toronto Maple Leafs","2026_01_29","10:07 PM","Seattle Kraken","Toronto Maple Leafs","0.476","0.524","3.05","2.79","5.84"
-"hockey","nhl","2026_01_29_Carolina Hurricanes_Utah Mammoth","2026_01_29","07:07 PM","Carolina Hurricanes","Utah Mammoth","0.594","0.406","2.46","3.46","5.92"
-"hockey","nhl","2026_01_29_St Louis Blues_Florida Panthers","2026_01_29","08:07 PM","St Louis Blues","Florida Panthers","0.416","0.584","3.28","2.38","5.66"
-"hockey","nhl","2026_01_29_Tampa Bay Lightning_Winnipeg Jets","2026_01_29","07:07 PM","Tampa Bay Lightning","Winnipeg Jets","0.647","0.353","2.27","3.47","5.74"
-"hockey","nhl","2026_01_29_Detroit Red Wings_Washington Capitals","2026_01_29","07:37 PM","Detroit Red Wings","Washington Capitals","0.524","0.476","2.86","3.12","5.98"
-"hockey","nhl","2026_01_29_Minnesota Wild_Calgary Flames","2026_01_29","08:07 PM","Minnesota Wild","Calgary Flames","0.615","0.385","2.31","3.39","5.70"
-"hockey","nhl","2026_01_29_Edmonton Oilers_San Jose Sharks","2026_01_29","09:07 PM","Edmonton Oilers","San Jose Sharks","0.652","0.348","2.69","3.90","6.59"
-"hockey","nhl","2026_01_29_Vancouver Canucks_Anaheim Ducks","2026_01_29","10:07 PM","Vancouver Canucks","Anaheim Ducks","0.437","0.563","3.64","2.97","6.61"
-"hockey","nhl","2026_01_29_Vegas Golden Knights_Dallas Stars","2026_01_29","10:07 PM","Vegas Golden Knights","Dallas Stars","0.526","0.474","2.78","3.06","5.84"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020843,hockey,nhl,2026_01_29,19:00,Boston Bruins,Philadelphia Flyers,0.578,0.422,2.54,3.38,5.92
+2025020844,hockey,nhl,2026_01_29,19:00,Buffalo Sabres,Los Angeles Kings,0.529,0.471,2.80,3.12,5.92
+2025020845,hockey,nhl,2026_01_29,19:00,Montreal Canadiens,Colorado Avalanche,0.431,0.569,3.60,2.86,6.46
+2025020847,hockey,nhl,2026_01_29,19:00,Tampa Bay Lightning,Winnipeg Jets,0.647,0.353,2.27,3.47,5.74
+2025020848,hockey,nhl,2026_01_29,19:00,New Jersey Devils,Nashville Predators,0.563,0.437,2.58,3.25,5.83
+2025020849,hockey,nhl,2026_01_29,19:00,New York Rangers,New York Islanders,0.477,0.523,3.05,2.81,5.86
+2025020850,hockey,nhl,2026_01_29,19:00,Pittsburgh Penguins,Chicago Blackhawks,0.616,0.384,2.54,3.62,6.16
+2025020851,hockey,nhl,2026_01_29,19:00,Carolina Hurricanes,Utah Mammoth,0.594,0.406,2.46,3.46,5.92
+2025020846,hockey,nhl,2026_01_29,19:30,Detroit Red Wings,Washington Capitals,0.524,0.476,2.86,3.12,5.98
+2025020852,hockey,nhl,2026_01_29,20:00,St Louis Blues,Florida Panthers,0.416,0.584,3.28,2.38,5.66
+2025020853,hockey,nhl,2026_01_29,20:00,Minnesota Wild,Calgary Flames,0.615,0.385,2.31,3.39,5.70
+2025020854,hockey,nhl,2026_01_29,21:00,Edmonton Oilers,San Jose Sharks,0.652,0.348,2.69,3.90,6.59
+2025020855,hockey,nhl,2026_01_29,22:00,Vancouver Canucks,Anaheim Ducks,0.437,0.563,3.64,2.97,6.61
+2025020856,hockey,nhl,2026_01_29,22:00,Vegas Golden Knights,Dallas Stars,0.526,0.474,2.78,3.06,5.84
+2025020857,hockey,nhl,2026_01_29,22:00,Seattle Kraken,Toronto Maple Leafs,0.476,0.524,3.05,2.79,5.84

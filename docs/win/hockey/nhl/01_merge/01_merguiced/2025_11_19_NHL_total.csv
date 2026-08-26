@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2025_11_19,7:00 PM EST,2025_11_19_Washington Capitals_Edmonton Oilers,Edmonton Oilers,Washington Capitals,6.0,5.97,0.46328778355853834,0.5367122164414616,2.15848557956557,1.8631958978505354,-118,-102,,
-hockey,nhl,2025_11_19,7:30 PM EST,2025_11_19_Buffalo Sabres_Calgary Flames,Calgary Flames,Buffalo Sabres,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-118,-102,,
-hockey,nhl,2025_11_19,9:30 PM EST,2025_11_19_Minnesota Wild_Carolina Hurricanes,Carolina Hurricanes,Minnesota Wild,6.0,6.29,0.5237249395823605,0.4762750604176394,1.90939923693044,2.0996270498041887,-115,-105,,
-hockey,nhl,2025_11_19,10:00 PM EST,2025_11_19_Anaheim Ducks_Boston Bruins,Boston Bruins,Anaheim Ducks,6.5,6.45,0.465587537563809,0.534412462436191,2.14782381253697,1.8712138475239999,-105,-115,,
+hockey,nhl,2025_11_19,19:00,2025020315,Edmonton Oilers,Washington Capitals,6.0,5.97,0.46328778355853834,0.5367122164414616,2.15848557956557,1.8631958978505354,-118,-102,,
+hockey,nhl,2025_11_19,19:30,2025020316,Calgary Flames,Buffalo Sabres,6.0,5.99,0.46712077002642716,0.5328792299735728,2.14077400142885,1.8765978175760258,-118,-102,,
+hockey,nhl,2025_11_19,21:30,2025020317,Carolina Hurricanes,Minnesota Wild,6.0,6.29,0.5237249395823605,0.4762750604176394,1.90939923693044,2.0996270498041887,-115,-105,,
+hockey,nhl,2025_11_19,22:00,2025020318,Boston Bruins,Anaheim Ducks,6.5,6.45,0.465587537563809,0.534412462436191,2.14782381253697,1.8712138475239999,-105,-115,,

@@ -1,5 +1,5 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_26_Philadelphia Flyers_New York Islanders","2026_01_26","07:07 PM","Philadelphia Flyers","New York Islanders","0.53","0.47","2.65","2.97","5.62"
-"hockey","nhl","2026_01_26_New York Rangers_Boston Bruins","2026_01_26","07:07 PM","New York Rangers","Boston Bruins","0.527","0.473","2.72","3.01","5.73"
-"hockey","nhl","2026_01_26_Tampa Bay Lightning_Utah Mammoth","2026_01_26","07:07 PM","Tampa Bay Lightning","Utah Mammoth","0.573","0.427","2.52","3.31","5.83"
-"hockey","nhl","2026_01_26_Edmonton Oilers_Anaheim Ducks","2026_01_26","08:37 PM","Edmonton Oilers","Anaheim Ducks","0.622","0.378","2.87","3.97","6.84"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020825,hockey,nhl,2026_01_26,19:00,Tampa Bay Lightning,Utah Mammoth,0.573,0.427,2.52,3.31,5.83
+2025020826,hockey,nhl,2026_01_26,19:00,New York Rangers,Boston Bruins,0.527,0.473,2.72,3.01,5.73
+2025020827,hockey,nhl,2026_01_26,19:00,Philadelphia Flyers,New York Islanders,0.53,0.47,2.65,2.97,5.62
+2025020829,hockey,nhl,2026_01_26,20:30,Edmonton Oilers,Anaheim Ducks,0.622,0.378,2.87,3.97,6.84

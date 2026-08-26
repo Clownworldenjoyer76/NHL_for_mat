@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_02_25,19:00,2025020910,Buffalo Sabres,New Jersey Devils,1.5,-1.5,0.7010382581626593,0.2989617418373406,1.4264556725062123,3.3449095989816686,-258,210,,,bad_juiced_decimal
+hockey,nhl,2026_02_25,22:00,2025020916,Vegas Golden Knights,Los Angeles Kings,1.5,-1.5,0.6999135794829341,0.300086420517066,1.4287478187503615,3.332373381897598,-285,230,,,bad_juiced_decimal
+hockey,nhl,2026_02_25,22:30,2025020917,Edmonton Oilers,Anaheim Ducks,-1.5,1.5,0.3244552460445691,0.6755447539554309,3.0820891700503865,1.4802868265127185,180,-218,,,bad_juiced_decimal

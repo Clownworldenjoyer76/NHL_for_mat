@@ -1,651 +1,235 @@
-=== NHL hockey_select_bets RUN 2026-06-15T10:16:42.604565+00:00 ===
-2026-06-15T10:16:42.611874+00:00 | INFO  | INPUT_DIR: docs/win/hockey/nhl/03_edges/ev_kelly
-2026-06-15T10:16:42.611915+00:00 | INFO  | OUTPUT_DIR: docs/win/hockey/nhl/04_select
-2026-06-15T10:16:42.611942+00:00 | INFO  | CONFIG_PATH: docs/win/hockey/nhl/config/markets.yaml
-2026-06-15T10:16:42.611966+00:00 | INFO  | LOG_FILE: docs/win/hockey/nhl/errors/04_select/hockey_select_bets.txt
-2026-06-15T10:16:42.623850+00:00 | INFO  | Slates found: 211
-2026-06-15T10:16:42.623893+00:00 | INFO  | --- SLATE: 2025_10_07
-2026-06-15T10:16:42.639083+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.639175+00:00 | INFO  | --- SLATE: 2025_10_08
-2026-06-15T10:16:42.654251+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.654341+00:00 | INFO  | --- SLATE: 2025_10_09
-2026-06-15T10:16:42.691515+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.691610+00:00 | INFO  | --- SLATE: 2025_10_11
-2026-06-15T10:16:42.732588+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_11_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.732685+00:00 | INFO  | --- SLATE: 2025_10_12
-2026-06-15T10:16:42.740122+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_12_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.740214+00:00 | INFO  | --- SLATE: 2025_10_13
-2026-06-15T10:16:42.767897+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.767991+00:00 | INFO  | --- SLATE: 2025_10_14
-2026-06-15T10:16:42.792281+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.792380+00:00 | INFO  | --- SLATE: 2025_10_15
-2026-06-15T10:16:42.807563+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_15_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.807653+00:00 | INFO  | --- SLATE: 2025_10_16
-2026-06-15T10:16:42.837843+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.837937+00:00 | INFO  | --- SLATE: 2025_10_17
-2026-06-15T10:16:42.852657+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_17_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.852746+00:00 | INFO  | --- SLATE: 2025_10_18
-2026-06-15T10:16:42.887100+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.887196+00:00 | INFO  | --- SLATE: 2025_10_19
-2026-06-15T10:16:42.901966+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.902058+00:00 | INFO  | --- SLATE: 2025_10_20
-2026-06-15T10:16:42.918820+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.918915+00:00 | INFO  | --- SLATE: 2025_10_21
-2026-06-15T10:16:42.946658+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.946752+00:00 | INFO  | --- SLATE: 2025_10_22
-2026-06-15T10:16:42.959378+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.959469+00:00 | INFO  | --- SLATE: 2025_10_23
-2026-06-15T10:16:42.997947+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:42.998087+00:00 | INFO  | --- SLATE: 2025_10_24
-2026-06-15T10:16:43.015250+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_24_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.015347+00:00 | INFO  | --- SLATE: 2025_10_25
-2026-06-15T10:16:43.049313+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.049406+00:00 | INFO  | --- SLATE: 2025_10_26
-2026-06-15T10:16:43.072460+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_26_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.072550+00:00 | INFO  | --- SLATE: 2025_10_27
-2026-06-15T10:16:43.082826+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_27_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.082917+00:00 | INFO  | --- SLATE: 2025_10_28
-2026-06-15T10:16:43.122734+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_28_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.122859+00:00 | INFO  | --- SLATE: 2025_10_29
-2026-06-15T10:16:43.130152+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.130242+00:00 | INFO  | --- SLATE: 2025_10_30
-2026-06-15T10:16:43.159586+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_30_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.159678+00:00 | INFO  | --- SLATE: 2025_10_31
-2026-06-15T10:16:43.172048+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_10_31_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.172136+00:00 | INFO  | --- SLATE: 2025_11_01
-2026-06-15T10:16:43.206115+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_01_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.206209+00:00 | INFO  | --- SLATE: 2025_11_02
-2026-06-15T10:16:43.223005+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.223096+00:00 | INFO  | --- SLATE: 2025_11_03
-2026-06-15T10:16:43.237756+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_03_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.237872+00:00 | INFO  | --- SLATE: 2025_11_04
-2026-06-15T10:16:43.265433+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.265527+00:00 | INFO  | --- SLATE: 2025_11_05
-2026-06-15T10:16:43.282352+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.282444+00:00 | INFO  | --- SLATE: 2025_11_06
-2026-06-15T10:16:43.307881+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_06_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.307975+00:00 | INFO  | --- SLATE: 2025_11_07
-2026-06-15T10:16:43.322639+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.322730+00:00 | INFO  | --- SLATE: 2025_11_08
-2026-06-15T10:16:43.356737+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.356857+00:00 | INFO  | --- SLATE: 2025_11_09
-2026-06-15T10:16:43.380163+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.380256+00:00 | INFO  | --- SLATE: 2025_11_10
-2026-06-15T10:16:43.394962+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_10_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.395053+00:00 | INFO  | --- SLATE: 2025_11_11
-2026-06-15T10:16:43.420313+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_11_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.420406+00:00 | INFO  | --- SLATE: 2025_11_12
-2026-06-15T10:16:43.435072+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_12_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.435162+00:00 | INFO  | --- SLATE: 2025_11_13
-2026-06-15T10:16:43.463090+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.463190+00:00 | INFO  | --- SLATE: 2025_11_14
-2026-06-15T10:16:43.477976+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.478067+00:00 | INFO  | --- SLATE: 2025_11_15
-2026-06-15T10:16:43.512273+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_15_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.512369+00:00 | INFO  | --- SLATE: 2025_11_16
-2026-06-15T10:16:43.529469+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.529560+00:00 | INFO  | --- SLATE: 2025_11_17
-2026-06-15T10:16:43.548877+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_17_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.548969+00:00 | INFO  | --- SLATE: 2025_11_18
-2026-06-15T10:16:43.573068+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.573161+00:00 | INFO  | --- SLATE: 2025_11_19
-2026-06-15T10:16:43.590574+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.590701+00:00 | INFO  | --- SLATE: 2025_11_20
-2026-06-15T10:16:43.625205+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.625299+00:00 | INFO  | --- SLATE: 2025_11_21
-2026-06-15T10:16:43.640421+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.640512+00:00 | INFO  | --- SLATE: 2025_11_22
-2026-06-15T10:16:43.673081+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.673176+00:00 | INFO  | --- SLATE: 2025_11_23
-2026-06-15T10:16:43.692315+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.692407+00:00 | INFO  | --- SLATE: 2025_11_24
-2026-06-15T10:16:43.713819+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_24_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.713913+00:00 | INFO  | --- SLATE: 2025_11_25
-2026-06-15T10:16:43.721226+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.721318+00:00 | INFO  | --- SLATE: 2025_11_26
-2026-06-15T10:16:43.760346+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_26_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.760441+00:00 | INFO  | --- SLATE: 2025_11_28
-2026-06-15T10:16:43.800422+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_28_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.800529+00:00 | INFO  | --- SLATE: 2025_11_29
-2026-06-15T10:16:43.830441+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.830566+00:00 | INFO  | --- SLATE: 2025_11_30
-2026-06-15T10:16:43.845660+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_11_30_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.845751+00:00 | INFO  | --- SLATE: 2025_12_01
-2026-06-15T10:16:43.862630+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_01_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.862720+00:00 | INFO  | --- SLATE: 2025_12_02
-2026-06-15T10:16:43.890557+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.890651+00:00 | INFO  | --- SLATE: 2025_12_03
-2026-06-15T10:16:43.907602+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_03_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.907699+00:00 | INFO  | --- SLATE: 2025_12_04
-2026-06-15T10:16:43.935541+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.935636+00:00 | INFO  | --- SLATE: 2025_12_05
-2026-06-15T10:16:43.952632+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.952724+00:00 | INFO  | --- SLATE: 2025_12_06
-2026-06-15T10:16:43.984874+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_06_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:43.984977+00:00 | INFO  | --- SLATE: 2025_12_07
-2026-06-15T10:16:44.008416+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.008510+00:00 | INFO  | --- SLATE: 2025_12_08
-2026-06-15T10:16:44.025466+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.025557+00:00 | INFO  | --- SLATE: 2025_12_09
-2026-06-15T10:16:44.053308+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.053401+00:00 | INFO  | --- SLATE: 2025_12_10
-2026-06-15T10:16:44.068209+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_10_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.068299+00:00 | INFO  | --- SLATE: 2025_12_11
-2026-06-15T10:16:44.102753+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_11_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.102874+00:00 | INFO  | --- SLATE: 2025_12_12
-2026-06-15T10:16:44.113302+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_12_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.113393+00:00 | INFO  | --- SLATE: 2025_12_13
-2026-06-15T10:16:44.147713+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.147857+00:00 | INFO  | --- SLATE: 2025_12_14
-2026-06-15T10:16:44.166965+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.167058+00:00 | INFO  | --- SLATE: 2025_12_15
-2026-06-15T10:16:44.183916+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_15_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.184008+00:00 | INFO  | --- SLATE: 2025_12_16
-2026-06-15T10:16:44.211709+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.211827+00:00 | INFO  | --- SLATE: 2025_12_17
-2026-06-15T10:16:44.228733+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_17_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.228855+00:00 | INFO  | --- SLATE: 2025_12_18
-2026-06-15T10:16:44.256624+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.256717+00:00 | INFO  | --- SLATE: 2025_12_19
-2026-06-15T10:16:44.273809+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.273904+00:00 | INFO  | --- SLATE: 2025_12_20
-2026-06-15T10:16:44.308022+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.308116+00:00 | INFO  | --- SLATE: 2025_12_21
-2026-06-15T10:16:44.333668+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.333762+00:00 | INFO  | --- SLATE: 2025_12_22
-2026-06-15T10:16:44.348454+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.348546+00:00 | INFO  | --- SLATE: 2025_12_23
-2026-06-15T10:16:44.380625+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.380720+00:00 | INFO  | --- SLATE: 2025_12_27
-2026-06-15T10:16:44.414936+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_27_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.415035+00:00 | INFO  | --- SLATE: 2025_12_28
-2026-06-15T10:16:44.432122+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_28_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.432215+00:00 | INFO  | --- SLATE: 2025_12_29
-2026-06-15T10:16:44.462262+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.462356+00:00 | INFO  | --- SLATE: 2025_12_30
-2026-06-15T10:16:44.479401+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_30_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.479493+00:00 | INFO  | --- SLATE: 2025_12_31
-2026-06-15T10:16:44.507597+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2025_12_31_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.507690+00:00 | INFO  | --- SLATE: 2026_01_01
-2026-06-15T10:16:44.531443+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_01_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.531537+00:00 | INFO  | --- SLATE: 2026_01_02
-2026-06-15T10:16:44.546568+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.546660+00:00 | INFO  | --- SLATE: 2026_01_03
-2026-06-15T10:16:44.581136+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_03_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.581230+00:00 | INFO  | --- SLATE: 2026_01_04
-2026-06-15T10:16:44.599131+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.599243+00:00 | INFO  | --- SLATE: 2026_01_05
-2026-06-15T10:16:44.616397+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.616490+00:00 | INFO  | --- SLATE: 2026_01_06
-2026-06-15T10:16:44.644592+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_06_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.644687+00:00 | INFO  | --- SLATE: 2026_01_07
-2026-06-15T10:16:44.661938+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.662031+00:00 | INFO  | --- SLATE: 2026_01_08
-2026-06-15T10:16:44.694383+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.694479+00:00 | INFO  | --- SLATE: 2026_01_09
-2026-06-15T10:16:44.707314+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.707405+00:00 | INFO  | --- SLATE: 2026_01_10
-2026-06-15T10:16:44.744166+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_10_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.744261+00:00 | INFO  | --- SLATE: 2026_01_11
-2026-06-15T10:16:44.761410+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_11_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.761502+00:00 | INFO  | --- SLATE: 2026_01_12
-2026-06-15T10:16:44.787307+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_12_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.787403+00:00 | INFO  | --- SLATE: 2026_01_13
-2026-06-15T10:16:44.815189+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.815283+00:00 | INFO  | --- SLATE: 2026_01_14
-2026-06-15T10:16:44.830135+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.830232+00:00 | INFO  | --- SLATE: 2026_01_15
-2026-06-15T10:16:44.858162+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_15_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.858255+00:00 | INFO  | --- SLATE: 2026_01_16
-2026-06-15T10:16:44.875340+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.875430+00:00 | INFO  | --- SLATE: 2026_01_17
-2026-06-15T10:16:44.909762+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_17_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.909881+00:00 | INFO  | --- SLATE: 2026_01_18
-2026-06-15T10:16:44.922418+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.922508+00:00 | INFO  | --- SLATE: 2026_01_19
-2026-06-15T10:16:44.950273+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.950367+00:00 | INFO  | --- SLATE: 2026_01_20
-2026-06-15T10:16:44.973843+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.973937+00:00 | INFO  | --- SLATE: 2026_01_21
-2026-06-15T10:16:44.993396+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:44.993490+00:00 | INFO  | --- SLATE: 2026_01_22
-2026-06-15T10:16:45.016987+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.017081+00:00 | INFO  | --- SLATE: 2026_01_23
-2026-06-15T10:16:45.040523+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.040616+00:00 | INFO  | --- SLATE: 2026_01_24
-2026-06-15T10:16:45.066107+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_24_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.066201+00:00 | INFO  | --- SLATE: 2026_01_25
-2026-06-15T10:16:45.085326+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.085419+00:00 | INFO  | --- SLATE: 2026_01_26
-2026-06-15T10:16:45.100168+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_26_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.100259+00:00 | INFO  | --- SLATE: 2026_01_27
-2026-06-15T10:16:45.139573+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_27_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.139675+00:00 | INFO  | --- SLATE: 2026_01_28
-2026-06-15T10:16:45.152427+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_28_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.152519+00:00 | INFO  | --- SLATE: 2026_01_29
-2026-06-15T10:16:45.191649+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.191755+00:00 | INFO  | --- SLATE: 2026_01_30
-2026-06-15T10:16:45.199177+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_30_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.199270+00:00 | INFO  | --- SLATE: 2026_01_31
-2026-06-15T10:16:45.235999+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_01_31_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.236097+00:00 | INFO  | --- SLATE: 2026_02_01
-2026-06-15T10:16:45.248895+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_01_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.248993+00:00 | INFO  | --- SLATE: 2026_02_02
-2026-06-15T10:16:45.277176+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.277271+00:00 | INFO  | --- SLATE: 2026_02_03
-2026-06-15T10:16:45.298810+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_03_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.298907+00:00 | INFO  | --- SLATE: 2026_02_04
-2026-06-15T10:16:45.326905+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.326999+00:00 | INFO  | --- SLATE: 2026_02_05
-2026-06-15T10:16:45.348449+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.348545+00:00 | INFO  | --- SLATE: 2026_02_25
-2026-06-15T10:16:45.372256+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.372360+00:00 | INFO  | --- SLATE: 2026_02_26
-2026-06-15T10:16:45.405053+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_26_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.405169+00:00 | INFO  | --- SLATE: 2026_02_27
-2026-06-15T10:16:45.420299+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_27_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.420395+00:00 | INFO  | --- SLATE: 2026_02_28
-2026-06-15T10:16:45.454897+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_02_28_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.455000+00:00 | INFO  | --- SLATE: 2026_03_01
-2026-06-15T10:16:45.474313+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_01_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.474409+00:00 | INFO  | --- SLATE: 2026_03_02
-2026-06-15T10:16:45.493864+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.493962+00:00 | INFO  | --- SLATE: 2026_03_03
-2026-06-15T10:16:45.525444+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_03_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.525559+00:00 | INFO  | --- SLATE: 2026_03_04
-2026-06-15T10:16:45.543043+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.543143+00:00 | INFO  | --- SLATE: 2026_03_05
-2026-06-15T10:16:45.566882+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.566981+00:00 | INFO  | --- SLATE: 2026_03_06
-2026-06-15T10:16:45.588688+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_06_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.588836+00:00 | INFO  | --- SLATE: 2026_03_07
-2026-06-15T10:16:45.620129+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.620262+00:00 | INFO  | --- SLATE: 2026_03_08
-2026-06-15T10:16:45.642090+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.642194+00:00 | INFO  | --- SLATE: 2026_03_09
-2026-06-15T10:16:45.659545+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.659643+00:00 | INFO  | --- SLATE: 2026_03_10
-2026-06-15T10:16:45.694377+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_10_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.694480+00:00 | INFO  | --- SLATE: 2026_03_11
-2026-06-15T10:16:45.705163+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_11_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.705256+00:00 | INFO  | --- SLATE: 2026_03_12
-2026-06-15T10:16:45.742235+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_12_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.742382+00:00 | INFO  | --- SLATE: 2026_03_13
-2026-06-15T10:16:45.753124+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.753233+00:00 | INFO  | --- SLATE: 2026_03_14
-2026-06-15T10:16:45.790272+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.790397+00:00 | INFO  | --- SLATE: 2026_03_15
-2026-06-15T10:16:45.809930+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_15_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.810033+00:00 | INFO  | --- SLATE: 2026_03_16
-2026-06-15T10:16:45.827446+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.827554+00:00 | INFO  | --- SLATE: 2026_03_17
-2026-06-15T10:16:45.853762+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_17_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.853914+00:00 | INFO  | --- SLATE: 2026_03_18
-2026-06-15T10:16:45.873510+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.873618+00:00 | INFO  | --- SLATE: 2026_03_19
-2026-06-15T10:16:45.903916+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.904023+00:00 | INFO  | --- SLATE: 2026_03_20
-2026-06-15T10:16:45.921202+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.921295+00:00 | INFO  | --- SLATE: 2026_03_21
-2026-06-15T10:16:45.951637+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.951739+00:00 | INFO  | --- SLATE: 2026_03_22
-2026-06-15T10:16:45.977823+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.977927+00:00 | INFO  | --- SLATE: 2026_03_23
-2026-06-15T10:16:45.985355+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:45.985449+00:00 | INFO  | --- SLATE: 2026_03_24
-2026-06-15T10:16:46.026449+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_24_NHL.csv | bets=12 | moneyline=1 | puck_line=9 | total=2
-2026-06-15T10:16:46.026580+00:00 | INFO  | --- SLATE: 2026_03_25
-2026-06-15T10:16:46.038436+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_25_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.038538+00:00 | INFO  | --- SLATE: 2026_03_26
-2026-06-15T10:16:46.074521+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_26_NHL.csv | bets=9 | moneyline=0 | puck_line=7 | total=2
-2026-06-15T10:16:46.074632+00:00 | INFO  | --- SLATE: 2026_03_27
-2026-06-15T10:16:46.086221+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_27_NHL.csv | bets=1 | moneyline=1 | puck_line=0 | total=0
-2026-06-15T10:16:46.086326+00:00 | INFO  | --- SLATE: 2026_03_28
-2026-06-15T10:16:46.126819+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_28_NHL.csv | bets=11 | moneyline=2 | puck_line=8 | total=1
-2026-06-15T10:16:46.126948+00:00 | INFO  | --- SLATE: 2026_03_29
-2026-06-15T10:16:46.147689+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_29_NHL.csv | bets=3 | moneyline=1 | puck_line=2 | total=0
-2026-06-15T10:16:46.147842+00:00 | INFO  | --- SLATE: 2026_03_30
-2026-06-15T10:16:46.166327+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_30_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.166443+00:00 | INFO  | --- SLATE: 2026_03_31
-2026-06-15T10:16:46.196207+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_03_31_NHL.csv | bets=6 | moneyline=0 | puck_line=6 | total=0
-2026-06-15T10:16:46.196358+00:00 | INFO  | --- SLATE: 2026_04_01
-2026-06-15T10:16:46.210550+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_01_NHL.csv | bets=3 | moneyline=0 | puck_line=2 | total=1
-2026-06-15T10:16:46.210666+00:00 | INFO  | --- SLATE: 2026_04_02
-2026-06-15T10:16:46.249404+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_02_NHL.csv | bets=9 | moneyline=1 | puck_line=7 | total=1
-2026-06-15T10:16:46.249540+00:00 | INFO  | --- SLATE: 2026_04_03
-2026-06-15T10:16:46.261344+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_03_NHL.csv | bets=3 | moneyline=0 | puck_line=2 | total=1
-2026-06-15T10:16:46.261448+00:00 | INFO  | --- SLATE: 2026_04_04
-2026-06-15T10:16:46.302360+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_04_NHL.csv | bets=12 | moneyline=2 | puck_line=8 | total=2
-2026-06-15T10:16:46.302486+00:00 | INFO  | --- SLATE: 2026_04_05
-2026-06-15T10:16:46.325410+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_05_NHL.csv | bets=4 | moneyline=0 | puck_line=4 | total=0
-2026-06-15T10:16:46.325517+00:00 | INFO  | --- SLATE: 2026_04_06
-2026-06-15T10:16:46.341622+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_06_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.341727+00:00 | INFO  | --- SLATE: 2026_04_07
-2026-06-15T10:16:46.373211+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_07_NHL.csv | bets=8 | moneyline=3 | puck_line=4 | total=1
-2026-06-15T10:16:46.373319+00:00 | INFO  | --- SLATE: 2026_04_08
-2026-06-15T10:16:46.387124+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_08_NHL.csv | bets=3 | moneyline=0 | puck_line=3 | total=0
-2026-06-15T10:16:46.387228+00:00 | INFO  | --- SLATE: 2026_04_09
-2026-06-15T10:16:46.425303+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_09_NHL.csv | bets=7 | moneyline=0 | puck_line=6 | total=1
-2026-06-15T10:16:46.425428+00:00 | INFO  | --- SLATE: 2026_04_11
-2026-06-15T10:16:46.465920+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_11_NHL.csv | bets=14 | moneyline=1 | puck_line=13 | total=0
-2026-06-15T10:16:46.466035+00:00 | INFO  | --- SLATE: 2026_04_12
-2026-06-15T10:16:46.487005+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_12_NHL.csv | bets=4 | moneyline=0 | puck_line=3 | total=1
-2026-06-15T10:16:46.487119+00:00 | INFO  | --- SLATE: 2026_04_13
-2026-06-15T10:16:46.516510+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_13_NHL.csv | bets=8 | moneyline=3 | puck_line=5 | total=0
-2026-06-15T10:16:46.516626+00:00 | INFO  | --- SLATE: 2026_04_14
-2026-06-15T10:16:46.543903+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_14_NHL.csv | bets=9 | moneyline=2 | puck_line=5 | total=2
-2026-06-15T10:16:46.544015+00:00 | INFO  | --- SLATE: 2026_04_15
-2026-06-15T10:16:46.564454+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_15_NHL.csv | bets=7 | moneyline=1 | puck_line=4 | total=2
-2026-06-15T10:16:46.564561+00:00 | INFO  | --- SLATE: 2026_04_16
-2026-06-15T10:16:46.585026+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_16_NHL.csv | bets=4 | moneyline=1 | puck_line=2 | total=1
-2026-06-15T10:16:46.585135+00:00 | INFO  | --- SLATE: 2026_04_18
-2026-06-15T10:16:46.599248+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_18_NHL.csv | bets=3 | moneyline=1 | puck_line=1 | total=1
-2026-06-15T10:16:46.599366+00:00 | INFO  | --- SLATE: 2026_04_19
-2026-06-15T10:16:46.614405+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.614510+00:00 | INFO  | --- SLATE: 2026_04_20
-2026-06-15T10:16:46.630649+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_20_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.630758+00:00 | INFO  | --- SLATE: 2026_04_21
-2026-06-15T10:16:46.646102+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.646210+00:00 | INFO  | --- SLATE: 2026_04_22
-2026-06-15T10:16:46.660232+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_22_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.660344+00:00 | INFO  | --- SLATE: 2026_04_23
-2026-06-15T10:16:46.674222+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_23_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.674329+00:00 | INFO  | --- SLATE: 2026_04_24
-2026-06-15T10:16:46.688237+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_24_NHL.csv | bets=3 | moneyline=0 | puck_line=3 | total=0
-2026-06-15T10:16:46.688348+00:00 | INFO  | --- SLATE: 2026_04_25
-2026-06-15T10:16:46.702407+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_25_NHL.csv | bets=3 | moneyline=0 | puck_line=3 | total=0
-2026-06-15T10:16:46.702515+00:00 | INFO  | --- SLATE: 2026_04_26
-2026-06-15T10:16:46.718658+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_26_NHL.csv | bets=3 | moneyline=0 | puck_line=3 | total=0
-2026-06-15T10:16:46.718769+00:00 | INFO  | --- SLATE: 2026_04_27
-2026-06-15T10:16:46.730618+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_27_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.730723+00:00 | INFO  | --- SLATE: 2026_04_28
-2026-06-15T10:16:46.744550+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_28_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.744653+00:00 | INFO  | --- SLATE: 2026_04_29
-2026-06-15T10:16:46.758447+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_29_NHL.csv | bets=2 | moneyline=0 | puck_line=1 | total=1
-2026-06-15T10:16:46.758551+00:00 | INFO  | --- SLATE: 2026_04_30
-2026-06-15T10:16:46.770201+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_04_30_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.770303+00:00 | INFO  | --- SLATE: 2026_05_01
-2026-06-15T10:16:46.784203+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_01_NHL.csv | bets=4 | moneyline=0 | puck_line=3 | total=1
-2026-06-15T10:16:46.784307+00:00 | INFO  | --- SLATE: 2026_05_02
-2026-06-15T10:16:46.791656+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.791750+00:00 | INFO  | --- SLATE: 2026_05_03
-2026-06-15T10:16:46.803350+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_03_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.803453+00:00 | INFO  | --- SLATE: 2026_05_04
-2026-06-15T10:16:46.814210+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.814304+00:00 | INFO  | --- SLATE: 2026_05_05
-2026-06-15T10:16:46.821693+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.821808+00:00 | INFO  | --- SLATE: 2026_05_06
-2026-06-15T10:16:46.833642+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_06_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.833745+00:00 | INFO  | --- SLATE: 2026_05_07
-2026-06-15T10:16:46.841179+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.841273+00:00 | INFO  | --- SLATE: 2026_05_08
-2026-06-15T10:16:46.853125+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_08_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.853227+00:00 | INFO  | --- SLATE: 2026_05_09
-2026-06-15T10:16:46.865026+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_09_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.865128+00:00 | INFO  | --- SLATE: 2026_05_10
-2026-06-15T10:16:46.876922+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_10_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.877026+00:00 | INFO  | --- SLATE: 2026_05_11
-2026-06-15T10:16:46.885505+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_11_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.885609+00:00 | INFO  | --- SLATE: 2026_05_12
-2026-06-15T10:16:46.897396+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_12_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.897505+00:00 | INFO  | --- SLATE: 2026_05_13
-2026-06-15T10:16:46.904918+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.905012+00:00 | INFO  | --- SLATE: 2026_05_14
-2026-06-15T10:16:46.916824+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_14_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
-2026-06-15T10:16:46.916929+00:00 | INFO  | --- SLATE: 2026_05_16
-2026-06-15T10:16:46.924347+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.924442+00:00 | INFO  | --- SLATE: 2026_05_18
-2026-06-15T10:16:46.932948+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_18_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.933053+00:00 | INFO  | --- SLATE: 2026_05_20
-2026-06-15T10:16:46.940446+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.940540+00:00 | INFO  | --- SLATE: 2026_05_21
-2026-06-15T10:16:46.947962+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.948056+00:00 | INFO  | --- SLATE: 2026_05_22
-2026-06-15T10:16:46.955573+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.955668+00:00 | INFO  | --- SLATE: 2026_05_23
-2026-06-15T10:16:46.963464+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:46.963558+00:00 | INFO  | --- SLATE: 2026_05_24
-2026-06-15T10:16:46.972249+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_24_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.972354+00:00 | INFO  | --- SLATE: 2026_05_25
-2026-06-15T10:16:46.980955+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_25_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.981058+00:00 | INFO  | --- SLATE: 2026_05_26
-2026-06-15T10:16:46.989587+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_26_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.989691+00:00 | INFO  | --- SLATE: 2026_05_27
-2026-06-15T10:16:46.998173+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_27_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:46.998279+00:00 | INFO  | --- SLATE: 2026_05_29
-2026-06-15T10:16:47.005715+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_05_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:47.005836+00:00 | INFO  | --- SLATE: 2026_06_02
-2026-06-15T10:16:47.014391+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_02_NHL.csv | bets=2 | moneyline=1 | puck_line=0 | total=1
-2026-06-15T10:16:47.014496+00:00 | INFO  | --- SLATE: 2026_06_04
-2026-06-15T10:16:47.022007+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
-2026-06-15T10:16:47.022103+00:00 | INFO  | --- SLATE: 2026_06_06
-2026-06-15T10:16:47.030603+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_06_NHL.csv | bets=2 | moneyline=0 | puck_line=1 | total=1
-2026-06-15T10:16:47.030709+00:00 | INFO  | --- SLATE: 2026_06_09
-2026-06-15T10:16:47.039331+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_09_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
-2026-06-15T10:16:47.039438+00:00 | INFO  | --- SLATE: 2026_06_11
-2026-06-15T10:16:47.047879+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_11_NHL.csv | bets=2 | moneyline=1 | puck_line=1 | total=0
-2026-06-15T10:16:47.047986+00:00 | INFO  | --- SLATE: 2026_06_14
-2026-06-15T10:16:47.056451+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_06_14_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+=== NHL hockey_select_bets RUN 2026-08-26T11:27:18.635088+00:00 ===
+2026-08-26T11:27:18.642515+00:00 | INFO  | INPUT_DIR: docs\win\hockey\nhl\03_edges\ev_kelly
+2026-08-26T11:27:18.642789+00:00 | INFO  | OUTPUT_DIR: docs\win\hockey\nhl\04_select
+2026-08-26T11:27:18.643041+00:00 | INFO  | CONFIG_PATH: docs\win\hockey\nhl\config\markets.yaml
+2026-08-26T11:27:18.643314+00:00 | INFO  | LOG_FILE: docs\win\hockey\nhl\errors\04_select\hockey_select_bets.txt
+2026-08-26T11:27:18.699531+00:00 | INFO  | Slates found: 68
+2026-08-26T11:27:18.699793+00:00 | INFO  | --- SLATE: 2026_03_23
+2026-08-26T11:27:18.709670+00:00 | WARN  | 2026_03_23 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:18.713835+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:18.714126+00:00 | INFO  | --- SLATE: 2026_03_24
+2026-08-26T11:27:18.769015+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_24_NHL.csv | bets=7 | moneyline=1 | puck_line=4 | total=2
+2026-08-26T11:27:18.769347+00:00 | INFO  | --- SLATE: 2026_03_25
+2026-08-26T11:27:18.783361+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:18.783661+00:00 | INFO  | --- SLATE: 2026_03_26
+2026-08-26T11:27:18.831936+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_26_NHL.csv | bets=6 | moneyline=0 | puck_line=4 | total=2
+2026-08-26T11:27:18.832279+00:00 | INFO  | --- SLATE: 2026_03_27
+2026-08-26T11:27:18.848303+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_27_NHL.csv | bets=1 | moneyline=1 | puck_line=0 | total=0
+2026-08-26T11:27:18.848612+00:00 | INFO  | --- SLATE: 2026_03_28
+2026-08-26T11:27:18.902006+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_28_NHL.csv | bets=4 | moneyline=2 | puck_line=1 | total=1
+2026-08-26T11:27:18.902336+00:00 | INFO  | --- SLATE: 2026_03_29
+2026-08-26T11:27:18.930518+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_29_NHL.csv | bets=3 | moneyline=1 | puck_line=2 | total=0
+2026-08-26T11:27:18.930850+00:00 | INFO  | --- SLATE: 2026_03_30
+2026-08-26T11:27:18.955626+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_30_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:18.955951+00:00 | INFO  | --- SLATE: 2026_03_31
+2026-08-26T11:27:18.995229+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_03_31_NHL.csv | bets=3 | moneyline=0 | puck_line=3 | total=0
+2026-08-26T11:27:18.995551+00:00 | INFO  | --- SLATE: 2026_04_01
+2026-08-26T11:27:19.014511+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_01_NHL.csv | bets=2 | moneyline=0 | puck_line=1 | total=1
+2026-08-26T11:27:19.014838+00:00 | INFO  | --- SLATE: 2026_04_02
+2026-08-26T11:27:19.065665+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_02_NHL.csv | bets=4 | moneyline=1 | puck_line=2 | total=1
+2026-08-26T11:27:19.066020+00:00 | INFO  | --- SLATE: 2026_04_03
+2026-08-26T11:27:19.082058+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_03_NHL.csv | bets=3 | moneyline=0 | puck_line=2 | total=1
+2026-08-26T11:27:19.082374+00:00 | INFO  | --- SLATE: 2026_04_04
+2026-08-26T11:27:19.135622+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_04_NHL.csv | bets=5 | moneyline=2 | puck_line=1 | total=2
+2026-08-26T11:27:19.135959+00:00 | INFO  | --- SLATE: 2026_04_05
+2026-08-26T11:27:19.167246+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_05_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.167568+00:00 | INFO  | --- SLATE: 2026_04_06
+2026-08-26T11:27:19.189556+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_06_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.189874+00:00 | INFO  | --- SLATE: 2026_04_07
+2026-08-26T11:27:19.232568+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_07_NHL.csv | bets=6 | moneyline=3 | puck_line=2 | total=1
+2026-08-26T11:27:19.232932+00:00 | INFO  | --- SLATE: 2026_04_08
+2026-08-26T11:27:19.238036+00:00 | WARN  | 2026_04_08 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.245728+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_08_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.246017+00:00 | INFO  | --- SLATE: 2026_04_09
+2026-08-26T11:27:19.297139+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_09_NHL.csv | bets=3 | moneyline=0 | puck_line=2 | total=1
+2026-08-26T11:27:19.297487+00:00 | INFO  | --- SLATE: 2026_04_11
+2026-08-26T11:27:19.350620+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_11_NHL.csv | bets=6 | moneyline=1 | puck_line=5 | total=0
+2026-08-26T11:27:19.350951+00:00 | INFO  | --- SLATE: 2026_04_12
+2026-08-26T11:27:19.378549+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_12_NHL.csv | bets=2 | moneyline=0 | puck_line=1 | total=1
+2026-08-26T11:27:19.378878+00:00 | INFO  | --- SLATE: 2026_04_13
+2026-08-26T11:27:19.418114+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_13_NHL.csv | bets=5 | moneyline=3 | puck_line=2 | total=0
+2026-08-26T11:27:19.418445+00:00 | INFO  | --- SLATE: 2026_04_14
+2026-08-26T11:27:19.454679+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_14_NHL.csv | bets=6 | moneyline=2 | puck_line=2 | total=2
+2026-08-26T11:27:19.455055+00:00 | INFO  | --- SLATE: 2026_04_15
+2026-08-26T11:27:19.482328+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_15_NHL.csv | bets=4 | moneyline=1 | puck_line=1 | total=2
+2026-08-26T11:27:19.482641+00:00 | INFO  | --- SLATE: 2026_04_16
+2026-08-26T11:27:19.509993+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_16_NHL.csv | bets=2 | moneyline=1 | puck_line=0 | total=1
+2026-08-26T11:27:19.510311+00:00 | INFO  | --- SLATE: 2026_04_18
+2026-08-26T11:27:19.529378+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_18_NHL.csv | bets=3 | moneyline=1 | puck_line=1 | total=1
+2026-08-26T11:27:19.529697+00:00 | INFO  | --- SLATE: 2026_04_19
+2026-08-26T11:27:19.549995+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_19_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.550293+00:00 | INFO  | --- SLATE: 2026_04_20
+2026-08-26T11:27:19.572201+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_20_NHL.csv | bets=2 | moneyline=0 | puck_line=2 | total=0
+2026-08-26T11:27:19.572527+00:00 | INFO  | --- SLATE: 2026_04_21
+2026-08-26T11:27:19.592908+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.593212+00:00 | INFO  | --- SLATE: 2026_04_22
+2026-08-26T11:27:19.609880+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.610215+00:00 | INFO  | --- SLATE: 2026_04_23
+2026-08-26T11:27:19.626825+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.627122+00:00 | INFO  | --- SLATE: 2026_04_24
+2026-08-26T11:27:19.631999+00:00 | WARN  | 2026_04_24 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.639386+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_24_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.639665+00:00 | INFO  | --- SLATE: 2026_04_25
+2026-08-26T11:27:19.644602+00:00 | WARN  | 2026_04_25 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.652086+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.652368+00:00 | INFO  | --- SLATE: 2026_04_26
+2026-08-26T11:27:19.671834+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_26_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.672153+00:00 | INFO  | --- SLATE: 2026_04_27
+2026-08-26T11:27:19.687625+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_27_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.687967+00:00 | INFO  | --- SLATE: 2026_04_28
+2026-08-26T11:27:19.707194+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_28_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.707539+00:00 | INFO  | --- SLATE: 2026_04_29
+2026-08-26T11:27:19.727328+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_29_NHL.csv | bets=1 | moneyline=0 | puck_line=0 | total=1
+2026-08-26T11:27:19.727791+00:00 | INFO  | --- SLATE: 2026_04_30
+2026-08-26T11:27:19.733158+00:00 | WARN  | 2026_04_30 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.738773+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_04_30_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.739058+00:00 | INFO  | --- SLATE: 2026_05_01
+2026-08-26T11:27:19.743996+00:00 | WARN  | 2026_05_01 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.752931+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_01_NHL.csv | bets=1 | moneyline=0 | puck_line=0 | total=1
+2026-08-26T11:27:19.753232+00:00 | INFO  | --- SLATE: 2026_05_02
+2026-08-26T11:27:19.763751+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_02_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.764114+00:00 | INFO  | --- SLATE: 2026_05_03
+2026-08-26T11:27:19.780594+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_03_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.780954+00:00 | INFO  | --- SLATE: 2026_05_04
+2026-08-26T11:27:19.795891+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.796209+00:00 | INFO  | --- SLATE: 2026_05_05
+2026-08-26T11:27:19.806828+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_05_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.807130+00:00 | INFO  | --- SLATE: 2026_05_06
+2026-08-26T11:27:19.825660+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_06_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.825998+00:00 | INFO  | --- SLATE: 2026_05_07
+2026-08-26T11:27:19.836763+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_07_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.837081+00:00 | INFO  | --- SLATE: 2026_05_08
+2026-08-26T11:27:19.853238+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_08_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.853635+00:00 | INFO  | --- SLATE: 2026_05_09
+2026-08-26T11:27:19.870648+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_09_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.871002+00:00 | INFO  | --- SLATE: 2026_05_10
+2026-08-26T11:27:19.875873+00:00 | WARN  | 2026_05_10 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.881357+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_10_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.881635+00:00 | INFO  | --- SLATE: 2026_05_11
+2026-08-26T11:27:19.893370+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_11_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.893695+00:00 | INFO  | --- SLATE: 2026_05_12
+2026-08-26T11:27:19.909515+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_12_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:19.909833+00:00 | INFO  | --- SLATE: 2026_05_13
+2026-08-26T11:27:19.920033+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_13_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.920342+00:00 | INFO  | --- SLATE: 2026_05_14
+2026-08-26T11:27:19.925266+00:00 | WARN  | 2026_05_14 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.931158+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_14_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.931440+00:00 | INFO  | --- SLATE: 2026_05_16
+2026-08-26T11:27:19.941813+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_16_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.942287+00:00 | INFO  | --- SLATE: 2026_05_18
+2026-08-26T11:27:19.947758+00:00 | WARN  | 2026_05_18 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:19.950732+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_18_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.951026+00:00 | INFO  | --- SLATE: 2026_05_20
+2026-08-26T11:27:19.961647+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_20_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.961989+00:00 | INFO  | --- SLATE: 2026_05_21
+2026-08-26T11:27:19.972309+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_21_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.972606+00:00 | INFO  | --- SLATE: 2026_05_22
+2026-08-26T11:27:19.982848+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_22_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.983148+00:00 | INFO  | --- SLATE: 2026_05_23
+2026-08-26T11:27:19.993292+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_23_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:19.993595+00:00 | INFO  | --- SLATE: 2026_05_24
+2026-08-26T11:27:20.005333+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_24_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:20.005652+00:00 | INFO  | --- SLATE: 2026_05_25
+2026-08-26T11:27:20.010533+00:00 | WARN  | 2026_05_25 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:20.013285+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_25_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:20.013571+00:00 | INFO  | --- SLATE: 2026_05_26
+2026-08-26T11:27:20.025131+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_26_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
+2026-08-26T11:27:20.025436+00:00 | INFO  | --- SLATE: 2026_05_27
+2026-08-26T11:27:20.030981+00:00 | WARN  | 2026_05_27 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:20.033707+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_27_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:20.033987+00:00 | INFO  | --- SLATE: 2026_05_29
+2026-08-26T11:27:20.044625+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_05_29_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:20.044937+00:00 | INFO  | --- SLATE: 2026_06_02
+2026-08-26T11:27:20.056615+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_02_NHL.csv | bets=2 | moneyline=1 | puck_line=0 | total=1
+2026-08-26T11:27:20.056940+00:00 | INFO  | --- SLATE: 2026_06_04
+2026-08-26T11:27:20.067079+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_04_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:20.067378+00:00 | INFO  | --- SLATE: 2026_06_06
+2026-08-26T11:27:20.072174+00:00 | WARN  | 2026_06_06 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:20.076346+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_06_NHL.csv | bets=1 | moneyline=0 | puck_line=0 | total=1
+2026-08-26T11:27:20.076649+00:00 | INFO  | --- SLATE: 2026_06_09
+2026-08-26T11:27:20.081478+00:00 | WARN  | 2026_06_09 missing puck_line file — skipping puck_line only
+2026-08-26T11:27:20.084183+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_09_NHL.csv | bets=0 | moneyline=0 | puck_line=0 | total=0
+2026-08-26T11:27:20.084492+00:00 | INFO  | --- SLATE: 2026_06_11
+2026-08-26T11:27:20.096639+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_11_NHL.csv | bets=2 | moneyline=1 | puck_line=1 | total=0
+2026-08-26T11:27:20.096987+00:00 | INFO  | --- SLATE: 2026_06_14
+2026-08-26T11:27:20.108837+00:00 | INFO  | WROTE: docs\win\hockey\nhl\04_select\2026_06_14_NHL.csv | bets=1 | moneyline=0 | puck_line=1 | total=0
 
 ============================================================
-SUMMARY 2026-06-15T10:16:47.056585+00:00
+SUMMARY 2026-08-26T11:27:20.109047+00:00
 ============================================================
-slates_written : 211
-total_bets     : 195
+slates_written : 68
+total_bets     : 98
 moneyline_bets : 22
-puck_line_bets : 150
+puck_line_bets : 53
 total_bets_mkt : 23
 
 slate                  bets     ml     pl  total
-2025_10_07                0      0      0      0
-2025_10_08                0      0      0      0
-2025_10_09                0      0      0      0
-2025_10_11                0      0      0      0
-2025_10_12                0      0      0      0
-2025_10_13                0      0      0      0
-2025_10_14                0      0      0      0
-2025_10_15                0      0      0      0
-2025_10_16                0      0      0      0
-2025_10_17                0      0      0      0
-2025_10_18                0      0      0      0
-2025_10_19                0      0      0      0
-2025_10_20                0      0      0      0
-2025_10_21                0      0      0      0
-2025_10_22                0      0      0      0
-2025_10_23                0      0      0      0
-2025_10_24                0      0      0      0
-2025_10_25                0      0      0      0
-2025_10_26                0      0      0      0
-2025_10_27                0      0      0      0
-2025_10_28                0      0      0      0
-2025_10_29                0      0      0      0
-2025_10_30                0      0      0      0
-2025_10_31                0      0      0      0
-2025_11_01                0      0      0      0
-2025_11_02                0      0      0      0
-2025_11_03                0      0      0      0
-2025_11_04                0      0      0      0
-2025_11_05                0      0      0      0
-2025_11_06                0      0      0      0
-2025_11_07                0      0      0      0
-2025_11_08                0      0      0      0
-2025_11_09                0      0      0      0
-2025_11_10                0      0      0      0
-2025_11_11                0      0      0      0
-2025_11_12                0      0      0      0
-2025_11_13                0      0      0      0
-2025_11_14                0      0      0      0
-2025_11_15                0      0      0      0
-2025_11_16                0      0      0      0
-2025_11_17                0      0      0      0
-2025_11_18                0      0      0      0
-2025_11_19                0      0      0      0
-2025_11_20                0      0      0      0
-2025_11_21                0      0      0      0
-2025_11_22                0      0      0      0
-2025_11_23                0      0      0      0
-2025_11_24                0      0      0      0
-2025_11_25                0      0      0      0
-2025_11_26                0      0      0      0
-2025_11_28                0      0      0      0
-2025_11_29                0      0      0      0
-2025_11_30                0      0      0      0
-2025_12_01                0      0      0      0
-2025_12_02                0      0      0      0
-2025_12_03                0      0      0      0
-2025_12_04                0      0      0      0
-2025_12_05                0      0      0      0
-2025_12_06                0      0      0      0
-2025_12_07                0      0      0      0
-2025_12_08                0      0      0      0
-2025_12_09                0      0      0      0
-2025_12_10                0      0      0      0
-2025_12_11                0      0      0      0
-2025_12_12                0      0      0      0
-2025_12_13                0      0      0      0
-2025_12_14                0      0      0      0
-2025_12_15                0      0      0      0
-2025_12_16                0      0      0      0
-2025_12_17                0      0      0      0
-2025_12_18                0      0      0      0
-2025_12_19                0      0      0      0
-2025_12_20                0      0      0      0
-2025_12_21                0      0      0      0
-2025_12_22                0      0      0      0
-2025_12_23                0      0      0      0
-2025_12_27                0      0      0      0
-2025_12_28                0      0      0      0
-2025_12_29                0      0      0      0
-2025_12_30                0      0      0      0
-2025_12_31                0      0      0      0
-2026_01_01                0      0      0      0
-2026_01_02                0      0      0      0
-2026_01_03                0      0      0      0
-2026_01_04                0      0      0      0
-2026_01_05                0      0      0      0
-2026_01_06                0      0      0      0
-2026_01_07                0      0      0      0
-2026_01_08                0      0      0      0
-2026_01_09                0      0      0      0
-2026_01_10                0      0      0      0
-2026_01_11                0      0      0      0
-2026_01_12                0      0      0      0
-2026_01_13                0      0      0      0
-2026_01_14                0      0      0      0
-2026_01_15                0      0      0      0
-2026_01_16                0      0      0      0
-2026_01_17                0      0      0      0
-2026_01_18                0      0      0      0
-2026_01_19                0      0      0      0
-2026_01_20                0      0      0      0
-2026_01_21                0      0      0      0
-2026_01_22                0      0      0      0
-2026_01_23                0      0      0      0
-2026_01_24                0      0      0      0
-2026_01_25                0      0      0      0
-2026_01_26                0      0      0      0
-2026_01_27                0      0      0      0
-2026_01_28                0      0      0      0
-2026_01_29                0      0      0      0
-2026_01_30                0      0      0      0
-2026_01_31                0      0      0      0
-2026_02_01                0      0      0      0
-2026_02_02                0      0      0      0
-2026_02_03                0      0      0      0
-2026_02_04                0      0      0      0
-2026_02_05                0      0      0      0
-2026_02_25                0      0      0      0
-2026_02_26                0      0      0      0
-2026_02_27                0      0      0      0
-2026_02_28                0      0      0      0
-2026_03_01                0      0      0      0
-2026_03_02                0      0      0      0
-2026_03_03                0      0      0      0
-2026_03_04                0      0      0      0
-2026_03_05                0      0      0      0
-2026_03_06                0      0      0      0
-2026_03_07                0      0      0      0
-2026_03_08                0      0      0      0
-2026_03_09                0      0      0      0
-2026_03_10                0      0      0      0
-2026_03_11                0      0      0      0
-2026_03_12                0      0      0      0
-2026_03_13                0      0      0      0
-2026_03_14                0      0      0      0
-2026_03_15                0      0      0      0
-2026_03_16                0      0      0      0
-2026_03_17                0      0      0      0
-2026_03_18                0      0      0      0
-2026_03_19                0      0      0      0
-2026_03_20                0      0      0      0
-2026_03_21                0      0      0      0
-2026_03_22                0      0      0      0
 2026_03_23                0      0      0      0
-2026_03_24               12      1      9      2
-2026_03_25                1      0      1      0
-2026_03_26                9      0      7      2
+2026_03_24                7      1      4      2
+2026_03_25                0      0      0      0
+2026_03_26                6      0      4      2
 2026_03_27                1      1      0      0
-2026_03_28               11      2      8      1
+2026_03_28                4      2      1      1
 2026_03_29                3      1      2      0
-2026_03_30                2      0      2      0
-2026_03_31                6      0      6      0
-2026_04_01                3      0      2      1
-2026_04_02                9      1      7      1
+2026_03_30                1      0      1      0
+2026_03_31                3      0      3      0
+2026_04_01                2      0      1      1
+2026_04_02                4      1      2      1
 2026_04_03                3      0      2      1
-2026_04_04               12      2      8      2
-2026_04_05                4      0      4      0
-2026_04_06                2      0      2      0
-2026_04_07                8      3      4      1
-2026_04_08                3      0      3      0
-2026_04_09                7      0      6      1
-2026_04_11               14      1     13      0
-2026_04_12                4      0      3      1
-2026_04_13                8      3      5      0
-2026_04_14                9      2      5      2
-2026_04_15                7      1      4      2
-2026_04_16                4      1      2      1
+2026_04_04                5      2      1      2
+2026_04_05                1      0      1      0
+2026_04_06                1      0      1      0
+2026_04_07                6      3      2      1
+2026_04_08                0      0      0      0
+2026_04_09                3      0      2      1
+2026_04_11                6      1      5      0
+2026_04_12                2      0      1      1
+2026_04_13                5      3      2      0
+2026_04_14                6      2      2      2
+2026_04_15                4      1      1      2
+2026_04_16                2      1      0      1
 2026_04_18                3      1      1      1
 2026_04_19                0      0      0      0
 2026_04_20                2      0      2      0
 2026_04_21                0      0      0      0
-2026_04_22                2      0      2      0
-2026_04_23                2      0      2      0
-2026_04_24                3      0      3      0
-2026_04_25                3      0      3      0
-2026_04_26                3      0      3      0
-2026_04_27                2      0      2      0
+2026_04_22                0      0      0      0
+2026_04_23                0      0      0      0
+2026_04_24                0      0      0      0
+2026_04_25                0      0      0      0
+2026_04_26                0      0      0      0
+2026_04_27                1      0      1      0
 2026_04_28                1      0      1      0
-2026_04_29                2      0      1      1
-2026_04_30                2      0      2      0
-2026_05_01                4      0      3      1
+2026_04_29                1      0      0      1
+2026_04_30                0      0      0      0
+2026_05_01                1      0      0      1
 2026_05_02                0      0      0      0
 2026_05_03                1      0      1      0
 2026_05_04                0      0      0      0
 2026_05_05                0      0      0      0
 2026_05_06                1      0      1      0
 2026_05_07                0      0      0      0
-2026_05_08                2      0      2      0
+2026_05_08                1      0      1      0
 2026_05_09                1      0      1      0
-2026_05_10                2      0      2      0
+2026_05_10                0      0      0      0
 2026_05_11                1      0      1      0
 2026_05_12                1      0      1      0
 2026_05_13                0      0      0      0
-2026_05_14                2      0      2      0
+2026_05_14                0      0      0      0
 2026_05_16                0      0      0      0
-2026_05_18                1      0      1      0
+2026_05_18                0      0      0      0
 2026_05_20                0      0      0      0
 2026_05_21                0      0      0      0
 2026_05_22                0      0      0      0
 2026_05_23                0      0      0      0
 2026_05_24                1      0      1      0
-2026_05_25                1      0      1      0
+2026_05_25                0      0      0      0
 2026_05_26                1      0      1      0
-2026_05_27                1      0      1      0
+2026_05_27                0      0      0      0
 2026_05_29                0      0      0      0
 2026_06_02                2      1      0      1
 2026_06_04                0      0      0      0
-2026_06_06                2      0      1      1
-2026_06_09                1      0      1      0
+2026_06_06                1      0      0      1
+2026_06_09                0      0      0      0
 2026_06_11                2      1      1      0
 2026_06_14                1      0      1      0
 

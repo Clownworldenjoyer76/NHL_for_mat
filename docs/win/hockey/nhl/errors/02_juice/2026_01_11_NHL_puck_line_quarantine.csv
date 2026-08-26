@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_11,14:00,2025020711,New Jersey Devils,Winnipeg Jets,1.5,-1.5,0.7066869845745797,0.29331301542542,1.4150536543445646,3.4093270581586848,-250,207,,,bad_juiced_decimal
+hockey,nhl,2026_01_11,17:00,2025020712,Pittsburgh Penguins,Boston Bruins,-1.5,1.5,0.2320173763454339,0.7679826236545659,4.310022015382038,1.302112794220972,215,-260,,,bad_juiced_decimal

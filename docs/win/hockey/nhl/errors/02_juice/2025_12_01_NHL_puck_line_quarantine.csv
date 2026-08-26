@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_01,19:30,2025020408,Winnipeg Jets,Buffalo Sabres,1.5,-1.5,0.773696905292846,0.2263030947071541,1.2924957992710309,4.41885251853954,-250,207,,,bad_juiced_decimal

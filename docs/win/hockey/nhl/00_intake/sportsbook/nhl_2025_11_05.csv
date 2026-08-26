@@ -1,6 +1,6 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_11_05_Toronto Maple Leafs_Utah Mammoth","hockey","nhl","2025_11_05","7:00 PM EST","Toronto Maple Leafs","Utah Mammoth","-170","140","-1.5","+1.5","6.0","+153","-175","-110","-110","","","","","",""
-"2025_11_05_Washington Capitals_St Louis Blues","hockey","nhl","2025_11_05","7:30 PM EST","Washington Capitals","St Louis Blues","-160","135","-1.5","+1.5","6.0","+165","-190","-110","-110","","","","","",""
-"2025_11_05_Calgary Flames_Columbus Blue Jackets","hockey","nhl","2025_11_05","9:30 PM EST","Calgary Flames","Columbus Blue Jackets","-110","-110","+1.5","-1.5","6.0","-265","+219","-105","-115","","","","","",""
-"2025_11_05_Vancouver Canucks_Chicago Blackhawks","hockey","nhl","2025_11_05","10:00 PM EST","Vancouver Canucks","Chicago Blackhawks","-190","155","-1.5","+1.5","6.0","+145","-165","-105","-115","","","","","",""
-"2025_11_05_Seattle Kraken_San Jose Sharks","hockey","nhl","2025_11_05","10:00 PM EST","Seattle Kraken","San Jose Sharks","-175","145","-1.5","+1.5","6.0","+145","-165","-125","105","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020213,,hockey,nhl,2025_11_05,19:00,Toronto Maple Leafs,Utah Mammoth,-170,140,-1.5,+1.5,6.0,+153,-175,-110,-110,,,,,,
+2025020214,,hockey,nhl,2025_11_05,19:30,Washington Capitals,St Louis Blues,-160,135,-1.5,+1.5,6.0,+165,-190,-110,-110,,,,,,
+2025020215,,hockey,nhl,2025_11_05,21:30,Calgary Flames,Columbus Blue Jackets,-110,-110,+1.5,-1.5,6.0,-265,+219,-105,-115,,,,,,
+2025020216,,hockey,nhl,2025_11_05,22:00,Vancouver Canucks,Chicago Blackhawks,-190,155,-1.5,+1.5,6.0,+145,-165,-105,-115,,,,,,
+2025020217,,hockey,nhl,2025_11_05,22:00,Seattle Kraken,San Jose Sharks,-175,145,-1.5,+1.5,6.0,+145,-165,-125,105,,,,,,

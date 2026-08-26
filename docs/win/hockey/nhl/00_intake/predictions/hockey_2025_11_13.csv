@@ -1,11 +1,11 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_13_Vegas Golden Knights_New York Islanders","2025_11_13","10:07 PM","Vegas Golden Knights","New York Islanders","0.576","0.424","2.71","3.52","6.23"
-"hockey","nhl","2025_11_13_Ottawa Senators_Boston Bruins","2025_11_13","07:07 PM","Ottawa Senators","Boston Bruins","0.601","0.399","2.50","3.53","6.03"
-"hockey","nhl","2025_11_13_Colorado Avalanche_Buffalo Sabres","2025_11_13","09:07 PM","Colorado Avalanche","Buffalo Sabres","0.693","0.307","2.62","3.98","6.60"
-"hockey","nhl","2025_11_13_Montreal Canadiens_Dallas Stars","2025_11_13","07:07 PM","Montreal Canadiens","Dallas Stars","0.512","0.488","2.94","3.07","6.01"
-"hockey","nhl","2025_11_13_Toronto Maple Leafs_Los Angeles Kings","2025_11_13","07:07 PM","Toronto Maple Leafs","Los Angeles Kings","0.495","0.505","3.01","2.95","5.96"
-"hockey","nhl","2025_11_13_Florida Panthers_Washington Capitals","2025_11_13","07:07 PM","Florida Panthers","Washington Capitals","0.6","0.4","2.27","3.30","5.57"
-"hockey","nhl","2025_11_13_Seattle Kraken_Winnipeg Jets","2025_11_13","10:07 PM","Seattle Kraken","Winnipeg Jets","0.449","0.551","3.04","2.50","5.54"
-"hockey","nhl","2025_11_13_Columbus Blue Jackets_Edmonton Oilers","2025_11_13","07:37 PM","Columbus Blue Jackets","Edmonton Oilers","0.535","0.465","3.06","3.44","6.50"
-"hockey","nhl","2025_11_13_Detroit Red Wings_Anaheim Ducks","2025_11_13","07:07 PM","Detroit Red Wings","Anaheim Ducks","0.533","0.467","3.00","3.35","6.35"
-"hockey","nhl","2025_11_13_Calgary Flames_San Jose Sharks","2025_11_13","09:07 PM","Calgary Flames","San Jose Sharks","0.585","0.415","2.58","3.49","6.07"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020269,hockey,nhl,2025_11_13,19:00,Toronto Maple Leafs,Los Angeles Kings,0.495,0.505,3.01,2.95,5.96
+2025020270,hockey,nhl,2025_11_13,19:00,Montreal Canadiens,Dallas Stars,0.512,0.488,2.94,3.07,6.01
+2025020271,hockey,nhl,2025_11_13,19:00,Ottawa Senators,Boston Bruins,0.601,0.399,2.50,3.53,6.03
+2025020272,hockey,nhl,2025_11_13,19:00,Detroit Red Wings,Anaheim Ducks,0.533,0.467,3.00,3.35,6.35
+2025020273,hockey,nhl,2025_11_13,19:00,Florida Panthers,Washington Capitals,0.6,0.4,2.27,3.30,5.57
+2025020274,hockey,nhl,2025_11_13,19:30,Columbus Blue Jackets,Edmonton Oilers,0.535,0.465,3.06,3.44,6.50
+2025020275,hockey,nhl,2025_11_13,21:00,Colorado Avalanche,Buffalo Sabres,0.693,0.307,2.62,3.98,6.60
+2025020276,hockey,nhl,2025_11_13,21:00,Calgary Flames,San Jose Sharks,0.585,0.415,2.58,3.49,6.07
+2025020277,hockey,nhl,2025_11_13,22:00,Vegas Golden Knights,New York Islanders,0.576,0.424,2.71,3.52,6.23
+2025020278,hockey,nhl,2025_11_13,22:00,Seattle Kraken,Winnipeg Jets,0.449,0.551,3.04,2.50,5.54

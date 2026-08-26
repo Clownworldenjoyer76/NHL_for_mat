@@ -1,3 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,NHL,2026_06_06,20:00,70558086,Carolina Hurricanes,Vegas Golden Knights,puck_line,home,1.5,home_puck_line,-278.0,1.36,0.7997442442015206,0.0876521721140679,0.0876521721140679,0.2434782558724112
-hockey,NHL,2026_06_06,20:00,70558086,Carolina Hurricanes,Vegas Golden Knights,total,over,5.5,over_total,-123.0,1.81,0.5881252320443673,0.0645066700003047,0.0645066700003047,0.0796378641979071
+hockey,nhl,2026_06_06,20:00,2025030413,Carolina Hurricanes,Vegas Golden Knights,total,over,5.5,over_total,-123.0,1.81,0.5881252320443673,0.0645066700003047,0.0645066700003047,0.0796378641979071

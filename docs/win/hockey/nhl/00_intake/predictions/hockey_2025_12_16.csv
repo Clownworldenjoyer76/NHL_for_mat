@@ -1,11 +1,11 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_12_16_Detroit Red Wings_New York Islanders","2025_12_16","07:07 PM","Detroit Red Wings","New York Islanders","0.49","0.51","3.18","3.07","6.25"
-"hockey","nhl","2025_12_16_New York Rangers_Vancouver Canucks","2025_12_16","07:07 PM","New York Rangers","Vancouver Canucks","0.579","0.421","2.61","3.45","6.06"
-"hockey","nhl","2025_12_16_Montreal Canadiens_Philadelphia Flyers","2025_12_16","07:07 PM","Montreal Canadiens","Philadelphia Flyers","0.503","0.497","2.96","2.99","5.95"
-"hockey","nhl","2025_12_16_Pittsburgh Penguins_Edmonton Oilers","2025_12_16","07:37 PM","Pittsburgh Penguins","Edmonton Oilers","0.423","0.577","3.64","2.80","6.44"
-"hockey","nhl","2025_12_16_Boston Bruins_Utah Mammoth","2025_12_16","07:07 PM","Boston Bruins","Utah Mammoth","0.467","0.533","3.09","2.74","5.83"
-"hockey","nhl","2025_12_16_Toronto Maple Leafs_Chicago Blackhawks","2025_12_16","07:15 PM","Toronto Maple Leafs","Chicago Blackhawks","0.66","0.34","2.43","3.66","6.09"
-"hockey","nhl","2025_12_16_Minnesota Wild_Washington Capitals","2025_12_16","08:07 PM","Minnesota Wild","Washington Capitals","0.489","0.511","2.95","2.83","5.78"
-"hockey","nhl","2025_12_16_Columbus Blue Jackets_Anaheim Ducks","2025_12_16","07:07 PM","Columbus Blue Jackets","Anaheim Ducks","0.536","0.464","3.18","3.57","6.75"
-"hockey","nhl","2025_12_16_San Jose Sharks_Calgary Flames","2025_12_16","10:07 PM","San Jose Sharks","Calgary Flames","0.475","0.525","3.06","2.79","5.85"
-"hockey","nhl","2025_12_16_Seattle Kraken_Colorado Avalanche","2025_12_16","10:22 PM","Seattle Kraken","Colorado Avalanche","0.258","0.742","3.87","2.29","6.16"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020519,hockey,nhl,2025_12_16,19:00,Boston Bruins,Utah Mammoth,0.467,0.533,3.09,2.74,5.83
+2025020520,hockey,nhl,2025_12_16,19:00,Toronto Maple Leafs,Chicago Blackhawks,0.66,0.34,2.43,3.66,6.09
+2025020521,hockey,nhl,2025_12_16,19:00,Montreal Canadiens,Philadelphia Flyers,0.503,0.497,2.96,2.99,5.95
+2025020522,hockey,nhl,2025_12_16,19:00,Detroit Red Wings,New York Islanders,0.49,0.51,3.18,3.07,6.25
+2025020523,hockey,nhl,2025_12_16,19:00,New York Rangers,Vancouver Canucks,0.579,0.421,2.61,3.45,6.06
+2025020525,hockey,nhl,2025_12_16,19:00,Columbus Blue Jackets,Anaheim Ducks,0.536,0.464,3.18,3.57,6.75
+2025020524,hockey,nhl,2025_12_16,19:30,Pittsburgh Penguins,Edmonton Oilers,0.423,0.577,3.64,2.80,6.44
+2025020526,hockey,nhl,2025_12_16,20:00,Minnesota Wild,Washington Capitals,0.489,0.511,2.95,2.83,5.78
+2025020527,hockey,nhl,2025_12_16,22:00,San Jose Sharks,Calgary Flames,0.475,0.525,3.06,2.79,5.85
+2025020528,hockey,nhl,2025_12_16,22:00,Seattle Kraken,Colorado Avalanche,0.258,0.742,3.87,2.29,6.16

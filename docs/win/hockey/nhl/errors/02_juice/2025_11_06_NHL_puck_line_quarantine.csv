@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_06,19:00,2025020218,Ottawa Senators,Boston Bruins,-1.5,1.5,0.3477133679411847,0.6522866320588155,2.875931995140172,1.5330683642000986,192,-230,,,bad_juiced_decimal
+hockey,nhl,2025_11_06,19:30,2025020221,Washington Capitals,Pittsburgh Penguins,-1.5,1.5,0.2129044689395974,0.7870955310604026,4.696942271717684,1.2704938098845069,207,-250,,,bad_juiced_decimal
+hockey,nhl,2025_11_06,20:00,2025020223,Philadelphia Flyers,Nashville Predators,1.5,-1.5,0.722100600332273,0.2778993996677269,1.3848485924812308,3.598424470134371,-275,226,,,bad_juiced_decimal
+hockey,nhl,2025_11_06,22:00,2025020225,Tampa Bay Lightning,Vegas Golden Knights,1.5,-1.5,0.6994618315042596,0.3005381684957403,1.4296705766623523,3.32736439103632,-230,192,,,bad_juiced_decimal
+hockey,nhl,2025_11_06,22:00,2025020226,Florida Panthers,Los Angeles Kings,1.5,-1.5,0.7529549764876547,0.2470450235123452,1.3281006583750177,4.047845148963417,-275,226,,,bad_juiced_decimal

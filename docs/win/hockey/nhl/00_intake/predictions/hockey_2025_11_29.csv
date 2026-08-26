@@ -1,12 +1,12 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_29_New Jersey Devils_Philadelphia Flyers","2025_11_29","07:07 PM","New Jersey Devils","Philadelphia Flyers","0.564","0.436","2.55","3.24","5.79"
-"hockey","nhl","2025_11_29_New York Rangers_Tampa Bay Lightning","2025_11_29","02:07 PM","New York Rangers","Tampa Bay Lightning","0.54","0.46","2.70","3.12","5.82"
-"hockey","nhl","2025_11_29_Pittsburgh Penguins_Toronto Maple Leafs","2025_11_29","07:07 PM","Pittsburgh Penguins","Toronto Maple Leafs","0.513","0.487","3.09","3.23","6.32"
-"hockey","nhl","2025_11_29_Boston Bruins_Detroit Red Wings","2025_11_29","07:07 PM","Boston Bruins","Detroit Red Wings","0.475","0.525","3.19","2.92","6.11"
-"hockey","nhl","2025_11_29_Minnesota Wild_Buffalo Sabres","2025_11_29","08:07 PM","Minnesota Wild","Buffalo Sabres","0.564","0.436","2.83","3.52","6.35"
-"hockey","nhl","2025_11_29_Colorado Avalanche_Montreal Canadiens","2025_11_29","03:07 PM","Colorado Avalanche","Montreal Canadiens","0.712","0.288","2.42","3.85","6.27"
-"hockey","nhl","2025_11_29_Nashville Predators_Winnipeg Jets","2025_11_29","07:15 PM","Nashville Predators","Winnipeg Jets","0.395","0.605","3.34","2.30","5.64"
-"hockey","nhl","2025_11_29_St Louis Blues_Utah Mammoth","2025_11_29","08:07 PM","St Louis Blues","Utah Mammoth","0.439","0.561","3.29","2.64","5.93"
-"hockey","nhl","2025_11_29_Seattle Kraken_Edmonton Oilers","2025_11_29","04:07 PM","Seattle Kraken","Edmonton Oilers","0.452","0.548","3.24","2.73","5.97"
-"hockey","nhl","2025_11_29_Los Angeles Kings_Vancouver Canucks","2025_11_29","10:07 PM","Los Angeles Kings","Vancouver Canucks","0.612","0.388","2.30","3.37","5.67"
-"hockey","nhl","2025_11_29_Vegas Golden Knights_San Jose Sharks","2025_11_29","10:07 PM","Vegas Golden Knights","San Jose Sharks","0.677","0.323","2.53","3.83","6.36"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020391,hockey,nhl,2025_11_29,14:00,New York Rangers,Tampa Bay Lightning,0.54,0.46,2.70,3.12,5.82
+2025020392,hockey,nhl,2025_11_29,15:00,Colorado Avalanche,Montreal Canadiens,0.712,0.288,2.42,3.85,6.27
+2025020393,hockey,nhl,2025_11_29,16:00,Seattle Kraken,Edmonton Oilers,0.452,0.548,3.24,2.73,5.97
+2025020394,hockey,nhl,2025_11_29,19:00,Boston Bruins,Detroit Red Wings,0.475,0.525,3.19,2.92,6.11
+2025020395,hockey,nhl,2025_11_29,19:00,New Jersey Devils,Philadelphia Flyers,0.564,0.436,2.55,3.24,5.79
+2025020396,hockey,nhl,2025_11_29,19:00,Pittsburgh Penguins,Toronto Maple Leafs,0.513,0.487,3.09,3.23,6.32
+2025020397,hockey,nhl,2025_11_29,19:00,Nashville Predators,Winnipeg Jets,0.395,0.605,3.34,2.30,5.64
+2025020398,hockey,nhl,2025_11_29,20:00,St Louis Blues,Utah Mammoth,0.439,0.561,3.29,2.64,5.93
+2025020399,hockey,nhl,2025_11_29,20:00,Minnesota Wild,Buffalo Sabres,0.564,0.436,2.83,3.52,6.35
+2025020400,hockey,nhl,2025_11_29,22:00,Vegas Golden Knights,San Jose Sharks,0.677,0.323,2.53,3.83,6.36
+2025020401,hockey,nhl,2025_11_29,22:00,Los Angeles Kings,Vancouver Canucks,0.612,0.388,2.30,3.37,5.67

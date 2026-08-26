@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2025_10_17,7:00 PM EDT,2025_10_17_Washington Capitals_Minnesota Wild,Minnesota Wild,Washington Capitals,6.0,5.71,0.41310282116383307,0.586897178836167,2.420704843367333,1.7038759702049124,100,-120,,
-hockey,nhl,2025_10_17,7:00 PM EDT,2025_10_17_Detroit Red Wings_Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,6.0,6.55,0.5708774656300862,0.4291225343699139,1.7516893908157412,2.3303367218137656,-118,-102,,
-hockey,nhl,2025_10_17,8:30 PM EDT,2025_10_17_Chicago Blackhawks_Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,6.0,5.72,0.41503974434075647,0.5849602556592436,2.4094078064460707,1.7095178524103511,-118,-102,,
-hockey,nhl,2025_10_17,9:00 PM EDT,2025_10_17_Utah Mammoth_San Jose Sharks,San Jose Sharks,Utah Mammoth,6.0,6.23,0.5125637844243718,0.48743621557562816,1.950976698681584,2.051550475828042,-120,100,,
+hockey,nhl,2025_10_17,19:00,2025020072,Tampa Bay Lightning,Detroit Red Wings,6.0,6.55,0.5708774656300862,0.4291225343699139,1.7516893908157412,2.3303367218137656,-118,-102,,
+hockey,nhl,2025_10_17,19:00,2025020073,Minnesota Wild,Washington Capitals,6.0,5.71,0.41310282116383307,0.586897178836167,2.420704843367333,1.7038759702049124,100,-120,,
+hockey,nhl,2025_10_17,20:30,2025020074,Vancouver Canucks,Chicago Blackhawks,6.0,5.72,0.41503974434075647,0.5849602556592436,2.4094078064460707,1.7095178524103511,-118,-102,,
+hockey,nhl,2025_10_17,21:00,2025020075,San Jose Sharks,Utah Mammoth,6.0,6.23,0.5125637844243718,0.48743621557562816,1.950976698681584,2.051550475828042,-120,100,,

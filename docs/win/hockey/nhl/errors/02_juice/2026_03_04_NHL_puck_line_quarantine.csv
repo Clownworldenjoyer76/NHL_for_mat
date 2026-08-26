@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_04,19:00,2025020970,Vegas Golden Knights,Detroit Red Wings,1.5,-1.5,0.6874422755520301,0.31255772444797,1.4546675925581969,3.1994090108192643,-238,195,,,bad_juiced_decimal
+hockey,nhl,2026_03_04,19:00,2025020971,Toronto Maple Leafs,New Jersey Devils,1.5,-1.5,0.7390715671758288,0.2609284328241714,1.353048939253937,3.8324685017131017,-265,215,,,bad_juiced_decimal
+hockey,nhl,2026_03_04,22:00,2025020973,New York Islanders,Anaheim Ducks,1.5,-1.5,0.7577378312773932,0.2422621687226069,1.319717663184642,4.1277596302913135,-278,225,,,bad_juiced_decimal
+hockey,nhl,2026_03_04,22:00,2025020974,St Louis Blues,Seattle Kraken,1.5,-1.5,0.7225089227659434,0.2774910772340567,1.3840659519771077,3.60371947800154,-218,180,,,bad_juiced_decimal

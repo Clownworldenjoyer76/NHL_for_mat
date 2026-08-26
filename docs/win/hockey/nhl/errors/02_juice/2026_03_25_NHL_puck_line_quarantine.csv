@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_25,19:30,2025021136,New York Rangers,Toronto Maple Leafs,-1.5,1.5,0.2786835717467316,0.7213164282532682,3.58829906525241,1.3863541170434572,200,-244,3.0,1.41,bad_juiced_decimal

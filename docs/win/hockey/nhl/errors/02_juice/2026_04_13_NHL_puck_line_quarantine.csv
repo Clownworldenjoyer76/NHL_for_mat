@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_13,19:00,2025021283,New York Rangers,Florida Panthers,-1.5,1.5,0.327810467024317,0.672189532975683,3.0505432272417945,1.4876756494156476,205,-250,3.05,1.4,bad_juiced_decimal
+hockey,nhl,2026_04_13,20:00,2025021286,Minnesota Wild,St Louis Blues,-1.5,1.5,0.3423536726568649,0.657646327343135,2.9209559583205715,1.5205741420923922,200,-244,3.0,1.41,bad_juiced_decimal
+hockey,nhl,2026_04_13,21:30,2025021291,Los Angeles Kings,Seattle Kraken,-1.5,1.5,0.3309962512085748,0.6690037487914251,3.021182253118201,1.4947599349129648,185,-227,2.85,1.44,bad_juiced_decimal

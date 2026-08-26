@@ -1,4 +1,4 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_02_01_Boston Bruins_Tampa Bay Lightning","2026_02_01","07:04 PM","Boston Bruins","Tampa Bay Lightning","0.39","0.61","2.50","3.56","6.06"
-"hockey","nhl","2026_02_01_Carolina Hurricanes_Los Angeles Kings","2026_02_01","03:07 PM","Carolina Hurricanes","Los Angeles Kings","0.627","0.373","2.28","3.39","5.67"
-"hockey","nhl","2026_02_01_Anaheim Ducks_Vegas Golden Knights","2026_02_01","09:37 PM","Anaheim Ducks","Vegas Golden Knights","0.493","0.507","3.27","3.19","6.46"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020874,hockey,nhl,2026_02_01,15:00,Carolina Hurricanes,Los Angeles Kings,0.627,0.373,2.28,3.39,5.67
+2025020873,hockey,nhl,2026_02_01,18:30,Tampa Bay Lightning,Boston Bruins,0.61,0.39,3.56,2.50,6.06
+2025020875,hockey,nhl,2026_02_01,21:30,Anaheim Ducks,Vegas Golden Knights,0.493,0.507,3.27,3.19,6.46

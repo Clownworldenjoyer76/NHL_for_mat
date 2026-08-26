@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_30,22:00,2025021177,St Louis Blues,San Jose Sharks,1.5,-1.5,0.7747364170334949,0.2252635829665054,1.290761577762216,4.43924395959151,-278,225,1.36,3.25,bad_juiced_decimal

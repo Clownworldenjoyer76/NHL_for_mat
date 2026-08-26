@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_02_04,19:00,2025020895,Montreal Canadiens,Winnipeg Jets,1.5,-1.5,0.7372047105065673,0.2627952894934325,1.3564753259821871,3.805243244380873,-280,230,,,bad_juiced_decimal
+hockey,nhl,2026_02_04,20:00,2025020896,Minnesota Wild,Nashville Predators,-1.5,1.5,0.3279774723757602,0.6720225276242395,3.0489898978619814,1.488045353978295,197,-237,,,bad_juiced_decimal
+hockey,nhl,2026_02_04,22:00,2025020900,Edmonton Oilers,Calgary Flames,-1.5,1.5,0.3115134398172564,0.6884865601827437,3.210134370403509,1.452461177651125,186,-220,,,bad_juiced_decimal

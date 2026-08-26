@@ -1,3 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_06,22:30,39339d355c5e85fc42b06ea3c942c5b4,Nashville Predators,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7834844201441656,0.1203827208061567,0.1203827208061567,0.2799598158282717
-hockey,nhl,2026_04_06,19:00,fe2964a4d81fc7d5106b2adb91a0eea7,Tampa Bay Lightning,Buffalo Sabres,puck_line,home,1.5,home_puck_line,-263.0,1.38,0.8126080450510097,0.1213991021703932,0.1213991021703932,0.3194713215010351
+hockey,nhl,2026_04_06,22:30,2025021232,Nashville Predators,Los Angeles Kings,puck_line,away,1.5,away_puck_line,-233.0,1.43,0.7834844201441656,0.1203827208061567,0.1203827208061567,0.2799598158282717

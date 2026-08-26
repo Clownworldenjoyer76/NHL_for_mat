@@ -1,8 +1,8 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_24_New Jersey Devils_Detroit Red Wings","2025_11_24","07:07 PM","New Jersey Devils","Detroit Red Wings","0.563","0.437","2.72","3.39","6.11"
-"hockey","nhl","2025_11_24_New York Rangers_St Louis Blues","2025_11_24","07:07 PM","New York Rangers","St Louis Blues","0.607","0.393","2.33","3.38","5.71"
-"hockey","nhl","2025_11_24_Tampa Bay Lightning_Philadelphia Flyers","2025_11_24","07:07 PM","Tampa Bay Lightning","Philadelphia Flyers","0.578","0.422","2.42","3.25","5.67"
-"hockey","nhl","2025_11_24_Los Angeles Kings_Ottawa Senators","2025_11_24","09:07 PM","Los Angeles Kings","Ottawa Senators","0.55","0.45","2.59","3.12","5.71"
-"hockey","nhl","2025_11_24_Nashville Predators_Florida Panthers","2025_11_24","08:07 PM","Nashville Predators","Florida Panthers","0.373","0.627","3.39","2.27","5.66"
-"hockey","nhl","2025_11_24_Washington Capitals_Columbus Blue Jackets","2025_11_24","07:07 PM","Washington Capitals","Columbus Blue Jackets","0.561","0.439","2.72","3.38","6.10"
-"hockey","nhl","2025_11_24_Utah Mammoth_Vegas Golden Knights","2025_11_24","09:07 PM","Utah Mammoth","Vegas Golden Knights","0.489","0.511","3.07","2.94","6.01"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020353,hockey,nhl,2025_11_24,19:00,Tampa Bay Lightning,Philadelphia Flyers,0.578,0.422,2.42,3.25,5.67
+2025020354,hockey,nhl,2025_11_24,19:00,New Jersey Devils,Detroit Red Wings,0.563,0.437,2.72,3.39,6.11
+2025020355,hockey,nhl,2025_11_24,19:00,New York Rangers,St Louis Blues,0.607,0.393,2.33,3.38,5.71
+2025020356,hockey,nhl,2025_11_24,19:00,Washington Capitals,Columbus Blue Jackets,0.561,0.439,2.72,3.38,6.10
+2025020357,hockey,nhl,2025_11_24,20:00,Nashville Predators,Florida Panthers,0.373,0.627,3.39,2.27,5.66
+2025020358,hockey,nhl,2025_11_24,21:00,Utah Mammoth,Vegas Golden Knights,0.489,0.511,3.07,2.94,6.01
+2025020359,hockey,nhl,2025_11_24,21:00,Los Angeles Kings,Ottawa Senators,0.55,0.45,2.59,3.12,5.71

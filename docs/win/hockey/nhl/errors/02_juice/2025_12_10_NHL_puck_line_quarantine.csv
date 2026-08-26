@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_10,20:30,2025020477,Detroit Red Wings,Calgary Flames,1.5,-1.5,0.7609060695082708,0.2390939304917294,1.314222661735688,4.182456651841236,-275,226,,,bad_juiced_decimal
+hockey,nhl,2025_12_10,21:00,2025020478,Florida Panthers,Utah Mammoth,-1.5,1.5,0.2683673287814496,0.7316326712185504,3.7262359935563176,1.3668061027598426,222,-270,,,bad_juiced_decimal

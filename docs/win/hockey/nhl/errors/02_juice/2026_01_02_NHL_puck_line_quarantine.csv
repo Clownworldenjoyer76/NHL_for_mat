@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_02,22:30,2025020643,Minnesota Wild,Anaheim Ducks,-1.5,1.5,0.3312150130356165,0.6687849869643836,3.0191868141329303,1.495248875933956,195,-235,,,bad_juiced_decimal

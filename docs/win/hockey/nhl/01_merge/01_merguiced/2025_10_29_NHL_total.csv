@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2025_10_29,7:30 PM EDT,2025_10_29_Columbus Blue Jackets_Toronto Maple Leafs,Toronto Maple Leafs,Columbus Blue Jackets,6.0,6.26,0.5181559470231496,0.48184405297685046,1.9299209161741477,2.0753602619394447,-118,-102,,
+hockey,nhl,2025_10_29,19:30,2025020166,Toronto Maple Leafs,Columbus Blue Jackets,6.0,6.26,0.5181559470231496,0.48184405297685046,1.9299209161741477,2.0753602619394447,-118,-102,,

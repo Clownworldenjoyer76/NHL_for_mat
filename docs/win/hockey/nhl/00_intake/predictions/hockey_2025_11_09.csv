@@ -1,9 +1,9 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_11_09_Pittsburgh Penguins_Los Angeles Kings","2025_11_09","02:07 PM","Pittsburgh Penguins","Los Angeles Kings","0.415","0.585","3.47","2.55","6.02"
-"hockey","nhl","2025_11_09_Ottawa Senators_Utah Mammoth","2025_11_09","07:07 PM","Ottawa Senators","Utah Mammoth","0.535","0.465","2.84","3.22","6.06"
-"hockey","nhl","2025_11_09_Toronto Maple Leafs_Carolina Hurricanes","2025_11_09","07:07 PM","Toronto Maple Leafs","Carolina Hurricanes","0.508","0.492","3.00","3.09","6.09"
-"hockey","nhl","2025_11_09_Anaheim Ducks_Winnipeg Jets","2025_11_09","10:07 PM","Anaheim Ducks","Winnipeg Jets","0.429","0.571","3.39","2.63","6.02"
-"hockey","nhl","2025_11_09_Detroit Red Wings_Chicago Blackhawks","2025_11_09","01:07 PM","Detroit Red Wings","Chicago Blackhawks","0.588","0.412","2.51","3.45","5.96"
-"hockey","nhl","2025_11_09_Minnesota Wild_Calgary Flames","2025_11_09","08:07 PM","Minnesota Wild","Calgary Flames","0.551","0.449","2.56","3.11","5.67"
-"hockey","nhl","2025_11_09_Vancouver Canucks_Colorado Avalanche","2025_11_09","10:07 PM","Vancouver Canucks","Colorado Avalanche","0.391","0.609","3.52","2.45","5.97"
-"hockey","nhl","2025_11_09_Dallas Stars_Seattle Kraken","2025_11_09","07:07 PM","Dallas Stars","Seattle Kraken","0.603","0.397","2.31","3.35","5.66"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020244,hockey,nhl,2025_11_09,13:00,Detroit Red Wings,Chicago Blackhawks,0.588,0.412,2.51,3.45,5.96
+2025020245,hockey,nhl,2025_11_09,14:00,Pittsburgh Penguins,Los Angeles Kings,0.415,0.585,3.47,2.55,6.02
+2025020246,hockey,nhl,2025_11_09,19:00,Toronto Maple Leafs,Carolina Hurricanes,0.508,0.492,3.00,3.09,6.09
+2025020247,hockey,nhl,2025_11_09,19:00,Ottawa Senators,Utah Mammoth,0.535,0.465,2.84,3.22,6.06
+2025020248,hockey,nhl,2025_11_09,19:00,Dallas Stars,Seattle Kraken,0.603,0.397,2.31,3.35,5.66
+2025020249,hockey,nhl,2025_11_09,20:00,Minnesota Wild,Calgary Flames,0.551,0.449,2.56,3.11,5.67
+2025020250,hockey,nhl,2025_11_09,22:00,Vancouver Canucks,Colorado Avalanche,0.391,0.609,3.52,2.45,5.97
+2025020251,hockey,nhl,2025_11_09,22:00,Anaheim Ducks,Winnipeg Jets,0.429,0.571,3.39,2.63,6.02

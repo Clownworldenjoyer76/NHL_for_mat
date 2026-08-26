@@ -1,9 +1,9 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_20_Edmonton Oilers_New Jersey Devils","2026_01_20","10:22 PM","Edmonton Oilers","New Jersey Devils","0.591","0.409","2.65","3.63","6.28"
-"hockey","nhl","2026_01_20_Los Angeles Kings_New York Rangers","2026_01_20","10:07 PM","Los Angeles Kings","New York Rangers","0.593","0.407","2.28","3.27","5.55"
-"hockey","nhl","2026_01_20_Dallas Stars_Boston Bruins","2026_01_20","07:37 PM","Dallas Stars","Boston Bruins","0.616","0.384","2.42","3.51","5.93"
-"hockey","nhl","2026_01_20_Nashville Predators_Buffalo Sabres","2026_01_20","08:07 PM","Nashville Predators","Buffalo Sabres","0.514","0.486","3.04","3.20","6.24"
-"hockey","nhl","2026_01_20_Montreal Canadiens_Minnesota Wild","2026_01_20","07:07 PM","Montreal Canadiens","Minnesota Wild","0.562","0.438","2.67","3.33","6.00"
-"hockey","nhl","2026_01_20_Columbus Blue Jackets_Ottawa Senators","2026_01_20","07:07 PM","Columbus Blue Jackets","Ottawa Senators","0.492","0.508","3.30","3.22","6.52"
-"hockey","nhl","2026_01_20_Tampa Bay Lightning_San Jose Sharks","2026_01_20","07:07 PM","Tampa Bay Lightning","San Jose Sharks","0.73","0.27","2.38","3.87","6.25"
-"hockey","nhl","2026_01_20_Winnipeg Jets_St Louis Blues","2026_01_20","08:07 PM","Winnipeg Jets","St Louis Blues","0.561","0.439","2.42","3.07","5.49"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020780,hockey,nhl,2026_01_20,19:00,Montreal Canadiens,Minnesota Wild,0.562,0.438,2.67,3.33,6.00
+2025020781,hockey,nhl,2026_01_20,19:00,Tampa Bay Lightning,San Jose Sharks,0.73,0.27,2.38,3.87,6.25
+2025020782,hockey,nhl,2026_01_20,19:00,Columbus Blue Jackets,Ottawa Senators,0.492,0.508,3.30,3.22,6.52
+2025020783,hockey,nhl,2026_01_20,19:30,Dallas Stars,Boston Bruins,0.616,0.384,2.42,3.51,5.93
+2025020784,hockey,nhl,2026_01_20,20:00,Nashville Predators,Buffalo Sabres,0.514,0.486,3.04,3.20,6.24
+2025020785,hockey,nhl,2026_01_20,20:00,Winnipeg Jets,St Louis Blues,0.561,0.439,2.42,3.07,5.49
+2025020786,hockey,nhl,2026_01_20,22:00,Edmonton Oilers,New Jersey Devils,0.591,0.409,2.65,3.63,6.28
+2025020787,hockey,nhl,2026_01_20,22:00,Los Angeles Kings,New York Rangers,0.593,0.407,2.28,3.27,5.55

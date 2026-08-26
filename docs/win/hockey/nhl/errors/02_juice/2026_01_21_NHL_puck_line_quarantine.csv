@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_21,21:30,2025020791,Pittsburgh Penguins,Calgary Flames,-1.5,1.5,0.2296743272521535,0.7703256727478467,4.353991201211295,1.2981522431063173,207,-250,,,bad_juiced_decimal
+hockey,nhl,2026_01_21,21:30,2025020793,New York Islanders,Seattle Kraken,-1.5,1.5,0.3213428108825961,0.678657189117404,3.1119414100269203,1.473497984012375,215,-260,,,bad_juiced_decimal

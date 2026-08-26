@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly,source_select_file,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result,source_score_file,bet_result
+hockey,nhl,2026_06_06,20:00,2025030413,Carolina Hurricanes,Vegas Golden Knights,total,over,5.5,over_total,-123.0,1.81,0.5881252320443673,0.0645066700003047,0.0645066700003047,0.0796378641979071,2026_06_06_NHL.csv,4,5,9,-1,1,2026_06_06_NHL_final_scores.csv,Win

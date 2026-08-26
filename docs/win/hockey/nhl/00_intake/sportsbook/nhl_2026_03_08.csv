@@ -1,8 +1,8 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2026_03_08_Colorado Avalanche_Minnesota Wild","hockey","nhl","2026_03_08","2:10 PM","Colorado Avalanche","Minnesota Wild","-180","+150","-1.5","+1.5","6.5","+142","-170","-102","-118","","","","","",""
-"2026_03_08_Pittsburgh Penguins_Boston Bruins","hockey","nhl","2026_03_08","4:40 PM","Pittsburgh Penguins","Boston Bruins","-125","+105","-1.5","+1.5","6.5","+200","-245","+102","-122","","","","","",""
-"2026_03_08_Dallas Stars_Chicago Blackhawks","hockey","nhl","2026_03_08","6:10 PM","Dallas Stars","Chicago Blackhawks","-270","+220","-1.5","+1.5","5.5","-105","-115","-135","+114","","","","","",""
-"2026_03_08_Buffalo Sabres_Tampa Bay Lightning","hockey","nhl","2026_03_08","6:10 PM","Buffalo Sabres","Tampa Bay Lightning","-105","-115","+1.5","-1.5","6.5","-265","+215","-105","-115","","","","","",""
-"2026_03_08_New Jersey Devils_Detroit Red Wings","hockey","nhl","2026_03_08","7:10 PM","New Jersey Devils","Detroit Red Wings","-110","-110","-1.5","+1.5","5.5","+220","-270","-115","-105","","","","","",""
-"2026_03_08_Anaheim Ducks_St Louis Blues","hockey","nhl","2026_03_08","9:10 PM","Anaheim Ducks","St Louis Blues","-175","+145","-1.5","+1.5","6.5","+145","-175","-105","-115","","","","","",""
-"2026_03_08_Vegas Golden Knights_Edmonton Oilers","hockey","nhl","2026_03_08","9:40 PM","Vegas Golden Knights","Edmonton Oilers","-115","-105","-1.5","+1.5","6.5","+215","-265","-142","+120","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025021001,,hockey,nhl,2026_03_08,14:00,Colorado Avalanche,Minnesota Wild,-180,+150,-1.5,+1.5,6.5,+142,-170,-102,-118,,,,,,
+2025021002,,hockey,nhl,2026_03_08,16:30,Pittsburgh Penguins,Boston Bruins,-125,+105,-1.5,+1.5,6.5,+200,-245,+102,-122,,,,,,
+2025021003,,hockey,nhl,2026_03_08,18:00,Buffalo Sabres,Tampa Bay Lightning,-105,-115,+1.5,-1.5,6.5,-265,+215,-105,-115,,,,,,
+2025021004,,hockey,nhl,2026_03_08,18:00,Dallas Stars,Chicago Blackhawks,-270,+220,-1.5,+1.5,5.5,-105,-115,-135,+114,,,,,,
+2025021005,,hockey,nhl,2026_03_08,19:00,New Jersey Devils,Detroit Red Wings,-110,-110,-1.5,+1.5,5.5,+220,-270,-115,-105,,,,,,
+2025021006,,hockey,nhl,2026_03_08,21:00,Anaheim Ducks,St Louis Blues,-175,+145,-1.5,+1.5,6.5,+145,-175,-105,-115,,,,,,
+2025021007,,hockey,nhl,2026_03_08,21:30,Vegas Golden Knights,Edmonton Oilers,-115,-105,-1.5,+1.5,6.5,+215,-265,-142,+120,,,,,,

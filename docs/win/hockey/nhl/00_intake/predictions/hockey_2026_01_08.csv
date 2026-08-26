@@ -1,13 +1,13 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_08_Pittsburgh Penguins_New Jersey Devils","2026_01_08","07:07 PM","Pittsburgh Penguins","New Jersey Devils","0.503","0.497","3.10","3.13","6.23"
-"hockey","nhl","2026_01_08_Nashville Predators_New York Islanders","2026_01_08","08:07 PM","Nashville Predators","New York Islanders","0.477","0.523","3.12","2.87","5.99"
-"hockey","nhl","2026_01_08_New York Rangers_Buffalo Sabres","2026_01_08","07:18 PM","New York Rangers","Buffalo Sabres","0.553","0.447","2.73","3.30","6.03"
-"hockey","nhl","2026_01_08_Philadelphia Flyers_Toronto Maple Leafs","2026_01_08","07:07 PM","Philadelphia Flyers","Toronto Maple Leafs","0.546","0.454","2.68","3.17","5.85"
-"hockey","nhl","2026_01_08_Boston Bruins_Calgary Flames","2026_01_08","07:07 PM","Boston Bruins","Calgary Flames","0.555","0.445","2.56","3.14","5.70"
-"hockey","nhl","2026_01_08_Montreal Canadiens_Florida Panthers","2026_01_08","07:07 PM","Montreal Canadiens","Florida Panthers","0.462","0.538","3.17","2.76","5.93"
-"hockey","nhl","2026_01_08_Colorado Avalanche_Ottawa Senators","2026_01_08","09:07 PM","Colorado Avalanche","Ottawa Senators","0.699","0.301","2.36","3.75","6.11"
-"hockey","nhl","2026_01_08_Carolina Hurricanes_Anaheim Ducks","2026_01_08","07:07 PM","Carolina Hurricanes","Anaheim Ducks","0.655","0.345","2.62","3.84","6.46"
-"hockey","nhl","2026_01_08_Winnipeg Jets_Edmonton Oilers","2026_01_08","08:07 PM","Winnipeg Jets","Edmonton Oilers","0.497","0.503","3.12","3.08","6.20"
-"hockey","nhl","2026_01_08_Vegas Golden Knights_Columbus Blue Jackets","2026_01_08","10:07 PM","Vegas Golden Knights","Columbus Blue Jackets","0.603","0.397","2.60","3.63","6.23"
-"hockey","nhl","2026_01_08_Detroit Red Wings_Vancouver Canucks","2026_01_08","07:07 PM","Detroit Red Wings","Vancouver Canucks","0.599","0.401","2.56","3.58","6.14"
-"hockey","nhl","2026_01_08_Seattle Kraken_Minnesota Wild","2026_01_08","10:07 PM","Seattle Kraken","Minnesota Wild","0.417","0.583","3.32","2.42","5.74"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020682,hockey,nhl,2026_01_08,19:00,Boston Bruins,Calgary Flames,0.555,0.445,2.56,3.14,5.70
+2025020683,hockey,nhl,2026_01_08,19:00,Montreal Canadiens,Florida Panthers,0.462,0.538,3.17,2.76,5.93
+2025020684,hockey,nhl,2026_01_08,19:00,Detroit Red Wings,Vancouver Canucks,0.599,0.401,2.56,3.58,6.14
+2025020685,hockey,nhl,2026_01_08,19:00,New York Rangers,Buffalo Sabres,0.553,0.447,2.73,3.30,6.03
+2025020686,hockey,nhl,2026_01_08,19:00,Philadelphia Flyers,Toronto Maple Leafs,0.546,0.454,2.68,3.17,5.85
+2025020687,hockey,nhl,2026_01_08,19:00,Pittsburgh Penguins,New Jersey Devils,0.503,0.497,3.10,3.13,6.23
+2025020688,hockey,nhl,2026_01_08,19:00,Carolina Hurricanes,Anaheim Ducks,0.655,0.345,2.62,3.84,6.46
+2025020689,hockey,nhl,2026_01_08,20:00,Nashville Predators,New York Islanders,0.477,0.523,3.12,2.87,5.99
+2025020690,hockey,nhl,2026_01_08,20:00,Winnipeg Jets,Edmonton Oilers,0.497,0.503,3.12,3.08,6.20
+2025020691,hockey,nhl,2026_01_08,21:00,Colorado Avalanche,Ottawa Senators,0.699,0.301,2.36,3.75,6.11
+2025020692,hockey,nhl,2026_01_08,22:00,Vegas Golden Knights,Columbus Blue Jackets,0.603,0.397,2.60,3.63,6.23
+2025020693,hockey,nhl,2026_01_08,22:00,Seattle Kraken,Minnesota Wild,0.417,0.583,3.32,2.42,5.74

@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2025_10_19,12:30 PM EDT,2025_10_19_Washington Capitals_Vancouver Canucks,Vancouver Canucks,Washington Capitals,6.0,5.62,0.3956729106445012,0.6043270893554987,2.527340065740478,1.6547330371479418,100,-120,,
-hockey,nhl,2025_10_19,3:00 PM EDT,2025_10_19_Detroit Red Wings_Edmonton Oilers,Edmonton Oilers,Detroit Red Wings,6.0,6.38,0.5402830210225434,0.4597169789774565,1.8508817806404372,2.175251395378716,-118,-102,,
-hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Chicago Blackhawks_Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,100,-120,,
-hockey,nhl,2025_10_19,7:00 PM EDT,2025_10_19_Utah Mammoth_Boston Bruins,Boston Bruins,Utah Mammoth,6.0,5.77,0.4247212853000253,0.5752787146999747,2.354485246232938,1.7382878497799632,-105,-115,,
+hockey,nhl,2025_10_19,12:30,2025020089,Vancouver Canucks,Washington Capitals,6.0,5.62,0.3956729106445012,0.6043270893554987,2.527340065740478,1.6547330371479418,100,-120,,
+hockey,nhl,2025_10_19,15:00,2025020090,Edmonton Oilers,Detroit Red Wings,6.0,6.38,0.5402830210225434,0.4597169789774565,1.8508817806404372,2.175251395378716,-118,-102,,
+hockey,nhl,2025_10_19,19:00,2025020091,Anaheim Ducks,Chicago Blackhawks,6.0,6.17,0.5013140802281076,0.4986859197718924,1.9947574573309024,2.0052701717694723,100,-120,,
+hockey,nhl,2025_10_19,19:00,2025020092,Boston Bruins,Utah Mammoth,6.0,5.77,0.4247212853000253,0.5752787146999747,2.354485246232938,1.7382878497799632,-105,-115,,

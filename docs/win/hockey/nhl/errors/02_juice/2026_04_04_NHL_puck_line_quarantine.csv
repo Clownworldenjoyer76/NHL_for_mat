@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_04,12:30,2025021207,Detroit Red Wings,New York Rangers,-1.5,1.5,0.2724817738562571,0.7275182261437432,3.669970236348843,1.374536010321781,180,-217,2.8,1.46,bad_juiced_decimal
+hockey,nhl,2026_04_04,13:00,2025021208,Minnesota Wild,Ottawa Senators,1.5,-1.5,0.6931701471100402,0.3068298528899599,1.4426472406077966,3.259135284853249,-263,215,1.38,3.15,bad_juiced_decimal
+hockey,nhl,2026_04_04,15:00,2025021209,Colorado Avalanche,Dallas Stars,-1.5,1.5,0.3064582610573916,0.6935417389426086,3.263087105401039,1.4418742865059937,230,-286,3.3,1.35,bad_juiced_decimal
+hockey,nhl,2026_04_04,19:00,2025021212,Montreal Canadiens,New Jersey Devils,-1.5,1.5,0.3146578766839794,0.6853421233160202,3.178054878328474,1.459125254349625,200,-244,3.0,1.41,bad_juiced_decimal
+hockey,nhl,2026_04_04,19:00,2025021213,Buffalo Sabres,Washington Capitals,-1.5,1.5,0.2426257122947938,0.7573742877052064,4.121574710865703,1.3203511344832333,220,-270,3.2,1.37,bad_juiced_decimal
+hockey,nhl,2026_04_04,22:00,2025021218,Vegas Golden Knights,Edmonton Oilers,1.5,-1.5,0.7570004656543602,0.2429995343456399,1.321003150421563,4.115234223361147,-250,205,1.4,3.05,bad_juiced_decimal
+hockey,nhl,2026_04_04,22:00,2025021220,Nashville Predators,San Jose Sharks,1.5,-1.5,0.7616091603003468,0.2383908396996533,1.3130094175937197,4.194792053502944,-250,205,1.4,3.05,bad_juiced_decimal

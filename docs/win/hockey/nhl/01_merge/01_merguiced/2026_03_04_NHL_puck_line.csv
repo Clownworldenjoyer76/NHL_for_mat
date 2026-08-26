@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2026_03_04,7:00 PM,2026_03_04_Detroit Red Wings_Vegas Golden Knights,Vegas Golden Knights,Detroit Red Wings,1.5,-1.5,0.6874422755520301,0.31255772444797003,1.4546675925581967,3.1994090108192643,-238,195,,
-hockey,nhl,2026_03_04,7:10 PM,2026_03_04_New Jersey Devils_Toronto Maple Leafs,Toronto Maple Leafs,New Jersey Devils,1.5,-1.5,0.7390715671758288,0.26092843282417144,1.353048939253937,3.8324685017131017,-265,215,,
-hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Vancouver Canucks_Carolina Hurricanes,Carolina Hurricanes,Vancouver Canucks,-1.5,1.5,0.4692246693241374,0.5307753306758622,2.1311752458377384,1.8840363185806903,-108,-112,,
-hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Seattle Kraken_St Louis Blues,St Louis Blues,Seattle Kraken,1.5,-1.5,0.7225089227659434,0.27749107723405675,1.3840659519771077,3.60371947800154,-218,180,,
-hockey,nhl,2026_03_04,10:10 PM,2026_03_04_Anaheim Ducks_New York Islanders,New York Islanders,Anaheim Ducks,1.5,-1.5,0.7577378312773932,0.24226216872260697,1.3197176631846421,4.1277596302913135,-278,225,,
+hockey,nhl,2026_03_04,19:00,2025020970,Vegas Golden Knights,Detroit Red Wings,1.5,-1.5,0.6874422755520301,0.31255772444797003,1.4546675925581967,3.1994090108192643,-238,195,,
+hockey,nhl,2026_03_04,19:00,2025020971,Toronto Maple Leafs,New Jersey Devils,1.5,-1.5,0.7390715671758288,0.26092843282417144,1.353048939253937,3.8324685017131017,-265,215,,
+hockey,nhl,2026_03_04,22:00,2025020972,Carolina Hurricanes,Vancouver Canucks,-1.5,1.5,0.4692246693241374,0.5307753306758622,2.1311752458377384,1.8840363185806903,-108,-112,,
+hockey,nhl,2026_03_04,22:00,2025020973,New York Islanders,Anaheim Ducks,1.5,-1.5,0.7577378312773932,0.24226216872260697,1.3197176631846421,4.1277596302913135,-278,225,,
+hockey,nhl,2026_03_04,22:00,2025020974,St Louis Blues,Seattle Kraken,1.5,-1.5,0.7225089227659434,0.27749107723405675,1.3840659519771077,3.60371947800154,-218,180,,

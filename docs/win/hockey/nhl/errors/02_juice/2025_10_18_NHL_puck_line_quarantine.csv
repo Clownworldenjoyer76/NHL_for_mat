@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_10_18,15:00,2025020077,New York Islanders,Ottawa Senators,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,15:30,2025020078,Edmonton Oilers,New Jersey Devils,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,19:00,2025020079,Seattle Kraken,Toronto Maple Leafs,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,19:00,2025020081,Minnesota Wild,Philadelphia Flyers,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,19:00,2025020083,Dallas Stars,St Louis Blues,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,19:00,2025020084,Nashville Predators,Winnipeg Jets,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,21:00,2025020085,Boston Bruins,Colorado Avalanche,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,21:00,2025020086,Carolina Hurricanes,Los Angeles Kings,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,22:00,2025020087,Calgary Flames,Vegas Golden Knights,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_18,22:00,2025020088,Pittsburgh Penguins,San Jose Sharks,,,,,,,,,,,bad_puck_line_values

@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_11_03,7:30 PM EST,2025_11_03_Toronto Maple Leafs_Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,1.5,-1.5,0.579885578508592,0.4201144214914079,1.7244781333791754,2.3803039097063032,-161,141,,
-hockey,nhl,2025_11_03,8:30 PM EST,2025_11_03_St Louis Blues_Edmonton Oilers,Edmonton Oilers,St Louis Blues,-1.5,1.5,0.2852438089450131,0.714756191054987,3.5057728463890045,1.3990784725124108,170,-195,,
-hockey,nhl,2025_11_03,8:30 PM EST,2025_11_03_Nashville Predators_Vancouver Canucks,Vancouver Canucks,Nashville Predators,1.5,-1.5,0.7205187127655609,0.279481287234439,1.387889005910351,3.5780570853073392,-260,215,,
-hockey,nhl,2025_11_03,10:00 PM EST,2025_11_03_Seattle Kraken_Chicago Blackhawks,Chicago Blackhawks,Seattle Kraken,1.5,-1.5,0.5973620826812925,0.40263791731870757,1.6740265728140042,2.483621032662086,-195,170,,
+hockey,nhl,2025_11_03,19:30,2025020199,Pittsburgh Penguins,Toronto Maple Leafs,1.5,-1.5,0.579885578508592,0.4201144214914079,1.7244781333791754,2.3803039097063032,-161,141,,
+hockey,nhl,2025_11_03,20:30,2025020200,Edmonton Oilers,St Louis Blues,-1.5,1.5,0.2852438089450131,0.714756191054987,3.5057728463890045,1.3990784725124108,170,-195,,
+hockey,nhl,2025_11_03,20:30,2025020201,Vancouver Canucks,Nashville Predators,1.5,-1.5,0.7205187127655609,0.279481287234439,1.387889005910351,3.5780570853073392,-260,215,,
+hockey,nhl,2025_11_03,22:00,2025020202,Chicago Blackhawks,Seattle Kraken,1.5,-1.5,0.5973620826812925,0.40263791731870757,1.6740265728140042,2.483621032662086,-195,170,,

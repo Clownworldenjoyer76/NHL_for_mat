@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,NHL,2026_05_05,20:00,70558036,Minnesota Wild,Colorado Avalanche,1.5,-1.5,0.5569983528912541,0.4430016471087461,1.7953374454506432,2.257327950192755,-145,118,1.69,2.18
+hockey,nhl,2026_05_05,20:00,2025030232,Minnesota Wild,Colorado Avalanche,1.5,-1.5,0.5569983528912541,0.4430016471087461,1.7953374454506432,2.257327950192755,-145,118,1.69,2.18

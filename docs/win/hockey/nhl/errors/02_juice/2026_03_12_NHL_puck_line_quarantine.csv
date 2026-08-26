@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_12,19:00,2025021029,Anaheim Ducks,Toronto Maple Leafs,-1.5,1.5,0.2324976945378821,0.7675023054621178,4.3011179185566695,1.3029276822795912,210,-258,,,bad_juiced_decimal
+hockey,nhl,2026_03_12,19:00,2025021031,Columbus Blue Jackets,Florida Panthers,1.5,-1.5,0.6844631365306764,0.3155368634693233,1.4609990613500072,3.1692018137120788,-265,215,,,bad_juiced_decimal

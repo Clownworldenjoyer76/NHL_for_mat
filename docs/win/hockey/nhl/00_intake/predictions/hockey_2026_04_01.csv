@@ -1,4 +1,4 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","643d656ddcc5756af5e6115f9f134a28","2026_04_01","09:07 PM","Los Angeles Kings","St Louis Blues","0.564","0.436","2.40","3.08","5.48"
-"hockey","nhl","902c8f6ff45c6855541ed7cef351aed8","2026_04_01","08:42 PM","Colorado Avalanche","Vancouver Canucks","0.788","0.212","2.18","4.25","6.43"
-"hockey","nhl","96ceffc5fa63fb301b4128bb29041f01","2026_04_01","09:07 PM","San Jose Sharks","Anaheim Ducks","0.459","0.541","3.58","3.15","6.73"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021188,hockey,nhl,2026_04_01,20:30,Colorado Avalanche,Vancouver Canucks,0.788,0.212,2.18,4.25,6.43
+2025021189,hockey,nhl,2026_04_01,21:00,Los Angeles Kings,St Louis Blues,0.564,0.436,2.40,3.08,5.48
+2025021190,hockey,nhl,2026_04_01,21:00,San Jose Sharks,Anaheim Ducks,0.459,0.541,3.58,3.15,6.73

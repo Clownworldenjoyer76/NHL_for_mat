@@ -1,11 +1,11 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"efd342f9176c794b9effd595260264d0","hockey","nhl","2026_04_13","19:10","Philadelphia Flyers","Carolina Hurricanes","-105","-115","1.5","-1.5","5.5","-263","215","-135","114","1.95","1.87","1.38","3.15","1.74","2.14"
-"f85edd1853a7f222a98966be1584348d","hockey","nhl","2026_04_13","19:10","Tampa Bay Lightning","Detroit Red Wings","-204","170","-1.5","1.5","6.5","120","-143","105","-125","1.49","2.7","2.2","1.7","2.05","1.8"
-"71a2a22f2aeb6a68b093f9d31ffe835a","hockey","nhl","2026_04_13","19:10","Florida Panthers","New York Rangers","110","-130","1.5","-1.5","6.5","-250","205","114","-135","2.1","1.77","1.4","3.05","2.14","1.74"
-"7c23e65aed95672326f5b51d78a18746","hockey","nhl","2026_04_13","19:40","Toronto Maple Leafs","Dallas Stars","142","-169","1.5","-1.5","6.5","-192","160","110","-130","2.42","1.59","1.52","2.6","2.1","1.77"
-"3f7ae1ea8cc82f1934f0db4da52eb8cb","hockey","nhl","2026_04_13","20:10","St Louis Blues","Minnesota Wild","-102","-118","1.5","-1.5","5.5","-244","200","-135","114","1.98","1.85","1.41","3.0","1.74","2.14"
-"472be2fa83d65418ccd23cfe75d5ae49","hockey","nhl","2026_04_13","20:10","Nashville Predators","San Jose Sharks","-154","130","-1.5","1.5","6.5","164","-196","-105","-115","1.65","2.3","2.64","1.51","1.95","1.87"
-"543fd68bbc58d6300577c48ced1fe675","hockey","nhl","2026_04_13","20:40","Chicago Blackhawks","Buffalo Sabres","180","-217","1.5","-1.5","6.5","-135","114","102","-122","2.8","1.46","1.74","2.14","2.02","1.82"
-"63a04dd550f7203005f749be9394826c","hockey","nhl","2026_04_13","21:40","Edmonton Oilers","Colorado Avalanche","-105","-115","1.5","-1.5","6.5","-250","205","-115","-105","1.95","1.87","1.4","3.05","1.87","1.95"
-"a4e642bde213d01b2ee7c67659ab1b7f","hockey","nhl","2026_04_13","21:40","Seattle Kraken","Los Angeles Kings","124","-147","1.5","-1.5","5.5","-227","185","-125","105","2.24","1.68","1.44","2.85","1.8","2.05"
-"02cd436c4433adc651fc51ef06898b6d","hockey","nhl","2026_04_13","22:10","Vegas Golden Knights","Winnipeg Jets","-185","154","-1.5","1.5","5.5","136","-161","-130","110","1.54","2.54","2.36","1.62","1.77","2.1"
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025021282,,hockey,nhl,2026_04_13,19:00,Tampa Bay Lightning,Detroit Red Wings,-204,170,-1.5,1.5,6.5,120,-143,105,-125,1.49,2.7,2.2,1.7,2.05,1.8
+2025021283,,hockey,nhl,2026_04_13,19:00,Florida Panthers,New York Rangers,110,-130,1.5,-1.5,6.5,-250,205,114,-135,2.1,1.77,1.4,3.05,2.14,1.74
+2025021284,,hockey,nhl,2026_04_13,19:00,Philadelphia Flyers,Carolina Hurricanes,-105,-115,1.5,-1.5,5.5,-263,215,-135,114,1.95,1.87,1.38,3.15,1.74,2.14
+2025021285,,hockey,nhl,2026_04_13,19:30,Toronto Maple Leafs,Dallas Stars,142,-169,1.5,-1.5,6.5,-192,160,110,-130,2.42,1.59,1.52,2.6,2.1,1.77
+2025021286,,hockey,nhl,2026_04_13,20:00,St Louis Blues,Minnesota Wild,-102,-118,1.5,-1.5,5.5,-244,200,-135,114,1.98,1.85,1.41,3.0,1.74,2.14
+2025021287,,hockey,nhl,2026_04_13,20:00,Nashville Predators,San Jose Sharks,-154,130,-1.5,1.5,6.5,164,-196,-105,-115,1.65,2.3,2.64,1.51,1.95,1.87
+2025021288,,hockey,nhl,2026_04_13,20:30,Chicago Blackhawks,Buffalo Sabres,180,-217,1.5,-1.5,6.5,-135,114,102,-122,2.8,1.46,1.74,2.14,2.02,1.82
+2025021289,,hockey,nhl,2026_04_13,21:30,Edmonton Oilers,Colorado Avalanche,-105,-115,1.5,-1.5,6.5,-250,205,-115,-105,1.95,1.87,1.4,3.05,1.87,1.95
+2025021291,,hockey,nhl,2026_04_13,21:30,Seattle Kraken,Los Angeles Kings,124,-147,1.5,-1.5,5.5,-227,185,-125,105,2.24,1.68,1.44,2.85,1.8,2.05
+2025021290,,hockey,nhl,2026_04_13,22:00,Vegas Golden Knights,Winnipeg Jets,-185,154,-1.5,1.5,5.5,136,-161,-130,110,1.54,2.54,2.36,1.62,1.77,2.1

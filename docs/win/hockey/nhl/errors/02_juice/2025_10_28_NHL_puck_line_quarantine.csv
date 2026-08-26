@@ -1,0 +1,8 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_10_28,18:00,2025020151,Calgary Flames,Toronto Maple Leafs,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,19:00,2025020153,Anaheim Ducks,Florida Panthers,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,20:15,2025020158,Detroit Red Wings,St Louis Blues,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,21:30,2025020162,Utah Mammoth,Edmonton Oilers,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,22:00,2025020163,New York Rangers,Vancouver Canucks,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,22:30,2025020164,Montreal Canadiens,Seattle Kraken,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_28,23:00,2025020165,Los Angeles Kings,San Jose Sharks,,,,,,,,,,,bad_puck_line_values

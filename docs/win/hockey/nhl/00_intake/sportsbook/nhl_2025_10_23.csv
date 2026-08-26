@@ -1,13 +1,13 @@
-﻿"game_id","sport","league","game_date","game_time","home_team","away_team","home_dk_moneyline_american","away_dk_moneyline_american","home_puck_line","away_puck_line","total","home_dk_puck_line_american","away_dk_puck_line_american","dk_total_over_american","dk_total_under_american","home_dk_moneyline_decimal","away_dk_moneyline_decimal","home_dk_puck_line_decimal","away_dk_puck_line_decimal","dk_total_over_decimal","dk_total_under_decimal"
-"2025_10_23_Tampa Bay Lightning_Chicago Blackhawks","hockey","nhl","2025_10_23","6:45 PM EDT","Tampa Bay Lightning","Chicago Blackhawks","-300","240","","","6.0","","","-115","-105","","","","","",""
-"2025_10_23_Florida Panthers_Pittsburgh Penguins","hockey","nhl","2025_10_23","7:00 PM EDT","Florida Panthers","Pittsburgh Penguins","-220","180","-1.5","-1.5","6.0","-145","-135","-118","-102","","","","","",""
-"2025_10_23_Boston Bruins_Anaheim Ducks","hockey","nhl","2025_10_23","7:00 PM EDT","Boston Bruins","Anaheim Ducks","-120","100","","","6.0","","","-102","-118","","","","","",""
-"2025_10_23_Ottawa Senators_Philadelphia Flyers","hockey","nhl","2025_10_23","7:00 PM EDT","Ottawa Senators","Philadelphia Flyers","-160","135","-1.5","-1.5","6.0","-190","-180","-102","-118","","","","","",""
-"2025_10_23_New York Islanders_Detroit Red Wings","hockey","nhl","2025_10_23","7:00 PM EDT","New York Islanders","Detroit Red Wings","-140","115","","","6.0","","","100","-120","","","","","",""
-"2025_10_23_New York Rangers_San Jose Sharks","hockey","nhl","2025_10_23","7:00 PM EDT","New York Rangers","San Jose Sharks","-300","240","-1.5","-1.5","6.0","-118","-120","-105","-115","","","","","",""
-"2025_10_23_St Louis Blues_Utah Mammoth","hockey","nhl","2025_10_23","8:00 PM EDT","St Louis Blues","Utah Mammoth","-120","100","","","6.0","","","-110","-110","","","","","",""
-"2025_10_23_Nashville Predators_Vancouver Canucks","hockey","nhl","2025_10_23","8:00 PM EDT","Nashville Predators","Vancouver Canucks","-115","-105","-1.5","-1.5","5.5","-235","-275","-115","-105","","","","","",""
-"2025_10_23_Winnipeg Jets_Seattle Kraken","hockey","nhl","2025_10_23","8:00 PM EDT","Winnipeg Jets","Seattle Kraken","-235","195","","","5.5","","","-120","100","","","","","",""
-"2025_10_23_Edmonton Oilers_Montreal Canadiens","hockey","nhl","2025_10_23","9:00 PM EDT","Edmonton Oilers","Montreal Canadiens","-235","195","-1.5","-1.5","6.0","-130","-120","-125","105","","","","","",""
-"2025_10_23_Dallas Stars_Los Angeles Kings","hockey","nhl","2025_10_23","9:00 PM EDT","Dallas Stars","Los Angeles Kings","-165","135","-1.5","-1.5","6.0","-210","-175","-102","-118","","","","","",""
-"2025_10_23_Colorado Avalanche_Carolina Hurricanes","hockey","nhl","2025_10_23","9:00 PM EDT","Colorado Avalanche","Carolina Hurricanes","-130","105","","","6.0","","","-105","-115","","","","","",""
+﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
+2025020113,,hockey,nhl,2025_10_23,18:45,Tampa Bay Lightning,Chicago Blackhawks,-300,240,,,6.0,,,-115,-105,,,,,,
+2025020111,,hockey,nhl,2025_10_23,19:00,Boston Bruins,Anaheim Ducks,-120,100,,,6.0,,,-102,-118,,,,,,
+2025020112,,hockey,nhl,2025_10_23,19:00,Ottawa Senators,Philadelphia Flyers,-160,135,-1.5,-1.5,6.0,-190,-180,-102,-118,,,,,,
+2025020114,,hockey,nhl,2025_10_23,19:00,Florida Panthers,Pittsburgh Penguins,-220,180,-1.5,-1.5,6.0,-145,-135,-118,-102,,,,,,
+2025020115,,hockey,nhl,2025_10_23,19:00,New York Islanders,Detroit Red Wings,-140,115,,,6.0,,,100,-120,,,,,,
+2025020116,,hockey,nhl,2025_10_23,19:00,New York Rangers,San Jose Sharks,-300,240,-1.5,-1.5,6.0,-118,-120,-105,-115,,,,,,
+2025020117,,hockey,nhl,2025_10_23,20:00,St Louis Blues,Utah Mammoth,-120,100,,,6.0,,,-110,-110,,,,,,
+2025020118,,hockey,nhl,2025_10_23,20:00,Nashville Predators,Vancouver Canucks,-115,-105,-1.5,-1.5,5.5,-235,-275,-115,-105,,,,,,
+2025020120,,hockey,nhl,2025_10_23,20:00,Winnipeg Jets,Seattle Kraken,-235,195,,,5.5,,,-120,100,,,,,,
+2025020119,,hockey,nhl,2025_10_23,21:00,Dallas Stars,Los Angeles Kings,-165,135,-1.5,-1.5,6.0,-210,-175,-102,-118,,,,,,
+2025020121,,hockey,nhl,2025_10_23,21:00,Colorado Avalanche,Carolina Hurricanes,-130,105,,,6.0,,,-105,-115,,,,,,
+2025020122,,hockey,nhl,2025_10_23,21:00,Edmonton Oilers,Montreal Canadiens,-235,195,-1.5,-1.5,6.0,-130,-120,-125,105,,,,,,

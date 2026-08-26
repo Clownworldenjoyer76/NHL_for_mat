@@ -1,0 +1,11 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_10_25,12:30,2025020127,New York Islanders,Philadelphia Flyers,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,17:00,2025020129,Anaheim Ducks,Tampa Bay Lightning,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,17:00,2025020132,Buffalo Sabres,Toronto Maple Leafs,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,18:00,2025020131,Utah Mammoth,Minnesota Wild,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,19:00,2025020134,Columbus Blue Jackets,Pittsburgh Penguins,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,19:00,2025020135,Ottawa Senators,Washington Capitals,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,19:00,2025020136,Montreal Canadiens,Vancouver Canucks,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,20:00,2025020137,Los Angeles Kings,Nashville Predators,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,20:00,2025020138,Carolina Hurricanes,Dallas Stars,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_25,22:00,2025020139,Edmonton Oilers,Seattle Kraken,,,,,,,,,,,bad_puck_line_values

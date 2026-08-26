@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_New York Rangers_Boston Bruins,Boston Bruins,New York Rangers,-1.5,1.5,0.2216781717081453,0.7783218282918547,4.51104406128254,1.284815565554228,207,-250,,
-hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_Tampa Bay Lightning_Utah Mammoth,Utah Mammoth,Tampa Bay Lightning,1.5,-1.5,0.6226274689072036,0.37737253109279634,1.606096823442655,2.6499014040693356,-175,153,,
-hockey,nhl,2026_01_26,7:00 PM EST,2026_01_26_Philadelphia Flyers_New York Islanders,New York Islanders,Philadelphia Flyers,1.5,-1.5,0.6971363118115781,0.3028636881884219,1.4344396971682631,3.3018154338062002,-260,215,,
-hockey,nhl,2026_01_26,8:30 PM EST,2026_01_26_Edmonton Oilers_Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,1.5,-1.5,0.5666494159727818,0.4333505840272185,1.7647596058724844,2.3076004437487745,-115,-105,,
+hockey,nhl,2026_01_26,19:00,2025020825,Utah Mammoth,Tampa Bay Lightning,1.5,-1.5,0.6226274689072036,0.37737253109279634,1.606096823442655,2.6499014040693356,-175,153,,
+hockey,nhl,2026_01_26,19:00,2025020826,Boston Bruins,New York Rangers,-1.5,1.5,0.2216781717081453,0.7783218282918547,4.51104406128254,1.284815565554228,207,-250,,
+hockey,nhl,2026_01_26,19:00,2025020827,New York Islanders,Philadelphia Flyers,1.5,-1.5,0.6971363118115781,0.3028636881884219,1.4344396971682631,3.3018154338062002,-260,215,,
+hockey,nhl,2026_01_26,20:30,2025020829,Anaheim Ducks,Edmonton Oilers,1.5,-1.5,0.5666494159727818,0.4333505840272185,1.7647596058724844,2.3076004437487745,-115,-105,,

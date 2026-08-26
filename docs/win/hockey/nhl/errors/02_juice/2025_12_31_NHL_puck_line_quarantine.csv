@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_31,16:00,2025020624,Tampa Bay Lightning,Anaheim Ducks,-1.5,1.5,0.3351398816041945,0.6648601183958056,2.9838287082198587,1.504075778244648,177,-205,,,bad_juiced_decimal
+hockey,nhl,2025_12_31,18:30,2025020626,Winnipeg Jets,Detroit Red Wings,1.5,-1.5,0.6851681842033954,0.3148318157966046,1.4594956728217627,3.1762990581804624,-230,192,,,bad_juiced_decimal
+hockey,nhl,2025_12_31,19:00,2025020627,New Jersey Devils,Columbus Blue Jackets,1.5,-1.5,0.6991509125997588,0.3008490874002409,1.4303063644464804,3.323925655355666,-260,215,,,bad_juiced_decimal
+hockey,nhl,2025_12_31,21:30,2025020630,Philadelphia Flyers,Calgary Flames,1.5,-1.5,0.6856066508595935,0.3143933491404064,1.4585622802028384,3.180728863171356,-200,174,,,bad_juiced_decimal

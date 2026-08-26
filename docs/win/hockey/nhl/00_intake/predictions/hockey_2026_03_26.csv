@@ -1,14 +1,14 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","e22bc7bc35798e005e96cc45e87a2d42","2026_03_26","08:07 PM","Nashville Predators","New Jersey Devils","0.507","0.493","3.02","3.09","6.11"
-"hockey","nhl","6f154e5425ac7de91c666137975d388d","2026_03_26","07:07 PM","New York Islanders","Dallas Stars","0.448","0.552","3.17","2.61","5.78"
-"hockey","nhl","0d07b0bc16914cd16d27e6efdda5709c","2026_03_26","07:07 PM","Philadelphia Flyers","Chicago Blackhawks","0.617","0.383","2.29","3.38","5.67"
-"hockey","nhl","8642b100ab8ed115ed6acecb443e230e","2026_03_26","07:07 PM","Ottawa Senators","Pittsburgh Penguins","0.589","0.411","2.68","3.63","6.31"
-"hockey","nhl","e177659727b1af9292acb2a8a17a5a8a","2026_03_26","07:07 PM","Montreal Canadiens","Columbus Blue Jackets","0.535","0.465","3.03","3.40","6.43"
-"hockey","nhl","86b9d3367318cc518bb08f3eb5b94e7b","2026_03_26","07:07 PM","Florida Panthers","Minnesota Wild","0.445","0.555","3.38","2.78","6.16"
-"hockey","nhl","63ff0b1c118990abba7fba4bdded8c57","2026_03_26","07:07 PM","Tampa Bay Lightning","Seattle Kraken","0.727","0.273","2.33","3.81","6.14"
-"hockey","nhl","3959df0512860392efd8dc3a1066f611","2026_03_26","09:07 PM","Utah Mammoth","Washington Capitals","0.543","0.457","2.75","3.21","5.96"
-"hockey","nhl","6d199999a290c76b534d073c7abfdcd7","2026_03_26","08:07 PM","Winnipeg Jets","Colorado Avalanche","0.366","0.634","3.62","2.48","6.10"
-"hockey","nhl","10559c030c7293bc53b2d0f326c45262","2026_03_26","08:07 PM","St Louis Blues","San Jose Sharks","0.579","0.421","2.66","3.51","6.17"
-"hockey","nhl","6fd356a13c8665331b6f21b565459901","2026_03_26","09:07 PM","Calgary Flames","Anaheim Ducks","0.466","0.534","3.34","2.97","6.31"
-"hockey","nhl","f6d65306910a9e6269ab476bdfa69cb1","2026_03_26","09:37 PM","Vegas Golden Knights","Edmonton Oilers","0.594","0.406","3.01","4.01","7.02"
-"hockey","nhl","cd42b2a632ccfc158be49e864b62b3c8","2026_03_26","10:07 PM","Vancouver Canucks","Los Angeles Kings","0.395","0.605","3.44","2.40","5.84"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021137,hockey,nhl,2026_03_26,19:00,Montreal Canadiens,Columbus Blue Jackets,0.535,0.465,3.03,3.40,6.43
+2025021138,hockey,nhl,2026_03_26,19:00,Ottawa Senators,Pittsburgh Penguins,0.589,0.411,2.68,3.63,6.31
+2025021139,hockey,nhl,2026_03_26,19:00,Tampa Bay Lightning,Seattle Kraken,0.727,0.273,2.33,3.81,6.14
+2025021140,hockey,nhl,2026_03_26,19:00,Florida Panthers,Minnesota Wild,0.445,0.555,3.38,2.78,6.16
+2025021141,hockey,nhl,2026_03_26,19:00,New York Islanders,Dallas Stars,0.448,0.552,3.17,2.61,5.78
+2025021142,hockey,nhl,2026_03_26,19:00,Philadelphia Flyers,Chicago Blackhawks,0.617,0.383,2.29,3.38,5.67
+2025021143,hockey,nhl,2026_03_26,20:00,St Louis Blues,San Jose Sharks,0.579,0.421,2.66,3.51,6.17
+2025021144,hockey,nhl,2026_03_26,20:00,Nashville Predators,New Jersey Devils,0.507,0.493,3.02,3.09,6.11
+2025021145,hockey,nhl,2026_03_26,20:00,Winnipeg Jets,Colorado Avalanche,0.366,0.634,3.62,2.48,6.10
+2025021146,hockey,nhl,2026_03_26,21:00,Utah Mammoth,Washington Capitals,0.543,0.457,2.75,3.21,5.96
+2025021147,hockey,nhl,2026_03_26,21:00,Calgary Flames,Anaheim Ducks,0.466,0.534,3.34,2.97,6.31
+2025021148,hockey,nhl,2026_03_26,21:30,Vegas Golden Knights,Edmonton Oilers,0.594,0.406,3.01,4.01,7.02
+2025021149,hockey,nhl,2026_03_26,22:00,Vancouver Canucks,Los Angeles Kings,0.395,0.605,3.44,2.40,5.84

@@ -1,0 +1,6 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_08,19:00,2025020683,Florida Panthers,Montreal Canadiens,-1.5,1.5,0.3210534436500752,0.6789465563499248,3.1147462199157308,1.4728699787153885,192,-230,,,bad_juiced_decimal
+hockey,nhl,2026_01_08,19:00,2025020685,Buffalo Sabres,New York Rangers,-1.5,1.5,0.1943922954857828,0.8056077045142174,5.144236799617073,1.2412989528234484,230,-280,,,bad_juiced_decimal
+hockey,nhl,2026_01_08,19:00,2025020687,New Jersey Devils,Pittsburgh Penguins,1.5,-1.5,0.7273474973653293,0.2726525026346708,1.37485865232547,3.667672184692571,-260,215,,,bad_juiced_decimal
+hockey,nhl,2026_01_08,20:00,2025020689,New York Islanders,Nashville Predators,1.5,-1.5,0.7680472680990371,0.2319527319009628,1.3020031989372995,4.311223203988695,-265,219,,,bad_juiced_decimal
+hockey,nhl,2026_01_08,20:00,2025020690,Edmonton Oilers,Winnipeg Jets,-1.5,1.5,0.2734801939147868,0.7265198060852133,3.6565719282457,1.3764249668407669,215,-260,,,bad_juiced_decimal

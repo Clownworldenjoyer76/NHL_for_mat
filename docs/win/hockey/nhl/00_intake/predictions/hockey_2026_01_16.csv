@@ -1,6 +1,6 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_01_16_Carolina Hurricanes_Florida Panthers","2026_01_16","07:07 PM","Carolina Hurricanes","Florida Panthers","0.589","0.411","2.46","3.41","5.87"
-"hockey","nhl","2026_01_16_St Louis Blues_Tampa Bay Lightning","2026_01_16","08:07 PM","St Louis Blues","Tampa Bay Lightning","0.373","0.627","3.38","2.27","5.65"
-"hockey","nhl","2026_01_16_Detroit Red Wings_San Jose Sharks","2026_01_16","07:07 PM","Detroit Red Wings","San Jose Sharks","0.646","0.354","2.57","3.76","6.33"
-"hockey","nhl","2026_01_16_Colorado Avalanche_Nashville Predators","2026_01_16","09:07 PM","Colorado Avalanche","Nashville Predators","0.728","0.272","2.41","3.89","6.30"
-"hockey","nhl","2026_01_16_Los Angeles Kings_Anaheim Ducks","2026_01_16","10:37 PM","Los Angeles Kings","Anaheim Ducks","0.577","0.423","2.69","3.52","6.21"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020749,hockey,nhl,2026_01_16,19:00,Detroit Red Wings,San Jose Sharks,0.646,0.354,2.57,3.76,6.33
+2025020750,hockey,nhl,2026_01_16,19:00,Carolina Hurricanes,Florida Panthers,0.589,0.411,2.46,3.41,5.87
+2025020751,hockey,nhl,2026_01_16,20:00,St Louis Blues,Tampa Bay Lightning,0.373,0.627,3.38,2.27,5.65
+2025020752,hockey,nhl,2026_01_16,21:00,Colorado Avalanche,Nashville Predators,0.728,0.272,2.41,3.89,6.30
+2025020753,hockey,nhl,2026_01_16,22:30,Los Angeles Kings,Anaheim Ducks,0.577,0.423,2.69,3.52,6.21

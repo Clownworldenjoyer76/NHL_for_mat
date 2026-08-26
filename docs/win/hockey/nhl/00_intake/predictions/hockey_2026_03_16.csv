@@ -1,6 +1,6 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_03_16_New Jersey Devils_Boston Bruins","2026_03_16","07:07 PM","New Jersey Devils","Boston Bruins","0.508","0.492","2.92","3.00","5.92"
-"hockey","nhl","2026_03_16_New York Rangers_Los Angeles Kings","2026_03_16","07:07 PM","New York Rangers","Los Angeles Kings","0.526","0.474","2.68","2.96","5.64"
-"hockey","nhl","2026_03_16_Colorado Avalanche_Pittsburgh Penguins","2026_03_16","09:37 PM","Colorado Avalanche","Pittsburgh Penguins","0.695","0.305","2.65","4.02","6.67"
-"hockey","nhl","2026_03_16_Detroit Red Wings_Calgary Flames","2026_03_16","07:07 PM","Detroit Red Wings","Calgary Flames","0.585","0.415","2.45","3.37","5.82"
-"hockey","nhl","2026_03_16_Dallas Stars_Utah Mammoth","2026_03_16","08:07 PM","Dallas Stars","Utah Mammoth","0.564","0.436","2.57","3.25","5.82"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021063,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames,0.585,0.415,2.45,3.37,5.82
+2025021064,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins,0.508,0.492,2.92,3.00,5.92
+2025021065,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings,0.526,0.474,2.68,2.96,5.64
+2025021066,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth,0.564,0.436,2.57,3.25,5.82
+2025021067,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins,0.695,0.305,2.65,4.02,6.67

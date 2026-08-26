@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2026_01_05,7:00 PM EST,2026_01_05_New York Rangers_Utah Mammoth,Utah Mammoth,New York Rangers,1.5,-1.5,0.738254789306944,0.261745210693056,1.354545902694077,3.820509255363921,-245,203,,
-hockey,nhl,2026_01_05,7:00 PM EST,2026_01_05_Washington Capitals_Anaheim Ducks,Anaheim Ducks,Washington Capitals,1.5,-1.5,0.5911648046562523,0.408835195343748,1.6915756691257613,2.445973368704721,-195,170,,
-hockey,nhl,2026_01_05,7:30 PM EST,2026_01_05_Ottawa Senators_Detroit Red Wings,Detroit Red Wings,Ottawa Senators,1.5,-1.5,0.6189761214966418,0.3810238785033583,1.6155712074676944,2.624507429633931,-195,170,,
-hockey,nhl,2026_01_05,9:30 PM EST,2026_01_05_Calgary Flames_Seattle Kraken,Seattle Kraken,Calgary Flames,1.5,-1.5,0.6044716220749886,0.39552837792501094,1.6543373807479478,2.5282635982938046,-195,170,,
-hockey,nhl,2026_01_05,10:30 PM EST,2026_01_05_Los Angeles Kings_Minnesota Wild,Minnesota Wild,Los Angeles Kings,1.5,-1.5,0.7225089227659434,0.27749107723405675,1.3840659519771077,3.60371947800154,-290,237,,
+hockey,nhl,2026_01_05,19:00,2025020662,Utah Mammoth,New York Rangers,1.5,-1.5,0.738254789306944,0.261745210693056,1.354545902694077,3.820509255363921,-245,203,,
+hockey,nhl,2026_01_05,19:00,2025020663,Anaheim Ducks,Washington Capitals,1.5,-1.5,0.5911648046562523,0.408835195343748,1.6915756691257613,2.445973368704721,-195,170,,
+hockey,nhl,2026_01_05,19:30,2025020664,Detroit Red Wings,Ottawa Senators,1.5,-1.5,0.6189761214966418,0.3810238785033583,1.6155712074676944,2.624507429633931,-195,170,,
+hockey,nhl,2026_01_05,21:30,2025020665,Seattle Kraken,Calgary Flames,1.5,-1.5,0.6044716220749886,0.39552837792501094,1.6543373807479478,2.5282635982938046,-195,170,,
+hockey,nhl,2026_01_05,22:30,2025020666,Minnesota Wild,Los Angeles Kings,1.5,-1.5,0.7225089227659434,0.27749107723405675,1.3840659519771077,3.60371947800154,-290,237,,

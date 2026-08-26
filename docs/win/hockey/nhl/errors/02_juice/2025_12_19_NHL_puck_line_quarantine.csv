@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_19,19:00,2025020544,Carolina Hurricanes,Florida Panthers,-1.5,1.5,0.2172604238914028,0.7827395761085969,4.602771098798223,1.2775641228868444,203,-245,,,bad_juiced_decimal
+hockey,nhl,2025_12_19,22:00,2025020548,Dallas Stars,Anaheim Ducks,-1.5,1.5,0.3070073529895918,0.6929926470104082,3.257250975464103,1.443016753949744,209,-252,,,bad_juiced_decimal

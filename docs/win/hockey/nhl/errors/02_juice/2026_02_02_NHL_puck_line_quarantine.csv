@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_02_02,19:00,2025020877,Ottawa Senators,Pittsburgh Penguins,1.5,-1.5,0.7195775128865591,0.2804224871134407,1.389704350249268,3.566047824101442,-250,207,,,bad_juiced_decimal
+hockey,nhl,2026_02_02,19:00,2025020878,New York Islanders,Washington Capitals,1.5,-1.5,0.7077167595058694,0.2922832404941307,1.4129946572103278,3.4213388297919907,-215,183,,,bad_juiced_decimal
+hockey,nhl,2026_02_02,20:30,2025020881,San Jose Sharks,Chicago Blackhawks,-1.5,1.5,0.2532004453599985,0.7467995546400015,3.94944013063724,1.3390473973729873,219,-265,,,bad_juiced_decimal
+hockey,nhl,2026_02_02,22:00,2025020885,Toronto Maple Leafs,Calgary Flames,-1.5,1.5,0.3087782925514998,0.6912217074485003,3.2385696278607874,1.4467138245575213,203,-245,,,bad_juiced_decimal

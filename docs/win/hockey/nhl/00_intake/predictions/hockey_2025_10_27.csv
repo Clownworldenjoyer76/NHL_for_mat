@@ -1,3 +1,3 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_10_27_Pittsburgh Penguins_St Louis Blues","2025_10_27","07:07 PM","Pittsburgh Penguins","St Louis Blues","0.5","0.5","2.96","2.96","5.92"
-"hockey","nhl","2025_10_27_Ottawa Senators_Boston Bruins","2025_10_27","07:37 PM","Ottawa Senators","Boston Bruins","0.64","0.36","2.33","3.49","5.82"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020148,hockey,nhl,2025_10_27,19:00,Pittsburgh Penguins,St Louis Blues,0.5,0.5,2.96,2.96,5.92
+2025020149,hockey,nhl,2025_10_27,19:30,Ottawa Senators,Boston Bruins,0.64,0.36,2.33,3.49,5.82

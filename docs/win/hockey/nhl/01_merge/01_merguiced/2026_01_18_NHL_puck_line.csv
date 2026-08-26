@@ -1,4 +1,4 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2026_01_18,2:00 PM EST,2026_01_18_Dallas Stars_Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,1.5,-1.5,0.7266854630071719,0.2733145369928278,1.376111193778113,3.658788189617011,-270,222,,
-hockey,nhl,2026_01_18,5:00 PM EST,2026_01_18_Detroit Red Wings_Ottawa Senators,Ottawa Senators,Detroit Red Wings,1.5,-1.5,0.6315311545557233,0.3684688454442767,1.5834531563268504,2.7139336537238647,-205,177,,
-hockey,nhl,2026_01_18,8:00 PM EST,2026_01_18_Edmonton Oilers_St Louis Blues,St Louis Blues,Edmonton Oilers,1.5,-1.5,0.6552399072139665,0.3447600927860339,1.5261585703043163,2.9005677307919253,-160,140,,
+hockey,nhl,2026_01_18,14:00,2025020767,Tampa Bay Lightning,Dallas Stars,1.5,-1.5,0.7266854630071719,0.2733145369928278,1.376111193778113,3.658788189617011,-270,222,,
+hockey,nhl,2026_01_18,17:00,2025020768,Ottawa Senators,Detroit Red Wings,1.5,-1.5,0.6315311545557233,0.3684688454442767,1.5834531563268504,2.7139336537238647,-205,177,,
+hockey,nhl,2026_01_18,20:00,2025020769,St Louis Blues,Edmonton Oilers,1.5,-1.5,0.6552399072139665,0.3447600927860339,1.5261585703043163,2.9005677307919253,-160,140,,

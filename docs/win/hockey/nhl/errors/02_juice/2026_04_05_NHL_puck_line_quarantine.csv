@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_05,13:00,2025021222,Minnesota Wild,Detroit Red Wings,-1.5,1.5,0.2998589006055276,0.7001410993944726,3.334901842101817,1.4282835286556737,215,-263,3.15,1.38,bad_juiced_decimal
+hockey,nhl,2026_04_05,17:00,2025021225,Carolina Hurricanes,Ottawa Senators,-1.5,1.5,0.3320105315104706,0.6679894684895293,3.011952649364868,1.4970295897946104,200,-244,3.0,1.41,bad_juiced_decimal
+hockey,nhl,2026_04_05,19:00,2025021227,Washington Capitals,New York Rangers,-1.5,1.5,0.2104860636262338,0.7895139363737661,4.750908363110106,1.266602087599613,225,-278,3.25,1.36,bad_juiced_decimal

@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Buffalo Sabres_Chicago Blackhawks,Chicago Blackhawks,Buffalo Sabres,1.5,-1.5,0.6455995586076443,0.3544004413923557,1.5489477752380845,2.821666914610027,-155,135,,
-hockey,nhl,2025_11_21,7:00 PM EST,2025_11_21_Pittsburgh Penguins_Minnesota Wild,Minnesota Wild,Pittsburgh Penguins,1.5,-1.5,0.6917111882234784,0.3082888117765218,1.4456900756055422,3.2437116165113995,-265,219,,
-hockey,nhl,2025_11_21,8:00 PM EST,2025_11_21_Winnipeg Jets_Carolina Hurricanes,Carolina Hurricanes,Winnipeg Jets,-1.5,1.5,0.24238416556835152,0.7576158344316486,4.125682045504757,1.3199301737802038,207,-250,,
-hockey,nhl,2025_11_21,10:30 PM EST,2025_11_21_Los Angeles Kings_Boston Bruins,Boston Bruins,Los Angeles Kings,1.5,-1.5,0.5782953528537144,0.4217046471462854,1.7292201901075281,2.3713279110559795,-170,149,,
+hockey,nhl,2025_11_21,19:00,2025020331,Chicago Blackhawks,Buffalo Sabres,1.5,-1.5,0.6455995586076443,0.3544004413923557,1.5489477752380845,2.821666914610027,-155,135,,
+hockey,nhl,2025_11_21,19:00,2025020332,Minnesota Wild,Pittsburgh Penguins,1.5,-1.5,0.6917111882234784,0.3082888117765218,1.4456900756055422,3.2437116165113995,-265,219,,
+hockey,nhl,2025_11_21,20:00,2025020333,Carolina Hurricanes,Winnipeg Jets,-1.5,1.5,0.24238416556835152,0.7576158344316486,4.125682045504757,1.3199301737802038,207,-250,,
+hockey,nhl,2025_11_21,22:30,2025020334,Boston Bruins,Los Angeles Kings,1.5,-1.5,0.5782953528537144,0.4217046471462854,1.7292201901075281,2.3713279110559795,-170,149,,

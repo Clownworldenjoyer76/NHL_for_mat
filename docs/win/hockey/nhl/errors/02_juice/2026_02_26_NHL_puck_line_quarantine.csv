@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_02_26,19:00,2025020918,Columbus Blue Jackets,Boston Bruins,1.5,-1.5,0.6979468980994126,0.3020531019005874,1.4327737578934898,3.310676148358585,-270,220,,,bad_juiced_decimal
+hockey,nhl,2026_02_26,20:00,2025020925,Seattle Kraken,St Louis Blues,1.5,-1.5,0.6866086674516634,0.3133913325483367,1.4564336971035967,3.190898713976917,-218,180,,,bad_juiced_decimal
+hockey,nhl,2026_02_26,22:00,2025020928,Calgary Flames,San Jose Sharks,1.5,-1.5,0.7284756183254925,0.2715243816745074,1.3727295393889036,3.682910513718654,-230,190,,,bad_juiced_decimal
+hockey,nhl,2026_02_26,22:30,2025020929,Edmonton Oilers,Los Angeles Kings,-1.5,1.5,0.2613760460447391,0.7386239539552608,3.8259053005524177,1.3538688999254564,225,-278,,,bad_juiced_decimal

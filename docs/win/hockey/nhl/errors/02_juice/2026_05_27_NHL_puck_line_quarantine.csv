@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_05_27,20:00,2025030314,Carolina Hurricanes,Montreal Canadiens,-1.5,1.5,0.3044715661282081,0.6955284338717918,3.284378941247065,1.4377557426851828,168,-208,2.68,1.48,bad_juiced_decimal

@@ -1,0 +1,5 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_01_23,19:00,2025020802,Vegas Golden Knights,Toronto Maple Leafs,-1.5,1.5,0.2677576298597697,0.7322423701402303,3.734720838856099,1.3656680366754683,211,-255,,,bad_juiced_decimal
+hockey,nhl,2026_01_23,21:00,2025020806,Washington Capitals,Calgary Flames,-1.5,1.5,0.331890817403169,0.6681091825968315,3.0130390705725247,1.496761346870227,183,-215,,,bad_juiced_decimal
+hockey,nhl,2026_01_23,22:00,2025020808,New York Rangers,San Jose Sharks,1.5,-1.5,0.7870955310604026,0.2129044689395974,1.2704938098845069,4.696942271717684,-215,183,,,bad_juiced_decimal
+hockey,nhl,2026_01_23,22:00,2025020809,Anaheim Ducks,Seattle Kraken,1.5,-1.5,0.744253931891126,0.2557460681088738,1.3436274329905538,3.910128540370323,-255,211,,,bad_juiced_decimal

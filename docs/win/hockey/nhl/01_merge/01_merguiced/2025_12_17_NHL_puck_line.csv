@@ -1,6 +1,6 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_12_17,7:00 PM EST,2025_12_17_Florida Panthers_Los Angeles Kings,Los Angeles Kings,Florida Panthers,1.5,-1.5,0.5941851204580182,0.4058148795419818,1.68297718264834,2.464177757919173,-230,192,,
-hockey,nhl,2025_12_17,7:30 PM EST,2025_12_17_Detroit Red Wings_Utah Mammoth,Utah Mammoth,Detroit Red Wings,1.5,-1.5,0.768716853497193,0.231283146502807,1.3008690982259719,4.32370458081719,-235,195,,
-hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_St Louis Blues_Winnipeg Jets,Winnipeg Jets,St Louis Blues,-1.5,1.5,0.3933133315636025,0.6066866684363977,2.542502172566939,1.648297304071773,180,-210,,
-hockey,nhl,2025_12_17,8:00 PM EST,2025_12_17_Nashville Predators_Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,-1.5,1.5,0.44252619091554557,0.5574738090844542,2.2597532542222933,1.7938062447136516,145,-165,,
-hockey,nhl,2025_12_17,10:00 PM EST,2025_12_17_Vegas Golden Knights_New Jersey Devils,New Jersey Devils,Vegas Golden Knights,1.5,-1.5,0.5910669510674182,0.40893304893258153,1.6918557165039974,2.4453880717399885,-165,145,,
+hockey,nhl,2025_12_17,19:00,2025020529,Los Angeles Kings,Florida Panthers,1.5,-1.5,0.5941851204580182,0.4058148795419818,1.68297718264834,2.464177757919173,-230,192,,
+hockey,nhl,2025_12_17,19:30,2025020530,Utah Mammoth,Detroit Red Wings,1.5,-1.5,0.768716853497193,0.231283146502807,1.3008690982259719,4.32370458081719,-235,195,,
+hockey,nhl,2025_12_17,20:00,2025020531,Winnipeg Jets,St Louis Blues,-1.5,1.5,0.3933133315636025,0.6066866684363977,2.542502172566939,1.648297304071773,180,-210,,
+hockey,nhl,2025_12_17,20:00,2025020532,Carolina Hurricanes,Nashville Predators,-1.5,1.5,0.44252619091554557,0.5574738090844542,2.2597532542222933,1.7938062447136516,145,-165,,
+hockey,nhl,2025_12_17,22:00,2025020533,New Jersey Devils,Vegas Golden Knights,1.5,-1.5,0.5910669510674182,0.40893304893258153,1.6918557165039974,2.4453880717399885,-165,145,,

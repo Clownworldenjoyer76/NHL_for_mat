@@ -1,16 +1,16 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","d6ba018d03f358ce5b9d7ae71dee158b","2026_04_04","07:07 PM","New Jersey Devils","Montreal Canadiens","0.468","0.532","3.26","2.92","6.18"
-"hockey","nhl","af25a136197dda17504d12b2e718e064","2026_04_04","07:07 PM","Carolina Hurricanes","New York Islanders","0.693","0.307","2.34","3.70","6.04"
-"hockey","nhl","87131d2c1470ca45e97a786b1d493dd1","2026_04_04","12:37 PM","New York Rangers","Detroit Red Wings","0.493","0.507","2.99","2.92","5.91"
-"hockey","nhl","64e14f827ab380b85a4caa6d0ecf2e01","2026_04_04","05:07 PM","Pittsburgh Penguins","Florida Panthers","0.575","0.425","2.72","3.53","6.25"
-"hockey","nhl","675b2a5b971984b9db671086c8506641","2026_04_04","05:07 PM","Tampa Bay Lightning","Boston Bruins","0.627","0.373","2.59","3.71","6.30"
-"hockey","nhl","09760738a34b94ba4ba415e0bddf1247","2026_04_04","07:07 PM","Washington Capitals","Buffalo Sabres","0.52","0.48","3.04","3.25","6.29"
-"hockey","nhl","ac4f66d3e9136c3cfdc9fe87dac43605","2026_04_04","01:07 PM","Ottawa Senators","Minnesota Wild","0.528","0.472","2.87","3.17","6.04"
-"hockey","nhl","7768959b2f03475f8b98c0c2fb98daf2","2026_04_04","07:07 PM","Los Angeles Kings","Toronto Maple Leafs","0.584","0.416","2.45","3.36","5.81"
-"hockey","nhl","dd1a78e5e92c976caf37a08360a2aafc","2026_04_04","07:07 PM","Columbus Blue Jackets","Winnipeg Jets","0.562","0.438","2.63","3.29","5.92"
-"hockey","nhl","4ad55216cedd32a30c0f186ae9ebef8e","2026_04_04","10:07 PM","Seattle Kraken","Chicago Blackhawks","0.557","0.443","2.67","3.27","5.94"
-"hockey","nhl","f9c046179b41e26a68b983a8377ec9a2","2026_04_04","10:07 PM","San Jose Sharks","Nashville Predators","0.476","0.524","3.33","3.07","6.40"
-"hockey","nhl","4ed3c0ed86d423636d9b952394d07287","2026_04_04","10:07 PM","Anaheim Ducks","Calgary Flames","0.561","0.439","2.87","3.52","6.39"
-"hockey","nhl","a383435cbbba66da650781837ddb1720","2026_04_04","03:20 PM","Dallas Stars","Colorado Avalanche","0.474","0.526","3.24","2.96","6.20"
-"hockey","nhl","b222a97178c30b2c7bc2338b4347790d","2026_04_04","10:07 PM","Edmonton Oilers","Vegas Golden Knights","0.47","0.53","3.71","3.39","7.10"
-"hockey","nhl","c81b746ea655695add0802e3fc1e429e","2026_04_04","07:07 PM","Vancouver Canucks","Utah Mammoth","0.338","0.662","3.67","2.42","6.09"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021207,hockey,nhl,2026_04_04,12:30,New York Rangers,Detroit Red Wings,0.493,0.507,2.99,2.92,5.91
+2025021208,hockey,nhl,2026_04_04,13:00,Ottawa Senators,Minnesota Wild,0.528,0.472,2.87,3.17,6.04
+2025021209,hockey,nhl,2026_04_04,15:00,Dallas Stars,Colorado Avalanche,0.474,0.526,3.24,2.96,6.20
+2025021210,hockey,nhl,2026_04_04,17:00,Tampa Bay Lightning,Boston Bruins,0.627,0.373,2.59,3.71,6.30
+2025021211,hockey,nhl,2026_04_04,17:00,Pittsburgh Penguins,Florida Panthers,0.575,0.425,2.72,3.53,6.25
+2025021212,hockey,nhl,2026_04_04,19:00,New Jersey Devils,Montreal Canadiens,0.468,0.532,3.26,2.92,6.18
+2025021213,hockey,nhl,2026_04_04,19:00,Washington Capitals,Buffalo Sabres,0.52,0.48,3.04,3.25,6.29
+2025021214,hockey,nhl,2026_04_04,19:00,Carolina Hurricanes,New York Islanders,0.693,0.307,2.34,3.70,6.04
+2025021215,hockey,nhl,2026_04_04,19:00,Columbus Blue Jackets,Winnipeg Jets,0.562,0.438,2.63,3.29,5.92
+2025021216,hockey,nhl,2026_04_04,19:00,Vancouver Canucks,Utah Mammoth,0.338,0.662,3.67,2.42,6.09
+2025021217,hockey,nhl,2026_04_04,19:00,Los Angeles Kings,Toronto Maple Leafs,0.584,0.416,2.45,3.36,5.81
+2025021218,hockey,nhl,2026_04_04,22:00,Edmonton Oilers,Vegas Golden Knights,0.47,0.53,3.71,3.39,7.10
+2025021219,hockey,nhl,2026_04_04,22:00,Anaheim Ducks,Calgary Flames,0.561,0.439,2.87,3.52,6.39
+2025021220,hockey,nhl,2026_04_04,22:00,San Jose Sharks,Nashville Predators,0.476,0.524,3.33,3.07,6.40
+2025021221,hockey,nhl,2026_04_04,22:00,Seattle Kraken,Chicago Blackhawks,0.557,0.443,2.67,3.27,5.94

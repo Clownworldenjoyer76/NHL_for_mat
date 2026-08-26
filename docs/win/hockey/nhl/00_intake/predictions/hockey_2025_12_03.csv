@@ -1,6 +1,6 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2025_12_03_New Jersey Devils_Dallas Stars","2025_12_03","07:07 PM","New Jersey Devils","Dallas Stars","0.547","0.453","2.76","3.27","6.03"
-"hockey","nhl","2025_12_03_Philadelphia Flyers_Buffalo Sabres","2025_12_03","07:37 PM","Philadelphia Flyers","Buffalo Sabres","0.546","0.454","2.75","3.25","6.00"
-"hockey","nhl","2025_12_03_Montreal Canadiens_Winnipeg Jets","2025_12_03","07:37 PM","Montreal Canadiens","Winnipeg Jets","0.469","0.531","3.07","2.73","5.80"
-"hockey","nhl","2025_12_03_San Jose Sharks_Washington Capitals","2025_12_03","10:07 PM","San Jose Sharks","Washington Capitals","0.412","0.588","3.51","2.56","6.07"
-"hockey","nhl","2025_12_03_Anaheim Ducks_Utah Mammoth","2025_12_03","10:22 PM","Anaheim Ducks","Utah Mammoth","0.528","0.472","3.00","3.30","6.30"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020421,hockey,nhl,2025_12_03,19:00,New Jersey Devils,Dallas Stars,0.547,0.453,2.76,3.27,6.03
+2025020422,hockey,nhl,2025_12_03,19:30,Montreal Canadiens,Winnipeg Jets,0.469,0.531,3.07,2.73,5.80
+2025020423,hockey,nhl,2025_12_03,19:30,Philadelphia Flyers,Buffalo Sabres,0.546,0.454,2.75,3.25,6.00
+2025020424,hockey,nhl,2025_12_03,22:00,Anaheim Ducks,Utah Mammoth,0.528,0.472,3.00,3.30,6.30
+2025020425,hockey,nhl,2025_12_03,22:00,San Jose Sharks,Washington Capitals,0.412,0.588,3.51,2.56,6.07

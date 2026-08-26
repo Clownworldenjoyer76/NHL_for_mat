@@ -1,0 +1,4 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_04,19:00,2025020203,Utah Mammoth,Buffalo Sabres,-1.5,1.5,0.2800467207676577,0.719953279232342,3.570832742689587,1.3889790196750835,186,-220,,,bad_juiced_decimal
+hockey,nhl,2025_11_04,19:00,2025020206,Carolina Hurricanes,New York Rangers,-1.5,1.5,0.2927441365721884,0.7072558634278117,3.415952277334196,1.4139154607405644,192,-230,,,bad_juiced_decimal
+hockey,nhl,2025_11_04,22:30,2025020212,Winnipeg Jets,Los Angeles Kings,1.5,-1.5,0.6997241627559904,0.3002758372440093,1.429134583635527,3.3302712904847644,-250,207,,,bad_juiced_decimal

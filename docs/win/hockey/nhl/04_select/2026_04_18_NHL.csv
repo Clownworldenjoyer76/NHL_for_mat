@@ -1,4 +1,4 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_18,15:00,76d3bd29c4c5d001c2404fb6d3010c36,Ottawa Senators,Carolina Hurricanes,moneyline,home,,home_moneyline,-147.0,1.68,0.6024789660433942,0.0121646629529021,0.0121646629529021,0.0178892102248563
-hockey,nhl,2026_04_18,20:00,7de0e0d303dfec588c53877e7150225b,Philadelphia Flyers,Pittsburgh Penguins,total,under,6.5,under_total,-130.0,1.77,0.5961312306670308,0.0551522782806443,0.0551522782806443,0.0716263354294084
-hockey,nhl,2026_04_18,17:30,ccf74c5469950496a135719b827ce942,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-244.0,1.41,0.7461289213326423,0.0520417790790255,0.0520417790790255,0.1269311684854282
+hockey,nhl,2026_04_18,15:00,2025030131,Ottawa Senators,Carolina Hurricanes,moneyline,home,,home_moneyline,-147.0,1.68,0.6024789660433942,0.0121646629529021,0.0121646629529021,0.0178892102248563
+hockey,nhl,2026_04_18,20:00,2025030141,Philadelphia Flyers,Pittsburgh Penguins,total,under,6.5,under_total,-130.0,1.77,0.5961312306670308,0.0551522782806443,0.0551522782806443,0.0716263354294084
+hockey,nhl,2026_04_18,17:30,2025030161,Minnesota Wild,Dallas Stars,puck_line,away,1.5,away_puck_line,-244.0,1.41,0.7461289213326423,0.0520417790790255,0.0520417790790255,0.1269311684854282

@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_03_07,12:30,2025020990,Washington Capitals,Boston Bruins,1.5,-1.5,0.7415405585685231,0.258459441431477,1.3485439042341925,3.8690790108556383,-250,205,,,bad_juiced_decimal
+hockey,nhl,2026_03_07,19:00,2025020995,Utah Mammoth,Columbus Blue Jackets,-1.5,1.5,0.3423189413763936,0.6576810586236068,2.9212523151047587,1.5204938425515817,210,-258,,,bad_juiced_decimal

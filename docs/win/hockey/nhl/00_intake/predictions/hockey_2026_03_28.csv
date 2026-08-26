@@ -1,16 +1,16 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","70c07fd4bbfc8a4b0caa8904186da57a","2026_03_28","05:07 PM","Carolina Hurricanes","New Jersey Devils","0.677","0.323","2.38","3.69","6.07"
-"hockey","nhl","9aaeedabcec3cd78e36ce1f5a44d513d","2026_03_28","01:07 PM","New York Islanders","Florida Panthers","0.574","0.426","2.54","3.34","5.88"
-"hockey","nhl","370bf3bc5ac52a0421972e9a954378f6","2026_03_28","08:07 PM","Detroit Red Wings","Philadelphia Flyers","0.529","0.471","2.69","3.00","5.69"
-"hockey","nhl","f3e3cc3e6294cf13fed8a7d33adc8956","2026_03_28","05:07 PM","Pittsburgh Penguins","Dallas Stars","0.453","0.547","3.44","2.94","6.38"
-"hockey","nhl","0239b57a2eab58422b627445646022d5","2026_03_28","05:07 PM","Boston Bruins","Minnesota Wild","0.488","0.512","3.12","3.00","6.12"
-"hockey","nhl","bd12a6cf2fbc34af92080f5d4cb8c142","2026_03_28","05:37 PM","Buffalo Sabres","Seattle Kraken","0.612","0.388","2.61","3.69","6.30"
-"hockey","nhl","35e32918fc1dcb6bac7fcdf851867029","2026_03_28","07:07 PM","Nashville Predators","Montreal Canadiens","0.473","0.527","3.34","3.05","6.39"
-"hockey","nhl","394c593042fe9fe839d6c58647c093df","2026_03_28","01:07 PM","Tampa Bay Lightning","Ottawa Senators","0.604","0.396","2.53","3.56","6.09"
-"hockey","nhl","8bab68b12c9382d84d3e1f0a1d58621e","2026_03_28","07:07 PM","St Louis Blues","Toronto Maple Leafs","0.536","0.464","2.74","3.13","5.87"
-"hockey","nhl","88beeeb0b117f3587fb9311c1e81d35e","2026_03_28","10:37 PM","Vegas Golden Knights","Washington Capitals","0.545","0.455","2.74","3.23","5.97"
-"hockey","nhl","a805b62b105fd0aa26de4061e2b53337","2026_03_28","07:07 PM","Colorado Avalanche","Winnipeg Jets","0.706","0.294","2.33","3.74","6.07"
-"hockey","nhl","05bbc266ec222eeb545ad47a2eab94e0","2026_03_28","05:07 PM","Columbus Blue Jackets","San Jose Sharks","0.65","0.35","2.63","3.82","6.45"
-"hockey","nhl","7f882304b0ce0db9fa478ba23ceb0ad1","2026_03_28","10:07 PM","Calgary Flames","Vancouver Canucks","0.617","0.383","2.38","3.47","5.85"
-"hockey","nhl","f45b4166c05f76d1695468da00b89b63","2026_03_28","03:37 PM","Edmonton Oilers","Anaheim Ducks","0.523","0.477","3.59","3.84","7.43"
-"hockey","nhl","01cd56053db51e1cd6f4c9ea60fc009d","2026_03_28","09:07 PM","Los Angeles Kings","Utah Mammoth","0.486","0.514","2.93","2.77","5.70"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021152,hockey,nhl,2026_03_28,13:00,Tampa Bay Lightning,Ottawa Senators,0.604,0.396,2.53,3.56,6.09
+2025021153,hockey,nhl,2026_03_28,13:00,New York Islanders,Florida Panthers,0.574,0.426,2.54,3.34,5.88
+2025021154,hockey,nhl,2026_03_28,15:30,Edmonton Oilers,Anaheim Ducks,0.523,0.477,3.59,3.84,7.43
+2025021155,hockey,nhl,2026_03_28,17:00,Boston Bruins,Minnesota Wild,0.488,0.512,3.12,3.00,6.12
+2025021156,hockey,nhl,2026_03_28,17:00,Pittsburgh Penguins,Dallas Stars,0.453,0.547,3.44,2.94,6.38
+2025021157,hockey,nhl,2026_03_28,17:00,Carolina Hurricanes,New Jersey Devils,0.677,0.323,2.38,3.69,6.07
+2025021158,hockey,nhl,2026_03_28,17:00,Columbus Blue Jackets,San Jose Sharks,0.65,0.35,2.63,3.82,6.45
+2025021159,hockey,nhl,2026_03_28,17:30,Buffalo Sabres,Seattle Kraken,0.612,0.388,2.61,3.69,6.30
+2025021160,hockey,nhl,2026_03_28,19:00,St Louis Blues,Toronto Maple Leafs,0.536,0.464,2.74,3.13,5.87
+2025021161,hockey,nhl,2026_03_28,19:00,Nashville Predators,Montreal Canadiens,0.473,0.527,3.34,3.05,6.39
+2025021162,hockey,nhl,2026_03_28,19:00,Colorado Avalanche,Winnipeg Jets,0.706,0.294,2.33,3.74,6.07
+2025021163,hockey,nhl,2026_03_28,20:00,Detroit Red Wings,Philadelphia Flyers,0.529,0.471,2.69,3.00,5.69
+2025021164,hockey,nhl,2026_03_28,21:00,Los Angeles Kings,Utah Mammoth,0.486,0.514,2.93,2.77,5.70
+2025021165,hockey,nhl,2026_03_28,22:00,Calgary Flames,Vancouver Canucks,0.617,0.383,2.38,3.47,5.85
+2025021166,hockey,nhl,2026_03_28,22:30,Vegas Golden Knights,Washington Capitals,0.545,0.455,2.74,3.23,5.97

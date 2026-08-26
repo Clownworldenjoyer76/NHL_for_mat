@@ -1,5 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal
-hockey,nhl,2025_11_12,7:00 PM EST,2025_11_12_Tampa Bay Lightning_New York Rangers,New York Rangers,Tampa Bay Lightning,1.5,-1.5,0.6606905629457485,0.33930943705425154,1.513567857759932,2.9471623562303453,-200,174,,
-hockey,nhl,2025_11_12,7:30 PM EST,2025_11_12_Philadelphia Flyers_Edmonton Oilers,Edmonton Oilers,Philadelphia Flyers,-1.5,1.5,0.2690247576315289,0.7309752423684712,3.717130009906579,1.3680353889412828,177,-205,,
-hockey,nhl,2025_11_12,9:00 PM EST,2025_11_12_Utah Mammoth_Buffalo Sabres,Buffalo Sabres,Utah Mammoth,1.5,-1.5,0.5931089470239652,0.4068910529760351,1.686030880191045,2.4576603311523235,-160,140,,
-hockey,nhl,2025_11_12,9:30 PM EST,2025_11_12_Chicago Blackhawks_New Jersey Devils,New Jersey Devils,Chicago Blackhawks,-1.5,1.5,0.2976170692282343,0.7023829307717657,3.3600223353893983,1.4237248033650505,161,-185,,
+hockey,nhl,2025_11_12,19:00,2025020265,New York Rangers,Tampa Bay Lightning,1.5,-1.5,0.6606905629457485,0.33930943705425154,1.513567857759932,2.9471623562303453,-200,174,,
+hockey,nhl,2025_11_12,19:30,2025020266,Edmonton Oilers,Philadelphia Flyers,-1.5,1.5,0.2690247576315289,0.7309752423684712,3.717130009906579,1.3680353889412828,177,-205,,
+hockey,nhl,2025_11_12,21:00,2025020267,Buffalo Sabres,Utah Mammoth,1.5,-1.5,0.5931089470239652,0.4068910529760351,1.686030880191045,2.4576603311523235,-160,140,,
+hockey,nhl,2025_11_12,21:30,2025020268,New Jersey Devils,Chicago Blackhawks,-1.5,1.5,0.2976170692282343,0.7023829307717657,3.3600223353893983,1.4237248033650505,161,-185,,

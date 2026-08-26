@@ -1,0 +1,7 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_11_15,18:00,2025020284,Anaheim Ducks,Minnesota Wild,1.5,-1.5,0.7049962298612882,0.2950037701387117,1.4184473017632384,3.3897871865495035,-225,189,,,bad_juiced_decimal
+hockey,nhl,2025_11_15,19:00,2025020286,Los Angeles Kings,Ottawa Senators,1.5,-1.5,0.7596877282707905,0.2403122717292094,1.3163303325646856,4.161252327250386,-270,222,,,bad_juiced_decimal
+hockey,nhl,2025_11_15,19:00,2025020290,New York Rangers,Columbus Blue Jackets,-1.5,1.5,0.2517439837221975,0.7482560162778022,3.972289566623812,1.336440975074945,219,-265,,,bad_juiced_decimal
+hockey,nhl,2025_11_15,19:00,2025020291,Toronto Maple Leafs,Chicago Blackhawks,-1.5,1.5,0.3180940365016733,0.6819059634983264,3.1437244501587487,1.4664778628269823,200,-240,,,bad_juiced_decimal
+hockey,nhl,2025_11_15,20:00,2025020292,Vegas Golden Knights,St Louis Blues,-1.5,1.5,0.340198308636664,0.6598016913633358,2.9394619979372454,1.5156069059685475,180,-210,,,bad_juiced_decimal
+hockey,nhl,2025_11_15,22:00,2025020294,Winnipeg Jets,Calgary Flames,-1.5,1.5,0.3467874861400969,0.6532125138599032,2.8836103953186334,1.5308953499541706,195,-235,,,bad_juiced_decimal

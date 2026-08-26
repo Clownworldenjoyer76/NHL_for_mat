@@ -1,2 +1,2 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","ad8a6f75d8948ad130c35a041d855645","2026_03_23","07:37 PM","New York Rangers","Ottawa Senators","0.461","0.539","3.14","2.73","5.87"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021119,hockey,nhl,2026_03_23,19:30,New York Rangers,Ottawa Senators,0.461,0.539,3.14,2.73,5.87

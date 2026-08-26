@@ -1,2 +1,2 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,total,total_projected_goals,over_prob_total,under_prob_total,over_fair_decimal_total,under_fair_decimal_total,dk_total_over_american,dk_total_under_american,dk_total_over_decimal,dk_total_under_decimal
-hockey,nhl,2026_06_11,20:00,70558078,Vegas Golden Knights,Carolina Hurricanes,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,112,-139,2.12,1.72
+hockey,nhl,2026_06_11,20:00,2025030415,Vegas Golden Knights,Carolina Hurricanes,6.5,6.34,0.4481390020756848,0.5518609979243152,2.2314504994392634,1.8120505050388516,112,-139,2.12,1.72

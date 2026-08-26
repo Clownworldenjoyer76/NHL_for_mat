@@ -1,6 +1,6 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_03_20_Washington Capitals_New Jersey Devils","2026_03_20","07:07 PM","Washington Capitals","New Jersey Devils","0.586","0.414","2.44","3.37","5.81"
-"hockey","nhl","2026_03_20_Toronto Maple Leafs_Carolina Hurricanes","2026_03_20","07:07 PM","Toronto Maple Leafs","Carolina Hurricanes","0.378","0.622","3.67","2.56","6.23"
-"hockey","nhl","2026_03_20_Calgary Flames_Florida Panthers","2026_03_20","09:07 PM","Calgary Flames","Florida Panthers","0.533","0.467","2.78","3.13","5.91"
-"hockey","nhl","2026_03_20_Chicago Blackhawks_Colorado Avalanche","2026_03_20","08:37 PM","Chicago Blackhawks","Colorado Avalanche","0.259","0.741","4.01","2.43","6.44"
-"hockey","nhl","2026_03_20_Utah Mammoth_Anaheim Ducks","2026_03_20","10:07 PM","Utah Mammoth","Anaheim Ducks","0.562","0.438","2.83","3.51","6.34"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025021094,hockey,nhl,2026_03_20,19:00,Toronto Maple Leafs,Carolina Hurricanes,0.378,0.622,3.67,2.56,6.23
+2025021095,hockey,nhl,2026_03_20,19:00,Washington Capitals,New Jersey Devils,0.586,0.414,2.44,3.37,5.81
+2025021096,hockey,nhl,2026_03_20,20:30,Chicago Blackhawks,Colorado Avalanche,0.259,0.741,4.01,2.43,6.44
+2025021097,hockey,nhl,2026_03_20,21:00,Calgary Flames,Florida Panthers,0.533,0.467,2.78,3.13,5.91
+2025021098,hockey,nhl,2026_03_20,22:00,Utah Mammoth,Anaheim Ducks,0.562,0.438,2.83,3.51,6.34

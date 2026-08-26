@@ -1,0 +1,3 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2026_04_30,19:30,2025030166,Dallas Stars,Minnesota Wild,1.5,-1.5,0.7336307291833435,0.2663692708166567,1.3630835790005291,3.754186798402526,-256,210,1.39,3.1,bad_juiced_decimal
+hockey,nhl,2026_04_30,22:00,2025030186,Edmonton Oilers,Anaheim Ducks,-1.5,1.5,0.2562036785043995,0.7437963214956006,3.9031445833937473,1.3444540811780752,180,-217,2.8,1.46,bad_juiced_decimal

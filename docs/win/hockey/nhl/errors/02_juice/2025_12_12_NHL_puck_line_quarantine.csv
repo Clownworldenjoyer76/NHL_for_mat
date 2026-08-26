@@ -1,0 +1,2 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_12_12,20:00,2025020493,Chicago Blackhawks,St Louis Blues,1.5,-1.5,0.7194441348380027,0.2805558651619971,1.389961988119022,3.5643525022105136,-205,177,,,bad_juiced_decimal

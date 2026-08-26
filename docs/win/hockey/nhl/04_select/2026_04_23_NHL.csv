@@ -1,3 +1,1 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
-hockey,nhl,2026_04_23,19:40,51287ae15947cf3f02665904d8b8be9d,Carolina Hurricanes,Ottawa Senators,puck_line,away,1.5,away_puck_line,-250.0,1.4,0.8313969648993786,0.16395575085913,0.16395575085913,0.4098893771478251
-hockey,nhl,2026_04_23,19:10,d618bdbd532e173a5e9e0f985de4af4c,Buffalo Sabres,Boston Bruins,puck_line,away,1.5,away_puck_line,-278.0,1.36,0.8270413909739225,0.1247762917245347,0.1247762917245347,0.3466008103459294

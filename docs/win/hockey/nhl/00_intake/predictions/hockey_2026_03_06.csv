@@ -1,8 +1,8 @@
-﻿"sport","league","game_id","game_date","game_time","home_team","away_team","home_prob_moneyline","away_prob_moneyline","away_projected_goals","home_projected_goals","total_projected_goals"
-"hockey","nhl","2026_03_06_Anaheim Ducks_Montreal Canadiens","2026_03_06","09:07 PM","Anaheim Ducks","Montreal Canadiens","0.503","0.497","3.33","3.35","6.68"
-"hockey","nhl","2026_03_06_Edmonton Oilers_Carolina Hurricanes","2026_03_06","09:07 PM","Edmonton Oilers","Carolina Hurricanes","0.445","0.555","3.50","2.91","6.41"
-"hockey","nhl","2026_03_06_Detroit Red Wings_Florida Panthers","2026_03_06","07:07 PM","Detroit Red Wings","Florida Panthers","0.541","0.459","2.74","3.19","5.93"
-"hockey","nhl","2026_03_06_Chicago Blackhawks_Vancouver Canucks","2026_03_06","08:37 PM","Chicago Blackhawks","Vancouver Canucks","0.555","0.445","2.73","3.33","6.06"
-"hockey","nhl","2026_03_06_San Jose Sharks_St Louis Blues","2026_03_06","10:07 PM","San Jose Sharks","St Louis Blues","0.507","0.493","2.96","3.03","5.99"
-"hockey","nhl","2026_03_06_Dallas Stars_Colorado Avalanche","2026_03_06","08:07 PM","Dallas Stars","Colorado Avalanche","0.468","0.532","3.32","2.97","6.29"
-"hockey","nhl","2026_03_06_Vegas Golden Knights_Minnesota Wild","2026_03_06","10:07 PM","Vegas Golden Knights","Minnesota Wild","0.53","0.47","2.89","3.20","6.09"
+﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020983,hockey,nhl,2026_03_06,19:00,Detroit Red Wings,Florida Panthers,0.541,0.459,2.74,3.19,5.93
+2025020984,hockey,nhl,2026_03_06,20:00,Dallas Stars,Colorado Avalanche,0.468,0.532,3.32,2.97,6.29
+2025020985,hockey,nhl,2026_03_06,20:30,Chicago Blackhawks,Vancouver Canucks,0.555,0.445,2.73,3.33,6.06
+2025020986,hockey,nhl,2026_03_06,21:00,Edmonton Oilers,Carolina Hurricanes,0.445,0.555,3.50,2.91,6.41
+2025020987,hockey,nhl,2026_03_06,21:00,Anaheim Ducks,Montreal Canadiens,0.503,0.497,3.33,3.35,6.68
+2025020988,hockey,nhl,2026_03_06,22:00,Vegas Golden Knights,Minnesota Wild,0.53,0.47,2.89,3.20,6.09
+2025020989,hockey,nhl,2026_03_06,22:00,San Jose Sharks,St Louis Blues,0.507,0.493,2.96,3.03,5.99

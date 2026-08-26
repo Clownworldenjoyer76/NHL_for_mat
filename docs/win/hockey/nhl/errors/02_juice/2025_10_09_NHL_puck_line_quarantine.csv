@@ -1,0 +1,9 @@
+sport,league,game_date,game_time,game_id,away_team,home_team,away_puck_line,home_puck_line,away_prob_puck_line,home_prob_puck_line,away_fair_decimal_puck_line,home_fair_decimal_puck_line,away_dk_puck_line_american,home_dk_puck_line_american,away_dk_puck_line_decimal,home_dk_puck_line_decimal,rejection_reason
+hockey,nhl,2025_10_09,19:00,2025020011,Ottawa Senators,Tampa Bay Lightning,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,19:00,2025020013,New York Islanders,Pittsburgh Penguins,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,20:00,2025020015,Minnesota Wild,St Louis Blues,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,20:00,2025020016,Columbus Blue Jackets,Nashville Predators,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,20:00,2025020017,Dallas Stars,Winnipeg Jets,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,21:00,2025020018,Utah Mammoth,Colorado Avalanche,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,22:00,2025020019,Calgary Flames,Vancouver Canucks,,,,,,,,,,,bad_puck_line_values
+hockey,nhl,2025_10_09,22:00,2025020021,Anaheim Ducks,Seattle Kraken,,,,,,,,,,,bad_puck_line_values
