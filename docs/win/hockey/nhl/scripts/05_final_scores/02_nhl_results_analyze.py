@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # docs/win/hockey/nhl/scripts/05_final_scores/02_nhl_results_analyze.py
 
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd
@@ -28,6 +28,31 @@ SUMMARY_LOG = ERROR_DIR / "02_nhl_results_analyze_summary.txt"
 
 WORK_FILE = INTERMEDIATE_DIR / "work_nhl.csv"
 
+REQUIRED_COLUMNS = [
+    "sport",
+    "league",
+    "game_date",
+    "game_id",
+    "away_team",
+    "home_team",
+    "market_type",
+    "bet_side",
+    "line",
+    "take_bet",
+    "dk_odds_american",
+    "dk_odds_decimal",
+    "model_prob",
+    "edge",
+    "ev",
+    "kelly",
+    "away_score",
+    "home_score",
+    "total_score",
+    "away_puck_line_result",
+    "home_puck_line_result",
+    "bet_result",
+]
+
 
 ###############################################################
 ######################## LOGGING ##############################
@@ -52,25 +77,39 @@ def log_summary(msg: str) -> None:
 ######################## HELPERS ##############################
 ###############################################################
 
-def safe_read(path: Path) -> pd.DataFrame:
+def read_input(path: Path) -> pd.DataFrame:
+    path = Path(path)
+
+    if not path.exists():
+        raise RuntimeError(
+            f"MISSING MASTER GRADED FILE | {path}"
+        )
+
     try:
-        path = Path(path)
-
-        if not path.exists():
-            log_error(f"MISSING FILE | {path}")
-            return pd.DataFrame()
-
-        df = pd.read_csv(path, dtype=str)
-
-        if df.empty:
-            log_error(f"EMPTY FILE | {path}")
-            return pd.DataFrame()
-
-        return df
-
+        return pd.read_csv(
+            path,
+            dtype=str,
+        )
     except Exception as e:
-        log_error(f"READ ERROR | {path} | {e}")
-        return pd.DataFrame()
+        raise RuntimeError(
+            f"READ ERROR | {path} | {e}"
+        ) from e
+
+
+def require_columns(
+    df: pd.DataFrame,
+    required: list[str],
+) -> None:
+    missing = [
+        c
+        for c in required
+        if c not in df.columns
+    ]
+
+    if missing:
+        raise RuntimeError(
+            f"MISSING COLUMNS | {missing}"
+        )
 
 
 def normalize_market(value: str) -> str:
@@ -79,7 +118,11 @@ def normalize_market(value: str) -> str:
     if value in {"moneyline", "ml"}:
         return "moneyline"
 
-    if value in {"puck_line", "puckline", "spread"}:
+    if value in {
+        "puck_line",
+        "puckline",
+        "spread",
+    }:
         return "puck_line"
 
     if value in {"total", "totals"}:
@@ -93,82 +136,89 @@ def normalize_side(value: str) -> str:
 
 
 def side_group(row) -> str:
-    market = normalize_market(row.get("market_type", ""))
-    side = normalize_side(row.get("bet_side", ""))
+    market = normalize_market(
+        row.get("market_type", "")
+    )
+    side = normalize_side(
+        row.get("bet_side", "")
+    )
 
-    if market in {"moneyline", "puck_line"}:
+    if market in {
+        "moneyline",
+        "puck_line",
+    }:
         if side == "home":
             return "HOME"
+
         if side == "away":
             return "AWAY"
 
     if market == "total":
         if side == "over":
             return "OVER"
+
         if side == "under":
             return "UNDER"
 
     return side.upper()
 
 
-def require_columns(df: pd.DataFrame, required: list[str]) -> bool:
-    missing = [c for c in required if c not in df.columns]
-    if missing:
-        log_error(f"MISSING COLUMNS | {missing}")
-        return False
-    return True
-
-
 ###############################################################
 ######################## WORK FILE ############################
 ###############################################################
 
-def build_work() -> None:
-    df = safe_read(INPUT_FILE)
+def build_work() -> int:
+    df = read_input(
+        INPUT_FILE
+    )
 
-    if df.empty:
-        log_error("MASTER GRADED FILE EMPTY OR MISSING")
-        return
-
-    required = [
-        "sport",
-        "league",
-        "game_date",
-        "game_id",
-        "away_team",
-        "home_team",
-        "market_type",
-        "bet_side",
-        "line",
-        "take_bet",
-        "dk_odds_american",
-        "dk_odds_decimal",
-        "model_prob",
-        "edge",
-        "ev",
-        "kelly",
-        "away_score",
-        "home_score",
-        "total_score",
-        "away_puck_line_result",
-        "home_puck_line_result",
-        "bet_result",
-    ]
-
-    if not require_columns(df, required):
-        return
+    require_columns(
+        df,
+        REQUIRED_COLUMNS,
+    )
 
     df = df.copy()
 
-    df["game_date"] = df["game_date"].astype(str).str.strip().str.replace("-", "_", regex=False)
+    df["game_date"] = (
+        df["game_date"]
+        .astype(str)
+        .str.strip()
+        .str.replace(
+            "-",
+            "_",
+            regex=False,
+        )
+    )
+
     df["league"] = "nhl"
     df["sport"] = "hockey"
-    df["market_type"] = df["market_type"].map(normalize_market)
-    df["bet_side"] = df["bet_side"].map(normalize_side)
-    df["side_group"] = df.apply(side_group, axis=1)
+
+    df["market_type"] = (
+        df["market_type"].map(
+            normalize_market
+        )
+    )
+
+    df["bet_side"] = (
+        df["bet_side"].map(
+            normalize_side
+        )
+    )
+
+    if df.empty:
+        df["side_group"] = pd.Series(
+            dtype=str
+        )
+    else:
+        df["side_group"] = df.apply(
+            side_group,
+            axis=1,
+        )
 
     df["selected_edge"] = df["edge"]
-    df["take_odds"] = df["dk_odds_american"]
+    df["take_odds"] = (
+        df["dk_odds_american"]
+    )
     df["win_prob"] = df["model_prob"]
 
     numeric_cols = [
@@ -191,11 +241,23 @@ def build_work() -> None:
 
     for col in numeric_cols:
         if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce")
+            df[col] = pd.to_numeric(
+                df[col],
+                errors="coerce",
+            )
 
-    df.to_csv(WORK_FILE, index=False)
+    df.to_csv(
+        WORK_FILE,
+        index=False,
+    )
 
-    log_summary(f"NHL WORK FILE CREATED | rows={len(df)} | out={WORK_FILE}")
+    log_summary(
+        "NHL WORK FILE CREATED | "
+        f"rows={len(df)} | "
+        f"out={WORK_FILE}"
+    )
+
+    return len(df)
 
 
 ###############################################################
@@ -205,14 +267,41 @@ def build_work() -> None:
 def main() -> None:
     reset_logs()
 
-    log_summary("START 02_nhl_results_analyze.py")
-    log_summary(f"INPUT_FILE={INPUT_FILE}")
-    log_summary(f"WORK_FILE={WORK_FILE}")
+    log_summary(
+        "START 02_nhl_results_analyze.py"
+    )
+    log_summary(
+        f"INPUT_FILE={INPUT_FILE}"
+    )
+    log_summary(
+        f"WORK_FILE={WORK_FILE}"
+    )
 
-    build_work()
+    try:
+        row_count = build_work()
 
-    log_summary("END 02_nhl_results_analyze.py")
-    print("NHL analysis prep complete.")
+    except Exception as e:
+        log_error(
+            f"ANALYSIS PREP FAILED | {e}"
+        )
+        print(
+            f"NHL analysis prep failed: {e}"
+        )
+        raise
+
+    log_summary(
+        "END 02_nhl_results_analyze.py"
+    )
+
+    if row_count == 0:
+        print(
+            "NHL analysis prep complete: "
+            "no completed graded bets."
+        )
+    else:
+        print(
+            "NHL analysis prep complete."
+        )
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py
 
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 from pathlib import Path
 import re
 
@@ -18,7 +18,6 @@ FINAL_ROOT = NHL_ROOT / "05_final_scores"
 SELECT_DIR = NHL_ROOT / "04_select"
 SCORE_DIR = FINAL_ROOT / "final_scores"
 GRADED_DIR = FINAL_ROOT / "graded"
-
 INTERMEDIATE_DIR = FINAL_ROOT / "intermediate"
 ERROR_DIR = FINAL_ROOT / "errors"
 
@@ -35,11 +34,77 @@ SCORE_PATTERN = "*_NHL_final_scores.csv"
 MASTER_FILE = GRADED_DIR / "NHL_final.csv"
 STATUS_FILE = INTERMEDIATE_DIR / "nhl_game_status.csv"
 PENDING_FILE = INTERMEDIATE_DIR / "01_nhl_results_grade_pending.csv"
-WORK_FILE = INTERMEDIATE_DIR / "work_nhl.csv"
 UNRESOLVED_FILE = ERROR_DIR / "01_nhl_results_grade_unresolved.csv"
 
 FINAL_GAME_STATES = {"FINAL", "OFF"}
 GAME_ID_RE = re.compile(r"^\d{10}$")
+
+SELECT_REQUIRED_COLUMNS = [
+    "sport",
+    "league",
+    "game_date",
+    "game_time",
+    "game_id",
+    "away_team",
+    "home_team",
+    "market_type",
+    "bet_side",
+    "line",
+    "take_bet",
+    "dk_odds_american",
+    "dk_odds_decimal",
+    "model_prob",
+    "edge",
+    "ev",
+    "kelly",
+]
+
+SCORE_REQUIRED_COLUMNS = [
+    "sport",
+    "league",
+    "game_date",
+    "game_id",
+    "away_team",
+    "home_team",
+    "away_score",
+    "home_score",
+    "total_score",
+    "away_puck_line_result",
+    "home_puck_line_result",
+]
+
+STATUS_REQUIRED_COLUMNS = [
+    "sport",
+    "league",
+    "game_date",
+    "game_id",
+    "away_team",
+    "home_team",
+    "game_state",
+    "game_schedule_state",
+    "is_final",
+    "status_observed_at",
+]
+
+
+GRADED_OUTPUT_COLUMNS = (
+    SELECT_REQUIRED_COLUMNS
+    + ["source_select_file"]
+    + [
+        "game_state",
+        "game_schedule_state",
+        "is_final",
+        "status_observed_at",
+        "source_status_file",
+        "away_score",
+        "home_score",
+        "total_score",
+        "away_puck_line_result",
+        "home_puck_line_result",
+        "source_score_file",
+        "bet_result",
+    ]
+)
 
 
 ###############################################################
@@ -65,27 +130,40 @@ def log_summary(msg: str) -> None:
 ######################## HELPERS ##############################
 ###############################################################
 
-def safe_read(path: Path) -> pd.DataFrame:
+def read_csv(
+    path: Path,
+    *,
+    allow_empty: bool,
+) -> pd.DataFrame:
     path = Path(path)
 
     if not path.exists():
-        msg = f"MISSING FILE | {path}"
-        log_error(msg)
-        raise RuntimeError(msg)
+        raise RuntimeError(f"MISSING FILE | {path}")
 
     try:
         df = pd.read_csv(path, dtype=str)
     except Exception as e:
-        msg = f"READ ERROR | {path} | {e}"
-        log_error(msg)
-        raise RuntimeError(msg) from e
+        raise RuntimeError(f"READ ERROR | {path} | {e}") from e
 
-    if df is None or df.empty:
-        msg = f"EMPTY FILE | {path}"
-        log_error(msg)
-        raise RuntimeError(msg)
+    if df is None:
+        raise RuntimeError(f"READ RETURNED NO DATAFRAME | {path}")
+
+    if df.empty and not allow_empty:
+        raise RuntimeError(f"EMPTY FILE | {path}")
 
     return df
+
+
+def require_columns(
+    df: pd.DataFrame,
+    required: list[str],
+    label: str,
+) -> None:
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        raise RuntimeError(
+            f"MISSING COLUMNS | {label} | {missing}"
+        )
 
 
 def normalize_date(value) -> str:
@@ -119,53 +197,63 @@ def to_float(value):
     try:
         if value is None:
             return None
-        s = str(value).strip()
-        if not s:
+
+        text = str(value).strip()
+
+        if not text:
             return None
-        return float(s)
+
+        return float(text)
+
     except Exception:
         return None
 
 
-def require_columns(df: pd.DataFrame, required: list[str], label: str) -> None:
-    missing = [c for c in required if c not in df.columns]
-    if missing:
-        msg = f"MISSING COLUMNS | {label} | {missing}"
-        log_error(msg)
-        raise RuntimeError(msg)
-
-
-def validate_game_ids(df: pd.DataFrame, label: str) -> None:
+def validate_game_ids(
+    df: pd.DataFrame,
+    label: str,
+) -> None:
     invalid = []
 
-    for row_number, value in enumerate(df["game_id"], start=2):
+    for row_number, value in enumerate(
+        df["game_id"],
+        start=2,
+    ):
         game_id = str(value).strip()
 
         if not GAME_ID_RE.fullmatch(game_id):
-            invalid.append((row_number, game_id))
+            invalid.append(
+                (row_number, game_id)
+            )
 
     if invalid:
         for row_number, game_id in invalid:
             log_error(
-                f"INVALID CANONICAL game_id | {label} | "
-                f"row={row_number} | game_id={game_id}"
+                "INVALID CANONICAL game_id | "
+                f"{label} | "
+                f"row={row_number} | "
+                f"game_id={game_id}"
             )
 
         raise RuntimeError(
-            f"INVALID CANONICAL game_id VALUES | {label} | count={len(invalid)}"
+            "INVALID CANONICAL game_id VALUES | "
+            f"{label} | count={len(invalid)}"
         )
 
 
 def clean_old_outputs() -> None:
-    for path in GRADED_DIR.glob("*_results_NHL.csv"):
+    for path in GRADED_DIR.glob(
+        "*_results_NHL.csv"
+    ):
         path.unlink(missing_ok=True)
 
     MASTER_FILE.unlink(missing_ok=True)
     PENDING_FILE.unlink(missing_ok=True)
     UNRESOLVED_FILE.unlink(missing_ok=True)
-    WORK_FILE.unlink(missing_ok=True)
 
-    log_summary("CLEARED OLD NHL GRADED OUTPUTS")
+    log_summary(
+        "CLEARED OLD NHL GRADED OUTPUTS"
+    )
 
 
 ###############################################################
@@ -173,136 +261,221 @@ def clean_old_outputs() -> None:
 ###############################################################
 
 def load_select_rows() -> pd.DataFrame:
-    select_files = sorted(SELECT_DIR.glob(SELECT_PATTERN))
+    select_files = sorted(
+        SELECT_DIR.glob(SELECT_PATTERN)
+    )
 
     if not select_files:
-        log_error(f"NO SELECT FILES FOUND | {SELECT_DIR} | pattern={SELECT_PATTERN}")
-        return pd.DataFrame()
-
-    required = [
-        "sport",
-        "league",
-        "game_date",
-        "game_time",
-        "game_id",
-        "away_team",
-        "home_team",
-        "market_type",
-        "bet_side",
-        "line",
-        "take_bet",
-        "dk_odds_american",
-        "dk_odds_decimal",
-        "model_prob",
-        "edge",
-        "ev",
-        "kelly",
-    ]
+        raise RuntimeError(
+            "NO SELECT FILES FOUND | "
+            f"{SELECT_DIR} | "
+            f"pattern={SELECT_PATTERN}"
+        )
 
     parts = []
 
     for path in select_files:
-        df = safe_read(path)
-        require_columns(df, required, str(path))
+        df = read_csv(
+            path,
+            allow_empty=True,
+        )
+
+        require_columns(
+            df,
+            SELECT_REQUIRED_COLUMNS,
+            str(path),
+        )
+
+        # Header-only Stage 04 files are valid:
+        # they mean zero bets were selected for that slate.
+        if df.empty:
+            log_summary(
+                "EMPTY SELECT FILE | "
+                f"{path} | rows=0 | skipped"
+            )
+            continue
 
         df = df.copy()
         df["source_select_file"] = path.name
-        df["game_date"] = df["game_date"].map(normalize_date)
-        df["away_team"] = df["away_team"].map(normalize_team)
-        df["home_team"] = df["home_team"].map(normalize_team)
-        df["game_id"] = df["game_id"].astype(str).str.strip()
-        df["market_type"] = df["market_type"].map(normalize_market)
-        df["bet_side"] = df["bet_side"].map(normalize_side)
+        df["game_date"] = (
+            df["game_date"].map(normalize_date)
+        )
+        df["away_team"] = (
+            df["away_team"].map(normalize_team)
+        )
+        df["home_team"] = (
+            df["home_team"].map(normalize_team)
+        )
+        df["game_id"] = (
+            df["game_id"]
+            .astype(str)
+            .str.strip()
+        )
+        df["market_type"] = (
+            df["market_type"].map(
+                normalize_market
+            )
+        )
+        df["bet_side"] = (
+            df["bet_side"].map(
+                normalize_side
+            )
+        )
 
-        validate_game_ids(df, str(path))
+        validate_game_ids(
+            df,
+            str(path),
+        )
+
         parts.append(df)
 
     if not parts:
-        msg = "NO VALID SELECT ROWS FOUND"
-        log_error(msg)
-        raise RuntimeError(msg)
+        out = pd.DataFrame(
+            columns=(
+                SELECT_REQUIRED_COLUMNS
+                + ["source_select_file"]
+            )
+        )
 
-    out = pd.concat(parts, ignore_index=True)
-    log_summary(f"SELECT ROWS LOADED | files={len(select_files)} | rows={len(out)}")
+        log_summary(
+            "SELECT ROWS LOADED | "
+            f"files={len(select_files)} | "
+            "rows=0"
+        )
+
+        return out
+
+    out = pd.concat(
+        parts,
+        ignore_index=True,
+    )
+
+    log_summary(
+        "SELECT ROWS LOADED | "
+        f"files={len(select_files)} | "
+        f"rows={len(out)}"
+    )
+
     return out
 
 
 def load_score_rows() -> pd.DataFrame:
-    score_files = sorted(SCORE_DIR.glob(SCORE_PATTERN))
+    score_files = sorted(
+        SCORE_DIR.glob(SCORE_PATTERN)
+    )
 
     if not score_files:
-        log_error(f"NO FINAL SCORE FILES FOUND | {SCORE_DIR} | pattern={SCORE_PATTERN}")
-        return pd.DataFrame()
+        log_summary(
+            "NO FINAL SCORE FILES FOUND | "
+            f"{SCORE_DIR} | "
+            f"pattern={SCORE_PATTERN} | "
+            "using empty final-score set"
+        )
 
-    required = [
-        "sport",
-        "league",
-        "game_date",
-        "game_id",
-        "away_team",
-        "home_team",
-        "away_score",
-        "home_score",
-        "total_score",
-        "away_puck_line_result",
-        "home_puck_line_result",
-    ]
+        return pd.DataFrame(
+            columns=(
+                SCORE_REQUIRED_COLUMNS
+                + ["source_score_file"]
+            )
+        )
 
     parts = []
 
     for path in score_files:
-        df = safe_read(path)
-        require_columns(df, required, str(path))
+        df = read_csv(
+            path,
+            allow_empty=True,
+        )
+
+        require_columns(
+            df,
+            SCORE_REQUIRED_COLUMNS,
+            str(path),
+        )
+
+        if df.empty:
+            log_summary(
+                "EMPTY FINAL SCORE FILE | "
+                f"{path} | rows=0 | skipped"
+            )
+            continue
 
         df = df.copy()
         df["source_score_file"] = path.name
-        df["game_date"] = df["game_date"].map(normalize_date)
-        df["away_team"] = df["away_team"].map(normalize_team)
-        df["home_team"] = df["home_team"].map(normalize_team)
-        df["game_id"] = df["game_id"].astype(str).str.strip()
+        df["game_date"] = (
+            df["game_date"].map(normalize_date)
+        )
+        df["away_team"] = (
+            df["away_team"].map(normalize_team)
+        )
+        df["home_team"] = (
+            df["home_team"].map(normalize_team)
+        )
+        df["game_id"] = (
+            df["game_id"]
+            .astype(str)
+            .str.strip()
+        )
 
-        validate_game_ids(df, str(path))
+        validate_game_ids(
+            df,
+            str(path),
+        )
+
         parts.append(df)
 
     if not parts:
-        msg = "NO VALID FINAL SCORE ROWS FOUND"
-        log_error(msg)
-        raise RuntimeError(msg)
+        return pd.DataFrame(
+            columns=(
+                SCORE_REQUIRED_COLUMNS
+                + ["source_score_file"]
+            )
+        )
 
-    out = pd.concat(parts, ignore_index=True)
-    log_summary(f"FINAL SCORE ROWS LOADED | files={len(score_files)} | rows={len(out)}")
+    out = pd.concat(
+        parts,
+        ignore_index=True,
+    )
+
+    log_summary(
+        "FINAL SCORE ROWS LOADED | "
+        f"files={len(score_files)} | "
+        f"rows={len(out)}"
+    )
+
     return out
 
 
-
 def load_status_rows() -> pd.DataFrame:
-    df = safe_read(STATUS_FILE)
-
-    required = [
-        "sport",
-        "league",
-        "game_date",
-        "game_id",
-        "away_team",
-        "home_team",
-        "game_state",
-        "game_schedule_state",
-        "is_final",
-        "status_observed_at",
-    ]
+    df = read_csv(
+        STATUS_FILE,
+        allow_empty=False,
+    )
 
     require_columns(
         df,
-        required,
+        STATUS_REQUIRED_COLUMNS,
         str(STATUS_FILE),
     )
 
     df = df.copy()
-    df["source_status_file"] = STATUS_FILE.name
-    df["game_date"] = df["game_date"].map(normalize_date)
-    df["away_team"] = df["away_team"].map(normalize_team)
-    df["home_team"] = df["home_team"].map(normalize_team)
-    df["game_id"] = df["game_id"].astype(str).str.strip()
+    df["source_status_file"] = (
+        STATUS_FILE.name
+    )
+    df["game_date"] = (
+        df["game_date"].map(normalize_date)
+    )
+    df["away_team"] = (
+        df["away_team"].map(normalize_team)
+    )
+    df["home_team"] = (
+        df["home_team"].map(normalize_team)
+    )
+    df["game_id"] = (
+        df["game_id"]
+        .astype(str)
+        .str.strip()
+    )
     df["game_state"] = (
         df["game_state"]
         .astype(str)
@@ -323,11 +496,13 @@ def load_status_rows() -> pd.DataFrame:
 
     if df["game_state"].eq("").any():
         raise RuntimeError(
-            f"BLANK official game_state VALUES | {STATUS_FILE}"
+            "BLANK official game_state VALUES | "
+            f"{STATUS_FILE}"
         )
 
     log_summary(
-        f"OFFICIAL STATUS ROWS LOADED | rows={len(df)}"
+        "OFFICIAL STATUS ROWS LOADED | "
+        f"rows={len(df)}"
     )
 
     return df
@@ -337,58 +512,27 @@ def load_status_rows() -> pd.DataFrame:
 ###################### SCORE LOOKUPS ##########################
 ###############################################################
 
-def build_score_index(scores: pd.DataFrame) -> dict[str, dict]:
-    by_game_id: dict[str, dict] = {}
-
-    for _, row in scores.iterrows():
-        rec = row.to_dict()
-        game_id = str(rec.get("game_id", "")).strip()
-
-        if game_id in by_game_id:
-            raise RuntimeError(
-                f"DUPLICATE FINAL SCORE game_id | {game_id}"
-            )
-
-        by_game_id[game_id] = rec
-
-    return by_game_id
-
-
-
-def build_status_index(
-    statuses: pd.DataFrame,
+def build_index(
+    df: pd.DataFrame,
+    label: str,
 ) -> dict[str, dict]:
     by_game_id: dict[str, dict] = {}
 
-    for _, row in statuses.iterrows():
+    for _, row in df.iterrows():
         rec = row.to_dict()
         game_id = str(
-            rec.get(
-                "game_id",
-                "",
-            )
+            rec.get("game_id", "")
         ).strip()
 
         if game_id in by_game_id:
             raise RuntimeError(
-                f"DUPLICATE OFFICIAL STATUS game_id | {game_id}"
+                f"DUPLICATE {label} game_id | "
+                f"{game_id}"
             )
 
         by_game_id[game_id] = rec
 
     return by_game_id
-
-
-def attach_score_to_bet(
-    bet: dict,
-    by_game_id: dict[str, dict],
-) -> dict | None:
-    game_id = str(bet.get("game_id", "")).strip()
-
-    if not GAME_ID_RE.fullmatch(game_id):
-        return None
-
-    return by_game_id.get(game_id)
 
 
 ###############################################################
@@ -397,14 +541,27 @@ def attach_score_to_bet(
 
 def determine_outcome(row: dict) -> str:
     try:
-        market = normalize_market(row.get("market_type", ""))
-        side = normalize_side(row.get("bet_side", ""))
+        market = normalize_market(
+            row.get("market_type", "")
+        )
+        side = normalize_side(
+            row.get("bet_side", "")
+        )
 
-        away_score = to_float(row.get("away_score"))
-        home_score = to_float(row.get("home_score"))
-        line = to_float(row.get("line"))
+        away_score = to_float(
+            row.get("away_score")
+        )
+        home_score = to_float(
+            row.get("home_score")
+        )
+        line = to_float(
+            row.get("line")
+        )
 
-        if away_score is None or home_score is None:
+        if (
+            away_score is None
+            or home_score is None
+        ):
             return "Unknown"
 
         if market == "moneyline":
@@ -412,10 +569,18 @@ def determine_outcome(row: dict) -> str:
                 return "Push"
 
             if side == "home":
-                return "Win" if home_score > away_score else "Loss"
+                return (
+                    "Win"
+                    if home_score > away_score
+                    else "Loss"
+                )
 
             if side == "away":
-                return "Win" if away_score > home_score else "Loss"
+                return (
+                    "Win"
+                    if away_score > home_score
+                    else "Loss"
+                )
 
             return "Unknown"
 
@@ -424,18 +589,32 @@ def determine_outcome(row: dict) -> str:
                 return "Unknown"
 
             if side == "home":
-                home_result = to_float(row.get("home_puck_line_result"))
-                if home_result is None:
-                    home_result = home_score - away_score
+                result = to_float(
+                    row.get(
+                        "home_puck_line_result"
+                    )
+                )
 
-                diff = home_result + line
+                if result is None:
+                    result = (
+                        home_score - away_score
+                    )
+
+                diff = result + line
 
             elif side == "away":
-                away_result = to_float(row.get("away_puck_line_result"))
-                if away_result is None:
-                    away_result = away_score - home_score
+                result = to_float(
+                    row.get(
+                        "away_puck_line_result"
+                    )
+                )
 
-                diff = away_result + line
+                if result is None:
+                    result = (
+                        away_score - home_score
+                    )
+
+                diff = result + line
 
             else:
                 return "Unknown"
@@ -443,15 +622,24 @@ def determine_outcome(row: dict) -> str:
             if abs(diff) < 1e-9:
                 return "Push"
 
-            return "Win" if diff > 0 else "Loss"
+            return (
+                "Win"
+                if diff > 0
+                else "Loss"
+            )
 
         if market == "total":
             if line is None:
                 return "Unknown"
 
-            total_score = to_float(row.get("total_score"))
+            total_score = to_float(
+                row.get("total_score")
+            )
+
             if total_score is None:
-                total_score = away_score + home_score
+                total_score = (
+                    away_score + home_score
+                )
 
             diff = total_score - line
 
@@ -459,15 +647,26 @@ def determine_outcome(row: dict) -> str:
                 return "Push"
 
             if side == "over":
-                return "Win" if diff > 0 else "Loss"
+                return (
+                    "Win"
+                    if diff > 0
+                    else "Loss"
+                )
 
             if side == "under":
-                return "Win" if diff < 0 else "Loss"
+                return (
+                    "Win"
+                    if diff < 0
+                    else "Loss"
+                )
 
             return "Unknown"
 
     except Exception as e:
-        log_error(f"DETERMINE OUTCOME ERROR | {e} | row={row}")
+        log_error(
+            "DETERMINE OUTCOME ERROR | "
+            f"{e} | row={row}"
+        )
 
     return "Unknown"
 
@@ -485,12 +684,13 @@ def grade_rows(
     pd.DataFrame,
     pd.DataFrame,
 ]:
-    by_game_id = build_score_index(
-        scores
+    score_by_game_id = build_index(
+        scores,
+        "FINAL SCORE",
     )
-
-    status_by_game_id = build_status_index(
-        statuses
+    status_by_game_id = build_index(
+        statuses,
+        "OFFICIAL STATUS",
     )
 
     graded_rows = []
@@ -516,28 +716,23 @@ def grade_rows(
 
     for _, bet_row in bets.iterrows():
         bet = bet_row.to_dict()
-
         game_id = str(
-            bet.get(
-                "game_id",
-                "",
-            )
+            bet.get("game_id", "")
         ).strip()
 
         status = status_by_game_id.get(
             game_id
         )
-
-        score = attach_score_to_bet(
-            bet,
-            by_game_id,
+        score = score_by_game_id.get(
+            game_id
         )
 
         if status is None:
             unresolved = dict(bet)
-            unresolved["unresolved_reason"] = (
-                "official_game_status_missing"
-            )
+            unresolved[
+                "unresolved_reason"
+            ] = "official_game_status_missing"
+
             unresolved_rows.append(
                 unresolved
             )
@@ -545,18 +740,10 @@ def grade_rows(
             log_error(
                 "OFFICIAL GAME STATUS MISSING | "
                 f"game_date={bet.get('game_date', '')} | "
-                f"game_id={game_id} | "
-                f"{bet.get('away_team', '')} at "
-                f"{bet.get('home_team', '')}"
+                f"game_id={game_id}"
             )
-            continue
 
-        game_state = str(
-            status.get(
-                "game_state",
-                "",
-            )
-        ).strip().upper()
+            continue
 
         combined = dict(bet)
 
@@ -566,26 +753,37 @@ def grade_rows(
                 "",
             )
 
-        if game_state not in FINAL_GAME_STATES:
+        game_state = str(
+            status.get("game_state", "")
+        ).strip().upper()
+
+        if (
+            game_state
+            not in FINAL_GAME_STATES
+        ):
             if score is not None:
                 combined[
                     "unresolved_reason"
-                ] = "score_present_for_nonfinal_game"
+                ] = (
+                    "score_present_for_nonfinal_game"
+                )
 
                 unresolved_rows.append(
                     combined
                 )
 
                 log_error(
-                    "FINAL SCORE PRESENT FOR NONFINAL GAME | "
+                    "FINAL SCORE PRESENT FOR "
+                    "NONFINAL GAME | "
                     f"game_id={game_id} | "
                     f"game_state={game_state}"
                 )
+
                 continue
 
-            combined["pending_reason"] = (
-                "official_game_not_final"
-            )
+            combined[
+                "pending_reason"
+            ] = "official_game_not_final"
 
             pending_rows.append(
                 combined
@@ -593,12 +791,10 @@ def grade_rows(
 
             log_summary(
                 "PENDING GAME | "
-                f"game_date={bet.get('game_date', '')} | "
                 f"game_id={game_id} | "
-                f"game_state={game_state} | "
-                f"market={bet.get('market_type', '')} | "
-                f"side={bet.get('bet_side', '')}"
+                f"game_state={game_state}"
             )
+
             continue
 
         if score is None:
@@ -612,17 +808,14 @@ def grade_rows(
 
             log_error(
                 "FINAL GAME MISSING FINAL SCORE | "
-                f"game_date={bet.get('game_date', '')} | "
                 f"game_id={game_id} | "
                 f"game_state={game_state}"
             )
+
             continue
 
         score_game_id = str(
-            score.get(
-                "game_id",
-                "",
-            )
+            score.get("game_id", "")
         ).strip()
 
         if game_id != score_game_id:
@@ -654,27 +847,22 @@ def grade_rows(
 
             log_error(
                 "UNRESOLVED OUTCOME | "
-                f"game_date={combined.get('game_date', '')} | "
                 f"game_id={game_id} | "
                 f"market={combined.get('market_type', '')} | "
                 f"side={combined.get('bet_side', '')}"
             )
+
             continue
 
         combined["bet_result"] = result
-
-        graded_rows.append(
-            combined
-        )
+        graded_rows.append(combined)
 
     graded_df = pd.DataFrame(
         graded_rows
     )
-
     pending_df = pd.DataFrame(
         pending_rows
     )
-
     unresolved_df = pd.DataFrame(
         unresolved_rows
     )
@@ -713,26 +901,28 @@ def grade_rows(
     )
 
 
-def write_pending(
+###############################################################
+######################## OUTPUT ###############################
+###############################################################
+
+def write_partition(
     df: pd.DataFrame,
+    path: Path,
+    empty_message: str,
+    written_message: str,
 ) -> None:
     if df.empty:
-        PENDING_FILE.unlink(
-            missing_ok=True
-        )
-
-        log_summary(
-            "NO PENDING GRADING ROWS"
-        )
+        path.unlink(missing_ok=True)
+        log_summary(empty_message)
         return
 
     df = df.copy()
 
     if "game_date" in df.columns:
-        df["game_date"] = df[
-            "game_date"
-        ].map(
-            normalize_date
+        df["game_date"] = (
+            df["game_date"].map(
+                normalize_date
+            )
         )
 
     sort_cols = [
@@ -746,8 +936,6 @@ def write_pending(
             "market_type",
             "bet_side",
             "line",
-            "game_state",
-            "pending_reason",
         ]
         if c in df.columns
     ]
@@ -759,90 +947,93 @@ def write_pending(
         )
 
     df.to_csv(
-        PENDING_FILE,
+        path,
         index=False,
     )
 
     log_summary(
-        "WROTE PENDING GRADING ROWS | "
-        f"{PENDING_FILE} | rows={len(df)}"
+        f"{written_message} | "
+        f"{path} | rows={len(df)}"
     )
 
 
-def write_unresolved(df: pd.DataFrame) -> None:
+def write_graded_outputs(
+    df: pd.DataFrame,
+) -> None:
     if df.empty:
-        UNRESOLVED_FILE.unlink(missing_ok=True)
-        log_summary("NO UNRESOLVED GRADING ROWS")
-        return
-
-    df = df.copy()
-
-    if "game_date" in df.columns:
-        df["game_date"] = df["game_date"].map(normalize_date)
-
-    sort_cols = [
-        c for c in [
-            "game_date",
-            "game_time",
-            "game_id",
-            "away_team",
-            "home_team",
-            "market_type",
-            "bet_side",
-            "line",
-            "unresolved_reason",
-        ]
-        if c in df.columns
-    ]
-
-    if sort_cols:
-        df = df.sort_values(sort_cols, kind="mergesort")
-
-    df.to_csv(UNRESOLVED_FILE, index=False)
-    log_summary(
-        f"WROTE UNRESOLVED GRADING ROWS | {UNRESOLVED_FILE} | rows={len(df)}"
-    )
-
-
-def write_outputs(df: pd.DataFrame) -> None:
-    if df.empty:
-        MASTER_FILE.unlink(missing_ok=True)
-        log_summary("NO COMPLETED GRADED ROWS TO WRITE")
-        return
-
-    df = df.copy()
-    df["game_date"] = df["game_date"].map(normalize_date)
-
-    sort_cols = [
-        c for c in [
-            "game_date",
-            "game_time",
-            "game_id",
-            "away_team",
-            "home_team",
-            "market_type",
-            "bet_side",
-            "line",
-        ]
-        if c in df.columns
-    ]
-
-    if sort_cols:
-        df = df.sort_values(sort_cols, kind="mergesort")
-
-
-    for game_date, date_df in df.groupby("game_date", dropna=False):
-        out_path = GRADED_DIR / f"{game_date}_results_NHL.csv"
-        date_df.to_csv(out_path, index=False)
-
-        counts = date_df["bet_result"].astype(str).value_counts().to_dict()
-        log_summary(
-            f"WROTE DAILY GRADED | {out_path} | "
-            f"rows={len(date_df)} | results={counts}"
+        empty_master = pd.DataFrame(
+            columns=GRADED_OUTPUT_COLUMNS
         )
 
-    df.to_csv(MASTER_FILE, index=False)
-    log_summary(f"WROTE MASTER GRADED | {MASTER_FILE} | rows={len(df)}")
+        empty_master.to_csv(
+            MASTER_FILE,
+            index=False,
+        )
+
+        log_summary(
+            "WROTE HEADER-ONLY MASTER GRADED | "
+            f"{MASTER_FILE} | rows=0"
+        )
+
+        return
+
+    df = df.copy()
+    df["game_date"] = (
+        df["game_date"].map(
+            normalize_date
+        )
+    )
+
+    sort_cols = [
+        c
+        for c in [
+            "game_date",
+            "game_time",
+            "game_id",
+            "away_team",
+            "home_team",
+            "market_type",
+            "bet_side",
+            "line",
+        ]
+        if c in df.columns
+    ]
+
+    if sort_cols:
+        df = df.sort_values(
+            sort_cols,
+            kind="mergesort",
+        )
+
+    for game_date, date_df in df.groupby(
+        "game_date",
+        dropna=False,
+    ):
+        out_path = (
+            GRADED_DIR
+            / f"{game_date}_results_NHL.csv"
+        )
+
+        date_df.to_csv(
+            out_path,
+            index=False,
+        )
+
+        log_summary(
+            "WROTE DAILY GRADED | "
+            f"{out_path} | "
+            f"rows={len(date_df)}"
+        )
+
+    df.to_csv(
+        MASTER_FILE,
+        index=False,
+    )
+
+    log_summary(
+        "WROTE MASTER GRADED | "
+        f"{MASTER_FILE} | rows={len(df)}"
+    )
 
 
 ###############################################################
@@ -852,43 +1043,98 @@ def write_outputs(df: pd.DataFrame) -> None:
 def main() -> None:
     reset_logs()
 
-    log_summary("START 01_nhl_results_grade.py")
-    log_summary(f"SELECT_DIR={SELECT_DIR}")
-    log_summary(f"SCORE_DIR={SCORE_DIR}")
-    log_summary(f"GRADED_DIR={GRADED_DIR}")
-    log_summary(f"STATUS_FILE={STATUS_FILE}")
-    log_summary(f"PENDING_FILE={PENDING_FILE}")
+    log_summary(
+        "START 01_nhl_results_grade.py"
+    )
 
     clean_old_outputs()
 
     try:
         bets = load_select_rows()
+
+        # Zero selections are a valid outcome.
+        # Nothing else in Stage 05 needs to be loaded
+        # when there are no selected bets.
+        if bets.empty:
+            log_summary(
+                "NO SELECTED NHL BETS TO GRADE | "
+                "zero-selection slate"
+            )
+
+            write_graded_outputs(
+                pd.DataFrame(
+                    columns=GRADED_OUTPUT_COLUMNS
+                )
+            )
+
+            print(
+                "NHL grading complete: "
+                "no selected bets."
+            )
+
+            log_summary(
+                "END 01_nhl_results_grade.py"
+            )
+
+            return
+
         scores = load_score_rows()
         statuses = load_status_rows()
 
-        graded, pending, unresolved = grade_rows(
+        (
+            graded,
+            pending,
+            unresolved,
+        ) = grade_rows(
             bets,
             scores,
             statuses,
         )
 
-        write_pending(pending)
-        write_unresolved(unresolved)
-        write_outputs(graded)
+        write_partition(
+            pending,
+            PENDING_FILE,
+            "NO PENDING GRADING ROWS",
+            "WROTE PENDING GRADING ROWS",
+        )
+
+        write_partition(
+            unresolved,
+            UNRESOLVED_FILE,
+            "NO UNRESOLVED GRADING ROWS",
+            "WROTE UNRESOLVED GRADING ROWS",
+        )
+
+        write_graded_outputs(
+            graded
+        )
 
         if not unresolved.empty:
             raise RuntimeError(
-                "UNRESOLVED COMPLETED NHL GRADING ROWS REMAIN | "
-                f"count={len(unresolved)} | file={UNRESOLVED_FILE}"
+                "UNRESOLVED COMPLETED NHL "
+                "GRADING ROWS REMAIN | "
+                f"count={len(unresolved)} | "
+                f"file={UNRESOLVED_FILE}"
             )
 
     except Exception as e:
-        log_error(f"GRADING FAILED | {e}")
-        print(f"NHL grading failed: {e}")
+        log_error(
+            f"GRADING FAILED | {e}"
+        )
+
+        print(
+            f"NHL grading failed: {e}"
+        )
+
         raise
 
-    log_summary("END 01_nhl_results_grade.py")
-    print("NHL grading complete.")
+    log_summary(
+        "END 01_nhl_results_grade.py"
+    )
+
+    print(
+        "NHL grading complete."
+    )
 
 
 if __name__ == "__main__":

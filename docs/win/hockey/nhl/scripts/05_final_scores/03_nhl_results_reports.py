@@ -35,6 +35,7 @@ TOTAL_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_LOG = ERROR_DIR / "03_nhl_results_reports_errors.txt"
 SUMMARY_LOG = ERROR_DIR / "03_nhl_results_reports_summary.txt"
 UNRESOLVED_FILE = ERROR_DIR / "01_nhl_results_grade_unresolved.csv"
+PENDING_FILE = FINAL_ROOT / "intermediate" / "01_nhl_results_grade_pending.csv"
 
 
 ###############################################################
@@ -164,25 +165,20 @@ def log_summary(msg: str) -> None:
 ###############################################################
 
 def safe_read(path: Path) -> pd.DataFrame:
+    path = Path(path)
+
+    if not path.exists():
+        raise RuntimeError(
+            f"MISSING FILE | {path}"
+        )
+
     try:
-        path = Path(path)
-
-        if not path.exists():
-            log_error(f"MISSING FILE | {path}")
-            return pd.DataFrame()
-
-        df = pd.read_csv(path)
-
-        if df.empty:
-            log_error(f"EMPTY FILE | {path}")
-            return pd.DataFrame()
-
-        return df
+        return pd.read_csv(path)
 
     except Exception as e:
-        log_error(f"READ ERROR | {path} | {e}")
-        return pd.DataFrame()
-
+        raise RuntimeError(
+            f"READ ERROR | {path} | {e}"
+        ) from e
 
 def normalize_market(value) -> str:
     value = str(value).strip().lower()
@@ -300,7 +296,15 @@ def prepare_df(df: pd.DataFrame) -> pd.DataFrame:
     df["league"] = "nhl"
     df["market_type"] = df["market_type"].map(normalize_market)
     df["bet_side"] = df["bet_side"].map(normalize_side)
-    df["side_group"] = df.apply(side_group, axis=1)
+    if df.empty:
+        df["side_group"] = pd.Series(
+            dtype=str
+        )
+    else:
+        df["side_group"] = df.apply(
+            side_group,
+            axis=1,
+        )
 
     numeric_cols = [
         "line",
@@ -458,6 +462,8 @@ def write_market_tally(df: pd.DataFrame) -> None:
 
 
 
+
+
 def fail_if_unresolved_rows_exist() -> None:
     if not UNRESOLVED_FILE.exists():
         return
@@ -493,12 +499,16 @@ def main() -> None:
 
     fail_if_unresolved_rows_exist()
 
-    df = safe_read(INPUT_FILE)
+    try:
+        df = safe_read(
+            INPUT_FILE
+        )
 
-    if df.empty:
-        msg = "STOPPING: work file missing or empty"
-        log_error(msg)
-        raise RuntimeError(msg)
+    except Exception as e:
+        log_error(
+            f"REPORT INPUT FAILED | {e}"
+        )
+        raise
 
     required = [
         "league",
@@ -679,7 +689,14 @@ def main() -> None:
     write_market_tally(df)
 
     log_summary("END 03_nhl_results_reports.py")
-    print("NHL reports complete.")
+
+    if df.empty:
+        print(
+            "NHL reports complete: "
+            "no completed graded bets."
+        )
+    else:
+        print("NHL reports complete.")
 
 
 if __name__ == "__main__":
