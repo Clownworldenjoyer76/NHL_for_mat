@@ -3,6 +3,7 @@
 
 from datetime import datetime, UTC
 from pathlib import Path
+import re
 
 import pandas as pd
 
@@ -32,6 +33,8 @@ SELECT_PATTERN = "*_NHL.csv"
 SCORE_PATTERN = "*_NHL_final_scores.csv"
 
 MASTER_FILE = GRADED_DIR / "NHL_final.csv"
+
+GAME_ID_RE = re.compile(r"^\d{10}$")
 
 
 ###############################################################
@@ -125,6 +128,26 @@ def require_columns(df: pd.DataFrame, required: list[str], label: str) -> bool:
     return True
 
 
+def validate_game_ids(df: pd.DataFrame, label: str) -> bool:
+    invalid = []
+
+    for row_number, value in enumerate(df["game_id"], start=2):
+        game_id = str(value).strip()
+
+        if not GAME_ID_RE.fullmatch(game_id):
+            invalid.append((row_number, game_id))
+
+    if invalid:
+        for row_number, game_id in invalid:
+            log_error(
+                f"INVALID CANONICAL game_id | {label} | "
+                f"row={row_number} | game_id={game_id}"
+            )
+        return False
+
+    return True
+
+
 def clean_old_outputs() -> None:
     for path in GRADED_DIR.glob("*_results_NHL.csv"):
         path.unlink(missing_ok=True)
@@ -184,6 +207,9 @@ def load_select_rows() -> pd.DataFrame:
         df["market_type"] = df["market_type"].map(normalize_market)
         df["bet_side"] = df["bet_side"].map(normalize_side)
 
+        if not validate_game_ids(df, str(path)):
+            continue
+
         parts.append(df)
 
     if not parts:
@@ -233,6 +259,9 @@ def load_score_rows() -> pd.DataFrame:
         df["home_team"] = df["home_team"].map(normalize_team)
         df["game_id"] = df["game_id"].astype(str).str.strip()
 
+        if not validate_game_ids(df, str(path)):
+            continue
+
         parts.append(df)
 
     if not parts:
@@ -248,48 +277,33 @@ def load_score_rows() -> pd.DataFrame:
 ###################### SCORE LOOKUPS ##########################
 ###############################################################
 
-def team_key(row) -> str:
-    return (
-        f"{normalize_date(row.get('game_date', ''))}|"
-        f"{normalize_team(row.get('away_team', ''))}|"
-        f"{normalize_team(row.get('home_team', ''))}"
-    )
-
-
-def build_score_indexes(scores: pd.DataFrame) -> tuple[dict[str, dict], dict[str, dict]]:
+def build_score_index(scores: pd.DataFrame) -> dict[str, dict]:
     by_game_id: dict[str, dict] = {}
-    by_team_key: dict[str, dict] = {}
 
     for _, row in scores.iterrows():
         rec = row.to_dict()
-
         game_id = str(rec.get("game_id", "")).strip()
-        if game_id:
-            if game_id in by_game_id:
-                log_error(f"DUPLICATE FINAL SCORE game_id | {game_id}")
-            else:
-                by_game_id[game_id] = rec
 
-        key = team_key(rec)
-        if key in by_team_key:
-            log_error(f"DUPLICATE FINAL SCORE team/date key | {key}")
-        else:
-            by_team_key[key] = rec
+        if game_id in by_game_id:
+            raise RuntimeError(
+                f"DUPLICATE FINAL SCORE game_id | {game_id}"
+            )
 
-    return by_game_id, by_team_key
+        by_game_id[game_id] = rec
+
+    return by_game_id
 
 
-def attach_score_to_bet(bet: dict, by_game_id: dict[str, dict], by_team_key: dict[str, dict]) -> dict | None:
+def attach_score_to_bet(
+    bet: dict,
+    by_game_id: dict[str, dict],
+) -> dict | None:
     game_id = str(bet.get("game_id", "")).strip()
 
-    if game_id and game_id in by_game_id:
-        return by_game_id[game_id]
+    if not GAME_ID_RE.fullmatch(game_id):
+        return None
 
-    key = team_key(bet)
-    if key in by_team_key:
-        return by_team_key[key]
-
-    return None
+    return by_game_id.get(game_id)
 
 
 ###############################################################
@@ -378,7 +392,7 @@ def determine_outcome(row: dict) -> str:
 ###############################################################
 
 def grade_rows(bets: pd.DataFrame, scores: pd.DataFrame) -> pd.DataFrame:
-    by_game_id, by_team_key = build_score_indexes(scores)
+    by_game_id = build_score_index(scores)
 
     graded_rows = []
     unmatched_rows = 0
@@ -394,16 +408,17 @@ def grade_rows(bets: pd.DataFrame, scores: pd.DataFrame) -> pd.DataFrame:
 
     for _, bet_row in bets.iterrows():
         bet = bet_row.to_dict()
-        score = attach_score_to_bet(bet, by_game_id, by_team_key)
+        score = attach_score_to_bet(bet, by_game_id)
 
         if score is None:
             unmatched_rows += 1
             log_error(
-                "NO FINAL SCORE MATCH | "
+                "NO FINAL SCORE game_id MATCH | "
                 f"game_date={bet.get('game_date', '')} | "
                 f"game_id={bet.get('game_id', '')} | "
                 f"{bet.get('away_team', '')} at {bet.get('home_team', '')} | "
-                f"market={bet.get('market_type', '')} | side={bet.get('bet_side', '')}"
+                f"market={bet.get('market_type', '')} | "
+                f"side={bet.get('bet_side', '')}"
             )
             continue
 
@@ -411,8 +426,13 @@ def grade_rows(bets: pd.DataFrame, scores: pd.DataFrame) -> pd.DataFrame:
 
         score_game_id = str(score.get("game_id", "")).strip()
         bet_game_id = str(combined.get("game_id", "")).strip()
-        if not bet_game_id and score_game_id:
-            combined["game_id"] = score_game_id
+
+        if bet_game_id != score_game_id:
+            raise RuntimeError(
+                "CANONICAL game_id MISMATCH | "
+                f"bet_game_id={bet_game_id} | "
+                f"score_game_id={score_game_id}"
+            )
 
         for col in score_cols:
             combined[col] = score.get(col, "")
@@ -421,7 +441,8 @@ def grade_rows(bets: pd.DataFrame, scores: pd.DataFrame) -> pd.DataFrame:
         graded_rows.append(combined)
 
     log_summary(
-        f"GRADED ROWS BUILT | input_bets={len(bets)} | graded={len(graded_rows)} | unmatched={unmatched_rows}"
+        f"GRADED ROWS BUILT | input_bets={len(bets)} | "
+        f"graded={len(graded_rows)} | unmatched={unmatched_rows}"
     )
 
     return pd.DataFrame(graded_rows)
@@ -477,7 +498,10 @@ def write_outputs(df: pd.DataFrame) -> None:
         date_df.to_csv(out_path, index=False)
 
         counts = date_df["bet_result"].astype(str).value_counts().to_dict()
-        log_summary(f"WROTE DAILY GRADED | {out_path} | rows={len(date_df)} | results={counts}")
+        log_summary(
+            f"WROTE DAILY GRADED | {out_path} | "
+            f"rows={len(date_df)} | results={counts}"
+        )
 
     df.to_csv(MASTER_FILE, index=False)
     log_summary(f"WROTE MASTER GRADED | {MASTER_FILE} | rows={len(df)}")
@@ -509,7 +533,13 @@ def main() -> None:
         print("NHL grading failed: no final score rows.")
         return
 
-    graded = grade_rows(bets, scores)
+    try:
+        graded = grade_rows(bets, scores)
+    except Exception as e:
+        log_error(f"GRADING FAILED | {e}")
+        print(f"NHL grading failed: {e}")
+        raise
+
     write_outputs(graded)
 
     log_summary("END 01_nhl_results_grade.py")
