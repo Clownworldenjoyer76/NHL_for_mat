@@ -33,8 +33,12 @@ SELECT_PATTERN = "*_NHL.csv"
 SCORE_PATTERN = "*_NHL_final_scores.csv"
 
 MASTER_FILE = GRADED_DIR / "NHL_final.csv"
+STATUS_FILE = INTERMEDIATE_DIR / "nhl_game_status.csv"
+PENDING_FILE = INTERMEDIATE_DIR / "01_nhl_results_grade_pending.csv"
+WORK_FILE = INTERMEDIATE_DIR / "work_nhl.csv"
 UNRESOLVED_FILE = ERROR_DIR / "01_nhl_results_grade_unresolved.csv"
 
+FINAL_GAME_STATES = {"FINAL", "OFF"}
 GAME_ID_RE = re.compile(r"^\d{10}$")
 
 
@@ -157,7 +161,9 @@ def clean_old_outputs() -> None:
         path.unlink(missing_ok=True)
 
     MASTER_FILE.unlink(missing_ok=True)
+    PENDING_FILE.unlink(missing_ok=True)
     UNRESOLVED_FILE.unlink(missing_ok=True)
+    WORK_FILE.unlink(missing_ok=True)
 
     log_summary("CLEARED OLD NHL GRADED OUTPUTS")
 
@@ -268,6 +274,65 @@ def load_score_rows() -> pd.DataFrame:
     return out
 
 
+
+def load_status_rows() -> pd.DataFrame:
+    df = safe_read(STATUS_FILE)
+
+    required = [
+        "sport",
+        "league",
+        "game_date",
+        "game_id",
+        "away_team",
+        "home_team",
+        "game_state",
+        "game_schedule_state",
+        "is_final",
+        "status_observed_at",
+    ]
+
+    require_columns(
+        df,
+        required,
+        str(STATUS_FILE),
+    )
+
+    df = df.copy()
+    df["source_status_file"] = STATUS_FILE.name
+    df["game_date"] = df["game_date"].map(normalize_date)
+    df["away_team"] = df["away_team"].map(normalize_team)
+    df["home_team"] = df["home_team"].map(normalize_team)
+    df["game_id"] = df["game_id"].astype(str).str.strip()
+    df["game_state"] = (
+        df["game_state"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+    df["game_schedule_state"] = (
+        df["game_schedule_state"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+
+    validate_game_ids(
+        df,
+        str(STATUS_FILE),
+    )
+
+    if df["game_state"].eq("").any():
+        raise RuntimeError(
+            f"BLANK official game_state VALUES | {STATUS_FILE}"
+        )
+
+    log_summary(
+        f"OFFICIAL STATUS ROWS LOADED | rows={len(df)}"
+    )
+
+    return df
+
+
 ###############################################################
 ###################### SCORE LOOKUPS ##########################
 ###############################################################
@@ -282,6 +347,31 @@ def build_score_index(scores: pd.DataFrame) -> dict[str, dict]:
         if game_id in by_game_id:
             raise RuntimeError(
                 f"DUPLICATE FINAL SCORE game_id | {game_id}"
+            )
+
+        by_game_id[game_id] = rec
+
+    return by_game_id
+
+
+
+def build_status_index(
+    statuses: pd.DataFrame,
+) -> dict[str, dict]:
+    by_game_id: dict[str, dict] = {}
+
+    for _, row in statuses.iterrows():
+        rec = row.to_dict()
+        game_id = str(
+            rec.get(
+                "game_id",
+                "",
+            )
+        ).strip()
+
+        if game_id in by_game_id:
+            raise RuntimeError(
+                f"DUPLICATE OFFICIAL STATUS game_id | {game_id}"
             )
 
         by_game_id[game_id] = rec
@@ -389,10 +479,22 @@ def determine_outcome(row: dict) -> str:
 def grade_rows(
     bets: pd.DataFrame,
     scores: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
-    by_game_id = build_score_index(scores)
+    statuses: pd.DataFrame,
+) -> tuple[
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+]:
+    by_game_id = build_score_index(
+        scores
+    )
+
+    status_by_game_id = build_status_index(
+        statuses
+    )
 
     graded_rows = []
+    pending_rows = []
     unresolved_rows = []
 
     score_cols = [
@@ -404,71 +506,195 @@ def grade_rows(
         "source_score_file",
     ]
 
+    status_cols = [
+        "game_state",
+        "game_schedule_state",
+        "is_final",
+        "status_observed_at",
+        "source_status_file",
+    ]
+
     for _, bet_row in bets.iterrows():
         bet = bet_row.to_dict()
-        score = attach_score_to_bet(bet, by_game_id)
 
-        if score is None:
+        game_id = str(
+            bet.get(
+                "game_id",
+                "",
+            )
+        ).strip()
+
+        status = status_by_game_id.get(
+            game_id
+        )
+
+        score = attach_score_to_bet(
+            bet,
+            by_game_id,
+        )
+
+        if status is None:
             unresolved = dict(bet)
-            unresolved["unresolved_reason"] = "no_final_score_match"
-            unresolved_rows.append(unresolved)
+            unresolved["unresolved_reason"] = (
+                "official_game_status_missing"
+            )
+            unresolved_rows.append(
+                unresolved
+            )
 
             log_error(
-                "NO FINAL SCORE game_id MATCH | "
+                "OFFICIAL GAME STATUS MISSING | "
                 f"game_date={bet.get('game_date', '')} | "
-                f"game_id={bet.get('game_id', '')} | "
-                f"{bet.get('away_team', '')} at {bet.get('home_team', '')} | "
+                f"game_id={game_id} | "
+                f"{bet.get('away_team', '')} at "
+                f"{bet.get('home_team', '')}"
+            )
+            continue
+
+        game_state = str(
+            status.get(
+                "game_state",
+                "",
+            )
+        ).strip().upper()
+
+        combined = dict(bet)
+
+        for col in status_cols:
+            combined[col] = status.get(
+                col,
+                "",
+            )
+
+        if game_state not in FINAL_GAME_STATES:
+            if score is not None:
+                combined[
+                    "unresolved_reason"
+                ] = "score_present_for_nonfinal_game"
+
+                unresolved_rows.append(
+                    combined
+                )
+
+                log_error(
+                    "FINAL SCORE PRESENT FOR NONFINAL GAME | "
+                    f"game_id={game_id} | "
+                    f"game_state={game_state}"
+                )
+                continue
+
+            combined["pending_reason"] = (
+                "official_game_not_final"
+            )
+
+            pending_rows.append(
+                combined
+            )
+
+            log_summary(
+                "PENDING GAME | "
+                f"game_date={bet.get('game_date', '')} | "
+                f"game_id={game_id} | "
+                f"game_state={game_state} | "
                 f"market={bet.get('market_type', '')} | "
                 f"side={bet.get('bet_side', '')}"
             )
             continue
 
-        combined = dict(bet)
+        if score is None:
+            combined[
+                "unresolved_reason"
+            ] = "final_game_missing_final_score"
 
-        score_game_id = str(score.get("game_id", "")).strip()
-        bet_game_id = str(combined.get("game_id", "")).strip()
+            unresolved_rows.append(
+                combined
+            )
 
-        if bet_game_id != score_game_id:
+            log_error(
+                "FINAL GAME MISSING FINAL SCORE | "
+                f"game_date={bet.get('game_date', '')} | "
+                f"game_id={game_id} | "
+                f"game_state={game_state}"
+            )
+            continue
+
+        score_game_id = str(
+            score.get(
+                "game_id",
+                "",
+            )
+        ).strip()
+
+        if game_id != score_game_id:
             raise RuntimeError(
                 "CANONICAL game_id MISMATCH | "
-                f"bet_game_id={bet_game_id} | "
+                f"bet_game_id={game_id} | "
                 f"score_game_id={score_game_id}"
             )
 
         for col in score_cols:
-            combined[col] = score.get(col, "")
+            combined[col] = score.get(
+                col,
+                "",
+            )
 
-        result = determine_outcome(combined)
+        result = determine_outcome(
+            combined
+        )
 
         if result == "Unknown":
             combined["bet_result"] = result
-            combined["unresolved_reason"] = "unknown_outcome"
-            unresolved_rows.append(combined)
+            combined[
+                "unresolved_reason"
+            ] = "unknown_outcome"
+
+            unresolved_rows.append(
+                combined
+            )
 
             log_error(
                 "UNRESOLVED OUTCOME | "
                 f"game_date={combined.get('game_date', '')} | "
-                f"game_id={combined.get('game_id', '')} | "
+                f"game_id={game_id} | "
                 f"market={combined.get('market_type', '')} | "
                 f"side={combined.get('bet_side', '')}"
             )
             continue
 
         combined["bet_result"] = result
-        graded_rows.append(combined)
 
-    graded_df = pd.DataFrame(graded_rows)
-    unresolved_df = pd.DataFrame(unresolved_rows)
+        graded_rows.append(
+            combined
+        )
+
+    graded_df = pd.DataFrame(
+        graded_rows
+    )
+
+    pending_df = pd.DataFrame(
+        pending_rows
+    )
+
+    unresolved_df = pd.DataFrame(
+        unresolved_rows
+    )
 
     selected_count = len(bets)
     graded_count = len(graded_df)
+    pending_count = len(pending_df)
     unresolved_count = len(unresolved_df)
 
-    if selected_count != graded_count + unresolved_count:
+    if (
+        selected_count
+        != graded_count
+        + pending_count
+        + unresolved_count
+    ):
         raise RuntimeError(
             "LOSSLESS RECONCILIATION FAILED | "
             f"selected={selected_count} | "
             f"graded={graded_count} | "
+            f"pending={pending_count} | "
             f"unresolved={unresolved_count}"
         )
 
@@ -476,10 +702,71 @@ def grade_rows(
         "GRADING RECONCILIATION | "
         f"selected={selected_count} | "
         f"graded={graded_count} | "
+        f"pending={pending_count} | "
         f"unresolved={unresolved_count}"
     )
 
-    return graded_df, unresolved_df
+    return (
+        graded_df,
+        pending_df,
+        unresolved_df,
+    )
+
+
+def write_pending(
+    df: pd.DataFrame,
+) -> None:
+    if df.empty:
+        PENDING_FILE.unlink(
+            missing_ok=True
+        )
+
+        log_summary(
+            "NO PENDING GRADING ROWS"
+        )
+        return
+
+    df = df.copy()
+
+    if "game_date" in df.columns:
+        df["game_date"] = df[
+            "game_date"
+        ].map(
+            normalize_date
+        )
+
+    sort_cols = [
+        c
+        for c in [
+            "game_date",
+            "game_time",
+            "game_id",
+            "away_team",
+            "home_team",
+            "market_type",
+            "bet_side",
+            "line",
+            "game_state",
+            "pending_reason",
+        ]
+        if c in df.columns
+    ]
+
+    if sort_cols:
+        df = df.sort_values(
+            sort_cols,
+            kind="mergesort",
+        )
+
+    df.to_csv(
+        PENDING_FILE,
+        index=False,
+    )
+
+    log_summary(
+        "WROTE PENDING GRADING ROWS | "
+        f"{PENDING_FILE} | rows={len(df)}"
+    )
 
 
 def write_unresolved(df: pd.DataFrame) -> None:
@@ -519,9 +806,9 @@ def write_unresolved(df: pd.DataFrame) -> None:
 
 def write_outputs(df: pd.DataFrame) -> None:
     if df.empty:
-        msg = "NO GRADED ROWS TO WRITE"
-        log_error(msg)
-        raise RuntimeError(msg)
+        MASTER_FILE.unlink(missing_ok=True)
+        log_summary("NO COMPLETED GRADED ROWS TO WRITE")
+        return
 
     df = df.copy()
     df["game_date"] = df["game_date"].map(normalize_date)
@@ -569,23 +856,31 @@ def main() -> None:
     log_summary(f"SELECT_DIR={SELECT_DIR}")
     log_summary(f"SCORE_DIR={SCORE_DIR}")
     log_summary(f"GRADED_DIR={GRADED_DIR}")
+    log_summary(f"STATUS_FILE={STATUS_FILE}")
+    log_summary(f"PENDING_FILE={PENDING_FILE}")
 
     clean_old_outputs()
 
     try:
         bets = load_select_rows()
         scores = load_score_rows()
-        graded, unresolved = grade_rows(bets, scores)
+        statuses = load_status_rows()
 
+        graded, pending, unresolved = grade_rows(
+            bets,
+            scores,
+            statuses,
+        )
+
+        write_pending(pending)
         write_unresolved(unresolved)
+        write_outputs(graded)
 
         if not unresolved.empty:
             raise RuntimeError(
                 "UNRESOLVED COMPLETED NHL GRADING ROWS REMAIN | "
                 f"count={len(unresolved)} | file={UNRESOLVED_FILE}"
             )
-
-        write_outputs(graded)
 
     except Exception as e:
         log_error(f"GRADING FAILED | {e}")
