@@ -41,29 +41,6 @@ jobs:
         run: |
           python docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
 
-      - name: Restore production working folders
-        if: always()
-        run: |
-          git restore --worktree --staged `
-            docs/win/hockey/nhl/odds `
-            docs/win/hockey/nhl/00_intake/predictions `
-            docs/win/hockey/nhl/00_intake/sportsbook `
-            docs/win/hockey/nhl/00_intake/nhl_schedule `
-            docs/win/hockey/nhl/00_intake/reconciled `
-            docs/win/hockey/nhl/00_intake/games `
-            docs/win/hockey/nhl/config/mapping `
-            docs/win/hockey/nhl/errors/00_intake
-
-          git clean -fd `
-            docs/win/hockey/nhl/odds `
-            docs/win/hockey/nhl/00_intake/predictions `
-            docs/win/hockey/nhl/00_intake/sportsbook `
-            docs/win/hockey/nhl/00_intake/nhl_schedule `
-            docs/win/hockey/nhl/00_intake/reconciled `
-            docs/win/hockey/nhl/00_intake/games `
-            docs/win/hockey/nhl/config/mapping `
-            docs/win/hockey/nhl/errors/00_intake
-
       - name: Commit permanent test outputs
         run: |
           git config user.name "github-actions[bot]"

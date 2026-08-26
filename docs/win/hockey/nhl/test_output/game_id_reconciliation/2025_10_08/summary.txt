@@ -5,3 +5,4 @@ STATUS=PASSED
 official_nhl_game_id=2025020004
 sportsbook_event_id=fixture_sb_20251008_001
 fixture_source=game_id_reconciliation
+workspace=isolated_temp_directory

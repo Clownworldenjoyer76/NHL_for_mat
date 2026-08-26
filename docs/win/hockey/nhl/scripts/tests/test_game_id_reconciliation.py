@@ -6,10 +6,14 @@ from __future__ import annotations
 import csv
 import shutil
 import subprocess
+import sys
+import tempfile
 from pathlib import Path
 
 
-BASE_DIR = Path("docs/win/hockey/nhl")
+REPO_ROOT = Path.cwd()
+BASE_REL = Path("docs/win/hockey/nhl")
+BASE_DIR = REPO_ROOT / BASE_REL
 
 FIXTURE_ROOT = (
     BASE_DIR
@@ -21,49 +25,10 @@ FIXTURE_ODDS_DIR = FIXTURE_ROOT / "odds"
 FIXTURE_PREDICTIONS_DIR = FIXTURE_ROOT / "predictions"
 FIXTURE_SPORTSBOOK_DIR = FIXTURE_ROOT / "sportsbook"
 
-ODDS_DIR = BASE_DIR / "odds"
-SCRAPER_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "predictions"
-    / "scraper"
-)
-SPORTSBOOK_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "sportsbook"
-)
-PREDICTIONS_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "predictions"
-)
-SCHEDULE_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "nhl_schedule"
-)
-RECONCILED_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "reconciled"
-)
-GAMES_DIR = (
-    BASE_DIR
-    / "00_intake"
-    / "games"
-)
-
 TEST_OUTPUT_ROOT = (
     BASE_DIR
     / "test_output"
     / "game_id_reconciliation"
-)
-
-SCRIPT_DIR = (
-    BASE_DIR
-    / "scripts"
-    / "00_intake"
 )
 
 EXPECTED_OFFICIAL_GAME_ID = "2025020004"
@@ -77,42 +42,6 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         encoding="utf-8-sig",
     ) as handle:
         return list(csv.DictReader(handle))
-
-
-def run_script(name: str) -> None:
-    subprocess.run(
-        [
-            "python",
-            str(SCRIPT_DIR / name),
-        ],
-        check=True,
-    )
-
-
-def remove_root_files(
-    directory: Path,
-    pattern: str,
-) -> None:
-    directory.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    for path in directory.glob(pattern):
-        if path.is_file():
-            path.unlink()
-
-
-def recreate_directory(
-    directory: Path,
-) -> None:
-    if directory.exists():
-        shutil.rmtree(directory)
-
-    directory.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
 
 
 def fixture_dates() -> list[str]:
@@ -153,76 +82,97 @@ def fixture_dates() -> list[str]:
     return common
 
 
-def prepare_fixture_inputs(
+def prepare_workspace(
+    workspace_root: Path,
     test_date: str,
-) -> None:
-    remove_root_files(
-        ODDS_DIR,
-        "*.json",
+) -> Path:
+    work_base = (
+        workspace_root
+        / BASE_REL
     )
 
-    remove_root_files(
-        SCRAPER_DIR,
-        "*_nhl_predictions.csv",
+    shutil.copytree(
+        BASE_DIR / "scripts" / "00_intake",
+        work_base / "scripts" / "00_intake",
     )
 
-    remove_root_files(
-        SPORTSBOOK_DIR,
-        "*.csv",
+    shutil.copytree(
+        BASE_DIR / "config" / "mapping",
+        work_base / "config" / "mapping",
     )
 
-    remove_root_files(
-        PREDICTIONS_DIR,
-        "hockey_*.csv",
+    odds_dir = work_base / "odds"
+    scraper_dir = (
+        work_base
+        / "00_intake"
+        / "predictions"
+        / "scraper"
+    )
+    sportsbook_dir = (
+        work_base
+        / "00_intake"
+        / "sportsbook"
     )
 
-    recreate_directory(
-        SCHEDULE_DIR
-    )
-
-    recreate_directory(
-        RECONCILED_DIR
-    )
-
-    (
-        RECONCILED_DIR
-        / "audit"
-    ).mkdir(
+    odds_dir.mkdir(
         parents=True,
         exist_ok=True,
     )
-
-    recreate_directory(
-        GAMES_DIR
+    scraper_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+    sportsbook_dir.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
     shutil.copy2(
         FIXTURE_ODDS_DIR
         / f"{test_date}.json",
-        ODDS_DIR
+        odds_dir
         / f"{test_date}.json",
     )
 
     shutil.copy2(
         FIXTURE_PREDICTIONS_DIR
         / f"{test_date}_nhl_predictions.csv",
-        SCRAPER_DIR
+        scraper_dir
         / f"{test_date}_nhl_predictions.csv",
     )
 
-    shutil.copy2(
-        FIXTURE_SPORTSBOOK_DIR
-        / f"NHL_{test_date}.csv",
-        SPORTSBOOK_DIR
-        / f"NHL_{test_date}.csv",
+    return work_base
+
+
+def run_script(
+    workspace_root: Path,
+    name: str,
+) -> None:
+    script_path = (
+        BASE_REL
+        / "scripts"
+        / "00_intake"
+        / name
+    )
+
+    subprocess.run(
+        [
+            sys.executable,
+            str(script_path),
+        ],
+        cwd=workspace_root,
+        check=True,
     )
 
 
 def validate_transformed_sportsbook(
+    work_base: Path,
     test_date: str,
 ) -> None:
     generated_path = (
-        SPORTSBOOK_DIR
+        work_base
+        / "00_intake"
+        / "sportsbook"
         / f"NHL_{test_date}.csv"
     )
 
@@ -247,12 +197,12 @@ def validate_transformed_sportsbook(
     if generated != expected:
         raise RuntimeError(
             "Generated sportsbook output does not match "
-            f"fixture sportsbook input: {expected_path}"
+            f"fixture sportsbook file: {expected_path}"
         )
 
     if len(generated) != 1:
         raise RuntimeError(
-            "Fixture sportsbook must produce exactly "
+            "Fixture sportsbook must contain exactly "
             f"one row. Found: {len(generated)}"
         )
 
@@ -267,7 +217,7 @@ def validate_transformed_sportsbook(
     if (
         row.get(
             "sportsbook_event_id",
-            ""
+            "",
         ).strip()
         != EXPECTED_PROVIDER_ID
     ):
@@ -276,11 +226,32 @@ def validate_transformed_sportsbook(
         )
 
 
+def stage_fixture_sportsbook(
+    work_base: Path,
+    test_date: str,
+) -> None:
+    target = (
+        work_base
+        / "00_intake"
+        / "sportsbook"
+        / f"NHL_{test_date}.csv"
+    )
+
+    shutil.copy2(
+        FIXTURE_SPORTSBOOK_DIR
+        / f"NHL_{test_date}.csv",
+        target,
+    )
+
+
 def validate_transformed_predictions(
+    work_base: Path,
     test_date: str,
 ) -> None:
     path = (
-        PREDICTIONS_DIR
+        work_base
+        / "00_intake"
+        / "predictions"
         / f"hockey_{test_date}.csv"
     )
 
@@ -308,10 +279,13 @@ def validate_transformed_predictions(
 
 
 def validate_schedule(
+    work_base: Path,
     test_date: str,
 ) -> None:
     path = (
-        SCHEDULE_DIR
+        work_base
+        / "00_intake"
+        / "nhl_schedule"
         / f"NHL_{test_date}.csv"
     )
 
@@ -358,25 +332,34 @@ def validate_schedule(
 
 
 def validate_reconciliation(
+    work_base: Path,
     test_date: str,
 ) -> None:
     sportsbook_path = (
-        SPORTSBOOK_DIR
+        work_base
+        / "00_intake"
+        / "sportsbook"
         / f"NHL_{test_date}.csv"
     )
 
     prediction_path = (
-        PREDICTIONS_DIR
+        work_base
+        / "00_intake"
+        / "predictions"
         / f"hockey_{test_date}.csv"
     )
 
     reconciled_path = (
-        RECONCILED_DIR
+        work_base
+        / "00_intake"
+        / "reconciled"
         / f"NHL_{test_date}.csv"
     )
 
     audit_path = (
-        RECONCILED_DIR
+        work_base
+        / "00_intake"
+        / "reconciled"
         / "audit"
         / f"NHL_{test_date}_reconciliation.csv"
     )
@@ -536,10 +519,13 @@ def validate_reconciliation(
 
 
 def validate_games(
+    work_base: Path,
     test_date: str,
 ) -> None:
     path = (
-        GAMES_DIR
+        work_base
+        / "00_intake"
+        / "games"
         / f"{test_date}_nhl_games.csv"
     )
 
@@ -582,6 +568,7 @@ def validate_games(
 
 
 def save_test_output(
+    work_base: Path,
     test_date: str,
 ) -> Path:
     output_dir = (
@@ -611,35 +598,45 @@ def save_test_output(
 
     copies = {
         (
-            SCHEDULE_DIR
+            work_base
+            / "00_intake"
+            / "nhl_schedule"
             / f"NHL_{test_date}.csv"
         ): (
             output_dir
             / "nhl_schedule.csv"
         ),
         (
-            SPORTSBOOK_DIR
+            work_base
+            / "00_intake"
+            / "sportsbook"
             / f"NHL_{test_date}.csv"
         ): (
             output_dir
             / "sportsbook_reconciled.csv"
         ),
         (
-            PREDICTIONS_DIR
+            work_base
+            / "00_intake"
+            / "predictions"
             / f"hockey_{test_date}.csv"
         ): (
             output_dir
             / "predictions_reconciled.csv"
         ),
         (
-            RECONCILED_DIR
+            work_base
+            / "00_intake"
+            / "reconciled"
             / f"NHL_{test_date}.csv"
         ): (
             output_dir
             / "reconciled_games.csv"
         ),
         (
-            RECONCILED_DIR
+            work_base
+            / "00_intake"
+            / "reconciled"
             / "audit"
             / f"NHL_{test_date}_reconciliation.csv"
         ): (
@@ -647,7 +644,9 @@ def save_test_output(
             / "reconciliation_audit.csv"
         ),
         (
-            GAMES_DIR
+            work_base
+            / "00_intake"
+            / "games"
             / f"{test_date}_nhl_games.csv"
         ): (
             output_dir
@@ -662,7 +661,7 @@ def save_test_output(
         )
 
     error_dir = (
-        BASE_DIR
+        work_base
         / "errors"
         / "00_intake"
     )
@@ -696,6 +695,7 @@ def save_test_output(
             f"{EXPECTED_PROVIDER_ID}"
         ),
         "fixture_source=game_id_reconciliation",
+        "workspace=isolated_temp_directory",
     ]
 
     (
@@ -717,53 +717,75 @@ def main() -> None:
         f"Fixture test date: {test_date}"
     )
 
-    prepare_fixture_inputs(
-        test_date
-    )
+    with tempfile.TemporaryDirectory(
+        prefix="nhl_game_id_reconciliation_"
+    ) as temp_dir:
+        workspace_root = Path(temp_dir)
 
-    run_script(
-        "transform_hockey_odds.py"
-    )
+        work_base = prepare_workspace(
+            workspace_root,
+            test_date,
+        )
 
-    validate_transformed_sportsbook(
-        test_date
-    )
+        run_script(
+            workspace_root,
+            "transform_hockey_odds.py",
+        )
 
-    run_script(
-        "transform_hockey.py"
-    )
+        validate_transformed_sportsbook(
+            work_base,
+            test_date,
+        )
 
-    validate_transformed_predictions(
-        test_date
-    )
+        stage_fixture_sportsbook(
+            work_base,
+            test_date,
+        )
 
-    run_script(
-        "pull_nhl_schedule.py"
-    )
+        run_script(
+            workspace_root,
+            "transform_hockey.py",
+        )
 
-    validate_schedule(
-        test_date
-    )
+        validate_transformed_predictions(
+            work_base,
+            test_date,
+        )
 
-    run_script(
-        "reconcile_game_ids.py"
-    )
+        run_script(
+            workspace_root,
+            "pull_nhl_schedule.py",
+        )
 
-    validate_reconciliation(
-        test_date
-    )
+        validate_schedule(
+            work_base,
+            test_date,
+        )
 
-    run_script(
-        "build_games.py"
-    )
+        run_script(
+            workspace_root,
+            "reconcile_game_ids.py",
+        )
 
-    validate_games(
-        test_date
-    )
+        validate_reconciliation(
+            work_base,
+            test_date,
+        )
 
-    output_dir = save_test_output(
-        test_date
-    )
+        run_script(
+            workspace_root,
+            "build_games.py",
+        )
+
+        validate_games(
+            work_base,
+            test_date,
+        )
+
+        output_dir = save_test_output(
+            work_base,
+            test_date,
+        )
 
     print(
         "NHL GAME ID RECONCILIATION TEST PASSED"
