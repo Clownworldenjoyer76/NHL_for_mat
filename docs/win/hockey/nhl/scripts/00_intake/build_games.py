@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # docs/win/hockey/nhl/scripts/00_intake/build_games.py
 
 from __future__ import annotations
@@ -109,7 +109,7 @@ def read_reconciled_file(
         for row_number, row in enumerate(reader, start=2):
             output_row = {col: (row.get(col) or "").strip() for col in OUTPUT_COLUMNS}
 
-            missing_values = [col for col in OUTPUT_COLUMNS if output_row[col] == ""]
+            missing_values = [col for col in OUTPUT_COLUMNS if col != "sportsbook_event_id" and output_row[col] == ""]
             if missing_values:
                 fail(
                     log_lines,
@@ -123,12 +123,13 @@ def read_reconciled_file(
                 fail(log_lines, f"{path} has duplicate official game_id: {game_id}")
             game_ids_seen.add(game_id)
 
-            if sportsbook_event_id in sportsbook_ids_seen:
+            if sportsbook_event_id and sportsbook_event_id in sportsbook_ids_seen:
                 fail(
                     log_lines,
                     f"{path} has duplicate sportsbook_event_id: {sportsbook_event_id}",
                 )
-            sportsbook_ids_seen.add(sportsbook_event_id)
+            if sportsbook_event_id:
+                sportsbook_ids_seen.add(sportsbook_event_id)
 
             game_dates_seen.add(output_row["game_date"])
             rows.append(output_row)
@@ -259,3 +260,4 @@ if __name__ == "__main__":
         write_log(lines)
         print_log(lines)
         raise SystemExit(1)
+
