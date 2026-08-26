@@ -24,6 +24,8 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 SELECT_DIR = BASE_DIR / "04_select"
 RAW_DIR = BASE_DIR / "00_intake" / "drat_raw"
 OUT_DIR = BASE_DIR / "05_final_scores" / "final_scores"
+STATUS_DIR = BASE_DIR / "05_final_scores" / "intermediate"
+STATUS_FILE = STATUS_DIR / "nhl_game_status.csv"
 ERROR_DIR = BASE_DIR / "errors" / "05_final_scores"
 LOG_FILE = ERROR_DIR / "transform_final_scores.txt"
 
@@ -34,6 +36,20 @@ NHL_SCORE_URL = "https://api-web.nhle.com/v1/score/{date}"
 REQUEST_TIMEOUT = 30
 
 FINAL_GAME_STATES = {"FINAL", "OFF"}
+GAME_ID_RE = re.compile(r"^\d{10}$")
+
+STATUS_COLUMNS = [
+    "sport",
+    "league",
+    "game_date",
+    "game_id",
+    "away_team",
+    "home_team",
+    "game_state",
+    "game_schedule_state",
+    "is_final",
+    "status_observed_at",
+]
 
 OUTPUT_COLUMNS = [
     "sport",
@@ -56,6 +72,7 @@ OUTPUT_COLUMNS = [
 
 def ensure_dirs() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    STATUS_DIR.mkdir(parents=True, exist_ok=True)
     ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -674,6 +691,169 @@ def is_official_final(
     )
 
 
+
+def build_official_status_rows(
+    game_date: str,
+    payload: dict[str, Any],
+) -> pd.DataFrame:
+    games = payload.get(
+        "games",
+        [],
+    )
+
+    if not isinstance(games, list):
+        fail(
+            f"Official NHL API games field was not a list "
+            f"for {game_date}"
+        )
+
+    observed_at = datetime.now(UTC).isoformat()
+
+    rows: list[
+        dict[str, Any]
+    ] = []
+
+    for game in games:
+        if not isinstance(game, dict):
+            continue
+
+        official_date = normalize_game_date(
+            game.get("gameDate")
+        )
+
+        if (
+            official_date
+            and official_date != game_date
+        ):
+            continue
+
+        game_id = str(
+            game.get(
+                "id",
+                "",
+            )
+        ).strip()
+
+        if not GAME_ID_RE.fullmatch(game_id):
+            fail(
+                "Official NHL game has invalid canonical game_id: "
+                f"date={game_date} | game_id={game_id}"
+            )
+
+        game_state = str(
+            game.get(
+                "gameState",
+                "",
+            )
+        ).strip().upper()
+
+        if not game_state:
+            fail(
+                "Official NHL game is missing gameState: "
+                f"game_id={game_id}"
+            )
+
+        game_schedule_state = str(
+            game.get(
+                "gameScheduleState",
+                "",
+            )
+        ).strip().upper()
+
+        away_team_data = game.get(
+            "awayTeam",
+            {},
+        )
+
+        home_team_data = game.get(
+            "homeTeam",
+            {},
+        )
+
+        if not isinstance(
+            away_team_data,
+            dict,
+        ):
+            fail(
+                f"Official NHL game {game_id} "
+                "has invalid awayTeam data"
+            )
+
+        if not isinstance(
+            home_team_data,
+            dict,
+        ):
+            fail(
+                f"Official NHL game {game_id} "
+                "has invalid homeTeam data"
+            )
+
+        away_team = official_team_name(
+            away_team_data
+        )
+
+        home_team = official_team_name(
+            home_team_data
+        )
+
+        if (
+            not away_team
+            or not home_team
+        ):
+            fail(
+                "Official NHL game is missing team names: "
+                f"game_id={game_id}"
+            )
+
+        rows.append(
+            {
+                "sport": SPORT,
+                "league": LEAGUE,
+                "game_date": game_date,
+                "game_id": game_id,
+                "away_team": away_team,
+                "home_team": home_team,
+                "game_state": game_state,
+                "game_schedule_state": game_schedule_state,
+                "is_final": game_state in FINAL_GAME_STATES,
+                "status_observed_at": observed_at,
+            }
+        )
+
+    df = pd.DataFrame(
+        rows,
+        columns=STATUS_COLUMNS,
+    )
+
+    if df.empty:
+        return df
+
+    duplicate_ids = df.duplicated(
+        subset=[
+            "game_id",
+        ],
+        keep=False,
+    )
+
+    if duplicate_ids.any():
+        duplicate_values = sorted(
+            df.loc[
+                duplicate_ids,
+                "game_id",
+            ]
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+
+        fail(
+            "Duplicate official NHL status game_id values: "
+            f"{duplicate_values}"
+        )
+
+    return df
+
+
 def build_official_final_rows(
     game_date: str,
     payload: dict[str, Any],
@@ -717,10 +897,10 @@ def build_official_final_rows(
             )
         ).strip()
 
-        if not game_id:
+        if not GAME_ID_RE.fullmatch(game_id):
             fail(
-                "Official final NHL game is missing game_id: "
-                f"date={game_date}"
+                "Official final NHL game has invalid canonical game_id: "
+                f"date={game_date} | game_id={game_id}"
             )
 
         away_team_data = game.get(
@@ -1030,6 +1210,74 @@ def normalize_output_df(
     return df.fillna("")
 
 
+
+def write_status_snapshot(
+    status_parts: list[pd.DataFrame],
+) -> int:
+    non_empty_parts = [
+        df
+        for df in status_parts
+        if not df.empty
+    ]
+
+    if non_empty_parts:
+        df = pd.concat(
+            non_empty_parts,
+            ignore_index=True,
+        )
+    else:
+        df = pd.DataFrame(
+            columns=STATUS_COLUMNS,
+        )
+
+    if not df.empty:
+        duplicate_ids = df.duplicated(
+            subset=[
+                "game_id",
+            ],
+            keep=False,
+        )
+
+        if duplicate_ids.any():
+            duplicate_values = sorted(
+                df.loc[
+                    duplicate_ids,
+                    "game_id",
+                ]
+                .astype(str)
+                .unique()
+                .tolist()
+            )
+
+            fail(
+                "Duplicate official NHL game_id values "
+                "in status snapshot: "
+                f"{duplicate_values}"
+            )
+
+        df = df.sort_values(
+            [
+                "game_date",
+                "game_id",
+                "away_team",
+                "home_team",
+            ],
+            kind="stable",
+        )
+
+    atomic_write_csv(
+        df,
+        STATUS_FILE,
+    )
+
+    log(
+        "WROTE OFFICIAL NHL GAME STATUS: "
+        f"{STATUS_FILE} | rows={len(df)}"
+    )
+
+    return len(df)
+
+
 def write_official_scores_for_date(
     game_date: str,
     df: pd.DataFrame,
@@ -1110,6 +1358,10 @@ def main() -> int:
         f"OUT_DIR={OUT_DIR}"
     )
 
+    log(
+        f"STATUS_FILE={STATUS_FILE}"
+    )
+
     target_dates = discover_target_dates()
 
     log(
@@ -1147,6 +1399,7 @@ def main() -> int:
 
     total_official_games = 0
     files_written = 0
+    status_parts: list[pd.DataFrame] = []
 
     for game_date in sorted(
         target_dates
@@ -1158,6 +1411,15 @@ def main() -> int:
 
         payload = fetch_official_score_payload(
             game_date
+        )
+
+        status_df = build_official_status_rows(
+            game_date,
+            payload,
+        )
+
+        status_parts.append(
+            status_df
         )
 
         official_df = build_official_final_rows(
@@ -1182,9 +1444,18 @@ def main() -> int:
         if rows_written > 0:
             files_written += 1
 
+    status_rows_written = write_status_snapshot(
+        status_parts
+    )
+
     log(
         f"Stage 04 dates queried: "
         f"{len(target_dates)}"
+    )
+
+    log(
+        f"Official NHL status rows written: "
+        f"{status_rows_written}"
     )
 
     log(

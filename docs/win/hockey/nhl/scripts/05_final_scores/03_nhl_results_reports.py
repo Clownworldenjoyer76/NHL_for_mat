@@ -34,6 +34,7 @@ TOTAL_DIR.mkdir(parents=True, exist_ok=True)
 
 ERROR_LOG = ERROR_DIR / "03_nhl_results_reports_errors.txt"
 SUMMARY_LOG = ERROR_DIR / "03_nhl_results_reports_summary.txt"
+UNRESOLVED_FILE = ERROR_DIR / "01_nhl_results_grade_unresolved.csv"
 
 
 ###############################################################
@@ -456,6 +457,29 @@ def write_market_tally(df: pd.DataFrame) -> None:
     log_summary(f"WROTE MARKET TALLY | {TALLY_FILE} | rows={len(tally)}")
 
 
+
+def fail_if_unresolved_rows_exist() -> None:
+    if not UNRESOLVED_FILE.exists():
+        return
+
+    try:
+        unresolved = pd.read_csv(UNRESOLVED_FILE, dtype=str)
+    except pd.errors.EmptyDataError:
+        return
+    except Exception as e:
+        raise RuntimeError(
+            f"FAILED TO READ UNRESOLVED GRADING FILE | {UNRESOLVED_FILE} | {e}"
+        ) from e
+
+    if unresolved.empty:
+        return
+
+    raise RuntimeError(
+        "FINAL REPORTING BLOCKED: unresolved completed NHL grading rows remain | "
+        f"count={len(unresolved)} | file={UNRESOLVED_FILE}"
+    )
+
+
 ###############################################################
 ######################## MAIN #################################
 ###############################################################
@@ -467,12 +491,14 @@ def main() -> None:
     log_summary(f"INPUT_FILE={INPUT_FILE}")
     log_summary(f"REPORT_ROOT={REPORT_ROOT}")
 
+    fail_if_unresolved_rows_exist()
+
     df = safe_read(INPUT_FILE)
 
     if df.empty:
-        log_error("STOPPING: work file missing or empty")
-        print("NHL reports failed: work file missing or empty.")
-        return
+        msg = "STOPPING: work file missing or empty"
+        log_error(msg)
+        raise RuntimeError(msg)
 
     required = [
         "league",
@@ -492,9 +518,9 @@ def main() -> None:
 
     missing = [c for c in required if c not in df.columns]
     if missing:
-        log_error(f"STOPPING: missing required columns {missing}")
-        print(f"NHL reports failed: missing columns {missing}")
-        return
+        msg = f"STOPPING: missing required columns {missing}"
+        log_error(msg)
+        raise RuntimeError(msg)
 
     df = prepare_df(df)
     df["all_bucket"] = "ALL"
