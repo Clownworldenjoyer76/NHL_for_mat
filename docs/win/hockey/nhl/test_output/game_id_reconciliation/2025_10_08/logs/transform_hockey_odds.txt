@@ -1,0 +1,21 @@
+=== transform_hockey_odds RUN 2026-08-26T07:50:30.979258-04:00 ===
+2026-08-26T07:50:30.980010-04:00 | Odds input directory: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds
+2026-08-26T07:50:30.980268-04:00 | JSON files found: 1
+2026-08-26T07:50:30.980796-04:00 | READ C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds\2025_10_08.json | events=1 | odds=1 | rows_built=1 | warnings=0
+2026-08-26T07:50:30.982113-04:00 | WROTE C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\00_intake\sportsbook\NHL_2025_10_08.csv rows=1
+2026-08-26T07:50:30.982359-04:00 | Spread rows selected by abs(hdp)==1.5: 1
+2026-08-26T07:50:30.982601-04:00 | Totals rows selected by closest over/under odds within 5.5-7.5: 1
+2026-08-26T07:50:30.982969-04:00 | --- SUMMARY ---
+2026-08-26T07:50:30.983307-04:00 | JSON files processed: 1
+2026-08-26T07:50:30.983549-04:00 | Events found: 1
+2026-08-26T07:50:30.983787-04:00 | Odds payloads found: 1
+2026-08-26T07:50:30.984027-04:00 | Rows built: 1
+2026-08-26T07:50:30.984264-04:00 | Rows added: 0
+2026-08-26T07:50:30.984507-04:00 | Rows updated: 0
+2026-08-26T07:50:30.984752-04:00 | Rows unchanged: 1
+2026-08-26T07:50:30.984988-04:00 | Rows preserved due to non-pending status: 0
+2026-08-26T07:50:30.985231-04:00 | Rows skipped non-pending with no existing row: 0
+2026-08-26T07:50:30.985469-04:00 | CSV files written: 1
+2026-08-26T07:50:30.985707-04:00 | Warnings: 0
+2026-08-26T07:50:30.985944-04:00 | Errors: 0
+2026-08-26T07:50:30.986228-04:00 | STATUS: SUCCESS

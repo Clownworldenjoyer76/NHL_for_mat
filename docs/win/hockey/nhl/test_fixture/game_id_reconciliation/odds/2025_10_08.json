@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "id": "fixture_sb_20251008_001",
+      "status": "pending",
+      "date": "2025-10-08T23:00:00Z",
+      "home": "Montreal Canadiens",
+      "away": "Toronto Maple Leafs"
+    }
+  ],
+  "odds": [
+    {
+      "id": "fixture_sb_20251008_001",
+      "status": "pending",
+      "date": "2025-10-08T23:00:00Z",
+      "home": "Montreal Canadiens",
+      "away": "Toronto Maple Leafs",
+      "bookmakers": {
+        "FanDuel": [
+          {
+            "name": "ML",
+            "odds": [
+              {
+                "home": "2.10",
+                "away": "1.80"
+              }
+            ]
+          },
+          {
+            "name": "Spread",
+            "odds": [
+              {
+                "hdp": "1.5",
+                "home": "1.60",
+                "away": "2.35"
+              }
+            ]
+          },
+          {
+            "name": "Totals",
+            "odds": [
+              {
+                "hdp": "6.5",
+                "over": "1.91",
+                "under": "1.91"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
