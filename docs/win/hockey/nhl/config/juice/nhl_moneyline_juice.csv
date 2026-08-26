@@ -1,4 +1,4 @@
-band,band_min,band_max,fav_ud,venue,extra_juice
+band,band_min,band_max,fav_ud,venue,model_calibration_adjustment
 -999 to -600,-999,-600,favorite,home,0.0052
 -999 to -600,-999,-600,favorite,away,0.0052
 -599 to -500,-599,-500,favorite,home,0.1695

@@ -49,7 +49,7 @@ REQUIRED_CONFIG_COLUMNS = [
     "band_max",
     "venue",
     "fav_ud",
-    "extra_juice",
+    "model_calibration_adjustment",
 ]
 
 OUTPUT_COLUMNS = REQUIRED_INPUT_COLUMNS + [
@@ -130,8 +130,8 @@ def load_config() -> pd.DataFrame:
         juice_df["band_max"],
         errors="coerce",
     )
-    juice_df["extra_juice"] = pd.to_numeric(
-        juice_df["extra_juice"],
+    juice_df["model_calibration_adjustment"] = pd.to_numeric(
+        juice_df["model_calibration_adjustment"],
         errors="coerce",
     )
     juice_df["venue"] = (
@@ -150,7 +150,7 @@ def load_config() -> pd.DataFrame:
             [
                 "band_min",
                 "band_max",
-                "extra_juice",
+                "model_calibration_adjustment",
             ]
         ]
         .isna()
@@ -159,13 +159,13 @@ def load_config() -> pd.DataFrame:
     ):
         raise ValueError(
             f"{JUICE_FILE} has non-numeric "
-            "band_min, band_max, or extra_juice values"
+            "band_min, band_max, or model_calibration_adjustment values"
         )
 
     return juice_df
 
 
-def find_extra_juice(
+def find_model_calibration_adjustment(
     juice_df: pd.DataFrame,
     puck_line: float,
     venue: str,
@@ -182,7 +182,7 @@ def find_extra_juice(
         return None
 
     return float(
-        band.iloc[0]["extra_juice"]
+        band.iloc[0]["model_calibration_adjustment"]
     )
 
 
@@ -349,14 +349,14 @@ def process_file(
             else "underdog"
         )
 
-        away_extra = find_extra_juice(
+        away_adjustment = find_model_calibration_adjustment(
             juice_df,
             away_line,
             "away",
             away_fav_ud,
         )
 
-        home_extra = find_extra_juice(
+        home_adjustment = find_model_calibration_adjustment(
             juice_df,
             home_line,
             "home",
@@ -364,8 +364,8 @@ def process_file(
         )
 
         if (
-            away_extra is None
-            or home_extra is None
+            away_adjustment is None
+            or home_adjustment is None
         ):
             reason = "no_config_band"
             skipped_noband += 1
@@ -386,12 +386,12 @@ def process_file(
 
         away_juiced_decimal = (
             away_fair
-            * (1 - away_extra)
+            * (1 - away_adjustment)
         )
 
         home_juiced_decimal = (
             home_fair
-            * (1 - home_extra)
+            * (1 - home_adjustment)
         )
 
         if (

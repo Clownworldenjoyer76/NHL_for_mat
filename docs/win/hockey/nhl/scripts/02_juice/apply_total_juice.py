@@ -48,7 +48,7 @@ REQUIRED_CONFIG_COLUMNS = [
     "band_min",
     "band_max",
     "side",
-    "extra_juice",
+    "model_calibration_adjustment",
 ]
 
 OUTPUT_COLUMNS = REQUIRED_INPUT_COLUMNS + [
@@ -131,8 +131,8 @@ def load_config() -> pd.DataFrame:
         juice_df["band_max"],
         errors="coerce",
     )
-    juice_df["extra_juice"] = pd.to_numeric(
-        juice_df["extra_juice"],
+    juice_df["model_calibration_adjustment"] = pd.to_numeric(
+        juice_df["model_calibration_adjustment"],
         errors="coerce",
     )
     juice_df["side"] = (
@@ -146,7 +146,7 @@ def load_config() -> pd.DataFrame:
             [
                 "band_min",
                 "band_max",
-                "extra_juice",
+                "model_calibration_adjustment",
             ]
         ]
         .isna()
@@ -155,13 +155,13 @@ def load_config() -> pd.DataFrame:
     ):
         raise ValueError(
             f"{JUICE_FILE} has non-numeric "
-            "band_min, band_max, or extra_juice values"
+            "band_min, band_max, or model_calibration_adjustment values"
         )
 
     return juice_df
 
 
-def find_extra_juice(
+def find_model_calibration_adjustment(
     juice_df: pd.DataFrame,
     total_line: float,
     side: str,
@@ -176,7 +176,7 @@ def find_extra_juice(
         return None
 
     return float(
-        band.iloc[0]["extra_juice"]
+        band.iloc[0]["model_calibration_adjustment"]
     )
 
 
@@ -328,21 +328,21 @@ def process_file(
             )
             continue
 
-        over_extra = find_extra_juice(
+        over_adjustment = find_model_calibration_adjustment(
             juice_df,
             total_line,
             "over",
         )
 
-        under_extra = find_extra_juice(
+        under_adjustment = find_model_calibration_adjustment(
             juice_df,
             total_line,
             "under",
         )
 
         if (
-            over_extra is None
-            or under_extra is None
+            over_adjustment is None
+            or under_adjustment is None
         ):
             reason = "no_config_band"
             skipped_noband += 1
@@ -362,12 +362,12 @@ def process_file(
 
         over_juiced_decimal = (
             over_fair
-            * (1 - over_extra)
+            * (1 - over_adjustment)
         )
 
         under_juiced_decimal = (
             under_fair
-            * (1 - under_extra)
+            * (1 - under_adjustment)
         )
 
         if (
