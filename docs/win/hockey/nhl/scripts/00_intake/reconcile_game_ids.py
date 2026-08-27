@@ -95,67 +95,275 @@ def normalize_text_key(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def load_team_map() -> dict[str, str]:
+def load_team_map() -> dict:
     if not MAP_PATH.exists():
         raise FileNotFoundError(f"Missing team mapping file: {MAP_PATH}")
 
-    mapping: dict[str, str] = {}
+    by_source: dict[
+        str,
+        dict[str, dict[str, str]],
+    ] = defaultdict(dict)
+    by_id: dict[str, dict[str, str]] = {}
+    by_abbrev: dict[str, dict[str, str]] = {}
 
     with MAP_PATH.open("r", newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
 
-        required = {"league", "alias", "canonical_team"}
+        required = {
+            "league",
+            "source",
+            "alias",
+            "canonical_team",
+            "nhl_team_id",
+            "nhl_abbrev",
+        }
         fieldnames = set(reader.fieldnames or [])
         missing = sorted(required - fieldnames)
 
         if missing:
             raise ValueError(f"{MAP_PATH} missing required columns: {missing}")
 
-        for row in reader:
+        for row_number, row in enumerate(reader, start=2):
             if str(row.get("league", "")).strip().lower() != "nhl":
                 continue
 
+            source = str(row.get("source", "")).strip().lower()
             alias = str(row.get("alias", "")).strip()
             canonical = str(row.get("canonical_team", "")).strip()
+            team_id = str(row.get("nhl_team_id", "")).strip()
+            abbrev = str(row.get("nhl_abbrev", "")).strip().upper()
 
-            if not alias or not canonical:
+            if not source or not alias or not canonical:
                 continue
 
-            mapping[normalize_text_key(alias)] = canonical
-            mapping[normalize_text_key(canonical)] = canonical
+            if source not in {
+                "dratings",
+                "sportsbook",
+                "official_nhl",
+                "shared",
+            }:
+                raise ValueError(
+                    f"{MAP_PATH} row {row_number} has unsupported "
+                    f"source={source!r}"
+                )
 
-    if not mapping:
-        raise ValueError(f"No NHL team mappings loaded from {MAP_PATH}")
+            if canonical != "TBD":
+                if not team_id or not team_id.isdigit():
+                    raise ValueError(
+                        f"{MAP_PATH} row {row_number} has invalid "
+                        f"nhl_team_id={team_id!r}"
+                    )
 
-    return mapping
+                if not re.fullmatch(r"[A-Z]{3}", abbrev):
+                    raise ValueError(
+                        f"{MAP_PATH} row {row_number} has invalid "
+                        f"nhl_abbrev={abbrev!r}"
+                    )
+
+            identity = {
+                "canonical_team": canonical,
+                "nhl_team_id": team_id,
+                "nhl_abbrev": abbrev,
+            }
+
+            if team_id:
+                prior_id = by_id.get(team_id)
+                if prior_id is not None and prior_id != identity:
+                    raise ValueError(
+                        f"{MAP_PATH} has conflicting identity for "
+                        f"nhl_team_id={team_id}: {prior_id} != {identity}"
+                    )
+                by_id[team_id] = identity
+
+            if abbrev:
+                prior_abbrev = by_abbrev.get(abbrev)
+                if prior_abbrev is not None and prior_abbrev != identity:
+                    raise ValueError(
+                        f"{MAP_PATH} has conflicting identity for "
+                        f"nhl_abbrev={abbrev}: "
+                        f"{prior_abbrev} != {identity}"
+                    )
+                by_abbrev[abbrev] = identity
+
+            key = normalize_text_key(alias)
+            prior_alias = by_source[source].get(key)
+
+            if prior_alias is not None and prior_alias != identity:
+                raise ValueError(
+                    f"{MAP_PATH} has conflicting mapping for "
+                    f"source={source} alias={alias!r}: "
+                    f"{prior_alias} != {identity}"
+                )
+
+            by_source[source][key] = identity
+
+    if not by_source.get("official_nhl"):
+        raise ValueError(
+            f"No official_nhl mappings loaded from {MAP_PATH}"
+        )
+
+    if not by_source.get("dratings"):
+        raise ValueError(
+            f"No dratings mappings loaded from {MAP_PATH}"
+        )
+
+    if not by_source.get("sportsbook"):
+        raise ValueError(
+            f"No sportsbook mappings loaded from {MAP_PATH}"
+        )
+
+    if len(by_id) != 32:
+        raise ValueError(
+            f"Expected 32 stable NHL team IDs in {MAP_PATH}; "
+            f"found {len(by_id)}"
+        )
+
+    return {
+        "by_source": dict(by_source),
+        "by_id": by_id,
+        "by_abbrev": by_abbrev,
+    }
+
+
+def mapping_source(source: str) -> str:
+    if source == "prediction":
+        return "dratings"
+    if source == "sportsbook":
+        return "sportsbook"
+    if source == "official_nhl":
+        return "official_nhl"
+    raise ValueError(f"Unknown team mapping source: {source}")
+
+
+def resolve_team_identity(
+    value: str,
+    source: str,
+    team_map: dict,
+) -> dict[str, str] | None:
+    raw = strip_record(value)
+
+    if not raw:
+        return None
+
+    key = normalize_text_key(raw)
+    source_key = mapping_source(source)
+    by_source = team_map["by_source"]
+
+    for candidate_source in (
+        source_key,
+        "shared",
+        "official_nhl",
+    ):
+        identity = by_source.get(
+            candidate_source,
+            {},
+        ).get(key)
+
+        if identity is not None:
+            return identity
+
+    return None
 
 
 def canonical_team(
     value: str,
-    team_map: dict[str, str],
+    source: str,
+    team_map: dict,
 ) -> str:
     raw = strip_record(value)
 
     if not raw:
         return ""
 
-    return team_map.get(
-        normalize_text_key(raw),
+    identity = resolve_team_identity(
         raw,
+        source,
+        team_map,
     )
+
+    if identity is None:
+        return raw
+
+    return identity["canonical_team"]
 
 
 def team_match_key(
     value: str,
-    team_map: dict[str, str],
+    source: str,
+    team_map: dict,
 ) -> str:
-    return normalize_text_key(
-        canonical_team(
-            value,
-            team_map,
-        )
+    identity = resolve_team_identity(
+        value,
+        source,
+        team_map,
     )
 
+    if identity is None:
+        return ""
+
+    return identity["nhl_team_id"]
+
+
+def official_schedule_identity(
+    row: dict[str, str],
+    side: str,
+    team_map: dict,
+    path: Path,
+    row_number: int,
+) -> dict[str, str]:
+    team_id = str(
+        row.get(f"{side}_team_id", "")
+    ).strip()
+    abbrev = str(
+        row.get(f"{side}_team_abbrev", "")
+    ).strip().upper()
+    name = str(
+        row.get(f"{side}_team", "")
+    ).strip()
+
+    if not team_id or not abbrev or not name:
+        raise ValueError(
+            f"{path} row {row_number} has incomplete official "
+            f"{side} team identity"
+        )
+
+    identity_by_id = team_map["by_id"].get(team_id)
+    identity_by_abbrev = team_map["by_abbrev"].get(abbrev)
+    identity_by_name = resolve_team_identity(
+        name,
+        "official_nhl",
+        team_map,
+    )
+
+    if identity_by_id is None:
+        raise ValueError(
+            f"{path} row {row_number} has unmapped official "
+            f"{side}_team_id={team_id}"
+        )
+
+    if identity_by_abbrev is None:
+        raise ValueError(
+            f"{path} row {row_number} has unmapped official "
+            f"{side}_team_abbrev={abbrev}"
+        )
+
+    if identity_by_name is None:
+        raise ValueError(
+            f"{path} row {row_number} has unmapped official "
+            f"{side}_team={name!r}"
+        )
+
+    if not (
+        identity_by_id
+        == identity_by_abbrev
+        == identity_by_name
+    ):
+        raise ValueError(
+            f"{path} row {row_number} official {side} identity "
+            f"disagrees across id/abbrev/name"
+        )
+
+    return identity_by_id
 
 def load_csv(
     path: Path,
@@ -246,7 +454,7 @@ def schedule_path_for_date(
 
 def load_schedule_for_date(
     date_value: str,
-    team_map: dict[str, str],
+    team_map: dict,
 ) -> tuple[
     list[dict[str, str]],
     dict[
@@ -268,6 +476,10 @@ def load_schedule_for_date(
         "game_date",
         "home_team",
         "away_team",
+        "home_team_abbrev",
+        "away_team_abbrev",
+        "home_team_id",
+        "away_team_id",
     ]
 
     missing = [
@@ -301,15 +513,24 @@ def load_schedule_for_date(
             row.get("game_date", "")
         )
 
-        home_key = team_match_key(
-            row.get("home_team", ""),
+        home_identity = official_schedule_identity(
+            row,
+            "home",
             team_map,
+            path,
+            row_number,
         )
 
-        away_key = team_match_key(
-            row.get("away_team", ""),
+        away_identity = official_schedule_identity(
+            row,
+            "away",
             team_map,
+            path,
+            row_number,
         )
+
+        home_key = home_identity["nhl_team_id"]
+        away_key = away_identity["nhl_team_id"]
 
         if (
             not game_id
@@ -332,14 +553,12 @@ def load_schedule_for_date(
         seen_game_ids.add(game_id)
 
         row["game_date"] = game_date
-        row["home_team"] = canonical_team(
-            row.get("home_team", ""),
-            team_map,
-        )
-        row["away_team"] = canonical_team(
-            row.get("away_team", ""),
-            team_map,
-        )
+        row["home_team"] = home_identity["canonical_team"]
+        row["away_team"] = away_identity["canonical_team"]
+        row["home_team_id"] = home_key
+        row["away_team_id"] = away_key
+        row["home_team_abbrev"] = home_identity["nhl_abbrev"]
+        row["away_team_abbrev"] = away_identity["nhl_abbrev"]
 
         index[
             (
@@ -354,7 +573,8 @@ def load_schedule_for_date(
 
 def source_match_key(
     row: dict[str, str],
-    team_map: dict[str, str],
+    source: str,
+    team_map: dict,
 ) -> tuple[str, str, str] | None:
     game_date = normalize_date(
         row.get("game_date", "")
@@ -362,11 +582,13 @@ def source_match_key(
 
     home_key = team_match_key(
         row.get("home_team", ""),
+        source,
         team_map,
     )
 
     away_key = team_match_key(
         row.get("away_team", ""),
+        source,
         team_map,
     )
 
@@ -382,7 +604,6 @@ def source_match_key(
         home_key,
         away_key,
     )
-
 
 def reverse_match_key(
     key: tuple[str, str, str],
@@ -569,6 +790,7 @@ def match_source_rows_to_schedule(
 
         key = source_match_key(
             row,
+            source,
             team_map,
         )
 
@@ -679,6 +901,7 @@ def match_source_rows_to_schedule(
                 "away_team",
                 "",
             ),
+            "official_nhl",
             team_map,
         )
 
@@ -687,6 +910,7 @@ def match_source_rows_to_schedule(
                 "home_team",
                 "",
             ),
+            "official_nhl",
             team_map,
         )
 
@@ -995,6 +1219,7 @@ def reconcile_date(
                 "home_team",
                 "",
             ),
+            "official_nhl",
             team_map,
         )
 
@@ -1003,6 +1228,7 @@ def reconcile_date(
                 "away_team",
                 "",
             ),
+            "official_nhl",
             team_map,
         )
 
@@ -1392,6 +1618,11 @@ def main() -> None:
 
     try:
         team_map = load_team_map()
+
+        log(
+            "Stable NHL team identities loaded: "
+            f"{len(team_map['by_id'])}"
+        )
 
         (
             sportsbook_files,

@@ -192,15 +192,23 @@ def normalize_text(value: str) -> str:
     ).strip()
 
 
-def load_team_map() -> dict[str, str]:
+def load_team_map() -> dict:
     if not TEAM_MAP_PATH.exists():
         raise FileNotFoundError(
             f"Missing team map: {TEAM_MAP_PATH}"
         )
 
-    mapping: dict[str, str] = {}
+    by_source: dict[
+        str,
+        dict[str, dict[str, str]],
+    ] = {}
+    by_id: dict[str, dict[str, str]] = {}
+    by_abbrev: dict[str, dict[str, str]] = {}
 
-    for row in read_csv(TEAM_MAP_PATH):
+    for row_number, row in enumerate(
+        read_csv(TEAM_MAP_PATH),
+        start=2,
+    ):
         if (
             str(row.get("league", ""))
             .strip()
@@ -208,6 +216,10 @@ def load_team_map() -> dict[str, str]:
             != "nhl"
         ):
             continue
+
+        source = str(
+            row.get("source", "")
+        ).strip().lower()
 
         alias = str(
             row.get("alias", "")
@@ -217,69 +229,232 @@ def load_team_map() -> dict[str, str]:
             row.get("canonical_team", "")
         ).strip()
 
+        team_id = str(
+            row.get("nhl_team_id", "")
+        ).strip()
+
+        abbrev = str(
+            row.get("nhl_abbrev", "")
+        ).strip().upper()
+
         if (
-            not alias
+            not source
+            or not alias
             or not canonical
-            or canonical == "TBD"
         ):
             continue
 
-        mapping[
-            normalize_text(alias)
-        ] = canonical
+        if source not in {
+            "dratings",
+            "sportsbook",
+            "official_nhl",
+            "shared",
+        }:
+            raise ValueError(
+                f"{TEAM_MAP_PATH} row {row_number} "
+                f"has unsupported source={source!r}"
+            )
 
-        mapping[
-            normalize_text(canonical)
-        ] = canonical
+        if canonical != "TBD":
+            if (
+                not team_id
+                or not team_id.isdigit()
+            ):
+                raise ValueError(
+                    f"{TEAM_MAP_PATH} row {row_number} "
+                    "has invalid nhl_team_id="
+                    f"{team_id!r}"
+                )
 
-    if not mapping:
-        raise ValueError(
-            f"No NHL mappings loaded from {TEAM_MAP_PATH}"
+            if not re.fullmatch(
+                r"[A-Z]{3}",
+                abbrev,
+            ):
+                raise ValueError(
+                    f"{TEAM_MAP_PATH} row {row_number} "
+                    "has invalid nhl_abbrev="
+                    f"{abbrev!r}"
+                )
+
+        identity = {
+            "canonical_team": canonical,
+            "nhl_team_id": team_id,
+            "nhl_abbrev": abbrev,
+        }
+
+        if team_id:
+            prior_id = by_id.get(team_id)
+
+            if (
+                prior_id is not None
+                and prior_id != identity
+            ):
+                raise ValueError(
+                    f"{TEAM_MAP_PATH} has conflicting "
+                    "identity for nhl_team_id="
+                    f"{team_id}: "
+                    f"{prior_id} != {identity}"
+                )
+
+            by_id[team_id] = identity
+
+        if abbrev:
+            prior_abbrev = by_abbrev.get(abbrev)
+
+            if (
+                prior_abbrev is not None
+                and prior_abbrev != identity
+            ):
+                raise ValueError(
+                    f"{TEAM_MAP_PATH} has conflicting "
+                    "identity for nhl_abbrev="
+                    f"{abbrev}: "
+                    f"{prior_abbrev} != {identity}"
+                )
+
+            by_abbrev[abbrev] = identity
+
+        source_map = by_source.setdefault(
+            source,
+            {},
         )
 
-    return mapping
+        key = normalize_text(alias)
+        prior_alias = source_map.get(key)
+
+        if (
+            prior_alias is not None
+            and prior_alias != identity
+        ):
+            raise ValueError(
+                f"{TEAM_MAP_PATH} has conflicting "
+                f"mapping for source={source} "
+                f"alias={alias!r}: "
+                f"{prior_alias} != {identity}"
+            )
+
+        source_map[key] = identity
+
+    for required_source in (
+        "official_nhl",
+        "dratings",
+        "sportsbook",
+    ):
+        if not by_source.get(required_source):
+            raise ValueError(
+                "No NHL mappings loaded for "
+                f"source={required_source} "
+                f"from {TEAM_MAP_PATH}"
+            )
+
+    if len(by_id) != 32:
+        raise ValueError(
+            "Expected 32 stable NHL team IDs "
+            f"in {TEAM_MAP_PATH}; "
+            f"found {len(by_id)}"
+        )
+
+    return {
+        "by_source": by_source,
+        "by_id": by_id,
+        "by_abbrev": by_abbrev,
+    }
+
+
+def resolve_team_identity(
+    value: str,
+    source: str,
+    team_map: dict,
+) -> dict[str, str] | None:
+    raw = str(value).strip()
+
+    if not raw:
+        return None
+
+    key = normalize_text(raw)
+
+    for candidate_source in (
+        source,
+        "shared",
+        "official_nhl",
+    ):
+        identity = (
+            team_map["by_source"]
+            .get(candidate_source, {})
+            .get(key)
+        )
+
+        if identity is not None:
+            return identity
+
+    return None
 
 
 def canonical_team(
     value: str,
-    team_map: dict[str, str],
+    source: str,
+    team_map: dict,
 ) -> str:
     raw = str(value).strip()
 
-    return team_map.get(
-        normalize_text(raw),
+    identity = resolve_team_identity(
         raw,
+        source,
+        team_map,
     )
+
+    if identity is None:
+        return raw
+
+    return identity["canonical_team"]
 
 
 def team_key(
     value: str,
-    team_map: dict[str, str],
+    source: str,
+    team_map: dict,
 ) -> str:
-    return normalize_text(
-        canonical_team(
-            value,
-            team_map,
-        )
+    identity = resolve_team_identity(
+        value,
+        source,
+        team_map,
     )
+
+    if identity is None:
+        return ""
+
+    return identity["nhl_team_id"]
 
 
 def matchup_key(
     game_date: str,
     home_team: str,
     away_team: str,
-    team_map: dict[str, str],
-) -> tuple[str, str, str]:
+    source: str,
+    team_map: dict,
+) -> tuple[str, str, str] | None:
+    home_id = team_key(
+        home_team,
+        source,
+        team_map,
+    )
+
+    away_id = team_key(
+        away_team,
+        source,
+        team_map,
+    )
+
+    if (
+        not home_id
+        or not away_id
+    ):
+        return None
+
     teams = sorted(
         [
-            team_key(
-                home_team,
-                team_map,
-            ),
-            team_key(
-                away_team,
-                team_map,
-            ),
+            home_id,
+            away_id,
         ]
     )
 
@@ -289,6 +464,77 @@ def matchup_key(
         teams[1],
     )
 
+
+def official_schedule_identity(
+    source: dict[str, str],
+    side: str,
+    team_map: dict,
+    path: Path,
+) -> dict[str, str]:
+    team_id = str(
+        source.get(
+            f"{side}_team_id",
+            "",
+        )
+    ).strip()
+
+    abbrev = str(
+        source.get(
+            f"{side}_team_abbrev",
+            "",
+        )
+    ).strip().upper()
+
+    name = str(
+        source.get(
+            f"{side}_team",
+            "",
+        )
+    ).strip()
+
+    if (
+        not team_id
+        or not abbrev
+        or not name
+    ):
+        raise ValueError(
+            f"Incomplete official {side} team "
+            f"identity in {path}"
+        )
+
+    identity_by_id = team_map["by_id"].get(team_id)
+    identity_by_abbrev = team_map["by_abbrev"].get(abbrev)
+    identity_by_name = resolve_team_identity(
+        name,
+        "official_nhl",
+        team_map,
+    )
+
+    if (
+        identity_by_id is None
+        or identity_by_abbrev is None
+        or identity_by_name is None
+    ):
+        raise ValueError(
+            f"Unmapped official {side} team "
+            f"identity in {path}: "
+            f"id={team_id!r} "
+            f"abbrev={abbrev!r} "
+            f"name={name!r}"
+        )
+
+    if not (
+        identity_by_id
+        == identity_by_abbrev
+        == identity_by_name
+    ):
+        raise ValueError(
+            f"Official {side} team identity "
+            f"disagrees across id/abbrev/name "
+            f"in {path}"
+        )
+
+    return identity_by_id
 
 def swap_home_away_fields(
     row: dict[str, str],
@@ -456,21 +702,35 @@ def build_games(
                 )
             ).strip()
 
-            home_team = canonical_team(
-                source.get(
-                    "home_team",
-                    "",
-                ),
+            home_identity = official_schedule_identity(
+                source,
+                "home",
                 team_map,
+                path,
             )
 
-            away_team = canonical_team(
-                source.get(
-                    "away_team",
-                    "",
-                ),
+            away_identity = official_schedule_identity(
+                source,
+                "away",
                 team_map,
+                path,
             )
+
+            home_team = home_identity[
+                "canonical_team"
+            ]
+
+            away_team = away_identity[
+                "canonical_team"
+            ]
+
+            home_team_id = home_identity[
+                "nhl_team_id"
+            ]
+
+            away_team_id = away_identity[
+                "nhl_team_id"
+            ]
 
             if not GAME_ID_RE.fullmatch(
                 game_id
@@ -505,11 +765,17 @@ def build_games(
                     f"game_id={game_id}"
                 )
 
-            key = matchup_key(
+            team_ids = sorted(
+                [
+                    home_team_id,
+                    away_team_id,
+                ]
+            )
+
+            key = (
                 game_date,
-                home_team,
-                away_team,
-                team_map,
+                team_ids[0],
+                team_ids[1],
             )
 
             if key in index:
@@ -685,6 +951,7 @@ def reconcile_predictions(
                     "away_team",
                     "",
                 ),
+                "dratings",
                 team_map,
             )
 
@@ -713,6 +980,7 @@ def reconcile_predictions(
                     "home_team",
                     "",
                 ),
+                "dratings",
                 team_map,
             )
 
@@ -721,16 +989,19 @@ def reconcile_predictions(
                     "away_team",
                     "",
                 ),
+                "dratings",
                 team_map,
             )
 
             official_home = team_key(
                 official["home_team"],
+                "official_nhl",
                 team_map,
             )
 
             official_away = team_key(
                 official["away_team"],
+                "official_nhl",
                 team_map,
             )
 
@@ -922,6 +1193,7 @@ def reconcile_sportsbook(
                     "away_team",
                     "",
                 ),
+                "sportsbook",
                 team_map,
             )
 
@@ -955,6 +1227,7 @@ def reconcile_sportsbook(
                     "home_team",
                     "",
                 ),
+                "sportsbook",
                 team_map,
             )
 
@@ -963,16 +1236,19 @@ def reconcile_sportsbook(
                     "away_team",
                     "",
                 ),
+                "sportsbook",
                 team_map,
             )
 
             official_home = team_key(
                 official["home_team"],
+                "official_nhl",
                 team_map,
             )
 
             official_away = team_key(
                 official["away_team"],
+                "official_nhl",
                 team_map,
             )
 
@@ -1441,6 +1717,11 @@ def main() -> int:
     )
 
     team_map = load_team_map()
+
+    print(
+        "stable_nhl_team_ids="
+        f"{len(team_map['by_id'])}"
+    )
 
     (
         games,
