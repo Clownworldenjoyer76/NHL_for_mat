@@ -1,1 +1,7 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,moneyline,home,,home_moneyline,-196.0,1.51,0.6401449487439335,-0.0221067068852056,-0.0333811273966604,0.0
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,moneyline,away,,away_moneyline,162.0,2.62,0.3598550512560666,-0.0218243380569104,-0.0571797657091054,0.0
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,puck_line,home,-1.5,home_puck_line,132.0,2.32,0.2929086786395091,-0.1381258041191116,-0.320451865556339,0.0
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,puck_line,away,1.5,away_puck_line,-164.0,1.61,0.7070913213604908,0.0859733089381306,0.1384170273903902,0.2269131596563774
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,total,over,5.5,over_total,-167.0,1.6,0.5788368471329509,-0.046163152867049,-0.0738610445872784,0.0
+hockey,nhl,2026_05_20,20:00,2025030321,Vegas Golden Knights,Colorado Avalanche,total,under,5.5,under_total,130.0,2.3,0.421163152867049,-0.0136194558286032,-0.0313247484057874,0.0

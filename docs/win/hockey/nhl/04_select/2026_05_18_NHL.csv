@@ -1,1 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_18,19:30,2025030217,Montreal Canadiens,Buffalo Sabres,moneyline,home,,home_moneyline,-115.0,1.87,0.4809612748117388,-0.0537980834770311,-0.1006024161020484,0.0
+hockey,nhl,2026_05_18,19:30,2025030217,Montreal Canadiens,Buffalo Sabres,moneyline,away,,away_moneyline,-104.0,1.96,0.5190387251882612,0.0088346435556081,0.0173159013689918,0.0180373972593666
+hockey,nhl,2026_05_18,19:30,2025030217,Montreal Canadiens,Buffalo Sabres,total,over,5.5,over_total,100.0,2.0,0.6138538155568795,0.1138538155568794,0.2277076311137589,0.2277076311137589
+hockey,nhl,2026_05_18,19:30,2025030217,Montreal Canadiens,Buffalo Sabres,total,under,5.5,under_total,-122.0,1.82,0.3861461844431205,-0.1633043650074289,-0.2972139443135206,0.0

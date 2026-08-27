@@ -1,4 +1,4 @@
-=== validate_markets_config RUN 2026-08-26T18:45:09.603079+00:00 ===
-2026-08-26T18:45:09.603844+00:00 | CONFIG_PATH=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\config\markets.yaml
-2026-08-26T18:45:09.611216+00:00 | VALIDATION ERRORS | 0
-2026-08-26T18:45:09.611489+00:00 | STATUS: SUCCESS
+=== validate_markets_config RUN 2026-08-26T20:21:43.241608+00:00 ===
+2026-08-26T20:21:43.242142+00:00 | CONFIG_PATH=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\config\markets.yaml
+2026-08-26T20:21:43.249291+00:00 | VALIDATION ERRORS | 0
+2026-08-26T20:21:43.249540+00:00 | STATUS: SUCCESS

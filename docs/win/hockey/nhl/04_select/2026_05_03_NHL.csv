@@ -1,2 +1,13 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,moneyline,home,,home_moneyline,-161.0,1.62,0.6074071250167555,-0.0098768256005283,-0.0160004574728559,0.0
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,moneyline,away,,away_moneyline,136.0,2.36,0.3925928749832444,-0.0311359385760776,-0.0734808150395432,0.0
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,puck_line,home,-1.5,home_puck_line,170.0,2.7,0.2750575929157145,-0.0953127774546558,-0.2573444991275707,0.0
 hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,puck_line,away,1.5,away_puck_line,-204.0,1.49,0.7249424070842855,0.05380146748697,0.0801641865555853,0.1636003807256844
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,total,over,5.5,over_total,140.0,2.4,0.5881252320443673,0.1714585653777006,0.4115005569064813,0.2939289692189153
+hockey,nhl,2026_05_03,18:00,2025030127,Montreal Canadiens,Tampa Bay Lightning,total,under,5.5,under_total,-167.0,1.6,0.4118747679556326,-0.2131252320443674,-0.3410003712709878,0.0
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,moneyline,home,,home_moneyline,-185.0,1.54,0.6402321439040242,-0.0091185054466251,-0.0140424983878028,0.0
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,moneyline,away,,away_moneyline,154.0,2.54,0.3597678560959759,-0.0339329313055988,-0.0861896455162212,0.0
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,puck_line,home,-1.5,home_puck_line,140.0,2.4,0.2937966138658689,-0.1228700528007977,-0.2948881267219146,0.0
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,puck_line,away,1.5,away_puck_line,-167.0,1.6,0.706203386134131,0.081203386134131,0.1299254178146096,0.2165423630243494
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,total,over,5.5,over_total,-130.0,1.77,0.5647114331832305,-0.0002603182291989,-0.000460763265682,0.0
+hockey,nhl,2026_05_03,21:00,2025030231,Minnesota Wild,Colorado Avalanche,total,under,5.5,under_total,110.0,2.1,0.4352885668167694,-0.0409019093737067,-0.0858940096847842,0.0

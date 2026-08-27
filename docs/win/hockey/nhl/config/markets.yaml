@@ -18,32 +18,32 @@ markets:
 
         # based on home_model_prob_moneyline from the moneyline EV file
         prob_bands:
-          - [0.60, 0.9999]
+          - [0.0, 1.0]
 
         odds_bands:
           - [-10000, 10000]
 
         ev_bands:
-          - [0.0001, 999.9999]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]
 
       away:
         enabled: true
 
         # based on away_model_prob_moneyline from the moneyline EV file
         prob_bands:
-          - [0.55, 0.9999]
+          - [0.0, 1.0]
 
         odds_bands:
           - [-10000, 10000]
 
         ev_bands:
-          - [0.0001, 999.9999]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]
 
 
     ###################################################
@@ -63,38 +63,38 @@ markets:
 
         # based on home_model_prob_puck_line from the puck-line EV file
         prob_bands:
-          - [0.0001, 0.9999]
+          - [0.0, 1.0]
 
         line_bands:
-          - [-10.0, 10.0]
+          - [-100.0, 100.0]
 
         odds_bands:
-          - [-999.0, -200.0]
+          - [-10000, 10000]
 
         ev_bands:
-          - [0.0001, 999.9999]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]
 
       away:
         enabled: true
 
         # based on away_model_prob_puck_line from the puck-line EV file
         prob_bands:
-          - [0.70, 0.9999]
+          - [0.0, 1.0]
 
         line_bands:
-          - [-10.0, 10.0]
+          - [-100.0, 100.0]
 
         odds_bands:
-          - [-999.0, -200.0]
+          - [-10000, 10000]
 
         ev_bands:
-          - [0.0001, 999.9999]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]
 
 
     ###################################################
@@ -107,14 +107,14 @@ markets:
       # best_ev = one total side max per game, highest EV
       # best_prob = one total side max per game, highest model probability
       # all = can select both sides if both pass
-      pick_preference: best_prob
+      pick_preference: all
 
       over:
         enabled: true
 
         # based on over_model_prob_total from the total EV file
         prob_bands:
-          - [0.55, 0.60]
+          - [0.0, 1.0]
 
         line_bands:
           - [0.0, 100.0]
@@ -123,17 +123,17 @@ markets:
           - [-10000, 10000]
 
         ev_bands:
-          - [0.05, 0.10]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]
 
       under:
         enabled: true
 
         # based on under_model_prob_total from the total EV file
         prob_bands:
-          - [0.50, 0.60]
+          - [0.0, 1.0]
 
         line_bands:
           - [0.0, 100.0]
@@ -142,7 +142,7 @@ markets:
           - [-10000, 10000]
 
         ev_bands:
-          - [0.05, 00.075]
+          - [-1.0, 999.9999]
 
         kelly_bands:
-          - [0.0001, 999.9999]
+          - [0.0, 999.9999]

@@ -1,1 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_03_23,19:30,2025021119,Ottawa Senators,New York Rangers,moneyline,home,,home_moneyline,160.0,2.6,0.4722391617248191,0.0876237771094345,0.2278218204845297,0.1423886378028311
+hockey,nhl,2026_03_23,19:30,2025021119,Ottawa Senators,New York Rangers,moneyline,away,,away_moneyline,-192.0,1.52,0.5277608382751808,-0.1301338985669244,-0.1978035258217251,0.0
+hockey,nhl,2026_03_23,19:30,2025021119,Ottawa Senators,New York Rangers,total,over,5.5,over_total,-130.0,1.77,0.5259985446650598,-0.0389732067473695,-0.0689825759428441,0.0
+hockey,nhl,2026_03_23,19:30,2025021119,Ottawa Senators,New York Rangers,total,under,5.5,under_total,110.0,2.1,0.4740014553349402,-0.0021890208555359,-0.0045969437966255,0.0

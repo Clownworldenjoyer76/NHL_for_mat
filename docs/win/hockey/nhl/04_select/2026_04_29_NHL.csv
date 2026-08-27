@@ -1,2 +1,17 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,moneyline,home,,home_moneyline,-169.0,1.59,0.6057516019967736,-0.0231792156132892,-0.0368549528251299,0.0
+hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,moneyline,away,,away_moneyline,142.0,2.42,0.3942483980032264,-0.0189747424926413,-0.045918876832192,0.0
+hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,puck_line,home,-1.5,home_puck_line,150.0,2.5,0.2739700616297221,-0.1260299383702779,-0.3150748459256948,0.0
+hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,puck_line,away,1.5,away_puck_line,-179.0,1.56,0.7260299383702778,0.0850042973446368,0.1326067038576335,0.2367976854600597
 hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,total,over,5.5,over_total,-118.0,1.85,0.5927296451763141,0.0521891046357736,0.0965498435761811,0.1135880512660954
+hockey,nhl,2026_04_29,19:00,2025030125,Montreal Canadiens,Tampa Bay Lightning,total,under,5.5,under_total,-102.0,1.98,0.4072703548236859,-0.0977801502268191,-0.1936046974491019,0.0
+hockey,nhl,2026_04_29,19:30,2025030146,Pittsburgh Penguins,Philadelphia Flyers,moneyline,home,,home_moneyline,-122.0,1.82,0.5179854986879776,-0.0314650507625717,-0.0572663923878806,0.0
+hockey,nhl,2026_04_29,19:30,2025030146,Pittsburgh Penguins,Philadelphia Flyers,moneyline,away,,away_moneyline,102.0,2.02,0.4820145013120224,-0.0130350036384726,-0.0263307073497147,0.0
+hockey,nhl,2026_04_29,19:30,2025030146,Pittsburgh Penguins,Philadelphia Flyers,total,over,5.5,over_total,-122.0,1.82,0.5519696163832603,0.0025190669327108,0.0045847018175337,0.00559109977748
+hockey,nhl,2026_04_29,19:30,2025030146,Pittsburgh Penguins,Philadelphia Flyers,total,under,5.5,under_total,102.0,2.02,0.4480303836167398,-0.0470191213337552,-0.0949786250941856,0.0
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,moneyline,home,,home_moneyline,-167.0,1.6,0.5439296518528381,-0.0810703481471618,-0.1297125570354589,0.0
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,moneyline,away,,away_moneyline,140.0,2.4,0.4560703481471619,0.0394036814804952,0.0945688355531886,0.0675491682522776
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,puck_line,home,-1.5,home_puck_line,154.0,2.54,0.2003414005164127,-0.193359386885162,-0.4911328426883117,0.0
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,puck_line,away,1.5,away_puck_line,-185.0,1.54,0.7996585994835873,0.1503079501329379,0.2314742432047245,0.4286560059346749
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,total,over,5.5,over_total,-135.0,1.74,0.5503650486745488,-0.024347595003612,-0.042364815306285,0.0
+hockey,nhl,2026_04_29,22:00,2025030175,Utah Mammoth,Vegas Golden Knights,total,under,5.5,under_total,114.0,2.14,0.4496349513254512,-0.0176547683007169,-0.0377812041635343,0.0

@@ -1,1 +1,7 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,moneyline,home,,home_moneyline,134.0,2.34,0.3895477767894075,-0.0378026505610198,-0.0884582023127865,0.0
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,moneyline,away,,away_moneyline,-161.0,1.62,0.6104522232105924,-0.0068317274066914,-0.0110673983988401,0.0
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,puck_line,home,1.5,home_puck_line,-189.0,1.53,0.7389105484930424,0.0853157772512123,0.1305331391943549,0.2462889418761412
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,puck_line,away,-1.5,away_puck_line,152.0,2.52,0.2610894515069576,-0.1357359453184392,-0.3420545822024667,0.0
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,total,over,5.5,over_total,120.0,2.2,0.5341810220941773,0.0796355675487227,0.1751982486071901,0.1459985405059917
+hockey,nhl,2026_05_07,20:00,2025030223,Carolina Hurricanes,Philadelphia Flyers,total,under,5.5,under_total,-147.0,1.68,0.4658189779058227,-0.1294191173322725,-0.2174241171182178,0.0

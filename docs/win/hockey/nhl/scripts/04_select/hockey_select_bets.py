@@ -16,6 +16,7 @@ CONFIG_PATH = Path("docs/win/hockey/nhl/config/markets.yaml")
 
 ERROR_DIR = Path("docs/win/hockey/nhl/errors/04_select")
 LOG_FILE = ERROR_DIR / "hockey_select_bets.txt"
+REJECTION_FILE = ERROR_DIR / "selection_rejections.csv"
 
 LEAGUE_CODE = "NHL"
 
@@ -24,6 +25,25 @@ BLOCKED_PATH_PARTS = {
     "graded",
     "results",
     "reports",
+}
+
+REJECTION_COLUMNS = [
+    "game_date",
+    "market_type",
+    "bet_side",
+    "failing_condition",
+    "rejection_count",
+]
+
+REJECTION_ORDER = {
+    "missing_data": 0,
+    "probability": 1,
+    "odds": 2,
+    "line": 3,
+    "edge": 4,
+    "ev": 5,
+    "kelly": 6,
+    "pick_preference": 7,
 }
 
 OUTPUT_COLUMNS = [
@@ -93,6 +113,7 @@ def assert_write_path(path: Path):
 def ensure_dirs():
     assert_write_path(OUTPUT_DIR / "dummy.csv")
     assert_write_path(LOG_FILE)
+    assert_write_path(REJECTION_FILE)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -143,7 +164,24 @@ def in_range(val, ranges):
     return any(float(lo) <= val <= float(hi) for lo, hi in ranges)
 
 
-def check_side_rules(
+def add_rejection(
+    rejections: dict,
+    *,
+    game_date: str,
+    market_type: str,
+    bet_side: str,
+    failing_condition: str,
+):
+    key = (
+        game_date,
+        market_type,
+        bet_side,
+        failing_condition,
+    )
+    rejections[key] = rejections.get(key, 0) + 1
+
+
+def side_rule_failures(
     *,
     rules: dict,
     odds,
@@ -155,27 +193,68 @@ def check_side_rules(
     check_line: bool,
 ):
     if not rules.get("enabled", False):
-        return False
+        return None
+
+    values = [
+        odds,
+        prob,
+        edge,
+        ev,
+        kelly,
+    ]
+
+    if check_line:
+        values.append(line)
+
+    if any(value is None for value in values):
+        return ["missing_data"]
+
+    failures = []
 
     if not in_range(odds, rules.get("odds_bands", [])):
-        return False
+        failures.append("odds")
 
     if check_line and not in_range(line, rules.get("line_bands", [])):
-        return False
+        failures.append("line")
 
     if not in_range(prob, rules.get("prob_bands", [])):
-        return False
+        failures.append("probability")
 
     if not in_range(edge, rules.get("edge_bands", None)):
-        return False
+        failures.append("edge")
 
     if not in_range(ev, rules.get("ev_bands", [])):
-        return False
+        failures.append("ev")
 
     if not in_range(kelly, rules.get("kelly_bands", [])):
-        return False
+        failures.append("kelly")
 
-    return True
+    return failures
+
+
+def check_side_rules(
+    *,
+    rules: dict,
+    odds,
+    line,
+    prob,
+    edge,
+    ev,
+    kelly,
+    check_line: bool,
+):
+    failures = side_rule_failures(
+        rules=rules,
+        odds=odds,
+        line=line,
+        prob=prob,
+        edge=edge,
+        ev=ev,
+        kelly=kelly,
+        check_line=check_line,
+    )
+
+    return failures == []
 
 
 def require_columns(df: pd.DataFrame, cols: list[str], market_type: str, path: Path):
@@ -221,7 +300,14 @@ def get_base_meta(row):
     }
 
 
-def apply_pick_preference(candidates: list[dict], pick_preference: str, slate_key: str, game_id, market_type: str):
+def apply_pick_preference(
+    candidates: list[dict],
+    pick_preference: str,
+    slate_key: str,
+    game_id,
+    market_type: str,
+    rejections: dict,
+):
     if not candidates:
         return []
 
@@ -246,10 +332,24 @@ def apply_pick_preference(candidates: list[dict], pick_preference: str, slate_ke
             f"slate={slate_key} | game_id={game_id}"
         )
 
+    winner_ids = {id(winner) for winner in winners}
+
+    for candidate in candidates:
+        if id(candidate) in winner_ids:
+            continue
+
+        add_rejection(
+            rejections,
+            game_date=candidate["game_date"],
+            market_type=market_type,
+            bet_side=candidate["bet_side"],
+            failing_condition="pick_preference",
+        )
+
     return winners
 
 
-def process_moneyline(row, config, slate_key):
+def process_moneyline(row, config, slate_key, rejections):
     market_config = config.get("moneyline", {})
     if not market_config.get("enabled", False):
         return []
@@ -272,7 +372,7 @@ def process_moneyline(row, config, slate_key):
         ev = fv(row.get(f"{side}_ev_moneyline"))
         kelly = fv(row.get(f"{side}_kelly_moneyline"))
 
-        if not check_side_rules(
+        failures = side_rule_failures(
             rules=side_rules,
             odds=odds,
             line=None,
@@ -281,7 +381,20 @@ def process_moneyline(row, config, slate_key):
             ev=ev,
             kelly=kelly,
             check_line=False,
-        ):
+        )
+
+        if failures is None:
+            continue
+
+        if failures:
+            for condition in failures:
+                add_rejection(
+                    rejections,
+                    game_date=meta["game_date"],
+                    market_type="moneyline",
+                    bet_side=side,
+                    failing_condition=condition,
+                )
             continue
 
         candidates.append({
@@ -304,10 +417,11 @@ def process_moneyline(row, config, slate_key):
         slate_key,
         row.get("game_id"),
         "moneyline",
+        rejections,
     )
 
 
-def process_puck_line(row, config, slate_key):
+def process_puck_line(row, config, slate_key, rejections):
     market_config = config.get("puck_line", {})
     if not market_config.get("enabled", False):
         return []
@@ -331,7 +445,7 @@ def process_puck_line(row, config, slate_key):
         ev = fv(row.get(f"{side}_ev_puck_line"))
         kelly = fv(row.get(f"{side}_kelly_puck_line"))
 
-        if not check_side_rules(
+        failures = side_rule_failures(
             rules=side_rules,
             odds=odds,
             line=line,
@@ -340,7 +454,20 @@ def process_puck_line(row, config, slate_key):
             ev=ev,
             kelly=kelly,
             check_line=True,
-        ):
+        )
+
+        if failures is None:
+            continue
+
+        if failures:
+            for condition in failures:
+                add_rejection(
+                    rejections,
+                    game_date=meta["game_date"],
+                    market_type="puck_line",
+                    bet_side=side,
+                    failing_condition=condition,
+                )
             continue
 
         candidates.append({
@@ -363,10 +490,11 @@ def process_puck_line(row, config, slate_key):
         slate_key,
         row.get("game_id"),
         "puck_line",
+        rejections,
     )
 
 
-def process_total(row, config, slate_key):
+def process_total(row, config, slate_key, rejections):
     market_config = config.get("total", {})
     if not market_config.get("enabled", False):
         return []
@@ -390,7 +518,7 @@ def process_total(row, config, slate_key):
         ev = fv(row.get(f"{side}_ev_total"))
         kelly = fv(row.get(f"{side}_kelly_total"))
 
-        if not check_side_rules(
+        failures = side_rule_failures(
             rules=side_rules,
             odds=odds,
             line=line,
@@ -399,7 +527,20 @@ def process_total(row, config, slate_key):
             ev=ev,
             kelly=kelly,
             check_line=True,
-        ):
+        )
+
+        if failures is None:
+            continue
+
+        if failures:
+            for condition in failures:
+                add_rejection(
+                    rejections,
+                    game_date=meta["game_date"],
+                    market_type="total",
+                    bet_side=side,
+                    failing_condition=condition,
+                )
             continue
 
         candidates.append({
@@ -422,6 +563,62 @@ def process_total(row, config, slate_key):
         slate_key,
         row.get("game_id"),
         "total",
+        rejections,
+    )
+
+
+def reset_rejection_file():
+    assert_write_path(REJECTION_FILE)
+    pd.DataFrame(columns=REJECTION_COLUMNS).to_csv(
+        REJECTION_FILE,
+        index=False,
+    )
+
+
+def write_rejections(rejections: dict):
+    rows = []
+
+    for (
+        game_date,
+        market_type,
+        bet_side,
+        failing_condition,
+    ), rejection_count in rejections.items():
+        rows.append({
+            "game_date": game_date,
+            "market_type": market_type,
+            "bet_side": bet_side,
+            "failing_condition": failing_condition,
+            "rejection_count": rejection_count,
+        })
+
+    rows.sort(
+        key=lambda row: (
+            row["game_date"],
+            row["market_type"],
+            row["bet_side"],
+            REJECTION_ORDER.get(
+                row["failing_condition"],
+                999,
+            ),
+            row["failing_condition"],
+        )
+    )
+
+    assert_write_path(REJECTION_FILE)
+
+    pd.DataFrame(
+        rows,
+        columns=REJECTION_COLUMNS,
+    ).to_csv(
+        REJECTION_FILE,
+        index=False,
+    )
+
+    _log(
+        f"WROTE: {REJECTION_FILE} | "
+        f"rows={len(rows)} | "
+        f"rejections={sum(rejections.values())}"
     )
 
 
@@ -535,7 +732,7 @@ def row_for_game(df, game_id, market_type):
     return match.iloc[0]
 
 
-def process_slate(slate_key, paths, config):
+def process_slate(slate_key, paths, config, rejections):
     _log(f"--- SLATE: {slate_key}")
 
     ml_path = paths.get("moneyline")
@@ -577,13 +774,34 @@ def process_slate(slate_key, paths, config):
         td_row = row_for_game(td_df, game_id, "total")
 
         if ml_row is not None:
-            final_rows.extend(process_moneyline(ml_row, config, slate_key))
+            final_rows.extend(
+                process_moneyline(
+                    ml_row,
+                    config,
+                    slate_key,
+                    rejections,
+                )
+            )
 
         if pl_row is not None:
-            final_rows.extend(process_puck_line(pl_row, config, slate_key))
+            final_rows.extend(
+                process_puck_line(
+                    pl_row,
+                    config,
+                    slate_key,
+                    rejections,
+                )
+            )
 
         if td_row is not None:
-            final_rows.extend(process_total(td_row, config, slate_key))
+            final_rows.extend(
+                process_total(
+                    td_row,
+                    config,
+                    slate_key,
+                    rejections,
+                )
+            )
 
     out_path = OUTPUT_DIR / f"{slate_key}_NHL.csv"
     assert_write_path(out_path)
@@ -657,17 +875,28 @@ def main():
         _log(f"OUTPUT_DIR: {OUTPUT_DIR}")
         _log(f"CONFIG_PATH: {CONFIG_PATH}")
         _log(f"LOG_FILE: {LOG_FILE}")
+        _log(f"REJECTION_FILE: {REJECTION_FILE}")
 
         wipe_outputs()
+        reset_rejection_file()
 
         slates = find_slates()
         _log(f"Slates found: {len(slates)}")
 
         summary_rows = []
+        rejections = {}
 
         for slate_key in sorted(slates):
-            summary_rows.append(process_slate(slate_key, slates[slate_key], config))
+            summary_rows.append(
+                process_slate(
+                    slate_key,
+                    slates[slate_key],
+                    config,
+                    rejections,
+                )
+            )
 
+        write_rejections(rejections)
         write_summary(summary_rows)
 
         print("hockey_select_bets complete.")

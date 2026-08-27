@@ -1,1 +1,9 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_10,19:00,2025030213,Buffalo Sabres,Montreal Canadiens,moneyline,home,,home_moneyline,-127.0,1.79,0.5259841415730687,-0.0326750763040262,-0.0584883865842069,0.0
+hockey,nhl,2026_05_10,19:00,2025030213,Buffalo Sabres,Montreal Canadiens,moneyline,away,,away_moneyline,105.0,2.05,0.4740158584269312,-0.0137890196218493,-0.028267490224791,0.0
+hockey,nhl,2026_05_10,19:00,2025030213,Buffalo Sabres,Montreal Canadiens,total,over,5.5,over_total,-133.0,1.75,0.61087345816823,0.0394448867396586,0.0690285517944024,0.0920380690592033
+hockey,nhl,2026_05_10,19:00,2025030213,Buffalo Sabres,Montreal Canadiens,total,under,5.5,under_total,110.0,2.1,0.38912654183177,-0.0870639343587061,-0.182834262153283,0.0
+hockey,nhl,2026_05_10,21:30,2025030244,Vegas Golden Knights,Anaheim Ducks,moneyline,home,,home_moneyline,-106.0,1.94,0.4810488393686165,-0.0344150781571567,-0.0667652516248841,0.0
+hockey,nhl,2026_05_10,21:30,2025030244,Vegas Golden Knights,Anaheim Ducks,moneyline,away,,away_moneyline,-114.0,1.88,0.5189511606313835,-0.0129637329856378,-0.0243718180129991,0.0
+hockey,nhl,2026_05_10,21:30,2025030244,Vegas Golden Knights,Anaheim Ducks,total,over,5.5,over_total,-175.0,1.57,0.6123652207176756,-0.02457745444156,-0.0385866034732492,0.0
+hockey,nhl,2026_05_10,21:30,2025030244,Vegas Golden Knights,Anaheim Ducks,total,under,5.5,under_total,138.0,2.38,0.3876347792823243,-0.0325332879445664,-0.0774292253080681,0.0

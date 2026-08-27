@@ -1,2 +1,13 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,moneyline,home,,home_moneyline,155.0,2.55,0.4150808186767245,0.0229239559316263,0.0584560876256472,0.0377136049197724
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,moneyline,away,,away_moneyline,-189.0,1.53,0.5849191813232755,-0.0686755899185546,-0.1050736525753884,0.0
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,puck_line,home,1.5,home_puck_line,-161.0,1.62,0.7363724174857362,0.1190884668684523,0.1929233163268928,0.3111666392369237
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,puck_line,away,-1.5,away_puck_line,132.0,2.32,0.2636275825142637,-0.167406900244357,-0.3883840085669082,0.0
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,total,over,5.5,over_total,118.0,2.18,0.5341810220941773,0.075465425763902,0.1645146281653065,0.1394191764112767
+hockey,nhl,2026_05_09,18:00,2025030224,Carolina Hurricanes,Philadelphia Flyers,total,under,5.5,under_total,-145.0,1.69,0.4658189779058227,-0.1258969984255382,-0.2127659273391596,0.0
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,moneyline,home,,home_moneyline,106.0,2.06,0.4617816441354307,-0.0236552490684527,-0.0487298130810126,0.0
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,moneyline,away,,away_moneyline,-128.0,1.78,0.5382183558645693,-0.0235793969444194,-0.0419713265610665,0.0
 hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,puck_line,home,1.5,home_puck_line,-227.0,1.44,0.754929842885809,0.0604853984413645,0.0870989737555649,0.1979522130808293
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,puck_line,away,-1.5,away_puck_line,176.0,2.76,0.2450701571141909,-0.1172486834655193,-0.3236063663648332,0.0
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,total,over,5.5,over_total,-159.0,1.63,0.563128078851129,-0.0503688536642084,-0.0821012314726596,0.0
+hockey,nhl,2026_05_09,21:00,2025030233,Colorado Avalanche,Minnesota Wild,total,under,5.5,under_total,124.0,2.24,0.4368719211488711,-0.0095566502797003,-0.0214068966265287,0.0

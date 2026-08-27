@@ -1,1 +1,5 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_25,20:00,2025030313,Carolina Hurricanes,Montreal Canadiens,moneyline,home,,home_moneyline,114.0,2.14,0.507740679079772,0.0404509594536038,0.0865650532307122,0.075934257219923
+hockey,nhl,2026_05_25,20:00,2025030313,Carolina Hurricanes,Montreal Canadiens,moneyline,away,,away_moneyline,-137.0,1.73,0.4922593209202279,-0.085775361160697,-0.1483913748080058,0.0
+hockey,nhl,2026_05_25,20:00,2025030313,Carolina Hurricanes,Montreal Canadiens,total,over,5.5,over_total,-128.0,1.78,0.6138538155568795,0.0520560627478906,0.0926597916912455,0.1187946047323659
+hockey,nhl,2026_05_25,20:00,2025030313,Carolina Hurricanes,Montreal Canadiens,total,under,5.5,under_total,104.0,2.04,0.3861461844431205,-0.104049893988252,-0.2122617837360342,0.0

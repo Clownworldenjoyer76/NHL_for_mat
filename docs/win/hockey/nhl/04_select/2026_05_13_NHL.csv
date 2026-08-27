@@ -1,1 +1,7 @@
 sport,league,game_date,game_time,game_id,away_team,home_team,market_type,bet_side,line,take_bet,dk_odds_american,dk_odds_decimal,model_prob,edge,ev,kelly
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,moneyline,home,,home_moneyline,-208.0,1.48,0.6259753143245897,-0.0497003613510859,-0.0735565347996072,0.0
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,moneyline,away,,away_moneyline,172.0,2.72,0.3740246856754102,0.0063776268518808,0.0173471450371158,0.0100855494401835
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,puck_line,home,-1.5,home_puck_line,120.0,2.2,0.2858380127987482,-0.1687074417467063,-0.3711563718427538,0.0
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,puck_line,away,1.5,away_puck_line,-147.0,1.68,0.7141619872012517,0.1189238919631564,0.1997921384981027,0.2938119683795629
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,total,over,5.5,over_total,-179.0,1.56,0.5647114331832305,-0.0763142078424105,-0.1190501642341604,0.0
+hockey,nhl,2026_05_13,20:00,2025030235,Minnesota Wild,Colorado Avalanche,total,under,5.5,under_total,140.0,2.4,0.4352885668167694,0.0186219001501027,0.0446925603602466,0.0319232574001761
