@@ -54,6 +54,9 @@ jobs:
           mkdir -p docs/win/hockey/nhl/00_intake/reconciled/audit/
           mkdir -p docs/win/hockey/nhl/config/mapping/
 
+      - name: Pull Official NHL Schedule
+        run: python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+
       - name: NHL Drat Scraper
         run: python docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
 
@@ -62,9 +65,6 @@ jobs:
 
       - name: NHL Prediction Name Normalization
         run: python docs/win/hockey/nhl/scripts/00_intake/pred_name_normalization.py
-
-      - name: Pull Official NHL Schedule
-        run: python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
 
       - name: Reconcile NHL Game IDs
         run: python docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py

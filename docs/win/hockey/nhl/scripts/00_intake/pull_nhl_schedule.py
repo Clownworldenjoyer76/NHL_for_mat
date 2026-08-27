@@ -101,8 +101,7 @@ def discover_target_dates() -> list[str]:
             if date_value:
                 dates.add(date_value)
 
-    if not dates:
-        dates.add(datetime.now(ET).strftime("%Y_%m_%d"))
+    dates.add(datetime.now(ET).strftime("%Y_%m_%d"))
 
     return sorted(dates)
 
