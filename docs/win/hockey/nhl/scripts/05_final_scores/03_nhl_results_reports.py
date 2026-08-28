@@ -21,6 +21,7 @@ REPORT_ROOT = FINAL_ROOT / "reports"
 MONEYLINE_DIR = REPORT_ROOT / "moneyline"
 PUCKLINE_DIR = REPORT_ROOT / "puckline"
 TOTAL_DIR = REPORT_ROOT / "total"
+CALIBRATION_DIR = REPORT_ROOT / "calibration"
 
 TALLY_FILE = FINAL_ROOT / "nhl_market_tally.csv"
 
@@ -31,6 +32,7 @@ REPORT_ROOT.mkdir(parents=True, exist_ok=True)
 MONEYLINE_DIR.mkdir(parents=True, exist_ok=True)
 PUCKLINE_DIR.mkdir(parents=True, exist_ok=True)
 TOTAL_DIR.mkdir(parents=True, exist_ok=True)
+CALIBRATION_DIR.mkdir(parents=True, exist_ok=True)
 
 ERROR_LOG = ERROR_DIR / "03_nhl_results_reports_errors.txt"
 SUMMARY_LOG = ERROR_DIR / "03_nhl_results_reports_summary.txt"
@@ -60,6 +62,67 @@ REPORT_COLUMNS = [
     "avg_ev",
     "avg_kelly",
     "avg_win_prob",
+]
+
+CALIBRATION_METRICS_COLUMNS = [
+    "league",
+    "market_type",
+    "bets",
+    "expected_win_rate",
+    "realized_win_rate",
+    "calibration_gap",
+    "brier_score",
+    "log_loss",
+    "expected_wins",
+    "realized_wins",
+]
+
+PROBABILITY_CALIBRATION_COLUMNS = [
+    "league",
+    "market_type",
+    "probability_bucket",
+    "bets",
+    "avg_model_prob",
+    "realized_win_rate",
+    "calibration_gap",
+    "brier_score",
+    "log_loss",
+    "expected_wins",
+    "realized_wins",
+]
+
+EXPECTED_VS_REALIZED_COLUMNS = [
+    "league",
+    "market_type",
+    "bets",
+    "expected_probability",
+    "realized_probability",
+    "difference",
+    "expected_wins",
+    "realized_wins",
+]
+
+WALK_FORWARD_COLUMNS = [
+    "league",
+    "market_type",
+    "through_game_date",
+    "Win",
+    "Loss",
+    "Push",
+    "bets_excluding_pushes",
+    "bets_including_pushes",
+    "win_pct",
+    "units",
+    "roi",
+    "avg_odds",
+    "avg_ev",
+    "avg_kelly",
+    "avg_model_prob",
+    "expected_win_rate",
+    "realized_win_rate",
+    "calibration_gap",
+    "brier_score",
+    "log_loss",
 ]
 
 
@@ -140,6 +203,18 @@ TOTAL_RANGE_BANDS = [
     (8.0, 999),
 ]
 
+CALIBRATION_BANDS = [
+    (0.00, 0.45),
+    (0.45, 0.50),
+    (0.50, 0.55),
+    (0.55, 0.60),
+    (0.60, 0.65),
+    (0.65, 0.70),
+    (0.70, 1.00),
+]
+
+LOG_LOSS_EPSILON = 1e-15
+
 
 ###############################################################
 ######################## LOGGING ##############################
@@ -179,6 +254,7 @@ def safe_read(path: Path) -> pd.DataFrame:
         raise RuntimeError(
             f"READ ERROR | {path} | {e}"
         ) from e
+
 
 def normalize_market(value) -> str:
     value = str(value).strip().lower()
@@ -296,6 +372,7 @@ def prepare_df(df: pd.DataFrame) -> pd.DataFrame:
     df["league"] = "nhl"
     df["market_type"] = df["market_type"].map(normalize_market)
     df["bet_side"] = df["bet_side"].map(normalize_side)
+
     if df.empty:
         df["side_group"] = pd.Series(
             dtype=str
@@ -323,21 +400,75 @@ def prepare_df(df: pd.DataFrame) -> pd.DataFrame:
 
     for col in numeric_cols:
         if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce")
+            df[col] = pd.to_numeric(
+                df[col],
+                errors="coerce",
+            )
 
-    result_clean = df["bet_result"].astype(str).str.strip().str.lower()
+    result_clean = (
+        df["bet_result"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+    )
 
-    df["is_win"] = (result_clean == "win").astype(int)
-    df["is_loss"] = (result_clean == "loss").astype(int)
-    df["is_push"] = (result_clean == "push").astype(int)
-    df["units"] = df.apply(grade_to_units, axis=1)
+    df["is_win"] = (
+        result_clean == "win"
+    ).astype(int)
 
-    df["ev_bucket"] = df["ev"].apply(lambda v: bucket_value(v, EV_BANDS))
-    df["kelly_bucket"] = df["kelly"].apply(lambda v: bucket_value(v, KELLY_BANDS))
-    df["odds_bucket"] = df["dk_odds_american"].apply(lambda v: bucket_value(v, ODDS_BANDS))
-    df["win_prob_bucket"] = df.apply(win_prob_bucket, axis=1)
+    df["is_loss"] = (
+        result_clean == "loss"
+    ).astype(int)
+
+    df["is_push"] = (
+        result_clean == "push"
+    ).astype(int)
+
+    df["units"] = df.apply(
+        grade_to_units,
+        axis=1,
+    )
+
+    df["ev_bucket"] = df["ev"].apply(
+        lambda v: bucket_value(
+            v,
+            EV_BANDS,
+        )
+    )
+
+    df["kelly_bucket"] = df["kelly"].apply(
+        lambda v: bucket_value(
+            v,
+            KELLY_BANDS,
+        )
+    )
+
+    df["odds_bucket"] = (
+        df["dk_odds_american"]
+        .apply(
+            lambda v: bucket_value(
+                v,
+                ODDS_BANDS,
+            )
+        )
+    )
+
+    df["win_prob_bucket"] = df.apply(
+        win_prob_bucket,
+        axis=1,
+    )
+
     df["side_bucket"] = df["side_group"]
-    df["total_range_bucket"] = df["line"].apply(lambda v: bucket_value(v, TOTAL_RANGE_BANDS))
+
+    df["total_range_bucket"] = (
+        df["line"]
+        .apply(
+            lambda v: bucket_value(
+                v,
+                TOTAL_RANGE_BANDS,
+            )
+        )
+    )
 
     return df
 
@@ -346,67 +477,129 @@ def prepare_df(df: pd.DataFrame) -> pd.DataFrame:
 ######################## SUMMARIES ############################
 ###############################################################
 
-def summarize(df: pd.DataFrame, market_type: str, variable_col: str, include_side: bool) -> pd.DataFrame:
+def summarize(
+    df: pd.DataFrame,
+    market_type: str,
+    variable_col: str,
+    include_side: bool,
+) -> pd.DataFrame:
     if df.empty:
         return empty_report_df()
 
-    group_cols = ["league", "market_type", variable_col]
+    group_cols = [
+        "league",
+        "market_type",
+        variable_col,
+    ]
 
     if include_side:
-        group_cols.insert(2, "side_group")
+        group_cols.insert(
+            2,
+            "side_group",
+        )
 
     grouped = (
-        df.groupby(group_cols, dropna=False)
+        df.groupby(
+            group_cols,
+            dropna=False,
+        )
         .agg(
             Win=("is_win", "sum"),
             Loss=("is_loss", "sum"),
             Push=("is_push", "sum"),
             units=("units", "sum"),
-            avg_odds=("dk_odds_american", "mean"),
+            avg_odds=(
+                "dk_odds_american",
+                "mean",
+            ),
             avg_ev=("ev", "mean"),
             avg_kelly=("kelly", "mean"),
-            avg_win_prob=("model_prob", "mean"),
+            avg_win_prob=(
+                "model_prob",
+                "mean",
+            ),
         )
         .reset_index()
     )
 
-    grouped["Total"] = grouped["Win"] + grouped["Loss"] + grouped["Push"]
-    grouped["bets_excluding_pushes"] = grouped["Win"] + grouped["Loss"]
-    grouped["bets_including_pushes"] = grouped["Total"]
+    grouped["Total"] = (
+        grouped["Win"]
+        + grouped["Loss"]
+        + grouped["Push"]
+    )
+
+    grouped["bets_excluding_pushes"] = (
+        grouped["Win"]
+        + grouped["Loss"]
+    )
+
+    grouped["bets_including_pushes"] = (
+        grouped["Total"]
+    )
 
     grouped["Win_Pct"] = np.where(
         grouped["bets_excluding_pushes"] > 0,
-        grouped["Win"] / grouped["bets_excluding_pushes"],
+        grouped["Win"]
+        / grouped["bets_excluding_pushes"],
         np.nan,
     )
 
     grouped["roi"] = np.where(
         grouped["bets_including_pushes"] > 0,
-        grouped["units"] / grouped["bets_including_pushes"],
+        grouped["units"]
+        / grouped["bets_including_pushes"],
         np.nan,
     )
 
-    grouped = grouped.rename(columns={variable_col: "variable"})
+    grouped = grouped.rename(
+        columns={
+            variable_col: "variable",
+        }
+    )
 
     if not include_side:
         grouped["side_group"] = "ALL"
 
     grouped["market_type"] = market_type
 
-    grouped = grouped[REPORT_COLUMNS]
+    grouped = grouped[
+        REPORT_COLUMNS
+    ]
 
-    grouped = grouped.sort_values(
-        ["league", "market_type", "side_group", "variable"],
-        kind="stable",
-    ).reset_index(drop=True)
+    grouped = (
+        grouped.sort_values(
+            [
+                "league",
+                "market_type",
+                "side_group",
+                "variable",
+            ],
+            kind="stable",
+        )
+        .reset_index(drop=True)
+    )
 
     return grouped
 
 
-def write_report(df: pd.DataFrame, path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(path, index=False)
-    log_summary(f"WROTE REPORT | {path} | rows={len(df)}")
+def write_report(
+    df: pd.DataFrame,
+    path: Path,
+) -> None:
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    df.to_csv(
+        path,
+        index=False,
+    )
+
+    log_summary(
+        f"WROTE REPORT | {path} | "
+        f"rows={len(df)}"
+    )
 
 
 def write_pair(
@@ -417,18 +610,50 @@ def write_pair(
     report_name: str,
     variable_col: str,
 ) -> None:
-    base = summarize(market_df, market_type, variable_col, include_side=False)
-    side = summarize(market_df, market_type, variable_col, include_side=True)
+    base = summarize(
+        market_df,
+        market_type,
+        variable_col,
+        include_side=False,
+    )
 
-    write_report(base, out_dir / f"{prefix}_by_{report_name}.csv")
-    write_report(side, out_dir / f"{prefix}_by_{report_name}_home_away_summary.csv")
+    side = summarize(
+        market_df,
+        market_type,
+        variable_col,
+        include_side=True,
+    )
+
+    write_report(
+        base,
+        out_dir
+        / f"{prefix}_by_{report_name}.csv",
+    )
+
+    write_report(
+        side,
+        out_dir
+        / (
+            f"{prefix}_by_{report_name}"
+            "_home_away_summary.csv"
+        ),
+    )
 
 
-def write_market_tally(df: pd.DataFrame) -> None:
+def write_market_tally(
+    df: pd.DataFrame,
+) -> None:
     rows = []
 
-    for market_type in ["moneyline", "puck_line", "total"]:
-        market_df = df[df["market_type"] == market_type].copy()
+    for market_type in [
+        "moneyline",
+        "puck_line",
+        "total",
+    ]:
+        market_df = df[
+            df["market_type"]
+            == market_type
+        ].copy()
 
         if market_df.empty:
             row = {
@@ -450,18 +675,831 @@ def write_market_tally(df: pd.DataFrame) -> None:
                 "avg_kelly": np.nan,
                 "avg_win_prob": np.nan,
             }
+
             rows.append(row)
             continue
 
-        summary = summarize(market_df, market_type, "all_bucket", include_side=False)
-        rows.extend(summary.to_dict("records"))
+        summary = summarize(
+            market_df,
+            market_type,
+            "all_bucket",
+            include_side=False,
+        )
 
-    tally = pd.DataFrame(rows, columns=REPORT_COLUMNS)
-    tally.to_csv(TALLY_FILE, index=False)
-    log_summary(f"WROTE MARKET TALLY | {TALLY_FILE} | rows={len(tally)}")
+        rows.extend(
+            summary.to_dict(
+                "records"
+            )
+        )
+
+    tally = pd.DataFrame(
+        rows,
+        columns=REPORT_COLUMNS,
+    )
+
+    tally.to_csv(
+        TALLY_FILE,
+        index=False,
+    )
+
+    log_summary(
+        f"WROTE MARKET TALLY | "
+        f"{TALLY_FILE} | "
+        f"rows={len(tally)}"
+    )
 
 
+###############################################################
+######################## CALIBRATION ##########################
+###############################################################
 
+def prepare_calibration_df(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
+    calibration = df[
+        df["bet_result"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .isin(
+            [
+                "win",
+                "loss",
+            ]
+        )
+    ].copy()
+
+    if calibration.empty:
+        calibration["actual_win"] = (
+            pd.Series(dtype=float)
+        )
+
+        calibration["brier_component"] = (
+            pd.Series(dtype=float)
+        )
+
+        calibration["log_loss_component"] = (
+            pd.Series(dtype=float)
+        )
+
+        calibration["calibration_bucket"] = (
+            pd.Series(dtype=str)
+        )
+
+        return calibration
+
+    invalid_prob = (
+        calibration["model_prob"].isna()
+        | (
+            calibration["model_prob"]
+            < 0.0
+        )
+        | (
+            calibration["model_prob"]
+            > 1.0
+        )
+    )
+
+    if invalid_prob.any():
+        bad = calibration.loc[
+            invalid_prob,
+            [
+                "game_date",
+                "game_id",
+                "market_type",
+                "bet_side",
+                "model_prob",
+                "bet_result",
+            ],
+        ]
+
+        raise RuntimeError(
+            "CALIBRATION BLOCKED: "
+            "win/loss rows contain missing "
+            "or out-of-range model_prob "
+            "values | "
+            f"count={len(bad)} | "
+            f"rows={bad.to_dict('records')}"
+        )
+
+    result_clean = (
+        calibration["bet_result"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+    )
+
+    calibration["actual_win"] = (
+        result_clean == "win"
+    ).astype(float)
+
+    calibration["brier_component"] = (
+        calibration["model_prob"]
+        - calibration["actual_win"]
+    ) ** 2
+
+    clipped_prob = (
+        calibration["model_prob"]
+        .clip(
+            LOG_LOSS_EPSILON,
+            1.0 - LOG_LOSS_EPSILON,
+        )
+    )
+
+    calibration["log_loss_component"] = -(
+        calibration["actual_win"]
+        * np.log(clipped_prob)
+        + (
+            1.0
+            - calibration["actual_win"]
+        )
+        * np.log(
+            1.0 - clipped_prob
+        )
+    )
+
+    calibration["calibration_bucket"] = (
+        calibration["model_prob"]
+        .apply(
+            lambda value: bucket_value(
+                value,
+                CALIBRATION_BANDS,
+            )
+        )
+    )
+
+    return calibration
+
+
+def calibration_scope_rows(
+    calibration: pd.DataFrame,
+) -> list[
+    tuple[
+        str,
+        pd.DataFrame,
+    ]
+]:
+    scopes = [
+        (
+            "ALL",
+            calibration,
+        )
+    ]
+
+    for market_type in [
+        "moneyline",
+        "puck_line",
+        "total",
+    ]:
+        scopes.append(
+            (
+                market_type,
+                calibration[
+                    calibration["market_type"]
+                    == market_type
+                ].copy(),
+            )
+        )
+
+    return scopes
+
+
+def calibration_metric_row(
+    scope: pd.DataFrame,
+    market_type: str,
+) -> dict:
+    bets = len(scope)
+
+    if bets == 0:
+        return {
+            "league": "nhl",
+            "market_type": market_type,
+            "bets": 0,
+            "expected_win_rate": np.nan,
+            "realized_win_rate": np.nan,
+            "calibration_gap": np.nan,
+            "brier_score": np.nan,
+            "log_loss": np.nan,
+            "expected_wins": 0.0,
+            "realized_wins": 0.0,
+        }
+
+    expected_win_rate = (
+        scope["model_prob"].mean()
+    )
+
+    realized_win_rate = (
+        scope["actual_win"].mean()
+    )
+
+    return {
+        "league": "nhl",
+        "market_type": market_type,
+        "bets": bets,
+        "expected_win_rate": (
+            expected_win_rate
+        ),
+        "realized_win_rate": (
+            realized_win_rate
+        ),
+        "calibration_gap": (
+            realized_win_rate
+            - expected_win_rate
+        ),
+        "brier_score": (
+            scope[
+                "brier_component"
+            ].mean()
+        ),
+        "log_loss": (
+            scope[
+                "log_loss_component"
+            ].mean()
+        ),
+        "expected_wins": (
+            scope["model_prob"].sum()
+        ),
+        "realized_wins": (
+            scope["actual_win"].sum()
+        ),
+    }
+
+
+def write_calibration_metrics(
+    calibration: pd.DataFrame,
+) -> None:
+    rows = [
+        calibration_metric_row(
+            scope,
+            market_type,
+        )
+        for market_type, scope
+        in calibration_scope_rows(
+            calibration
+        )
+    ]
+
+    report = pd.DataFrame(
+        rows,
+        columns=(
+            CALIBRATION_METRICS_COLUMNS
+        ),
+    )
+
+    write_report(
+        report,
+        CALIBRATION_DIR
+        / "nhl_calibration_metrics.csv",
+    )
+
+
+def write_probability_calibration(
+    calibration: pd.DataFrame,
+) -> None:
+    rows = []
+
+    for (
+        market_type,
+        scope,
+    ) in calibration_scope_rows(
+        calibration
+    ):
+        if scope.empty:
+            continue
+
+        grouped = (
+            scope.groupby(
+                "calibration_bucket",
+                dropna=False,
+            )
+            .agg(
+                bets=(
+                    "actual_win",
+                    "size",
+                ),
+                avg_model_prob=(
+                    "model_prob",
+                    "mean",
+                ),
+                realized_win_rate=(
+                    "actual_win",
+                    "mean",
+                ),
+                brier_score=(
+                    "brier_component",
+                    "mean",
+                ),
+                log_loss=(
+                    "log_loss_component",
+                    "mean",
+                ),
+                expected_wins=(
+                    "model_prob",
+                    "sum",
+                ),
+                realized_wins=(
+                    "actual_win",
+                    "sum",
+                ),
+            )
+            .reset_index()
+        )
+
+        grouped["league"] = "nhl"
+
+        grouped[
+            "market_type"
+        ] = market_type
+
+        grouped[
+            "calibration_gap"
+        ] = (
+            grouped[
+                "realized_win_rate"
+            ]
+            - grouped[
+                "avg_model_prob"
+            ]
+        )
+
+        grouped = grouped.rename(
+            columns={
+                "calibration_bucket":
+                "probability_bucket",
+            }
+        )
+
+        rows.extend(
+            grouped[
+                PROBABILITY_CALIBRATION_COLUMNS
+            ].to_dict(
+                "records"
+            )
+        )
+
+    report = pd.DataFrame(
+        rows,
+        columns=(
+            PROBABILITY_CALIBRATION_COLUMNS
+        ),
+    )
+
+    if not report.empty:
+        bucket_order = {
+            band_label(
+                low,
+                high,
+            ): index
+            for (
+                index,
+                (
+                    low,
+                    high,
+                ),
+            ) in enumerate(
+                CALIBRATION_BANDS
+            )
+        }
+
+        market_order = {
+            "ALL": 0,
+            "moneyline": 1,
+            "puck_line": 2,
+            "total": 3,
+        }
+
+        report[
+            "_market_order"
+        ] = (
+            report[
+                "market_type"
+            ]
+            .map(
+                market_order
+            )
+            .fillna(999)
+        )
+
+        report[
+            "_bucket_order"
+        ] = (
+            report[
+                "probability_bucket"
+            ]
+            .map(
+                bucket_order
+            )
+            .fillna(999)
+        )
+
+        report = (
+            report.sort_values(
+                [
+                    "_market_order",
+                    "_bucket_order",
+                ],
+                kind="stable",
+            )
+            .drop(
+                columns=[
+                    "_market_order",
+                    "_bucket_order",
+                ]
+            )
+            .reset_index(
+                drop=True
+            )
+        )
+
+    write_report(
+        report,
+        CALIBRATION_DIR
+        / (
+            "nhl_probability_"
+            "calibration.csv"
+        ),
+    )
+
+
+def write_expected_vs_realized(
+    calibration: pd.DataFrame,
+) -> None:
+    rows = []
+
+    for (
+        market_type,
+        scope,
+    ) in calibration_scope_rows(
+        calibration
+    ):
+        bets = len(scope)
+
+        if bets == 0:
+            rows.append(
+                {
+                    "league": "nhl",
+                    "market_type": (
+                        market_type
+                    ),
+                    "bets": 0,
+                    "expected_probability": (
+                        np.nan
+                    ),
+                    "realized_probability": (
+                        np.nan
+                    ),
+                    "difference": np.nan,
+                    "expected_wins": 0.0,
+                    "realized_wins": 0.0,
+                }
+            )
+            continue
+
+        expected_probability = (
+            scope[
+                "model_prob"
+            ].mean()
+        )
+
+        realized_probability = (
+            scope[
+                "actual_win"
+            ].mean()
+        )
+
+        rows.append(
+            {
+                "league": "nhl",
+                "market_type": (
+                    market_type
+                ),
+                "bets": bets,
+                "expected_probability": (
+                    expected_probability
+                ),
+                "realized_probability": (
+                    realized_probability
+                ),
+                "difference": (
+                    realized_probability
+                    - expected_probability
+                ),
+                "expected_wins": (
+                    scope[
+                        "model_prob"
+                    ].sum()
+                ),
+                "realized_wins": (
+                    scope[
+                        "actual_win"
+                    ].sum()
+                ),
+            }
+        )
+
+    report = pd.DataFrame(
+        rows,
+        columns=(
+            EXPECTED_VS_REALIZED_COLUMNS
+        ),
+    )
+
+    write_report(
+        report,
+        CALIBRATION_DIR
+        / (
+            "nhl_expected_"
+            "vs_realized.csv"
+        ),
+    )
+
+
+def walk_forward_scope_row(
+    full_scope: pd.DataFrame,
+    calibration_scope: pd.DataFrame,
+    market_type: str,
+    through_game_date: str,
+) -> dict:
+    wins = int(
+        full_scope[
+            "is_win"
+        ].sum()
+    )
+
+    losses = int(
+        full_scope[
+            "is_loss"
+        ].sum()
+    )
+
+    pushes = int(
+        full_scope[
+            "is_push"
+        ].sum()
+    )
+
+    bets_excluding_pushes = (
+        wins + losses
+    )
+
+    bets_including_pushes = (
+        wins
+        + losses
+        + pushes
+    )
+
+    units = (
+        full_scope[
+            "units"
+        ].sum(
+            min_count=1
+        )
+    )
+
+    win_pct = (
+        wins
+        / bets_excluding_pushes
+        if bets_excluding_pushes > 0
+        else np.nan
+    )
+
+    roi = (
+        units
+        / bets_including_pushes
+        if (
+            bets_including_pushes > 0
+            and not pd.isna(
+                units
+            )
+        )
+        else np.nan
+    )
+
+    if calibration_scope.empty:
+        expected_win_rate = np.nan
+        realized_win_rate = np.nan
+        calibration_gap = np.nan
+        brier_score = np.nan
+        log_loss = np.nan
+
+    else:
+        expected_win_rate = (
+            calibration_scope[
+                "model_prob"
+            ].mean()
+        )
+
+        realized_win_rate = (
+            calibration_scope[
+                "actual_win"
+            ].mean()
+        )
+
+        calibration_gap = (
+            realized_win_rate
+            - expected_win_rate
+        )
+
+        brier_score = (
+            calibration_scope[
+                "brier_component"
+            ].mean()
+        )
+
+        log_loss = (
+            calibration_scope[
+                "log_loss_component"
+            ].mean()
+        )
+
+    return {
+        "league": "nhl",
+        "market_type": market_type,
+        "through_game_date": (
+            through_game_date
+        ),
+        "Win": wins,
+        "Loss": losses,
+        "Push": pushes,
+        "bets_excluding_pushes": (
+            bets_excluding_pushes
+        ),
+        "bets_including_pushes": (
+            bets_including_pushes
+        ),
+        "win_pct": win_pct,
+        "units": units,
+        "roi": roi,
+        "avg_odds": (
+            full_scope[
+                "dk_odds_american"
+            ].mean()
+        ),
+        "avg_ev": (
+            full_scope[
+                "ev"
+            ].mean()
+        ),
+        "avg_kelly": (
+            full_scope[
+                "kelly"
+            ].mean()
+        ),
+        "avg_model_prob": (
+            full_scope[
+                "model_prob"
+            ].mean()
+        ),
+        "expected_win_rate": (
+            expected_win_rate
+        ),
+        "realized_win_rate": (
+            realized_win_rate
+        ),
+        "calibration_gap": (
+            calibration_gap
+        ),
+        "brier_score": (
+            brier_score
+        ),
+        "log_loss": (
+            log_loss
+        ),
+    }
+
+
+def write_walk_forward_performance(
+    df: pd.DataFrame,
+    calibration: pd.DataFrame,
+) -> None:
+    rows = []
+
+    game_dates = sorted(
+        value
+        for value
+        in (
+            df["game_date"]
+            .dropna()
+            .astype(str)
+            .unique()
+        )
+        if value.strip()
+    )
+
+    for through_game_date in game_dates:
+        cumulative = df[
+            df["game_date"]
+            .astype(str)
+            <= through_game_date
+        ].copy()
+
+        cumulative_calibration = (
+            calibration[
+                calibration[
+                    "game_date"
+                ]
+                .astype(str)
+                <= through_game_date
+            ].copy()
+        )
+
+        for market_type in [
+            "ALL",
+            "moneyline",
+            "puck_line",
+            "total",
+        ]:
+            if market_type == "ALL":
+                full_scope = cumulative
+
+                calibration_scope = (
+                    cumulative_calibration
+                )
+
+            else:
+                full_scope = cumulative[
+                    cumulative[
+                        "market_type"
+                    ]
+                    == market_type
+                ].copy()
+
+                calibration_scope = (
+                    cumulative_calibration[
+                        cumulative_calibration[
+                            "market_type"
+                        ]
+                        == market_type
+                    ].copy()
+                )
+
+            rows.append(
+                walk_forward_scope_row(
+                    full_scope=(
+                        full_scope
+                    ),
+                    calibration_scope=(
+                        calibration_scope
+                    ),
+                    market_type=(
+                        market_type
+                    ),
+                    through_game_date=(
+                        through_game_date
+                    ),
+                )
+            )
+
+    report = pd.DataFrame(
+        rows,
+        columns=(
+            WALK_FORWARD_COLUMNS
+        ),
+    )
+
+    write_report(
+        report,
+        CALIBRATION_DIR
+        / (
+            "nhl_walk_forward_"
+            "performance.csv"
+        ),
+    )
+
+
+def write_calibration_reports(
+    df: pd.DataFrame,
+) -> None:
+    calibration = (
+        prepare_calibration_df(
+            df
+        )
+    )
+
+    log_summary(
+        "CALIBRATION INPUT | "
+        f"win_loss_rows="
+        f"{len(calibration)} | "
+        f"pushes_excluded="
+        f"{int(df['is_push'].sum())}"
+    )
+
+    write_calibration_metrics(
+        calibration
+    )
+
+    write_probability_calibration(
+        calibration
+    )
+
+    write_expected_vs_realized(
+        calibration
+    )
+
+    write_walk_forward_performance(
+        df,
+        calibration,
+    )
 
 
 def fail_if_unresolved_rows_exist() -> None:
@@ -469,20 +1507,31 @@ def fail_if_unresolved_rows_exist() -> None:
         return
 
     try:
-        unresolved = pd.read_csv(UNRESOLVED_FILE, dtype=str)
+        unresolved = pd.read_csv(
+            UNRESOLVED_FILE,
+            dtype=str,
+        )
+
     except pd.errors.EmptyDataError:
         return
+
     except Exception as e:
         raise RuntimeError(
-            f"FAILED TO READ UNRESOLVED GRADING FILE | {UNRESOLVED_FILE} | {e}"
+            "FAILED TO READ UNRESOLVED "
+            "GRADING FILE | "
+            f"{UNRESOLVED_FILE} | "
+            f"{e}"
         ) from e
 
     if unresolved.empty:
         return
 
     raise RuntimeError(
-        "FINAL REPORTING BLOCKED: unresolved completed NHL grading rows remain | "
-        f"count={len(unresolved)} | file={UNRESOLVED_FILE}"
+        "FINAL REPORTING BLOCKED: "
+        "unresolved completed NHL "
+        "grading rows remain | "
+        f"count={len(unresolved)} | "
+        f"file={UNRESOLVED_FILE}"
     )
 
 
@@ -493,9 +1542,20 @@ def fail_if_unresolved_rows_exist() -> None:
 def main() -> None:
     reset_logs()
 
-    log_summary("START 03_nhl_results_reports.py")
-    log_summary(f"INPUT_FILE={INPUT_FILE}")
-    log_summary(f"REPORT_ROOT={REPORT_ROOT}")
+    log_summary(
+        "START "
+        "03_nhl_results_reports.py"
+    )
+
+    log_summary(
+        f"INPUT_FILE="
+        f"{INPUT_FILE}"
+    )
+
+    log_summary(
+        f"REPORT_ROOT="
+        f"{REPORT_ROOT}"
+    )
 
     fail_if_unresolved_rows_exist()
 
@@ -506,7 +1566,8 @@ def main() -> None:
 
     except Exception as e:
         log_error(
-            f"REPORT INPUT FAILED | {e}"
+            f"REPORT INPUT FAILED | "
+            f"{e}"
         )
         raise
 
@@ -526,18 +1587,40 @@ def main() -> None:
         "bet_result",
     ]
 
-    missing = [c for c in required if c not in df.columns]
+    missing = [
+        c
+        for c in required
+        if c not in df.columns
+    ]
+
     if missing:
-        msg = f"STOPPING: missing required columns {missing}"
+        msg = (
+            "STOPPING: missing "
+            "required columns "
+            f"{missing}"
+        )
+
         log_error(msg)
         raise RuntimeError(msg)
 
     df = prepare_df(df)
+
     df["all_bucket"] = "ALL"
 
-    moneyline_df = df[df["market_type"] == "moneyline"].copy()
-    puckline_df = df[df["market_type"] == "puck_line"].copy()
-    total_df = df[df["market_type"] == "total"].copy()
+    moneyline_df = df[
+        df["market_type"]
+        == "moneyline"
+    ].copy()
+
+    puckline_df = df[
+        df["market_type"]
+        == "puck_line"
+    ].copy()
+
+    total_df = df[
+        df["market_type"]
+        == "total"
+    ].copy()
 
     ###########################################################
     # MONEYLINE
@@ -686,9 +1769,18 @@ def main() -> None:
         "win_prob_bucket",
     )
 
-    write_market_tally(df)
+    write_market_tally(
+        df
+    )
 
-    log_summary("END 03_nhl_results_reports.py")
+    write_calibration_reports(
+        df
+    )
+
+    log_summary(
+        "END "
+        "03_nhl_results_reports.py"
+    )
 
     if df.empty:
         print(
@@ -696,7 +1788,9 @@ def main() -> None:
             "no completed graded bets."
         )
     else:
-        print("NHL reports complete.")
+        print(
+            "NHL reports complete."
+        )
 
 
 if __name__ == "__main__":
