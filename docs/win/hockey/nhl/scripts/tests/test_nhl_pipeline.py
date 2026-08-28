@@ -14,7 +14,7 @@ import pandas as pd
 import pytest
 
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(__file__).resolve().parents[6]
 NHL_ROOT = REPO_ROOT / "docs" / "win" / "hockey" / "nhl"
 
 
@@ -996,3 +996,4 @@ def test_unmatched_grading_row_is_preserved_as_unresolved(
         + len(unresolved)
         == len(bets)
     )
+
