@@ -55,4 +55,4 @@ docs/win/hockey/nhl/scripts/tests/test_nhl_pipeline.py::test_final_score_outcome
 docs/win/hockey/nhl/scripts/tests/test_nhl_pipeline.py::test_final_score_outcome_logic[row3-Push] PASSED [ 98%]
 docs/win/hockey/nhl/scripts/tests/test_nhl_pipeline.py::test_unmatched_grading_row_is_preserved_as_unresolved PASSED [100%]
 
-============================== 50 passed in 3.54s ==============================
+============================== 50 passed in 2.18s ==============================
