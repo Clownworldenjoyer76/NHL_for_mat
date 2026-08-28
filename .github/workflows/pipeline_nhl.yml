@@ -28,7 +28,7 @@ jobs:
       - name: Set date
         run: echo "DATE=$(TZ='America/New_York' date +%Y_%m_%d)" >> "$GITHUB_ENV"
 
-      - name: Set up Python 3.11 for pre-run validation
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -38,18 +38,26 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Validate NHL pipeline
-        run: python docs/win/hockey/nhl/scripts/tests/validate_pipeline.py
-
-      - name: Set up Python 3.13 for NHL pipeline tests
-        uses: actions/setup-python@v5
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
         with:
-          python-version: "3.13"
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ hashFiles('requirements.txt') }}
 
-      - name: Install NHL pipeline test dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install pytest pandas numpy pyyaml
+      - name: Cache SDV NHL xG models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/nhl_xg_models
+          key: sdv-nhl-xg-models-v1
+
+      - name: Install Playwright system dependencies
+        run: python -m playwright install-deps chromium
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install chromium
+
+      - name: Run NHL pre-run pipeline validator
+        run: python docs/win/hockey/nhl/scripts/validate_pipeline.py
 
       - name: Create NHL test output directories
         run: |
@@ -78,28 +86,29 @@ jobs:
         if: steps.pipeline_tests.outcome == 'failure'
         run: exit 1
 
-      - name: Set up Python 3.11 for NHL pipeline
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Syntax check NHL game ID scripts
+        run: |
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/build_games.py
+          python -m py_compile docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
 
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ hashFiles('requirements.txt') }}
+      - name: Run fixture-only NHL game ID reconciliation test
+        run: python docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
 
-      - name: Cache SDV NHL xG models
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/nhl_xg_models
-          key: sdv-nhl-xg-models-v1
+      - name: Commit NHL game ID test outputs
+        run: |
+          git add -A docs/win/hockey/nhl/test_output/game_id_reconciliation
 
-      - name: Install Playwright system dependencies
-        run: python -m playwright install-deps chromium
-
-      - name: Install Playwright Chromium
-        run: python -m playwright install chromium
+          if git diff --cached --quiet; then
+            echo "No NHL game ID test output changes to commit."
+          else
+            git commit -m "test: NHL fixture game ID reconciliation"
+            git pull --rebase origin main
+            git push
+          fi
 
       - name: Verify NHL odds API key
         run: |
@@ -109,7 +118,7 @@ jobs:
           fi
           echo "API_ODDS is present"
 
-      - name: Create required NHL directories
+      - name: Create required NHL runtime directories
         run: |
           mkdir -p docs/win/hockey/nhl/errors/00_intake
           mkdir -p docs/win/hockey/nhl/errors/01_merge
@@ -143,31 +152,6 @@ jobs:
 
           mkdir -p docs/win/hockey/nhl/config/mapping
           mkdir -p docs/win/hockey/nhl/sdv
-          mkdir -p docs/win/hockey/nhl/test_output/game_id_reconciliation
-
-      - name: Syntax check NHL game ID scripts
-        run: |
-          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
-          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
-          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
-          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
-          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/build_games.py
-          python -m py_compile docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
-
-      - name: Run fixture-only NHL game ID reconciliation test
-        run: python docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
-
-      - name: Commit NHL game ID test outputs
-        run: |
-          git add -A docs/win/hockey/nhl/test_output/game_id_reconciliation
-
-          if git diff --cached --quiet; then
-            echo "No NHL game ID test output changes to commit."
-          else
-            git commit -m "test: NHL fixture game ID reconciliation"
-            git pull --rebase origin main
-            git push
-          fi
 
       - name: Pull official NHL schedule
         run: python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
