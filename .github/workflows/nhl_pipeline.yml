@@ -1,0 +1,335 @@
+name: NHL Pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  nhl-pipeline:
+    runs-on: ubuntu-latest
+
+    env:
+      API_ODDS: ${{ secrets.API_ODDS }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Set date
+        run: echo "DATE=$(TZ='America/New_York' date +%Y_%m_%d)" >> "$GITHUB_ENV"
+
+      - name: Set up Python 3.13 for NHL pipeline tests
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install NHL pipeline test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest pandas numpy pyyaml
+
+      - name: Create NHL test output directories
+        run: |
+          mkdir -p docs/win/hockey/nhl/errors
+          mkdir -p docs/win/hockey/nhl/test_output/game_id_reconciliation
+
+      - name: Run NHL pipeline tests
+        id: pipeline_tests
+        continue-on-error: true
+        run: |
+          python -m pytest docs/win/hockey/nhl/scripts/tests/test_nhl_pipeline.py -v > docs/win/hockey/nhl/errors/nhl_pipeline_tests.txt 2>&1
+
+      - name: Commit NHL pipeline test results
+        run: |
+          git add -A docs/win/hockey/nhl/errors/nhl_pipeline_tests.txt
+
+          if git diff --cached --quiet; then
+            echo "No NHL pipeline test result changes to commit."
+          else
+            git commit -m "test: update NHL pipeline test results"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Fail if NHL pipeline tests failed
+        if: steps.pipeline_tests.outcome == 'failure'
+        run: exit 1
+
+      - name: Set up Python 3.11 for NHL pipeline
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install NHL pipeline dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ hashFiles('requirements.txt') }}
+
+      - name: Cache SDV NHL xG models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/nhl_xg_models
+          key: sdv-nhl-xg-models-v1
+
+      - name: Install Playwright system dependencies
+        run: python -m playwright install-deps chromium
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install chromium
+
+      - name: Verify NHL odds API key
+        run: |
+          if [ -z "$API_ODDS" ]; then
+            echo "API_ODDS is empty"
+            exit 1
+          fi
+          echo "API_ODDS is present"
+
+      - name: Create required NHL directories
+        run: |
+          mkdir -p docs/win/hockey/nhl/errors/00_intake
+          mkdir -p docs/win/hockey/nhl/errors/01_merge
+          mkdir -p docs/win/hockey/nhl/errors/02_juice
+          mkdir -p docs/win/hockey/nhl/errors/03_edges
+          mkdir -p docs/win/hockey/nhl/errors/04_select
+          mkdir -p docs/win/hockey/nhl/errors/05_final_scores
+
+          mkdir -p docs/win/hockey/nhl/odds
+
+          mkdir -p docs/win/hockey/nhl/00_intake/games
+          mkdir -p docs/win/hockey/nhl/00_intake/drat_raw/rows
+          mkdir -p docs/win/hockey/nhl/00_intake/predictions/scraper
+          mkdir -p docs/win/hockey/nhl/00_intake/nhl_schedule
+          mkdir -p docs/win/hockey/nhl/00_intake/sportsbook
+          mkdir -p docs/win/hockey/nhl/00_intake/reconciled/audit
+
+          mkdir -p docs/win/hockey/nhl/01_merge/01_merguiced
+          mkdir -p docs/win/hockey/nhl/02_juice
+          mkdir -p docs/win/hockey/nhl/03_edges/ev_kelly
+          mkdir -p docs/win/hockey/nhl/04_select
+
+          mkdir -p docs/win/hockey/nhl/05_final_scores/final_scores
+          mkdir -p docs/win/hockey/nhl/05_final_scores/graded
+          mkdir -p docs/win/hockey/nhl/05_final_scores/intermediate
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/moneyline
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/puckline
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/total
+          mkdir -p docs/win/hockey/nhl/05_final_scores/reports/calibration
+          mkdir -p docs/win/hockey/nhl/05_final_scores/errors
+
+          mkdir -p docs/win/hockey/nhl/config/mapping
+          mkdir -p docs/win/hockey/nhl/sdv
+          mkdir -p docs/win/hockey/nhl/test_output/game_id_reconciliation
+
+      - name: Syntax check NHL game ID scripts
+        run: |
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/build_games.py
+          python -m py_compile docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
+
+      - name: Run fixture-only NHL game ID reconciliation test
+        run: python docs/win/hockey/nhl/scripts/tests/test_game_id_reconciliation.py
+
+      - name: Commit NHL game ID test outputs
+        run: |
+          git add -A docs/win/hockey/nhl/test_output/game_id_reconciliation
+
+          if git diff --cached --quiet; then
+            echo "No NHL game ID test output changes to commit."
+          else
+            git commit -m "test: NHL fixture game ID reconciliation"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Pull official NHL schedule
+        run: python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
+
+      - name: Run NHL D-Ratings scraper
+        run: python docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
+
+      - name: Transform NHL predictions
+        run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
+
+      - name: Normalize NHL prediction team names
+        run: python docs/win/hockey/nhl/scripts/00_intake/pred_name_normalization.py
+
+      - name: Pull NHL odds
+        run: python docs/win/hockey/nhl/scripts/00_intake/nhl_odds_pull.py
+
+      - name: Transform NHL odds
+        run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+
+      - name: Normalize NHL odds team names
+        run: python docs/win/hockey/nhl/scripts/00_intake/odds_name_normalization.py
+
+      - name: Reconcile NHL game IDs
+        run: python docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+
+      - name: Build NHL games
+        run: python docs/win/hockey/nhl/scripts/00_intake/build_games.py
+
+      - name: Pull SportsDataverse NHL data
+        run: python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py
+
+      - name: Print NHL intake logs on failure
+        if: failure()
+        run: |
+          echo "===== NHL 00 Intake Logs ====="
+          find docs/win/hockey/nhl/errors/00_intake -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+      - name: Commit NHL intake, odds, and SDV outputs
+        run: |
+          git add -A docs/win/hockey/nhl/odds
+          git add -A docs/win/hockey/nhl/00_intake
+          git add -A docs/win/hockey/nhl/sdv
+          git add -A docs/win/hockey/nhl/errors/00_intake
+          git add -A docs/win/hockey/nhl/config/mapping
+
+          if git diff --cached --quiet; then
+            echo "No NHL intake, odds, or SDV changes to commit."
+          else
+            git commit -m "chore: NHL intake odds SDV run $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 01 Merge - NHL merge intake
+        run: python docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
+
+      - name: 01 Merge - NHL build juice files
+        run: python docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py
+
+      - name: 02 Juice - Validate calibration config
+        run: python docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py
+
+      - name: 02 Juice - Apply moneyline juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py
+
+      - name: 02 Juice - Apply puck line juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py
+
+      - name: 02 Juice - Apply total juice
+        run: python docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py
+
+      - name: 03 Edges - Compute NHL edges
+        run: python docs/win/hockey/nhl/scripts/03_edges/compute_edges.py
+
+      - name: 03 Edges - Compute NHL EV and Kelly
+        run: python docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py
+
+      - name: 04 Select - Validate markets config
+        run: python docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py
+
+      - name: 04 Select - Select NHL bets
+        run: python docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
+
+      - name: Print NHL Stage 01-04 logs
+        if: always()
+        run: |
+          echo "===== NHL 01 Merge Logs ====="
+          find docs/win/hockey/nhl/errors/01_merge -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+          echo "===== NHL 02 Juice Logs ====="
+          find docs/win/hockey/nhl/errors/02_juice -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+          echo "===== NHL 03 Edges Logs ====="
+          find docs/win/hockey/nhl/errors/03_edges -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+          echo "===== NHL 04 Select Logs ====="
+          find docs/win/hockey/nhl/errors/04_select -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+      - name: Commit NHL Stage 01-04 outputs
+        run: |
+          git add -A docs/win/hockey/nhl/01_merge
+          git add -A docs/win/hockey/nhl/02_juice
+          git add -A docs/win/hockey/nhl/03_edges
+          git add -A docs/win/hockey/nhl/04_select
+          git add -A docs/win/hockey/nhl/errors/01_merge
+          git add -A docs/win/hockey/nhl/errors/02_juice
+          git add -A docs/win/hockey/nhl/errors/03_edges
+          git add -A docs/win/hockey/nhl/errors/04_select
+          git add -A docs/win/hockey/nhl/config/mapping
+
+          if git diff --cached --quiet; then
+            echo "No NHL Stage 01-04 changes to commit."
+          else
+            git commit -m "chore: update NHL Stage 01-04 outputs"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 05 Final Scores - Transform final scores
+        run: python docs/win/hockey/nhl/scripts/05_final_scores/transform_final_scores.py
+
+      - name: 05 Final Scores - Grade NHL results
+        run: python docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py
+
+      - name: 05 Final Scores - Analyze NHL results
+        run: python docs/win/hockey/nhl/scripts/05_final_scores/02_nhl_results_analyze.py
+
+      - name: 05 Final Scores - Build NHL reports
+        run: python docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py
+
+      - name: Print NHL Stage 05 logs
+        if: always()
+        run: |
+          echo "===== transform_final_scores log ====="
+          if [ -f docs/win/hockey/nhl/errors/05_final_scores/transform_final_scores.txt ]; then
+            cat docs/win/hockey/nhl/errors/05_final_scores/transform_final_scores.txt
+          else
+            echo "No transform_final_scores.txt log found."
+          fi
+
+          echo "===== NHL Stage 05 result-script logs ====="
+          find docs/win/hockey/nhl/05_final_scores/errors -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
+
+      - name: Show generated NHL Stage 05 files
+        if: always()
+        run: |
+          echo "===== Final score outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/final_scores -type f -name "*.csv" -print || true
+
+          echo "===== Graded outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/graded -type f -name "*.csv" -print || true
+
+          echo "===== Intermediate outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/intermediate -type f -name "*.csv" -print || true
+
+          echo "===== Report outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/reports -type f -name "*.csv" -print || true
+
+          echo "===== Market tally ====="
+          find docs/win/hockey/nhl/05_final_scores -maxdepth 1 -type f -name "nhl_market_tally.csv" -print || true
+
+      - name: Commit NHL Stage 05 outputs
+        run: |
+          git add -A docs/win/hockey/nhl/05_final_scores
+          git add -A docs/win/hockey/nhl/errors/05_final_scores
+
+          if git diff --cached --quiet; then
+            echo "No NHL Stage 05 changes to commit."
+          else
+            git commit -m "chore: update NHL Stage 05 final scores and reports"
+            git pull --rebase origin main
+            git push
+          fi
