@@ -1,7 +1,8 @@
 pipeline:
   name: nhl
-  schema_version: 1
+  schema_version: 2
   schema_created_at: "2026-08-29"
+  schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
@@ -39,7 +40,7 @@ canonical_game_identity:
   reconciliation_script: "docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py"
   rules:
     - "game_id is assigned from the official NHL schedule."
-    - "game_id is not a sportsbook event identifier."
+    - "game_id is not a sportsbook or ESPN event identifier."
     - "game_id remains the canonical identifier across downstream NHL stages."
 
 team_identity:
@@ -55,37 +56,92 @@ team_identity:
     - "shared"
 
 sportsbook:
-  odds_source: "odds-api.io"
-  base_url: "https://api.odds-api.io/v3"
-  bookmaker: "FanDuel"
-  sport_slug: "ice-hockey"
-  league_slugs:
-    - "usa-nhl"
-    - "usa-nhl-playoffs"
+  odds_source: "ESPN"
+  acquisition_library: "SportsDataverse"
+  acquisition_script: "docs/win/hockey/nhl/scripts/00_intake/nhl_odds_pull.py"
+  transform_script: "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py"
+
+  acquisition_functions:
+    scoreboard: "sportsdataverse.nhl.espn_nhl_scoreboard"
+    odds: "sportsdataverse.nhl.espn_nhl_game_odds"
+
+  source_endpoints:
+    scoreboard: "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard"
+    odds: "https://sports.core.api.espn.com/v2/sports/hockey/leagues/nhl/events/{event_id}/competitions/{competition_id}/odds"
+
+  provider_selection:
+    mode: "priority_fallback_per_market"
+    priority:
+      - "Titanbets"
+      - "MGM"
+      - "Bet365"
+      - "Caesars Sportsbook"
+      - "SugarHouse"
+    fallback: "Other available non-live ESPN providers ordered after the preferred provider groups."
+    exclude_provider_name_contains:
+      - "Live Odds"
+    markets:
+      - "moneyline"
+      - "puck_line"
+      - "total"
+    rule: "Provider selection is performed independently for each market."
+
+  normalized_output:
+    path: "docs/win/hockey/nhl/00_intake/sportsbook"
+    semantics:
+      - "One sportsbook row is produced per ESPN event after market-level provider selection."
+      - "Moneyline, puck line, and total may come from different providers when fallback is required."
+      - "Provider provenance is retained separately for each market."
 
   fields:
     sportsbook_event_id:
-      definition: "Provider-specific event identifier returned by odds-api.io."
+      definition: "ESPN event identifier associated with the sportsbook odds event."
       canonical_game_id: false
-      purpose: "Links sportsbook odds data to the corresponding sportsbook event."
+      purpose: "Provider-specific event identifier used before reconciliation to the official NHL game_id."
+
+    provider_id:
+      definition: "ESPN sportsbook provider identifier."
+      canonical_game_id: false
+      purpose: "Identifies the sportsbook supplying a market."
+
+    provider_name:
+      definition: "ESPN sportsbook provider name."
+      canonical_game_id: false
+      purpose: "Identifies the sportsbook supplying a market."
 
     game_id:
       definition: "Official NHL game identifier assigned during reconciliation."
       canonical_game_id: true
 
+  provider_provenance_fields:
+    moneyline:
+      provider_id: "moneyline_provider_id"
+      provider_name: "moneyline_provider_name"
+    puck_line:
+      provider_id: "puck_line_provider_id"
+      provider_name: "puck_line_provider_name"
+    total:
+      provider_id: "total_provider_id"
+      provider_name: "total_provider_name"
+
   latest_snapshot:
     path: "docs/win/hockey/nhl/odds/<YYYY_MM_DD>.json"
-    behavior: "Latest odds state for the run date; repeated runs may replace this file."
+    behavior: "Latest ESPN odds state for the run date; repeated runs may replace this file."
 
   immutable_snapshots:
     path: "docs/win/hockey/nhl/odds/snapshots/<YYYY_MM_DD>/<timestamp>.json"
-    behavior: "Each odds pull is retained separately for line-movement and closing-line analysis."
+    behavior: "Each ESPN odds pull is retained separately for line-movement and closing-line analysis."
 
   provenance:
     generated_at_field: "generated_at_et"
+    transformed_pull_time_field: "pulled_at"
     source_field: "source"
-    bookmaker_field: "bookmaker"
+    transformed_source_field: "odds_source"
     timezone: "America/New_York"
+    rules:
+      - "ESPN event identifiers remain separate from official NHL game_id."
+      - "ESPN sportsbook provider identifiers remain separate from official NHL game_id."
+      - "Provider used for each market is retained in the transformed sportsbook output."
 
 prediction_model:
   primary_source:
@@ -132,7 +188,7 @@ provenance:
     - "Preserve provider-specific identifiers separately from canonical NHL identifiers."
     - "Preserve generated-at timestamps when the source script produces them."
     - "Preserve source timestamps when supplied by the upstream provider."
-    - "Do not replace canonical NHL game identity with sportsbook, D-Ratings, or SportsDataverse identifiers."
+    - "Do not replace canonical NHL game identity with sportsbook, D-Ratings, ESPN, or SportsDataverse identifiers."
 
   official_nhl_schedule:
     source: "NHL API"
@@ -147,10 +203,20 @@ provenance:
     run_log: "docs/win/hockey/nhl/errors/00_intake/hockey_drat_scraper.txt"
 
   sportsbook:
-    source: "odds-api.io"
-    bookmaker: "FanDuel"
+    source: "ESPN"
+    acquisition_library: "SportsDataverse"
     output_root: "docs/win/hockey/nhl/odds"
+    transformed_output_root: "docs/win/hockey/nhl/00_intake/sportsbook"
     generated_at_field: "generated_at_et"
+    transformed_pull_time_field: "pulled_at"
+    provider_selection: "Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> other non-live ESPN providers"
+    provider_fields:
+      - "moneyline_provider_id"
+      - "moneyline_provider_name"
+      - "puck_line_provider_id"
+      - "puck_line_provider_name"
+      - "total_provider_id"
+      - "total_provider_name"
 
   sportsdataverse:
     source: "SportsDataverse"

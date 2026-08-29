@@ -14,9 +14,6 @@ jobs:
   nhl-pipeline:
     runs-on: ubuntu-latest
 
-    env:
-      API_ODDS: ${{ secrets.API_ODDS }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -105,14 +102,6 @@ jobs:
       - name: Install Playwright Chromium
         run: python -m playwright install chromium
 
-      - name: Verify NHL odds API key
-        run: |
-          if [ -z "$API_ODDS" ]; then
-            echo "API_ODDS is empty"
-            exit 1
-          fi
-          echo "API_ODDS is present"
-
       - name: Create required NHL directories
         run: |
           mkdir -p docs/win/hockey/nhl/errors/00_intake
@@ -149,8 +138,9 @@ jobs:
           mkdir -p docs/win/hockey/nhl/sdv
           mkdir -p docs/win/hockey/nhl/test_output/game_id_reconciliation
 
-      - name: Syntax check NHL game ID scripts
+      - name: Syntax check NHL intake and game ID scripts
         run: |
+          python -m py_compile docs/win/hockey/nhl/scripts/00_intake/nhl_odds_pull.py
           python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
           python -m py_compile docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
           python -m py_compile docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
@@ -185,10 +175,10 @@ jobs:
       - name: Normalize NHL prediction team names
         run: python docs/win/hockey/nhl/scripts/00_intake/pred_name_normalization.py
 
-      - name: Pull NHL odds
+      - name: Pull ESPN NHL odds
         run: python docs/win/hockey/nhl/scripts/00_intake/nhl_odds_pull.py
 
-      - name: Transform NHL odds
+      - name: Transform ESPN NHL odds
         run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
 
       - name: Normalize NHL odds team names
