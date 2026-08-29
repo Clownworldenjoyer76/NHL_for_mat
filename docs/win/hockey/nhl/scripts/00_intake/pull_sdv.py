@@ -78,6 +78,9 @@ GOALIE_GSAX_FIELDS = (
     "gsax_per_60",
 )
 
+GOALIE_PRODUCTION_CUTOFF_MINUTES = 60
+GOALIE_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -562,6 +565,17 @@ def strict_historical_ratings_as_of_utc(
         pregame_cutoff_utc
         - timedelta(
             microseconds=1
+        )
+    )
+
+
+def goalie_production_cutoff_utc(
+    game_start_utc: datetime,
+) -> datetime:
+    return (
+        game_start_utc.astimezone(UTC)
+        - timedelta(
+            minutes=GOALIE_PRODUCTION_CUTOFF_MINUTES
         )
     )
 
@@ -3192,28 +3206,44 @@ def build_game_goalie_features_asof(
         except ValueError:
             continue
 
-        cutoff = parse_timestamp_utc(
+        game_start_cutoff = parse_timestamp_utc(
             game.get(
                 "pregame_cutoff_utc",
                 "",
             )
         )
 
+        cutoff_source = str(
+            game.get(
+                "pregame_cutoff_source",
+                "",
+            )
+        ).strip()
+
         if (
             not game_id
-            or cutoff is None
+            or game_start_cutoff is None
+            or cutoff_source
+            == "conservative_game_date_start_et"
         ):
             continue
+
+        production_cutoff = (
+            goalie_production_cutoff_utc(
+                game_start_cutoff
+            )
+        )
 
         snapshot_as_of = (
             generated_at_utc
             if current
-            else strict_historical_ratings_as_of_utc(
-                cutoff
-            )
+            else production_cutoff
         )
 
-        if snapshot_as_of >= cutoff:
+        # Production goalie information is frozen at T-60.
+        # Current runs after T-60 cannot backfill later information
+        # into the game-level goalie feature snapshot.
+        if snapshot_as_of > production_cutoff:
             continue
 
         cache_key = target_day.isoformat()
@@ -3290,17 +3320,18 @@ def build_game_goalie_features_asof(
                 )
             ).strip(),
             "pregame_cutoff_utc": utc_iso(
-                cutoff
+                game_start_cutoff
+            ),
+            "goalie_decision_cutoff_utc": utc_iso(
+                production_cutoff
+            ),
+            "goalie_decision_cutoff_source": (
+                GOALIE_PRODUCTION_CUTOFF_SOURCE
             ),
             "goalie_snapshot_as_of_utc": utc_iso(
                 snapshot_as_of
             ),
-            "pregame_cutoff_source": str(
-                game.get(
-                    "pregame_cutoff_source",
-                    "",
-                )
-            ).strip(),
+            "pregame_cutoff_source": cutoff_source,
         }
 
         for side in (

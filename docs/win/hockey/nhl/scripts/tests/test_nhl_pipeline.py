@@ -4112,6 +4112,173 @@ def test_pull_sdv_goalie_features_use_only_prior_games(
         abs=1e-12,
     )
 
+    assert (
+        target[
+            "goalie_decision_cutoff_utc"
+        ]
+        == "2026-01-03T23:00:00Z"
+    )
+
+    assert (
+        target[
+            "goalie_snapshot_as_of_utc"
+        ]
+        == "2026-01-03T23:00:00Z"
+    )
+
+    assert (
+        target[
+            "home_goalie_status_observed_at"
+        ]
+        == "2026-01-03T23:00:00Z"
+    )
+
+
+def test_pull_sdv_rejects_current_goalie_snapshot_after_t60_cutoff(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+            ],
+            "game_date": [
+                "2026-01-01",
+            ],
+            "game_time": [
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+            ],
+        }
+    )
+
+    pbp = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2024010001",
+                "2024010001",
+            ],
+            "game_date": [
+                "2025-12-30",
+                "2025-12-30",
+            ],
+            "home_abbr": [
+                "BOS",
+                "BOS",
+            ],
+            "away_abbr": [
+                "NYR",
+                "NYR",
+            ],
+            "home_goalie_id": [
+                10,
+                10,
+            ],
+            "away_goalie_id": [
+                20,
+                20,
+            ],
+            "home_goalie": [
+                "Prior Boston",
+                "Prior Boston",
+            ],
+            "away_goalie": [
+                "Prior New York",
+                "Prior New York",
+            ],
+        }
+    )
+
+    monkeypatch.setattr(
+        module.nhl,
+        "nhl_goalie_gsax",
+        lambda prior_pbp, prior_shifts: (
+            module.pl.DataFrame(
+                {
+                    "player_id": [
+                        10,
+                        20,
+                    ],
+                    "goalie": [
+                        "Prior Boston",
+                        "Prior New York",
+                    ],
+                    "shots": [
+                        30,
+                        30,
+                    ],
+                    "xga": [
+                        2.5,
+                        2.5,
+                    ],
+                    "ga": [
+                        2,
+                        2,
+                    ],
+                    "gsax": [
+                        0.5,
+                        0.5,
+                    ],
+                    "gsax_per_60": [
+                        0.5,
+                        0.5,
+                    ],
+                }
+            )
+        ),
+    )
+
+    accepted = (
+        module.build_game_goalie_features_asof(
+            schedule,
+            pbp,
+            module.pl.DataFrame(),
+            current=True,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                1,
+                23,
+                0,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    assert (
+        accepted.height
+        == 1
+    )
+
+    rejected = (
+        module.build_game_goalie_features_asof(
+            schedule,
+            pbp,
+            module.pl.DataFrame(),
+            current=True,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                1,
+                23,
+                0,
+                1,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    assert rejected.is_empty()
+
 
 def test_merge_intake_builds_strict_asof_goalie_features() -> None:
     module = load_repo_module(
@@ -4125,6 +4292,8 @@ def test_merge_intake_builds_strict_asof_goalie_features() -> None:
             "home_team": "Boston Bruins",
             "away_team": "New York Rangers",
             "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "goalie_decision_cutoff_utc": "2026-01-01T23:00:00+00:00",
+            "goalie_decision_cutoff_source": "fixed_60_minutes_before_puck_drop",
             "goalie_snapshot_as_of_utc": "2026-01-01T22:00:00+00:00",
             "home_expected_starter": "Jeremy Swayman",
             "away_expected_starter": "Igor Shesterkin",
@@ -4173,7 +4342,7 @@ def test_merge_intake_builds_strict_asof_goalie_features() -> None:
     )
 
 
-def test_merge_intake_rejects_goalie_observation_at_pregame_cutoff() -> None:
+def test_merge_intake_accepts_goalie_observation_at_t60_cutoff() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
     )
@@ -4185,6 +4354,59 @@ def test_merge_intake_rejects_goalie_observation_at_pregame_cutoff() -> None:
             "home_team": "Boston Bruins",
             "away_team": "New York Rangers",
             "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "goalie_decision_cutoff_utc": "2026-01-01T23:00:00+00:00",
+            "goalie_decision_cutoff_source": "fixed_60_minutes_before_puck_drop",
+            "goalie_snapshot_as_of_utc": "2026-01-01T23:00:00+00:00",
+            "home_expected_starter": "Jeremy Swayman",
+            "away_expected_starter": "Igor Shesterkin",
+            "home_starter_gsax": "4.25",
+            "away_starter_gsax": "2.75",
+            "home_backup_gsax": "0.5",
+            "away_backup_gsax": "-0.25",
+            "starter_gsax_differential": "1.5",
+            "home_goalie_status": "expected",
+            "away_goalie_status": "expected",
+            "home_goalie_status_observed_at": "2026-01-01T23:00:00+00:00",
+            "away_goalie_status_observed_at": "2026-01-01T23:00:00+00:00",
+            "home_goalie_status_source": "fixture_expected",
+            "away_goalie_status_source": "fixture_expected",
+            "_source_file": "fixture.csv",
+        }
+    }
+
+    features = module.goalie_features_for_game(
+        {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "game_time": "19:00",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+        },
+        index,
+    )
+
+    assert (
+        features[
+            "home_goalie_status"
+        ]
+        == "expected"
+    )
+
+
+def test_merge_intake_rejects_goalie_observation_after_t60_cutoff() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        "2025020001": {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "goalie_decision_cutoff_utc": "2026-01-01T23:00:00+00:00",
+            "goalie_decision_cutoff_source": "fixed_60_minutes_before_puck_drop",
             "goalie_snapshot_as_of_utc": "2026-01-01T22:00:00+00:00",
             "home_expected_starter": "Jeremy Swayman",
             "away_expected_starter": "Igor Shesterkin",
@@ -4195,7 +4417,7 @@ def test_merge_intake_rejects_goalie_observation_at_pregame_cutoff() -> None:
             "starter_gsax_differential": "1.5",
             "home_goalie_status": "confirmed",
             "away_goalie_status": "projected",
-            "home_goalie_status_observed_at": "2026-01-02T00:00:00+00:00",
+            "home_goalie_status_observed_at": "2026-01-01T23:00:01+00:00",
             "away_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
             "home_goalie_status_source": "fixture_confirmation",
             "away_goalie_status_source": "fixture_projection",

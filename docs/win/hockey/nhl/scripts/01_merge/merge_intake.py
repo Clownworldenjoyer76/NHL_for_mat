@@ -5,7 +5,7 @@ import csv
 import re
 import traceback
 from pathlib import Path
-from datetime import datetime, UTC
+from datetime import datetime, UTC, timedelta
 from zoneinfo import ZoneInfo
 
 
@@ -91,6 +91,9 @@ GOALIE_STATUS_VALUES = {
     "unknown",
 }
 
+GOALIE_PRODUCTION_CUTOFF_MINUTES = 60
+GOALIE_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
+
 GOALIE_FEATURE_COLUMNS = [
     "home_expected_starter",
     "away_expected_starter",
@@ -113,6 +116,8 @@ REQUIRED_GOALIE_COLUMNS = [
     "home_team",
     "away_team",
     "pregame_cutoff_utc",
+    "goalie_decision_cutoff_utc",
+    "goalie_decision_cutoff_source",
     "goalie_snapshot_as_of_utc",
     "pregame_cutoff_source",
     *GOALIE_FEATURE_COLUMNS,
@@ -864,6 +869,24 @@ def canonical_game_cutoff_utc(
     return None
 
 
+def canonical_goalie_decision_cutoff_utc(
+    game: dict[str, str],
+) -> datetime | None:
+    game_start = canonical_game_cutoff_utc(
+        game
+    )
+
+    if game_start is None:
+        return None
+
+    return (
+        game_start
+        - timedelta(
+            minutes=GOALIE_PRODUCTION_CUTOFF_MINUTES
+        )
+    )
+
+
 def validate_team_strength_timestamp_contract(
     *,
     game_id: str,
@@ -1511,34 +1534,60 @@ def authoritative_goalie_files() -> list[Path]:
 def validate_goalie_timestamp_contract(
     *,
     game_id: str,
-    stored_cutoff: datetime,
+    stored_game_start: datetime,
+    decision_cutoff: datetime,
+    decision_cutoff_source: str,
     snapshot_as_of: datetime,
     observed_at: datetime,
-    canonical_cutoff: datetime | None,
+    canonical_game_start: datetime | None,
+    canonical_decision_cutoff: datetime | None,
     source_file: str,
     side: str,
 ) -> None:
-    if not (
-        snapshot_as_of
-        < stored_cutoff
+    if (
+        decision_cutoff_source
+        != GOALIE_PRODUCTION_CUTOFF_SOURCE
     ):
         fail(
-            "Unsafe SportsDataverse goalie snapshot timestamp: "
+            "Invalid SportsDataverse goalie production cutoff source: "
             f"game_id={game_id} side={side} "
-            f"goalie_snapshot_as_of_utc={snapshot_as_of.isoformat()} "
-            f"pregame_cutoff_utc={stored_cutoff.isoformat()} "
+            f"source={decision_cutoff_source!r} "
             f"file={source_file}"
         )
 
     if not (
-        observed_at
-        < stored_cutoff
+        decision_cutoff
+        == (
+            stored_game_start
+            - timedelta(
+                minutes=GOALIE_PRODUCTION_CUTOFF_MINUTES
+            )
+        )
     ):
+        fail(
+            "SportsDataverse goalie decision cutoff is not "
+            "exactly 60 minutes before the stored game start: "
+            f"game_id={game_id} side={side} "
+            f"decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"game_start_utc={stored_game_start.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if snapshot_as_of > decision_cutoff:
+        fail(
+            "Unsafe SportsDataverse goalie snapshot timestamp: "
+            f"game_id={game_id} side={side} "
+            f"goalie_snapshot_as_of_utc={snapshot_as_of.isoformat()} "
+            f"goalie_decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if observed_at > decision_cutoff:
         fail(
             "Unsafe SportsDataverse goalie observation timestamp: "
             f"game_id={game_id} side={side} "
             f"observed_at={observed_at.isoformat()} "
-            f"pregame_cutoff_utc={stored_cutoff.isoformat()} "
+            f"goalie_decision_cutoff_utc={decision_cutoff.isoformat()} "
             f"file={source_file}"
         )
 
@@ -1553,15 +1602,31 @@ def validate_goalie_timestamp_contract(
         )
 
     if (
-        canonical_cutoff is not None
-        and stored_cutoff > canonical_cutoff
+        canonical_game_start is not None
+        and stored_game_start
+        != canonical_game_start
     ):
         fail(
-            "SportsDataverse goalie cutoff exceeds canonical "
-            "NHL game pregame cutoff: "
+            "SportsDataverse goalie game start does not match "
+            "the canonical NHL game start: "
             f"game_id={game_id} side={side} "
-            f"stored_cutoff_utc={stored_cutoff.isoformat()} "
-            f"canonical_cutoff_utc={canonical_cutoff.isoformat()} "
+            f"stored_game_start_utc={stored_game_start.isoformat()} "
+            f"canonical_game_start_utc={canonical_game_start.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if (
+        canonical_decision_cutoff is not None
+        and decision_cutoff
+        != canonical_decision_cutoff
+    ):
+        fail(
+            "SportsDataverse goalie production cutoff does not match "
+            "the canonical T-60 cutoff: "
+            f"game_id={game_id} side={side} "
+            f"stored_decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"canonical_decision_cutoff_utc="
+            f"{canonical_decision_cutoff.isoformat()} "
             f"file={source_file}"
         )
 
@@ -1644,6 +1709,20 @@ def load_goalie_index() -> dict[
                 )
             )
 
+            decision_cutoff = parse_utc_timestamp(
+                row.get(
+                    "goalie_decision_cutoff_utc",
+                    "",
+                )
+            )
+
+            decision_cutoff_source = str(
+                row.get(
+                    "goalie_decision_cutoff_source",
+                    "",
+                )
+            ).strip()
+
             snapshot_as_of = parse_utc_timestamp(
                 row.get(
                     "goalie_snapshot_as_of_utc",
@@ -1653,6 +1732,7 @@ def load_goalie_index() -> dict[
 
             if (
                 stored_cutoff is None
+                or decision_cutoff is None
                 or snapshot_as_of is None
             ):
                 fail(
@@ -1664,6 +1744,12 @@ def load_goalie_index() -> dict[
                 "game_id": game_id,
                 "game_date": game_date,
                 "pregame_cutoff_utc": stored_cutoff.isoformat(),
+                "goalie_decision_cutoff_utc": (
+                    decision_cutoff.isoformat()
+                ),
+                "goalie_decision_cutoff_source": (
+                    decision_cutoff_source
+                ),
                 "goalie_snapshot_as_of_utc": snapshot_as_of.isoformat(),
                 "pregame_cutoff_source": str(
                     row.get(
@@ -1728,10 +1814,13 @@ def load_goalie_index() -> dict[
 
                 validate_goalie_timestamp_contract(
                     game_id=game_id,
-                    stored_cutoff=stored_cutoff,
+                    stored_game_start=stored_cutoff,
+                    decision_cutoff=decision_cutoff,
+                    decision_cutoff_source=decision_cutoff_source,
                     snapshot_as_of=snapshot_as_of,
                     observed_at=observed_at,
-                    canonical_cutoff=None,
+                    canonical_game_start=None,
+                    canonical_decision_cutoff=None,
                     source_file=str(path),
                     side=side,
                 )
@@ -1907,6 +1996,20 @@ def goalie_features_for_game(
         )
     )
 
+    decision_cutoff = parse_utc_timestamp(
+        row.get(
+            "goalie_decision_cutoff_utc",
+            "",
+        )
+    )
+
+    decision_cutoff_source = str(
+        row.get(
+            "goalie_decision_cutoff_source",
+            "",
+        )
+    ).strip()
+
     snapshot_as_of = parse_utc_timestamp(
         row.get(
             "goalie_snapshot_as_of_utc",
@@ -1914,12 +2017,19 @@ def goalie_features_for_game(
         )
     )
 
-    canonical_cutoff = canonical_game_cutoff_utc(
+    canonical_game_start = canonical_game_cutoff_utc(
         game
+    )
+
+    canonical_decision_cutoff = (
+        canonical_goalie_decision_cutoff_utc(
+            game
+        )
     )
 
     if (
         stored_cutoff is None
+        or decision_cutoff is None
         or snapshot_as_of is None
     ):
         fail(
@@ -1946,10 +2056,13 @@ def goalie_features_for_game(
 
         validate_goalie_timestamp_contract(
             game_id=game_id,
-            stored_cutoff=stored_cutoff,
+            stored_game_start=stored_cutoff,
+            decision_cutoff=decision_cutoff,
+            decision_cutoff_source=decision_cutoff_source,
             snapshot_as_of=snapshot_as_of,
             observed_at=observed_at,
-            canonical_cutoff=canonical_cutoff,
+            canonical_game_start=canonical_game_start,
+            canonical_decision_cutoff=canonical_decision_cutoff,
             source_file=str(
                 row.get(
                     "_source_file",
