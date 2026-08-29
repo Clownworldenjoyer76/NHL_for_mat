@@ -14,6 +14,14 @@ GAMES_DIR = BASE_DIR / "00_intake" / "games"
 SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
 PREDICTIONS_DIR = BASE_DIR / "00_intake" / "predictions"
 
+FATIGUE_DIR = BASE_DIR / "sdv" / "fatigue"
+TEAM_MAP_PATH = (
+    BASE_DIR
+    / "config"
+    / "mapping"
+    / "team_map_nhl.csv"
+)
+
 MERGE_DIR = BASE_DIR / "01_merge"
 AUDIT_DIR = MERGE_DIR / "audit"
 
@@ -37,6 +45,21 @@ MERGED_COLUMNS = [
     "game_id",
     "away_team",
     "home_team",
+    "home_days_rest",
+    "away_days_rest",
+    "home_back_to_back",
+    "away_back_to_back",
+    "home_games_in_4_days",
+    "away_games_in_4_days",
+    "home_three_in_four",
+    "away_three_in_four",
+    "home_games_in_6_days",
+    "away_games_in_6_days",
+    "home_four_in_six",
+    "away_four_in_six",
+    "home_games_in_7_days",
+    "away_games_in_7_days",
+    "rest_differential",
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_projected_goals",
@@ -129,6 +152,28 @@ REQUIRED_PREDICTION_COLUMNS = [
     "away_projected_goals",
     "home_projected_goals",
     "total_projected_goals",
+]
+
+REQUIRED_FATIGUE_COLUMNS = [
+    "team",
+    "game_date",
+    "days_rest",
+    "back_to_back",
+    "games_in_4_days",
+    "three_in_four",
+    "games_in_6_days",
+    "four_in_six",
+    "games_in_7_days",
+]
+
+FATIGUE_VALUE_COLUMNS = [
+    "days_rest",
+    "back_to_back",
+    "games_in_4_days",
+    "three_in_four",
+    "games_in_6_days",
+    "four_in_six",
+    "games_in_7_days",
 ]
 
 
@@ -567,11 +612,548 @@ def rejection_from_row(
     }
 
 
+def normalize_fatigue_date(
+    value: str,
+) -> str:
+    text = str(value).strip().replace(
+        "-",
+        "_",
+    )
+
+    if not GAME_DATE_RE.fullmatch(text):
+        return ""
+
+    try:
+        return datetime.strptime(
+            text,
+            "%Y_%m_%d",
+        ).strftime(
+            "%Y_%m_%d"
+        )
+
+    except ValueError:
+        return ""
+
+
+def normalize_team_lookup_key(
+    value: str,
+) -> str:
+    return re.sub(
+        r"[^a-z0-9]+",
+        "",
+        str(value).strip().lower(),
+    )
+
+
+def normalize_fatigue_bool(
+    value: str,
+) -> str:
+    text = str(value).strip().lower()
+
+    if text in {
+        "true",
+        "1",
+        "yes",
+    }:
+        return "1"
+
+    if text in {
+        "false",
+        "0",
+        "no",
+    }:
+        return "0"
+
+    if text in {
+        "",
+        "none",
+        "null",
+        "nan",
+    }:
+        return ""
+
+    raise ValueError(
+        f"Invalid fatigue boolean value: {value!r}"
+    )
+
+
+def format_numeric(
+    value: float,
+) -> str:
+    if float(value).is_integer():
+        return str(
+            int(value)
+        )
+
+    return (
+        f"{float(value):.6f}"
+        .rstrip("0")
+        .rstrip(".")
+    )
+
+
+def load_fatigue_team_map() -> dict[str, str]:
+    if not TEAM_MAP_PATH.exists():
+        fail(
+            f"Missing NHL team mapping file: "
+            f"{TEAM_MAP_PATH}"
+        )
+
+    fieldnames, rows = load_csv(
+        TEAM_MAP_PATH
+    )
+
+    required = {
+        "canonical_team",
+        "nhl_abbrev",
+    }
+
+    missing = sorted(
+        required
+        - set(fieldnames)
+    )
+
+    if missing:
+        fail(
+            f"{TEAM_MAP_PATH} missing required "
+            f"fatigue mapping columns: {missing}"
+        )
+
+    lookup: dict[str, str] = {}
+
+    for row_number, row in enumerate(
+        rows,
+        start=2,
+    ):
+        canonical = str(
+            row.get(
+                "canonical_team",
+                "",
+            )
+        ).strip()
+
+        abbrev = str(
+            row.get(
+                "nhl_abbrev",
+                "",
+            )
+        ).strip()
+
+        if (
+            not canonical
+            or canonical == "TBD"
+            or not abbrev
+        ):
+            continue
+
+        for raw_key in (
+            canonical,
+            abbrev,
+        ):
+            key = normalize_team_lookup_key(
+                raw_key
+            )
+
+            if not key:
+                continue
+
+            prior = lookup.get(
+                key
+            )
+
+            if (
+                prior is not None
+                and prior != canonical
+            ):
+                fail(
+                    f"{TEAM_MAP_PATH} row "
+                    f"{row_number} has conflicting "
+                    f"fatigue mapping for "
+                    f"{raw_key!r}: "
+                    f"{prior!r} != {canonical!r}"
+                )
+
+            lookup[
+                key
+            ] = canonical
+
+    if not lookup:
+        fail(
+            f"No fatigue team mappings loaded "
+            f"from {TEAM_MAP_PATH}"
+        )
+
+    return lookup
+
+
+def authoritative_fatigue_files() -> list[Path]:
+    files = sorted(
+        FATIGUE_DIR.glob(
+            "season_*_fatigue.csv"
+        )
+    )
+
+    latest = (
+        FATIGUE_DIR
+        / "latest_fatigue.csv"
+    )
+
+    if latest.is_file():
+        files.append(
+            latest
+        )
+
+    return files
+
+
+def load_fatigue_index() -> dict[
+    tuple[str, str],
+    dict[str, str],
+]:
+    files = authoritative_fatigue_files()
+
+    log(
+        f"SportsDataverse fatigue files found: "
+        f"{len(files)}"
+    )
+
+    if not files:
+        log(
+            "No SportsDataverse fatigue files "
+            "available; fatigue features will "
+            "remain blank."
+        )
+
+        return {}
+
+    team_lookup = (
+        load_fatigue_team_map()
+    )
+
+    index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ] = {}
+
+    for path in files:
+        fieldnames, rows = load_csv(
+            path
+        )
+
+        validate_required_columns(
+            path,
+            fieldnames,
+            REQUIRED_FATIGUE_COLUMNS,
+        )
+
+        loaded_rows = 0
+
+        for row_number, row in enumerate(
+            rows,
+            start=2,
+        ):
+            game_date = (
+                normalize_fatigue_date(
+                    row.get(
+                        "game_date",
+                        "",
+                    )
+                )
+            )
+
+            team_raw = str(
+                row.get(
+                    "team",
+                    "",
+                )
+            ).strip()
+
+            team_key = (
+                normalize_team_lookup_key(
+                    team_raw
+                )
+            )
+
+            canonical_team = (
+                team_lookup.get(
+                    team_key,
+                    "",
+                )
+            )
+
+            if not game_date:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid fatigue "
+                    f"game_date="
+                    f"{row.get('game_date', '')!r}"
+                )
+
+            if not canonical_team:
+                fail(
+                    f"{path} row {row_number} "
+                    "has unmapped fatigue team="
+                    f"{team_raw!r}"
+                )
+
+            normalized = {
+                "team": canonical_team,
+                "game_date": game_date,
+                "days_rest": str(
+                    row.get(
+                        "days_rest",
+                        "",
+                    )
+                ).strip(),
+                "back_to_back": (
+                    normalize_fatigue_bool(
+                        row.get(
+                            "back_to_back",
+                            "",
+                        )
+                    )
+                ),
+                "games_in_4_days": str(
+                    row.get(
+                        "games_in_4_days",
+                        "",
+                    )
+                ).strip(),
+                "three_in_four": (
+                    normalize_fatigue_bool(
+                        row.get(
+                            "three_in_four",
+                            "",
+                        )
+                    )
+                ),
+                "games_in_6_days": str(
+                    row.get(
+                        "games_in_6_days",
+                        "",
+                    )
+                ).strip(),
+                "four_in_six": (
+                    normalize_fatigue_bool(
+                        row.get(
+                            "four_in_six",
+                            "",
+                        )
+                    )
+                ),
+                "games_in_7_days": str(
+                    row.get(
+                        "games_in_7_days",
+                        "",
+                    )
+                ).strip(),
+                "_source_file": str(
+                    path
+                ),
+            }
+
+            key = (
+                game_date,
+                canonical_team,
+            )
+
+            prior = index.get(
+                key
+            )
+
+            if prior is not None:
+                prior_values = {
+                    field: prior.get(
+                        field,
+                        "",
+                    )
+                    for field
+                    in FATIGUE_VALUE_COLUMNS
+                }
+
+                new_values = {
+                    field: normalized.get(
+                        field,
+                        "",
+                    )
+                    for field
+                    in FATIGUE_VALUE_COLUMNS
+                }
+
+                if (
+                    prior_values
+                    != new_values
+                ):
+                    fail(
+                        "Conflicting SportsDataverse "
+                        "fatigue rows for "
+                        f"game_date={game_date} "
+                        f"team={canonical_team}: "
+                        f"{prior.get('_source_file', '')} "
+                        f"vs {path}"
+                    )
+
+                continue
+
+            index[
+                key
+            ] = normalized
+
+            loaded_rows += 1
+
+        log(
+            f"Loaded fatigue file: "
+            f"{path} ({loaded_rows} "
+            "unique rows)"
+        )
+
+    return index
+
+
+def fatigue_features_for_game(
+    game: dict[str, str],
+    fatigue_index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ],
+) -> dict[str, str]:
+    game_date = (
+        normalize_fatigue_date(
+            game.get(
+                "game_date",
+                "",
+            )
+        )
+    )
+
+    home_team = str(
+        game.get(
+            "home_team",
+            "",
+        )
+    ).strip()
+
+    away_team = str(
+        game.get(
+            "away_team",
+            "",
+        )
+    ).strip()
+
+    home = fatigue_index.get(
+        (
+            game_date,
+            home_team,
+        ),
+        {},
+    )
+
+    away = fatigue_index.get(
+        (
+            game_date,
+            away_team,
+        ),
+        {},
+    )
+
+    features = {
+        "home_days_rest": home.get(
+            "days_rest",
+            "",
+        ),
+        "away_days_rest": away.get(
+            "days_rest",
+            "",
+        ),
+        "home_back_to_back": home.get(
+            "back_to_back",
+            "",
+        ),
+        "away_back_to_back": away.get(
+            "back_to_back",
+            "",
+        ),
+        "home_games_in_4_days": home.get(
+            "games_in_4_days",
+            "",
+        ),
+        "away_games_in_4_days": away.get(
+            "games_in_4_days",
+            "",
+        ),
+        "home_three_in_four": home.get(
+            "three_in_four",
+            "",
+        ),
+        "away_three_in_four": away.get(
+            "three_in_four",
+            "",
+        ),
+        "home_games_in_6_days": home.get(
+            "games_in_6_days",
+            "",
+        ),
+        "away_games_in_6_days": away.get(
+            "games_in_6_days",
+            "",
+        ),
+        "home_four_in_six": home.get(
+            "four_in_six",
+            "",
+        ),
+        "away_four_in_six": away.get(
+            "four_in_six",
+            "",
+        ),
+        "home_games_in_7_days": home.get(
+            "games_in_7_days",
+            "",
+        ),
+        "away_games_in_7_days": away.get(
+            "games_in_7_days",
+            "",
+        ),
+        "rest_differential": "",
+    }
+
+    try:
+        home_rest = float(
+            features[
+                "home_days_rest"
+            ]
+        )
+
+        away_rest = float(
+            features[
+                "away_days_rest"
+            ]
+        )
+
+        features[
+            "rest_differential"
+        ] = format_numeric(
+            home_rest
+            - away_rest
+        )
+
+    except (
+        TypeError,
+        ValueError,
+    ):
+        pass
+
+    return features
+
+
 def process_date(
     date_val: str,
     games_map: dict[str, dict[str, str]],
     sportsbook_map: dict[str, dict[str, str]],
     predictions_map: dict[str, dict[str, str]],
+    fatigue_index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ],
 ) -> tuple[
     int,
     int,
@@ -734,6 +1316,13 @@ def process_date(
             game_id
         ]
 
+        fatigue_features = (
+            fatigue_features_for_game(
+                game,
+                fatigue_index,
+            )
+        )
+
         merged_rows.append(
             {
                 "sport": game.get(
@@ -761,6 +1350,7 @@ def process_date(
                     "home_team",
                     "",
                 ),
+                **fatigue_features,
                 "away_prob_moneyline": (
                     prediction.get(
                         "away_prob_moneyline",
@@ -966,6 +1556,10 @@ def main() -> None:
             REQUIRED_PREDICTION_COLUMNS,
         )
 
+        fatigue_index = (
+            load_fatigue_index()
+        )
+
         games_by_date = (
             rows_by_date_game_id(
                 games_rows,
@@ -1064,6 +1658,7 @@ def main() -> None:
                     date_val,
                     {},
                 ),
+                fatigue_index,
             )
 
             total_merged += merged_count
