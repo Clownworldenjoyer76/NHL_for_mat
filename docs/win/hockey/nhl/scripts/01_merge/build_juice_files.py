@@ -37,6 +37,25 @@ TEAM_STRENGTH_FEATURE_COLUMNS = [
     "home_net_z","away_net_z","net_z_differential",
 ]
 
+LINEUP_NUMERIC_FEATURE_COLUMNS = [
+    "home_skater_rapm","away_skater_rapm","skater_rapm_differential",
+    "home_skater_war","away_skater_war","skater_war_differential",
+    "home_pp_value","away_pp_value","pp_value_differential",
+    "home_pk_value","away_pk_value","pk_value_differential",
+    "home_forward_line_strength","away_forward_line_strength","forward_line_strength_differential",
+    "home_defense_pair_strength","away_defense_pair_strength","defense_pair_strength_differential",
+]
+
+LINEUP_METADATA_COLUMNS = [
+    "home_lineup_status","away_lineup_status",
+    "home_lineup_observed_at","away_lineup_observed_at",
+    "home_lineup_source","away_lineup_source",
+]
+
+LINEUP_FEATURE_COLUMNS = [
+    *LINEUP_NUMERIC_FEATURE_COLUMNS,*LINEUP_METADATA_COLUMNS,
+]
+
 GOALIE_FEATURE_COLUMNS = [
     "home_expected_starter",
     "away_expected_starter",
@@ -63,7 +82,7 @@ GOALIE_NUMERIC_FEATURE_COLUMNS = [
 
 BASE_COLUMNS = [
     "sport","league","game_date","game_time","game_id","away_team","home_team",
-    *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_FEATURE_COLUMNS,
+    *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_FEATURE_COLUMNS,*LINEUP_FEATURE_COLUMNS,
 ]
 
 MERGED_REQUIRED_COLUMNS = BASE_COLUMNS + [
@@ -223,7 +242,7 @@ def process_file(path: Path) -> list[tuple[str, int]]:
     if missing:
         raise ValueError(f"{path} missing required columns: {missing}")
     numeric_columns = [
-        *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_NUMERIC_FEATURE_COLUMNS,
+        *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_NUMERIC_FEATURE_COLUMNS,*LINEUP_NUMERIC_FEATURE_COLUMNS,
         "away_prob_moneyline","home_prob_moneyline","away_projected_goals","home_projected_goals",
         "total_projected_goals","away_puck_line","home_puck_line","total",
         "away_dk_moneyline_american","home_dk_moneyline_american",

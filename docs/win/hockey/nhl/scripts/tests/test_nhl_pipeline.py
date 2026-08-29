@@ -179,6 +179,63 @@ def assert_goalie_features_preserved(
             )
 
 
+
+
+LINEUP_FEATURE_VALUES = {
+    "home_skater_rapm": 0.35,
+    "away_skater_rapm": 0.10,
+    "skater_rapm_differential": 0.25,
+    "home_skater_war": 5.50,
+    "away_skater_war": 4.00,
+    "skater_war_differential": 1.50,
+    "home_pp_value": 1.20,
+    "away_pp_value": 0.75,
+    "pp_value_differential": 0.45,
+    "home_pk_value": 0.80,
+    "away_pk_value": 0.30,
+    "pk_value_differential": 0.50,
+    "home_forward_line_strength": 0.60,
+    "away_forward_line_strength": 0.40,
+    "forward_line_strength_differential": 0.20,
+    "home_defense_pair_strength": 0.45,
+    "away_defense_pair_strength": 0.25,
+    "defense_pair_strength_differential": 0.20,
+    "home_lineup_status": "unknown",
+    "away_lineup_status": "unknown",
+    "home_lineup_observed_at": "",
+    "away_lineup_observed_at": "",
+    "home_lineup_source": "sportsdataverse_prior_game_player_pool_no_lineup_confirmation",
+    "away_lineup_source": "sportsdataverse_prior_game_player_pool_no_lineup_confirmation",
+}
+
+
+def assert_lineup_features_preserved(
+    row: pd.Series,
+) -> None:
+    for column, expected in LINEUP_FEATURE_VALUES.items():
+        assert column in row.index
+
+        if isinstance(
+            expected,
+            (int, float),
+        ):
+            assert float(
+                row[column]
+            ) == pytest.approx(
+                float(expected),
+                abs=1e-12,
+            )
+        else:
+            actual = row[column]
+            if pd.isna(actual):
+                actual = ""
+            assert str(
+                actual
+            ) == str(
+                expected
+            )
+
+
 def load_repo_module(relative_path: str):
     path = REPO_ROOT / relative_path
     if not path.is_file():
@@ -4483,6 +4540,441 @@ def test_apply_juice_scripts_preserve_goalie_feature_contract(
 
     expected = set(
         GOALIE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.REQUIRED_INPUT_COLUMNS
+    )
+
+    assert expected.issubset(
+        module.OUTPUT_COLUMNS
+    )
+
+
+
+# ---------------------------------------------------------------------
+# SDV-P4 lineup/player/unit/special-teams strict-as-of coverage
+# ---------------------------------------------------------------------
+
+def test_sdv_pregame_feature_evaluation_covers_required_families() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    evaluation = module.pregame_feature_evaluation()
+
+    by_function = {
+        row["function"]: row
+        for row in evaluation[
+            "families"
+        ]
+    }
+
+    assert {
+        "nhl_xg",
+        "nhl_goalie_gsax",
+        "nhl_skater_rapm",
+        "nhl_skater_war",
+        "nhl_special_teams_value",
+        "nhl_unit_ratings",
+        "nhl_penalty_value",
+        "nhl_faceoff_value",
+        "nhl_edge_skating_value",
+        "nhl_expected_assists",
+        "nhl_zone_transitions",
+    }.issubset(
+        by_function
+    )
+
+    assert (
+        by_function[
+            "nhl_skater_rapm"
+        ][
+            "decision"
+        ]
+        == "production"
+    )
+
+    assert (
+        by_function[
+            "nhl_penalty_value"
+        ][
+            "decision"
+        ]
+        == "evaluated_not_selected"
+    )
+
+
+def test_pull_sdv_lineup_features_use_only_prior_games_and_t60(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+            ],
+            "game_time": [
+                "19:00",
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+                "NYR",
+            ],
+        }
+    )
+
+    pbp = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+            ],
+        }
+    )
+
+    shifts = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+            ],
+        }
+    )
+
+    seen: list[
+        list[str]
+    ] = []
+
+    def fake_metrics(
+        prior_pbp,
+        prior_shifts,
+    ):
+        ids = sorted(
+            prior_pbp[
+                "game_id"
+            ].cast(
+                module.pl.Utf8
+            ).to_list()
+        ) if not prior_pbp.is_empty() else []
+
+        seen.append(
+            ids
+        )
+
+        return {
+            "BOS": {
+                "skater_rapm": 0.35,
+                "skater_war": 5.5,
+                "pp_value": 1.2,
+                "pk_value": 0.8,
+                "forward_line_strength": 0.6,
+                "defense_pair_strength": 0.45,
+            },
+            "NYR": {
+                "skater_rapm": 0.10,
+                "skater_war": 4.0,
+                "pp_value": 0.75,
+                "pk_value": 0.30,
+                "forward_line_strength": 0.40,
+                "defense_pair_strength": 0.25,
+            },
+        }
+
+    monkeypatch.setattr(
+        module,
+        "compute_lineup_team_metrics",
+        fake_metrics,
+    )
+
+    result = (
+        module.build_game_lineup_features_asof(
+            schedule,
+            pbp,
+            shifts,
+            current=False,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                3,
+                20,
+                0,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    target = (
+        result.filter(
+            module.pl.col(
+                "game_id"
+            )
+            == "2025020002"
+        )
+        .to_dicts()[
+            0
+        ]
+    )
+
+    assert seen == [
+        [],
+        [
+            "2025020001",
+        ],
+    ]
+
+    assert (
+        target[
+            "lineup_decision_cutoff_utc"
+        ]
+        == "2026-01-03T23:00:00Z"
+    )
+
+    assert (
+        target[
+            "lineup_snapshot_as_of_utc"
+        ]
+        == "2026-01-03T23:00:00Z"
+    )
+
+    assert (
+        target[
+            "home_lineup_status"
+        ]
+        == "unknown"
+    )
+
+    assert (
+        target[
+            "home_lineup_observed_at"
+        ]
+        == ""
+    )
+
+    assert float(
+        target[
+            "skater_war_differential"
+        ]
+    ) == pytest.approx(
+        1.5,
+        abs=1e-12,
+    )
+
+
+def test_pull_sdv_rejects_current_lineup_snapshot_after_t60() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+            ],
+            "game_date": [
+                "2026-01-01",
+            ],
+            "game_time": [
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+            ],
+        }
+    )
+
+    accepted = module.build_game_lineup_features_asof(
+        schedule,
+        module.pl.DataFrame(),
+        module.pl.DataFrame(),
+        current=True,
+        generated_at_utc=module.datetime(
+            2026,
+            1,
+            1,
+            23,
+            0,
+            tzinfo=module.UTC,
+        ),
+    )
+
+    assert (
+        accepted.height
+        == 1
+    )
+
+    rejected = module.build_game_lineup_features_asof(
+        schedule,
+        module.pl.DataFrame(),
+        module.pl.DataFrame(),
+        current=True,
+        generated_at_utc=module.datetime(
+            2026,
+            1,
+            1,
+            23,
+            0,
+            1,
+            tzinfo=module.UTC,
+        ),
+    )
+
+    assert rejected.is_empty()
+
+
+def test_merge_intake_builds_strict_asof_lineup_features() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        "2025020001": {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "lineup_decision_cutoff_utc": "2026-01-01T23:00:00+00:00",
+            "lineup_decision_cutoff_source": "fixed_60_minutes_before_puck_drop",
+            "lineup_snapshot_as_of_utc": "2026-01-01T23:00:00+00:00",
+            **{
+                key: str(value)
+                for key, value in LINEUP_FEATURE_VALUES.items()
+            },
+            "_source_file": "fixture.csv",
+        }
+    }
+
+    features = module.lineup_features_for_game(
+        {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "game_time": "19:00",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+        },
+        index,
+    )
+
+    assert float(
+        features[
+            "skater_rapm_differential"
+        ]
+    ) == pytest.approx(
+        0.25,
+        abs=1e-12,
+    )
+
+    assert (
+        features[
+            "home_lineup_status"
+        ]
+        == "unknown"
+    )
+
+
+def test_merge_intake_rejects_lineup_snapshot_after_t60() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        "2025020001": {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "lineup_decision_cutoff_utc": "2026-01-01T23:00:00+00:00",
+            "lineup_decision_cutoff_source": "fixed_60_minutes_before_puck_drop",
+            "lineup_snapshot_as_of_utc": "2026-01-01T23:00:01+00:00",
+            **{
+                key: str(value)
+                for key, value in LINEUP_FEATURE_VALUES.items()
+            },
+            "_source_file": "fixture.csv",
+        }
+    }
+
+    with pytest.raises(
+        SystemExit
+    ):
+        module.lineup_features_for_game(
+            {
+                "game_id": "2025020001",
+                "game_date": "2026_01_01",
+                "game_time": "19:00",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            index,
+        )
+
+
+def test_build_juice_files_preserves_lineup_features_in_all_markets() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py"
+    )
+
+    expected = set(
+        LINEUP_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.MERGED_REQUIRED_COLUMNS
+    )
+    assert expected.issubset(
+        module.MONEYLINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.PUCK_LINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.TOTAL_COLUMNS
+    )
+
+
+@pytest.mark.parametrize(
+    "relative_path",
+    [
+        "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
+    ],
+)
+def test_apply_juice_scripts_preserve_lineup_feature_contract(
+    relative_path: str,
+) -> None:
+    module = load_repo_module(
+        relative_path
+    )
+
+    expected = set(
+        LINEUP_FEATURE_VALUES
     )
 
     assert expected.issubset(

@@ -18,6 +18,7 @@ PREDICTIONS_DIR = BASE_DIR / "00_intake" / "predictions"
 FATIGUE_DIR = BASE_DIR / "sdv" / "fatigue"
 TEAM_STRENGTH_DIR = BASE_DIR / "sdv" / "team-strength"
 GOALIE_DIR = BASE_DIR / "sdv" / "goalie"
+LINEUP_DIR = BASE_DIR / "sdv" / "lineup-strength"
 TEAM_MAP_PATH = (
     BASE_DIR
     / "config"
@@ -94,6 +95,63 @@ GOALIE_STATUS_VALUES = {
 GOALIE_PRODUCTION_CUTOFF_MINUTES = 60
 GOALIE_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
 
+
+LINEUP_PRODUCTION_CUTOFF_MINUTES = 60
+LINEUP_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
+
+LINEUP_STATUS_VALUES = {
+    "projected",
+    "expected",
+    "confirmed",
+    "unknown",
+}
+
+LINEUP_NUMERIC_METRICS = [
+    "skater_rapm",
+    "skater_war",
+    "pp_value",
+    "pk_value",
+    "forward_line_strength",
+    "defense_pair_strength",
+]
+
+LINEUP_NUMERIC_FEATURE_COLUMNS = [
+    column
+    for metric in LINEUP_NUMERIC_METRICS
+    for column in (
+        f"home_{metric}",
+        f"away_{metric}",
+        f"{metric}_differential",
+    )
+]
+
+LINEUP_METADATA_COLUMNS = [
+    "home_lineup_status",
+    "away_lineup_status",
+    "home_lineup_observed_at",
+    "away_lineup_observed_at",
+    "home_lineup_source",
+    "away_lineup_source",
+]
+
+LINEUP_FEATURE_COLUMNS = [
+    *LINEUP_NUMERIC_FEATURE_COLUMNS,
+    *LINEUP_METADATA_COLUMNS,
+]
+
+REQUIRED_LINEUP_COLUMNS = [
+    "game_id",
+    "game_date",
+    "home_team",
+    "away_team",
+    "pregame_cutoff_utc",
+    "lineup_decision_cutoff_utc",
+    "lineup_decision_cutoff_source",
+    "lineup_snapshot_as_of_utc",
+    "pregame_cutoff_source",
+    *LINEUP_FEATURE_COLUMNS,
+]
+
 GOALIE_FEATURE_COLUMNS = [
     "home_expected_starter",
     "away_expected_starter",
@@ -149,6 +207,7 @@ MERGED_COLUMNS = [
     "rest_differential",
     *TEAM_STRENGTH_FEATURE_COLUMNS,
     *GOALIE_FEATURE_COLUMNS,
+    *LINEUP_FEATURE_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_projected_goals",
@@ -883,6 +942,26 @@ def canonical_goalie_decision_cutoff_utc(
         game_start
         - timedelta(
             minutes=GOALIE_PRODUCTION_CUTOFF_MINUTES
+        )
+    )
+
+
+
+
+def canonical_lineup_decision_cutoff_utc(
+    game: dict[str, str],
+) -> datetime | None:
+    game_start = canonical_game_cutoff_utc(
+        game
+    )
+
+    if game_start is None:
+        return None
+
+    return (
+        game_start
+        - timedelta(
+            minutes=LINEUP_PRODUCTION_CUTOFF_MINUTES
         )
     )
 
@@ -2083,6 +2162,630 @@ def goalie_features_for_game(
     }
 
 
+
+
+def authoritative_lineup_files() -> list[Path]:
+    files = sorted(
+        LINEUP_DIR.glob(
+            "season_*_game_lineup_features_asof.csv"
+        )
+    )
+
+    latest = (
+        LINEUP_DIR
+        / "latest_game_lineup_features_asof.csv"
+    )
+
+    if latest.is_file():
+        files.append(
+            latest
+        )
+
+    return files
+
+
+def validate_lineup_timestamp_contract(
+    *,
+    game_id: str,
+    stored_game_start: datetime,
+    decision_cutoff: datetime,
+    decision_cutoff_source: str,
+    snapshot_as_of: datetime,
+    canonical_game_start: datetime | None,
+    canonical_decision_cutoff: datetime | None,
+    source_file: str,
+) -> None:
+    if (
+        decision_cutoff_source
+        != LINEUP_PRODUCTION_CUTOFF_SOURCE
+    ):
+        fail(
+            "Invalid SportsDataverse lineup production cutoff source: "
+            f"game_id={game_id} "
+            f"source={decision_cutoff_source!r} "
+            f"file={source_file}"
+        )
+
+    expected = (
+        stored_game_start
+        - timedelta(
+            minutes=LINEUP_PRODUCTION_CUTOFF_MINUTES
+        )
+    )
+
+    if decision_cutoff != expected:
+        fail(
+            "SportsDataverse lineup decision cutoff is not "
+            "exactly 60 minutes before the stored game start: "
+            f"game_id={game_id} "
+            f"decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"game_start_utc={stored_game_start.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if snapshot_as_of > decision_cutoff:
+        fail(
+            "Unsafe SportsDataverse lineup snapshot timestamp: "
+            f"game_id={game_id} "
+            f"lineup_snapshot_as_of_utc={snapshot_as_of.isoformat()} "
+            f"lineup_decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if (
+        canonical_game_start is not None
+        and stored_game_start != canonical_game_start
+    ):
+        fail(
+            "SportsDataverse lineup game start does not match "
+            "canonical NHL game start: "
+            f"game_id={game_id} "
+            f"stored_game_start_utc={stored_game_start.isoformat()} "
+            f"canonical_game_start_utc={canonical_game_start.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if (
+        canonical_decision_cutoff is not None
+        and decision_cutoff != canonical_decision_cutoff
+    ):
+        fail(
+            "SportsDataverse lineup production cutoff does not match "
+            "the canonical T-60 cutoff: "
+            f"game_id={game_id} "
+            f"stored_decision_cutoff_utc={decision_cutoff.isoformat()} "
+            f"canonical_decision_cutoff_utc="
+            f"{canonical_decision_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+
+def load_lineup_index() -> dict[
+    str,
+    dict[str, str],
+]:
+    files = authoritative_lineup_files()
+
+    log(
+        "SportsDataverse strict-as-of lineup/player "
+        f"files found: {len(files)}"
+    )
+
+    if not files:
+        log(
+            "No SportsDataverse strict-as-of lineup/player files "
+            "available; lineup/player features will remain blank "
+            "and lineup status will remain unknown."
+        )
+        return {}
+
+    team_lookup = load_team_identity_map()
+
+    index: dict[
+        str,
+        dict[str, str],
+    ] = {}
+
+    for path in files:
+        fieldnames, rows = load_csv(
+            path
+        )
+
+        validate_required_columns(
+            path,
+            fieldnames,
+            REQUIRED_LINEUP_COLUMNS,
+        )
+
+        loaded_rows = 0
+
+        for row_number, row in enumerate(
+            rows,
+            start=2,
+        ):
+            game_id = str(
+                row.get(
+                    "game_id",
+                    "",
+                )
+            ).strip()
+
+            game_date = normalize_fatigue_date(
+                row.get(
+                    "game_date",
+                    "",
+                )
+            )
+
+            if not GAME_ID_RE.fullmatch(
+                game_id
+            ):
+                fail(
+                    f"{path} row {row_number} "
+                    f"has invalid lineup game_id={game_id!r}"
+                )
+
+            if not game_date:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid lineup game_date="
+                    f"{row.get('game_date', '')!r}"
+                )
+
+            stored_game_start = parse_utc_timestamp(
+                row.get(
+                    "pregame_cutoff_utc",
+                    "",
+                )
+            )
+
+            decision_cutoff = parse_utc_timestamp(
+                row.get(
+                    "lineup_decision_cutoff_utc",
+                    "",
+                )
+            )
+
+            decision_cutoff_source = str(
+                row.get(
+                    "lineup_decision_cutoff_source",
+                    "",
+                )
+            ).strip()
+
+            snapshot_as_of = parse_utc_timestamp(
+                row.get(
+                    "lineup_snapshot_as_of_utc",
+                    "",
+                )
+            )
+
+            if (
+                stored_game_start is None
+                or decision_cutoff is None
+                or snapshot_as_of is None
+            ):
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid lineup strict-as-of timestamps"
+                )
+
+            validate_lineup_timestamp_contract(
+                game_id=game_id,
+                stored_game_start=stored_game_start,
+                decision_cutoff=decision_cutoff,
+                decision_cutoff_source=decision_cutoff_source,
+                snapshot_as_of=snapshot_as_of,
+                canonical_game_start=None,
+                canonical_decision_cutoff=None,
+                source_file=str(path),
+            )
+
+            normalized = {
+                "game_id": game_id,
+                "game_date": game_date,
+                "pregame_cutoff_utc": (
+                    stored_game_start.isoformat()
+                ),
+                "lineup_decision_cutoff_utc": (
+                    decision_cutoff.isoformat()
+                ),
+                "lineup_decision_cutoff_source": (
+                    decision_cutoff_source
+                ),
+                "lineup_snapshot_as_of_utc": (
+                    snapshot_as_of.isoformat()
+                ),
+                "pregame_cutoff_source": str(
+                    row.get(
+                        "pregame_cutoff_source",
+                        "",
+                    )
+                ).strip(),
+                "_source_file": str(
+                    path
+                ),
+            }
+
+            for side in (
+                "home",
+                "away",
+            ):
+                team_raw = str(
+                    row.get(
+                        f"{side}_team",
+                        "",
+                    )
+                ).strip()
+
+                canonical_team = team_lookup.get(
+                    normalize_team_lookup_key(
+                        team_raw
+                    ),
+                    "",
+                )
+
+                if not canonical_team:
+                    fail(
+                        f"{path} row {row_number} "
+                        f"has unmapped lineup {side}_team={team_raw!r}"
+                    )
+
+                normalized[
+                    f"{side}_team"
+                ] = canonical_team
+
+                status = str(
+                    row.get(
+                        f"{side}_lineup_status",
+                        "",
+                    )
+                ).strip().lower()
+
+                if status not in LINEUP_STATUS_VALUES:
+                    fail(
+                        f"{path} row {row_number} "
+                        f"has invalid {side}_lineup_status={status!r}"
+                    )
+
+                observed_text = str(
+                    row.get(
+                        f"{side}_lineup_observed_at",
+                        "",
+                    )
+                ).strip()
+
+                observed_at = (
+                    parse_utc_timestamp(
+                        observed_text
+                    )
+                    if observed_text
+                    else None
+                )
+
+                if (
+                    status != "unknown"
+                    and observed_at is None
+                ):
+                    fail(
+                        f"{path} row {row_number} "
+                        f"{side}_lineup_status={status!r} "
+                        "requires a valid observation timestamp"
+                    )
+
+                if observed_at is not None:
+                    if observed_at > decision_cutoff:
+                        fail(
+                            "Unsafe SportsDataverse lineup observation "
+                            f"game_id={game_id} side={side} "
+                            f"observed_at={observed_at.isoformat()} "
+                            f"decision_cutoff={decision_cutoff.isoformat()} "
+                            f"file={path}"
+                        )
+
+                    if observed_at > snapshot_as_of:
+                        fail(
+                            "SportsDataverse lineup observation occurs "
+                            "after the stored lineup snapshot: "
+                            f"game_id={game_id} side={side} "
+                            f"observed_at={observed_at.isoformat()} "
+                            f"snapshot_as_of={snapshot_as_of.isoformat()} "
+                            f"file={path}"
+                        )
+
+                normalized[
+                    f"{side}_lineup_status"
+                ] = status
+
+                normalized[
+                    f"{side}_lineup_observed_at"
+                ] = (
+                    observed_at.isoformat()
+                    if observed_at is not None
+                    else ""
+                )
+
+                normalized[
+                    f"{side}_lineup_source"
+                ] = str(
+                    row.get(
+                        f"{side}_lineup_source",
+                        "",
+                    )
+                ).strip()
+
+            for field in (
+                LINEUP_NUMERIC_FEATURE_COLUMNS
+            ):
+                normalized[
+                    field
+                ] = str(
+                    row.get(
+                        field,
+                        "",
+                    )
+                ).strip()
+
+            prior = index.get(
+                game_id
+            )
+
+            if prior is not None:
+                compare_fields = [
+                    "game_date",
+                    "pregame_cutoff_utc",
+                    "lineup_decision_cutoff_utc",
+                    "lineup_decision_cutoff_source",
+                    "lineup_snapshot_as_of_utc",
+                    *LINEUP_FEATURE_COLUMNS,
+                ]
+
+                prior_values = {
+                    field: prior.get(
+                        field,
+                        "",
+                    )
+                    for field in compare_fields
+                }
+
+                new_values = {
+                    field: normalized.get(
+                        field,
+                        "",
+                    )
+                    for field in compare_fields
+                }
+
+                if prior_values != new_values:
+                    fail(
+                        "Conflicting SportsDataverse lineup rows for "
+                        f"game_id={game_id}: "
+                        f"{prior.get('_source_file', '')} vs {path}"
+                    )
+
+                continue
+
+            index[
+                game_id
+            ] = normalized
+
+            loaded_rows += 1
+
+        log(
+            f"Loaded lineup/player file: {path} "
+            f"({loaded_rows} unique strict-as-of rows)"
+        )
+
+    return index
+
+
+def empty_lineup_features() -> dict[str, str]:
+    features = {
+        field: ""
+        for field in LINEUP_FEATURE_COLUMNS
+    }
+
+    features[
+        "home_lineup_status"
+    ] = "unknown"
+
+    features[
+        "away_lineup_status"
+    ] = "unknown"
+
+    return features
+
+
+def lineup_features_for_game(
+    game: dict[str, str],
+    lineup_index: dict[
+        str,
+        dict[str, str],
+    ],
+) -> dict[str, str]:
+    game_id = str(
+        game.get(
+            "game_id",
+            "",
+        )
+    ).strip()
+
+    row = lineup_index.get(
+        game_id
+    )
+
+    if row is None:
+        return empty_lineup_features()
+
+    game_date = normalize_fatigue_date(
+        game.get(
+            "game_date",
+            "",
+        )
+    )
+
+    if row.get(
+        "game_date",
+        "",
+    ) != game_date:
+        fail(
+            "SportsDataverse lineup game_date mismatch: "
+            f"game_id={game_id} "
+            f"lineup_game_date={row.get('game_date', '')} "
+            f"canonical_game_date={game_date}"
+        )
+
+    for side in (
+        "home",
+        "away",
+    ):
+        canonical_team = str(
+            game.get(
+                f"{side}_team",
+                "",
+            )
+        ).strip()
+
+        if row.get(
+            f"{side}_team",
+            "",
+        ) != canonical_team:
+            fail(
+                "SportsDataverse lineup team identity mismatch: "
+                f"game_id={game_id} side={side} "
+                f"lineup_team={row.get(f'{side}_team', '')!r} "
+                f"canonical_team={canonical_team!r}"
+            )
+
+    stored_game_start = parse_utc_timestamp(
+        row.get(
+            "pregame_cutoff_utc",
+            "",
+        )
+    )
+
+    decision_cutoff = parse_utc_timestamp(
+        row.get(
+            "lineup_decision_cutoff_utc",
+            "",
+        )
+    )
+
+    snapshot_as_of = parse_utc_timestamp(
+        row.get(
+            "lineup_snapshot_as_of_utc",
+            "",
+        )
+    )
+
+    decision_cutoff_source = str(
+        row.get(
+            "lineup_decision_cutoff_source",
+            "",
+        )
+    ).strip()
+
+    canonical_game_start = canonical_game_cutoff_utc(
+        game
+    )
+
+    canonical_decision_cutoff = (
+        canonical_lineup_decision_cutoff_utc(
+            game
+        )
+    )
+
+    if (
+        stored_game_start is None
+        or decision_cutoff is None
+        or snapshot_as_of is None
+    ):
+        fail(
+            "SportsDataverse lineup row missing valid strict-as-of "
+            f"timestamps: game_id={game_id}"
+        )
+
+    validate_lineup_timestamp_contract(
+        game_id=game_id,
+        stored_game_start=stored_game_start,
+        decision_cutoff=decision_cutoff,
+        decision_cutoff_source=decision_cutoff_source,
+        snapshot_as_of=snapshot_as_of,
+        canonical_game_start=canonical_game_start,
+        canonical_decision_cutoff=canonical_decision_cutoff,
+        source_file=str(
+            row.get(
+                "_source_file",
+                "",
+            )
+        ),
+    )
+
+    for side in (
+        "home",
+        "away",
+    ):
+        status = str(
+            row.get(
+                f"{side}_lineup_status",
+                "",
+            )
+        ).strip().lower()
+
+        observed_text = str(
+            row.get(
+                f"{side}_lineup_observed_at",
+                "",
+            )
+        ).strip()
+
+        observed_at = (
+            parse_utc_timestamp(
+                observed_text
+            )
+            if observed_text
+            else None
+        )
+
+        if status not in LINEUP_STATUS_VALUES:
+            fail(
+                "SportsDataverse lineup row has invalid status: "
+                f"game_id={game_id} side={side} status={status!r}"
+            )
+
+        if (
+            status != "unknown"
+            and observed_at is None
+        ):
+            fail(
+                "SportsDataverse lineup status requires observation "
+                f"timestamp: game_id={game_id} side={side}"
+            )
+
+        if (
+            observed_at is not None
+            and (
+                observed_at > decision_cutoff
+                or observed_at > snapshot_as_of
+            )
+        ):
+            fail(
+                "Unsafe SportsDataverse lineup observation timestamp: "
+                f"game_id={game_id} side={side} "
+                f"observed_at={observed_at.isoformat()}"
+            )
+
+    return {
+        field: str(
+            row.get(
+                field,
+                "",
+            )
+        ).strip()
+        for field in LINEUP_FEATURE_COLUMNS
+    }
+
+
 def numeric_difference(
     home_value: str,
     away_value: str,
@@ -2418,6 +3121,10 @@ def process_date(
         str,
         dict[str, str],
     ],
+    lineup_index: dict[
+        str,
+        dict[str, str],
+    ],
 ) -> tuple[
     int,
     int,
@@ -2601,6 +3308,13 @@ def process_date(
             )
         )
 
+        lineup_features = (
+            lineup_features_for_game(
+                game,
+                lineup_index,
+            )
+        )
+
         merged_rows.append(
             {
                 "sport": game.get(
@@ -2631,6 +3345,7 @@ def process_date(
                 **fatigue_features,
                 **team_strength_features,
                 **goalie_features,
+                **lineup_features,
                 "away_prob_moneyline": (
                     prediction.get(
                         "away_prob_moneyline",
@@ -2848,6 +3563,10 @@ def main() -> None:
             load_goalie_index()
         )
 
+        lineup_index = (
+            load_lineup_index()
+        )
+
         games_by_date = (
             rows_by_date_game_id(
                 games_rows,
@@ -2949,6 +3668,7 @@ def main() -> None:
                 fatigue_index,
                 team_strength_index,
                 goalie_index,
+                lineup_index,
             )
 
             total_merged += merged_count

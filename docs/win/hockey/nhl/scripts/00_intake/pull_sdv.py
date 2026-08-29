@@ -82,6 +82,51 @@ GOALIE_PRODUCTION_CUTOFF_MINUTES = 60
 GOALIE_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
 
 
+LINEUP_PRODUCTION_CUTOFF_MINUTES = 60
+LINEUP_PRODUCTION_CUTOFF_SOURCE = "fixed_60_minutes_before_puck_drop"
+
+LINEUP_TEAM_METRICS = (
+    "skater_rapm",
+    "skater_war",
+    "pp_value",
+    "pk_value",
+    "forward_line_strength",
+    "defense_pair_strength",
+)
+
+LINEUP_STATUS_VALUES = (
+    "projected",
+    "expected",
+    "confirmed",
+    "unknown",
+)
+
+PREGAME_FEATURE_EVALUATION = (
+    ("nhl_xg", "xg_quality", "covered_elsewhere",
+     "Used upstream by team-strength/RAPM; do not duplicate as a separate lineup feature."),
+    ("nhl_goalie_gsax", "goalie_performance", "covered_elsewhere",
+     "Integrated in SDV-P3 goalie strength."),
+    ("nhl_skater_rapm", "player_impact", "production",
+     "Aggregate leakage-safe prior-game skater xG RAPM to team/game level."),
+    ("nhl_skater_war", "player_impact", "production",
+     "Aggregate leakage-safe prior-game WAR to team/game level."),
+    ("nhl_special_teams_value", "power_play_penalty_kill", "production",
+     "Aggregate PP and PK value to team/game level."),
+    ("nhl_unit_ratings", "forward_line_defense_pair", "production",
+     "Aggregate forward-line and defense-pair unit_value to team/game level."),
+    ("nhl_penalty_value", "penalty_value", "evaluated_not_selected",
+     "Available, but WAR already contains a penalty component; avoid duplicate signal."),
+    ("nhl_faceoff_value", "faceoff_value", "evaluated_not_selected",
+     "Available, but WAR already contains a faceoff component; avoid duplicate signal."),
+    ("nhl_edge_skating_value", "edge_skating", "evaluated_not_selected",
+     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
+    ("nhl_expected_assists", "expected_assists", "evaluated_not_selected",
+     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
+    ("nhl_zone_transitions", "zone_transitions", "evaluated_not_selected",
+     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
+)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -578,6 +623,54 @@ def goalie_production_cutoff_utc(
             minutes=GOALIE_PRODUCTION_CUTOFF_MINUTES
         )
     )
+
+
+
+
+def lineup_production_cutoff_utc(
+    game_start_utc: datetime,
+) -> datetime:
+    return (
+        game_start_utc.astimezone(UTC)
+        - timedelta(
+            minutes=LINEUP_PRODUCTION_CUTOFF_MINUTES
+        )
+    )
+
+
+def pregame_feature_evaluation() -> dict[str, Any]:
+    rows = []
+    for (
+        function_name,
+        family,
+        decision,
+        reason,
+    ) in PREGAME_FEATURE_EVALUATION:
+        rows.append(
+            {
+                "function": function_name,
+                "family": family,
+                "available": bool(
+                    hasattr(
+                        nhl,
+                        function_name,
+                    )
+                ),
+                "decision": decision,
+                "reason": reason,
+            }
+        )
+
+    return {
+        "decision_cutoff_minutes_before_puck_drop": (
+            LINEUP_PRODUCTION_CUTOFF_MINUTES
+        ),
+        "missing_or_late_lineup_behavior": (
+            "unknown status with lineup-dependent fields blank; "
+            "never backfill observations after T-60"
+        ),
+        "families": rows,
+    }
 
 
 def ensure_dirs() -> None:
@@ -3443,6 +3536,696 @@ def build_game_goalie_features_asof(
     )
 
 
+
+
+def _unit_player_team_lookup(
+    *unit_frames: Any,
+) -> dict[str, str]:
+    counts: dict[
+        str,
+        dict[str, int],
+    ] = {}
+
+    for frame in unit_frames:
+        if frame_empty(frame):
+            continue
+
+        pdf = as_pandas(frame)
+
+        if (
+            "team" not in pdf.columns
+            or "unit_ids" not in pdf.columns
+        ):
+            continue
+
+        for _, row in pdf.iterrows():
+            team = str(
+                row.get(
+                    "team",
+                    "",
+                )
+            ).strip()
+
+            if not team:
+                continue
+
+            raw_ids = str(
+                row.get(
+                    "unit_ids",
+                    "",
+                )
+            ).strip()
+
+            for raw_id in raw_ids.split("-"):
+                player_id = normalize_player_id(
+                    raw_id
+                )
+
+                if not player_id:
+                    continue
+
+                counts.setdefault(
+                    player_id,
+                    {},
+                )[team] = (
+                    counts.setdefault(
+                        player_id,
+                        {},
+                    ).get(
+                        team,
+                        0,
+                    )
+                    + 1
+                )
+
+    lookup: dict[
+        str,
+        str,
+    ] = {}
+
+    for player_id, by_team in counts.items():
+        lookup[
+            player_id
+        ] = sorted(
+            by_team.items(),
+            key=lambda item: (
+                -item[1],
+                item[0],
+            ),
+        )[0][0]
+
+    return lookup
+
+
+def _weighted_mean(
+    values: pd.Series,
+    weights: pd.Series,
+) -> float | None:
+    numeric_values = pd.to_numeric(
+        values,
+        errors="coerce",
+    )
+
+    numeric_weights = pd.to_numeric(
+        weights,
+        errors="coerce",
+    )
+
+    mask = (
+        numeric_values.notna()
+        & numeric_weights.notna()
+        & numeric_weights.gt(0)
+    )
+
+    if not mask.any():
+        valid = numeric_values.dropna()
+        return (
+            float(
+                valid.mean()
+            )
+            if not valid.empty
+            else None
+        )
+
+    denom = float(
+        numeric_weights.loc[
+            mask
+        ].sum()
+    )
+
+    if denom <= 0:
+        return None
+
+    return float(
+        (
+            numeric_values.loc[
+                mask
+            ]
+            * numeric_weights.loc[
+                mask
+            ]
+        ).sum()
+        / denom
+    )
+
+
+def _player_metric_by_team(
+    frame: Any,
+    player_team: dict[str, str],
+    *,
+    value_col: str,
+    mode: str,
+    weight_col: str | None = None,
+) -> dict[str, float]:
+    if frame_empty(frame):
+        return {}
+
+    pdf = as_pandas(frame)
+
+    if (
+        "player_id" not in pdf.columns
+        or value_col not in pdf.columns
+    ):
+        return {}
+
+    work = pdf.copy()
+    work["_player_key"] = work[
+        "player_id"
+    ].map(
+        normalize_player_id
+    )
+    work["_team"] = work[
+        "_player_key"
+    ].map(
+        player_team
+    )
+    work["_value"] = pd.to_numeric(
+        work[
+            value_col
+        ],
+        errors="coerce",
+    )
+
+    work = work.loc[
+        work[
+            "_team"
+        ].notna()
+        & work[
+            "_value"
+        ].notna()
+    ].copy()
+
+    if work.empty:
+        return {}
+
+    output: dict[
+        str,
+        float,
+    ] = {}
+
+    for team, group in work.groupby(
+        "_team",
+        dropna=False,
+    ):
+        if mode == "sum":
+            output[
+                str(team)
+            ] = float(
+                group[
+                    "_value"
+                ].sum()
+            )
+            continue
+
+        if (
+            mode == "weighted_mean"
+            and weight_col is not None
+            and weight_col in group.columns
+        ):
+            value = _weighted_mean(
+                group[
+                    "_value"
+                ],
+                group[
+                    weight_col
+                ],
+            )
+        else:
+            value = float(
+                group[
+                    "_value"
+                ].mean()
+            )
+
+        if value is not None:
+            output[
+                str(team)
+            ] = float(
+                value
+            )
+
+    return output
+
+
+def _unit_metric_by_team(
+    frame: Any,
+) -> dict[str, float]:
+    if frame_empty(frame):
+        return {}
+
+    pdf = as_pandas(frame)
+
+    required = {
+        "team",
+        "unit_value",
+    }
+
+    if not required.issubset(
+        set(
+            pdf.columns
+        )
+    ):
+        return {}
+
+    output: dict[
+        str,
+        float,
+    ] = {}
+
+    for team, group in pdf.groupby(
+        "team",
+        dropna=False,
+    ):
+        team_name = str(
+            team
+        ).strip()
+
+        if not team_name:
+            continue
+
+        if "toi_minutes" in group.columns:
+            value = _weighted_mean(
+                group[
+                    "unit_value"
+                ],
+                group[
+                    "toi_minutes"
+                ],
+            )
+        else:
+            values = pd.to_numeric(
+                group[
+                    "unit_value"
+                ],
+                errors="coerce",
+            ).dropna()
+
+            value = (
+                float(
+                    values.mean()
+                )
+                if not values.empty
+                else None
+            )
+
+        if value is not None:
+            output[
+                team_name
+            ] = float(
+                value
+            )
+
+    return output
+
+
+def compute_lineup_team_metrics(
+    prior_pbp: Any,
+    prior_shifts: Any,
+) -> dict[str, dict[str, float]]:
+    if (
+        frame_empty(
+            prior_pbp
+        )
+        or frame_empty(
+            prior_shifts
+        )
+    ):
+        return {}
+
+    rapm = nhl.nhl_skater_rapm(
+        prior_pbp,
+        prior_shifts,
+    )
+
+    war = clean_war_rows(
+        nhl.nhl_skater_war(
+            prior_pbp,
+            prior_shifts,
+        )
+    )
+
+    special = nhl.nhl_special_teams_value(
+        prior_pbp,
+        prior_shifts,
+    )
+
+    forward_units = nhl.nhl_unit_ratings(
+        prior_pbp,
+        prior_shifts,
+        unit_type="forward_line",
+        min_toi=0.0,
+    )
+
+    defense_units = nhl.nhl_unit_ratings(
+        prior_pbp,
+        prior_shifts,
+        unit_type="defense_pair",
+        min_toi=0.0,
+    )
+
+    player_team = _unit_player_team_lookup(
+        forward_units,
+        defense_units,
+    )
+
+    metric_maps = {
+        "skater_rapm": (
+            _player_metric_by_team(
+                rapm,
+                player_team,
+                value_col="xg_rapm",
+                mode="weighted_mean",
+                weight_col="toi_minutes",
+            )
+        ),
+        "skater_war": (
+            _player_metric_by_team(
+                war,
+                player_team,
+                value_col="war",
+                mode="sum",
+            )
+        ),
+        "pp_value": (
+            _player_metric_by_team(
+                special,
+                player_team,
+                value_col="pp_value",
+                mode="sum",
+            )
+        ),
+        "pk_value": (
+            _player_metric_by_team(
+                special,
+                player_team,
+                value_col="pk_value",
+                mode="sum",
+            )
+        ),
+        "forward_line_strength": (
+            _unit_metric_by_team(
+                forward_units
+            )
+        ),
+        "defense_pair_strength": (
+            _unit_metric_by_team(
+                defense_units
+            )
+        ),
+    }
+
+    teams = sorted(
+        {
+            team
+            for metric_map in metric_maps.values()
+            for team in metric_map
+        }
+    )
+
+    return {
+        team: {
+            metric: metric_maps[
+                metric
+            ].get(
+                team
+            )
+            for metric in LINEUP_TEAM_METRICS
+        }
+        for team in teams
+    }
+
+
+def build_game_lineup_features_asof(
+    schedule: Any,
+    pbp: Any,
+    shifts: Any,
+    *,
+    current: bool,
+    generated_at_utc: datetime,
+) -> pl.DataFrame:
+    if frame_empty(
+        schedule
+    ):
+        return pl.DataFrame()
+
+    games = schedule_games_with_cutoffs(
+        schedule
+    )
+
+    if games.empty:
+        return pl.DataFrame()
+
+    generated_at_utc = (
+        generated_at_utc.astimezone(
+            UTC
+        )
+    )
+
+    cache: dict[
+        str,
+        dict[
+            str,
+            dict[str, float],
+        ],
+    ] = {}
+
+    rows: list[
+        dict[str, Any]
+    ] = []
+
+    for _, game in games.iterrows():
+        game_id = str(
+            game.get(
+                "game_id",
+                "",
+            )
+        ).strip()
+
+        game_date = str(
+            game.get(
+                "game_date",
+                "",
+            )
+        ).strip()
+
+        try:
+            target_day = date.fromisoformat(
+                game_date
+            )
+        except ValueError:
+            continue
+
+        game_start = parse_timestamp_utc(
+            game.get(
+                "pregame_cutoff_utc",
+                "",
+            )
+        )
+
+        cutoff_source = str(
+            game.get(
+                "pregame_cutoff_source",
+                "",
+            )
+        ).strip()
+
+        if (
+            not game_id
+            or game_start is None
+            or cutoff_source
+            == "conservative_game_date_start_et"
+        ):
+            continue
+
+        decision_cutoff = (
+            lineup_production_cutoff_utc(
+                game_start
+            )
+        )
+
+        snapshot_as_of = (
+            generated_at_utc
+            if current
+            else decision_cutoff
+        )
+
+        # Production lineup/player information is frozen at T-60.
+        # Later current runs cannot backfill information into the feature row.
+        if snapshot_as_of > decision_cutoff:
+            continue
+
+        cache_key = target_day.isoformat()
+
+        if cache_key not in cache:
+            prior_game_ids = (
+                prior_game_ids_for_target(
+                    schedule,
+                    target_day,
+                )
+            )
+
+            prior_pbp = (
+                frame_strictly_before_game(
+                    pbp,
+                    target_day=target_day,
+                    prior_game_ids=prior_game_ids,
+                )
+                if not frame_empty(
+                    pbp
+                )
+                else pl.DataFrame()
+            )
+
+            prior_shifts = (
+                frame_strictly_before_game(
+                    shifts,
+                    target_day=target_day,
+                    prior_game_ids=prior_game_ids,
+                )
+                if not frame_empty(
+                    shifts
+                )
+                else pl.DataFrame()
+            )
+
+            cache[
+                cache_key
+            ] = (
+                compute_lineup_team_metrics(
+                    prior_pbp,
+                    prior_shifts,
+                )
+            )
+
+        team_metrics = cache[
+            cache_key
+        ]
+
+        row: dict[
+            str,
+            Any,
+        ] = {
+            "game_id": game_id,
+            "game_date": game_date,
+            "home_team": str(
+                game.get(
+                    "home_team",
+                    "",
+                )
+            ).strip(),
+            "away_team": str(
+                game.get(
+                    "away_team",
+                    "",
+                )
+            ).strip(),
+            "pregame_cutoff_utc": utc_iso(
+                game_start
+            ),
+            "lineup_decision_cutoff_utc": utc_iso(
+                decision_cutoff
+            ),
+            "lineup_decision_cutoff_source": (
+                LINEUP_PRODUCTION_CUTOFF_SOURCE
+            ),
+            "lineup_snapshot_as_of_utc": utc_iso(
+                snapshot_as_of
+            ),
+            "pregame_cutoff_source": cutoff_source,
+        }
+
+        for side in (
+            "home",
+            "away",
+        ):
+            team = row[
+                f"{side}_team"
+            ]
+
+            metrics = team_metrics.get(
+                team,
+                {},
+            )
+
+            for metric in (
+                LINEUP_TEAM_METRICS
+            ):
+                row[
+                    f"{side}_{metric}"
+                ] = metrics.get(
+                    metric
+                )
+
+            # SportsDataverse provides the historical performance inputs,
+            # not a timestamped NHL pregame lineup-confirmation feed.
+            # Therefore actual lineup state remains unknown rather than
+            # being inferred from postgame participation.
+            row[
+                f"{side}_lineup_status"
+            ] = "unknown"
+
+            row[
+                f"{side}_lineup_observed_at"
+            ] = ""
+
+            row[
+                f"{side}_lineup_source"
+            ] = (
+                "sportsdataverse_prior_game_player_pool_no_lineup_confirmation"
+                if metrics
+                else "sportsdataverse_no_pregame_lineup_evidence"
+            )
+
+        for metric in (
+            LINEUP_TEAM_METRICS
+        ):
+            home_value = row.get(
+                f"home_{metric}"
+            )
+            away_value = row.get(
+                f"away_{metric}"
+            )
+
+            if (
+                home_value is None
+                or away_value is None
+                or pd.isna(
+                    home_value
+                )
+                or pd.isna(
+                    away_value
+                )
+            ):
+                row[
+                    f"{metric}_differential"
+                ] = None
+            else:
+                row[
+                    f"{metric}_differential"
+                ] = (
+                    float(
+                        home_value
+                    )
+                    - float(
+                        away_value
+                    )
+                )
+
+        rows.append(
+            row
+        )
+
+    if not rows:
+        return pl.DataFrame()
+
+    return pl.from_pandas(
+        pd.DataFrame(
+            rows
+        )
+    )
+
+
+
 def pull_advanced_player_strength(
     failures: list[str],
     *,
@@ -3450,6 +4233,11 @@ def pull_advanced_player_strength(
     prefix: str,
     context: dict[str, Any],
 ):
+    """Legacy goalie diagnostic only.
+
+    Production player/lineup features are generated per game by
+    build_game_lineup_features_asof under the fixed T-60 contract.
+    """
     pbp = context.get(
         "pbp"
     )
@@ -3482,89 +4270,9 @@ def pull_advanced_player_strength(
             current=current,
         )
 
-    rapm = safe_pull(
-        failures,
-        "lineup-strength",
-        "skater_rapm",
-        nhl.nhl_skater_rapm,
-        pbp,
-        shifts,
-    )
-
-    if rapm is not None:
-        save_object(
-            "lineup-strength",
-            "skater_rapm",
-            rapm,
-            prefix=prefix,
-            current=current,
-        )
-
-    war = safe_pull(
-        failures,
-        "lineup-strength",
-        "skater_war",
-        nhl.nhl_skater_war,
-        pbp,
-        shifts,
-    )
-
-    if war is not None:
-        war = clean_war_rows(
-            war
-        )
-
-        save_object(
-            "lineup-strength",
-            "skater_war",
-            war,
-            prefix=prefix,
-            current=current,
-        )
-
-    special = safe_pull(
-        failures,
-        "lineup-strength",
-        "special_teams_value",
-        nhl.nhl_special_teams_value,
-        pbp,
-        shifts,
-    )
-
-    if special is not None:
-        save_object(
-            "lineup-strength",
-            "special_teams_value",
-            special,
-            prefix=prefix,
-            current=current,
-        )
-
-    for unit_type in (
-        "forward_line",
-        "defense_pair",
-    ):
-        units = safe_pull(
-            failures,
-            "lineup-strength",
-            f"unit_ratings_{unit_type}",
-            nhl.nhl_unit_ratings,
-            pbp,
-            shifts,
-            unit_type=unit_type,
-        )
-
-        if units is not None:
-            save_object(
-                "lineup-strength",
-                f"unit_ratings_{unit_type}",
-                units,
-                prefix=prefix,
-                current=current,
-            )
-
 
 def pull_fatigue(
+
     failures: list[str],
     *,
     current: bool,
@@ -4236,6 +4944,46 @@ def run_one(
             context=context,
         )
 
+    if "lineup-strength" in categories:
+        save_object(
+            "lineup-strength",
+            "pregame_feature_evaluation",
+            pregame_feature_evaluation(),
+            prefix=prefix,
+            current=current,
+        )
+
+    if (
+        "lineup-strength" in categories
+        and context is not None
+    ):
+        lineup_features = safe_pull(
+            failures,
+            "lineup-strength",
+            "game_lineup_features_asof",
+            build_game_lineup_features_asof,
+            relevant_schedule,
+            context.get(
+                "pbp"
+            ),
+            context.get(
+                "shifts"
+            ),
+            current=current,
+            generated_at_utc=datetime.now(
+                UTC
+            ),
+        )
+
+        if lineup_features is not None:
+            save_object(
+                "lineup-strength",
+                "game_lineup_features_asof",
+                lineup_features,
+                prefix=prefix,
+                current=current,
+            )
+
     if (
         "goalie" in categories
         and context is not None
@@ -4316,10 +5064,15 @@ def run_one(
         and (
             "goalie"
             in categories
-            or "lineup-strength"
-            in categories
+        )
+        and (
+            "lineup-strength"
+            not in categories
         )
     ):
+        # Legacy full-season player outputs are diagnostics only.
+        # Production lineup/player features are generated above by
+        # build_game_lineup_features_asof using the T-60 contract.
         pull_advanced_player_strength(
             failures,
             current=current,

@@ -1,21 +1,21 @@
 pipeline:
   name: nhl
-  schema_version: 7
+  schema_version: 8
   schema_created_at: "2026-08-29"
   schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
   "00_intake":
-    version: 5
+    version: 6
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
-    version: 6
+    version: 7
     path: "docs/win/hockey/nhl/01_merge"
 
   "02_juice":
-    version: 3
+    version: 4
     path: "docs/win/hockey/nhl/02_juice"
 
   "03_edges":
@@ -338,6 +338,117 @@ prediction_model:
       - "02_juice puck-line output"
       - "02_juice total output"
     missing_behavior: "Leave goalie names and GSAx blank and set goalie status to unknown when no strict-as-of goalie row is available; do not synthesize confirmed information."
+
+
+lineup_player_strength_integration:
+  source_root: "docs/win/hockey/nhl/sdv/lineup-strength"
+  source_label: "game_lineup_features_asof"
+  current_file: "docs/win/hockey/nhl/sdv/lineup-strength/latest_game_lineup_features_asof.csv"
+  historical_file_pattern: "docs/win/hockey/nhl/sdv/lineup-strength/season_<season>_game_lineup_features_asof.csv"
+  producer_script: "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+  merge_script: "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+  join_identity:
+    - "game_id"
+
+  production_cutoff:
+    status: "VERIFIED"
+    minutes_before_puck_drop: 60
+    field: "lineup_decision_cutoff_utc"
+    source_field: "lineup_decision_cutoff_source"
+    source_value: "fixed_60_minutes_before_puck_drop"
+    eligibility_rule: "All player/unit metrics and any observed lineup state must be available at or before T-60."
+    historical_rule: "Historical features use prior games only; target-date and later events are excluded, and later lineup observations are never backfilled."
+
+  production_metrics:
+    skater_rapm:
+      function: "sportsdataverse.nhl.nhl_skater_rapm"
+      aggregation: "TOI-weighted mean xg_rapm by team from the prior-game player pool"
+    skater_war:
+      function: "sportsdataverse.nhl.nhl_skater_war"
+      aggregation: "Sum WAR by team from the prior-game player pool"
+    special_teams:
+      function: "sportsdataverse.nhl.nhl_special_teams_value"
+      aggregation: "Sum pp_value and pk_value by team"
+    forward_line_strength:
+      function: "sportsdataverse.nhl.nhl_unit_ratings"
+      unit_type: "forward_line"
+      aggregation: "TOI-weighted mean unit_value by team"
+    defense_pair_strength:
+      function: "sportsdataverse.nhl.nhl_unit_ratings"
+      unit_type: "defense_pair"
+      aggregation: "TOI-weighted mean unit_value by team"
+
+  game_level_fields:
+    - "home_skater_rapm"
+    - "away_skater_rapm"
+    - "skater_rapm_differential"
+    - "home_skater_war"
+    - "away_skater_war"
+    - "skater_war_differential"
+    - "home_pp_value"
+    - "away_pp_value"
+    - "pp_value_differential"
+    - "home_pk_value"
+    - "away_pk_value"
+    - "pk_value_differential"
+    - "home_forward_line_strength"
+    - "away_forward_line_strength"
+    - "forward_line_strength_differential"
+    - "home_defense_pair_strength"
+    - "away_defense_pair_strength"
+    - "defense_pair_strength_differential"
+    - "home_lineup_status"
+    - "away_lineup_status"
+    - "home_lineup_observed_at"
+    - "away_lineup_observed_at"
+    - "home_lineup_source"
+    - "away_lineup_source"
+
+  lineup_information:
+    status_values:
+      - "projected"
+      - "expected"
+      - "confirmed"
+      - "unknown"
+    built_in_sdv_behavior: "SportsDataverse prior-game player metrics do not establish a timestamped pregame lineup confirmation, so built-in rows use status=unknown and leave lineup_observed_at blank."
+    missing_or_late_behavior: "Use unknown/blank. Never infer historical availability from final game participation or backfill observations after T-60."
+
+  as_of_rules:
+    current: "Current game-level lineup/player rows are emitted only if lineup_snapshot_as_of_utc is at or before T-60."
+    historical: "PBP and shifts are filtered to games strictly before the target game date before RAPM, WAR, special-teams, or unit metrics are calculated."
+    canonical_validation: "Stage 01 requires the stored game start to match the canonical game start and lineup_decision_cutoff_utc to equal canonical game start minus 60 minutes."
+    forbidden: "Target-game data, later-game data, postgame participation used as lineup evidence, or any lineup observation after T-60."
+
+  feature_evaluation:
+    output: "docs/win/hockey/nhl/sdv/lineup-strength/latest_pregame_feature_evaluation.json"
+    production:
+      - "nhl_skater_rapm"
+      - "nhl_skater_war"
+      - "nhl_special_teams_value"
+      - "nhl_unit_ratings"
+    covered_elsewhere:
+      - "nhl_xg"
+      - "nhl_goalie_gsax"
+    evaluated_not_selected:
+      - "nhl_penalty_value"
+      - "nhl_faceoff_value"
+      - "nhl_edge_skating_value"
+      - "nhl_expected_assists"
+      - "nhl_zone_transitions"
+    selection_notes:
+      penalty_and_faceoff: "WAR already includes penalty and faceoff components; separate production features would duplicate signal."
+      edge_expected_assists_zone_transitions: "Keep research-only until NHL coverage, stability, and historical as-of behavior are validated."
+
+  propagation:
+    - "01_merge merged output"
+    - "01_merge/01_merguiced moneyline output"
+    - "01_merge/01_merguiced puck-line output"
+    - "01_merge/01_merguiced total output"
+    - "02_juice moneyline output"
+    - "02_juice puck-line output"
+    - "02_juice total output"
+
+  missing_behavior: "Leave unavailable numeric player/unit features blank; represent unavailable or late lineup information as unknown with no observation timestamp."
 
 calibration:
   version: 1
