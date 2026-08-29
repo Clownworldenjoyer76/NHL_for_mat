@@ -23,7 +23,7 @@ import shutil
 import sys
 import time
 import traceback
-from datetime import date, datetime
+from datetime import date, datetime, time as dt_time, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -33,7 +33,9 @@ import polars as pl
 import sportsdataverse.nhl as nhl
 
 
-ROOT = Path("docs/win/hockey/nhl/sdv")
+BASE_DIR = Path("docs/win/hockey/nhl")
+ROOT = BASE_DIR / "sdv"
+OFFICIAL_SCHEDULE_DIR = BASE_DIR / "00_intake" / "nhl_schedule"
 CATEGORIES = (
     "schedule",
     "team-strength",
@@ -44,6 +46,7 @@ CATEGORIES = (
     "odds",
 )
 NY = ZoneInfo("America/New_York")
+UTC = timezone.utc
 
 TEAM_STRENGTH_FIELDS = (
     "adj_xgf",
@@ -134,6 +137,414 @@ def season_start_for_day(day: date) -> int:
 def run_stamp() -> str:
     return datetime.now(NY).strftime(
         "%Y_%m_%dT%H%M%S_ET"
+    )
+
+
+
+def utc_iso(value: datetime) -> str:
+    return (
+        value.astimezone(UTC)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def parse_timestamp_utc(
+    value: Any,
+) -> datetime | None:
+    text = str(value or "").strip()
+
+    if not text:
+        return None
+
+    try:
+        parsed = datetime.fromisoformat(
+            text.replace(
+                "Z",
+                "+00:00",
+            )
+        )
+    except ValueError:
+        return None
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(
+            tzinfo=UTC
+        )
+
+    return parsed.astimezone(
+        UTC
+    )
+
+
+def conservative_game_date_cutoff_utc(
+    game_day: date,
+) -> datetime:
+    return datetime.combine(
+        game_day,
+        dt_time.min,
+        tzinfo=NY,
+    ).astimezone(
+        UTC
+    )
+
+
+def game_date_time_cutoff_utc(
+    game_day: date,
+    game_time: Any,
+) -> datetime | None:
+    text = str(
+        game_time or ""
+    ).strip()
+
+    if not text:
+        return None
+
+    for fmt in (
+        "%H:%M:%S",
+        "%H:%M",
+    ):
+        try:
+            parsed_time = datetime.strptime(
+                text,
+                fmt,
+            ).time()
+            return datetime.combine(
+                game_day,
+                parsed_time,
+                tzinfo=NY,
+            ).astimezone(
+                UTC
+            )
+        except ValueError:
+            continue
+
+    return None
+
+
+def official_schedule_cutoff_lookup() -> dict[
+    str,
+    datetime,
+]:
+    lookup: dict[
+        str,
+        datetime,
+    ] = {}
+
+    if not OFFICIAL_SCHEDULE_DIR.exists():
+        return lookup
+
+    for path in sorted(
+        OFFICIAL_SCHEDULE_DIR.glob(
+            "*.csv"
+        )
+    ):
+        try:
+            pdf = pd.read_csv(
+                path,
+                dtype=str,
+            ).fillna("")
+        except Exception:
+            continue
+
+        if (
+            "game_id" not in pdf.columns
+            or "start_time_utc" not in pdf.columns
+        ):
+            continue
+
+        for _, row in pdf.iterrows():
+            game_id = str(
+                row.get(
+                    "game_id",
+                    "",
+                )
+            ).strip()
+
+            cutoff = parse_timestamp_utc(
+                row.get(
+                    "start_time_utc",
+                    "",
+                )
+            )
+
+            if game_id and cutoff is not None:
+                lookup[
+                    game_id
+                ] = cutoff
+
+    return lookup
+
+
+def schedule_games_with_cutoffs(
+    schedule: Any,
+) -> pd.DataFrame:
+    if frame_empty(
+        schedule
+    ):
+        return pd.DataFrame(
+            columns=[
+                "game_id",
+                "game_date",
+                "home_team",
+                "away_team",
+                "pregame_cutoff_utc",
+                "pregame_cutoff_source",
+            ]
+        )
+
+    pdf = as_pandas(
+        schedule
+    )
+
+    gid_col = first_col(
+        pdf,
+        (
+            "game_id",
+            "id",
+            "event_id",
+        ),
+    )
+    date_col = first_col(
+        pdf,
+        (
+            "game_date",
+            "schedule_date",
+            "date",
+            "start_date",
+        ),
+    )
+    home_col = first_col(
+        pdf,
+        (
+            "home_team_abbrev",
+            "home_team_abbr",
+            "home_abbr",
+            "home_team",
+        ),
+    )
+    away_col = first_col(
+        pdf,
+        (
+            "away_team_abbrev",
+            "away_team_abbr",
+            "away_abbr",
+            "away_team",
+        ),
+    )
+
+    if (
+        gid_col is None
+        or date_col is None
+        or home_col is None
+        or away_col is None
+    ):
+        return pd.DataFrame()
+
+    direct_utc_col = first_col(
+        pdf,
+        (
+            "start_time_utc",
+            "startTimeUTC",
+            "start_utc",
+        ),
+    )
+
+    datetime_col = first_col(
+        pdf,
+        (
+            "game_datetime",
+            "game_date_time",
+            "start_datetime",
+            "date_time",
+        ),
+    )
+
+    game_time_col = first_col(
+        pdf,
+        (
+            "game_time",
+            "start_time_et",
+            "start_time",
+        ),
+    )
+
+    official_lookup = (
+        official_schedule_cutoff_lookup()
+    )
+
+    rows: list[
+        dict[str, str]
+    ] = []
+
+    for _, row in pdf.iterrows():
+        game_id = str(
+            row.get(
+                gid_col,
+                "",
+            )
+        ).strip()
+
+        parsed_day = pd.to_datetime(
+            row.get(
+                date_col,
+                "",
+            ),
+            errors="coerce",
+        )
+
+        if (
+            not game_id
+            or pd.isna(
+                parsed_day
+            )
+        ):
+            continue
+
+        game_day = parsed_day.date()
+
+        cutoff = (
+            official_lookup.get(
+                game_id
+            )
+        )
+        source = (
+            "official_nhl_schedule"
+            if cutoff is not None
+            else ""
+        )
+
+        if (
+            cutoff is None
+            and direct_utc_col is not None
+        ):
+            cutoff = parse_timestamp_utc(
+                row.get(
+                    direct_utc_col,
+                    "",
+                )
+            )
+            if cutoff is not None:
+                source = (
+                    f"schedule:{direct_utc_col}"
+                )
+
+        if (
+            cutoff is None
+            and datetime_col is not None
+        ):
+            raw = row.get(
+                datetime_col,
+                "",
+            )
+            parsed = pd.to_datetime(
+                raw,
+                errors="coerce",
+                utc=True,
+            )
+            if not pd.isna(
+                parsed
+            ):
+                cutoff = (
+                    parsed.to_pydatetime()
+                    .astimezone(
+                        UTC
+                    )
+                )
+                source = (
+                    f"schedule:{datetime_col}"
+                )
+
+        if (
+            cutoff is None
+            and game_time_col is not None
+        ):
+            raw_game_time = row.get(
+                game_time_col,
+                "",
+            )
+
+            cutoff = (
+                game_date_time_cutoff_utc(
+                    game_day,
+                    raw_game_time,
+                )
+            )
+
+            if cutoff is not None:
+                source = (
+                    f"schedule:{game_time_col}_et"
+                )
+            else:
+                parsed = pd.to_datetime(
+                    raw_game_time,
+                    errors="coerce",
+                    utc=True,
+                )
+
+                if not pd.isna(
+                    parsed
+                ):
+                    cutoff = (
+                        parsed.to_pydatetime()
+                        .astimezone(
+                            UTC
+                        )
+                    )
+                    source = (
+                        f"schedule:{game_time_col}"
+                    )
+
+        if cutoff is None:
+            cutoff = (
+                conservative_game_date_cutoff_utc(
+                    game_day
+                )
+            )
+            source = (
+                "conservative_game_date_start_et"
+            )
+
+        rows.append(
+            {
+                "game_id": game_id,
+                "game_date": (
+                    game_day.isoformat()
+                ),
+                "home_team": str(
+                    row.get(
+                        home_col,
+                        "",
+                    )
+                ).strip(),
+                "away_team": str(
+                    row.get(
+                        away_col,
+                        "",
+                    )
+                ).strip(),
+                "pregame_cutoff_utc": (
+                    utc_iso(
+                        cutoff
+                    )
+                ),
+                "pregame_cutoff_source": source,
+            }
+        )
+
+    return pd.DataFrame(
+        rows
+    )
+
+
+def strict_historical_ratings_as_of_utc(
+    pregame_cutoff_utc: datetime,
+) -> datetime:
+    return (
+        pregame_cutoff_utc
+        - timedelta(
+            microseconds=1
+        )
     )
 
 
@@ -816,18 +1227,25 @@ def ratings_from_game_rates(
 
 
 
+
 def normalize_team_strength_asof(
     ratings: Any,
     *,
-    game_date: date,
+    schedule: Any,
+    generated_at_utc: datetime,
 ) -> pl.DataFrame:
-    if frame_empty(ratings):
+    if (
+        frame_empty(ratings)
+        or frame_empty(schedule)
+    ):
         return pl.DataFrame()
 
-    pdf = as_pandas(ratings)
+    ratings_pdf = as_pandas(
+        ratings
+    )
 
     team_col = first_col(
-        pdf,
+        ratings_pdf,
         (
             "team",
             "team_abbr",
@@ -844,7 +1262,7 @@ def normalize_team_strength_asof(
     missing = [
         field
         for field in TEAM_STRENGTH_FIELDS
-        if field not in pdf.columns
+        if field not in ratings_pdf.columns
     ]
 
     if missing:
@@ -853,40 +1271,159 @@ def normalize_team_strength_asof(
             f"{missing}"
         )
 
-    out = pd.DataFrame(
-        {
-            "game_date": game_date.isoformat(),
-            "team": (
-                pdf[team_col]
-                .astype(str)
-                .str.strip()
-            ),
-        }
+    games = (
+        schedule_games_with_cutoffs(
+            schedule
+        )
     )
 
-    for field in TEAM_STRENGTH_FIELDS:
-        out[field] = pd.to_numeric(
-            pdf[field],
-            errors="coerce",
+    if games.empty:
+        return pl.DataFrame()
+
+    ratings_pdf = (
+        ratings_pdf.copy()
+    )
+    ratings_pdf[
+        "_team_key"
+    ] = (
+        ratings_pdf[
+            team_col
+        ]
+        .astype(str)
+        .str.strip()
+    )
+
+    ratings_by_team = {
+        str(
+            row[
+                "_team_key"
+            ]
+        ).strip(): row
+        for _, row in ratings_pdf.iterrows()
+        if str(
+            row[
+                "_team_key"
+            ]
+        ).strip()
+    }
+
+    rows: list[
+        dict[str, Any]
+    ] = []
+
+    generated_at_utc = (
+        generated_at_utc.astimezone(
+            UTC
+        )
+    )
+
+    for _, game in games.iterrows():
+        cutoff = parse_timestamp_utc(
+            game.get(
+                "pregame_cutoff_utc",
+                "",
+            )
         )
 
-    if "season" in pdf.columns:
-        out.insert(
-            0,
-            "season",
-            pd.to_numeric(
-                pdf["season"],
-                errors="coerce",
-            ),
-        )
+        if cutoff is None:
+            continue
+
+        # Current snapshots are only valid when they were created
+        # strictly before the target game's pregame cutoff.
+        if generated_at_utc >= cutoff:
+            continue
+
+        for team in (
+            str(
+                game.get(
+                    "home_team",
+                    "",
+                )
+            ).strip(),
+            str(
+                game.get(
+                    "away_team",
+                    "",
+                )
+            ).strip(),
+        ):
+            rating = (
+                ratings_by_team.get(
+                    team
+                )
+            )
+
+            if rating is None:
+                continue
+
+            out = {
+                "game_id": str(
+                    game.get(
+                        "game_id",
+                        "",
+                    )
+                ).strip(),
+                "game_date": str(
+                    game.get(
+                        "game_date",
+                        "",
+                    )
+                ).strip(),
+                "team": team,
+                "pregame_cutoff_utc": (
+                    utc_iso(
+                        cutoff
+                    )
+                ),
+                "ratings_as_of_utc": (
+                    utc_iso(
+                        generated_at_utc
+                    )
+                ),
+                "pregame_cutoff_source": str(
+                    game.get(
+                        "pregame_cutoff_source",
+                        "",
+                    )
+                ).strip(),
+            }
+
+            if "season" in ratings_pdf.columns:
+                out[
+                    "season"
+                ] = pd.to_numeric(
+                    rating.get(
+                        "season"
+                    ),
+                    errors="coerce",
+                )
+
+            for field in (
+                TEAM_STRENGTH_FIELDS
+            ):
+                out[
+                    field
+                ] = pd.to_numeric(
+                    rating.get(
+                        field
+                    ),
+                    errors="coerce",
+                )
+
+            rows.append(
+                out
+            )
+
+    if not rows:
+        return pl.DataFrame()
 
     out = (
-        out.loc[
-            out["team"].ne("")
-        ]
+        pd.DataFrame(
+            rows
+        )
         .drop_duplicates(
             subset=[
-                "game_date",
+                "game_id",
                 "team",
             ],
             keep="last",
@@ -896,7 +1433,9 @@ def normalize_team_strength_asof(
         )
     )
 
-    return pl.from_pandas(out)
+    return pl.from_pandas(
+        out
+    )
 
 
 def historical_team_strength(
@@ -928,47 +1467,64 @@ def historical_team_strength(
     if game_rates.is_empty():
         return pl.DataFrame()
 
-    games = prediction_games(
-        schedule
+    games = (
+        schedule_games_with_cutoffs(
+            schedule
+        )
     )
 
-    if (
-        games.is_empty()
-        or "game_date"
-        not in games.columns
-    ):
+    if games.empty:
         return pl.DataFrame()
 
-    outputs = []
+    outputs: list[
+        pl.DataFrame
+    ] = []
 
-    dates = sorted(
-        {
-            d
-            for d in games[
-                "game_date"
-            ].to_list()
-            if (
-                isinstance(
-                    d,
-                    str,
-                )
-                and d
+    for _, game in games.iterrows():
+        game_id = str(
+            game.get(
+                "game_id",
+                "",
             )
-        }
-    )
+        ).strip()
 
-    for d_str in dates:
+        d_str = str(
+            game.get(
+                "game_date",
+                "",
+            )
+        ).strip()
+
         try:
-            d = date.fromisoformat(
+            game_day = date.fromisoformat(
                 d_str
             )
         except ValueError:
             continue
 
+        cutoff = parse_timestamp_utc(
+            game.get(
+                "pregame_cutoff_utc",
+                "",
+            )
+        )
+
+        if (
+            not game_id
+            or cutoff is None
+        ):
+            continue
+
+        # Historical game rates are date-granular in the SDV helper.
+        # Excluding the entire target date is intentionally conservative:
+        # it guarantees the target game and all later games cannot enter
+        # the reconstructed pregame rating snapshot.
         prior_rates = (
             game_rates.filter(
                 pl.col("date")
-                < pl.lit(d)
+                < pl.lit(
+                    game_day
+                )
             )
         )
 
@@ -984,49 +1540,81 @@ def historical_team_strength(
         if ratings.is_empty():
             continue
 
-        games_day = (
-            games.filter(
-                pl.col("game_date")
-                == d_str
-            )
-        )
-
-        if games_day.is_empty():
-            continue
-
-        teams = sorted(
-            {
-                str(team).strip()
-                for col in (
+        target_teams = [
+            str(
+                game.get(
                     "home_team",
+                    "",
+                )
+            ).strip(),
+            str(
+                game.get(
                     "away_team",
+                    "",
                 )
-                for team in (
-                    games_day[
-                        col
-                    ].to_list()
-                )
-                if str(team).strip()
-            }
-        )
+            ).strip(),
+        ]
 
-        if teams:
+        target_teams = [
+            team
+            for team in target_teams
+            if team
+        ]
+
+        if target_teams:
             ratings = ratings.filter(
                 pl.col("team")
                 .cast(pl.Utf8)
-                .is_in(teams)
+                .is_in(
+                    target_teams
+                )
             )
 
         if ratings.is_empty():
             continue
 
+        ratings_as_of = (
+            strict_historical_ratings_as_of_utc(
+                cutoff
+            )
+        )
+
         outputs.append(
             ratings.with_columns(
+                pl.lit(
+                    game_id
+                ).alias(
+                    "game_id"
+                ),
                 pl.lit(
                     d_str
                 ).alias(
                     "game_date"
-                )
+                ),
+                pl.lit(
+                    utc_iso(
+                        cutoff
+                    )
+                ).alias(
+                    "pregame_cutoff_utc"
+                ),
+                pl.lit(
+                    utc_iso(
+                        ratings_as_of
+                    )
+                ).alias(
+                    "ratings_as_of_utc"
+                ),
+                pl.lit(
+                    str(
+                        game.get(
+                            "pregame_cutoff_source",
+                            "",
+                        )
+                    ).strip()
+                ).alias(
+                    "pregame_cutoff_source"
+                ),
             )
         )
 
@@ -1039,8 +1627,12 @@ def historical_team_strength(
     )
 
     columns = [
+        "game_id",
         "game_date",
         "team",
+        "pregame_cutoff_utc",
+        "ratings_as_of_utc",
+        "pregame_cutoff_source",
         *TEAM_STRENGTH_FIELDS,
     ]
 
@@ -1636,6 +2228,7 @@ def pull_schedule(
     return parsed, parsed
 
 
+
 def pull_team_strength(
     failures: list[str],
     *,
@@ -1644,6 +2237,7 @@ def pull_team_strength(
     season: int,
     prefix: str,
     teams: list[str],
+    schedule: Any,
 ):
     ratings = None
 
@@ -1672,10 +2266,22 @@ def pull_team_strength(
                 "normalize_team_ratings_asof",
                 normalize_team_strength_asof,
                 ratings,
-                game_date=target_date,
+                schedule=schedule,
+                generated_at_utc=datetime.now(
+                    UTC
+                ),
             )
 
             if ratings_asof is not None:
+                if frame_empty(
+                    ratings_asof
+                ):
+                    failures.append(
+                        "team-strength/team_ratings_asof: "
+                        "no current rating row satisfied the strict "
+                        "ratings_as_of_utc < pregame_cutoff_utc rule"
+                    )
+
                 save_object(
                     "team-strength",
                     "team_ratings_asof",
@@ -1770,7 +2376,6 @@ def pull_team_strength(
             )
 
     return ratings
-
 
 def pull_rosters(
     failures: list[str],
@@ -2793,6 +3398,7 @@ def run_one(
             season=season,
             prefix=prefix,
             teams=teams,
+            schedule=relevant_schedule,
         )
 
     rosters: dict[

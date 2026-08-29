@@ -1238,6 +1238,266 @@ def test_historical_team_strength_uses_only_prior_games(
         ),
     ]
 
+
+def _team_strength_ratings_fixture(
+    module,
+):
+    return module.pl.DataFrame(
+        {
+            "season": [
+                2025,
+                2025,
+            ],
+            "team": [
+                "BOS",
+                "NYR",
+            ],
+            "adj_xgf": [
+                3.1,
+                2.8,
+            ],
+            "adj_xga": [
+                2.4,
+                2.9,
+            ],
+            "adj_xg_net": [
+                0.7,
+                -0.1,
+            ],
+            "adj_gf": [
+                3.2,
+                2.7,
+            ],
+            "adj_ga": [
+                2.5,
+                3.0,
+            ],
+            "off_rank": [
+                4,
+                18,
+            ],
+            "def_rank": [
+                6,
+                20,
+            ],
+            "net_rank": [
+                3,
+                19,
+            ],
+            "net_z": [
+                1.25,
+                -0.20,
+            ],
+        }
+    )
+
+
+def test_current_team_strength_accepts_only_snapshot_before_pregame_cutoff() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    ratings = (
+        _team_strength_ratings_fixture(
+            module
+        )
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+            ],
+            "game_date": [
+                "2026-01-01",
+            ],
+            "game_time": [
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+            ],
+        }
+    )
+
+    safe = (
+        module.normalize_team_strength_asof(
+            ratings,
+            schedule=schedule,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                1,
+                22,
+                0,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    assert (
+        safe.height
+        == 2
+    )
+
+    assert set(
+        safe[
+            "game_id"
+        ].to_list()
+    ) == {
+        "2025020001",
+    }
+
+    assert all(
+        value
+        == "2026-01-02T00:00:00Z"
+        for value in safe[
+            "pregame_cutoff_utc"
+        ].to_list()
+    )
+
+    unsafe = (
+        module.normalize_team_strength_asof(
+            ratings,
+            schedule=schedule,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                2,
+                0,
+                0,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    assert unsafe.is_empty()
+
+
+def test_historical_team_strength_stamps_strictly_before_cutoff(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+            ],
+            "season": [
+                2025,
+                2025,
+            ],
+            "game_date": [
+                "2025-10-01",
+                "2025-10-03",
+            ],
+            "game_time": [
+                "19:00",
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+                "NYR",
+            ],
+            "away_team_abbr": [
+                "NYR",
+                "BOS",
+            ],
+            "game_type": [
+                "R",
+                "R",
+            ],
+        }
+    )
+
+    game_rates = module.pl.DataFrame(
+        {
+            "date": [
+                module.date(
+                    2025,
+                    10,
+                    1,
+                ),
+                module.date(
+                    2025,
+                    10,
+                    1,
+                ),
+            ],
+            "team": [
+                "BOS",
+                "NYR",
+            ],
+            "season": [
+                2025,
+                2025,
+            ],
+        }
+    )
+
+    monkeypatch.setattr(
+        module.nhl,
+        "team_game_xg_rates",
+        lambda pbp, rating_schedule: game_rates,
+    )
+
+    monkeypatch.setattr(
+        module,
+        "ratings_from_game_rates",
+        lambda prior_rates: (
+            _team_strength_ratings_fixture(
+                module
+            )
+        ),
+    )
+
+    result = (
+        module.historical_team_strength(
+            schedule,
+            module.pl.DataFrame(
+                {
+                    "fixture": [
+                        1
+                    ]
+                }
+            ),
+        )
+    )
+
+    assert (
+        result.height
+        == 2
+    )
+
+    for row in result.to_dicts():
+        cutoff = (
+            module.parse_timestamp_utc(
+                row[
+                    "pregame_cutoff_utc"
+                ]
+            )
+        )
+        ratings_as_of = (
+            module.parse_timestamp_utc(
+                row[
+                    "ratings_as_of_utc"
+                ]
+            )
+        )
+
+        assert (
+            ratings_as_of
+            < cutoff
+        )
+
+
 # ---------------------------------------------------------------------
 # test_merge_intake.py coverage
 # Regression fixture: SportsDataverse fatigue -> game-level features
@@ -1467,8 +1727,12 @@ def test_merge_intake_builds_game_level_team_strength_features(
     pd.DataFrame(
         [
             {
+                "game_id": "2025020001",
                 "game_date": "2026-01-01",
                 "team": "BOS",
+                "pregame_cutoff_utc": "2026-01-02T00:00:00Z",
+                "ratings_as_of_utc": "2026-01-01T22:00:00Z",
+                "pregame_cutoff_source": "official_nhl_schedule",
                 "adj_xgf": 3.10,
                 "adj_xga": 2.40,
                 "adj_xg_net": 0.70,
@@ -1480,8 +1744,12 @@ def test_merge_intake_builds_game_level_team_strength_features(
                 "net_z": 1.25,
             },
             {
+                "game_id": "2025020001",
                 "game_date": "2026-01-01",
                 "team": "NYR",
+                "pregame_cutoff_utc": "2026-01-02T00:00:00Z",
+                "ratings_as_of_utc": "2026-01-01T22:00:00Z",
+                "pregame_cutoff_source": "official_nhl_schedule",
                 "adj_xgf": 2.80,
                 "adj_xga": 2.90,
                 "adj_xg_net": -0.10,
@@ -1508,7 +1776,9 @@ def test_merge_intake_builds_game_level_team_strength_features(
     features = (
         module.team_strength_features_for_game(
             {
+                "game_id": "2025020001",
                 "game_date": "2026_01_01",
+                "game_time": "19:00",
                 "home_team": "Boston Bruins",
                 "away_team": "New York Rangers",
             },
@@ -1562,6 +1832,127 @@ def test_merge_intake_leaves_missing_team_strength_blank() -> None:
         value == ""
         for value in features.values()
     )
+
+
+
+def test_merge_intake_rejects_team_strength_at_or_after_pregame_cutoff(
+    tmp_path: Path,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    module.TEAM_STRENGTH_DIR = (
+        tmp_path
+        / "team-strength"
+    )
+    module.TEAM_MAP_PATH = (
+        tmp_path
+        / "team_map_nhl.csv"
+    )
+    module.LOG_FILE = (
+        tmp_path
+        / "merge_intake.log"
+    )
+
+    module.TEAM_STRENGTH_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    pd.DataFrame(
+        [
+            {
+                "league": "nhl",
+                "source": "official_nhl",
+                "alias": "Boston Bruins",
+                "canonical_team": "Boston Bruins",
+                "nhl_team_id": "6",
+                "nhl_abbrev": "BOS",
+            },
+        ]
+    ).to_csv(
+        module.TEAM_MAP_PATH,
+        index=False,
+    )
+
+    row = {
+        "game_id": "2025020001",
+        "game_date": "2026-01-01",
+        "team": "BOS",
+        "pregame_cutoff_utc": "2026-01-02T00:00:00Z",
+        "ratings_as_of_utc": "2026-01-02T00:00:00Z",
+        "pregame_cutoff_source": "official_nhl_schedule",
+        "adj_xgf": 3.10,
+        "adj_xga": 2.40,
+        "adj_xg_net": 0.70,
+        "adj_gf": 3.20,
+        "adj_ga": 2.50,
+        "off_rank": 4,
+        "def_rank": 6,
+        "net_rank": 3,
+        "net_z": 1.25,
+    }
+
+    pd.DataFrame(
+        [
+            row
+        ]
+    ).to_csv(
+        (
+            module.TEAM_STRENGTH_DIR
+            / "latest_team_ratings_asof.csv"
+        ),
+        index=False,
+    )
+
+    with pytest.raises(
+        SystemExit
+    ):
+        module.load_team_strength_index()
+
+
+def test_merge_intake_rejects_cutoff_later_than_canonical_game_start() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        (
+            "2025020001",
+            "Boston Bruins",
+        ): {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "team": "Boston Bruins",
+            "pregame_cutoff_utc": "2026-01-02T00:30:00+00:00",
+            "ratings_as_of_utc": "2026-01-01T22:00:00+00:00",
+            "adj_xgf": "3.1",
+            "adj_xga": "2.4",
+            "adj_xg_net": "0.7",
+            "adj_gf": "3.2",
+            "adj_ga": "2.5",
+            "off_rank": "4",
+            "def_rank": "6",
+            "net_rank": "3",
+            "net_z": "1.25",
+            "_source_file": "fixture.csv",
+        },
+    }
+
+    with pytest.raises(
+        SystemExit
+    ):
+        module.team_strength_features_for_game(
+            {
+                "game_id": "2025020001",
+                "game_date": "2026_01_01",
+                "game_time": "19:00",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            index,
+        )
 
 
 # ---------------------------------------------------------------------

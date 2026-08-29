@@ -6,6 +6,7 @@ import re
 import traceback
 from pathlib import Path
 from datetime import datetime, UTC
+from zoneinfo import ZoneInfo
 
 
 BASE_DIR = Path("docs/win/hockey/nhl")
@@ -36,6 +37,7 @@ AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 
 GAME_ID_RE = re.compile(r"^\d{10}$")
 GAME_DATE_RE = re.compile(r"^\d{4}_\d{2}_\d{2}$")
+ET = ZoneInfo("America/New_York")
 
 
 TEAM_STRENGTH_VALUE_COLUMNS = [
@@ -222,8 +224,12 @@ FATIGUE_VALUE_COLUMNS = [
 ]
 
 REQUIRED_TEAM_STRENGTH_COLUMNS = [
+    "game_id",
     "team",
     "game_date",
+    "pregame_cutoff_utc",
+    "ratings_as_of_utc",
+    "pregame_cutoff_source",
     *TEAM_STRENGTH_VALUE_COLUMNS,
 ]
 
@@ -743,6 +749,119 @@ def format_numeric(
     )
 
 
+
+def parse_utc_timestamp(
+    value: str,
+) -> datetime | None:
+    text = str(
+        value or ""
+    ).strip()
+
+    if not text:
+        return None
+
+    try:
+        parsed = datetime.fromisoformat(
+            text.replace(
+                "Z",
+                "+00:00",
+            )
+        )
+    except ValueError:
+        return None
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(
+            tzinfo=UTC
+        )
+
+    return parsed.astimezone(
+        UTC
+    )
+
+
+def canonical_game_cutoff_utc(
+    game: dict[str, str],
+) -> datetime | None:
+    game_date = parse_game_date(
+        str(
+            game.get(
+                "game_date",
+                "",
+            )
+        ).strip()
+    )
+
+    game_time = str(
+        game.get(
+            "game_time",
+            "",
+        )
+    ).strip()
+
+    if (
+        game_date is None
+        or not game_time
+    ):
+        return None
+
+    for fmt in (
+        "%H:%M:%S",
+        "%H:%M",
+    ):
+        try:
+            parsed_time = datetime.strptime(
+                game_time,
+                fmt,
+            ).time()
+            return datetime.combine(
+                game_date,
+                parsed_time,
+                tzinfo=ET,
+            ).astimezone(
+                UTC
+            )
+        except ValueError:
+            continue
+
+    return None
+
+
+def validate_team_strength_timestamp_contract(
+    *,
+    game_id: str,
+    stored_cutoff: datetime,
+    ratings_as_of: datetime,
+    canonical_cutoff: datetime | None,
+    source_file: str,
+) -> None:
+    if not (
+        ratings_as_of
+        < stored_cutoff
+    ):
+        fail(
+            "Unsafe SportsDataverse team-strength timestamp: "
+            f"game_id={game_id} "
+            f"ratings_as_of_utc={ratings_as_of.isoformat()} "
+            f"pregame_cutoff_utc={stored_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if (
+        canonical_cutoff is not None
+        and stored_cutoff
+        > canonical_cutoff
+    ):
+        fail(
+            "SportsDataverse team-strength cutoff exceeds "
+            "canonical NHL game pregame cutoff: "
+            f"game_id={game_id} "
+            f"stored_cutoff_utc={stored_cutoff.isoformat()} "
+            f"canonical_cutoff_utc={canonical_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+
 def load_team_identity_map() -> dict[str, str]:
     if not TEAM_MAP_PATH.exists():
         fail(
@@ -1082,6 +1201,7 @@ def authoritative_team_strength_files() -> list[Path]:
     return files
 
 
+
 def load_team_strength_index() -> dict[
     tuple[str, str],
     dict[str, str],
@@ -1091,13 +1211,13 @@ def load_team_strength_index() -> dict[
     )
 
     log(
-        "SportsDataverse as-of team-strength "
+        "SportsDataverse strict-as-of team-strength "
         f"files found: {len(files)}"
     )
 
     if not files:
         log(
-            "No SportsDataverse as-of team-strength "
+            "No SportsDataverse strict-as-of team-strength "
             "files available; team-strength features "
             "will remain blank."
         )
@@ -1130,6 +1250,13 @@ def load_team_strength_index() -> dict[
             rows,
             start=2,
         ):
+            game_id = str(
+                row.get(
+                    "game_id",
+                    "",
+                )
+            ).strip()
+
             game_date = (
                 normalize_fatigue_date(
                     row.get(
@@ -1159,6 +1286,15 @@ def load_team_strength_index() -> dict[
                 )
             )
 
+            if not GAME_ID_RE.fullmatch(
+                game_id
+            ):
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid team-strength "
+                    f"game_id={game_id!r}"
+                )
+
             if not game_date:
                 fail(
                     f"{path} row {row_number} "
@@ -1174,9 +1310,66 @@ def load_team_strength_index() -> dict[
                     f"team={team_raw!r}"
                 )
 
+            stored_cutoff = (
+                parse_utc_timestamp(
+                    row.get(
+                        "pregame_cutoff_utc",
+                        "",
+                    )
+                )
+            )
+
+            ratings_as_of = (
+                parse_utc_timestamp(
+                    row.get(
+                        "ratings_as_of_utc",
+                        "",
+                    )
+                )
+            )
+
+            if stored_cutoff is None:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid pregame_cutoff_utc="
+                    f"{row.get('pregame_cutoff_utc', '')!r}"
+                )
+
+            if ratings_as_of is None:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid ratings_as_of_utc="
+                    f"{row.get('ratings_as_of_utc', '')!r}"
+                )
+
+            if not (
+                ratings_as_of
+                < stored_cutoff
+            ):
+                fail(
+                    "Unsafe SportsDataverse team-strength "
+                    "row: ratings_as_of_utc must be "
+                    "strictly earlier than pregame_cutoff_utc "
+                    f"path={path} row={row_number} "
+                    f"game_id={game_id}"
+                )
+
             normalized = {
+                "game_id": game_id,
                 "team": canonical_team,
                 "game_date": game_date,
+                "pregame_cutoff_utc": (
+                    stored_cutoff.isoformat()
+                ),
+                "ratings_as_of_utc": (
+                    ratings_as_of.isoformat()
+                ),
+                "pregame_cutoff_source": str(
+                    row.get(
+                        "pregame_cutoff_source",
+                        "",
+                    )
+                ).strip(),
                 "_source_file": str(
                     path
                 ),
@@ -1195,7 +1388,7 @@ def load_team_strength_index() -> dict[
                 ).strip()
 
             key = (
-                game_date,
+                game_id,
                 canonical_team,
             )
 
@@ -1204,13 +1397,20 @@ def load_team_strength_index() -> dict[
             )
 
             if prior is not None:
+                compare_fields = [
+                    "game_date",
+                    "pregame_cutoff_utc",
+                    "ratings_as_of_utc",
+                    *TEAM_STRENGTH_VALUE_COLUMNS,
+                ]
+
                 prior_values = {
                     field: prior.get(
                         field,
                         "",
                     )
                     for field
-                    in TEAM_STRENGTH_VALUE_COLUMNS
+                    in compare_fields
                 }
 
                 new_values = {
@@ -1219,7 +1419,7 @@ def load_team_strength_index() -> dict[
                         "",
                     )
                     for field
-                    in TEAM_STRENGTH_VALUE_COLUMNS
+                    in compare_fields
                 }
 
                 if (
@@ -1229,7 +1429,7 @@ def load_team_strength_index() -> dict[
                     fail(
                         "Conflicting SportsDataverse "
                         "team-strength rows for "
-                        f"game_date={game_date} "
+                        f"game_id={game_id} "
                         f"team={canonical_team}: "
                         f"{prior.get('_source_file', '')} "
                         f"vs {path}"
@@ -1245,11 +1445,10 @@ def load_team_strength_index() -> dict[
         log(
             f"Loaded team-strength file: "
             f"{path} ({loaded_rows} "
-            "unique rows)"
+            "unique strict-as-of rows)"
         )
 
     return index
-
 
 def numeric_difference(
     home_value: str,
@@ -1267,6 +1466,7 @@ def numeric_difference(
         return ""
 
 
+
 def team_strength_features_for_game(
     game: dict[str, str],
     team_strength_index: dict[
@@ -1274,6 +1474,13 @@ def team_strength_features_for_game(
         dict[str, str],
     ],
 ) -> dict[str, str]:
+    game_id = str(
+        game.get(
+            "game_id",
+            "",
+        )
+    ).strip()
+
     game_date = (
         normalize_fatigue_date(
             game.get(
@@ -1299,7 +1506,7 @@ def team_strength_features_for_game(
 
     home = team_strength_index.get(
         (
-            game_date,
+            game_id,
             home_team,
         ),
         {},
@@ -1307,11 +1514,85 @@ def team_strength_features_for_game(
 
     away = team_strength_index.get(
         (
-            game_date,
+            game_id,
             away_team,
         ),
         {},
     )
+
+    canonical_cutoff = (
+        canonical_game_cutoff_utc(
+            game
+        )
+    )
+
+    for side, row in (
+        (
+            "home",
+            home,
+        ),
+        (
+            "away",
+            away,
+        ),
+    ):
+        if not row:
+            continue
+
+        if (
+            row.get(
+                "game_date",
+                "",
+            )
+            != game_date
+        ):
+            fail(
+                "SportsDataverse team-strength "
+                "game_date mismatch: "
+                f"game_id={game_id} side={side} "
+                f"ratings_game_date={row.get('game_date', '')} "
+                f"canonical_game_date={game_date}"
+            )
+
+        stored_cutoff = (
+            parse_utc_timestamp(
+                row.get(
+                    "pregame_cutoff_utc",
+                    "",
+                )
+            )
+        )
+        ratings_as_of = (
+            parse_utc_timestamp(
+                row.get(
+                    "ratings_as_of_utc",
+                    "",
+                )
+            )
+        )
+
+        if (
+            stored_cutoff is None
+            or ratings_as_of is None
+        ):
+            fail(
+                "SportsDataverse team-strength row "
+                "missing valid strict-as-of timestamps: "
+                f"game_id={game_id} side={side}"
+            )
+
+        validate_team_strength_timestamp_contract(
+            game_id=game_id,
+            stored_cutoff=stored_cutoff,
+            ratings_as_of=ratings_as_of,
+            canonical_cutoff=canonical_cutoff,
+            source_file=str(
+                row.get(
+                    "_source_file",
+                    "",
+                )
+            ),
+        )
 
     features: dict[
         str,

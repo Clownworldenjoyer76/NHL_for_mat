@@ -1,17 +1,17 @@
 pipeline:
   name: nhl
-  schema_version: 4
+  schema_version: 5
   schema_created_at: "2026-08-29"
   schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
   "00_intake":
-    version: 2
+    version: 3
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
-    version: 3
+    version: 4
     path: "docs/win/hockey/nhl/01_merge"
 
   "02_juice":
@@ -205,8 +205,16 @@ prediction_model:
     producer_script: "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
     merge_script: "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
     join_identity:
-      - "game_date"
+      - "game_id"
       - "canonical_team"
+    timestamp_fields:
+      pregame_cutoff_utc:
+        definition: "Strict upper bound for information allowed in the reconstructed team-strength snapshot."
+        comparison: "ratings_as_of_utc < pregame_cutoff_utc"
+      ratings_as_of_utc:
+        definition: "Timestamp of the current snapshot or reconstructed historical as-of instant."
+      pregame_cutoff_source:
+        definition: "Provenance for the cutoff timestamp; official NHL schedule is preferred and conservative game-date start is used only as a safe fallback."
     source_fields:
       - "adj_xgf"
       - "adj_xga"
@@ -247,9 +255,11 @@ prediction_model:
       - "net_z_differential"
     differential_definition: "home value - away value for each source field"
     as_of_rules:
-      current: "Use SportsDataverse team ratings requested with as_of_date equal to the target game date."
-      historical: "For each target game date, calculate ratings only from team game rates with date strictly less than the target game date."
-      forbidden: "Do not use full-season or postgame team ratings as historical pregame features."
+      strict_comparison: "ratings_as_of_utc must be strictly less than pregame_cutoff_utc."
+      current: "Create a team-strength row only when the snapshot generation timestamp is strictly before that game's pregame cutoff. Rows generated at or after the cutoff are not eligible."
+      historical: "Reconstruct each game's ratings only from SportsDataverse team game rates with source game date strictly earlier than the target game date, then stamp the reconstructed snapshot strictly before that game's pregame cutoff."
+      canonical_validation: "Stage 01 derives the canonical game cutoff from game_date + game_time in America/New_York and rejects any stored pregame_cutoff_utc later than the canonical game start."
+      forbidden: "Do not use the target game, any later game, a full-season rating, a postgame rating, or any team-strength row where ratings_as_of_utc is at or after pregame_cutoff_utc."
     propagation:
       - "01_merge merged output"
       - "01_merge/01_merguiced moneyline output"
