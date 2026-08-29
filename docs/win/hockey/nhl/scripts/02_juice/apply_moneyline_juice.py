@@ -19,6 +19,24 @@ JUICE_FILE = BASE_DIR / "config" / "juice" / "nhl_moneyline_juice.csv"
 ERROR_DIR = BASE_DIR / "errors" / "02_juice"
 LOG_FILE = ERROR_DIR / "apply_moneyline_juice.txt"
 
+FATIGUE_FEATURE_COLUMNS = [
+    "home_days_rest",
+    "away_days_rest",
+    "home_back_to_back",
+    "away_back_to_back",
+    "home_games_in_4_days",
+    "away_games_in_4_days",
+    "home_three_in_four",
+    "away_three_in_four",
+    "home_games_in_6_days",
+    "away_games_in_6_days",
+    "home_four_in_six",
+    "away_four_in_six",
+    "home_games_in_7_days",
+    "away_games_in_7_days",
+    "rest_differential",
+]
+
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -31,6 +49,7 @@ REQUIRED_INPUT_COLUMNS = [
     "game_id",
     "away_team",
     "home_team",
+    *FATIGUE_FEATURE_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_fair_decimal_moneyline",
@@ -244,6 +263,7 @@ def process_file(
     df = original_df.copy()
 
     for col in [
+        *FATIGUE_FEATURE_COLUMNS,
         "away_prob_moneyline",
         "home_prob_moneyline",
         "away_fair_decimal_moneyline",

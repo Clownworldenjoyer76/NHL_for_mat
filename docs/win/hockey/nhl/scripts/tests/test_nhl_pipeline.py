@@ -38,6 +38,7 @@ CORE_PATHS = [
     "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py",
     "docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py",
     "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py",
+    "docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py",
     "docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py",
     "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
     "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
@@ -55,6 +56,36 @@ JUICE_CONFIG_PATHS = [
     NHL_ROOT / "config" / "juice" / "nhl_puck_line_juice.csv",
     NHL_ROOT / "config" / "juice" / "nhl_total_juice.csv",
 ]
+
+
+FATIGUE_FEATURE_VALUES = {
+    "home_days_rest": 2,
+    "away_days_rest": 1,
+    "home_back_to_back": 0,
+    "away_back_to_back": 1,
+    "home_games_in_4_days": 2,
+    "away_games_in_4_days": 3,
+    "home_three_in_four": 0,
+    "away_three_in_four": 1,
+    "home_games_in_6_days": 3,
+    "away_games_in_6_days": 4,
+    "home_four_in_six": 0,
+    "away_four_in_six": 1,
+    "home_games_in_7_days": 3,
+    "away_games_in_7_days": 4,
+    "rest_differential": 1,
+}
+
+
+def assert_fatigue_features_preserved(
+    row: pd.Series,
+) -> None:
+    for column, expected in FATIGUE_FEATURE_VALUES.items():
+        assert column in row.index
+        assert float(row[column]) == pytest.approx(
+            float(expected),
+            abs=1e-12,
+        )
 
 
 def load_repo_module(relative_path: str):
@@ -1125,11 +1156,31 @@ def test_merge_intake_leaves_missing_fatigue_blank() -> None:
 
 # ---------------------------------------------------------------------
 # test_build_juice_files.py coverage
-#
-# The current repository has no build_juice_files.py. The checked-in
-# Stage 02 source of truth is the three juice config CSVs plus
-# validate_juice_config.py. These tests validate that build/output contract.
+# Regression fixture: fatigue features survive Stage 01 market split
 # ---------------------------------------------------------------------
+
+def test_build_juice_files_preserves_fatigue_features_in_all_markets() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py"
+    )
+
+    expected = set(
+        FATIGUE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.MERGED_REQUIRED_COLUMNS
+    )
+    assert expected.issubset(
+        module.MONEYLINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.PUCK_LINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.TOTAL_COLUMNS
+    )
+
 
 def test_stage02_juice_config_outputs_exist_and_have_calibration_adjustment() -> None:
     for path in JUICE_CONFIG_PATHS:
@@ -1318,6 +1369,7 @@ def test_moneyline_juice_application_normalizes_probabilities(
             "home_team": (
                 "Boston Bruins"
             ),
+            **FATIGUE_FEATURE_VALUES,
             "away_prob_moneyline": 0.55,
             "home_prob_moneyline": 0.45,
             "away_fair_decimal_moneyline": (
@@ -1388,6 +1440,10 @@ def test_moneyline_juice_application_normalizes_probabilities(
     output = pd.read_csv(
         module.OUTPUT_DIR
         / input_path.name
+    )
+
+    assert_fatigue_features_preserved(
+        output.iloc[0]
     )
 
     away = float(
@@ -1462,6 +1518,7 @@ def test_puck_line_juice_application_normalizes_probabilities(
             "home_team": (
                 "Boston Bruins"
             ),
+            **FATIGUE_FEATURE_VALUES,
             "away_puck_line": -1.5,
             "home_puck_line": 1.5,
             "away_prob_puck_line": 0.52,
@@ -1528,6 +1585,10 @@ def test_puck_line_juice_application_normalizes_probabilities(
     output = pd.read_csv(
         module.OUTPUT_DIR
         / input_path.name
+    )
+
+    assert_fatigue_features_preserved(
+        output.iloc[0]
     )
 
     away = float(
@@ -1602,6 +1663,7 @@ def test_total_juice_application_normalizes_probabilities(
             "home_team": (
                 "Boston Bruins"
             ),
+            **FATIGUE_FEATURE_VALUES,
             "total": 6.5,
             "total_projected_goals": 6.3,
             "over_prob_total": 0.48,
@@ -1668,6 +1730,10 @@ def test_total_juice_application_normalizes_probabilities(
         / input_path.name
     )
 
+    assert_fatigue_features_preserved(
+        output.iloc[0]
+    )
+
     over = float(
         output.loc[
             0,
@@ -1721,6 +1787,33 @@ def test_total_juice_application_normalizes_probabilities(
         ),
     ],
 )
+
+@pytest.mark.parametrize(
+    "relative_path",
+    [
+        "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
+    ],
+)
+def test_apply_juice_scripts_preserve_fatigue_feature_contract(
+    relative_path: str,
+) -> None:
+    module = load_repo_module(
+        relative_path
+    )
+
+    expected = set(
+        FATIGUE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.REQUIRED_INPUT_COLUMNS
+    )
+    assert expected.issubset(
+        module.OUTPUT_COLUMNS
+    )
+
 def test_apply_juice_scripts_use_model_calibration_adjustment(
     relative_path: str,
     config_filename: str,
