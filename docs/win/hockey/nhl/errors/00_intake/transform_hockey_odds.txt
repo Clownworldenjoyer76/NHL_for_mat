@@ -1,27 +1,12 @@
-=== transform_hockey_odds RUN 2026-06-15T05:25:32.512845-04:00 ===
-2026-06-15T05:25:32.513129-04:00 | Odds input directory: docs/win/hockey/nhl/odds
-2026-06-15T05:25:32.513163-04:00 | JSON files found: 6
-2026-06-15T05:25:32.513241-04:00 | READ docs/win/hockey/nhl/odds/2026_06_10.json | events=0 | odds=0 | rows_built=0 | warnings=0
-2026-06-15T05:25:32.513681-04:00 | READ docs/win/hockey/nhl/odds/2026_06_11.json | events=1 | odds=1 | rows_built=1 | warnings=0
-2026-06-15T05:25:32.513755-04:00 | READ docs/win/hockey/nhl/odds/2026_06_12.json | events=0 | odds=0 | rows_built=0 | warnings=0
-2026-06-15T05:25:32.513813-04:00 | READ docs/win/hockey/nhl/odds/2026_06_13.json | events=0 | odds=0 | rows_built=0 | warnings=0
-2026-06-15T05:25:32.514221-04:00 | READ docs/win/hockey/nhl/odds/2026_06_14.json | events=1 | odds=1 | rows_built=1 | warnings=0
-2026-06-15T05:25:32.514291-04:00 | READ docs/win/hockey/nhl/odds/2026_06_15.json | events=0 | odds=0 | rows_built=0 | warnings=0
-2026-06-15T05:25:32.522041-04:00 | WROTE docs/win/hockey/nhl/00_intake/sportsbook/NHL_2026_06_11.csv rows=1
-2026-06-15T05:25:32.522281-04:00 | WROTE docs/win/hockey/nhl/00_intake/sportsbook/NHL_2026_06_14.csv rows=1
-2026-06-15T05:25:32.522338-04:00 | Spread rows selected by abs(hdp)==1.5: 2
-2026-06-15T05:25:32.522380-04:00 | Totals rows selected by closest over/under odds within 4.5-7.5: 2
-2026-06-15T05:25:32.522401-04:00 | --- SUMMARY ---
-2026-06-15T05:25:32.522421-04:00 | JSON files processed: 6
-2026-06-15T05:25:32.522439-04:00 | Events found: 2
-2026-06-15T05:25:32.522458-04:00 | Odds payloads found: 2
-2026-06-15T05:25:32.522476-04:00 | Rows built: 2
-2026-06-15T05:25:32.522494-04:00 | Rows added: 0
-2026-06-15T05:25:32.522512-04:00 | Rows updated: 0
-2026-06-15T05:25:32.522530-04:00 | Rows unchanged: 2
-2026-06-15T05:25:32.522548-04:00 | Rows preserved due to non-pending status: 0
-2026-06-15T05:25:32.522567-04:00 | Rows skipped non-pending with no existing row: 0
-2026-06-15T05:25:32.522586-04:00 | CSV files written: 2
-2026-06-15T05:25:32.522605-04:00 | Warnings: 0
-2026-06-15T05:25:32.522624-04:00 | Errors: 0
-2026-06-15T05:25:32.522645-04:00 | STATUS: SUCCESS
+=== transform_hockey_odds RUN 2026-08-29T08:24:15.133211-04:00 ===
+2026-08-29T08:24:15.134175-04:00 | Odds input directory: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds
+2026-08-29T08:24:15.134501-04:00 | JSON files found: 1
+2026-08-29T08:24:15.135229-04:00 | READ C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds\2026_08_29.json | events=0 | provider_rows=0
+2026-08-29T08:24:15.135622-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
+2026-08-29T08:24:15.135993-04:00 | Live Odds providers excluded from production selection
+2026-08-29T08:24:15.136471-04:00 | --- SUMMARY ---
+2026-08-29T08:24:15.136804-04:00 | events_found: 0
+2026-08-29T08:24:15.137123-04:00 | json_files_processed: 1
+2026-08-29T08:24:15.137452-04:00 | odds_provider_rows_found: 0
+2026-08-29T08:24:15.137807-04:00 | STATUS: SUCCESS
+2026-08-29T08:29:44.823541-04:00 | WARNING sportsbook_event_id=401688202 no usable puck_line from any non-live ESPN provider

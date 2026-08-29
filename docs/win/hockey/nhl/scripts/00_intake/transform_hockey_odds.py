@@ -1,29 +1,70 @@
 #!/usr/bin/env python3
-# hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+# docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+
+from __future__ import annotations
 
 import csv
 import json
+import math
 import traceback
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-BOOKMAKER = "FanDuel"
-ET = ZoneInfo("America/New_York")
+
+ET = ZoneInfo(
+    "America/New_York"
+)
 
 TOTAL_MIN = 5.5
 TOTAL_MAX = 7.5
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = (
+    Path(__file__)
+    .resolve()
+    .parents[2]
+)
 
-ODDS_DIR = BASE_DIR / "odds"
-SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
-ERROR_DIR = BASE_DIR / "errors" / "00_intake"
-LOG_FILE = ERROR_DIR / "transform_hockey_odds.txt"
+ODDS_DIR = (
+    BASE_DIR
+    / "odds"
+)
 
-SPORTSBOOK_DIR.mkdir(parents=True, exist_ok=True)
-ERROR_DIR.mkdir(parents=True, exist_ok=True)
+SPORTSBOOK_DIR = (
+    BASE_DIR
+    / "00_intake"
+    / "sportsbook"
+)
+
+ERROR_DIR = (
+    BASE_DIR
+    / "errors"
+    / "00_intake"
+)
+
+LOG_FILE = (
+    ERROR_DIR
+    / "transform_hockey_odds.txt"
+)
+
+SPORTSBOOK_DIR.mkdir(
+    parents=True,
+    exist_ok=True,
+)
+
+ERROR_DIR.mkdir(
+    parents=True,
+    exist_ok=True,
+)
+
+PROVIDER_PRIORITY = [
+    "Titanbets",
+    "MGM",
+    "Bet365",
+    "Caesars Sportsbook",
+    "SugarHouse",
+]
 
 FIELDS = [
     "sportsbook_event_id",
@@ -48,547 +89,1486 @@ FIELDS = [
     "away_dk_puck_line_decimal",
     "dk_total_over_decimal",
     "dk_total_under_decimal",
+    "odds_source",
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+    "total_provider_id",
+    "total_provider_name",
+    "pulled_at",
 ]
 
 
 def reset_log() -> None:
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(f"=== transform_hockey_odds RUN {datetime.now(ET).isoformat()} ===\n")
+    with open(
+        LOG_FILE,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            f"=== transform_hockey_odds RUN "
+            f"{datetime.now(ET).isoformat()} ===\n"
+        )
 
 
-def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.now(ET).isoformat()} | {msg}\n")
+def log(
+    msg: str,
+) -> None:
+    with open(
+        LOG_FILE,
+        "a",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            f"{datetime.now(ET).isoformat()} "
+            f"| {msg}\n"
+        )
 
 
-def decimal_to_american(value) -> str:
+def blank(
+    value,
+) -> bool:
+    if value is None:
+        return True
+
+    return (
+        str(value)
+        .strip()
+        .lower()
+        in {
+            "",
+            "none",
+            "null",
+            "nan",
+            "n/a",
+        }
+    )
+
+
+def numeric(
+    value,
+) -> float | None:
+    if blank(
+        value
+    ):
+        return None
+
     try:
-        dec = float(value)
-        if dec <= 1:
-            return ""
-        if dec >= 2:
-            return f"+{round((dec - 1) * 100)}"
-        return str(round(-100 / (dec - 1)))
+        out = float(
+            value
+        )
     except Exception:
+        return None
+
+    if (
+        math.isnan(out)
+        or math.isinf(out)
+    ):
+        return None
+
+    return out
+
+
+def clean_line(
+    value,
+) -> str:
+    number = numeric(
+        value
+    )
+
+    if number is None:
         return ""
 
+    if number.is_integer():
+        return str(
+            int(number)
+        )
 
-def clean_decimal(value) -> str:
-    if value in ("", None, "N/A"):
+    return str(
+        number
+    )
+
+
+def clean_american(
+    value,
+) -> str:
+    number = numeric(
+        value
+    )
+
+    if (
+        number is None
+        or number == 0
+    ):
         return ""
-    return str(value).strip()
+
+    rounded = int(
+        round(number)
+    )
+
+    if rounded > 0:
+        return f"+{rounded}"
+
+    return str(
+        rounded
+    )
 
 
-def clean_line(value) -> str:
-    if value in ("", None, "N/A"):
+def clean_decimal(
+    value,
+) -> str:
+    number = numeric(
+        value
+    )
+
+    if (
+        number is None
+        or number <= 1
+    ):
         return ""
 
-    try:
-        v = float(value)
-        if v.is_integer():
-            return str(int(v))
-        return str(v)
-    except Exception:
-        return str(value).strip()
+    return (
+        f"{number:.6f}"
+        .rstrip("0")
+        .rstrip(".")
+    )
 
 
-def to_et_date_time(date_str: str) -> tuple[str, str]:
+def american_to_decimal(
+    value,
+) -> str:
+    number = numeric(
+        value
+    )
+
+    if (
+        number is None
+        or number == 0
+    ):
+        return ""
+
+    if number > 0:
+        dec = (
+            1.0
+            + (
+                number
+                / 100.0
+            )
+        )
+    else:
+        dec = (
+            1.0
+            + (
+                100.0
+                / abs(number)
+            )
+        )
+
+    return clean_decimal(
+        dec
+    )
+
+
+def first_value(
+    row: dict,
+    *keys: str,
+):
+    for key in keys:
+        value = row.get(
+            key
+        )
+
+        if not blank(
+            value
+        ):
+            return value
+
+    return ""
+
+
+def to_et_date_time(
+    date_str: str,
+) -> tuple[
+    str,
+    str,
+]:
     if not date_str:
         return "", ""
 
     try:
-        dt = datetime.fromisoformat(str(date_str).replace("Z", "+00:00"))
-        dt_et = dt.astimezone(ET)
-        return dt_et.strftime("%Y_%m_%d"), dt_et.strftime("%H:%M")
+        dt = datetime.fromisoformat(
+            str(
+                date_str
+            ).replace(
+                "Z",
+                "+00:00",
+            )
+        )
+
+        if dt.tzinfo is None:
+            dt = dt.replace(
+                tzinfo=ET
+            )
+
+        dt_et = dt.astimezone(
+            ET
+        )
+
+        return (
+            dt_et.strftime(
+                "%Y_%m_%d"
+            ),
+            dt_et.strftime(
+                "%H:%M"
+            ),
+        )
+
     except Exception:
         return "", ""
 
 
-def get_status(event: dict, odds_payload: dict) -> str:
-    return str(odds_payload.get("status") or event.get("status") or "").strip().lower()
-
-
-def get_markets(odds_payload: dict) -> list:
-    bookmakers = odds_payload.get("bookmakers", {})
-    if not isinstance(bookmakers, dict):
-        return []
-
-    markets = bookmakers.get(BOOKMAKER, [])
-    if not isinstance(markets, list):
-        return []
-
-    return markets
-
-
-def find_market(markets: list, market_name: str) -> dict:
-    wanted = market_name.strip().lower()
-
-    for market in markets:
-        if str(market.get("name", "")).strip().lower() == wanted:
-            return market
-
-    return {}
-
-
-def parse_moneyline(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
-    market = find_market(markets, "ML")
-    odds = market.get("odds", [])
-
-    if not isinstance(odds, list) or not odds or not isinstance(odds[0], dict):
-        counters["warnings"] += 1
-        log(f"WARNING sportsbook_event_id={sportsbook_event_id} missing ML market")
-        return {
-            "home_decimal": "",
-            "away_decimal": "",
-            "home_american": "",
-            "away_american": "",
-        }
-
-    row = odds[0]
-    home_decimal = clean_decimal(row.get("home", ""))
-    away_decimal = clean_decimal(row.get("away", ""))
-
-    return {
-        "home_decimal": home_decimal,
-        "away_decimal": away_decimal,
-        "home_american": decimal_to_american(home_decimal),
-        "away_american": decimal_to_american(away_decimal),
-    }
-
-
-def pick_standard_puck_line_row(rows: list) -> dict:
-    valid = [row for row in rows if isinstance(row, dict)]
-
-    for row in valid:
-        try:
-            if abs(float(row.get("hdp"))) == 1.5:
-                return row
-        except Exception:
-            continue
-
-    return {}
-
-
-def parse_spread(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
-    market = find_market(markets, "Spread")
-    odds = market.get("odds", [])
-
-    if not isinstance(odds, list):
-        odds = []
-
-    row = pick_standard_puck_line_row(odds)
-
-    if not row:
-        counters["warnings"] += 1
-        log(
-            f"WARNING sportsbook_event_id={sportsbook_event_id} "
-            "no Spread row with abs(hdp)==1.5"
+def get_status(
+    event: dict,
+) -> str:
+    return str(
+        event.get(
+            "status",
+            "",
         )
-        return {
-            "home_line": "",
-            "away_line": "",
-            "home_decimal": "",
-            "away_decimal": "",
-            "home_american": "",
-            "away_american": "",
-        }
-
-    try:
-        hdp = float(row.get("hdp"))
-
-        if hdp > 0:
-            home_line = abs(hdp)
-            away_line = -abs(hdp)
-            home_decimal = clean_decimal(row.get("home", ""))
-            away_decimal = clean_decimal(row.get("away", ""))
-        else:
-            home_line = -abs(hdp)
-            away_line = abs(hdp)
-            home_decimal = clean_decimal(row.get("home", ""))
-            away_decimal = clean_decimal(row.get("away", ""))
-
-        counters["spread_1_5_selected"] += 1
-
-    except Exception:
-        counters["warnings"] += 1
-        log(f"WARNING sportsbook_event_id={sportsbook_event_id} invalid Spread row")
-        home_line = ""
-        away_line = ""
-        home_decimal = ""
-        away_decimal = ""
-
-    return {
-        "home_line": clean_line(home_line),
-        "away_line": clean_line(away_line),
-        "home_decimal": home_decimal,
-        "away_decimal": away_decimal,
-        "home_american": decimal_to_american(home_decimal),
-        "away_american": decimal_to_american(away_decimal),
-    }
+    ).strip().lower()
 
 
-def pick_total_row_closest_odds(rows: list) -> dict:
-    valid = [row for row in rows if isinstance(row, dict)]
-    candidates = []
-
-    for index, row in enumerate(valid):
-        try:
-            hdp = float(row.get("hdp"))
-
-            if hdp < TOTAL_MIN or hdp > TOTAL_MAX:
-                continue
-
-            over = float(row.get("over"))
-            under = float(row.get("under"))
-
-            if over <= 1 or under <= 1:
-                continue
-
-            candidates.append((abs(over - under), index, row))
-
-        except Exception:
-            continue
-
-    if not candidates:
-        return {}
-
-    candidates.sort(key=lambda item: (item[0], item[1]))
-    return candidates[0][2]
-
-
-def parse_totals(sportsbook_event_id: str, markets: list, counters: dict) -> dict:
-    market = find_market(markets, "Totals")
-    odds = market.get("odds", [])
-
-    if not isinstance(odds, list):
-        odds = []
-
-    row = pick_total_row_closest_odds(odds)
-
-    if not row:
-        counters["warnings"] += 1
-        log(
-            f"WARNING sportsbook_event_id={sportsbook_event_id} no valid Totals row with "
-            f"{TOTAL_MIN} <= hdp <= {TOTAL_MAX} and numeric over/under odds"
+def provider_name(
+    row: dict,
+) -> str:
+    return str(
+        row.get(
+            "provider_name",
+            "",
         )
-        return {
-            "total": "",
-            "over_decimal": "",
-            "under_decimal": "",
-            "over_american": "",
-            "under_american": "",
-        }
-
-    over_decimal = clean_decimal(row.get("over", ""))
-    under_decimal = clean_decimal(row.get("under", ""))
-
-    counters["total_closest_selected"] += 1
-
-    return {
-        "total": clean_line(row.get("hdp", "")),
-        "over_decimal": over_decimal,
-        "under_decimal": under_decimal,
-        "over_american": decimal_to_american(over_decimal),
-        "under_american": decimal_to_american(under_decimal),
-    }
+    ).strip()
 
 
-def build_row(event: dict, odds_payload: dict, counters: dict) -> dict:
-    sportsbook_event_id = str(odds_payload.get("id") or event.get("id") or "").strip()
-
-    markets = get_markets(odds_payload)
-    if not markets:
-        counters["warnings"] += 1
-        log(
-            f"WARNING sportsbook_event_id={sportsbook_event_id} "
-            f"missing {BOOKMAKER} bookmaker"
+def provider_id(
+    row: dict,
+) -> str:
+    return str(
+        row.get(
+            "provider_id",
+            "",
         )
+    ).strip()
 
-    moneyline = parse_moneyline(sportsbook_event_id, markets, counters)
-    spread = parse_spread(sportsbook_event_id, markets, counters)
-    totals = parse_totals(sportsbook_event_id, markets, counters)
 
-    home_team = str(odds_payload.get("home") or event.get("home") or "").strip()
-    away_team = str(odds_payload.get("away") or event.get("away") or "").strip()
+def is_live_provider(
+    row: dict,
+) -> bool:
+    return (
+        "live odds"
+        in provider_name(
+            row
+        ).lower()
+    )
 
-    game_date, game_time = to_et_date_time(
-        str(odds_payload.get("date") or event.get("date") or "")
+
+def provider_group_rank(
+    row: dict,
+) -> int:
+    name = (
+        provider_name(
+            row
+        ).lower()
+    )
+
+    if name == "titanbets":
+        return 0
+
+    if name == "mgm":
+        return 1
+
+    if name == "bet365":
+        return 2
+
+    if name.startswith(
+        "caesars sportsbook"
+    ):
+        return 3
+
+    if name == "sugarhouse":
+        return 4
+
+    return 5
+
+
+def provider_priority_value(
+    row: dict,
+) -> int:
+    value = numeric(
+        row.get(
+            "provider_priority"
+        )
+    )
+
+    if value is None:
+        return 999999
+
+    return int(
+        value
+    )
+
+
+def ordered_provider_rows(
+    rows: list[dict],
+) -> list[dict]:
+    usable = [
+        row
+        for row in rows
+        if (
+            isinstance(
+                row,
+                dict,
+            )
+            and not is_live_provider(
+                row
+            )
+        )
+    ]
+
+    return sorted(
+        usable,
+        key=lambda row: (
+            provider_group_rank(
+                row
+            ),
+            provider_priority_value(
+                row
+            ),
+            provider_name(
+                row
+            ).lower(),
+            provider_id(
+                row
+            ),
+        ),
+    )
+
+
+def moneyline_from_provider(
+    row: dict,
+) -> dict | None:
+    home_american = (
+        clean_american(
+            first_value(
+                row,
+                "home_team_odds_current_money_line_american",
+                "home_team_odds_money_line",
+            )
+        )
+    )
+
+    away_american = (
+        clean_american(
+            first_value(
+                row,
+                "away_team_odds_current_money_line_american",
+                "away_team_odds_money_line",
+            )
+        )
+    )
+
+    if (
+        not home_american
+        or not away_american
+    ):
+        return None
+
+    home_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "home_team_odds_current_money_line_decimal",
+            )
+        )
+        or american_to_decimal(
+            home_american
+        )
+    )
+
+    away_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "away_team_odds_current_money_line_decimal",
+            )
+        )
+        or american_to_decimal(
+            away_american
+        )
     )
 
     return {
-        "sportsbook_event_id": sportsbook_event_id,
-        "sport": "hockey",
-        "league": "nhl",
-        "game_date": game_date,
-        "game_time": game_time,
-        "home_team": home_team,
-        "away_team": away_team,
-        "home_dk_moneyline_american": moneyline["home_american"],
-        "away_dk_moneyline_american": moneyline["away_american"],
-        "home_puck_line": spread["home_line"],
-        "away_puck_line": spread["away_line"],
-        "total": totals["total"],
-        "home_dk_puck_line_american": spread["home_american"],
-        "away_dk_puck_line_american": spread["away_american"],
-        "dk_total_over_american": totals["over_american"],
-        "dk_total_under_american": totals["under_american"],
-        "home_dk_moneyline_decimal": moneyline["home_decimal"],
-        "away_dk_moneyline_decimal": moneyline["away_decimal"],
-        "home_dk_puck_line_decimal": spread["home_decimal"],
-        "away_dk_puck_line_decimal": spread["away_decimal"],
-        "dk_total_over_decimal": totals["over_decimal"],
-        "dk_total_under_decimal": totals["under_decimal"],
+        "home_american": (
+            home_american
+        ),
+        "away_american": (
+            away_american
+        ),
+        "home_decimal": (
+            home_decimal
+        ),
+        "away_decimal": (
+            away_decimal
+        ),
     }
 
 
-def read_existing_csv(path: Path) -> dict[str, dict]:
+def puck_line_from_provider(
+    row: dict,
+) -> dict | None:
+    home_line = numeric(
+        first_value(
+            row,
+            "home_team_odds_current_point_spread_american",
+            "home_team_odds_current_point_spread_alternate_display_value",
+        )
+    )
+
+    away_line = numeric(
+        first_value(
+            row,
+            "away_team_odds_current_point_spread_american",
+            "away_team_odds_current_point_spread_alternate_display_value",
+        )
+    )
+
+    if (
+        home_line is None
+        and away_line is not None
+    ):
+        home_line = (
+            -away_line
+        )
+
+    if (
+        away_line is None
+        and home_line is not None
+    ):
+        away_line = (
+            -home_line
+        )
+
+    if (
+        home_line is None
+        or away_line is None
+    ):
+        return None
+
+    if (
+        abs(
+            abs(home_line)
+            - 1.5
+        )
+        > 1e-9
+        or abs(
+            abs(away_line)
+            - 1.5
+        )
+        > 1e-9
+    ):
+        return None
+
+    home_american = (
+        clean_american(
+            first_value(
+                row,
+                "home_team_odds_current_spread_american",
+                "home_team_odds_spread_odds",
+            )
+        )
+    )
+
+    away_american = (
+        clean_american(
+            first_value(
+                row,
+                "away_team_odds_current_spread_american",
+                "away_team_odds_spread_odds",
+            )
+        )
+    )
+
+    if (
+        not home_american
+        or not away_american
+    ):
+        return None
+
+    home_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "home_team_odds_current_spread_decimal",
+            )
+        )
+        or american_to_decimal(
+            home_american
+        )
+    )
+
+    away_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "away_team_odds_current_spread_decimal",
+            )
+        )
+        or american_to_decimal(
+            away_american
+        )
+    )
+
+    return {
+        "home_line": clean_line(
+            home_line
+        ),
+        "away_line": clean_line(
+            away_line
+        ),
+        "home_american": (
+            home_american
+        ),
+        "away_american": (
+            away_american
+        ),
+        "home_decimal": (
+            home_decimal
+        ),
+        "away_decimal": (
+            away_decimal
+        ),
+    }
+
+
+def total_from_provider(
+    row: dict,
+) -> dict | None:
+    total = numeric(
+        first_value(
+            row,
+            "current_total_american",
+            "current_total_alternate_display_value",
+            "over_under",
+        )
+    )
+
+    if (
+        total is None
+        or total < TOTAL_MIN
+        or total > TOTAL_MAX
+    ):
+        return None
+
+    over_american = (
+        clean_american(
+            first_value(
+                row,
+                "current_over_american",
+                "over_odds",
+            )
+        )
+    )
+
+    under_american = (
+        clean_american(
+            first_value(
+                row,
+                "current_under_american",
+                "under_odds",
+            )
+        )
+    )
+
+    if (
+        not over_american
+        or not under_american
+    ):
+        return None
+
+    over_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "current_over_decimal",
+            )
+        )
+        or american_to_decimal(
+            over_american
+        )
+    )
+
+    under_decimal = (
+        clean_decimal(
+            first_value(
+                row,
+                "current_under_decimal",
+            )
+        )
+        or american_to_decimal(
+            under_american
+        )
+    )
+
+    return {
+        "total": clean_line(
+            total
+        ),
+        "over_american": (
+            over_american
+        ),
+        "under_american": (
+            under_american
+        ),
+        "over_decimal": (
+            over_decimal
+        ),
+        "under_decimal": (
+            under_decimal
+        ),
+    }
+
+
+def select_market(
+    sportsbook_event_id: str,
+    rows: list[dict],
+    market_name: str,
+    parser,
+    counters: dict,
+) -> tuple[
+    dict,
+    dict,
+]:
+    ordered = (
+        ordered_provider_rows(
+            rows
+        )
+    )
+
+    for index, provider_row in enumerate(
+        ordered
+    ):
+        parsed = parser(
+            provider_row
+        )
+
+        if parsed is None:
+            continue
+
+        name = (
+            provider_name(
+                provider_row
+            )
+            or provider_id(
+                provider_row
+            )
+        )
+
+        counters[
+            f"{market_name}_provider:{name}"
+        ] += 1
+
+        if index > 0:
+            counters[
+                f"{market_name}_fallback_used"
+            ] += 1
+
+        return (
+            parsed,
+            provider_row,
+        )
+
+    counters[
+        "warnings"
+    ] += 1
+
+    log(
+        f"WARNING sportsbook_event_id="
+        f"{sportsbook_event_id} "
+        f"no usable {market_name} "
+        f"from any non-live ESPN provider"
+    )
+
+    return {}, {}
+
+
+def build_row(
+    event: dict,
+    provider_rows: list[dict],
+    pulled_at: str,
+    counters: dict,
+) -> dict:
+    sportsbook_event_id = str(
+        event.get(
+            "id",
+            "",
+        )
+    ).strip()
+
+    moneyline, ml_provider = (
+        select_market(
+            sportsbook_event_id,
+            provider_rows,
+            "moneyline",
+            moneyline_from_provider,
+            counters,
+        )
+    )
+
+    puck_line, pl_provider = (
+        select_market(
+            sportsbook_event_id,
+            provider_rows,
+            "puck_line",
+            puck_line_from_provider,
+            counters,
+        )
+    )
+
+    total, total_provider = (
+        select_market(
+            sportsbook_event_id,
+            provider_rows,
+            "total",
+            total_from_provider,
+            counters,
+        )
+    )
+
+    game_date, game_time = (
+        to_et_date_time(
+            str(
+                event.get(
+                    "date",
+                    "",
+                )
+            )
+        )
+    )
+
+    return {
+        "sportsbook_event_id": (
+            sportsbook_event_id
+        ),
+        "sport": "hockey",
+        "league": "nhl",
+        "game_date": (
+            game_date
+        ),
+        "game_time": (
+            game_time
+        ),
+        "home_team": str(
+            event.get(
+                "home",
+                "",
+            )
+        ).strip(),
+        "away_team": str(
+            event.get(
+                "away",
+                "",
+            )
+        ).strip(),
+        "home_dk_moneyline_american": (
+            moneyline.get(
+                "home_american",
+                "",
+            )
+        ),
+        "away_dk_moneyline_american": (
+            moneyline.get(
+                "away_american",
+                "",
+            )
+        ),
+        "home_puck_line": (
+            puck_line.get(
+                "home_line",
+                "",
+            )
+        ),
+        "away_puck_line": (
+            puck_line.get(
+                "away_line",
+                "",
+            )
+        ),
+        "total": (
+            total.get(
+                "total",
+                "",
+            )
+        ),
+        "home_dk_puck_line_american": (
+            puck_line.get(
+                "home_american",
+                "",
+            )
+        ),
+        "away_dk_puck_line_american": (
+            puck_line.get(
+                "away_american",
+                "",
+            )
+        ),
+        "dk_total_over_american": (
+            total.get(
+                "over_american",
+                "",
+            )
+        ),
+        "dk_total_under_american": (
+            total.get(
+                "under_american",
+                "",
+            )
+        ),
+        "home_dk_moneyline_decimal": (
+            moneyline.get(
+                "home_decimal",
+                "",
+            )
+        ),
+        "away_dk_moneyline_decimal": (
+            moneyline.get(
+                "away_decimal",
+                "",
+            )
+        ),
+        "home_dk_puck_line_decimal": (
+            puck_line.get(
+                "home_decimal",
+                "",
+            )
+        ),
+        "away_dk_puck_line_decimal": (
+            puck_line.get(
+                "away_decimal",
+                "",
+            )
+        ),
+        "dk_total_over_decimal": (
+            total.get(
+                "over_decimal",
+                "",
+            )
+        ),
+        "dk_total_under_decimal": (
+            total.get(
+                "under_decimal",
+                "",
+            )
+        ),
+        "odds_source": "espn",
+        "moneyline_provider_id": (
+            provider_id(
+                ml_provider
+            )
+        ),
+        "moneyline_provider_name": (
+            provider_name(
+                ml_provider
+            )
+        ),
+        "puck_line_provider_id": (
+            provider_id(
+                pl_provider
+            )
+        ),
+        "puck_line_provider_name": (
+            provider_name(
+                pl_provider
+            )
+        ),
+        "total_provider_id": (
+            provider_id(
+                total_provider
+            )
+        ),
+        "total_provider_name": (
+            provider_name(
+                total_provider
+            )
+        ),
+        "pulled_at": (
+            pulled_at
+        ),
+    }
+
+
+def read_existing_csv(
+    path: Path,
+) -> dict[
+    str,
+    dict,
+]:
     if not path.exists():
         return {}
 
-    with open(path, "r", newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
+    with open(
+        path,
+        "r",
+        newline="",
+        encoding="utf-8-sig",
+    ) as f:
+        reader = csv.DictReader(
+            f
+        )
+
         rows = {}
 
         for row in reader:
             sportsbook_event_id = str(
-                row.get("sportsbook_event_id") or row.get("game_id") or ""
+                row.get(
+                    "sportsbook_event_id"
+                )
+                or row.get(
+                    "game_id"
+                )
+                or ""
             ).strip()
 
             if not sportsbook_event_id:
                 continue
 
             normalized_row = {
-                field: row.get(field, "")
+                field: row.get(
+                    field,
+                    "",
+                )
                 for field in FIELDS
             }
-            normalized_row["sportsbook_event_id"] = sportsbook_event_id
-            rows[sportsbook_event_id] = normalized_row
+
+            normalized_row[
+                "sportsbook_event_id"
+            ] = sportsbook_event_id
+
+            rows[
+                sportsbook_event_id
+            ] = normalized_row
 
     return rows
 
 
-def row_changed(existing: dict, new: dict) -> bool:
-    for field in FIELDS:
-        if str(existing.get(field, "")) != str(new.get(field, "")):
-            return True
-    return False
+def row_changed(
+    existing: dict,
+    new: dict,
+) -> bool:
+    return any(
+        str(
+            existing.get(
+                field,
+                "",
+            )
+        )
+        != str(
+            new.get(
+                field,
+                "",
+            )
+        )
+        for field in FIELDS
+    )
 
 
-def write_csv(path: Path, rows_by_event_id: dict[str, dict]) -> None:
-    rows = list(rows_by_event_id.values())
+def write_csv(
+    path: Path,
+    rows_by_event_id: dict[
+        str,
+        dict,
+    ],
+) -> None:
+    with open(
+        path,
+        "w",
+        newline="",
+        encoding="utf-8-sig",
+    ) as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=FIELDS,
+        )
 
-    with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS)
         writer.writeheader()
 
-        for row in rows:
-            writer.writerow({field: row.get(field, "") for field in FIELDS})
+        for row in (
+            rows_by_event_id.values()
+        ):
+            writer.writerow(
+                {
+                    field: row.get(
+                        field,
+                        "",
+                    )
+                    for field in FIELDS
+                }
+            )
 
 
 def main() -> None:
     reset_log()
 
-    counters = {
-        "json_files_processed": 0,
-        "events_found": 0,
-        "odds_payloads_found": 0,
-        "rows_built": 0,
-        "rows_added": 0,
-        "rows_updated": 0,
-        "rows_unchanged": 0,
-        "rows_preserved_status_changed": 0,
-        "rows_skipped_non_pending_no_existing": 0,
-        "csv_files_written": 0,
-        "spread_1_5_selected": 0,
-        "total_closest_selected": 0,
-        "warnings": 0,
-        "errors": 0,
-    }
+    counters = defaultdict(
+        int
+    )
 
     try:
-        json_files = sorted(ODDS_DIR.glob("*.json"))
-        log(f"Odds input directory: {ODDS_DIR}")
-        log(f"JSON files found: {len(json_files)}")
+        json_files = sorted(
+            ODDS_DIR.glob(
+                "*.json"
+            )
+        )
 
-        new_rows_by_date = defaultdict(dict)
+        log(
+            f"Odds input directory: "
+            f"{ODDS_DIR}"
+        )
+
+        log(
+            f"JSON files found: "
+            f"{len(json_files)}"
+        )
+
+        new_rows_by_date = (
+            defaultdict(
+                dict
+            )
+        )
+
         status_by_date_event = {}
 
         for json_file in json_files:
-            file_rows_built = 0
-            file_warnings_before = counters["warnings"]
-
-            with open(json_file, "r", encoding="utf-8") as f:
-                payload = json.load(f)
-
-            counters["json_files_processed"] += 1
-
-            events = payload.get("events", [])
-            odds = payload.get("odds", [])
-
-            if not isinstance(events, list):
-                counters["warnings"] += 1
-                log(f"WARNING {json_file} events was not a list")
-                events = []
-
-            if not isinstance(odds, list):
-                counters["warnings"] += 1
-                log(f"WARNING {json_file} odds was not a list")
-                odds = []
-
-            counters["events_found"] += len(events)
-            counters["odds_payloads_found"] += len(odds)
-
-            events_by_id = {
-                str(event.get("id", "")).strip(): event
-                for event in events
-                if isinstance(event, dict) and event.get("id")
-            }
-
-            odds_ids = set()
-
-            for odds_payload in odds:
-                if not isinstance(odds_payload, dict):
-                    counters["warnings"] += 1
-                    log(f"WARNING {json_file} contains non-dict odds payload")
-                    continue
-
-                sportsbook_event_id = str(odds_payload.get("id", "")).strip()
-                if not sportsbook_event_id:
-                    counters["warnings"] += 1
-                    log(f"WARNING {json_file} odds payload missing sportsbook_event_id")
-                    continue
-
-                odds_ids.add(sportsbook_event_id)
-
-                event = events_by_id.get(sportsbook_event_id, {})
-                if not event:
-                    counters["warnings"] += 1
-                    log(
-                        f"WARNING odds sportsbook_event_id={sportsbook_event_id} "
-                        "has no matching event payload"
-                    )
-
-                row = build_row(event, odds_payload, counters)
-                game_date = row.get("game_date", "")
-                current_status = get_status(event, odds_payload)
-
-                if not game_date:
-                    counters["warnings"] += 1
-                    log(
-                        f"WARNING sportsbook_event_id={sportsbook_event_id} "
-                        "skipped because game_date was blank"
-                    )
-                    continue
-
-                new_rows_by_date[game_date][sportsbook_event_id] = row
-                status_by_date_event[(game_date, sportsbook_event_id)] = current_status
-
-                counters["rows_built"] += 1
-                file_rows_built += 1
-
-            for event_id in events_by_id:
-                if event_id not in odds_ids:
-                    counters["warnings"] += 1
-                    log(
-                        f"WARNING event sportsbook_event_id={event_id} "
-                        "has no matching odds payload"
-                    )
-
-            file_warnings = counters["warnings"] - file_warnings_before
-            log(
-                f"READ {json_file} | events={len(events)} | odds={len(odds)} "
-                f"| rows_built={file_rows_built} | warnings={file_warnings}"
-            )
-
-        for game_date, new_rows in sorted(new_rows_by_date.items()):
-            csv_path = SPORTSBOOK_DIR / f"NHL_{game_date}.csv"
-            existing_rows = read_existing_csv(csv_path)
-
-            merged_rows = dict(existing_rows)
-
-            for sportsbook_event_id, new_row in new_rows.items():
-                current_status = status_by_date_event.get(
-                    (game_date, sportsbook_event_id), ""
+            with open(
+                json_file,
+                "r",
+                encoding="utf-8",
+            ) as f:
+                payload = json.load(
+                    f
                 )
 
-                existing_row = existing_rows.get(sportsbook_event_id)
+            source = str(
+                payload.get(
+                    "source",
+                    "",
+                )
+            ).strip().lower()
 
-                if existing_row and current_status != "pending":
-                    merged_rows[sportsbook_event_id] = existing_row
-                    counters["rows_preserved_status_changed"] += 1
-                    log(
-                        f"PRESERVED sportsbook_event_id={sportsbook_event_id} "
-                        f"date={game_date} because current_status={current_status}"
+            if source != "espn":
+                counters[
+                    "legacy_json_files_skipped"
+                ] += 1
+
+                log(
+                    f"SKIPPED "
+                    f"{json_file} "
+                    f"source="
+                    f"{source or 'unknown'}"
+                )
+
+                continue
+
+            counters[
+                "json_files_processed"
+            ] += 1
+
+            events = payload.get(
+                "events",
+                [],
+            )
+
+            odds = payload.get(
+                "odds",
+                [],
+            )
+
+            pulled_at = str(
+                payload.get(
+                    "generated_at_et",
+                    "",
+                )
+            ).strip()
+
+            if not isinstance(
+                events,
+                list,
+            ):
+                counters[
+                    "warnings"
+                ] += 1
+
+                log(
+                    f"WARNING "
+                    f"{json_file} "
+                    f"events was not a list"
+                )
+
+                events = []
+
+            if not isinstance(
+                odds,
+                list,
+            ):
+                counters[
+                    "warnings"
+                ] += 1
+
+                log(
+                    f"WARNING "
+                    f"{json_file} "
+                    f"odds was not a list"
+                )
+
+                odds = []
+
+            counters[
+                "events_found"
+            ] += len(
+                events
+            )
+
+            counters[
+                "odds_provider_rows_found"
+            ] += len(
+                odds
+            )
+
+            events_by_id = {
+                str(
+                    event.get(
+                        "id",
+                        "",
                     )
+                ).strip(): event
+                for event in events
+                if (
+                    isinstance(
+                        event,
+                        dict,
+                    )
+                    and str(
+                        event.get(
+                            "id",
+                            "",
+                        )
+                    ).strip()
+                )
+            }
+
+            provider_rows_by_event = (
+                defaultdict(
+                    list
+                )
+            )
+
+            for provider_row in odds:
+                if not isinstance(
+                    provider_row,
+                    dict,
+                ):
+                    counters[
+                        "warnings"
+                    ] += 1
                     continue
 
-                if not existing_row and current_status != "pending":
-                    counters["rows_skipped_non_pending_no_existing"] += 1
-                    counters["warnings"] += 1
-                    log(
-                        f"WARNING skipped new sportsbook_event_id={sportsbook_event_id} "
-                        f"date={game_date} because current_status={current_status} "
-                        "and no existing row"
+                event_id = str(
+                    provider_row.get(
+                        "espn_event_id"
                     )
+                    or provider_row.get(
+                        "event_id"
+                    )
+                    or provider_row.get(
+                        "id"
+                    )
+                    or ""
+                ).strip()
+
+                if not event_id:
+                    counters[
+                        "warnings"
+                    ] += 1
+
+                    log(
+                        f"WARNING "
+                        f"{json_file} "
+                        f"provider row missing "
+                        f"ESPN event ID"
+                    )
+
+                    continue
+
+                provider_rows_by_event[
+                    event_id
+                ].append(
+                    provider_row
+                )
+
+            for (
+                sportsbook_event_id,
+                event,
+            ) in events_by_id.items():
+                provider_rows = (
+                    provider_rows_by_event.get(
+                        sportsbook_event_id,
+                        [],
+                    )
+                )
+
+                if not provider_rows:
+                    counters[
+                        "warnings"
+                    ] += 1
+
+                    log(
+                        f"WARNING event "
+                        f"sportsbook_event_id="
+                        f"{sportsbook_event_id} "
+                        f"has no ESPN "
+                        f"provider rows"
+                    )
+
+                    continue
+
+                row = build_row(
+                    event,
+                    provider_rows,
+                    pulled_at,
+                    counters,
+                )
+
+                game_date = str(
+                    row.get(
+                        "game_date",
+                        "",
+                    )
+                ).strip()
+
+                if not game_date:
+                    counters[
+                        "warnings"
+                    ] += 1
+
+                    log(
+                        f"WARNING "
+                        f"sportsbook_event_id="
+                        f"{sportsbook_event_id} "
+                        f"skipped because "
+                        f"game_date was blank"
+                    )
+
+                    continue
+
+                new_rows_by_date[
+                    game_date
+                ][
+                    sportsbook_event_id
+                ] = row
+
+                status_by_date_event[
+                    (
+                        game_date,
+                        sportsbook_event_id,
+                    )
+                ] = get_status(
+                    event
+                )
+
+                counters[
+                    "rows_built"
+                ] += 1
+
+            log(
+                f"READ {json_file} "
+                f"| events={len(events)} "
+                f"| provider_rows="
+                f"{len(odds)}"
+            )
+
+        for (
+            game_date,
+            new_rows,
+        ) in sorted(
+            new_rows_by_date.items()
+        ):
+            csv_path = (
+                SPORTSBOOK_DIR
+                / f"NHL_{game_date}.csv"
+            )
+
+            existing_rows = (
+                read_existing_csv(
+                    csv_path
+                )
+            )
+
+            merged_rows = dict(
+                existing_rows
+            )
+
+            for (
+                sportsbook_event_id,
+                new_row,
+            ) in new_rows.items():
+                current_status = (
+                    status_by_date_event.get(
+                        (
+                            game_date,
+                            sportsbook_event_id,
+                        ),
+                        "",
+                    )
+                )
+
+                existing_row = (
+                    existing_rows.get(
+                        sportsbook_event_id
+                    )
+                )
+
+                if (
+                    existing_row
+                    and current_status
+                    not in (
+                        "",
+                        "pending",
+                    )
+                ):
+                    merged_rows[
+                        sportsbook_event_id
+                    ] = existing_row
+
+                    counters[
+                        "rows_preserved_status_changed"
+                    ] += 1
+
+                    continue
+
+                if (
+                    not existing_row
+                    and current_status
+                    not in (
+                        "",
+                        "pending",
+                    )
+                ):
+                    counters[
+                        "rows_skipped_non_pending_no_existing"
+                    ] += 1
+
+                    counters[
+                        "warnings"
+                    ] += 1
+
                     continue
 
                 if not existing_row:
-                    merged_rows[sportsbook_event_id] = new_row
-                    counters["rows_added"] += 1
+                    merged_rows[
+                        sportsbook_event_id
+                    ] = new_row
+
+                    counters[
+                        "rows_added"
+                    ] += 1
+
                     continue
 
-                if row_changed(existing_row, new_row):
-                    merged_rows[sportsbook_event_id] = new_row
-                    counters["rows_updated"] += 1
+                if row_changed(
+                    existing_row,
+                    new_row,
+                ):
+                    merged_rows[
+                        sportsbook_event_id
+                    ] = new_row
+
+                    counters[
+                        "rows_updated"
+                    ] += 1
+
                 else:
-                    merged_rows[sportsbook_event_id] = existing_row
-                    counters["rows_unchanged"] += 1
+                    merged_rows[
+                        sportsbook_event_id
+                    ] = existing_row
 
-            write_csv(csv_path, merged_rows)
-            counters["csv_files_written"] += 1
-            log(f"WROTE {csv_path} rows={len(merged_rows)}")
+                    counters[
+                        "rows_unchanged"
+                    ] += 1
 
-        log(f"Spread rows selected by abs(hdp)==1.5: {counters['spread_1_5_selected']}")
+            write_csv(
+                csv_path,
+                merged_rows,
+            )
+
+            counters[
+                "csv_files_written"
+            ] += 1
+
+            log(
+                f"WROTE "
+                f"{csv_path} "
+                f"rows="
+                f"{len(merged_rows)}"
+            )
+
         log(
-            f"Totals rows selected by closest over/under odds "
-            f"within {TOTAL_MIN}-{TOTAL_MAX}: {counters['total_closest_selected']}"
+            f"Provider priority: "
+            f"{' -> '.join(PROVIDER_PRIORITY)} "
+            f"-> others"
         )
 
-        log("--- SUMMARY ---")
-        log(f"JSON files processed: {counters['json_files_processed']}")
-        log(f"Events found: {counters['events_found']}")
-        log(f"Odds payloads found: {counters['odds_payloads_found']}")
-        log(f"Rows built: {counters['rows_built']}")
-        log(f"Rows added: {counters['rows_added']}")
-        log(f"Rows updated: {counters['rows_updated']}")
-        log(f"Rows unchanged: {counters['rows_unchanged']}")
         log(
-            "Rows preserved due to non-pending status: "
-            f"{counters['rows_preserved_status_changed']}"
+            "Live Odds providers excluded "
+            "from production selection"
         )
+
         log(
-            "Rows skipped non-pending with no existing row: "
-            f"{counters['rows_skipped_non_pending_no_existing']}"
+            "--- SUMMARY ---"
         )
-        log(f"CSV files written: {counters['csv_files_written']}")
-        log(f"Warnings: {counters['warnings']}")
-        log(f"Errors: {counters['errors']}")
-        log("STATUS: SUCCESS")
 
-        print("NHL odds transform complete.")
+        for key in sorted(
+            counters
+        ):
+            log(
+                f"{key}: "
+                f"{counters[key]}"
+            )
 
-    except Exception as e:
-        counters["errors"] += 1
-        log(f"FATAL ERROR: {e}")
-        log(traceback.format_exc())
-        log("--- SUMMARY ---")
-        log(f"JSON files processed: {counters['json_files_processed']}")
-        log(f"Events found: {counters['events_found']}")
-        log(f"Odds payloads found: {counters['odds_payloads_found']}")
-        log(f"Rows built: {counters['rows_built']}")
-        log(f"Warnings: {counters['warnings']}")
-        log(f"Errors: {counters['errors']}")
-        log("STATUS: FAILED")
+        log(
+            "STATUS: SUCCESS"
+        )
+
+        print(
+            "NHL odds transform complete."
+        )
+
+    except Exception as exc:
+        counters[
+            "errors"
+        ] += 1
+
+        log(
+            f"FATAL ERROR: "
+            f"{exc}"
+        )
+
+        log(
+            traceback.format_exc()
+        )
+
+        log(
+            "STATUS: FAILED"
+        )
+
         raise
 
 
