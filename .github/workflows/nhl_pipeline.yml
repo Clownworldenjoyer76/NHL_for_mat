@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: nhl-pipeline
+  cancel-in-progress: false
+
 jobs:
   nhl-pipeline:
     runs-on: ubuntu-latest
