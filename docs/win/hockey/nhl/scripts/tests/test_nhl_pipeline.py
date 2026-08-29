@@ -138,6 +138,47 @@ def assert_team_strength_features_preserved(
         )
 
 
+GOALIE_FEATURE_VALUES = {
+    "home_expected_starter": "Jeremy Swayman",
+    "away_expected_starter": "Igor Shesterkin",
+    "home_starter_gsax": 4.25,
+    "away_starter_gsax": 2.75,
+    "home_backup_gsax": 0.50,
+    "away_backup_gsax": -0.25,
+    "starter_gsax_differential": 1.50,
+    "home_goalie_status": "projected",
+    "away_goalie_status": "projected",
+    "home_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
+    "away_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
+    "home_goalie_status_source": "sportsdataverse_prior_goalie_usage_projection",
+    "away_goalie_status_source": "sportsdataverse_prior_goalie_usage_projection",
+}
+
+
+def assert_goalie_features_preserved(
+    row: pd.Series,
+) -> None:
+    for column, expected in GOALIE_FEATURE_VALUES.items():
+        assert column in row.index
+
+        if isinstance(
+            expected,
+            (int, float),
+        ):
+            assert float(
+                row[column]
+            ) == pytest.approx(
+                float(expected),
+                abs=1e-12,
+            )
+        else:
+            assert str(
+                row[column]
+            ) == str(
+                expected
+            )
+
+
 def load_repo_module(relative_path: str):
     path = REPO_ROOT / relative_path
     if not path.is_file():
@@ -3854,3 +3895,378 @@ def test_reporting_blocks_unresolved_grading_rows(
         ),
     ):
         module.fail_if_unresolved_rows_exist()
+
+# ---------------------------------------------------------------------
+# SDV-P3 goalie GSAx / strict-as-of coverage
+# ---------------------------------------------------------------------
+
+def test_pull_sdv_goalie_features_use_only_prior_games(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+            ],
+            "game_time": [
+                "19:00",
+                "19:00",
+            ],
+            "home_team_abbr": [
+                "BOS",
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+                "NYR",
+            ],
+        }
+    )
+
+    pbp = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020001",
+                "2025020002",
+                "2025020002",
+            ],
+            "home_abbr": [
+                "BOS",
+                "BOS",
+                "BOS",
+                "BOS",
+            ],
+            "away_abbr": [
+                "NYR",
+                "NYR",
+                "NYR",
+                "NYR",
+            ],
+            "home_goalie_id": [
+                10,
+                10,
+                11,
+                11,
+            ],
+            "away_goalie_id": [
+                20,
+                20,
+                21,
+                21,
+            ],
+            "home_goalie": [
+                "Prior Boston",
+                "Prior Boston",
+                "Target Boston",
+                "Target Boston",
+            ],
+            "away_goalie": [
+                "Prior New York",
+                "Prior New York",
+                "Target New York",
+                "Target New York",
+            ],
+        }
+    )
+
+    seen_game_ids: list[
+        list[str]
+    ] = []
+
+    def fake_gsax(
+        prior_pbp,
+        prior_shifts,
+    ):
+        ids = sorted(
+            set(
+                prior_pbp[
+                    "game_id"
+                ].cast(
+                    module.pl.Utf8
+                ).to_list()
+            )
+        )
+
+        seen_game_ids.append(
+            ids
+        )
+
+        return module.pl.DataFrame(
+            {
+                "player_id": [
+                    10,
+                    20,
+                ],
+                "goalie": [
+                    "Prior Boston",
+                    "Prior New York",
+                ],
+                "shots": [
+                    30,
+                    30,
+                ],
+                "xga": [
+                    2.5,
+                    3.0,
+                ],
+                "ga": [
+                    2,
+                    3,
+                ],
+                "gsax": [
+                    0.5,
+                    0.0,
+                ],
+                "gsax_per_60": [
+                    0.5,
+                    0.0,
+                ],
+            }
+        )
+
+    monkeypatch.setattr(
+        module.nhl,
+        "nhl_goalie_gsax",
+        fake_gsax,
+    )
+
+    result = (
+        module.build_game_goalie_features_asof(
+            schedule,
+            pbp,
+            module.pl.DataFrame(),
+            current=False,
+            generated_at_utc=module.datetime(
+                2026,
+                1,
+                3,
+                20,
+                0,
+                tzinfo=module.UTC,
+            ),
+        )
+    )
+
+    target = (
+        result.filter(
+            module.pl.col(
+                "game_id"
+            )
+            == "2025020002"
+        )
+        .to_dicts()[
+            0
+        ]
+    )
+
+    assert seen_game_ids == [
+        [
+            "2025020001",
+        ]
+    ]
+
+    assert (
+        target[
+            "home_expected_starter"
+        ]
+        == "Prior Boston"
+    )
+
+    assert (
+        target[
+            "away_expected_starter"
+        ]
+        == "Prior New York"
+    )
+
+    assert (
+        target[
+            "home_goalie_status"
+        ]
+        == "projected"
+    )
+
+    assert (
+        target[
+            "away_goalie_status"
+        ]
+        == "projected"
+    )
+
+    assert float(
+        target[
+            "starter_gsax_differential"
+        ]
+    ) == pytest.approx(
+        0.5,
+        abs=1e-12,
+    )
+
+
+def test_merge_intake_builds_strict_asof_goalie_features() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        "2025020001": {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "goalie_snapshot_as_of_utc": "2026-01-01T22:00:00+00:00",
+            "home_expected_starter": "Jeremy Swayman",
+            "away_expected_starter": "Igor Shesterkin",
+            "home_starter_gsax": "4.25",
+            "away_starter_gsax": "2.75",
+            "home_backup_gsax": "0.5",
+            "away_backup_gsax": "-0.25",
+            "starter_gsax_differential": "1.5",
+            "home_goalie_status": "projected",
+            "away_goalie_status": "projected",
+            "home_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
+            "away_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
+            "home_goalie_status_source": "sportsdataverse_prior_goalie_usage_projection",
+            "away_goalie_status_source": "sportsdataverse_prior_goalie_usage_projection",
+            "_source_file": "fixture.csv",
+        }
+    }
+
+    features = (
+        module.goalie_features_for_game(
+            {
+                "game_id": "2025020001",
+                "game_date": "2026_01_01",
+                "game_time": "19:00",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            index,
+        )
+    )
+
+    assert (
+        features[
+            "home_expected_starter"
+        ]
+        == "Jeremy Swayman"
+    )
+
+    assert float(
+        features[
+            "starter_gsax_differential"
+        ]
+    ) == pytest.approx(
+        1.5,
+        abs=1e-12,
+    )
+
+
+def test_merge_intake_rejects_goalie_observation_at_pregame_cutoff() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    index = {
+        "2025020001": {
+            "game_id": "2025020001",
+            "game_date": "2026_01_01",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "pregame_cutoff_utc": "2026-01-02T00:00:00+00:00",
+            "goalie_snapshot_as_of_utc": "2026-01-01T22:00:00+00:00",
+            "home_expected_starter": "Jeremy Swayman",
+            "away_expected_starter": "Igor Shesterkin",
+            "home_starter_gsax": "4.25",
+            "away_starter_gsax": "2.75",
+            "home_backup_gsax": "0.5",
+            "away_backup_gsax": "-0.25",
+            "starter_gsax_differential": "1.5",
+            "home_goalie_status": "confirmed",
+            "away_goalie_status": "projected",
+            "home_goalie_status_observed_at": "2026-01-02T00:00:00+00:00",
+            "away_goalie_status_observed_at": "2026-01-01T22:00:00+00:00",
+            "home_goalie_status_source": "fixture_confirmation",
+            "away_goalie_status_source": "fixture_projection",
+            "_source_file": "fixture.csv",
+        }
+    }
+
+    with pytest.raises(
+        SystemExit
+    ):
+        module.goalie_features_for_game(
+            {
+                "game_id": "2025020001",
+                "game_date": "2026_01_01",
+                "game_time": "19:00",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            index,
+        )
+
+
+def test_build_juice_files_preserves_goalie_features_in_all_markets() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py"
+    )
+
+    expected = set(
+        GOALIE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.MERGED_REQUIRED_COLUMNS
+    )
+
+    assert expected.issubset(
+        module.MONEYLINE_COLUMNS
+    )
+
+    assert expected.issubset(
+        module.PUCK_LINE_COLUMNS
+    )
+
+    assert expected.issubset(
+        module.TOTAL_COLUMNS
+    )
+
+
+@pytest.mark.parametrize(
+    "relative_path",
+    [
+        "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
+    ],
+)
+def test_apply_juice_scripts_preserve_goalie_feature_contract(
+    relative_path: str,
+) -> None:
+    module = load_repo_module(
+        relative_path
+    )
+
+    expected = set(
+        GOALIE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.REQUIRED_INPUT_COLUMNS
+    )
+
+    assert expected.issubset(
+        module.OUTPUT_COLUMNS
+    )

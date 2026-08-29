@@ -17,6 +17,7 @@ PREDICTIONS_DIR = BASE_DIR / "00_intake" / "predictions"
 
 FATIGUE_DIR = BASE_DIR / "sdv" / "fatigue"
 TEAM_STRENGTH_DIR = BASE_DIR / "sdv" / "team-strength"
+GOALIE_DIR = BASE_DIR / "sdv" / "goalie"
 TEAM_MAP_PATH = (
     BASE_DIR
     / "config"
@@ -83,6 +84,41 @@ TEAM_STRENGTH_FEATURE_COLUMNS = [
 ]
 
 
+GOALIE_STATUS_VALUES = {
+    "projected",
+    "expected",
+    "confirmed",
+    "unknown",
+}
+
+GOALIE_FEATURE_COLUMNS = [
+    "home_expected_starter",
+    "away_expected_starter",
+    "home_starter_gsax",
+    "away_starter_gsax",
+    "home_backup_gsax",
+    "away_backup_gsax",
+    "starter_gsax_differential",
+    "home_goalie_status",
+    "away_goalie_status",
+    "home_goalie_status_observed_at",
+    "away_goalie_status_observed_at",
+    "home_goalie_status_source",
+    "away_goalie_status_source",
+]
+
+REQUIRED_GOALIE_COLUMNS = [
+    "game_id",
+    "game_date",
+    "home_team",
+    "away_team",
+    "pregame_cutoff_utc",
+    "goalie_snapshot_as_of_utc",
+    "pregame_cutoff_source",
+    *GOALIE_FEATURE_COLUMNS,
+]
+
+
 MERGED_COLUMNS = [
     "sport",
     "league",
@@ -107,6 +143,7 @@ MERGED_COLUMNS = [
     "away_games_in_7_days",
     "rest_differential",
     *TEAM_STRENGTH_FEATURE_COLUMNS,
+    *GOALIE_FEATURE_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_projected_goals",
@@ -1450,6 +1487,489 @@ def load_team_strength_index() -> dict[
 
     return index
 
+
+def authoritative_goalie_files() -> list[Path]:
+    files = sorted(
+        GOALIE_DIR.glob(
+            "season_*_game_goalie_features_asof.csv"
+        )
+    )
+
+    latest = (
+        GOALIE_DIR
+        / "latest_game_goalie_features_asof.csv"
+    )
+
+    if latest.is_file():
+        files.append(
+            latest
+        )
+
+    return files
+
+
+def validate_goalie_timestamp_contract(
+    *,
+    game_id: str,
+    stored_cutoff: datetime,
+    snapshot_as_of: datetime,
+    observed_at: datetime,
+    canonical_cutoff: datetime | None,
+    source_file: str,
+    side: str,
+) -> None:
+    if not (
+        snapshot_as_of
+        < stored_cutoff
+    ):
+        fail(
+            "Unsafe SportsDataverse goalie snapshot timestamp: "
+            f"game_id={game_id} side={side} "
+            f"goalie_snapshot_as_of_utc={snapshot_as_of.isoformat()} "
+            f"pregame_cutoff_utc={stored_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if not (
+        observed_at
+        < stored_cutoff
+    ):
+        fail(
+            "Unsafe SportsDataverse goalie observation timestamp: "
+            f"game_id={game_id} side={side} "
+            f"observed_at={observed_at.isoformat()} "
+            f"pregame_cutoff_utc={stored_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if observed_at > snapshot_as_of:
+        fail(
+            "SportsDataverse goalie status observation occurs "
+            "after the stored goalie snapshot: "
+            f"game_id={game_id} side={side} "
+            f"observed_at={observed_at.isoformat()} "
+            f"snapshot_as_of={snapshot_as_of.isoformat()} "
+            f"file={source_file}"
+        )
+
+    if (
+        canonical_cutoff is not None
+        and stored_cutoff > canonical_cutoff
+    ):
+        fail(
+            "SportsDataverse goalie cutoff exceeds canonical "
+            "NHL game pregame cutoff: "
+            f"game_id={game_id} side={side} "
+            f"stored_cutoff_utc={stored_cutoff.isoformat()} "
+            f"canonical_cutoff_utc={canonical_cutoff.isoformat()} "
+            f"file={source_file}"
+        )
+
+
+def load_goalie_index() -> dict[
+    str,
+    dict[str, str],
+]:
+    files = authoritative_goalie_files()
+
+    log(
+        "SportsDataverse strict-as-of goalie "
+        f"files found: {len(files)}"
+    )
+
+    if not files:
+        log(
+            "No SportsDataverse strict-as-of goalie files "
+            "available; goalie features will remain unknown/blank."
+        )
+        return {}
+
+    team_lookup = load_team_identity_map()
+
+    index: dict[
+        str,
+        dict[str, str],
+    ] = {}
+
+    for path in files:
+        fieldnames, rows = load_csv(
+            path
+        )
+
+        validate_required_columns(
+            path,
+            fieldnames,
+            REQUIRED_GOALIE_COLUMNS,
+        )
+
+        loaded_rows = 0
+
+        for row_number, row in enumerate(
+            rows,
+            start=2,
+        ):
+            game_id = str(
+                row.get(
+                    "game_id",
+                    "",
+                )
+            ).strip()
+
+            game_date = normalize_fatigue_date(
+                row.get(
+                    "game_date",
+                    "",
+                )
+            )
+
+            if not GAME_ID_RE.fullmatch(
+                game_id
+            ):
+                fail(
+                    f"{path} row {row_number} "
+                    f"has invalid goalie game_id={game_id!r}"
+                )
+
+            if not game_date:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid goalie game_date="
+                    f"{row.get('game_date', '')!r}"
+                )
+
+            stored_cutoff = parse_utc_timestamp(
+                row.get(
+                    "pregame_cutoff_utc",
+                    "",
+                )
+            )
+
+            snapshot_as_of = parse_utc_timestamp(
+                row.get(
+                    "goalie_snapshot_as_of_utc",
+                    "",
+                )
+            )
+
+            if (
+                stored_cutoff is None
+                or snapshot_as_of is None
+            ):
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid goalie strict-as-of timestamps"
+                )
+
+            normalized = {
+                "game_id": game_id,
+                "game_date": game_date,
+                "pregame_cutoff_utc": stored_cutoff.isoformat(),
+                "goalie_snapshot_as_of_utc": snapshot_as_of.isoformat(),
+                "pregame_cutoff_source": str(
+                    row.get(
+                        "pregame_cutoff_source",
+                        "",
+                    )
+                ).strip(),
+                "_source_file": str(
+                    path
+                ),
+            }
+
+            for side in (
+                "home",
+                "away",
+            ):
+                team_raw = str(
+                    row.get(
+                        f"{side}_team",
+                        "",
+                    )
+                ).strip()
+
+                canonical_team = team_lookup.get(
+                    normalize_team_lookup_key(
+                        team_raw
+                    ),
+                    "",
+                )
+
+                if not canonical_team:
+                    fail(
+                        f"{path} row {row_number} "
+                        f"has unmapped goalie {side}_team={team_raw!r}"
+                    )
+
+                status = str(
+                    row.get(
+                        f"{side}_goalie_status",
+                        "",
+                    )
+                ).strip().lower()
+
+                if status not in GOALIE_STATUS_VALUES:
+                    fail(
+                        f"{path} row {row_number} "
+                        f"has invalid {side}_goalie_status={status!r}"
+                    )
+
+                observed_at = parse_utc_timestamp(
+                    row.get(
+                        f"{side}_goalie_status_observed_at",
+                        "",
+                    )
+                )
+
+                if observed_at is None:
+                    fail(
+                        f"{path} row {row_number} "
+                        f"has invalid {side}_goalie_status_observed_at"
+                    )
+
+                validate_goalie_timestamp_contract(
+                    game_id=game_id,
+                    stored_cutoff=stored_cutoff,
+                    snapshot_as_of=snapshot_as_of,
+                    observed_at=observed_at,
+                    canonical_cutoff=None,
+                    source_file=str(path),
+                    side=side,
+                )
+
+                normalized[
+                    f"{side}_team"
+                ] = canonical_team
+
+                for field in (
+                    f"{side}_expected_starter",
+                    f"{side}_starter_gsax",
+                    f"{side}_backup_gsax",
+                    f"{side}_goalie_status_source",
+                ):
+                    normalized[field] = str(
+                        row.get(
+                            field,
+                            "",
+                        )
+                    ).strip()
+
+                normalized[
+                    f"{side}_goalie_status"
+                ] = status
+
+                normalized[
+                    f"{side}_goalie_status_observed_at"
+                ] = observed_at.isoformat()
+
+            normalized[
+                "starter_gsax_differential"
+            ] = str(
+                row.get(
+                    "starter_gsax_differential",
+                    "",
+                )
+            ).strip()
+
+            prior = index.get(
+                game_id
+            )
+
+            if prior is not None:
+                compare_fields = [
+                    field
+                    for field in REQUIRED_GOALIE_COLUMNS
+                    if field not in {
+                        "home_team",
+                        "away_team",
+                    }
+                ]
+
+                prior_values = {
+                    field: prior.get(
+                        field,
+                        "",
+                    )
+                    for field in compare_fields
+                }
+
+                new_values = {
+                    field: normalized.get(
+                        field,
+                        "",
+                    )
+                    for field in compare_fields
+                }
+
+                if prior_values != new_values:
+                    fail(
+                        "Conflicting SportsDataverse goalie rows for "
+                        f"game_id={game_id}: "
+                        f"{prior.get('_source_file', '')} vs {path}"
+                    )
+
+                continue
+
+            index[
+                game_id
+            ] = normalized
+            loaded_rows += 1
+
+        log(
+            f"Loaded goalie file: {path} "
+            f"({loaded_rows} unique strict-as-of rows)"
+        )
+
+    return index
+
+
+def empty_goalie_features() -> dict[str, str]:
+    features = {
+        field: ""
+        for field in GOALIE_FEATURE_COLUMNS
+    }
+
+    features[
+        "home_goalie_status"
+    ] = "unknown"
+
+    features[
+        "away_goalie_status"
+    ] = "unknown"
+
+    return features
+
+
+def goalie_features_for_game(
+    game: dict[str, str],
+    goalie_index: dict[
+        str,
+        dict[str, str],
+    ],
+) -> dict[str, str]:
+    game_id = str(
+        game.get(
+            "game_id",
+            "",
+        )
+    ).strip()
+
+    row = goalie_index.get(
+        game_id
+    )
+
+    if row is None:
+        return empty_goalie_features()
+
+    game_date = normalize_fatigue_date(
+        game.get(
+            "game_date",
+            "",
+        )
+    )
+
+    if row.get(
+        "game_date",
+        "",
+    ) != game_date:
+        fail(
+            "SportsDataverse goalie game_date mismatch: "
+            f"game_id={game_id} "
+            f"goalie_game_date={row.get('game_date', '')} "
+            f"canonical_game_date={game_date}"
+        )
+
+    for side in (
+        "home",
+        "away",
+    ):
+        canonical_team = str(
+            game.get(
+                f"{side}_team",
+                "",
+            )
+        ).strip()
+
+        if row.get(
+            f"{side}_team",
+            "",
+        ) != canonical_team:
+            fail(
+                "SportsDataverse goalie team identity mismatch: "
+                f"game_id={game_id} side={side} "
+                f"goalie_team={row.get(f'{side}_team', '')!r} "
+                f"canonical_team={canonical_team!r}"
+            )
+
+    stored_cutoff = parse_utc_timestamp(
+        row.get(
+            "pregame_cutoff_utc",
+            "",
+        )
+    )
+
+    snapshot_as_of = parse_utc_timestamp(
+        row.get(
+            "goalie_snapshot_as_of_utc",
+            "",
+        )
+    )
+
+    canonical_cutoff = canonical_game_cutoff_utc(
+        game
+    )
+
+    if (
+        stored_cutoff is None
+        or snapshot_as_of is None
+    ):
+        fail(
+            "SportsDataverse goalie row missing valid strict-as-of "
+            f"timestamps: game_id={game_id}"
+        )
+
+    for side in (
+        "home",
+        "away",
+    ):
+        observed_at = parse_utc_timestamp(
+            row.get(
+                f"{side}_goalie_status_observed_at",
+                "",
+            )
+        )
+
+        if observed_at is None:
+            fail(
+                "SportsDataverse goalie row missing valid "
+                f"{side} observation timestamp: game_id={game_id}"
+            )
+
+        validate_goalie_timestamp_contract(
+            game_id=game_id,
+            stored_cutoff=stored_cutoff,
+            snapshot_as_of=snapshot_as_of,
+            observed_at=observed_at,
+            canonical_cutoff=canonical_cutoff,
+            source_file=str(
+                row.get(
+                    "_source_file",
+                    "",
+                )
+            ),
+            side=side,
+        )
+
+    return {
+        field: str(
+            row.get(
+                field,
+                "",
+            )
+        ).strip()
+        for field in GOALIE_FEATURE_COLUMNS
+    }
+
+
 def numeric_difference(
     home_value: str,
     away_value: str,
@@ -1781,6 +2301,10 @@ def process_date(
         tuple[str, str],
         dict[str, str],
     ],
+    goalie_index: dict[
+        str,
+        dict[str, str],
+    ],
 ) -> tuple[
     int,
     int,
@@ -1957,6 +2481,13 @@ def process_date(
             )
         )
 
+        goalie_features = (
+            goalie_features_for_game(
+                game,
+                goalie_index,
+            )
+        )
+
         merged_rows.append(
             {
                 "sport": game.get(
@@ -1986,6 +2517,7 @@ def process_date(
                 ),
                 **fatigue_features,
                 **team_strength_features,
+                **goalie_features,
                 "away_prob_moneyline": (
                     prediction.get(
                         "away_prob_moneyline",
@@ -2199,6 +2731,10 @@ def main() -> None:
             load_team_strength_index()
         )
 
+        goalie_index = (
+            load_goalie_index()
+        )
+
         games_by_date = (
             rows_by_date_game_id(
                 games_rows,
@@ -2299,6 +2835,7 @@ def main() -> None:
                 ),
                 fatigue_index,
                 team_strength_index,
+                goalie_index,
             )
 
             total_merged += merged_count

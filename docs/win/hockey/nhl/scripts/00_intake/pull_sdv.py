@@ -61,6 +61,24 @@ TEAM_STRENGTH_FIELDS = (
 )
 
 
+GOALIE_STATUS_VALUES = (
+    "projected",
+    "expected",
+    "confirmed",
+    "unknown",
+)
+
+GOALIE_GSAX_FIELDS = (
+    "player_id",
+    "goalie",
+    "shots",
+    "xga",
+    "ga",
+    "gsax",
+    "gsax_per_60",
+)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -2660,6 +2678,740 @@ def save_season_context(
             )
 
 
+
+def normalize_player_id(
+    value: Any,
+) -> str:
+    if value is None:
+        return ""
+
+    text = str(value).strip()
+
+    if not text or text.lower() in {
+        "nan",
+        "none",
+        "null",
+    }:
+        return ""
+
+    try:
+        number = float(text)
+        if number.is_integer():
+            return str(int(number))
+    except ValueError:
+        pass
+
+    return text
+
+
+def prior_game_ids_for_target(
+    schedule: Any,
+    target_day: date,
+) -> set[str]:
+    if frame_empty(schedule):
+        return set()
+
+    pdf = as_pandas(schedule)
+
+    gid_col = first_col(
+        pdf,
+        (
+            "game_id",
+            "id",
+            "event_id",
+        ),
+    )
+    date_col = first_col(
+        pdf,
+        (
+            "game_date",
+            "schedule_date",
+            "date",
+            "start_date",
+        ),
+    )
+
+    if gid_col is None or date_col is None:
+        return set()
+
+    parsed = pd.to_datetime(
+        pdf[date_col],
+        errors="coerce",
+    )
+
+    return {
+        str(game_id).strip()
+        for game_id, game_date in zip(
+            pdf[gid_col],
+            parsed,
+        )
+        if (
+            str(game_id).strip()
+            and not pd.isna(game_date)
+            and game_date.date() < target_day
+        )
+    }
+
+
+def frame_strictly_before_game(
+    frame: Any,
+    *,
+    target_day: date,
+    prior_game_ids: set[str],
+) -> pl.DataFrame:
+    if frame_empty(frame):
+        return pl.DataFrame()
+
+    pdf = as_pandas(frame)
+
+    gid_col = first_col(
+        pdf,
+        (
+            "game_id",
+            "id",
+            "event_id",
+        ),
+    )
+
+    if gid_col is not None and prior_game_ids:
+        ids = (
+            pdf[gid_col]
+            .astype(str)
+            .str.strip()
+        )
+        return pl.from_pandas(
+            pdf.loc[
+                ids.isin(prior_game_ids)
+            ].reset_index(drop=True)
+        )
+
+    date_col = first_col(
+        pdf,
+        (
+            "game_date",
+            "schedule_date",
+            "date",
+            "start_date",
+            "game_datetime",
+            "date_time",
+        ),
+    )
+
+    if date_col is None:
+        return pl.DataFrame()
+
+    parsed = pd.to_datetime(
+        pdf[date_col],
+        errors="coerce",
+        utc=False,
+    )
+
+    mask = parsed.notna() & (
+        parsed.dt.date < target_day
+    )
+
+    return pl.from_pandas(
+        pdf.loc[
+            mask
+        ].reset_index(drop=True)
+    )
+
+
+def goalie_gsax_lookup(
+    gsax: Any,
+) -> dict[str, dict[str, Any]]:
+    if frame_empty(gsax):
+        return {}
+
+    pdf = as_pandas(gsax)
+
+    required = {
+        "player_id",
+        "goalie",
+        "gsax",
+    }
+
+    if not required.issubset(
+        set(pdf.columns)
+    ):
+        raise ValueError(
+            "SportsDataverse goalie GSAx output missing "
+            f"required columns: {sorted(required - set(pdf.columns))}"
+        )
+
+    out: dict[
+        str,
+        dict[str, Any],
+    ] = {}
+
+    for _, row in pdf.iterrows():
+        player_id = normalize_player_id(
+            row.get(
+                "player_id"
+            )
+        )
+
+        if not player_id:
+            continue
+
+        out[player_id] = {
+            "player_id": player_id,
+            "goalie": str(
+                row.get(
+                    "goalie",
+                    "",
+                )
+            ).strip(),
+            "gsax": pd.to_numeric(
+                row.get(
+                    "gsax"
+                ),
+                errors="coerce",
+            ),
+            "gsax_per_60": pd.to_numeric(
+                row.get(
+                    "gsax_per_60"
+                ),
+                errors="coerce",
+            ),
+        }
+
+    return out
+
+
+def goalie_usage_candidates(
+    prior_pbp: Any,
+    team: str,
+) -> list[dict[str, Any]]:
+    if frame_empty(prior_pbp):
+        return []
+
+    pdf = as_pandas(
+        prior_pbp
+    )
+
+    game_id_col = first_col(
+        pdf,
+        (
+            "game_id",
+            "id",
+            "event_id",
+        ),
+    )
+
+    records: list[
+        dict[str, str]
+    ] = []
+
+    for side in (
+        "home",
+        "away",
+    ):
+        team_col = first_col(
+            pdf,
+            (
+                f"{side}_abbr",
+                f"{side}_team_abbr",
+                f"{side}_team_abbrev",
+                f"{side}_team",
+            ),
+        )
+        goalie_id_col = first_col(
+            pdf,
+            (
+                f"{side}_goalie_id",
+                f"{side}_goalie_player_id",
+            ),
+        )
+        goalie_name_col = first_col(
+            pdf,
+            (
+                f"{side}_goalie",
+                f"{side}_goalie_name",
+            ),
+        )
+
+        if (
+            team_col is None
+            or goalie_id_col is None
+        ):
+            continue
+
+        side_rows = pdf.loc[
+            pdf[team_col]
+            .astype(str)
+            .str.strip()
+            .eq(str(team).strip())
+        ]
+
+        for row_number, row in side_rows.iterrows():
+            player_id = normalize_player_id(
+                row.get(
+                    goalie_id_col
+                )
+            )
+
+            if not player_id:
+                continue
+
+            game_id = (
+                str(
+                    row.get(
+                        game_id_col,
+                        "",
+                    )
+                ).strip()
+                if game_id_col is not None
+                else str(row_number)
+            )
+
+            records.append(
+                {
+                    "player_id": player_id,
+                    "goalie": (
+                        str(
+                            row.get(
+                                goalie_name_col,
+                                "",
+                            )
+                        ).strip()
+                        if goalie_name_col is not None
+                        else ""
+                    ),
+                    "game_id": game_id,
+                }
+            )
+
+    if not records:
+        return []
+
+    usage = (
+        pd.DataFrame(records)
+        .drop_duplicates(
+            subset=[
+                "player_id",
+                "game_id",
+            ]
+        )
+    )
+
+    names = (
+        usage.groupby(
+            "player_id",
+            dropna=False,
+        )["goalie"]
+        .agg(
+            lambda values: next(
+                (
+                    str(value).strip()
+                    for value in values
+                    if str(value).strip()
+                ),
+                "",
+            )
+        )
+    )
+
+    counts = (
+        usage.groupby(
+            "player_id",
+            dropna=False,
+        )["game_id"]
+        .nunique()
+        .rename(
+            "prior_appearances"
+        )
+    )
+
+    combined = (
+        pd.concat(
+            [
+                names,
+                counts,
+            ],
+            axis=1,
+        )
+        .reset_index()
+    )
+
+    return sorted(
+        combined.to_dict(
+            orient="records"
+        ),
+        key=lambda row: (
+            -int(
+                row.get(
+                    "prior_appearances",
+                    0,
+                )
+            ),
+            str(
+                row.get(
+                    "goalie",
+                    "",
+                )
+            ),
+            str(
+                row.get(
+                    "player_id",
+                    "",
+                )
+            ),
+        ),
+    )
+
+
+def goalie_value(
+    gsax_lookup: dict[
+        str,
+        dict[str, Any],
+    ],
+    candidate: dict[str, Any] | None,
+) -> Any:
+    if not candidate:
+        return None
+
+    player_id = normalize_player_id(
+        candidate.get(
+            "player_id"
+        )
+    )
+
+    row = gsax_lookup.get(
+        player_id
+    )
+
+    if row is None:
+        return None
+
+    value = row.get(
+        "gsax"
+    )
+
+    if pd.isna(value):
+        return None
+
+    return float(value)
+
+
+def goalie_name(
+    gsax_lookup: dict[
+        str,
+        dict[str, Any],
+    ],
+    candidate: dict[str, Any] | None,
+) -> str:
+    if not candidate:
+        return ""
+
+    name = str(
+        candidate.get(
+            "goalie",
+            "",
+        )
+    ).strip()
+
+    if name:
+        return name
+
+    player_id = normalize_player_id(
+        candidate.get(
+            "player_id"
+        )
+    )
+
+    return str(
+        gsax_lookup.get(
+            player_id,
+            {},
+        ).get(
+            "goalie",
+            "",
+        )
+    ).strip()
+
+
+def build_game_goalie_features_asof(
+    schedule: Any,
+    pbp: Any,
+    shifts: Any,
+    *,
+    current: bool,
+    generated_at_utc: datetime,
+) -> pl.DataFrame:
+    if (
+        frame_empty(schedule)
+        or frame_empty(pbp)
+    ):
+        return pl.DataFrame()
+
+    games = schedule_games_with_cutoffs(
+        schedule
+    )
+
+    if games.empty:
+        return pl.DataFrame()
+
+    generated_at_utc = (
+        generated_at_utc.astimezone(
+            UTC
+        )
+    )
+
+    cache: dict[
+        str,
+        tuple[
+            pl.DataFrame,
+            dict[str, dict[str, Any]],
+        ],
+    ] = {}
+
+    rows: list[
+        dict[str, Any]
+    ] = []
+
+    for _, game in games.iterrows():
+        game_id = str(
+            game.get(
+                "game_id",
+                "",
+            )
+        ).strip()
+
+        game_date = str(
+            game.get(
+                "game_date",
+                "",
+            )
+        ).strip()
+
+        try:
+            target_day = date.fromisoformat(
+                game_date
+            )
+        except ValueError:
+            continue
+
+        cutoff = parse_timestamp_utc(
+            game.get(
+                "pregame_cutoff_utc",
+                "",
+            )
+        )
+
+        if (
+            not game_id
+            or cutoff is None
+        ):
+            continue
+
+        snapshot_as_of = (
+            generated_at_utc
+            if current
+            else strict_historical_ratings_as_of_utc(
+                cutoff
+            )
+        )
+
+        if snapshot_as_of >= cutoff:
+            continue
+
+        cache_key = target_day.isoformat()
+
+        if cache_key not in cache:
+            prior_game_ids = (
+                prior_game_ids_for_target(
+                    schedule,
+                    target_day,
+                )
+            )
+
+            prior_pbp = (
+                frame_strictly_before_game(
+                    pbp,
+                    target_day=target_day,
+                    prior_game_ids=prior_game_ids,
+                )
+            )
+
+            prior_shifts = (
+                frame_strictly_before_game(
+                    shifts,
+                    target_day=target_day,
+                    prior_game_ids=prior_game_ids,
+                )
+                if not frame_empty(
+                    shifts
+                )
+                else pl.DataFrame()
+            )
+
+            gsax = (
+                nhl.nhl_goalie_gsax(
+                    prior_pbp,
+                    prior_shifts,
+                )
+                if not prior_pbp.is_empty()
+                else pl.DataFrame()
+            )
+
+            cache[
+                cache_key
+            ] = (
+                prior_pbp,
+                goalie_gsax_lookup(
+                    gsax
+                ),
+            )
+
+        (
+            prior_pbp,
+            gsax_lookup,
+        ) = cache[
+            cache_key
+        ]
+
+        row: dict[
+            str,
+            Any
+        ] = {
+            "game_id": game_id,
+            "game_date": game_date,
+            "home_team": str(
+                game.get(
+                    "home_team",
+                    "",
+                )
+            ).strip(),
+            "away_team": str(
+                game.get(
+                    "away_team",
+                    "",
+                )
+            ).strip(),
+            "pregame_cutoff_utc": utc_iso(
+                cutoff
+            ),
+            "goalie_snapshot_as_of_utc": utc_iso(
+                snapshot_as_of
+            ),
+            "pregame_cutoff_source": str(
+                game.get(
+                    "pregame_cutoff_source",
+                    "",
+                )
+            ).strip(),
+        }
+
+        for side in (
+            "home",
+            "away",
+        ):
+            team = row[
+                f"{side}_team"
+            ]
+
+            candidates = (
+                goalie_usage_candidates(
+                    prior_pbp,
+                    team,
+                )
+            )
+
+            starter = (
+                candidates[0]
+                if candidates
+                else None
+            )
+
+            backup = (
+                candidates[1]
+                if len(candidates) > 1
+                else None
+            )
+
+            status = (
+                "projected"
+                if starter is not None
+                else "unknown"
+            )
+
+            row[
+                f"{side}_expected_starter"
+            ] = goalie_name(
+                gsax_lookup,
+                starter,
+            )
+
+            row[
+                f"{side}_starter_gsax"
+            ] = goalie_value(
+                gsax_lookup,
+                starter,
+            )
+
+            row[
+                f"{side}_backup_gsax"
+            ] = goalie_value(
+                gsax_lookup,
+                backup,
+            )
+
+            row[
+                f"{side}_goalie_status"
+            ] = status
+
+            row[
+                f"{side}_goalie_status_observed_at"
+            ] = utc_iso(
+                snapshot_as_of
+            )
+
+            row[
+                f"{side}_goalie_status_source"
+            ] = (
+                "sportsdataverse_prior_goalie_usage_projection"
+                if status == "projected"
+                else "sportsdataverse_no_pregame_starter_evidence"
+            )
+
+        home_gsax = row.get(
+            "home_starter_gsax"
+        )
+
+        away_gsax = row.get(
+            "away_starter_gsax"
+        )
+
+        if (
+            home_gsax is None
+            or away_gsax is None
+        ):
+            row[
+                "starter_gsax_differential"
+            ] = None
+        else:
+            row[
+                "starter_gsax_differential"
+            ] = (
+                float(home_gsax)
+                - float(away_gsax)
+            )
+
+        rows.append(
+            row
+        )
+
+    if not rows:
+        return pl.DataFrame()
+
+    return pl.from_pandas(
+        pd.DataFrame(
+            rows
+        )
+    )
+
+
 def pull_advanced_player_strength(
     failures: list[str],
     *,
@@ -3452,6 +4204,37 @@ def run_one(
             prefix=prefix,
             context=context,
         )
+
+    if (
+        "goalie" in categories
+        and context is not None
+    ):
+        goalie_features = safe_pull(
+            failures,
+            "goalie",
+            "game_goalie_features_asof",
+            build_game_goalie_features_asof,
+            relevant_schedule,
+            context.get(
+                "pbp"
+            ),
+            context.get(
+                "shifts"
+            ),
+            current=current,
+            generated_at_utc=datetime.now(
+                UTC
+            ),
+        )
+
+        if goalie_features is not None:
+            save_object(
+                "goalie",
+                "game_goalie_features_asof",
+                goalie_features,
+                prefix=prefix,
+                current=current,
+            )
 
     if (
         (not current)

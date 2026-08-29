@@ -1,21 +1,21 @@
 pipeline:
   name: nhl
-  schema_version: 5
+  schema_version: 6
   schema_created_at: "2026-08-29"
   schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
   "00_intake":
-    version: 3
+    version: 4
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
-    version: 4
+    version: 5
     path: "docs/win/hockey/nhl/01_merge"
 
   "02_juice":
-    version: 2
+    version: 3
     path: "docs/win/hockey/nhl/02_juice"
 
   "03_edges":
@@ -269,6 +269,71 @@ prediction_model:
       - "02_juice puck-line output"
       - "02_juice total output"
     missing_behavior: "Leave team-strength features and their differentials blank when no as-of-safe team-strength row is available; do not synthesize values."
+
+
+  goalie_integration:
+    source_root: "docs/win/hockey/nhl/sdv/goalie"
+    source_label: "game_goalie_features_asof"
+    current_file: "docs/win/hockey/nhl/sdv/goalie/latest_game_goalie_features_asof.csv"
+    historical_file_pattern: "docs/win/hockey/nhl/sdv/goalie/season_<season>_game_goalie_features_asof.csv"
+    producer_script: "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    merge_script: "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    join_identity:
+      - "game_id"
+    source_metric:
+      function: "sportsdataverse.nhl.nhl_goalie_gsax"
+      value_field: "gsax"
+      identity_field: "player_id"
+    game_level_fields:
+      - "home_expected_starter"
+      - "away_expected_starter"
+      - "home_starter_gsax"
+      - "away_starter_gsax"
+      - "home_backup_gsax"
+      - "away_backup_gsax"
+      - "starter_gsax_differential"
+      - "home_goalie_status"
+      - "away_goalie_status"
+      - "home_goalie_status_observed_at"
+      - "away_goalie_status_observed_at"
+      - "home_goalie_status_source"
+      - "away_goalie_status_source"
+    status_values:
+      - "projected"
+      - "expected"
+      - "confirmed"
+      - "unknown"
+    current_status_behavior:
+      - "The built-in SportsDataverse producer emits projected when prior goalie usage can identify a candidate and unknown otherwise."
+      - "The built-in producer does not fabricate expected or confirmed status."
+      - "Expected or confirmed may only be supplied by a separately validated timestamped pregame source."
+    as_of_rules:
+      gsax: "Calculate GSAx only from games strictly earlier than the target game date. The target game and all later games are excluded."
+      current: "A current goalie snapshot is eligible only when goalie_snapshot_as_of_utc is strictly earlier than pregame_cutoff_utc."
+      historical: "Historical goalie features are reconstructed only from prior-game play-by-play and stamped strictly before the target game's pregame cutoff."
+      status: "Each goalie status must have an observation timestamp strictly earlier than pregame_cutoff_utc."
+      canonical_validation: "Stage 01 rejects a stored goalie cutoff later than the canonical game start derived from game_date + game_time in America/New_York."
+    starter_projection:
+      method: "Prior-game goalie appearance count among goalies observed for the team; highest prior appearances is projected starter and second-highest is projected backup."
+      status: "projected"
+      purpose: "Leakage-safe fallback only; not a confirmation feed."
+    production_cutoff:
+      status: "UNRESOLVED"
+      rule: "Goalie confirmation state must not alter production model probabilities until the valid information cutoff is established."
+      must_compare_against:
+        - "sportsbook odds pulled_at timestamp"
+        - "prediction timestamp"
+        - "intended bet time"
+      leakage_rule: "Later expected/confirmed observations must never be backfilled into historical pregame predictions."
+    propagation:
+      - "01_merge merged output"
+      - "01_merge/01_merguiced moneyline output"
+      - "01_merge/01_merguiced puck-line output"
+      - "01_merge/01_merguiced total output"
+      - "02_juice moneyline output"
+      - "02_juice puck-line output"
+      - "02_juice total output"
+    missing_behavior: "Leave goalie names and GSAx blank and set goalie status to unknown when no strict-as-of goalie row is available; do not synthesize confirmed information."
 
 calibration:
   version: 1

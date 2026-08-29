@@ -68,6 +68,31 @@ TEAM_STRENGTH_FEATURE_COLUMNS = [
 ]
 
 
+GOALIE_FEATURE_COLUMNS = [
+    "home_expected_starter",
+    "away_expected_starter",
+    "home_starter_gsax",
+    "away_starter_gsax",
+    "home_backup_gsax",
+    "away_backup_gsax",
+    "starter_gsax_differential",
+    "home_goalie_status",
+    "away_goalie_status",
+    "home_goalie_status_observed_at",
+    "away_goalie_status_observed_at",
+    "home_goalie_status_source",
+    "away_goalie_status_source",
+]
+
+GOALIE_NUMERIC_FEATURE_COLUMNS = [
+    "home_starter_gsax",
+    "away_starter_gsax",
+    "home_backup_gsax",
+    "away_backup_gsax",
+    "starter_gsax_differential",
+]
+
+
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -82,6 +107,7 @@ REQUIRED_INPUT_COLUMNS = [
     "home_team",
     *FATIGUE_FEATURE_COLUMNS,
     *TEAM_STRENGTH_FEATURE_COLUMNS,
+    *GOALIE_FEATURE_COLUMNS,
     "total",
     "total_projected_goals",
     "over_prob_total",
@@ -295,6 +321,7 @@ def process_file(
     for col in [
         *FATIGUE_FEATURE_COLUMNS,
         *TEAM_STRENGTH_FEATURE_COLUMNS,
+        *GOALIE_NUMERIC_FEATURE_COLUMNS,
         "total",
         "total_projected_goals",
         "over_prob_total",
