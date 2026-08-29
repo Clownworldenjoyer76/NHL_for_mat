@@ -1,0 +1,158 @@
+pipeline:
+  name: nhl
+  schema_version: 1
+  schema_created_at: "2026-08-29"
+  timezone: "America/New_York"
+
+stage_schemas:
+  "00_intake":
+    version: 1
+    path: "docs/win/hockey/nhl/00_intake"
+
+  "01_merge":
+    version: 1
+    path: "docs/win/hockey/nhl/01_merge"
+
+  "02_juice":
+    version: 1
+    path: "docs/win/hockey/nhl/02_juice"
+
+  "03_edges":
+    version: 1
+    path: "docs/win/hockey/nhl/03_edges"
+
+  "04_select":
+    version: 1
+    path: "docs/win/hockey/nhl/04_select"
+
+  "05_final_scores":
+    version: 1
+    path: "docs/win/hockey/nhl/05_final_scores"
+
+canonical_game_identity:
+  field: "game_id"
+  definition: "Official NHL game identifier"
+  source: "NHL API"
+  source_endpoint: "https://api-web.nhle.com/v1/schedule/{date}"
+  source_field: "game.id"
+  authoritative_path: "docs/win/hockey/nhl/00_intake/nhl_schedule"
+  reconciliation_script: "docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py"
+  rules:
+    - "game_id is assigned from the official NHL schedule."
+    - "game_id is not a sportsbook event identifier."
+    - "game_id remains the canonical identifier across downstream NHL stages."
+
+team_identity:
+  mapping_file: "docs/win/hockey/nhl/config/mapping/team_map_nhl.csv"
+  canonical_fields:
+    - "canonical_team"
+    - "nhl_team_id"
+    - "nhl_abbrev"
+  supported_sources:
+    - "official_nhl"
+    - "dratings"
+    - "sportsbook"
+    - "shared"
+
+sportsbook:
+  odds_source: "odds-api.io"
+  base_url: "https://api.odds-api.io/v3"
+  bookmaker: "FanDuel"
+  sport_slug: "ice-hockey"
+  league_slugs:
+    - "usa-nhl"
+    - "usa-nhl-playoffs"
+
+  fields:
+    sportsbook_event_id:
+      definition: "Provider-specific event identifier returned by odds-api.io."
+      canonical_game_id: false
+      purpose: "Links sportsbook odds data to the corresponding sportsbook event."
+
+    game_id:
+      definition: "Official NHL game identifier assigned during reconciliation."
+      canonical_game_id: true
+
+  latest_snapshot:
+    path: "docs/win/hockey/nhl/odds/<YYYY_MM_DD>.json"
+    behavior: "Latest odds state for the run date; repeated runs may replace this file."
+
+  immutable_snapshots:
+    path: "docs/win/hockey/nhl/odds/snapshots/<YYYY_MM_DD>/<timestamp>.json"
+    behavior: "Each odds pull is retained separately for line-movement and closing-line analysis."
+
+  provenance:
+    generated_at_field: "generated_at_et"
+    source_field: "source"
+    bookmaker_field: "bookmaker"
+    timezone: "America/New_York"
+
+prediction_model:
+  primary_source:
+    name: "D-Ratings"
+    source_url: "https://www.dratings.com/predictor/nhl-hockey-predictions/"
+    scraper: "docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py"
+    output_root: "docs/win/hockey/nhl/00_intake/predictions"
+
+  supplemental_source:
+    name: "SportsDataverse"
+    script: "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    output_root: "docs/win/hockey/nhl/sdv"
+    categories:
+      - "schedule"
+      - "team-strength"
+      - "goalie"
+      - "lineup-strength"
+      - "fatigue"
+      - "sdv_predictions"
+      - "odds"
+
+calibration:
+  version: 1
+  versioning_rule: "Increment this version whenever the authoritative calibration configuration changes."
+
+  adjustment_field: "model_calibration_adjustment"
+
+  authoritative_files:
+    moneyline: "docs/win/hockey/nhl/config/juice/nhl_moneyline_juice.csv"
+    puck_line: "docs/win/hockey/nhl/config/juice/nhl_puck_line_juice.csv"
+    total: "docs/win/hockey/nhl/config/juice/nhl_total_juice.csv"
+
+  validator: "docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py"
+
+market_configuration:
+  authoritative_file: "docs/win/hockey/nhl/config/markets.yaml"
+  validator: "docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py"
+
+provenance:
+  timezone: "America/New_York"
+
+  rules:
+    - "Preserve the original data source wherever known."
+    - "Preserve provider-specific identifiers separately from canonical NHL identifiers."
+    - "Preserve generated-at timestamps when the source script produces them."
+    - "Preserve source timestamps when supplied by the upstream provider."
+    - "Do not replace canonical NHL game identity with sportsbook, D-Ratings, or SportsDataverse identifiers."
+
+  official_nhl_schedule:
+    source: "NHL API"
+    output_root: "docs/win/hockey/nhl/00_intake/nhl_schedule"
+    source_time_field: "start_time_utc"
+    run_log: "docs/win/hockey/nhl/errors/00_intake/pull_nhl_schedule.txt"
+
+  dratings:
+    source: "D-Ratings"
+    output_root: "docs/win/hockey/nhl/00_intake/predictions"
+    source_time_field: "date_time"
+    run_log: "docs/win/hockey/nhl/errors/00_intake/hockey_drat_scraper.txt"
+
+  sportsbook:
+    source: "odds-api.io"
+    bookmaker: "FanDuel"
+    output_root: "docs/win/hockey/nhl/odds"
+    generated_at_field: "generated_at_et"
+
+  sportsdataverse:
+    source: "SportsDataverse"
+    output_root: "docs/win/hockey/nhl/sdv"
+    snapshot_timestamp: "Encoded in timestamped current-mode output filenames"
