@@ -32,7 +32,10 @@ TEST_OUTPUT_ROOT = (
 )
 
 EXPECTED_OFFICIAL_GAME_ID = "2025020004"
-EXPECTED_PROVIDER_ID = "fixture_sb_20251008_001"
+EXPECTED_SPORTSBOOK_EVENT_ID = "fixture_sb_20251008_001"
+EXPECTED_MARKET_PROVIDER_ID = "53"
+EXPECTED_MARKET_PROVIDER_NAME = "Titanbets"
+EXPECTED_ODDS_SOURCE = "espn"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -219,11 +222,49 @@ def validate_transformed_sportsbook(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_PROVIDER_ID
+        != EXPECTED_SPORTSBOOK_EVENT_ID
     ):
         raise RuntimeError(
             "Unexpected sportsbook_event_id."
         )
+
+    if (
+        row.get(
+            "odds_source",
+            "",
+        ).strip()
+        != EXPECTED_ODDS_SOURCE
+    ):
+        raise RuntimeError(
+            "Unexpected odds_source."
+        )
+
+    for market in (
+        "moneyline",
+        "puck_line",
+        "total",
+    ):
+        if (
+            row.get(
+                f"{market}_provider_id",
+                "",
+            ).strip()
+            != EXPECTED_MARKET_PROVIDER_ID
+        ):
+            raise RuntimeError(
+                f"Unexpected {market}_provider_id."
+            )
+
+        if (
+            row.get(
+                f"{market}_provider_name",
+                "",
+            ).strip()
+            != EXPECTED_MARKET_PROVIDER_NAME
+        ):
+            raise RuntimeError(
+                f"Unexpected {market}_provider_name."
+            )
 
 
 def stage_fixture_sportsbook(
@@ -416,7 +457,7 @@ def validate_reconciliation(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_PROVIDER_ID
+        != EXPECTED_SPORTSBOOK_EVENT_ID
     ):
         raise RuntimeError(
             "Reconciled sportsbook_event_id does not "
@@ -484,6 +525,47 @@ def validate_reconciliation(
                 f"{source_name} does not contain "
                 "the official NHL game_id."
             )
+
+        if source_name == "sportsbook":
+            if (
+                source_row.get(
+                    "odds_source",
+                    "",
+                ).strip()
+                != EXPECTED_ODDS_SOURCE
+            ):
+                raise RuntimeError(
+                    "Reconciled sportsbook odds_source mismatch."
+                )
+
+            for market in (
+                "moneyline",
+                "puck_line",
+                "total",
+            ):
+                if (
+                    source_row.get(
+                        f"{market}_provider_id",
+                        "",
+                    ).strip()
+                    != EXPECTED_MARKET_PROVIDER_ID
+                ):
+                    raise RuntimeError(
+                        "Reconciled sportsbook "
+                        f"{market}_provider_id mismatch."
+                    )
+
+                if (
+                    source_row.get(
+                        f"{market}_provider_name",
+                        "",
+                    ).strip()
+                    != EXPECTED_MARKET_PROVIDER_NAME
+                ):
+                    raise RuntimeError(
+                        "Reconciled sportsbook "
+                        f"{market}_provider_name mismatch."
+                    )
 
     bad_audit = [
         audit
@@ -560,7 +642,7 @@ def validate_games(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_PROVIDER_ID
+        != EXPECTED_SPORTSBOOK_EVENT_ID
     ):
         raise RuntimeError(
             "Games output sportsbook_event_id mismatch."
@@ -692,7 +774,16 @@ def save_test_output(
         ),
         (
             "sportsbook_event_id="
-            f"{EXPECTED_PROVIDER_ID}"
+            f"{EXPECTED_SPORTSBOOK_EVENT_ID}"
+        ),
+        (
+            "odds_source="
+            f"{EXPECTED_ODDS_SOURCE}"
+        ),
+        (
+            "market_provider="
+            f"{EXPECTED_MARKET_PROVIDER_NAME}"
+            f" ({EXPECTED_MARKET_PROVIDER_ID})"
         ),
         "fixture_source=game_id_reconciliation",
         "workspace=isolated_temp_directory",
@@ -802,7 +893,7 @@ def main() -> None:
 
     print(
         "sportsbook_event_id="
-        f"{EXPECTED_PROVIDER_ID}"
+        f"{EXPECTED_SPORTSBOOK_EVENT_ID}"
     )
 
     print(

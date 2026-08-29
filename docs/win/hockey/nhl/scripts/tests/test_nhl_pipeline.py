@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import copy
 import importlib.util
+from collections import defaultdict
 import sys
 import uuid
 from pathlib import Path
@@ -358,30 +359,195 @@ def test_build_games_rejects_duplicate_official_game_id(tmp_path: Path) -> None:
 
 # ---------------------------------------------------------------------
 # test_transform_hockey_odds.py coverage
-# Regression fixture: unsupported totals
+# Regression fixtures: ESPN market parsing and provider fallback
 # ---------------------------------------------------------------------
+
+def espn_provider_row(
+    *,
+    provider_id: str = "53",
+    provider_name: str = "Titanbets",
+    provider_priority: int = 0,
+) -> dict:
+    return {
+        "espn_event_id": "fixture_sb_20251008_001",
+        "provider_id": provider_id,
+        "provider_name": provider_name,
+        "provider_priority": provider_priority,
+        "home_team_odds_current_money_line_american": 110,
+        "away_team_odds_current_money_line_american": -125,
+        "home_team_odds_current_money_line_decimal": 2.10,
+        "away_team_odds_current_money_line_decimal": 1.80,
+        "home_team_odds_current_point_spread_american": 1.5,
+        "away_team_odds_current_point_spread_american": -1.5,
+        "home_team_odds_current_point_spread_alternate_display_value": "+1.5",
+        "away_team_odds_current_point_spread_alternate_display_value": "-1.5",
+        "home_team_odds_current_spread_american": -167,
+        "away_team_odds_current_spread_american": 135,
+        "home_team_odds_current_spread_decimal": 1.60,
+        "away_team_odds_current_spread_decimal": 2.35,
+        "current_total_american": 6.5,
+        "current_total_alternate_display_value": "6.5",
+        "over_under": 6.5,
+        "current_over_american": -110,
+        "current_under_american": -110,
+        "current_over_decimal": 1.91,
+        "current_under_decimal": 1.91,
+    }
+
 
 def test_transform_hockey_odds_rejects_unsupported_total_only() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py"
     )
-    rows = [
-        {"hdp": 8.5, "over": 1.91, "under": 1.91},
-        {"hdp": 5.0, "over": 1.95, "under": 1.95},
-    ]
-    assert module.pick_total_row_closest_odds(rows) == {}
+
+    low = espn_provider_row()
+    low["current_total_american"] = 5.0
+    low["current_total_alternate_display_value"] = "5.0"
+    low["over_under"] = 5.0
+
+    high = espn_provider_row()
+    high["current_total_american"] = 8.5
+    high["current_total_alternate_display_value"] = "8.5"
+    high["over_under"] = 8.5
+
+    assert module.total_from_provider(low) is None
+    assert module.total_from_provider(high) is None
+    assert module.TOTAL_MIN == 5.5
+    assert module.TOTAL_MAX == 7.5
 
 
-def test_transform_hockey_odds_uses_supported_total_when_mixed() -> None:
+def test_transform_hockey_odds_parses_espn_main_lines() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py"
     )
-    unsupported = {"hdp": 8.5, "over": 1.90, "under": 1.90}
-    supported = {"hdp": 6.5, "over": 1.92, "under": 1.93}
+    row = espn_provider_row()
 
-    assert module.pick_total_row_closest_odds([unsupported, supported]) == supported
-    assert module.TOTAL_MIN == 5.5
-    assert module.TOTAL_MAX == 7.5
+    moneyline = module.moneyline_from_provider(row)
+    puck_line = module.puck_line_from_provider(row)
+    total = module.total_from_provider(row)
+
+    assert moneyline == {
+        "home_american": "+110",
+        "away_american": "-125",
+        "home_decimal": "2.1",
+        "away_decimal": "1.8",
+    }
+
+    assert puck_line == {
+        "home_line": "1.5",
+        "away_line": "-1.5",
+        "home_american": "-167",
+        "away_american": "+135",
+        "home_decimal": "1.6",
+        "away_decimal": "2.35",
+    }
+
+    assert total == {
+        "total": "6.5",
+        "over_american": "-110",
+        "under_american": "-110",
+        "over_decimal": "1.91",
+        "under_decimal": "1.91",
+    }
+
+
+def test_transform_hockey_odds_provider_priority_and_live_exclusion() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py"
+    )
+
+    rows = [
+        espn_provider_row(
+            provider_id="58",
+            provider_name="ESPN BET",
+            provider_priority=0,
+        ),
+        espn_provider_row(
+            provider_id="41",
+            provider_name="SugarHouse",
+            provider_priority=0,
+        ),
+        espn_provider_row(
+            provider_id="47",
+            provider_name="MGM",
+            provider_priority=0,
+        ),
+        espn_provider_row(
+            provider_id="53",
+            provider_name="Titanbets",
+            provider_priority=0,
+        ),
+        espn_provider_row(
+            provider_id="59",
+            provider_name="ESPN Bet - Live Odds",
+            provider_priority=-1,
+        ),
+    ]
+
+    ordered = module.ordered_provider_rows(rows)
+
+    assert [
+        module.provider_name(row)
+        for row in ordered
+    ] == [
+        "Titanbets",
+        "MGM",
+        "SugarHouse",
+        "ESPN BET",
+    ]
+
+
+def test_transform_hockey_odds_selects_provider_independently_per_market() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py"
+    )
+
+    titanbets = espn_provider_row(
+        provider_id="53",
+        provider_name="Titanbets",
+        provider_priority=0,
+    )
+
+    for key in (
+        "current_total_american",
+        "current_total_alternate_display_value",
+        "over_under",
+        "current_over_american",
+        "current_under_american",
+        "current_over_decimal",
+        "current_under_decimal",
+    ):
+        titanbets.pop(key, None)
+
+    mgm = espn_provider_row(
+        provider_id="47",
+        provider_name="MGM",
+        provider_priority=0,
+    )
+
+    event = {
+        "id": "fixture_sb_20251008_001",
+        "status": "pending",
+        "date": "2025-10-08T23:00:00Z",
+        "home": "Montreal Canadiens",
+        "away": "Toronto Maple Leafs",
+    }
+
+    result = module.build_row(
+        event,
+        [mgm, titanbets],
+        "2025-10-08T12:00:00-04:00",
+        defaultdict(int),
+    )
+
+    assert result["moneyline_provider_name"] == "Titanbets"
+    assert result["puck_line_provider_name"] == "Titanbets"
+    assert result["total_provider_name"] == "MGM"
+    assert result["odds_source"] == "espn"
+    assert result["sportsbook_event_id"] == "fixture_sb_20251008_001"
+    assert result["home_puck_line"] == "1.5"
+    assert result["away_puck_line"] == "-1.5"
+    assert result["total"] == "6.5"
 
 
 # ---------------------------------------------------------------------
@@ -486,7 +652,11 @@ def test_moneyline_juice_application_normalizes_probabilities(tmp_path: Path) ->
             "home_dk_moneyline_decimal": 2.10,
         }
     )
-    pd.DataFrame([row], columns=module.REQUIRED_INPUT_COLUMNS).to_csv(
+
+    pd.DataFrame(
+        [row],
+        columns=module.REQUIRED_INPUT_COLUMNS,
+    ).to_csv(
         input_path,
         index=False,
     )
@@ -516,13 +686,40 @@ def test_moneyline_juice_application_normalizes_probabilities(tmp_path: Path) ->
         input_path,
         juice_df,
     )
-    assert (applied, skipped_bad, skipped_noband) == (1, 0, 0)
 
-    output = pd.read_csv(module.OUTPUT_DIR / input_path.name)
-    away = float(output.loc[0, "away_normalized_prob_moneyline"])
-    home = float(output.loc[0, "home_normalized_prob_moneyline"])
+    assert (
+        applied,
+        skipped_bad,
+        skipped_noband,
+    ) == (
+        1,
+        0,
+        0,
+    )
 
-    assert away + home == pytest.approx(1.0, abs=1e-12)
+    output = pd.read_csv(
+        module.OUTPUT_DIR
+        / input_path.name
+    )
+
+    away = float(
+        output.loc[
+            0,
+            "away_normalized_prob_moneyline",
+        ]
+    )
+
+    home = float(
+        output.loc[
+            0,
+            "home_normalized_prob_moneyline",
+        ]
+    )
+
+    assert away + home == pytest.approx(
+        1.0,
+        abs=1e-12,
+    )
     assert 0.0 < away < 1.0
     assert 0.0 < home < 1.0
 
@@ -556,7 +753,11 @@ def test_puck_line_juice_application_normalizes_probabilities(tmp_path: Path) ->
             "home_dk_puck_line_decimal": 1.61,
         }
     )
-    pd.DataFrame([row], columns=module.REQUIRED_INPUT_COLUMNS).to_csv(
+
+    pd.DataFrame(
+        [row],
+        columns=module.REQUIRED_INPUT_COLUMNS,
+    ).to_csv(
         input_path,
         index=False,
     )
@@ -586,13 +787,40 @@ def test_puck_line_juice_application_normalizes_probabilities(tmp_path: Path) ->
         input_path,
         juice_df,
     )
-    assert (applied, skipped_bad, skipped_noband) == (1, 0, 0)
 
-    output = pd.read_csv(module.OUTPUT_DIR / input_path.name)
-    away = float(output.loc[0, "away_normalized_prob_puck_line"])
-    home = float(output.loc[0, "home_normalized_prob_puck_line"])
+    assert (
+        applied,
+        skipped_bad,
+        skipped_noband,
+    ) == (
+        1,
+        0,
+        0,
+    )
 
-    assert away + home == pytest.approx(1.0, abs=1e-12)
+    output = pd.read_csv(
+        module.OUTPUT_DIR
+        / input_path.name
+    )
+
+    away = float(
+        output.loc[
+            0,
+            "away_normalized_prob_puck_line",
+        ]
+    )
+
+    home = float(
+        output.loc[
+            0,
+            "home_normalized_prob_puck_line",
+        ]
+    )
+
+    assert away + home == pytest.approx(
+        1.0,
+        abs=1e-12,
+    )
     assert 0.0 < away < 1.0
     assert 0.0 < home < 1.0
 
@@ -626,7 +854,11 @@ def test_total_juice_application_normalizes_probabilities(tmp_path: Path) -> Non
             "dk_total_under_decimal": 1.87,
         }
     )
-    pd.DataFrame([row], columns=module.REQUIRED_INPUT_COLUMNS).to_csv(
+
+    pd.DataFrame(
+        [row],
+        columns=module.REQUIRED_INPUT_COLUMNS,
+    ).to_csv(
         input_path,
         index=False,
     )
@@ -654,13 +886,40 @@ def test_total_juice_application_normalizes_probabilities(tmp_path: Path) -> Non
         input_path,
         juice_df,
     )
-    assert (applied, skipped_bad, skipped_noband) == (1, 0, 0)
 
-    output = pd.read_csv(module.OUTPUT_DIR / input_path.name)
-    over = float(output.loc[0, "over_normalized_prob_total"])
-    under = float(output.loc[0, "under_normalized_prob_total"])
+    assert (
+        applied,
+        skipped_bad,
+        skipped_noband,
+    ) == (
+        1,
+        0,
+        0,
+    )
 
-    assert over + under == pytest.approx(1.0, abs=1e-12)
+    output = pd.read_csv(
+        module.OUTPUT_DIR
+        / input_path.name
+    )
+
+    over = float(
+        output.loc[
+            0,
+            "over_normalized_prob_total",
+        ]
+    )
+
+    under = float(
+        output.loc[
+            0,
+            "under_normalized_prob_total",
+        ]
+    )
+
+    assert over + under == pytest.approx(
+        1.0,
+        abs=1e-12,
+    )
     assert 0.0 < over < 1.0
     assert 0.0 < under < 1.0
 
@@ -699,11 +958,18 @@ def test_compute_edges_formula() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/03_edges/compute_edges.py"
     )
+
     result = module.safe_edge_pct(
         pd.Series([2.0]),
         pd.Series([0.60]),
     )
-    assert float(result.iloc[0]) == pytest.approx(0.10, abs=1e-12)
+
+    assert float(
+        result.iloc[0]
+    ) == pytest.approx(
+        0.10,
+        abs=1e-12,
+    )
 
 
 @pytest.mark.parametrize(
@@ -716,15 +982,22 @@ def test_compute_edges_formula() -> None:
         (2.0, np.nan),
     ],
 )
-def test_compute_edges_invalid_inputs_return_nan(decimal, probability) -> None:
+def test_compute_edges_invalid_inputs_return_nan(
+    decimal,
+    probability,
+) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/03_edges/compute_edges.py"
     )
+
     result = module.safe_edge_pct(
         pd.Series([decimal]),
         pd.Series([probability]),
     )
-    assert pd.isna(result.iloc[0])
+
+    assert pd.isna(
+        result.iloc[0]
+    )
 
 
 # ---------------------------------------------------------------------
@@ -735,20 +1008,43 @@ def test_compute_ev_and_kelly_formulas(tmp_path: Path) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py"
     )
-    module.LOG_FILE = tmp_path / "compute_ev_kelly.log"
+    module.LOG_FILE = (
+        tmp_path
+        / "compute_ev_kelly.log"
+    )
 
-    probability = pd.Series([0.60])
-    decimal = pd.Series([2.0])
+    probability = pd.Series(
+        [0.60]
+    )
+    decimal = pd.Series(
+        [2.0]
+    )
 
-    ev = module.compute_ev(probability, decimal)
+    ev = module.compute_ev(
+        probability,
+        decimal,
+    )
+
     kelly, negative_count = module.compute_kelly(
         probability,
         decimal,
         "fixture.csv",
     )
 
-    assert float(ev.iloc[0]) == pytest.approx(0.20, abs=1e-12)
-    assert float(kelly.iloc[0]) == pytest.approx(0.20, abs=1e-12)
+    assert float(
+        ev.iloc[0]
+    ) == pytest.approx(
+        0.20,
+        abs=1e-12,
+    )
+
+    assert float(
+        kelly.iloc[0]
+    ) == pytest.approx(
+        0.20,
+        abs=1e-12,
+    )
+
     assert negative_count == 0
 
 
@@ -756,7 +1052,10 @@ def test_negative_kelly_is_clipped_to_zero(tmp_path: Path) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py"
     )
-    module.LOG_FILE = tmp_path / "compute_ev_kelly.log"
+    module.LOG_FILE = (
+        tmp_path
+        / "compute_ev_kelly.log"
+    )
 
     kelly, negative_count = module.compute_kelly(
         pd.Series([0.40]),
@@ -764,7 +1063,10 @@ def test_negative_kelly_is_clipped_to_zero(tmp_path: Path) -> None:
         "fixture.csv",
     )
 
-    assert float(kelly.iloc[0]) == 0.0
+    assert float(
+        kelly.iloc[0]
+    ) == 0.0
+
     assert negative_count == 1
 
 
@@ -776,32 +1078,67 @@ def test_current_markets_yaml_passes_validator(tmp_path: Path) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py"
     )
-    module.LOG_FILE = tmp_path / "validate_markets_config.log"
+
+    module.LOG_FILE = (
+        tmp_path
+        / "validate_markets_config.log"
+    )
 
     errors: list[str] = []
-    nhl_config = module.load_config(errors)
+
+    nhl_config = module.load_config(
+        errors
+    )
 
     assert nhl_config is not None
-    module.validate_config(nhl_config, errors)
+
+    module.validate_config(
+        nhl_config,
+        errors,
+    )
+
     assert errors == []
 
 
-def test_markets_validator_rejects_invalid_pick_preference(tmp_path: Path) -> None:
+def test_markets_validator_rejects_invalid_pick_preference(
+    tmp_path: Path,
+) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py"
     )
-    module.LOG_FILE = tmp_path / "validate_markets_config.log"
+
+    module.LOG_FILE = (
+        tmp_path
+        / "validate_markets_config.log"
+    )
 
     errors: list[str] = []
-    nhl_config = module.load_config(errors)
+
+    nhl_config = module.load_config(
+        errors
+    )
+
     assert nhl_config is not None
     assert errors == []
 
-    invalid = copy.deepcopy(nhl_config)
-    invalid["moneyline"]["pick_preference"] = "not-valid"
-    module.validate_config(invalid, errors)
+    invalid = copy.deepcopy(
+        nhl_config
+    )
 
-    assert any("pick_preference INVALID" in message for message in errors)
+    invalid["moneyline"][
+        "pick_preference"
+    ] = "not-valid"
+
+    module.validate_config(
+        invalid,
+        errors,
+    )
+
+    assert any(
+        "pick_preference INVALID"
+        in message
+        for message in errors
+    )
 
 
 # ---------------------------------------------------------------------
@@ -813,17 +1150,24 @@ def test_dual_moneyline_selections_allowed_when_pick_preference_all() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
     )
+
     rules = permissive_side_rules()
+
     config = {
         "moneyline": {
             "enabled": True,
             "pick_preference": "all",
-            "home": copy.deepcopy(rules),
-            "away": copy.deepcopy(rules),
+            "home": copy.deepcopy(
+                rules
+            ),
+            "away": copy.deepcopy(
+                rules
+            ),
         }
     }
 
     rejections: dict = {}
+
     selected = module.process_moneyline(
         synthetic_moneyline_row(),
         config,
@@ -832,7 +1176,15 @@ def test_dual_moneyline_selections_allowed_when_pick_preference_all() -> None:
     )
 
     assert len(selected) == 2
-    assert {row["bet_side"] for row in selected} == {"home", "away"}
+
+    assert {
+        row["bet_side"]
+        for row in selected
+    } == {
+        "home",
+        "away",
+    }
+
     assert rejections == {}
 
 
@@ -840,21 +1192,34 @@ def test_best_ev_reduces_dual_moneyline_selection_to_one() -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
     )
+
     rules = permissive_side_rules()
+
     config = {
         "moneyline": {
             "enabled": True,
             "pick_preference": "best_ev",
-            "home": copy.deepcopy(rules),
-            "away": copy.deepcopy(rules),
+            "home": copy.deepcopy(
+                rules
+            ),
+            "away": copy.deepcopy(
+                rules
+            ),
         }
     }
 
     row = synthetic_moneyline_row()
-    row["home_ev_moneyline"] = 0.08
-    row["away_ev_moneyline"] = 0.03
+
+    row[
+        "home_ev_moneyline"
+    ] = 0.08
+
+    row[
+        "away_ev_moneyline"
+    ] = 0.03
 
     rejections: dict = {}
+
     selected = module.process_moneyline(
         row,
         config,
@@ -863,9 +1228,19 @@ def test_best_ev_reduces_dual_moneyline_selection_to_one() -> None:
     )
 
     assert len(selected) == 1
-    assert selected[0]["bet_side"] == "home"
+
+    assert (
+        selected[0]["bet_side"]
+        == "home"
+    )
+
     assert rejections[
-        ("2026_01_01", "moneyline", "away", "pick_preference")
+        (
+            "2026_01_01",
+            "moneyline",
+            "away",
+            "pick_preference",
+        )
     ] == 1
 
 
@@ -873,19 +1248,45 @@ def test_selector_rejects_blank_game_id(tmp_path: Path) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
     )
-    module.INPUT_DIR = tmp_path
-    module.LOG_FILE = tmp_path / "hockey_select_bets.log"
 
-    input_path = tmp_path / "fixture_moneyline.csv"
-    pd.DataFrame([{"game_id": "", "dummy": "value"}]).to_csv(
+    module.INPUT_DIR = tmp_path
+
+    module.LOG_FILE = (
+        tmp_path
+        / "hockey_select_bets.log"
+    )
+
+    input_path = (
+        tmp_path
+        / "fixture_moneyline.csv"
+    )
+
+    pd.DataFrame(
+        [
+            {
+                "game_id": "",
+                "dummy": "value",
+            }
+        ]
+    ).to_csv(
         input_path,
         index=False,
     )
 
-    with pytest.raises(SystemExit):
-        module.read_market_file(input_path, "moneyline")
+    with pytest.raises(
+        SystemExit
+    ):
+        module.read_market_file(
+            input_path,
+            "moneyline",
+        )
 
-    assert "blank game_id" in module.LOG_FILE.read_text(encoding="utf-8")
+    assert (
+        "blank game_id"
+        in module.LOG_FILE.read_text(
+            encoding="utf-8"
+        )
+    )
 
 
 # ---------------------------------------------------------------------
@@ -946,26 +1347,53 @@ def test_final_score_outcome_logic(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.chdir(tmp_path)
+    monkeypatch.chdir(
+        tmp_path
+    )
+
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py"
     )
-    module.GRADE_ERROR_LOG = tmp_path / "grade_errors.log"
-    module.GRADE_SUMMARY_LOG = tmp_path / "grade_summary.log"
 
-    assert module.determine_outcome(row) == expected
+    module.GRADE_ERROR_LOG = (
+        tmp_path
+        / "grade_errors.log"
+    )
+
+    module.GRADE_SUMMARY_LOG = (
+        tmp_path
+        / "grade_summary.log"
+    )
+
+    assert (
+        module.determine_outcome(
+            row
+        )
+        == expected
+    )
 
 
 def test_unmatched_grading_row_is_preserved_as_unresolved(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.chdir(tmp_path)
+    monkeypatch.chdir(
+        tmp_path
+    )
+
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py"
     )
-    module.GRADE_ERROR_LOG = tmp_path / "grade_errors.log"
-    module.GRADE_SUMMARY_LOG = tmp_path / "grade_summary.log"
+
+    module.GRADE_ERROR_LOG = (
+        tmp_path
+        / "grade_errors.log"
+    )
+
+    module.GRADE_SUMMARY_LOG = (
+        tmp_path
+        / "grade_summary.log"
+    )
 
     bets = pd.DataFrame(
         [
@@ -977,48 +1405,100 @@ def test_unmatched_grading_row_is_preserved_as_unresolved(
             }
         ]
     )
-    scores = pd.DataFrame(columns=["game_id"])
-    statuses = pd.DataFrame(columns=["game_id"])
 
-    graded, pending, unresolved = module.grade_rows(
-        bets,
-        scores,
-        statuses,
+    scores = pd.DataFrame(
+        columns=["game_id"]
+    )
+
+    statuses = pd.DataFrame(
+        columns=["game_id"]
+    )
+
+    graded, pending, unresolved = (
+        module.grade_rows(
+            bets,
+            scores,
+            statuses,
+        )
     )
 
     assert graded.empty
     assert pending.empty
     assert len(unresolved) == 1
-    assert unresolved.iloc[0]["game_id"] == "2025020001"
+
     assert (
-        unresolved.iloc[0]["unresolved_reason"]
+        unresolved.iloc[0]["game_id"]
+        == "2025020001"
+    )
+
+    assert (
+        unresolved.iloc[0][
+            "unresolved_reason"
+        ]
         == "official_game_status_missing"
     )
-    assert len(graded) + len(pending) + len(unresolved) == len(bets)
+
+    assert (
+        len(graded)
+        + len(pending)
+        + len(unresolved)
+        == len(bets)
+    )
 
 
 def _load_results_report_module(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ):
-    monkeypatch.chdir(tmp_path)
+    monkeypatch.chdir(
+        tmp_path
+    )
+
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py"
     )
-    module.CALIBRATION_DIR = tmp_path / "calibration"
-    module.CALIBRATION_DIR.mkdir(parents=True, exist_ok=True)
-    module.SUMMARY_LOG = tmp_path / "report_summary.log"
-    module.ERROR_LOG = tmp_path / "report_errors.log"
+
+    module.CALIBRATION_DIR = (
+        tmp_path
+        / "calibration"
+    )
+
+    module.CALIBRATION_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    module.SUMMARY_LOG = (
+        tmp_path
+        / "report_summary.log"
+    )
+
+    module.ERROR_LOG = (
+        tmp_path
+        / "report_errors.log"
+    )
+
     return module
 
 
-@pytest.mark.parametrize("invalid_probability", [np.nan, -0.01, 1.01])
+@pytest.mark.parametrize(
+    "invalid_probability",
+    [
+        np.nan,
+        -0.01,
+        1.01,
+    ],
+)
 def test_calibration_rejects_invalid_model_probability(
     invalid_probability,
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
+
     df = pd.DataFrame(
         [
             {
@@ -1032,82 +1512,222 @@ def test_calibration_rejects_invalid_model_probability(
         ]
     )
 
-    with pytest.raises(RuntimeError, match="CALIBRATION BLOCKED"):
-        module.prepare_calibration_df(df)
+    with pytest.raises(
+        RuntimeError,
+        match="CALIBRATION BLOCKED",
+    ):
+        module.prepare_calibration_df(
+            df
+        )
 
 
 def test_calibration_excludes_pushes(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
-    prepared = module.prepare_df(calibration_input_rows())
-    calibration = module.prepare_calibration_df(prepared)
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
+
+    prepared = module.prepare_df(
+        calibration_input_rows()
+    )
+
+    calibration = (
+        module.prepare_calibration_df(
+            prepared
+        )
+    )
 
     assert len(calibration) == 2
-    assert set(calibration["bet_result"].str.lower()) == {"win", "loss"}
-    assert "push" not in set(calibration["bet_result"].str.lower())
+
+    assert set(
+        calibration[
+            "bet_result"
+        ].str.lower()
+    ) == {
+        "win",
+        "loss",
+    }
+
+    assert (
+        "push"
+        not in set(
+            calibration[
+                "bet_result"
+            ].str.lower()
+        )
+    )
 
 
 def test_calibration_metrics_brier_log_loss_expected_vs_realized(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
-    prepared = module.prepare_df(calibration_input_rows())
-    calibration = module.prepare_calibration_df(prepared)
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
 
-    row = module.calibration_metric_row(calibration, "ALL")
+    prepared = module.prepare_df(
+        calibration_input_rows()
+    )
+
+    calibration = (
+        module.prepare_calibration_df(
+            prepared
+        )
+    )
+
+    row = module.calibration_metric_row(
+        calibration,
+        "ALL",
+    )
 
     assert row["bets"] == 2
-    assert row["expected_win_rate"] == pytest.approx(0.50, abs=1e-12)
-    assert row["realized_win_rate"] == pytest.approx(0.50, abs=1e-12)
-    assert row["calibration_gap"] == pytest.approx(0.0, abs=1e-12)
-    assert row["brier_score"] == pytest.approx(0.16, abs=1e-12)
-    assert row["log_loss"] == pytest.approx(-np.log(0.60), abs=1e-12)
-    assert row["expected_wins"] == pytest.approx(1.0, abs=1e-12)
-    assert row["realized_wins"] == pytest.approx(1.0, abs=1e-12)
+
+    assert row[
+        "expected_win_rate"
+    ] == pytest.approx(
+        0.50,
+        abs=1e-12,
+    )
+
+    assert row[
+        "realized_win_rate"
+    ] == pytest.approx(
+        0.50,
+        abs=1e-12,
+    )
+
+    assert row[
+        "calibration_gap"
+    ] == pytest.approx(
+        0.0,
+        abs=1e-12,
+    )
+
+    assert row[
+        "brier_score"
+    ] == pytest.approx(
+        0.16,
+        abs=1e-12,
+    )
+
+    assert row[
+        "log_loss"
+    ] == pytest.approx(
+        -np.log(0.60),
+        abs=1e-12,
+    )
+
+    assert row[
+        "expected_wins"
+    ] == pytest.approx(
+        1.0,
+        abs=1e-12,
+    )
+
+    assert row[
+        "realized_wins"
+    ] == pytest.approx(
+        1.0,
+        abs=1e-12,
+    )
 
 
 def test_calibration_writes_all_required_reports(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
-    prepared = module.prepare_df(calibration_input_rows())
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
 
-    module.write_calibration_reports(prepared)
+    prepared = module.prepare_df(
+        calibration_input_rows()
+    )
+
+    module.write_calibration_reports(
+        prepared
+    )
 
     expected = {
-        "nhl_calibration_metrics.csv": module.CALIBRATION_METRICS_COLUMNS,
-        "nhl_probability_calibration.csv": module.PROBABILITY_CALIBRATION_COLUMNS,
-        "nhl_expected_vs_realized.csv": module.EXPECTED_VS_REALIZED_COLUMNS,
-        "nhl_walk_forward_performance.csv": module.WALK_FORWARD_COLUMNS,
+        "nhl_calibration_metrics.csv": (
+            module.CALIBRATION_METRICS_COLUMNS
+        ),
+        "nhl_probability_calibration.csv": (
+            module.PROBABILITY_CALIBRATION_COLUMNS
+        ),
+        "nhl_expected_vs_realized.csv": (
+            module.EXPECTED_VS_REALIZED_COLUMNS
+        ),
+        "nhl_walk_forward_performance.csv": (
+            module.WALK_FORWARD_COLUMNS
+        ),
     }
 
     for filename, columns in expected.items():
-        path = module.CALIBRATION_DIR / filename
+        path = (
+            module.CALIBRATION_DIR
+            / filename
+        )
+
         assert path.is_file(), filename
-        report = pd.read_csv(path)
-        assert list(report.columns) == list(columns)
+
+        report = pd.read_csv(
+            path
+        )
+
+        assert list(
+            report.columns
+        ) == list(
+            columns
+        )
 
 
 def test_walk_forward_performance_is_cumulative_expanding_window(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
-    prepared = module.prepare_df(calibration_input_rows())
-    calibration = module.prepare_calibration_df(prepared)
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
 
-    module.write_walk_forward_performance(prepared, calibration)
+    prepared = module.prepare_df(
+        calibration_input_rows()
+    )
+
+    calibration = (
+        module.prepare_calibration_df(
+            prepared
+        )
+    )
+
+    module.write_walk_forward_performance(
+        prepared,
+        calibration,
+    )
 
     report = pd.read_csv(
-        module.CALIBRATION_DIR / "nhl_walk_forward_performance.csv"
+        module.CALIBRATION_DIR
+        / "nhl_walk_forward_performance.csv"
     )
-    all_rows = report[report["market_type"] == "ALL"].reset_index(drop=True)
 
-    assert list(all_rows["through_game_date"]) == [
+    all_rows = report[
+        report["market_type"] == "ALL"
+    ].reset_index(
+        drop=True
+    )
+
+    assert list(
+        all_rows[
+            "through_game_date"
+        ]
+    ) == [
         "2026_01_01",
         "2026_01_02",
     ]
@@ -1115,36 +1735,95 @@ def test_walk_forward_performance_is_cumulative_expanding_window(
     first = all_rows.iloc[0]
     second = all_rows.iloc[1]
 
-    assert int(first["Win"]) == 1
-    assert int(first["Loss"]) == 0
-    assert int(first["Push"]) == 0
-    assert int(first["bets_excluding_pushes"]) == 1
-    assert int(first["bets_including_pushes"]) == 1
+    assert int(
+        first["Win"]
+    ) == 1
 
-    assert int(second["Win"]) == 1
-    assert int(second["Loss"]) == 1
-    assert int(second["Push"]) == 1
-    assert int(second["bets_excluding_pushes"]) == 2
-    assert int(second["bets_including_pushes"]) == 3
-    assert float(second["expected_win_rate"]) == pytest.approx(0.50, abs=1e-12)
-    assert float(second["realized_win_rate"]) == pytest.approx(0.50, abs=1e-12)
+    assert int(
+        first["Loss"]
+    ) == 0
+
+    assert int(
+        first["Push"]
+    ) == 0
+
+    assert int(
+        first["bets_excluding_pushes"]
+    ) == 1
+
+    assert int(
+        first["bets_including_pushes"]
+    ) == 1
+
+    assert int(
+        second["Win"]
+    ) == 1
+
+    assert int(
+        second["Loss"]
+    ) == 1
+
+    assert int(
+        second["Push"]
+    ) == 1
+
+    assert int(
+        second["bets_excluding_pushes"]
+    ) == 2
+
+    assert int(
+        second["bets_including_pushes"]
+    ) == 3
+
+    assert float(
+        second[
+            "expected_win_rate"
+        ]
+    ) == pytest.approx(
+        0.50,
+        abs=1e-12,
+    )
+
+    assert float(
+        second[
+            "realized_win_rate"
+        ]
+    ) == pytest.approx(
+        0.50,
+        abs=1e-12,
+    )
 
 
 def test_reporting_blocks_unresolved_grading_rows(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    module = _load_results_report_module(tmp_path, monkeypatch)
-    module.UNRESOLVED_FILE = tmp_path / "unresolved.csv"
+    module = _load_results_report_module(
+        tmp_path,
+        monkeypatch,
+    )
+
+    module.UNRESOLVED_FILE = (
+        tmp_path
+        / "unresolved.csv"
+    )
 
     pd.DataFrame(
         [
             {
                 "game_id": "2025020001",
-                "unresolved_reason": "official_game_status_missing",
+                "unresolved_reason": (
+                    "official_game_status_missing"
+                ),
             }
         ]
-    ).to_csv(module.UNRESOLVED_FILE, index=False)
+    ).to_csv(
+        module.UNRESOLVED_FILE,
+        index=False,
+    )
 
-    with pytest.raises(RuntimeError, match="FINAL REPORTING BLOCKED"):
+    with pytest.raises(
+        RuntimeError,
+        match="FINAL REPORTING BLOCKED",
+    ):
         module.fail_if_unresolved_rows_exist()
