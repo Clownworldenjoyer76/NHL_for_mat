@@ -94,11 +94,17 @@ def read_reconciled_file(
         if reader.fieldnames is None:
             fail(log_lines, f"{path} has no header row.")
 
-        missing_columns = [col for col in REQUIRED_COLUMNS if col not in reader.fieldnames]
+        missing_columns = [
+            col
+            for col in REQUIRED_COLUMNS
+            if col not in reader.fieldnames
+        ]
+
         if missing_columns:
             fail(
                 log_lines,
-                f"{path} missing required columns: {', '.join(missing_columns)}",
+                f"{path} missing required columns: "
+                f"{', '.join(missing_columns)}",
             )
 
         rows: list[dict[str, str]] = []
@@ -107,27 +113,46 @@ def read_reconciled_file(
         sportsbook_ids_seen: set[str] = set()
 
         for row_number, row in enumerate(reader, start=2):
-            output_row = {col: (row.get(col) or "").strip() for col in OUTPUT_COLUMNS}
+            output_row = {
+                col: (row.get(col) or "").strip()
+                for col in OUTPUT_COLUMNS
+            }
 
-            missing_values = [col for col in OUTPUT_COLUMNS if col != "sportsbook_event_id" and output_row[col] == ""]
+            missing_values = [
+                col
+                for col in OUTPUT_COLUMNS
+                if col != "sportsbook_event_id"
+                and output_row[col] == ""
+            ]
+
             if missing_values:
                 fail(
                     log_lines,
-                    f"{path} row {row_number} missing values for: {', '.join(missing_values)}",
+                    f"{path} row {row_number} missing values for: "
+                    f"{', '.join(missing_values)}",
                 )
 
             game_id = output_row["game_id"]
             sportsbook_event_id = output_row["sportsbook_event_id"]
 
             if game_id in game_ids_seen:
-                fail(log_lines, f"{path} has duplicate official game_id: {game_id}")
-            game_ids_seen.add(game_id)
-
-            if sportsbook_event_id and sportsbook_event_id in sportsbook_ids_seen:
                 fail(
                     log_lines,
-                    f"{path} has duplicate sportsbook_event_id: {sportsbook_event_id}",
+                    f"{path} has duplicate official game_id: {game_id}",
                 )
+
+            game_ids_seen.add(game_id)
+
+            if (
+                sportsbook_event_id
+                and sportsbook_event_id in sportsbook_ids_seen
+            ):
+                fail(
+                    log_lines,
+                    f"{path} has duplicate sportsbook_event_id: "
+                    f"{sportsbook_event_id}",
+                )
+
             if sportsbook_event_id:
                 sportsbook_ids_seen.add(sportsbook_event_id)
 
@@ -135,12 +160,16 @@ def read_reconciled_file(
             rows.append(output_row)
 
     if not rows:
-        fail(log_lines, f"{path} contains no reconciled game rows.")
+        fail(
+            log_lines,
+            f"{path} contains no reconciled game rows.",
+        )
 
     if len(game_dates_seen) != 1:
         fail(
             log_lines,
-            f"{path} contains multiple game_date values: {', '.join(sorted(game_dates_seen))}",
+            f"{path} contains multiple game_date values: "
+            f"{', '.join(sorted(game_dates_seen))}",
         )
 
     game_date = next(iter(game_dates_seen))
@@ -148,34 +177,30 @@ def read_reconciled_file(
     if game_date != file_date:
         fail(
             log_lines,
-            f"{path} filename date {file_date} does not match game_date column {game_date}.",
+            f"{path} filename date {file_date} does not match "
+            f"game_date column {game_date}.",
         )
 
     return game_date, rows
 
 
-def write_games_file(game_date: str, rows: list[dict[str, str]]) -> Path:
+def write_games_file(
+    game_date: str,
+    rows: list[dict[str, str]],
+) -> Path:
     GAMES_DIR.mkdir(parents=True, exist_ok=True)
 
     output_path = GAMES_DIR / f"{game_date}{OUTPUT_SUFFIX}"
 
     with output_path.open("w", newline="", encoding="utf-8") as outfile:
-        writer = csv.DictWriter(outfile, fieldnames=OUTPUT_COLUMNS)
+        writer = csv.DictWriter(
+            outfile,
+            fieldnames=OUTPUT_COLUMNS,
+        )
         writer.writeheader()
         writer.writerows(rows)
 
     return output_path
-
-
-def remove_stale_games_files(valid_dates: set[str], log_lines: list[str]) -> None:
-    GAMES_DIR.mkdir(parents=True, exist_ok=True)
-
-    for path in sorted(GAMES_DIR.glob(f"*{OUTPUT_SUFFIX}")):
-        output_date = path.name[: -len(OUTPUT_SUFFIX)]
-
-        if output_date not in valid_dates:
-            path.unlink()
-            log_lines.append(f"Removed stale games file: {path}")
 
 
 def main() -> None:
@@ -185,12 +210,18 @@ def main() -> None:
         f"Input directory: {RECONCILED_DIR}",
         f"Output directory: {GAMES_DIR}",
         f"Log path: {LOG_PATH}",
-        "Canonical game_id source: official NHL schedule via reconcile_game_ids.py",
+        "Canonical game_id source: official NHL schedule via "
+        "reconcile_game_ids.py",
+        "Historical games files are retained independently of the "
+        "currently available reconciled/sportsbook input files.",
         "",
     ]
 
     if not RECONCILED_DIR.exists():
-        fail(log_lines, f"Reconciled directory does not exist: {RECONCILED_DIR}")
+        fail(
+            log_lines,
+            f"Reconciled directory does not exist: {RECONCILED_DIR}",
+        )
 
     reconciled_files = sorted(
         path
@@ -199,21 +230,31 @@ def main() -> None:
     )
 
     if not reconciled_files:
-        fail(log_lines, f"No reconciled NHL files found in {RECONCILED_DIR}")
+        fail(
+            log_lines,
+            f"No reconciled NHL files found in {RECONCILED_DIR}",
+        )
 
-    valid_dates: set[str] = set()
     written_files: list[Path] = []
     total_rows = 0
 
     for reconciled_path in reconciled_files:
-        log_lines.append(f"Processing reconciled file: {reconciled_path}")
+        log_lines.append(
+            f"Processing reconciled file: {reconciled_path}"
+        )
 
-        game_date, rows = read_reconciled_file(reconciled_path, log_lines)
+        game_date, rows = read_reconciled_file(
+            reconciled_path,
+            log_lines,
+        )
 
-        valid_dates.add(game_date)
         total_rows += len(rows)
 
-        output_path = write_games_file(game_date, rows)
+        output_path = write_games_file(
+            game_date,
+            rows,
+        )
+
         written_files.append(output_path)
 
         log_lines.append(f"Date: {game_date}")
@@ -221,14 +262,13 @@ def main() -> None:
         log_lines.append(f"Output file: {output_path}")
         log_lines.append("")
 
-    remove_stale_games_files(valid_dates, log_lines)
-
     log_lines.extend(
         [
             "Completed successfully.",
             f"Reconciled files processed: {len(reconciled_files)}",
             f"Games files written: {len(written_files)}",
             f"Total official NHL game rows written: {total_rows}",
+            "Historical games files deleted: 0",
             f"Finished: {now_stamp()}",
         ]
     )
@@ -249,7 +289,8 @@ if __name__ == "__main__":
             f"Input directory: {RECONCILED_DIR}",
             f"Output directory: {GAMES_DIR}",
             f"Log path: {LOG_PATH}",
-            "Canonical game_id source: official NHL schedule via reconcile_game_ids.py",
+            "Canonical game_id source: official NHL schedule via "
+            "reconcile_game_ids.py",
             "",
             f"ERROR: Unhandled exception: {exc}",
             "",
@@ -260,4 +301,3 @@ if __name__ == "__main__":
         write_log(lines)
         print_log(lines)
         raise SystemExit(1)
-
