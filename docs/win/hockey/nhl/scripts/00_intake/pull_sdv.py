@@ -102,28 +102,100 @@ LINEUP_STATUS_VALUES = (
 )
 
 PREGAME_FEATURE_EVALUATION = (
-    ("nhl_xg", "xg_quality", "covered_elsewhere",
-     "Used upstream by team-strength/RAPM; do not duplicate as a separate lineup feature."),
-    ("nhl_goalie_gsax", "goalie_performance", "covered_elsewhere",
-     "Integrated in SDV-P3 goalie strength."),
-    ("nhl_skater_rapm", "player_impact", "production",
-     "Aggregate leakage-safe prior-game skater xG RAPM to team/game level."),
-    ("nhl_skater_war", "player_impact", "production",
-     "Aggregate leakage-safe prior-game WAR to team/game level."),
-    ("nhl_special_teams_value", "power_play_penalty_kill", "production",
-     "Aggregate PP and PK value to team/game level."),
-    ("nhl_unit_ratings", "forward_line_defense_pair", "production",
-     "Aggregate forward-line and defense-pair unit_value to team/game level."),
-    ("nhl_penalty_value", "penalty_value", "evaluated_not_selected",
-     "Available, but WAR already contains a penalty component; avoid duplicate signal."),
-    ("nhl_faceoff_value", "faceoff_value", "evaluated_not_selected",
-     "Available, but WAR already contains a faceoff component; avoid duplicate signal."),
-    ("nhl_edge_skating_value", "edge_skating", "evaluated_not_selected",
-     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
-    ("nhl_expected_assists", "expected_assists", "evaluated_not_selected",
-     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
-    ("nhl_zone_transitions", "zone_transitions", "evaluated_not_selected",
-     "Available; hold out until NHL coverage and historical as-of behavior are validated."),
+    (
+        "nhl_xg",
+        "xg_quality",
+        "covered_elsewhere",
+        "prior_pbp_safe",
+        "VERIFIED",
+        "Used upstream by team-strength/RAPM; do not duplicate as a separate lineup feature.",
+    ),
+    (
+        "nhl_goalie_gsax",
+        "goalie_performance",
+        "covered_elsewhere",
+        "prior_pbp_and_shifts_safe",
+        "VERIFIED",
+        "Integrated in SDV-P3 goalie strength.",
+    ),
+    (
+        "nhl_skater_rapm",
+        "player_impact",
+        "production",
+        "prior_pbp_and_shifts_safe",
+        "VERIFIED",
+        "Aggregate leakage-safe prior-game skater xG RAPM to team/game level.",
+    ),
+    (
+        "nhl_skater_war",
+        "player_impact",
+        "production",
+        "prior_pbp_and_shifts_safe",
+        "VERIFIED",
+        "Aggregate leakage-safe prior-game WAR to team/game level.",
+    ),
+    (
+        "nhl_special_teams_value",
+        "power_play_penalty_kill",
+        "production",
+        "prior_pbp_and_shifts_safe",
+        "VERIFIED",
+        "Aggregate PP and PK value to team/game level.",
+    ),
+    (
+        "nhl_unit_ratings",
+        "forward_line_defense_pair",
+        "production",
+        "prior_pbp_and_shifts_safe",
+        "VERIFIED",
+        "Aggregate forward-line and defense-pair unit_value to team/game level.",
+    ),
+    (
+        "nhl_penalty_value",
+        "penalty_value",
+        "evaluated_not_selected",
+        "prior_pbp_safe",
+        "VERIFIED",
+        "WAR already contains a penalty component; separate production use would duplicate signal.",
+    ),
+    (
+        "nhl_faceoff_value",
+        "faceoff_value",
+        "evaluated_not_selected",
+        "prior_pbp_safe",
+        "VERIFIED",
+        "WAR already contains a faceoff component; separate production use would duplicate signal.",
+    ),
+    (
+        "nhl_edge_skating_value",
+        "edge_skating",
+        "research_only_not_production_safe",
+        "not_reconstructable_at_t60",
+        "VERIFIED",
+        "SportsDataverse requires caller-supplied season aggregate EDGE detail_frames; "
+        "the live detail path is not implemented and the aggregate has no historical observation "
+        "timestamp, so it cannot reproduce a T-60 historical information state.",
+    ),
+    (
+        "nhl_expected_assists",
+        "expected_assists",
+        "research_only",
+        "prior_pbp_safe",
+        "VERIFIED",
+        "SportsDataverse computes entirely from the supplied PBP, so the metric is leakage-safe "
+        "when the pipeline supplies only games strictly before the target date; keep research-only "
+        "until incremental predictive value is demonstrated.",
+    ),
+    (
+        "nhl_zone_transitions",
+        "zone_transitions",
+        "research_only",
+        "prior_pbp_safe",
+        "VERIFIED",
+        "SportsDataverse computes from the supplied PBP and is leakage-safe on prior-game input, "
+        "but controlled-entry classification is a documented PBP heuristic without ground-truth "
+        "microstat tags, so keep it research-only.",
+    ),
 )
 
 
@@ -640,10 +712,13 @@ def lineup_production_cutoff_utc(
 
 def pregame_feature_evaluation() -> dict[str, Any]:
     rows = []
+
     for (
         function_name,
         family,
         decision,
+        as_of_capability,
+        evaluation_status,
         reason,
     ) in PREGAME_FEATURE_EVALUATION:
         rows.append(
@@ -657,13 +732,20 @@ def pregame_feature_evaluation() -> dict[str, Any]:
                     )
                 ),
                 "decision": decision,
+                "as_of_capability": as_of_capability,
+                "evaluation_status": evaluation_status,
                 "reason": reason,
             }
         )
 
     return {
+        "evaluation_status": "VERIFIED",
         "decision_cutoff_minutes_before_puck_drop": (
             LINEUP_PRODUCTION_CUTOFF_MINUTES
+        ),
+        "historical_input_rule": (
+            "PBP and shifts supplied to pregame player/microstat calculations "
+            "must contain only games strictly before the target game date."
         ),
         "missing_or_late_lineup_behavior": (
             "unknown status with lineup-dependent fields blank; "
@@ -2921,6 +3003,31 @@ def frame_strictly_before_game(
         pdf.loc[
             mask
         ].reset_index(drop=True)
+    )
+
+
+def research_pbp_strictly_before_target(
+    schedule: Any,
+    pbp: Any,
+    *,
+    target_day: date,
+) -> pl.DataFrame:
+    """Return leakage-safe PBP for research-only pregame microstats.
+
+    The helper deliberately uses the same prior-game boundary as the production
+    lineup/goalie feature builders.  Expected-assist and zone-transition
+    research must call their SportsDataverse functions only on this filtered
+    frame; the target date and every later game are excluded.
+    """
+    prior_game_ids = prior_game_ids_for_target(
+        schedule,
+        target_day,
+    )
+
+    return frame_strictly_before_game(
+        pbp,
+        target_day=target_day,
+        prior_game_ids=prior_game_ids,
     )
 
 

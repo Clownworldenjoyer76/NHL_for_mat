@@ -4563,6 +4563,13 @@ def test_sdv_pregame_feature_evaluation_covers_required_families() -> None:
 
     evaluation = module.pregame_feature_evaluation()
 
+    assert (
+        evaluation[
+            "evaluation_status"
+        ]
+        == "VERIFIED"
+    )
+
     by_function = {
         row["function"]: row
         for row in evaluation[
@@ -4602,6 +4609,144 @@ def test_sdv_pregame_feature_evaluation_covers_required_families() -> None:
             "decision"
         ]
         == "evaluated_not_selected"
+    )
+
+    assert (
+        by_function[
+            "nhl_edge_skating_value"
+        ][
+            "decision"
+        ]
+        == "research_only_not_production_safe"
+    )
+
+    assert (
+        by_function[
+            "nhl_edge_skating_value"
+        ][
+            "as_of_capability"
+        ]
+        == "not_reconstructable_at_t60"
+    )
+
+    assert (
+        by_function[
+            "nhl_expected_assists"
+        ][
+            "decision"
+        ]
+        == "research_only"
+    )
+
+    assert (
+        by_function[
+            "nhl_expected_assists"
+        ][
+            "as_of_capability"
+        ]
+        == "prior_pbp_safe"
+    )
+
+    assert (
+        by_function[
+            "nhl_zone_transitions"
+        ][
+            "decision"
+        ]
+        == "research_only"
+    )
+
+    assert (
+        by_function[
+            "nhl_zone_transitions"
+        ][
+            "as_of_capability"
+        ]
+        == "prior_pbp_safe"
+    )
+
+    assert all(
+        row[
+            "evaluation_status"
+        ]
+        == "VERIFIED"
+        for row in by_function.values()
+    )
+
+
+def test_sdv_research_microstat_input_excludes_target_and_later_games() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+                "2025020003",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+                "2026-01-05",
+            ],
+            "home_team_abbr": [
+                "BOS",
+                "BOS",
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+                "NYR",
+                "NYR",
+            ],
+        }
+    )
+
+    pbp = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+                "2025020003",
+            ],
+            "game_date": [
+                "2026-01-01",
+                "2026-01-03",
+                "2026-01-05",
+            ],
+            "type_desc_key": [
+                "goal",
+                "goal",
+                "goal",
+            ],
+        }
+    )
+
+    prior = (
+        module.research_pbp_strictly_before_target(
+            schedule,
+            pbp,
+            target_day=module.date(
+                2026,
+                1,
+                3,
+            ),
+        )
+    )
+
+    assert (
+        prior[
+            "game_id"
+        ]
+        .cast(
+            module.pl.Utf8
+        )
+        .to_list()
+        == [
+            "2025020001",
+        ]
     )
 
 

@@ -1,13 +1,13 @@
 pipeline:
   name: nhl
-  schema_version: 8
+  schema_version: 9
   schema_created_at: "2026-08-29"
   schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
   "00_intake":
-    version: 6
+    version: 7
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
@@ -420,6 +420,7 @@ lineup_player_strength_integration:
     forbidden: "Target-game data, later-game data, postgame participation used as lineup evidence, or any lineup observation after T-60."
 
   feature_evaluation:
+    status: "VERIFIED"
     output: "docs/win/hockey/nhl/sdv/lineup-strength/latest_pregame_feature_evaluation.json"
     production:
       - "nhl_skater_rapm"
@@ -432,12 +433,20 @@ lineup_player_strength_integration:
     evaluated_not_selected:
       - "nhl_penalty_value"
       - "nhl_faceoff_value"
-      - "nhl_edge_skating_value"
+    research_only:
       - "nhl_expected_assists"
       - "nhl_zone_transitions"
+    research_only_not_production_safe:
+      - "nhl_edge_skating_value"
+    as_of_evaluation:
+      nhl_edge_skating_value: "Not production-safe for historical T-60 reconstruction: SportsDataverse requires caller-supplied season aggregate EDGE detail_frames, the live detail path is not implemented, and the aggregate has no historical observation timestamp."
+      nhl_expected_assists: "Pregame as-of safe when called only with PBP from games strictly before the target date; kept research-only until incremental predictive value is demonstrated."
+      nhl_zone_transitions: "Pregame as-of safe when called only with PBP from games strictly before the target date; kept research-only because controlled-entry classification is a documented PBP heuristic unless ground-truth tags are supplied."
     selection_notes:
       penalty_and_faceoff: "WAR already includes penalty and faceoff components; separate production features would duplicate signal."
-      edge_expected_assists_zone_transitions: "Keep research-only until NHL coverage, stability, and historical as-of behavior are validated."
+      edge_skating: "Evaluated and excluded from production because the current SportsDataverse input contract cannot reproduce the historical T-60 information state."
+      expected_assists: "Evaluated as leakage-safe on prior-game PBP; research-only pending demonstrated incremental predictive value."
+      zone_transitions: "Evaluated as leakage-safe on prior-game PBP; research-only because the controlled/dump label is heuristic without a ground-truth tag feed."
 
   propagation:
     - "01_merge merged output"
