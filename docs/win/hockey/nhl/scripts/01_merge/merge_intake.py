@@ -15,6 +15,7 @@ SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
 PREDICTIONS_DIR = BASE_DIR / "00_intake" / "predictions"
 
 FATIGUE_DIR = BASE_DIR / "sdv" / "fatigue"
+TEAM_STRENGTH_DIR = BASE_DIR / "sdv" / "team-strength"
 TEAM_MAP_PATH = (
     BASE_DIR
     / "config"
@@ -35,6 +36,49 @@ AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 
 GAME_ID_RE = re.compile(r"^\d{10}$")
 GAME_DATE_RE = re.compile(r"^\d{4}_\d{2}_\d{2}$")
+
+
+TEAM_STRENGTH_VALUE_COLUMNS = [
+    "adj_xgf",
+    "adj_xga",
+    "adj_xg_net",
+    "adj_gf",
+    "adj_ga",
+    "off_rank",
+    "def_rank",
+    "net_rank",
+    "net_z",
+]
+
+TEAM_STRENGTH_FEATURE_COLUMNS = [
+    "home_adj_xgf",
+    "away_adj_xgf",
+    "adj_xgf_differential",
+    "home_adj_xga",
+    "away_adj_xga",
+    "adj_xga_differential",
+    "home_adj_xg_net",
+    "away_adj_xg_net",
+    "adj_xg_net_differential",
+    "home_adj_gf",
+    "away_adj_gf",
+    "adj_gf_differential",
+    "home_adj_ga",
+    "away_adj_ga",
+    "adj_ga_differential",
+    "home_off_rank",
+    "away_off_rank",
+    "off_rank_differential",
+    "home_def_rank",
+    "away_def_rank",
+    "def_rank_differential",
+    "home_net_rank",
+    "away_net_rank",
+    "net_rank_differential",
+    "home_net_z",
+    "away_net_z",
+    "net_z_differential",
+]
 
 
 MERGED_COLUMNS = [
@@ -60,6 +104,7 @@ MERGED_COLUMNS = [
     "home_games_in_7_days",
     "away_games_in_7_days",
     "rest_differential",
+    *TEAM_STRENGTH_FEATURE_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_projected_goals",
@@ -174,6 +219,12 @@ FATIGUE_VALUE_COLUMNS = [
     "games_in_6_days",
     "four_in_six",
     "games_in_7_days",
+]
+
+REQUIRED_TEAM_STRENGTH_COLUMNS = [
+    "team",
+    "game_date",
+    *TEAM_STRENGTH_VALUE_COLUMNS,
 ]
 
 
@@ -692,7 +743,7 @@ def format_numeric(
     )
 
 
-def load_fatigue_team_map() -> dict[str, str]:
+def load_team_identity_map() -> dict[str, str]:
     if not TEAM_MAP_PATH.exists():
         fail(
             f"Missing NHL team mapping file: "
@@ -716,7 +767,7 @@ def load_fatigue_team_map() -> dict[str, str]:
     if missing:
         fail(
             f"{TEAM_MAP_PATH} missing required "
-            f"fatigue mapping columns: {missing}"
+            f"team identity mapping columns: {missing}"
         )
 
     lookup: dict[str, str] = {}
@@ -768,7 +819,7 @@ def load_fatigue_team_map() -> dict[str, str]:
                 fail(
                     f"{TEAM_MAP_PATH} row "
                     f"{row_number} has conflicting "
-                    f"fatigue mapping for "
+                    f"team identity mapping for "
                     f"{raw_key!r}: "
                     f"{prior!r} != {canonical!r}"
                 )
@@ -779,7 +830,7 @@ def load_fatigue_team_map() -> dict[str, str]:
 
     if not lookup:
         fail(
-            f"No fatigue team mappings loaded "
+            f"No NHL team identity mappings loaded "
             f"from {TEAM_MAP_PATH}"
         )
 
@@ -827,7 +878,7 @@ def load_fatigue_index() -> dict[
         return {}
 
     team_lookup = (
-        load_fatigue_team_map()
+        load_team_identity_map()
     )
 
     index: dict[
@@ -1010,6 +1061,297 @@ def load_fatigue_index() -> dict[
     return index
 
 
+
+def authoritative_team_strength_files() -> list[Path]:
+    files = sorted(
+        TEAM_STRENGTH_DIR.glob(
+            "season_*_team_ratings_asof.csv"
+        )
+    )
+
+    latest = (
+        TEAM_STRENGTH_DIR
+        / "latest_team_ratings_asof.csv"
+    )
+
+    if latest.is_file():
+        files.append(
+            latest
+        )
+
+    return files
+
+
+def load_team_strength_index() -> dict[
+    tuple[str, str],
+    dict[str, str],
+]:
+    files = (
+        authoritative_team_strength_files()
+    )
+
+    log(
+        "SportsDataverse as-of team-strength "
+        f"files found: {len(files)}"
+    )
+
+    if not files:
+        log(
+            "No SportsDataverse as-of team-strength "
+            "files available; team-strength features "
+            "will remain blank."
+        )
+
+        return {}
+
+    team_lookup = (
+        load_team_identity_map()
+    )
+
+    index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ] = {}
+
+    for path in files:
+        fieldnames, rows = load_csv(
+            path
+        )
+
+        validate_required_columns(
+            path,
+            fieldnames,
+            REQUIRED_TEAM_STRENGTH_COLUMNS,
+        )
+
+        loaded_rows = 0
+
+        for row_number, row in enumerate(
+            rows,
+            start=2,
+        ):
+            game_date = (
+                normalize_fatigue_date(
+                    row.get(
+                        "game_date",
+                        "",
+                    )
+                )
+            )
+
+            team_raw = str(
+                row.get(
+                    "team",
+                    "",
+                )
+            ).strip()
+
+            team_key = (
+                normalize_team_lookup_key(
+                    team_raw
+                )
+            )
+
+            canonical_team = (
+                team_lookup.get(
+                    team_key,
+                    "",
+                )
+            )
+
+            if not game_date:
+                fail(
+                    f"{path} row {row_number} "
+                    "has invalid team-strength "
+                    f"game_date="
+                    f"{row.get('game_date', '')!r}"
+                )
+
+            if not canonical_team:
+                fail(
+                    f"{path} row {row_number} "
+                    "has unmapped team-strength "
+                    f"team={team_raw!r}"
+                )
+
+            normalized = {
+                "team": canonical_team,
+                "game_date": game_date,
+                "_source_file": str(
+                    path
+                ),
+            }
+
+            for field in (
+                TEAM_STRENGTH_VALUE_COLUMNS
+            ):
+                normalized[
+                    field
+                ] = str(
+                    row.get(
+                        field,
+                        "",
+                    )
+                ).strip()
+
+            key = (
+                game_date,
+                canonical_team,
+            )
+
+            prior = index.get(
+                key
+            )
+
+            if prior is not None:
+                prior_values = {
+                    field: prior.get(
+                        field,
+                        "",
+                    )
+                    for field
+                    in TEAM_STRENGTH_VALUE_COLUMNS
+                }
+
+                new_values = {
+                    field: normalized.get(
+                        field,
+                        "",
+                    )
+                    for field
+                    in TEAM_STRENGTH_VALUE_COLUMNS
+                }
+
+                if (
+                    prior_values
+                    != new_values
+                ):
+                    fail(
+                        "Conflicting SportsDataverse "
+                        "team-strength rows for "
+                        f"game_date={game_date} "
+                        f"team={canonical_team}: "
+                        f"{prior.get('_source_file', '')} "
+                        f"vs {path}"
+                    )
+
+                continue
+
+            index[
+                key
+            ] = normalized
+            loaded_rows += 1
+
+        log(
+            f"Loaded team-strength file: "
+            f"{path} ({loaded_rows} "
+            "unique rows)"
+        )
+
+    return index
+
+
+def numeric_difference(
+    home_value: str,
+    away_value: str,
+) -> str:
+    try:
+        return format_numeric(
+            float(home_value)
+            - float(away_value)
+        )
+    except (
+        TypeError,
+        ValueError,
+    ):
+        return ""
+
+
+def team_strength_features_for_game(
+    game: dict[str, str],
+    team_strength_index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ],
+) -> dict[str, str]:
+    game_date = (
+        normalize_fatigue_date(
+            game.get(
+                "game_date",
+                "",
+            )
+        )
+    )
+
+    home_team = str(
+        game.get(
+            "home_team",
+            "",
+        )
+    ).strip()
+
+    away_team = str(
+        game.get(
+            "away_team",
+            "",
+        )
+    ).strip()
+
+    home = team_strength_index.get(
+        (
+            game_date,
+            home_team,
+        ),
+        {},
+    )
+
+    away = team_strength_index.get(
+        (
+            game_date,
+            away_team,
+        ),
+        {},
+    )
+
+    features: dict[
+        str,
+        str,
+    ] = {}
+
+    for field in (
+        TEAM_STRENGTH_VALUE_COLUMNS
+    ):
+        home_value = str(
+            home.get(
+                field,
+                "",
+            )
+        ).strip()
+
+        away_value = str(
+            away.get(
+                field,
+                "",
+            )
+        ).strip()
+
+        features[
+            f"home_{field}"
+        ] = home_value
+
+        features[
+            f"away_{field}"
+        ] = away_value
+
+        features[
+            f"{field}_differential"
+        ] = numeric_difference(
+            home_value,
+            away_value,
+        )
+
+    return features
+
 def fatigue_features_for_game(
     game: dict[str, str],
     fatigue_index: dict[
@@ -1151,6 +1493,10 @@ def process_date(
     sportsbook_map: dict[str, dict[str, str]],
     predictions_map: dict[str, dict[str, str]],
     fatigue_index: dict[
+        tuple[str, str],
+        dict[str, str],
+    ],
+    team_strength_index: dict[
         tuple[str, str],
         dict[str, str],
     ],
@@ -1323,6 +1669,13 @@ def process_date(
             )
         )
 
+        team_strength_features = (
+            team_strength_features_for_game(
+                game,
+                team_strength_index,
+            )
+        )
+
         merged_rows.append(
             {
                 "sport": game.get(
@@ -1351,6 +1704,7 @@ def process_date(
                     "",
                 ),
                 **fatigue_features,
+                **team_strength_features,
                 "away_prob_moneyline": (
                     prediction.get(
                         "away_prob_moneyline",
@@ -1560,6 +1914,10 @@ def main() -> None:
             load_fatigue_index()
         )
 
+        team_strength_index = (
+            load_team_strength_index()
+        )
+
         games_by_date = (
             rows_by_date_game_id(
                 games_rows,
@@ -1659,6 +2017,7 @@ def main() -> None:
                     {},
                 ),
                 fatigue_index,
+                team_strength_index,
             )
 
             total_merged += merged_count

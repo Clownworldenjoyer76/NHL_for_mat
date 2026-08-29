@@ -37,6 +37,37 @@ FATIGUE_FEATURE_COLUMNS = [
     "rest_differential",
 ]
 
+TEAM_STRENGTH_FEATURE_COLUMNS = [
+    "home_adj_xgf",
+    "away_adj_xgf",
+    "adj_xgf_differential",
+    "home_adj_xga",
+    "away_adj_xga",
+    "adj_xga_differential",
+    "home_adj_xg_net",
+    "away_adj_xg_net",
+    "adj_xg_net_differential",
+    "home_adj_gf",
+    "away_adj_gf",
+    "adj_gf_differential",
+    "home_adj_ga",
+    "away_adj_ga",
+    "adj_ga_differential",
+    "home_off_rank",
+    "away_off_rank",
+    "off_rank_differential",
+    "home_def_rank",
+    "away_def_rank",
+    "def_rank_differential",
+    "home_net_rank",
+    "away_net_rank",
+    "net_rank_differential",
+    "home_net_z",
+    "away_net_z",
+    "net_z_differential",
+]
+
+
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -50,6 +81,7 @@ REQUIRED_INPUT_COLUMNS = [
     "away_team",
     "home_team",
     *FATIGUE_FEATURE_COLUMNS,
+    *TEAM_STRENGTH_FEATURE_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_fair_decimal_moneyline",
@@ -264,6 +296,7 @@ def process_file(
 
     for col in [
         *FATIGUE_FEATURE_COLUMNS,
+        *TEAM_STRENGTH_FEATURE_COLUMNS,
         "away_prob_moneyline",
         "home_prob_moneyline",
         "away_fair_decimal_moneyline",

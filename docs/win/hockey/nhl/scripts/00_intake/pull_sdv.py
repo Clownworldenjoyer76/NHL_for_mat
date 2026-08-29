@@ -45,6 +45,18 @@ CATEGORIES = (
 )
 NY = ZoneInfo("America/New_York")
 
+TEAM_STRENGTH_FIELDS = (
+    "adj_xgf",
+    "adj_xga",
+    "adj_xg_net",
+    "adj_gf",
+    "adj_ga",
+    "off_rank",
+    "def_rank",
+    "net_rank",
+    "net_z",
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -803,6 +815,248 @@ def ratings_from_game_rates(
     )
 
 
+
+def normalize_team_strength_asof(
+    ratings: Any,
+    *,
+    game_date: date,
+) -> pl.DataFrame:
+    if frame_empty(ratings):
+        return pl.DataFrame()
+
+    pdf = as_pandas(ratings)
+
+    team_col = first_col(
+        pdf,
+        (
+            "team",
+            "team_abbr",
+            "team_abbrev",
+            "team_abbreviation",
+        ),
+    )
+
+    if team_col is None:
+        raise ValueError(
+            "Team-strength ratings missing team identity column"
+        )
+
+    missing = [
+        field
+        for field in TEAM_STRENGTH_FIELDS
+        if field not in pdf.columns
+    ]
+
+    if missing:
+        raise ValueError(
+            "Team-strength ratings missing required fields: "
+            f"{missing}"
+        )
+
+    out = pd.DataFrame(
+        {
+            "game_date": game_date.isoformat(),
+            "team": (
+                pdf[team_col]
+                .astype(str)
+                .str.strip()
+            ),
+        }
+    )
+
+    for field in TEAM_STRENGTH_FIELDS:
+        out[field] = pd.to_numeric(
+            pdf[field],
+            errors="coerce",
+        )
+
+    if "season" in pdf.columns:
+        out.insert(
+            0,
+            "season",
+            pd.to_numeric(
+                pdf["season"],
+                errors="coerce",
+            ),
+        )
+
+    out = (
+        out.loc[
+            out["team"].ne("")
+        ]
+        .drop_duplicates(
+            subset=[
+                "game_date",
+                "team",
+            ],
+            keep="last",
+        )
+        .reset_index(
+            drop=True
+        )
+    )
+
+    return pl.from_pandas(out)
+
+
+def historical_team_strength(
+    schedule: pl.DataFrame,
+    pbp: pl.DataFrame,
+) -> pl.DataFrame:
+    if (
+        schedule.is_empty()
+        or pbp.is_empty()
+    ):
+        return pl.DataFrame()
+
+    rating_schedule = (
+        normalize_loader_schedule_for_ratings(
+            schedule
+        )
+    )
+
+    if rating_schedule.is_empty():
+        return pl.DataFrame()
+
+    game_rates = (
+        nhl.team_game_xg_rates(
+            pbp,
+            rating_schedule,
+        )
+    )
+
+    if game_rates.is_empty():
+        return pl.DataFrame()
+
+    games = prediction_games(
+        schedule
+    )
+
+    if (
+        games.is_empty()
+        or "game_date"
+        not in games.columns
+    ):
+        return pl.DataFrame()
+
+    outputs = []
+
+    dates = sorted(
+        {
+            d
+            for d in games[
+                "game_date"
+            ].to_list()
+            if (
+                isinstance(
+                    d,
+                    str,
+                )
+                and d
+            )
+        }
+    )
+
+    for d_str in dates:
+        try:
+            d = date.fromisoformat(
+                d_str
+            )
+        except ValueError:
+            continue
+
+        prior_rates = (
+            game_rates.filter(
+                pl.col("date")
+                < pl.lit(d)
+            )
+        )
+
+        if prior_rates.is_empty():
+            continue
+
+        ratings = (
+            ratings_from_game_rates(
+                prior_rates
+            )
+        )
+
+        if ratings.is_empty():
+            continue
+
+        games_day = (
+            games.filter(
+                pl.col("game_date")
+                == d_str
+            )
+        )
+
+        if games_day.is_empty():
+            continue
+
+        teams = sorted(
+            {
+                str(team).strip()
+                for col in (
+                    "home_team",
+                    "away_team",
+                )
+                for team in (
+                    games_day[
+                        col
+                    ].to_list()
+                )
+                if str(team).strip()
+            }
+        )
+
+        if teams:
+            ratings = ratings.filter(
+                pl.col("team")
+                .cast(pl.Utf8)
+                .is_in(teams)
+            )
+
+        if ratings.is_empty():
+            continue
+
+        outputs.append(
+            ratings.with_columns(
+                pl.lit(
+                    d_str
+                ).alias(
+                    "game_date"
+                )
+            )
+        )
+
+    if not outputs:
+        return pl.DataFrame()
+
+    combined = pl.concat(
+        outputs,
+        how="diagonal_relaxed",
+    )
+
+    columns = [
+        "game_date",
+        "team",
+        *TEAM_STRENGTH_FIELDS,
+    ]
+
+    if (
+        "season"
+        in combined.columns
+    ):
+        columns.insert(
+            0,
+            "season",
+        )
+
+    return combined.select(
+        columns
+    )
+
 def prediction_games(
     schedule: Any,
 ) -> pl.DataFrame:
@@ -1391,27 +1645,44 @@ def pull_team_strength(
     prefix: str,
     teams: list[str],
 ):
-    ratings = safe_pull(
-        failures,
-        "team-strength",
-        "nhl_team_ratings",
-        nhl.nhl_team_ratings,
-        season,
-        as_of_date=(
-            target_date
-            if current
-            else None
-        ),
-    )
+    ratings = None
 
-    if ratings is not None:
-        save_object(
+    if current:
+        ratings = safe_pull(
+            failures,
             "team-strength",
-            "team_ratings",
-            ratings,
-            prefix=prefix,
-            current=current,
+            "nhl_team_ratings",
+            nhl.nhl_team_ratings,
+            season,
+            as_of_date=target_date,
         )
+
+        if ratings is not None:
+            save_object(
+                "team-strength",
+                "team_ratings",
+                ratings,
+                prefix=prefix,
+                current=True,
+            )
+
+            ratings_asof = safe_pull(
+                failures,
+                "team-strength",
+                "normalize_team_ratings_asof",
+                normalize_team_strength_asof,
+                ratings,
+                game_date=target_date,
+            )
+
+            if ratings_asof is not None:
+                save_object(
+                    "team-strength",
+                    "team_ratings_asof",
+                    ratings_asof,
+                    prefix=prefix,
+                    current=True,
+                )
 
     standings_date = (
         target_date.isoformat()
@@ -2575,6 +2846,50 @@ def run_one(
             prefix=prefix,
             context=context,
         )
+
+    if (
+        (not current)
+        and (
+            "team-strength"
+            in categories
+        )
+    ):
+        pbp = (
+            context.get(
+                "pbp"
+            )
+            if context is not None
+            else None
+        )
+
+        if frame_empty(
+            pbp
+        ):
+            pbp = safe_pull(
+                failures,
+                "team-strength",
+                "load_nhl_pbp_full",
+                nhl.load_nhl_pbp_full,
+                season,
+            )
+
+        ratings_asof = safe_pull(
+            failures,
+            "team-strength",
+            "historical_team_strength",
+            historical_team_strength,
+            schedule,
+            pbp,
+        )
+
+        if ratings_asof is not None:
+            save_object(
+                "team-strength",
+                "team_ratings_asof",
+                ratings_asof,
+                prefix=prefix,
+                current=False,
+            )
 
     if (
         context is not None

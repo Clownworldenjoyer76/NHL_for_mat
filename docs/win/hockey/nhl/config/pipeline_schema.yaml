@@ -1,21 +1,21 @@
 pipeline:
   name: nhl
-  schema_version: 3
+  schema_version: 4
   schema_created_at: "2026-08-29"
   schema_updated_at: "2026-08-29"
   timezone: "America/New_York"
 
 stage_schemas:
   "00_intake":
-    version: 1
+    version: 2
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
-    version: 2
+    version: 3
     path: "docs/win/hockey/nhl/01_merge"
 
   "02_juice":
-    version: 1
+    version: 2
     path: "docs/win/hockey/nhl/02_juice"
 
   "03_edges":
@@ -196,6 +196,69 @@ prediction_model:
     rest_differential_definition: "home_days_rest - away_days_rest"
     boolean_encoding: "1=true, 0=false"
     missing_behavior: "Leave fatigue features blank when no matching SportsDataverse fatigue row is available; do not synthesize values."
+
+  team_strength_integration:
+    source_root: "docs/win/hockey/nhl/sdv/team-strength"
+    source_label: "team_ratings_asof"
+    current_file: "docs/win/hockey/nhl/sdv/team-strength/latest_team_ratings_asof.csv"
+    historical_file_pattern: "docs/win/hockey/nhl/sdv/team-strength/season_<season>_team_ratings_asof.csv"
+    producer_script: "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    merge_script: "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    join_identity:
+      - "game_date"
+      - "canonical_team"
+    source_fields:
+      - "adj_xgf"
+      - "adj_xga"
+      - "adj_xg_net"
+      - "adj_gf"
+      - "adj_ga"
+      - "off_rank"
+      - "def_rank"
+      - "net_rank"
+      - "net_z"
+    game_level_fields:
+      - "home_adj_xgf"
+      - "away_adj_xgf"
+      - "adj_xgf_differential"
+      - "home_adj_xga"
+      - "away_adj_xga"
+      - "adj_xga_differential"
+      - "home_adj_xg_net"
+      - "away_adj_xg_net"
+      - "adj_xg_net_differential"
+      - "home_adj_gf"
+      - "away_adj_gf"
+      - "adj_gf_differential"
+      - "home_adj_ga"
+      - "away_adj_ga"
+      - "adj_ga_differential"
+      - "home_off_rank"
+      - "away_off_rank"
+      - "off_rank_differential"
+      - "home_def_rank"
+      - "away_def_rank"
+      - "def_rank_differential"
+      - "home_net_rank"
+      - "away_net_rank"
+      - "net_rank_differential"
+      - "home_net_z"
+      - "away_net_z"
+      - "net_z_differential"
+    differential_definition: "home value - away value for each source field"
+    as_of_rules:
+      current: "Use SportsDataverse team ratings requested with as_of_date equal to the target game date."
+      historical: "For each target game date, calculate ratings only from team game rates with date strictly less than the target game date."
+      forbidden: "Do not use full-season or postgame team ratings as historical pregame features."
+    propagation:
+      - "01_merge merged output"
+      - "01_merge/01_merguiced moneyline output"
+      - "01_merge/01_merguiced puck-line output"
+      - "01_merge/01_merguiced total output"
+      - "02_juice moneyline output"
+      - "02_juice puck-line output"
+      - "02_juice total output"
+    missing_behavior: "Leave team-strength features and their differentials blank when no as-of-safe team-strength row is available; do not synthesize values."
 
 calibration:
   version: 1

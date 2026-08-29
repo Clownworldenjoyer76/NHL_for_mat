@@ -35,6 +35,7 @@ CORE_PATHS = [
     "docs/win/hockey/nhl/config/juice/nhl_puck_line_juice.csv",
     "docs/win/hockey/nhl/config/juice/nhl_total_juice.csv",
     "docs/win/hockey/nhl/scripts/00_intake/build_games.py",
+    "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py",
     "docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py",
     "docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py",
     "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py",
@@ -83,6 +84,55 @@ def assert_fatigue_features_preserved(
     for column, expected in FATIGUE_FEATURE_VALUES.items():
         assert column in row.index
         assert float(row[column]) == pytest.approx(
+            float(expected),
+            abs=1e-12,
+        )
+
+
+TEAM_STRENGTH_FEATURE_VALUES = {
+    "home_adj_xgf": 3.10,
+    "away_adj_xgf": 2.80,
+    "adj_xgf_differential": 0.30,
+    "home_adj_xga": 2.40,
+    "away_adj_xga": 2.90,
+    "adj_xga_differential": -0.50,
+    "home_adj_xg_net": 0.70,
+    "away_adj_xg_net": -0.10,
+    "adj_xg_net_differential": 0.80,
+    "home_adj_gf": 3.20,
+    "away_adj_gf": 2.70,
+    "adj_gf_differential": 0.50,
+    "home_adj_ga": 2.50,
+    "away_adj_ga": 3.00,
+    "adj_ga_differential": -0.50,
+    "home_off_rank": 4,
+    "away_off_rank": 18,
+    "off_rank_differential": -14,
+    "home_def_rank": 6,
+    "away_def_rank": 20,
+    "def_rank_differential": -14,
+    "home_net_rank": 3,
+    "away_net_rank": 19,
+    "net_rank_differential": -16,
+    "home_net_z": 1.25,
+    "away_net_z": -0.20,
+    "net_z_differential": 1.45,
+}
+
+
+def assert_team_strength_features_preserved(
+    row: pd.Series,
+) -> None:
+    for (
+        column,
+        expected,
+    ) in TEAM_STRENGTH_FEATURE_VALUES.items():
+        assert column in row.index
+        assert float(
+            row[
+                column
+            ]
+        ) == pytest.approx(
             float(expected),
             abs=1e-12,
         )
@@ -986,6 +1036,209 @@ def test_transform_hockey_odds_selects_provider_independently_per_market() -> No
 
 
 # ---------------------------------------------------------------------
+# test_pull_sdv.py coverage
+# Regression fixture: opponent-adjusted ratings are strictly pregame
+# ---------------------------------------------------------------------
+
+def test_historical_team_strength_uses_only_prior_games(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    schedule = module.pl.DataFrame(
+        {
+            "game_id": [
+                "2025020001",
+                "2025020002",
+                "2025020003",
+            ],
+            "season": [
+                2025,
+                2025,
+                2025,
+            ],
+            "game_date": [
+                "2025-10-01",
+                "2025-10-03",
+                "2025-10-05",
+            ],
+            "home_team_abbr": [
+                "BOS",
+                "NYR",
+                "BOS",
+            ],
+            "away_team_abbr": [
+                "NYR",
+                "BOS",
+                "NYR",
+            ],
+            "game_type": [
+                "R",
+                "R",
+                "R",
+            ],
+        }
+    )
+
+    game_rates = module.pl.DataFrame(
+        {
+            "date": [
+                module.date(
+                    2025,
+                    10,
+                    1,
+                ),
+                module.date(
+                    2025,
+                    10,
+                    1,
+                ),
+                module.date(
+                    2025,
+                    10,
+                    3,
+                ),
+                module.date(
+                    2025,
+                    10,
+                    3,
+                ),
+            ],
+            "team": [
+                "BOS",
+                "NYR",
+                "BOS",
+                "NYR",
+            ],
+            "season": [
+                2025,
+                2025,
+                2025,
+                2025,
+            ],
+        }
+    )
+
+    monkeypatch.setattr(
+        module.nhl,
+        "team_game_xg_rates",
+        lambda pbp, rating_schedule: game_rates,
+    )
+
+    seen_max_dates: list[
+        object
+    ] = []
+
+    def fake_ratings(
+        prior_rates,
+    ):
+        seen_max_dates.append(
+            prior_rates[
+                "date"
+            ].max()
+        )
+
+        teams = sorted(
+            set(
+                prior_rates[
+                    "team"
+                ].to_list()
+            )
+        )
+
+        return module.pl.DataFrame(
+            {
+                "season": [
+                    2025
+                    for _ in teams
+                ],
+                "team": teams,
+                "adj_xgf": [
+                    3.0
+                    for _ in teams
+                ],
+                "adj_xga": [
+                    2.5
+                    for _ in teams
+                ],
+                "adj_xg_net": [
+                    0.5
+                    for _ in teams
+                ],
+                "adj_gf": [
+                    3.1
+                    for _ in teams
+                ],
+                "adj_ga": [
+                    2.6
+                    for _ in teams
+                ],
+                "off_rank": [
+                    1
+                    for _ in teams
+                ],
+                "def_rank": [
+                    2
+                    for _ in teams
+                ],
+                "net_rank": [
+                    1
+                    for _ in teams
+                ],
+                "net_z": [
+                    1.0
+                    for _ in teams
+                ],
+            }
+        )
+
+    monkeypatch.setattr(
+        module,
+        "ratings_from_game_rates",
+        fake_ratings,
+    )
+
+    result = (
+        module.historical_team_strength(
+            schedule,
+            module.pl.DataFrame(
+                {
+                    "fixture": [
+                        1
+                    ]
+                }
+            ),
+        )
+    )
+
+    assert (
+        result[
+            "game_date"
+        ].to_list()
+        == [
+            "2025-10-03",
+            "2025-10-03",
+            "2025-10-05",
+            "2025-10-05",
+        ]
+    )
+
+    assert seen_max_dates == [
+        module.date(
+            2025,
+            10,
+            1,
+        ),
+        module.date(
+            2025,
+            10,
+            3,
+        ),
+    ]
+
+# ---------------------------------------------------------------------
 # test_merge_intake.py coverage
 # Regression fixture: SportsDataverse fatigue -> game-level features
 # ---------------------------------------------------------------------
@@ -1154,9 +1407,166 @@ def test_merge_intake_leaves_missing_fatigue_blank() -> None:
     )
 
 
+def test_merge_intake_builds_game_level_team_strength_features(
+    tmp_path: Path,
+) -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    module.TEAM_STRENGTH_DIR = (
+        tmp_path
+        / "team-strength"
+    )
+
+    module.TEAM_MAP_PATH = (
+        tmp_path
+        / "team_map_nhl.csv"
+    )
+
+    module.LOG_FILE = (
+        tmp_path
+        / "merge_intake.log"
+    )
+
+    module.TEAM_STRENGTH_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    pd.DataFrame(
+        [
+            {
+                "league": "nhl",
+                "source": "official_nhl",
+                "alias": "Boston Bruins",
+                "canonical_team": (
+                    "Boston Bruins"
+                ),
+                "nhl_team_id": "6",
+                "nhl_abbrev": "BOS",
+            },
+            {
+                "league": "nhl",
+                "source": "official_nhl",
+                "alias": (
+                    "New York Rangers"
+                ),
+                "canonical_team": (
+                    "New York Rangers"
+                ),
+                "nhl_team_id": "3",
+                "nhl_abbrev": "NYR",
+            },
+        ]
+    ).to_csv(
+        module.TEAM_MAP_PATH,
+        index=False,
+    )
+
+    pd.DataFrame(
+        [
+            {
+                "game_date": "2026-01-01",
+                "team": "BOS",
+                "adj_xgf": 3.10,
+                "adj_xga": 2.40,
+                "adj_xg_net": 0.70,
+                "adj_gf": 3.20,
+                "adj_ga": 2.50,
+                "off_rank": 4,
+                "def_rank": 6,
+                "net_rank": 3,
+                "net_z": 1.25,
+            },
+            {
+                "game_date": "2026-01-01",
+                "team": "NYR",
+                "adj_xgf": 2.80,
+                "adj_xga": 2.90,
+                "adj_xg_net": -0.10,
+                "adj_gf": 2.70,
+                "adj_ga": 3.00,
+                "off_rank": 18,
+                "def_rank": 20,
+                "net_rank": 19,
+                "net_z": -0.20,
+            },
+        ]
+    ).to_csv(
+        (
+            module.TEAM_STRENGTH_DIR
+            / "latest_team_ratings_asof.csv"
+        ),
+        index=False,
+    )
+
+    strength_index = (
+        module.load_team_strength_index()
+    )
+
+    features = (
+        module.team_strength_features_for_game(
+            {
+                "game_date": "2026_01_01",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            strength_index,
+        )
+    )
+
+    assert set(
+        features
+    ) == set(
+        TEAM_STRENGTH_FEATURE_VALUES
+    )
+
+    for (
+        column,
+        expected,
+    ) in TEAM_STRENGTH_FEATURE_VALUES.items():
+        assert float(
+            features[
+                column
+            ]
+        ) == pytest.approx(
+            float(expected),
+            abs=1e-12,
+        )
+
+
+def test_merge_intake_leaves_missing_team_strength_blank() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/merge_intake.py"
+    )
+
+    features = (
+        module.team_strength_features_for_game(
+            {
+                "game_date": "2026_01_01",
+                "home_team": "Boston Bruins",
+                "away_team": "New York Rangers",
+            },
+            {},
+        )
+    )
+
+    assert set(
+        features
+    ) == set(
+        TEAM_STRENGTH_FEATURE_VALUES
+    )
+
+    assert all(
+        value == ""
+        for value in features.values()
+    )
+
+
 # ---------------------------------------------------------------------
 # test_build_juice_files.py coverage
-# Regression fixture: fatigue features survive Stage 01 market split
+# Regression fixture: supplemental features survive Stage 01 market split
 # ---------------------------------------------------------------------
 
 def test_build_juice_files_preserves_fatigue_features_in_all_markets() -> None:
@@ -1166,6 +1576,29 @@ def test_build_juice_files_preserves_fatigue_features_in_all_markets() -> None:
 
     expected = set(
         FATIGUE_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.MERGED_REQUIRED_COLUMNS
+    )
+    assert expected.issubset(
+        module.MONEYLINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.PUCK_LINE_COLUMNS
+    )
+    assert expected.issubset(
+        module.TOTAL_COLUMNS
+    )
+
+
+def test_build_juice_files_preserves_team_strength_features_in_all_markets() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py"
+    )
+
+    expected = set(
+        TEAM_STRENGTH_FEATURE_VALUES
     )
 
     assert expected.issubset(
@@ -1370,6 +1803,7 @@ def test_moneyline_juice_application_normalizes_probabilities(
                 "Boston Bruins"
             ),
             **FATIGUE_FEATURE_VALUES,
+            **TEAM_STRENGTH_FEATURE_VALUES,
             "away_prob_moneyline": 0.55,
             "home_prob_moneyline": 0.45,
             "away_fair_decimal_moneyline": (
@@ -1446,6 +1880,10 @@ def test_moneyline_juice_application_normalizes_probabilities(
         output.iloc[0]
     )
 
+    assert_team_strength_features_preserved(
+        output.iloc[0]
+    )
+
     away = float(
         output.loc[
             0,
@@ -1519,6 +1957,7 @@ def test_puck_line_juice_application_normalizes_probabilities(
                 "Boston Bruins"
             ),
             **FATIGUE_FEATURE_VALUES,
+            **TEAM_STRENGTH_FEATURE_VALUES,
             "away_puck_line": -1.5,
             "home_puck_line": 1.5,
             "away_prob_puck_line": 0.52,
@@ -1588,6 +2027,10 @@ def test_puck_line_juice_application_normalizes_probabilities(
     )
 
     assert_fatigue_features_preserved(
+        output.iloc[0]
+    )
+
+    assert_team_strength_features_preserved(
         output.iloc[0]
     )
 
@@ -1664,6 +2107,7 @@ def test_total_juice_application_normalizes_probabilities(
                 "Boston Bruins"
             ),
             **FATIGUE_FEATURE_VALUES,
+            **TEAM_STRENGTH_FEATURE_VALUES,
             "total": 6.5,
             "total_projected_goals": 6.3,
             "over_prob_total": 0.48,
@@ -1734,6 +2178,10 @@ def test_total_juice_application_normalizes_probabilities(
         output.iloc[0]
     )
 
+    assert_team_strength_features_preserved(
+        output.iloc[0]
+    )
+
     over = float(
         output.loc[
             0,
@@ -1771,24 +2219,6 @@ def test_total_juice_application_normalizes_probabilities(
 
 
 @pytest.mark.parametrize(
-    "relative_path, config_filename",
-    [
-        (
-            "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
-            "nhl_moneyline_juice.csv",
-        ),
-        (
-            "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
-            "nhl_puck_line_juice.csv",
-        ),
-        (
-            "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
-            "nhl_total_juice.csv",
-        ),
-    ],
-)
-
-@pytest.mark.parametrize(
     "relative_path",
     [
         "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
@@ -1814,6 +2244,51 @@ def test_apply_juice_scripts_preserve_fatigue_feature_contract(
         module.OUTPUT_COLUMNS
     )
 
+
+@pytest.mark.parametrize(
+    "relative_path",
+    [
+        "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
+        "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
+    ],
+)
+def test_apply_juice_scripts_preserve_team_strength_feature_contract(
+    relative_path: str,
+) -> None:
+    module = load_repo_module(
+        relative_path
+    )
+
+    expected = set(
+        TEAM_STRENGTH_FEATURE_VALUES
+    )
+
+    assert expected.issubset(
+        module.REQUIRED_INPUT_COLUMNS
+    )
+    assert expected.issubset(
+        module.OUTPUT_COLUMNS
+    )
+
+
+@pytest.mark.parametrize(
+    "relative_path, config_filename",
+    [
+        (
+            "docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py",
+            "nhl_moneyline_juice.csv",
+        ),
+        (
+            "docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py",
+            "nhl_puck_line_juice.csv",
+        ),
+        (
+            "docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py",
+            "nhl_total_juice.csv",
+        ),
+    ],
+)
 def test_apply_juice_scripts_use_model_calibration_adjustment(
     relative_path: str,
     config_filename: str,
