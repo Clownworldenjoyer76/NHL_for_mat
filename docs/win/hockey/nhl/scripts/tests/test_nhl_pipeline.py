@@ -1390,9 +1390,17 @@ def _team_strength_ratings_fixture(
     )
 
 
-def test_current_team_strength_accepts_only_snapshot_before_pregame_cutoff() -> None:
+def test_current_team_strength_accepts_only_snapshot_before_pregame_cutoff(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    monkeypatch.setattr(
+        module,
+        "official_schedule_cutoff_lookup",
+        lambda: {},
     )
 
     ratings = (
@@ -3964,6 +3972,12 @@ def test_pull_sdv_goalie_features_use_only_prior_games(
         "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
     )
 
+    monkeypatch.setattr(
+        module,
+        "official_schedule_cutoff_lookup",
+        lambda: {},
+    )
+
     schedule = module.pl.DataFrame(
         {
             "game_id": [
@@ -4196,6 +4210,12 @@ def test_pull_sdv_rejects_current_goalie_snapshot_after_t60_cutoff(
 ) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    monkeypatch.setattr(
+        module,
+        "official_schedule_cutoff_lookup",
+        lambda: {},
     )
 
     schedule = module.pl.DataFrame(
@@ -4757,6 +4777,12 @@ def test_pull_sdv_lineup_features_use_only_prior_games_and_t60(
         "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
     )
 
+    monkeypatch.setattr(
+        module,
+        "official_schedule_cutoff_lookup",
+        lambda: {},
+    )
+
     schedule = module.pl.DataFrame(
         {
             "game_id": [
@@ -4927,9 +4953,17 @@ def test_pull_sdv_lineup_features_use_only_prior_games_and_t60(
     )
 
 
-def test_pull_sdv_rejects_current_lineup_snapshot_after_t60() -> None:
+def test_pull_sdv_rejects_current_lineup_snapshot_after_t60(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     module = load_repo_module(
         "docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py"
+    )
+
+    monkeypatch.setattr(
+        module,
+        "official_schedule_cutoff_lookup",
+        lambda: {},
     )
 
     schedule = module.pl.DataFrame(
