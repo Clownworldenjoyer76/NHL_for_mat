@@ -132,6 +132,7 @@ jobs:
           mkdir -p docs/win/hockey/nhl/05_final_scores/reports/puckline
           mkdir -p docs/win/hockey/nhl/05_final_scores/reports/total
           mkdir -p docs/win/hockey/nhl/05_final_scores/reports/calibration
+          mkdir -p docs/win/hockey/nhl/05_final_scores/clv
           mkdir -p docs/win/hockey/nhl/05_final_scores/errors
 
           mkdir -p docs/win/hockey/nhl/config/mapping
@@ -292,6 +293,9 @@ jobs:
       - name: 05 Final Scores - Build NHL reports
         run: python docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py
 
+      - name: 05 Final Scores - Calculate NHL CLV
+        run: python docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py
+
       - name: Print NHL Stage 05 logs
         if: always()
         run: |
@@ -319,6 +323,9 @@ jobs:
 
           echo "===== Report outputs ====="
           find docs/win/hockey/nhl/05_final_scores/reports -type f -name "*.csv" -print || true
+
+          echo "===== CLV outputs ====="
+          find docs/win/hockey/nhl/05_final_scores/clv -type f -name "*.csv" -print || true
 
           echo "===== Market tally ====="
           find docs/win/hockey/nhl/05_final_scores -maxdepth 1 -type f -name "nhl_market_tally.csv" -print || true
