@@ -16,6 +16,13 @@ Examples:
     python docs/win/hockey/nhl/scripts/research/build_sdv_history.py \
         --season 2024 --datasets play_by_play,schedules,team_boxscores
 
+Season convention
+-----------------
+The command-line season is the NHL/project **start year**. For example,
+``--season 2024`` means the 2024-25 NHL season and official game IDs begin
+with ``2024``. SportsDataverse labels NHL seasons by the **ending year**, so
+the builder translates that request to SDV season ``2025`` internally.
+
 Leakage policy
 --------------
 The Parquet tables produced here are historical source facts, not target-game
@@ -174,7 +181,11 @@ def parse_args() -> argparse.Namespace:
         "--season",
         type=int,
         action="append",
-        help="NHL season start year, e.g. --season 2024. Repeat as needed.",
+        help=(
+            "NHL season start year, e.g. --season 2024 means 2024-25. "
+            "SportsDataverse labels NHL seasons by ending year, so the builder "
+            "internally requests SDV season 2025."
+        ),
     )
     parser.add_argument("--start-season", type=int)
     parser.add_argument("--end-season", type=int)
@@ -222,10 +233,11 @@ def requested_seasons(args: argparse.Namespace) -> list[int]:
             "materialize multiple seasons implicitly."
         )
 
-    bad = [season for season in seasons if season < 2010]
+    bad = [season for season in seasons if season < 2009]
     if bad:
         raise SystemExit(
-            f"SportsDataverse NHL historical loaders begin at 2010; invalid: {bad}"
+            "SportsDataverse core NHL historical loaders begin with SDV season 2010 "
+            f"(the 2009-10 NHL season); invalid NHL start year(s): {bad}"
         )
 
     return seasons
@@ -380,7 +392,11 @@ def prepare_schedule(schedule: pl.DataFrame, season: int) -> pl.DataFrame:
             f"schedules: found {duplicate_games} duplicate official game_id values"
         )
 
-    return schedule.with_columns(pl.lit(True).alias("pregame_source_eligible"))
+    return schedule.with_columns(
+        pl.lit(season).alias("nhl_season_start_year"),
+        pl.lit(sdv_season_year(season)).alias("sdv_season_year"),
+        pl.lit(True).alias("pregame_source_eligible"),
+    )
 
 
 def schedule_date_lookup(schedule: pl.DataFrame) -> pl.DataFrame:
@@ -502,6 +518,8 @@ def build_pregame_index(
         for col in (
             "game_id",
             "season",
+            "nhl_season_start_year",
+            "sdv_season_year",
             "game_type",
             "source_game_date",
             "home_team_abbr",
@@ -578,6 +596,11 @@ def write_json_atomic(obj: Any, path: Path) -> None:
     tmp.replace(path)
 
 
+def sdv_season_year(nhl_season_start: int) -> int:
+    """Translate project/NHL start-year semantics to SDV ending-year semantics."""
+    return nhl_season_start + 1
+
+
 def load_sdv_frame(spec: DatasetSpec, season: int) -> pl.DataFrame:
     loader = getattr(nhl, spec.loader_name, None)
     if loader is None:
@@ -585,7 +608,7 @@ def load_sdv_frame(spec: DatasetSpec, season: int) -> pl.DataFrame:
             f"SportsDataverse {PINNED_SDV_VERSION} has no {spec.loader_name}"
         )
 
-    frame = loader(seasons=season)
+    frame = loader(seasons=sdv_season_year(season))
     if not isinstance(frame, pl.DataFrame):
         raise TypeError(
             f"{spec.loader_name} returned {type(frame).__name__}; expected polars.DataFrame"
@@ -608,7 +631,10 @@ def result_entry(
         "dataset": spec.name,
         "loader": spec.loader_name,
         "season": season,
-        "minimum_supported_season": spec.min_season,
+        "nhl_season_start_year": season,
+        "sdv_season_year": sdv_season_year(season),
+        "minimum_supported_nhl_start_season": spec.min_season - 1,
+        "minimum_supported_sdv_season": spec.min_season,
         "status": status,
     }
     if path is not None:
@@ -648,7 +674,8 @@ def materialize_schedule(
     frame = load_sdv_frame(spec, season)
     if frame.is_empty():
         raise RuntimeError(
-            f"schedules: SportsDataverse returned no schedule rows for season {season}"
+            "schedules: SportsDataverse returned no schedule rows for NHL season "
+            f"{season}-{str(season + 1)[-2:]} (SDV season {sdv_season_year(season)})"
         )
 
     frame = prepare_schedule(frame, season)
@@ -673,7 +700,7 @@ def materialize_dataset(
 ) -> dict[str, Any]:
     path = dataset_path(spec, season)
 
-    if season < spec.min_season:
+    if sdv_season_year(season) < spec.min_season:
         return result_entry(
             spec=spec,
             season=season,
@@ -777,7 +804,7 @@ def main() -> int:
 
                 if (
                     args.strict
-                    and season >= spec.min_season
+                    and sdv_season_year(season) >= spec.min_season
                     and entry["status"] == "empty_or_unpublished"
                 ):
                     strict_failures.append(
@@ -805,7 +832,8 @@ def main() -> int:
         "git_tracked": False,
         "required_gitignore_entry": GITIGNORE_ENTRY,
         "sportsdataverse_version": sdv_version,
-        "seasons": seasons,
+        "nhl_season_start_years": seasons,
+        "sportsdataverse_season_years": [sdv_season_year(season) for season in seasons],
         "datasets_requested": sorted(selected),
         "run_started_utc": utc_iso(run_started),
         "run_finished_utc": utc_iso(run_finished),
