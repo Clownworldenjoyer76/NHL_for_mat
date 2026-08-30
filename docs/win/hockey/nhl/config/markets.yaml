@@ -2,6 +2,36 @@ markets:
   nhl:
 
     ###################################################
+    # Secondary model architecture
+    ###################################################
+
+    secondary_model:
+      enabled: true
+
+      # D-Ratings remains the primary pricing/edge model.
+      # Secondary signals only gate a primary-qualified bet when
+      # disagreement is historically high and neither secondary
+      # signal supports the D-Ratings side.
+      selection_mode: high_disagreement_requires_secondary_support
+
+      # Missing SDV or insufficient P6 history must not block
+      # an otherwise valid D-Ratings selection.
+      unavailable_behavior: use_primary
+
+      # Matches the validated P6 walk-forward research gate.
+      min_train_rows: 100
+
+      # High disagreement is learned from completed prior rows only.
+      disagreement_quantile: 0.75
+
+      # P6 2025-26 validation: weighted ensemble was stronger on
+      # moneyline; meta regression was stronger on margin and total.
+      derived_signal_by_market:
+        moneyline: weighted
+        puck_line: meta
+        total: meta
+
+    ###################################################
     # ── Moneyline ────────────────────────────────────
     ###################################################
 

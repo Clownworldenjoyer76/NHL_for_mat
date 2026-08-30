@@ -14,6 +14,7 @@ BASE_DIR = Path("docs/win/hockey/nhl")
 GAMES_DIR = BASE_DIR / "00_intake" / "games"
 SPORTSBOOK_DIR = BASE_DIR / "00_intake" / "sportsbook"
 PREDICTIONS_DIR = BASE_DIR / "00_intake" / "predictions"
+SDV_PREDICTIONS_PATH = BASE_DIR / "sdv" / "sdv_predictions" / "latest_predictions.csv"
 
 FATIGUE_DIR = BASE_DIR / "sdv" / "fatigue"
 TEAM_STRENGTH_DIR = BASE_DIR / "sdv" / "team-strength"
@@ -182,6 +183,20 @@ REQUIRED_GOALIE_COLUMNS = [
 ]
 
 
+SDV_PREDICTION_COLUMNS = [
+    "sdv_home_win_prob",
+    "sdv_exp_margin",
+    "sdv_exp_total",
+]
+
+REQUIRED_SDV_PREDICTION_COLUMNS = [
+    "game_id",
+    "home_win_prob",
+    "exp_margin",
+    "exp_total",
+]
+
+
 MERGED_COLUMNS = [
     "sport",
     "league",
@@ -208,6 +223,7 @@ MERGED_COLUMNS = [
     *TEAM_STRENGTH_FEATURE_COLUMNS,
     *GOALIE_FEATURE_COLUMNS,
     *LINEUP_FEATURE_COLUMNS,
+    *SDV_PREDICTION_COLUMNS,
     "away_prob_moneyline",
     "home_prob_moneyline",
     "away_projected_goals",
@@ -246,6 +262,7 @@ AUDIT_COLUMNS = [
     "source_present_games",
     "source_present_sportsbook",
     "source_present_predictions",
+    "source_present_sdv_predictions",
     "status",
 ]
 
@@ -3120,6 +3137,84 @@ def fatigue_features_for_game(
     return features
 
 
+
+def load_sdv_prediction_index() -> dict[str, dict[str, str]]:
+    if not SDV_PREDICTIONS_PATH.exists():
+        log(
+            "No current SportsDataverse prediction file found; "
+            "SDV challenger fields will remain blank: "
+            f"{SDV_PREDICTIONS_PATH}"
+        )
+        return {}
+
+    fieldnames, rows = load_csv(
+        SDV_PREDICTIONS_PATH
+    )
+
+    validate_required_columns(
+        SDV_PREDICTIONS_PATH,
+        fieldnames,
+        REQUIRED_SDV_PREDICTION_COLUMNS,
+    )
+
+    index: dict[str, dict[str, str]] = {}
+
+    for row_number, row in enumerate(rows, start=2):
+        game_id = str(row.get("game_id", "")).strip()
+
+        if not GAME_ID_RE.fullmatch(game_id):
+            fail(
+                "SportsDataverse prediction file has non-canonical game_id: "
+                f"{SDV_PREDICTIONS_PATH} row={row_number} game_id={game_id!r}"
+            )
+
+        if game_id in index:
+            fail(
+                "SportsDataverse prediction file has duplicate game_id: "
+                f"{SDV_PREDICTIONS_PATH} game_id={game_id}"
+            )
+
+        normalized: dict[str, str] = {"game_id": game_id}
+        mappings = {
+            "sdv_home_win_prob": "home_win_prob",
+            "sdv_exp_margin": "exp_margin",
+            "sdv_exp_total": "exp_total",
+        }
+
+        for output_col, source_col in mappings.items():
+            raw = str(row.get(source_col, "")).strip()
+            if raw == "":
+                fail(
+                    "SportsDataverse prediction row has blank required value: "
+                    f"{SDV_PREDICTIONS_PATH} row={row_number} "
+                    f"game_id={game_id} column={source_col}"
+                )
+            try:
+                value = float(raw)
+            except ValueError:
+                fail(
+                    "SportsDataverse prediction row has non-numeric required value: "
+                    f"{SDV_PREDICTIONS_PATH} row={row_number} "
+                    f"game_id={game_id} column={source_col} value={raw!r}"
+                )
+
+            if output_col == "sdv_home_win_prob" and not (0.0 <= value <= 1.0):
+                fail(
+                    "SportsDataverse home win probability is outside [0,1]: "
+                    f"{SDV_PREDICTIONS_PATH} row={row_number} "
+                    f"game_id={game_id} value={value}"
+                )
+
+            normalized[output_col] = format_numeric(value)
+
+        index[game_id] = normalized
+
+    log(
+        "SportsDataverse current predictions loaded: "
+        f"{len(index)} rows from {SDV_PREDICTIONS_PATH}"
+    )
+    return index
+
 def process_date(
     date_val: str,
     games_map: dict[str, dict[str, str]],
@@ -3138,6 +3233,10 @@ def process_date(
         dict[str, str],
     ],
     lineup_index: dict[
+        str,
+        dict[str, str],
+    ],
+    sdv_prediction_index: dict[
         str,
         dict[str, str],
     ],
@@ -3288,6 +3387,11 @@ def process_date(
                     if has_prediction
                     else "0"
                 ),
+                "source_present_sdv_predictions": (
+                    "1"
+                    if game_id in sdv_prediction_index
+                    else "0"
+                ),
                 "status": status,
             }
         )
@@ -3331,6 +3435,16 @@ def process_date(
             )
         )
 
+        sdv_prediction = sdv_prediction_index.get(
+            game_id,
+            {},
+        )
+
+        sdv_prediction_features = {
+            column: sdv_prediction.get(column, "")
+            for column in SDV_PREDICTION_COLUMNS
+        }
+
         merged_rows.append(
             {
                 "sport": game.get(
@@ -3362,6 +3476,7 @@ def process_date(
                 **team_strength_features,
                 **goalie_features,
                 **lineup_features,
+                **sdv_prediction_features,
                 "away_prob_moneyline": (
                     prediction.get(
                         "away_prob_moneyline",
@@ -3615,6 +3730,10 @@ def main() -> None:
             load_lineup_index()
         )
 
+        sdv_prediction_index = (
+            load_sdv_prediction_index()
+        )
+
         games_by_date = (
             rows_by_date_game_id(
                 games_rows,
@@ -3717,6 +3836,7 @@ def main() -> None:
                 team_strength_index,
                 goalie_index,
                 lineup_index,
+                sdv_prediction_index,
             )
 
             total_merged += merged_count

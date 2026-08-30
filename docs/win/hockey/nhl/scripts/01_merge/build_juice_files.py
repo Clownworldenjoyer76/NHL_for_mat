@@ -80,9 +80,16 @@ GOALIE_NUMERIC_FEATURE_COLUMNS = [
     "starter_gsax_differential",
 ]
 
+SDV_PREDICTION_COLUMNS = [
+    "sdv_home_win_prob",
+    "sdv_exp_margin",
+    "sdv_exp_total",
+]
+
 BASE_COLUMNS = [
     "sport","league","game_date","game_time","game_id","away_team","home_team",
     *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_FEATURE_COLUMNS,*LINEUP_FEATURE_COLUMNS,
+    *SDV_PREDICTION_COLUMNS,
 ]
 
 ODDS_PROVENANCE_COLUMNS = [
@@ -281,6 +288,7 @@ def process_file(path: Path) -> list[tuple[str, int]]:
         raise ValueError(f"{path} missing required columns: {missing}")
     numeric_columns = [
         *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_NUMERIC_FEATURE_COLUMNS,*LINEUP_NUMERIC_FEATURE_COLUMNS,
+        *SDV_PREDICTION_COLUMNS,
         "away_prob_moneyline","home_prob_moneyline","away_projected_goals","home_projected_goals",
         "total_projected_goals","away_puck_line","home_puck_line","total",
         "away_dk_moneyline_american","home_dk_moneyline_american",

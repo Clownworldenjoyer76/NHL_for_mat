@@ -10,7 +10,7 @@ import pandas as pd
 import yaml
 
 
-INPUT_DIR = Path("docs/win/hockey/nhl/03_edges/ev_kelly")
+INPUT_DIR = Path("docs/win/hockey/nhl/03_edges/secondary_signals")
 OUTPUT_DIR = Path("docs/win/hockey/nhl/04_select")
 CONFIG_PATH = Path("docs/win/hockey/nhl/config/markets.yaml")
 
@@ -43,7 +43,8 @@ REJECTION_ORDER = {
     "edge": 4,
     "ev": 5,
     "kelly": 6,
-    "pick_preference": 7,
+    "secondary_model": 7,
+    "pick_preference": 8,
 }
 
 OUTPUT_COLUMNS = [
@@ -68,6 +69,69 @@ OUTPUT_COLUMNS = [
     "selected_provider_name",
     "odds_source",
     "pulled_at",
+    "drat_home_win_prob",
+    "drat_exp_margin",
+    "drat_exp_total",
+    "sdv_home_win_prob",
+    "sdv_exp_margin",
+    "sdv_exp_total",
+    "prob_disagreement",
+    "margin_disagreement",
+    "total_disagreement",
+    "prob_disagreement_threshold_p75_prior",
+    "margin_disagreement_threshold_p75_prior",
+    "total_disagreement_threshold_p75_prior",
+    "high_prob_disagreement_flag",
+    "high_margin_disagreement_flag",
+    "high_total_disagreement_flag",
+    "ensemble_train_rows",
+    "weighted_prob_drat_weight",
+    "weighted_margin_drat_weight",
+    "weighted_total_drat_weight",
+    "weighted_home_win_prob",
+    "weighted_exp_margin",
+    "weighted_exp_total",
+    "meta_home_win_prob",
+    "meta_exp_margin",
+    "meta_exp_total",
+    "secondary_history_max_game_date",
+    "secondary_model_status",
+    "secondary_signal_version",
+    "secondary_challenger_support",
+    "secondary_derived_model",
+    "secondary_derived_support",
+    "secondary_decision",
+]
+
+SECONDARY_SIGNAL_COLUMNS = [
+    "drat_home_win_prob",
+    "drat_exp_margin",
+    "drat_exp_total",
+    "sdv_home_win_prob",
+    "sdv_exp_margin",
+    "sdv_exp_total",
+    "prob_disagreement",
+    "margin_disagreement",
+    "total_disagreement",
+    "prob_disagreement_threshold_p75_prior",
+    "margin_disagreement_threshold_p75_prior",
+    "total_disagreement_threshold_p75_prior",
+    "high_prob_disagreement_flag",
+    "high_margin_disagreement_flag",
+    "high_total_disagreement_flag",
+    "ensemble_train_rows",
+    "weighted_prob_drat_weight",
+    "weighted_margin_drat_weight",
+    "weighted_total_drat_weight",
+    "weighted_home_win_prob",
+    "weighted_exp_margin",
+    "weighted_exp_total",
+    "meta_home_win_prob",
+    "meta_exp_margin",
+    "meta_exp_total",
+    "secondary_history_max_game_date",
+    "secondary_model_status",
+    "secondary_signal_version",
 ]
 
 
@@ -304,6 +368,193 @@ def get_base_meta(row):
     }
 
 
+
+def support_label(
+    *,
+    market_type: str,
+    bet_side: str,
+    prediction,
+    line,
+) -> str:
+    value = fv(prediction)
+    if value is None:
+        return "unavailable"
+
+    if market_type == "moneyline":
+        if abs(value - 0.5) < 1e-12:
+            return "neutral"
+        supports_home = value > 0.5
+        supports = supports_home if bet_side == "home" else not supports_home
+        return "supports" if supports else "opposes"
+
+    if market_type == "puck_line":
+        line_value = fv(line)
+        if line_value is None:
+            return "unavailable"
+        cover_margin = (
+            value + line_value
+            if bet_side == "home"
+            else -value + line_value
+        )
+        if abs(cover_margin) < 1e-12:
+            return "neutral"
+        return "supports" if cover_margin > 0 else "opposes"
+
+    if market_type == "total":
+        line_value = fv(line)
+        if line_value is None:
+            return "unavailable"
+        if abs(value - line_value) < 1e-12:
+            return "neutral"
+        supports_over = value > line_value
+        supports = supports_over if bet_side == "over" else not supports_over
+        return "supports" if supports else "opposes"
+
+    fail(f"Unknown market_type for secondary support: {market_type}")
+
+
+def secondary_market_fields(
+    market_type: str,
+    derived_model: str,
+) -> tuple[str, str, str]:
+    if market_type == "moneyline":
+        derived_field = (
+            "weighted_home_win_prob"
+            if derived_model == "weighted"
+            else "meta_home_win_prob"
+        )
+        return "high_prob_disagreement_flag", "sdv_home_win_prob", derived_field
+
+    if market_type == "puck_line":
+        derived_field = (
+            "weighted_exp_margin"
+            if derived_model == "weighted"
+            else "meta_exp_margin"
+        )
+        return "high_margin_disagreement_flag", "sdv_exp_margin", derived_field
+
+    if market_type == "total":
+        derived_field = (
+            "weighted_exp_total"
+            if derived_model == "weighted"
+            else "meta_exp_total"
+        )
+        return "high_total_disagreement_flag", "sdv_exp_total", derived_field
+
+    fail(f"Unknown market_type for secondary model: {market_type}")
+
+
+def apply_secondary_model_gate(
+    candidates: list[dict],
+    row,
+    config: dict,
+    *,
+    market_type: str,
+    rejections: dict,
+) -> list[dict]:
+    if not candidates:
+        return []
+
+    secondary = config.get("secondary_model", {})
+    enabled = bool(secondary.get("enabled", False))
+
+    if not enabled:
+        for candidate in candidates:
+            for col in SECONDARY_SIGNAL_COLUMNS:
+                candidate[col] = row.get(col)
+            candidate["secondary_challenger_support"] = "unavailable"
+            candidate["secondary_derived_model"] = ""
+            candidate["secondary_derived_support"] = "unavailable"
+            candidate["secondary_decision"] = "disabled_primary_only"
+        return candidates
+
+    selection_mode = secondary.get("selection_mode")
+    if selection_mode != "high_disagreement_requires_secondary_support":
+        fail(
+            "Unsupported secondary_model.selection_mode: "
+            f"{selection_mode!r}"
+        )
+
+    derived_by_market = secondary.get("derived_signal_by_market", {})
+    derived_model = str(derived_by_market.get(market_type, "")).strip().lower()
+
+    if derived_model not in {"weighted", "meta"}:
+        fail(
+            f"secondary_model derived signal is invalid for {market_type}: "
+            f"{derived_model!r}"
+        )
+
+    high_field, challenger_field, derived_field = secondary_market_fields(
+        market_type,
+        derived_model,
+    )
+
+    kept: list[dict] = []
+
+    for candidate in candidates:
+        for col in SECONDARY_SIGNAL_COLUMNS:
+            candidate[col] = row.get(col)
+
+        candidate["secondary_derived_model"] = derived_model
+        status = sv(row.get("secondary_model_status"))
+
+        line = candidate.get("line")
+        side = candidate["bet_side"]
+        challenger_support = support_label(
+            market_type=market_type,
+            bet_side=side,
+            prediction=row.get(challenger_field),
+            line=line,
+        )
+        derived_support = support_label(
+            market_type=market_type,
+            bet_side=side,
+            prediction=row.get(derived_field),
+            line=line,
+        )
+
+        candidate["secondary_challenger_support"] = challenger_support
+        candidate["secondary_derived_support"] = derived_support
+
+        if status != "ready":
+            if secondary.get("unavailable_behavior") != "use_primary":
+                fail(
+                    "Unsupported secondary_model.unavailable_behavior: "
+                    f"{secondary.get('unavailable_behavior')!r}"
+                )
+            candidate["secondary_decision"] = f"fallback_primary:{status or 'unavailable'}"
+            kept.append(candidate)
+            continue
+
+        high_value = fv(row.get(high_field))
+        high_disagreement = high_value is not None and high_value >= 0.5
+
+        if not high_disagreement:
+            candidate["secondary_decision"] = "normal_disagreement_primary"
+            kept.append(candidate)
+            continue
+
+        support_exists = (
+            challenger_support == "supports"
+            or derived_support == "supports"
+        )
+
+        if support_exists:
+            candidate["secondary_decision"] = "high_disagreement_supported"
+            kept.append(candidate)
+            continue
+
+        candidate["secondary_decision"] = "high_disagreement_no_secondary_support"
+        add_rejection(
+            rejections,
+            game_date=candidate["game_date"],
+            market_type=market_type,
+            bet_side=side,
+            failing_condition="secondary_model",
+        )
+
+    return kept
+
 def apply_pick_preference(
     candidates: list[dict],
     pick_preference: str,
@@ -427,6 +678,14 @@ def process_moneyline(row, config, slate_key, rejections):
             ),
         })
 
+    candidates = apply_secondary_model_gate(
+        candidates,
+        row,
+        config,
+        market_type="moneyline",
+        rejections=rejections,
+    )
+
     return apply_pick_preference(
         candidates,
         market_config.get("pick_preference", "all"),
@@ -512,6 +771,14 @@ def process_puck_line(row, config, slate_key, rejections):
             ),
         })
 
+    candidates = apply_secondary_model_gate(
+        candidates,
+        row,
+        config,
+        market_type="puck_line",
+        rejections=rejections,
+    )
+
     return apply_pick_preference(
         candidates,
         market_config.get("pick_preference", "all"),
@@ -596,6 +863,14 @@ def process_total(row, config, slate_key, rejections):
                 row.get("pulled_at")
             ),
         })
+
+    candidates = apply_secondary_model_gate(
+        candidates,
+        row,
+        config,
+        market_type="total",
+        rejections=rejections,
+    )
 
     return apply_pick_preference(
         candidates,
@@ -701,6 +976,7 @@ def validate_market_columns(df, market_type, path):
         "game_id",
         "away_team",
         "home_team",
+        *SECONDARY_SIGNAL_COLUMNS,
     ]
 
     if market_type == "moneyline":

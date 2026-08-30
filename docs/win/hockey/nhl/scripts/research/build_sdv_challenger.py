@@ -30,7 +30,7 @@ Leakage rules
    files, not from historical SportsDataverse schedule score columns.
 5. Ensemble/meta-model parameters for target date D are trained only on
    completed comparison rows with game_date < D.
-6. No production deployment role is selected by this script.
+6. Research outputs support the approved production role: D-Ratings primary, SDV challenger/disagreement, and calibrated secondary ensemble/meta signals. This research runner is not the production execution step.
 
 SportsDataverse contract
 ------------------------
@@ -85,7 +85,7 @@ import polars as pl
 from scipy.optimize import minimize
 
 
-SCRIPT_VERSION = "SDV-P6-2026-08-30-v1"
+SCRIPT_VERSION = "SDV-P6-2026-08-30-v2"
 PINNED_SDV_VERSION = "0.0.75"
 
 REPO_ROOT = Path(__file__).resolve().parents[6]
@@ -867,8 +867,16 @@ def build_walkforward_ensemble(frame: pd.DataFrame, min_train_rows: int) -> pd.D
             train["actual_total"].to_numpy(float),
         )
 
-        # Disagreement threshold is learned from prior rows only.
-        disagreement_threshold = float(train["prob_disagreement"].quantile(0.75))
+        # Disagreement thresholds are learned from prior rows only.
+        prob_disagreement_threshold = float(
+            train["prob_disagreement"].quantile(0.75)
+        )
+        margin_disagreement_threshold = float(
+            train["margin_disagreement"].quantile(0.75)
+        )
+        total_disagreement_threshold = float(
+            train["total_disagreement"].quantile(0.75)
+        )
 
         result = test.copy()
         result["ensemble_train_rows"] = len(train)
@@ -893,8 +901,22 @@ def build_walkforward_ensemble(frame: pd.DataFrame, min_train_rows: int) -> pd.D
             total_meta,
             result[["drat_exp_total", "sdv_exp_total", "total_disagreement"]].to_numpy(float),
         )
-        result["disagreement_threshold_p75_prior"] = disagreement_threshold
-        result["high_disagreement_flag"] = result["prob_disagreement"] >= disagreement_threshold
+        result["disagreement_threshold_p75_prior"] = prob_disagreement_threshold
+        result["high_disagreement_flag"] = (
+            result["prob_disagreement"] >= prob_disagreement_threshold
+        )
+        result["prob_disagreement_threshold_p75_prior"] = prob_disagreement_threshold
+        result["margin_disagreement_threshold_p75_prior"] = margin_disagreement_threshold
+        result["total_disagreement_threshold_p75_prior"] = total_disagreement_threshold
+        result["high_prob_disagreement_flag"] = (
+            result["prob_disagreement"] >= prob_disagreement_threshold
+        )
+        result["high_margin_disagreement_flag"] = (
+            result["margin_disagreement"] >= margin_disagreement_threshold
+        )
+        result["high_total_disagreement_flag"] = (
+            result["total_disagreement"] >= total_disagreement_threshold
+        )
         results.append(result)
 
     if not results:
@@ -1018,7 +1040,7 @@ def main() -> int:
 
     print(f"BUILD_SDV_CHALLENGER_VERSION | {SCRIPT_VERSION}")
     print(f"SPORTSDATAVERSE_VERSION | {installed}")
-    print("MODE | RESEARCH_ONLY | deployment_role=UNRESOLVED")
+    print("MODE | RESEARCH_SUPPORTING_PRODUCTION | deployment_role=SECONDARY_CONFIRMATION_AND_CALIBRATED_SIGNAL")
     print(f"SEASON | NHL {args.season}-{str(args.season + 1)[-2:]} | SDV {sdv_season_year(args.season)}")
     print("LEAKAGE_RULE | source_game_date < target_game_date")
 
@@ -1078,14 +1100,19 @@ def main() -> int:
     summary = {
         "script_version": SCRIPT_VERSION,
         "generated_at_utc": utc_now_iso(),
-        "mode": "research_only",
-        "deployment_role": "UNRESOLVED",
+        "mode": "research_supporting_production",
+        "deployment_role": "secondary_confirmation_and_calibrated_signal",
+        "production_architecture": {
+            "primary_model": "D-Ratings",
+            "sdv_role": "challenger_confirmation_and_disagreement",
+            "calibrated_secondary_role": "weighted_ensemble_and_meta_signal",
+            "sole_model_replacement": False,
+        },
         "deployment_candidates": [
-            "standalone replacement",
-            "weighted ensemble",
             "secondary confirmation model",
-            "feature input",
             "disagreement filter",
+            "calibrated weighted ensemble signal",
+            "calibrated meta-model signal",
         ],
         "sportsdataverse_version": installed,
         "nhl_season_start_year": args.season,
@@ -1116,11 +1143,15 @@ def main() -> int:
                 "SDV prediction, and model disagreement as features."
             ),
             "disagreement_filter": (
-                "High disagreement is defined by the prior-row 75th percentile "
-                "of absolute moneyline probability disagreement."
+                "High disagreement is defined independently for probability, margin, "
+                "and total by the prior-row 75th percentile of absolute disagreement. "
+                "The legacy high_disagreement_flag remains the moneyline probability flag."
             ),
         },
-        "production_change": "none",
+        "production_change": (
+            "Approved for production as secondary confirmation/disagreement plus "
+            "calibrated ensemble/meta signals; D-Ratings remains primary."
+        ),
     }
     write_json_atomic(summary, paths["summary"])
 

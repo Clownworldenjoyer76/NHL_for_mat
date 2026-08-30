@@ -45,6 +45,29 @@ LINE_REQUIRED_MARKETS = {
     "total",
 }
 
+SECONDARY_MODEL_REQUIRED_KEYS = {
+    "enabled",
+    "selection_mode",
+    "unavailable_behavior",
+    "min_train_rows",
+    "disagreement_quantile",
+    "derived_signal_by_market",
+}
+
+VALID_SECONDARY_SELECTION_MODES = {
+    "high_disagreement_requires_secondary_support",
+}
+
+VALID_SECONDARY_UNAVAILABLE_BEHAVIORS = {
+    "use_primary",
+}
+
+VALID_DERIVED_SIGNAL_BY_MARKET = {
+    "moneyline": {"weighted", "meta"},
+    "puck_line": {"weighted", "meta"},
+    "total": {"weighted", "meta"},
+}
+
 
 def now() -> str:
     return datetime.now(UTC).isoformat()
@@ -446,11 +469,100 @@ def validate_market(
             )
 
 
+
+def validate_secondary_model(
+    config,
+    errors: list[str],
+) -> None:
+    label = "markets.nhl.secondary_model"
+
+    if not isinstance(config, dict):
+        add_error(errors, f"{label} MUST BE A MAPPING")
+        return
+
+    unknown = sorted(set(config) - SECONDARY_MODEL_REQUIRED_KEYS)
+    if unknown:
+        add_error(errors, f"{label} HAS UNKNOWN KEY(S) | {unknown}")
+
+    missing = sorted(SECONDARY_MODEL_REQUIRED_KEYS - set(config))
+    if missing:
+        add_error(errors, f"{label} MISSING REQUIRED KEY(S) | {missing}")
+        return
+
+    validate_boolean(config.get("enabled"), f"{label}.enabled", errors)
+
+    mode = config.get("selection_mode")
+    if mode not in VALID_SECONDARY_SELECTION_MODES:
+        add_error(
+            errors,
+            f"{label}.selection_mode INVALID | value={mode!r} | "
+            f"allowed={sorted(VALID_SECONDARY_SELECTION_MODES)}",
+        )
+
+    unavailable = config.get("unavailable_behavior")
+    if unavailable not in VALID_SECONDARY_UNAVAILABLE_BEHAVIORS:
+        add_error(
+            errors,
+            f"{label}.unavailable_behavior INVALID | value={unavailable!r} | "
+            f"allowed={sorted(VALID_SECONDARY_UNAVAILABLE_BEHAVIORS)}",
+        )
+
+    min_rows = config.get("min_train_rows")
+    if (
+        not isinstance(min_rows, int)
+        or isinstance(min_rows, bool)
+        or min_rows < 100
+    ):
+        add_error(
+            errors,
+            f"{label}.min_train_rows MUST BE AN INTEGER >= 100",
+        )
+
+    quantile = config.get("disagreement_quantile")
+    if (
+        not is_finite_number(quantile)
+        or abs(float(quantile) - 0.75) > 1e-12
+    ):
+        add_error(
+            errors,
+            f"{label}.disagreement_quantile MUST EQUAL 0.75 FOR THE P6 CONTRACT",
+        )
+
+    derived = config.get("derived_signal_by_market")
+    if not isinstance(derived, dict):
+        add_error(errors, f"{label}.derived_signal_by_market MUST BE A MAPPING")
+        return
+
+    expected = set(VALID_DERIVED_SIGNAL_BY_MARKET)
+    unknown_markets = sorted(set(derived) - expected)
+    missing_markets = sorted(expected - set(derived))
+    if unknown_markets:
+        add_error(
+            errors,
+            f"{label}.derived_signal_by_market HAS UNKNOWN MARKET(S) | {unknown_markets}",
+        )
+    if missing_markets:
+        add_error(
+            errors,
+            f"{label}.derived_signal_by_market MISSING MARKET(S) | {missing_markets}",
+        )
+
+    for market, allowed in VALID_DERIVED_SIGNAL_BY_MARKET.items():
+        if market not in derived:
+            continue
+        value = derived[market]
+        if value not in allowed:
+            add_error(
+                errors,
+                f"{label}.derived_signal_by_market.{market} INVALID | "
+                f"value={value!r} | allowed={sorted(allowed)}",
+            )
+
 def validate_config(
     nhl_config,
     errors: list[str],
 ) -> None:
-    actual_markets = set(
+    actual_keys = set(
         nhl_config
     )
 
@@ -458,9 +570,11 @@ def validate_config(
         EXPECTED_MARKETS
     )
 
+    allowed_keys = expected_markets | {"secondary_model"}
+
     unknown_markets = sorted(
-        actual_markets
-        - expected_markets
+        actual_keys
+        - allowed_keys
     )
 
     if unknown_markets:
@@ -472,7 +586,7 @@ def validate_config(
 
     missing_markets = sorted(
         expected_markets
-        - actual_markets
+        - actual_keys
     )
 
     if missing_markets:
@@ -480,6 +594,17 @@ def validate_config(
             errors,
             f"MISSING MARKET(S) | "
             f"{missing_markets}",
+        )
+
+    if "secondary_model" not in nhl_config:
+        add_error(
+            errors,
+            "MISSING REQUIRED markets.nhl.secondary_model",
+        )
+    else:
+        validate_secondary_model(
+            nhl_config["secondary_model"],
+            errors,
         )
 
     for market_name in EXPECTED_MARKETS:

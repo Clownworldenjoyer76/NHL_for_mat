@@ -1,6 +1,6 @@
 pipeline:
   name: nhl
-  schema_version: 11
+  schema_version: 12
   schema_created_at: '2026-08-29'
   schema_updated_at: '2026-08-30'
   timezone: America/New_York
@@ -9,19 +9,19 @@ stage_schemas:
     version: 7
     path: docs/win/hockey/nhl/00_intake
   01_merge:
-    version: 8
+    version: 9
     path: docs/win/hockey/nhl/01_merge
   02_juice:
     version: 5
     path: docs/win/hockey/nhl/02_juice
   03_edges:
-    version: 1
+    version: 2
     path: docs/win/hockey/nhl/03_edges
   04_select:
-    version: 2
+    version: 3
     path: docs/win/hockey/nhl/04_select
   05_final_scores:
-    version: 3
+    version: 4
     path: docs/win/hockey/nhl/05_final_scores
 canonical_game_identity:
   field: game_id
@@ -192,7 +192,13 @@ sportsbook:
       - selected_provider_name
       - odds_source
       - pulled_at
-      rule: Graded outputs preserve the selected wager's sportsbook/provider provenance unchanged.
+      - secondary_model_status
+      - secondary_signal_version
+      - secondary_challenger_support
+      - secondary_derived_model
+      - secondary_derived_support
+      - secondary_decision
+      rule: Graded outputs preserve sportsbook/provider provenance and the complete secondary-model selection audit fields unchanged.
 prediction_model:
   primary_source:
     name: D-Ratings
@@ -211,6 +217,71 @@ prediction_model:
     - fatigue
     - sdv_predictions
     - odds
+  secondary_prediction_integration:
+    status: VERIFIED_PRODUCTION_ARCHITECTURE
+    primary_model: D-Ratings
+    primary_rule: D-Ratings remains the sole source for Stage 02 fair/model probability construction and primary edge/EV/Kelly calculations.
+    sdv_current_file: docs/win/hockey/nhl/sdv/sdv_predictions/latest_predictions.csv
+    sdv_producer: docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py
+    merge_script: docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
+    join_identity:
+    - game_id
+    merged_fields:
+    - sdv_home_win_prob
+    - sdv_exp_margin
+    - sdv_exp_total
+    missing_sdv_behavior: Leave SDV prediction fields blank and continue with the D-Ratings primary path.
+    signal_builder: docs/win/hockey/nhl/scripts/03_edges/build_secondary_model_signals.py
+    signal_input_root: docs/win/hockey/nhl/03_edges/ev_kelly
+    signal_output_root: docs/win/hockey/nhl/03_edges/secondary_signals
+    historical_training_source: docs/win/hockey/nhl/research/sdv_challenger/season_*/standalone_comparison.csv
+    historical_training_retention: This file is a required production calibration input after this deployment. Do not delete it unless a versioned compact calibration artifact replaces it and the signal builder/schema are updated together.
+    training_contract:
+      completed_rows_only: true
+      target_rule: historical game_date must be strictly earlier than target game_date.
+      minimum_prior_rows: 100
+      disagreement_quantile: 0.75
+      same_day_rows: excluded
+    raw_disagreement_fields:
+    - prob_disagreement
+    - margin_disagreement
+    - total_disagreement
+    learned_threshold_fields:
+    - prob_disagreement_threshold_p75_prior
+    - margin_disagreement_threshold_p75_prior
+    - total_disagreement_threshold_p75_prior
+    high_disagreement_fields:
+    - high_prob_disagreement_flag
+    - high_margin_disagreement_flag
+    - high_total_disagreement_flag
+    calibrated_weighted_fields:
+    - weighted_prob_drat_weight
+    - weighted_margin_drat_weight
+    - weighted_total_drat_weight
+    - weighted_home_win_prob
+    - weighted_exp_margin
+    - weighted_exp_total
+    meta_model_fields:
+    - meta_home_win_prob
+    - meta_exp_margin
+    - meta_exp_total
+    derived_signal_by_market:
+      moneyline: weighted
+      puck_line: meta
+      total: meta
+    selection_script: docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
+    selection_rule: A bet must first pass the existing D-Ratings primary rules. When historical disagreement is high, retain it only if the SDV challenger or the configured calibrated derived signal supports that bet side.
+    unavailable_behavior: If SDV or calibrated-history output is unavailable, preserve the D-Ratings primary decision and record an explicit fallback status.
+    selected_bet_audit_fields:
+    - secondary_model_status
+    - secondary_signal_version
+    - secondary_challenger_support
+    - secondary_derived_model
+    - secondary_derived_support
+    - secondary_decision
+    research_reference: docs/win/hockey/nhl/scripts/research/build_sdv_challenger.py
+    research_deployment_role: secondary_confirmation_and_calibrated_signal
+    sole_model_replacement: false
   fatigue_integration:
     source_root: docs/win/hockey/nhl/sdv/fatigue
     merge_script: docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
@@ -537,6 +608,15 @@ calibration:
 market_configuration:
   authoritative_file: docs/win/hockey/nhl/config/markets.yaml
   validator: docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py
+  secondary_model_path: markets.nhl.secondary_model
+  secondary_selection_mode: high_disagreement_requires_secondary_support
+  secondary_unavailable_behavior: use_primary
+  secondary_min_train_rows: 100
+  secondary_disagreement_quantile: 0.75
+  derived_signal_by_market:
+    moneyline: weighted
+    puck_line: meta
+    total: meta
 provenance:
   timezone: America/New_York
   rules:
