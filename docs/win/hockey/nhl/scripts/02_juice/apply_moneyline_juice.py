@@ -153,6 +153,10 @@ REQUIRED_INPUT_COLUMNS = [
     "home_dk_moneyline_american",
     "away_dk_moneyline_decimal",
     "home_dk_moneyline_decimal",
+    "odds_source",
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+    "pulled_at",
 ]
 
 REQUIRED_CONFIG_COLUMNS = [

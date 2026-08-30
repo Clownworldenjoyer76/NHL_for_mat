@@ -228,6 +228,14 @@ MERGED_COLUMNS = [
     "dk_total_under_american",
     "dk_total_over_decimal",
     "dk_total_under_decimal",
+    "odds_source",
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+    "total_provider_id",
+    "total_provider_name",
+    "pulled_at",
 ]
 
 AUDIT_COLUMNS = [
@@ -285,6 +293,14 @@ REQUIRED_SPORTSBOOK_COLUMNS = [
     "away_dk_puck_line_decimal",
     "dk_total_over_decimal",
     "dk_total_under_decimal",
+    "odds_source",
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+    "total_provider_id",
+    "total_provider_name",
+    "pulled_at",
 ]
 
 REQUIRED_PREDICTION_COLUMNS = [
@@ -3463,6 +3479,38 @@ def process_date(
                         "dk_total_under_decimal",
                         "",
                     )
+                ),
+                "odds_source": sportsbook.get(
+                    "odds_source",
+                    "",
+                ),
+                "moneyline_provider_id": sportsbook.get(
+                    "moneyline_provider_id",
+                    "",
+                ),
+                "moneyline_provider_name": sportsbook.get(
+                    "moneyline_provider_name",
+                    "",
+                ),
+                "puck_line_provider_id": sportsbook.get(
+                    "puck_line_provider_id",
+                    "",
+                ),
+                "puck_line_provider_name": sportsbook.get(
+                    "puck_line_provider_name",
+                    "",
+                ),
+                "total_provider_id": sportsbook.get(
+                    "total_provider_id",
+                    "",
+                ),
+                "total_provider_name": sportsbook.get(
+                    "total_provider_name",
+                    "",
+                ),
+                "pulled_at": sportsbook.get(
+                    "pulled_at",
+                    "",
                 ),
             }
         )

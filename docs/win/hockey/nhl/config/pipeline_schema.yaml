@@ -1,8 +1,8 @@
 pipeline:
   name: nhl
-  schema_version: 9
+  schema_version: 10
   schema_created_at: "2026-08-29"
-  schema_updated_at: "2026-08-29"
+  schema_updated_at: "2026-08-30"
   timezone: "America/New_York"
 
 stage_schemas:
@@ -11,11 +11,11 @@ stage_schemas:
     path: "docs/win/hockey/nhl/00_intake"
 
   "01_merge":
-    version: 7
+    version: 8
     path: "docs/win/hockey/nhl/01_merge"
 
   "02_juice":
-    version: 4
+    version: 5
     path: "docs/win/hockey/nhl/02_juice"
 
   "03_edges":
@@ -23,11 +23,11 @@ stage_schemas:
     path: "docs/win/hockey/nhl/03_edges"
 
   "04_select":
-    version: 1
+    version: 2
     path: "docs/win/hockey/nhl/04_select"
 
   "05_final_scores":
-    version: 1
+    version: 2
     path: "docs/win/hockey/nhl/05_final_scores"
 
 canonical_game_identity:
@@ -123,6 +123,83 @@ sportsbook:
     total:
       provider_id: "total_provider_id"
       provider_name: "total_provider_name"
+
+  provider_provenance_propagation:
+    stage_01_merge:
+      path: "docs/win/hockey/nhl/01_merge"
+      fields:
+        - "odds_source"
+        - "moneyline_provider_id"
+        - "moneyline_provider_name"
+        - "puck_line_provider_id"
+        - "puck_line_provider_name"
+        - "total_provider_id"
+        - "total_provider_name"
+        - "pulled_at"
+      rule: "The merged game row preserves the selected provider identity for every market plus source and pull timestamp."
+
+    stage_01_market_files:
+      moneyline_fields:
+        - "odds_source"
+        - "moneyline_provider_id"
+        - "moneyline_provider_name"
+        - "pulled_at"
+      puck_line_fields:
+        - "odds_source"
+        - "puck_line_provider_id"
+        - "puck_line_provider_name"
+        - "pulled_at"
+      total_fields:
+        - "odds_source"
+        - "total_provider_id"
+        - "total_provider_name"
+        - "pulled_at"
+      rule: "Each market file retains only the provider identity relevant to that market, together with source and pull timestamp."
+
+    stage_02_juice:
+      path: "docs/win/hockey/nhl/02_juice"
+      moneyline_fields:
+        - "odds_source"
+        - "moneyline_provider_id"
+        - "moneyline_provider_name"
+        - "pulled_at"
+      puck_line_fields:
+        - "odds_source"
+        - "puck_line_provider_id"
+        - "puck_line_provider_name"
+        - "pulled_at"
+      total_fields:
+        - "odds_source"
+        - "total_provider_id"
+        - "total_provider_name"
+        - "pulled_at"
+      rule: "Juice/calibration processing must preserve market-specific provider provenance unchanged."
+
+    stage_03_edges:
+      path: "docs/win/hockey/nhl/03_edges"
+      rule: "Stage 03 preserves incoming provider provenance as pass-through dataframe columns while calculating edge, EV, and Kelly values."
+
+    stage_04_select:
+      path: "docs/win/hockey/nhl/04_select"
+      output_fields:
+        - "selected_provider_id"
+        - "selected_provider_name"
+        - "odds_source"
+        - "pulled_at"
+      mapping:
+        moneyline: "moneyline_provider_id / moneyline_provider_name"
+        puck_line: "puck_line_provider_id / puck_line_provider_name"
+        total: "total_provider_id / total_provider_name"
+      rule: "Every selected wager records the provider whose selected market price generated the wager's edge and EV."
+
+    stage_05_final_scores:
+      path: "docs/win/hockey/nhl/05_final_scores"
+      required_selected_bet_fields:
+        - "selected_provider_id"
+        - "selected_provider_name"
+        - "odds_source"
+        - "pulled_at"
+      rule: "Graded outputs preserve the selected wager's sportsbook/provider provenance unchanged."
 
   latest_snapshot:
     path: "docs/win/hockey/nhl/odds/<YYYY_MM_DD>.json"
@@ -270,7 +347,6 @@ prediction_model:
       - "02_juice total output"
     missing_behavior: "Leave team-strength features and their differentials blank when no as-of-safe team-strength row is available; do not synthesize values."
 
-
   goalie_integration:
     source_root: "docs/win/hockey/nhl/sdv/goalie"
     source_label: "game_goalie_features_asof"
@@ -338,7 +414,6 @@ prediction_model:
       - "02_juice puck-line output"
       - "02_juice total output"
     missing_behavior: "Leave goalie names and GSAx blank and set goalie status to unknown when no strict-as-of goalie row is available; do not synthesize confirmed information."
-
 
 lineup_player_strength_integration:
   source_root: "docs/win/hockey/nhl/sdv/lineup-strength"
@@ -513,6 +588,12 @@ provenance:
       - "puck_line_provider_name"
       - "total_provider_id"
       - "total_provider_name"
+    selected_bet_provider_fields:
+      - "selected_provider_id"
+      - "selected_provider_name"
+      - "odds_source"
+      - "pulled_at"
+    downstream_rule: "Market-specific provider identity is preserved through Stages 01-03; Stage 04 maps the selected market provider to selected_provider_id/selected_provider_name; Stage 05 preserves those selected-bet fields for grading and analysis."
 
   sportsdataverse:
     source: "SportsDataverse"

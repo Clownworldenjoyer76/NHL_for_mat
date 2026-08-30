@@ -155,6 +155,10 @@ REQUIRED_INPUT_COLUMNS = [
     "home_dk_puck_line_american",
     "away_dk_puck_line_decimal",
     "home_dk_puck_line_decimal",
+    "odds_source",
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+    "pulled_at",
 ]
 
 REQUIRED_CONFIG_COLUMNS = [

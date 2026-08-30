@@ -85,6 +85,40 @@ BASE_COLUMNS = [
     *FATIGUE_FEATURE_COLUMNS,*TEAM_STRENGTH_FEATURE_COLUMNS,*GOALIE_FEATURE_COLUMNS,*LINEUP_FEATURE_COLUMNS,
 ]
 
+ODDS_PROVENANCE_COLUMNS = [
+    "odds_source",
+    "pulled_at",
+]
+
+MONEYLINE_PROVENANCE_COLUMNS = [
+    *ODDS_PROVENANCE_COLUMNS,
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+]
+
+PUCK_LINE_PROVENANCE_COLUMNS = [
+    *ODDS_PROVENANCE_COLUMNS,
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+]
+
+TOTAL_PROVENANCE_COLUMNS = [
+    *ODDS_PROVENANCE_COLUMNS,
+    "total_provider_id",
+    "total_provider_name",
+]
+
+ALL_ODDS_PROVENANCE_COLUMNS = [
+    "odds_source",
+    "moneyline_provider_id",
+    "moneyline_provider_name",
+    "puck_line_provider_id",
+    "puck_line_provider_name",
+    "total_provider_id",
+    "total_provider_name",
+    "pulled_at",
+]
+
 MERGED_REQUIRED_COLUMNS = BASE_COLUMNS + [
     "away_prob_moneyline","home_prob_moneyline","away_projected_goals","home_projected_goals",
     "total_projected_goals","away_puck_line","home_puck_line","total",
@@ -94,6 +128,7 @@ MERGED_REQUIRED_COLUMNS = BASE_COLUMNS + [
     "away_dk_puck_line_decimal","home_dk_puck_line_decimal",
     "dk_total_over_american","dk_total_under_american",
     "dk_total_over_decimal","dk_total_under_decimal",
+    *ALL_ODDS_PROVENANCE_COLUMNS,
 ]
 
 MONEYLINE_COLUMNS = BASE_COLUMNS + [
@@ -101,6 +136,7 @@ MONEYLINE_COLUMNS = BASE_COLUMNS + [
     "away_fair_decimal_moneyline","home_fair_decimal_moneyline",
     "away_dk_moneyline_american","home_dk_moneyline_american",
     "away_dk_moneyline_decimal","home_dk_moneyline_decimal",
+    *MONEYLINE_PROVENANCE_COLUMNS,
 ]
 
 PUCK_LINE_COLUMNS = BASE_COLUMNS + [
@@ -108,6 +144,7 @@ PUCK_LINE_COLUMNS = BASE_COLUMNS + [
     "away_fair_decimal_puck_line","home_fair_decimal_puck_line",
     "away_dk_puck_line_american","home_dk_puck_line_american",
     "away_dk_puck_line_decimal","home_dk_puck_line_decimal",
+    *PUCK_LINE_PROVENANCE_COLUMNS,
 ]
 
 TOTAL_COLUMNS = BASE_COLUMNS + [
@@ -115,6 +152,7 @@ TOTAL_COLUMNS = BASE_COLUMNS + [
     "over_fair_decimal_total","under_fair_decimal_total",
     "dk_total_over_american","dk_total_under_american",
     "dk_total_over_decimal","dk_total_under_decimal",
+    *TOTAL_PROVENANCE_COLUMNS,
 ]
 
 with open(LOG_FILE, "w", encoding="utf-8") as f:

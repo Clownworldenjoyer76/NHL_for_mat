@@ -155,6 +155,10 @@ REQUIRED_INPUT_COLUMNS = [
     "dk_total_under_american",
     "dk_total_over_decimal",
     "dk_total_under_decimal",
+    "odds_source",
+    "total_provider_id",
+    "total_provider_name",
+    "pulled_at",
 ]
 
 REQUIRED_CONFIG_COLUMNS = [

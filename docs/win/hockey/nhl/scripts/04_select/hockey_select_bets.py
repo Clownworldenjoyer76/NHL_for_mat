@@ -64,6 +64,10 @@ OUTPUT_COLUMNS = [
     "edge",
     "ev",
     "kelly",
+    "selected_provider_id",
+    "selected_provider_name",
+    "odds_source",
+    "pulled_at",
 ]
 
 
@@ -409,6 +413,18 @@ def process_moneyline(row, config, slate_key, rejections):
             "edge": edge,
             "ev": ev,
             "kelly": kelly,
+            "selected_provider_id": sv(
+                row.get("moneyline_provider_id")
+            ),
+            "selected_provider_name": sv(
+                row.get("moneyline_provider_name")
+            ),
+            "odds_source": sv(
+                row.get("odds_source")
+            ),
+            "pulled_at": sv(
+                row.get("pulled_at")
+            ),
         })
 
     return apply_pick_preference(
@@ -482,6 +498,18 @@ def process_puck_line(row, config, slate_key, rejections):
             "edge": edge,
             "ev": ev,
             "kelly": kelly,
+            "selected_provider_id": sv(
+                row.get("puck_line_provider_id")
+            ),
+            "selected_provider_name": sv(
+                row.get("puck_line_provider_name")
+            ),
+            "odds_source": sv(
+                row.get("odds_source")
+            ),
+            "pulled_at": sv(
+                row.get("pulled_at")
+            ),
         })
 
     return apply_pick_preference(
@@ -555,6 +583,18 @@ def process_total(row, config, slate_key, rejections):
             "edge": edge,
             "ev": ev,
             "kelly": kelly,
+            "selected_provider_id": sv(
+                row.get("total_provider_id")
+            ),
+            "selected_provider_name": sv(
+                row.get("total_provider_name")
+            ),
+            "odds_source": sv(
+                row.get("odds_source")
+            ),
+            "pulled_at": sv(
+                row.get("pulled_at")
+            ),
         })
 
     return apply_pick_preference(
@@ -669,6 +709,10 @@ def validate_market_columns(df, market_type, path):
             "home_dk_moneyline_american",
             "away_dk_moneyline_decimal",
             "home_dk_moneyline_decimal",
+            "odds_source",
+            "moneyline_provider_id",
+            "moneyline_provider_name",
+            "pulled_at",
             "away_model_prob_moneyline",
             "home_model_prob_moneyline",
             "away_edge_pct_moneyline",
@@ -686,6 +730,10 @@ def validate_market_columns(df, market_type, path):
             "home_dk_puck_line_american",
             "away_dk_puck_line_decimal",
             "home_dk_puck_line_decimal",
+            "odds_source",
+            "puck_line_provider_id",
+            "puck_line_provider_name",
+            "pulled_at",
             "away_model_prob_puck_line",
             "home_model_prob_puck_line",
             "away_edge_pct_puck_line",
@@ -702,6 +750,10 @@ def validate_market_columns(df, market_type, path):
             "dk_total_under_american",
             "dk_total_over_decimal",
             "dk_total_under_decimal",
+            "odds_source",
+            "total_provider_id",
+            "total_provider_name",
+            "pulled_at",
             "over_model_prob_total",
             "under_model_prob_total",
             "over_edge_pct_total",

@@ -57,6 +57,10 @@ SELECT_REQUIRED_COLUMNS = [
     "edge",
     "ev",
     "kelly",
+    "selected_provider_id",
+    "selected_provider_name",
+    "odds_source",
+    "pulled_at",
 ]
 
 SCORE_REQUIRED_COLUMNS = [
