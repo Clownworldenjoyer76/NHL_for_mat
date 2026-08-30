@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 
 .venv311/
+
+# Local SportsDataverse historical research store (generated Parquet; do not track)
+docs/win/hockey/nhl/research/sdv_history/
