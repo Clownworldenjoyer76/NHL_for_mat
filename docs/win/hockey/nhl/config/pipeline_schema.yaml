@@ -1,8 +1,8 @@
 pipeline:
   name: nhl
-  schema_version: 12
+  schema_version: 13
   schema_created_at: '2026-08-29'
-  schema_updated_at: '2026-08-30'
+  schema_updated_at: '2026-08-31'
   timezone: America/New_York
 stage_schemas:
   00_intake:
@@ -596,6 +596,50 @@ lineup_player_strength_integration:
   - 02_juice total output
   missing_behavior: Leave unavailable numeric player/unit features blank; represent unavailable or late lineup information
     as unknown with no observation timestamp.
+production_architecture_2026_27:
+  status: VERIFIED_PRODUCTION_ARCHITECTURE
+  primary_model:
+    name: D-Ratings
+    role: primary
+    rule: D-Ratings remains the primary pricing, probability, edge, EV, and Kelly model.
+  sdv_challenger:
+    name: SportsDataverse challenger
+    role: secondary_confirmation_and_disagreement
+    rule: SDV is used to confirm or challenge the D-Ratings side and to measure model disagreement; it does not replace D-Ratings as the primary model.
+  calibrated_secondary_signal:
+    role: secondary_signal
+    methods:
+    - weighted ensemble
+    - calibrated meta model
+    rule: Calibrated weighted/meta outputs are secondary derived signals used by the Stage 04 disagreement gate, not sole production models.
+  blind_averaging:
+    status: REJECTED
+    rule: Do not blindly average D-Ratings and SDV predictions. Use only the validated market-specific weighted/meta secondary signals.
+  edge_data:
+    status: NOT_PRODUCTION
+    rule: NHL EDGE-derived features are not part of the 2026-27 production model.
+
+p9_research_disposition:
+  status: COMPLETE_NO_PRODUCTION_PROMOTION
+  shot_microstats:
+    status: REJECTED
+    production: false
+    conclusion: Shot microstats worsened all six tested model metrics and are not promoted to production.
+  zone_transitions:
+    status: NOT_PROMOTED
+    production: false
+    conclusion: Zone-transition features were not promoted from research to production.
+  edge_aggregates:
+    status: BLOCKED
+    production: false
+    conclusion: Historical pregame EDGE aggregate state cannot be reconstructed safely at the production T-60 information cutoff, so EDGE aggregates remain blocked.
+  edge_features:
+    status: NOT_PRODUCTION
+    production: false
+    conclusion: EDGE/microstat research produced no approved production change for 2026-27.
+  production_change: none
+  rule: Do not add P9 shot microstats, zone-transition features, or EDGE aggregates to production unless new leakage-safe research demonstrates incremental value and pipeline_schema.yaml is synchronized again.
+
 calibration:
   version: 1
   versioning_rule: Increment this version whenever the authoritative calibration configuration changes.
