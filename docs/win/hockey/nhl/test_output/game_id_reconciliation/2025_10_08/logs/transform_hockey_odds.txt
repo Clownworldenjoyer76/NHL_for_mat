@@ -1,18 +1,18 @@
-=== transform_hockey_odds RUN 2026-08-31T05:35:22.080346-04:00 ===
-2026-08-31T05:35:22.080531-04:00 | Odds input directory: /tmp/nhl_game_id_reconciliation_dd_pt2ui/docs/win/hockey/nhl/odds
-2026-08-31T05:35:22.080561-04:00 | JSON files found: 1
-2026-08-31T05:35:22.080752-04:00 | READ /tmp/nhl_game_id_reconciliation_dd_pt2ui/docs/win/hockey/nhl/odds/2025_10_08.json | events=1 | provider_rows=1
-2026-08-31T05:35:22.095353-04:00 | WROTE /tmp/nhl_game_id_reconciliation_dd_pt2ui/docs/win/hockey/nhl/00_intake/sportsbook/NHL_2025_10_08.csv rows=1
-2026-08-31T05:35:22.095384-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
-2026-08-31T05:35:22.095406-04:00 | Live Odds providers excluded from production selection
-2026-08-31T05:35:22.095426-04:00 | --- SUMMARY ---
-2026-08-31T05:35:22.095449-04:00 | csv_files_written: 1
-2026-08-31T05:35:22.095471-04:00 | events_found: 1
-2026-08-31T05:35:22.095497-04:00 | json_files_processed: 1
-2026-08-31T05:35:22.095517-04:00 | moneyline_provider:Titanbets: 1
-2026-08-31T05:35:22.095537-04:00 | odds_provider_rows_found: 1
-2026-08-31T05:35:22.095557-04:00 | puck_line_provider:Titanbets: 1
-2026-08-31T05:35:22.095576-04:00 | rows_added: 1
-2026-08-31T05:35:22.095595-04:00 | rows_built: 1
-2026-08-31T05:35:22.095613-04:00 | total_provider:Titanbets: 1
-2026-08-31T05:35:22.095631-04:00 | STATUS: SUCCESS
+=== transform_hockey_odds RUN 2026-08-31T06:14:29.452780-04:00 ===
+2026-08-31T06:14:29.452970-04:00 | Odds input directory: /tmp/nhl_game_id_reconciliation_es2j4366/docs/win/hockey/nhl/odds
+2026-08-31T06:14:29.453000-04:00 | JSON files found: 1
+2026-08-31T06:14:29.453206-04:00 | READ /tmp/nhl_game_id_reconciliation_es2j4366/docs/win/hockey/nhl/odds/2025_10_08.json | events=1 | provider_rows=1
+2026-08-31T06:14:29.468280-04:00 | WROTE /tmp/nhl_game_id_reconciliation_es2j4366/docs/win/hockey/nhl/00_intake/sportsbook/NHL_2025_10_08.csv rows=1
+2026-08-31T06:14:29.468321-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
+2026-08-31T06:14:29.468344-04:00 | Live Odds providers excluded from production selection
+2026-08-31T06:14:29.468364-04:00 | --- SUMMARY ---
+2026-08-31T06:14:29.468389-04:00 | csv_files_written: 1
+2026-08-31T06:14:29.468409-04:00 | events_found: 1
+2026-08-31T06:14:29.468435-04:00 | json_files_processed: 1
+2026-08-31T06:14:29.468453-04:00 | moneyline_provider:Titanbets: 1
+2026-08-31T06:14:29.468472-04:00 | odds_provider_rows_found: 1
+2026-08-31T06:14:29.468490-04:00 | puck_line_provider:Titanbets: 1
+2026-08-31T06:14:29.468514-04:00 | rows_added: 1
+2026-08-31T06:14:29.468533-04:00 | rows_built: 1
+2026-08-31T06:14:29.468552-04:00 | total_provider:Titanbets: 1
+2026-08-31T06:14:29.468572-04:00 | STATUS: SUCCESS
