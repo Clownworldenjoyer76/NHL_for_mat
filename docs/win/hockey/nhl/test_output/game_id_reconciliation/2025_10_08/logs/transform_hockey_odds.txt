@@ -1,21 +1,18 @@
-=== transform_hockey_odds RUN 2026-08-26T07:59:33.764403-04:00 ===
-2026-08-26T07:59:33.764981-04:00 | Odds input directory: C:\Users\Mat\AppData\Local\Temp\nhl_game_id_reconciliation_t9bwl02m\docs\win\hockey\nhl\odds
-2026-08-26T07:59:33.765226-04:00 | JSON files found: 1
-2026-08-26T07:59:33.765692-04:00 | READ C:\Users\Mat\AppData\Local\Temp\nhl_game_id_reconciliation_t9bwl02m\docs\win\hockey\nhl\odds\2025_10_08.json | events=1 | odds=1 | rows_built=1 | warnings=0
-2026-08-26T07:59:33.766988-04:00 | WROTE C:\Users\Mat\AppData\Local\Temp\nhl_game_id_reconciliation_t9bwl02m\docs\win\hockey\nhl\00_intake\sportsbook\NHL_2025_10_08.csv rows=1
-2026-08-26T07:59:33.767390-04:00 | Spread rows selected by abs(hdp)==1.5: 1
-2026-08-26T07:59:33.767633-04:00 | Totals rows selected by closest over/under odds within 5.5-7.5: 1
-2026-08-26T07:59:33.767869-04:00 | --- SUMMARY ---
-2026-08-26T07:59:33.768123-04:00 | JSON files processed: 1
-2026-08-26T07:59:33.768349-04:00 | Events found: 1
-2026-08-26T07:59:33.768574-04:00 | Odds payloads found: 1
-2026-08-26T07:59:33.768877-04:00 | Rows built: 1
-2026-08-26T07:59:33.769115-04:00 | Rows added: 1
-2026-08-26T07:59:33.769343-04:00 | Rows updated: 0
-2026-08-26T07:59:33.769568-04:00 | Rows unchanged: 0
-2026-08-26T07:59:33.769793-04:00 | Rows preserved due to non-pending status: 0
-2026-08-26T07:59:33.770019-04:00 | Rows skipped non-pending with no existing row: 0
-2026-08-26T07:59:33.770243-04:00 | CSV files written: 1
-2026-08-26T07:59:33.770469-04:00 | Warnings: 0
-2026-08-26T07:59:33.770694-04:00 | Errors: 0
-2026-08-26T07:59:33.770924-04:00 | STATUS: SUCCESS
+=== transform_hockey_odds RUN 2026-08-31T05:28:26.657206-04:00 ===
+2026-08-31T05:28:26.657428-04:00 | Odds input directory: /tmp/nhl_game_id_reconciliation_spxemsd1/docs/win/hockey/nhl/odds
+2026-08-31T05:28:26.657459-04:00 | JSON files found: 1
+2026-08-31T05:28:26.657665-04:00 | READ /tmp/nhl_game_id_reconciliation_spxemsd1/docs/win/hockey/nhl/odds/2025_10_08.json | events=1 | provider_rows=1
+2026-08-31T05:28:26.676810-04:00 | WROTE /tmp/nhl_game_id_reconciliation_spxemsd1/docs/win/hockey/nhl/00_intake/sportsbook/NHL_2025_10_08.csv rows=1
+2026-08-31T05:28:26.676846-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
+2026-08-31T05:28:26.676869-04:00 | Live Odds providers excluded from production selection
+2026-08-31T05:28:26.676888-04:00 | --- SUMMARY ---
+2026-08-31T05:28:26.676913-04:00 | csv_files_written: 1
+2026-08-31T05:28:26.676934-04:00 | events_found: 1
+2026-08-31T05:28:26.676960-04:00 | json_files_processed: 1
+2026-08-31T05:28:26.676980-04:00 | moneyline_provider:Titanbets: 1
+2026-08-31T05:28:26.676999-04:00 | odds_provider_rows_found: 1
+2026-08-31T05:28:26.677019-04:00 | puck_line_provider:Titanbets: 1
+2026-08-31T05:28:26.677038-04:00 | rows_added: 1
+2026-08-31T05:28:26.677057-04:00 | rows_built: 1
+2026-08-31T05:28:26.677076-04:00 | total_provider:Titanbets: 1
+2026-08-31T05:28:26.677095-04:00 | STATUS: SUCCESS

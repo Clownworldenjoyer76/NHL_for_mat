@@ -1,19 +1,19 @@
-=== transform_hockey RUN 2026-08-26T07:59:34.256661 ===
-2026-08-26T07:59:34.256971 | Input directory: docs\win\hockey\nhl\00_intake\predictions\scraper
-2026-08-26T07:59:34.257228 | Output directory: docs\win\hockey\nhl\00_intake\predictions
-2026-08-26T07:59:34.257478 | Mapping file: docs\win\hockey\nhl\config\mapping\team_map_nhl.csv
-2026-08-26T07:59:34.257723 | No-map file: docs\win\hockey\nhl\config\mapping\no_map_nhl_pred.csv
-2026-08-26T07:59:34.257953 | Official NHL game_id assignment is deferred to reconcile_game_ids.py
-2026-08-26T07:59:34.272536 | Loaded team map: docs\win\hockey\nhl\config\mapping\team_map_nhl.csv
-2026-08-26T07:59:34.273006 | Team map source column: alias
-2026-08-26T07:59:34.273242 | Team map target column: canonical_team
-2026-08-26T07:59:34.273475 | Team map rows loaded: 68
-2026-08-26T07:59:34.274031 | Processing prediction input: docs\win\hockey\nhl\00_intake\predictions\scraper\2025_10_08_nhl_predictions.csv
-2026-08-26T07:59:34.285628 | WROTE unreconciled prediction output: docs\win\hockey\nhl\00_intake\predictions\hockey_2025_10_08.csv (1 rows); game_id left blank for reconcile_game_ids.py
-2026-08-26T07:59:34.287004 | WROTE no-map file with 0 rows: docs\win\hockey\nhl\config\mapping\no_map_nhl_pred.csv
-2026-08-26T07:59:34.287235 | --- SUMMARY ---
-2026-08-26T07:59:34.287468 | Input files processed: 1
-2026-08-26T07:59:34.287700 | Files written: 1
-2026-08-26T07:59:34.287933 |   FILE: docs\win\hockey\nhl\00_intake\predictions\hockey_2025_10_08.csv (1 rows)
-2026-08-26T07:59:34.288163 | No-map records: 0
-2026-08-26T07:59:34.288436 | STATUS: SUCCESS
+=== transform_hockey RUN 2026-08-31T09:28:27.012482 ===
+2026-08-31T09:28:27.012555 | Input directory: docs/win/hockey/nhl/00_intake/predictions/scraper
+2026-08-31T09:28:27.012582 | Output directory: docs/win/hockey/nhl/00_intake/predictions
+2026-08-31T09:28:27.012607 | Mapping file: docs/win/hockey/nhl/config/mapping/team_map_nhl.csv
+2026-08-31T09:28:27.012630 | No-map file: docs/win/hockey/nhl/config/mapping/no_map_nhl_pred.csv
+2026-08-31T09:28:27.012650 | Official NHL game_id assignment is deferred to reconcile_game_ids.py
+2026-08-31T09:28:27.031075 | Loaded team map: docs/win/hockey/nhl/config/mapping/team_map_nhl.csv
+2026-08-31T09:28:27.031123 | Team map source: dratings
+2026-08-31T09:28:27.031148 | Team aliases loaded: 71
+2026-08-31T09:28:27.031169 | Stable NHL team IDs loaded: 32
+2026-08-31T09:28:27.031474 | Processing prediction input: docs/win/hockey/nhl/00_intake/predictions/scraper/2025_10_08_nhl_predictions.csv
+2026-08-31T09:28:27.042087 | WROTE unreconciled prediction output: docs/win/hockey/nhl/00_intake/predictions/hockey_2025_10_08.csv (1 rows); game_id left blank for reconcile_game_ids.py
+2026-08-31T09:28:27.042870 | WROTE no-map file with 0 rows: docs/win/hockey/nhl/config/mapping/no_map_nhl_pred.csv
+2026-08-31T09:28:27.042899 | --- SUMMARY ---
+2026-08-31T09:28:27.042927 | Input files processed: 1
+2026-08-31T09:28:27.042956 | Files written: 1
+2026-08-31T09:28:27.042985 |   FILE: docs/win/hockey/nhl/00_intake/predictions/hockey_2025_10_08.csv (1 rows)
+2026-08-31T09:28:27.043006 | No-map records: 0
+2026-08-31T09:28:27.043025 | STATUS: SUCCESS
