@@ -50,6 +50,7 @@ CORE_PATHS = [
     "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py",
     "docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py",
     "docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py",
+    "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py",
 ]
 
 JUICE_CONFIG_PATHS = [
@@ -5163,3 +5164,841 @@ def test_apply_juice_scripts_preserve_lineup_feature_contract(
     assert expected.issubset(
         module.OUTPUT_COLUMNS
     )
+
+# ---------------------------------------------------------------------
+# P7/P8 provider provenance and CLV regression coverage
+# ---------------------------------------------------------------------
+
+def _single_side_market_config(
+    market_type: str,
+    enabled_side: str,
+) -> dict:
+    rules_enabled = permissive_side_rules()
+    rules_disabled = copy.deepcopy(
+        rules_enabled
+    )
+    rules_disabled["enabled"] = False
+
+    if market_type == "moneyline":
+        return {
+            "moneyline": {
+                "enabled": True,
+                "pick_preference": "all",
+                "home": (
+                    copy.deepcopy(
+                        rules_enabled
+                    )
+                    if enabled_side == "home"
+                    else copy.deepcopy(
+                        rules_disabled
+                    )
+                ),
+                "away": (
+                    copy.deepcopy(
+                        rules_enabled
+                    )
+                    if enabled_side == "away"
+                    else copy.deepcopy(
+                        rules_disabled
+                    )
+                ),
+            }
+        }
+
+    if market_type == "puck_line":
+        home = (
+            copy.deepcopy(
+                rules_enabled
+            )
+            if enabled_side == "home"
+            else copy.deepcopy(
+                rules_disabled
+            )
+        )
+        away = (
+            copy.deepcopy(
+                rules_enabled
+            )
+            if enabled_side == "away"
+            else copy.deepcopy(
+                rules_disabled
+            )
+        )
+        home["line_bands"] = [
+            [-100.0, 100.0]
+        ]
+        away["line_bands"] = [
+            [-100.0, 100.0]
+        ]
+
+        return {
+            "puck_line": {
+                "enabled": True,
+                "pick_preference": "all",
+                "home": home,
+                "away": away,
+            }
+        }
+
+    if market_type == "total":
+        over = (
+            copy.deepcopy(
+                rules_enabled
+            )
+            if enabled_side == "over"
+            else copy.deepcopy(
+                rules_disabled
+            )
+        )
+        under = (
+            copy.deepcopy(
+                rules_enabled
+            )
+            if enabled_side == "under"
+            else copy.deepcopy(
+                rules_disabled
+            )
+        )
+        over["line_bands"] = [
+            [0.0, 100.0]
+        ]
+        under["line_bands"] = [
+            [0.0, 100.0]
+        ]
+
+        return {
+            "total": {
+                "enabled": True,
+                "pick_preference": "all",
+                "over": over,
+                "under": under,
+            }
+        }
+
+    raise AssertionError(
+        f"Unsupported market_type fixture: {market_type}"
+    )
+
+
+def test_stage04_moneyline_preserves_selected_provider() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
+    )
+
+    row = synthetic_moneyline_row()
+    row.update(
+        {
+            "moneyline_provider_id": "53",
+            "moneyline_provider_name": "Titanbets",
+            "odds_source": "espn",
+            "pulled_at": "2026-01-01T18:00:00-05:00",
+        }
+    )
+
+    selected = module.process_moneyline(
+        row,
+        _single_side_market_config(
+            "moneyline",
+            "home",
+        ),
+        "fixture_slate",
+        {},
+    )
+
+    assert len(selected) == 1
+    assert (
+        selected[0][
+            "selected_provider_id"
+        ]
+        == "53"
+    )
+    assert (
+        selected[0][
+            "selected_provider_name"
+        ]
+        == "Titanbets"
+    )
+    assert (
+        selected[0][
+            "odds_source"
+        ]
+        == "espn"
+    )
+
+
+def test_stage04_puck_line_preserves_selected_provider() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
+    )
+
+    row = {
+        "sport": "hockey",
+        "league": "nhl",
+        "game_date": "2026_01_01",
+        "game_time": "19:00",
+        "game_id": "2025020001",
+        "away_team": "New York Rangers",
+        "home_team": "Boston Bruins",
+        "home_puck_line": 1.5,
+        "away_puck_line": -1.5,
+        "home_dk_puck_line_american": -165.0,
+        "away_dk_puck_line_american": 145.0,
+        "home_dk_puck_line_decimal": 1.61,
+        "away_dk_puck_line_decimal": 2.45,
+        "home_model_prob_puck_line": 0.62,
+        "away_model_prob_puck_line": 0.38,
+        "home_edge_pct_puck_line": 0.03,
+        "away_edge_pct_puck_line": 0.01,
+        "home_ev_puck_line": 0.04,
+        "away_ev_puck_line": 0.01,
+        "home_kelly_puck_line": 0.08,
+        "away_kelly_puck_line": 0.02,
+        "puck_line_provider_id": "47",
+        "puck_line_provider_name": "MGM",
+        "odds_source": "espn",
+        "pulled_at": "2026-01-01T18:00:00-05:00",
+    }
+
+    selected = module.process_puck_line(
+        row,
+        _single_side_market_config(
+            "puck_line",
+            "home",
+        ),
+        "fixture_slate",
+        {},
+    )
+
+    assert len(selected) == 1
+    assert (
+        selected[0][
+            "selected_provider_id"
+        ]
+        == "47"
+    )
+    assert (
+        selected[0][
+            "selected_provider_name"
+        ]
+        == "MGM"
+    )
+
+
+def test_stage04_total_preserves_selected_provider() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py"
+    )
+
+    row = {
+        "sport": "hockey",
+        "league": "nhl",
+        "game_date": "2026_01_01",
+        "game_time": "19:00",
+        "game_id": "2025020001",
+        "away_team": "New York Rangers",
+        "home_team": "Boston Bruins",
+        "total": 6.5,
+        "dk_total_over_american": -110.0,
+        "dk_total_under_american": -110.0,
+        "dk_total_over_decimal": 1.91,
+        "dk_total_under_decimal": 1.91,
+        "over_model_prob_total": 0.56,
+        "under_model_prob_total": 0.44,
+        "over_edge_pct_total": 0.02,
+        "under_edge_pct_total": 0.01,
+        "over_ev_total": 0.03,
+        "under_ev_total": 0.01,
+        "over_kelly_total": 0.05,
+        "under_kelly_total": 0.02,
+        "total_provider_id": "38",
+        "total_provider_name": "Caesars Sportsbook",
+        "odds_source": "espn",
+        "pulled_at": "2026-01-01T18:00:00-05:00",
+    }
+
+    selected = module.process_total(
+        row,
+        _single_side_market_config(
+            "total",
+            "over",
+        ),
+        "fixture_slate",
+        {},
+    )
+
+    assert len(selected) == 1
+    assert (
+        selected[0][
+            "selected_provider_id"
+        ]
+        == "38"
+    )
+    assert (
+        selected[0][
+            "selected_provider_name"
+        ]
+        == "Caesars Sportsbook"
+    )
+
+
+def test_stage05_grading_preserves_selected_provider_fields(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.chdir(
+        tmp_path
+    )
+
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py"
+    )
+
+    module.GRADE_ERROR_LOG = (
+        tmp_path
+        / "grade_errors.log"
+    )
+    module.GRADE_SUMMARY_LOG = (
+        tmp_path
+        / "grade_summary.log"
+    )
+
+    bets = pd.DataFrame(
+        [
+            {
+                "game_id": "2025020001",
+                "game_date": "2026_01_01",
+                "market_type": "moneyline",
+                "bet_side": "home",
+                "line": "",
+                "selected_provider_id": "53",
+                "selected_provider_name": "Titanbets",
+            }
+        ]
+    )
+
+    scores = pd.DataFrame(
+        [
+            {
+                "game_id": "2025020001",
+                "away_score": 2,
+                "home_score": 4,
+                "total_score": 6,
+                "away_puck_line_result": -2,
+                "home_puck_line_result": 2,
+                "source_score_file": (
+                    "2026_01_01_NHL_final_scores.csv"
+                ),
+            }
+        ]
+    )
+
+    statuses = pd.DataFrame(
+        [
+            {
+                "game_id": "2025020001",
+                "game_state": "FINAL",
+                "game_schedule_state": "OK",
+                "is_final": "1",
+                "status_observed_at": (
+                    "2026-01-02T03:00:00Z"
+                ),
+                "source_status_file": (
+                    "nhl_game_status.csv"
+                ),
+            }
+        ]
+    )
+
+    (
+        graded,
+        pending,
+        unresolved,
+    ) = module.grade_rows(
+        bets,
+        scores,
+        statuses,
+    )
+
+    assert len(graded) == 1
+    assert pending.empty
+    assert unresolved.empty
+    assert (
+        graded.iloc[0][
+            "selected_provider_id"
+        ]
+        == "53"
+    )
+    assert (
+        graded.iloc[0][
+            "selected_provider_name"
+        ]
+        == "Titanbets"
+    )
+    assert (
+        graded.iloc[0][
+            "bet_result"
+        ]
+        == "Win"
+    )
+
+    assert {
+        "selected_provider_id",
+        "selected_provider_name",
+    }.issubset(
+        module.GRADED_OUTPUT_COLUMNS
+    )
+
+
+def test_clv_reference_market_uses_provider_priority_and_excludes_live() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    live = espn_provider_row(
+        provider_id="59",
+        provider_name="ESPN Bet - Live Odds",
+        provider_priority=-1,
+    )
+    mgm = espn_provider_row(
+        provider_id="47",
+        provider_name="MGM",
+        provider_priority=0,
+    )
+    titanbets = espn_provider_row(
+        provider_id="53",
+        provider_name="Titanbets",
+        provider_priority=0,
+    )
+
+    reference = module.reference_market(
+        [
+            live,
+            mgm,
+            titanbets,
+        ],
+        "moneyline",
+        "home",
+    )
+
+    assert reference is not None
+    assert (
+        reference[
+            "provider_id"
+        ]
+        == "53"
+    )
+    assert (
+        reference[
+            "provider_name"
+        ]
+        == "Titanbets"
+    )
+    assert float(
+        reference[
+            "decimal"
+        ]
+    ) == pytest.approx(
+        2.10,
+        abs=1e-12,
+    )
+
+
+def _clv_moneyline_bet() -> pd.DataFrame:
+    return pd.DataFrame(
+        [
+            {
+                "sport": "hockey",
+                "league": "nhl",
+                "game_date": "2026_01_01",
+                "game_time": "19:00",
+                "game_id": "2025020001",
+                "away_team": "New York Rangers",
+                "home_team": "Boston Bruins",
+                "market_type": "moneyline",
+                "bet_side": "home",
+                "line": "",
+                "take_bet": "home_moneyline",
+                "dk_odds_american": 100,
+                "dk_odds_decimal": 2.00,
+                "model_prob": 0.55,
+                "edge": 0.05,
+                "ev": 0.10,
+                "kelly": 0.10,
+                "selected_provider_id": "53",
+                "selected_provider_name": "Titanbets",
+                "odds_source": "espn",
+                "pulled_at": "2026-01-01T21:00:00Z",
+                "source_select_file": (
+                    "2026_01_01_NHL.csv"
+                ),
+            }
+        ]
+    )
+
+
+def _clv_snapshot(
+    module,
+    *,
+    snapshot_at,
+    home_decimal: float,
+    status: str = "pending",
+    provider_id: str = "53",
+    provider_name: str = "Titanbets",
+) -> dict:
+    row = espn_provider_row(
+        provider_id=provider_id,
+        provider_name=provider_name,
+        provider_priority=0,
+    )
+    row[
+        "home_team_odds_current_money_line_decimal"
+    ] = home_decimal
+
+    if home_decimal >= 2.0:
+        american = (
+            (home_decimal - 1.0)
+            * 100.0
+        )
+    else:
+        american = (
+            -100.0
+            / (home_decimal - 1.0)
+        )
+
+    row[
+        "home_team_odds_current_money_line_american"
+    ] = american
+
+    return {
+        "snapshot_at": snapshot_at,
+        "source": "espn",
+        "event_status": {
+            "fixture_sb_20251008_001": status,
+        },
+        "rows_by_event": {
+            "fixture_sb_20251008_001": [
+                row
+            ],
+        },
+    }
+
+
+def test_clv_uses_latest_valid_pregame_snapshot_as_closing_reference() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    snapshots = [
+        _clv_snapshot(
+            module,
+            snapshot_at=module.datetime(
+                2026,
+                1,
+                1,
+                22,
+                0,
+                tzinfo=module.UTC,
+            ),
+            home_decimal=1.90,
+        ),
+        _clv_snapshot(
+            module,
+            snapshot_at=module.datetime(
+                2026,
+                1,
+                1,
+                23,
+                30,
+                tzinfo=module.UTC,
+            ),
+            home_decimal=1.80,
+        ),
+        _clv_snapshot(
+            module,
+            snapshot_at=module.datetime(
+                2026,
+                1,
+                2,
+                0,
+                1,
+                tzinfo=module.UTC,
+            ),
+            home_decimal=1.50,
+            status="in",
+        ),
+    ]
+
+    (
+        summary_rows,
+        history_rows,
+    ) = module.process_bets(
+        _clv_moneyline_bet(),
+        {
+            "2025020001": (
+                "fixture_sb_20251008_001"
+            )
+        },
+        snapshots,
+    )
+
+    assert len(summary_rows) == 1
+    summary = summary_rows[0]
+
+    assert (
+        summary[
+            "closing_snapshot_at_utc"
+        ]
+        == "2026-01-01T23:30:00+00:00"
+    )
+    assert float(
+        summary[
+            "closing_odds_decimal"
+        ]
+    ) == pytest.approx(
+        1.80,
+        abs=1e-12,
+    )
+    assert (
+        summary[
+            "closing_provider_id"
+        ]
+        == "53"
+    )
+    assert (
+        summary[
+            "closing_provider_name"
+        ]
+        == "Titanbets"
+    )
+    assert (
+        summary[
+            "later_pregame_snapshot_count"
+        ]
+        == 2
+    )
+    assert (
+        summary[
+            "clv_status"
+        ]
+        == "evaluated"
+    )
+
+    assert len(history_rows) == 2
+    closing_history = [
+        row
+        for row in history_rows
+        if int(
+            row[
+                "is_closing_reference"
+            ]
+        )
+        == 1
+    ]
+    assert len(
+        closing_history
+    ) == 1
+    assert (
+        closing_history[0][
+            "snapshot_at_utc"
+        ]
+        == "2026-01-01T23:30:00+00:00"
+    )
+
+
+def test_clv_price_math_matches_expected_values() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    (
+        implied_probability_clv,
+        decimal_ratio_clv,
+    ) = module.price_clv(
+        2.00,
+        1.80,
+        True,
+    )
+
+    assert (
+        implied_probability_clv
+        == pytest.approx(
+            (
+                1.0
+                / 1.80
+                - 1.0
+                / 2.00
+            ),
+            abs=1e-12,
+        )
+    )
+    assert (
+        decimal_ratio_clv
+        == pytest.approx(
+            (
+                2.00
+                / 1.80
+                - 1.0
+            ),
+            abs=1e-12,
+        )
+    )
+
+    assert (
+        module.favorable_line_clv(
+            "puck_line",
+            "home",
+            1.5,
+            1.0,
+        )
+        == pytest.approx(
+            0.5,
+            abs=1e-12,
+        )
+    )
+    assert (
+        module.favorable_line_clv(
+            "total",
+            "over",
+            6.0,
+            6.5,
+        )
+        == pytest.approx(
+            0.5,
+            abs=1e-12,
+        )
+    )
+    assert (
+        module.favorable_line_clv(
+            "total",
+            "under",
+            6.5,
+            6.0,
+        )
+        == pytest.approx(
+            0.5,
+            abs=1e-12,
+        )
+    )
+
+
+def test_clv_reports_no_reference_snapshot_without_crashing() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    (
+        summary_rows,
+        history_rows,
+    ) = module.process_bets(
+        _clv_moneyline_bet(),
+        {
+            "2025020001": (
+                "fixture_sb_20251008_001"
+            )
+        },
+        [],
+    )
+
+    assert len(summary_rows) == 1
+    assert history_rows == []
+    assert (
+        summary_rows[0][
+            "clv_status"
+        ]
+        == "no_pregame_reference_snapshot"
+    )
+
+
+def test_clv_reports_no_later_closing_snapshot_when_only_earlier_price_exists() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    snapshot = _clv_snapshot(
+        module,
+        snapshot_at=module.datetime(
+            2026,
+            1,
+            1,
+            20,
+            0,
+            tzinfo=module.UTC,
+        ),
+        home_decimal=1.95,
+    )
+
+    (
+        summary_rows,
+        history_rows,
+    ) = module.process_bets(
+        _clv_moneyline_bet(),
+        {
+            "2025020001": (
+                "fixture_sb_20251008_001"
+            )
+        },
+        [
+            snapshot
+        ],
+    )
+
+    assert len(summary_rows) == 1
+    assert history_rows == []
+    assert (
+        summary_rows[0][
+            "later_pregame_snapshot_count"
+        ]
+        == 0
+    )
+    assert (
+        summary_rows[0][
+            "clv_status"
+        ]
+        == "no_later_closing_snapshot"
+    )
+
+
+def test_clv_line_change_blocks_price_comparison_but_keeps_line_clv() -> None:
+    module = load_repo_module(
+        "docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py"
+    )
+
+    assert (
+        module.same_line(
+            "total",
+            6.5,
+            6.0,
+        )
+        is False
+    )
+
+    (
+        implied_probability_clv,
+        decimal_ratio_clv,
+    ) = module.price_clv(
+        1.91,
+        1.80,
+        False,
+    )
+
+    assert (
+        implied_probability_clv
+        is None
+    )
+    assert (
+        decimal_ratio_clv
+        is None
+    )
+    assert (
+        module.favorable_line_clv(
+            "total",
+            "over",
+            6.5,
+            6.0,
+        )
+        == pytest.approx(
+            -0.5,
+            abs=1e-12,
+        )
+    )
+
