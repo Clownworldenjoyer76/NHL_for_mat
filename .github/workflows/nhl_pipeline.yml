@@ -67,10 +67,19 @@ jobs:
         run: |
           git add -A docs/win/hockey/nhl/errors/nhl_pipeline_tests.txt
 
+          TEST_RESULTS_COMMITTED=0
+
           if git diff --cached --quiet; then
             echo "No NHL pipeline test result changes to commit."
           else
             git commit -m "test: update NHL pipeline test results"
+            TEST_RESULTS_COMMITTED=1
+          fi
+
+          git reset --hard HEAD
+          git clean -fd
+
+          if [ "$TEST_RESULTS_COMMITTED" -eq 1 ]; then
             git pull --rebase origin main
             git push
           fi
