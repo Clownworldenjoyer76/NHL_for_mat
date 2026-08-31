@@ -192,15 +192,19 @@ jobs:
             exit 1
           fi
 
-          game_rows=$(tail -n +2 "$schedule_file" | sed '/^[[:space:]]*$/d' | wc -l | tr -d ' ')
-          echo "game_rows=$game_rows"
+          game_rows=$(awk -F',' '
+            NR > 1 && ($13 == "2" || $13 == "3") { count++ }
+            END { print count + 0 }
+          ' "$schedule_file")
+
+          echo "eligible_game_rows=$game_rows"
 
           if [ "$game_rows" -gt 0 ]; then
             echo "has_games=true" >> "$GITHUB_OUTPUT"
-            echo "Current NHL slate contains $game_rows game(s)."
+            echo "Current NHL slate contains $game_rows regular-season/playoff game(s)."
           else
             echo "has_games=false" >> "$GITHUB_OUTPUT"
-            echo "Current NHL slate is empty. Current-slate Stage 00-04 processing will be skipped."
+            echo "No regular-season/playoff games today. Stages 00-04 will be skipped."
           fi
 
       - name: Run NHL D-Ratings scraper
