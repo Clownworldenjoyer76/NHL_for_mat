@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020544,,hockey,nhl,2025_12_19,19:00,Florida Panthers,Carolina Hurricanes
-2025020545,,hockey,nhl,2025_12_19,19:00,New York Islanders,Vancouver Canucks
-2025020546,,hockey,nhl,2025_12_19,21:00,Colorado Avalanche,Winnipeg Jets
-2025020547,,hockey,nhl,2025_12_19,21:00,Utah Mammoth,New Jersey Devils
-2025020548,,hockey,nhl,2025_12_19,22:00,Anaheim Ducks,Dallas Stars
+2025020544,2025020544,hockey,nhl,2025_12_19,19:00,Florida Panthers,Carolina Hurricanes
+2025020545,2025020545,hockey,nhl,2025_12_19,19:00,New York Islanders,Vancouver Canucks
+2025020546,2025020546,hockey,nhl,2025_12_19,21:00,Colorado Avalanche,Winnipeg Jets
+2025020547,2025020547,hockey,nhl,2025_12_19,21:00,Utah Mammoth,New Jersey Devils
+2025020548,2025020548,hockey,nhl,2025_12_19,22:00,Anaheim Ducks,Dallas Stars

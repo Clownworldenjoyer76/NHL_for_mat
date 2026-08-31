@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020640,,hockey,nhl,2026_01_02,15:00,St Louis Blues,Vegas Golden Knights
-2025020641,,hockey,nhl,2026_01_02,20:00,Florida Panthers,New York Rangers
-2025020642,,hockey,nhl,2026_01_02,22:30,Vancouver Canucks,Seattle Kraken
-2025020643,,hockey,nhl,2026_01_02,22:30,Anaheim Ducks,Minnesota Wild
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020640,2025020640,hockey,nhl,2026_01_02,15:00,St Louis Blues,Vegas Golden Knights
+2025020641,2025020641,hockey,nhl,2026_01_02,20:00,Florida Panthers,New York Rangers
+2025020642,2025020642,hockey,nhl,2026_01_02,22:30,Vancouver Canucks,Seattle Kraken
+2025020643,2025020643,hockey,nhl,2026_01_02,22:30,Anaheim Ducks,Minnesota Wild

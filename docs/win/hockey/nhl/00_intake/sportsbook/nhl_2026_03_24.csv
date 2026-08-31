@@ -1,16 +1,16 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025021120,,hockey,nhl,2026_03_24,19:00,Boston Bruins,Toronto Maple Leafs,-192,160,-1.5,1.5,6.5,130,-154,102,-122,1.52,2.6,2.3,1.65,2.02,1.82
-2025021121,,hockey,nhl,2026_03_24,19:00,Montreal Canadiens,Carolina Hurricanes,114,-135,1.5,-1.5,6.5,-217,180,-120,100,2.14,1.74,1.46,2.8,1.83,2.0
-2025021122,,hockey,nhl,2026_03_24,19:00,Detroit Red Wings,Ottawa Senators,-125,105,-1.5,1.5,5.5,205,-250,-125,105,1.8,2.05,3.05,1.4,1.8,2.05
-2025021123,,hockey,nhl,2026_03_24,19:00,Florida Panthers,Seattle Kraken,-135,114,-1.5,1.5,5.5,180,-217,-135,114,1.74,2.14,2.8,1.46,1.74,2.14
-2025021124,,hockey,nhl,2026_03_24,19:00,New York Islanders,Chicago Blackhawks,-185,154,-1.5,1.5,5.5,136,-161,-125,105,1.54,2.54,2.36,1.62,1.8,2.05
-2025021125,,hockey,nhl,2026_03_24,19:00,Philadelphia Flyers,Columbus Blue Jackets,114,-135,1.5,-1.5,5.5,-227,185,-130,110,2.14,1.74,1.44,2.85,1.77,2.1
-2025021126,,hockey,nhl,2026_03_24,19:00,Pittsburgh Penguins,Colorado Avalanche,136,-161,1.5,-1.5,6.5,-185,154,-122,102,2.36,1.62,1.54,2.54,1.82,2.02
-2025021127,,hockey,nhl,2026_03_24,19:30,Tampa Bay Lightning,Minnesota Wild,-169,142,-1.5,1.5,6.5,145,-175,105,-125,1.59,2.42,2.45,1.57,2.05,1.8
-2025021128,,hockey,nhl,2026_03_24,20:00,St Louis Blues,Washington Capitals,-110,-110,1.5,-1.5,5.5,-278,225,-130,110,1.91,1.91,1.36,3.25,1.77,2.1
-2025021129,,hockey,nhl,2026_03_24,20:00,Nashville Predators,San Jose Sharks,-143,120,-1.5,1.5,6.5,170,-204,100,-120,1.7,2.2,2.7,1.49,2.0,1.83
-2025021130,,hockey,nhl,2026_03_24,20:00,Dallas Stars,New Jersey Devils,-175,145,-1.5,1.5,5.5,160,-192,-130,110,1.57,2.45,2.6,1.52,1.77,2.1
-2025021131,,hockey,nhl,2026_03_24,20:00,Winnipeg Jets,Vegas Golden Knights,110,-130,1.5,-1.5,5.5,-244,200,-130,110,2.1,1.77,1.41,3.0,1.77,2.1
-2025021133,,hockey,nhl,2026_03_24,21:00,Calgary Flames,Los Angeles Kings,124,-147,1.5,-1.5,5.5,-217,180,-120,100,2.24,1.68,1.46,2.8,1.83,2.0
-2025021132,,hockey,nhl,2026_03_24,21:30,Utah Mammoth,Edmonton Oilers,-135,114,-1.5,1.5,6.5,180,-217,-118,-102,1.74,2.14,2.8,1.46,1.85,1.98
-2025021134,,hockey,nhl,2026_03_24,22:00,Vancouver Canucks,Anaheim Ducks,150,-179,1.5,-1.5,6.5,-161,136,-130,110,2.5,1.56,1.62,2.36,1.77,2.1
+2025021120,2025021120,hockey,nhl,2026_03_24,19:00,Boston Bruins,Toronto Maple Leafs,-192,160,-1.5,1.5,6.5,130,-154,102,-122,1.52,2.6,2.3,1.65,2.02,1.82
+2025021121,2025021121,hockey,nhl,2026_03_24,19:00,Montreal Canadiens,Carolina Hurricanes,114,-135,1.5,-1.5,6.5,-217,180,-120,100,2.14,1.74,1.46,2.8,1.83,2.0
+2025021122,2025021122,hockey,nhl,2026_03_24,19:00,Detroit Red Wings,Ottawa Senators,-125,105,-1.5,1.5,5.5,205,-250,-125,105,1.8,2.05,3.05,1.4,1.8,2.05
+2025021123,2025021123,hockey,nhl,2026_03_24,19:00,Florida Panthers,Seattle Kraken,-135,114,-1.5,1.5,5.5,180,-217,-135,114,1.74,2.14,2.8,1.46,1.74,2.14
+2025021124,2025021124,hockey,nhl,2026_03_24,19:00,New York Islanders,Chicago Blackhawks,-185,154,-1.5,1.5,5.5,136,-161,-125,105,1.54,2.54,2.36,1.62,1.8,2.05
+2025021125,2025021125,hockey,nhl,2026_03_24,19:00,Philadelphia Flyers,Columbus Blue Jackets,114,-135,1.5,-1.5,5.5,-227,185,-130,110,2.14,1.74,1.44,2.85,1.77,2.1
+2025021126,2025021126,hockey,nhl,2026_03_24,19:00,Pittsburgh Penguins,Colorado Avalanche,136,-161,1.5,-1.5,6.5,-185,154,-122,102,2.36,1.62,1.54,2.54,1.82,2.02
+2025021127,2025021127,hockey,nhl,2026_03_24,19:30,Tampa Bay Lightning,Minnesota Wild,-169,142,-1.5,1.5,6.5,145,-175,105,-125,1.59,2.42,2.45,1.57,2.05,1.8
+2025021128,2025021128,hockey,nhl,2026_03_24,20:00,St Louis Blues,Washington Capitals,-110,-110,1.5,-1.5,5.5,-278,225,-130,110,1.91,1.91,1.36,3.25,1.77,2.1
+2025021129,2025021129,hockey,nhl,2026_03_24,20:00,Nashville Predators,San Jose Sharks,-143,120,-1.5,1.5,6.5,170,-204,100,-120,1.7,2.2,2.7,1.49,2.0,1.83
+2025021130,2025021130,hockey,nhl,2026_03_24,20:00,Dallas Stars,New Jersey Devils,-175,145,-1.5,1.5,5.5,160,-192,-130,110,1.57,2.45,2.6,1.52,1.77,2.1
+2025021131,2025021131,hockey,nhl,2026_03_24,20:00,Winnipeg Jets,Vegas Golden Knights,110,-130,1.5,-1.5,5.5,-244,200,-130,110,2.1,1.77,1.41,3.0,1.77,2.1
+2025021132,2025021132,hockey,nhl,2026_03_24,21:30,Utah Mammoth,Edmonton Oilers,-135,114,-1.5,1.5,6.5,180,-217,-118,-102,1.74,2.14,2.8,1.46,1.85,1.98
+2025021133,2025021133,hockey,nhl,2026_03_24,21:00,Calgary Flames,Los Angeles Kings,124,-147,1.5,-1.5,5.5,-217,180,-120,100,2.24,1.68,1.46,2.8,1.83,2.0
+2025021134,2025021134,hockey,nhl,2026_03_24,22:00,Vancouver Canucks,Anaheim Ducks,150,-179,1.5,-1.5,6.5,-161,136,-130,110,2.5,1.56,1.62,2.36,1.77,2.1

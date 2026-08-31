@@ -1,4 +1,4 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021244,,hockey,nhl,2026_04_08,19:00,New York Rangers,Buffalo Sabres
-2025021245,,hockey,nhl,2026_04_08,19:30,Toronto Maple Leafs,Washington Capitals
-2025021246,,hockey,nhl,2026_04_08,22:00,San Jose Sharks,Edmonton Oilers
+2025021244,2025021244,hockey,nhl,2026_04_08,19:00,New York Rangers,Buffalo Sabres
+2025021245,2025021245,hockey,nhl,2026_04_08,19:30,Toronto Maple Leafs,Washington Capitals
+2025021246,2025021246,hockey,nhl,2026_04_08,22:00,San Jose Sharks,Edmonton Oilers

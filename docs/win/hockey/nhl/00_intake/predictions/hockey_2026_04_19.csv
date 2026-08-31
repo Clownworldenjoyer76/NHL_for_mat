@@ -1,5 +1,5 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025030151,hockey,nhl,2026_04_19,15:00,Colorado Avalanche,Los Angeles Kings,0.685000,0.315000,2.32,3.65,5.97
-2025030121,hockey,nhl,2026_04_19,17:45,Tampa Bay Lightning,Montreal Canadiens,0.606000,0.394000,2.67,3.71,6.38
 2025030111,hockey,nhl,2026_04_19,19:30,Buffalo Sabres,Boston Bruins,0.575000,0.425000,2.82,3.62,6.44
+2025030121,hockey,nhl,2026_04_19,17:45,Tampa Bay Lightning,Montreal Canadiens,0.606000,0.394000,2.67,3.71,6.38
+2025030151,hockey,nhl,2026_04_19,15:00,Colorado Avalanche,Los Angeles Kings,0.685000,0.315000,2.32,3.65,5.97
 2025030171,hockey,nhl,2026_04_19,22:00,Vegas Golden Knights,Utah Mammoth,0.551000,0.449000,2.72,3.27,5.99

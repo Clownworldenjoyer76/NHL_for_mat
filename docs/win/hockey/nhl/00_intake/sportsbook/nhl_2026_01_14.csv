@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020735,,hockey,nhl,2026_01_14,19:00,New Jersey Devils,Seattle Kraken,-165,135,-1.5,+1.5,6.0,+165,-190,-105,-115,,,,,,
-2025020736,,hockey,nhl,2026_01_14,19:30,Buffalo Sabres,Philadelphia Flyers,-150,125,-1.5,+1.5,6.0,+170,-195,-110,-110,,,,,,
-2025020737,,hockey,nhl,2026_01_14,19:30,New York Rangers,Ottawa Senators,-115,-105,-1.5,+1.5,6.0,+226,-275,-105,-115,,,,,,
-2025020738,,hockey,nhl,2026_01_14,22:00,Los Angeles Kings,Vegas Golden Knights,-105,-115,+1.5,-1.5,6.0,-280,+230,-105,-115,,,,,,
+2025020735,2025020735,hockey,nhl,2026_01_14,19:00,New Jersey Devils,Seattle Kraken,-165,135,-1.5,+1.5,6.0,+165,-190,-105,-115,,,,,,
+2025020736,2025020736,hockey,nhl,2026_01_14,19:30,Buffalo Sabres,Philadelphia Flyers,-150,125,-1.5,+1.5,6.0,+170,-195,-110,-110,,,,,,
+2025020737,2025020737,hockey,nhl,2026_01_14,19:30,New York Rangers,Ottawa Senators,-115,-105,-1.5,+1.5,6.0,+226,-275,-105,-115,,,,,,
+2025020738,2025020738,hockey,nhl,2026_01_14,22:00,Los Angeles Kings,Vegas Golden Knights,-105,-115,+1.5,-1.5,6.0,-280,+230,-105,-115,,,,,,

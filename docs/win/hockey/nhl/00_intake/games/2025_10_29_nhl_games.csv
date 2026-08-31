@@ -1,2 +1,2 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020166,,hockey,nhl,2025_10_29,19:30,Columbus Blue Jackets,Toronto Maple Leafs
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020166,2025020166,hockey,nhl,2025_10_29,19:30,Columbus Blue Jackets,Toronto Maple Leafs

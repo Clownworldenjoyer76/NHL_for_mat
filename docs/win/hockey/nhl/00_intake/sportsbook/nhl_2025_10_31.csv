@@ -1,4 +1,4 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020178,,hockey,nhl,2025_10_31,16:00,Vegas Golden Knights,Colorado Avalanche,-110,-110,,,6.0,,,-118,-102,,,,,,
-2025020179,,hockey,nhl,2025_10_31,19:00,Washington Capitals,New York Islanders,-235,195,,,5.5,,,-125,105,,,,,,
-2025020180,,hockey,nhl,2025_10_31,22:00,Anaheim Ducks,Detroit Red Wings,-135,110,-1.5,-1.5,6.0,-210,-210,-110,-110,,,,,,
+2025020178,2025020178,hockey,nhl,2025_10_31,16:00,Vegas Golden Knights,Colorado Avalanche,-110,-110,,,6.0,,,-118,-102,,,,,,
+2025020179,2025020179,hockey,nhl,2025_10_31,19:00,Washington Capitals,New York Islanders,-235,195,,,5.5,,,-125,105,,,,,,
+2025020180,2025020180,hockey,nhl,2025_10_31,22:00,Anaheim Ducks,Detroit Red Wings,-135,110,-1.5,-1.5,6.0,-210,-210,-110,-110,,,,,,

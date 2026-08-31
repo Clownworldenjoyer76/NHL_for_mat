@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020098,,hockey,nhl,2025_10_21,19:00,Toronto Maple Leafs,New Jersey Devils
-2025020099,,hockey,nhl,2025_10_21,19:00,Ottawa Senators,Edmonton Oilers
-2025020100,,hockey,nhl,2025_10_21,19:00,New York Islanders,San Jose Sharks
-2025020101,,hockey,nhl,2025_10_21,19:00,Pittsburgh Penguins,Vancouver Canucks
-2025020102,,hockey,nhl,2025_10_21,19:00,Washington Capitals,Seattle Kraken
-2025020103,,hockey,nhl,2025_10_21,19:30,Boston Bruins,Florida Panthers
-2025020104,,hockey,nhl,2025_10_21,20:00,St Louis Blues,Los Angeles Kings
-2025020105,,hockey,nhl,2025_10_21,20:00,Nashville Predators,Anaheim Ducks
-2025020106,,hockey,nhl,2025_10_21,20:00,Dallas Stars,Columbus Blue Jackets
-2025020107,,hockey,nhl,2025_10_21,22:00,Utah Mammoth,Colorado Avalanche
+2025020098,2025020098,hockey,nhl,2025_10_21,19:00,Toronto Maple Leafs,New Jersey Devils
+2025020099,2025020099,hockey,nhl,2025_10_21,19:00,Ottawa Senators,Edmonton Oilers
+2025020100,2025020100,hockey,nhl,2025_10_21,19:00,New York Islanders,San Jose Sharks
+2025020101,2025020101,hockey,nhl,2025_10_21,19:00,Pittsburgh Penguins,Vancouver Canucks
+2025020102,2025020102,hockey,nhl,2025_10_21,19:00,Washington Capitals,Seattle Kraken
+2025020103,2025020103,hockey,nhl,2025_10_21,19:30,Boston Bruins,Florida Panthers
+2025020104,2025020104,hockey,nhl,2025_10_21,20:00,St Louis Blues,Los Angeles Kings
+2025020105,2025020105,hockey,nhl,2025_10_21,20:00,Nashville Predators,Anaheim Ducks
+2025020106,2025020106,hockey,nhl,2025_10_21,20:00,Dallas Stars,Columbus Blue Jackets
+2025020107,2025020107,hockey,nhl,2025_10_21,22:00,Utah Mammoth,Colorado Avalanche

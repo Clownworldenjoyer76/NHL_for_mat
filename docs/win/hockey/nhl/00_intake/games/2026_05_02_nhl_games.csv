@@ -1,2 +1,2 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025030221,,hockey,nhl,2026_05_02,20:00,Carolina Hurricanes,Philadelphia Flyers
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025030221,2025030221,hockey,nhl,2026_05_02,20:00,Carolina Hurricanes,Philadelphia Flyers

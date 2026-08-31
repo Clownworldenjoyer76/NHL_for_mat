@@ -1,11 +1,11 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
 2025020534,hockey,nhl,2025_12_18,19:00,Boston Bruins,Edmonton Oilers,0.451,0.549,3.29,2.77,6.06
+2025020535,hockey,nhl,2025_12_18,19:30,Buffalo Sabres,Philadelphia Flyers,0.523,0.477,2.89,3.13,6.02
 2025020536,hockey,nhl,2025_12_18,19:00,Montreal Canadiens,Chicago Blackhawks,0.631,0.369,2.47,3.61,6.08
 2025020537,hockey,nhl,2025_12_18,19:00,Ottawa Senators,Pittsburgh Penguins,0.612,0.388,2.46,3.53,5.99
 2025020538,hockey,nhl,2025_12_18,19:00,Tampa Bay Lightning,Los Angeles Kings,0.569,0.431,2.48,3.22,5.70
 2025020539,hockey,nhl,2025_12_18,19:00,Washington Capitals,Toronto Maple Leafs,0.577,0.423,2.56,3.39,5.95
 2025020540,hockey,nhl,2025_12_18,19:00,Columbus Blue Jackets,Minnesota Wild,0.499,0.501,3.07,3.05,6.12
-2025020535,hockey,nhl,2025_12_18,19:30,Buffalo Sabres,Philadelphia Flyers,0.523,0.477,2.89,3.13,6.02
 2025020541,hockey,nhl,2025_12_18,20:00,St Louis Blues,New York Rangers,0.403,0.597,3.38,2.37,5.75
 2025020542,hockey,nhl,2025_12_18,21:00,Calgary Flames,Seattle Kraken,0.599,0.401,2.29,3.32,5.61
 2025020543,hockey,nhl,2025_12_18,22:00,San Jose Sharks,Dallas Stars,0.343,0.657,3.61,2.39,6.00

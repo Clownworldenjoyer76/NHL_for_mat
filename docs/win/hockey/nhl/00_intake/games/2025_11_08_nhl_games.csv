@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020231,,hockey,nhl,2025_11_08,12:30,New Jersey Devils,Pittsburgh Penguins
-2025020232,,hockey,nhl,2025_11_08,13:00,Philadelphia Flyers,Ottawa Senators
-2025020233,,hockey,nhl,2025_11_08,15:30,Nashville Predators,Dallas Stars
-2025020234,,hockey,nhl,2025_11_08,19:00,Toronto Maple Leafs,Boston Bruins
-2025020235,,hockey,nhl,2025_11_08,19:00,Montreal Canadiens,Utah Mammoth
-2025020236,,hockey,nhl,2025_11_08,19:00,Tampa Bay Lightning,Washington Capitals
-2025020237,,hockey,nhl,2025_11_08,19:00,New York Rangers,New York Islanders
-2025020238,,hockey,nhl,2025_11_08,19:00,Carolina Hurricanes,Buffalo Sabres
-2025020239,,hockey,nhl,2025_11_08,19:00,St Louis Blues,Seattle Kraken
-2025020240,,hockey,nhl,2025_11_08,22:00,Edmonton Oilers,Colorado Avalanche
-2025020241,,hockey,nhl,2025_11_08,22:00,Vancouver Canucks,Columbus Blue Jackets
-2025020242,,hockey,nhl,2025_11_08,22:00,Vegas Golden Knights,Anaheim Ducks
-2025020243,,hockey,nhl,2025_11_08,22:00,San Jose Sharks,Florida Panthers
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020231,2025020231,hockey,nhl,2025_11_08,12:30,New Jersey Devils,Pittsburgh Penguins
+2025020232,2025020232,hockey,nhl,2025_11_08,13:00,Philadelphia Flyers,Ottawa Senators
+2025020233,2025020233,hockey,nhl,2025_11_08,15:30,Nashville Predators,Dallas Stars
+2025020234,2025020234,hockey,nhl,2025_11_08,19:00,Toronto Maple Leafs,Boston Bruins
+2025020235,2025020235,hockey,nhl,2025_11_08,19:00,Montreal Canadiens,Utah Mammoth
+2025020236,2025020236,hockey,nhl,2025_11_08,19:00,Tampa Bay Lightning,Washington Capitals
+2025020237,2025020237,hockey,nhl,2025_11_08,19:00,New York Rangers,New York Islanders
+2025020238,2025020238,hockey,nhl,2025_11_08,19:00,Carolina Hurricanes,Buffalo Sabres
+2025020239,2025020239,hockey,nhl,2025_11_08,19:00,St Louis Blues,Seattle Kraken
+2025020240,2025020240,hockey,nhl,2025_11_08,22:00,Edmonton Oilers,Colorado Avalanche
+2025020241,2025020241,hockey,nhl,2025_11_08,22:00,Vancouver Canucks,Columbus Blue Jackets
+2025020242,2025020242,hockey,nhl,2025_11_08,22:00,Vegas Golden Knights,Anaheim Ducks
+2025020243,2025020243,hockey,nhl,2025_11_08,22:00,San Jose Sharks,Florida Panthers

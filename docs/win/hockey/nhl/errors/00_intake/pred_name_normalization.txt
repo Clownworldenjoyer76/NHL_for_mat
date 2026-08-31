@@ -1,12 +1,10 @@
-=== pred_name_normalization RUN 2026-06-15T09:41:14.897441 ===
-2026-06-15T09:41:14.897965 | Team map loaded: 73 entries
-2026-06-15T09:41:14.899069 | Files to process: 211
-2026-06-15T09:41:14.910771 | UPDATED: docs/win/hockey/nhl/00_intake/predictions/hockey_2026_06_11.csv
-2026-06-15T09:41:14.910989 | UPDATED: docs/win/hockey/nhl/00_intake/predictions/hockey_2026_06_14.csv
-2026-06-15T09:41:14.911094 | --- SUMMARY ---
-2026-06-15T09:41:14.911119 | Files processed: 211
-2026-06-15T09:41:14.911161 | Rows processed: 1393
-2026-06-15T09:41:14.911184 | Names normalized: 4
-2026-06-15T09:41:14.911203 | Unmapped teams: 0
-2026-06-15T09:41:14.911222 | No-map output: docs/win/hockey/nhl/config/mapping/no_map_nhl_pred.csv
-2026-06-15T09:41:14.911239 | STATUS: SUCCESS
+=== pred_name_normalization RUN 2026-08-31T09:36:23.194406 ===
+2026-08-31T09:36:23.196006 | Team map loaded: 71 aliases | source=dratings | stable_ids=32
+2026-08-31T09:36:23.197001 | Files to process: 211
+2026-08-31T09:36:23.220767 | --- SUMMARY ---
+2026-08-31T09:36:23.220795 | Files processed: 211
+2026-08-31T09:36:23.220816 | Rows processed: 1393
+2026-08-31T09:36:23.220835 | Names normalized: 0
+2026-08-31T09:36:23.220854 | Unmapped teams: 0
+2026-08-31T09:36:23.220874 | No-map output: docs/win/hockey/nhl/config/mapping/no_map_nhl_pred.csv
+2026-08-31T09:36:23.220893 | STATUS: SUCCESS

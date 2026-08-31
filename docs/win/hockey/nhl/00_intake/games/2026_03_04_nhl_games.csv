@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020970,,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights
-2025020971,,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs
-2025020972,,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes
-2025020973,,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders
-2025020974,,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St Louis Blues
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020970,2025020970,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights
+2025020971,2025020971,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs
+2025020972,2025020972,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes
+2025020973,2025020973,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders
+2025020974,2025020974,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St Louis Blues

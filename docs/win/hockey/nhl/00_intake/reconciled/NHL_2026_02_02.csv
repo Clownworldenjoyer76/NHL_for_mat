@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020876,,hockey,nhl,2026_02_02,19:00,Florida Panthers,Buffalo Sabres
-2025020877,,hockey,nhl,2026_02_02,19:00,Pittsburgh Penguins,Ottawa Senators
-2025020878,,hockey,nhl,2026_02_02,19:00,Washington Capitals,New York Islanders
-2025020879,,hockey,nhl,2026_02_02,19:30,Minnesota Wild,Montreal Canadiens
-2025020880,,hockey,nhl,2026_02_02,20:00,Nashville Predators,St Louis Blues
-2025020881,,hockey,nhl,2026_02_02,20:30,Chicago Blackhawks,San Jose Sharks
-2025020882,,hockey,nhl,2026_02_02,20:30,Dallas Stars,Winnipeg Jets
-2025020883,,hockey,nhl,2026_02_02,21:00,Colorado Avalanche,Detroit Red Wings
-2025020884,,hockey,nhl,2026_02_02,21:30,Utah Mammoth,Vancouver Canucks
-2025020885,,hockey,nhl,2026_02_02,22:00,Calgary Flames,Toronto Maple Leafs
+2025020876,2025020876,hockey,nhl,2026_02_02,19:00,Florida Panthers,Buffalo Sabres
+2025020877,2025020877,hockey,nhl,2026_02_02,19:00,Pittsburgh Penguins,Ottawa Senators
+2025020878,2025020878,hockey,nhl,2026_02_02,19:00,Washington Capitals,New York Islanders
+2025020879,2025020879,hockey,nhl,2026_02_02,19:30,Minnesota Wild,Montreal Canadiens
+2025020880,2025020880,hockey,nhl,2026_02_02,20:00,Nashville Predators,St Louis Blues
+2025020881,2025020881,hockey,nhl,2026_02_02,20:30,Chicago Blackhawks,San Jose Sharks
+2025020882,2025020882,hockey,nhl,2026_02_02,20:30,Dallas Stars,Winnipeg Jets
+2025020883,2025020883,hockey,nhl,2026_02_02,21:00,Colorado Avalanche,Detroit Red Wings
+2025020884,2025020884,hockey,nhl,2026_02_02,21:30,Utah Mammoth,Vancouver Canucks
+2025020885,2025020885,hockey,nhl,2026_02_02,22:00,Calgary Flames,Toronto Maple Leafs

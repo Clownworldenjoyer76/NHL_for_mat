@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020825,,hockey,nhl,2026_01_26,19:00,Tampa Bay Lightning,Utah Mammoth
-2025020826,,hockey,nhl,2026_01_26,19:00,New York Rangers,Boston Bruins
-2025020827,,hockey,nhl,2026_01_26,19:00,Philadelphia Flyers,New York Islanders
-2025020829,,hockey,nhl,2026_01_26,20:30,Edmonton Oilers,Anaheim Ducks
+2025020825,2025020825,hockey,nhl,2026_01_26,19:00,Tampa Bay Lightning,Utah Mammoth
+2025020826,2025020826,hockey,nhl,2026_01_26,19:00,New York Rangers,Boston Bruins
+2025020827,2025020827,hockey,nhl,2026_01_26,19:00,Philadelphia Flyers,New York Islanders
+2025020829,2025020829,hockey,nhl,2026_01_26,20:30,Edmonton Oilers,Anaheim Ducks

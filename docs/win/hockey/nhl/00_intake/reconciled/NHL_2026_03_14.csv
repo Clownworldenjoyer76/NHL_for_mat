@@ -1,15 +1,15 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021043,,hockey,nhl,2026_03_14,13:00,Ottawa Senators,Anaheim Ducks
-2025021044,,hockey,nhl,2026_03_14,15:00,Washington Capitals,Boston Bruins
-2025021045,,hockey,nhl,2026_03_14,16:00,Winnipeg Jets,Colorado Avalanche
-2025021046,,hockey,nhl,2026_03_14,18:00,Minnesota Wild,New York Rangers
-2025021047,,hockey,nhl,2026_03_14,19:00,Buffalo Sabres,Toronto Maple Leafs
-2025021048,,hockey,nhl,2026_03_14,19:00,Montreal Canadiens,San Jose Sharks
-2025021049,,hockey,nhl,2026_03_14,19:00,Tampa Bay Lightning,Carolina Hurricanes
-2025021050,,hockey,nhl,2026_03_14,19:00,New Jersey Devils,Los Angeles Kings
-2025021051,,hockey,nhl,2026_03_14,19:00,New York Islanders,Calgary Flames
-2025021052,,hockey,nhl,2026_03_14,19:30,Philadelphia Flyers,Columbus Blue Jackets
-2025021053,,hockey,nhl,2026_03_14,20:00,Dallas Stars,Detroit Red Wings
-2025021054,,hockey,nhl,2026_03_14,21:00,Utah Mammoth,Pittsburgh Penguins
-2025021055,,hockey,nhl,2026_03_14,22:00,Vancouver Canucks,Seattle Kraken
-2025021056,,hockey,nhl,2026_03_14,22:00,Vegas Golden Knights,Chicago Blackhawks
+2025021043,2025021043,hockey,nhl,2026_03_14,13:00,Ottawa Senators,Anaheim Ducks
+2025021044,2025021044,hockey,nhl,2026_03_14,15:00,Washington Capitals,Boston Bruins
+2025021045,2025021045,hockey,nhl,2026_03_14,16:00,Winnipeg Jets,Colorado Avalanche
+2025021046,2025021046,hockey,nhl,2026_03_14,18:00,Minnesota Wild,New York Rangers
+2025021047,2025021047,hockey,nhl,2026_03_14,19:00,Buffalo Sabres,Toronto Maple Leafs
+2025021048,2025021048,hockey,nhl,2026_03_14,19:00,Montreal Canadiens,San Jose Sharks
+2025021049,2025021049,hockey,nhl,2026_03_14,19:00,Tampa Bay Lightning,Carolina Hurricanes
+2025021050,2025021050,hockey,nhl,2026_03_14,19:00,New Jersey Devils,Los Angeles Kings
+2025021051,2025021051,hockey,nhl,2026_03_14,19:00,New York Islanders,Calgary Flames
+2025021052,2025021052,hockey,nhl,2026_03_14,19:30,Philadelphia Flyers,Columbus Blue Jackets
+2025021053,2025021053,hockey,nhl,2026_03_14,20:00,Dallas Stars,Detroit Red Wings
+2025021054,2025021054,hockey,nhl,2026_03_14,21:00,Utah Mammoth,Pittsburgh Penguins
+2025021055,2025021055,hockey,nhl,2026_03_14,22:00,Vancouver Canucks,Seattle Kraken
+2025021056,2025021056,hockey,nhl,2026_03_14,22:00,Vegas Golden Knights,Chicago Blackhawks

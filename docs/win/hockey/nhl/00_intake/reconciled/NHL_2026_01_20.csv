@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020780,,hockey,nhl,2026_01_20,19:00,Montreal Canadiens,Minnesota Wild
-2025020781,,hockey,nhl,2026_01_20,19:00,Tampa Bay Lightning,San Jose Sharks
-2025020782,,hockey,nhl,2026_01_20,19:00,Columbus Blue Jackets,Ottawa Senators
-2025020783,,hockey,nhl,2026_01_20,19:30,Dallas Stars,Boston Bruins
-2025020784,,hockey,nhl,2026_01_20,20:00,Nashville Predators,Buffalo Sabres
-2025020785,,hockey,nhl,2026_01_20,20:00,Winnipeg Jets,St Louis Blues
-2025020786,,hockey,nhl,2026_01_20,22:00,Edmonton Oilers,New Jersey Devils
-2025020787,,hockey,nhl,2026_01_20,22:00,Los Angeles Kings,New York Rangers
+2025020780,2025020780,hockey,nhl,2026_01_20,19:00,Montreal Canadiens,Minnesota Wild
+2025020781,2025020781,hockey,nhl,2026_01_20,19:00,Tampa Bay Lightning,San Jose Sharks
+2025020782,2025020782,hockey,nhl,2026_01_20,19:00,Columbus Blue Jackets,Ottawa Senators
+2025020783,2025020783,hockey,nhl,2026_01_20,19:30,Dallas Stars,Boston Bruins
+2025020784,2025020784,hockey,nhl,2026_01_20,20:00,Nashville Predators,Buffalo Sabres
+2025020785,2025020785,hockey,nhl,2026_01_20,20:00,Winnipeg Jets,St Louis Blues
+2025020786,2025020786,hockey,nhl,2026_01_20,22:00,Edmonton Oilers,New Jersey Devils
+2025020787,2025020787,hockey,nhl,2026_01_20,22:00,Los Angeles Kings,New York Rangers

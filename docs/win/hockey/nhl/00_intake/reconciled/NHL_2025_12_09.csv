@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020466,,hockey,nhl,2025_12_09,19:00,Montreal Canadiens,Tampa Bay Lightning
-2025020467,,hockey,nhl,2025_12_09,19:00,Ottawa Senators,New Jersey Devils
-2025020468,,hockey,nhl,2025_12_09,19:00,New York Islanders,Vegas Golden Knights
-2025020469,,hockey,nhl,2025_12_09,19:00,Philadelphia Flyers,San Jose Sharks
-2025020470,,hockey,nhl,2025_12_09,19:00,Pittsburgh Penguins,Anaheim Ducks
-2025020471,,hockey,nhl,2025_12_09,19:30,Carolina Hurricanes,Columbus Blue Jackets
-2025020472,,hockey,nhl,2025_12_09,20:00,St Louis Blues,Boston Bruins
-2025020473,,hockey,nhl,2025_12_09,20:00,Winnipeg Jets,Dallas Stars
-2025020474,,hockey,nhl,2025_12_09,21:00,Edmonton Oilers,Buffalo Sabres
-2025020475,,hockey,nhl,2025_12_09,21:30,Nashville Predators,Colorado Avalanche
+2025020466,2025020466,hockey,nhl,2025_12_09,19:00,Montreal Canadiens,Tampa Bay Lightning
+2025020467,2025020467,hockey,nhl,2025_12_09,19:00,Ottawa Senators,New Jersey Devils
+2025020468,2025020468,hockey,nhl,2025_12_09,19:00,New York Islanders,Vegas Golden Knights
+2025020469,2025020469,hockey,nhl,2025_12_09,19:00,Philadelphia Flyers,San Jose Sharks
+2025020470,2025020470,hockey,nhl,2025_12_09,19:00,Pittsburgh Penguins,Anaheim Ducks
+2025020471,2025020471,hockey,nhl,2025_12_09,19:30,Carolina Hurricanes,Columbus Blue Jackets
+2025020472,2025020472,hockey,nhl,2025_12_09,20:00,St Louis Blues,Boston Bruins
+2025020473,2025020473,hockey,nhl,2025_12_09,20:00,Winnipeg Jets,Dallas Stars
+2025020474,2025020474,hockey,nhl,2025_12_09,21:00,Edmonton Oilers,Buffalo Sabres
+2025020475,2025020475,hockey,nhl,2025_12_09,21:30,Nashville Predators,Colorado Avalanche

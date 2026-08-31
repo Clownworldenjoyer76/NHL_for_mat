@@ -1,4 +1,4 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
 2025030134,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes,0.469000,0.531000,3.21,2.88,6.09
-2025030164,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars,0.500000,0.500000,2.93,2.92,5.85
 2025030144,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins,0.520000,0.480000,2.91,3.12,6.03
+2025030164,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars,0.500000,0.500000,2.93,2.92,5.85

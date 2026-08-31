@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020252,,hockey,nhl,2025_11_10,19:00,New Jersey Devils,New York Islanders
-2025020253,,hockey,nhl,2025_11_10,19:00,New York Rangers,Nashville Predators
-2025020254,,hockey,nhl,2025_11_10,20:30,Edmonton Oilers,Columbus Blue Jackets
-2025020255,,hockey,nhl,2025_11_10,22:00,Vegas Golden Knights,Florida Panthers
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020252,2025020252,hockey,nhl,2025_11_10,19:00,New Jersey Devils,New York Islanders
+2025020253,2025020253,hockey,nhl,2025_11_10,19:00,New York Rangers,Nashville Predators
+2025020254,2025020254,hockey,nhl,2025_11_10,20:30,Edmonton Oilers,Columbus Blue Jackets
+2025020255,2025020255,hockey,nhl,2025_11_10,22:00,Vegas Golden Knights,Florida Panthers

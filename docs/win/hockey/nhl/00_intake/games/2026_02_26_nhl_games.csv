@@ -1,13 +1,13 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020918,,hockey,nhl,2026_02_26,19:00,Boston Bruins,Columbus Blue Jackets
-2025020919,,hockey,nhl,2026_02_26,19:00,Montreal Canadiens,New York Islanders
-2025020920,,hockey,nhl,2026_02_26,19:00,Ottawa Senators,Detroit Red Wings
-2025020921,,hockey,nhl,2026_02_26,19:00,Florida Panthers,Toronto Maple Leafs
-2025020922,,hockey,nhl,2026_02_26,19:00,Pittsburgh Penguins,New Jersey Devils
-2025020923,,hockey,nhl,2026_02_26,19:00,Carolina Hurricanes,Tampa Bay Lightning
-2025020924,,hockey,nhl,2026_02_26,20:00,New York Rangers,Philadelphia Flyers
-2025020925,,hockey,nhl,2026_02_26,20:00,St Louis Blues,Seattle Kraken
-2025020926,,hockey,nhl,2026_02_26,20:00,Nashville Predators,Chicago Blackhawks
-2025020927,,hockey,nhl,2026_02_26,21:00,Colorado Avalanche,Minnesota Wild
-2025020928,,hockey,nhl,2026_02_26,22:00,San Jose Sharks,Calgary Flames
-2025020929,,hockey,nhl,2026_02_26,22:30,Los Angeles Kings,Edmonton Oilers
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020918,2025020918,hockey,nhl,2026_02_26,19:00,Boston Bruins,Columbus Blue Jackets
+2025020919,2025020919,hockey,nhl,2026_02_26,19:00,Montreal Canadiens,New York Islanders
+2025020920,2025020920,hockey,nhl,2026_02_26,19:00,Ottawa Senators,Detroit Red Wings
+2025020921,2025020921,hockey,nhl,2026_02_26,19:00,Florida Panthers,Toronto Maple Leafs
+2025020922,2025020922,hockey,nhl,2026_02_26,19:00,Pittsburgh Penguins,New Jersey Devils
+2025020923,2025020923,hockey,nhl,2026_02_26,19:00,Carolina Hurricanes,Tampa Bay Lightning
+2025020924,2025020924,hockey,nhl,2026_02_26,20:00,New York Rangers,Philadelphia Flyers
+2025020925,2025020925,hockey,nhl,2026_02_26,20:00,St Louis Blues,Seattle Kraken
+2025020926,2025020926,hockey,nhl,2026_02_26,20:00,Nashville Predators,Chicago Blackhawks
+2025020927,2025020927,hockey,nhl,2026_02_26,21:00,Colorado Avalanche,Minnesota Wild
+2025020928,2025020928,hockey,nhl,2026_02_26,22:00,San Jose Sharks,Calgary Flames
+2025020929,2025020929,hockey,nhl,2026_02_26,22:30,Los Angeles Kings,Edmonton Oilers

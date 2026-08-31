@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020453,,hockey,nhl,2025_12_07,13:00,Philadelphia Flyers,Colorado Avalanche
-2025020454,,hockey,nhl,2025_12_07,17:00,Florida Panthers,New York Islanders
-2025020455,,hockey,nhl,2025_12_07,17:00,Carolina Hurricanes,San Jose Sharks
-2025020456,,hockey,nhl,2025_12_07,18:00,Dallas Stars,Pittsburgh Penguins
-2025020457,,hockey,nhl,2025_12_07,19:00,Montreal Canadiens,St Louis Blues
-2025020458,,hockey,nhl,2025_12_07,19:00,New York Rangers,Vegas Golden Knights
-2025020459,,hockey,nhl,2025_12_07,19:00,Washington Capitals,Columbus Blue Jackets
-2025020460,,hockey,nhl,2025_12_07,20:00,Anaheim Ducks,Chicago Blackhawks
+2025020453,2025020453,hockey,nhl,2025_12_07,13:00,Philadelphia Flyers,Colorado Avalanche
+2025020454,2025020454,hockey,nhl,2025_12_07,17:00,Florida Panthers,New York Islanders
+2025020455,2025020455,hockey,nhl,2025_12_07,17:00,Carolina Hurricanes,San Jose Sharks
+2025020456,2025020456,hockey,nhl,2025_12_07,18:00,Dallas Stars,Pittsburgh Penguins
+2025020457,2025020457,hockey,nhl,2025_12_07,19:00,Montreal Canadiens,St Louis Blues
+2025020458,2025020458,hockey,nhl,2025_12_07,19:00,New York Rangers,Vegas Golden Knights
+2025020459,2025020459,hockey,nhl,2025_12_07,19:00,Washington Capitals,Columbus Blue Jackets
+2025020460,2025020460,hockey,nhl,2025_12_07,20:00,Anaheim Ducks,Chicago Blackhawks

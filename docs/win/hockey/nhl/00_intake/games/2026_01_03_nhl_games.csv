@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020644,,hockey,nhl,2026_01_03,12:00,Detroit Red Wings,Pittsburgh Penguins
-2025020645,,hockey,nhl,2026_01_03,15:00,New Jersey Devils,Utah Mammoth
-2025020646,,hockey,nhl,2026_01_03,15:00,Columbus Blue Jackets,Buffalo Sabres
-2025020647,,hockey,nhl,2026_01_03,15:30,Edmonton Oilers,Philadelphia Flyers
-2025020648,,hockey,nhl,2026_01_03,16:00,St Louis Blues,Montreal Canadiens
-2025020649,,hockey,nhl,2026_01_03,16:00,San Jose Sharks,Tampa Bay Lightning
-2025020650,,hockey,nhl,2026_01_03,19:00,Ottawa Senators,Winnipeg Jets
-2025020651,,hockey,nhl,2026_01_03,19:00,New York Islanders,Toronto Maple Leafs
-2025020652,,hockey,nhl,2026_01_03,19:00,Washington Capitals,Chicago Blackhawks
-2025020653,,hockey,nhl,2026_01_03,19:00,Carolina Hurricanes,Colorado Avalanche
-2025020654,,hockey,nhl,2026_01_03,19:00,Calgary Flames,Nashville Predators
-2025020655,,hockey,nhl,2026_01_03,21:00,Los Angeles Kings,Minnesota Wild
-2025020656,,hockey,nhl,2026_01_03,22:00,Vancouver Canucks,Boston Bruins
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020644,2025020644,hockey,nhl,2026_01_03,12:00,Detroit Red Wings,Pittsburgh Penguins
+2025020645,2025020645,hockey,nhl,2026_01_03,15:00,New Jersey Devils,Utah Mammoth
+2025020646,2025020646,hockey,nhl,2026_01_03,15:00,Columbus Blue Jackets,Buffalo Sabres
+2025020647,2025020647,hockey,nhl,2026_01_03,15:30,Edmonton Oilers,Philadelphia Flyers
+2025020648,2025020648,hockey,nhl,2026_01_03,16:00,St Louis Blues,Montreal Canadiens
+2025020649,2025020649,hockey,nhl,2026_01_03,16:00,San Jose Sharks,Tampa Bay Lightning
+2025020650,2025020650,hockey,nhl,2026_01_03,19:00,Ottawa Senators,Winnipeg Jets
+2025020651,2025020651,hockey,nhl,2026_01_03,19:00,New York Islanders,Toronto Maple Leafs
+2025020652,2025020652,hockey,nhl,2026_01_03,19:00,Washington Capitals,Chicago Blackhawks
+2025020653,2025020653,hockey,nhl,2026_01_03,19:00,Carolina Hurricanes,Colorado Avalanche
+2025020654,2025020654,hockey,nhl,2026_01_03,19:00,Calgary Flames,Nashville Predators
+2025020655,2025020655,hockey,nhl,2026_01_03,21:00,Los Angeles Kings,Minnesota Wild
+2025020656,2025020656,hockey,nhl,2026_01_03,22:00,Vancouver Canucks,Boston Bruins

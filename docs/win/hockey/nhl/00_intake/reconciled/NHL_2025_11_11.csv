@@ -1,10 +1,10 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020256,,hockey,nhl,2025_11_11,19:00,Boston Bruins,Toronto Maple Leafs
-2025020257,,hockey,nhl,2025_11_11,19:00,Montreal Canadiens,Los Angeles Kings
-2025020258,,hockey,nhl,2025_11_11,19:00,Ottawa Senators,Dallas Stars
-2025020259,,hockey,nhl,2025_11_11,19:00,Carolina Hurricanes,Washington Capitals
-2025020260,,hockey,nhl,2025_11_11,20:00,St Louis Blues,Calgary Flames
-2025020261,,hockey,nhl,2025_11_11,20:00,Minnesota Wild,San Jose Sharks
-2025020262,,hockey,nhl,2025_11_11,21:30,Colorado Avalanche,Anaheim Ducks
-2025020263,,hockey,nhl,2025_11_11,22:00,Vancouver Canucks,Winnipeg Jets
-2025020264,,hockey,nhl,2025_11_11,22:00,Seattle Kraken,Columbus Blue Jackets
+2025020256,2025020256,hockey,nhl,2025_11_11,19:00,Boston Bruins,Toronto Maple Leafs
+2025020257,2025020257,hockey,nhl,2025_11_11,19:00,Montreal Canadiens,Los Angeles Kings
+2025020258,2025020258,hockey,nhl,2025_11_11,19:00,Ottawa Senators,Dallas Stars
+2025020259,2025020259,hockey,nhl,2025_11_11,19:00,Carolina Hurricanes,Washington Capitals
+2025020260,2025020260,hockey,nhl,2025_11_11,20:00,St Louis Blues,Calgary Flames
+2025020261,2025020261,hockey,nhl,2025_11_11,20:00,Minnesota Wild,San Jose Sharks
+2025020262,2025020262,hockey,nhl,2025_11_11,21:30,Colorado Avalanche,Anaheim Ducks
+2025020263,2025020263,hockey,nhl,2025_11_11,22:00,Vancouver Canucks,Winnipeg Jets
+2025020264,2025020264,hockey,nhl,2025_11_11,22:00,Seattle Kraken,Columbus Blue Jackets

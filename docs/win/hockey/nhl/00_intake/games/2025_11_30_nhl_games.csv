@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020402,,hockey,nhl,2025_11_30,13:00,New York Islanders,Washington Capitals
-2025020403,,hockey,nhl,2025_11_30,15:30,Chicago Blackhawks,Anaheim Ducks
-2025020404,,hockey,nhl,2025_11_30,17:00,Carolina Hurricanes,Calgary Flames
-2025020405,,hockey,nhl,2025_11_30,18:00,Dallas Stars,Ottawa Senators
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020402,2025020402,hockey,nhl,2025_11_30,13:00,New York Islanders,Washington Capitals
+2025020403,2025020403,hockey,nhl,2025_11_30,15:30,Chicago Blackhawks,Anaheim Ducks
+2025020404,2025020404,hockey,nhl,2025_11_30,17:00,Carolina Hurricanes,Calgary Flames
+2025020405,2025020405,hockey,nhl,2025_11_30,18:00,Dallas Stars,Ottawa Senators

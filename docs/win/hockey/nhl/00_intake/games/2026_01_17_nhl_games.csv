@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020754,,hockey,nhl,2026_01_17,12:30,Buffalo Sabres,Minnesota Wild
-2025020755,,hockey,nhl,2026_01_17,13:00,Philadelphia Flyers,New York Rangers
-2025020756,,hockey,nhl,2026_01_17,15:00,Calgary Flames,New York Islanders
-2025020757,,hockey,nhl,2026_01_17,17:00,Utah Mammoth,Seattle Kraken
-2025020758,,hockey,nhl,2026_01_17,19:00,Ottawa Senators,Montreal Canadiens
-2025020759,,hockey,nhl,2026_01_17,19:00,New Jersey Devils,Carolina Hurricanes
-2025020760,,hockey,nhl,2026_01_17,19:00,Pittsburgh Penguins,Columbus Blue Jackets
-2025020761,,hockey,nhl,2026_01_17,19:00,Washington Capitals,Florida Panthers
-2025020762,,hockey,nhl,2026_01_17,19:00,Winnipeg Jets,Toronto Maple Leafs
-2025020763,,hockey,nhl,2026_01_17,20:00,Chicago Blackhawks,Boston Bruins
-2025020764,,hockey,nhl,2026_01_17,22:00,Vancouver Canucks,Edmonton Oilers
-2025020765,,hockey,nhl,2026_01_17,22:00,Vegas Golden Knights,Nashville Predators
-2025020766,,hockey,nhl,2026_01_17,22:00,Anaheim Ducks,Los Angeles Kings
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020754,2025020754,hockey,nhl,2026_01_17,12:30,Buffalo Sabres,Minnesota Wild
+2025020755,2025020755,hockey,nhl,2026_01_17,13:00,Philadelphia Flyers,New York Rangers
+2025020756,2025020756,hockey,nhl,2026_01_17,15:00,Calgary Flames,New York Islanders
+2025020757,2025020757,hockey,nhl,2026_01_17,17:00,Utah Mammoth,Seattle Kraken
+2025020758,2025020758,hockey,nhl,2026_01_17,19:00,Ottawa Senators,Montreal Canadiens
+2025020759,2025020759,hockey,nhl,2026_01_17,19:00,New Jersey Devils,Carolina Hurricanes
+2025020760,2025020760,hockey,nhl,2026_01_17,19:00,Pittsburgh Penguins,Columbus Blue Jackets
+2025020761,2025020761,hockey,nhl,2026_01_17,19:00,Washington Capitals,Florida Panthers
+2025020762,2025020762,hockey,nhl,2026_01_17,19:00,Winnipeg Jets,Toronto Maple Leafs
+2025020763,2025020763,hockey,nhl,2026_01_17,20:00,Chicago Blackhawks,Boston Bruins
+2025020764,2025020764,hockey,nhl,2026_01_17,22:00,Vancouver Canucks,Edmonton Oilers
+2025020765,2025020765,hockey,nhl,2026_01_17,22:00,Vegas Golden Knights,Nashville Predators
+2025020766,2025020766,hockey,nhl,2026_01_17,22:00,Anaheim Ducks,Los Angeles Kings

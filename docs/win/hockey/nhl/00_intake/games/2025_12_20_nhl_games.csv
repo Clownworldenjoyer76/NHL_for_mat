@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020549,,hockey,nhl,2025_12_20,12:30,New York Rangers,Philadelphia Flyers
-2025020550,,hockey,nhl,2025_12_20,12:30,Washington Capitals,Detroit Red Wings
-2025020551,,hockey,nhl,2025_12_20,15:00,Ottawa Senators,Chicago Blackhawks
-2025020552,,hockey,nhl,2025_12_20,15:00,Minnesota Wild,Edmonton Oilers
-2025020553,,hockey,nhl,2025_12_20,17:00,Buffalo Sabres,New York Islanders
-2025020554,,hockey,nhl,2025_12_20,18:00,Florida Panthers,St Louis Blues
-2025020555,,hockey,nhl,2025_12_20,19:00,Boston Bruins,Vancouver Canucks
-2025020556,,hockey,nhl,2025_12_20,19:00,Montreal Canadiens,Pittsburgh Penguins
-2025020557,,hockey,nhl,2025_12_20,19:00,Tampa Bay Lightning,Carolina Hurricanes
-2025020558,,hockey,nhl,2025_12_20,19:00,Nashville Predators,Toronto Maple Leafs
-2025020559,,hockey,nhl,2025_12_20,22:00,Calgary Flames,Vegas Golden Knights
-2025020560,,hockey,nhl,2025_12_20,22:00,Anaheim Ducks,Columbus Blue Jackets
-2025020561,,hockey,nhl,2025_12_20,22:00,San Jose Sharks,Seattle Kraken
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020549,2025020549,hockey,nhl,2025_12_20,12:30,New York Rangers,Philadelphia Flyers
+2025020550,2025020550,hockey,nhl,2025_12_20,12:30,Washington Capitals,Detroit Red Wings
+2025020551,2025020551,hockey,nhl,2025_12_20,15:00,Ottawa Senators,Chicago Blackhawks
+2025020552,2025020552,hockey,nhl,2025_12_20,15:00,Minnesota Wild,Edmonton Oilers
+2025020553,2025020553,hockey,nhl,2025_12_20,17:00,Buffalo Sabres,New York Islanders
+2025020554,2025020554,hockey,nhl,2025_12_20,18:00,Florida Panthers,St Louis Blues
+2025020555,2025020555,hockey,nhl,2025_12_20,19:00,Boston Bruins,Vancouver Canucks
+2025020556,2025020556,hockey,nhl,2025_12_20,19:00,Montreal Canadiens,Pittsburgh Penguins
+2025020557,2025020557,hockey,nhl,2025_12_20,19:00,Tampa Bay Lightning,Carolina Hurricanes
+2025020558,2025020558,hockey,nhl,2025_12_20,19:00,Nashville Predators,Toronto Maple Leafs
+2025020559,2025020559,hockey,nhl,2025_12_20,22:00,Calgary Flames,Vegas Golden Knights
+2025020560,2025020560,hockey,nhl,2025_12_20,22:00,Anaheim Ducks,Columbus Blue Jackets
+2025020561,2025020561,hockey,nhl,2025_12_20,22:00,San Jose Sharks,Seattle Kraken

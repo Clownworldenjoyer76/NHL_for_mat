@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020677,,hockey,nhl,2026_01_07,19:00,Washington Capitals,Dallas Stars,-150,125,-1.5,+1.5,6.0,+180,-210,-105,-115,,,,,,
-2025020678,,hockey,nhl,2026_01_07,19:30,Montreal Canadiens,Calgary Flames,-160,135,-1.5,+1.5,6.0,+161,-185,-110,-110,,,,,,
-2025020679,,hockey,nhl,2026_01_07,21:30,Chicago Blackhawks,St Louis Blues,100,-120,+1.5,-1.5,5.5,-255,+211,-102,-118,,,,,,
-2025020680,,hockey,nhl,2026_01_07,21:30,Utah Mammoth,Ottawa Senators,-130,105,-1.5,+1.5,6.0,+192,-230,-110,-110,,,,,,
-2025020681,,hockey,nhl,2026_01_07,22:30,Los Angeles Kings,San Jose Sharks,-295,230,-1.5,+1.5,6.0,-102,-118,-105,-115,,,,,,
+2025020677,2025020677,hockey,nhl,2026_01_07,19:00,Washington Capitals,Dallas Stars,-150,125,-1.5,+1.5,6.0,+180,-210,-105,-115,,,,,,
+2025020678,2025020678,hockey,nhl,2026_01_07,19:30,Montreal Canadiens,Calgary Flames,-160,135,-1.5,+1.5,6.0,+161,-185,-110,-110,,,,,,
+2025020679,2025020679,hockey,nhl,2026_01_07,21:30,Chicago Blackhawks,St Louis Blues,100,-120,+1.5,-1.5,5.5,-255,+211,-102,-118,,,,,,
+2025020680,2025020680,hockey,nhl,2026_01_07,21:30,Utah Mammoth,Ottawa Senators,-130,105,-1.5,+1.5,6.0,+192,-230,-110,-110,,,,,,
+2025020681,2025020681,hockey,nhl,2026_01_07,22:30,Los Angeles Kings,San Jose Sharks,-295,230,-1.5,+1.5,6.0,-102,-118,-105,-115,,,,,,

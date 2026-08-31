@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020711,,hockey,nhl,2026_01_11,14:00,Winnipeg Jets,New Jersey Devils
-2025020712,,hockey,nhl,2026_01_11,17:00,Boston Bruins,Pittsburgh Penguins
-2025020713,,hockey,nhl,2026_01_11,19:00,Nashville Predators,Washington Capitals
-2025020714,,hockey,nhl,2026_01_11,19:00,Utah Mammoth,Columbus Blue Jackets
-2025020715,,hockey,nhl,2026_01_11,20:00,San Jose Sharks,Vegas Golden Knights
+2025020711,2025020711,hockey,nhl,2026_01_11,14:00,Winnipeg Jets,New Jersey Devils
+2025020712,2025020712,hockey,nhl,2026_01_11,17:00,Boston Bruins,Pittsburgh Penguins
+2025020713,2025020713,hockey,nhl,2026_01_11,19:00,Nashville Predators,Washington Capitals
+2025020714,2025020714,hockey,nhl,2026_01_11,19:00,Utah Mammoth,Columbus Blue Jackets
+2025020715,2025020715,hockey,nhl,2026_01_11,20:00,San Jose Sharks,Vegas Golden Knights

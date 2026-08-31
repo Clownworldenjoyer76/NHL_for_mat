@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020421,,hockey,nhl,2025_12_03,19:00,New Jersey Devils,Dallas Stars
-2025020422,,hockey,nhl,2025_12_03,19:30,Montreal Canadiens,Winnipeg Jets
-2025020423,,hockey,nhl,2025_12_03,19:30,Philadelphia Flyers,Buffalo Sabres
-2025020424,,hockey,nhl,2025_12_03,22:00,Anaheim Ducks,Utah Mammoth
-2025020425,,hockey,nhl,2025_12_03,22:00,San Jose Sharks,Washington Capitals
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020421,2025020421,hockey,nhl,2025_12_03,19:00,New Jersey Devils,Dallas Stars
+2025020422,2025020422,hockey,nhl,2025_12_03,19:30,Montreal Canadiens,Winnipeg Jets
+2025020423,2025020423,hockey,nhl,2025_12_03,19:30,Philadelphia Flyers,Buffalo Sabres
+2025020424,2025020424,hockey,nhl,2025_12_03,22:00,Anaheim Ducks,Utah Mammoth
+2025020425,2025020425,hockey,nhl,2025_12_03,22:00,San Jose Sharks,Washington Capitals

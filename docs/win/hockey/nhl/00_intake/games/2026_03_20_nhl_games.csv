@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021094,,hockey,nhl,2026_03_20,19:00,Toronto Maple Leafs,Carolina Hurricanes
-2025021095,,hockey,nhl,2026_03_20,19:00,Washington Capitals,New Jersey Devils
-2025021096,,hockey,nhl,2026_03_20,20:30,Chicago Blackhawks,Colorado Avalanche
-2025021097,,hockey,nhl,2026_03_20,21:00,Calgary Flames,Florida Panthers
-2025021098,,hockey,nhl,2026_03_20,22:00,Utah Mammoth,Anaheim Ducks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021094,2025021094,hockey,nhl,2026_03_20,19:00,Toronto Maple Leafs,Carolina Hurricanes
+2025021095,2025021095,hockey,nhl,2026_03_20,19:00,Washington Capitals,New Jersey Devils
+2025021096,2025021096,hockey,nhl,2026_03_20,20:30,Chicago Blackhawks,Colorado Avalanche
+2025021097,2025021097,hockey,nhl,2026_03_20,21:00,Calgary Flames,Florida Panthers
+2025021098,2025021098,hockey,nhl,2026_03_20,22:00,Utah Mammoth,Anaheim Ducks

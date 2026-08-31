@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020244,,hockey,nhl,2025_11_09,13:00,Detroit Red Wings,Chicago Blackhawks
-2025020245,,hockey,nhl,2025_11_09,14:00,Pittsburgh Penguins,Los Angeles Kings
-2025020246,,hockey,nhl,2025_11_09,19:00,Toronto Maple Leafs,Carolina Hurricanes
-2025020247,,hockey,nhl,2025_11_09,19:00,Ottawa Senators,Utah Mammoth
-2025020248,,hockey,nhl,2025_11_09,19:00,Dallas Stars,Seattle Kraken
-2025020249,,hockey,nhl,2025_11_09,20:00,Minnesota Wild,Calgary Flames
-2025020250,,hockey,nhl,2025_11_09,22:00,Vancouver Canucks,Colorado Avalanche
-2025020251,,hockey,nhl,2025_11_09,22:00,Anaheim Ducks,Winnipeg Jets
+2025020244,2025020244,hockey,nhl,2025_11_09,13:00,Detroit Red Wings,Chicago Blackhawks
+2025020245,2025020245,hockey,nhl,2025_11_09,14:00,Pittsburgh Penguins,Los Angeles Kings
+2025020246,2025020246,hockey,nhl,2025_11_09,19:00,Toronto Maple Leafs,Carolina Hurricanes
+2025020247,2025020247,hockey,nhl,2025_11_09,19:00,Ottawa Senators,Utah Mammoth
+2025020248,2025020248,hockey,nhl,2025_11_09,19:00,Dallas Stars,Seattle Kraken
+2025020249,2025020249,hockey,nhl,2025_11_09,20:00,Minnesota Wild,Calgary Flames
+2025020250,2025020250,hockey,nhl,2025_11_09,22:00,Vancouver Canucks,Colorado Avalanche
+2025020251,2025020251,hockey,nhl,2025_11_09,22:00,Anaheim Ducks,Winnipeg Jets

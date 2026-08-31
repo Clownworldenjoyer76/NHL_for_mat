@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020588,,hockey,nhl,2025_12_27,18:00,New York Islanders,New York Rangers
-2025020589,,hockey,nhl,2025_12_27,19:00,Buffalo Sabres,Boston Bruins
-2025020590,,hockey,nhl,2025_12_27,19:00,Toronto Maple Leafs,Ottawa Senators
-2025020591,,hockey,nhl,2025_12_27,19:00,Florida Panthers,Tampa Bay Lightning
-2025020592,,hockey,nhl,2025_12_27,19:00,New Jersey Devils,Washington Capitals
-2025020593,,hockey,nhl,2025_12_27,19:00,Carolina Hurricanes,Detroit Red Wings
-2025020594,,hockey,nhl,2025_12_27,19:00,Winnipeg Jets,Minnesota Wild
-2025020595,,hockey,nhl,2025_12_27,20:00,St Louis Blues,Nashville Predators
-2025020596,,hockey,nhl,2025_12_27,20:00,Dallas Stars,Chicago Blackhawks
-2025020597,,hockey,nhl,2025_12_27,21:00,Los Angeles Kings,Anaheim Ducks
-2025020598,,hockey,nhl,2025_12_27,22:00,Calgary Flames,Edmonton Oilers
-2025020599,,hockey,nhl,2025_12_27,22:00,Vancouver Canucks,San Jose Sharks
-2025020600,,hockey,nhl,2025_12_27,22:00,Vegas Golden Knights,Colorado Avalanche
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020588,2025020588,hockey,nhl,2025_12_27,18:00,New York Islanders,New York Rangers
+2025020589,2025020589,hockey,nhl,2025_12_27,19:00,Buffalo Sabres,Boston Bruins
+2025020590,2025020590,hockey,nhl,2025_12_27,19:00,Toronto Maple Leafs,Ottawa Senators
+2025020591,2025020591,hockey,nhl,2025_12_27,19:00,Florida Panthers,Tampa Bay Lightning
+2025020592,2025020592,hockey,nhl,2025_12_27,19:00,New Jersey Devils,Washington Capitals
+2025020593,2025020593,hockey,nhl,2025_12_27,19:00,Carolina Hurricanes,Detroit Red Wings
+2025020594,2025020594,hockey,nhl,2025_12_27,19:00,Winnipeg Jets,Minnesota Wild
+2025020595,2025020595,hockey,nhl,2025_12_27,20:00,St Louis Blues,Nashville Predators
+2025020596,2025020596,hockey,nhl,2025_12_27,20:00,Dallas Stars,Chicago Blackhawks
+2025020597,2025020597,hockey,nhl,2025_12_27,21:00,Los Angeles Kings,Anaheim Ducks
+2025020598,2025020598,hockey,nhl,2025_12_27,22:00,Calgary Flames,Edmonton Oilers
+2025020599,2025020599,hockey,nhl,2025_12_27,22:00,Vancouver Canucks,San Jose Sharks
+2025020600,2025020600,hockey,nhl,2025_12_27,22:00,Vegas Golden Knights,Colorado Avalanche

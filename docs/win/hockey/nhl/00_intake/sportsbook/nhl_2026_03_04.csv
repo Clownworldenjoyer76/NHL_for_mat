@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020970,,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights,-135,+114,-1.5,+1.5,5.5,+195,-238,-130,+110,,,,,,
-2025020971,,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs,-122,+102,-1.5,+1.5,5.5,+215,-265,-125,+105,,,,,,
-2025020972,,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes,+225,-278,+1.5,-1.5,6.5,-112,-108,+114,-135,,,,,,
-2025020973,,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders,-110,-110,-1.5,+1.5,6.5,+225,-278,-115,-105,,,,,,
-2025020974,,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St Louis Blues,-148,+124,-1.5,+1.5,5.5,+180,-218,-125,+105,,,,,,
+2025020970,2025020970,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights,-135,+114,-1.5,+1.5,5.5,+195,-238,-130,+110,,,,,,
+2025020971,2025020971,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs,-122,+102,-1.5,+1.5,5.5,+215,-265,-125,+105,,,,,,
+2025020972,2025020972,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes,+225,-278,+1.5,-1.5,6.5,-112,-108,+114,-135,,,,,,
+2025020973,2025020973,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders,-110,-110,-1.5,+1.5,6.5,+225,-278,-115,-105,,,,,,
+2025020974,2025020974,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St Louis Blues,-148,+124,-1.5,+1.5,5.5,+180,-218,-125,+105,,,,,,

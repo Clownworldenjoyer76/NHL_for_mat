@@ -1,12 +1,12 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021233,,hockey,nhl,2026_04_07,19:00,Montreal Canadiens,Florida Panthers
-2025021234,,hockey,nhl,2026_04_07,19:00,Ottawa Senators,Tampa Bay Lightning
-2025021235,,hockey,nhl,2026_04_07,19:00,Detroit Red Wings,Columbus Blue Jackets
-2025021236,,hockey,nhl,2026_04_07,19:00,New Jersey Devils,Philadelphia Flyers
-2025021237,,hockey,nhl,2026_04_07,19:00,Carolina Hurricanes,Boston Bruins
-2025021238,,hockey,nhl,2026_04_07,20:00,St Louis Blues,Colorado Avalanche
-2025021239,,hockey,nhl,2026_04_07,20:00,Dallas Stars,Calgary Flames
-2025021240,,hockey,nhl,2026_04_07,20:00,Minnesota Wild,Seattle Kraken
-2025021241,,hockey,nhl,2026_04_07,21:30,Utah Mammoth,Edmonton Oilers
-2025021242,,hockey,nhl,2026_04_07,22:00,Vancouver Canucks,Vegas Golden Knights
-2025021243,,hockey,nhl,2026_04_07,22:00,Anaheim Ducks,Nashville Predators
+2025021233,2025021233,hockey,nhl,2026_04_07,19:00,Montreal Canadiens,Florida Panthers
+2025021234,2025021234,hockey,nhl,2026_04_07,19:00,Ottawa Senators,Tampa Bay Lightning
+2025021235,2025021235,hockey,nhl,2026_04_07,19:00,Detroit Red Wings,Columbus Blue Jackets
+2025021236,2025021236,hockey,nhl,2026_04_07,19:00,New Jersey Devils,Philadelphia Flyers
+2025021237,2025021237,hockey,nhl,2026_04_07,19:00,Carolina Hurricanes,Boston Bruins
+2025021238,2025021238,hockey,nhl,2026_04_07,20:00,St Louis Blues,Colorado Avalanche
+2025021239,2025021239,hockey,nhl,2026_04_07,20:00,Dallas Stars,Calgary Flames
+2025021240,2025021240,hockey,nhl,2026_04_07,20:00,Minnesota Wild,Seattle Kraken
+2025021241,2025021241,hockey,nhl,2026_04_07,21:30,Utah Mammoth,Edmonton Oilers
+2025021242,2025021242,hockey,nhl,2026_04_07,22:00,Vancouver Canucks,Vegas Golden Knights
+2025021243,2025021243,hockey,nhl,2026_04_07,22:00,Anaheim Ducks,Nashville Predators

@@ -1,17 +1,17 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020150,,hockey,nhl,2025_10_28,18:00,Philadelphia Flyers,Pittsburgh Penguins
-2025020151,,hockey,nhl,2025_10_28,18:00,Toronto Maple Leafs,Calgary Flames
-2025020155,,hockey,nhl,2025_10_28,18:30,Carolina Hurricanes,Vegas Golden Knights
-2025020152,,hockey,nhl,2025_10_28,18:45,Buffalo Sabres,Columbus Blue Jackets
-2025020153,,hockey,nhl,2025_10_28,19:00,Florida Panthers,Anaheim Ducks
-2025020154,,hockey,nhl,2025_10_28,19:15,Boston Bruins,New York Islanders
-2025020156,,hockey,nhl,2025_10_28,19:45,Nashville Predators,Tampa Bay Lightning
-2025020157,,hockey,nhl,2025_10_28,20:00,Minnesota Wild,Winnipeg Jets
-2025020158,,hockey,nhl,2025_10_28,20:15,St Louis Blues,Detroit Red Wings
-2025020159,,hockey,nhl,2025_10_28,20:30,Dallas Stars,Washington Capitals
-2025020160,,hockey,nhl,2025_10_28,20:45,Chicago Blackhawks,Ottawa Senators
-2025020161,,hockey,nhl,2025_10_28,21:00,Colorado Avalanche,New Jersey Devils
-2025020162,,hockey,nhl,2025_10_28,21:30,Edmonton Oilers,Utah Mammoth
-2025020163,,hockey,nhl,2025_10_28,22:00,Vancouver Canucks,New York Rangers
-2025020164,,hockey,nhl,2025_10_28,22:30,Seattle Kraken,Montreal Canadiens
-2025020165,,hockey,nhl,2025_10_28,23:00,San Jose Sharks,Los Angeles Kings
+2025020150,2025020150,hockey,nhl,2025_10_28,18:00,Philadelphia Flyers,Pittsburgh Penguins
+2025020151,2025020151,hockey,nhl,2025_10_28,18:00,Toronto Maple Leafs,Calgary Flames
+2025020152,2025020152,hockey,nhl,2025_10_28,18:45,Buffalo Sabres,Columbus Blue Jackets
+2025020153,2025020153,hockey,nhl,2025_10_28,19:00,Florida Panthers,Anaheim Ducks
+2025020154,2025020154,hockey,nhl,2025_10_28,19:15,Boston Bruins,New York Islanders
+2025020155,2025020155,hockey,nhl,2025_10_28,18:30,Carolina Hurricanes,Vegas Golden Knights
+2025020156,2025020156,hockey,nhl,2025_10_28,19:45,Nashville Predators,Tampa Bay Lightning
+2025020157,2025020157,hockey,nhl,2025_10_28,20:00,Minnesota Wild,Winnipeg Jets
+2025020158,2025020158,hockey,nhl,2025_10_28,20:15,St Louis Blues,Detroit Red Wings
+2025020159,2025020159,hockey,nhl,2025_10_28,20:30,Dallas Stars,Washington Capitals
+2025020160,2025020160,hockey,nhl,2025_10_28,20:45,Chicago Blackhawks,Ottawa Senators
+2025020161,2025020161,hockey,nhl,2025_10_28,21:00,Colorado Avalanche,New Jersey Devils
+2025020162,2025020162,hockey,nhl,2025_10_28,21:30,Edmonton Oilers,Utah Mammoth
+2025020163,2025020163,hockey,nhl,2025_10_28,22:00,Vancouver Canucks,New York Rangers
+2025020164,2025020164,hockey,nhl,2025_10_28,22:30,Seattle Kraken,Montreal Canadiens
+2025020165,2025020165,hockey,nhl,2025_10_28,23:00,San Jose Sharks,Los Angeles Kings

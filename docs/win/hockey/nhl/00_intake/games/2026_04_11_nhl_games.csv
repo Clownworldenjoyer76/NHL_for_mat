@@ -1,16 +1,16 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021261,,hockey,nhl,2026_04_11,12:30,Boston Bruins,Tampa Bay Lightning
-2025021262,,hockey,nhl,2026_04_11,13:00,New York Islanders,Ottawa Senators
-2025021263,,hockey,nhl,2026_04_11,15:00,Pittsburgh Penguins,Washington Capitals
-2025021264,,hockey,nhl,2026_04_11,16:00,Los Angeles Kings,Edmonton Oilers
-2025021265,,hockey,nhl,2026_04_11,17:00,Detroit Red Wings,New Jersey Devils
-2025021266,,hockey,nhl,2026_04_11,17:00,Chicago Blackhawks,St Louis Blues
-2025021267,,hockey,nhl,2026_04_11,17:00,Nashville Predators,Minnesota Wild
-2025021268,,hockey,nhl,2026_04_11,17:00,Dallas Stars,New York Rangers
-2025021269,,hockey,nhl,2026_04_11,17:00,Utah Mammoth,Carolina Hurricanes
-2025021270,,hockey,nhl,2026_04_11,19:00,Toronto Maple Leafs,Florida Panthers
-2025021271,,hockey,nhl,2026_04_11,19:00,Montreal Canadiens,Columbus Blue Jackets
-2025021272,,hockey,nhl,2026_04_11,19:00,Winnipeg Jets,Philadelphia Flyers
-2025021273,,hockey,nhl,2026_04_11,19:00,Seattle Kraken,Calgary Flames
-2025021274,,hockey,nhl,2026_04_11,20:00,Colorado Avalanche,Vegas Golden Knights
-2025021275,,hockey,nhl,2026_04_11,22:00,San Jose Sharks,Vancouver Canucks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021261,2025021261,hockey,nhl,2026_04_11,12:30,Boston Bruins,Tampa Bay Lightning
+2025021262,2025021262,hockey,nhl,2026_04_11,13:00,New York Islanders,Ottawa Senators
+2025021263,2025021263,hockey,nhl,2026_04_11,15:00,Pittsburgh Penguins,Washington Capitals
+2025021264,2025021264,hockey,nhl,2026_04_11,16:00,Los Angeles Kings,Edmonton Oilers
+2025021265,2025021265,hockey,nhl,2026_04_11,17:00,Detroit Red Wings,New Jersey Devils
+2025021266,2025021266,hockey,nhl,2026_04_11,17:00,Chicago Blackhawks,St Louis Blues
+2025021267,2025021267,hockey,nhl,2026_04_11,17:00,Nashville Predators,Minnesota Wild
+2025021268,2025021268,hockey,nhl,2026_04_11,17:00,Dallas Stars,New York Rangers
+2025021269,2025021269,hockey,nhl,2026_04_11,17:00,Utah Mammoth,Carolina Hurricanes
+2025021270,2025021270,hockey,nhl,2026_04_11,19:00,Toronto Maple Leafs,Florida Panthers
+2025021271,2025021271,hockey,nhl,2026_04_11,19:00,Montreal Canadiens,Columbus Blue Jackets
+2025021272,2025021272,hockey,nhl,2026_04_11,19:00,Winnipeg Jets,Philadelphia Flyers
+2025021273,2025021273,hockey,nhl,2026_04_11,19:00,Seattle Kraken,Calgary Flames
+2025021274,2025021274,hockey,nhl,2026_04_11,20:00,Colorado Avalanche,Vegas Golden Knights
+2025021275,2025021275,hockey,nhl,2026_04_11,22:00,San Jose Sharks,Vancouver Canucks

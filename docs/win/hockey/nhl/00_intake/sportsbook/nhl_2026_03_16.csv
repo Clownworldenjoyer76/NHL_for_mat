@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025021063,,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames,-180,+150,-1.5,+1.5,5.5,+142,-170,-125,+105,,,,,,
-2025021064,,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins,-125,+105,-1.5,+1.5,5.5,+205,-250,-125,+105,,,,,,
-2025021065,,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings,+100,-120,+1.5,-1.5,5.5,-250,+205,-130,+110,,,,,,
-2025021066,,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth,-162,+136,-1.5,+1.5,5.5,+154,-185,-125,+105,,,,,,
-2025021067,,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins,-230,+190,-1.5,+1.5,6.5,+110,-130,-120,+100,,,,,,
+2025021063,2025021063,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames,-180,+150,-1.5,+1.5,5.5,+142,-170,-125,+105,,,,,,
+2025021064,2025021064,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins,-125,+105,-1.5,+1.5,5.5,+205,-250,-125,+105,,,,,,
+2025021065,2025021065,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings,+100,-120,+1.5,-1.5,5.5,-250,+205,-130,+110,,,,,,
+2025021066,2025021066,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth,-162,+136,-1.5,+1.5,5.5,+154,-185,-125,+105,,,,,,
+2025021067,2025021067,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins,-230,+190,-1.5,+1.5,6.5,+110,-130,-120,+100,,,,,,

@@ -1,16 +1,16 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020843,,hockey,nhl,2026_01_29,19:00,Boston Bruins,Philadelphia Flyers
-2025020844,,hockey,nhl,2026_01_29,19:00,Buffalo Sabres,Los Angeles Kings
-2025020845,,hockey,nhl,2026_01_29,19:00,Montreal Canadiens,Colorado Avalanche
-2025020847,,hockey,nhl,2026_01_29,19:00,Tampa Bay Lightning,Winnipeg Jets
-2025020848,,hockey,nhl,2026_01_29,19:00,New Jersey Devils,Nashville Predators
-2025020849,,hockey,nhl,2026_01_29,19:00,New York Rangers,New York Islanders
-2025020850,,hockey,nhl,2026_01_29,19:00,Pittsburgh Penguins,Chicago Blackhawks
-2025020851,,hockey,nhl,2026_01_29,19:00,Carolina Hurricanes,Utah Mammoth
-2025020846,,hockey,nhl,2026_01_29,19:30,Detroit Red Wings,Washington Capitals
-2025020852,,hockey,nhl,2026_01_29,20:00,St Louis Blues,Florida Panthers
-2025020853,,hockey,nhl,2026_01_29,20:00,Minnesota Wild,Calgary Flames
-2025020854,,hockey,nhl,2026_01_29,21:00,Edmonton Oilers,San Jose Sharks
-2025020855,,hockey,nhl,2026_01_29,22:00,Vancouver Canucks,Anaheim Ducks
-2025020856,,hockey,nhl,2026_01_29,22:00,Vegas Golden Knights,Dallas Stars
-2025020857,,hockey,nhl,2026_01_29,22:00,Seattle Kraken,Toronto Maple Leafs
+2025020843,2025020843,hockey,nhl,2026_01_29,19:00,Boston Bruins,Philadelphia Flyers
+2025020844,2025020844,hockey,nhl,2026_01_29,19:00,Buffalo Sabres,Los Angeles Kings
+2025020845,2025020845,hockey,nhl,2026_01_29,19:00,Montreal Canadiens,Colorado Avalanche
+2025020846,2025020846,hockey,nhl,2026_01_29,19:30,Detroit Red Wings,Washington Capitals
+2025020847,2025020847,hockey,nhl,2026_01_29,19:00,Tampa Bay Lightning,Winnipeg Jets
+2025020848,2025020848,hockey,nhl,2026_01_29,19:00,New Jersey Devils,Nashville Predators
+2025020849,2025020849,hockey,nhl,2026_01_29,19:00,New York Rangers,New York Islanders
+2025020850,2025020850,hockey,nhl,2026_01_29,19:00,Pittsburgh Penguins,Chicago Blackhawks
+2025020851,2025020851,hockey,nhl,2026_01_29,19:00,Carolina Hurricanes,Utah Mammoth
+2025020852,2025020852,hockey,nhl,2026_01_29,20:00,St Louis Blues,Florida Panthers
+2025020853,2025020853,hockey,nhl,2026_01_29,20:00,Minnesota Wild,Calgary Flames
+2025020854,2025020854,hockey,nhl,2026_01_29,21:00,Edmonton Oilers,San Jose Sharks
+2025020855,2025020855,hockey,nhl,2026_01_29,22:00,Vancouver Canucks,Anaheim Ducks
+2025020856,2025020856,hockey,nhl,2026_01_29,22:00,Vegas Golden Knights,Dallas Stars
+2025020857,2025020857,hockey,nhl,2026_01_29,22:00,Seattle Kraken,Toronto Maple Leafs

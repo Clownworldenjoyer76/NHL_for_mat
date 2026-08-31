@@ -1,8 +1,8 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021222,,hockey,nhl,2026_04_05,13:00,Detroit Red Wings,Minnesota Wild
-2025021223,,hockey,nhl,2026_04_05,15:00,Pittsburgh Penguins,Florida Panthers
-2025021224,,hockey,nhl,2026_04_05,15:30,Philadelphia Flyers,Boston Bruins
-2025021225,,hockey,nhl,2026_04_05,17:00,Ottawa Senators,Carolina Hurricanes
-2025021226,,hockey,nhl,2026_04_05,19:00,Montreal Canadiens,New Jersey Devils
-2025021227,,hockey,nhl,2026_04_05,19:00,New York Rangers,Washington Capitals
-2025021228,,hockey,nhl,2026_04_05,21:30,Colorado Avalanche,St Louis Blues
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021222,2025021222,hockey,nhl,2026_04_05,13:00,Detroit Red Wings,Minnesota Wild
+2025021223,2025021223,hockey,nhl,2026_04_05,15:00,Pittsburgh Penguins,Florida Panthers
+2025021224,2025021224,hockey,nhl,2026_04_05,15:30,Philadelphia Flyers,Boston Bruins
+2025021225,2025021225,hockey,nhl,2026_04_05,17:00,Ottawa Senators,Carolina Hurricanes
+2025021226,2025021226,hockey,nhl,2026_04_05,19:00,Montreal Canadiens,New Jersey Devils
+2025021227,2025021227,hockey,nhl,2026_04_05,19:00,New York Rangers,Washington Capitals
+2025021228,2025021228,hockey,nhl,2026_04_05,21:30,Colorado Avalanche,St Louis Blues

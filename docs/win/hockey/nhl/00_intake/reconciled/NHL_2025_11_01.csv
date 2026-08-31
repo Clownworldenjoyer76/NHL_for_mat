@@ -1,14 +1,14 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020181,,hockey,nhl,2025_11_01,13:00,Boston Bruins,Carolina Hurricanes
-2025020182,,hockey,nhl,2025_11_01,15:00,Winnipeg Jets,Pittsburgh Penguins
-2025020183,,hockey,nhl,2025_11_01,15:30,Nashville Predators,Calgary Flames
-2025020184,,hockey,nhl,2025_11_01,16:00,San Jose Sharks,Colorado Avalanche
-2025020185,,hockey,nhl,2025_11_01,18:00,Florida Panthers,Dallas Stars
-2025020186,,hockey,nhl,2025_11_01,19:00,Buffalo Sabres,Washington Capitals
-2025020187,,hockey,nhl,2025_11_01,19:00,Montreal Canadiens,Ottawa Senators
-2025020188,,hockey,nhl,2025_11_01,19:00,Philadelphia Flyers,Toronto Maple Leafs
-2025020189,,hockey,nhl,2025_11_01,19:00,Columbus Blue Jackets,St Louis Blues
-2025020190,,hockey,nhl,2025_11_01,19:00,Minnesota Wild,Vancouver Canucks
-2025020191,,hockey,nhl,2025_11_01,21:00,Los Angeles Kings,New Jersey Devils
-2025020192,,hockey,nhl,2025_11_01,22:00,Edmonton Oilers,Chicago Blackhawks
-2025020193,,hockey,nhl,2025_11_01,22:00,Seattle Kraken,New York Rangers
+2025020181,2025020181,hockey,nhl,2025_11_01,13:00,Boston Bruins,Carolina Hurricanes
+2025020182,2025020182,hockey,nhl,2025_11_01,15:00,Winnipeg Jets,Pittsburgh Penguins
+2025020183,2025020183,hockey,nhl,2025_11_01,15:30,Nashville Predators,Calgary Flames
+2025020184,2025020184,hockey,nhl,2025_11_01,16:00,San Jose Sharks,Colorado Avalanche
+2025020185,2025020185,hockey,nhl,2025_11_01,18:00,Florida Panthers,Dallas Stars
+2025020186,2025020186,hockey,nhl,2025_11_01,19:00,Buffalo Sabres,Washington Capitals
+2025020187,2025020187,hockey,nhl,2025_11_01,19:00,Montreal Canadiens,Ottawa Senators
+2025020188,2025020188,hockey,nhl,2025_11_01,19:00,Philadelphia Flyers,Toronto Maple Leafs
+2025020189,2025020189,hockey,nhl,2025_11_01,19:00,Columbus Blue Jackets,St Louis Blues
+2025020190,2025020190,hockey,nhl,2025_11_01,19:00,Minnesota Wild,Vancouver Canucks
+2025020191,2025020191,hockey,nhl,2025_11_01,21:00,Los Angeles Kings,New Jersey Devils
+2025020192,2025020192,hockey,nhl,2025_11_01,22:00,Edmonton Oilers,Chicago Blackhawks
+2025020193,2025020193,hockey,nhl,2025_11_01,22:00,Seattle Kraken,New York Rangers

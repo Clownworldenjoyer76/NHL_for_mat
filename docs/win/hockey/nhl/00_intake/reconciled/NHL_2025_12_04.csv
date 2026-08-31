@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020426,,hockey,nhl,2025_12_04,19:00,Boston Bruins,St Louis Blues
-2025020427,,hockey,nhl,2025_12_04,19:00,Ottawa Senators,New York Rangers
-2025020428,,hockey,nhl,2025_12_04,19:00,Tampa Bay Lightning,Pittsburgh Penguins
-2025020429,,hockey,nhl,2025_12_04,19:00,Florida Panthers,Nashville Predators
-2025020430,,hockey,nhl,2025_12_04,19:00,New York Islanders,Colorado Avalanche
-2025020431,,hockey,nhl,2025_12_04,19:00,Carolina Hurricanes,Toronto Maple Leafs
-2025020432,,hockey,nhl,2025_12_04,19:30,Columbus Blue Jackets,Detroit Red Wings
-2025020433,,hockey,nhl,2025_12_04,21:00,Calgary Flames,Minnesota Wild
-2025020434,,hockey,nhl,2025_12_04,21:00,Edmonton Oilers,Seattle Kraken
-2025020435,,hockey,nhl,2025_12_04,22:00,Los Angeles Kings,Chicago Blackhawks
+2025020426,2025020426,hockey,nhl,2025_12_04,19:00,Boston Bruins,St Louis Blues
+2025020427,2025020427,hockey,nhl,2025_12_04,19:00,Ottawa Senators,New York Rangers
+2025020428,2025020428,hockey,nhl,2025_12_04,19:00,Tampa Bay Lightning,Pittsburgh Penguins
+2025020429,2025020429,hockey,nhl,2025_12_04,19:00,Florida Panthers,Nashville Predators
+2025020430,2025020430,hockey,nhl,2025_12_04,19:00,New York Islanders,Colorado Avalanche
+2025020431,2025020431,hockey,nhl,2025_12_04,19:00,Carolina Hurricanes,Toronto Maple Leafs
+2025020432,2025020432,hockey,nhl,2025_12_04,19:30,Columbus Blue Jackets,Detroit Red Wings
+2025020433,2025020433,hockey,nhl,2025_12_04,21:00,Calgary Flames,Minnesota Wild
+2025020434,2025020434,hockey,nhl,2025_12_04,21:00,Edmonton Oilers,Seattle Kraken
+2025020435,2025020435,hockey,nhl,2025_12_04,22:00,Los Angeles Kings,Chicago Blackhawks

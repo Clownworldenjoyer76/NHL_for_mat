@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020072,,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning
-2025020073,,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild
-2025020074,,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks
-2025020075,,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks
+2025020072,2025020072,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning
+2025020073,2025020073,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild
+2025020074,2025020074,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks
+2025020075,2025020075,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks

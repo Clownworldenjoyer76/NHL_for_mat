@@ -1,4 +1,4 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025030134,,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes,105,-125,1.5,-1.5,5.5,-250,205,-120,100,2.05,1.8,1.4,3.05,1.83,2.0
-2025030164,,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars,-135,114,-1.5,1.5,5.5,180,-217,-135,114,1.74,2.14,2.8,1.46,1.74,2.14
-2025030144,,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins,-120,100,-1.5,1.5,5.5,210,-256,-122,102,1.83,2.0,3.1,1.39,1.82,2.02
+2025030134,2025030134,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes,105,-125,1.5,-1.5,5.5,-250,205,-120,100,2.05,1.8,1.4,3.05,1.83,2.0
+2025030144,2025030144,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins,-120,100,-1.5,1.5,5.5,210,-256,-122,102,1.83,2.0,3.1,1.39,1.82,2.02
+2025030164,2025030164,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars,-135,114,-1.5,1.5,5.5,180,-217,-135,114,1.74,2.14,2.8,1.46,1.74,2.14

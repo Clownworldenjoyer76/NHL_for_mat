@@ -1,12 +1,12 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020959,,hockey,nhl,2026_03_03,19:00,Boston Bruins,Pittsburgh Penguins
-2025020960,,hockey,nhl,2026_03_03,19:00,Buffalo Sabres,Vegas Golden Knights
-2025020961,,hockey,nhl,2026_03_03,19:00,New Jersey Devils,Florida Panthers
-2025020962,,hockey,nhl,2026_03_03,19:00,Washington Capitals,Utah Mammoth
-2025020963,,hockey,nhl,2026_03_03,19:00,Columbus Blue Jackets,Nashville Predators
-2025020964,,hockey,nhl,2026_03_03,20:00,Winnipeg Jets,Chicago Blackhawks
-2025020965,,hockey,nhl,2026_03_03,21:00,Calgary Flames,Dallas Stars
-2025020966,,hockey,nhl,2026_03_03,21:00,Edmonton Oilers,Ottawa Senators
-2025020967,,hockey,nhl,2026_03_03,21:30,Minnesota Wild,Tampa Bay Lightning
-2025020968,,hockey,nhl,2026_03_03,22:00,Anaheim Ducks,Colorado Avalanche
-2025020969,,hockey,nhl,2026_03_03,22:00,San Jose Sharks,Montreal Canadiens
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020959,2025020959,hockey,nhl,2026_03_03,19:00,Boston Bruins,Pittsburgh Penguins
+2025020960,2025020960,hockey,nhl,2026_03_03,19:00,Buffalo Sabres,Vegas Golden Knights
+2025020961,2025020961,hockey,nhl,2026_03_03,19:00,New Jersey Devils,Florida Panthers
+2025020962,2025020962,hockey,nhl,2026_03_03,19:00,Washington Capitals,Utah Mammoth
+2025020963,2025020963,hockey,nhl,2026_03_03,19:00,Columbus Blue Jackets,Nashville Predators
+2025020964,2025020964,hockey,nhl,2026_03_03,20:00,Winnipeg Jets,Chicago Blackhawks
+2025020965,2025020965,hockey,nhl,2026_03_03,21:00,Calgary Flames,Dallas Stars
+2025020966,2025020966,hockey,nhl,2026_03_03,21:00,Edmonton Oilers,Ottawa Senators
+2025020967,2025020967,hockey,nhl,2026_03_03,21:30,Minnesota Wild,Tampa Bay Lightning
+2025020968,2025020968,hockey,nhl,2026_03_03,22:00,Anaheim Ducks,Colorado Avalanche
+2025020969,2025020969,hockey,nhl,2026_03_03,22:00,San Jose Sharks,Montreal Canadiens

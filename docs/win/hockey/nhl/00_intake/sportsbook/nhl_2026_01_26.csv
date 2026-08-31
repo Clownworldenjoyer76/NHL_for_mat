@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020825,,hockey,nhl,2026_01_26,19:00,Tampa Bay Lightning,Utah Mammoth,-175,145,-1.5,+1.5,6.0,+153,-175,-115,-105,,,,,,
-2025020826,,hockey,nhl,2026_01_26,19:00,New York Rangers,Boston Bruins,-115,-105,+1.5,-1.5,6.0,-250,+207,-120,100,,,,,,
-2025020827,,hockey,nhl,2026_01_26,19:00,Philadelphia Flyers,New York Islanders,-120,100,-1.5,+1.5,5.5,+215,-260,-120,100,,,,,,
-2025020829,,hockey,nhl,2026_01_26,20:30,Edmonton Oilers,Anaheim Ducks,-275,220,-1.5,+1.5,6.5,-105,-115,-145,118,,,,,,
+2025020825,2025020825,hockey,nhl,2026_01_26,19:00,Tampa Bay Lightning,Utah Mammoth,-175,145,-1.5,+1.5,6.0,+153,-175,-115,-105,,,,,,
+2025020826,2025020826,hockey,nhl,2026_01_26,19:00,New York Rangers,Boston Bruins,-115,-105,+1.5,-1.5,6.0,-250,+207,-120,100,,,,,,
+2025020827,2025020827,hockey,nhl,2026_01_26,19:00,Philadelphia Flyers,New York Islanders,-120,100,-1.5,+1.5,5.5,+215,-260,-120,100,,,,,,
+2025020829,2025020829,hockey,nhl,2026_01_26,20:30,Edmonton Oilers,Anaheim Ducks,-275,220,-1.5,+1.5,6.5,-105,-115,-145,118,,,,,,

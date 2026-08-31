@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020749,,hockey,nhl,2026_01_16,19:00,Detroit Red Wings,San Jose Sharks
-2025020750,,hockey,nhl,2026_01_16,19:00,Carolina Hurricanes,Florida Panthers
-2025020751,,hockey,nhl,2026_01_16,20:00,St Louis Blues,Tampa Bay Lightning
-2025020752,,hockey,nhl,2026_01_16,21:00,Colorado Avalanche,Nashville Predators
-2025020753,,hockey,nhl,2026_01_16,22:30,Los Angeles Kings,Anaheim Ducks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020749,2025020749,hockey,nhl,2026_01_16,19:00,Detroit Red Wings,San Jose Sharks
+2025020750,2025020750,hockey,nhl,2026_01_16,19:00,Carolina Hurricanes,Florida Panthers
+2025020751,2025020751,hockey,nhl,2026_01_16,20:00,St Louis Blues,Tampa Bay Lightning
+2025020752,2025020752,hockey,nhl,2026_01_16,21:00,Colorado Avalanche,Nashville Predators
+2025020753,2025020753,hockey,nhl,2026_01_16,22:30,Los Angeles Kings,Anaheim Ducks

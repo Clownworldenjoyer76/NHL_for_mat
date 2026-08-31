@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020057,,hockey,nhl,2025_10_15,19:00,Buffalo Sabres,Ottawa Senators
-2025020058,,hockey,nhl,2025_10_15,19:00,Detroit Red Wings,Florida Panthers
-2025020059,,hockey,nhl,2025_10_15,21:30,St Louis Blues,Chicago Blackhawks
-2025020060,,hockey,nhl,2025_10_15,21:30,Utah Mammoth,Calgary Flames
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020057,2025020057,hockey,nhl,2025_10_15,19:00,Buffalo Sabres,Ottawa Senators
+2025020058,2025020058,hockey,nhl,2025_10_15,19:00,Detroit Red Wings,Florida Panthers
+2025020059,2025020059,hockey,nhl,2025_10_15,21:30,St Louis Blues,Chicago Blackhawks
+2025020060,2025020060,hockey,nhl,2025_10_15,21:30,Utah Mammoth,Calgary Flames

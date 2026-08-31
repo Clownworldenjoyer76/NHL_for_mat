@@ -1,9 +1,9 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020140,,hockey,nhl,2025_10_26,13:00,New Jersey Devils,Colorado Avalanche
-2025020141,,hockey,nhl,2025_10_26,17:00,Tampa Bay Lightning,Vegas Golden Knights
-2025020142,,hockey,nhl,2025_10_26,18:00,Minnesota Wild,San Jose Sharks
-2025020143,,hockey,nhl,2025_10_26,18:00,Winnipeg Jets,Utah Mammoth
-2025020144,,hockey,nhl,2025_10_26,19:00,Chicago Blackhawks,Los Angeles Kings
-2025020145,,hockey,nhl,2025_10_26,19:00,Nashville Predators,Dallas Stars
-2025020146,,hockey,nhl,2025_10_26,20:00,Calgary Flames,New York Rangers
-2025020147,,hockey,nhl,2025_10_26,22:00,Vancouver Canucks,Edmonton Oilers
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020140,2025020140,hockey,nhl,2025_10_26,13:00,New Jersey Devils,Colorado Avalanche
+2025020141,2025020141,hockey,nhl,2025_10_26,17:00,Tampa Bay Lightning,Vegas Golden Knights
+2025020142,2025020142,hockey,nhl,2025_10_26,18:00,Minnesota Wild,San Jose Sharks
+2025020143,2025020143,hockey,nhl,2025_10_26,18:00,Winnipeg Jets,Utah Mammoth
+2025020144,2025020144,hockey,nhl,2025_10_26,19:00,Chicago Blackhawks,Los Angeles Kings
+2025020145,2025020145,hockey,nhl,2025_10_26,19:00,Nashville Predators,Dallas Stars
+2025020146,2025020146,hockey,nhl,2025_10_26,20:00,Calgary Flames,New York Rangers
+2025020147,2025020147,hockey,nhl,2025_10_26,22:00,Vancouver Canucks,Edmonton Oilers

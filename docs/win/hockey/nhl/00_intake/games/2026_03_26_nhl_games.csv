@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021137,,hockey,nhl,2026_03_26,19:00,Montreal Canadiens,Columbus Blue Jackets
-2025021138,,hockey,nhl,2026_03_26,19:00,Ottawa Senators,Pittsburgh Penguins
-2025021139,,hockey,nhl,2026_03_26,19:00,Tampa Bay Lightning,Seattle Kraken
-2025021140,,hockey,nhl,2026_03_26,19:00,Florida Panthers,Minnesota Wild
-2025021141,,hockey,nhl,2026_03_26,19:00,New York Islanders,Dallas Stars
-2025021142,,hockey,nhl,2026_03_26,19:00,Philadelphia Flyers,Chicago Blackhawks
-2025021143,,hockey,nhl,2026_03_26,20:00,St Louis Blues,San Jose Sharks
-2025021144,,hockey,nhl,2026_03_26,20:00,Nashville Predators,New Jersey Devils
-2025021145,,hockey,nhl,2026_03_26,20:00,Winnipeg Jets,Colorado Avalanche
-2025021146,,hockey,nhl,2026_03_26,21:00,Utah Mammoth,Washington Capitals
-2025021147,,hockey,nhl,2026_03_26,21:00,Calgary Flames,Anaheim Ducks
-2025021148,,hockey,nhl,2026_03_26,21:30,Vegas Golden Knights,Edmonton Oilers
-2025021149,,hockey,nhl,2026_03_26,22:00,Vancouver Canucks,Los Angeles Kings
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021137,2025021137,hockey,nhl,2026_03_26,19:00,Montreal Canadiens,Columbus Blue Jackets
+2025021138,2025021138,hockey,nhl,2026_03_26,19:00,Ottawa Senators,Pittsburgh Penguins
+2025021139,2025021139,hockey,nhl,2026_03_26,19:00,Tampa Bay Lightning,Seattle Kraken
+2025021140,2025021140,hockey,nhl,2026_03_26,19:00,Florida Panthers,Minnesota Wild
+2025021141,2025021141,hockey,nhl,2026_03_26,19:00,New York Islanders,Dallas Stars
+2025021142,2025021142,hockey,nhl,2026_03_26,19:00,Philadelphia Flyers,Chicago Blackhawks
+2025021143,2025021143,hockey,nhl,2026_03_26,20:00,St Louis Blues,San Jose Sharks
+2025021144,2025021144,hockey,nhl,2026_03_26,20:00,Nashville Predators,New Jersey Devils
+2025021145,2025021145,hockey,nhl,2026_03_26,20:00,Winnipeg Jets,Colorado Avalanche
+2025021146,2025021146,hockey,nhl,2026_03_26,21:00,Utah Mammoth,Washington Capitals
+2025021147,2025021147,hockey,nhl,2026_03_26,21:00,Calgary Flames,Anaheim Ducks
+2025021148,2025021148,hockey,nhl,2026_03_26,21:30,Vegas Golden Knights,Edmonton Oilers
+2025021149,2025021149,hockey,nhl,2026_03_26,22:00,Vancouver Canucks,Los Angeles Kings

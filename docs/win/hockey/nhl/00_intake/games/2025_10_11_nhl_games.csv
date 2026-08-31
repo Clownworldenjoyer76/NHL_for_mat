@@ -1,17 +1,17 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020022,,hockey,nhl,2025_10_11,13:30,Winnipeg Jets,Los Angeles Kings
-2025020023,,hockey,nhl,2025_10_11,16:00,Calgary Flames,St Louis Blues
-2025020024,,hockey,nhl,2025_10_11,19:00,Boston Bruins,Buffalo Sabres
-2025020025,,hockey,nhl,2025_10_11,19:00,Detroit Red Wings,Toronto Maple Leafs
-2025020026,,hockey,nhl,2025_10_11,19:00,Tampa Bay Lightning,New Jersey Devils
-2025020027,,hockey,nhl,2025_10_11,19:00,Florida Panthers,Ottawa Senators
-2025020028,,hockey,nhl,2025_10_11,19:00,New York Islanders,Washington Capitals
-2025020029,,hockey,nhl,2025_10_11,19:00,Pittsburgh Penguins,New York Rangers
-2025020030,,hockey,nhl,2025_10_11,19:00,Carolina Hurricanes,Philadelphia Flyers
-2025020031,,hockey,nhl,2025_10_11,19:00,Chicago Blackhawks,Montreal Canadiens
-2025020032,,hockey,nhl,2025_10_11,20:00,Nashville Predators,Utah Mammoth
-2025020033,,hockey,nhl,2025_10_11,20:00,Minnesota Wild,Columbus Blue Jackets
-2025020034,,hockey,nhl,2025_10_11,21:00,Colorado Avalanche,Dallas Stars
-2025020035,,hockey,nhl,2025_10_11,22:00,Edmonton Oilers,Vancouver Canucks
-2025020036,,hockey,nhl,2025_10_11,22:00,San Jose Sharks,Anaheim Ducks
-2025020037,,hockey,nhl,2025_10_11,22:00,Seattle Kraken,Vegas Golden Knights
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020022,2025020022,hockey,nhl,2025_10_11,13:30,Winnipeg Jets,Los Angeles Kings
+2025020023,2025020023,hockey,nhl,2025_10_11,16:00,Calgary Flames,St Louis Blues
+2025020024,2025020024,hockey,nhl,2025_10_11,19:00,Boston Bruins,Buffalo Sabres
+2025020025,2025020025,hockey,nhl,2025_10_11,19:00,Detroit Red Wings,Toronto Maple Leafs
+2025020026,2025020026,hockey,nhl,2025_10_11,19:00,Tampa Bay Lightning,New Jersey Devils
+2025020027,2025020027,hockey,nhl,2025_10_11,19:00,Florida Panthers,Ottawa Senators
+2025020028,2025020028,hockey,nhl,2025_10_11,19:00,New York Islanders,Washington Capitals
+2025020029,2025020029,hockey,nhl,2025_10_11,19:00,Pittsburgh Penguins,New York Rangers
+2025020030,2025020030,hockey,nhl,2025_10_11,19:00,Carolina Hurricanes,Philadelphia Flyers
+2025020031,2025020031,hockey,nhl,2025_10_11,19:00,Chicago Blackhawks,Montreal Canadiens
+2025020032,2025020032,hockey,nhl,2025_10_11,20:00,Nashville Predators,Utah Mammoth
+2025020033,2025020033,hockey,nhl,2025_10_11,20:00,Minnesota Wild,Columbus Blue Jackets
+2025020034,2025020034,hockey,nhl,2025_10_11,21:00,Colorado Avalanche,Dallas Stars
+2025020035,2025020035,hockey,nhl,2025_10_11,22:00,Edmonton Oilers,Vancouver Canucks
+2025020036,2025020036,hockey,nhl,2025_10_11,22:00,San Jose Sharks,Anaheim Ducks
+2025020037,2025020037,hockey,nhl,2025_10_11,22:00,Seattle Kraken,Vegas Golden Knights

@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020421,,hockey,nhl,2025_12_03,19:00,New Jersey Devils,Dallas Stars,-120,100,-1.5,+1.5,5.5,+215,-260,-120,100,,,,,,
-2025020422,,hockey,nhl,2025_12_03,19:30,Montreal Canadiens,Winnipeg Jets,-105,-115,-1.5,+1.5,6.0,+219,-265,-125,105,,,,,,
-2025020423,,hockey,nhl,2025_12_03,19:30,Philadelphia Flyers,Buffalo Sabres,-140,115,-1.5,+1.5,6.0,+211,-255,-110,-110,,,,,,
-2025020424,,hockey,nhl,2025_12_03,22:00,Anaheim Ducks,Utah Mammoth,-110,-110,-1.5,+1.5,6.5,+222,-270,-110,-110,,,,,,
-2025020425,,hockey,nhl,2025_12_03,22:00,San Jose Sharks,Washington Capitals,125,-150,+1.5,-1.5,6.0,-200,+174,-110,-110,,,,,,
+2025020421,2025020421,hockey,nhl,2025_12_03,19:00,New Jersey Devils,Dallas Stars,-120,100,-1.5,+1.5,5.5,+215,-260,-120,100,,,,,,
+2025020422,2025020422,hockey,nhl,2025_12_03,19:30,Montreal Canadiens,Winnipeg Jets,-105,-115,-1.5,+1.5,6.0,+219,-265,-125,105,,,,,,
+2025020423,2025020423,hockey,nhl,2025_12_03,19:30,Philadelphia Flyers,Buffalo Sabres,-140,115,-1.5,+1.5,6.0,+211,-255,-110,-110,,,,,,
+2025020424,2025020424,hockey,nhl,2025_12_03,22:00,Anaheim Ducks,Utah Mammoth,-110,-110,-1.5,+1.5,6.5,+222,-270,-110,-110,,,,,,
+2025020425,2025020425,hockey,nhl,2025_12_03,22:00,San Jose Sharks,Washington Capitals,125,-150,+1.5,-1.5,6.0,-200,+174,-110,-110,,,,,,

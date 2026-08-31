@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020544,,hockey,nhl,2025_12_19,19:00,Florida Panthers,Carolina Hurricanes,-105,-115,+1.5,-1.5,5.5,-245,+203,-125,105,,,,,,
-2025020545,,hockey,nhl,2025_12_19,19:00,New York Islanders,Vancouver Canucks,-145,120,-1.5,+1.5,5.5,+183,-215,-125,105,,,,,,
-2025020546,,hockey,nhl,2025_12_19,21:00,Colorado Avalanche,Winnipeg Jets,-235,190,-1.5,+1.5,6.0,+105,-125,-105,-115,,,,,,
-2025020547,,hockey,nhl,2025_12_19,21:00,Utah Mammoth,New Jersey Devils,-135,110,-1.5,+1.5,5.5,+186,-220,-118,-102,,,,,,
-2025020548,,hockey,nhl,2025_12_19,22:00,Anaheim Ducks,Dallas Stars,-105,-115,+1.5,-1.5,6.0,-252,+209,-118,-102,,,,,,
+2025020544,2025020544,hockey,nhl,2025_12_19,19:00,Florida Panthers,Carolina Hurricanes,-105,-115,+1.5,-1.5,5.5,-245,+203,-125,105,,,,,,
+2025020545,2025020545,hockey,nhl,2025_12_19,19:00,New York Islanders,Vancouver Canucks,-145,120,-1.5,+1.5,5.5,+183,-215,-125,105,,,,,,
+2025020546,2025020546,hockey,nhl,2025_12_19,21:00,Colorado Avalanche,Winnipeg Jets,-235,190,-1.5,+1.5,6.0,+105,-125,-105,-115,,,,,,
+2025020547,2025020547,hockey,nhl,2025_12_19,21:00,Utah Mammoth,New Jersey Devils,-135,110,-1.5,+1.5,5.5,+186,-220,-118,-102,,,,,,
+2025020548,2025020548,hockey,nhl,2025_12_19,22:00,Anaheim Ducks,Dallas Stars,-105,-115,+1.5,-1.5,6.0,-252,+209,-118,-102,,,,,,

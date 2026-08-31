@@ -1,14 +1,14 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021012,,hockey,nhl,2026_03_10,19:00,Boston Bruins,Los Angeles Kings
-2025021013,,hockey,nhl,2026_03_10,19:00,Buffalo Sabres,San Jose Sharks
-2025021014,,hockey,nhl,2026_03_10,19:00,Montreal Canadiens,Toronto Maple Leafs
-2025021015,,hockey,nhl,2026_03_10,19:00,Tampa Bay Lightning,Columbus Blue Jackets
-2025021016,,hockey,nhl,2026_03_10,19:00,Florida Panthers,Detroit Red Wings
-2025021017,,hockey,nhl,2026_03_10,19:00,New York Rangers,Calgary Flames
-2025021018,,hockey,nhl,2026_03_10,19:00,Carolina Hurricanes,Pittsburgh Penguins
-2025021019,,hockey,nhl,2026_03_10,19:30,St Louis Blues,New York Islanders
-2025021020,,hockey,nhl,2026_03_10,20:00,Dallas Stars,Vegas Golden Knights
-2025021021,,hockey,nhl,2026_03_10,20:00,Minnesota Wild,Utah Mammoth
-2025021022,,hockey,nhl,2026_03_10,20:30,Winnipeg Jets,Anaheim Ducks
-2025021023,,hockey,nhl,2026_03_10,22:00,Colorado Avalanche,Edmonton Oilers
-2025021024,,hockey,nhl,2026_03_10,22:00,Seattle Kraken,Nashville Predators
+2025021012,2025021012,hockey,nhl,2026_03_10,19:00,Boston Bruins,Los Angeles Kings
+2025021013,2025021013,hockey,nhl,2026_03_10,19:00,Buffalo Sabres,San Jose Sharks
+2025021014,2025021014,hockey,nhl,2026_03_10,19:00,Montreal Canadiens,Toronto Maple Leafs
+2025021015,2025021015,hockey,nhl,2026_03_10,19:00,Tampa Bay Lightning,Columbus Blue Jackets
+2025021016,2025021016,hockey,nhl,2026_03_10,19:00,Florida Panthers,Detroit Red Wings
+2025021017,2025021017,hockey,nhl,2026_03_10,19:00,New York Rangers,Calgary Flames
+2025021018,2025021018,hockey,nhl,2026_03_10,19:00,Carolina Hurricanes,Pittsburgh Penguins
+2025021019,2025021019,hockey,nhl,2026_03_10,19:30,St Louis Blues,New York Islanders
+2025021020,2025021020,hockey,nhl,2026_03_10,20:00,Dallas Stars,Vegas Golden Knights
+2025021021,2025021021,hockey,nhl,2026_03_10,20:00,Minnesota Wild,Utah Mammoth
+2025021022,2025021022,hockey,nhl,2026_03_10,20:30,Winnipeg Jets,Anaheim Ducks
+2025021023,2025021023,hockey,nhl,2026_03_10,22:00,Colorado Avalanche,Edmonton Oilers
+2025021024,2025021024,hockey,nhl,2026_03_10,22:00,Seattle Kraken,Nashville Predators

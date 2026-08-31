@@ -1,15 +1,15 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020859,,hockey,nhl,2026_01_31,12:30,Philadelphia Flyers,Los Angeles Kings
-2025020860,,hockey,nhl,2026_01_31,13:00,Detroit Red Wings,Colorado Avalanche
-2025020861,,hockey,nhl,2026_01_31,15:30,Pittsburgh Penguins,New York Rangers
-2025020862,,hockey,nhl,2026_01_31,16:00,Florida Panthers,Winnipeg Jets
-2025020863,,hockey,nhl,2026_01_31,16:00,Calgary Flames,San Jose Sharks
-2025020864,,hockey,nhl,2026_01_31,17:00,Washington Capitals,Carolina Hurricanes
-2025020865,,hockey,nhl,2026_01_31,19:00,Buffalo Sabres,Montreal Canadiens
-2025020866,,hockey,nhl,2026_01_31,19:00,Ottawa Senators,New Jersey Devils
-2025020867,,hockey,nhl,2026_01_31,19:00,New York Islanders,Nashville Predators
-2025020868,,hockey,nhl,2026_01_31,19:00,St Louis Blues,Columbus Blue Jackets
-2025020869,,hockey,nhl,2026_01_31,19:00,Vancouver Canucks,Toronto Maple Leafs
-2025020870,,hockey,nhl,2026_01_31,21:00,Utah Mammoth,Dallas Stars
-2025020871,,hockey,nhl,2026_01_31,22:00,Edmonton Oilers,Minnesota Wild
-2025020872,,hockey,nhl,2026_01_31,22:00,Vegas Golden Knights,Seattle Kraken
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020859,2025020859,hockey,nhl,2026_01_31,12:30,Philadelphia Flyers,Los Angeles Kings
+2025020860,2025020860,hockey,nhl,2026_01_31,13:00,Detroit Red Wings,Colorado Avalanche
+2025020861,2025020861,hockey,nhl,2026_01_31,15:30,Pittsburgh Penguins,New York Rangers
+2025020862,2025020862,hockey,nhl,2026_01_31,16:00,Florida Panthers,Winnipeg Jets
+2025020863,2025020863,hockey,nhl,2026_01_31,16:00,Calgary Flames,San Jose Sharks
+2025020864,2025020864,hockey,nhl,2026_01_31,17:00,Washington Capitals,Carolina Hurricanes
+2025020865,2025020865,hockey,nhl,2026_01_31,19:00,Buffalo Sabres,Montreal Canadiens
+2025020866,2025020866,hockey,nhl,2026_01_31,19:00,Ottawa Senators,New Jersey Devils
+2025020867,2025020867,hockey,nhl,2026_01_31,19:00,New York Islanders,Nashville Predators
+2025020868,2025020868,hockey,nhl,2026_01_31,19:00,St Louis Blues,Columbus Blue Jackets
+2025020869,2025020869,hockey,nhl,2026_01_31,19:00,Vancouver Canucks,Toronto Maple Leafs
+2025020870,2025020870,hockey,nhl,2026_01_31,21:00,Utah Mammoth,Dallas Stars
+2025020871,2025020871,hockey,nhl,2026_01_31,22:00,Edmonton Oilers,Minnesota Wild
+2025020872,2025020872,hockey,nhl,2026_01_31,22:00,Vegas Golden Knights,Seattle Kraken

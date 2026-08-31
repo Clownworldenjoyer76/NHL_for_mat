@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021063,,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames
-2025021064,,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins
-2025021065,,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings
-2025021066,,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth
-2025021067,,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins
+2025021063,2025021063,hockey,nhl,2026_03_16,19:00,Detroit Red Wings,Calgary Flames
+2025021064,2025021064,hockey,nhl,2026_03_16,19:00,New Jersey Devils,Boston Bruins
+2025021065,2025021065,hockey,nhl,2026_03_16,19:00,New York Rangers,Los Angeles Kings
+2025021066,2025021066,hockey,nhl,2026_03_16,20:00,Dallas Stars,Utah Mammoth
+2025021067,2025021067,hockey,nhl,2026_03_16,21:30,Colorado Avalanche,Pittsburgh Penguins

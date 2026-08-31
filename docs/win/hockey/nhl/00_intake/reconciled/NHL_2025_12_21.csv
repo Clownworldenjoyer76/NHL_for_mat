@@ -1,10 +1,10 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020562,,hockey,nhl,2025_12_21,13:00,Detroit Red Wings,Washington Capitals
-2025020563,,hockey,nhl,2025_12_21,18:00,Minnesota Wild,Colorado Avalanche
-2025020564,,hockey,nhl,2025_12_21,19:00,Boston Bruins,Ottawa Senators
-2025020565,,hockey,nhl,2025_12_21,19:00,New Jersey Devils,Buffalo Sabres
-2025020566,,hockey,nhl,2025_12_21,19:00,Pittsburgh Penguins,Montreal Canadiens
-2025020567,,hockey,nhl,2025_12_21,19:00,Nashville Predators,New York Rangers
-2025020568,,hockey,nhl,2025_12_21,19:00,Dallas Stars,Toronto Maple Leafs
-2025020569,,hockey,nhl,2025_12_21,19:00,Utah Mammoth,Winnipeg Jets
-2025020570,,hockey,nhl,2025_12_21,20:00,Edmonton Oilers,Vegas Golden Knights
+2025020562,2025020562,hockey,nhl,2025_12_21,13:00,Detroit Red Wings,Washington Capitals
+2025020563,2025020563,hockey,nhl,2025_12_21,18:00,Minnesota Wild,Colorado Avalanche
+2025020564,2025020564,hockey,nhl,2025_12_21,19:00,Boston Bruins,Ottawa Senators
+2025020565,2025020565,hockey,nhl,2025_12_21,19:00,New Jersey Devils,Buffalo Sabres
+2025020566,2025020566,hockey,nhl,2025_12_21,19:00,Pittsburgh Penguins,Montreal Canadiens
+2025020567,2025020567,hockey,nhl,2025_12_21,19:00,Nashville Predators,New York Rangers
+2025020568,2025020568,hockey,nhl,2025_12_21,19:00,Dallas Stars,Toronto Maple Leafs
+2025020569,2025020569,hockey,nhl,2025_12_21,19:00,Utah Mammoth,Winnipeg Jets
+2025020570,2025020570,hockey,nhl,2025_12_21,20:00,Edmonton Oilers,Vegas Golden Knights

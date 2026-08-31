@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021301,,hockey,nhl,2026_04_15,19:00,Buffalo Sabres,Dallas Stars
-2025021302,,hockey,nhl,2026_04_15,19:00,Tampa Bay Lightning,New York Rangers
-2025021303,,hockey,nhl,2026_04_15,19:00,Florida Panthers,Detroit Red Wings
-2025021304,,hockey,nhl,2026_04_15,19:30,Ottawa Senators,Toronto Maple Leafs
-2025021305,,hockey,nhl,2026_04_15,20:30,Chicago Blackhawks,San Jose Sharks
-2025021306,,hockey,nhl,2026_04_15,22:00,Vegas Golden Knights,Seattle Kraken
+2025021301,2025021301,hockey,nhl,2026_04_15,19:00,Buffalo Sabres,Dallas Stars
+2025021302,2025021302,hockey,nhl,2026_04_15,19:00,Tampa Bay Lightning,New York Rangers
+2025021303,2025021303,hockey,nhl,2026_04_15,19:00,Florida Panthers,Detroit Red Wings
+2025021304,2025021304,hockey,nhl,2026_04_15,19:30,Ottawa Senators,Toronto Maple Leafs
+2025021305,2025021305,hockey,nhl,2026_04_15,20:30,Chicago Blackhawks,San Jose Sharks
+2025021306,2025021306,hockey,nhl,2026_04_15,22:00,Vegas Golden Knights,Seattle Kraken

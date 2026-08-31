@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020480,,hockey,nhl,2025_12_11,19:00,Toronto Maple Leafs,San Jose Sharks
-2025020481,,hockey,nhl,2025_12_11,19:00,New Jersey Devils,Tampa Bay Lightning
-2025020482,,hockey,nhl,2025_12_11,19:00,New York Islanders,Anaheim Ducks
-2025020483,,hockey,nhl,2025_12_11,19:00,Philadelphia Flyers,Vegas Golden Knights
-2025020484,,hockey,nhl,2025_12_11,19:00,Pittsburgh Penguins,Montreal Canadiens
-2025020485,,hockey,nhl,2025_12_11,19:00,Washington Capitals,Carolina Hurricanes
-2025020486,,hockey,nhl,2025_12_11,19:00,Columbus Blue Jackets,Ottawa Senators
-2025020487,,hockey,nhl,2025_12_11,20:00,Nashville Predators,St Louis Blues
-2025020488,,hockey,nhl,2025_12_11,20:00,Minnesota Wild,Dallas Stars
-2025020489,,hockey,nhl,2025_12_11,20:00,Winnipeg Jets,Boston Bruins
-2025020491,,hockey,nhl,2025_12_11,21:00,Edmonton Oilers,Detroit Red Wings
-2025020490,,hockey,nhl,2025_12_11,21:30,Colorado Avalanche,Florida Panthers
-2025020492,,hockey,nhl,2025_12_11,22:00,Vancouver Canucks,Buffalo Sabres
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020480,2025020480,hockey,nhl,2025_12_11,19:00,Toronto Maple Leafs,San Jose Sharks
+2025020481,2025020481,hockey,nhl,2025_12_11,19:00,New Jersey Devils,Tampa Bay Lightning
+2025020482,2025020482,hockey,nhl,2025_12_11,19:00,New York Islanders,Anaheim Ducks
+2025020483,2025020483,hockey,nhl,2025_12_11,19:00,Philadelphia Flyers,Vegas Golden Knights
+2025020484,2025020484,hockey,nhl,2025_12_11,19:00,Pittsburgh Penguins,Montreal Canadiens
+2025020485,2025020485,hockey,nhl,2025_12_11,19:00,Washington Capitals,Carolina Hurricanes
+2025020486,2025020486,hockey,nhl,2025_12_11,19:00,Columbus Blue Jackets,Ottawa Senators
+2025020487,2025020487,hockey,nhl,2025_12_11,20:00,Nashville Predators,St Louis Blues
+2025020488,2025020488,hockey,nhl,2025_12_11,20:00,Minnesota Wild,Dallas Stars
+2025020489,2025020489,hockey,nhl,2025_12_11,20:00,Winnipeg Jets,Boston Bruins
+2025020490,2025020490,hockey,nhl,2025_12_11,21:30,Colorado Avalanche,Florida Panthers
+2025020491,2025020491,hockey,nhl,2025_12_11,21:00,Edmonton Oilers,Detroit Red Wings
+2025020492,2025020492,hockey,nhl,2025_12_11,22:00,Vancouver Canucks,Buffalo Sabres

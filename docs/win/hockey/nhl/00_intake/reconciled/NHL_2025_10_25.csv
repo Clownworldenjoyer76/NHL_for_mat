@@ -1,14 +1,14 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020127,,hockey,nhl,2025_10_25,12:30,Philadelphia Flyers,New York Islanders
-2025020128,,hockey,nhl,2025_10_25,15:00,Boston Bruins,Colorado Avalanche
-2025020129,,hockey,nhl,2025_10_25,17:00,Tampa Bay Lightning,Anaheim Ducks
-2025020132,,hockey,nhl,2025_10_25,17:00,Toronto Maple Leafs,Buffalo Sabres
-2025020130,,hockey,nhl,2025_10_25,18:00,Florida Panthers,Vegas Golden Knights
-2025020131,,hockey,nhl,2025_10_25,18:00,Minnesota Wild,Utah Mammoth
-2025020133,,hockey,nhl,2025_10_25,19:00,Detroit Red Wings,St Louis Blues
-2025020134,,hockey,nhl,2025_10_25,19:00,Pittsburgh Penguins,Columbus Blue Jackets
-2025020135,,hockey,nhl,2025_10_25,19:00,Washington Capitals,Ottawa Senators
-2025020136,,hockey,nhl,2025_10_25,19:00,Vancouver Canucks,Montreal Canadiens
-2025020137,,hockey,nhl,2025_10_25,20:00,Nashville Predators,Los Angeles Kings
-2025020138,,hockey,nhl,2025_10_25,20:00,Dallas Stars,Carolina Hurricanes
-2025020139,,hockey,nhl,2025_10_25,22:00,Seattle Kraken,Edmonton Oilers
+2025020127,2025020127,hockey,nhl,2025_10_25,12:30,Philadelphia Flyers,New York Islanders
+2025020128,2025020128,hockey,nhl,2025_10_25,15:00,Boston Bruins,Colorado Avalanche
+2025020129,2025020129,hockey,nhl,2025_10_25,17:00,Tampa Bay Lightning,Anaheim Ducks
+2025020130,2025020130,hockey,nhl,2025_10_25,18:00,Florida Panthers,Vegas Golden Knights
+2025020131,2025020131,hockey,nhl,2025_10_25,18:00,Minnesota Wild,Utah Mammoth
+2025020132,2025020132,hockey,nhl,2025_10_25,17:00,Toronto Maple Leafs,Buffalo Sabres
+2025020133,2025020133,hockey,nhl,2025_10_25,19:00,Detroit Red Wings,St Louis Blues
+2025020134,2025020134,hockey,nhl,2025_10_25,19:00,Pittsburgh Penguins,Columbus Blue Jackets
+2025020135,2025020135,hockey,nhl,2025_10_25,19:00,Washington Capitals,Ottawa Senators
+2025020136,2025020136,hockey,nhl,2025_10_25,19:00,Vancouver Canucks,Montreal Canadiens
+2025020137,2025020137,hockey,nhl,2025_10_25,20:00,Nashville Predators,Los Angeles Kings
+2025020138,2025020138,hockey,nhl,2025_10_25,20:00,Dallas Stars,Carolina Hurricanes
+2025020139,2025020139,hockey,nhl,2025_10_25,22:00,Seattle Kraken,Edmonton Oilers

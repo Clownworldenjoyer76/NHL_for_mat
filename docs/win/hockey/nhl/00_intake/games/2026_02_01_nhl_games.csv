@@ -1,4 +1,4 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020874,,hockey,nhl,2026_02_01,15:00,Carolina Hurricanes,Los Angeles Kings
-2025020873,,hockey,nhl,2026_02_01,18:30,Tampa Bay Lightning,Boston Bruins
-2025020875,,hockey,nhl,2026_02_01,21:30,Anaheim Ducks,Vegas Golden Knights
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020873,2025020873,hockey,nhl,2026_02_01,18:30,Tampa Bay Lightning,Boston Bruins
+2025020874,2025020874,hockey,nhl,2026_02_01,15:00,Carolina Hurricanes,Los Angeles Kings
+2025020875,2025020875,hockey,nhl,2026_02_01,21:30,Anaheim Ducks,Vegas Golden Knights

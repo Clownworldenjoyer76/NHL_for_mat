@@ -1,16 +1,16 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021207,,hockey,nhl,2026_04_04,12:30,New York Rangers,Detroit Red Wings
-2025021208,,hockey,nhl,2026_04_04,13:00,Ottawa Senators,Minnesota Wild
-2025021209,,hockey,nhl,2026_04_04,15:00,Dallas Stars,Colorado Avalanche
-2025021210,,hockey,nhl,2026_04_04,17:00,Tampa Bay Lightning,Boston Bruins
-2025021211,,hockey,nhl,2026_04_04,17:00,Pittsburgh Penguins,Florida Panthers
-2025021212,,hockey,nhl,2026_04_04,19:00,New Jersey Devils,Montreal Canadiens
-2025021213,,hockey,nhl,2026_04_04,19:00,Washington Capitals,Buffalo Sabres
-2025021214,,hockey,nhl,2026_04_04,19:00,Carolina Hurricanes,New York Islanders
-2025021215,,hockey,nhl,2026_04_04,19:00,Columbus Blue Jackets,Winnipeg Jets
-2025021216,,hockey,nhl,2026_04_04,19:00,Vancouver Canucks,Utah Mammoth
-2025021217,,hockey,nhl,2026_04_04,19:00,Los Angeles Kings,Toronto Maple Leafs
-2025021218,,hockey,nhl,2026_04_04,22:00,Edmonton Oilers,Vegas Golden Knights
-2025021219,,hockey,nhl,2026_04_04,22:00,Anaheim Ducks,Calgary Flames
-2025021220,,hockey,nhl,2026_04_04,22:00,San Jose Sharks,Nashville Predators
-2025021221,,hockey,nhl,2026_04_04,22:00,Seattle Kraken,Chicago Blackhawks
+2025021207,2025021207,hockey,nhl,2026_04_04,12:30,New York Rangers,Detroit Red Wings
+2025021208,2025021208,hockey,nhl,2026_04_04,13:00,Ottawa Senators,Minnesota Wild
+2025021209,2025021209,hockey,nhl,2026_04_04,15:00,Dallas Stars,Colorado Avalanche
+2025021210,2025021210,hockey,nhl,2026_04_04,17:00,Tampa Bay Lightning,Boston Bruins
+2025021211,2025021211,hockey,nhl,2026_04_04,17:00,Pittsburgh Penguins,Florida Panthers
+2025021212,2025021212,hockey,nhl,2026_04_04,19:00,New Jersey Devils,Montreal Canadiens
+2025021213,2025021213,hockey,nhl,2026_04_04,19:00,Washington Capitals,Buffalo Sabres
+2025021214,2025021214,hockey,nhl,2026_04_04,19:00,Carolina Hurricanes,New York Islanders
+2025021215,2025021215,hockey,nhl,2026_04_04,19:00,Columbus Blue Jackets,Winnipeg Jets
+2025021216,2025021216,hockey,nhl,2026_04_04,19:00,Vancouver Canucks,Utah Mammoth
+2025021217,2025021217,hockey,nhl,2026_04_04,19:00,Los Angeles Kings,Toronto Maple Leafs
+2025021218,2025021218,hockey,nhl,2026_04_04,22:00,Edmonton Oilers,Vegas Golden Knights
+2025021219,2025021219,hockey,nhl,2026_04_04,22:00,Anaheim Ducks,Calgary Flames
+2025021220,2025021220,hockey,nhl,2026_04_04,22:00,San Jose Sharks,Nashville Predators
+2025021221,2025021221,hockey,nhl,2026_04_04,22:00,Seattle Kraken,Chicago Blackhawks

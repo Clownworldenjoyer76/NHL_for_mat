@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020534,,hockey,nhl,2025_12_18,19:00,Boston Bruins,Edmonton Oilers
-2025020536,,hockey,nhl,2025_12_18,19:00,Montreal Canadiens,Chicago Blackhawks
-2025020537,,hockey,nhl,2025_12_18,19:00,Ottawa Senators,Pittsburgh Penguins
-2025020538,,hockey,nhl,2025_12_18,19:00,Tampa Bay Lightning,Los Angeles Kings
-2025020539,,hockey,nhl,2025_12_18,19:00,Washington Capitals,Toronto Maple Leafs
-2025020540,,hockey,nhl,2025_12_18,19:00,Columbus Blue Jackets,Minnesota Wild
-2025020535,,hockey,nhl,2025_12_18,19:30,Buffalo Sabres,Philadelphia Flyers
-2025020541,,hockey,nhl,2025_12_18,20:00,St Louis Blues,New York Rangers
-2025020542,,hockey,nhl,2025_12_18,21:00,Calgary Flames,Seattle Kraken
-2025020543,,hockey,nhl,2025_12_18,22:00,San Jose Sharks,Dallas Stars
+2025020534,2025020534,hockey,nhl,2025_12_18,19:00,Boston Bruins,Edmonton Oilers
+2025020535,2025020535,hockey,nhl,2025_12_18,19:30,Buffalo Sabres,Philadelphia Flyers
+2025020536,2025020536,hockey,nhl,2025_12_18,19:00,Montreal Canadiens,Chicago Blackhawks
+2025020537,2025020537,hockey,nhl,2025_12_18,19:00,Ottawa Senators,Pittsburgh Penguins
+2025020538,2025020538,hockey,nhl,2025_12_18,19:00,Tampa Bay Lightning,Los Angeles Kings
+2025020539,2025020539,hockey,nhl,2025_12_18,19:00,Washington Capitals,Toronto Maple Leafs
+2025020540,2025020540,hockey,nhl,2025_12_18,19:00,Columbus Blue Jackets,Minnesota Wild
+2025020541,2025020541,hockey,nhl,2025_12_18,20:00,St Louis Blues,New York Rangers
+2025020542,2025020542,hockey,nhl,2025_12_18,21:00,Calgary Flames,Seattle Kraken
+2025020543,2025020543,hockey,nhl,2025_12_18,22:00,San Jose Sharks,Dallas Stars

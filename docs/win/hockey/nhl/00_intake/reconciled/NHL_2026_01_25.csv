@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020819,,hockey,nhl,2026_01_25,13:30,Toronto Maple Leafs,Colorado Avalanche
-2025020820,,hockey,nhl,2026_01_25,15:00,Seattle Kraken,New Jersey Devils
-2025020821,,hockey,nhl,2026_01_25,17:00,Ottawa Senators,Vegas Golden Knights
-2025020822,,hockey,nhl,2026_01_25,18:00,Vancouver Canucks,Pittsburgh Penguins
-2025020823,,hockey,nhl,2026_01_25,19:00,Chicago Blackhawks,Florida Panthers
-2025020824,,hockey,nhl,2026_01_25,20:00,Calgary Flames,Anaheim Ducks
+2025020819,2025020819,hockey,nhl,2026_01_25,13:30,Toronto Maple Leafs,Colorado Avalanche
+2025020820,2025020820,hockey,nhl,2026_01_25,15:00,Seattle Kraken,New Jersey Devils
+2025020821,2025020821,hockey,nhl,2026_01_25,17:00,Ottawa Senators,Vegas Golden Knights
+2025020822,2025020822,hockey,nhl,2026_01_25,18:00,Vancouver Canucks,Pittsburgh Penguins
+2025020823,2025020823,hockey,nhl,2026_01_25,19:00,Chicago Blackhawks,Florida Panthers
+2025020824,2025020824,hockey,nhl,2026_01_25,20:00,Calgary Flames,Anaheim Ducks

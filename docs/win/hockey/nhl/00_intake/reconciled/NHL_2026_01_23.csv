@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020802,,hockey,nhl,2026_01_23,19:00,Toronto Maple Leafs,Vegas Golden Knights
-2025020803,,hockey,nhl,2026_01_23,19:00,Chicago Blackhawks,Tampa Bay Lightning
-2025020804,,hockey,nhl,2026_01_23,20:00,Dallas Stars,St Louis Blues
-2025020805,,hockey,nhl,2026_01_23,21:00,Colorado Avalanche,Philadelphia Flyers
-2025020806,,hockey,nhl,2026_01_23,21:00,Calgary Flames,Washington Capitals
-2025020807,,hockey,nhl,2026_01_23,22:00,Vancouver Canucks,New Jersey Devils
-2025020808,,hockey,nhl,2026_01_23,22:00,San Jose Sharks,New York Rangers
-2025020809,,hockey,nhl,2026_01_23,22:00,Seattle Kraken,Anaheim Ducks
+2025020802,2025020802,hockey,nhl,2026_01_23,19:00,Toronto Maple Leafs,Vegas Golden Knights
+2025020803,2025020803,hockey,nhl,2026_01_23,19:00,Chicago Blackhawks,Tampa Bay Lightning
+2025020804,2025020804,hockey,nhl,2026_01_23,20:00,Dallas Stars,St Louis Blues
+2025020805,2025020805,hockey,nhl,2026_01_23,21:00,Colorado Avalanche,Philadelphia Flyers
+2025020806,2025020806,hockey,nhl,2026_01_23,21:00,Calgary Flames,Washington Capitals
+2025020807,2025020807,hockey,nhl,2026_01_23,22:00,Vancouver Canucks,New Jersey Devils
+2025020808,2025020808,hockey,nhl,2026_01_23,22:00,San Jose Sharks,New York Rangers
+2025020809,2025020809,hockey,nhl,2026_01_23,22:00,Seattle Kraken,Anaheim Ducks

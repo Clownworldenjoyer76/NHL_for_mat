@@ -1,8 +1,8 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020886,hockey,nhl,2026_02_03,19:30,Tampa Bay Lightning,Buffalo Sabres,0.641,0.359,2.55,3.71,6.26
 2025020887,hockey,nhl,2026_02_03,19:00,New Jersey Devils,Columbus Blue Jackets,0.53,0.47,2.96,3.29,6.25
+2025020888,hockey,nhl,2026_02_03,19:30,New York Islanders,Pittsburgh Penguins,0.544,0.456,2.79,3.25,6.04
 2025020889,hockey,nhl,2026_02_03,19:00,Philadelphia Flyers,Washington Capitals,0.512,0.488,2.82,2.96,5.78
 2025020890,hockey,nhl,2026_02_03,19:00,Carolina Hurricanes,Ottawa Senators,0.665,0.335,2.50,3.75,6.25
-2025020886,hockey,nhl,2026_02_03,19:30,Tampa Bay Lightning,Buffalo Sabres,0.641,0.359,2.55,3.71,6.26
-2025020888,hockey,nhl,2026_02_03,19:30,New York Islanders,Pittsburgh Penguins,0.544,0.456,2.79,3.25,6.04
 2025020891,hockey,nhl,2026_02_03,20:30,Edmonton Oilers,Toronto Maple Leafs,0.605,0.395,2.74,3.77,6.51
 2025020892,hockey,nhl,2026_02_03,22:00,Anaheim Ducks,Seattle Kraken,0.569,0.431,2.75,3.49,6.24

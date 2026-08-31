@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025021077,,hockey,nhl,2026_03_18,19:00,New York Rangers,New Jersey Devils,-105,-115,+1.5,-1.5,5.5,-278,+225,-135,+114,,,,,,
-2025021078,,hockey,nhl,2026_03_18,19:00,Carolina Hurricanes,Pittsburgh Penguins,-162,+136,-1.5,+1.5,6.5,+154,-185,-102,-118,,,,,,
-2025021079,,hockey,nhl,2026_03_18,19:30,Washington Capitals,Ottawa Senators,+105,-125,+1.5,-1.5,6.5,-265,+215,+100,-120,,,,,,
-2025021080,,hockey,nhl,2026_03_18,21:30,Colorado Avalanche,Dallas Stars,-155,+130,-1.5,+1.5,6.5,+170,-205,+105,-125,,,,,,
-2025021081,,hockey,nhl,2026_03_18,21:30,Calgary Flames,St Louis Blues,+105,-125,+1.5,-1.5,5.5,-265,+215,-115,-105,,,,,,
-2025021082,,hockey,nhl,2026_03_18,22:00,Anaheim Ducks,Philadelphia Flyers,-155,+130,-1.5,+1.5,6.5,+164,-198,-105,-115,,,,,,
+2025021077,2025021077,hockey,nhl,2026_03_18,19:00,New York Rangers,New Jersey Devils,-105,-115,+1.5,-1.5,5.5,-278,+225,-135,+114,,,,,,
+2025021078,2025021078,hockey,nhl,2026_03_18,19:00,Carolina Hurricanes,Pittsburgh Penguins,-162,+136,-1.5,+1.5,6.5,+154,-185,-102,-118,,,,,,
+2025021079,2025021079,hockey,nhl,2026_03_18,19:30,Washington Capitals,Ottawa Senators,+105,-125,+1.5,-1.5,6.5,-265,+215,+100,-120,,,,,,
+2025021080,2025021080,hockey,nhl,2026_03_18,21:30,Colorado Avalanche,Dallas Stars,-155,+130,-1.5,+1.5,6.5,+170,-205,+105,-125,,,,,,
+2025021081,2025021081,hockey,nhl,2026_03_18,21:30,Calgary Flames,St Louis Blues,+105,-125,+1.5,-1.5,5.5,-265,+215,-115,-105,,,,,,
+2025021082,2025021082,hockey,nhl,2026_03_18,22:00,Anaheim Ducks,Philadelphia Flyers,-155,+130,-1.5,+1.5,6.5,+164,-198,-105,-115,,,,,,

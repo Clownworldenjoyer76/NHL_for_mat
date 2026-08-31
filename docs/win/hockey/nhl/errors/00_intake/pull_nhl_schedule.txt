@@ -1,428 +1,430 @@
-=== pull_nhl_schedule RUN 2026-08-25T17:39:56.545889-04:00 ===
-2026-08-25T17:39:56.553446-04:00 | Target dates discovered: 211
-2026-08-25T17:39:56.553716-04:00 | Target date: 2025_10_07
-2026-08-25T17:39:56.553955-04:00 | Target date: 2025_10_08
-2026-08-25T17:39:56.554194-04:00 | Target date: 2025_10_09
-2026-08-25T17:39:56.554427-04:00 | Target date: 2025_10_11
-2026-08-25T17:39:56.554658-04:00 | Target date: 2025_10_12
-2026-08-25T17:39:56.554890-04:00 | Target date: 2025_10_13
-2026-08-25T17:39:56.555148-04:00 | Target date: 2025_10_14
-2026-08-25T17:39:56.555379-04:00 | Target date: 2025_10_15
-2026-08-25T17:39:56.555881-04:00 | Target date: 2025_10_16
-2026-08-25T17:39:56.556128-04:00 | Target date: 2025_10_17
-2026-08-25T17:39:56.556358-04:00 | Target date: 2025_10_18
-2026-08-25T17:39:56.556587-04:00 | Target date: 2025_10_19
-2026-08-25T17:39:56.556834-04:00 | Target date: 2025_10_20
-2026-08-25T17:39:56.557061-04:00 | Target date: 2025_10_21
-2026-08-25T17:39:56.557286-04:00 | Target date: 2025_10_22
-2026-08-25T17:39:56.557514-04:00 | Target date: 2025_10_23
-2026-08-25T17:39:56.557743-04:00 | Target date: 2025_10_24
-2026-08-25T17:39:56.557967-04:00 | Target date: 2025_10_25
-2026-08-25T17:39:56.558198-04:00 | Target date: 2025_10_26
-2026-08-25T17:39:56.558423-04:00 | Target date: 2025_10_27
-2026-08-25T17:39:56.558648-04:00 | Target date: 2025_10_28
-2026-08-25T17:39:56.558873-04:00 | Target date: 2025_10_29
-2026-08-25T17:39:56.559099-04:00 | Target date: 2025_10_30
-2026-08-25T17:39:56.559323-04:00 | Target date: 2025_10_31
-2026-08-25T17:39:56.559549-04:00 | Target date: 2025_11_01
-2026-08-25T17:39:56.559774-04:00 | Target date: 2025_11_02
-2026-08-25T17:39:56.560052-04:00 | Target date: 2025_11_03
-2026-08-25T17:39:56.560280-04:00 | Target date: 2025_11_04
-2026-08-25T17:39:56.560515-04:00 | Target date: 2025_11_05
-2026-08-25T17:39:56.560742-04:00 | Target date: 2025_11_06
-2026-08-25T17:39:56.560966-04:00 | Target date: 2025_11_07
-2026-08-25T17:39:56.561191-04:00 | Target date: 2025_11_08
-2026-08-25T17:39:56.561415-04:00 | Target date: 2025_11_09
-2026-08-25T17:39:56.561640-04:00 | Target date: 2025_11_10
-2026-08-25T17:39:56.561865-04:00 | Target date: 2025_11_11
-2026-08-25T17:39:56.562091-04:00 | Target date: 2025_11_12
-2026-08-25T17:39:56.562318-04:00 | Target date: 2025_11_13
-2026-08-25T17:39:56.562542-04:00 | Target date: 2025_11_14
-2026-08-25T17:39:56.562767-04:00 | Target date: 2025_11_15
-2026-08-25T17:39:56.563049-04:00 | Target date: 2025_11_16
-2026-08-25T17:39:56.563292-04:00 | Target date: 2025_11_17
-2026-08-25T17:39:56.563525-04:00 | Target date: 2025_11_18
-2026-08-25T17:39:56.563755-04:00 | Target date: 2025_11_19
-2026-08-25T17:39:56.563985-04:00 | Target date: 2025_11_20
-2026-08-25T17:39:56.564223-04:00 | Target date: 2025_11_21
-2026-08-25T17:39:56.564475-04:00 | Target date: 2025_11_22
-2026-08-25T17:39:56.564798-04:00 | Target date: 2025_11_23
-2026-08-25T17:39:56.565044-04:00 | Target date: 2025_11_24
-2026-08-25T17:39:56.565276-04:00 | Target date: 2025_11_25
-2026-08-25T17:39:56.565505-04:00 | Target date: 2025_11_26
-2026-08-25T17:39:56.565734-04:00 | Target date: 2025_11_28
-2026-08-25T17:39:56.565965-04:00 | Target date: 2025_11_29
-2026-08-25T17:39:56.566193-04:00 | Target date: 2025_11_30
-2026-08-25T17:39:56.566423-04:00 | Target date: 2025_12_01
-2026-08-25T17:39:56.566650-04:00 | Target date: 2025_12_02
-2026-08-25T17:39:56.566877-04:00 | Target date: 2025_12_03
-2026-08-25T17:39:56.567104-04:00 | Target date: 2025_12_04
-2026-08-25T17:39:56.567331-04:00 | Target date: 2025_12_05
-2026-08-25T17:39:56.567556-04:00 | Target date: 2025_12_06
-2026-08-25T17:39:56.567783-04:00 | Target date: 2025_12_07
-2026-08-25T17:39:56.568009-04:00 | Target date: 2025_12_08
-2026-08-25T17:39:56.568242-04:00 | Target date: 2025_12_09
-2026-08-25T17:39:56.568472-04:00 | Target date: 2025_12_10
-2026-08-25T17:39:56.568699-04:00 | Target date: 2025_12_11
-2026-08-25T17:39:56.568924-04:00 | Target date: 2025_12_12
-2026-08-25T17:39:56.569173-04:00 | Target date: 2025_12_13
-2026-08-25T17:39:56.569399-04:00 | Target date: 2025_12_14
-2026-08-25T17:39:56.569650-04:00 | Target date: 2025_12_15
-2026-08-25T17:39:56.569879-04:00 | Target date: 2025_12_16
-2026-08-25T17:39:56.570105-04:00 | Target date: 2025_12_17
-2026-08-25T17:39:56.570331-04:00 | Target date: 2025_12_18
-2026-08-25T17:39:56.570559-04:00 | Target date: 2025_12_19
-2026-08-25T17:39:56.570786-04:00 | Target date: 2025_12_20
-2026-08-25T17:39:56.571012-04:00 | Target date: 2025_12_21
-2026-08-25T17:39:56.571236-04:00 | Target date: 2025_12_22
-2026-08-25T17:39:56.571462-04:00 | Target date: 2025_12_23
-2026-08-25T17:39:56.571744-04:00 | Target date: 2025_12_27
-2026-08-25T17:39:56.571997-04:00 | Target date: 2025_12_28
-2026-08-25T17:39:56.572241-04:00 | Target date: 2025_12_29
-2026-08-25T17:39:56.572479-04:00 | Target date: 2025_12_30
-2026-08-25T17:39:56.572713-04:00 | Target date: 2025_12_31
-2026-08-25T17:39:56.572950-04:00 | Target date: 2026_01_01
-2026-08-25T17:39:56.573181-04:00 | Target date: 2026_01_02
-2026-08-25T17:39:56.573412-04:00 | Target date: 2026_01_03
-2026-08-25T17:39:56.573663-04:00 | Target date: 2026_01_04
-2026-08-25T17:39:56.573915-04:00 | Target date: 2026_01_05
-2026-08-25T17:39:56.574140-04:00 | Target date: 2026_01_06
-2026-08-25T17:39:56.574389-04:00 | Target date: 2026_01_07
-2026-08-25T17:39:56.574616-04:00 | Target date: 2026_01_08
-2026-08-25T17:39:56.574842-04:00 | Target date: 2026_01_09
-2026-08-25T17:39:56.575067-04:00 | Target date: 2026_01_10
-2026-08-25T17:39:56.575292-04:00 | Target date: 2026_01_11
-2026-08-25T17:39:56.575519-04:00 | Target date: 2026_01_12
-2026-08-25T17:39:56.575747-04:00 | Target date: 2026_01_13
-2026-08-25T17:39:56.575982-04:00 | Target date: 2026_01_14
-2026-08-25T17:39:56.576225-04:00 | Target date: 2026_01_15
-2026-08-25T17:39:56.576462-04:00 | Target date: 2026_01_16
-2026-08-25T17:39:56.576691-04:00 | Target date: 2026_01_17
-2026-08-25T17:39:56.576920-04:00 | Target date: 2026_01_18
-2026-08-25T17:39:56.577149-04:00 | Target date: 2026_01_19
-2026-08-25T17:39:56.577377-04:00 | Target date: 2026_01_20
-2026-08-25T17:39:56.577606-04:00 | Target date: 2026_01_21
-2026-08-25T17:39:56.577834-04:00 | Target date: 2026_01_22
-2026-08-25T17:39:56.578061-04:00 | Target date: 2026_01_23
-2026-08-25T17:39:56.578329-04:00 | Target date: 2026_01_24
-2026-08-25T17:39:56.578565-04:00 | Target date: 2026_01_25
-2026-08-25T17:39:56.578794-04:00 | Target date: 2026_01_26
-2026-08-25T17:39:56.579025-04:00 | Target date: 2026_01_27
-2026-08-25T17:39:56.579251-04:00 | Target date: 2026_01_28
-2026-08-25T17:39:56.579477-04:00 | Target date: 2026_01_29
-2026-08-25T17:39:56.579703-04:00 | Target date: 2026_01_30
-2026-08-25T17:39:56.579929-04:00 | Target date: 2026_01_31
-2026-08-25T17:39:56.580156-04:00 | Target date: 2026_02_01
-2026-08-25T17:39:56.580386-04:00 | Target date: 2026_02_02
-2026-08-25T17:39:56.580612-04:00 | Target date: 2026_02_03
-2026-08-25T17:39:56.580839-04:00 | Target date: 2026_02_04
-2026-08-25T17:39:56.581065-04:00 | Target date: 2026_02_05
-2026-08-25T17:39:56.581294-04:00 | Target date: 2026_02_25
-2026-08-25T17:39:56.581599-04:00 | Target date: 2026_02_26
-2026-08-25T17:39:56.581832-04:00 | Target date: 2026_02_27
-2026-08-25T17:39:56.582063-04:00 | Target date: 2026_02_28
-2026-08-25T17:39:56.582292-04:00 | Target date: 2026_03_01
-2026-08-25T17:39:56.582523-04:00 | Target date: 2026_03_02
-2026-08-25T17:39:56.582775-04:00 | Target date: 2026_03_03
-2026-08-25T17:39:56.583004-04:00 | Target date: 2026_03_04
-2026-08-25T17:39:56.583234-04:00 | Target date: 2026_03_05
-2026-08-25T17:39:56.583464-04:00 | Target date: 2026_03_06
-2026-08-25T17:39:56.583693-04:00 | Target date: 2026_03_07
-2026-08-25T17:39:56.583922-04:00 | Target date: 2026_03_08
-2026-08-25T17:39:56.584154-04:00 | Target date: 2026_03_09
-2026-08-25T17:39:56.584385-04:00 | Target date: 2026_03_10
-2026-08-25T17:39:56.584613-04:00 | Target date: 2026_03_11
-2026-08-25T17:39:56.584841-04:00 | Target date: 2026_03_12
-2026-08-25T17:39:56.585069-04:00 | Target date: 2026_03_13
-2026-08-25T17:39:56.585295-04:00 | Target date: 2026_03_14
-2026-08-25T17:39:56.585553-04:00 | Target date: 2026_03_15
-2026-08-25T17:39:56.585784-04:00 | Target date: 2026_03_16
-2026-08-25T17:39:56.586013-04:00 | Target date: 2026_03_17
-2026-08-25T17:39:56.586272-04:00 | Target date: 2026_03_18
-2026-08-25T17:39:56.586507-04:00 | Target date: 2026_03_19
-2026-08-25T17:39:56.586792-04:00 | Target date: 2026_03_20
-2026-08-25T17:39:56.587021-04:00 | Target date: 2026_03_21
-2026-08-25T17:39:56.587251-04:00 | Target date: 2026_03_22
-2026-08-25T17:39:56.587508-04:00 | Target date: 2026_03_23
-2026-08-25T17:39:56.587758-04:00 | Target date: 2026_03_24
-2026-08-25T17:39:56.588004-04:00 | Target date: 2026_03_25
-2026-08-25T17:39:56.588249-04:00 | Target date: 2026_03_26
-2026-08-25T17:39:56.588501-04:00 | Target date: 2026_03_27
-2026-08-25T17:39:56.588750-04:00 | Target date: 2026_03_28
-2026-08-25T17:39:56.588996-04:00 | Target date: 2026_03_29
-2026-08-25T17:39:56.589243-04:00 | Target date: 2026_03_30
-2026-08-25T17:39:56.589490-04:00 | Target date: 2026_03_31
-2026-08-25T17:39:56.589740-04:00 | Target date: 2026_04_01
-2026-08-25T17:39:56.589983-04:00 | Target date: 2026_04_02
-2026-08-25T17:39:56.590236-04:00 | Target date: 2026_04_03
-2026-08-25T17:39:56.590493-04:00 | Target date: 2026_04_04
-2026-08-25T17:39:56.590766-04:00 | Target date: 2026_04_05
-2026-08-25T17:39:56.591092-04:00 | Target date: 2026_04_06
-2026-08-25T17:39:56.591379-04:00 | Target date: 2026_04_07
-2026-08-25T17:39:56.591689-04:00 | Target date: 2026_04_08
-2026-08-25T17:39:56.591941-04:00 | Target date: 2026_04_09
-2026-08-25T17:39:56.592177-04:00 | Target date: 2026_04_11
-2026-08-25T17:39:56.592433-04:00 | Target date: 2026_04_12
-2026-08-25T17:39:56.592663-04:00 | Target date: 2026_04_13
-2026-08-25T17:39:56.592891-04:00 | Target date: 2026_04_14
-2026-08-25T17:39:56.593121-04:00 | Target date: 2026_04_15
-2026-08-25T17:39:56.593356-04:00 | Target date: 2026_04_16
-2026-08-25T17:39:56.593585-04:00 | Target date: 2026_04_18
-2026-08-25T17:39:56.593817-04:00 | Target date: 2026_04_19
-2026-08-25T17:39:56.594045-04:00 | Target date: 2026_04_20
-2026-08-25T17:39:56.594272-04:00 | Target date: 2026_04_21
-2026-08-25T17:39:56.594507-04:00 | Target date: 2026_04_22
-2026-08-25T17:39:56.594732-04:00 | Target date: 2026_04_23
-2026-08-25T17:39:56.594959-04:00 | Target date: 2026_04_24
-2026-08-25T17:39:56.595186-04:00 | Target date: 2026_04_25
-2026-08-25T17:39:56.595418-04:00 | Target date: 2026_04_26
-2026-08-25T17:39:56.595644-04:00 | Target date: 2026_04_27
-2026-08-25T17:39:56.595870-04:00 | Target date: 2026_04_28
-2026-08-25T17:39:56.596107-04:00 | Target date: 2026_04_29
-2026-08-25T17:39:56.596333-04:00 | Target date: 2026_04_30
-2026-08-25T17:39:56.596569-04:00 | Target date: 2026_05_01
-2026-08-25T17:39:56.596796-04:00 | Target date: 2026_05_02
-2026-08-25T17:39:56.597043-04:00 | Target date: 2026_05_03
-2026-08-25T17:39:56.597272-04:00 | Target date: 2026_05_04
-2026-08-25T17:39:56.597498-04:00 | Target date: 2026_05_05
-2026-08-25T17:39:56.597730-04:00 | Target date: 2026_05_06
-2026-08-25T17:39:56.597979-04:00 | Target date: 2026_05_07
-2026-08-25T17:39:56.598210-04:00 | Target date: 2026_05_08
-2026-08-25T17:39:56.598446-04:00 | Target date: 2026_05_09
-2026-08-25T17:39:56.598672-04:00 | Target date: 2026_05_10
-2026-08-25T17:39:56.598898-04:00 | Target date: 2026_05_11
-2026-08-25T17:39:56.599123-04:00 | Target date: 2026_05_12
-2026-08-25T17:39:56.599352-04:00 | Target date: 2026_05_13
-2026-08-25T17:39:56.599577-04:00 | Target date: 2026_05_14
-2026-08-25T17:39:56.599803-04:00 | Target date: 2026_05_16
-2026-08-25T17:39:56.600029-04:00 | Target date: 2026_05_18
-2026-08-25T17:39:56.600255-04:00 | Target date: 2026_05_20
-2026-08-25T17:39:56.600479-04:00 | Target date: 2026_05_21
-2026-08-25T17:39:56.600704-04:00 | Target date: 2026_05_22
-2026-08-25T17:39:56.600930-04:00 | Target date: 2026_05_23
-2026-08-25T17:39:56.601155-04:00 | Target date: 2026_05_24
-2026-08-25T17:39:56.601401-04:00 | Target date: 2026_05_25
-2026-08-25T17:39:56.601627-04:00 | Target date: 2026_05_26
-2026-08-25T17:39:56.601881-04:00 | Target date: 2026_05_27
-2026-08-25T17:39:56.602108-04:00 | Target date: 2026_05_29
-2026-08-25T17:39:56.602333-04:00 | Target date: 2026_06_02
-2026-08-25T17:39:56.602560-04:00 | Target date: 2026_06_04
-2026-08-25T17:39:56.602784-04:00 | Target date: 2026_06_06
-2026-08-25T17:39:56.603012-04:00 | Target date: 2026_06_09
-2026-08-25T17:39:56.603234-04:00 | Target date: 2026_06_11
-2026-08-25T17:39:56.603464-04:00 | Target date: 2026_06_14
-2026-08-25T17:39:57.181029-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_07.csv rows=3 using official NHL game_id values
-2026-08-25T17:39:57.370425-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_08.csv rows=4 using official NHL game_id values
-2026-08-25T17:39:57.596675-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_09.csv rows=14 using official NHL game_id values
-2026-08-25T17:39:57.842718-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_11.csv rows=16 using official NHL game_id values
-2026-08-25T17:39:58.091420-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_12.csv rows=1 using official NHL game_id values
-2026-08-25T17:39:58.310892-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_13.csv rows=10 using official NHL game_id values
-2026-08-25T17:39:58.522948-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_14.csv rows=8 using official NHL game_id values
-2026-08-25T17:39:58.696656-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_15.csv rows=4 using official NHL game_id values
-2026-08-25T17:39:58.921317-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_16.csv rows=11 using official NHL game_id values
-2026-08-25T17:39:59.139381-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_17.csv rows=4 using official NHL game_id values
-2026-08-25T17:39:59.372492-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_18.csv rows=13 using official NHL game_id values
-2026-08-25T17:39:59.603659-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_19.csv rows=4 using official NHL game_id values
-2026-08-25T17:39:59.841122-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_20.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:00.092184-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_21.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:00.309120-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_22.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:00.547527-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_23.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:00.776346-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_24.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:01.029288-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_25.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:01.268152-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_26.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:01.500103-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_27.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:01.741856-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_28.csv rows=16 using official NHL game_id values
-2026-08-25T17:40:01.959178-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_29.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:02.183262-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_30.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:02.503478-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_10_31.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:02.716153-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_01.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:02.926554-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_02.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:03.174283-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_03.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:03.400173-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_04.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:03.442255-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_05.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:03.675652-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_06.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:03.904630-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_07.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:04.142229-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_08.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:04.356734-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_09.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:04.578658-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_10.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:04.797209-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_11.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:04.839682-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_12.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:05.094153-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_13.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:05.350218-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_14.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:05.573920-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_15.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:05.796537-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_16.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:06.022785-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_17.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:06.266046-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_18.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:06.307052-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_19.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:06.546284-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_20.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:06.767903-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_21.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:06.981062-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_22.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:07.227172-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_23.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:07.446601-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_24.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:07.656037-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_25.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:07.694019-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_26.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:07.950598-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_28.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:08.168638-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_29.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:08.383507-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_11_30.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:08.605547-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_01.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:08.821785-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_02.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:08.862050-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_03.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:09.098274-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_04.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:09.331874-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_05.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:09.561284-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_06.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:09.780513-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_07.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:09.983857-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_08.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:10.220006-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_09.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:10.259492-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_10.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:10.485947-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_11.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:10.718302-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_12.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:10.949071-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_13.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:11.183465-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_14.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:11.435245-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_15.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:11.647970-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_16.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:11.688417-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_17.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:11.903949-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_18.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:12.125422-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_19.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:12.168813-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_20.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:12.356994-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_21.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:12.557252-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_22.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:12.757398-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_23.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:12.996652-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_27.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:13.221049-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_28.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:13.438948-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_29.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:13.683918-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_30.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:13.718973-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2025_12_31.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:13.945479-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_01.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:14.179890-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_02.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:14.405114-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_03.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:14.648187-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_04.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:14.872659-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_05.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:15.066064-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_06.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:15.272022-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_07.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:15.510631-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_08.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:15.758673-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_09.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:15.993869-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_10.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:16.245926-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_11.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:16.466723-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_12.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:16.709492-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_13.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:16.908595-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_14.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:17.141579-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_15.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:17.363899-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_16.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:17.594938-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_17.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:17.830882-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_18.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:18.047886-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_19.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:18.275659-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_20.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:18.481221-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_21.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:18.748162-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_22.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:18.983745-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_23.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:19.223628-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_24.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:19.462711-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_25.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:19.688122-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_26.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:19.907470-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_27.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:20.119694-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_28.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:20.352269-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_29.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:20.578472-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_30.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:20.803530-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_01_31.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:21.003842-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_01.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:21.215818-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_02.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:21.410291-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_03.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:21.564834-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_04.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:21.731803-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_05.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:21.940773-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_25.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:22.159640-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_26.csv rows=12 using official NHL game_id values
-2026-08-25T17:40:22.373185-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_27.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:22.583799-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_02_28.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:22.791670-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_01.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:23.002177-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_02.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:23.220476-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_03.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:23.445137-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_04.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:23.659172-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_05.csv rows=8 using official NHL game_id values
-2026-08-25T17:40:23.881105-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_06.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:24.114885-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_07.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:24.345028-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_08.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:24.562918-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_09.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:24.796694-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_10.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:24.977171-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_11.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:25.166108-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_12.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:25.378524-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_13.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:25.580889-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_14.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:25.798818-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_15.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:26.008905-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_16.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:26.229489-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_17.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:26.443863-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_18.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:26.646566-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_19.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:26.847486-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_20.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:27.087921-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_21.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:27.322291-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_22.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:27.545810-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_23.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:27.785667-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_24.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:27.982884-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_25.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:28.206245-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_26.csv rows=13 using official NHL game_id values
-2026-08-25T17:40:28.417439-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_27.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:28.640680-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_28.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:28.841550-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_29.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:29.070418-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_30.csv rows=5 using official NHL game_id values
-2026-08-25T17:40:29.321065-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_03_31.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:29.534198-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_01.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:29.739453-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_02.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:29.961060-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_03.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:30.215553-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_04.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:30.430597-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_05.csv rows=7 using official NHL game_id values
-2026-08-25T17:40:30.651345-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_06.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:30.909973-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_07.csv rows=11 using official NHL game_id values
-2026-08-25T17:40:31.095909-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_08.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:31.339378-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_09.csv rows=14 using official NHL game_id values
-2026-08-25T17:40:31.556688-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_11.csv rows=15 using official NHL game_id values
-2026-08-25T17:40:32.007586-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_12.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:32.223550-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_13.csv rows=10 using official NHL game_id values
-2026-08-25T17:40:32.443472-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_14.csv rows=9 using official NHL game_id values
-2026-08-25T17:40:32.645238-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_15.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:32.868538-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_16.csv rows=6 using official NHL game_id values
-2026-08-25T17:40:33.077610-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_18.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:33.294117-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_19.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:33.492020-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_20.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:33.702463-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_21.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:33.905537-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_22.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:34.123284-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_23.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:34.332032-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_24.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:34.554773-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_25.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:34.768551-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_26.csv rows=4 using official NHL game_id values
-2026-08-25T17:40:34.966696-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_27.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:35.173012-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_28.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:35.557923-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_29.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:35.742522-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_04_30.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:35.932075-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_01.csv rows=3 using official NHL game_id values
-2026-08-25T17:40:36.131588-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_02.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:36.324555-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_03.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:36.512781-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_04.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:36.700151-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_05.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:37.083499-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_06.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:37.257800-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_07.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:37.436826-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_08.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:37.619310-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_09.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:37.810294-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_10.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:37.996191-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_11.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:38.182075-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_12.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:38.324784-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_13.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:38.510687-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_14.csv rows=2 using official NHL game_id values
-2026-08-25T17:40:38.680035-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_16.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:38.857608-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_18.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.021993-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_20.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.209876-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_21.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.417490-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_22.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.606969-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_23.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.817789-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_24.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:39.989208-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_25.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:40.172142-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_26.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:40.329521-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_27.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:40.499179-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_05_29.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:40.688904-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_02.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:40.869971-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_04.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:41.042279-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_06.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:41.223713-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_09.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:41.404756-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_11.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:41.599054-04:00 | WROTE docs\win\hockey\nhl\00_intake\nhl_schedule\NHL_2026_06_14.csv rows=1 using official NHL game_id values
-2026-08-25T17:40:41.599301-04:00 | --- SUMMARY ---
-2026-08-25T17:40:41.599536-04:00 | Schedule files written: 211
-2026-08-25T17:40:41.599771-04:00 | Official NHL games written: 1394
-2026-08-25T17:40:41.600001-04:00 | STATUS: SUCCESS
+=== pull_nhl_schedule RUN 2026-08-31T05:35:25.164178-04:00 ===
+2026-08-31T05:35:25.168059-04:00 | Target dates discovered: 212
+2026-08-31T05:35:25.168096-04:00 | Target date: 2025_10_07
+2026-08-31T05:35:25.168122-04:00 | Target date: 2025_10_08
+2026-08-31T05:35:25.168144-04:00 | Target date: 2025_10_09
+2026-08-31T05:35:25.168166-04:00 | Target date: 2025_10_11
+2026-08-31T05:35:25.168187-04:00 | Target date: 2025_10_12
+2026-08-31T05:35:25.168209-04:00 | Target date: 2025_10_13
+2026-08-31T05:35:25.168252-04:00 | Target date: 2025_10_14
+2026-08-31T05:35:25.168280-04:00 | Target date: 2025_10_15
+2026-08-31T05:35:25.168302-04:00 | Target date: 2025_10_16
+2026-08-31T05:35:25.168323-04:00 | Target date: 2025_10_17
+2026-08-31T05:35:25.168343-04:00 | Target date: 2025_10_18
+2026-08-31T05:35:25.168362-04:00 | Target date: 2025_10_19
+2026-08-31T05:35:25.168386-04:00 | Target date: 2025_10_20
+2026-08-31T05:35:25.168406-04:00 | Target date: 2025_10_21
+2026-08-31T05:35:25.168426-04:00 | Target date: 2025_10_22
+2026-08-31T05:35:25.168445-04:00 | Target date: 2025_10_23
+2026-08-31T05:35:25.168465-04:00 | Target date: 2025_10_24
+2026-08-31T05:35:25.168484-04:00 | Target date: 2025_10_25
+2026-08-31T05:35:25.168504-04:00 | Target date: 2025_10_26
+2026-08-31T05:35:25.168530-04:00 | Target date: 2025_10_27
+2026-08-31T05:35:25.168550-04:00 | Target date: 2025_10_28
+2026-08-31T05:35:25.168570-04:00 | Target date: 2025_10_29
+2026-08-31T05:35:25.168590-04:00 | Target date: 2025_10_30
+2026-08-31T05:35:25.168609-04:00 | Target date: 2025_10_31
+2026-08-31T05:35:25.168627-04:00 | Target date: 2025_11_01
+2026-08-31T05:35:25.168646-04:00 | Target date: 2025_11_02
+2026-08-31T05:35:25.168665-04:00 | Target date: 2025_11_03
+2026-08-31T05:35:25.168683-04:00 | Target date: 2025_11_04
+2026-08-31T05:35:25.168702-04:00 | Target date: 2025_11_05
+2026-08-31T05:35:25.168721-04:00 | Target date: 2025_11_06
+2026-08-31T05:35:25.168740-04:00 | Target date: 2025_11_07
+2026-08-31T05:35:25.168759-04:00 | Target date: 2025_11_08
+2026-08-31T05:35:25.168778-04:00 | Target date: 2025_11_09
+2026-08-31T05:35:25.168797-04:00 | Target date: 2025_11_10
+2026-08-31T05:35:25.168816-04:00 | Target date: 2025_11_11
+2026-08-31T05:35:25.168846-04:00 | Target date: 2025_11_12
+2026-08-31T05:35:25.168865-04:00 | Target date: 2025_11_13
+2026-08-31T05:35:25.168884-04:00 | Target date: 2025_11_14
+2026-08-31T05:35:25.168902-04:00 | Target date: 2025_11_15
+2026-08-31T05:35:25.168922-04:00 | Target date: 2025_11_16
+2026-08-31T05:35:25.168941-04:00 | Target date: 2025_11_17
+2026-08-31T05:35:25.168960-04:00 | Target date: 2025_11_18
+2026-08-31T05:35:25.168978-04:00 | Target date: 2025_11_19
+2026-08-31T05:35:25.168997-04:00 | Target date: 2025_11_20
+2026-08-31T05:35:25.169016-04:00 | Target date: 2025_11_21
+2026-08-31T05:35:25.169034-04:00 | Target date: 2025_11_22
+2026-08-31T05:35:25.169053-04:00 | Target date: 2025_11_23
+2026-08-31T05:35:25.169072-04:00 | Target date: 2025_11_24
+2026-08-31T05:35:25.169091-04:00 | Target date: 2025_11_25
+2026-08-31T05:35:25.169109-04:00 | Target date: 2025_11_26
+2026-08-31T05:35:25.169128-04:00 | Target date: 2025_11_28
+2026-08-31T05:35:25.169147-04:00 | Target date: 2025_11_29
+2026-08-31T05:35:25.169166-04:00 | Target date: 2025_11_30
+2026-08-31T05:35:25.169185-04:00 | Target date: 2025_12_01
+2026-08-31T05:35:25.169204-04:00 | Target date: 2025_12_02
+2026-08-31T05:35:25.169249-04:00 | Target date: 2025_12_03
+2026-08-31T05:35:25.169292-04:00 | Target date: 2025_12_04
+2026-08-31T05:35:25.169316-04:00 | Target date: 2025_12_05
+2026-08-31T05:35:25.169336-04:00 | Target date: 2025_12_06
+2026-08-31T05:35:25.169356-04:00 | Target date: 2025_12_07
+2026-08-31T05:35:25.169375-04:00 | Target date: 2025_12_08
+2026-08-31T05:35:25.169394-04:00 | Target date: 2025_12_09
+2026-08-31T05:35:25.169413-04:00 | Target date: 2025_12_10
+2026-08-31T05:35:25.169432-04:00 | Target date: 2025_12_11
+2026-08-31T05:35:25.169451-04:00 | Target date: 2025_12_12
+2026-08-31T05:35:25.169469-04:00 | Target date: 2025_12_13
+2026-08-31T05:35:25.169488-04:00 | Target date: 2025_12_14
+2026-08-31T05:35:25.169507-04:00 | Target date: 2025_12_15
+2026-08-31T05:35:25.169534-04:00 | Target date: 2025_12_16
+2026-08-31T05:35:25.169552-04:00 | Target date: 2025_12_17
+2026-08-31T05:35:25.169570-04:00 | Target date: 2025_12_18
+2026-08-31T05:35:25.169587-04:00 | Target date: 2025_12_19
+2026-08-31T05:35:25.169605-04:00 | Target date: 2025_12_20
+2026-08-31T05:35:25.169622-04:00 | Target date: 2025_12_21
+2026-08-31T05:35:25.169639-04:00 | Target date: 2025_12_22
+2026-08-31T05:35:25.169656-04:00 | Target date: 2025_12_23
+2026-08-31T05:35:25.169674-04:00 | Target date: 2025_12_27
+2026-08-31T05:35:25.169691-04:00 | Target date: 2025_12_28
+2026-08-31T05:35:25.169708-04:00 | Target date: 2025_12_29
+2026-08-31T05:35:25.169725-04:00 | Target date: 2025_12_30
+2026-08-31T05:35:25.169743-04:00 | Target date: 2025_12_31
+2026-08-31T05:35:25.169760-04:00 | Target date: 2026_01_01
+2026-08-31T05:35:25.169777-04:00 | Target date: 2026_01_02
+2026-08-31T05:35:25.169794-04:00 | Target date: 2026_01_03
+2026-08-31T05:35:25.169812-04:00 | Target date: 2026_01_04
+2026-08-31T05:35:25.169829-04:00 | Target date: 2026_01_05
+2026-08-31T05:35:25.169846-04:00 | Target date: 2026_01_06
+2026-08-31T05:35:25.169863-04:00 | Target date: 2026_01_07
+2026-08-31T05:35:25.169881-04:00 | Target date: 2026_01_08
+2026-08-31T05:35:25.169898-04:00 | Target date: 2026_01_09
+2026-08-31T05:35:25.169915-04:00 | Target date: 2026_01_10
+2026-08-31T05:35:25.169933-04:00 | Target date: 2026_01_11
+2026-08-31T05:35:25.169951-04:00 | Target date: 2026_01_12
+2026-08-31T05:35:25.169969-04:00 | Target date: 2026_01_13
+2026-08-31T05:35:25.169986-04:00 | Target date: 2026_01_14
+2026-08-31T05:35:25.170004-04:00 | Target date: 2026_01_15
+2026-08-31T05:35:25.170021-04:00 | Target date: 2026_01_16
+2026-08-31T05:35:25.170039-04:00 | Target date: 2026_01_17
+2026-08-31T05:35:25.170056-04:00 | Target date: 2026_01_18
+2026-08-31T05:35:25.170074-04:00 | Target date: 2026_01_19
+2026-08-31T05:35:25.170091-04:00 | Target date: 2026_01_20
+2026-08-31T05:35:25.170109-04:00 | Target date: 2026_01_21
+2026-08-31T05:35:25.170126-04:00 | Target date: 2026_01_22
+2026-08-31T05:35:25.170143-04:00 | Target date: 2026_01_23
+2026-08-31T05:35:25.170161-04:00 | Target date: 2026_01_24
+2026-08-31T05:35:25.170178-04:00 | Target date: 2026_01_25
+2026-08-31T05:35:25.170196-04:00 | Target date: 2026_01_26
+2026-08-31T05:35:25.170249-04:00 | Target date: 2026_01_27
+2026-08-31T05:35:25.170273-04:00 | Target date: 2026_01_28
+2026-08-31T05:35:25.170292-04:00 | Target date: 2026_01_29
+2026-08-31T05:35:25.170309-04:00 | Target date: 2026_01_30
+2026-08-31T05:35:25.170327-04:00 | Target date: 2026_01_31
+2026-08-31T05:35:25.170345-04:00 | Target date: 2026_02_01
+2026-08-31T05:35:25.170362-04:00 | Target date: 2026_02_02
+2026-08-31T05:35:25.170380-04:00 | Target date: 2026_02_03
+2026-08-31T05:35:25.170397-04:00 | Target date: 2026_02_04
+2026-08-31T05:35:25.170414-04:00 | Target date: 2026_02_05
+2026-08-31T05:35:25.170432-04:00 | Target date: 2026_02_25
+2026-08-31T05:35:25.170449-04:00 | Target date: 2026_02_26
+2026-08-31T05:35:25.170466-04:00 | Target date: 2026_02_27
+2026-08-31T05:35:25.170484-04:00 | Target date: 2026_02_28
+2026-08-31T05:35:25.170501-04:00 | Target date: 2026_03_01
+2026-08-31T05:35:25.170519-04:00 | Target date: 2026_03_02
+2026-08-31T05:35:25.170537-04:00 | Target date: 2026_03_03
+2026-08-31T05:35:25.170554-04:00 | Target date: 2026_03_04
+2026-08-31T05:35:25.170572-04:00 | Target date: 2026_03_05
+2026-08-31T05:35:25.170590-04:00 | Target date: 2026_03_06
+2026-08-31T05:35:25.170608-04:00 | Target date: 2026_03_07
+2026-08-31T05:35:25.170625-04:00 | Target date: 2026_03_08
+2026-08-31T05:35:25.170642-04:00 | Target date: 2026_03_09
+2026-08-31T05:35:25.170660-04:00 | Target date: 2026_03_10
+2026-08-31T05:35:25.170677-04:00 | Target date: 2026_03_11
+2026-08-31T05:35:25.170695-04:00 | Target date: 2026_03_12
+2026-08-31T05:35:25.170712-04:00 | Target date: 2026_03_13
+2026-08-31T05:35:25.170730-04:00 | Target date: 2026_03_14
+2026-08-31T05:35:25.170747-04:00 | Target date: 2026_03_15
+2026-08-31T05:35:25.170765-04:00 | Target date: 2026_03_16
+2026-08-31T05:35:25.170787-04:00 | Target date: 2026_03_17
+2026-08-31T05:35:25.170806-04:00 | Target date: 2026_03_18
+2026-08-31T05:35:25.170823-04:00 | Target date: 2026_03_19
+2026-08-31T05:35:25.170841-04:00 | Target date: 2026_03_20
+2026-08-31T05:35:25.170858-04:00 | Target date: 2026_03_21
+2026-08-31T05:35:25.170875-04:00 | Target date: 2026_03_22
+2026-08-31T05:35:25.170893-04:00 | Target date: 2026_03_23
+2026-08-31T05:35:25.170911-04:00 | Target date: 2026_03_24
+2026-08-31T05:35:25.170928-04:00 | Target date: 2026_03_25
+2026-08-31T05:35:25.170946-04:00 | Target date: 2026_03_26
+2026-08-31T05:35:25.170971-04:00 | Target date: 2026_03_27
+2026-08-31T05:35:25.170989-04:00 | Target date: 2026_03_28
+2026-08-31T05:35:25.171006-04:00 | Target date: 2026_03_29
+2026-08-31T05:35:25.171024-04:00 | Target date: 2026_03_30
+2026-08-31T05:35:25.171041-04:00 | Target date: 2026_03_31
+2026-08-31T05:35:25.171058-04:00 | Target date: 2026_04_01
+2026-08-31T05:35:25.171076-04:00 | Target date: 2026_04_02
+2026-08-31T05:35:25.171093-04:00 | Target date: 2026_04_03
+2026-08-31T05:35:25.171111-04:00 | Target date: 2026_04_04
+2026-08-31T05:35:25.171128-04:00 | Target date: 2026_04_05
+2026-08-31T05:35:25.171145-04:00 | Target date: 2026_04_06
+2026-08-31T05:35:25.171163-04:00 | Target date: 2026_04_07
+2026-08-31T05:35:25.171180-04:00 | Target date: 2026_04_08
+2026-08-31T05:35:25.171198-04:00 | Target date: 2026_04_09
+2026-08-31T05:35:25.171215-04:00 | Target date: 2026_04_11
+2026-08-31T05:35:25.171268-04:00 | Target date: 2026_04_12
+2026-08-31T05:35:25.171299-04:00 | Target date: 2026_04_13
+2026-08-31T05:35:25.171328-04:00 | Target date: 2026_04_14
+2026-08-31T05:35:25.171346-04:00 | Target date: 2026_04_15
+2026-08-31T05:35:25.171364-04:00 | Target date: 2026_04_16
+2026-08-31T05:35:25.171382-04:00 | Target date: 2026_04_18
+2026-08-31T05:35:25.171399-04:00 | Target date: 2026_04_19
+2026-08-31T05:35:25.171417-04:00 | Target date: 2026_04_20
+2026-08-31T05:35:25.171434-04:00 | Target date: 2026_04_21
+2026-08-31T05:35:25.171452-04:00 | Target date: 2026_04_22
+2026-08-31T05:35:25.171469-04:00 | Target date: 2026_04_23
+2026-08-31T05:35:25.171487-04:00 | Target date: 2026_04_24
+2026-08-31T05:35:25.171504-04:00 | Target date: 2026_04_25
+2026-08-31T05:35:25.171522-04:00 | Target date: 2026_04_26
+2026-08-31T05:35:25.171541-04:00 | Target date: 2026_04_27
+2026-08-31T05:35:25.171558-04:00 | Target date: 2026_04_28
+2026-08-31T05:35:25.171576-04:00 | Target date: 2026_04_29
+2026-08-31T05:35:25.171593-04:00 | Target date: 2026_04_30
+2026-08-31T05:35:25.171611-04:00 | Target date: 2026_05_01
+2026-08-31T05:35:25.171628-04:00 | Target date: 2026_05_02
+2026-08-31T05:35:25.171646-04:00 | Target date: 2026_05_03
+2026-08-31T05:35:25.171663-04:00 | Target date: 2026_05_04
+2026-08-31T05:35:25.171681-04:00 | Target date: 2026_05_05
+2026-08-31T05:35:25.171698-04:00 | Target date: 2026_05_06
+2026-08-31T05:35:25.171716-04:00 | Target date: 2026_05_07
+2026-08-31T05:35:25.171733-04:00 | Target date: 2026_05_08
+2026-08-31T05:35:25.171751-04:00 | Target date: 2026_05_09
+2026-08-31T05:35:25.171768-04:00 | Target date: 2026_05_10
+2026-08-31T05:35:25.171786-04:00 | Target date: 2026_05_11
+2026-08-31T05:35:25.171803-04:00 | Target date: 2026_05_12
+2026-08-31T05:35:25.171821-04:00 | Target date: 2026_05_13
+2026-08-31T05:35:25.171838-04:00 | Target date: 2026_05_14
+2026-08-31T05:35:25.171856-04:00 | Target date: 2026_05_16
+2026-08-31T05:35:25.171873-04:00 | Target date: 2026_05_18
+2026-08-31T05:35:25.171891-04:00 | Target date: 2026_05_20
+2026-08-31T05:35:25.171908-04:00 | Target date: 2026_05_21
+2026-08-31T05:35:25.171925-04:00 | Target date: 2026_05_22
+2026-08-31T05:35:25.171943-04:00 | Target date: 2026_05_23
+2026-08-31T05:35:25.171960-04:00 | Target date: 2026_05_24
+2026-08-31T05:35:25.171978-04:00 | Target date: 2026_05_25
+2026-08-31T05:35:25.171995-04:00 | Target date: 2026_05_26
+2026-08-31T05:35:25.172013-04:00 | Target date: 2026_05_27
+2026-08-31T05:35:25.172030-04:00 | Target date: 2026_05_29
+2026-08-31T05:35:25.172047-04:00 | Target date: 2026_06_02
+2026-08-31T05:35:25.172065-04:00 | Target date: 2026_06_04
+2026-08-31T05:35:25.172088-04:00 | Target date: 2026_06_06
+2026-08-31T05:35:25.172106-04:00 | Target date: 2026_06_09
+2026-08-31T05:35:25.172123-04:00 | Target date: 2026_06_11
+2026-08-31T05:35:25.172141-04:00 | Target date: 2026_06_14
+2026-08-31T05:35:25.172158-04:00 | Target date: 2026_08_31
+2026-08-31T05:35:25.477304-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_07.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:25.508523-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_08.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:25.768064-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_09.csv rows=14 using official NHL game_id values
+2026-08-31T05:35:26.028931-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_11.csv rows=16 using official NHL game_id values
+2026-08-31T05:35:26.309248-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_12.csv rows=1 using official NHL game_id values
+2026-08-31T05:35:26.568674-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_13.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:26.844658-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_14.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:27.129488-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_15.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:27.401120-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_16.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:27.674880-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_17.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:27.939624-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_18.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:28.206285-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_19.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:28.477031-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_20.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:28.741378-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_21.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:29.002295-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_22.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:29.250643-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_23.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:29.526099-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_24.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:29.783256-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_25.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:30.048774-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_26.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:30.319170-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_27.csv rows=2 using official NHL game_id values
+2026-08-31T05:35:30.571031-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_28.csv rows=16 using official NHL game_id values
+2026-08-31T05:35:30.801839-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_29.csv rows=1 using official NHL game_id values
+2026-08-31T05:35:31.089005-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_30.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:31.356837-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_10_31.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:31.614212-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_01.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:31.857010-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_02.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:32.114782-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_03.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:32.368406-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_04.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:32.592378-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_05.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:32.855451-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_06.csv rows=9 using official NHL game_id values
+2026-08-31T05:35:33.115729-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_07.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:33.365418-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_08.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:33.629405-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_09.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:33.888797-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_10.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:34.139622-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_11.csv rows=9 using official NHL game_id values
+2026-08-31T05:35:34.356892-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_12.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:34.602622-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_13.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:34.884485-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_14.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:35.147750-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_15.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:35.435455-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_16.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:35.686918-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_17.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:35.950218-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_18.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:36.179827-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_19.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:36.440591-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_20.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:36.687431-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_21.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:36.935100-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_22.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:37.183626-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_23.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:37.432826-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_24.csv rows=7 using official NHL game_id values
+2026-08-31T05:35:37.687545-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_25.csv rows=1 using official NHL game_id values
+2026-08-31T05:35:37.936698-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_26.csv rows=15 using official NHL game_id values
+2026-08-31T05:35:38.194749-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_28.csv rows=15 using official NHL game_id values
+2026-08-31T05:35:38.450716-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_29.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:38.707645-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_11_30.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:38.965690-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_01.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:39.221789-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_02.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:39.447753-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_03.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:39.704952-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_04.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:39.973443-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_05.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:40.218873-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_06.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:40.503720-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_07.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:40.789950-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_08.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:41.050386-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_09.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:41.290289-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_10.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:41.542365-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_11.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:41.783711-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_12.csv rows=2 using official NHL game_id values
+2026-08-31T05:35:42.050519-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_13.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:42.314287-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_14.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:42.589467-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_15.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:42.843182-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_16.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:43.075605-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_17.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:43.344979-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_18.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:43.605143-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_19.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:43.856586-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_20.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:44.101708-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_21.csv rows=9 using official NHL game_id values
+2026-08-31T05:35:44.344673-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_22.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:44.595743-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_23.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:45.073976-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_27.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:45.347943-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_28.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:45.610827-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_29.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:45.856869-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_30.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:46.105764-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2025_12_31.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:46.352910-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_01.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:46.615493-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_02.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:46.879045-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_03.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:47.141199-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_04.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:47.377286-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_05.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:47.639423-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_06.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:47.906860-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_07.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:48.164818-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_08.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:48.427683-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_09.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:48.694557-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_10.csv rows=14 using official NHL game_id values
+2026-08-31T05:35:48.954295-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_11.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:49.246513-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_12.csv rows=9 using official NHL game_id values
+2026-08-31T05:35:49.505098-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_13.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:49.773387-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_14.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:50.045405-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_15.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:50.287268-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_16.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:50.552859-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_17.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:50.798708-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_18.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:51.059964-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_19.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:51.321678-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_20.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:51.567192-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_21.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:51.816313-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_22.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:52.074377-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_23.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:52.322728-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_24.csv rows=9 using official NHL game_id values
+2026-08-31T05:35:52.592397-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_25.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:52.851928-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_26.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:53.125946-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_27.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:53.358930-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_28.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:53.618731-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_29.csv rows=15 using official NHL game_id values
+2026-08-31T05:35:53.886567-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_30.csv rows=1 using official NHL game_id values
+2026-08-31T05:35:54.130523-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_01_31.csv rows=14 using official NHL game_id values
+2026-08-31T05:35:54.398428-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_01.csv rows=3 using official NHL game_id values
+2026-08-31T05:35:54.635040-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_02.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:54.876634-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_03.csv rows=7 using official NHL game_id values
+2026-08-31T05:35:55.092252-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_04.csv rows=10 using official NHL game_id values
+2026-08-31T05:35:55.311604-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_05.csv rows=7 using official NHL game_id values
+2026-08-31T05:35:55.579835-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_25.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:55.839469-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_26.csv rows=12 using official NHL game_id values
+2026-08-31T05:35:56.091889-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_27.csv rows=4 using official NHL game_id values
+2026-08-31T05:35:56.351741-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_02_28.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:56.621854-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_01.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:56.895779-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_02.csv rows=6 using official NHL game_id values
+2026-08-31T05:35:57.141607-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_03.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:57.377146-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_04.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:57.657011-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_05.csv rows=8 using official NHL game_id values
+2026-08-31T05:35:57.930489-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_06.csv rows=7 using official NHL game_id values
+2026-08-31T05:35:58.184697-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_07.csv rows=11 using official NHL game_id values
+2026-08-31T05:35:58.460100-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_08.csv rows=7 using official NHL game_id values
+2026-08-31T05:35:58.745722-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_09.csv rows=5 using official NHL game_id values
+2026-08-31T05:35:59.062620-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_10.csv rows=13 using official NHL game_id values
+2026-08-31T05:35:59.454890-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_11.csv rows=2 using official NHL game_id values
+2026-08-31T05:35:59.847295-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_12.csv rows=14 using official NHL game_id values
+2026-08-31T05:36:00.147794-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_13.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:00.396660-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_14.csv rows=14 using official NHL game_id values
+2026-08-31T05:36:00.650543-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_15.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:01.541143-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_16.csv rows=5 using official NHL game_id values
+2026-08-31T05:36:01.833932-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_17.csv rows=9 using official NHL game_id values
+2026-08-31T05:36:02.081715-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_18.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:02.317941-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_19.csv rows=11 using official NHL game_id values
+2026-08-31T05:36:02.565725-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_20.csv rows=5 using official NHL game_id values
+2026-08-31T05:36:02.837040-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_21.csv rows=11 using official NHL game_id values
+2026-08-31T05:36:03.124145-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_22.csv rows=9 using official NHL game_id values
+2026-08-31T05:36:03.375244-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_23.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:03.647617-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_24.csv rows=15 using official NHL game_id values
+2026-08-31T05:36:03.883432-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_25.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:04.142636-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_26.csv rows=13 using official NHL game_id values
+2026-08-31T05:36:04.409241-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_27.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:04.667957-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_28.csv rows=15 using official NHL game_id values
+2026-08-31T05:36:04.937491-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_29.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:05.211471-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_30.csv rows=5 using official NHL game_id values
+2026-08-31T05:36:05.475823-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_03_31.csv rows=10 using official NHL game_id values
+2026-08-31T05:36:05.736015-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_01.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:06.021060-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_02.csv rows=14 using official NHL game_id values
+2026-08-31T05:36:06.301320-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_03.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:06.578362-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_04.csv rows=15 using official NHL game_id values
+2026-08-31T05:36:06.843337-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_05.csv rows=7 using official NHL game_id values
+2026-08-31T05:36:07.108553-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_06.csv rows=4 using official NHL game_id values
+2026-08-31T05:36:07.351529-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_07.csv rows=11 using official NHL game_id values
+2026-08-31T05:36:07.431165-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_08.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:07.687660-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_09.csv rows=14 using official NHL game_id values
+2026-08-31T05:36:07.940083-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_11.csv rows=15 using official NHL game_id values
+2026-08-31T05:36:08.189134-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_12.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:08.490141-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_13.csv rows=10 using official NHL game_id values
+2026-08-31T05:36:08.721124-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_14.csv rows=9 using official NHL game_id values
+2026-08-31T05:36:08.828899-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_15.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:09.069814-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_16.csv rows=6 using official NHL game_id values
+2026-08-31T05:36:09.313831-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_18.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:09.558563-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_19.csv rows=4 using official NHL game_id values
+2026-08-31T05:36:09.812412-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_20.csv rows=4 using official NHL game_id values
+2026-08-31T05:36:10.044569-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_21.csv rows=4 using official NHL game_id values
+2026-08-31T05:36:10.124788-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_22.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:10.359534-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_23.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:10.598450-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_24.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:10.833805-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_25.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:11.067724-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_26.csv rows=4 using official NHL game_id values
+2026-08-31T05:36:11.292168-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_27.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:11.517644-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_28.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:11.595289-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_29.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:11.823677-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_04_30.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:12.040924-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_01.csv rows=3 using official NHL game_id values
+2026-08-31T05:36:12.263890-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_02.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:12.483903-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_03.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:12.698734-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_04.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:12.927183-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_05.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:13.003791-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_06.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:13.231969-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_07.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:13.478905-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_08.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:13.704485-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_09.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:13.940350-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_10.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:14.147433-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_11.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:14.363211-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_12.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:14.450185-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_13.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:14.659506-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_14.csv rows=2 using official NHL game_id values
+2026-08-31T05:36:14.871617-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_16.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:15.093579-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_18.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:15.289050-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_20.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:15.491728-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_21.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:15.727918-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_22.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:15.947869-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_23.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:16.156210-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_24.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:16.367561-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_25.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:16.577125-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_26.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:16.768344-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_27.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:16.970369-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_05_29.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:17.189403-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_02.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:17.423049-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_04.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:17.647750-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_06.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:17.868818-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_09.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:18.082550-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_11.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:18.300098-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_06_14.csv rows=1 using official NHL game_id values
+2026-08-31T05:36:18.378480-04:00 | WROTE docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_2026_08_31.csv rows=0 using official NHL game_id values
+2026-08-31T05:36:18.378519-04:00 | --- SUMMARY ---
+2026-08-31T05:36:18.378542-04:00 | Schedule files written: 212
+2026-08-31T05:36:18.378563-04:00 | Official NHL games written: 1394
+2026-08-31T05:36:18.378583-04:00 | STATUS: SUCCESS

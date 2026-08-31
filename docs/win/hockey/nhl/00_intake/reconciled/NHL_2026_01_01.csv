@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020632,,hockey,nhl,2026_01_01,13:00,Ottawa Senators,Washington Capitals
-2025020633,,hockey,nhl,2026_01_01,15:00,New York Islanders,Utah Mammoth
-2025020634,,hockey,nhl,2026_01_01,19:00,Toronto Maple Leafs,Winnipeg Jets
-2025020635,,hockey,nhl,2026_01_01,19:00,Pittsburgh Penguins,Detroit Red Wings
-2025020636,,hockey,nhl,2026_01_01,19:00,Carolina Hurricanes,Montreal Canadiens
-2025020639,,hockey,nhl,2026_01_01,19:00,Los Angeles Kings,Tampa Bay Lightning
-2025020637,,hockey,nhl,2026_01_01,20:30,Chicago Blackhawks,Dallas Stars
-2025020638,,hockey,nhl,2026_01_01,22:00,Seattle Kraken,Nashville Predators
+2025020632,2025020632,hockey,nhl,2026_01_01,13:00,Ottawa Senators,Washington Capitals
+2025020633,2025020633,hockey,nhl,2026_01_01,15:00,New York Islanders,Utah Mammoth
+2025020634,2025020634,hockey,nhl,2026_01_01,19:00,Toronto Maple Leafs,Winnipeg Jets
+2025020635,2025020635,hockey,nhl,2026_01_01,19:00,Pittsburgh Penguins,Detroit Red Wings
+2025020636,2025020636,hockey,nhl,2026_01_01,19:00,Carolina Hurricanes,Montreal Canadiens
+2025020637,2025020637,hockey,nhl,2026_01_01,20:30,Chicago Blackhawks,Dallas Stars
+2025020638,2025020638,hockey,nhl,2026_01_01,22:00,Seattle Kraken,Nashville Predators
+2025020639,2025020639,hockey,nhl,2026_01_01,19:00,Los Angeles Kings,Tampa Bay Lightning

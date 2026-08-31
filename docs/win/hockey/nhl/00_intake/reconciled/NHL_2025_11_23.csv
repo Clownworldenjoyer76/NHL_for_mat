@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020347,,hockey,nhl,2025_11_23,13:00,Buffalo Sabres,Carolina Hurricanes
-2025020348,,hockey,nhl,2025_11_23,16:00,Winnipeg Jets,Minnesota Wild
-2025020349,,hockey,nhl,2025_11_23,17:00,New York Islanders,Seattle Kraken
-2025020350,,hockey,nhl,2025_11_23,19:00,Chicago Blackhawks,Colorado Avalanche
-2025020351,,hockey,nhl,2025_11_23,20:00,San Jose Sharks,Boston Bruins
-2025020352,,hockey,nhl,2025_11_23,21:00,Vancouver Canucks,Calgary Flames
+2025020347,2025020347,hockey,nhl,2025_11_23,13:00,Buffalo Sabres,Carolina Hurricanes
+2025020348,2025020348,hockey,nhl,2025_11_23,16:00,Winnipeg Jets,Minnesota Wild
+2025020349,2025020349,hockey,nhl,2025_11_23,17:00,New York Islanders,Seattle Kraken
+2025020350,2025020350,hockey,nhl,2025_11_23,19:00,Chicago Blackhawks,Colorado Avalanche
+2025020351,2025020351,hockey,nhl,2025_11_23,20:00,San Jose Sharks,Boston Bruins
+2025020352,2025020352,hockey,nhl,2025_11_23,21:00,Vancouver Canucks,Calgary Flames

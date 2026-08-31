@@ -1,13 +1,13 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020682,,hockey,nhl,2026_01_08,19:00,Boston Bruins,Calgary Flames
-2025020683,,hockey,nhl,2026_01_08,19:00,Montreal Canadiens,Florida Panthers
-2025020684,,hockey,nhl,2026_01_08,19:00,Detroit Red Wings,Vancouver Canucks
-2025020685,,hockey,nhl,2026_01_08,19:00,New York Rangers,Buffalo Sabres
-2025020686,,hockey,nhl,2026_01_08,19:00,Philadelphia Flyers,Toronto Maple Leafs
-2025020687,,hockey,nhl,2026_01_08,19:00,Pittsburgh Penguins,New Jersey Devils
-2025020688,,hockey,nhl,2026_01_08,19:00,Carolina Hurricanes,Anaheim Ducks
-2025020689,,hockey,nhl,2026_01_08,20:00,Nashville Predators,New York Islanders
-2025020690,,hockey,nhl,2026_01_08,20:00,Winnipeg Jets,Edmonton Oilers
-2025020691,,hockey,nhl,2026_01_08,21:00,Colorado Avalanche,Ottawa Senators
-2025020692,,hockey,nhl,2026_01_08,22:00,Vegas Golden Knights,Columbus Blue Jackets
-2025020693,,hockey,nhl,2026_01_08,22:00,Seattle Kraken,Minnesota Wild
+2025020682,2025020682,hockey,nhl,2026_01_08,19:00,Boston Bruins,Calgary Flames
+2025020683,2025020683,hockey,nhl,2026_01_08,19:00,Montreal Canadiens,Florida Panthers
+2025020684,2025020684,hockey,nhl,2026_01_08,19:00,Detroit Red Wings,Vancouver Canucks
+2025020685,2025020685,hockey,nhl,2026_01_08,19:00,New York Rangers,Buffalo Sabres
+2025020686,2025020686,hockey,nhl,2026_01_08,19:00,Philadelphia Flyers,Toronto Maple Leafs
+2025020687,2025020687,hockey,nhl,2026_01_08,19:00,Pittsburgh Penguins,New Jersey Devils
+2025020688,2025020688,hockey,nhl,2026_01_08,19:00,Carolina Hurricanes,Anaheim Ducks
+2025020689,2025020689,hockey,nhl,2026_01_08,20:00,Nashville Predators,New York Islanders
+2025020690,2025020690,hockey,nhl,2026_01_08,20:00,Winnipeg Jets,Edmonton Oilers
+2025020691,2025020691,hockey,nhl,2026_01_08,21:00,Colorado Avalanche,Ottawa Senators
+2025020692,2025020692,hockey,nhl,2026_01_08,22:00,Vegas Golden Knights,Columbus Blue Jackets
+2025020693,2025020693,hockey,nhl,2026_01_08,22:00,Seattle Kraken,Minnesota Wild

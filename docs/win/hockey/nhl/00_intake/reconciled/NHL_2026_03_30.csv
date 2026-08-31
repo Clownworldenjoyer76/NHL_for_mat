@@ -1,6 +1,6 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021173,,hockey,nhl,2026_03_30,19:00,New York Islanders,Pittsburgh Penguins
-2025021174,,hockey,nhl,2026_03_30,20:30,Colorado Avalanche,Calgary Flames
-2025021175,,hockey,nhl,2026_03_30,22:00,Vegas Golden Knights,Vancouver Canucks
-2025021176,,hockey,nhl,2026_03_30,22:00,Anaheim Ducks,Toronto Maple Leafs
-2025021177,,hockey,nhl,2026_03_30,22:00,San Jose Sharks,St Louis Blues
+2025021173,2025021173,hockey,nhl,2026_03_30,19:00,New York Islanders,Pittsburgh Penguins
+2025021174,2025021174,hockey,nhl,2026_03_30,20:30,Colorado Avalanche,Calgary Flames
+2025021175,2025021175,hockey,nhl,2026_03_30,22:00,Vegas Golden Knights,Vancouver Canucks
+2025021176,2025021176,hockey,nhl,2026_03_30,22:00,Anaheim Ducks,Toronto Maple Leafs
+2025021177,2025021177,hockey,nhl,2026_03_30,22:00,San Jose Sharks,St Louis Blues

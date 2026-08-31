@@ -1,8 +1,8 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020887,,hockey,nhl,2026_02_03,19:00,New Jersey Devils,Columbus Blue Jackets
-2025020889,,hockey,nhl,2026_02_03,19:00,Philadelphia Flyers,Washington Capitals
-2025020890,,hockey,nhl,2026_02_03,19:00,Carolina Hurricanes,Ottawa Senators
-2025020886,,hockey,nhl,2026_02_03,19:30,Tampa Bay Lightning,Buffalo Sabres
-2025020888,,hockey,nhl,2026_02_03,19:30,New York Islanders,Pittsburgh Penguins
-2025020891,,hockey,nhl,2026_02_03,20:30,Edmonton Oilers,Toronto Maple Leafs
-2025020892,,hockey,nhl,2026_02_03,22:00,Anaheim Ducks,Seattle Kraken
+2025020886,2025020886,hockey,nhl,2026_02_03,19:30,Tampa Bay Lightning,Buffalo Sabres
+2025020887,2025020887,hockey,nhl,2026_02_03,19:00,New Jersey Devils,Columbus Blue Jackets
+2025020888,2025020888,hockey,nhl,2026_02_03,19:30,New York Islanders,Pittsburgh Penguins
+2025020889,2025020889,hockey,nhl,2026_02_03,19:00,Philadelphia Flyers,Washington Capitals
+2025020890,2025020890,hockey,nhl,2026_02_03,19:00,Carolina Hurricanes,Ottawa Senators
+2025020891,2025020891,hockey,nhl,2026_02_03,20:30,Edmonton Oilers,Toronto Maple Leafs
+2025020892,2025020892,hockey,nhl,2026_02_03,22:00,Anaheim Ducks,Seattle Kraken

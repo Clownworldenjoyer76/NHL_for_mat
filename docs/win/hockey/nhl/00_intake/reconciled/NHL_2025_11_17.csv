@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020301,,hockey,nhl,2025_11_17,19:00,Boston Bruins,Carolina Hurricanes
-2025020302,,hockey,nhl,2025_11_17,19:00,Buffalo Sabres,Edmonton Oilers
-2025020303,,hockey,nhl,2025_11_17,19:00,Florida Panthers,Vancouver Canucks
-2025020304,,hockey,nhl,2025_11_17,19:00,Washington Capitals,Los Angeles Kings
-2025020305,,hockey,nhl,2025_11_17,19:30,Columbus Blue Jackets,Montreal Canadiens
-2025020306,,hockey,nhl,2025_11_17,22:00,Anaheim Ducks,Utah Mammoth
+2025020301,2025020301,hockey,nhl,2025_11_17,19:00,Boston Bruins,Carolina Hurricanes
+2025020302,2025020302,hockey,nhl,2025_11_17,19:00,Buffalo Sabres,Edmonton Oilers
+2025020303,2025020303,hockey,nhl,2025_11_17,19:00,Florida Panthers,Vancouver Canucks
+2025020304,2025020304,hockey,nhl,2025_11_17,19:00,Washington Capitals,Los Angeles Kings
+2025020305,2025020305,hockey,nhl,2025_11_17,19:30,Columbus Blue Jackets,Montreal Canadiens
+2025020306,2025020306,hockey,nhl,2025_11_17,22:00,Anaheim Ducks,Utah Mammoth

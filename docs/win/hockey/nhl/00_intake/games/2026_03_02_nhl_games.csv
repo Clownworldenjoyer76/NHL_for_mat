@@ -1,7 +1,7 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020955,,hockey,nhl,2026_03_02,14:00,Nashville Predators,Detroit Red Wings
-2025020953,,hockey,nhl,2026_03_02,19:00,New York Rangers,Columbus Blue Jackets
-2025020954,,hockey,nhl,2026_03_02,19:30,Toronto Maple Leafs,Philadelphia Flyers
-2025020956,,hockey,nhl,2026_03_02,22:00,Vancouver Canucks,Dallas Stars
-2025020957,,hockey,nhl,2026_03_02,22:00,Seattle Kraken,Carolina Hurricanes
-2025020958,,hockey,nhl,2026_03_02,22:30,Los Angeles Kings,Colorado Avalanche
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020953,2025020953,hockey,nhl,2026_03_02,19:00,New York Rangers,Columbus Blue Jackets
+2025020954,2025020954,hockey,nhl,2026_03_02,19:30,Toronto Maple Leafs,Philadelphia Flyers
+2025020955,2025020955,hockey,nhl,2026_03_02,14:00,Nashville Predators,Detroit Red Wings
+2025020956,2025020956,hockey,nhl,2026_03_02,22:00,Vancouver Canucks,Dallas Stars
+2025020957,2025020957,hockey,nhl,2026_03_02,22:00,Seattle Kraken,Carolina Hurricanes
+2025020958,2025020958,hockey,nhl,2026_03_02,22:30,Los Angeles Kings,Colorado Avalanche

@@ -1,7 +1,7 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020606,hockey,nhl,2025_12_29,19:30,Ottawa Senators,Columbus Blue Jackets,0.623,0.377,2.55,3.65,6.20
 2025020607,hockey,nhl,2025_12_29,19:00,Florida Panthers,Washington Capitals,0.559,0.441,2.53,3.16,5.69
 2025020608,hockey,nhl,2025_12_29,19:00,Carolina Hurricanes,New York Rangers,0.632,0.368,2.34,3.48,5.82
-2025020606,hockey,nhl,2025_12_29,19:30,Ottawa Senators,Columbus Blue Jackets,0.623,0.377,2.55,3.65,6.20
 2025020609,hockey,nhl,2025_12_29,19:30,Winnipeg Jets,Edmonton Oilers,0.492,0.508,3.11,3.03,6.14
 2025020610,hockey,nhl,2025_12_29,20:00,St Louis Blues,Buffalo Sabres,0.465,0.535,3.19,2.82,6.01
 2025020611,hockey,nhl,2025_12_29,21:00,Colorado Avalanche,Los Angeles Kings,0.688,0.312,2.25,3.58,5.83

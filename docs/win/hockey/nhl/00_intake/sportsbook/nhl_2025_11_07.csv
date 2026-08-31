@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020227,,hockey,nhl,2025_11_07,19:00,Detroit Red Wings,New York Rangers,-110,-110,-1.5,+1.5,6.0,+219,-265,-110,-110,,,,,,
-2025020228,,hockey,nhl,2025_11_07,19:00,New York Islanders,Minnesota Wild,-120,100,-1.5,+1.5,6.0,+203,-245,-110,-110,,,,,,
-2025020229,,hockey,nhl,2025_11_07,21:00,Calgary Flames,Chicago Blackhawks,-150,125,-1.5,+1.5,6.0,+177,-205,-110,-110,,,,,,
-2025020230,,hockey,nhl,2025_11_07,22:00,San Jose Sharks,Winnipeg Jets,170,-210,+1.5,-1.5,6.0,-155,+135,-118,-102,,,,,,
+2025020227,2025020227,hockey,nhl,2025_11_07,19:00,Detroit Red Wings,New York Rangers,-110,-110,-1.5,+1.5,6.0,+219,-265,-110,-110,,,,,,
+2025020228,2025020228,hockey,nhl,2025_11_07,19:00,New York Islanders,Minnesota Wild,-120,100,-1.5,+1.5,6.0,+203,-245,-110,-110,,,,,,
+2025020229,2025020229,hockey,nhl,2025_11_07,21:00,Calgary Flames,Chicago Blackhawks,-150,125,-1.5,+1.5,6.0,+177,-205,-110,-110,,,,,,
+2025020230,2025020230,hockey,nhl,2025_11_07,22:00,San Jose Sharks,Winnipeg Jets,170,-210,+1.5,-1.5,6.0,-155,+135,-118,-102,,,,,,

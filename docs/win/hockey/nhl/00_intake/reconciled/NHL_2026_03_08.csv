@@ -1,8 +1,8 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021001,,hockey,nhl,2026_03_08,14:00,Colorado Avalanche,Minnesota Wild
-2025021002,,hockey,nhl,2026_03_08,16:30,Pittsburgh Penguins,Boston Bruins
-2025021003,,hockey,nhl,2026_03_08,18:00,Buffalo Sabres,Tampa Bay Lightning
-2025021004,,hockey,nhl,2026_03_08,18:00,Dallas Stars,Chicago Blackhawks
-2025021005,,hockey,nhl,2026_03_08,19:00,New Jersey Devils,Detroit Red Wings
-2025021006,,hockey,nhl,2026_03_08,21:00,Anaheim Ducks,St Louis Blues
-2025021007,,hockey,nhl,2026_03_08,21:30,Vegas Golden Knights,Edmonton Oilers
+2025021001,2025021001,hockey,nhl,2026_03_08,14:00,Colorado Avalanche,Minnesota Wild
+2025021002,2025021002,hockey,nhl,2026_03_08,16:30,Pittsburgh Penguins,Boston Bruins
+2025021003,2025021003,hockey,nhl,2026_03_08,18:00,Buffalo Sabres,Tampa Bay Lightning
+2025021004,2025021004,hockey,nhl,2026_03_08,18:00,Dallas Stars,Chicago Blackhawks
+2025021005,2025021005,hockey,nhl,2026_03_08,19:00,New Jersey Devils,Detroit Red Wings
+2025021006,2025021006,hockey,nhl,2026_03_08,21:00,Anaheim Ducks,St Louis Blues
+2025021007,2025021007,hockey,nhl,2026_03_08,21:30,Vegas Golden Knights,Edmonton Oilers

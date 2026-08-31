@@ -1,16 +1,16 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021120,,hockey,nhl,2026_03_24,19:00,Boston Bruins,Toronto Maple Leafs
-2025021121,,hockey,nhl,2026_03_24,19:00,Montreal Canadiens,Carolina Hurricanes
-2025021122,,hockey,nhl,2026_03_24,19:00,Detroit Red Wings,Ottawa Senators
-2025021123,,hockey,nhl,2026_03_24,19:00,Florida Panthers,Seattle Kraken
-2025021124,,hockey,nhl,2026_03_24,19:00,New York Islanders,Chicago Blackhawks
-2025021125,,hockey,nhl,2026_03_24,19:00,Philadelphia Flyers,Columbus Blue Jackets
-2025021126,,hockey,nhl,2026_03_24,19:00,Pittsburgh Penguins,Colorado Avalanche
-2025021127,,hockey,nhl,2026_03_24,19:30,Tampa Bay Lightning,Minnesota Wild
-2025021128,,hockey,nhl,2026_03_24,20:00,St Louis Blues,Washington Capitals
-2025021129,,hockey,nhl,2026_03_24,20:00,Nashville Predators,San Jose Sharks
-2025021130,,hockey,nhl,2026_03_24,20:00,Dallas Stars,New Jersey Devils
-2025021131,,hockey,nhl,2026_03_24,20:00,Winnipeg Jets,Vegas Golden Knights
-2025021133,,hockey,nhl,2026_03_24,21:00,Calgary Flames,Los Angeles Kings
-2025021132,,hockey,nhl,2026_03_24,21:30,Utah Mammoth,Edmonton Oilers
-2025021134,,hockey,nhl,2026_03_24,22:00,Vancouver Canucks,Anaheim Ducks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021120,2025021120,hockey,nhl,2026_03_24,19:00,Boston Bruins,Toronto Maple Leafs
+2025021121,2025021121,hockey,nhl,2026_03_24,19:00,Montreal Canadiens,Carolina Hurricanes
+2025021122,2025021122,hockey,nhl,2026_03_24,19:00,Detroit Red Wings,Ottawa Senators
+2025021123,2025021123,hockey,nhl,2026_03_24,19:00,Florida Panthers,Seattle Kraken
+2025021124,2025021124,hockey,nhl,2026_03_24,19:00,New York Islanders,Chicago Blackhawks
+2025021125,2025021125,hockey,nhl,2026_03_24,19:00,Philadelphia Flyers,Columbus Blue Jackets
+2025021126,2025021126,hockey,nhl,2026_03_24,19:00,Pittsburgh Penguins,Colorado Avalanche
+2025021127,2025021127,hockey,nhl,2026_03_24,19:30,Tampa Bay Lightning,Minnesota Wild
+2025021128,2025021128,hockey,nhl,2026_03_24,20:00,St Louis Blues,Washington Capitals
+2025021129,2025021129,hockey,nhl,2026_03_24,20:00,Nashville Predators,San Jose Sharks
+2025021130,2025021130,hockey,nhl,2026_03_24,20:00,Dallas Stars,New Jersey Devils
+2025021131,2025021131,hockey,nhl,2026_03_24,20:00,Winnipeg Jets,Vegas Golden Knights
+2025021132,2025021132,hockey,nhl,2026_03_24,21:30,Utah Mammoth,Edmonton Oilers
+2025021133,2025021133,hockey,nhl,2026_03_24,21:00,Calgary Flames,Los Angeles Kings
+2025021134,2025021134,hockey,nhl,2026_03_24,22:00,Vancouver Canucks,Anaheim Ducks

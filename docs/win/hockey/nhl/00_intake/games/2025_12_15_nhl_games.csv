@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020514,,hockey,nhl,2025_12_15,19:00,Tampa Bay Lightning,Florida Panthers
-2025020515,,hockey,nhl,2025_12_15,19:00,New York Rangers,Anaheim Ducks
-2025020516,,hockey,nhl,2025_12_15,19:30,Winnipeg Jets,Ottawa Senators
-2025020517,,hockey,nhl,2025_12_15,20:00,St Louis Blues,Nashville Predators
-2025020518,,hockey,nhl,2025_12_15,20:00,Dallas Stars,Los Angeles Kings
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020514,2025020514,hockey,nhl,2025_12_15,19:00,Tampa Bay Lightning,Florida Panthers
+2025020515,2025020515,hockey,nhl,2025_12_15,19:00,New York Rangers,Anaheim Ducks
+2025020516,2025020516,hockey,nhl,2025_12_15,19:30,Winnipeg Jets,Ottawa Senators
+2025020517,2025020517,hockey,nhl,2025_12_15,20:00,St Louis Blues,Nashville Predators
+2025020518,2025020518,hockey,nhl,2025_12_15,20:00,Dallas Stars,Los Angeles Kings

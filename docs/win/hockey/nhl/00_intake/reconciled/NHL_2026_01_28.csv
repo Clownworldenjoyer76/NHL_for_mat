@@ -1,4 +1,4 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020842,,hockey,nhl,2026_01_28,19:00,New York Islanders,New York Rangers
-2025020840,,hockey,nhl,2026_01_28,19:30,Columbus Blue Jackets,Philadelphia Flyers
-2025020841,,hockey,nhl,2026_01_28,19:30,Ottawa Senators,Colorado Avalanche
+2025020840,2025020840,hockey,nhl,2026_01_28,19:30,Columbus Blue Jackets,Philadelphia Flyers
+2025020841,2025020841,hockey,nhl,2026_01_28,19:30,Ottawa Senators,Colorado Avalanche
+2025020842,2025020842,hockey,nhl,2026_01_28,19:00,New York Islanders,New York Rangers

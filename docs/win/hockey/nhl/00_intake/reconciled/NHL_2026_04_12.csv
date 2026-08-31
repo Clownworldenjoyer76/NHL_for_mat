@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021276,,hockey,nhl,2026_04_12,15:00,Washington Capitals,Pittsburgh Penguins
-2025021277,,hockey,nhl,2026_04_12,18:00,New York Islanders,Montreal Canadiens
-2025021278,,hockey,nhl,2026_04_12,18:00,Columbus Blue Jackets,Boston Bruins
-2025021279,,hockey,nhl,2026_04_12,19:00,New Jersey Devils,Ottawa Senators
-2025021280,,hockey,nhl,2026_04_12,20:00,Anaheim Ducks,Vancouver Canucks
-2025021281,,hockey,nhl,2026_04_12,21:00,Calgary Flames,Utah Mammoth
+2025021276,2025021276,hockey,nhl,2026_04_12,15:00,Washington Capitals,Pittsburgh Penguins
+2025021277,2025021277,hockey,nhl,2026_04_12,18:00,New York Islanders,Montreal Canadiens
+2025021278,2025021278,hockey,nhl,2026_04_12,18:00,Columbus Blue Jackets,Boston Bruins
+2025021279,2025021279,hockey,nhl,2026_04_12,19:00,New Jersey Devils,Ottawa Senators
+2025021280,2025021280,hockey,nhl,2026_04_12,20:00,Anaheim Ducks,Vancouver Canucks
+2025021281,2025021281,hockey,nhl,2026_04_12,21:00,Calgary Flames,Utah Mammoth

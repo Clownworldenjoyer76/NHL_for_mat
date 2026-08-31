@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020740,,hockey,nhl,2026_01_15,19:00,Buffalo Sabres,Montreal Canadiens
-2025020741,,hockey,nhl,2026_01_15,19:00,Pittsburgh Penguins,Philadelphia Flyers
-2025020742,,hockey,nhl,2026_01_15,19:00,Washington Capitals,San Jose Sharks
-2025020743,,hockey,nhl,2026_01_15,19:00,Columbus Blue Jackets,Vancouver Canucks
-2025020739,,hockey,nhl,2026_01_15,20:00,Boston Bruins,Seattle Kraken
-2025020744,,hockey,nhl,2026_01_15,20:00,Minnesota Wild,Winnipeg Jets
-2025020745,,hockey,nhl,2026_01_15,20:30,Chicago Blackhawks,Calgary Flames
-2025020746,,hockey,nhl,2026_01_15,21:00,Utah Mammoth,Dallas Stars
-2025020747,,hockey,nhl,2026_01_15,21:00,Edmonton Oilers,New York Islanders
-2025020748,,hockey,nhl,2026_01_15,21:30,Vegas Golden Knights,Toronto Maple Leafs
+2025020739,2025020739,hockey,nhl,2026_01_15,20:00,Boston Bruins,Seattle Kraken
+2025020740,2025020740,hockey,nhl,2026_01_15,19:00,Buffalo Sabres,Montreal Canadiens
+2025020741,2025020741,hockey,nhl,2026_01_15,19:00,Pittsburgh Penguins,Philadelphia Flyers
+2025020742,2025020742,hockey,nhl,2026_01_15,19:00,Washington Capitals,San Jose Sharks
+2025020743,2025020743,hockey,nhl,2026_01_15,19:00,Columbus Blue Jackets,Vancouver Canucks
+2025020744,2025020744,hockey,nhl,2026_01_15,20:00,Minnesota Wild,Winnipeg Jets
+2025020745,2025020745,hockey,nhl,2026_01_15,20:30,Chicago Blackhawks,Calgary Flames
+2025020746,2025020746,hockey,nhl,2026_01_15,21:00,Utah Mammoth,Dallas Stars
+2025020747,2025020747,hockey,nhl,2026_01_15,21:00,Edmonton Oilers,New York Islanders
+2025020748,2025020748,hockey,nhl,2026_01_15,21:30,Vegas Golden Knights,Toronto Maple Leafs

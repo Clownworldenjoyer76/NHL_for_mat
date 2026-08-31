@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020657,,hockey,nhl,2026_01_04,14:00,Dallas Stars,Montreal Canadiens
-2025020658,,hockey,nhl,2026_01_04,15:00,Columbus Blue Jackets,Pittsburgh Penguins
-2025020659,,hockey,nhl,2026_01_04,17:00,Florida Panthers,Colorado Avalanche
-2025020660,,hockey,nhl,2026_01_04,19:00,New Jersey Devils,Carolina Hurricanes
-2025020661,,hockey,nhl,2026_01_04,19:00,Chicago Blackhawks,Vegas Golden Knights
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020657,2025020657,hockey,nhl,2026_01_04,14:00,Dallas Stars,Montreal Canadiens
+2025020658,2025020658,hockey,nhl,2026_01_04,15:00,Columbus Blue Jackets,Pittsburgh Penguins
+2025020659,2025020659,hockey,nhl,2026_01_04,17:00,Florida Panthers,Colorado Avalanche
+2025020660,2025020660,hockey,nhl,2026_01_04,19:00,New Jersey Devils,Carolina Hurricanes
+2025020661,2025020661,hockey,nhl,2026_01_04,19:00,Chicago Blackhawks,Vegas Golden Knights

@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020265,,hockey,nhl,2025_11_12,19:00,Tampa Bay Lightning,New York Rangers
-2025020266,,hockey,nhl,2025_11_12,19:30,Philadelphia Flyers,Edmonton Oilers
-2025020267,,hockey,nhl,2025_11_12,21:00,Utah Mammoth,Buffalo Sabres
-2025020268,,hockey,nhl,2025_11_12,21:30,Chicago Blackhawks,New Jersey Devils
+2025020265,2025020265,hockey,nhl,2025_11_12,19:00,Tampa Bay Lightning,New York Rangers
+2025020266,2025020266,hockey,nhl,2025_11_12,19:30,Philadelphia Flyers,Edmonton Oilers
+2025020267,2025020267,hockey,nhl,2025_11_12,21:00,Utah Mammoth,Buffalo Sabres
+2025020268,2025020268,hockey,nhl,2025_11_12,21:30,Chicago Blackhawks,New Jersey Devils

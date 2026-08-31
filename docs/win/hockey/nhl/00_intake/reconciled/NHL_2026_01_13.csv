@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020725,,hockey,nhl,2026_01_13,19:00,Ottawa Senators,Vancouver Canucks
-2025020726,,hockey,nhl,2026_01_13,19:00,Pittsburgh Penguins,Tampa Bay Lightning
-2025020727,,hockey,nhl,2026_01_13,19:00,Washington Capitals,Montreal Canadiens
-2025020728,,hockey,nhl,2026_01_13,19:00,Columbus Blue Jackets,Calgary Flames
-2025020729,,hockey,nhl,2026_01_13,19:30,Boston Bruins,Detroit Red Wings
-2025020730,,hockey,nhl,2026_01_13,19:30,St Louis Blues,Carolina Hurricanes
-2025020731,,hockey,nhl,2026_01_13,20:00,Nashville Predators,Edmonton Oilers
-2025020732,,hockey,nhl,2026_01_13,20:00,Winnipeg Jets,New York Islanders
-2025020733,,hockey,nhl,2026_01_13,22:00,Utah Mammoth,Toronto Maple Leafs
-2025020734,,hockey,nhl,2026_01_13,22:00,Anaheim Ducks,Dallas Stars
+2025020725,2025020725,hockey,nhl,2026_01_13,19:00,Ottawa Senators,Vancouver Canucks
+2025020726,2025020726,hockey,nhl,2026_01_13,19:00,Pittsburgh Penguins,Tampa Bay Lightning
+2025020727,2025020727,hockey,nhl,2026_01_13,19:00,Washington Capitals,Montreal Canadiens
+2025020728,2025020728,hockey,nhl,2026_01_13,19:00,Columbus Blue Jackets,Calgary Flames
+2025020729,2025020729,hockey,nhl,2026_01_13,19:30,Boston Bruins,Detroit Red Wings
+2025020730,2025020730,hockey,nhl,2026_01_13,19:30,St Louis Blues,Carolina Hurricanes
+2025020731,2025020731,hockey,nhl,2026_01_13,20:00,Nashville Predators,Edmonton Oilers
+2025020732,2025020732,hockey,nhl,2026_01_13,20:00,Winnipeg Jets,New York Islanders
+2025020733,2025020733,hockey,nhl,2026_01_13,22:00,Utah Mammoth,Toronto Maple Leafs
+2025020734,2025020734,hockey,nhl,2026_01_13,22:00,Anaheim Ducks,Dallas Stars

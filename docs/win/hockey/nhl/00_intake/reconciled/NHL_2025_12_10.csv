@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020476,,hockey,nhl,2025_12_10,19:30,Chicago Blackhawks,New York Rangers
-2025020477,,hockey,nhl,2025_12_10,20:30,Calgary Flames,Detroit Red Wings
-2025020478,,hockey,nhl,2025_12_10,21:00,Utah Mammoth,Florida Panthers
-2025020479,,hockey,nhl,2025_12_10,22:00,Seattle Kraken,Los Angeles Kings
+2025020476,2025020476,hockey,nhl,2025_12_10,19:30,Chicago Blackhawks,New York Rangers
+2025020477,2025020477,hockey,nhl,2025_12_10,20:30,Calgary Flames,Detroit Red Wings
+2025020478,2025020478,hockey,nhl,2025_12_10,21:00,Utah Mammoth,Florida Panthers
+2025020479,2025020479,hockey,nhl,2025_12_10,22:00,Seattle Kraken,Los Angeles Kings

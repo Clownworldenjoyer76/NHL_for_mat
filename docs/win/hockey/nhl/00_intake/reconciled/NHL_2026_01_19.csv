@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020770,,hockey,nhl,2026_01_19,13:30,Carolina Hurricanes,Buffalo Sabres
-2025020771,,hockey,nhl,2026_01_19,16:00,Colorado Avalanche,Washington Capitals
-2025020772,,hockey,nhl,2026_01_19,17:00,Seattle Kraken,Pittsburgh Penguins
-2025020773,,hockey,nhl,2026_01_19,18:00,Florida Panthers,San Jose Sharks
-2025020774,,hockey,nhl,2026_01_19,19:30,Toronto Maple Leafs,Minnesota Wild
-2025020775,,hockey,nhl,2026_01_19,20:00,Vegas Golden Knights,Philadelphia Flyers
-2025020776,,hockey,nhl,2026_01_19,20:30,Chicago Blackhawks,Winnipeg Jets
-2025020777,,hockey,nhl,2026_01_19,21:00,Calgary Flames,New Jersey Devils
-2025020778,,hockey,nhl,2026_01_19,22:00,Vancouver Canucks,New York Islanders
-2025020779,,hockey,nhl,2026_01_19,22:00,Anaheim Ducks,New York Rangers
+2025020770,2025020770,hockey,nhl,2026_01_19,13:30,Carolina Hurricanes,Buffalo Sabres
+2025020771,2025020771,hockey,nhl,2026_01_19,16:00,Colorado Avalanche,Washington Capitals
+2025020772,2025020772,hockey,nhl,2026_01_19,17:00,Seattle Kraken,Pittsburgh Penguins
+2025020773,2025020773,hockey,nhl,2026_01_19,18:00,Florida Panthers,San Jose Sharks
+2025020774,2025020774,hockey,nhl,2026_01_19,19:30,Toronto Maple Leafs,Minnesota Wild
+2025020775,2025020775,hockey,nhl,2026_01_19,20:00,Vegas Golden Knights,Philadelphia Flyers
+2025020776,2025020776,hockey,nhl,2026_01_19,20:30,Chicago Blackhawks,Winnipeg Jets
+2025020777,2025020777,hockey,nhl,2026_01_19,21:00,Calgary Flames,New Jersey Devils
+2025020778,2025020778,hockey,nhl,2026_01_19,22:00,Vancouver Canucks,New York Islanders
+2025020779,2025020779,hockey,nhl,2026_01_19,22:00,Anaheim Ducks,New York Rangers

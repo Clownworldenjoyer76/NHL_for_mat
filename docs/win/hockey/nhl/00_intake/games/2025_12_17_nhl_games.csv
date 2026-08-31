@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020529,,hockey,nhl,2025_12_17,19:00,Florida Panthers,Los Angeles Kings
-2025020530,,hockey,nhl,2025_12_17,19:30,Detroit Red Wings,Utah Mammoth
-2025020531,,hockey,nhl,2025_12_17,20:00,St Louis Blues,Winnipeg Jets
-2025020532,,hockey,nhl,2025_12_17,20:00,Nashville Predators,Carolina Hurricanes
-2025020533,,hockey,nhl,2025_12_17,22:00,Vegas Golden Knights,New Jersey Devils
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020529,2025020529,hockey,nhl,2025_12_17,19:00,Florida Panthers,Los Angeles Kings
+2025020530,2025020530,hockey,nhl,2025_12_17,19:30,Detroit Red Wings,Utah Mammoth
+2025020531,2025020531,hockey,nhl,2025_12_17,20:00,St Louis Blues,Winnipeg Jets
+2025020532,2025020532,hockey,nhl,2025_12_17,20:00,Nashville Predators,Carolina Hurricanes
+2025020533,2025020533,hockey,nhl,2025_12_17,22:00,Vegas Golden Knights,New Jersey Devils

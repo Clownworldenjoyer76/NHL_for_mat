@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020930,,hockey,nhl,2026_02_27,19:00,Florida Panthers,Buffalo Sabres
-2025020931,,hockey,nhl,2026_02_27,19:00,Washington Capitals,Vegas Golden Knights
-2025020932,,hockey,nhl,2026_02_27,21:00,Utah Mammoth,Minnesota Wild
-2025020933,,hockey,nhl,2026_02_27,22:00,Anaheim Ducks,Winnipeg Jets
+2025020930,2025020930,hockey,nhl,2026_02_27,19:00,Florida Panthers,Buffalo Sabres
+2025020931,2025020931,hockey,nhl,2026_02_27,19:00,Washington Capitals,Vegas Golden Knights
+2025020932,2025020932,hockey,nhl,2026_02_27,21:00,Utah Mammoth,Minnesota Wild
+2025020933,2025020933,hockey,nhl,2026_02_27,22:00,Anaheim Ducks,Winnipeg Jets

@@ -1,6 +1,6 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020461,,hockey,nhl,2025_12_08,19:30,Toronto Maple Leafs,Tampa Bay Lightning
-2025020462,,hockey,nhl,2025_12_08,21:00,Utah Mammoth,Los Angeles Kings
-2025020463,,hockey,nhl,2025_12_08,21:00,Calgary Flames,Buffalo Sabres
-2025020464,,hockey,nhl,2025_12_08,22:00,Vancouver Canucks,Detroit Red Wings
-2025020465,,hockey,nhl,2025_12_08,22:00,Seattle Kraken,Minnesota Wild
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020461,2025020461,hockey,nhl,2025_12_08,19:30,Toronto Maple Leafs,Tampa Bay Lightning
+2025020462,2025020462,hockey,nhl,2025_12_08,21:00,Utah Mammoth,Los Angeles Kings
+2025020463,2025020463,hockey,nhl,2025_12_08,21:00,Calgary Flames,Buffalo Sabres
+2025020464,2025020464,hockey,nhl,2025_12_08,22:00,Vancouver Canucks,Detroit Red Wings
+2025020465,2025020465,hockey,nhl,2025_12_08,22:00,Seattle Kraken,Minnesota Wild

@@ -1,11 +1,11 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020519,,hockey,nhl,2025_12_16,19:00,Boston Bruins,Utah Mammoth
-2025020520,,hockey,nhl,2025_12_16,19:00,Toronto Maple Leafs,Chicago Blackhawks
-2025020521,,hockey,nhl,2025_12_16,19:00,Montreal Canadiens,Philadelphia Flyers
-2025020522,,hockey,nhl,2025_12_16,19:00,Detroit Red Wings,New York Islanders
-2025020523,,hockey,nhl,2025_12_16,19:00,New York Rangers,Vancouver Canucks
-2025020525,,hockey,nhl,2025_12_16,19:00,Columbus Blue Jackets,Anaheim Ducks
-2025020524,,hockey,nhl,2025_12_16,19:30,Pittsburgh Penguins,Edmonton Oilers
-2025020526,,hockey,nhl,2025_12_16,20:00,Minnesota Wild,Washington Capitals
-2025020527,,hockey,nhl,2025_12_16,22:00,San Jose Sharks,Calgary Flames
-2025020528,,hockey,nhl,2025_12_16,22:00,Seattle Kraken,Colorado Avalanche
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020519,2025020519,hockey,nhl,2025_12_16,19:00,Boston Bruins,Utah Mammoth
+2025020520,2025020520,hockey,nhl,2025_12_16,19:00,Toronto Maple Leafs,Chicago Blackhawks
+2025020521,2025020521,hockey,nhl,2025_12_16,19:00,Montreal Canadiens,Philadelphia Flyers
+2025020522,2025020522,hockey,nhl,2025_12_16,19:00,Detroit Red Wings,New York Islanders
+2025020523,2025020523,hockey,nhl,2025_12_16,19:00,New York Rangers,Vancouver Canucks
+2025020524,2025020524,hockey,nhl,2025_12_16,19:30,Pittsburgh Penguins,Edmonton Oilers
+2025020525,2025020525,hockey,nhl,2025_12_16,19:00,Columbus Blue Jackets,Anaheim Ducks
+2025020526,2025020526,hockey,nhl,2025_12_16,20:00,Minnesota Wild,Washington Capitals
+2025020527,2025020527,hockey,nhl,2025_12_16,22:00,San Jose Sharks,Calgary Flames
+2025020528,2025020528,hockey,nhl,2025_12_16,22:00,Seattle Kraken,Colorado Avalanche

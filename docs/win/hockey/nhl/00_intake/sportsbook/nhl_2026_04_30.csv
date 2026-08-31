@@ -1,3 +1,3 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025030166,,hockey,nhl,2026_04_30,19:30,Minnesota Wild,Dallas Stars,-122,102,-1.5,1.5,5.5,210,-256,-118,-102,1.82,2.02,3.1,1.39,1.85,1.98
-2025030186,,hockey,nhl,2026_04_30,22:00,Anaheim Ducks,Edmonton Oilers,110,-130,1.5,-1.5,6.5,-217,180,-161,136,2.1,1.77,1.46,2.8,1.62,2.36
+2025030166,2025030166,hockey,nhl,2026_04_30,19:30,Minnesota Wild,Dallas Stars,-122,102,-1.5,1.5,5.5,210,-256,-118,-102,1.82,2.02,3.1,1.39,1.85,1.98
+2025030186,2025030186,hockey,nhl,2026_04_30,22:00,Anaheim Ducks,Edmonton Oilers,110,-130,1.5,-1.5,6.5,-217,180,-161,136,2.1,1.77,1.46,2.8,1.62,2.36

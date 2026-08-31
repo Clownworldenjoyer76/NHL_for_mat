@@ -1,10 +1,10 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020716,,hockey,nhl,2026_01_12,19:00,Buffalo Sabres,Florida Panthers
-2025020717,,hockey,nhl,2026_01_12,19:00,Detroit Red Wings,Carolina Hurricanes
-2025020718,,hockey,nhl,2026_01_12,19:00,New York Rangers,Seattle Kraken
-2025020719,,hockey,nhl,2026_01_12,19:00,Philadelphia Flyers,Tampa Bay Lightning
-2025020720,,hockey,nhl,2026_01_12,19:30,Montreal Canadiens,Vancouver Canucks
-2025020721,,hockey,nhl,2026_01_12,20:00,Minnesota Wild,New Jersey Devils
-2025020722,,hockey,nhl,2026_01_12,20:30,Chicago Blackhawks,Edmonton Oilers
-2025020723,,hockey,nhl,2026_01_12,22:00,Colorado Avalanche,Toronto Maple Leafs
-2025020724,,hockey,nhl,2026_01_12,22:00,Los Angeles Kings,Dallas Stars
+2025020716,2025020716,hockey,nhl,2026_01_12,19:00,Buffalo Sabres,Florida Panthers
+2025020717,2025020717,hockey,nhl,2026_01_12,19:00,Detroit Red Wings,Carolina Hurricanes
+2025020718,2025020718,hockey,nhl,2026_01_12,19:00,New York Rangers,Seattle Kraken
+2025020719,2025020719,hockey,nhl,2026_01_12,19:00,Philadelphia Flyers,Tampa Bay Lightning
+2025020720,2025020720,hockey,nhl,2026_01_12,19:30,Montreal Canadiens,Vancouver Canucks
+2025020721,2025020721,hockey,nhl,2026_01_12,20:00,Minnesota Wild,New Jersey Devils
+2025020722,2025020722,hockey,nhl,2026_01_12,20:30,Chicago Blackhawks,Edmonton Oilers
+2025020723,2025020723,hockey,nhl,2026_01_12,22:00,Colorado Avalanche,Toronto Maple Leafs
+2025020724,2025020724,hockey,nhl,2026_01_12,22:00,Los Angeles Kings,Dallas Stars

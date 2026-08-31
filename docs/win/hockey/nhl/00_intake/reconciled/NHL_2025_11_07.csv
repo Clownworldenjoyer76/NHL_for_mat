@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020227,,hockey,nhl,2025_11_07,19:00,Detroit Red Wings,New York Rangers
-2025020228,,hockey,nhl,2025_11_07,19:00,New York Islanders,Minnesota Wild
-2025020229,,hockey,nhl,2025_11_07,21:00,Calgary Flames,Chicago Blackhawks
-2025020230,,hockey,nhl,2025_11_07,22:00,San Jose Sharks,Winnipeg Jets
+2025020227,2025020227,hockey,nhl,2025_11_07,19:00,Detroit Red Wings,New York Rangers
+2025020228,2025020228,hockey,nhl,2025_11_07,19:00,New York Islanders,Minnesota Wild
+2025020229,2025020229,hockey,nhl,2025_11_07,21:00,Calgary Flames,Chicago Blackhawks
+2025020230,2025020230,hockey,nhl,2025_11_07,22:00,San Jose Sharks,Winnipeg Jets

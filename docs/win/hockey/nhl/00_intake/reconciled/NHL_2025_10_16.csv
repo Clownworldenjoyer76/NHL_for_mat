@@ -1,12 +1,12 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020061,,hockey,nhl,2025_10_16,19:00,Toronto Maple Leafs,New York Rangers
-2025020062,,hockey,nhl,2025_10_16,19:00,Montreal Canadiens,Nashville Predators
-2025020063,,hockey,nhl,2025_10_16,19:00,Ottawa Senators,Seattle Kraken
-2025020064,,hockey,nhl,2025_10_16,19:00,New Jersey Devils,Florida Panthers
-2025020066,,hockey,nhl,2025_10_16,19:00,Philadelphia Flyers,Winnipeg Jets
-2025020067,,hockey,nhl,2025_10_16,19:00,Columbus Blue Jackets,Colorado Avalanche
-2025020065,,hockey,nhl,2025_10_16,19:30,New York Islanders,Edmonton Oilers
-2025020068,,hockey,nhl,2025_10_16,20:00,Dallas Stars,Vancouver Canucks
-2025020069,,hockey,nhl,2025_10_16,22:00,Vegas Golden Knights,Boston Bruins
-2025020070,,hockey,nhl,2025_10_16,22:00,Anaheim Ducks,Carolina Hurricanes
-2025020071,,hockey,nhl,2025_10_16,22:00,Los Angeles Kings,Pittsburgh Penguins
+2025020061,2025020061,hockey,nhl,2025_10_16,19:00,Toronto Maple Leafs,New York Rangers
+2025020062,2025020062,hockey,nhl,2025_10_16,19:00,Montreal Canadiens,Nashville Predators
+2025020063,2025020063,hockey,nhl,2025_10_16,19:00,Ottawa Senators,Seattle Kraken
+2025020064,2025020064,hockey,nhl,2025_10_16,19:00,New Jersey Devils,Florida Panthers
+2025020065,2025020065,hockey,nhl,2025_10_16,19:30,New York Islanders,Edmonton Oilers
+2025020066,2025020066,hockey,nhl,2025_10_16,19:00,Philadelphia Flyers,Winnipeg Jets
+2025020067,2025020067,hockey,nhl,2025_10_16,19:00,Columbus Blue Jackets,Colorado Avalanche
+2025020068,2025020068,hockey,nhl,2025_10_16,20:00,Dallas Stars,Vancouver Canucks
+2025020069,2025020069,hockey,nhl,2025_10_16,22:00,Vegas Golden Knights,Boston Bruins
+2025020070,2025020070,hockey,nhl,2025_10_16,22:00,Anaheim Ducks,Carolina Hurricanes
+2025020071,2025020071,hockey,nhl,2025_10_16,22:00,Los Angeles Kings,Pittsburgh Penguins

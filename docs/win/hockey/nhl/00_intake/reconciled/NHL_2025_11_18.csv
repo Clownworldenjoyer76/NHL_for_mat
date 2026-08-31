@@ -1,9 +1,9 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020307,,hockey,nhl,2025_11_18,19:00,Toronto Maple Leafs,St Louis Blues
-2025020308,,hockey,nhl,2025_11_18,19:00,Detroit Red Wings,Seattle Kraken
-2025020309,,hockey,nhl,2025_11_18,19:00,Tampa Bay Lightning,New Jersey Devils
-2025020310,,hockey,nhl,2025_11_18,20:00,Dallas Stars,New York Islanders
-2025020311,,hockey,nhl,2025_11_18,20:00,Winnipeg Jets,Columbus Blue Jackets
-2025020312,,hockey,nhl,2025_11_18,20:30,Chicago Blackhawks,Calgary Flames
-2025020313,,hockey,nhl,2025_11_18,22:00,Vegas Golden Knights,New York Rangers
-2025020314,,hockey,nhl,2025_11_18,22:00,San Jose Sharks,Utah Mammoth
+2025020307,2025020307,hockey,nhl,2025_11_18,19:00,Toronto Maple Leafs,St Louis Blues
+2025020308,2025020308,hockey,nhl,2025_11_18,19:00,Detroit Red Wings,Seattle Kraken
+2025020309,2025020309,hockey,nhl,2025_11_18,19:00,Tampa Bay Lightning,New Jersey Devils
+2025020310,2025020310,hockey,nhl,2025_11_18,20:00,Dallas Stars,New York Islanders
+2025020311,2025020311,hockey,nhl,2025_11_18,20:00,Winnipeg Jets,Columbus Blue Jackets
+2025020312,2025020312,hockey,nhl,2025_11_18,20:30,Chicago Blackhawks,Calgary Flames
+2025020313,2025020313,hockey,nhl,2025_11_18,22:00,Vegas Golden Knights,New York Rangers
+2025020314,2025020314,hockey,nhl,2025_11_18,22:00,San Jose Sharks,Utah Mammoth

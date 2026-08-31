@@ -1,7 +1,7 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021309,,hockey,nhl,2026_04_16,19:30,Utah Mammoth,St Louis Blues
-2025021307,,hockey,nhl,2026_04_16,20:00,Nashville Predators,Anaheim Ducks
-2025021308,,hockey,nhl,2026_04_16,20:00,Winnipeg Jets,San Jose Sharks
-2025021310,,hockey,nhl,2026_04_16,21:00,Calgary Flames,Los Angeles Kings
-2025021311,,hockey,nhl,2026_04_16,21:00,Edmonton Oilers,Vancouver Canucks
-2025021312,,hockey,nhl,2026_04_16,22:00,Colorado Avalanche,Seattle Kraken
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021307,2025021307,hockey,nhl,2026_04_16,20:00,Nashville Predators,Anaheim Ducks
+2025021308,2025021308,hockey,nhl,2026_04_16,20:00,Winnipeg Jets,San Jose Sharks
+2025021309,2025021309,hockey,nhl,2026_04_16,19:30,Utah Mammoth,St Louis Blues
+2025021310,2025021310,hockey,nhl,2026_04_16,21:00,Calgary Flames,Los Angeles Kings
+2025021311,2025021311,hockey,nhl,2026_04_16,21:00,Edmonton Oilers,Vancouver Canucks
+2025021312,2025021312,hockey,nhl,2026_04_16,22:00,Colorado Avalanche,Seattle Kraken

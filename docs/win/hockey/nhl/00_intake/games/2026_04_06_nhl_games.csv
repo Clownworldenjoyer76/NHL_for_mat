@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021229,,hockey,nhl,2026_04_06,19:00,Buffalo Sabres,Tampa Bay Lightning
-2025021230,,hockey,nhl,2026_04_06,19:30,Winnipeg Jets,Seattle Kraken
-2025021231,,hockey,nhl,2026_04_06,22:00,San Jose Sharks,Chicago Blackhawks
-2025021232,,hockey,nhl,2026_04_06,22:30,Los Angeles Kings,Nashville Predators
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021229,2025021229,hockey,nhl,2026_04_06,19:00,Buffalo Sabres,Tampa Bay Lightning
+2025021230,2025021230,hockey,nhl,2026_04_06,19:30,Winnipeg Jets,Seattle Kraken
+2025021231,2025021231,hockey,nhl,2026_04_06,22:00,San Jose Sharks,Chicago Blackhawks
+2025021232,2025021232,hockey,nhl,2026_04_06,22:30,Los Angeles Kings,Nashville Predators

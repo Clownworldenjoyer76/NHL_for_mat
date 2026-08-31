@@ -1,13 +1,13 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025021252,hockey,nhl,2026_04_09,18:45,New York Islanders,Toronto Maple Leafs,0.613,0.387,2.44,3.52,5.96
 2025021247,hockey,nhl,2026_04_09,19:00,Buffalo Sabres,Columbus Blue Jackets,0.54,0.46,3.00,3.44,6.44
 2025021248,hockey,nhl,2026_04_09,19:00,Montreal Canadiens,Tampa Bay Lightning,0.489,0.511,3.27,3.15,6.42
 2025021249,hockey,nhl,2026_04_09,19:00,Ottawa Senators,Florida Panthers,0.682,0.318,2.37,3.68,6.05
 2025021250,hockey,nhl,2026_04_09,19:00,Detroit Red Wings,Philadelphia Flyers,0.536,0.464,2.64,3.03,5.67
 2025021251,hockey,nhl,2026_04_09,19:00,New Jersey Devils,Pittsburgh Penguins,0.487,0.513,3.23,3.08,6.31
+2025021252,hockey,nhl,2026_04_09,18:45,New York Islanders,Toronto Maple Leafs,0.613,0.387,2.44,3.52,5.96
 2025021253,hockey,nhl,2026_04_09,20:00,St Louis Blues,Winnipeg Jets,0.493,0.507,2.86,2.79,5.65
-2025021255,hockey,nhl,2026_04_09,20:30,Chicago Blackhawks,Carolina Hurricanes,0.365,0.635,3.65,2.49,6.14
 2025021254,hockey,nhl,2026_04_09,21:00,Dallas Stars,Minnesota Wild,0.552,0.448,2.67,3.22,5.89
+2025021255,hockey,nhl,2026_04_09,20:30,Chicago Blackhawks,Carolina Hurricanes,0.365,0.635,3.65,2.49,6.14
 2025021256,hockey,nhl,2026_04_09,21:00,Colorado Avalanche,Calgary Flames,0.727,0.273,2.34,3.81,6.15
 2025021257,hockey,nhl,2026_04_09,21:00,Utah Mammoth,Nashville Predators,0.606,0.394,2.48,3.52,6.00
 2025021258,hockey,nhl,2026_04_09,22:00,Anaheim Ducks,San Jose Sharks,0.611,0.389,2.84,3.91,6.75

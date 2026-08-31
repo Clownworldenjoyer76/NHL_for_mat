@@ -1,11 +1,11 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021178,,hockey,nhl,2026_03_31,19:00,Boston Bruins,Dallas Stars
-2025021179,,hockey,nhl,2026_03_31,19:00,Buffalo Sabres,New York Islanders
-2025021180,,hockey,nhl,2026_03_31,19:00,Tampa Bay Lightning,Montreal Canadiens
-2025021181,,hockey,nhl,2026_03_31,19:00,Florida Panthers,Ottawa Senators
-2025021182,,hockey,nhl,2026_03_31,19:00,New York Rangers,New Jersey Devils
-2025021183,,hockey,nhl,2026_03_31,19:00,Pittsburgh Penguins,Detroit Red Wings
-2025021184,,hockey,nhl,2026_03_31,19:00,Washington Capitals,Philadelphia Flyers
-2025021185,,hockey,nhl,2026_03_31,19:30,Columbus Blue Jackets,Carolina Hurricanes
-2025021186,,hockey,nhl,2026_03_31,20:30,Chicago Blackhawks,Winnipeg Jets
-2025021187,,hockey,nhl,2026_03_31,21:00,Edmonton Oilers,Seattle Kraken
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021178,2025021178,hockey,nhl,2026_03_31,19:00,Boston Bruins,Dallas Stars
+2025021179,2025021179,hockey,nhl,2026_03_31,19:00,Buffalo Sabres,New York Islanders
+2025021180,2025021180,hockey,nhl,2026_03_31,19:00,Tampa Bay Lightning,Montreal Canadiens
+2025021181,2025021181,hockey,nhl,2026_03_31,19:00,Florida Panthers,Ottawa Senators
+2025021182,2025021182,hockey,nhl,2026_03_31,19:00,New York Rangers,New Jersey Devils
+2025021183,2025021183,hockey,nhl,2026_03_31,19:00,Pittsburgh Penguins,Detroit Red Wings
+2025021184,2025021184,hockey,nhl,2026_03_31,19:00,Washington Capitals,Philadelphia Flyers
+2025021185,2025021185,hockey,nhl,2026_03_31,19:30,Columbus Blue Jackets,Carolina Hurricanes
+2025021186,2025021186,hockey,nhl,2026_03_31,20:30,Chicago Blackhawks,Winnipeg Jets
+2025021187,2025021187,hockey,nhl,2026_03_31,21:00,Edmonton Oilers,Seattle Kraken

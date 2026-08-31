@@ -1,15 +1,15 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021252,,hockey,nhl,2026_04_09,18:45,New York Islanders,Toronto Maple Leafs
-2025021247,,hockey,nhl,2026_04_09,19:00,Buffalo Sabres,Columbus Blue Jackets
-2025021248,,hockey,nhl,2026_04_09,19:00,Montreal Canadiens,Tampa Bay Lightning
-2025021249,,hockey,nhl,2026_04_09,19:00,Ottawa Senators,Florida Panthers
-2025021250,,hockey,nhl,2026_04_09,19:00,Detroit Red Wings,Philadelphia Flyers
-2025021251,,hockey,nhl,2026_04_09,19:00,New Jersey Devils,Pittsburgh Penguins
-2025021253,,hockey,nhl,2026_04_09,20:00,St Louis Blues,Winnipeg Jets
-2025021255,,hockey,nhl,2026_04_09,20:30,Chicago Blackhawks,Carolina Hurricanes
-2025021254,,hockey,nhl,2026_04_09,21:00,Dallas Stars,Minnesota Wild
-2025021256,,hockey,nhl,2026_04_09,21:00,Colorado Avalanche,Calgary Flames
-2025021257,,hockey,nhl,2026_04_09,21:00,Utah Mammoth,Nashville Predators
-2025021258,,hockey,nhl,2026_04_09,22:00,Anaheim Ducks,San Jose Sharks
-2025021259,,hockey,nhl,2026_04_09,22:00,Seattle Kraken,Vegas Golden Knights
-2025021260,,hockey,nhl,2026_04_09,22:30,Los Angeles Kings,Vancouver Canucks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025021247,2025021247,hockey,nhl,2026_04_09,19:00,Buffalo Sabres,Columbus Blue Jackets
+2025021248,2025021248,hockey,nhl,2026_04_09,19:00,Montreal Canadiens,Tampa Bay Lightning
+2025021249,2025021249,hockey,nhl,2026_04_09,19:00,Ottawa Senators,Florida Panthers
+2025021250,2025021250,hockey,nhl,2026_04_09,19:00,Detroit Red Wings,Philadelphia Flyers
+2025021251,2025021251,hockey,nhl,2026_04_09,19:00,New Jersey Devils,Pittsburgh Penguins
+2025021252,2025021252,hockey,nhl,2026_04_09,18:45,New York Islanders,Toronto Maple Leafs
+2025021253,2025021253,hockey,nhl,2026_04_09,20:00,St Louis Blues,Winnipeg Jets
+2025021254,2025021254,hockey,nhl,2026_04_09,21:00,Dallas Stars,Minnesota Wild
+2025021255,2025021255,hockey,nhl,2026_04_09,20:30,Chicago Blackhawks,Carolina Hurricanes
+2025021256,2025021256,hockey,nhl,2026_04_09,21:00,Colorado Avalanche,Calgary Flames
+2025021257,2025021257,hockey,nhl,2026_04_09,21:00,Utah Mammoth,Nashville Predators
+2025021258,2025021258,hockey,nhl,2026_04_09,22:00,Anaheim Ducks,San Jose Sharks
+2025021259,2025021259,hockey,nhl,2026_04_09,22:00,Seattle Kraken,Vegas Golden Knights
+2025021260,2025021260,hockey,nhl,2026_04_09,22:30,Los Angeles Kings,Vancouver Canucks

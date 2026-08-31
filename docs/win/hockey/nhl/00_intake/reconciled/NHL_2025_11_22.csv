@@ -1,13 +1,13 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020335,,hockey,nhl,2025_11_22,13:00,Detroit Red Wings,Columbus Blue Jackets
-2025020336,,hockey,nhl,2025_11_22,15:30,New York Islanders,St Louis Blues
-2025020337,,hockey,nhl,2025_11_22,19:00,Montreal Canadiens,Toronto Maple Leafs
-2025020338,,hockey,nhl,2025_11_22,19:00,Florida Panthers,Edmonton Oilers
-2025020339,,hockey,nhl,2025_11_22,19:00,Philadelphia Flyers,New Jersey Devils
-2025020340,,hockey,nhl,2025_11_22,19:00,Pittsburgh Penguins,Seattle Kraken
-2025020341,,hockey,nhl,2025_11_22,19:00,Washington Capitals,Tampa Bay Lightning
-2025020342,,hockey,nhl,2025_11_22,19:00,San Jose Sharks,Ottawa Senators
-2025020343,,hockey,nhl,2025_11_22,20:00,Nashville Predators,Colorado Avalanche
-2025020344,,hockey,nhl,2025_11_22,21:00,Utah Mammoth,New York Rangers
-2025020345,,hockey,nhl,2025_11_22,22:00,Calgary Flames,Dallas Stars
-2025020346,,hockey,nhl,2025_11_22,22:00,Anaheim Ducks,Vegas Golden Knights
+2025020335,2025020335,hockey,nhl,2025_11_22,13:00,Detroit Red Wings,Columbus Blue Jackets
+2025020336,2025020336,hockey,nhl,2025_11_22,15:30,New York Islanders,St Louis Blues
+2025020337,2025020337,hockey,nhl,2025_11_22,19:00,Montreal Canadiens,Toronto Maple Leafs
+2025020338,2025020338,hockey,nhl,2025_11_22,19:00,Florida Panthers,Edmonton Oilers
+2025020339,2025020339,hockey,nhl,2025_11_22,19:00,Philadelphia Flyers,New Jersey Devils
+2025020340,2025020340,hockey,nhl,2025_11_22,19:00,Pittsburgh Penguins,Seattle Kraken
+2025020341,2025020341,hockey,nhl,2025_11_22,19:00,Washington Capitals,Tampa Bay Lightning
+2025020342,2025020342,hockey,nhl,2025_11_22,19:00,San Jose Sharks,Ottawa Senators
+2025020343,2025020343,hockey,nhl,2025_11_22,20:00,Nashville Predators,Colorado Avalanche
+2025020344,2025020344,hockey,nhl,2025_11_22,21:00,Utah Mammoth,New York Rangers
+2025020345,2025020345,hockey,nhl,2025_11_22,22:00,Calgary Flames,Dallas Stars
+2025020346,2025020346,hockey,nhl,2025_11_22,22:00,Anaheim Ducks,Vegas Golden Knights

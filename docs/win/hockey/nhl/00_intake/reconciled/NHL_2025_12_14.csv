@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020508,,hockey,nhl,2025_12_14,12:30,New Jersey Devils,Vancouver Canucks
-2025020509,,hockey,nhl,2025_12_14,15:00,Pittsburgh Penguins,Utah Mammoth
-2025020510,,hockey,nhl,2025_12_14,17:00,Carolina Hurricanes,Philadelphia Flyers
-2025020511,,hockey,nhl,2025_12_14,18:00,Minnesota Wild,Boston Bruins
-2025020512,,hockey,nhl,2025_12_14,19:00,Montreal Canadiens,Edmonton Oilers
-2025020513,,hockey,nhl,2025_12_14,20:00,Seattle Kraken,Buffalo Sabres
+2025020508,2025020508,hockey,nhl,2025_12_14,12:30,New Jersey Devils,Vancouver Canucks
+2025020509,2025020509,hockey,nhl,2025_12_14,15:00,Pittsburgh Penguins,Utah Mammoth
+2025020510,2025020510,hockey,nhl,2025_12_14,17:00,Carolina Hurricanes,Philadelphia Flyers
+2025020511,2025020511,hockey,nhl,2025_12_14,18:00,Minnesota Wild,Boston Bruins
+2025020512,2025020512,hockey,nhl,2025_12_14,19:00,Montreal Canadiens,Edmonton Oilers
+2025020513,2025020513,hockey,nhl,2025_12_14,20:00,Seattle Kraken,Buffalo Sabres

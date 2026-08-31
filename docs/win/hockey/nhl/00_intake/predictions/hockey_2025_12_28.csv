@@ -1,6 +1,6 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
+2025020601,hockey,nhl,2025_12_28,19:00,Detroit Red Wings,Toronto Maple Leafs,0.567,0.433,2.90,3.61,6.51
 2025020602,hockey,nhl,2025_12_28,17:00,Tampa Bay Lightning,Montreal Canadiens,0.587,0.413,2.62,3.55,6.17
 2025020603,hockey,nhl,2025_12_28,17:00,Columbus Blue Jackets,New York Islanders,0.527,0.473,3.11,3.40,6.51
-2025020601,hockey,nhl,2025_12_28,19:00,Detroit Red Wings,Toronto Maple Leafs,0.567,0.433,2.90,3.61,6.51
 2025020604,hockey,nhl,2025_12_28,19:00,Chicago Blackhawks,Pittsburgh Penguins,0.464,0.536,3.35,2.96,6.31
 2025020605,hockey,nhl,2025_12_28,20:00,Seattle Kraken,Philadelphia Flyers,0.461,0.539,3.05,2.63,5.68

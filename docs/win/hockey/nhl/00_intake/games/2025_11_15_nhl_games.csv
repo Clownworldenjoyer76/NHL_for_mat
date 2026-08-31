@@ -1,14 +1,14 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020283,,hockey,nhl,2025_11_15,17:00,Florida Panthers,Tampa Bay Lightning
-2025020284,,hockey,nhl,2025_11_15,18:00,Minnesota Wild,Anaheim Ducks
-2025020285,,hockey,nhl,2025_11_15,19:00,Montreal Canadiens,Boston Bruins
-2025020286,,hockey,nhl,2025_11_15,19:00,Ottawa Senators,Los Angeles Kings
-2025020287,,hockey,nhl,2025_11_15,19:00,Detroit Red Wings,Buffalo Sabres
-2025020288,,hockey,nhl,2025_11_15,19:00,Washington Capitals,New Jersey Devils
-2025020289,,hockey,nhl,2025_11_15,19:00,Carolina Hurricanes,Edmonton Oilers
-2025020290,,hockey,nhl,2025_11_15,19:00,Columbus Blue Jackets,New York Rangers
-2025020291,,hockey,nhl,2025_11_15,19:00,Chicago Blackhawks,Toronto Maple Leafs
-2025020292,,hockey,nhl,2025_11_15,20:00,St Louis Blues,Vegas Golden Knights
-2025020293,,hockey,nhl,2025_11_15,20:00,Dallas Stars,Philadelphia Flyers
-2025020294,,hockey,nhl,2025_11_15,22:00,Calgary Flames,Winnipeg Jets
-2025020295,,hockey,nhl,2025_11_15,22:00,Seattle Kraken,San Jose Sharks
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020283,2025020283,hockey,nhl,2025_11_15,17:00,Florida Panthers,Tampa Bay Lightning
+2025020284,2025020284,hockey,nhl,2025_11_15,18:00,Minnesota Wild,Anaheim Ducks
+2025020285,2025020285,hockey,nhl,2025_11_15,19:00,Montreal Canadiens,Boston Bruins
+2025020286,2025020286,hockey,nhl,2025_11_15,19:00,Ottawa Senators,Los Angeles Kings
+2025020287,2025020287,hockey,nhl,2025_11_15,19:00,Detroit Red Wings,Buffalo Sabres
+2025020288,2025020288,hockey,nhl,2025_11_15,19:00,Washington Capitals,New Jersey Devils
+2025020289,2025020289,hockey,nhl,2025_11_15,19:00,Carolina Hurricanes,Edmonton Oilers
+2025020290,2025020290,hockey,nhl,2025_11_15,19:00,Columbus Blue Jackets,New York Rangers
+2025020291,2025020291,hockey,nhl,2025_11_15,19:00,Chicago Blackhawks,Toronto Maple Leafs
+2025020292,2025020292,hockey,nhl,2025_11_15,20:00,St Louis Blues,Vegas Golden Knights
+2025020293,2025020293,hockey,nhl,2025_11_15,20:00,Dallas Stars,Philadelphia Flyers
+2025020294,2025020294,hockey,nhl,2025_11_15,22:00,Calgary Flames,Winnipeg Jets
+2025020295,2025020295,hockey,nhl,2025_11_15,22:00,Seattle Kraken,San Jose Sharks

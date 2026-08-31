@@ -1,14 +1,14 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020076,,hockey,nhl,2025_10_18,13:00,Buffalo Sabres,Florida Panthers
-2025020077,,hockey,nhl,2025_10_18,15:00,Ottawa Senators,New York Islanders
-2025020078,,hockey,nhl,2025_10_18,15:30,New Jersey Devils,Edmonton Oilers
-2025020079,,hockey,nhl,2025_10_18,19:00,Toronto Maple Leafs,Seattle Kraken
-2025020080,,hockey,nhl,2025_10_18,19:00,Montreal Canadiens,New York Rangers
-2025020081,,hockey,nhl,2025_10_18,19:00,Philadelphia Flyers,Minnesota Wild
-2025020082,,hockey,nhl,2025_10_18,19:00,Columbus Blue Jackets,Tampa Bay Lightning
-2025020083,,hockey,nhl,2025_10_18,19:00,St Louis Blues,Dallas Stars
-2025020084,,hockey,nhl,2025_10_18,19:00,Winnipeg Jets,Nashville Predators
-2025020085,,hockey,nhl,2025_10_18,21:00,Colorado Avalanche,Boston Bruins
-2025020086,,hockey,nhl,2025_10_18,21:00,Los Angeles Kings,Carolina Hurricanes
-2025020087,,hockey,nhl,2025_10_18,22:00,Vegas Golden Knights,Calgary Flames
-2025020088,,hockey,nhl,2025_10_18,22:00,San Jose Sharks,Pittsburgh Penguins
+2025020076,2025020076,hockey,nhl,2025_10_18,13:00,Buffalo Sabres,Florida Panthers
+2025020077,2025020077,hockey,nhl,2025_10_18,15:00,Ottawa Senators,New York Islanders
+2025020078,2025020078,hockey,nhl,2025_10_18,15:30,New Jersey Devils,Edmonton Oilers
+2025020079,2025020079,hockey,nhl,2025_10_18,19:00,Toronto Maple Leafs,Seattle Kraken
+2025020080,2025020080,hockey,nhl,2025_10_18,19:00,Montreal Canadiens,New York Rangers
+2025020081,2025020081,hockey,nhl,2025_10_18,19:00,Philadelphia Flyers,Minnesota Wild
+2025020082,2025020082,hockey,nhl,2025_10_18,19:00,Columbus Blue Jackets,Tampa Bay Lightning
+2025020083,2025020083,hockey,nhl,2025_10_18,19:00,St Louis Blues,Dallas Stars
+2025020084,2025020084,hockey,nhl,2025_10_18,19:00,Winnipeg Jets,Nashville Predators
+2025020085,2025020085,hockey,nhl,2025_10_18,21:00,Colorado Avalanche,Boston Bruins
+2025020086,2025020086,hockey,nhl,2025_10_18,21:00,Los Angeles Kings,Carolina Hurricanes
+2025020087,2025020087,hockey,nhl,2025_10_18,22:00,Vegas Golden Knights,Calgary Flames
+2025020088,2025020088,hockey,nhl,2025_10_18,22:00,San Jose Sharks,Pittsburgh Penguins

@@ -1,16 +1,16 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020361,,hockey,nhl,2025_11_26,19:00,Detroit Red Wings,Nashville Predators
-2025020362,,hockey,nhl,2025_11_26,19:00,Tampa Bay Lightning,Calgary Flames
-2025020363,,hockey,nhl,2025_11_26,19:00,Florida Panthers,Philadelphia Flyers
-2025020364,,hockey,nhl,2025_11_26,19:00,New Jersey Devils,St Louis Blues
-2025020365,,hockey,nhl,2025_11_26,19:00,New York Islanders,Boston Bruins
-2025020366,,hockey,nhl,2025_11_26,19:00,Pittsburgh Penguins,Buffalo Sabres
-2025020367,,hockey,nhl,2025_11_26,19:00,Washington Capitals,Winnipeg Jets
-2025020368,,hockey,nhl,2025_11_26,19:00,Carolina Hurricanes,New York Rangers
-2025020369,,hockey,nhl,2025_11_26,19:00,Columbus Blue Jackets,Toronto Maple Leafs
-2025020370,,hockey,nhl,2025_11_26,20:30,Chicago Blackhawks,Minnesota Wild
-2025020371,,hockey,nhl,2025_11_26,21:00,Colorado Avalanche,San Jose Sharks
-2025020372,,hockey,nhl,2025_11_26,21:30,Utah Mammoth,Montreal Canadiens
-2025020373,,hockey,nhl,2025_11_26,22:00,Vegas Golden Knights,Ottawa Senators
-2025020374,,hockey,nhl,2025_11_26,22:00,Anaheim Ducks,Vancouver Canucks
-2025020375,,hockey,nhl,2025_11_26,22:00,Seattle Kraken,Dallas Stars
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020361,2025020361,hockey,nhl,2025_11_26,19:00,Detroit Red Wings,Nashville Predators
+2025020362,2025020362,hockey,nhl,2025_11_26,19:00,Tampa Bay Lightning,Calgary Flames
+2025020363,2025020363,hockey,nhl,2025_11_26,19:00,Florida Panthers,Philadelphia Flyers
+2025020364,2025020364,hockey,nhl,2025_11_26,19:00,New Jersey Devils,St Louis Blues
+2025020365,2025020365,hockey,nhl,2025_11_26,19:00,New York Islanders,Boston Bruins
+2025020366,2025020366,hockey,nhl,2025_11_26,19:00,Pittsburgh Penguins,Buffalo Sabres
+2025020367,2025020367,hockey,nhl,2025_11_26,19:00,Washington Capitals,Winnipeg Jets
+2025020368,2025020368,hockey,nhl,2025_11_26,19:00,Carolina Hurricanes,New York Rangers
+2025020369,2025020369,hockey,nhl,2025_11_26,19:00,Columbus Blue Jackets,Toronto Maple Leafs
+2025020370,2025020370,hockey,nhl,2025_11_26,20:30,Chicago Blackhawks,Minnesota Wild
+2025020371,2025020371,hockey,nhl,2025_11_26,21:00,Colorado Avalanche,San Jose Sharks
+2025020372,2025020372,hockey,nhl,2025_11_26,21:30,Utah Mammoth,Montreal Canadiens
+2025020373,2025020373,hockey,nhl,2025_11_26,22:00,Vegas Golden Knights,Ottawa Senators
+2025020374,2025020374,hockey,nhl,2025_11_26,22:00,Anaheim Ducks,Vancouver Canucks
+2025020375,2025020375,hockey,nhl,2025_11_26,22:00,Seattle Kraken,Dallas Stars

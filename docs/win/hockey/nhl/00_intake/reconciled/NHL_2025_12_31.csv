@@ -1,11 +1,11 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020622,,hockey,nhl,2025_12_31,12:30,Washington Capitals,New York Rangers
-2025020623,,hockey,nhl,2025_12_31,15:00,Vegas Golden Knights,Nashville Predators
-2025020624,,hockey,nhl,2025_12_31,16:00,Anaheim Ducks,Tampa Bay Lightning
-2025020625,,hockey,nhl,2025_12_31,16:00,San Jose Sharks,Minnesota Wild
-2025020626,,hockey,nhl,2025_12_31,18:30,Detroit Red Wings,Winnipeg Jets
-2025020627,,hockey,nhl,2025_12_31,19:00,Columbus Blue Jackets,New Jersey Devils
-2025020628,,hockey,nhl,2025_12_31,20:00,Dallas Stars,Buffalo Sabres
-2025020629,,hockey,nhl,2025_12_31,21:00,Colorado Avalanche,St Louis Blues
-2025020630,,hockey,nhl,2025_12_31,21:30,Calgary Flames,Philadelphia Flyers
-2025020631,,hockey,nhl,2025_12_31,21:30,Edmonton Oilers,Boston Bruins
+2025020622,2025020622,hockey,nhl,2025_12_31,12:30,Washington Capitals,New York Rangers
+2025020623,2025020623,hockey,nhl,2025_12_31,15:00,Vegas Golden Knights,Nashville Predators
+2025020624,2025020624,hockey,nhl,2025_12_31,16:00,Anaheim Ducks,Tampa Bay Lightning
+2025020625,2025020625,hockey,nhl,2025_12_31,16:00,San Jose Sharks,Minnesota Wild
+2025020626,2025020626,hockey,nhl,2025_12_31,18:30,Detroit Red Wings,Winnipeg Jets
+2025020627,2025020627,hockey,nhl,2025_12_31,19:00,Columbus Blue Jackets,New Jersey Devils
+2025020628,2025020628,hockey,nhl,2025_12_31,20:00,Dallas Stars,Buffalo Sabres
+2025020629,2025020629,hockey,nhl,2025_12_31,21:00,Colorado Avalanche,St Louis Blues
+2025020630,2025020630,hockey,nhl,2025_12_31,21:30,Calgary Flames,Philadelphia Flyers
+2025020631,2025020631,hockey,nhl,2025_12_31,21:30,Edmonton Oilers,Boston Bruins

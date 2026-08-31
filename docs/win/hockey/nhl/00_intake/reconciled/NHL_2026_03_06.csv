@@ -1,8 +1,8 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020983,,hockey,nhl,2026_03_06,19:00,Detroit Red Wings,Florida Panthers
-2025020984,,hockey,nhl,2026_03_06,20:00,Dallas Stars,Colorado Avalanche
-2025020985,,hockey,nhl,2026_03_06,20:30,Chicago Blackhawks,Vancouver Canucks
-2025020986,,hockey,nhl,2026_03_06,21:00,Edmonton Oilers,Carolina Hurricanes
-2025020987,,hockey,nhl,2026_03_06,21:00,Anaheim Ducks,Montreal Canadiens
-2025020988,,hockey,nhl,2026_03_06,22:00,Vegas Golden Knights,Minnesota Wild
-2025020989,,hockey,nhl,2026_03_06,22:00,San Jose Sharks,St Louis Blues
+2025020983,2025020983,hockey,nhl,2026_03_06,19:00,Detroit Red Wings,Florida Panthers
+2025020984,2025020984,hockey,nhl,2026_03_06,20:00,Dallas Stars,Colorado Avalanche
+2025020985,2025020985,hockey,nhl,2026_03_06,20:30,Chicago Blackhawks,Vancouver Canucks
+2025020986,2025020986,hockey,nhl,2026_03_06,21:00,Edmonton Oilers,Carolina Hurricanes
+2025020987,2025020987,hockey,nhl,2026_03_06,21:00,Anaheim Ducks,Montreal Canadiens
+2025020988,2025020988,hockey,nhl,2026_03_06,22:00,Vegas Golden Knights,Minnesota Wild
+2025020989,2025020989,hockey,nhl,2026_03_06,22:00,San Jose Sharks,St Louis Blues

@@ -1,7 +1,7 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020301,,hockey,nhl,2025_11_17,19:00,Boston Bruins,Carolina Hurricanes,150,-185,+1.5,-1.5,6.0,-163,+143,-125,105,,,,,,
-2025020302,,hockey,nhl,2025_11_17,19:00,Buffalo Sabres,Edmonton Oilers,135,-160,+1.5,-1.5,6.5,-180,+157,-120,100,,,,,,
-2025020303,,hockey,nhl,2025_11_17,19:00,Florida Panthers,Vancouver Canucks,-295,230,-1.5,+1.5,5.5,-110,-110,-125,105,,,,,,
-2025020304,,hockey,nhl,2025_11_17,19:00,Washington Capitals,Los Angeles Kings,-135,110,-1.5,+1.5,5.5,+189,-225,-110,-110,,,,,,
-2025020305,,hockey,nhl,2025_11_17,19:30,Columbus Blue Jackets,Montreal Canadiens,-125,105,-1.5,+1.5,6.0,+189,-225,-125,105,,,,,,
-2025020306,,hockey,nhl,2025_11_17,22:00,Anaheim Ducks,Utah Mammoth,100,-120,+1.5,-1.5,6.5,-245,+203,-110,-110,,,,,,
+2025020301,2025020301,hockey,nhl,2025_11_17,19:00,Boston Bruins,Carolina Hurricanes,150,-185,+1.5,-1.5,6.0,-163,+143,-125,105,,,,,,
+2025020302,2025020302,hockey,nhl,2025_11_17,19:00,Buffalo Sabres,Edmonton Oilers,135,-160,+1.5,-1.5,6.5,-180,+157,-120,100,,,,,,
+2025020303,2025020303,hockey,nhl,2025_11_17,19:00,Florida Panthers,Vancouver Canucks,-295,230,-1.5,+1.5,5.5,-110,-110,-125,105,,,,,,
+2025020304,2025020304,hockey,nhl,2025_11_17,19:00,Washington Capitals,Los Angeles Kings,-135,110,-1.5,+1.5,5.5,+189,-225,-110,-110,,,,,,
+2025020305,2025020305,hockey,nhl,2025_11_17,19:30,Columbus Blue Jackets,Montreal Canadiens,-125,105,-1.5,+1.5,6.0,+189,-225,-125,105,,,,,,
+2025020306,2025020306,hockey,nhl,2025_11_17,22:00,Anaheim Ducks,Utah Mammoth,100,-120,+1.5,-1.5,6.5,-245,+203,-110,-110,,,,,,

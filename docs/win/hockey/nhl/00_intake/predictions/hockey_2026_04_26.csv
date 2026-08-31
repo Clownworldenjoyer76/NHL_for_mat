@@ -1,5 +1,5 @@
 ﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
 2025030114,hockey,nhl,2026_04_26,14:00,Boston Bruins,Buffalo Sabres,0.494000,0.506000,3.16,3.10,6.26
-2025030154,hockey,nhl,2026_04_26,16:30,Los Angeles Kings,Colorado Avalanche,0.355000,0.645000,3.55,2.36,5.91
 2025030124,hockey,nhl,2026_04_26,19:00,Montreal Canadiens,Tampa Bay Lightning,0.468000,0.532000,3.30,2.95,6.25
+2025030154,hockey,nhl,2026_04_26,16:30,Los Angeles Kings,Colorado Avalanche,0.355000,0.645000,3.55,2.36,5.91
 2025030184,hockey,nhl,2026_04_26,21:30,Anaheim Ducks,Edmonton Oilers,0.525000,0.475000,3.45,3.72,7.17

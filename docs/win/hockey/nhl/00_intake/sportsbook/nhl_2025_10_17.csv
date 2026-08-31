@@ -1,5 +1,5 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team,home_dk_moneyline_american,away_dk_moneyline_american,home_puck_line,away_puck_line,total,home_dk_puck_line_american,away_dk_puck_line_american,dk_total_over_american,dk_total_under_american,home_dk_moneyline_decimal,away_dk_moneyline_decimal,home_dk_puck_line_decimal,away_dk_puck_line_decimal,dk_total_over_decimal,dk_total_under_decimal
-2025020072,,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning,140,-170,-1.5,-1.5,6.0,-225,-170,-118,-102,,,,,,
-2025020073,,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild,-125,105,,,6.0,,,100,-120,,,,,,
-2025020074,,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks,120,-145,-1.5,-1.5,6.0,-225,-200,-118,-102,,,,,,
-2025020075,,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks,-235,195,,,6.0,,,-120,100,,,,,,
+2025020072,2025020072,hockey,nhl,2025_10_17,19:00,Detroit Red Wings,Tampa Bay Lightning,140,-170,-1.5,-1.5,6.0,-225,-170,-118,-102,,,,,,
+2025020073,2025020073,hockey,nhl,2025_10_17,19:00,Washington Capitals,Minnesota Wild,-125,105,,,6.0,,,100,-120,,,,,,
+2025020074,2025020074,hockey,nhl,2025_10_17,20:30,Chicago Blackhawks,Vancouver Canucks,120,-145,-1.5,-1.5,6.0,-225,-200,-118,-102,,,,,,
+2025020075,2025020075,hockey,nhl,2025_10_17,21:00,Utah Mammoth,San Jose Sharks,-235,195,,,6.0,,,-120,100,,,,,,

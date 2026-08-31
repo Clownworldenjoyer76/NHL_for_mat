@@ -1,15 +1,15 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020008,,hockey,nhl,2025_10_09,19:00,Boston Bruins,Chicago Blackhawks
-2025020009,,hockey,nhl,2025_10_09,19:00,Buffalo Sabres,New York Rangers
-2025020010,,hockey,nhl,2025_10_09,19:00,Detroit Red Wings,Montreal Canadiens
-2025020011,,hockey,nhl,2025_10_09,19:00,Tampa Bay Lightning,Ottawa Senators
-2025020012,,hockey,nhl,2025_10_09,19:00,Florida Panthers,Philadelphia Flyers
-2025020013,,hockey,nhl,2025_10_09,19:00,Pittsburgh Penguins,New York Islanders
-2025020014,,hockey,nhl,2025_10_09,19:30,Carolina Hurricanes,New Jersey Devils
-2025020015,,hockey,nhl,2025_10_09,20:00,St Louis Blues,Minnesota Wild
-2025020016,,hockey,nhl,2025_10_09,20:00,Nashville Predators,Columbus Blue Jackets
-2025020017,,hockey,nhl,2025_10_09,20:00,Winnipeg Jets,Dallas Stars
-2025020018,,hockey,nhl,2025_10_09,21:00,Colorado Avalanche,Utah Mammoth
-2025020019,,hockey,nhl,2025_10_09,22:00,Vancouver Canucks,Calgary Flames
-2025020020,,hockey,nhl,2025_10_09,22:00,San Jose Sharks,Vegas Golden Knights
-2025020021,,hockey,nhl,2025_10_09,22:00,Seattle Kraken,Anaheim Ducks
+2025020008,2025020008,hockey,nhl,2025_10_09,19:00,Boston Bruins,Chicago Blackhawks
+2025020009,2025020009,hockey,nhl,2025_10_09,19:00,Buffalo Sabres,New York Rangers
+2025020010,2025020010,hockey,nhl,2025_10_09,19:00,Detroit Red Wings,Montreal Canadiens
+2025020011,2025020011,hockey,nhl,2025_10_09,19:00,Tampa Bay Lightning,Ottawa Senators
+2025020012,2025020012,hockey,nhl,2025_10_09,19:00,Florida Panthers,Philadelphia Flyers
+2025020013,2025020013,hockey,nhl,2025_10_09,19:00,Pittsburgh Penguins,New York Islanders
+2025020014,2025020014,hockey,nhl,2025_10_09,19:30,Carolina Hurricanes,New Jersey Devils
+2025020015,2025020015,hockey,nhl,2025_10_09,20:00,St Louis Blues,Minnesota Wild
+2025020016,2025020016,hockey,nhl,2025_10_09,20:00,Nashville Predators,Columbus Blue Jackets
+2025020017,2025020017,hockey,nhl,2025_10_09,20:00,Winnipeg Jets,Dallas Stars
+2025020018,2025020018,hockey,nhl,2025_10_09,21:00,Colorado Avalanche,Utah Mammoth
+2025020019,2025020019,hockey,nhl,2025_10_09,22:00,Vancouver Canucks,Calgary Flames
+2025020020,2025020020,hockey,nhl,2025_10_09,22:00,San Jose Sharks,Vegas Golden Knights
+2025020021,2025020021,hockey,nhl,2025_10_09,22:00,Seattle Kraken,Anaheim Ducks

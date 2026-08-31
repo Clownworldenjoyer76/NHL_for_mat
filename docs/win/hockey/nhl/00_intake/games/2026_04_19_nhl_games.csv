@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025030151,,hockey,nhl,2026_04_19,15:00,Colorado Avalanche,Los Angeles Kings
-2025030121,,hockey,nhl,2026_04_19,17:45,Tampa Bay Lightning,Montreal Canadiens
-2025030111,,hockey,nhl,2026_04_19,19:30,Buffalo Sabres,Boston Bruins
-2025030171,,hockey,nhl,2026_04_19,22:00,Vegas Golden Knights,Utah Mammoth
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025030111,2025030111,hockey,nhl,2026_04_19,19:30,Buffalo Sabres,Boston Bruins
+2025030121,2025030121,hockey,nhl,2026_04_19,17:45,Tampa Bay Lightning,Montreal Canadiens
+2025030151,2025030151,hockey,nhl,2026_04_19,15:00,Colorado Avalanche,Los Angeles Kings
+2025030171,2025030171,hockey,nhl,2026_04_19,22:00,Vegas Golden Knights,Utah Mammoth

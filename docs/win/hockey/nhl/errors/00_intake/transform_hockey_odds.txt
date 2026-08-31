@@ -1,12 +1,12 @@
-=== transform_hockey_odds RUN 2026-08-29T08:24:15.133211-04:00 ===
-2026-08-29T08:24:15.134175-04:00 | Odds input directory: C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds
-2026-08-29T08:24:15.134501-04:00 | JSON files found: 1
-2026-08-29T08:24:15.135229-04:00 | READ C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\odds\2026_08_29.json | events=0 | provider_rows=0
-2026-08-29T08:24:15.135622-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
-2026-08-29T08:24:15.135993-04:00 | Live Odds providers excluded from production selection
-2026-08-29T08:24:15.136471-04:00 | --- SUMMARY ---
-2026-08-29T08:24:15.136804-04:00 | events_found: 0
-2026-08-29T08:24:15.137123-04:00 | json_files_processed: 1
-2026-08-29T08:24:15.137452-04:00 | odds_provider_rows_found: 0
-2026-08-29T08:24:15.137807-04:00 | STATUS: SUCCESS
-2026-08-29T08:29:44.823541-04:00 | WARNING sportsbook_event_id=401688202 no usable puck_line from any non-live ESPN provider
+=== transform_hockey_odds RUN 2026-08-31T05:36:25.284814-04:00 ===
+2026-08-31T05:36:25.285036-04:00 | Odds input directory: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds
+2026-08-31T05:36:25.285085-04:00 | JSON files found: 2
+2026-08-31T05:36:25.285211-04:00 | READ /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds/2026_08_29.json | events=0 | provider_rows=0
+2026-08-31T05:36:25.285351-04:00 | READ /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds/2026_08_31.json | events=0 | provider_rows=0
+2026-08-31T05:36:25.285383-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
+2026-08-31T05:36:25.285407-04:00 | Live Odds providers excluded from production selection
+2026-08-31T05:36:25.285429-04:00 | --- SUMMARY ---
+2026-08-31T05:36:25.285453-04:00 | events_found: 0
+2026-08-31T05:36:25.285477-04:00 | json_files_processed: 2
+2026-08-31T05:36:25.285498-04:00 | odds_provider_rows_found: 0
+2026-08-31T05:36:25.285519-04:00 | STATUS: SUCCESS

@@ -1,12 +1,12 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021099,,hockey,nhl,2026_03_21,13:00,Pittsburgh Penguins,Winnipeg Jets
-2025021100,,hockey,nhl,2026_03_21,14:00,Nashville Predators,Vegas Golden Knights
-2025021101,,hockey,nhl,2026_03_21,16:00,Minnesota Wild,Dallas Stars
-2025021102,,hockey,nhl,2026_03_21,16:00,Los Angeles Kings,Buffalo Sabres
-2025021103,,hockey,nhl,2026_03_21,16:00,San Jose Sharks,Philadelphia Flyers
-2025021104,,hockey,nhl,2026_03_21,17:00,Columbus Blue Jackets,Seattle Kraken
-2025021105,,hockey,nhl,2026_03_21,19:00,Montreal Canadiens,New York Islanders
-2025021106,,hockey,nhl,2026_03_21,19:00,Ottawa Senators,Toronto Maple Leafs
-2025021107,,hockey,nhl,2026_03_21,19:00,Vancouver Canucks,St Louis Blues
-2025021108,,hockey,nhl,2026_03_21,20:00,Detroit Red Wings,Boston Bruins
-2025021109,,hockey,nhl,2026_03_21,22:00,Edmonton Oilers,Tampa Bay Lightning
+2025021099,2025021099,hockey,nhl,2026_03_21,13:00,Pittsburgh Penguins,Winnipeg Jets
+2025021100,2025021100,hockey,nhl,2026_03_21,14:00,Nashville Predators,Vegas Golden Knights
+2025021101,2025021101,hockey,nhl,2026_03_21,16:00,Minnesota Wild,Dallas Stars
+2025021102,2025021102,hockey,nhl,2026_03_21,16:00,Los Angeles Kings,Buffalo Sabres
+2025021103,2025021103,hockey,nhl,2026_03_21,16:00,San Jose Sharks,Philadelphia Flyers
+2025021104,2025021104,hockey,nhl,2026_03_21,17:00,Columbus Blue Jackets,Seattle Kraken
+2025021105,2025021105,hockey,nhl,2026_03_21,19:00,Montreal Canadiens,New York Islanders
+2025021106,2025021106,hockey,nhl,2026_03_21,19:00,Ottawa Senators,Toronto Maple Leafs
+2025021107,2025021107,hockey,nhl,2026_03_21,19:00,Vancouver Canucks,St Louis Blues
+2025021108,2025021108,hockey,nhl,2026_03_21,20:00,Detroit Red Wings,Boston Bruins
+2025021109,2025021109,hockey,nhl,2026_03_21,22:00,Edmonton Oilers,Tampa Bay Lightning

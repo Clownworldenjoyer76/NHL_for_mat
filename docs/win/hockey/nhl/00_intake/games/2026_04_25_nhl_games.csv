@@ -1,4 +1,4 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025030134,,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes
-2025030164,,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars
-2025030144,,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025030134,2025030134,hockey,nhl,2026_04_25,15:00,Ottawa Senators,Carolina Hurricanes
+2025030144,2025030144,hockey,nhl,2026_04_25,20:00,Philadelphia Flyers,Pittsburgh Penguins
+2025030164,2025030164,hockey,nhl,2026_04_25,17:30,Minnesota Wild,Dallas Stars

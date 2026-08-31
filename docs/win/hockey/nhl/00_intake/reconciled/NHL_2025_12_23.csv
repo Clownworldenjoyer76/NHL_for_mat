@@ -1,14 +1,13 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020575,,hockey,nhl,2025_12_23,16:00,Toronto Maple Leafs,Pittsburgh Penguins
-2025020579,,hockey,nhl,2025_12_23,18:30,Detroit Red Wings,Dallas Stars
-2025020576,,hockey,nhl,2025_12_23,19:00,Washington Capitals,New York Rangers
-2025020577,,hockey,nhl,2025_12_23,19:00,Boston Bruins,Montreal Canadiens
-2025020578,,hockey,nhl,2025_12_23,19:00,Ottawa Senators,Buffalo Sabres
-2025020580,,hockey,nhl,2025_12_23,19:00,New York Islanders,New Jersey Devils
-2025020581,,hockey,nhl,2025_12_23,19:00,Carolina Hurricanes,Florida Panthers
-2025020582,,hockey,nhl,2025_12_23,20:00,Minnesota Wild,Nashville Predators
-2025020583,,hockey,nhl,2025_12_23,21:00,Chicago Blackhawks,Philadelphia Flyers
-2025020584,,hockey,nhl,2025_12_23,21:00,Colorado Avalanche,Utah Mammoth
-2025020585,,hockey,nhl,2025_12_23,21:00,Edmonton Oilers,Calgary Flames
-2025020586,,hockey,nhl,2025_12_23,22:00,Vegas Golden Knights,San Jose Sharks
-2025020587,,hockey,nhl,2025_12_23,22:00,Los Angeles Kings,Seattle Kraken
+2025020575,2025020575,hockey,nhl,2025_12_23,16:00,Toronto Maple Leafs,Pittsburgh Penguins
+2025020576,2025020576,hockey,nhl,2025_12_23,19:00,Washington Capitals,New York Rangers
+2025020577,2025020577,hockey,nhl,2025_12_23,19:00,Boston Bruins,Montreal Canadiens
+2025020578,2025020578,hockey,nhl,2025_12_23,19:00,Ottawa Senators,Buffalo Sabres
+2025020579,2025020579,hockey,nhl,2025_12_23,18:30,Detroit Red Wings,Dallas Stars
+2025020580,2025020580,hockey,nhl,2025_12_23,19:00,New York Islanders,New Jersey Devils
+2025020581,2025020581,hockey,nhl,2025_12_23,19:00,Carolina Hurricanes,Florida Panthers
+2025020582,2025020582,hockey,nhl,2025_12_23,20:00,Minnesota Wild,Nashville Predators
+2025020583,2025020583,hockey,nhl,2025_12_23,21:00,Chicago Blackhawks,Philadelphia Flyers
+2025020584,2025020584,hockey,nhl,2025_12_23,21:00,Colorado Avalanche,Utah Mammoth
+2025020585,2025020585,hockey,nhl,2025_12_23,21:00,Edmonton Oilers,Calgary Flames
+2025020587,2025020587,hockey,nhl,2025_12_23,22:00,Los Angeles Kings,Seattle Kraken

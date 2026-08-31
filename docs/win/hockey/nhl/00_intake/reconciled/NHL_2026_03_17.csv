@@ -1,10 +1,10 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025021068,,hockey,nhl,2026_03_17,19:00,Toronto Maple Leafs,New York Islanders
-2025021069,,hockey,nhl,2026_03_17,19:00,Montreal Canadiens,Boston Bruins
-2025021070,,hockey,nhl,2026_03_17,19:00,Columbus Blue Jackets,Carolina Hurricanes
-2025021072,,hockey,nhl,2026_03_17,19:30,Chicago Blackhawks,Minnesota Wild
-2025021071,,hockey,nhl,2026_03_17,20:00,Winnipeg Jets,Nashville Predators
-2025021073,,hockey,nhl,2026_03_17,21:00,Edmonton Oilers,San Jose Sharks
-2025021074,,hockey,nhl,2026_03_17,22:00,Vancouver Canucks,Florida Panthers
-2025021075,,hockey,nhl,2026_03_17,22:00,Vegas Golden Knights,Buffalo Sabres
-2025021076,,hockey,nhl,2026_03_17,22:00,Seattle Kraken,Tampa Bay Lightning
+2025021068,2025021068,hockey,nhl,2026_03_17,19:00,Toronto Maple Leafs,New York Islanders
+2025021069,2025021069,hockey,nhl,2026_03_17,19:00,Montreal Canadiens,Boston Bruins
+2025021070,2025021070,hockey,nhl,2026_03_17,19:00,Columbus Blue Jackets,Carolina Hurricanes
+2025021071,2025021071,hockey,nhl,2026_03_17,20:00,Winnipeg Jets,Nashville Predators
+2025021072,2025021072,hockey,nhl,2026_03_17,19:30,Chicago Blackhawks,Minnesota Wild
+2025021073,2025021073,hockey,nhl,2026_03_17,21:00,Edmonton Oilers,San Jose Sharks
+2025021074,2025021074,hockey,nhl,2026_03_17,22:00,Vancouver Canucks,Florida Panthers
+2025021075,2025021075,hockey,nhl,2026_03_17,22:00,Vegas Golden Knights,Buffalo Sabres
+2025021076,2025021076,hockey,nhl,2026_03_17,22:00,Seattle Kraken,Tampa Bay Lightning

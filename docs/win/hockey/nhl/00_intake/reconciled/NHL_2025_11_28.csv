@@ -1,16 +1,16 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020377,,hockey,nhl,2025_11_28,12:00,Detroit Red Wings,Tampa Bay Lightning
-2025020376,,hockey,nhl,2025_11_28,13:00,Boston Bruins,New York Rangers
-2025020378,,hockey,nhl,2025_11_28,15:30,Minnesota Wild,Colorado Avalanche
-2025020379,,hockey,nhl,2025_11_28,16:00,Buffalo Sabres,New Jersey Devils
-2025020380,,hockey,nhl,2025_11_28,16:00,Florida Panthers,Calgary Flames
-2025020381,,hockey,nhl,2025_11_28,16:00,New York Islanders,Philadelphia Flyers
-2025020382,,hockey,nhl,2025_11_28,16:00,St Louis Blues,Ottawa Senators
-2025020383,,hockey,nhl,2025_11_28,16:00,Vegas Golden Knights,Montreal Canadiens
-2025020384,,hockey,nhl,2025_11_28,16:00,Anaheim Ducks,Los Angeles Kings
-2025020385,,hockey,nhl,2025_11_28,16:00,San Jose Sharks,Vancouver Canucks
-2025020386,,hockey,nhl,2025_11_28,17:00,Washington Capitals,Toronto Maple Leafs
-2025020387,,hockey,nhl,2025_11_28,17:00,Carolina Hurricanes,Winnipeg Jets
-2025020388,,hockey,nhl,2025_11_28,19:00,Columbus Blue Jackets,Pittsburgh Penguins
-2025020389,,hockey,nhl,2025_11_28,20:00,Chicago Blackhawks,Nashville Predators
-2025020390,,hockey,nhl,2025_11_28,20:00,Dallas Stars,Utah Mammoth
+2025020376,2025020376,hockey,nhl,2025_11_28,13:00,Boston Bruins,New York Rangers
+2025020377,2025020377,hockey,nhl,2025_11_28,12:00,Detroit Red Wings,Tampa Bay Lightning
+2025020378,2025020378,hockey,nhl,2025_11_28,15:30,Minnesota Wild,Colorado Avalanche
+2025020379,2025020379,hockey,nhl,2025_11_28,16:00,Buffalo Sabres,New Jersey Devils
+2025020380,2025020380,hockey,nhl,2025_11_28,16:00,Florida Panthers,Calgary Flames
+2025020381,2025020381,hockey,nhl,2025_11_28,16:00,New York Islanders,Philadelphia Flyers
+2025020382,2025020382,hockey,nhl,2025_11_28,16:00,St Louis Blues,Ottawa Senators
+2025020383,2025020383,hockey,nhl,2025_11_28,16:00,Vegas Golden Knights,Montreal Canadiens
+2025020384,2025020384,hockey,nhl,2025_11_28,16:00,Anaheim Ducks,Los Angeles Kings
+2025020385,2025020385,hockey,nhl,2025_11_28,16:00,San Jose Sharks,Vancouver Canucks
+2025020386,2025020386,hockey,nhl,2025_11_28,17:00,Washington Capitals,Toronto Maple Leafs
+2025020387,2025020387,hockey,nhl,2025_11_28,17:00,Carolina Hurricanes,Winnipeg Jets
+2025020388,2025020388,hockey,nhl,2025_11_28,19:00,Columbus Blue Jackets,Pittsburgh Penguins
+2025020389,2025020389,hockey,nhl,2025_11_28,20:00,Chicago Blackhawks,Nashville Predators
+2025020390,2025020390,hockey,nhl,2025_11_28,20:00,Dallas Stars,Utah Mammoth

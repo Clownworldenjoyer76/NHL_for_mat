@@ -1,12 +1,12 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020391,,hockey,nhl,2025_11_29,14:00,New York Rangers,Tampa Bay Lightning
-2025020392,,hockey,nhl,2025_11_29,15:00,Colorado Avalanche,Montreal Canadiens
-2025020393,,hockey,nhl,2025_11_29,16:00,Seattle Kraken,Edmonton Oilers
-2025020394,,hockey,nhl,2025_11_29,19:00,Boston Bruins,Detroit Red Wings
-2025020395,,hockey,nhl,2025_11_29,19:00,New Jersey Devils,Philadelphia Flyers
-2025020396,,hockey,nhl,2025_11_29,19:00,Pittsburgh Penguins,Toronto Maple Leafs
-2025020397,,hockey,nhl,2025_11_29,19:00,Nashville Predators,Winnipeg Jets
-2025020398,,hockey,nhl,2025_11_29,20:00,St Louis Blues,Utah Mammoth
-2025020399,,hockey,nhl,2025_11_29,20:00,Minnesota Wild,Buffalo Sabres
-2025020400,,hockey,nhl,2025_11_29,22:00,Vegas Golden Knights,San Jose Sharks
-2025020401,,hockey,nhl,2025_11_29,22:00,Los Angeles Kings,Vancouver Canucks
+2025020391,2025020391,hockey,nhl,2025_11_29,14:00,New York Rangers,Tampa Bay Lightning
+2025020392,2025020392,hockey,nhl,2025_11_29,15:00,Colorado Avalanche,Montreal Canadiens
+2025020393,2025020393,hockey,nhl,2025_11_29,16:00,Seattle Kraken,Edmonton Oilers
+2025020394,2025020394,hockey,nhl,2025_11_29,19:00,Boston Bruins,Detroit Red Wings
+2025020395,2025020395,hockey,nhl,2025_11_29,19:00,New Jersey Devils,Philadelphia Flyers
+2025020396,2025020396,hockey,nhl,2025_11_29,19:00,Pittsburgh Penguins,Toronto Maple Leafs
+2025020397,2025020397,hockey,nhl,2025_11_29,19:00,Nashville Predators,Winnipeg Jets
+2025020398,2025020398,hockey,nhl,2025_11_29,20:00,St Louis Blues,Utah Mammoth
+2025020399,2025020399,hockey,nhl,2025_11_29,20:00,Minnesota Wild,Buffalo Sabres
+2025020400,2025020400,hockey,nhl,2025_11_29,22:00,Vegas Golden Knights,San Jose Sharks
+2025020401,2025020401,hockey,nhl,2025_11_29,22:00,Los Angeles Kings,Vancouver Canucks

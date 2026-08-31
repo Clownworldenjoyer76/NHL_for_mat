@@ -1,12 +1,12 @@
 ﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020167,,hockey,nhl,2025_10_30,19:00,Boston Bruins,Buffalo Sabres
-2025020168,,hockey,nhl,2025_10_30,19:00,Ottawa Senators,Calgary Flames
-2025020169,,hockey,nhl,2025_10_30,19:00,Tampa Bay Lightning,Dallas Stars
-2025020170,,hockey,nhl,2025_10_30,19:00,Philadelphia Flyers,Nashville Predators
-2025020171,,hockey,nhl,2025_10_30,19:30,Carolina Hurricanes,New York Islanders
-2025020172,,hockey,nhl,2025_10_30,20:00,St Louis Blues,Vancouver Canucks
-2025020173,,hockey,nhl,2025_10_30,20:00,Minnesota Wild,Pittsburgh Penguins
-2025020174,,hockey,nhl,2025_10_30,20:00,Winnipeg Jets,Chicago Blackhawks
-2025020175,,hockey,nhl,2025_10_30,21:00,Edmonton Oilers,New York Rangers
-2025020176,,hockey,nhl,2025_10_30,22:00,San Jose Sharks,New Jersey Devils
-2025020177,,hockey,nhl,2025_10_30,22:30,Los Angeles Kings,Detroit Red Wings
+2025020167,2025020167,hockey,nhl,2025_10_30,19:00,Boston Bruins,Buffalo Sabres
+2025020168,2025020168,hockey,nhl,2025_10_30,19:00,Ottawa Senators,Calgary Flames
+2025020169,2025020169,hockey,nhl,2025_10_30,19:00,Tampa Bay Lightning,Dallas Stars
+2025020170,2025020170,hockey,nhl,2025_10_30,19:00,Philadelphia Flyers,Nashville Predators
+2025020171,2025020171,hockey,nhl,2025_10_30,19:30,Carolina Hurricanes,New York Islanders
+2025020172,2025020172,hockey,nhl,2025_10_30,20:00,St Louis Blues,Vancouver Canucks
+2025020173,2025020173,hockey,nhl,2025_10_30,20:00,Minnesota Wild,Pittsburgh Penguins
+2025020174,2025020174,hockey,nhl,2025_10_30,20:00,Winnipeg Jets,Chicago Blackhawks
+2025020175,2025020175,hockey,nhl,2025_10_30,21:00,Edmonton Oilers,New York Rangers
+2025020176,2025020176,hockey,nhl,2025_10_30,22:00,San Jose Sharks,New Jersey Devils
+2025020177,2025020177,hockey,nhl,2025_10_30,22:30,Los Angeles Kings,Detroit Red Wings

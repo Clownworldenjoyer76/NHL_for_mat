@@ -1,5 +1,5 @@
-﻿game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
-2025020331,,hockey,nhl,2025_11_21,19:00,Buffalo Sabres,Chicago Blackhawks
-2025020332,,hockey,nhl,2025_11_21,19:00,Pittsburgh Penguins,Minnesota Wild
-2025020333,,hockey,nhl,2025_11_21,20:00,Winnipeg Jets,Carolina Hurricanes
-2025020334,,hockey,nhl,2025_11_21,22:30,Los Angeles Kings,Boston Bruins
+game_id,sportsbook_event_id,sport,league,game_date,game_time,home_team,away_team
+2025020331,2025020331,hockey,nhl,2025_11_21,19:00,Buffalo Sabres,Chicago Blackhawks
+2025020332,2025020332,hockey,nhl,2025_11_21,19:00,Pittsburgh Penguins,Minnesota Wild
+2025020333,2025020333,hockey,nhl,2025_11_21,20:00,Winnipeg Jets,Carolina Hurricanes
+2025020334,2025020334,hockey,nhl,2025_11_21,22:30,Los Angeles Kings,Boston Bruins
