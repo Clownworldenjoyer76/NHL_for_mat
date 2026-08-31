@@ -337,6 +337,7 @@ def validate_prediction_slate(
     current_date = datetime.strptime(date_value, "%Y_%m_%d").date()
     current_games: list[dict] = []
     seen_matchups: set[tuple[str, str]] = set()
+    ignored_other_date_games = 0
 
     for game_number, game in enumerate(games, start=1):
         try:
@@ -347,14 +348,8 @@ def validate_prediction_slate(
                 f"{game.get('date_time', '')!r}: {exc}"
             ) from exc
 
-        if game["game_status"] == "upcoming" and game_dt.date() != current_date:
-            raise ValueError(
-                "D-Ratings upcoming slate is not fresh for the intake date: "
-                f"date_time={game.get('date_time', '')!r} "
-                f"intake_date={date_value}"
-            )
-
         if game_dt.date() != current_date:
+            ignored_other_date_games += 1
             continue
 
         key = matchup_key_from_dratings(game, team_map)
@@ -388,6 +383,13 @@ def validate_prediction_slate(
                     f"{date_value} matchup={key}: "
                     f"{', '.join(missing_fields)}"
                 )
+
+    if ignored_other_date_games:
+        log(
+            "Ignored D-Ratings games outside intake date | "
+            f"date={date_value} "
+            f"ignored_games={ignored_other_date_games}"
+        )
 
     scraped_keys = {
         matchup_key_from_dratings(game, team_map)
