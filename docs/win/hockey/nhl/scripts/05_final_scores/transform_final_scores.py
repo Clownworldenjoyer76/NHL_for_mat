@@ -10,6 +10,7 @@ import traceback
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -35,6 +36,7 @@ RAW_PATTERN = "*_nhl_raw.json"
 NHL_SCORE_URL = "https://api-web.nhle.com/v1/score/{date}"
 REQUEST_TIMEOUT = 30
 
+ET = ZoneInfo("America/New_York")
 FINAL_GAME_STATES = {"FINAL", "OFF"}
 GAME_ID_RE = re.compile(r"^\d{10}$")
 
@@ -242,6 +244,10 @@ def parse_date_from_filename(path: Path) -> str:
     return f"{year}_{month}_{day}"
 
 
+def current_game_date() -> str:
+    return datetime.now(ET).strftime("%Y_%m_%d")
+
+
 # ============================================================
 # STAGE 04 — TARGET DATE SOURCE
 # ============================================================
@@ -285,6 +291,365 @@ def discover_target_dates() -> set[str]:
         )
 
     return target_dates
+
+
+# ============================================================
+# EXISTING OFFICIAL HISTORY — INCREMENTAL FETCH STATE
+# ============================================================
+
+def final_score_path(game_date: str) -> Path:
+    return (
+        OUT_DIR
+        / f"{game_date}_{LEAGUE_OUT}_final_scores.csv"
+    )
+
+
+def validate_game_ids(
+    df: pd.DataFrame,
+    *,
+    label: str,
+) -> None:
+    invalid = [
+        str(value).strip()
+        for value in df["game_id"]
+        if not GAME_ID_RE.fullmatch(
+            str(value).strip()
+        )
+    ]
+
+    if invalid:
+        fail(
+            f"{label} contains invalid canonical game_id values: "
+            f"{invalid[:10]}"
+        )
+
+
+def load_existing_status_snapshot() -> pd.DataFrame:
+    if not STATUS_FILE.exists():
+        log(
+            "No existing official NHL status snapshot found; "
+            "all target dates require evaluation"
+        )
+        return pd.DataFrame(
+            columns=STATUS_COLUMNS,
+        )
+
+    try:
+        df = pd.read_csv(
+            STATUS_FILE,
+            dtype=str,
+        ).fillna("")
+    except Exception as e:
+        fail(
+            f"Failed reading existing status snapshot "
+            f"{STATUS_FILE}: {e}"
+        )
+
+    missing = [
+        col
+        for col in STATUS_COLUMNS
+        if col not in df.columns
+    ]
+
+    if missing:
+        fail(
+            "Existing official NHL status snapshot is missing "
+            f"required columns: {missing}"
+        )
+
+    df = df[STATUS_COLUMNS].copy()
+
+    if df.empty:
+        return df
+
+    df["game_date"] = df["game_date"].map(
+        normalize_game_date
+    )
+    df["game_id"] = (
+        df["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+    df["game_state"] = (
+        df["game_state"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+    df["game_schedule_state"] = (
+        df["game_schedule_state"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+
+    if df["game_date"].eq("").any():
+        fail(
+            "Existing official NHL status snapshot contains "
+            "an invalid or blank game_date"
+        )
+
+    validate_game_ids(
+        df,
+        label=str(STATUS_FILE),
+    )
+
+    duplicate_ids = df.duplicated(
+        subset=["game_id"],
+        keep=False,
+    )
+
+    if duplicate_ids.any():
+        duplicate_values = sorted(
+            df.loc[
+                duplicate_ids,
+                "game_id",
+            ]
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+        fail(
+            "Existing official NHL status snapshot contains "
+            f"duplicate game_id values: {duplicate_values}"
+        )
+
+    log(
+        "Loaded existing official NHL status history: "
+        f"rows={len(df)}"
+    )
+
+    return df
+
+
+def split_status_history_by_date(
+    status_df: pd.DataFrame,
+) -> dict[str, pd.DataFrame]:
+    if status_df.empty:
+        return {}
+
+    return {
+        str(game_date): group.copy().reset_index(drop=True)
+        for game_date, group in status_df.groupby(
+            "game_date",
+            sort=False,
+        )
+    }
+
+
+def load_existing_final_scores_for_date(
+    game_date: str,
+) -> pd.DataFrame:
+    path = final_score_path(game_date)
+
+    if not path.exists():
+        return pd.DataFrame(
+            columns=OUTPUT_COLUMNS,
+        )
+
+    try:
+        df = pd.read_csv(
+            path,
+            dtype=str,
+        ).fillna("")
+    except Exception as e:
+        fail(
+            f"Failed reading existing official final-score file "
+            f"{path}: {e}"
+        )
+
+    missing = [
+        col
+        for col in OUTPUT_COLUMNS
+        if col not in df.columns
+    ]
+
+    if missing:
+        fail(
+            f"Existing official final-score file {path} "
+            f"is missing required columns: {missing}"
+        )
+
+    df = df[OUTPUT_COLUMNS].copy()
+
+    if df.empty:
+        return df
+
+    df["game_date"] = df["game_date"].map(
+        normalize_game_date
+    )
+    df["game_id"] = (
+        df["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+
+    bad_dates = sorted(
+        set(
+            df.loc[
+                df["game_date"] != game_date,
+                "game_date",
+            ].astype(str)
+        )
+    )
+
+    if bad_dates:
+        fail(
+            f"Existing official final-score file {path} "
+            f"contains unexpected game_date values: {bad_dates}"
+        )
+
+    validate_game_ids(
+        df,
+        label=str(path),
+    )
+
+    duplicate_ids = df.duplicated(
+        subset=["game_id"],
+        keep=False,
+    )
+
+    if duplicate_ids.any():
+        duplicate_values = sorted(
+            df.loc[
+                duplicate_ids,
+                "game_id",
+            ]
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+        fail(
+            f"Existing official final-score file {path} "
+            f"contains duplicate game_id values: {duplicate_values}"
+        )
+
+    for column in [
+        "away_score",
+        "home_score",
+        "total_score",
+        "away_puck_line_result",
+        "home_puck_line_result",
+    ]:
+        invalid_rows = [
+            value
+            for value in df[column]
+            if parse_int_score(value) is None
+        ]
+
+        if invalid_rows:
+            fail(
+                f"Existing official final-score file {path} "
+                f"contains invalid values in {column}"
+            )
+
+    return df
+
+
+def completed_historical_date(
+    game_date: str,
+    status_by_date: dict[str, pd.DataFrame],
+    today_game_date: str,
+) -> bool:
+    if game_date >= today_game_date:
+        return False
+
+    status_df = status_by_date.get(game_date)
+
+    if status_df is None or status_df.empty:
+        return False
+
+    states = (
+        status_df["game_state"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+
+    if not states.isin(FINAL_GAME_STATES).all():
+        return False
+
+    existing_scores = load_existing_final_scores_for_date(
+        game_date
+    )
+
+    if existing_scores.empty:
+        return False
+
+    status_ids = set(
+        status_df["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+    score_ids = set(
+        existing_scores["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+
+    return status_ids == score_ids
+
+
+def merge_official_final_history(
+    game_date: str,
+    existing_df: pd.DataFrame,
+    fetched_df: pd.DataFrame,
+) -> pd.DataFrame:
+    existing = normalize_output_df(
+        existing_df
+    )
+    fetched = normalize_output_df(
+        fetched_df
+    )
+
+    if existing.empty:
+        return fetched
+
+    if fetched.empty:
+        return existing
+
+    fetched_ids = set(
+        fetched["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+
+    preserved = existing[
+        ~existing["game_id"]
+        .astype(str)
+        .str.strip()
+        .isin(fetched_ids)
+    ].copy()
+
+    merged = pd.concat(
+        [
+            preserved,
+            fetched,
+        ],
+        ignore_index=True,
+    )
+
+    duplicate_ids = merged.duplicated(
+        subset=["game_id"],
+        keep=False,
+    )
+
+    if duplicate_ids.any():
+        duplicate_values = sorted(
+            merged.loc[
+                duplicate_ids,
+                "game_id",
+            ]
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+        fail(
+            "Merged official final-score history contains duplicate "
+            f"game_id values for {game_date}: {duplicate_values}"
+        )
+
+    return merged
 
 
 # ============================================================
@@ -689,7 +1054,6 @@ def is_official_final(
         game_state
         in FINAL_GAME_STATES
     )
-
 
 
 def build_official_status_rows(
@@ -1210,7 +1574,6 @@ def normalize_output_df(
     return df.fillna("")
 
 
-
 def write_status_snapshot(
     status_parts: list[pd.DataFrame],
 ) -> int:
@@ -1231,6 +1594,21 @@ def write_status_snapshot(
         )
 
     if not df.empty:
+        df = df[STATUS_COLUMNS].copy()
+        df["game_date"] = df["game_date"].map(
+            normalize_game_date
+        )
+        df["game_id"] = (
+            df["game_id"]
+            .astype(str)
+            .str.strip()
+        )
+
+        validate_game_ids(
+            df,
+            label="status snapshot before write",
+        )
+
         duplicate_ids = df.duplicated(
             subset=[
                 "game_id",
@@ -1305,6 +1683,31 @@ def write_official_scores_for_date(
             f"with blank game_id for {game_date}"
         )
 
+    validate_game_ids(
+        df,
+        label=f"final scores for {game_date}",
+    )
+
+    duplicate_ids = df.duplicated(
+        subset=["game_id"],
+        keep=False,
+    )
+
+    if duplicate_ids.any():
+        duplicate_values = sorted(
+            df.loc[
+                duplicate_ids,
+                "game_id",
+            ]
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+        fail(
+            f"Refusing to write duplicate final-score game_id values "
+            f"for {game_date}: {duplicate_values}"
+        )
+
     df = df.sort_values(
         [
             "game_date",
@@ -1315,9 +1718,8 @@ def write_official_scores_for_date(
         kind="stable",
     )
 
-    output_path = (
-        OUT_DIR
-        / f"{game_date}_{LEAGUE_OUT}_final_scores.csv"
+    output_path = final_score_path(
+        game_date
     )
 
     atomic_write_csv(
@@ -1369,6 +1771,16 @@ def main() -> int:
         f"{len(target_dates)}"
     )
 
+    today_game_date = current_game_date()
+    log(
+        f"CURRENT_GAME_DATE_ET={today_game_date}"
+    )
+
+    existing_status = load_existing_status_snapshot()
+    status_by_date = split_status_history_by_date(
+        existing_status
+    )
+
     if RAW_DIR.exists():
         raw_files = sorted(
             RAW_DIR.glob(
@@ -1399,11 +1811,34 @@ def main() -> int:
 
     total_official_games = 0
     files_written = 0
-    status_parts: list[pd.DataFrame] = []
+    queried_dates = 0
+    skipped_completed_dates = 0
+    preserved_existing_rows = 0
 
     for game_date in sorted(
         target_dates
     ):
+        if completed_historical_date(
+            game_date,
+            status_by_date,
+            today_game_date,
+        ):
+            existing_df = load_existing_final_scores_for_date(
+                game_date
+            )
+            preserved_existing_rows += len(
+                existing_df
+            )
+            skipped_completed_dates += 1
+
+            log(
+                "INCREMENTAL SKIP: completed historical date "
+                f"{game_date} | preserved_final_rows={len(existing_df)}"
+            )
+            continue
+
+        queried_dates += 1
+
         log(
             f"Processing official NHL final scores "
             f"for {game_date}"
@@ -1418,23 +1853,48 @@ def main() -> int:
             payload,
         )
 
-        status_parts.append(
-            status_df
-        )
+        if not status_df.empty:
+            status_by_date[game_date] = status_df
+        elif game_date in status_by_date:
+            log(
+                "INCREMENTAL STATUS PRESERVE: fetched status set was empty; "
+                f"keeping existing status history for {game_date}"
+            )
+        else:
+            log(
+                "No official NHL status rows returned for "
+                f"{game_date}"
+            )
 
-        official_df = build_official_final_rows(
+        fetched_official_df = build_official_final_rows(
             game_date,
             payload,
         )
 
         compare_with_dratings(
-            official_df,
+            fetched_official_df,
             dratings_checks,
+        )
+
+        existing_official_df = load_existing_final_scores_for_date(
+            game_date
+        )
+
+        merged_official_df = merge_official_final_history(
+            game_date,
+            existing_official_df,
+            fetched_official_df,
+        )
+
+        preserved_existing_rows += max(
+            0,
+            len(merged_official_df)
+            - len(fetched_official_df),
         )
 
         rows_written = write_official_scores_for_date(
             game_date,
-            official_df,
+            merged_official_df,
         )
 
         total_official_games += (
@@ -1444,13 +1904,36 @@ def main() -> int:
         if rows_written > 0:
             files_written += 1
 
+    status_parts = [
+        status_by_date[game_date]
+        for game_date in sorted(
+            status_by_date
+        )
+        if not status_by_date[game_date].empty
+    ]
+
     status_rows_written = write_status_snapshot(
         status_parts
     )
 
     log(
-        f"Stage 04 dates queried: "
+        f"Stage 04 target dates considered: "
         f"{len(target_dates)}"
+    )
+
+    log(
+        f"Official NHL dates queried: "
+        f"{queried_dates}"
+    )
+
+    log(
+        f"Completed historical dates skipped: "
+        f"{skipped_completed_dates}"
+    )
+
+    log(
+        f"Existing final-score rows preserved without refetch/replacement: "
+        f"{preserved_existing_rows}"
     )
 
     log(
@@ -1464,12 +1947,12 @@ def main() -> int:
     )
 
     log(
-        f"Official final-score rows written: "
+        f"Official final-score rows written on queried dates: "
         f"{total_official_games}"
     )
 
     log(
-        f"Official final-score files written: "
+        f"Official final-score files written on queried dates: "
         f"{files_written}"
     )
 
