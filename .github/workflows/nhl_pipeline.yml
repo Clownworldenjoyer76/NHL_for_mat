@@ -42,10 +42,10 @@ jobs:
       - name: Validate NHL pipeline
         run: python docs/win/hockey/nhl/scripts/tests/validate_pipeline.py
 
-      - name: Set up Python 3.13 for NHL pipeline tests
+      - name: Set up Python 3.12 for NHL pipeline tests
         uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.12"
 
       - name: Install NHL pipeline test dependencies
         run: |
