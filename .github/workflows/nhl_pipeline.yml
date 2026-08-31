@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
@@ -30,7 +30,7 @@ jobs:
         run: echo "DATE=$(TZ='America/New_York' date +%Y_%m_%d)" >> "$GITHUB_ENV"
 
       - name: Set up Python 3.11 for pre-run validation
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -43,7 +43,7 @@ jobs:
         run: python docs/win/hockey/nhl/scripts/tests/validate_pipeline.py
 
       - name: Set up Python 3.12 for NHL pipeline tests
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -89,18 +89,18 @@ jobs:
         run: exit 1
 
       - name: Set up Python 3.11 for NHL pipeline
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
       - name: Cache Playwright browsers
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
           key: playwright-chromium-${{ hashFiles('requirements.txt') }}
 
       - name: Cache SDV NHL xG models
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/nhl_xg_models
           key: sdv-nhl-xg-models-v1
@@ -181,31 +181,62 @@ jobs:
       - name: Pull official NHL schedule
         run: python docs/win/hockey/nhl/scripts/00_intake/pull_nhl_schedule.py
 
+      - name: Detect current NHL slate
+        id: current_slate
+        shell: bash
+        run: |
+          schedule_file="docs/win/hockey/nhl/00_intake/nhl_schedule/NHL_${DATE}.csv"
+
+          if [ ! -f "$schedule_file" ]; then
+            echo "Expected official NHL schedule file not found: $schedule_file" >&2
+            exit 1
+          fi
+
+          game_rows=$(tail -n +2 "$schedule_file" | sed '/^[[:space:]]*$/d' | wc -l | tr -d ' ')
+          echo "game_rows=$game_rows"
+
+          if [ "$game_rows" -gt 0 ]; then
+            echo "has_games=true" >> "$GITHUB_OUTPUT"
+            echo "Current NHL slate contains $game_rows game(s)."
+          else
+            echo "has_games=false" >> "$GITHUB_OUTPUT"
+            echo "Current NHL slate is empty. Current-slate Stage 00-04 processing will be skipped."
+          fi
+
       - name: Run NHL D-Ratings scraper
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
 
       - name: Transform NHL predictions
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey.py
 
       - name: Normalize NHL prediction team names
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/pred_name_normalization.py
 
       - name: Pull ESPN NHL odds
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/nhl_odds_pull.py
 
       - name: Transform ESPN NHL odds
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
 
       - name: Normalize NHL odds team names
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/odds_name_normalization.py
 
       - name: Reconcile NHL game IDs
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
 
       - name: Build NHL games
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/build_games.py
 
       - name: Pull SportsDataverse NHL data
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py
 
       - name: Print NHL intake logs on failure
@@ -231,40 +262,51 @@ jobs:
           fi
 
       - name: 01 Merge - NHL merge intake
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
 
       - name: 01 Merge - NHL build juice files
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py
 
       - name: 02 Juice - Validate calibration config
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py
 
       - name: 02 Juice - Apply moneyline juice
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py
 
       - name: 02 Juice - Apply puck line juice
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py
 
       - name: 02 Juice - Apply total juice
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py
 
       - name: 03 Edges - Compute NHL edges
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/03_edges/compute_edges.py
 
       - name: 03 Edges - Compute NHL EV and Kelly
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/03_edges/compute_ev_kelly.py
 
       - name: 03 Edges - Build NHL secondary model signals
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/03_edges/build_secondary_model_signals.py
 
       - name: 04 Select - Validate markets config
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/04_select/validate_markets_config.py
 
       - name: 04 Select - Select NHL bets
+        if: steps.current_slate.outputs.has_games == 'true'
         run: python docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
 
       - name: Print NHL Stage 01-04 logs
-        if: always()
+        if: ${{ always() && steps.current_slate.outputs.has_games == 'true' }}
         run: |
           echo "===== NHL 01 Merge Logs ====="
           find docs/win/hockey/nhl/errors/01_merge -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
@@ -279,6 +321,7 @@ jobs:
           find docs/win/hockey/nhl/errors/04_select -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
 
       - name: Commit NHL Stage 01-04 outputs
+        if: steps.current_slate.outputs.has_games == 'true'
         run: |
           git add -A docs/win/hockey/nhl/01_merge
           git add -A docs/win/hockey/nhl/02_juice
@@ -298,23 +341,40 @@ jobs:
             git push
           fi
 
+      - name: Detect NHL Stage 05 grading inputs
+        id: stage05_inputs
+        shell: bash
+        run: |
+          if find docs/win/hockey/nhl/04_select -maxdepth 1 -type f -name '*_NHL.csv' -print -quit | grep -q .; then
+            echo "has_inputs=true" >> "$GITHUB_OUTPUT"
+            echo "Stage 04 selection files found. Stage 05 grading/reporting will run."
+          else
+            echo "has_inputs=false" >> "$GITHUB_OUTPUT"
+            echo "No Stage 04 selection files found. Stage 05 grading/reporting will be skipped."
+          fi
+
       - name: 05 Final Scores - Transform final scores
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: python docs/win/hockey/nhl/scripts/05_final_scores/transform_final_scores.py
 
       - name: 05 Final Scores - Grade NHL results
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: python docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py
 
       - name: 05 Final Scores - Analyze NHL results
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: python docs/win/hockey/nhl/scripts/05_final_scores/02_nhl_results_analyze.py
 
       - name: 05 Final Scores - Build NHL reports
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: python docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py
 
       - name: 05 Final Scores - Calculate NHL CLV
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: python docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py
 
       - name: Print NHL Stage 05 logs
-        if: always()
+        if: ${{ always() && steps.stage05_inputs.outputs.has_inputs == 'true' }}
         run: |
           echo "===== transform_final_scores log ====="
           if [ -f docs/win/hockey/nhl/errors/05_final_scores/transform_final_scores.txt ]; then
@@ -327,7 +387,7 @@ jobs:
           find docs/win/hockey/nhl/05_final_scores/errors -type f -name "*.txt" -print -exec sh -c 'echo "----- $1 -----"; cat "$1"' sh {} \; || true
 
       - name: Show generated NHL Stage 05 files
-        if: always()
+        if: ${{ always() && steps.stage05_inputs.outputs.has_inputs == 'true' }}
         run: |
           echo "===== Final score outputs ====="
           find docs/win/hockey/nhl/05_final_scores/final_scores -type f -name "*.csv" -print || true
@@ -348,6 +408,7 @@ jobs:
           find docs/win/hockey/nhl/05_final_scores -maxdepth 1 -type f -name "nhl_market_tally.csv" -print || true
 
       - name: Commit NHL Stage 05 outputs
+        if: steps.stage05_inputs.outputs.has_inputs == 'true'
         run: |
           git add -A docs/win/hockey/nhl/05_final_scores
           git add -A docs/win/hockey/nhl/errors/05_final_scores
