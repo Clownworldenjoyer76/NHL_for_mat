@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import csv
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 from pathlib import Path
 
 
@@ -31,11 +33,11 @@ TEST_OUTPUT_ROOT = (
     / "game_id_reconciliation"
 )
 
-EXPECTED_OFFICIAL_GAME_ID = "2025020004"
-EXPECTED_SPORTSBOOK_EVENT_ID = "fixture_sb_20251008_001"
-EXPECTED_MARKET_PROVIDER_ID = "53"
-EXPECTED_MARKET_PROVIDER_NAME = "Titanbets"
-EXPECTED_ODDS_SOURCE = "espn"
+MARKETS = (
+    "moneyline",
+    "puck_line",
+    "total",
+)
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -45,6 +47,21 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         encoding="utf-8-sig",
     ) as handle:
         return list(csv.DictReader(handle))
+
+
+def normalize_team_name(value: str) -> str:
+    text = unicodedata.normalize(
+        "NFKD",
+        str(value).strip(),
+    )
+    text = "".join(
+        char
+        for char in text
+        if not unicodedata.combining(char)
+    )
+    text = text.lower().replace("&", " and ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def fixture_dates() -> list[str]:
@@ -69,20 +86,104 @@ def fixture_dates() -> list[str]:
         )
     }
 
-    common = sorted(
-        odds_dates
-        & prediction_dates
-        & sportsbook_dates
-    )
-
-    if len(common) != 1:
+    if not odds_dates:
         raise RuntimeError(
-            "Fixture tree must contain exactly one "
-            "common test date across odds, predictions, "
-            f"and sportsbook. Found: {common}"
+            "Fixture odds directory contains no fixture dates."
         )
 
-    return common
+    if (
+        odds_dates != prediction_dates
+        or odds_dates != sportsbook_dates
+    ):
+        raise RuntimeError(
+            "Fixture date sets must match exactly across odds, "
+            "predictions, and sportsbook. "
+            f"odds={sorted(odds_dates)} "
+            f"predictions={sorted(prediction_dates)} "
+            f"sportsbook={sorted(sportsbook_dates)}"
+        )
+
+    return sorted(odds_dates)
+
+
+def fixture_sportsbook_expectations(
+    test_date: str,
+) -> dict[str, object]:
+    path = (
+        FIXTURE_SPORTSBOOK_DIR
+        / f"NHL_{test_date}.csv"
+    )
+
+    rows = read_csv(path)
+
+    if len(rows) != 1:
+        raise RuntimeError(
+            "Fixture sportsbook must contain exactly one row "
+            f"for {test_date}. Found: {len(rows)}"
+        )
+
+    row = rows[0]
+
+    sportsbook_event_id = row.get(
+        "sportsbook_event_id",
+        "",
+    ).strip()
+    odds_source = row.get(
+        "odds_source",
+        "",
+    ).strip()
+    home_team = row.get(
+        "home_team",
+        "",
+    ).strip()
+    away_team = row.get(
+        "away_team",
+        "",
+    ).strip()
+
+    required_values = {
+        "sportsbook_event_id": sportsbook_event_id,
+        "odds_source": odds_source,
+        "home_team": home_team,
+        "away_team": away_team,
+    }
+
+    for name, value in required_values.items():
+        if not value:
+            raise RuntimeError(
+                f"Fixture sportsbook {path} has blank {name}."
+            )
+
+    providers: dict[str, dict[str, str]] = {}
+
+    for market in MARKETS:
+        provider_id = row.get(
+            f"{market}_provider_id",
+            "",
+        ).strip()
+        provider_name = row.get(
+            f"{market}_provider_name",
+            "",
+        ).strip()
+
+        if not provider_id or not provider_name:
+            raise RuntimeError(
+                f"Fixture sportsbook {path} has blank "
+                f"{market} provider metadata."
+            )
+
+        providers[market] = {
+            "id": provider_id,
+            "name": provider_name,
+        }
+
+    return {
+        "sportsbook_event_id": sportsbook_event_id,
+        "odds_source": odds_source,
+        "home_team": home_team,
+        "away_team": away_team,
+        "providers": providers,
+    }
 
 
 def prepare_workspace(
@@ -171,6 +272,7 @@ def run_script(
 def validate_transformed_sportsbook(
     work_base: Path,
     test_date: str,
+    expected: dict[str, object],
 ) -> None:
     generated_path = (
         work_base
@@ -193,11 +295,11 @@ def validate_transformed_sportsbook(
         generated_path
     )
 
-    expected = read_csv(
+    expected_rows = read_csv(
         expected_path
     )
 
-    if generated != expected:
+    if generated != expected_rows:
         raise RuntimeError(
             "Generated sportsbook output does not match "
             f"fixture sportsbook file: {expected_path}"
@@ -222,7 +324,7 @@ def validate_transformed_sportsbook(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_SPORTSBOOK_EVENT_ID
+        != expected["sportsbook_event_id"]
     ):
         raise RuntimeError(
             "Unexpected sportsbook_event_id."
@@ -233,23 +335,28 @@ def validate_transformed_sportsbook(
             "odds_source",
             "",
         ).strip()
-        != EXPECTED_ODDS_SOURCE
+        != expected["odds_source"]
     ):
         raise RuntimeError(
             "Unexpected odds_source."
         )
 
-    for market in (
-        "moneyline",
-        "puck_line",
-        "total",
-    ):
+    providers = expected["providers"]
+
+    if not isinstance(providers, dict):
+        raise RuntimeError(
+            "Invalid fixture provider expectations."
+        )
+
+    for market in MARKETS:
+        market_provider = providers[market]
+
         if (
             row.get(
                 f"{market}_provider_id",
                 "",
             ).strip()
-            != EXPECTED_MARKET_PROVIDER_ID
+            != market_provider["id"]
         ):
             raise RuntimeError(
                 f"Unexpected {market}_provider_id."
@@ -260,7 +367,7 @@ def validate_transformed_sportsbook(
                 f"{market}_provider_name",
                 "",
             ).strip()
-            != EXPECTED_MARKET_PROVIDER_NAME
+            != market_provider["name"]
         ):
             raise RuntimeError(
                 f"Unexpected {market}_provider_name."
@@ -322,7 +429,8 @@ def validate_transformed_predictions(
 def validate_schedule(
     work_base: Path,
     test_date: str,
-) -> None:
+    sportsbook_expected: dict[str, object],
+) -> dict[str, str]:
     path = (
         work_base
         / "00_intake"
@@ -350,13 +458,6 @@ def validate_schedule(
         for row in rows
     }
 
-    if EXPECTED_OFFICIAL_GAME_ID not in official_ids:
-        raise RuntimeError(
-            "Expected official NHL game_id "
-            f"{EXPECTED_OFFICIAL_GAME_ID} "
-            "not found in schedule."
-        )
-
     bad_ids = sorted(
         game_id
         for game_id in official_ids
@@ -371,10 +472,72 @@ def validate_schedule(
             f"Invalid official NHL game IDs: {bad_ids}"
         )
 
+    fixture_teams = {
+        normalize_team_name(
+            str(sportsbook_expected["home_team"])
+        ),
+        normalize_team_name(
+            str(sportsbook_expected["away_team"])
+        ),
+    }
+
+    matches = []
+
+    for row in rows:
+        schedule_teams = {
+            normalize_team_name(
+                row.get("home_team", "")
+            ),
+            normalize_team_name(
+                row.get("away_team", "")
+            ),
+        }
+
+        if schedule_teams == fixture_teams:
+            matches.append(row)
+
+    if len(matches) != 1:
+        raise RuntimeError(
+            "Expected exactly one official NHL schedule match "
+            f"for fixture {test_date}. Found: {len(matches)}"
+        )
+
+    match = matches[0]
+    game_id = match.get(
+        "game_id",
+        "",
+    ).strip()
+    home_team = match.get(
+        "home_team",
+        "",
+    ).strip()
+    away_team = match.get(
+        "away_team",
+        "",
+    ).strip()
+    game_type = match.get(
+        "game_type",
+        "",
+    ).strip()
+
+    if game_type not in {"2", "3"}:
+        raise RuntimeError(
+            "Fixture matched a non-regular-season/playoff game: "
+            f"game_type={game_type!r}"
+        )
+
+    return {
+        "official_game_id": game_id,
+        "home_team": home_team,
+        "away_team": away_team,
+    }
+
 
 def validate_reconciliation(
     work_base: Path,
     test_date: str,
+    sportsbook_expected: dict[str, object],
+    schedule_expected: dict[str, str],
 ) -> None:
     sportsbook_path = (
         work_base
@@ -439,13 +602,19 @@ def validate_reconciliation(
         )
 
     row = reconciled_rows[0]
+    expected_game_id = schedule_expected[
+        "official_game_id"
+    ]
+    expected_sportsbook_event_id = sportsbook_expected[
+        "sportsbook_event_id"
+    ]
 
     if (
         row.get(
             "game_id",
             "",
         ).strip()
-        != EXPECTED_OFFICIAL_GAME_ID
+        != expected_game_id
     ):
         raise RuntimeError(
             "Reconciled official game_id does not "
@@ -457,7 +626,7 @@ def validate_reconciliation(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_SPORTSBOOK_EVENT_ID
+        != expected_sportsbook_event_id
     ):
         raise RuntimeError(
             "Reconciled sportsbook_event_id does not "
@@ -478,11 +647,11 @@ def validate_reconciliation(
             "home_team",
             "",
         ).strip()
-        != "Toronto Maple Leafs"
+        != schedule_expected["home_team"]
     ):
         raise RuntimeError(
-            "Home team was not corrected to "
-            "Toronto Maple Leafs."
+            "Reconciled home team does not match "
+            "the official NHL schedule."
         )
 
     if (
@@ -490,10 +659,18 @@ def validate_reconciliation(
             "away_team",
             "",
         ).strip()
-        != "Montreal Canadiens"
+        != schedule_expected["away_team"]
     ):
         raise RuntimeError(
-            "Montreal/Montréal normalization failed."
+            "Reconciled away team does not match "
+            "the official NHL schedule."
+        )
+
+    providers = sportsbook_expected["providers"]
+
+    if not isinstance(providers, dict):
+        raise RuntimeError(
+            "Invalid fixture provider expectations."
         )
 
     for source_name, rows in (
@@ -519,7 +696,7 @@ def validate_reconciliation(
                 "game_id",
                 "",
             ).strip()
-            != EXPECTED_OFFICIAL_GAME_ID
+            != expected_game_id
         ):
             raise RuntimeError(
                 f"{source_name} does not contain "
@@ -532,23 +709,21 @@ def validate_reconciliation(
                     "odds_source",
                     "",
                 ).strip()
-                != EXPECTED_ODDS_SOURCE
+                != sportsbook_expected["odds_source"]
             ):
                 raise RuntimeError(
                     "Reconciled sportsbook odds_source mismatch."
                 )
 
-            for market in (
-                "moneyline",
-                "puck_line",
-                "total",
-            ):
+            for market in MARKETS:
+                market_provider = providers[market]
+
                 if (
                     source_row.get(
                         f"{market}_provider_id",
                         "",
                     ).strip()
-                    != EXPECTED_MARKET_PROVIDER_ID
+                    != market_provider["id"]
                 ):
                     raise RuntimeError(
                         "Reconciled sportsbook "
@@ -560,7 +735,7 @@ def validate_reconciliation(
                         f"{market}_provider_name",
                         "",
                     ).strip()
-                    != EXPECTED_MARKET_PROVIDER_NAME
+                    != market_provider["name"]
                 ):
                     raise RuntimeError(
                         "Reconciled sportsbook "
@@ -603,6 +778,8 @@ def validate_reconciliation(
 def validate_games(
     work_base: Path,
     test_date: str,
+    sportsbook_expected: dict[str, object],
+    schedule_expected: dict[str, str],
 ) -> None:
     path = (
         work_base
@@ -631,7 +808,7 @@ def validate_games(
             "game_id",
             "",
         ).strip()
-        != EXPECTED_OFFICIAL_GAME_ID
+        != schedule_expected["official_game_id"]
     ):
         raise RuntimeError(
             "Games output official game_id mismatch."
@@ -642,7 +819,7 @@ def validate_games(
             "sportsbook_event_id",
             "",
         ).strip()
-        != EXPECTED_SPORTSBOOK_EVENT_ID
+        != sportsbook_expected["sportsbook_event_id"]
     ):
         raise RuntimeError(
             "Games output sportsbook_event_id mismatch."
@@ -652,6 +829,8 @@ def validate_games(
 def save_test_output(
     work_base: Path,
     test_date: str,
+    sportsbook_expected: dict[str, object],
+    schedule_expected: dict[str, str],
 ) -> Path:
     output_dir = (
         TEST_OUTPUT_ROOT
@@ -763,6 +942,13 @@ def save_test_output(
                 logs_dir / name,
             )
 
+    providers = sportsbook_expected["providers"]
+
+    if not isinstance(providers, dict):
+        raise RuntimeError(
+            "Invalid fixture provider expectations."
+        )
+
     summary = [
         "NHL GAME ID RECONCILIATION TEST",
         f"TEST_DATE={test_date}",
@@ -770,24 +956,40 @@ def save_test_output(
         "",
         (
             "official_nhl_game_id="
-            f"{EXPECTED_OFFICIAL_GAME_ID}"
+            f"{schedule_expected['official_game_id']}"
         ),
         (
             "sportsbook_event_id="
-            f"{EXPECTED_SPORTSBOOK_EVENT_ID}"
+            f"{sportsbook_expected['sportsbook_event_id']}"
         ),
         (
             "odds_source="
-            f"{EXPECTED_ODDS_SOURCE}"
+            f"{sportsbook_expected['odds_source']}"
         ),
         (
-            "market_provider="
-            f"{EXPECTED_MARKET_PROVIDER_NAME}"
-            f" ({EXPECTED_MARKET_PROVIDER_ID})"
+            "official_home_team="
+            f"{schedule_expected['home_team']}"
         ),
-        "fixture_source=game_id_reconciliation",
-        "workspace=isolated_temp_directory",
+        (
+            "official_away_team="
+            f"{schedule_expected['away_team']}"
+        ),
     ]
+
+    for market in MARKETS:
+        market_provider = providers[market]
+        summary.append(
+            f"{market}_provider="
+            f"{market_provider['name']} "
+            f"({market_provider['id']})"
+        )
+
+    summary.extend(
+        [
+            "fixture_source=game_id_reconciliation",
+            "workspace=isolated_temp_directory",
+        ]
+    )
 
     (
         output_dir
@@ -800,16 +1002,24 @@ def save_test_output(
     return output_dir
 
 
-def main() -> None:
-    dates = fixture_dates()
-    test_date = dates[0]
+def run_fixture_date(
+    test_date: str,
+) -> Path:
+    sportsbook_expected = (
+        fixture_sportsbook_expectations(
+            test_date
+        )
+    )
 
     print(
         f"Fixture test date: {test_date}"
     )
 
     with tempfile.TemporaryDirectory(
-        prefix="nhl_game_id_reconciliation_"
+        prefix=(
+            "nhl_game_id_reconciliation_"
+            f"{test_date}_"
+        )
     ) as temp_dir:
         workspace_root = Path(temp_dir)
 
@@ -826,6 +1036,7 @@ def main() -> None:
         validate_transformed_sportsbook(
             work_base,
             test_date,
+            sportsbook_expected,
         )
 
         stage_fixture_sportsbook(
@@ -848,9 +1059,10 @@ def main() -> None:
             "pull_nhl_schedule.py",
         )
 
-        validate_schedule(
+        schedule_expected = validate_schedule(
             work_base,
             test_date,
+            sportsbook_expected,
         )
 
         run_script(
@@ -861,6 +1073,8 @@ def main() -> None:
         validate_reconciliation(
             work_base,
             test_date,
+            sportsbook_expected,
+            schedule_expected,
         )
 
         run_script(
@@ -871,11 +1085,49 @@ def main() -> None:
         validate_games(
             work_base,
             test_date,
+            sportsbook_expected,
+            schedule_expected,
         )
 
         output_dir = save_test_output(
             work_base,
             test_date,
+            sportsbook_expected,
+            schedule_expected,
+        )
+
+    print(
+        f"Fixture date passed: {test_date}"
+    )
+
+    print(
+        "official_game_id="
+        f"{schedule_expected['official_game_id']}"
+    )
+
+    print(
+        "sportsbook_event_id="
+        f"{sportsbook_expected['sportsbook_event_id']}"
+    )
+
+    print(
+        f"output_dir={output_dir}"
+    )
+
+    return output_dir
+
+
+def main() -> None:
+    dates = fixture_dates()
+
+    print(
+        "Fixture test dates: "
+        + ", ".join(dates)
+    )
+
+    for test_date in dates:
+        run_fixture_date(
+            test_date
         )
 
     print(
@@ -883,21 +1135,7 @@ def main() -> None:
     )
 
     print(
-        f"test_date={test_date}"
-    )
-
-    print(
-        "official_game_id="
-        f"{EXPECTED_OFFICIAL_GAME_ID}"
-    )
-
-    print(
-        "sportsbook_event_id="
-        f"{EXPECTED_SPORTSBOOK_EVENT_ID}"
-    )
-
-    print(
-        f"output_dir={output_dir}"
+        f"fixture_dates_tested={len(dates)}"
     )
 
 
