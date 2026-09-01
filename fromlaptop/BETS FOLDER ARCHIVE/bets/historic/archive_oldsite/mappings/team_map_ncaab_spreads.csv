@@ -1,0 +1,792 @@
+league,alias,canonical_team
+ncaab_spreads,Radford,Radford Highlanders
+ncaab_spreads,Sam Houston,Sam Houston State Bearkats
+ncaab_spread,Prairie View,Prairie View AM Panthers
+ncaab_spread,Rutgers,Rutgers Scarlet Knights
+ncaab_spread,Rutgers Scarlet Knights,Rutgers Scarlet Knights	
+ncaab_spread,ETSU Buccaneers,East Tennessee State Buccaneers
+ncaab_spread,MD E Shore Fighting Hawks,Maryland Eastern Shore Hawks
+ncaab_spread,Radford Highlanders,Radford Highlanders
+ncaab_spread,St. Bonaventure Bonnies,Saint Bonaventure Bonnies
+ncaab_spread,Pennsylvania,Penn Quakers
+ncaab_spread,Saint Louis,Saint Louis Billikens
+ncaab_spread,Hawaii,Hawaii Rainbow Warriors
+ncaab_spread,Louisiana,Louisiana Ragin' Cajuns
+ncaab_spread,South Alabama,South Alabama Jaguars
+ncaab_spread,USC Upstate,USC Upstate Spartans
+ncaab_spreads,Hawaii Rainbow Warriors,Hawaii Rainbow Warriors
+ncaab_spreads,Louisiana Lafayette,Louisiana Ragin Cajuns
+ncaab_spreads,MTSU Blue Raiders,Middle Tennessee Blue Raiders
+ncaab_spreads,South Alabama Jaguars,South Alabama Jaguars
+ncaab_spreads,UMKC Kangarros,UMKC Kangaroos
+ncaab_spreads,USC Upstate Spartans,USC Upstate Spartans
+ncaab_spreads,East Texas AM Lions,Texas AM Commerce Lions
+ncaab_spreads,Arkansas–Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,Arkansas–Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,Bethune–Cookman,Bethune Cookman Wildcats
+ncaab_spreads,Bethune–Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_spreads,Texas A&M–Corpus Christi,Texas AM Corpus Christi Islanders
+ncaab_spreads,Texas A&M–Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+ncaab_spreads,Ark Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,MS Valley State Delta Devils,Mississippi Valley State Delta Devils
+ncaab_spreads,Texas A&M CC Islanders,Texas AM Corpus Christi Islanders
+ncaab_spreads,Texas A&M Commerce Lions,Texas AM Commerce Lions
+ncaab_spreads,UTRGV Vaqueros,UT Rio Grande Valley Vaqueros
+ncaab_spreads,A&M-Corpus Christi,Texas AM Corpus Christi Islanders
+ncaab_spreads,Abilene Christian,Abilene Christian Wildcats
+ncaab_spreads,Abilene Christian Wildcats,Abilene Christian Wildcats
+ncaab_spreads,Air Force,Air Force Falcons
+ncaab_spreads,Air Force Falcons,Air Force Falcons
+ncaab_spreads,Akron,Akron Zips
+ncaab_spreads,Akron Zips,Akron Zips
+ncaab_spreads,Alabama,Alabama Crimson Tide
+ncaab_spreads,Alabama A&M,Alabama AM Bulldogs
+ncaab_spreads,Alabama A&M Bulldogs,Alabama AM Bulldogs
+ncaab_spreads,Alabama Crimson Tide,Alabama Crimson Tide
+ncaab_spreads,Alabama State,Alabama State Hornets
+ncaab_spreads,Alabama State Hornets,Alabama State Hornets
+ncaab_spreads,Albany,Albany Great Danes
+ncaab_spreads,Albany Great Danes,Albany Great Danes
+ncaab_spreads,Albany NY,Albany Great Danes
+ncaab_spreads,Alcorn,Alcorn State Braves
+ncaab_spreads,Alcorn State,Alcorn State Braves
+ncaab_spreads,Alcorn State Braves,Alcorn State Braves
+ncaab_spreads,American,American University Eagles
+ncaab_spreads,American University Eagles,American University Eagles
+ncaab_spreads,Appalachian State,Appalachian State Mountaineers
+ncaab_spreads,Appalachian State Mountaineers,Appalachian State Mountaineers
+ncaab_spreads,Arizona,Arizona Wildcats
+ncaab_spreads,Arizona State,Arizona State Sun Devils
+ncaab_spreads,Arizona State Sun Devils,Arizona State Sun Devils
+ncaab_spreads,Arizona Wildcats,Arizona Wildcats
+ncaab_spreads,Ark Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,Arkansas,Arkansas Razorbacks
+ncaab_spreads,Arkansas Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,Arkansas Razorbacks,Arkansas Razorbacks
+ncaab_spreads,Arkansas State,Arkansas State Red Wolves
+ncaab_spreads,Arkansas State Red Wolves,Arkansas State Red Wolves
+ncaab_spreads,Arkansas-Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_spreads,Army,Army Black Knights
+ncaab_spreads,Army Black Knights,Army Black Knights
+ncaab_spreads,Auburn,Auburn Tigers
+ncaab_spreads,Auburn Tigers,Auburn Tigers
+ncaab_spreads,Austin Peay,Austin Peay Governors
+ncaab_spreads,Austin Peay Governors,Austin Peay Governors
+ncaab_spreads,BYU,Brigham Young Cougars
+ncaab_spreads,Ball State,Ball State Cardinals
+ncaab_spreads,Ball State Cardinals,Ball State Cardinals
+ncaab_spreads,Baylor,Baylor Bears
+ncaab_spreads,Baylor Bears,Baylor Bears
+ncaab_spreads,Bellarmine,Bellarmine Knights
+ncaab_spreads,Bellarmine Knights,Bellarmine Knights
+ncaab_spreads,Belmont,Belmont Bruins
+ncaab_spreads,Belmont Bruins,Belmont Bruins
+ncaab_spreads,Bethune Cookman,Bethune Cookman Wildcats
+ncaab_spreads,Bethune Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_spreads,Bethune-Cookman,Bethune Cookman Wildcats
+ncaab_spreads,Bethune-Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_spreads,Binghamton,Binghamton Bearcats
+ncaab_spreads,Binghamton Bearcats,Binghamton Bearcats
+ncaab_spreads,Boise State,Boise State Broncos
+ncaab_spreads,Boise State Broncos,Boise State Broncos
+ncaab_spreads,Boston College,Boston College Eagles
+ncaab_spreads,Boston College Eagles,Boston College Eagles
+ncaab_spreads,Boston University,Boston University Terriers
+ncaab_spreads,Boston University Terriers,Boston University Terriers
+ncaab_spreads,Bowling Green,Bowling Green Falcons
+ncaab_spreads,Bowling Green Falcons,Bowling Green Falcons
+ncaab_spreads,Bradley,Bradley University Braves
+ncaab_spreads,Bradley University Braves,Bradley University Braves
+ncaab_spreads,Brigham Young Cougars,Brigham Young Cougars
+ncaab_spreads,Brown,Brown Bears
+ncaab_spreads,Brown Bears,Brown Bears
+ncaab_spreads,Bryant,Bryant Bulldogs
+ncaab_spreads,Bryant Bulldogs,Bryant Bulldogs
+ncaab_spreads,Bucknell,Bucknell Bison
+ncaab_spreads,Bucknell Bison,Bucknell Bison
+ncaab_spreads,Buffalo,Buffalo Bulls
+ncaab_spreads,Buffalo Bulls,Buffalo Bulls
+ncaab_spreads,Butler,Butler Bulldogs
+ncaab_spreads,Butler Bulldogs,Butler Bulldogs
+ncaab_spreads,CSU Bakersfield,California State Bakersfield Roadrunners
+ncaab_spreads,CSU Bakersfield Roadrunners,California State Bakersfield Roadrunners
+ncaab_spreads,CSUN,Cal State Northridge Matadors
+ncaab_spreads,Cal Poly,Cal Poly Mustangs
+ncaab_spreads,Cal Poly Mustangs,Cal Poly Mustangs
+ncaab_spreads,Cal State Fullerton,Cal State Fullerton Titans
+ncaab_spreads,Cal State Fullerton Titans,Cal State Fullerton Titans
+ncaab_spreads,Cal State Northridge Matadors,Cal State Northridge Matadors
+ncaab_spreads,California,California Golden Bears
+ncaab_spreads,California Baptist,California Baptist Lancers
+ncaab_spreads,California Baptist Lancers,California Baptist Lancers
+ncaab_spreads,California Golden Bears,California Golden Bears
+ncaab_spreads,California State Bakersfield Roadrunners,California State Bakersfield Roadrunners
+ncaab_spreads,Campbell,Campbell Fighting Camels
+ncaab_spreads,Campbell Fighting Camels,Campbell Fighting Camels
+ncaab_spreads,Canisius,Canisius Golden Griffins
+ncaab_spreads,Canisius Golden Griffins,Canisius Golden Griffins
+ncaab_spreads,Central Arkansas,Central Arkansas Bears
+ncaab_spreads,Central Arkansas Bears,Central Arkansas Bears
+ncaab_spreads,Central Connecticut Blue Devils,Central Connecticut State Blue Devils
+ncaab_spreads,Central Connecticut State,Central Connecticut State Blue Devils
+ncaab_spreads,Central Connecticut State Blue Devils,Central Connecticut State Blue Devils
+ncaab_spreads,Central Michigan,Central Michigan Chippewas
+ncaab_spreads,Central Michigan Chippewas,Central Michigan Chippewas
+ncaab_spreads,Charleston,Charleston Cougars
+ncaab_spreads,Charleston Cougars,Charleston Cougars
+ncaab_spreads,Charleston Southern,Charleston Southern Buccaneers
+ncaab_spreads,Charleston Southern Buccaneers,Charleston Southern Buccaneers
+ncaab_spreads,Charlotte,Charlotte 49ers
+ncaab_spreads,Charlotte 49ers,Charlotte 49ers
+ncaab_spreads,Chattanooga,Chattanooga Mocs
+ncaab_spreads,Chattanooga Mocs,Chattanooga Mocs
+ncaab_spreads,Chicago State,Chicago State Cougars
+ncaab_spreads,Chicago State Cougars,Chicago State Cougars
+ncaab_spreads,Cincinnati,Cincinnati Bearcats
+ncaab_spreads,Cincinnati Bearcats,Cincinnati Bearcats
+ncaab_spreads,Citadel Bulldogs,The Citadel Bulldogs
+ncaab_spreads,Clemson,Clemson Tigers
+ncaab_spreads,Clemson Tigers,Clemson Tigers
+ncaab_spreads,Cleveland State,Cleveland State Vikings
+ncaab_spreads,Cleveland State Vikings,Cleveland State Vikings
+ncaab_spreads,Coastal Carolina,Coastal Carolina Chanticleers
+ncaab_spreads,Coastal Carolina Chanticleers,Coastal Carolina Chanticleers
+ncaab_spreads,Colgate,Colgate Raiders
+ncaab_spreads,Colgate Raiders,Colgate Raiders
+ncaab_spreads,Colorado,Colorado Buffaloes
+ncaab_spreads,Colorado Buffaloes,Colorado Buffaloes
+ncaab_spreads,Colorado State,Colorado State Rams
+ncaab_spreads,Colorado State Rams,Colorado State Rams
+ncaab_spreads,Columbia,Columbia Lions
+ncaab_spreads,Columbia Lions,Columbia Lions
+ncaab_spreads,Connecticut Huskies,Connecticut Huskies
+ncaab_spreads,Coppin State,Coppin State Eagles
+ncaab_spreads,Coppin State Eagles,Coppin State Eagles
+ncaab_spreads,Cornell,Cornell Big Red
+ncaab_spreads,Cornell Big Red,Cornell Big Red
+ncaab_spreads,Creighton,Creighton Bluejays
+ncaab_spreads,Creighton Bluejays,Creighton Bluejays
+ncaab_spreads,Dartmouth,Dartmouth Big Green
+ncaab_spreads,Dartmouth Big Green,Dartmouth Big Green
+ncaab_spreads,Davidson,Davidson Wildcats
+ncaab_spreads,Davidson Wildcats,Davidson Wildcats
+ncaab_spreads,Dayton,Dayton Flyers
+ncaab_spreads,Dayton Flyers,Dayton Flyers
+ncaab_spreads,DePaul,DePaul Blue Demons
+ncaab_spreads,DePaul Blue Demons,DePaul Blue Demons
+ncaab_spreads,Delaware,Delaware Fightin Blue Hens
+ncaab_spreads,Delaware Fightin' Blue Hens,Delaware Fightin Blue Hens
+ncaab_spreads,Delaware State,Delaware State Hornets
+ncaab_spreads,Delaware State Hornets,Delaware State Hornets
+ncaab_spreads,Denver,Denver Pioneers
+ncaab_spreads,Denver Pioneers,Denver Pioneers
+ncaab_spreads,Detroit Mercy,Detroit Titans
+ncaab_spreads,Detroit Titans,Detroit Titans
+ncaab_spreads,Drake,Drake Bulldogs
+ncaab_spreads,Drake Bulldogs,Drake Bulldogs
+ncaab_spreads,Drexel,Drexel Dragons
+ncaab_spreads,Drexel Dragons,Drexel Dragons
+ncaab_spreads,Duke,Duke Blue Devils
+ncaab_spreads,Duke Blue Devils,Duke Blue Devils
+ncaab_spreads,Duquesne,Duquesne Dukes
+ncaab_spreads,Duquesne Dukes,Duquesne Dukes
+ncaab_spreads,ETSU,East Tennessee State Buccaneers
+ncaab_spreads,East Carolina,East Carolina Pirates
+ncaab_spreads,East Carolina Pirates,East Carolina Pirates
+ncaab_spreads,East Tennessee State Buccaneers,East Tennessee State Buccaneers
+ncaab_spreads,East Texas A&M,Texas AM Commerce Lions
+ncaab_spreads,East Texas A&M Lions,Texas AM Commerce Lions
+ncaab_spreads,Eastern Illinois,Eastern Illinois Panthers
+ncaab_spreads,Eastern Illinois Panthers,Eastern Illinois Panthers
+ncaab_spreads,Eastern Kentucky,Eastern Kentucky Colonels
+ncaab_spreads,Eastern Kentucky Colonels,Eastern Kentucky Colonels
+ncaab_spreads,Eastern Michigan,Eastern Michigan Eagles
+ncaab_spreads,Eastern Michigan Eagles,Eastern Michigan Eagles
+ncaab_spreads,Eastern Washington,Eastern Washington Eagles
+ncaab_spreads,Eastern Washington Eagles,Eastern Washington Eagles
+ncaab_spreads,Elon,Elon Phoenix
+ncaab_spreads,Elon Phoenix,Elon Phoenix
+ncaab_spreads,Evansville,Evansville Purple Aces
+ncaab_spreads,Evansville Purple Aces,Evansville Purple Aces
+ncaab_spreads,FIU,FIU Golden Panthers
+ncaab_spreads,FIU Golden Panthers,FIU Golden Panthers
+ncaab_spreads,Fairfield,Fairfield Stags
+ncaab_spreads,Fairfield Stags,Fairfield Stags
+ncaab_spreads,Fairleigh Dickinson,Fairleigh Dickinson Knights
+ncaab_spreads,Fairleigh Dickinson Knights,Fairleigh Dickinson Knights
+ncaab_spreads,Florida,Florida Gators
+ncaab_spreads,Florida A&M,Florida AM Rattlers
+ncaab_spreads,Florida A&M Rattlers,Florida AM Rattlers
+ncaab_spreads,Florida Atlantic,Florida Atlantic Owls
+ncaab_spreads,Florida Atlantic Owls,Florida Atlantic Owls
+ncaab_spreads,Florida Gators,Florida Gators
+ncaab_spreads,Florida Gulf Coast,Florida Gulf Coast Eagles
+ncaab_spreads,Florida Gulf Coast Eagles,Florida Gulf Coast Eagles
+ncaab_spreads,Florida State,Florida State Seminoles
+ncaab_spreads,Florida State Seminoles,Florida State Seminoles
+ncaab_spreads,Fordham,Fordham Rams
+ncaab_spreads,Fordham Rams,Fordham Rams
+ncaab_spreads,Fresno State,Fresno State Bulldogs
+ncaab_spreads,Fresno State Bulldogs,Fresno State Bulldogs
+ncaab_spreads,Furman,Furman Paladins
+ncaab_spreads,Furman Paladins,Furman Paladins
+ncaab_spreads,Gardner Webb Runnin' Bulldogs,Gardner Webb Runnin Bulldogs
+ncaab_spreads,Gardner-Webb,Gardner Webb Runnin Bulldogs
+ncaab_spreads,George Mason,George Mason Patriots
+ncaab_spreads,George Mason Patriots,George Mason Patriots
+ncaab_spreads,George Washington,George Washington Colonials
+ncaab_spreads,George Washington Colonials,George Washington Colonials
+ncaab_spreads,Georgetown,Georgetown Hoyas
+ncaab_spreads,Georgetown Hoyas,Georgetown Hoyas
+ncaab_spreads,Georgia,Georgia Bulldogs
+ncaab_spreads,Georgia Bulldogs,Georgia Bulldogs
+ncaab_spreads,Georgia Southern,Georgia Southern Eagles
+ncaab_spreads,Georgia Southern Eagles,Georgia Southern Eagles
+ncaab_spreads,Georgia State,Georgia State Panthers
+ncaab_spreads,Georgia State Panthers,Georgia State Panthers
+ncaab_spreads,Georgia Tech,Georgia Tech Yellow Jackets
+ncaab_spreads,Georgia Tech Yellow Jackets,Georgia Tech Yellow Jackets
+ncaab_spreads,Gonzaga,Gonzaga Bulldogs
+ncaab_spreads,Gonzaga Bulldogs,Gonzaga Bulldogs
+ncaab_spreads,Grambling,Grambling State Tigers
+ncaab_spreads,Grambling State Tigers,Grambling State Tigers
+ncaab_spreads,Grand Canyon,Grand Canyon Antelopes
+ncaab_spreads,Grand Canyon Antelopes,Grand Canyon Antelopes
+ncaab_spreads,Green Bay,Wisconsin Green Bay Phoenix
+ncaab_spreads,Hampton,Hampton Pirates
+ncaab_spreads,Hampton Pirates,Hampton Pirates
+ncaab_spreads,Harvard,Harvard Crimson
+ncaab_spreads,Harvard Crimson,Harvard Crimson
+ncaab_spreads,High Point,High Point Panthers
+ncaab_spreads,High Point Panthers,High Point Panthers
+ncaab_spreads,Hofstra,Hofstra Pride
+ncaab_spreads,Hofstra Pride,Hofstra Pride
+ncaab_spreads,Holy Cross,Holy Cross Crusaders
+ncaab_spreads,Holy Cross Crusaders,Holy Cross Crusaders
+ncaab_spreads,Houston,Houston Cougars
+ncaab_spreads,Houston Christian,Houston Christian Huskies
+ncaab_spreads,Houston Christian Huskies,Houston Christian Huskies
+ncaab_spreads,Houston Cougars,Houston Cougars
+ncaab_spreads,Howard,Howard Bison
+ncaab_spreads,Howard Bison,Howard Bison
+ncaab_spreads,IPFW,Purdue Fort Wayne Mastodons
+ncaab_spreads,IPFW Mastodons,Purdue Fort Wayne Mastodons
+ncaab_spreads,IU Indianapolis,IU Indianapolis Jaguars
+ncaab_spreads,IU Indianapolis Jaguars,IU Indianapolis Jaguars
+ncaab_spreads,IUPUI,IU Indianapolis Jaguars
+ncaab_spreads,IUPUI Jaguars,IU Indianapolis Jaguars
+ncaab_spreads,Idaho,Idaho Vandals
+ncaab_spreads,Idaho State,Idaho State Bengals
+ncaab_spreads,Idaho State Bengals,Idaho State Bengals
+ncaab_spreads,Idaho Vandals,Idaho Vandals
+ncaab_spreads,Illinois,Illinois Fighting Illini
+ncaab_spreads,Illinois Chicago,Illinois Chicago
+ncaab_spreads,Illinois Fighting Illini,Illinois Fighting Illini
+ncaab_spreads,Illinois State,Illinois State Redbirds
+ncaab_spreads,Illinois State Redbirds,Illinois State Redbirds
+ncaab_spreads,Incarnate Word,Incarnate Word Cardinals
+ncaab_spreads,Incarnate Word Cardinals,Incarnate Word Cardinals
+ncaab_spreads,Indiana,Indiana Hoosiers
+ncaab_spreads,Indiana Hoosiers,Indiana Hoosiers
+ncaab_spreads,Indiana State,Indiana State Sycamores
+ncaab_spreads,Indiana State Sycamores,Indiana State Sycamores
+ncaab_spreads,Iona,Iona Gaels
+ncaab_spreads,Iona Gaels,Iona Gaels
+ncaab_spreads,Iowa,Iowa Hawkeyes
+ncaab_spreads,Iowa Hawkeyes,Iowa Hawkeyes
+ncaab_spreads,Iowa State,Iowa State Cyclones
+ncaab_spreads,Iowa State Cyclones,Iowa State Cyclones
+ncaab_spreads,Jackson State,Jackson State Tigers
+ncaab_spreads,Jackson State Tigers,Jackson State Tigers
+ncaab_spreads,Jacksonville,Jacksonville Dolphins
+ncaab_spreads,Jacksonville Dolphins,Jacksonville Dolphins
+ncaab_spreads,Jacksonville State,Jacksonville State Gamecocks
+ncaab_spreads,Jacksonville State Gamecocks,Jacksonville State Gamecocks
+ncaab_spreads,James Madison,James Madison Dukes
+ncaab_spreads,James Madison Dukes,James Madison Dukes
+ncaab_spreads,Kansas,Kansas Jayhawks
+ncaab_spreads,Kansas Jayhawks,Kansas Jayhawks
+ncaab_spreads,Kansas State,Kansas State Wildcats
+ncaab_spreads,Kansas State Wildcats,Kansas State Wildcats
+ncaab_spreads,Kennesaw State,Kennesaw State Owls
+ncaab_spreads,Kennesaw State Owls,Kennesaw State Owls
+ncaab_spreads,Kent State,Kent State Golden Flashes
+ncaab_spreads,Kent State Golden Flashes,Kent State Golden Flashes
+ncaab_spreads,Kentucky,Kentucky Wildcats
+ncaab_spreads,Kentucky Wildcats,Kentucky Wildcats
+ncaab_spreads,LIU,LIU Sharks
+ncaab_spreads,LIU Sharks,LIU Sharks
+ncaab_spreads,LSU,LSU Tigers
+ncaab_spreads,LSU Tigers,LSU Tigers
+ncaab_spreads,La Salle,La Salle Explorers
+ncaab_spreads,La Salle Explorers,La Salle Explorers
+ncaab_spreads,Lafayette,Lafayette Leopards
+ncaab_spreads,Lafayette Leopards,Lafayette Leopards
+ncaab_spreads,Lamar,Lamar Cardinals
+ncaab_spreads,Lamar Cardinals,Lamar Cardinals
+ncaab_spreads,Le Moyne,Le Moyne Dolphins
+ncaab_spreads,Le Moyne Dolphins,Le Moyne Dolphins
+ncaab_spreads,Lehigh,Lehigh Mountain Hawks
+ncaab_spreads,Lehigh Mountain Hawks,Lehigh Mountain Hawks
+ncaab_spreads,Liberty,Liberty Flames
+ncaab_spreads,Liberty Flames,Liberty Flames
+ncaab_spreads,Lindenwood,Lindenwood Lions
+ncaab_spreads,Lindenwood Lions,Lindenwood Lions
+ncaab_spreads,Lipscomb,Lipscomb Bisons
+ncaab_spreads,Lipscomb Bisons,Lipscomb Bisons
+ncaab_spreads,Little Rock,Little Rock Trojans
+ncaab_spreads,Little Rock Trojans,Little Rock Trojans
+ncaab_spreads,Long Beach State,Long Beach State 49ers
+ncaab_spreads,Long Beach State 49ers,Long Beach State 49ers
+ncaab_spreads,Longwood,Longwood Lancers
+ncaab_spreads,Longwood Lancers,Longwood Lancers
+ncaab_spreads,Louisiana Monroe Warhawks,Louisiana Monroe Warhawks
+ncaab_spreads,Louisiana Tech,Louisiana Tech Bulldogs
+ncaab_spreads,Louisiana Tech Bulldogs,Louisiana Tech Bulldogs
+ncaab_spreads,Louisville,Louisville Cardinals
+ncaab_spreads,Louisville Cardinals,Louisville Cardinals
+ncaab_spreads,Loyola Chicago,Loyola Chicago Ramblers
+ncaab_spreads,Loyola Chicago Ramblers,Loyola Chicago Ramblers
+ncaab_spreads,Loyola Maryland,Loyola Maryland Greyhounds
+ncaab_spreads,Loyola Maryland Greyhounds,Loyola Maryland Greyhounds
+ncaab_spreads,Loyola Marymount,Loyola Marymount Lions
+ncaab_spreads,Loyola Marymount Lions,Loyola Marymount Lions
+ncaab_spreads,MD Eastern Shore,Maryland Eastern Shore Hawks
+ncaab_spreads,Maine,Maine Black Bears
+ncaab_spreads,Maine Black Bears,Maine Black Bears
+ncaab_spreads,Manhattan,Manhattan Jaspers
+ncaab_spreads,Manhattan Jaspers,Manhattan Jaspers
+ncaab_spreads,Marist,Marist Red Foxes
+ncaab_spreads,Marist Red Foxes,Marist Red Foxes
+ncaab_spreads,Marquette,Marquette Golden Eagles
+ncaab_spreads,Marquette Golden Eagles,Marquette Golden Eagles
+ncaab_spreads,Marshall,Marshall Thundering Herd
+ncaab_spreads,Marshall Thundering Herd,Marshall Thundering Herd
+ncaab_spreads,Maryland,Maryland Terrapins
+ncaab_spreads,Maryland Eastern Shore Hawks,Maryland Eastern Shore Hawks
+ncaab_spreads,Maryland Terrapins,Maryland Terrapins
+ncaab_spreads,McNeese,McNeese State Cowboys
+ncaab_spreads,McNeese State,McNeese State Cowboys
+ncaab_spreads,McNeese State Cowboys,McNeese State Cowboys
+ncaab_spreads,Memphis,Memphis Tigers
+ncaab_spreads,Memphis Tigers,Memphis Tigers
+ncaab_spreads,Mercer,Mercer Bears
+ncaab_spreads,Mercer Bears,Mercer Bears
+ncaab_spreads,Mercyhurst,Mercyhurst Lakers
+ncaab_spreads,Mercyhurst Lakers,Mercyhurst Lakers
+ncaab_spreads,Merrimack,Merrimack Warriors
+ncaab_spreads,Merrimack Warriors,Merrimack Warriors
+ncaab_spreads,Miami FL,Miami Hurricanes
+ncaab_spreads,Miami Hurricanes,Miami Hurricanes
+ncaab_spreads,Miami OH,Miami RedHawks
+ncaab_spreads,Miami RedHawks,Miami RedHawks
+ncaab_spreads,Michigan,Michigan Wolverines
+ncaab_spreads,Michigan State,Michigan State Spartans
+ncaab_spreads,Michigan State Spartans,Michigan State Spartans
+ncaab_spreads,Michigan Wolverines,Michigan Wolverines
+ncaab_spreads,Middle Tennessee,Middle Tennessee Blue Raiders
+ncaab_spreads,Middle Tennessee Blue Raiders,Middle Tennessee Blue Raiders
+ncaab_spreads,Milwaukee,Wisconsin Milwaukee Panthers
+ncaab_spreads,Minnesota,Minnesota Golden Gophers
+ncaab_spreads,Minnesota Golden Gophers,Minnesota Golden Gophers
+ncaab_spreads,Mississippi State,Mississippi State Bulldogs
+ncaab_spreads,Mississippi State Bulldogs,Mississippi State Bulldogs
+ncaab_spreads,Mississippi Valley,Mississippi Valley State Delta Devils
+ncaab_spreads,Mississippi Valley State Delta Devils,Mississippi Valley State Delta Devils
+ncaab_spreads,Missouri,Missouri Tigers
+ncaab_spreads,Missouri State,Missouri State Bears
+ncaab_spreads,Missouri State Bears,Missouri State Bears
+ncaab_spreads,Missouri Tigers,Missouri Tigers
+ncaab_spreads,Monmouth,Monmouth Hawks
+ncaab_spreads,Monmouth Hawks,Monmouth Hawks
+ncaab_spreads,Montana,Montana Grizzlies
+ncaab_spreads,Montana Grizzlies,Montana Grizzlies
+ncaab_spreads,Montana State,Montana State Bobcats
+ncaab_spreads,Montana State Bobcats,Montana State Bobcats
+ncaab_spreads,Morehead State,Morehead State Eagles
+ncaab_spreads,Morehead State Eagles,Morehead State Eagles
+ncaab_spreads,Morgan State,Morgan State Bears
+ncaab_spreads,Morgan State Bears,Morgan State Bears
+ncaab_spreads,Mount Saint Marys,Mount St Marys Mountaineers
+ncaab_spreads,Mount St. Mary's,Mount St Marys Mountaineers
+ncaab_spreads,Mount St. Mary's Mountaineers,Mount St Marys Mountaineers
+ncaab_spreads,Murray State,Murray State Racers
+ncaab_spreads,Murray State Racers,Murray State Racers
+ncaab_spreads,NC Central,North Carolina Central Eagles
+ncaab_spreads,NC State,NC State Wolfpack
+ncaab_spreads,NC State Wolfpack,NC State Wolfpack
+ncaab_spreads,NJIT,NJIT Highlanders
+ncaab_spreads,NJIT Highlanders,NJIT Highlanders
+ncaab_spreads,Navy,Navy Midshipmen
+ncaab_spreads,Navy Midshipmen,Navy Midshipmen
+ncaab_spreads,Nebraska,Nebraska Cornhuskers
+ncaab_spreads,Nebraska Cornhuskers,Nebraska Cornhuskers
+ncaab_spreads,Nevada,Nevada Wolf Pack
+ncaab_spreads,Nevada Wolf Pack,Nevada Wolf Pack
+ncaab_spreads,New Hampshire,New Hampshire Wildcats
+ncaab_spreads,New Hampshire Wildcats,New Hampshire Wildcats
+ncaab_spreads,New Haven,New Haven Chargers
+ncaab_spreads,New Haven Chargers,New Haven Chargers
+ncaab_spreads,New Mexico,New Mexico Lobos
+ncaab_spreads,New Mexico Lobos,New Mexico Lobos
+ncaab_spreads,New Mexico State,New Mexico State Aggies
+ncaab_spreads,New Mexico State Aggies,New Mexico State Aggies
+ncaab_spreads,New Orleans,New Orleans Privateers
+ncaab_spreads,New Orleans Privateers,New Orleans Privateers
+ncaab_spreads,Niagara,Niagara Purple Eagles
+ncaab_spreads,Niagara Purple Eagles,Niagara Purple Eagles
+ncaab_spreads,Nicholls State,Nicholls State Colonels
+ncaab_spreads,Nicholls State Colonels,Nicholls State Colonels
+ncaab_spreads,Norfolk State,Norfolk State Spartans
+ncaab_spreads,Norfolk State Spartans,Norfolk State Spartans
+ncaab_spreads,North Alabama,North Alabama Lions
+ncaab_spreads,North Alabama Lions,North Alabama Lions
+ncaab_spreads,North Carolina,North Carolina Tar Heels
+ncaab_spreads,North Carolina A&T,North Carolina AT Aggies
+ncaab_spreads,North Carolina A&T Aggies,North Carolina AT Aggies
+ncaab_spreads,North Carolina Central Eagles,North Carolina Central Eagles
+ncaab_spreads,North Carolina Tar Heels,North Carolina Tar Heels
+ncaab_spreads,North Dakota,North Dakota Fighting Hawks
+ncaab_spreads,North Dakota Fighting Hawks,North Dakota Fighting Hawks
+ncaab_spreads,North Dakota State,North Dakota State Bison
+ncaab_spreads,North Dakota State Bison,North Dakota State Bison
+ncaab_spreads,North Florida,North Florida Ospreys
+ncaab_spreads,North Florida Ospreys,North Florida Ospreys
+ncaab_spreads,North Texas,North Texas Mean Green
+ncaab_spreads,North Texas Mean Green,North Texas Mean Green
+ncaab_spreads,Northeastern,Northeastern Huskies
+ncaab_spreads,Northeastern Huskies,Northeastern Huskies
+ncaab_spreads,Northern Arizona,Northern Arizona Lumberjacks
+ncaab_spreads,Northern Arizona Lumberjacks,Northern Arizona Lumberjacks
+ncaab_spreads,Northern Colorado,Northern Colorado Bears
+ncaab_spreads,Northern Colorado Bears,Northern Colorado Bears
+ncaab_spreads,Northern Illinois,Northern Illinois Huskies
+ncaab_spreads,Northern Illinois Huskies,Northern Illinois Huskies
+ncaab_spreads,Northern Iowa,Northern Iowa Panthers
+ncaab_spreads,Northern Iowa Panthers,Northern Iowa Panthers
+ncaab_spreads,Northern Kentucky,Northern Kentucky Norse
+ncaab_spreads,Northern Kentucky Norse,Northern Kentucky Norse
+ncaab_spreads,Northwestern,Northwestern Wildcats
+ncaab_spreads,Northwestern State,Northwestern State Demons
+ncaab_spreads,Northwestern State Demons,Northwestern State Demons
+ncaab_spreads,Northwestern Wildcats,Northwestern Wildcats
+ncaab_spreads,Notre Dame,Notre Dame Fighting Irish
+ncaab_spreads,Notre Dame Fighting Irish,Notre Dame Fighting Irish
+ncaab_spreads,Oakland,Oakland Golden Grizzlies
+ncaab_spreads,Oakland Golden Grizzlies,Oakland Golden Grizzlies
+ncaab_spreads,Ohio,Ohio Bobcats
+ncaab_spreads,Ohio Bobcats,Ohio Bobcats
+ncaab_spreads,Ohio State,Ohio State Buckeyes
+ncaab_spreads,Ohio State Buckeyes,Ohio State Buckeyes
+ncaab_spreads,Oklahoma,Oklahoma Sooners
+ncaab_spreads,Oklahoma Sooners,Oklahoma Sooners
+ncaab_spreads,Oklahoma State,Oklahoma State Cowboys
+ncaab_spreads,Oklahoma State Cowboys,Oklahoma State Cowboys
+ncaab_spreads,Old Dominion,Old Dominion Monarchs
+ncaab_spreads,Old Dominion Monarchs,Old Dominion Monarchs
+ncaab_spreads,Ole Miss,Ole Miss Rebels
+ncaab_spreads,Ole Miss Rebels,Ole Miss Rebels
+ncaab_spreads,Omaha,Omaha Mavericks
+ncaab_spreads,Omaha Mavericks,Omaha Mavericks
+ncaab_spreads,Oral Roberts,Oral Roberts Golden Eagles
+ncaab_spreads,Oral Roberts Golden Eagles,Oral Roberts Golden Eagles
+ncaab_spreads,Oregon,Oregon Ducks
+ncaab_spreads,Oregon Ducks,Oregon Ducks
+ncaab_spreads,Oregon State,Oregon State Beavers
+ncaab_spreads,Oregon State Beavers,Oregon State Beavers
+ncaab_spreads,Pacific,Pacific Tigers
+ncaab_spreads,Pacific Tigers,Pacific Tigers
+ncaab_spreads,Penn,Penn Quakers
+ncaab_spreads,Penn Quakers,Penn Quakers
+ncaab_spreads,Penn State,Penn State Nittany Lions
+ncaab_spreads,Penn State Nittany Lions,Penn State Nittany Lions
+ncaab_spreads,Pepperdine,Pepperdine Waves
+ncaab_spreads,Pepperdine Waves,Pepperdine Waves
+ncaab_spreads,Pitt,Pitt Panthers
+ncaab_spreads,Pitt Panthers,Pitt Panthers
+ncaab_spreads,Pittsburgh,Pitt Panthers
+ncaab_spreads,Portland,Portland Pilots
+ncaab_spreads,Portland Pilots,Portland Pilots
+ncaab_spreads,Portland State,Portland State Vikings
+ncaab_spreads,Portland State Vikings,Portland State Vikings
+ncaab_spreads,Prairie View A&M,Prairie View AM Panthers
+ncaab_spreads,Prairie View A&M Panthers,Prairie View AM Panthers
+ncaab_spreads,Presbyterian,Presbyterian Blue Hose
+ncaab_spreads,Presbyterian Blue Hose,Presbyterian Blue Hose
+ncaab_spreads,Princeton,Princeton Tigers
+ncaab_spreads,Princeton Tigers,Princeton Tigers
+ncaab_spreads,Providence,Providence Friars
+ncaab_spreads,Providence Friars,Providence Friars
+ncaab_spreads,Purdue,Purdue Boilermakers
+ncaab_spreads,Purdue Boilermakers,Purdue Boilermakers
+ncaab_spreads,Purdue Fort Wayne,Purdue Fort Wayne Mastodons
+ncaab_spreads,Purdue Fort Wayne Mastodons,Purdue Fort Wayne Mastodons
+ncaab_spreads,Queens,Queens Royals
+ncaab_spreads,Queens NC,Queens Royals
+ncaab_spreads,Queens Royals,Queens Royals
+ncaab_spreads,Quinnipiac,Quinnipiac Bobcats
+ncaab_spreads,Quinnipiac Bobcats,Quinnipiac Bobcats
+ncaab_spreads,Rhode Island,Rhode Island Rams
+ncaab_spreads,Rhode Island Rams,Rhode Island Rams
+ncaab_spreads,Rice,Rice Owls
+ncaab_spreads,Rice Owls,Rice Owls
+ncaab_spreads,Richmond,Richmond Spiders
+ncaab_spreads,Richmond Spiders,Richmond Spiders
+ncaab_spreads,Rider,Rider Broncs
+ncaab_spreads,Rider Broncs,Rider Broncs
+ncaab_spreads,Robert Morris,Robert Morris Colonials
+ncaab_spreads,Robert Morris Colonials,Robert Morris Colonials
+ncaab_spreads,SE Louisiana,Southeastern Louisiana Lions
+ncaab_spreads,SE Missouri State,Southeast Missouri State Redhawks
+ncaab_spreads,SE Missouri State Redhawks,Southeast Missouri State Redhawks
+ncaab_spreads,SIU Edwardsville,SIU Edwardsville Cougars
+ncaab_spreads,SIU Edwardsville Cougars,SIU Edwardsville Cougars
+ncaab_spreads,SMU,SMU Mustangs
+ncaab_spreads,SMU Mustangs,SMU Mustangs
+ncaab_spreads,Sacramento State,Sacramento State Hornets
+ncaab_spreads,Sacramento State Hornets,Sacramento State Hornets
+ncaab_spreads,Sacred Heart,Sacred Heart Pioneers
+ncaab_spreads,Sacred Heart Pioneers,Sacred Heart Pioneers
+ncaab_spreads,Saint Bonaventure,Saint Bonaventure Bonnies
+ncaab_spreads,Saint Bonaventure Bonnies,Saint Bonaventure Bonnies
+ncaab_spreads,Saint Francis (PA) Red Flash,Saint Francis PA Red Flash
+ncaab_spreads,Saint Francis PA,Saint Francis PA Red Flash
+ncaab_spreads,Saint Joseph's,Saint Josephs Hawks
+ncaab_spreads,Saint Joseph's Hawks,Saint Josephs Hawks
+ncaab_spreads,Saint Josephs,Saint Josephs Hawks
+ncaab_spreads,Saint Mary's College Gaels,Saint Marys College Gaels
+ncaab_spreads,Saint Marys,Saint Marys College Gaels
+ncaab_spreads,Saint Peter's,Saint Peters Peacocks
+ncaab_spreads,Saint Peter's Peacocks,Saint Peters Peacocks
+ncaab_spreads,Saint Peters,Saint Peters Peacocks
+ncaab_spreads,Saint Thomas MN,St Thomas Tommies
+ncaab_spreads,Sam Houston State,Sam Houston State Bearkats
+ncaab_spreads,Sam Houston State Bearkats,Sam Houston State Bearkats
+ncaab_spreads,Samford,Samford Bulldogs
+ncaab_spreads,Samford Bulldogs,Samford Bulldogs
+ncaab_spreads,San Diego,San Diego Toreros
+ncaab_spreads,San Diego State,San Diego State Aztecs
+ncaab_spreads,San Diego State Aztecs,San Diego State Aztecs
+ncaab_spreads,San Diego Toreros,San Diego Toreros
+ncaab_spreads,San Francisco,San Francisco Dons
+ncaab_spreads,San Francisco Dons,San Francisco Dons
+ncaab_spreads,San Jose State,San Jose State Spartans
+ncaab_spreads,San Jose State Spartans,San Jose State Spartans
+ncaab_spreads,Santa Clara,Santa Clara Broncos
+ncaab_spreads,Santa Clara Broncos,Santa Clara Broncos
+ncaab_spreads,Seattle,Seattle Redhawks
+ncaab_spreads,Seattle Redhawks,Seattle Redhawks
+ncaab_spreads,Seton Hall,Seton Hall Pirates
+ncaab_spreads,Seton Hall Pirates,Seton Hall Pirates
+ncaab_spreads,Siena,Siena Saints
+ncaab_spreads,Siena Saints,Siena Saints
+ncaab_spreads,South Carolina,South Carolina Gamecocks
+ncaab_spreads,South Carolina Gamecocks,South Carolina Gamecocks
+ncaab_spreads,South Carolina State,South Carolina State Bulldogs
+ncaab_spreads,South Carolina State Bulldogs,South Carolina State Bulldogs
+ncaab_spreads,South Dakota,South Dakota Coyotes
+ncaab_spreads,South Dakota Coyotes,South Dakota Coyotes
+ncaab_spreads,South Dakota State,South Dakota State Jackrabbits
+ncaab_spreads,South Dakota State Jackrabbits,South Dakota State Jackrabbits
+ncaab_spreads,South Florida,South Florida Bulls
+ncaab_spreads,South Florida Bulls,South Florida Bulls
+ncaab_spreads,Southeast Missouri State Redhawks,Southeast Missouri State Redhawks
+ncaab_spreads,Southeastern Louisiana,Southeastern Louisiana Lions
+ncaab_spreads,Southeastern Louisiana Lions,Southeastern Louisiana Lions
+ncaab_spreads,Southern Illinois,Southern Illinois Salukis
+ncaab_spreads,Southern Illinois Salukis,Southern Illinois Salukis
+ncaab_spreads,Southern Indiana,Southern Indiana Screaming Eagles
+ncaab_spreads,Southern Indiana Screaming Eagles,Southern Indiana Screaming Eagles
+ncaab_spreads,Southern Miss,Southern Miss Golden Eagles
+ncaab_spreads,Southern Miss Golden Eagles,Southern Miss Golden Eagles
+ncaab_spreads,Southern University,Southern University Jaguars
+ncaab_spreads,Southern University Jaguars,Southern University Jaguars
+ncaab_spreads,Southern Utah,Southern Utah Thunderbirds
+ncaab_spreads,Southern Utah Thunderbirds,Southern Utah Thunderbirds
+ncaab_spreads,St Bonaventure,Saint Bonaventure Bonnies
+ncaab_spreads,St. Bonaventure,Saint Bonaventure Bonnies
+ncaab_spreads,St. Francis Red Flash,Saint Francis PA Red Flash
+ncaab_spreads,St. John's Red Storm,St Johns Red Storm
+ncaab_spreads,St. Johns,St Johns Red Storm
+ncaab_spreads,St. Thomas,St Thomas Tommies
+ncaab_spreads,St. Thomas Tommies,St Thomas Tommies
+ncaab_spreads,Stanford,Stanford Cardinal
+ncaab_spreads,Stanford Cardinal,Stanford Cardinal
+ncaab_spreads,Stephen F. Austin,Stephen F Austin Lumberjacks
+ncaab_spreads,Stephen F. Austin Lumberjacks,Stephen F Austin Lumberjacks
+ncaab_spreads,Stetson,Stetson Hatters
+ncaab_spreads,Stetson Hatters,Stetson Hatters
+ncaab_spreads,Stonehill,Stonehill Skyhawks
+ncaab_spreads,Stonehill Skyhawks,Stonehill Skyhawks
+ncaab_spreads,Stony Brook,Stony Brook Seawolves
+ncaab_spreads,Stony Brook Seawolves,Stony Brook Seawolves
+ncaab_spreads,Syracuse,Syracuse Orange
+ncaab_spreads,Syracuse Orange,Syracuse Orange
+ncaab_spreads,TCU,TCU Horned Frogs
+ncaab_spreads,TCU Horned Frogs,TCU Horned Frogs
+ncaab_spreads,Tarleton State,Tarleton State Texans
+ncaab_spreads,Tarleton State Texans,Tarleton State Texans
+ncaab_spreads,Temple,Temple Owls
+ncaab_spreads,Temple Owls,Temple Owls
+ncaab_spreads,Tennessee,Tennessee Volunteers
+ncaab_spreads,Tennessee State,Tennessee State Tigers
+ncaab_spreads,Tennessee State Tigers,Tennessee State Tigers
+ncaab_spreads,Tennessee Tech,Tennessee Tech Golden Eagles
+ncaab_spreads,Tennessee Tech Golden Eagles,Tennessee Tech Golden Eagles
+ncaab_spreads,Tennessee Volunteers,Tennessee Volunteers
+ncaab_spreads,Tennessee-Martin Skyhawks,Tennessee Martin Skyhawks
+ncaab_spreads,Texas,Texas Longhorns
+ncaab_spreads,Texas A&M,Texas AM Aggies
+ncaab_spreads,Texas A&M Aggies,Texas AM Aggies
+ncaab_spreads,Texas A&M CC,Texas AM Corpus Christi Islanders
+ncaab_spreads,Texas A&M Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+ncaab_spreads,Texas Longhorns,Texas Longhorns
+ncaab_spreads,Texas Southern,Texas Southern Tigers
+ncaab_spreads,Texas Southern Tigers,Texas Southern Tigers
+ncaab_spreads,Texas State,Texas State Bobcats
+ncaab_spreads,Texas State Bobcats,Texas State Bobcats
+ncaab_spreads,Texas Tech,Texas Tech Red Raiders
+ncaab_spreads,Texas Tech Red Raiders,Texas Tech Red Raiders
+ncaab_spreads,The Citadel,The Citadel Bulldogs
+ncaab_spreads,The Citadel Bulldogs,The Citadel Bulldogs
+ncaab_spreads,Toledo,Toledo Rockets
+ncaab_spreads,Toledo Rockets,Toledo Rockets
+ncaab_spreads,Towson,Towson Tigers
+ncaab_spreads,Towson Tigers,Towson Tigers
+ncaab_spreads,Troy,Troy Trojans
+ncaab_spreads,Troy Trojans,Troy Trojans
+ncaab_spreads,Tulane,Tulane Green Wave
+ncaab_spreads,Tulane Green Wave,Tulane Green Wave
+ncaab_spreads,Tulsa,Tulsa Golden Hurricane
+ncaab_spreads,Tulsa Golden Hurricane,Tulsa Golden Hurricane
+ncaab_spreads,UAB,UAB Blazers
+ncaab_spreads,UAB Blazers,UAB Blazers
+ncaab_spreads,UC Davis,UC Davis Aggies
+ncaab_spreads,UC Davis Aggies,UC Davis Aggies
+ncaab_spreads,UC Irvine,UC Irvine Anteaters
+ncaab_spreads,UC Irvine Anteaters,UC Irvine Anteaters
+ncaab_spreads,UC Riverside,UC Riverside Highlanders
+ncaab_spreads,UC Riverside Highlanders,UC Riverside Highlanders
+ncaab_spreads,UC San Diego,UC San Diego Tritons
+ncaab_spreads,UC San Diego Tritons,UC San Diego Tritons
+ncaab_spreads,UC Santa Barbara,UC Santa Barbara Gauchos
+ncaab_spreads,UC Santa Barbara Gauchos,UC Santa Barbara Gauchos
+ncaab_spreads,UCF,UCF Knights
+ncaab_spreads,UCF Knights,UCF Knights
+ncaab_spreads,UCLA,UCLA Bruins
+ncaab_spreads,UCLA Bruins,UCLA Bruins
+ncaab_spreads,UConn,Connecticut Huskies
+ncaab_spreads,UIC Flames,Illinois Chicago
+ncaab_spreads,ULM,Louisiana Monroe Warhawks
+ncaab_spreads,UMBC,UMBC Retrievers
+ncaab_spreads,UMBC Retrievers,UMBC Retrievers
+ncaab_spreads,UMKC,UMKC Kangaroos
+ncaab_spreads,UMKC Kangaroos,UMKC Kangaroos
+ncaab_spreads,UMass,UMass Minutemen
+ncaab_spreads,UMass Lowell,UMass Lowell River Hawks
+ncaab_spreads,UMass Lowell River Hawks,UMass Lowell River Hawks
+ncaab_spreads,UMass Minutemen,UMass Minutemen
+ncaab_spreads,UNC,North Carolina Tar Heels
+ncaab_spreads,UNC Asheville,UNC Asheville Bulldogs
+ncaab_spreads,UNC Asheville Bulldogs,UNC Asheville Bulldogs
+ncaab_spreads,UNC Greensboro,UNC Greensboro Spartans
+ncaab_spreads,UNC Greensboro Spartans,UNC Greensboro Spartans
+ncaab_spreads,UNC Tar Heels,North Carolina Tar Heels
+ncaab_spreads,UNC Wilmington,UNC Wilmington Seahawks
+ncaab_spreads,UNC Wilmington Seahawks,UNC Wilmington Seahawks
+ncaab_spreads,UNLV,UNLV Rebels
+ncaab_spreads,UNLV Rebels,UNLV Rebels
+ncaab_spreads,USC,USC Trojans
+ncaab_spreads,USC Trojans,USC Trojans
+ncaab_spreads,UT Arlington,UT Arlington Mavericks
+ncaab_spreads,UT Arlington Mavericks,UT Arlington Mavericks
+ncaab_spreads,UT Martin,Tennessee Martin Skyhawks
+ncaab_spreads,UT Martin Skyhawks,Tennessee Martin Skyhawks
+ncaab_spreads,UT Rio Grande Valley,UT Rio Grande Valley Vaqueros
+ncaab_spreads,UT Rio Grande Valley Vaqueros,UT Rio Grande Valley Vaqueros
+ncaab_spreads,UTEP,UTEP Miners
+ncaab_spreads,UTEP Miners,UTEP Miners
+ncaab_spreads,UTRGV,UT Rio Grande Valley Vaqueros
+ncaab_spreads,UTSA,UTSA Roadrunners
+ncaab_spreads,UTSA Roadrunners,UTSA Roadrunners
+ncaab_spreads,Utah,Utah Utes
+ncaab_spreads,Utah State,Utah State Aggies
+ncaab_spreads,Utah State Aggies,Utah State Aggies
+ncaab_spreads,Utah Tech,Utah Tech Trailblazers
+ncaab_spreads,Utah Tech Trailblazers,Utah Tech Trailblazers
+ncaab_spreads,Utah Utes,Utah Utes
+ncaab_spreads,Utah Valley,Utah Valley Wolverines
+ncaab_spreads,Utah Valley Wolverines,Utah Valley Wolverines
+ncaab_spreads,VCU,VCU Rams
+ncaab_spreads,VCU Rams,VCU Rams
+ncaab_spreads,VMI,VMI Keydets
+ncaab_spreads,VMI Keydets,VMI Keydets
+ncaab_spreads,Valparaiso,Valparaiso Beacons
+ncaab_spreads,Valparaiso Beacons,Valparaiso Beacons
+ncaab_spreads,Vanderbilt,Vanderbilt Commodores
+ncaab_spreads,Vanderbilt Commodores,Vanderbilt Commodores
+ncaab_spreads,Vermont,Vermont Catamounts
+ncaab_spreads,Vermont Catamounts,Vermont Catamounts
+ncaab_spreads,Villanova,Villanova Wildcats
+ncaab_spreads,Villanova Wildcats,Villanova Wildcats
+ncaab_spreads,Virginia,Virginia Cavaliers
+ncaab_spreads,Virginia Cavaliers,Virginia Cavaliers
+ncaab_spreads,Virginia Tech,Virginia Tech Hokies
+ncaab_spreads,Virginia Tech Hokies,Virginia Tech Hokies
+ncaab_spreads,Wagner,Wagner Seahawks
+ncaab_spreads,Wagner Seahawks,Wagner Seahawks
+ncaab_spreads,Wake Forest,Wake Forest Demon Deacons
+ncaab_spreads,Wake Forest Demon Deacons,Wake Forest Demon Deacons
+ncaab_spreads,Washington,Washington Huskies
+ncaab_spreads,Washington Huskies,Washington Huskies
+ncaab_spreads,Washington State,Washington State Cougars
+ncaab_spreads,Washington State Cougars,Washington State Cougars
+ncaab_spreads,Weber State,Weber State Wildcats
+ncaab_spreads,Weber State Wildcats,Weber State Wildcats
+ncaab_spreads,West Georgia,West Georgia Wolves
+ncaab_spreads,West Georgia Wolves,West Georgia Wolves
+ncaab_spreads,West Virginia,West Virginia Mountaineers
+ncaab_spreads,West Virginia Mountaineers,West Virginia Mountaineers
+ncaab_spreads,Western Carolina,Western Carolina Catamounts
+ncaab_spreads,Western Carolina Catamounts,Western Carolina Catamounts
+ncaab_spreads,Western Illinois,Western Illinois Leathernecks
+ncaab_spreads,Western Illinois Leathernecks,Western Illinois Leathernecks
+ncaab_spreads,Western Kentucky,Western Kentucky Hilltoppers
+ncaab_spreads,Western Kentucky Hilltoppers,Western Kentucky Hilltoppers
+ncaab_spreads,Western Michigan,Western Michigan Broncos
+ncaab_spreads,Western Michigan Broncos,Western Michigan Broncos
+ncaab_spreads,Wichita State,Wichita State Shockers
+ncaab_spreads,Wichita State Shockers,Wichita State Shockers
+ncaab_spreads,William & Mary,William Mary Tribe
+ncaab_spreads,William & Mary Tribe,William Mary Tribe
+ncaab_spreads,Winthrop,Winthrop Eagles
+ncaab_spreads,Winthrop Eagles,Winthrop Eagles
+ncaab_spreads,Wisconsin,Wisconsin Badgers
+ncaab_spreads,Wisconsin Badgers,Wisconsin Badgers
+ncaab_spreads,Wisconsin Green Bay,Wisconsin Green Bay Phoenix
+ncaab_spreads,Wisconsin Green Bay Phoenix,Wisconsin Green Bay Phoenix
+ncaab_spreads,Wisconsin Milwaukee,Wisconsin Milwaukee Panthers
+ncaab_spreads,Wisconsin Milwaukee Panthers,Wisconsin Milwaukee Panthers
+ncaab_spreads,Wofford,Wofford Terriers
+ncaab_spreads,Wofford Terriers,Wofford Terriers
+ncaab_spreads,Wright State,Wright State Raiders
+ncaab_spreads,Wright State Raiders,Wright State Raiders
+ncaab_spreads,Wyoming,Wyoming Cowboys
+ncaab_spreads,Wyoming Cowboys,Wyoming Cowboys
+ncaab_spreads,Xavier,Xavier Musketeers
+ncaab_spreads,Xavier Musketeers,Xavier Musketeers
+ncaab_spreads,Yale,Yale Bulldogs
+ncaab_spreads,Yale Bulldogs,Yale Bulldogs
+ncaab_spreads,Youngstown State,Youngstown State Penguins
+
+ncaab_spreads,Youngstown State Penguins,Youngstown State Penguins
+
+
+
+
+
+
+
+
+
+

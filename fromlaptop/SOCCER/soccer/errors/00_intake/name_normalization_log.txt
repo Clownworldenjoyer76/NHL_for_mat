@@ -1,0 +1,1 @@
+2026-03-20T10:59:19.373753 | SUMMARY: files_processed=130, rows_processed=545, rows_updated=20, unmapped_found=6

@@ -1,0 +1,3 @@
+=== MY_BETS_CLEAN_02 RUN @ 2026-02-13T16:06:15.273623Z ===
+Files processed: 1
+Rows processed: 5

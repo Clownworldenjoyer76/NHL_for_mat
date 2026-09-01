@@ -1,0 +1,13 @@
+league,market,game_date,game_time,home_team,away_team,home_prob,away_prob,away_projected_goals,home_projected_goals,total_projected_goals
+hockey,NHL,2026_02_26,07:07 PM,Pittsburgh Penguins,New Jersey Devils,0.551000,0.449000,2.76,3.30,6.06
+hockey,NHL,2026_02_26,07:07 PM,Montreal Canadiens,New York Islanders,0.545000,0.455000,2.79,3.27,6.06
+hockey,NHL,2026_02_26,07:07 PM,Florida Panthers,Toronto Maple Leafs,0.594000,0.406000,2.55,3.55,6.10
+hockey,NHL,2026_02_26,07:07 PM,Ottawa Senators,Detroit Red Wings,0.574000,0.426000,2.69,3.48,6.17
+hockey,NHL,2026_02_26,07:07 PM,Boston Bruins,Columbus Blue Jackets,0.519000,0.481000,3.08,3.29,6.37
+hockey,NHL,2026_02_26,07:07 PM,Carolina Hurricanes,Tampa Bay Lightning,0.573000,0.427000,2.65,3.44,6.09
+hockey,NHL,2026_02_26,08:07 PM,New York Rangers,Philadelphia Flyers,0.574000,0.426000,2.51,3.31,5.82
+hockey,NHL,2026_02_26,08:07 PM,St. Louis Blues,Seattle Kraken,0.536000,0.464000,2.59,2.98,5.57
+hockey,NHL,2026_02_26,08:07 PM,Nashville Predators,Chicago Blackhawks,0.611000,0.389000,2.47,3.53,6.00
+hockey,NHL,2026_02_26,09:07 PM,Colorado Avalanche,Minnesota Wild,0.630000,0.370000,2.67,3.79,6.46
+hockey,NHL,2026_02_26,10:07 PM,San Jose Sharks,Calgary Flames,0.500000,0.500000,3.20,3.20,6.40
+hockey,NHL,2026_02_26,10:37 PM,Los Angeles Kings,Edmonton Oilers,0.505000,0.495000,3.07,3.12,6.19

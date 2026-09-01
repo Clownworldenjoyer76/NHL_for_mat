@@ -1,0 +1,7 @@
+MY_BETS_CLEAN_04 SUMMARY
+=========================
+
+Files processed: 7
+Rows processed: 157
+
+All teams matched successfully.

@@ -1,0 +1,12 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-31,UConn,0.651321,-145,-112,33,0.1,Win,0.18,0.07999999999999999,ncaab_spread
+2026-01-31,MEM Grizzlies,0.544236,-133,111,244,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-31,IND Pacers,0.522152,-121,-110,11,0.1,Win,0.19,0.09,nba_spread
+2026-01-31,NO Pelicans,0.620028,-185,-155,30,0.1,Win,0.16,0.06,nba_spread
+2026-01-31,DAL Mavericks,0.566184,-146,-105,41,0.1,Win,0.19,0.09,nba_spread
+2026-01-31,CHI Bulls,0.58793,-160,103,263,0.1,Win,0.2,0.1,nba_spread
+2026-01-31,Under NJ Devils @ OTT Senators - Under 5.5 - Total,0.5854,-106,100,206,0.1,Win,0.2,0.1,nhl_ou
+2026-01-31,NY Rangers,0.442,188,170,-18,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-31,Under MIN Wild @ EDM Oilers - Under 6.5 - Total,0.5694,100,102,2,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-31,Under MTL Canadiens @ BUF Sabres - Under 6.5 - Total,0.5423,112,102,-10,0.1,Win,0.2,0.1,nhl_ou
+2026-01-31,Under TOR Maple Leafs @ VAN Canucks - Under 6.5 - Total,0.5822,-105,-102,3,0.1,Win,0.19,0.09,nhl_ou

@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,bundesliga,2026_03_21,Sat Mar 21st 10:30 AM,Bayern Munich,Union Berlin,-650,+700,+1100
+Soccer,bundesliga,2026_03_21,Sat Mar 21st 1:30 PM,Borussia Dortmund,Hamburg,-260,+390,+550
+Soccer,bundesliga,2026_03_21,Sat Mar 21st 10:30 AM,Heidenheim,Leverkusen,+400,+330,-180
+Soccer,bundesliga,2026_03_21,Sat Mar 21st 10:30 AM,Koln,Borussia Monchengladbach,+125,+235,+195
+Soccer,bundesliga,2026_03_21,Sat Mar 21st 10:30 AM,Wolfsburg,Werder Bremen,+135,+250,+175

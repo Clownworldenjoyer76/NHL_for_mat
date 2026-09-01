@@ -1,0 +1,11 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds
+2026_02_19,nba_moneyline,nba_2026_02_19_Atlanta_Hawks_Philadelphia_76ers,Atlanta Hawks,Philadelphia 76ers,0.394,0.606,116.6,120.1,236.7,2.54,+154,2.69,+169,1.65,-154,1.75,-133
+2026_02_19,nba_moneyline,nba_2026_02_19_Brooklyn_Nets_Cleveland_Cavaliers,Brooklyn Nets,Cleveland Cavaliers,0.169,0.831,109.4,119.5,228.9,5.92,+492,6.28,+528,1.2,-500,1.27,-370
+2026_02_19,nba_moneyline,nba_2026_02_19_Houston_Rockets_Charlotte_Hornets,Houston Rockets,Charlotte Hornets,0.613,0.387,110.8,107.0,217.8,1.63,-159,1.73,-137,2.58,+158,2.73,+173
+2026_02_19,nba_moneyline,nba_2026_02_19_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,0.525,0.475,117.0,115.9,232.9,1.9,-111,2.01,+101,2.11,+111,2.24,+124
+2026_02_19,nba_moneyline,nba_2026_02_19_Detroit_Pistons_New_York_Knicks,Detroit Pistons,New York Knicks,0.383,0.617,110.2,113.9,224.1,2.61,+161,2.77,+177,1.62,-161,1.72,-139
+2026_02_19,nba_moneyline,nba_2026_02_19_Toronto_Raptors_Chicago_Bulls,Toronto Raptors,Chicago Bulls,0.615,0.385,117.0,113.3,230.3,1.63,-159,1.73,-137,2.6,+160,2.76,+176
+2026_02_19,nba_moneyline,nba_2026_02_19_Phoenix_Suns_San_Antonio_Spurs,Phoenix Suns,San Antonio Spurs,0.286,0.714,109.2,115.7,224.9,3.5,+250,3.71,+271,1.4,-250,1.48,-208
+2026_02_19,nba_moneyline,nba_2026_02_19_Boston_Celtics_Golden_State_Warriors,Boston Celtics,Golden State Warriors,0.625,0.375,111.3,107.3,218.6,1.6,-167,1.7,-143,2.67,+167,2.83,+183
+2026_02_19,nba_moneyline,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,Orlando Magic,Sacramento Kings,0.798,0.202,118.2,109.1,227.3,1.25,-400,1.33,-303,4.95,+395,5.25,+425
+2026_02_19,nba_moneyline,nba_2026_02_19_Denver_Nuggets_Los_Angeles_Clippers,Denver Nuggets,Los Angeles Clippers,0.533,0.467,113.6,112.1,225.7,1.88,-114,1.99,-101,2.14,+114,2.27,+127

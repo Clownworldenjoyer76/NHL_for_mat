@@ -1,0 +1,15 @@
+file,category,column,dtype,non_null_pct,example
+nfl_data.csv,score_columns,home_final,int64,1.0,42
+nfl_data.csv,score_columns,away_final,int64,1.0,34
+nfl_data.csv,moneyline_columns,home_close_ml,int64,1.0,-250
+nfl_data.csv,moneyline_columns,away_close_ml,int64,1.0,210
+nfl_data.csv,total_columns,open_over_under,float64,1.0,46.0
+nfl_data.csv,total_columns,close_over_under,float64,1.0,48.0
+nfl_data.csv,spread_columns,home_open_spread,float64,1.0,-4.5
+nfl_data.csv,spread_columns,away_open_spread,float64,1.0,4.5
+nfl_data.csv,spread_columns,home_close_spread,float64,1.0,-5.0
+nfl_data.csv,spread_columns,away_close_spread,float64,1.0,5.0
+nfl_data.csv,other_columns,season,int64,1.0,2011
+nfl_data.csv,other_columns,date,float64,1.0,20110908.0
+nfl_data.csv,other_columns,home_team,str,1.0,Packers
+nfl_data.csv,other_columns,away_team,str,1.0,Saints

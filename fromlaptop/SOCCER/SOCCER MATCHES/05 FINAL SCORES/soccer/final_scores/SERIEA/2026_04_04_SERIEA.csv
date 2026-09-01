@@ -1,0 +1,17 @@
+sport,league,market,game_date,match_time,home_team,away_team,away_score,home_score
+soccer,SERIEA,,2026_03_22,07:45 PM,Inter,Fiorentina,1,1
+soccer,SERIEA,,2026_03_22,05:00 PM,Lecce,Roma,1,0
+soccer,SERIEA,,2026_03_22,02:00 PM,Hellas Verona,Atalanta,1,0
+soccer,SERIEA,,2026_03_22,02:00 PM,Lazio,Bologna,0,2
+soccer,SERIEA,,2026_03_21,07:45 PM,Sassuolo,Juventus,1,1
+soccer,SERIEA,,2026_03_21,05:00 PM,Torino,Milan,3,2
+soccer,SERIEA,,2026_03_21,02:00 PM,Cremonese,Parma,0,2
+soccer,SERIEA,,2026_03_20,07:45 PM,Udinese,Genoa,0,2
+soccer,SERIEA,,2026_03_20,05:30 PM,Napoli,Cagliari,0,1
+soccer,SERIEA,,2026_03_16,07:45 PM,Fiorentina,Cremonese,1,4
+soccer,SERIEA,,2026_03_15,07:45 PM,Milan,Lazio,1,0
+soccer,SERIEA,,2026_03_15,05:00 PM,Roma,Como,2,1
+soccer,SERIEA,,2026_03_15,02:00 PM,Bologna,Sassuolo,0,1
+soccer,SERIEA,,2026_03_15,11:30 AM,Genoa,Hellas Verona,0,2
+soccer,SERIEA,,2026_03_14,07:45 PM,Juventus,Udinese,0,1
+soccer,SERIEA,,2026_03_14,05:00 PM,Lecce,Napoli,2,1

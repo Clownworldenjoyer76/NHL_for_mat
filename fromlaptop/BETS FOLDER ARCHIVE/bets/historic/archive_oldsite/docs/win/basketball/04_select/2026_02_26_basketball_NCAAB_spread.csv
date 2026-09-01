@@ -1,0 +1,5 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,Northeastern Huskies,William Mary Tribe,spread,away,11.5,2026_02_26_William Mary Tribe_Northeastern Huskies,spread,away_spread,-121,away,11.5,0.0641423521170347,0.0350750988846518
+2026_02_26,Basketball,VMI Keydets,Samford Bulldogs,spread,away,18.5,2026_02_26_Samford Bulldogs_VMI Keydets,spread,away_spread,-138,away,18.5,0.1662297028646147,0.0962742158582479
+2026_02_26,Basketball,Tarleton State Texans,Utah Valley Wolverines,spread,away,17.5,2026_02_26_Utah Valley Wolverines_Tarleton State Texans,spread,away_spread,-186,away,17.5,0.3329798515376454,0.2167011732229121
+2026_02_26,Basketball,Hawaii Rainbow Warriors,UC Davis Aggies,spread,away,-1.5,2026_02_26_UC Davis Aggies_Hawaii Rainbow Warriors,spread,away_spread,-106,away,-1.5,0.0603305785123968,0.0311035364294845

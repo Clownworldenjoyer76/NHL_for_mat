@@ -1,0 +1,13 @@
+file,category,column,dtype,non_null_pct,example
+mlb_data.csv,score_columns,home_final,str,1.0,6
+mlb_data.csv,score_columns,away_final,str,0.9996,0
+mlb_data.csv,moneyline_columns,home_close_ml,float64,1.0,-110.0
+mlb_data.csv,moneyline_columns,away_close_ml,float64,0.9996,119.0
+mlb_data.csv,total_columns,open_over_under,str,1.0,8
+mlb_data.csv,total_columns,close_over_under,float64,1.0,8.0
+mlb_data.csv,spread_columns,home_close_spread,float64,1.0,0.0
+mlb_data.csv,spread_columns,away_close_spread,float64,0.9997,0.0
+mlb_data.csv,other_columns,season,int64,1.0,2011
+mlb_data.csv,other_columns,date,float64,0.9996,20110331.0
+mlb_data.csv,other_columns,home_team,str,1.0,Brewers
+mlb_data.csv,other_columns,away_team,str,0.9996,Nationals

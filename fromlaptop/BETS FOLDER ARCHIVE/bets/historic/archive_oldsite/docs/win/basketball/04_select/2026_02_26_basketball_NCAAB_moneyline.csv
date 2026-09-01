@@ -1,0 +1,9 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,Northeastern Huskies,William Mary Tribe,moneyline,away,,2026_02_26_William Mary Tribe_Northeastern Huskies,moneyline,away_ml,484,away,0.186,0.4126000000000012,0.070682153013328
+2026_02_26,Basketball,New Mexico State Aggies,Western Kentucky Hilltoppers,moneyline,away,,2026_02_26_Western Kentucky Hilltoppers_New Mexico State Aggies,moneyline,away_ml,206,away,0.349,0.0899999999999998,0.0294117647058823
+2026_02_26,Basketball,Morehead State Eagles,Little Rock Trojans,moneyline,away,,2026_02_26_Little Rock Trojans_Morehead State Eagles,moneyline,away_ml,122,away,0.472,0.1999999999999997,0.0900900900900899
+2026_02_26,Basketball,VMI Keydets,Samford Bulldogs,moneyline,away,,2026_02_26_Samford Bulldogs_VMI Keydets,moneyline,away_ml,881,away,0.107,3.1899999999999995,0.3251783893985728
+2026_02_26,Basketball,Tarleton State Texans,Utah Valley Wolverines,moneyline,away,,2026_02_26_Utah Valley Wolverines_Tarleton State Texans,moneyline,away_ml,794,away,0.122,3.056000000000001,0.3416815742397139
+2026_02_26,Basketball,Western Illinois Leathernecks,SIU Edwardsville Cougars,moneyline,away,,2026_02_26_SIU Edwardsville Cougars_Western Illinois Leathernecks,moneyline,away_ml,774,away,0.125,0.7639999999999993,0.0874542124542123
+2026_02_26,Basketball,Northern Arizona Lumberjacks,Idaho Vandals,moneyline,away,,2026_02_26_Idaho Vandals_Northern Arizona Lumberjacks,moneyline,away_ml,468,away,0.191,0.2178500000000003,0.0383393609813187
+2026_02_26,Basketball,UC Irvine Anteaters,Cal State Northridge Matadors,moneyline,away,,2026_02_26_Cal State Northridge Matadors_UC Irvine Anteaters,moneyline,away_ml,105,away,0.506,0.0506999999999999,0.0247401551749377

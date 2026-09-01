@@ -1,0 +1,27 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33575187,2026_04_04,12:00 PM,Real Sociedad,Levante UD,1.243,5.217,16.271,1.857,2.015,,,1.975,1.842
+soccer,laliga,33575188,2026_04_04,02:15 PM,Mallorca,Real Madrid,5.566,4.509,1.574,1.645,2.354,2.633,1.53,1.735,2.174
+soccer,laliga,33643148,2026_04_04,05:30 PM,Real Betis,Espanyol Barcelona,1.714,4.01,4.977,1.879,2.025,3.182,1.379,1.857,2.005
+soccer,laliga,33575190,2026_04_04,07:00 PM,Atletico Madrid,Barcelona,3.062,4.149,2.144,1.41,2.962,2.045,1.857,1.397,3.112
+soccer,ligue1,33575138,2026_04_04,03:00 PM,Strasbourg Alsace,Nice,1.985,3.681,3.91,1.73,2.204,2.763,1.479,1.628,2.364
+soccer,ligue1,33575139,2026_04_04,05:00 PM,Brest,Rennes,3.132,3.441,2.384,1.995,1.904,3.401,1.342,1.741,2.164
+soccer,ligue1,33575140,2026_04_04,07:05 PM,Lille OSC,RC Lens,3.022,3.401,2.464,1.879,2.025,3.092,1.396,1.661,2.304
+soccer,bundesliga,33565579,2026_04_04,01:30 PM,Bayer Leverkusen,Wolfsburg,1.442,5.048,6.501,1.474,2.648,2.232,1.673,1.655,2.252
+soccer,bundesliga,33565581,2026_04_04,01:30 PM,Borussia Monchengladbach,FC Heidenheim 1846,1.605,4.377,5.118,1.578,2.44,2.46,1.571,1.642,2.292
+soccer,bundesliga,33565587,2026_04_04,01:30 PM,Freiburg,Bayern Munich,5.661,4.831,1.512,1.465,2.677,2.213,1.678,1.589,2.391
+soccer,bundesliga,33565589,2026_04_04,01:30 PM,Hamburger SV,FC Augsburg,2.39,3.467,3.003,1.771,2.094,2.885,1.422,1.601,2.371
+soccer,bundesliga,33565584,2026_04_04,01:30 PM,TSG Hoffenheim,FSV Mainz,1.725,3.902,4.821,1.719,2.173,2.746,1.458,1.693,2.183
+soccer,bundesliga,33565585,2026_04_04,01:30 PM,Werder Bremen,RB Leipzig,3.912,3.951,1.877,1.502,2.559,2.262,1.654,1.482,2.687
+soccer,bundesliga,33565586,2026_04_04,04:30 PM,Stuttgart,Borussia Dortmund,2.292,3.951,2.855,1.432,2.786,2.094,1.759,1.396,3.023
+soccer,seriea,33575170,2026_04_04,01:00 PM,Sassuolo Calcio,Cagliari Calcio,2.174,3.172,3.91,2.045,1.857,3.651,1.305,1.801,2.074
+soccer,seriea,33575172,2026_04_04,04:00 PM,Hellas Verona,ACF Fiorentina,4.129,3.212,2.094,2.484,1.567,,,2.144,1.752
+soccer,seriea,33575173,2026_04_04,06:45 PM,SS Lazio,Parma Calcio,1.895,3.331,4.888,2.274,1.689,,,2.065,1.808
+soccer,mls,33673821,2026_04_04,05:00 PM,Toronto FC,Colorado Rapids,2.094,3.641,3.511,1.735,2.164,2.783,1.461,1.613,2.374
+soccer,mls,33674061,2026_04_04,08:30 PM,New England Revolution,CF Montreal,1.947,3.75,3.9,1.758,2.114,2.873,1.428,1.666,2.264
+soccer,mls,33675414,2026_04_04,08:30 PM,Real Salt Lake,Sporting Kansas City,1.257,6.514,10.155,1.389,3.042,2.025,1.842,1.821,2.015
+soccer,mls,33673817,2026_04_04,11:30 PM,Atlanta United FC,Columbus Crew,2.924,3.527,2.381,1.736,2.124,2.806,1.434,1.586,2.371
+soccer,mls,33673816,2026_04_04,11:30 PM,Charlotte FC,Philadelphia Union,2.153,3.715,3.191,1.784,2.055,2.984,1.391,1.655,2.233
+soccer,mls,33673820,2026_04_04,11:30 PM,DC United,FC Dallas,2.262,3.398,3.221,1.901,1.937,3.181,1.342,1.693,2.173
+soccer,mls,33674062,2026_04_04,11:30 PM,Inter Miami CF,Austin FC,1.42,5.009,6.758,1.458,2.717,2.213,1.678,1.673,2.203
+soccer,mls,33674064,2026_04_04,11:30 PM,New York City FC,Saint Louis City SC,1.778,3.823,4.436,1.753,2.094,2.865,1.418,1.673,2.203
+soccer,mls,33674063,2026_04_04,11:30 PM,New York Red Bulls,FC Cincinnati,1.976,3.892,3.517,1.575,2.41,2.46,1.559,1.507,2.569

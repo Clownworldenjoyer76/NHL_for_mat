@@ -1,0 +1,13 @@
+date,time,game_id,risk_amount,max_potential_win,bet_result,amount_won_or_lost,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,away_team,home_team,league,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds,away_spread,home_spread,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds,over_edge,under_edge,over_odds,under_odds,total,bet
+2026_02_17,,,0.1,0.09,Lost,-0.1,-110,0.0023,totals,over,139.5,Basketball,ncaab,-110,Nebraska Cornhuskers,Iowa Hawkeyes,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Won,0.09,-110,0.0,totals,over,159.5,Basketball,ncaab,-110,Baylor Bears,Kansas State Wildcats,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.08,Won,0.08,-112,0.0066,totals,over,150.5,Basketball,ncaab,-112,LSU Tigers,Texas Longhorns,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Lost,-0.1,-110,0.0317,totals,over,135.5,Basketball,ncaab,-110,Minnesota Golden Gophers,Oregon Ducks,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Won,0.09,-110,0.0067,totals,over,139.5,Basketball,ncaab,-110,UCLA Bruins,Michigan State Spartans,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Won,0.09,-105,0.0659,totals,over,145.5,Basketball,ncaab,-105,Fresno State Bulldogs,Wyoming Cowboys,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.1,Lost,-0.1,105,-0.007,totals,over,150.5,Basketball,ncaab,105,Virginia Tech Hokies,Miami Hurricanes,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.08,Won,0.08,-112,0.0462,totals,over,161.5,Basketball,ncaab,-112,Miami RedHawks,UMass Minutemen,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.08,Lost,-0.1,-115,-0.0398,totals,over,142.5,Basketball,ncaab,-115,Central Michigan Chippewas,Eastern Michigan Eagles,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Won,0.09,-105,0.0116,spreads,Gardner Webb Runnin Bulldogs,17.5,Basketball,ncaab,-105,Gardner Webb Runnin Bulldogs,Charleston Southern Buccaneers,ncaab_spreads,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.08,Won,0.08,-120,-0.0042,spreads,UCF Knights,1.5,Basketball,ncaab,-120,TCU Horned Frogs,UCF Knights,ncaab_spreads,,,,,,,,,,,,,,,,
+2026_02_17,,,0.1,0.09,Won,0.09,-108,0.0,spreads,South Carolina Gamecocks,22.5,Basketball,ncaab,-108,South Carolina Gamecocks,Florida Gators,ncaab_spreads,,,,,,,,,,,,,,,,

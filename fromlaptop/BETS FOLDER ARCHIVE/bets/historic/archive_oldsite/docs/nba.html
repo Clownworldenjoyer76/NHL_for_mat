@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NBA Games</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/terminal.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>NBA</h1>
+
+    <div id="nav-placeholder"></div>
+
+    <section class="controls">
+      <label for="nba-date" class="control-label">Date:</label>
+      <input id="nba-date" type="date" />
+      <span class="hint">Select a date to load historical files.</span>
+    </section>
+
+    <div id="status" class="status"></div>
+    <div id="games" class="games"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+  <script>
+    // Load shared navigation
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+
+    // NBA date loader
+    const dateInput = document.getElementById("nba-date");
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
+    const dd = String(now.getDate()).padStart(2, "0");
+    dateInput.value = `${yyyy}-${mm}-${dd}`;
+
+    function runLoad() {
+      loadNBADaily(dateInput.value);
+    }
+
+    dateInput.addEventListener("change", runLoad);
+    runLoad();
+  </script>
+
+</body>
+</html>

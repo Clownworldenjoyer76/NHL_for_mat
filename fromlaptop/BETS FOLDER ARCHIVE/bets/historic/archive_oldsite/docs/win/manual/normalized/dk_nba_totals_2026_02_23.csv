@@ -1,0 +1,4 @@
+date,time,league,game_id,away_team,home_team,total,over_odds,under_odds,over_decimal_odds,under_decimal_odds,over_handle_pct,over_bets_pct,under_handle_pct,under_bets_pct
+2026_02_23,7:10 PM,nba_totals,nba_2026_02_23_San_Antonio_Spurs_Detroit_Pistons,San Antonio Spurs,Detroit Pistons,231.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_23,8:10 PM,nba_totals,nba_2026_02_23_Sacramento_Kings_Memphis_Grizzlies,Sacramento Kings,Memphis Grizzlies,233.5,-108,-112,1.925925925925926,1.8928571428571428,,,,
+2026_02_23,9:40 PM,nba_totals,nba_2026_02_23_Utah_Jazz_Houston_Rockets,Utah Jazz,Houston Rockets,228.5,-108,-112,1.925925925925926,1.8928571428571428,,,,

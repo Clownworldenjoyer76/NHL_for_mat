@@ -1,0 +1,66 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-28,St. Johns,0.84,-376,-166,210,0.1,Win,0.16,0.06,ncaab_spread
+2026-01-28,LSU,0.7,-186,-130,56,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,California @ Florida State - Over 155.5 - Total Alternate - NCAAB,0.7032,-173,-130,43,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Western Kentucky,0.46,163,215,52,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Fordham,0.66,-156,-130,26,0.1,Win,0.17,0.07,ncaab_spread
+2026-01-28,Texas @ Auburn - Over 156.5 - Total Alternate - NCAAB,0.7286,-193,110,303,0.1,Win,0.21000000000000002,0.11,ncaab_ou
+2026-01-28,Saint Bonaventure,0.52,112,145,33,0.1,Win,0.24000000000000002,0.14,ncaab
+2026-01-28,Illinois State @ Murray State - Under 159.5 - Total,0.6289,-127,-105,22,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Baylor @ Cincinnati - Over 147.5 - Total,0.5966,-111,-110,1,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Southern University,0.98,-1329,105,1434,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Austin Peay,0.63,-138,104,242,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-28,Navy,0.65,-150,119,269,0.1,Win,0.21000000000000002,0.11,ncaab_spread
+2026-01-28,DePaul @ Georgetown - Over 141.5 - Total Alternate - NCAAB,0.6049,-115,114,229,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,South Dakota State,0.62,-116,-115,1,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Temple,0.67,-163,100,263,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Tennessee @ Georgia - Over 160.5 - Total Alternate - NCAAB,0.5776,-103,100,203,0.1,Win,0.2,0.1,ncaab_ou
+2026-01-28,South Dakota State @ Omaha - Over 148.5 - Total,0.6797,-156,-115,41,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-28,Northern Iowa,0.55,100,110,10,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,California,0.52,112,142,30,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,La Salle @ Fordham - Over 132.5 - Total Alternate - NCAAB,0.7233,-188,-140,48,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Marshall,0.67,-163,109,272,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Napoli,0.412,185,245,60,0.1,Loss,0.0,-0.1,soc
+2026-01-28,River Plate [ARG],0.774,-275,-195,80,0.1,Win,0.15000000000000002,0.05,soc
+2026-01-28,Ajax,0.463999999999999,141,215,74,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Corinthians,0.557,-108,120,228,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Atletico Madrid,0.831,-374,-370,4,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Sao Paulo,0.308,341,310,-31,0.1,Win,0.41000000000000003,0.31,soc
+2026-01-28,Iowa,0.75,-233,-183,50,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Eintracht Frankfurt,0.509,116,380,264,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Barracas Central,0.377,239,270,31,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Club Brugge,0.591,-124,165,289,0.1,Win,0.26,0.16,soc
+2026-01-28,Bucknell,0.46,163,164,1,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Denver,0.68,-170,109,279,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-28,PHI Flyers @ CBJ Blue Jackets - PHI Flyers +1.5 - Puck Line,0.5758,-227,-245,-18,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-28,Georgetown,0.62,-133,-108,25,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-28,MIN Timberwolves @ DAL Mavericks - Over 232.5 - Total Alternate,0.5157,117,125,8,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Utah State,0.85,-400,-219,181,0.1,Win,0.14,0.04,ncaab_spread
+2026-01-28,MIN Timberwolves @ DAL Mavericks - MIN Timberwolves -5.5 - Spread Alternate,0.667,-161,-157,4,0.1,Win,0.16,0.06,nba_spread
+2026-01-28,SA Spurs @ HOU Rockets - Over 220.5 - Total,0.6764,-160,-108,52,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,SA Spurs @ HOU Rockets - HOU Rockets -2.5 - Spread,0.588,-116,-112,4,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-28,Queens NC,0.69,-178,-112,66,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Arkansas State,0.82,-335,-146,189,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,IU Indianapolis @ Robert Morris - Over 159.5 - Total Alternate - NCAAB,0.781,-246,-105,141,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Colgate,0.83,-355,-151,204,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,ATL Hawks @ BOS Celtics - BOS Celtics -5.5 - Spread,0.7,-186,-110,76,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-28,NY Knicks @ TOR Raptors - Over 224.5 - Total Alternate,0.5502,-100,117,217,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Denver @ UMKC - Under 161.5 - Total Alternate - NCAAB,0.5973,-112,110,222,0.1,Win,0.21000000000000002,0.11,ncaab_ou
+2026-01-28,CHA Hornets @ MEM Grizzlies - Over 230.5 - Total,0.5905,-112,-110,2,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Wisconsin,0.85,-400,119,519,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,NY Rangers @ NY Islanders - NY Rangers +1.5 - Puck Line,0.6607,-226,-218,8,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-28,Robert Morris,0.82,-335,-105,230,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-28,American,0.74,-223,126,349,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Sam Houston,0.54,104,110,6,0.1,Win,0.21000000000000002,0.11,ncaab
+2026-01-28,Belmont @ Valparaiso - Over 145.5 - Total,0.619,-122,-105,17,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Belmont,0.7,-186,-105,81,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Minnesota @ Wisconsin - Over 146.5 - Total Alternate - NCAAB,0.6548,-141,-120,21,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,East Carolina,0.6,-122,-101,21,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Davidson @ George Mason - Over 135.5 - Total,0.5908,-109,-105,4,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Sam Houston @ Missouri State - Over 148.5 - Total,0.642,-134,-108,26,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Tulsa,0.79,-285,-120,165,0.1,Win,0.18,0.08,ncaab_spread
+2026-01-28,George Mason,0.8,-300,108,408,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Auburn,0.67,-163,-140,23,0.1,Win,0.17,0.07,ncaab_spread
+2026-01-28,Drake,0.79,-285,-118,167,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Louisiana Tech @ UTEP - Over 129.5 - Total,0.6544,-141,-108,33,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Stanford @ Miami FL - Over 146.5 - Total Alternate - NCAAB,0.678,-155,-130,25,0.1,Win,0.17,0.07,ncaab_ou

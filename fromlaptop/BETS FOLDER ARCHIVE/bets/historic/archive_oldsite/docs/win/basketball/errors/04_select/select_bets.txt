@@ -1,0 +1,33 @@
+=== BASKETBALL SELECT BETS RUN ===
+Timestamp: 2026-03-02T19:34:14.785686Z
+
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NBA_moneyline.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NBA_spread.csv | rows=4
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NBA_total.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NCAAB_moneyline.csv | rows=7
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NCAAB_spread.csv | rows=6
+Wrote docs/win/basketball/04_select/2026_02_24_basketball_NCAAB_total.csv | rows=5
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NBA_moneyline.csv | rows=3
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NBA_spread.csv | rows=3
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NBA_total.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NCAAB_moneyline.csv | rows=8
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NCAAB_spread.csv | rows=4
+Wrote docs/win/basketball/04_select/2026_02_26_basketball_NCAAB_total.csv | rows=12
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NBA_moneyline.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NBA_spread.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NBA_total.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NCAAB_moneyline.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NCAAB_spread.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_02_27_basketball_NCAAB_total.csv | rows=0
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NBA_moneyline.csv | rows=3
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NBA_spread.csv | rows=5
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NBA_total.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NCAAB_moneyline.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NCAAB_spread.csv | rows=1
+Wrote docs/win/basketball/04_select/2026_03_01_basketball_NCAAB_total.csv | rows=5
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NBA_moneyline.csv | rows=3
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NBA_spread.csv | rows=4
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NBA_total.csv | rows=2
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NCAAB_moneyline.csv | rows=6
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NCAAB_spread.csv | rows=3
+Wrote docs/win/basketball/04_select/2026_03_02_basketball_NCAAB_total.csv | rows=1

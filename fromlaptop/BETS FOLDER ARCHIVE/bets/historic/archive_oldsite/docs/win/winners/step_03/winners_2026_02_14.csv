@@ -1,0 +1,11 @@
+date,time,away_team,home_team,league,game_id,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds,away_spread,home_spread,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds,over_edge,under_edge,over_odds,under_odds,away_spread.1,home_spread.1,total,bet,proj_total,total_diff
+2026_02_14,03:00PM,Kentucky Wildcats,Florida Gators,ncaab_moneyline,ncaab_2026_02_14_Kentucky_Wildcats_Florida_Gators,-0.094602609727165,1.5,750.0,-1200.0,,,,,,,,,,,,,,away_ml,,
+2026_02_14,04:00PM,Kansas State Wildcats,Houston Cougars,ncaab_moneyline,ncaab_2026_02_14_Kansas_State_Wildcats_Houston_Cougars,-0.088888888888889,3.5,2500.0,-9000.0,,,,,,,,,,,,,,away_ml,,
+2026_02_14,05:00PM,Air Force Falcons,Fresno State Bulldogs,ncaab_moneyline,ncaab_2026_02_14_Air_Force_Falcons_Fresno_State_Bulldogs,-0.1381894484412469,3.0,1200.0,-2399.0,,,,,,,,,,,,,,away_ml,,
+2026_02_14,08:30PM,Auburn Tigers,Arkansas Razorbacks,ncaab_moneyline,ncaab_2026_02_14_Auburn_Tigers_Arkansas_Razorbacks,-0.126217093400649,0.33,359.0,-469.0,,,,,,,,,,,,,,away_ml,,
+2026_02_14,04:00PM,Kansas State Wildcats,Houston Cougars,ncaab_spreads,ncaab_2026_02_14_Kansas_State_Wildcats_Houston_Cougars,,,,,22.5,-22.5,-1.2509090909090914,0.3665413533834587,-112.0,-110.0,,,,,22.5,-22.5,,away_spread,,
+2026_02_14,05:00PM,Air Force Falcons,Fresno State Bulldogs,ncaab_spreads,ncaab_2026_02_14_Air_Force_Falcons_Fresno_State_Bulldogs,,,,,17.5,-17.5,-1.0096078431372555,0.3342099495945652,-107.0,-102.0,,,,,17.5,-17.5,,away_spread,,
+2026_02_14,08:30PM,South Carolina Gamecocks,Alabama Crimson Tide,ncaab_spreads,ncaab_2026_02_14_South_Carolina_Gamecocks_Alabama_Crimson_Tide,,,,,17.5,-17.5,-0.6209090909090911,0.1649793775778028,-105.0,-110.0,,,,,17.5,-17.5,,away_spread,,
+2026_02_14,04:00PM,Colorado Buffaloes,Brigham Young Cougars,ncaab_totals,ncaab_2026_02_14_Colorado_Buffaloes_Brigham_Young_Cougars,,,,,,,,,,,-0.920434782608696,0.3030303030303032,-115.0,-105.0,,,163.5,under_bet,,
+2026_02_14,04:00PM,Louisville Cardinals,Baylor Bears,ncaab_totals,ncaab_2026_02_14_Louisville_Cardinals_Baylor_Bears,,,,,,,,,,,-1.2509090909090914,0.4140414041404137,-110.0,-110.0,,,163.5,under_bet,,
+2026_02_14,05:00PM,Air Force Falcons,Fresno State Bulldogs,ncaab_totals,ncaab_2026_02_14_Air_Force_Falcons_Fresno_State_Bulldogs,,,,,,,,,,,-0.7776190476190477,0.1702645180906048,-105.0,-115.0,,,143.5,under_bet,,

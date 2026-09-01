@@ -1,0 +1,6 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_01,Basketball,Purdue Boilermakers,Ohio State Buckeyes,total,over,150.5,2026_03_01_Ohio State Buckeyes_Purdue Boilermakers,total,over_bet,-133,over,150.5,0.1990459410544991,0.113524192335562
+2026_03_01,Basketball,Memphis Tigers,East Carolina Pirates,total,under,151.5,2026_03_01_East Carolina Pirates_Memphis Tigers,total,under_bet,-132,under,151.5,0.1507177033492817,0.0857142857142853
+2026_03_01,Basketball,Mount St Marys Mountaineers,Fairfield Stags,total,under,144.5,2026_03_01_Fairfield Stags_Mount St Marys Mountaineers,total,under_bet,-131,under,144.5,0.1467460628955499,0.083267507612005
+2026_03_01,Basketball,Northern Iowa Panthers,Drake Bulldogs,total,under,138.5,2026_03_01_Drake Bulldogs_Northern Iowa Panthers,total,under_bet,-136,under,138.5,0.1712825327283156,0.0985623818241842
+2026_03_01,Basketball,La Salle Explorers,Davidson Wildcats,total,over,133.5,2026_03_01_Davidson Wildcats_La Salle Explorers,total,over_bet,-134,over,133.5,0.1785613312330869,0.102188937429212

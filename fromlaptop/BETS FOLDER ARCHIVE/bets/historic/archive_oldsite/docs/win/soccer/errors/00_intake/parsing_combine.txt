@@ -1,0 +1,13 @@
+=== parsing_combine run @ 2026-02-27T17:28:14.021718 ===
+Skipped malformed filename: soccer_2026_02_27.csv
+Skipped malformed filename: soccer_2026_02_23.csv
+Skipped malformed filename: soccer_2026_02_22.csv
+Wrote soccer_2026_02_28.csv (3 rows)
+Wrote soccer_2026_02_27.csv (4 rows)
+Wrote soccer_2026_02_22.csv (5 rows)
+Wrote soccer_2026_02_23.csv (4 rows)
+---- SUMMARY ----
+Files processed: 12
+Rows processed: 16
+Rows skipped: 3
+Done.

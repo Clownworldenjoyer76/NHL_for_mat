@@ -1,0 +1,12 @@
+date,time,game_id,risk_amount,max_potential_win,bet_result,amount_won_or_lost,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,away_team,home_team,event_start_date
+2026-02-15,,,0.1,0.08,Lost,-0.1,-112,0.0192,totals,Over,139.5,Basketball,ncaab,-112,Davidson,Dayton,2026-02-15 16:00:00
+2026-02-15,,,0.1,0.09,Lost,-0.1,-108,0.0,totals,Over,136.5,Basketball,ncaab,-108,Oregon State,Seattle,2026-02-15 20:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-105,0.0333,spreads,Towson,1.5,Basketball,ncaab,-105,Towson,Monmouth,2026-02-15 19:00:00
+2026-02-15,,,0.1,0.08,Won,0.08,-115,0.0303,spreads,Milwaukee,-1.5,Basketball,ncaab,-115,Green Bay,Milwaukee,2026-02-15 15:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-108,0.0046,totals,Over,159.5,Basketball,ncaab,-108,IU Indianapolis,Purdue Fort Wayne,2026-02-15 14:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-110,0.0,totals,Over,145.5,Basketball,ncaab,-110,Green Bay,Milwaukee,2026-02-15 15:00:00
+2026-02-15,,,0.1,0.09,Lost,-0.1,-110,-0.0116,totals,Over,139.5,Basketball,ncaab,-110,Seton Hall,Butler,2026-02-15 18:00:00
+2026-02-15,,,0.1,0.08,Won,0.08,-112,-0.0045,totals,Over,149.5,Basketball,ncaab,-112,Eastern Kentucky,North Alabama,2026-02-15 16:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-110,0.0045,totals,Over,158.5,Basketball,ncaab,-110,Wright State,Cleveland State,2026-02-15 14:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-105,0.0116,totals,Under,166.5,Basketball,ncaab,-105,Belmont,Murray State,2026-02-15 18:00:00
+2026-02-15,,,0.1,0.09,Won,0.09,-110,0.0,totals,Under,159.5,Basketball,ncaab,-110,Charleston,Campbell,2026-02-15 17:00:00

@@ -1,0 +1,191 @@
+sport,date_time,team1,team2,team1_win_pct,team2_win_pct,team1_moneyline,team2_moneyline,team1_spread,team2_spread,proj_score_1,proj_score_2,total,over_line,under_line,score1,score2,game_status,starter1,starter2,home_win_pct,draw_pct,away_win_pct
+NBA,03/25/2026 07:10 PM,Chicago Bulls (29-42),Philadelphia 76ers (39-33),36.4%,63.6%,+220,-235,+7-110,-6½-110,113.2,117.6,230.8,o238-110,u240-110,,,,,,,,
+NBA,03/25/2026 07:10 PM,Atlanta Hawks (40-32),Detroit Pistons (52-19),35.4%,64.6%,+130,-150,+2½-110,-2½-110,112.8,117.4,230.2,o226½-110,u226½-110,,,,,,,,
+NBA,03/25/2026 07:10 PM,Los Angeles Lakers (46-26),Indiana Pacers (16-56),89.0%,11.0%,-630,+500,-10½-110,+11½-110,121.4,109.2,230.6,o239-110,u239-110,,,,,,,,
+NBA,03/25/2026 07:40 PM,Oklahoma City Thunder (57-15),Boston Celtics (47-24),60.2%,39.8%,-145,+130,-2½-110,+2½-110,110.7,107.3,218.0,o217½-110,u218-110,,,,,,,,
+NBA,03/25/2026 07:40 PM,Miami Heat (38-34),Cleveland Cavaliers (44-27),26.6%,73.4%,+140,-150,+3½-110,-3-110,114.6,122.0,236.6,o242-110,u242½-110,,,,,,,,
+NBA,03/25/2026 08:10 PM,San Antonio Spurs (54-18),Memphis Grizzlies (24-47),90.0%,10.0%,-1500,+950,-16½-110,+16½-110,123.3,110.4,233.7,o234-110,u234½-110,,,,,,,,
+NBA,03/25/2026 09:10 PM,Washington Wizards (16-55),Utah Jazz (21-51),37.0%,63.0%,+165,-180,+5-110,-4½-110,118.2,122.3,240.5,o240½-110,u240½-110,,,,,,,,
+NBA,03/25/2026 09:40 PM,Houston Rockets (43-28),Minnesota Timberwolves (44-28),52.6%,47.4%,-120,+105,-1½-110,+1½-110,112.7,111.5,224.2,o224-110,u224½-110,,,,,,,,
+NBA,03/25/2026 10:10 PM,Milwaukee Bucks (29-42),Portland Trail Blazers (36-37),17.2%,82.8%,+525,-630,+12½-110,-12-110,107.3,117.3,224.6,o226-110,u226-110,,,,,,,,
+NBA,03/25/2026 10:10 PM,Dallas Mavericks (23-49),Denver Nuggets (44-28),13.9%,86.1%,+550,-710,+13½-110,-13-110,113.3,124.3,237.6,o245-110,u245½-110,,,,,,,,
+NBA,03/25/2026 10:10 PM,Brooklyn Nets (17-55),Golden State Warriors (34-38),14.7%,85.3%,+450,-550,+11½-110,-11½-110,104.7,115.5,220.2,o214½-110,u215½-110,,,,,,,,
+NBA,03/25/2026 10:40 PM,Toronto Raptors (40-31),Los Angeles Clippers (36-36),44.9%,55.1%,+155,-175,+4-110,-4-110,109.1,111.2,220.3,o225-110,u226½-110,,,,,,,,
+NBA,03/24/2026 11:12 PM,Denver Nuggets,Phoenix Suns,66.3%,33.7%,-220,+210,-6-105,+6-109,,,,,,125,123,,,,,,
+NBA,03/24/2026 08:10 PM,Orlando Magic,Cleveland Cavaliers,22.6%,77.4%,+375,-450,+10½-109,-10½-109,,,,,,131,136,,,,,,
+NBA,03/24/2026 07:40 PM,New Orleans Pelicans,New York Knicks,25.0%,75.0%,+320,-340,+9-110,-8½-109,,,,,,116,121,,,,,,
+NBA,03/24/2026 07:10 PM,Sacramento Kings,Charlotte Hornets,9.1%,90.9%,+1100,-1450,+18-110,-17½-109,,,,,,90,134,,,,,,
+NBA,03/23/2026 10:40 PM,Milwaukee Bucks,Los Angeles Clippers,17.3%,82.7%,+650,-850,+14½-110,-13½-109,,,,,,96,129,,,,,,
+NBA,03/23/2026 10:10 PM,Brooklyn Nets,Portland Trail Blazers,10.6%,89.4%,+775,-1000,+15½-109,-15½-109,,,,,,99,134,,,,,,
+NBA,03/23/2026 09:40 PM,Golden State Warriors,Dallas Mavericks,49.3%,50.7%,-135,+125,-2½-110,+3-109,,,,,,137,131,,,,,,
+NBA,03/23/2026 09:10 PM,Toronto Raptors,Utah Jazz,81.4%,18.6%,-425,+380,-9-109,+9-105,,,,,,143,127,,,,,,
+NBA,03/23/2026 08:10 PM,Houston Rockets,Chicago Bulls,80.3%,19.7%,-400,+345,-9-109,+9-105,,,,,,124,132,,,,,,
+NBA,03/23/2026 07:40 PM,Memphis Grizzlies,Atlanta Hawks,16.0%,84.0%,+650,-800,+13½-109,-13-110,,,,,,107,146,,,,,,
+NBA,03/23/2026 07:10 PM,San Antonio Spurs,Miami Heat,65.5%,34.5%,-155,+145,-3-115,+3½-109,,,,,,136,111,,,,,,
+NBA,03/23/2026 07:10 PM,Oklahoma City Thunder,Philadelphia 76ers,91.5%,8.5%,-1200,+800,-16-110,+16½-109,,,,,,123,103,,,,,,
+NBA,03/23/2026 07:10 PM,Indiana Pacers,Orlando Magic,12.5%,87.5%,+450,-500,+11-109,-10½-110,,,,,,128,126,,,,,,
+NBA,03/23/2026 07:10 PM,Los Angeles Lakers,Detroit Pistons,49.5%,50.5%,-109,+100,+0-109,+1-110,,,,,,110,113,,,,,,
+NBA,03/22/2026 09:10 PM,Toronto Raptors,Phoenix Suns,59.5%,40.5%,-165,+155,-4-109,+4½-110,,,,,,98,120,,,,,,
+NBA,03/22/2026 08:10 PM,Minnesota Timberwolves,Boston Celtics,25.3%,74.7%,+350,-400,+10½-109,-10-110,,,,,,102,92,,,,,,
+NHL,03/25/2026 07:37 PM,Boston Bruins (39-23-8),Buffalo Sabres (44-20-7),38.0%,62.0%,+175,-190,+1½-145,-1½+130,2.64,3.73,6.37,o6½-105,u6½-105,,,,Unknown,Unknown,,,
+NHL,03/25/2026 07:37 PM,New York Rangers (28-34-9),Toronto Maple Leafs (29-29-13),51.9%,48.1%,-112,+102,-1½+220,+1½-245,3.13,2.92,6.05,o6-115,u6+100,,,,Unknown,Unknown,,,
+NHL,03/24/2026 10:07 PM,Anaheim Ducks,Vancouver Canucks,60.1%,39.9%,-175,+160,-1½+135,+1½-150,,,,,,5,3,,,,,,
+NHL,03/24/2026 09:37 PM,Edmonton Oilers,Utah Mammoth,39.0%,61.0%,+116,-126,+1½-210,-1½+185,,,,,,5,2,,,,,,
+NHL,03/24/2026 09:07 PM,Los Angeles Kings,Calgary Flames,51.9%,48.1%,-139,+130,-1½+180,+1½-200,,,,,,2,3,,,,,,
+NHL,03/24/2026 08:07 PM,San Jose Sharks,Nashville Predators,39.8%,60.2%,+122,-132,+1½-200,-1½+180,,,,,,3,6,,,,,,
+NHL,03/24/2026 08:07 PM,New Jersey Devils,Dallas Stars,36.4%,63.6%,+145,-160,+1½-175,-1½+160,,,,,,6,4,,,,,,
+NHL,03/24/2026 08:07 PM,Washington Capitals,St. Louis Blues,53.5%,46.5%,-106,-104,-1½+225,-1½+235,,,,,,0,3,,,,,,
+NHL,03/24/2026 08:07 PM,Vegas Golden Knights,Winnipeg Jets,53.4%,46.6%,-120,+115,-1½+200,+1½-230,,,,,,1,4,,,,,,
+NHL,03/24/2026 07:37 PM,Minnesota Wild,Tampa Bay Lightning,40.2%,59.8%,+140,-152,+1½-170,-1½+160,,,,,,3,6,,,,,,
+NHL,03/24/2026 07:07 PM,Columbus Blue Jackets,Philadelphia Flyers,51.3%,48.7%,-130,+120,-1½+190,+1½-190,,,,,,3,2,,,,,,
+NHL,03/24/2026 07:07 PM,Ottawa Senators,Detroit Red Wings,48.1%,51.9%,+113,-123,+1½-235,-1½+205,,,,,,3,2,,,,,,
+NHL,03/24/2026 07:07 PM,Seattle Kraken,Florida Panthers,41.1%,58.9%,+115,-125,+1½-210,-1½+195,,,,,,4,5,,,,,,
+NHL,03/24/2026 07:07 PM,Chicago Blackhawks,New York Islanders,36.1%,63.9%,+143,-155,+1½-175,-1½+160,,,,,,4,3,,,,,,
+NHL,03/24/2026 07:07 PM,Carolina Hurricanes,Montreal Canadiens,56.5%,43.5%,-122,+113,-1½+195,+1½-210,,,,,,2,5,,,,,,
+NHL,03/24/2026 07:07 PM,Colorado Avalanche,Pittsburgh Penguins,60.5%,39.5%,-160,+145,-1½+165,+1½-170,,,,,,6,2,,,,,,
+NHL,03/24/2026 07:07 PM,Toronto Maple Leafs,Boston Bruins,42.1%,57.9%,+180,-194,+1½-150,-1½+133,,,,,,4,2,,,,,,
+NHL,03/23/2026 07:37 PM,Ottawa Senators,New York Rangers,53.9%,46.1%,-172,+160,-1½+140,+1½-155,,,,,,2,1,,,,,,
+NCAA,03/25/2026 07:00 PM,Illinois State Redbirds (22-12),Dayton Flyers (25-11),25.4%,74.6%,+270,-310,+7½-109,-7-110,66.7,74.3,141.0,o138-110,u139½-110,,,,,,,,
+NCAA,03/25/2026 09:00 PM,Nevada Wolf Pack (24-12),Auburn Tigers (19-16),21.6%,78.4%,+375,-450,+9½-109,-9½-109,74.0,82.5,156.5,o154½-110,u154½-110,,,,,,,,
+NCAA,03/24/2026 09:04 PM,Saint Joseph's Hawks,New Mexico Lobos,19.8%,80.2%,+475,-600,+11-109,-10½-110,,,,,,69,84,,,,,,
+NCAA,03/24/2026 07:00 PM,Wichita State Shockers,Tulsa Golden Hurricane,39.0%,61.0%,+170,-180,+4½-109,-4-110,,,,,,79,83,,,,,,
+NCAA,03/22/2026 10:08 PM,Texas Tech Red Raiders,Alabama Crimson Tide,54.3%,45.7%,-102,-105,+1-109,+1-110,,,,,,65,90,,,,,,
+NCAA,03/22/2026 09:09 PM,UCLA Bruins,Connecticut Huskies,31.2%,68.8%,+190,-210,+5½-109,-5-110,,,,,,57,73,,,,,,
+NCAA,03/22/2026 09:00 PM,Saint Joseph's Hawks,California Golden Bears,26.7%,73.3%,+220,-240,+5½-105,-5½-109,,,,,,76,75,,,,,,
+NCAA,03/22/2026 08:30 PM,Wichita State Shockers,Oklahoma State Cowboys,38.2%,61.8%,+135,-135,+3-110,-2-110,,,,,,96,70,,,,,,
+NCAA,03/22/2026 08:11 PM,Utah State Aggies,Arizona Wildcats,15.1%,84.9%,+575,-750,+12-109,-12-105,,,,,,66,78,,,,,,
+NCAA,03/22/2026 08:00 PM,George Washington Colonials,New Mexico Lobos,25.4%,74.6%,+265,-300,+7-109,-7-109,,,,,,61,86,,,,,,
+NCAA,03/22/2026 07:10 PM,Iowa Hawkeyes,Florida Gators,23.3%,76.7%,+500,-580,+10½-109,-10-110,,,,,,73,72,,,,,,
+NCAA,03/22/2026 07:00 PM,UNLV Rebels,Tulsa Golden Hurricane,35.6%,64.4%,+190,-210,+5-109,-5-105,,,,,,66,77,,,,,,
+NCAA,03/22/2026 06:30 PM,Seattle Redhawks,Auburn Tigers,11.4%,88.6%,+825,-1300,+14½-110,-14-109,,,,,,85,91,,,,,,
+NCAA,03/22/2026 06:10 PM,Tennessee Volunteers,Virginia Cavaliers,49.9%,50.1%,-115,+100,-1-109,+1-109,,,,,,79,72,,,,,,
+NCAA,03/22/2026 05:25 PM,St. John's Red Storm,Kansas Jayhawks,57.9%,42.1%,-165,+160,-3½-109,+4-110,,,,,,67,65,,,,,,
+NCAA,03/22/2026 04:30 PM,Illinois State Redbirds,Wake Forest Demon Deacons,21.4%,78.6%,+300,-360,+8-109,-7½-110,,,,,,78,75,,,,,,
+NCAA,03/22/2026 02:49 PM,Kentucky Wildcats,Iowa State Cyclones,38.0%,62.0%,+200,-210,+5½-110,-5-109,,,,,,63,82,,,,,,
+NCAA,03/22/2026 12:10 PM,Miami Hurricanes,Purdue Boilermakers,24.0%,76.0%,+340,-380,+8-105,-8-109,,,,,,69,79,,,,,,
+MLB,03/25/2026 08:05 PM,New York Yankees (0-0),San Francisco Giants (0-0),52.4%,47.6%,-120,+110,-1½+150,+1½-165,3.84,3.59,7.43,o7+100,u7-110,,,,Max Fried,Logan Webb,,,
+MLB,03/15/2026 04:10 PM,San Diego Padres,Arizona Diamondbacks,49.1%,50.9%,+100,-115,+1½-175,-1½+160,,,,,,4,4,,,,,,
+MLB,03/14/2026 06:05 PM,Boston Red Sox,Atlanta Braves,49.3%,50.7%,+145,-158,+1½-125,-1½+110,,,,,,1,10,,,,,,
+MLB,11/01/2025 08:10 PM,Los Angeles Dodgers,Toronto Blue Jays,51.5%,48.5%,-130,+134,-1½+125,+1½-135,,,,,,5,4,,,,,,
+MLB,10/31/2025 08:09 PM,Los Angeles Dodgers,Toronto Blue Jays,52.9%,47.1%,-133,+125,-1½+125,+1½-135,,,,,,3,1,,,,,,
+MLB,10/29/2025 08:10 PM,Toronto Blue Jays,Los Angeles Dodgers,41.6%,58.4%,+182,-190,+1½-115,-1½+105,,,,,,6,1,,,,,,
+MLB,10/28/2025 08:09 PM,Toronto Blue Jays,Los Angeles Dodgers,44.7%,55.3%,+177,-184,+1½-115,-1½+110,,,,,,6,2,,,,,,
+MLB,10/27/2025 08:10 PM,Toronto Blue Jays,Los Angeles Dodgers,40.8%,59.2%,+174,-184,+1½-110,-1½+105,,,,,,5,6,,,,,,
+MLB,10/25/2025 08:00 PM,Los Angeles Dodgers,Toronto Blue Jays,52.8%,47.2%,-133,+125,-1½+120,+1½-130,,,,,,5,1,,,,,,
+MLB,10/24/2025 08:14 PM,Los Angeles Dodgers,Toronto Blue Jays,53.3%,46.7%,-143,+135,-1½+120,+1½-125,,,,,,4,11,,,,,,
+MLB,10/20/2025 08:08 PM,Seattle Mariners,Toronto Blue Jays,47.8%,52.2%,+124,-125,+1½-175,-1½+160,,,,,,3,4,,,,,,
+MLB,10/19/2025 08:03 PM,Seattle Mariners,Toronto Blue Jays,54.8%,45.2%,+110,-115,+1½-185,-1½+170,,,,,,2,6,,,,,,
+MLB,10/17/2025 08:38 PM,Milwaukee Brewers,Los Angeles Dodgers,41.6%,58.4%,+185,-195,+1½-115,-1½+105,,,,,,1,5,,,,,,
+MLB,10/17/2025 06:08 PM,Toronto Blue Jays,Seattle Mariners,49.0%,51.0%,-104,-105,-1½+165,+1½-175,,,,,,2,6,,,,,,
+MLB,10/16/2025 08:33 PM,Toronto Blue Jays,Seattle Mariners,45.7%,54.3%,+117,-125,+1½-190,-1½+180,,,,,,8,2,,,,,,
+MLB,10/16/2025 06:08 PM,Milwaukee Brewers,Los Angeles Dodgers,39.8%,60.2%,+151,-160,+1½-145,-1½+135,,,,,,1,3,,,,,,
+MLB,10/15/2025 08:08 PM,Toronto Blue Jays,Seattle Mariners,46.2%,53.8%,+119,-126,+1½-185,-1½+173,,,,,,13,4,,,,,,
+MLS,03/22/2026 07:00 PM,Real Salt Lake,San Diego FC,,,+300,-120,,,,,,,,2,2,,,,16.9%,22.1%,61.0%
+MLS,03/22/2026 04:45 PM,Los Angeles Galaxy,Portland Timbers,,,+190,+155,,,,,,,,1,1,,,,30.1%,26.2%,43.7%
+MLS,03/22/2026 02:30 PM,Seattle Sounders,Minnesota United,,,+200,+145,,,,,,,,0,0,,,,32.7%,28.8%,38.6%
+MLS,03/22/2026 01:00 PM,Inter Miami CF,New York City,,,+225,+125,,,,,,,,3,2,,,,21.7%,24.5%,53.8%
+MLS,03/22/2026 01:00 PM,Montreal Impact,FC Cincinnati,,,+369,-140,,,,,,,,3,4,,,,18.8%,23.6%,57.7%
+MLS,03/21/2026 10:30 PM,San Jose Earthquakes,Vancouver Whitecaps,,,+500,-155,,,,,,,,1,0,,,,17.3%,22.0%,60.8%
+MLS,03/21/2026 08:45 PM,Los Angeles FC,Austin FC,,,-130,+350,,,,,,,,0,0,,,,42.9%,27.1%,29.9%
+MLS,03/21/2026 08:30 PM,Colorado Rapids,Sporting Kansas City,,,+165,+163,,,,,,,,4,1,,,,29.3%,27.7%,43.0%
+MLS,03/21/2026 08:30 PM,New England Revolution,St Louis City,,,+275,-110,,,,,,,,1,3,,,,22.0%,24.4%,53.7%
+MLS,03/21/2026 08:30 PM,Houston Dynamo,FC Dallas,,,+200,+150,,,,,,,,3,4,,,,23.3%,26.4%,50.3%
+MLS,03/21/2026 07:30 PM,New York Red Bulls,Charlotte FC,,,+265,+120,,,,,,,,1,6,,,,20.2%,24.8%,54.9%
+MLS,03/21/2026 07:30 PM,D.C. United,Atlanta United,,,+260,+110,,,,,,,,0,0,,,,20.4%,23.3%,56.3%
+MLS,03/21/2026 06:15 PM,Orlando City,Nashville SC,,,+545,-215,,,,,,,,0,5,,,,17.9%,23.8%,58.3%
+MLS,03/21/2026 04:30 PM,Chicago Fire,Philadelphia Union,,,+225,+155,,,,,,,,2,1,,,,23.8%,26.1%,50.1%
+MLS,03/21/2026 01:00 PM,Columbus Crew,Toronto FC,,,+125,+200,,,,,,,,1,2,,,,32.4%,28.0%,39.5%
+MLS,03/15/2026 07:00 PM,Seattle Sounders,San Jose Earthquakes,,,+226,+115,,,,,,,,1,0,,,,31.8%,28.7%,39.5%
+EPL,04/10/2026 03:00 PM,Wolverhampton,West Ham United,,,,,,,,,,,,,,,,,24.8%,26.2%,49.0%
+EPL,03/22/2026 10:15 AM,West Ham United,Aston Villa,,,+365,-125,,,,,,,,0,2,,,,24.9%,22.8%,52.4%
+EPL,03/22/2026 10:15 AM,Nottingham Forest,Tottenham,,,+215,+145,,,,,,,,3,0,,,,34.2%,26.0%,39.8%
+EPL,03/22/2026 08:00 AM,Sunderland,Newcastle United,,,+535,-160,,,,,,,,2,1,,,,18.4%,22.2%,59.4%
+EPL,03/21/2026 04:00 PM,Brentford,Leeds United,,,+200,+135,,,,,,,,0,0,,,,34.1%,26.9%,38.9%
+EPL,03/21/2026 01:30 PM,Chelsea,Everton,,,+129,+230,,,,,,,,0,3,,,,46.2%,27.0%,26.7%
+EPL,03/21/2026 11:00 AM,Burnley,Fulham,,,+530,-190,,,,,,,,1,3,,,,16.1%,21.5%,62.3%
+EPL,03/21/2026 08:30 AM,Liverpool,Brighton and Hove Albion,,,+120,+220,,,,,,,,1,2,,,,42.6%,26.2%,31.1%
+EPL,03/20/2026 04:00 PM,Manchester United,Bournemouth,,,+127,+225,,,,,,,,2,2,,,,42.8%,27.7%,29.5%
+EPL,03/16/2026 04:00 PM,Wolverhampton,Brentford,,,+490,-185,,,,,,,,2,2,,,,16.2%,22.5%,61.3%
+EPL,03/15/2026 12:30 PM,Tottenham,Liverpool,,,+720,-315,,,,,,,,1,1,,,,11.4%,16.0%,72.6%
+EPL,03/15/2026 10:00 AM,Leeds United,Crystal Palace,,,+190,+175,,,,,,,,0,0,,,,32.8%,24.9%,42.3%
+EPL,03/15/2026 10:00 AM,Fulham,Nottingham Forest,,,+220,+131,,,,,,,,0,0,,,,29.0%,27.1%,43.9%
+EPL,03/15/2026 10:00 AM,Aston Villa,Manchester United,,,+380,-143,,,,,,,,1,3,,,,22.7%,24.0%,53.3%
+EPL,03/14/2026 04:00 PM,Manchester City,West Ham United,,,-156,+410,,,,,,,,1,1,,,,58.1%,21.7%,20.2%
+EPL,03/14/2026 01:30 PM,Everton,Arsenal,,,+800,-265,,,,,,,,0,2,,,,9.6%,16.0%,74.4%
+EPL,03/14/2026 01:30 PM,Newcastle United,Chelsea,,,+350,-135,,,,,,,,1,0,,,,23.9%,24.4%,51.6%
+LIGUE1,04/03/2026 02:45 PM,Toulouse,Paris Saint-Germain,,,,,,,,,,,,,,,,,4.2%,9.5%,86.3%
+LIGUE1,03/22/2026 03:45 PM,Strasbourg,Nantes,,,+100,+272,,,,,,,,3,2,,,,47.5%,25.6%,26.8%
+LIGUE1,03/22/2026 12:15 PM,Metz,Rennes,,,+850,-315,,,,,,,,0,0,,,,11.7%,19.4%,68.8%
+LIGUE1,03/22/2026 12:15 PM,Lille,Marseille,,,+305,-110,,,,,,,,2,1,,,,25.1%,25.6%,49.3%
+LIGUE1,03/22/2026 12:15 PM,Le Havre,Paris FC,,,+290,+115,,,,,,,,2,3,,,,23.2%,26.2%,50.7%
+LIGUE1,03/22/2026 10:00 AM,Monaco,Lyon,,,+151,+175,,,,,,,,2,1,,,,38.9%,26.1%,34.9%
+LIGUE1,03/21/2026 04:00 PM,Paris Saint-Germain,Nice,,,-235,+555,,,,,,,,4,0,,,,68.3%,18.7%,12.9%
+LIGUE1,03/21/2026 02:00 PM,Brest,Auxerre,,,+240,+136,,,,,,,,0,3,,,,31.0%,27.1%,41.9%
+LIGUE1,03/21/2026 12:00 PM,Lorient,Toulouse,,,+400,-125,,,,,,,,0,1,,,,22.8%,23.4%,53.8%
+LIGUE1,03/20/2026 03:45 PM,Angers,Lens,,,+1200,-450,,,,,,,,1,5,,,,10.4%,18.4%,71.1%
+LIGUE1,03/15/2026 03:45 PM,Lille,Rennes,,,+235,+125,,,,,,,,2,1,,,,30.8%,27.6%,41.6%
+LIGUE1,03/15/2026 12:15 PM,Toulouse,Metz,,,+102,+300,,,,,,,,4,3,,,,47.9%,26.8%,25.2%
+LIGUE1,03/15/2026 12:15 PM,Lyon,Le Havre,,,+120,+245,,,,,,,,0,0,,,,50.4%,24.4%,25.2%
+LIGUE1,03/15/2026 10:00 AM,Paris FC,Strasbourg,,,+400,-150,,,,,,,,0,0,,,,20.7%,22.9%,56.4%
+LIGUE1,03/14/2026 04:05 PM,Brest,Monaco,,,+415,-160,,,,,,,,0,2,,,,19.0%,20.2%,60.8%
+LIGUE1,03/14/2026 02:00 PM,Nice,Angers,,,+135,+235,,,,,,,,2,0,,,,40.9%,28.0%,31.0%
+LIGUE1,03/14/2026 12:00 PM,Lens,Lorient,,,-150,+430,,,,,,,,1,2,,,,51.3%,26.1%,22.6%
+LALIGA,04/03/2026 03:00 PM,Elche,Rayo Vallecano,,,,,,,,,,,,,,,,,14.9%,21.6%,63.5%
+LALIGA,03/22/2026 04:00 PM,Atletico Madrid,Real Madrid,,,+250,+100,,,,,,,,2,3,,,,26.0%,25.7%,48.3%
+LALIGA,03/22/2026 01:30 PM,Betis,Athletic Club,,,+255,+105,,,,,,,,1,2,,,,28.7%,25.6%,45.7%
+LALIGA,03/22/2026 11:15 AM,Alaves,Celta Vigo,,,+325,+100,,,,,,,,4,3,,,,20.0%,25.1%,54.9%
+LALIGA,03/22/2026 09:00 AM,Rayo Vallecano,Barcelona,,,+1050,-465,,,,,,,,0,1,,,,8.2%,14.9%,77.0%
+LALIGA,03/21/2026 04:00 PM,Valencia,Sevilla,,,+245,+130,,,,,,,,2,0,,,,27.6%,27.2%,45.2%
+LALIGA,03/21/2026 01:30 PM,Girona,Osasuna,,,+265,+105,,,,,,,,0,1,,,,29.4%,27.4%,43.2%
+LALIGA,03/21/2026 11:15 AM,Getafe,Espanyol,,,+255,+145,,,,,,,,2,1,,,,30.0%,28.0%,42.0%
+LALIGA,03/21/2026 09:00 AM,Mallorca,Elche,,,+283,+110,,,,,,,,1,2,,,,26.5%,28.7%,44.8%
+LALIGA,03/20/2026 04:00 PM,Real Sociedad,Villarreal,,,+295,-103,,,,,,,,1,3,,,,24.9%,24.9%,50.2%
+LALIGA,03/16/2026 04:00 PM,Levante,Rayo Vallecano,,,+375,-125,,,,,,,,1,1,,,,18.2%,21.6%,60.2%
+LALIGA,03/15/2026 04:00 PM,Osasuna,Real Sociedad,,,+315,-108,,,,,,,,1,3,,,,23.4%,25.4%,51.1%
+LALIGA,03/15/2026 01:30 PM,Celta Vigo,Betis,,,+288,+105,,,,,,,,1,1,,,,28.4%,24.8%,46.7%
+LALIGA,03/15/2026 11:15 AM,Sevilla,Barcelona,,,+825,-340,,,,,,,,2,5,,,,7.1%,13.1%,79.8%
+LALIGA,03/15/2026 09:00 AM,Espanyol,Mallorca,,,+210,+148,,,,,,,,1,2,,,,29.9%,27.4%,42.7%
+LALIGA,03/14/2026 04:00 PM,Elche,Real Madrid,,,+900,-370,,,,,,,,1,4,,,,7.5%,14.1%,78.3%
+LALIGA,03/14/2026 01:30 PM,Valencia,Oviedo,,,+165,+185,,,,,,,,0,1,,,,36.7%,29.4%,33.9%
+BUNDESLIGA,04/04/2026 09:30 AM,Wolfsburg,Bayer 04 Leverkusen,,,,,,,,,,,,,,,,,10.7%,15.7%,73.6%
+BUNDESLIGA,04/04/2026 09:30 AM,RB Leipzig,Werder Bremen,,,,,,,,,,,,,,,,,42.0%,25.3%,32.7%
+BUNDESLIGA,04/04/2026 09:30 AM,FC Heidenheim,Borussia Monchengladbach,,,,,,,,,,,,,,,,,13.3%,17.4%,69.3%
+BUNDESLIGA,04/04/2026 09:30 AM,Augsburg,Hamburger SV,,,,,,,,,,,,,,,,,25.3%,23.1%,51.6%
+BUNDESLIGA,04/04/2026 09:30 AM,Mainz 05,Hoffenheim,,,,,,,,,,,,,,,,,20.1%,20.8%,59.1%
+BUNDESLIGA,04/04/2026 09:30 AM,Bayern Munich,Freiburg,,,,,,,,,,,,,,,,,77.0%,14.0%,8.9%
+BUNDESLIGA,04/04/2026 12:30 PM,Dortmund,VfB Stuttgart,,,,,,,,,,,,,,,,,38.4%,25.3%,36.3%
+BUNDESLIGA,03/22/2026 02:30 PM,VfB Stuttgart,Augsburg,,,+110,+230,,,,,,,,5,2,,,,47.1%,25.2%,27.8%
+BUNDESLIGA,03/22/2026 12:30 PM,Freiburg,FC St. Pauli,,,+182,+175,,,,,,,,2,1,,,,37.2%,25.5%,37.3%
+BUNDESLIGA,03/22/2026 10:30 AM,Eintracht Frankfurt,Mainz 05,,,+220,+120,,,,,,,,1,2,,,,30.0%,24.0%,46.0%
+BUNDESLIGA,03/21/2026 01:30 PM,Hamburger SV,Dortmund,,,+675,-230,,,,,,,,2,3,,,,13.1%,15.8%,71.1%
+BUNDESLIGA,03/21/2026 10:30 AM,Union Berlin,Bayern Munich,,,+1475,-715,,,,,,,,0,4,,,,5.8%,10.2%,84.1%
+BUNDESLIGA,03/21/2026 10:30 AM,Bayer 04 Leverkusen,FC Heidenheim,,,-185,+480,,,,,,,,3,3,,,,62.2%,19.7%,18.1%
+BUNDESLIGA,03/21/2026 10:30 AM,Borussia Monchengladbach,FC Koln,,,+213,+130,,,,,,,,3,3,,,,32.5%,24.3%,43.2%
+BUNDESLIGA,03/21/2026 10:30 AM,Werder Bremen,Wolfsburg,,,+180,+143,,,,,,,,1,0,,,,34.6%,25.4%,40.0%
+BUNDESLIGA,03/20/2026 03:30 PM,Hoffenheim,RB Leipzig,,,+260,-110,,,,,,,,0,5,,,,27.1%,22.1%,50.8%
+BUNDESLIGA,03/15/2026 02:30 PM,RB Leipzig,VfB Stuttgart,,,+160,+150,,,,,,,,0,1,,,,32.9%,25.2%,41.9%
+BUNDESLIGA,03/15/2026 12:30 PM,Union Berlin,Freiburg,,,+330,-110,,,,,,,,1,0,,,,27.9%,24.9%,47.2%
+BUNDESLIGA,03/15/2026 10:30 AM,Mainz 05,Werder Bremen,,,+235,+122,,,,,,,,2,0,,,,32.2%,23.9%,43.8%
+BUNDESLIGA,03/14/2026 10:30 AM,Wolfsburg,Hoffenheim,,,+625,-230,,,,,,,,1,1,,,,16.0%,19.6%,64.3%
+BUNDESLIGA,03/14/2026 10:30 AM,Bayern Munich,Bayer 04 Leverkusen,,,-183,+410,,,,,,,,1,1,,,,57.6%,21.6%,20.8%
+BUNDESLIGA,03/14/2026 10:30 AM,Augsburg,Dortmund,,,+450,-185,,,,,,,,0,2,,,,14.1%,16.7%,69.2%
+BUNDESLIGA,03/14/2026 10:30 AM,FC Heidenheim,Eintracht Frankfurt,,,+416,-160,,,,,,,,0,1,,,,15.3%,16.7%,68.0%
+SERIEA,04/04/2026 09:00 AM,Cagliari,Sassuolo,,,,,,,,,,,,,,,,,22.5%,23.0%,54.5%
+SERIEA,04/04/2026 12:00 PM,Fiorentina,Hellas Verona,,,,,,,,,,,,,,,,,44.9%,26.4%,28.8%
+SERIEA,04/04/2026 02:45 PM,Parma,Lazio,,,,,,,,,,,,,,,,,16.4%,20.9%,62.8%
+SERIEA,03/22/2026 03:45 PM,Inter,Fiorentina,,,-159,+425,,,,,,,,1,1,,,,55.9%,23.8%,20.2%
+SERIEA,03/22/2026 01:00 PM,Lecce,Roma,,,+725,-210,,,,,,,,0,1,,,,10.9%,15.7%,73.4%
+SERIEA,03/22/2026 10:00 AM,Hellas Verona,Atalanta,,,+755,-258,,,,,,,,0,1,,,,11.7%,16.2%,72.0%
+SERIEA,03/22/2026 10:00 AM,Lazio,Bologna,,,+240,+135,,,,,,,,2,0,,,,29.4%,24.7%,45.8%
+SERIEA,03/21/2026 03:45 PM,Sassuolo,Juventus,,,+975,-370,,,,,,,,1,1,,,,10.7%,16.1%,73.2%
+SERIEA,03/21/2026 01:00 PM,Torino,Milan,,,+850,-280,,,,,,,,2,3,,,,10.6%,16.9%,72.6%
+SERIEA,03/21/2026 10:00 AM,Cremonese,Parma,,,+255,+130,,,,,,,,2,0,,,,25.1%,24.2%,50.7%
+SERIEA,03/20/2026 03:45 PM,Udinese,Genoa,,,+290,+115,,,,,,,,2,0,,,,27.1%,25.5%,47.4%
+SERIEA,03/20/2026 01:30 PM,Napoli,Cagliari,,,-140,+465,,,,,,,,1,0,,,,61.9%,21.6%,16.5%
+SERIEA,03/16/2026 03:45 PM,Fiorentina,Cremonese,,,-110,+342,,,,,,,,4,1,,,,50.5%,24.7%,24.8%
+SERIEA,03/15/2026 03:45 PM,Milan,Lazio,,,-120,+365,,,,,,,,0,1,,,,48.2%,25.7%,26.1%
+SERIEA,03/15/2026 01:00 PM,Roma,Como,,,+305,+110,,,,,,,,1,2,,,,28.2%,26.5%,45.4%
+SERIEA,03/15/2026 10:00 AM,Bologna,Sassuolo,,,+215,+144,,,,,,,,1,0,,,,36.4%,25.6%,38.0%
+SERIEA,03/15/2026 07:30 AM,Genoa,Hellas Verona,,,+142,+235,,,,,,,,2,0,,,,41.5%,28.0%,30.5%
+SERIEA,03/14/2026 03:45 PM,Juventus,Udinese,,,-190,+555,,,,,,,,1,0,,,,62.1%,22.2%,15.7%
+SERIEA,03/14/2026 01:00 PM,Lecce,Napoli,,,+825,-240,,,,,,,,1,2,,,,8.7%,14.1%,77.2%

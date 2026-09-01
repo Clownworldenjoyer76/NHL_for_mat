@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NCAAB Game</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/terminal.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <div id="nav-placeholder"></div>
+
+  <h2 id="title"></h2>
+  <div id="status" class="status"></div>
+  <div id="game"></div>
+</div>
+
+<script src="ncaab.js"></script>
+
+<script>
+  // ===============================
+  // Load Shared Nav
+  // ===============================
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+
+  function getParams() {
+    const p = new URLSearchParams(window.location.search);
+    return {
+      date: p.get("date"),
+      game_id: p.get("game_id")
+    };
+  }
+
+  async function loadSingleGame() {
+    const { date, game_id } = getParams();
+    const statusEl = document.getElementById("status");
+    const gameEl = document.getElementById("game");
+    const titleEl = document.getElementById("title");
+
+    if (!date || !game_id) {
+      statusEl.textContent = "Missing date or game_id.";
+      return;
+    }
+
+    const mlUrl =
+      `${RAW_BASE}/docs/win/final/step_2/ncaab/ml/juice_ncaab_ml_${date}.csv`;
+
+    const spreadsUrl =
+      `${RAW_BASE}/docs/win/final/step_2/ncaab/spreads/juice_ncaab_spreads_${date}.csv`;
+
+    const totalsUrl =
+      `${RAW_BASE}/docs/win/final/step_2/ncaab/totals/juice_ncaab_totals_${date}.csv`;
+
+    const dkUrl =
+      `${RAW_BASE}/docs/win/manual/normalized/dk_ncaab_moneyline_${date}.csv`;
+
+    const altSpreadsUrl =
+      `${RAW_BASE}/docs/win/juice/spreads_alt/ncaab_altspreads_${date}.csv`;
+
+    let mlRows = [];
+    let spreads = [];
+    let totals = [];
+    let dkRows = [];
+    let altSpreads = [];
+
+    try {
+      mlRows = parseCSV(await fetchText(mlUrl));
+    } catch {
+      statusEl.textContent = "No ML file found.";
+      return;
+    }
+
+    try { spreads = parseCSV(await fetchText(spreadsUrl)); } catch {}
+    try { totals = parseCSV(await fetchText(totalsUrl)); } catch {}
+    try { dkRows = parseCSV(await fetchText(dkUrl)); } catch {}
+    try { altSpreads = parseCSV(await fetchText(altSpreadsUrl)); } catch {}
+
+    const g = mlRows.find(r => r.game_id === game_id);
+    if (!g) {
+      statusEl.textContent = "Game not found.";
+      return;
+    }
+
+    const spread = spreads.find(s => s.game_id === game_id) || {};
+    const total = totals.find(t => t.game_id === game_id) || {};
+    const dkRow = dkRows.find(r => r.game_id === game_id) || {};
+    const altRows = altSpreads.filter(a => a.game_id === game_id);
+
+    titleEl.textContent =
+      `${g.away_team} @ ${g.home_team}`;
+
+    let altSection = "";
+
+    if (altRows.length > 0) {
+
+      const grouped = {};
+
+      altRows.forEach(row => {
+        const spreadValue = row.alt_spread;
+        if (!grouped[spreadValue]) {
+          grouped[spreadValue] = [];
+        }
+        grouped[spreadValue].push(row);
+      });
+
+      const rowsHtml = Object.keys(grouped).map(spreadValue => {
+
+        const pair = grouped[spreadValue];
+
+        const homeRow = pair.find(p => p.home_probability);
+        const awayRow = pair.find(p => p.away_probability);
+
+        return `
+          <tr>
+            <td>${escapeHtml(spreadValue)}</td>
+
+            <td>${escapeHtml(g.away_team)}</td>
+            <td>${formatPct(awayRow?.away_probability)}</td>
+            <td>${escapeHtml(awayRow?.away_acceptable_american_odds || "")}</td>
+
+            <td>${escapeHtml(g.home_team)}</td>
+            <td>${formatPct(homeRow?.home_probability)}</td>
+            <td>${escapeHtml(homeRow?.home_acceptable_american_odds || "")}</td>
+          </tr>
+        `;
+      }).join("");
+
+      altSection = `
+        <div class="totals-section">
+          <h3>Alternate Spreads</h3>
+          <table class="game-grid large-grid">
+            <thead>
+              <tr>
+                <th>Spread</th>
+                <th colspan="3">${escapeHtml(g.away_team)}</th>
+                <th colspan="3">${escapeHtml(g.home_team)}</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Team</th>
+                <th>Win %</th>
+                <th>Accept</th>
+                <th>Team</th>
+                <th>Win %</th>
+                <th>Accept</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rowsHtml}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    gameEl.innerHTML = `
+      <div class="game-box">
+
+        <div class="game-header">
+          ${escapeHtml(g.away_team)} @ ${escapeHtml(g.home_team)}
+          ${dkRow.time ? ` — ${escapeHtml(dkRow.time)}` : ""}
+        </div>
+
+        <div class="game-subheader">
+          Projected Total: ${format2(g.game_projected_points)}
+        </div>
+
+        <table class="game-grid large-grid">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Win %</th>
+              <th>Proj Pts</th>
+              <th>Fair ML</th>
+              <th>Accept ML</th>
+              <th>DK ML</th>
+              <th>Spread</th>
+              <th>Spread Accept</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td><strong>${escapeHtml(g.away_team)}</strong></td>
+              <td>${formatPct(g.away_team_moneyline_win_prob)}</td>
+              <td>${format2(g.away_team_projected_points)}</td>
+              <td>${escapeHtml(g.away_ml_fair_american_odds)}</td>
+              <td>${escapeHtml(g.away_ml_acceptable_american_odds)}</td>
+              <td>${escapeHtml(g.dk_away_odds)}</td>
+              <td>${escapeHtml(spread.away_spread || "")}</td>
+              <td>${escapeHtml(spread.away_spread_acceptable_american_odds || "")}</td>
+            </tr>
+
+            <tr>
+              <td><strong>${escapeHtml(g.home_team)}</strong></td>
+              <td>${formatPct(g.home_team_moneyline_win_prob)}</td>
+              <td>${format2(g.home_team_projected_points)}</td>
+              <td>${escapeHtml(g.home_ml_fair_american_odds)}</td>
+              <td>${escapeHtml(g.home_ml_acceptable_american_odds)}</td>
+              <td>${escapeHtml(g.dk_home_odds)}</td>
+              <td>${escapeHtml(spread.home_spread || "")}</td>
+              <td>${escapeHtml(spread.home_spread_acceptable_american_odds || "")}</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        ${altSection}
+
+      </div>
+    `;
+  }
+
+  loadSingleGame();
+</script>
+
+</body>
+</html>

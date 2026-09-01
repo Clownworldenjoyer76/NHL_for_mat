@@ -1,0 +1,12 @@
+DK INPUT PARSE SUMMARY
+======================
+
+League Input: ncaab_dk
+League Output: ncaab
+Date: 2026_02_18
+Games detected: 59
+Moneyline rows: 94
+Spread rows: 118
+Total rows: 236
+
+Total errors: 0

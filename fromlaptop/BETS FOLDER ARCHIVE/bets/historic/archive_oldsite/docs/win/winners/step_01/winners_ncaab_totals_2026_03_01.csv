@@ -1,0 +1,11 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds
+2026_03_01,12:00 PM,La Salle Explorers,Davidson Wildcats,ncaab_totals,ncaab_2026_03_01_La_Salle_Explorers_Davidson_Wildcats,133.5,1.7462686567164178,2.6100000000000003,1.869565217391304,1.9523809523809523
+2026_03_01,1:00 PM,Illinois Chicago,Indiana State Sycamores,ncaab_totals,ncaab_2026_03_01_Illinois_Chicago_Indiana_State_Sycamores,143.5,1.9345794392523368,2.3,1.9523809523809523,1.869565217391304
+2026_03_01,1:30 PM,Purdue Boilermakers,Ohio State Buckeyes,ncaab_totals,ncaab_2026_03_01_Purdue_Boilermakers_Ohio_State_Buckeyes,150.5,1.7518796992481205,2.5700000000000003,1.9523809523809523,1.869565217391304
+2026_03_01,2:00 PM,Rice Owls,Temple Owls,ncaab_totals,ncaab_2026_03_01_Rice_Owls_Temple_Owls,141.5,1.862068965517241,2.39,1.8928571428571428,1.925925925925926
+2026_03_01,2:00 PM,Mount St Marys Mountaineers,Fairfield Stags,ncaab_totals,ncaab_2026_03_01_Mount_St_Marys_Mountaineers_Fairfield_Stags,144.5,2.54,1.763358778625954,1.9090909090909087,1.9090909090909087
+2026_03_01,2:00 PM,Memphis Tigers,East Carolina Pirates,ncaab_totals,ncaab_2026_03_01_Memphis_Tigers_East_Carolina_Pirates,151.5,2.55,1.7575757575757576,1.9090909090909087,1.9090909090909087
+2026_03_01,2:00 PM,Merrimack Warriors,Niagara Purple Eagles,ncaab_totals,ncaab_2026_03_01_Merrimack_Warriors_Niagara_Purple_Eagles,127.5,1.869565217391304,2.38,1.9090909090909087,1.9090909090909087
+2026_03_01,3:00 PM,Northern Iowa Panthers,Drake Bulldogs,ncaab_totals,ncaab_2026_03_01_Northern_Iowa_Panthers_Drake_Bulldogs,138.5,2.64,1.7352941176470589,1.9090909090909087,1.9090909090909087
+2026_03_01,4:00 PM,DePaul Blue Demons,Marquette Golden Eagles,ncaab_totals,ncaab_2026_03_01_DePaul_Blue_Demons_Marquette_Golden_Eagles,142.5,1.9174311926605505,2.33,1.925925925925926,1.8928571428571428
+2026_03_01,5:00 PM,Belmont Bruins,Illinois State Redbirds,ncaab_totals,ncaab_2026_03_01_Belmont_Bruins_Illinois_State_Redbirds,150.5,1.819672131147541,2.44,1.8928571428571428,1.925925925925926

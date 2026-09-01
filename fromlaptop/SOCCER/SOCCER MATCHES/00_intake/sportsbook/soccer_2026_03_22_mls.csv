@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,mls,2026_03_22,Sun Mar 22nd 1:00 PM,FC Cincinnati,CF Montreal,-160,+290,+360
+Soccer,mls,2026_03_22,Sun Mar 22nd 2:30 PM,Minnesota Utd,Seattle Sounders,+165,+225,+145
+Soccer,mls,2026_03_22,Sun Mar 22nd 1:00 PM,NYCFC,Inter Miami,+115,+240,+195
+Soccer,mls,2026_03_22,Sun Mar 22nd 4:45 PM,POR Timbers,LA Galaxy,+120,+250,+185
+Soccer,mls,2026_03_22,Sun Mar 22nd 7:00 PM,San Diego FC,Real Salt Lake,-140,+285,+310

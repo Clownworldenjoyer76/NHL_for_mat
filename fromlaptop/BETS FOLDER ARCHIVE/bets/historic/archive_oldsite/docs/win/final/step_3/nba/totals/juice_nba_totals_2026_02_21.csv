@@ -1,0 +1,6 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds
+2026_02_21,5:10 PM,Orlando Magic,Phoenix Suns,nba_totals,nba_2026_02_21_Orlando_Magic_Phoenix_Suns,217.5,1.6993006993006992,2.76,1.8928571428571428,1.925925925925926
+2026_02_21,7:10 PM,Philadelphia 76ers,New Orleans Pelicans,nba_totals,nba_2026_02_21_Philadelphia_76ers_New_Orleans_Pelicans,232.5,2.73,1.7142857142857144,1.925925925925926,1.8928571428571428
+2026_02_21,8:10 PM,Memphis Grizzlies,Miami Heat,nba_totals,nba_2026_02_21_Memphis_Grizzlies_Miami_Heat,235.5,1.9174311926605505,2.31,1.925925925925926,1.8928571428571428
+2026_02_21,8:10 PM,Detroit Pistons,Chicago Bulls,nba_totals,nba_2026_02_21_Detroit_Pistons_Chicago_Bulls,234.5,2.59,1.7692307692307692,1.9523809523809523,1.869565217391304
+2026_02_21,8:40 PM,Houston Rockets,New York Knicks,nba_totals,nba_2026_02_21_Houston_Rockets_New_York_Knicks,219.5,1.8547008547008548,2.42,1.9090909090909087,1.9090909090909087

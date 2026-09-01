@@ -1,0 +1,31 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league
+2026-03-01,12:00 PM,Tulane,South Florida,+800,,,ncaab
+2026-03-01,12:00 PM,South Florida,Tulane,-1350,,,ncaab
+2026-03-01,12:00 PM,La Salle,Davidson,+550,,,ncaab
+2026-03-01,12:00 PM,Davidson,La Salle,-800,,,ncaab
+2026-03-01,12:00 PM,North Texas,UAB,+200,,,ncaab
+2026-03-01,12:00 PM,UAB,North Texas,-245,,,ncaab
+2026-03-01,1:00 PM,Quinnipiac,Canisius,-360,,,ncaab
+2026-03-01,1:00 PM,Canisius,Quinnipiac,+285,,,ncaab
+2026-03-01,1:00 PM,Illinois Chicago,Indiana State,-192,,,ncaab
+2026-03-01,1:00 PM,Indiana State,Illinois Chicago,+160,,,ncaab
+2026-03-01,1:30 PM,Purdue,Ohio State,-305,,,ncaab
+2026-03-01,1:30 PM,Ohio State,Purdue,+245,,,ncaab
+2026-03-01,2:00 PM,Rice,Temple,+260,,,ncaab
+2026-03-01,2:00 PM,Temple,Rice,-325,,,ncaab
+2026-03-01,2:00 PM,Memphis,East Carolina,-225,,,ncaab
+2026-03-01,2:00 PM,East Carolina,Memphis,+185,,,ncaab
+2026-03-01,2:00 PM,Charlotte,Florida Atlantic,+270,,,ncaab
+2026-03-01,2:00 PM,Florida Atlantic,Charlotte,-340,,,ncaab
+2026-03-01,2:00 PM,Murray State,Bradley,+154,,,ncaab
+2026-03-01,2:00 PM,Bradley,Murray State,-185,,,ncaab
+2026-03-01,2:00 PM,Mount Saint Marys,Fairfield,+164,,,ncaab
+2026-03-01,2:00 PM,Fairfield,Mount Saint Marys,-198,,,ncaab
+2026-03-01,2:00 PM,Iona,Manhattan,-135,,,ncaab
+2026-03-01,2:00 PM,Manhattan,Iona,+114,,,ncaab
+2026-03-01,3:45 PM,Michigan State,Indiana,-148,,,ncaab
+2026-03-01,3:45 PM,Indiana,Michigan State,+124,,,ncaab
+2026-03-01,4:00 PM,DePaul,Marquette,+160,,,ncaab
+2026-03-01,4:00 PM,Marquette,DePaul,-192,,,ncaab
+2026-03-01,8:00 PM,Wichita State,UTSA,-1600,,,ncaab
+2026-03-01,8:00 PM,UTSA,Wichita State,+900,,,ncaab

@@ -1,0 +1,168 @@
+<!-- docs/manual_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Dump</title>
+  <link rel="stylesheet" href="css/terminal.css" />
+  <style>
+    .row {
+      display: flex;
+      gap: 16px;
+    }
+
+    .row > div {
+      flex: 1;
+    }
+
+    #raw {
+      width: 100%;
+      height: 200px;
+      overflow-y: auto;
+      resize: none;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h2>Data Dump</h2>
+
+    <div class="row">
+      <div>
+        <label for="league">League</label>
+        <select id="league" onchange="updateMarkets()">
+          <option value="">-- select --</option>
+          <option value="basketball">Basketball</option>
+          <option value="football">Football</option>
+          <option value="baseball">Baseball</option>
+          <option value="hockey">Hockey</option>
+          <option value="soccer">Soccer</option>
+          <option value="final_scores">Final Scores</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="market">Market</label>
+        <select id="market">
+          <option value="">-- placeholder --</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="source">Source</label>
+        <select id="source">
+          <option value="">-- select --</option>
+          <option value="DraftKings">DraftKings</option>
+          <option value="Predictions">Predictions</option>
+          <option value="Scores">Scores</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="token">Magic</label>
+    <input id="token" type="password" placeholder="Enter Magic Here" />
+
+    <label for="raw">Raw Text</label>
+    <textarea id="raw" rows="10" placeholder="Paste text here..."></textarea>
+
+    <button id="btn" onclick="dispatch()">Create File</button>
+
+    <pre id="out"></pre>
+
+  </div>
+
+  <script>
+    const OWNER = "Clownworldenjoyer76";
+    const REPO  = "bet_tracker";
+    const WORKFLOW_FILE = "_00_manual_data.yml";
+    const REF = "main";
+
+    const MARKET_MAP = {
+      basketball: ["NBA", "NCAA Men"],
+      football: ["NFL", "NCAA", "CFL"],
+      baseball: ["MLB"],
+      hockey: ["NHL"],
+      soccer: ["MLS", "EPL", "Ligue 1", "Serie A", "La Liga", "Bundesliga"],
+      final_scores: ["NBA", "NCAAB", "NHL"]
+    };
+
+    function updateMarkets() {
+      const league = document.getElementById("league").value;
+      const marketSelect = document.getElementById("market");
+      marketSelect.innerHTML = "";
+
+      if (!league || !MARKET_MAP[league]) {
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "-- placeholder --";
+        marketSelect.appendChild(opt);
+        return;
+      }
+
+      for (const m of MARKET_MAP[league]) {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m;
+        marketSelect.appendChild(opt);
+      }
+    }
+
+    async function dispatch() {
+      const league = document.getElementById("league").value.trim();
+      const market = document.getElementById("market").value.trim();
+      const source = document.getElementById("source").value.trim();
+      const token  = document.getElementById("token").value.trim();
+      const raw    = document.getElementById("raw").value;
+      const out    = document.getElementById("out");
+      const btn    = document.getElementById("btn");
+
+      out.textContent = "";
+
+      if (!league || !source || !token || !raw.trim()) {
+        out.textContent = "Major Failure Bro";
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Submitting...";
+
+      try {
+        const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`;
+
+        const res = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Accept": "application/vnd.github+json",
+            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            ref: REF,
+            inputs: {
+              league: league,
+              market: market,
+              source: source,
+              raw_text: raw
+            }
+          })
+        });
+
+        if (res.status === 204) {
+          out.textContent = "Successfully Submitted";
+        } else {
+          out.textContent = "Major Failure Bro";
+        }
+
+      } catch (e) {
+        out.textContent = "Major Failure Bro";
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Create File";
+      }
+    }
+  </script>
+
+</body>
+</html>

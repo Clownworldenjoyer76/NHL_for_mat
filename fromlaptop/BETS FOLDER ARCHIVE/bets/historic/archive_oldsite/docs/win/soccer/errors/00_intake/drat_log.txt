@@ -1,0 +1,4 @@
+2026-02-27T17:28:13.996418 | Read raw_text from file: dump.txt
+2026-02-27T17:28:13.996479 | raw_text_len=283
+2026-02-27T17:28:13.996851 | lines_count=33
+2026-02-27T17:28:13.996954 | total_rows=3

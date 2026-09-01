@@ -1,0 +1,81 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-03-01,12:00 PM,Tulane,South Florida,Over,155.5,-115,,,ncaab
+2026-03-01,12:00 PM,Tulane,South Florida,Under,155.5,-105,,,ncaab
+2026-03-01,12:00 PM,South Florida,Tulane,Over,155.5,-115,,,ncaab
+2026-03-01,12:00 PM,South Florida,Tulane,Under,155.5,-105,,,ncaab
+2026-03-01,12:00 PM,La Salle,Davidson,Over,133.5,-115,,,ncaab
+2026-03-01,12:00 PM,La Salle,Davidson,Under,133.5,-105,,,ncaab
+2026-03-01,12:00 PM,Davidson,La Salle,Over,133.5,-115,,,ncaab
+2026-03-01,12:00 PM,Davidson,La Salle,Under,133.5,-105,,,ncaab
+2026-03-01,12:00 PM,North Texas,UAB,Over,142.5,-108,,,ncaab
+2026-03-01,12:00 PM,North Texas,UAB,Under,142.5,-112,,,ncaab
+2026-03-01,12:00 PM,UAB,North Texas,Over,142.5,-108,,,ncaab
+2026-03-01,12:00 PM,UAB,North Texas,Under,142.5,-112,,,ncaab
+2026-03-01,1:00 PM,Quinnipiac,Canisius,Over,137.5,-105,,,ncaab
+2026-03-01,1:00 PM,Quinnipiac,Canisius,Under,137.5,-115,,,ncaab
+2026-03-01,1:00 PM,Canisius,Quinnipiac,Over,137.5,-105,,,ncaab
+2026-03-01,1:00 PM,Canisius,Quinnipiac,Under,137.5,-115,,,ncaab
+2026-03-01,1:00 PM,Illinois Chicago,Indiana State,Over,143.5,-105,,,ncaab
+2026-03-01,1:00 PM,Illinois Chicago,Indiana State,Under,143.5,-115,,,ncaab
+2026-03-01,1:00 PM,Indiana State,Illinois Chicago,Over,143.5,-105,,,ncaab
+2026-03-01,1:00 PM,Indiana State,Illinois Chicago,Under,143.5,-115,,,ncaab
+2026-03-01,1:30 PM,Purdue,Ohio State,Over,150.5,-105,,,ncaab
+2026-03-01,1:30 PM,Purdue,Ohio State,Under,150.5,-115,,,ncaab
+2026-03-01,1:30 PM,Ohio State,Purdue,Over,150.5,-105,,,ncaab
+2026-03-01,1:30 PM,Ohio State,Purdue,Under,150.5,-115,,,ncaab
+2026-03-01,2:00 PM,Rice,Temple,Over,141.5,-112,,,ncaab
+2026-03-01,2:00 PM,Rice,Temple,Under,141.5,-108,,,ncaab
+2026-03-01,2:00 PM,Temple,Rice,Over,141.5,-112,,,ncaab
+2026-03-01,2:00 PM,Temple,Rice,Under,141.5,-108,,,ncaab
+2026-03-01,2:00 PM,Memphis,East Carolina,Over,151.5,-110,,,ncaab
+2026-03-01,2:00 PM,Memphis,East Carolina,Under,151.5,-110,,,ncaab
+2026-03-01,2:00 PM,East Carolina,Memphis,Over,151.5,-110,,,ncaab
+2026-03-01,2:00 PM,East Carolina,Memphis,Under,151.5,-110,,,ncaab
+2026-03-01,2:00 PM,Charlotte,Florida Atlantic,Over,147.5,-115,,,ncaab
+2026-03-01,2:00 PM,Charlotte,Florida Atlantic,Under,147.5,-105,,,ncaab
+2026-03-01,2:00 PM,Florida Atlantic,Charlotte,Over,147.5,-115,,,ncaab
+2026-03-01,2:00 PM,Florida Atlantic,Charlotte,Under,147.5,-105,,,ncaab
+2026-03-01,2:00 PM,Murray State,Bradley,Over,158.5,-105,,,ncaab
+2026-03-01,2:00 PM,Murray State,Bradley,Under,158.5,-115,,,ncaab
+2026-03-01,2:00 PM,Bradley,Murray State,Over,158.5,-105,,,ncaab
+2026-03-01,2:00 PM,Bradley,Murray State,Under,158.5,-115,,,ncaab
+2026-03-01,2:00 PM,Mount Saint Marys,Fairfield,Over,144.5,-110,,,ncaab
+2026-03-01,2:00 PM,Mount Saint Marys,Fairfield,Under,144.5,-110,,,ncaab
+2026-03-01,2:00 PM,Fairfield,Mount Saint Marys,Over,144.5,-110,,,ncaab
+2026-03-01,2:00 PM,Fairfield,Mount Saint Marys,Under,144.5,-110,,,ncaab
+2026-03-01,2:00 PM,Iona,Manhattan,Over,149.5,-110,,,ncaab
+2026-03-01,2:00 PM,Iona,Manhattan,Under,149.5,-110,,,ncaab
+2026-03-01,2:00 PM,Manhattan,Iona,Over,149.5,-110,,,ncaab
+2026-03-01,2:00 PM,Manhattan,Iona,Under,149.5,-110,,,ncaab
+2026-03-01,2:00 PM,Merrimack,Niagara,Over,127.5,-110,,,ncaab
+2026-03-01,2:00 PM,Merrimack,Niagara,Under,127.5,-110,,,ncaab
+2026-03-01,2:00 PM,Niagara,Merrimack,Over,127.5,-110,,,ncaab
+2026-03-01,2:00 PM,Niagara,Merrimack,Under,127.5,-110,,,ncaab
+2026-03-01,3:00 PM,Northern Iowa,Drake,Over,138.5,-110,,,ncaab
+2026-03-01,3:00 PM,Northern Iowa,Drake,Under,138.5,-110,,,ncaab
+2026-03-01,3:00 PM,Drake,Northern Iowa,Over,138.5,-110,,,ncaab
+2026-03-01,3:00 PM,Drake,Northern Iowa,Under,138.5,-110,,,ncaab
+2026-03-01,3:45 PM,Michigan State,Indiana,Over,144.5,-115,,,ncaab
+2026-03-01,3:45 PM,Michigan State,Indiana,Under,144.5,-105,,,ncaab
+2026-03-01,3:45 PM,Indiana,Michigan State,Over,144.5,-115,,,ncaab
+2026-03-01,3:45 PM,Indiana,Michigan State,Under,144.5,-105,,,ncaab
+2026-03-01,4:00 PM,DePaul,Marquette,Over,142.5,-108,,,ncaab
+2026-03-01,4:00 PM,DePaul,Marquette,Under,142.5,-112,,,ncaab
+2026-03-01,4:00 PM,Marquette,DePaul,Over,142.5,-108,,,ncaab
+2026-03-01,4:00 PM,Marquette,DePaul,Under,142.5,-112,,,ncaab
+2026-03-01,4:00 PM,Southern Illinois,Evansville,Over,138.5,-110,,,ncaab
+2026-03-01,4:00 PM,Southern Illinois,Evansville,Under,138.5,-110,,,ncaab
+2026-03-01,4:00 PM,Evansville,Southern Illinois,Over,138.5,-110,,,ncaab
+2026-03-01,4:00 PM,Evansville,Southern Illinois,Under,138.5,-110,,,ncaab
+2026-03-01,5:00 PM,Belmont,Illinois State,Over,150.5,-112,,,ncaab
+2026-03-01,5:00 PM,Belmont,Illinois State,Under,150.5,-108,,,ncaab
+2026-03-01,5:00 PM,Illinois State,Belmont,Over,150.5,-112,,,ncaab
+2026-03-01,5:00 PM,Illinois State,Belmont,Under,150.5,-108,,,ncaab
+2026-03-01,7:00 PM,Charleston,UNC Wilmington,Over,144.5,-115,,,ncaab
+2026-03-01,7:00 PM,Charleston,UNC Wilmington,Under,144.5,-105,,,ncaab
+2026-03-01,7:00 PM,UNC Wilmington,Charleston,Over,144.5,-115,,,ncaab
+2026-03-01,7:00 PM,UNC Wilmington,Charleston,Under,144.5,-105,,,ncaab
+2026-03-01,8:00 PM,Wichita State,UTSA,Over,149.5,-112,,,ncaab
+2026-03-01,8:00 PM,Wichita State,UTSA,Under,149.5,-108,,,ncaab
+2026-03-01,8:00 PM,UTSA,Wichita State,Over,149.5,-112,,,ncaab
+2026-03-01,8:00 PM,UTSA,Wichita State,Under,149.5,-108,,,ncaab

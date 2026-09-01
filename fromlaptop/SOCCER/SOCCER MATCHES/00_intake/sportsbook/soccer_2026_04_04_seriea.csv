@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,seriea,2026_04_04,Sat Apr 4th 2:45 PM,Lazio,Parma,-140,+230,+350
+Soccer,seriea,2026_04_04,Sat Apr 4th 9:00 AM,Lecce,Atalanta,+340,+255,-145
+Soccer,seriea,2026_04_04,Sat Apr 4th 9:00 AM,Sassuolo,Cagliari,-105,+185,+320
+Soccer,seriea,2026_04_04,Sat Apr 4th 12:00 PM,Verona,Fiorentina,+295,+230,-120

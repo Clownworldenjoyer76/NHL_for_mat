@@ -1,0 +1,15 @@
+band,band_min,band_max,fav_ud,extra_juice
+0 to 1,0.0,1.0,favorite,-0.03
+0 to 1,0.0,1.0,underdog,-0.06
+1.5 to 3,1.5,3.0,favorite,-0.04
+1.5 to 3,1.5,3.0,underdog,-0.05
+3.5 to 5,3.5,5.0,favorite,-0.03
+3.5 to 5,3.5,5.0,underdog,-0.06
+5.5 to 7,5.5,7.0,favorite,-0.05
+5.5 to 7,5.5,7.0,underdog,-0.04
+7.5 to 10,7.5,10.0,favorite,-0.02
+7.5 to 10,7.5,10.0,underdog,-0.05
+10.5 to 15,10.5,15.0,favorite,-0.05
+10.5 to 15,10.5,15.0,underdog,-0.02
+15.5 to 100,15.5,100.0,favorite,0.00
+15.5 to 100,15.5,100.0,underdog,0.00

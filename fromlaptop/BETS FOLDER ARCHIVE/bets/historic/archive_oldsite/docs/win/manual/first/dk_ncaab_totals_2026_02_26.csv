@@ -1,0 +1,217 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-02-26,5:00 PM,Rhode Island,Saint Bonaventure,Over,143.5,-112,,,ncaab
+2026-02-26,5:00 PM,Rhode Island,Saint Bonaventure,Under,143.5,-108,,,ncaab
+2026-02-26,5:00 PM,Saint Bonaventure,Rhode Island,Over,143.5,-112,,,ncaab
+2026-02-26,5:00 PM,Saint Bonaventure,Rhode Island,Under,143.5,-108,,,ncaab
+2026-02-26,6:00 PM,Bryant,UMBC,Over,138.5,-115,,,ncaab
+2026-02-26,6:00 PM,Bryant,UMBC,Under,138.5,-105,,,ncaab
+2026-02-26,6:00 PM,UMBC,Bryant,Over,138.5,-115,,,ncaab
+2026-02-26,6:00 PM,UMBC,Bryant,Under,138.5,-105,,,ncaab
+2026-02-26,6:07 PM,New Hampshire,Binghamton,Over,141.5,-112,,,ncaab
+2026-02-26,6:07 PM,New Hampshire,Binghamton,Under,141.5,-108,,,ncaab
+2026-02-26,6:07 PM,Binghamton,New Hampshire,Over,141.5,-112,,,ncaab
+2026-02-26,6:07 PM,Binghamton,New Hampshire,Under,141.5,-108,,,ncaab
+2026-02-26,6:30 PM,Bethune-Cookman,Grambling,Over,144.5,-112,,,ncaab
+2026-02-26,6:30 PM,Bethune-Cookman,Grambling,Under,144.5,-108,,,ncaab
+2026-02-26,6:30 PM,Grambling,Bethune-Cookman,Over,144.5,-112,,,ncaab
+2026-02-26,6:30 PM,Grambling,Bethune-Cookman,Under,144.5,-108,,,ncaab
+2026-02-26,6:30 PM,Maine,Albany NY,Over,131.5,-110,,,ncaab
+2026-02-26,6:30 PM,Maine,Albany NY,Under,131.5,-110,,,ncaab
+2026-02-26,6:30 PM,Albany NY,Maine,Over,131.5,-110,,,ncaab
+2026-02-26,6:30 PM,Albany NY,Maine,Under,131.5,-110,,,ncaab
+2026-02-26,7:00 PM,Northeastern,William & Mary,Over,164.5,-112,,,ncaab
+2026-02-26,7:00 PM,Northeastern,William & Mary,Under,164.5,-108,,,ncaab
+2026-02-26,7:00 PM,William & Mary,Northeastern,Over,164.5,-112,,,ncaab
+2026-02-26,7:00 PM,William & Mary,Northeastern,Under,164.5,-108,,,ncaab
+2026-02-26,7:00 PM,Temple,Florida Atlantic,Over,145.5,-115,,,ncaab
+2026-02-26,7:00 PM,Temple,Florida Atlantic,Under,145.5,-105,,,ncaab
+2026-02-26,7:00 PM,Florida Atlantic,Temple,Over,145.5,-115,,,ncaab
+2026-02-26,7:00 PM,Florida Atlantic,Temple,Under,145.5,-105,,,ncaab
+2026-02-26,7:00 PM,Chicago State,LIU,Over,141.5,-112,,,ncaab
+2026-02-26,7:00 PM,Chicago State,LIU,Under,141.5,-108,,,ncaab
+2026-02-26,7:00 PM,LIU,Chicago State,Over,141.5,-112,,,ncaab
+2026-02-26,7:00 PM,LIU,Chicago State,Under,141.5,-108,,,ncaab
+2026-02-26,7:00 PM,Liberty,Kennesaw State,Over,153.5,-110,,,ncaab
+2026-02-26,7:00 PM,Liberty,Kennesaw State,Under,153.5,-110,,,ncaab
+2026-02-26,7:00 PM,Kennesaw State,Liberty,Over,153.5,-110,,,ncaab
+2026-02-26,7:00 PM,Kennesaw State,Liberty,Under,153.5,-110,,,ncaab
+2026-02-26,7:00 PM,High Point,Presbyterian,Over,152.5,-105,,,ncaab
+2026-02-26,7:00 PM,High Point,Presbyterian,Under,152.5,-115,,,ncaab
+2026-02-26,7:00 PM,Presbyterian,High Point,Over,152.5,-105,,,ncaab
+2026-02-26,7:00 PM,Presbyterian,High Point,Under,152.5,-115,,,ncaab
+2026-02-26,7:00 PM,Delaware,Jacksonville State,Over,134.5,-105,,,ncaab
+2026-02-26,7:00 PM,Delaware,Jacksonville State,Under,134.5,-115,,,ncaab
+2026-02-26,7:00 PM,Jacksonville State,Delaware,Over,134.5,-105,,,ncaab
+2026-02-26,7:00 PM,Jacksonville State,Delaware,Under,134.5,-115,,,ncaab
+2026-02-26,7:00 PM,Winthrop,Charleston Southern,Over,164.5,-110,,,ncaab
+2026-02-26,7:00 PM,Winthrop,Charleston Southern,Under,164.5,-110,,,ncaab
+2026-02-26,7:00 PM,Charleston Southern,Winthrop,Over,164.5,-110,,,ncaab
+2026-02-26,7:00 PM,Charleston Southern,Winthrop,Under,164.5,-110,,,ncaab
+2026-02-26,7:00 PM,UNC Asheville,Gardner-Webb,Over,145.5,-105,,,ncaab
+2026-02-26,7:00 PM,UNC Asheville,Gardner-Webb,Under,145.5,-115,,,ncaab
+2026-02-26,7:00 PM,Gardner-Webb,UNC Asheville,Over,145.5,-105,,,ncaab
+2026-02-26,7:00 PM,Gardner-Webb,UNC Asheville,Under,145.5,-115,,,ncaab
+2026-02-26,7:00 PM,Elon,Towson,Over,144.5,-105,,,ncaab
+2026-02-26,7:00 PM,Elon,Towson,Under,144.5,-115,,,ncaab
+2026-02-26,7:00 PM,Towson,Elon,Over,144.5,-105,,,ncaab
+2026-02-26,7:00 PM,Towson,Elon,Under,144.5,-115,,,ncaab
+2026-02-26,7:00 PM,Florida Gulf Coast,North Florida,Over,160.5,-115,,,ncaab
+2026-02-26,7:00 PM,Florida Gulf Coast,North Florida,Under,160.5,-105,,,ncaab
+2026-02-26,7:00 PM,North Florida,Florida Gulf Coast,Over,160.5,-115,,,ncaab
+2026-02-26,7:00 PM,North Florida,Florida Gulf Coast,Under,160.5,-105,,,ncaab
+2026-02-26,7:00 PM,Campbell,Drexel,Over,142.5,-105,,,ncaab
+2026-02-26,7:00 PM,Campbell,Drexel,Under,142.5,-115,,,ncaab
+2026-02-26,7:00 PM,Drexel,Campbell,Over,142.5,-105,,,ncaab
+2026-02-26,7:00 PM,Drexel,Campbell,Under,142.5,-115,,,ncaab
+2026-02-26,7:00 PM,North Carolina A&T,UNC Wilmington,Over,147.5,-105,,,ncaab
+2026-02-26,7:00 PM,North Carolina A&T,UNC Wilmington,Under,147.5,-115,,,ncaab
+2026-02-26,7:00 PM,UNC Wilmington,North Carolina A&T,Over,147.5,-105,,,ncaab
+2026-02-26,7:00 PM,UNC Wilmington,North Carolina A&T,Under,147.5,-115,,,ncaab
+2026-02-26,7:00 PM,Stetson,Jacksonville,Over,138.5,-105,,,ncaab
+2026-02-26,7:00 PM,Stetson,Jacksonville,Under,138.5,-115,,,ncaab
+2026-02-26,7:00 PM,Jacksonville,Stetson,Over,138.5,-105,,,ncaab
+2026-02-26,7:00 PM,Jacksonville,Stetson,Under,138.5,-115,,,ncaab
+2026-02-26,7:00 PM,UMass Lowell,Vermont,Over,146.5,-110,,,ncaab
+2026-02-26,7:00 PM,UMass Lowell,Vermont,Under,146.5,-110,,,ncaab
+2026-02-26,7:00 PM,Vermont,UMass Lowell,Over,146.5,-110,,,ncaab
+2026-02-26,7:00 PM,Vermont,UMass Lowell,Under,146.5,-110,,,ncaab
+2026-02-26,7:00 PM,USC Upstate,Radford,Over,155.5,-112,,,ncaab
+2026-02-26,7:00 PM,USC Upstate,Radford,Under,155.5,-108,,,ncaab
+2026-02-26,7:00 PM,Radford,USC Upstate,Over,155.5,-112,,,ncaab
+2026-02-26,7:00 PM,Radford,USC Upstate,Under,155.5,-108,,,ncaab
+2026-02-26,7:00 PM,Mercyhurst,Central Connecticut State,Over,139.5,-110,,,ncaab
+2026-02-26,7:00 PM,Mercyhurst,Central Connecticut State,Under,139.5,-110,,,ncaab
+2026-02-26,7:00 PM,Central Connecticut State,Mercyhurst,Over,139.5,-110,,,ncaab
+2026-02-26,7:00 PM,Central Connecticut State,Mercyhurst,Under,139.5,-110,,,ncaab
+2026-02-26,7:00 PM,UNC Greensboro,Chattanooga,Over,156.5,-115,,,ncaab
+2026-02-26,7:00 PM,UNC Greensboro,Chattanooga,Under,156.5,-105,,,ncaab
+2026-02-26,7:00 PM,Chattanooga,UNC Greensboro,Over,156.5,-115,,,ncaab
+2026-02-26,7:00 PM,Chattanooga,UNC Greensboro,Under,156.5,-105,,,ncaab
+2026-02-26,7:00 PM,Saint Francis PA,Stonehill,Over,141.5,-112,,,ncaab
+2026-02-26,7:00 PM,Saint Francis PA,Stonehill,Under,141.5,-108,,,ncaab
+2026-02-26,7:00 PM,Stonehill,Saint Francis PA,Over,141.5,-112,,,ncaab
+2026-02-26,7:00 PM,Stonehill,Saint Francis PA,Under,141.5,-108,,,ncaab
+2026-02-26,7:00 PM,New Haven,Wagner,Over,131.5,-108,,,ncaab
+2026-02-26,7:00 PM,New Haven,Wagner,Under,131.5,-112,,,ncaab
+2026-02-26,7:00 PM,Wagner,New Haven,Over,131.5,-108,,,ncaab
+2026-02-26,7:00 PM,Wagner,New Haven,Under,131.5,-112,,,ncaab
+2026-02-26,7:30 PM,UTEP,Middle Tennessee,Over,138.5,-115,,,ncaab
+2026-02-26,7:30 PM,UTEP,Middle Tennessee,Under,138.5,-105,,,ncaab
+2026-02-26,7:30 PM,Middle Tennessee,UTEP,Over,138.5,-115,,,ncaab
+2026-02-26,7:30 PM,Middle Tennessee,UTEP,Under,138.5,-105,,,ncaab
+2026-02-26,7:30 PM,Missouri State,Louisiana Tech,Over,136.5,-108,,,ncaab
+2026-02-26,7:30 PM,Missouri State,Louisiana Tech,Under,136.5,-112,,,ncaab
+2026-02-26,7:30 PM,Louisiana Tech,Missouri State,Over,136.5,-108,,,ncaab
+2026-02-26,7:30 PM,Louisiana Tech,Missouri State,Under,136.5,-112,,,ncaab
+2026-02-26,7:30 PM,New Mexico State,Western Kentucky,Over,151.5,-108,,,ncaab
+2026-02-26,7:30 PM,New Mexico State,Western Kentucky,Under,151.5,-112,,,ncaab
+2026-02-26,7:30 PM,Western Kentucky,New Mexico State,Over,151.5,-108,,,ncaab
+2026-02-26,7:30 PM,Western Kentucky,New Mexico State,Under,151.5,-112,,,ncaab
+2026-02-26,8:00 PM,Michigan State,Purdue,Over,142.5,-110,,,ncaab
+2026-02-26,8:00 PM,Michigan State,Purdue,Under,142.5,-110,,,ncaab
+2026-02-26,8:00 PM,Purdue,Michigan State,Over,142.5,-110,,,ncaab
+2026-02-26,8:00 PM,Purdue,Michigan State,Under,142.5,-110,,,ncaab
+2026-02-26,8:00 PM,VMI,Samford,Over,154.5,-110,,,ncaab
+2026-02-26,8:00 PM,VMI,Samford,Under,154.5,-110,,,ncaab
+2026-02-26,8:00 PM,Samford,VMI,Over,154.5,-110,,,ncaab
+2026-02-26,8:00 PM,Samford,VMI,Under,154.5,-110,,,ncaab
+2026-02-26,8:00 PM,South Dakota State,UMKC,Over,151.5,-108,,,ncaab
+2026-02-26,8:00 PM,South Dakota State,UMKC,Under,151.5,-112,,,ncaab
+2026-02-26,8:00 PM,UMKC,South Dakota State,Over,151.5,-108,,,ncaab
+2026-02-26,8:00 PM,UMKC,South Dakota State,Under,151.5,-112,,,ncaab
+2026-02-26,8:00 PM,Tarleton State,Utah Valley,Over,140.5,-115,,,ncaab
+2026-02-26,8:00 PM,Tarleton State,Utah Valley,Under,140.5,-105,,,ncaab
+2026-02-26,8:00 PM,Utah Valley,Tarleton State,Over,140.5,-115,,,ncaab
+2026-02-26,8:00 PM,Utah Valley,Tarleton State,Under,140.5,-105,,,ncaab
+2026-02-26,8:00 PM,Denver,Oral Roberts,Over,155.5,-110,,,ncaab
+2026-02-26,8:00 PM,Denver,Oral Roberts,Under,155.5,-110,,,ncaab
+2026-02-26,8:00 PM,Oral Roberts,Denver,Over,155.5,-110,,,ncaab
+2026-02-26,8:00 PM,Oral Roberts,Denver,Under,155.5,-110,,,ncaab
+2026-02-26,8:00 PM,Morehead State,Little Rock,Over,138.5,-115,,,ncaab
+2026-02-26,8:00 PM,Morehead State,Little Rock,Under,138.5,-105,,,ncaab
+2026-02-26,8:00 PM,Little Rock,Morehead State,Over,138.5,-115,,,ncaab
+2026-02-26,8:00 PM,Little Rock,Morehead State,Under,138.5,-105,,,ncaab
+2026-02-26,8:00 PM,Alcorn,Texas Southern,Over,146.5,-112,,,ncaab
+2026-02-26,8:00 PM,Alcorn,Texas Southern,Under,146.5,-108,,,ncaab
+2026-02-26,8:00 PM,Texas Southern,Alcorn,Over,146.5,-112,,,ncaab
+2026-02-26,8:00 PM,Texas Southern,Alcorn,Under,146.5,-108,,,ncaab
+2026-02-26,8:30 PM,Tennessee Tech,UT Martin,Over,134.5,-108,,,ncaab
+2026-02-26,8:30 PM,Tennessee Tech,UT Martin,Under,134.5,-112,,,ncaab
+2026-02-26,8:30 PM,UT Martin,Tennessee Tech,Over,134.5,-108,,,ncaab
+2026-02-26,8:30 PM,UT Martin,Tennessee Tech,Under,134.5,-112,,,ncaab
+2026-02-26,8:30 PM,Western Illinois,SIU Edwardsville,Over,135.5,-105,,,ncaab
+2026-02-26,8:30 PM,Western Illinois,SIU Edwardsville,Under,135.5,-115,,,ncaab
+2026-02-26,8:30 PM,SIU Edwardsville,Western Illinois,Over,135.5,-105,,,ncaab
+2026-02-26,8:30 PM,SIU Edwardsville,Western Illinois,Under,135.5,-115,,,ncaab
+2026-02-26,8:30 PM,Eastern Illinois,Lindenwood,Over,143.5,-105,,,ncaab
+2026-02-26,8:30 PM,Eastern Illinois,Lindenwood,Under,143.5,-115,,,ncaab
+2026-02-26,8:30 PM,Lindenwood,Eastern Illinois,Over,143.5,-105,,,ncaab
+2026-02-26,8:30 PM,Lindenwood,Eastern Illinois,Under,143.5,-115,,,ncaab
+2026-02-26,8:30 PM,Tennessee State,SE Missouri State,Over,153.5,-112,,,ncaab
+2026-02-26,8:30 PM,Tennessee State,SE Missouri State,Under,153.5,-108,,,ncaab
+2026-02-26,8:30 PM,SE Missouri State,Tennessee State,Over,153.5,-112,,,ncaab
+2026-02-26,8:30 PM,SE Missouri State,Tennessee State,Under,153.5,-108,,,ncaab
+2026-02-26,8:30 PM,Florida A&M,Southern University,Over,147.5,-112,,,ncaab
+2026-02-26,8:30 PM,Florida A&M,Southern University,Under,147.5,-108,,,ncaab
+2026-02-26,8:30 PM,Southern University,Florida A&M,Over,147.5,-112,,,ncaab
+2026-02-26,8:30 PM,Southern University,Florida A&M,Under,147.5,-108,,,ncaab
+2026-02-26,9:00 PM,Wichita State,Memphis,Over,146.5,-110,,,ncaab
+2026-02-26,9:00 PM,Wichita State,Memphis,Under,146.5,-110,,,ncaab
+2026-02-26,9:00 PM,Memphis,Wichita State,Over,146.5,-110,,,ncaab
+2026-02-26,9:00 PM,Memphis,Wichita State,Under,146.5,-110,,,ncaab
+2026-02-26,9:00 PM,UC Riverside,UC Santa Barbara,Over,142.5,-115,,,ncaab
+2026-02-26,9:00 PM,UC Riverside,UC Santa Barbara,Under,142.5,-105,,,ncaab
+2026-02-26,9:00 PM,UC Santa Barbara,UC Riverside,Over,142.5,-115,,,ncaab
+2026-02-26,9:00 PM,UC Santa Barbara,UC Riverside,Under,142.5,-105,,,ncaab
+2026-02-26,9:00 PM,FIU,Sam Houston,Over,161.5,-105,,,ncaab
+2026-02-26,9:00 PM,FIU,Sam Houston,Under,161.5,-115,,,ncaab
+2026-02-26,9:00 PM,Sam Houston,FIU,Over,161.5,-105,,,ncaab
+2026-02-26,9:00 PM,Sam Houston,FIU,Under,161.5,-115,,,ncaab
+2026-02-26,9:00 PM,Sacramento State,Montana,Over,162.5,-108,,,ncaab
+2026-02-26,9:00 PM,Sacramento State,Montana,Under,162.5,-112,,,ncaab
+2026-02-26,9:00 PM,Montana,Sacramento State,Over,162.5,-108,,,ncaab
+2026-02-26,9:00 PM,Montana,Sacramento State,Under,162.5,-112,,,ncaab
+2026-02-26,9:00 PM,Northern Arizona,Idaho,Over,146.5,-112,,,ncaab
+2026-02-26,9:00 PM,Northern Arizona,Idaho,Under,146.5,-108,,,ncaab
+2026-02-26,9:00 PM,Idaho,Northern Arizona,Over,146.5,-112,,,ncaab
+2026-02-26,9:00 PM,Idaho,Northern Arizona,Under,146.5,-108,,,ncaab
+2026-02-26,9:00 PM,Northern Colorado,Eastern Washington,Over,157.5,-115,,,ncaab
+2026-02-26,9:00 PM,Northern Colorado,Eastern Washington,Under,157.5,-105,,,ncaab
+2026-02-26,9:00 PM,Eastern Washington,Northern Colorado,Over,157.5,-115,,,ncaab
+2026-02-26,9:00 PM,Eastern Washington,Northern Colorado,Under,157.5,-105,,,ncaab
+2026-02-26,9:00 PM,North Dakota State,Saint Thomas MN,Over,155.5,-115,,,ncaab
+2026-02-26,9:00 PM,North Dakota State,Saint Thomas MN,Under,155.5,-105,,,ncaab
+2026-02-26,9:00 PM,Saint Thomas MN,North Dakota State,Over,155.5,-115,,,ncaab
+2026-02-26,9:00 PM,Saint Thomas MN,North Dakota State,Under,155.5,-105,,,ncaab
+2026-02-26,9:00 PM,Abilene Christian,Utah Tech,Over,139.5,-108,,,ncaab
+2026-02-26,9:00 PM,Abilene Christian,Utah Tech,Under,139.5,-112,,,ncaab
+2026-02-26,9:00 PM,Utah Tech,Abilene Christian,Over,139.5,-108,,,ncaab
+2026-02-26,9:00 PM,Utah Tech,Abilene Christian,Under,139.5,-112,,,ncaab
+2026-02-26,9:00 PM,Portland State,Montana State,Over,138.5,-115,,,ncaab
+2026-02-26,9:00 PM,Portland State,Montana State,Under,138.5,-105,,,ncaab
+2026-02-26,9:00 PM,Montana State,Portland State,Over,138.5,-115,,,ncaab
+2026-02-26,9:00 PM,Montana State,Portland State,Under,138.5,-105,,,ncaab
+2026-02-26,9:00 PM,Hawaii,UC Davis,Over,147.5,-110,,,ncaab
+2026-02-26,9:00 PM,Hawaii,UC Davis,Under,147.5,-110,,,ncaab
+2026-02-26,9:00 PM,UC Davis,Hawaii,Over,147.5,-110,,,ncaab
+2026-02-26,9:00 PM,UC Davis,Hawaii,Under,147.5,-110,,,ncaab
+2026-02-26,9:30 PM,Jackson State,Prairie View,Over,162.5,-108,,,ncaab
+2026-02-26,9:30 PM,Jackson State,Prairie View,Under,162.5,-112,,,ncaab
+2026-02-26,9:30 PM,Prairie View,Jackson State,Over,162.5,-108,,,ncaab
+2026-02-26,9:30 PM,Prairie View,Jackson State,Under,162.5,-112,,,ncaab
+2026-02-26,10:00 PM,UT Arlington,California Baptist,Over,133.5,-115,,,ncaab
+2026-02-26,10:00 PM,UT Arlington,California Baptist,Under,133.5,-105,,,ncaab
+2026-02-26,10:00 PM,California Baptist,UT Arlington,Over,133.5,-115,,,ncaab
+2026-02-26,10:00 PM,California Baptist,UT Arlington,Under,133.5,-105,,,ncaab
+2026-02-26,10:00 PM,CSU Bakersfield,UC San Diego,Over,147.5,-112,,,ncaab
+2026-02-26,10:00 PM,CSU Bakersfield,UC San Diego,Under,147.5,-108,,,ncaab
+2026-02-26,10:00 PM,UC San Diego,CSU Bakersfield,Over,147.5,-112,,,ncaab
+2026-02-26,10:00 PM,UC San Diego,CSU Bakersfield,Under,147.5,-108,,,ncaab
+2026-02-26,10:00 PM,Long Beach State,Cal Poly,Over,161.5,-105,,,ncaab
+2026-02-26,10:00 PM,Long Beach State,Cal Poly,Under,161.5,-115,,,ncaab
+2026-02-26,10:00 PM,Cal Poly,Long Beach State,Over,161.5,-105,,,ncaab
+2026-02-26,10:00 PM,Cal Poly,Long Beach State,Under,161.5,-115,,,ncaab
+2026-02-26,10:00 PM,UC Irvine,CSUN,Over,154.5,-110,,,ncaab
+2026-02-26,10:00 PM,UC Irvine,CSUN,Under,154.5,-110,,,ncaab
+2026-02-26,10:00 PM,CSUN,UC Irvine,Over,154.5,-110,,,ncaab
+2026-02-26,10:00 PM,CSUN,UC Irvine,Under,154.5,-110,,,ncaab

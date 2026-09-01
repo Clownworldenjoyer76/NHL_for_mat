@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob
+soccer,seriea,2026_02_28,08:00 AM,Como,Lecce,0.713000,0.174000,0.113000
+soccer,seriea,2026_02_28,11:00 AM,Hellas Verona,Napoli,0.180000,0.218000,0.601000
+soccer,seriea,2026_02_28,01:45 PM,Inter Milan,Genoa,0.792000,0.138000,0.070000

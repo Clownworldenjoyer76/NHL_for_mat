@@ -1,0 +1,11 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_spread,home_spread
+2026_02_19,7:00 PM,nba_spreads,nba_2026_02_19_Atlanta_Hawks_Philadelphia_76ers,Atlanta Hawks,Philadelphia 76ers,,,,,1.5,-1.5
+2026_02_19,7:00 PM,nba_spreads,nba_2026_02_19_Brooklyn_Nets_Cleveland_Cavaliers,Brooklyn Nets,Cleveland Cavaliers,,,,,16.5,-16.5
+2026_02_19,7:00 PM,nba_spreads,nba_2026_02_19_Houston_Rockets_Charlotte_Hornets,Houston Rockets,Charlotte Hornets,,,,,-4.5,4.5
+2026_02_19,7:00 PM,nba_spreads,nba_2026_02_19_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,,,,,-3.5,3.5
+2026_02_19,7:30 PM,nba_spreads,nba_2026_02_19_Detroit_Pistons_New_York_Knicks,Detroit Pistons,New York Knicks,,,,,4.5,-4.5
+2026_02_19,8:00 PM,nba_spreads,nba_2026_02_19_Toronto_Raptors_Chicago_Bulls,Toronto Raptors,Chicago Bulls,,,,,-5.5,5.5
+2026_02_19,8:30 PM,nba_spreads,nba_2026_02_19_Phoenix_Suns_San_Antonio_Spurs,Phoenix Suns,San Antonio Spurs,,,,,7.5,-7.5
+2026_02_19,10:00 PM,nba_spreads,nba_2026_02_19_Boston_Celtics_Golden_State_Warriors,Boston Celtics,Golden State Warriors,,,,,-5.5,5.5
+2026_02_19,10:00 PM,nba_spreads,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,Orlando Magic,Sacramento Kings,,,,,-8.5,8.5
+2026_02_19,10:30 PM,nba_spreads,nba_2026_02_19_Denver_Nuggets_Los_Angeles_Clippers,Denver Nuggets,Los Angeles Clippers,,,,,-4.5,4.5

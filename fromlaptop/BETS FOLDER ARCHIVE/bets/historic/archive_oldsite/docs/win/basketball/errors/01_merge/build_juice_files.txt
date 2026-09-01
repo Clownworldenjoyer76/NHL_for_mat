@@ -1,0 +1,15 @@
+=== BUILD JUICE FILES RUN ===
+2026-03-02T19:11:59.034203Z
+
+Processed docs/win/basketball/01_merge/basketball_NBA_2026_02_26.csv
+Processed docs/win/basketball/01_merge/basketball_NBA_2026_02_24.csv
+Processed docs/win/basketball/01_merge/basketball_NCAAB_2026_02_24.csv
+Processed docs/win/basketball/01_merge/basketball_NCAAB_2026_02_27.csv
+Processed docs/win/basketball/01_merge/basketball_NBA_2026_03_01.csv
+Processed docs/win/basketball/01_merge/basketball_NCAAB_2026_02_26.csv
+Processed docs/win/basketball/01_merge/basketball_NBA_2026_03_02.csv
+Processed docs/win/basketball/01_merge/basketball_NBA_2026_02_27.csv
+Processed docs/win/basketball/01_merge/basketball_NCAAB_2026_03_01.csv
+Processed docs/win/basketball/01_merge/basketball_NCAAB_2026_03_02.csv
+
+Completed successfully.

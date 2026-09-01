@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,bundesliga,2026_03_14,10:30 AM,Borussia Dortmund,Augsburg,-220,+360,+475
+Soccer,bundesliga,2026_03_14,10:30 AM,Eintracht Frankfurt,Heidenheim,-180,+330,+390
+Soccer,bundesliga,2026_03_14,1:30 PM,Hamburg,Koln,+130,+230,+195
+Soccer,bundesliga,2026_03_14,10:30 AM,Hoffenheim,Wolfsburg,-260,+400,+550
+Soccer,bundesliga,2026_03_14,10:30 AM,Leverkusen,Bayern Munich,+380,+370,-190

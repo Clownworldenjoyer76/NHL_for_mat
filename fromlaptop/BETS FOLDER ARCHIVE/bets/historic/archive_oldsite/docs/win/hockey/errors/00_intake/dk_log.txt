@@ -1,0 +1,1 @@
+2026-03-02T13:24:52.871266 | SUMMARY: upserted 6 rows, 0 errors

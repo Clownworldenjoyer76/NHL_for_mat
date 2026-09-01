@@ -1,0 +1,86 @@
+name: 01 Raw Clean
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Run raw_clean
+        run: |
+          python scripts/raw_clean.py
+
+      - name: Normalize Dump team names
+        run: |
+          python scripts/name_normalization_dump.py
+
+      - name: Clean My Bets (Step 01)
+        run: |
+          python scripts/my_bets_clean_01.py
+
+      - name: Clean My Bets (Step 02)
+        run: |
+          python scripts/my_bets_clean_02.py
+
+      - name: Clean My Bets (Step 03)
+        run: |
+          python scripts/my_bets_clean_03.py
+
+      - name: Clean My Bets (Step 04 - Name Normalization)
+        run: |
+          python scripts/my_bets_clean_04.py
+
+      - name: Clean My Bets (Step 05 - Get Game ID)
+        run: |
+          python scripts/my_bets_clean_05.py
+
+      - name: Clean My Bets (Step 06)
+        run: |
+          python scripts/my_bets_clean_06.py
+
+      - name: Clean My Bets (Step 07)
+        run: |
+          python scripts/my_bets_clean_07.py
+
+      - name: Clean My Bets (Step 08)
+        run: |
+          python scripts/my_bets_clean_08.py
+          
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          git add docs/win/dump/csvs/cleaned/*.csv
+          git add docs/win/games_master/*.csv
+          git add mappings/need_map/dump_no_map.csv
+          git add docs/win/my_bets/step_01/*.csv
+          git add docs/win/my_bets/step_02/*.csv
+          git add docs/win/my_bets/step_03/*.csv
+          git add docs/win/my_bets/step_04/*.csv
+          git add docs/win/my_bets/step_05/*.csv
+          git add docs/win/my_bets/step_06/*.csv
+          git add docs/win/errors/01_raw/
+
+          git commit -m "Raw clean + name normalization + my bets clean" || exit 0
+          git push

@@ -1,0 +1,12 @@
+league,market,game_date,match_time,home_team,away_team,game_id,market_type,take_bet,odds_american,odds_decimal,edge_pct,kelly_stake_pct,expected_goals
+Soccer,epl,2026_03_15,10:00,Crystal Palace,Leeds,2026_03_15_crystal_palace_leeds,result,home,175,2.75,0.1728,1.88,2.85
+Soccer,epl,2026_03_15,10:00,Manchester United,Aston Villa,2026_03_15_manchester_united_aston_villa,result,away,370,4.7,0.1643,0.84,2.73
+Soccer,epl,2026_03_15,10:00,Nottingham Forest,Fulham,2026_03_15_nottingham_forest_fulham,result,home,130,2.3,0.0331,0.0,2.43
+Soccer,ligue1,2026_03_15,10:00,Strasbourg,Paris FC,2026_03_15_strasbourg_paris_fc,result,away,400,5.0,0.2832,1.48,2.81
+Soccer,bundesliga,2026_03_15,10:30,Werder Bremen,Mainz,2026_03_15_werder_bremen_mainz,result,away,235,3.35,0.1465,0.88,3.04
+Soccer,ligue1,2026_03_15,12:15,Le Havre,Lyon,2026_03_15_le_havre_lyon,result,away,110,2.1,0.0594,0.54,2.75
+Soccer,ligue1,2026_03_15,12:15,Metz,Toulouse,2026_03_15_metz_toulouse,result,home,290,3.9,0.1459,0.97,2.39
+Soccer,bundesliga,2026_03_15,12:30,Freiburg,Union Berlin,2026_03_15_freiburg_union_berlin,result,home,115,2.15,0.0602,0.23,2.75
+Soccer,epl,2026_03_15,12:30,Liverpool,Tottenham Hotspur,2026_03_15_liverpool_tottenham_hotspur,result,away,850,9.5,1.116,3.03,3.47
+Soccer,bundesliga,2026_03_15,14:30,VfB Stuttgart,RB Leipzig,2026_03_15_vfb_stuttgart_rb_leipzig,result,home,140,2.4,0.054,0.05,2.78
+Soccer,ligue1,2026_03_15,15:45,Rennes,Lille,2026_03_15_rennes_lille,result,away,235,3.35,0.0722,0.36,2.38

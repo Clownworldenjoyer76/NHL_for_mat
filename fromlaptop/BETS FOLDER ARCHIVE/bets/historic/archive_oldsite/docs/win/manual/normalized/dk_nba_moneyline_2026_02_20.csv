@@ -1,0 +1,10 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_02_20,7:10 PM,nba_moneyline,nba_2026_02_20_Utah_Jazz_Memphis_Grizzlies,Utah Jazz,Memphis Grizzlies,,,,,110,-130
+2026_02_20,7:10 PM,nba_moneyline,nba_2026_02_20_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,,,,,-125,105
+2026_02_20,7:10 PM,nba_moneyline,nba_2026_02_20_Cleveland_Cavaliers_Charlotte_Hornets,Cleveland Cavaliers,Charlotte Hornets,,,,,-230,190
+2026_02_20,7:40 PM,nba_moneyline,nba_2026_02_20_Dallas_Mavericks_Minnesota_Timberwolves,Dallas Mavericks,Minnesota Timberwolves,,,,,500,-700
+2026_02_20,7:40 PM,nba_moneyline,nba_2026_02_20_Miami_Heat_Atlanta_Hawks,Miami Heat,Atlanta Hawks,,,,,-162,136
+2026_02_20,8:10 PM,nba_moneyline,nba_2026_02_20_Milwaukee_Bucks_New_Orleans_Pelicans,Milwaukee Bucks,New Orleans Pelicans,,,,,145,-175
+2026_02_20,8:10 PM,nba_moneyline,nba_2026_02_20_Brooklyn_Nets_Oklahoma_City_Thunder,Brooklyn Nets,Oklahoma City Thunder,,,,,850,-1450
+2026_02_20,10:10 PM,nba_moneyline,nba_2026_02_20_Los_Angeles_Clippers_Los_Angeles_Lakers,Los Angeles Clippers,Los Angeles Lakers,,,,,220,-270
+2026_02_20,10:10 PM,nba_moneyline,nba_2026_02_20_Denver_Nuggets_Portland_Trail_Blazers,Denver Nuggets,Portland Trail Blazers,,,,,-135,114

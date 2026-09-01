@@ -1,0 +1,6 @@
+RAW CLEAN SUMMARY
+=================
+Bad dates: 0
+Bad teams: 0
+Bad win probabilities: 0
+

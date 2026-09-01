@@ -1,0 +1,11 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_points,home_projected_points,total_projected_points,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NBA,2026_02_26,07:10 PM,Indiana Pacers,Charlotte Hornets,2026_02_26_Indiana Pacers_Charlotte Hornets,0.192000,0.808000,118.6,109.4,228.0,-12.5,+12.5,229.5,-115,-105,-110,-110,-800,+550
+Basketball,NBA,2026_02_26,07:10 PM,Philadelphia 76ers,Miami Heat,2026_02_26_Philadelphia 76ers_Miami Heat,0.554000,0.446000,118.8,121.0,239.8,+2.5,-2.5,239.5,-105,-115,-105,-115,+124,-148
+Basketball,NBA,2026_02_26,07:40 PM,Atlanta Hawks,Washington Wizards,2026_02_26_Atlanta Hawks_Washington Wizards,0.805000,0.195000,112.2,121.4,233.6,+10.5,-10.5,237.5,-115,-105,-110,-110,+410,-550
+Basketball,NBA,2026_02_26,07:40 PM,Brooklyn Nets,San Antonio Spurs,2026_02_26_Brooklyn Nets_San Antonio Spurs,0.190000,0.810000,115.9,106.6,222.5,-12.5,+12.5,224.5,-108,-112,-105,-115,-675,+490
+Basketball,NBA,2026_02_26,07:40 PM,Orlando Magic,Houston Rockets,2026_02_26_Orlando Magic_Houston Rockets,0.447000,0.553000,109.3,107.2,216.5,-2.5,+2.5,215.5,-115,-105,-108,-112,-148,+124
+Basketball,NBA,2026_02_26,08:10 PM,Chicago Bulls,Portland Trail Blazers,2026_02_26_Chicago Bulls_Portland Trail Blazers,0.383000,0.617000,118.8,115.1,233.9,-4.5,+4.5,234.5,-112,-108,-112,-108,-180,+150
+Basketball,NBA,2026_02_26,08:40 PM,Dallas Mavericks,Sacramento Kings,2026_02_26_Dallas Mavericks_Sacramento Kings,0.732000,0.268000,112.2,119.3,231.5,+6.5,-6.5,236.5,-105,-115,-110,-110,+220,-270
+Basketball,NBA,2026_02_26,09:10 PM,Phoenix Suns,Los Angeles Lakers,2026_02_26_Phoenix Suns_Los Angeles Lakers,0.380000,0.620000,111.8,107.9,219.7,-5.5,+5.5,220.5,-115,-105,-110,-110,-218,+180
+Basketball,NBA,2026_02_26,09:10 PM,Utah Jazz,New Orleans Pelicans,2026_02_26_Utah Jazz_New Orleans Pelicans,0.384000,0.616000,122.9,119.1,242.0,-5.5,+5.5,242.5,-102,-118,-110,-110,-192,+160
+Basketball,NBA,2026_02_26,10:10 PM,Los Angeles Clippers,Minnesota Timberwolves,2026_02_26_Los Angeles Clippers_Minnesota Timberwolves,0.357000,0.643000,114.9,110.2,225.1,-5.5,+5.5,225.5,-112,-108,-110,-110,-218,+180

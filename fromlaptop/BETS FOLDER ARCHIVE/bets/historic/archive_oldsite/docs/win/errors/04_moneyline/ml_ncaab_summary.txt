@@ -1,0 +1,6 @@
+script=ml_ncaab
+timestamp=2026-03-01T15:01:06.516297
+files_found=5
+files_written=5
+rows_processed=146
+errors=0

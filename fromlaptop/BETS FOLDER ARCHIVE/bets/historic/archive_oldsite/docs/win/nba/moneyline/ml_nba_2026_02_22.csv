@@ -1,0 +1,12 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds
+2026_02_22,nba_moneyline,nba_2026_02_22_Cleveland_Cavaliers_Oklahoma_City_Thunder,Cleveland Cavaliers,Oklahoma City Thunder,0.581,0.419,115.2,112.2,227.4,1.72,-139,1.82,-122,2.39,+139,2.53,+153
+2026_02_22,nba_moneyline,nba_2026_02_22_Brooklyn_Nets_Atlanta_Hawks,Brooklyn Nets,Atlanta Hawks,0.236,0.764,109.2,117.4,226.6,4.24,+324,4.49,+349,1.31,-323,1.39,-256
+2026_02_22,nba_moneyline,nba_2026_02_22_Denver_Nuggets_Golden_State_Warriors,Denver Nuggets,Golden State Warriors,0.646,0.354,116.6,111.9,228.5,1.55,-182,1.64,-156,2.82,+182,2.99,+199
+2026_02_22,nba_moneyline,nba_2026_02_22_Toronto_Raptors_Milwaukee_Bucks,Toronto Raptors,Milwaukee Bucks,0.623,0.377,112.4,108.4,220.8,1.61,-164,1.71,-141,2.65,+165,2.81,+181
+2026_02_22,nba_moneyline,nba_2026_02_22_Dallas_Mavericks_Indiana_Pacers,Dallas Mavericks,Indiana Pacers,0.52,0.48,115.6,114.6,230.2,1.92,-109,2.04,+104,2.08,+108,2.2,+120
+2026_02_22,nba_moneyline,nba_2026_02_22_Charlotte_Hornets_Washington_Wizards,Charlotte Hornets,Washington Wizards,0.762,0.238,117.7,109.6,227.3,1.31,-323,1.39,-256,4.2,+320,4.45,+345
+2026_02_22,nba_moneyline,nba_2026_02_22_Boston_Celtics_Los_Angeles_Lakers,Boston Celtics,Los Angeles Lakers,0.527,0.473,116.2,114.9,231.1,1.9,-111,2.01,+101,2.11,+111,2.24,+124
+2026_02_22,nba_moneyline,nba_2026_02_22_Philadelphia_76ers_Minnesota_Timberwolves,Philadelphia 76ers,Minnesota Timberwolves,0.286,0.714,114.7,121.2,235.9,3.5,+250,3.71,+271,1.4,-250,1.48,-208
+2026_02_22,nba_moneyline,nba_2026_02_22_Portland_Trail_Blazers_Phoenix_Suns,Portland Trail Blazers,Phoenix Suns,0.546,0.454,113.6,111.7,225.3,1.83,-120,1.94,-106,2.2,+120,2.33,+133
+2026_02_22,nba_moneyline,nba_2026_02_22_New_York_Knicks_Chicago_Bulls,New York Knicks,Chicago Bulls,0.727,0.273,118.8,111.9,230.7,1.38,-263,1.46,-217,3.66,+266,3.88,+288
+2026_02_22,nba_moneyline,nba_2026_02_22_Orlando_Magic_Los_Angeles_Clippers,Orlando Magic,Los Angeles Clippers,0.395,0.605,107.2,110.6,217.8,2.53,+153,2.68,+168,1.65,-154,1.75,-133

@@ -1,0 +1,5 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,take_bet,take_bet_prob,take_bet_edge_decimal,take_bet_edge_pct,take_team,take_odds,value
+2026_03_01,NHL,Chicago Blackhawks,Utah Mammoth,total,under,6.5,2026_03_01_Utah Mammoth_Chicago Blackhawks,under_total,0.6618712004160506,0.191368160748891,0.106315644860495,under,-125,6.5
+2026_03_01,NHL,Winnipeg Jets,San Jose Sharks,total,under,6.5,2026_03_01_San Jose Sharks_Winnipeg Jets,under_total,0.6162436501838485,0.1297800253370555,0.070789104729303,under,-120,6.5
+2026_03_01,NHL,Winnipeg Jets,San Jose Sharks,moneyline,away,,2026_03_01_San Jose Sharks_Winnipeg Jets,away_moneyline,0.571,0.0954723036137852,0.0520758019711555,away,-120,0.571
+2026_03_01,NHL,Vegas Golden Knights,Pittsburgh Penguins,total,under,6.5,2026_03_01_Pittsburgh Penguins_Vegas Golden Knights,under_total,0.5842583677057348,0.0711403407938471,0.0388038222511892,under,-120,6.5

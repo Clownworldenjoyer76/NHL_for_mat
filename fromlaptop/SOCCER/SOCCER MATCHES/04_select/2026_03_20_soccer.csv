@@ -1,0 +1,11 @@
+league,market,game_date,match_time,home_team,away_team,game_id,market_type,take_bet,odds_american,odds_decimal,edge_pct,kelly_stake_pct,expected_goals
+Soccer,seriea,2026_03_20,13:30,Cagliari,Napoli,2026_03_20_cagliari_napoli,result,away,-165.0,1.606060606060606,0.0171,0.0,2.8
+Soccer,seriea,2026_03_20,13:30,Cagliari,Napoli,2026_03_20_cagliari_napoli,total,over25,119.0,2.19,0.2045,3.32,2.8
+Soccer,bundesliga,2026_03_20,15:30,RB Leipzig,Hoffenheim,2026_03_20_rb_leipzig_hoffenheim,result,home,-110.0,1.9090909090909087,0.009,0.0,3.31
+Soccer,seriea,2026_03_20,15:45,Genoa,Udinese,2026_03_20_genoa_udinese,result,home,115.0,2.15,0.048,0.02,2.63
+Soccer,seriea,2026_03_20,15:45,Genoa,Udinese,2026_03_20_genoa_udinese,total,over25,119.0,2.19,0.1138,1.49,2.63
+Soccer,ligue1,2026_03_20,15:45,Lens,Angers,2026_03_20_lens_angers,result,away,850.0,9.5,1.1754,3.25,2.8
+Soccer,ligue1,2026_03_20,15:45,Lens,Angers,2026_03_20_lens_angers,total,over25,-146.0,1.6849315068493151,0.1132,2.57,2.8
+Soccer,epl,2026_03_20,16:00,Bournemouth,Manchester United,2026_03_20_bournemouth_manchester_united,result,draw,280.0,3.8,0.0903,0.44,2.34
+Soccer,laliga,2026_03_20,16:00,Villarreal,Real Sociedad,2026_03_20_villarreal_real_sociedad,result,home,-105.0,1.9523809523809523,0.0311,0.0,2.66
+Soccer,laliga,2026_03_20,16:00,Villarreal,Real Sociedad,2026_03_20_villarreal_real_sociedad,total,under25,-107.0,1.9345794392523368,0.0142,0.0,2.66

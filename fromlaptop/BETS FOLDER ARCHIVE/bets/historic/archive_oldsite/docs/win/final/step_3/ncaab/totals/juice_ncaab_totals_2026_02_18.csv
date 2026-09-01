@@ -1,0 +1,42 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds
+2026_02_18,6:00 PM,VMI Keydets,Wofford Terriers,ncaab_totals,ncaab_2026_02_18_VMI_Keydets_Wofford_Terriers,154.5,2.4,1.8547008547008548,1.869565217391304,1.9523809523809523
+2026_02_18,6:30 PM,East Tennessee State Buccaneers,Furman Paladins,ncaab_totals,ncaab_2026_02_18_East_Tennessee_State_Buccaneers_Furman_Paladins,140.5,1.5847953216374269,3.23,1.9090909090909087,1.9090909090909087
+2026_02_18,6:30 PM,Butler Bulldogs,Georgetown Hoyas,ncaab_totals,ncaab_2026_02_18_Butler_Bulldogs_Georgetown_Hoyas,145.5,1.403225806451613,3.99,1.8928571428571428,1.925925925925926
+2026_02_18,7:00 PM,UAB Blazers,Temple Owls,ncaab_totals,ncaab_2026_02_18_UAB_Blazers_Temple_Owls,146.5,1.5649717514124295,3.24,1.9523809523809523,1.869565217391304
+2026_02_18,7:00 PM,Clemson Tigers,Wake Forest Demon Deacons,ncaab_totals,ncaab_2026_02_18_Clemson_Tigers_Wake_Forest_Demon_Deacons,138.5,1.352112676056338,4.8,1.8928571428571428,1.925925925925926
+2026_02_18,7:00 PM,Richmond Spiders,Davidson Wildcats,ncaab_totals,ncaab_2026_02_18_Richmond_Spiders_Davidson_Wildcats,142.5,1.8064516129032255,2.49,1.9523809523809523,1.869565217391304
+2026_02_18,7:00 PM,Northern Iowa Panthers,Indiana State Sycamores,ncaab_totals,ncaab_2026_02_18_Northern_Iowa_Panthers_Indiana_State_Sycamores,136.5,1.7092198581560285,2.73,1.8928571428571428,1.925925925925926
+2026_02_18,7:00 PM,Creighton Bluejays,Connecticut Huskies,ncaab_totals,ncaab_2026_02_18_Creighton_Bluejays_Connecticut_Huskies,142.5,1.5952380952380951,3.06,1.869565217391304,1.9523809523809523
+2026_02_18,7:00 PM,James Madison Dukes,Coastal Carolina Chanticleers,ncaab_totals,ncaab_2026_02_18_James_Madison_Dukes_Coastal_Carolina_Chanticleers,141.5,1.704225352112676,2.7,1.9523809523809523,1.869565217391304
+2026_02_18,7:00 PM,Western Kentucky Hilltoppers,Delaware Fightin Blue Hens,ncaab_totals,ncaab_2026_02_18_Western_Kentucky_Hilltoppers_Delaware_Fightin_Blue_Hens,141.5,1.8,2.49,1.8928571428571428,1.925925925925926
+2026_02_18,7:00 PM,Purdue Fort Wayne Mastodons,Northern Kentucky Norse,ncaab_totals,ncaab_2026_02_18_Purdue_Fort_Wayne_Mastodons_Northern_Kentucky_Norse,152.5,1.5917159763313609,3.07,1.925925925925926,1.8928571428571428
+2026_02_18,7:00 PM,Ole Miss Rebels,Texas AM Aggies,ncaab_totals,ncaab_2026_02_18_Ole_Miss_Rebels_Texas_AM_Aggies,154.5,1.7692307692307692,2.92,1.9090909090909087,1.9090909090909087
+2026_02_18,7:00 PM,Army Black Knights,Loyola Maryland Greyhounds,ncaab_totals,ncaab_2026_02_18_Army_Black_Knights_Loyola_Maryland_Greyhounds,148.5,2.46,1.8333333333333333,1.8928571428571428,1.925925925925926
+2026_02_18,7:00 PM,Queens Royals,North Alabama Lions,ncaab_totals,ncaab_2026_02_18_Queens_Royals_North_Alabama_Lions,155.5,1.6578947368421053,2.79,1.9090909090909087,1.9090909090909087
+2026_02_18,7:00 PM,Jacksonville Dolphins,Florida Gulf Coast Eagles,ncaab_totals,ncaab_2026_02_18_Jacksonville_Dolphins_Florida_Gulf_Coast_Eagles,136.5,1.251889168765743,6.6,1.9090909090909087,1.9090909090909087
+2026_02_18,7:00 PM,West Georgia Wolves,Eastern Kentucky Colonels,ncaab_totals,ncaab_2026_02_18_West_Georgia_Wolves_Eastern_Kentucky_Colonels,154.5,1.8771929824561404,2.59,1.9090909090909087,1.9090909090909087
+2026_02_18,7:00 PM,Dayton Flyers,George Mason Patriots,ncaab_totals,ncaab_2026_02_18_Dayton_Flyers_George_Mason_Patriots,137.5,1.7142857142857144,2.79,1.9523809523809523,1.869565217391304
+2026_02_18,7:00 PM,La Salle Explorers,Duquesne Dukes,ncaab_totals,ncaab_2026_02_18_La_Salle_Explorers_Duquesne_Dukes,145.5,1.8333333333333333,2.44,1.9090909090909087,1.9090909090909087
+2026_02_18,7:00 PM,Loyola Chicago Ramblers,Fordham Rams,ncaab_totals,ncaab_2026_02_18_Loyola_Chicago_Ramblers_Fordham_Rams,136.5,1.6622516556291391,2.85,1.925925925925926,1.8928571428571428
+2026_02_18,7:00 PM,Lehigh Mountain Hawks,Navy Midshipmen,ncaab_totals,ncaab_2026_02_18_Lehigh_Mountain_Hawks_Navy_Midshipmen,139.5,2.41,1.862068965517241,1.869565217391304,1.9523809523809523
+2026_02_18,7:00 PM,Oklahoma Sooners,Tennessee Volunteers,ncaab_totals,ncaab_2026_02_18_Oklahoma_Sooners_Tennessee_Volunteers,149.5,1.3333333333333333,4.85,1.9090909090909087,1.9090909090909087
+2026_02_18,7:30 PM,Troy Trojans,Louisiana Monroe Warhawks,ncaab_totals,ncaab_2026_02_18_Troy_Trojans_Louisiana_Monroe_Warhawks,153.5,2.41,1.862068965517241,1.9523809523809523,1.869565217391304
+2026_02_18,8:00 PM,North Carolina Central Eagles,South Carolina State Bulldogs,ncaab_totals,ncaab_2026_02_18_North_Carolina_Central_Eagles_South_Carolina_State_Bulldogs,140.5,1.7751937984496124,2.62,1.9090909090909087,1.9090909090909087
+2026_02_18,8:00 PM,Illinois Chicago,Evansville Purple Aces,ncaab_totals,ncaab_2026_02_18_Illinois_Chicago_Evansville_Purple_Aces,138.5,1.6944444444444444,2.79,1.9523809523809523,1.869565217391304
+2026_02_18,8:00 PM,Oral Roberts Golden Eagles,Omaha Mavericks,ncaab_totals,ncaab_2026_02_18_Oral_Roberts_Golden_Eagles_Omaha_Mavericks,150.5,1.5050505050505052,3.26,1.8928571428571428,1.925925925925926
+2026_02_18,8:00 PM,North Dakota State Bison,South Dakota State Jackrabbits,ncaab_totals,ncaab_2026_02_18_North_Dakota_State_Bison_South_Dakota_State_Jackrabbits,146.5,1.4524886877828054,3.87,1.9523809523809523,1.869565217391304
+2026_02_18,8:00 PM,Maryland Terrapins,Northwestern Wildcats,ncaab_totals,ncaab_2026_02_18_Maryland_Terrapins_Northwestern_Wildcats,142.5,1.5181347150259068,3.38,1.925925925925926,1.8928571428571428
+2026_02_18,8:00 PM,Florida Atlantic Owls,UTSA Roadrunners,ncaab_totals,ncaab_2026_02_18_Florida_Atlantic_Owls_UTSA_Roadrunners,157.5,2.63,1.7194244604316546,1.8928571428571428,1.925925925925926
+2026_02_18,8:00 PM,DePaul Blue Demons,Seton Hall Pirates,ncaab_totals,ncaab_2026_02_18_DePaul_Blue_Demons_Seton_Hall_Pirates,130.5,1.378787878787879,4.3100000000000005,1.925925925925926,1.8928571428571428
+2026_02_18,8:30 PM,Utah Utes,West Virginia Mountaineers,ncaab_totals,ncaab_2026_02_18_Utah_Utes_West_Virginia_Mountaineers,131.5,1.2004008016032064,9.21,1.869565217391304,1.9523809523809523
+2026_02_18,9:00 PM,Virginia Cavaliers,Georgia Tech Yellow Jackets,ncaab_totals,ncaab_2026_02_18_Virginia_Cavaliers_Georgia_Tech_Yellow_Jackets,147.5,1.5555555555555556,3.15,1.9523809523809523,1.869565217391304
+2026_02_18,9:00 PM,Vanderbilt Commodores,Missouri Tigers,ncaab_totals,ncaab_2026_02_18_Vanderbilt_Commodores_Missouri_Tigers,153.5,1.2044989775051125,7.96,1.925925925925926,1.8928571428571428
+2026_02_18,9:00 PM,Auburn Tigers,Mississippi State Bulldogs,ncaab_totals,ncaab_2026_02_18_Auburn_Tigers_Mississippi_State_Bulldogs,154.5,1.65359477124183,3.41,1.869565217391304,1.9523809523809523
+2026_02_18,9:00 PM,Murray State Racers,Illinois State Redbirds,ncaab_totals,ncaab_2026_02_18_Murray_State_Racers_Illinois_State_Redbirds,156.5,2.46,1.819672131147541,1.9090909090909087,1.9090909090909087
+2026_02_18,9:00 PM,Saint Marys College Gaels,Seattle Redhawks,ncaab_totals,ncaab_2026_02_18_Saint_Marys_College_Gaels_Seattle_Redhawks,133.5,1.7352941176470589,2.64,1.8928571428571428,1.925925925925926
+2026_02_18,9:00 PM,Brigham Young Cougars,Arizona Wildcats,ncaab_totals,ncaab_2026_02_18_Brigham_Young_Cougars_Arizona_Wildcats,164.5,1.6622516556291391,2.73,1.9090909090909087,1.9090909090909087
+2026_02_18,9:00 PM,Kansas Jayhawks,Oklahoma State Cowboys,ncaab_totals,ncaab_2026_02_18_Kansas_Jayhawks_Oklahoma_State_Cowboys,155.5,1.4464285714285714,3.61,1.8928571428571428,1.925925925925926
+2026_02_18,10:00 PM,Illinois Fighting Illini,USC Trojans,ncaab_totals,ncaab_2026_02_18_Illinois_Fighting_Illini_USC_Trojans,151.5,1.6711409395973154,3.1,1.9523809523809523,1.869565217391304
+2026_02_18,10:30 PM,Boise State Broncos,Utah State Aggies,ncaab_totals,ncaab_2026_02_18_Boise_State_Broncos_Utah_State_Aggies,152.5,2.38,1.8849557522123892,1.869565217391304,1.9523809523809523
+2026_02_18,11:00 PM,Gonzaga Bulldogs,San Francisco Dons,ncaab_totals,ncaab_2026_02_18_Gonzaga_Bulldogs_San_Francisco_Dons,148.5,1.6134969325153374,3.02,1.925925925925926,1.8928571428571428
+2026_02_18,11:00 PM,Colorado State Rams,UNLV Rebels,ncaab_totals,ncaab_2026_02_18_Colorado_State_Rams_UNLV_Rebels,147.5,1.847457627118644,2.42,1.925925925925926,1.8928571428571428

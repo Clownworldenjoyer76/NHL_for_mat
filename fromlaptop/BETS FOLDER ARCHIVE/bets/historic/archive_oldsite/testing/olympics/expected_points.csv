@@ -1,0 +1,32 @@
+rank,country,tier,expected_points
+1,Germany,1,1596.5
+2,Norway,1,1399.5
+3,USA,1,1341.5
+4,Canada,1,1161.5
+5,Austria,2,174
+6,Japan,2,166
+7,Sweden,2,164
+8,Netherlands,2,162
+9,Switzerland,2,160
+10,China,2,142
+11,France,2,140
+12,Korea,2,102
+13,Italy,3,169.5
+14,Finland,3,85.5
+15,Czechia,3,46.5
+16,Slovenia,4,94
+17,Great Britain,4,66
+18,Belarus,4,58
+19,Australia,5,92.5
+20,New Zealand,5,77.5
+21,Hungary,5,77.5
+22,Slovakia,5,72.5
+23,Latvia,5,67.5
+24,Poland,5,67.5
+25,Ukraine,5,67.5
+26,Belgium,6,87
+27,Kazakhstan,6,81
+28,Spain,6,81
+29,Estonia,6,81
+30,Croatia,6,75
+31,Liechtenstein,6,75

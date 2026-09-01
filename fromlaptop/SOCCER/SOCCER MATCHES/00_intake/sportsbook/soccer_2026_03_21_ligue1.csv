@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,ligue1,2026_03_21,Sat Mar 21st 2:00 PM,Auxerre,Stade Brest,+135,+225,+215
+Soccer,ligue1,2026_03_21,Sat Mar 21st 4:00 PM,Nice,Paris Saint Germain,+650,+450,-275
+Soccer,ligue1,2026_03_21,Sat Mar 21st 12:00 PM,Toulouse,Lorient,+100,+210,+340

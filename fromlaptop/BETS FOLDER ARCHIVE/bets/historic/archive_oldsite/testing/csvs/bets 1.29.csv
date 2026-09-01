@@ -1,0 +1,13 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-29,TOR Maple Leafs @ SEA Kraken - Under 6.5 - Total,0.632,-128,-108,20,0.1,Lost,0.0,-0.1,nhl_ou
+2026-01-29,Montana @ Portland State - Over 143.5 - Total,0.6853,-141,-110,31,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,Eastern Washington @ Northern Arizona - Over 145.5 - Total Alternate - NCAAB,0.6159,115,124,9,0.1,Won,0.22,0.12,ncaab_ou
+2026-01-29,Oral Roberts @ South Dakota - Over 153.5 - Total Alternate - NCAAB,0.9391,-374,-130,244,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,WAS Capitals @ DET Red Wings - Under 6.5 - Total,0.6095,-117,-110,7,0.1,Lost,0.0,-0.1,nhl_ou
+2026-01-29,Lipscomb @ Jacksonville - Over 143.5 - Total Alternate - NCAAB,0.6825,-140,100,240,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,MIL Bucks @ WAS Wizards - Over 222.5 - Total,0.574,-109,-108,1,0.1,Lost,0.0,-0.1,nba_ou
+2026-01-29,BKN Nets @ DEN Nuggets - Over 209.5 - Total,0.6105,-125,-110,15,0.1,Won,0.19,0.09,nba_ou
+2026-01-29,NY Rangers,0.6363,-284,-218,66,0.1,Won,0.14,0.04,nhl_spread
+2026-01-29,LA Kings,0.6301,-276,-238,38,0.1,Lost,0.0,-0.1,nhl_spread
+2026-01-29,WAS Capitals,0.6395,-306,-225,81,0.1,Won,0.14,0.04,nhl_spread
+2026-01-29,VAN Canucks,0.6009,-210,-205,5,0.1,Won,0.14,0.04,nhl_spread

@@ -1,0 +1,578 @@
+juice_bet_id,bet_result,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,long_description_of_leg,event_start_date
+130772637,Lost,-115,0.0341,Total,Over,145.5,Basketball,CBB,-115,Akron @ Ball State - Over 145.5 - Total,2026-02-20 23:30:00+00
+130464652,Won,-112,0.0369,Total,Over,150.5,Basketball,CBB,-112,Oral Roberts @ Omaha - Over 150.5 - Total,2026-02-19 01:00:00+00
+87008944,Lost,105,,Moneyline,KC Royals,0,Baseball,MLB,105,MONEYLINE %% KC Royals vs BAL Orioles %% MONEYLINE %% KC Royals %% MLB %% 105 %% 7703,2025-05-02 23:05:00+00
+87231601,Lost,135,,Moneyline,STL Blues,0,Hockey,NHL,135,MONEYLINE %% STL Blues vs WPG Jets %% MONEYLINE %% STL Blues %% NHL %% 135 %% 7703,2025-05-04 23:00:00+00
+130602619,Lost,-102,0.0072,Spread,PHI 76ers,-1.5,Basketball,NBA,-102,ATL Hawks @ PHI 76ers - PHI 76ers -1.5 - Spread,2026-02-20 00:00:00+00
+79052686,Lost,-480,,Moneyline,Auburn,0,Basketball,CBB,-480,MONEYLINE %% Florida Gators vs Auburn %% MONEYLINE %% Auburn %% College Basketball %% -480 %% 7701,2025-02-08 21:00:00+00
+79052687,Lost,-310,,Moneyline3Way,Duke,,Basketball,CBB,-310,3-WAY MONEYLINE %% Duke vs Clemson %% 3-WAY MONEYLINE %% Duke %% College Basketball %% -310 %% 7703,2025-02-08 23:30:00+00
+79052688,Won,-115,,Spread,Boston Celtics,-2.5,Basketball,NBA,-115,POINT SPREAD %% Boston Celtics vs New York Knicks %% POINT SPREAD %% Boston Celtics -2.5 %% NBA %% -115 %% 7703,2025-02-09 01:30:00+00
+79052707,Won,-420,,Moneyline,Boston Celtics,0,Basketball,NBA,-420,MONEYLINE %% San Antonio Spurs vs Boston Celtics %% MONEYLINE %% Boston Celtics %% NBA %% -420 %% 7701,2025-02-13 00:00:00+00
+79052719,Won,-120,,Spread,Michigan State,4.5,Basketball,CBB,-120,POINT SPREAD %% Michigan State vs Maryland %% POINT SPREAD %% Michigan State +4.5 %% College Basketball %% -120 %% 7703,2025-02-26 23:30:00+00
+79052728,Won,105,,Moneyline,Minnesota Timberwolves,0,Basketball,NBA,105,MONEYLINE %% Minnesota Timberwolves vs Phoenix Suns %% MONEYLINE %% Minnesota Timberwolves %% NBA %% 105 %% 7703,2025-03-03 02:30:00+00
+79052729,Won,100,,Moneyline,L.A. Lakers,0,Basketball,NBA,100,MONEYLINE %% Los Angeles Clippers vs L.A. Lakers %% MONEYLINE %% L.A. Lakers %% NBA %% 100 %% 7701,2025-03-03 02:30:00+00
+87318256,Lost,110,,Moneyline,CIN Reds,0,Baseball,MLB,110,MONEYLINE %% CIN Reds vs ATL Braves %% MONEYLINE %% CIN Reds %% MLB %% 110 %% 7703,2025-05-05 23:15:00+00
+87318257,Lost,195,,Spread,FLA Panthers,-1.5,Hockey,NHL,195,PUCK LINE %% FLA Panthers vs TOR Maple Leafs %% PUCK LINE %% FLA Panthers -1.5 %% NHL %% 195 %% 7703,2025-05-06 00:00:00+00
+131906058,Won,-110,0.0216,Total,Under,162.5,Basketball,CBB,-110,Sacramento State at Montana | Totals | Under 162.5,2026-02-27 02:00:00+00
+132871797,Lost,-278,0.0243,Spread,NY Islanders,1.5,Hockey,NHL,-278,NY Islanders @ ANA Ducks - NY Islanders +1.5 - Puck Line,2026-03-05 03:00:00+00
+79212836,Lost,-110,,Spread,Oklahoma City Thunder,-10.5,Basketball,NBA,-110,POINT SPREAD %% Houston Rockets vs Oklahoma City Thunder %% POINT SPREAD %% Oklahoma City Thunder -10.5 %% NBA %% -110 %% 7701,2025-03-04 01:00:00+00
+130602617,Lost,-112,-0.0161,Spread,CHI Bulls,5.5,Basketball,NBA,-112,TOR Raptors @ CHI Bulls - CHI Bulls +5.5 - Spread,2026-02-20 01:00:00+00
+129921271,Won,-115,0,Moneyline,Central Connecticut State,0,Basketball,CBB,-115,Central Connecticut State @ Fairleigh Dickinson - Central Connecticut State - Moneyline,2026-02-14 19:00:00+00
+129921267,Won,-245,0.0041,Moneyline,North Dakota State,0,Basketball,CBB,-245,North Dakota State @ North Dakota - North Dakota State - Moneyline,2026-02-14 19:00:00+00
+132041635,Won,-110,-0.0238,Total,Under,149.5,Basketball,CBB,-110,Mount St. Marys at Sacred Heart | Totals | Under 149.5,2026-02-28 00:00:00+00
+132041637,Won,-115,0.0322,Spread,UL Monroe,19.5,Basketball,CBB,-115,UL Monroe at Troy | Spread | UL Monroe +19.5,2026-02-28 00:00:00+00
+89470558,Won,-135,,Moneyline,DAL Stars,0,Hockey,NHL,-135,MONEYLINE %% EDM Oilers vs DAL Stars %% MONEYLINE %% DAL Stars %% NHL %% -135 %% 7701,2025-05-22 00:00:00+00
+132041634,Lost,-105,0.053,Total,Under,169.5,Basketball,CBB,-105,Georgia Southern at Marshall | Totals | Under 169.5,2026-02-28 02:00:00+00
+79407372,Won,-270,,Spread,New York Rangers,1.5,Hockey,NHL,-270,PUCK LINE %% Washington Capitals vs New York Rangers %% PUCK LINE %% New York Rangers +1.5 %% NHL %% -270 %% 7701,2025-03-06 00:30:00+00
+79407376,Lost,-225,,Spread,Toronto Maple Leafs,1.5,Hockey,NHL,-225,PUCK LINE %% Toronto Maple Leafs vs Vegas Golden Knights %% PUCK LINE %% Toronto Maple Leafs +1.5 %% NHL %% -225 %% 7703,2025-03-06 03:00:00+00
+132871801,Won,-105,-0.0253,Total,Under,6.5,Hockey,NHL,-105,NY Islanders @ ANA Ducks - Under 6.5 - Total,2026-03-05 03:00:00+00
+86422599,Won,110,,Moneyline,DAL Stars,0,Hockey,NHL,110,MONEYLINE %% COL Avalanche vs DAL Stars %% MONEYLINE %% DAL Stars %% NHL %% 110 %% 7701,2025-04-29 01:30:00+00
+132871799,Won,-265,-0.0169,Spread,TOR Maple Leafs,1.5,Hockey,NHL,-265,TOR Maple Leafs @ NJ Devils - TOR Maple Leafs +1.5 - Puck Line,2026-03-05 00:00:00+00
+132041636,Won,-115,0.0147,Total,Under,155.5,Basketball,CBB,-115,Dartmouth at Pennsylvania | Totals | Under 155.5,2026-02-28 00:00:00+00
+79212834,Won,-120,,Spread,Duke,-19.5,Basketball,CBB,-120,POINT SPREAD %% Wake Forest vs Duke %% POINT SPREAD %% Duke -19.5 %% College Basketball %% -120 %% 7701,2025-03-04 00:00:00+00
+79212835,Won,195,,Spread,New York Rangers,-1.5,Hockey,NHL,195,PUCK LINE %% New York Islanders vs New York Rangers %% PUCK LINE %% New York Rangers -1.5 %% NHL %% 195 %% 7701,2025-03-04 00:00:00+00
+132871800,Won,102,-0.0419,Total,Under,5.5,Hockey,NHL,102,STL Blues @ SEA Kraken - Under 5.5 - Total,2026-03-05 03:00:00+00
+82235950,Won,120,,Moneyline3Way,ANA Ducks,,Hockey,NHL,120,3-WAY MONEYLINE %% BOS Bruins vs ANA Ducks %% 3-WAY MONEYLINE %% ANA Ducks %% NHL %% 120 %% 7701,2025-03-27 02:00:00+00
+82235952,Lost,120,,Moneyline,EDM Oilers,0,Hockey,NHL,120,MONEYLINE %% DAL Stars vs EDM Oilers %% MONEYLINE %% EDM Oilers %% NHL %% 120 %% 7701,2025-03-27 02:00:00+00
+79407374,Won,-110,,Spread,Florida Gators,3,Basketball,CBB,-110,POINT SPREAD %% Florida Gators vs Alabama Crimson Tide %% POINT SPREAD %% Florida Gators +3 %% College Basketball %% -110 %% 7703,2025-03-06 00:00:00+00
+79407375,Won,-450,,Moneyline,Oklahoma City Thunder,0,Basketball,NBA,-450,MONEYLINE %% Oklahoma City Thunder vs Memphis Grizzlies %% MONEYLINE %% Oklahoma City Thunder %% NBA %% -450 %% 7703,2025-03-06 02:30:00+00
+131335208,Won,-115,0.0502,Total,Under,145.5,Basketball,CBB,-115,Nicholls State at Lamar | Totals | Under 145.5,2026-02-24 00:00:00+00
+126922860,Lost,105,,Spread,Southern University,-22.5,Basketball,CBB,105,Mississippi Valley @ Southern University - Southern University -22.5 - Spread Alternate - NCAAB,2026-01-28 19:00:00+00
+98590061,Lost,1064,,Moneyline,Athletics,0,Baseball,MLB,1064,LA Angels @ Athletics - Athletics - Moneyline Live Betting,2025-05-22 19:35:00+00
+98590157,Lost,665,,Total,Over,1.5,Hockey,NHL,665,FLA Panthers @ TOR Maple Leafs - Over 1.5 - Total Goals - 1st Period (00:00-09:59),2025-05-18 23:30:00+00
+80385778,Won,-245,,Spread,Golden State Warriors,-2.5,Basketball,NBA,-245,POINT SPREAD %% Sacramento Kings vs Golden State Warriors %% POINT SPREAD %% Golden State Warriors -2.5 %% NBA %% -245 %% 7701,2025-03-14 02:00:00+00
+126953843,Lost,100,,Spread,Temple,-5.5,Basketball,CBB,100,Charlotte @ Temple - Temple -5.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953845,Lost,126,-0.0788,Spread,American,-7.5,Basketball,CBB,126,American @ Loyola Maryland - American -7.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953848,Lost,-105,0,Total,Over,135.5,Basketball,CBB,-105,Davidson @ George Mason - Over 135.5 - Total,2026-01-29 00:00:00+00
+130092528,Lost,-112,0.0192,Total,Over,139.5,Basketball,CBB,-112,Davidson @ Dayton - Over 139.5 - Total,2026-02-15 21:00:00+00
+81198122,Lost,-105,,Spread,Texas,2.5,Basketball,CBB,-105,POINT SPREAD %% Xavier Musketeers vs Texas %% POINT SPREAD %% Texas +2.5 %% College Basketball %% -105 %% 7701,2025-03-20 01:10:00+00
+132079095,Lost,-105,0.0116,Spread,Milwaukee Bucks,8.5,Basketball,NBA,-105,New York Knicks at Milwaukee Bucks | Spread | Milwaukee Bucks +8.5,2026-02-28 01:00:00+00
+132079099,Lost,-220,0.0048,Spread,Minnesota Wild,1.5,Hockey,NHL,-220,Minnesota Wild at Utah Mammoth | Spread | Minnesota Wild +1.5,2026-02-28 02:00:00+00
+132079094,Won,-105,0.0291,Total,Over,218.5,Basketball,NBA,-105,New York Knicks at Milwaukee Bucks | Totals | Over 218.5,2026-02-28 01:00:00+00
+132080402,Won,-115,0.0322,Spread,UL Monroe,19.5,Basketball,CBB,-115,UL Monroe at Troy | Spread | UL Monroe +19.5,2026-02-28 00:00:00+00
+132079100,Won,-235,-0.0045,Spread,Winnipeg Jets,1.5,Hockey,NHL,-235,Winnipeg Jets at Anaheim Ducks | Spread | Winnipeg Jets +1.5,2026-02-28 03:00:00+00
+132079098,Won,-275,-0.0073,Spread,Vegas Golden Knights,1.5,Hockey,NHL,-275,Vegas Golden Knights at Washington Capitals | Spread | Vegas Golden Knights +1.5,2026-02-28 00:00:00+00
+132079097,Won,-250,0,Spread,Buffalo Sabres,1.5,Hockey,NHL,-250,Buffalo Sabres at Florida Panthers | Spread | Buffalo Sabres +1.5,2026-02-28 00:00:00+00
+132079096,Won,145,-0.0235,Moneyline,Memphis Grizzlies,0,Basketball,NBA,145,Memphis Grizzlies at Dallas Mavericks | Moneyline | Grizzlies,2026-02-28 01:30:00+00
+130186849,Lost,-115,-0.0349,Total,Under,137.5,Basketball,CBB,-115,Wagner @ LIU - Under 137.5 - Total,2026-02-17 00:00:00+00
+132951316,Won,-305,0.0258,Moneyline,George Washington,0,Basketball,CBB,-305,Saint Bonaventure @ George Washington - George Washington - Moneyline,2026-03-05 00:00:00+00
+132079093,Lost,-110,0.0452,Total,Over,238.5,Basketball,NBA,-110,Memphis Grizzlies at Dallas Mavericks | Totals | Over 238.5,2026-02-28 01:30:00+00
+132871798,Won,-238,-0.0087,Spread,VGK Golden Knights,1.5,Hockey,NHL,-238,VGK Golden Knights @ DET Red Wings - VGK Golden Knights +1.5 - Puck Line,2026-03-05 00:00:00+00
+130092535,Won,-112,-0.0045,Total,Over,149.5,Basketball,CBB,-112,Eastern Kentucky @ North Alabama - Over 149.5 - Total,2026-02-15 21:00:00+00
+98590292,Lost,140,,Moneyline,CHI Cubs,0,Baseball,MLB,140,CHI Cubs @ NY Mets - CHI Cubs - Moneyline Live Betting,2025-05-11 16:05:00+00
+130678105,Lost,-108,0.0441,Total,Over,161.5,Basketball,CBB,-108,South Dakota @ Denver - Over 161.5 - Total,2026-02-20 02:00:00+00
+130678106,Lost,-110,0.0945,Total,Under,162.5,Basketball,CBB,-110,Lindenwood @ Tennessee State - Under 162.5 - Total,2026-02-20 01:30:00+00
+130602616,Lost,-115,0.0106,Spread,BKN Nets,16.5,Basketball,NBA,-115,BKN Nets @ CLE Cavaliers - BKN Nets +16.5 - Spread,2026-02-20 00:00:00+00
+130678107,Won,-108,0.0479,Total,Over,149.5,Basketball,CBB,-108,UMKC @ North Dakota - Over 149.5 - Total,2026-02-20 01:00:00+00
+130678111,Won,-112,0.0172,Spread,Gardner-Webb,19.5,Basketball,CBB,-112,Gardner-Webb @ Radford - Gardner-Webb +19.5 - Spread,2026-02-20 00:00:00+00
+130678109,Won,-112,-0.0161,Total,Under,141.5,Basketball,CBB,-112,Vermont @ UMBC - Under 141.5 - Total,2026-02-19 23:00:00+00
+132951312,Won,-185,-0.008,Moneyline,Robert Morris,0,Basketball,CBB,-185,Youngstown State @ Robert Morris - Robert Morris - Moneyline,2026-03-05 00:00:00+00
+132951313,Lost,-198,-0.0192,Moneyline,Providence,0,Basketball,CBB,-198,Marquette @ Providence - Providence - Moneyline,2026-03-05 00:00:00+00
+132951315,Lost,-185,-0.0063,Moneyline,Central Connecticut State,0,Basketball,CBB,-185,Wagner @ Central Connecticut State - Central Connecticut State - Moneyline,2026-03-05 00:00:00+00
+132951317,Won,-192,-0.0267,Moneyline,Mercyhurst,0,Basketball,CBB,-192,Fairleigh Dickinson @ Mercyhurst - Mercyhurst - Moneyline,2026-03-05 00:00:00+00
+132951314,Lost,-225,0,Moneyline,Le Moyne,0,Basketball,CBB,-225,Stonehill @ Le Moyne - Le Moyne - Moneyline,2026-03-05 00:00:00+00
+127158147,Lost,-110,,Total,Under,6.5,Hockey,NHL,-110,WAS Capitals @ DET Red Wings - Under 6.5 - Total,2026-01-30 00:30:00+00
+130186842,Won,-112,-0.0091,Total,Over,131.5,Basketball,CBB,-112,Howard @ Delaware State - Over 131.5 - Total,2026-02-17 00:00:00+00
+130186846,Lost,-112,0.0717,Total,Under,150.5,Basketball,CBB,-112,Morgan State @ NC Central - Under 150.5 - Total,2026-02-17 00:00:00+00
+131335210,Lost,-165,-0.0359,Moneyline,Memphis Grizzlies,0,Basketball,NBA,-165,Sacramento Kings at Memphis Grizzlies | Moneyline | Grizzlies,2026-02-24 01:00:00+00
+131335209,Lost,-115,-0.0088,Spread,Utah Jazz,13.5,Basketball,NBA,-115,Utah Jazz at Houston Rockets | Spread | Utah Jazz +13.5,2026-02-24 02:30:00+00
+130186851,Lost,-112,0.0568,Spread,Delaware State,12.5,Basketball,CBB,-112,Howard @ Delaware State - Delaware State +12.5 - Spread,2026-02-17 00:00:00+00
+130186850,Won,-115,0.0303,Total,Under,137.5,Basketball,CBB,-115,Norfolk State @ MD Eastern Shore - Under 137.5 - Total,2026-02-17 00:00:00+00
+130186852,Won,-112,0.0172,Spread,Norfolk State,-1.5,Basketball,CBB,-112,Norfolk State @ MD Eastern Shore - Norfolk State -1.5 - Spread,2026-02-17 00:00:00+00
+129846079,Won,117,0.027,Spread,UNLV,9.5,Basketball,CBB,117,UNLV @ Boise State - UNLV +9.5 - Spread Alternate - NCAAB,2026-02-14 03:00:00+00
+130602618,Won,-105,-0.0244,Total,Under,232.5,Basketball,NBA,-105,TOR Raptors @ CHI Bulls - Under 232.5 - Total,2026-02-20 01:00:00+00
+130602615,Won,-105,0.0623,Total,Over,224.5,Basketball,NBA,-105,ORL Magic @ SAC Kings - Over 224.5 - Total,2026-02-20 03:00:00+00
+130678113,Won,170,0.0361,Moneyline,Marshall,0,Basketball,CBB,170,Marshall @ Appalachian State - Marshall - Moneyline,2026-02-19 23:30:00+00
+130602620,Won,-110,-0.036,Total,Over,213.5,Basketball,NBA,-110,BOS Celtics @ GS Warriors - Over 213.5 - Total,2026-02-20 03:00:00+00
+130678108,Won,-105,0.0333,Total,Under,168.5,Basketball,CBB,-105,William & Mary @ Campbell - Under 168.5 - Total,2026-02-20 00:00:00+00
+130678110,Won,-105,0.0473,Total,Under,144.5,Basketball,CBB,-105,Drexel @ Northeastern - Under 144.5 - Total,2026-02-20 00:00:00+00
+130678112,Lost,-102,0.0299,Spread,Vermont,-1.5,Basketball,CBB,-102,Vermont @ UMBC - Vermont -1.5 - Spread,2026-02-19 23:00:00+00
+130772639,Lost,-105,-0.0024,Total,Under,141.5,Basketball,CBB,-105,Marist @ Manhattan - Under 141.5 - Total,2026-02-21 00:00:00+00
+130772638,Won,-105,-0.022,Total,Under,156.5,Basketball,CBB,-105,Sacred Heart @ Fairfield - Under 156.5 - Total,2026-02-21 00:00:00+00
+132871802,Won,-218,-0.01,Spread,STL Blues,1.5,Hockey,NHL,-218,STL Blues @ SEA Kraken - STL Blues +1.5 - Puck Line,2026-03-05 03:00:00+00
+130772645,Won,-110,0.0357,Total,Over,222.5,Basketball,NBA,-110,MIL Bucks @ NO Pelicans - Over 222.5 - Total,2026-02-21 01:00:00+00
+79052682,Won,-110,,Spread,Detroit Pistons,4,Basketball,NBA,-110,POINT SPREAD %% Philadelphia 76ers vs Detroit Pistons %% POINT SPREAD %% Detroit Pistons +4 %% NBA %% -110 %% 7701,2025-02-08 00:30:00+00
+79052683,Lost,-120,,Spread,University of Connecticut Huskies,-3.5,Basketball,CBB,-120,POINT SPREAD %% St. John's vs University of Connecticut Huskies %% POINT SPREAD %% University of Connecticut Huskies -3.5 %% College Basketball %% -120 %% 7701,2025-02-08 01:00:00+00
+79052684,Lost,-125,,Moneyline3Way,Edmonton Oilers,,Hockey,NHL,-125,3-WAY MONEYLINE %% Colorado Avalanche vs Edmonton Oilers %% 3-WAY MONEYLINE %% Edmonton Oilers %% NHL %% -125 %% 7701,2025-02-08 02:00:00+00
+79052685,Won,-110,,Total,Over,5.5,Hockey,NHL,-110,TOTAL SCORE %% Dallas Stars vs Los Angeles Kings %% TOTAL SCORE %% Over 5.5 %% NHL %% -110 %% 7711,2025-02-08 03:30:00+00
+79052691,Lost,-235,,Moneyline,Washington Capitals,0,Hockey,NHL,-235,MONEYLINE %% Utah Hockey Club vs Washington Capitals %% MONEYLINE %% Washington Capitals %% NHL %% -235 %% 7701,2025-02-09 17:30:00+00
+79052693,Lost,-215,,Spread,Montreal Canadiens,1.5,Hockey,NHL,-215,PUCK LINE %% Tampa Bay Lightning vs Montreal Canadiens %% PUCK LINE %% Montreal Canadiens +1.5 %% NHL %% -215 %% 7701,2025-02-09 18:00:00+00
+79052694,Won,-135,,Moneyline,Milwaukee Bucks,0,Basketball,NBA,-135,MONEYLINE %% Philadelphia 76ers vs Milwaukee Bucks %% MONEYLINE %% Milwaukee Bucks %% NBA %% -135 %% 7701,2025-02-09 19:00:00+00
+79052698,Won,-440,,Moneyline,Cleveland Cavaliers,0,Basketball,NBA,-440,MONEYLINE %% Minnesota Timberwolves vs Cleveland Cavaliers %% MONEYLINE %% Cleveland Cavaliers %% NBA %% -440 %% 7701,2025-02-11 00:00:00+00
+79052702,Won,-125,,Spread,Kentucky Wildcats,3.5,Basketball,CBB,-125,POINT SPREAD %% Tennessee Volunteers vs Kentucky Wildcats %% POINT SPREAD %% Kentucky Wildcats +3.5 %% College Basketball %% -125 %% 7701,2025-02-12 00:00:00+00
+79052703,Won,-105,,Spread,Florida Gators,-1.5,Basketball,CBB,-105,POINT SPREAD %% Florida Gators vs Mississippi State Bulldogs %% POINT SPREAD %% Florida Gators -1.5 %% College Basketball %% -105 %% 7703,2025-02-12 00:00:00+00
+79052704,Lost,-115,,Spread,Indiana Pacers,3,Basketball,NBA,-115,POINT SPREAD %% New York Knicks vs Indiana Pacers %% POINT SPREAD %% Indiana Pacers +3 %% NBA %% -115 %% 7701,2025-02-12 00:30:00+00
+79052705,Won,-110,,Spread,Washington Wizards,9.5,Basketball,NBA,-110,POINT SPREAD %% Indiana Pacers vs Washington Wizards %% POINT SPREAD %% Washington Wizards +9.5 %% NBA %% -110 %% 7701,2025-02-13 00:00:00+00
+79052708,Won,-305,,Moneyline,Canada,0,Hockey,NHL,-305,MONEYLINE %% Canada vs Sweden %% MONEYLINE %% Canada %% NHL 4 Nations Face-Off %% -305 %% 7703,2025-02-13 01:00:00+00
+79052709,Lost,-235,,Moneyline,Golden State Warriors,0,Basketball,NBA,-235,MONEYLINE %% Golden State Warriors vs Dallas Mavericks %% MONEYLINE %% Golden State Warriors %% NBA %% -235 %% 7703,2025-02-13 02:30:00+00
+79052715,Lost,-125,,Spread,Michigan Wolverines,-2.5,Basketball,CBB,-125,POINT SPREAD %% Michigan State vs Michigan Wolverines %% POINT SPREAD %% Michigan Wolverines -2.5 %% College Basketball %% -125 %% 7701,2025-02-22 01:00:00+00
+79052717,Lost,-115,,Spread,Boston Celtics,-4.5,Basketball,NBA,-115,POINT SPREAD %% Boston Celtics vs Detroit Pistons %% POINT SPREAD %% Boston Celtics -4.5 %% NBA %% -115 %% 7703,2025-02-27 00:00:00+00
+79052720,Lost,-115,,Spread,San Antonio Spurs,9.5,Basketball,NBA,-115,POINT SPREAD %% San Antonio Spurs vs Houston Rockets %% POINT SPREAD %% San Antonio Spurs +9.5 %% NBA %% -115 %% 7703,2025-02-27 02:30:00+00
+79052721,Won,155,,Spread,Colorado Avalanche,-1.5,Hockey,NHL,155,PUCK LINE %% New Jersey Devils vs Colorado Avalanche %% PUCK LINE %% Colorado Avalanche -1.5 %% NHL %% 155 %% 7701,2025-02-27 02:30:00+00
+79052723,Lost,-110,,Moneyline,Boston Bruins,0,Hockey,NHL,-110,MONEYLINE %% New York Islanders vs Boston Bruins %% MONEYLINE %% Boston Bruins %% NHL %% -110 %% 7701,2025-02-28 00:00:00+00
+79052726,Lost,-110,,Spread,Denver Nuggets,3.5,Basketball,NBA,-110,POINT SPREAD %% Denver Nuggets vs Boston Celtics %% POINT SPREAD %% Denver Nuggets +3.5 %% NBA %% -110 %% 7703,2025-03-02 18:00:00+00
+79052727,Lost,155,,Moneyline,Wisconsin Badgers,0,Basketball,CBB,155,MONEYLINE %% Wisconsin Badgers vs Michigan State %% MONEYLINE %% Wisconsin Badgers %% College Basketball %% 155 %% 7703,2025-03-02 18:30:00+00
+131501854,Won,-115,0.0651,Total,Over,139.5,Basketball,CBB,-115,Duke at Notre Dame | Totals | Over 139.5,2026-02-25 00:00:00+00
+131501860,Won,-115,0.0536,Total,Over,140.5,Basketball,CBB,-115,Massachusetts at Ball State | Totals | Over 140.5,2026-02-25 00:00:00+00
+131501850,Lost,-110,0.0175,Total,Over,206.5,Basketball,NBA,-110,Boston Celtics at Phoenix Suns | Totals | Over 206.5,2026-02-25 02:00:00+00
+79212833,Won,-160,,Moneyline,Washington Capitals,0,Hockey,NHL,-160,MONEYLINE %% Ottawa Senators vs Washington Capitals %% MONEYLINE %% Washington Capitals %% NHL %% -160 %% 7701,2025-03-03 23:30:00+00
+131501859,Won,-110,0.0067,Total,Over,157.5,Basketball,CBB,-110,Auburn at Oklahoma | Totals | Over 157.5,2026-02-25 02:00:00+00
+131501842,Won,-115,0.0106,Spread,Western Michigan,12.5,Basketball,CBB,-115,Western Michigan at Bowling Green | Spread | Western Michigan +12.5,2026-02-25 00:00:00+00
+131501857,Won,-110,0.068,Total,Over,140.5,Basketball,CBB,-110,Cincinnati at Texas Tech | Totals | Over 140.5,2026-02-25 00:00:00+00
+81198119,Won,-195,,Moneyline,Minnesota Wild,0,Hockey,NHL,-195,MONEYLINE %% Seattle Kraken vs Minnesota Wild %% MONEYLINE %% Minnesota Wild %% NHL %% -195 %% 7701,2025-03-20 01:30:00+00
+81198120,Lost,-155,,Moneyline,American University,0,Basketball,CBB,-155,MONEYLINE %% Mount St. Mary's Mountaineers vs American University %% MONEYLINE %% American University %% College Basketball %% -155 %% 7701,2025-03-19 22:40:00+00
+81198121,Lost,-110,,Spread,Orlando Magic,3,Basketball,NBA,-110,POINT SPREAD %% Houston Rockets vs Orlando Magic %% POINT SPREAD %% Orlando Magic +3 %% NBA %% -110 %% 7701,2025-03-19 23:00:00+00
+81198123,Lost,-125,,Spread,Denver Nuggets,1.5,Basketball,NBA,-125,POINT SPREAD %% Denver Nuggets vs L.A. Lakers %% POINT SPREAD %% Denver Nuggets +1.5 %% NBA %% -125 %% 7703,2025-03-20 02:00:00+00
+131501852,Won,-110,-0.0238,Total,Over,154.5,Basketball,CBB,-110,Miami Florida at Florida State | Totals | Over 154.5,2026-02-25 02:00:00+00
+132079092,Lost,-110,0.0111,Spread,Brooklyn Nets,17.5,Basketball,NBA,-110,Brooklyn Nets at Boston Celtics | Spread | Brooklyn Nets +17.5,2026-02-28 00:30:00+00
+133052138,Lost,-258,-0.0229,Spread,TOR Maple Leafs,1.5,Hockey,NHL,-258,TOR Maple Leafs @ NY Rangers - TOR Maple Leafs +1.5 - Puck Line,2026-03-06 00:00:00+00
+82231529,Won,120,,Moneyline,BUF Sabres,0,Hockey,NHL,120,MONEYLINE %% OTT Senators vs BUF Sabres %% MONEYLINE %% BUF Sabres %% NHL %% 120 %% 7701,2025-03-25 23:00:00+00
+82235951,Lost,105,,Moneyline,IND Pacers,0,Basketball,NBA,105,MONEYLINE %% LA Lakers vs IND Pacers %% MONEYLINE %% IND Pacers %% NBA %% 105 %% 7701,2025-03-26 23:30:00+00
+82235953,Won,110,,Spread,NJ Devils,-1.5,Hockey,NHL,110,PUCK LINE %% NJ Devils vs CHI Blackhawks %% PUCK LINE %% NJ Devils -1.5 %% NHL %% 110 %% 7703,2025-03-26 23:30:00+00
+131501855,Lost,-105,0.0116,Total,Over,144.5,Basketball,CBB,-105,Iowa State at Utah | Totals | Over 144.5,2026-02-25 02:00:00+00
+131501848,Lost,275,0.0111,Moneyline,Chicago Bulls,0,Basketball,NBA,275,Charlotte Hornets at Chicago Bulls | Moneyline | Bulls,2026-02-25 01:00:00+00
+131501851,Lost,-115,0.0207,Total,Over,149.5,Basketball,CBB,-115,Kentucky at South Carolina | Totals | Over 149.5,2026-02-25 00:00:00+00
+131501846,Lost,200,0,Moneyline,Portland Trail Blazers,0,Basketball,NBA,200,Minnesota Timberwolves at Portland Trail Blazers | Moneyline | Trail Blazers,2026-02-25 03:00:00+00
+131501856,Won,-110,0.0216,Total,Over,154.5,Basketball,CBB,-110,Arizona at Baylor | Totals | Over 154.5,2026-02-25 02:00:00+00
+131501858,Lost,-105,0.0434,Total,Under,158.5,Basketball,CBB,-105,Southern Miss at Arkansas State | Totals | Under 158.5,2026-02-25 01:30:00+00
+79554592,Won,-110,,Spread,Boston Celtics,-14.5,Basketball,NBA,-110,POINT SPREAD %% Philadelphia 76ers vs Boston Celtics %% POINT SPREAD %% Boston Celtics -14.5 %% NBA %% -110 %% 7701,2025-03-07 00:30:00+00
+83446686,Lost,100,,Moneyline,NY Rangers,0,Hockey,NHL,100,MONEYLINE %% NY Rangers vs NJ Devils %% MONEYLINE %% NY Rangers %% NHL %% 100 %% 7703,2025-04-05 16:30:00+00
+83446688,Won,-160,,Moneyline,Florida,0,Basketball,CBB,-160,MONEYLINE %% Florida vs Auburn %% MONEYLINE %% Florida %% College Basketball %% -160 %% 7703,2025-04-05 22:09:00+00
+85630833,Lost,145,,Moneyline,STL Blues,0,Hockey,NHL,145,MONEYLINE %% STL Blues vs WPG Jets %% MONEYLINE %% STL Blues %% NHL %% 145 %% 7703,2025-04-21 23:30:00+00
+131501847,Lost,-115,0.0432,Spread,Washington Wizards,13.5,Basketball,NBA,-115,Washington Wizards at Atlanta Hawks | Spread | Washington Wizards +13.5,2026-02-25 00:30:00+00
+79052696,Won,-120,,Spread,Atlanta Hawks,5.5,Basketball,NBA,-120,POINT SPREAD %% Atlanta Hawks vs Orlando Magic %% POINT SPREAD %% Atlanta Hawks +5.5 %% NBA %% -120 %% 7703,2025-02-11 00:00:00+00
+80903855,Lost,140,,Moneyline,Boston Bruins,0,Hockey,NHL,140,MONEYLINE %% Tampa Bay Lightning vs Boston Bruins %% MONEYLINE %% Boston Bruins %% NHL %% 140 %% 7701,2025-03-15 23:00:00+00
+86008297,Lost,330,,Spread,Vegas Golden Knights,-2.5,Hockey,NHL,330,PUCK LINE %% Vegas Golden Knights vs MIN Wild %% PUCK LINE %% Vegas Golden Knights -2.5 %% NHL %% 330 %% 7703,2025-04-25 01:00:00+00
+80385775,Won,-110,,Spread,BYU Cougars,2.5,Basketball,CBB,-110,POINT SPREAD %% Iowa State vs BYU Cougars %% POINT SPREAD %% BYU Cougars +2.5 %% College Basketball %% -110 %% 7701,2025-03-13 16:30:00+00
+80385776,Lost,-125,,Spread,Texas A&M Aggies,-5.5,Basketball,CBB,-125,POINT SPREAD %% Texas vs Texas A&M Aggies %% POINT SPREAD %% Texas A&M Aggies -5.5 %% College Basketball %% -125 %% 7701,2025-03-13 19:30:00+00
+80385777,Lost,180,,Moneyline,L.A. Lakers,0,Basketball,NBA,180,MONEYLINE %% L.A. Lakers vs Milwaukee Bucks %% MONEYLINE %% L.A. Lakers %% NBA %% 180 %% 7703,2025-03-13 23:30:00+00
+131501853,Lost,-115,0.0207,Total,Over,144.5,Basketball,CBB,-115,Minnesota U at Michigan | Totals | Over 144.5,2026-02-25 01:30:00+00
+131501844,Won,-118,0.0239,Spread,Air Force,7.5,Basketball,CBB,-118,San Jose State at Air Force | Spread | Air Force +7.5,2026-02-25 02:00:00+00
+123642902,Won,-218,,Moneyline,UT Martin,0,Basketball,CBB,-218,UT Martin @ Southern Indiana - UT Martin - Moneyline,2026-01-11 01:30:00+00
+123642932,Lost,225,,Moneyline,CSU Bakersfield,0,Basketball,CBB,225,CSU Bakersfield @ Long Beach State - CSU Bakersfield - Moneyline,2026-01-11 00:00:00+00
+124088264,Lost,124,,Moneyline,Morgan State,0,Basketball,CBB,124,NC Central @ Morgan State - Morgan State - Moneyline,2026-01-12 23:00:00+00
+124088265,Won,170,,Moneyline,Southern University,0,Basketball,CBB,170,Southern University @ Bethune-Cookman - Southern University - Moneyline,2026-01-13 00:00:00+00
+130772642,Lost,-115,-0.0111,Total,Over,237.5,Basketball,NBA,-115,UTA Jazz @ MEM Grizzlies - Over 237.5 - Total,2026-02-21 00:00:00+00
+130772644,Won,-130,0.0164,Moneyline,MEM Grizzlies,0,Basketball,NBA,-130,UTA Jazz @ MEM Grizzlies - MEM Grizzlies - Moneyline,2026-02-21 00:00:00+00
+130772643,Lost,-115,-0.0471,Total,Under,239.5,Basketball,NBA,-115,DEN Nuggets @ POR Trail Blazers - Under 239.5 - Total,2026-02-21 03:00:00+00
+130772635,Won,-112,-0.0022,Total,Over,152.5,Basketball,CBB,-112,Milwaukee @ Detroit Mercy - Over 152.5 - Total,2026-02-21 00:00:00+00
+130772636,Won,-102,0.0072,Spread,Miami OH,-8.5,Basketball,CBB,-102,Bowling Green @ Miami OH - Miami OH -8.5 - Spread,2026-02-21 01:30:00+00
+124349688,Won,145,,Moneyline,Man City,0,Soccer,England - Premier League,145,Newcastle vs Man City - Man City - Moneyline,2026-01-13 20:00:00+00
+124349689,Lost,350,,Moneyline,Eintracht Frankfurt,0,Soccer,Germany - Bundesliga,350,Stuttgart vs Eintracht Frankfurt - Eintracht Frankfurt - Moneyline,2026-01-13 17:30:00+00
+124656138,Lost,-218,-0.0401,Moneyline,Tarleton State,0,Basketball,CBB,-218,Tarleton State @ Southern Utah - Tarleton State - Moneyline,2026-01-16 01:30:00+00
+130772646,Lost,-105,0.0024,Spread,BKN Nets,16.5,Basketball,NBA,-105,BKN Nets @ OKC Thunder - BKN Nets +16.5 - Spread,2026-02-21 01:00:00+00
+125611766,Lost,115,,Total,Over,2.5,Soccer,Italy - Serie A,115,FC Copenhagen vs Napoli - Over 2.5 - Total Goals,2026-01-20 20:00:00+00
+126042364,Lost,114,,Moneyline,Southern Miss,0,Basketball,CBB,114,Southern Miss @ Georgia State - Southern Miss - Moneyline,2026-01-23 00:00:00+00
+126373561,Cancelled,-110,0.0257,Total,Over,140.5,Basketball,CBB,-110,Southern Illinois @ Evansville - Over 140.5 - Total,2026-01-25 21:00:00+00
+126402439,Won,-105,0.0116,Total,Over,211.5,Basketball,NBA,-105,BKN Nets @ LA Clippers - Over 211.5 - Total Alternate,2026-01-26 02:00:00+00
+126835606,Won,-193,0.008,Spread,PHI 76ers,-6.5,Basketball,NBA,-193,MIL Bucks @ PHI 76ers - PHI 76ers -6.5 - Spread Alternate,2026-01-28 01:00:00+00
+126835608,Lost,-142,0.01,Spread,DET Pistons,-5.5,Basketball,NBA,-142,DET Pistons @ DEN Nuggets - DET Pistons -5.5 - Spread Alternate,2026-01-28 02:00:00+00
+126835609,Lost,126,0.0406,Total,Over,218.5,Basketball,NBA,126,DET Pistons @ DEN Nuggets - Over 218.5 - Total Alternate,2026-01-28 02:00:00+00
+126835610,Won,-112,-0.0045,Total,Over,219.5,Basketball,NBA,-112,MIL Bucks @ PHI 76ers - Over 219.5 - Total,2026-01-28 01:00:00+00
+126835611,Won,-265,,Spread,MTL Canadiens,1.5,Hockey,NHL,-265,VGK Golden Knights @ MTL Canadiens - MTL Canadiens +1.5 - Puck Line,2026-01-28 00:00:00+00
+126835635,Lost,245,,Moneyline,Werder Bremen,0,Soccer,Germany - Bundesliga,245,Werder Bremen vs Hoffenheim - Werder Bremen - Moneyline,2026-01-27 19:30:00+00
+126835637,Lost,240,,Moneyline,Fiorentina,0,Soccer,Italy - Serie A,240,Fiorentina vs Como - Fiorentina - Moneyline,2026-01-27 20:00:00+00
+126922856,Lost,-110,-0.036,Total,Over,147.5,Basketball,CBB,-110,Baylor @ Cincinnati - Over 147.5 - Total,2026-01-28 23:30:00+00
+126922858,Lost,215,0.0462,Moneyline,Western Kentucky,0,Basketball,CBB,215,Western Kentucky @ Kennesaw State - Western Kentucky - Moneyline,2026-01-29 00:00:00+00
+126922862,Won,-166,-0.0057,Spread,St. Johns,-10.5,Basketball,CBB,-166,Butler @ St. Johns - St. Johns -10.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953854,Won,-140,-0.0017,Spread,Auburn,-5.5,Basketball,CBB,-140,Texas @ Auburn - Auburn -5.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+127158114,Lost,111,0.0211,Spread,SE Missouri State,-11.5,Basketball,CBB,111,SE Missouri State @ Western Illinois - SE Missouri State -11.5 - Spread Alternate - NCAAB,2026-01-30 01:30:00+00
+127158120,Won,124,,Total,Over,145.5,Basketball,CBB,124,Eastern Washington @ Northern Arizona - Over 145.5 - Total Alternate - NCAAB,2026-01-30 01:00:00+00
+127416376,Lost,-105,-0.0048,Spread,Quinnipiac,-9.5,Basketball,CBB,-105,Sacred Heart @ Quinnipiac - Quinnipiac -9.5 - Spread Alternate - NCAAB,2026-01-31 00:00:00+00
+133052135,Won,-120,-0.0211,Total,Under,6.5,Hockey,NHL,-120,FLA Panthers @ CBJ Blue Jackets - Under 6.5 - Total,2026-03-06 00:00:00+00
+127663663,Won,-110,,Spread,IND Pacers,1.5,Basketball,NBA,-110,ATL Hawks @ IND Pacers - IND Pacers +1.5 - Spread,2026-02-01 00:00:00+00
+127663665,Won,-155,,Spread,NO Pelicans,10.5,Basketball,NBA,-155,NO Pelicans @ PHI 76ers - NO Pelicans +10.5 - Spread Alternate,2026-02-01 00:30:00+00
+130772641,Won,-112,-0.0161,Total,Under,238.5,Basketball,NBA,-112,DAL Mavericks @ MIN Timberwolves - Under 238.5 - Total,2026-02-21 00:30:00+00
+130772640,Lost,-110,-0.0288,Total,Over,155.5,Basketball,CBB,-110,Green Bay @ Oakland - Over 155.5 - Total,2026-02-21 00:00:00+00
+133052140,Lost,-265,-0.0045,Spread,PIT Penguins,1.5,Hockey,NHL,-265,BUF Sabres @ PIT Penguins - PIT Penguins +1.5 - Puck Line,2026-03-06 00:00:00+00
+133052137,Lost,-265,0.0044,Spread,FLA Panthers,1.5,Hockey,NHL,-265,FLA Panthers @ CBJ Blue Jackets - FLA Panthers +1.5 - Puck Line,2026-03-06 00:00:00+00
+132353475,Won,-110,-0.0116,Total,Under,144.5,Basketball,CBB,-110,Mount Saint Marys @ Fairfield - Under 144.5 - Total,2026-03-01 19:00:00+00
+132353476,Won,-105,0,Total,Over,150.5,Basketball,CBB,-105,Purdue @ Ohio State - Over 150.5 - Total,2026-03-01 18:30:00+00
+132353478,Won,-110,0.0337,Total,Under,138.5,Basketball,CBB,-110,Northern Iowa @ Drake - Under 138.5 - Total,2026-03-01 20:00:00+00
+128209206,Lost,-108,,Spread,MIL Bucks,12.5,Basketball,NBA,-108,MIL Bucks @ BOS Celtics - MIL Bucks +12.5 - Spread,2026-02-01 20:30:00+00
+127158123,Lost,-110,0.0023,Total,Over,143.5,Basketball,CBB,-110,Montana @ Portland State - Over 143.5 - Total,2026-01-30 03:00:00+00
+127158135,Won,101,,Spread,Mercyhurst,-6.5,Basketball,CBB,101,New Haven @ Mercyhurst - Mercyhurst -6.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158139,Lost,100,,Spread,Hofstra,-4.5,Basketball,CBB,100,Charleston @ Hofstra - Hofstra -4.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158141,Won,-105,,Spread,Mercer,-11.5,Basketball,CBB,-105,UNC Greensboro @ Mercer - Mercer -11.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158157,Lost,105,,Spread,Furman,-7.5,Basketball,CBB,105,Samford @ Furman - Furman -7.5 - Live Spread Alternate - NCAAB,2026-01-29 22:00:00+00
+127158156,Lost,-151,,Spread,PHI 76ers,-9.5,Basketball,NBA,-151,SAC Kings @ PHI 76ers - PHI 76ers -9.5 - Spread Alternate,2026-01-30 00:00:00+00
+132364712,Won,-120,0.0159,Spread,MEM Grizzlies,1.5,Basketball,NBA,-120,MEM Grizzlies @ IND Pacers - MEM Grizzlies +1.5 - Spread,2026-03-01 22:00:00+00
+124088267,Won,130,0.0198,Moneyline,New Orleans,0,Basketball,CBB,130,New Orleans @ SE Louisiana - New Orleans - Moneyline,2026-01-13 00:00:00+00
+127158121,Lost,-160,-0.0741,Spread,High Point,-14.5,Basketball,CBB,-160,Presbyterian @ High Point - High Point -14.5 - Spread Alternate - NCAAB,2026-01-30 02:00:00+00
+132364713,Won,-118,0,Spread,BKN Nets,12.5,Basketball,NBA,-118,CLE Cavaliers @ BKN Nets - BKN Nets +12.5 - Spread,2026-03-01 20:30:00+00
+132364710,Lost,-110,0.0337,Spread,PHI 76ers,9.5,Basketball,NBA,-110,PHI 76ers @ BOS Celtics - PHI 76ers +9.5 - Spread,2026-03-02 01:00:00+00
+132364714,Lost,-112,-0.0045,Spread,UTSA,15.5,Basketball,CBB,-112,Wichita State @ UTSA - UTSA +15.5 - Spread,2026-03-02 01:00:00+00
+132364709,Won,-115,-0.0066,Spread,DAL Mavericks,16.5,Basketball,NBA,-115,OKC Thunder @ DAL Mavericks - DAL Mavericks +16.5 - Spread,2026-03-02 01:00:00+00
+133052136,Lost,-278,0.0057,Spread,BOS Bruins,1.5,Hockey,NHL,-278,BOS Bruins @ NSH Predators - BOS Bruins +1.5 - Puck Line,2026-03-06 01:00:00+00
+132375474,Won,-108,,Total,Under,6.5,Hockey,NHL,-108,VGK Golden Knights @ PIT Penguins - Under 6.5 - Total,2026-03-01 18:00:00+00
+132375473,Lost,-120,0,Moneyline,WPG Jets,0,Hockey,NHL,-120,WPG Jets @ SJ Sharks - WPG Jets - Moneyline,2026-03-01 21:00:00+00
+131501843,Won,-110,0.0488,Spread,Buffalo,16.5,Basketball,CBB,-110,Buffalo at Akron | Spread | Buffalo +16.5,2026-02-25 00:00:00+00
+131335207,Won,-105,0,Total,Under,231.5,Basketball,NBA,-105,San Antonio Spurs at Detroit Pistons | Totals | Under 231.5,2026-02-24 00:00:00+00
+131501849,Won,-110,0.0175,Total,Over,216.5,Basketball,NBA,-110,Oklahoma City Thunder at Toronto Raptors | Totals | Over 216.5,2026-02-25 00:30:00+00
+131501845,Lost,140,0.0595,Moneyline,Bradley,0,Basketball,CBB,140,Bradley at Illinois Chicago | Moneyline | Bradley,2026-02-25 01:00:00+00
+131906059,Lost,-102,0.0506,Spread,VMI,17.5,Basketball,CBB,-102,VMI at Samford | Spread | VMI +17.5,2026-02-27 01:00:00+00
+131906064,Won,-110,0.0216,Total,Under,162.5,Basketball,CBB,-110,Jackson State at Prairie View A&M | Totals | Under 162.5,2026-02-27 02:30:00+00
+131906063,Won,-110,0,Total,Under,146.5,Basketball,CBB,-110,UMASS Lowell at Vermont | Totals | Under 146.5,2026-02-27 00:00:00+00
+131906062,Won,-110,0.0067,Total,Under,131.5,Basketball,CBB,-110,New Haven at Wagner | Totals | Under 131.5,2026-02-27 00:00:00+00
+131906061,Lost,-110,0.0111,Total,Under,157.5,Basketball,CBB,-110,NC Greensboro at Chattanooga | Totals | Under 157.5,2026-02-27 00:00:00+00
+131906066,Lost,-110,-0.043,Total,Under,139.5,Basketball,CBB,-110,Mercyhurst at Central Conn | Totals | Under 139.5,2026-02-27 00:00:00+00
+131906065,Lost,-115,-0.0632,Total,Over,155.5,Basketball,CBB,-115,USC-Upstate at Radford | Totals | Over 155.5,2026-02-27 00:00:00+00
+131906067,Won,-105,0.0227,Spread,Tarleton State,17.5,Basketball,CBB,-105,Tarleton State at Utah Valley | Spread | Tarleton State +17.5,2026-02-27 01:00:00+00
+131906060,Won,-105,0.0623,Total,Under,141.5,Basketball,CBB,-105,Chicago State at Long Island | Totals | Under 141.5,2026-02-27 00:00:00+00
+132375471,Won,-125,-0.0143,Total,Under,6.5,Hockey,NHL,-125,CHI Blackhawks @ UTA Mammoth - Under 6.5 - Total,2026-03-01 21:00:00+00
+125611750,Won,-102,,Moneyline,Georgia,0,Basketball,CBB,-102,Georgia @ Missouri - Georgia - Moneyline,2026-01-21 02:00:00+00
+125611751,Won,-108,,Moneyline,Boise State,0,Basketball,CBB,-108,Boise State @ Wyoming - Boise State - Moneyline,2026-01-21 01:30:00+00
+125611756,Lost,-105,,Moneyline,Central Michigan,0,Basketball,CBB,-105,Ball State @ Central Michigan - Central Michigan - Moneyline,2026-01-21 00:00:00+00
+125611758,Won,-105,,Total,Under,3.5,Soccer,Spain - La Liga,-105,Villarreal vs Ajax - Under 3.5 - Total Goals,2026-01-20 20:00:00+00
+127158116,Won,120,,Spread,South Dakota,-5.5,Basketball,CBB,120,Oral Roberts @ South Dakota - South Dakota -5.5 - Spread Alternate - NCAAB,2026-01-30 01:00:00+00
+127158128,Lost,100,,Total,Over,143.5,Basketball,CBB,100,Lipscomb @ Jacksonville - Over 143.5 - Total Alternate - NCAAB,2026-01-30 00:00:00+00
+127158136,Won,-105,,Spread,Drexel,-4.5,Basketball,CBB,-105,Hampton @ Drexel - Drexel -4.5 - Spread,2026-01-30 00:00:00+00
+127158133,Won,-101,,Spread,Northwestern,-8.5,Basketball,CBB,-101,Penn State @ Northwestern - Northwestern -8.5 - Spread Alternate - NCAAB,2026-01-30 01:00:00+00
+127158137,Won,-105,,Spread,UT Arlington,-9.5,Basketball,CBB,-105,Southern Utah @ UT Arlington - UT Arlington -9.5 - Spread Alternate - NCAAB,2026-01-30 01:00:00+00
+127158140,Won,104,,Spread,Memphis,-3.5,Basketball,CBB,104,Florida Atlantic @ Memphis - Memphis -3.5 - Spread Alternate - NCAAB,2026-01-30 01:00:00+00
+127158151,Lost,-108,,Spread,MIL Bucks,-2.5,Basketball,NBA,-108,MIL Bucks @ WAS Wizards - MIL Bucks -2.5 - Spread,2026-01-30 00:00:00+00
+127158154,Lost,-108,,Total,Over,222.5,Basketball,NBA,-108,MIL Bucks @ WAS Wizards - Over 222.5 - Total,2026-01-30 00:00:00+00
+132375472,Won,-120,0.0545,Total,Under,6.5,Hockey,NHL,-120,WPG Jets @ SJ Sharks - Under 6.5 - Total,2026-03-01 21:00:00+00
+125872659,Won,105,,Moneyline,Nice,0,Soccer,France - Ligue 1,105,Nice vs Go Ahead Eagles - Nice - Moneyline,2026-01-22 20:00:00+00
+125872662,Lost,-155,,Total,Under,3.5,Soccer,France - Ligue 1,-155,Nice vs Go Ahead Eagles - Under 3.5 - Total Goals,2026-01-22 20:00:00+00
+125872665,Lost,235,,Moneyline,Real Betis,0,Soccer,Spain - La Liga,235,PAOK Saloniki vs Real Betis - Real Betis - Moneyline,2026-01-22 17:45:00+00
+125872668,Lost,400,,Moneyline,MIL Bucks,0,Basketball,NBA,400,OKC Thunder @ MIL Bucks - MIL Bucks - Moneyline,2026-01-22 02:30:00+00
+125872674,Lost,105,,Moneyline,Southern Illinois,0,Basketball,CBB,105,Southern Illinois @ Valparaiso - Southern Illinois - Moneyline,2026-01-22 01:00:00+00
+125872677,Won,-110,,Total,Under,3.5,Soccer,England - Premier League,-110,Newcastle vs PSV Eindhoven - Under 3.5 - Total Goals,2026-01-21 20:00:00+00
+127158150,Lost,-118,-0.0175,Spread,DET Pistons,-3.5,Basketball,NBA,-118,DET Pistons @ PHO Suns - DET Pistons -3.5 - Spread,2026-01-30 02:00:00+00
+127158155,Won,-110,0,Total,Over,209.5,Basketball,NBA,-110,BKN Nets @ DEN Nuggets - Over 209.5 - Total,2026-01-30 02:00:00+00
+126042356,Lost,-115,-0.0022,Total,Over,134.5,Basketball,CBB,-115,East Carolina @ North Texas - Over 134.5 - Total,2026-01-23 18:00:00+00
+126042355,Lost,-110,0,Total,Under,158.5,Basketball,CBB,-110,Saint Louis @ Saint Bonaventure - Under 158.5 - Total,2026-01-23 22:30:00+00
+126042357,Lost,-110,0.0595,Total,Over,139.5,Basketball,CBB,-110,The Citadel @ ETSU - Over 139.5 - Total,2026-01-24 00:00:00+00
+126042365,Lost,110,-0.0154,Moneyline,UNC Wilmington,0,Basketball,CBB,110,UNC Wilmington @ William & Mary - UNC Wilmington - Moneyline,2026-01-23 00:00:00+00
+131906057,Won,-110,0.0317,Total,Over,155.5,Basketball,CBB,-110,Denver U at Oral Roberts | Totals | Over 155.5,2026-02-27 01:00:00+00
+130092531,Won,-115,0.0303,Spread,Milwaukee,-1.5,Basketball,CBB,-115,Green Bay @ Milwaukee - Milwaukee -1.5 - Spread,2026-02-15 20:00:00+00
+129721485,Lost,-108,,Total,Under,137.5,Basketball,CBB,-108,Memphis @ North Texas - Under 137.5 - Total,2026-02-13 02:00:00+00
+129721486,Lost,-105,,Total,Under,140.5,Basketball,CBB,-105,Oregon State @ San Francisco - Under 140.5 - Total,2026-02-13 02:00:00+00
+133052139,Lost,-218,0.0451,Spread,NY Islanders,1.5,Hockey,NHL,-218,NY Islanders @ LA Kings - NY Islanders +1.5 - Puck Line,2026-03-06 02:30:00+00
+126373605,Lost,105,,Moneyline,Tottenham,0,Soccer,England - Premier League,105,Burnley vs Tottenham - Tottenham - Moneyline,2026-01-24 15:00:00+00
+132364711,Lost,-105,0.0116,Spread,NO Pelicans,8.5,Basketball,NBA,-105,NO Pelicans @ LA Clippers - NO Pelicans +8.5 - Spread,2026-03-02 02:00:00+00
+129845865,Lost,-112,0.0212,Spread,Hampton,-2.5,Basketball,CBB,-112,North Carolina A&T @ Hampton - Hampton -2.5 - Spread,2026-02-14 04:00:00+00
+128956273,Lost,-105,0,Spread,WAS Wizards,12.5,Basketball,NBA,-105,MIA Heat @ WAS Wizards - WAS Wizards +12.5 - Spread,2026-02-08 19:00:00+00
+124594028,Lost,205,0.1529,Moneyline,Como,0,Soccer,Italy - Serie A,205,Como vs AC Milan - Como - Moneyline,2026-01-15 19:45:00+00
+126042348,Lost,-112,0,Total,Under,150.5,Basketball,CBB,-112,Furman @ UNC Greensboro - Under 150.5 - Total,2026-01-23 20:00:00+00
+126042362,Won,-425,,Moneyline,Inter Milan,0,Soccer,Italy - Serie A,-425,Inter Milan vs Pisa - Inter Milan - Moneyline,2026-01-23 19:45:00+00
+129921273,Won,-298,0,Moneyline,Liberty,0,Basketball,CBB,-298,Liberty @ UTEP - Liberty - Moneyline,2026-02-14 19:00:00+00
+129921274,Lost,-108,0.0046,Total,Over,165.5,Basketball,CBB,-108,Texas A&M @ Vanderbilt - Over 165.5 - Total,2026-02-14 18:00:00+00
+129921281,Won,-112,-0.0045,Spread,South Carolina,17.5,Basketball,CBB,-112,South Carolina @ Alabama - South Carolina +17.5 - Spread,2026-02-15 01:30:00+00
+129921280,Won,-108,0.0303,Spread,Kansas State,22.5,Basketball,CBB,-108,Kansas State @ Houston - Kansas State +22.5 - Spread,2026-02-14 21:00:00+00
+124499025,Lost,-175,,Moneyline,UNC Asheville,0,Basketball,CBB,-175,UNC Asheville @ Presbyterian - UNC Asheville - Moneyline,2026-01-15 00:00:00+00
+126042359,Won,-115,-0.0044,Total,Over,153.5,Basketball,CBB,-115,Florida Gulf Coast @ Lipscomb - Over 153.5 - Total,2026-01-23 18:00:00+00
+126373564,Lost,145,0.1663,Moneyline,Lille,0,Soccer,France - Ligue 1,145,Lille vs Strasbourg - Lille - Moneyline,2026-01-25 19:45:00+00
+126953816,Lost,-112,0.0066,Spread,HOU Rockets,-2.5,Basketball,NBA,-112,SA Spurs @ HOU Rockets - HOU Rockets -2.5 - Spread,2026-01-29 02:30:00+00
+126922863,Lost,142,0.0034,Moneyline,California,0,Basketball,CBB,142,California @ Florida State - California - Moneyline,2026-01-29 00:00:00+00
+127416380,Lost,-192,-0.0084,Spread,CHI Blackhawks,1.5,Hockey,NHL,-192,CBJ Blue Jackets @ CHI Blackhawks - CHI Blackhawks +1.5 - Puck Line,2026-01-31 01:30:00+00
+126373590,Won,114,,Moneyline,CLE Cavaliers,0,Basketball,NBA,114,CLE Cavaliers @ ORL Magic - CLE Cavaliers - Moneyline,2026-01-25 00:00:00+00
+126373580,Lost,-115,,Moneyline,Alabama A&M,0,Basketball,CBB,-115,Alabama A&M @ Texas Southern - Alabama A&M - Moneyline,2026-01-24 20:30:00+00
+125872660,Won,115,,Moneyline,AS Roma,0,Soccer,Italy - Serie A,115,AS Roma vs Stuttgart - AS Roma - Moneyline,2026-01-22 20:00:00+00
+126922865,Lost,110,0.089,Moneyline,Northern Iowa,0,Basketball,CBB,110,Northern Iowa @ Southern Illinois - Northern Iowa - Moneyline,2026-01-29 00:00:00+00
+126953819,Lost,-115,0.0519,Moneyline,South Dakota State,0,Basketball,CBB,-115,South Dakota State @ Omaha - South Dakota State - Moneyline,2026-01-29 01:00:00+00
+126953834,Won,110,0.0476,Total,Under,161.5,Basketball,CBB,110,Denver @ UMKC - Under 161.5 - Total Alternate - NCAAB,2026-01-29 01:00:00+00
+126953840,Lost,-112,0.0172,Spread,Queens NC,-5.5,Basketball,CBB,-112,Central Arkansas @ Queens NC - Queens NC -5.5 - Spread,2026-01-29 00:00:00+00
+126953853,Won,110,0.0116,Total,Over,156.5,Basketball,CBB,110,Texas @ Auburn - Over 156.5 - Total Alternate - NCAAB,2026-01-29 00:00:00+00
+126953844,Won,119,-0.018,Spread,Navy,-4.5,Basketball,CBB,119,Navy @ Boston University - Navy -4.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+124499023,Lost,-192,,Moneyline,Vanderbilt,0,Basketball,CBB,-192,Vanderbilt @ Texas - Vanderbilt - Moneyline,2026-01-15 02:00:00+00
+123642941,Lost,340,,Moneyline,TOR Raptors,0,Basketball,NBA,340,TOR Raptors @ BOS Celtics - TOR Raptors - Moneyline,2026-01-10 00:00:00+00
+126676293,Cancelled,-145,,Total,Under,147.5,Basketball,CBB,-145,Abilene Christian @ Tarleton State - Under 147.5 - Total Alternate - NCAAB,2026-01-27 00:00:00+00
+126676294,Lost,100,,Total,Under,151.5,Basketball,CBB,100,Morgan State @ Norfolk State - Under 151.5 - Total Alternate - NCAAB,2026-01-27 00:00:00+00
+126676297,Won,-110,0.0414,Total,Over,165.5,Basketball,CBB,-110,Arizona @ BYU - Over 165.5 - Total,2026-01-27 02:00:00+00
+132497668,Lost,-110,0.1905,Spread,MIL Bucks,7.5,Basketball,NBA,-110,BOS Celtics @ MIL Bucks - MIL Bucks +7.5 - Spread,2026-03-03 00:30:00+00
+127663662,Lost,111,,Spread,MEM Grizzlies,7.5,Basketball,NBA,111,MIN Timberwolves @ MEM Grizzlies - MEM Grizzlies +7.5 - Spread Alternate,2026-02-01 01:00:00+00
+126042363,Won,115,-0.0106,Total,Over,3.5,Soccer,Italy - Serie A,115,Inter Milan vs Pisa - Over 3.5 - Total Goals,2026-01-23 19:45:00+00
+126373559,Lost,-115,0.0126,Total,Over,130.5,Basketball,CBB,-115,Chicago State @ Mercyhurst - Over 130.5 - Total,2026-01-25 20:00:00+00
+132497664,Lost,-110,0,Total,Over,216.5,Basketball,NBA,-110,LA Clippers @ GS Warriors - Over 216.5 - Total,2026-03-03 03:00:00+00
+132497665,Lost,102,0.0171,Moneyline,GS Warriors,0,Basketball,NBA,102,LA Clippers @ GS Warriors - GS Warriors - Moneyline,2026-03-03 03:00:00+00
+132497667,Won,-105,0.0116,Spread,UTA Jazz,11.5,Basketball,NBA,-105,DEN Nuggets @ UTA Jazz - UTA Jazz +11.5 - Spread,2026-03-03 02:00:00+00
+132497672,Won,-125,0.0058,Total,Under,6.5,Hockey,NHL,-125,DET Red Wings @ NSH Predators - Under 6.5 - Total,2026-03-02 19:00:00+00
+132497671,Won,-125,0.0171,Total,Under,6.5,Hockey,NHL,-125,PHI Flyers @ TOR Maple Leafs - Under 6.5 - Total,2026-03-03 00:30:00+00
+132497670,Lost,-130,0.0426,Total,Under,6.5,Hockey,NHL,-130,CBJ Blue Jackets @ NY Rangers - Under 6.5 - Total,2026-03-03 00:00:00+00
+132497806,Lost,-112,0,Spread,Coppin State,19.5,Basketball,CBB,-112,Coppin State @ Howard - Coppin State +19.5 - Spread,2026-03-03 00:00:00+00
+132497807,Lost,105,0.0471,Moneyline,Idaho State,0,Basketball,CBB,105,Idaho State @ Sacramento State - Idaho State - Moneyline,2026-03-03 03:00:00+00
+132497808,Lost,-105,0.0161,Total,Under,143.5,Basketball,CBB,-105,SE Louisiana @ New Orleans - Under 143.5 - Total,2026-03-03 01:00:00+00
+132497810,Lost,-102,0.0506,Spread,Lamar,-1.5,Basketball,CBB,-102,Lamar @ Houston Christian - Lamar -1.5 - Spread,2026-03-03 01:30:00+00
+132497666,Won,-110,0.0257,Spread,WAS Wizards,15.5,Basketball,NBA,-110,HOU Rockets @ WAS Wizards - WAS Wizards +15.5 - Spread,2026-03-03 00:00:00+00
+132497809,Won,136,-0.0237,Moneyline,Idaho,0,Basketball,CBB,136,Idaho @ Eastern Washington - Idaho - Moneyline,2026-03-03 02:00:00+00
+126835605,Won,-252,,Spread,NY Knicks,-8.5,Basketball,NBA,-252,SAC Kings @ NY Knicks - NY Knicks -8.5 - Spread Alternate,2026-01-28 00:30:00+00
+126835607,Lost,-105,-0.0048,Total,Over,211.5,Basketball,NBA,-105,BKN Nets @ PHO Suns - Over 211.5 - Total Alternate,2026-01-28 02:00:00+00
+126835618,Won,-105,,Total,Over,141.5,Basketball,CBB,-105,Virginia @ Notre Dame - Over 141.5 - Total Alternate - NCAAB,2026-01-28 00:00:00+00
+130464649,Won,-115,-0.0111,Total,Under,153.5,Basketball,CBB,-115,Troy @ ULM - Under 153.5 - Total,2026-02-19 00:30:00+00
+132353477,Lost,-110,-0.0238,Total,Under,151.5,Basketball,CBB,-110,Memphis @ East Carolina - Under 151.5 - Total,2026-03-01 19:00:00+00
+132497669,Lost,-110,0.0216,Total,Over,215.5,Basketball,NBA,-110,BOS Celtics @ MIL Bucks - Over 215.5 - Total,2026-03-03 00:30:00+00
+132364708,Won,-112,-0.0283,Total,Under,239.5,Basketball,NBA,-112,MIN Timberwolves @ DEN Nuggets - Under 239.5 - Total,2026-03-01 20:30:00+00
+126938983,Lost,245,,Moneyline,Napoli,0,Soccer,Italy - Serie A,245,Napoli vs Chelsea - Napoli - Moneyline,2026-01-28 20:00:00+00
+126938986,Lost,380,,Moneyline,Eintracht Frankfurt,0,Soccer,Germany - Bundesliga,380,Eintracht Frankfurt vs Tottenham - Eintracht Frankfurt - Moneyline,2026-01-28 20:00:00+00
+126953812,Won,-157,0.032,Spread,MIN Timberwolves,-5.5,Basketball,NBA,-157,MIN Timberwolves @ DAL Mavericks - MIN Timberwolves -5.5 - Spread Alternate,2026-01-29 01:30:00+00
+126953811,Lost,-108,0.0046,Total,Over,220.5,Basketball,NBA,-108,SA Spurs @ HOU Rockets - Over 220.5 - Total,2026-01-29 02:30:00+00
+126953813,Lost,125,0.0101,Total,Over,232.5,Basketball,NBA,125,MIN Timberwolves @ DAL Mavericks - Over 232.5 - Total Alternate,2026-01-29 01:30:00+00
+126953808,Lost,-218,-0.0189,Spread,NY Rangers,1.5,Hockey,NHL,-218,NY Rangers @ NY Islanders - NY Rangers +1.5 - Puck Line,2026-01-29 00:00:00+00
+126953809,Lost,-245,0.0041,Spread,PHI Flyers,1.5,Hockey,NHL,-245,PHI Flyers @ CBJ Blue Jackets - PHI Flyers +1.5 - Puck Line,2026-01-29 00:30:00+00
+126953832,Won,110,0.014,Moneyline,Sam Houston,0,Basketball,CBB,110,Sam Houston @ Missouri State - Sam Houston - Moneyline,2026-01-29 01:00:00+00
+126953831,Won,-115,0.0714,Total,Over,148.5,Basketball,CBB,-115,South Dakota State @ Omaha - Over 148.5 - Total,2026-01-29 01:00:00+00
+126953836,Won,109,0,Spread,Denver,-5.5,Basketball,CBB,109,Denver @ UMKC - Denver -5.5 - Spread Alternate - NCAAB,2026-01-29 01:00:00+00
+126953837,Won,-105,0.0093,Total,Over,145.5,Basketball,CBB,-105,Belmont @ Valparaiso - Over 145.5 - Total,2026-01-29 01:00:00+00
+126953841,Won,100,,Total,Over,160.5,Basketball,CBB,100,Tennessee @ Georgia - Over 160.5 - Total Alternate - NCAAB,2026-01-29 00:00:00+00
+126953842,Lost,-101,-0.0147,Spread,East Carolina,-3.5,Basketball,CBB,-101,Rice @ East Carolina - East Carolina -3.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+127158148,Won,-218,,Spread,NY Rangers,1.5,Hockey,NHL,-218,NY Islanders @ NY Rangers - NY Rangers +1.5 - Puck Line,2026-01-30 00:00:00+00
+124656139,Won,-218,0.0478,Moneyline,Hawaii,0,Basketball,CBB,-218,Hawaii @ Cal Poly - Hawaii - Moneyline,2026-01-16 03:00:00+00
+124349701,Won,-118,,Moneyline,Kent State,0,Basketball,CBB,-118,Kent State @ Buffalo - Kent State - Moneyline,2026-01-13 23:30:00+00
+128322202,Lost,-135,0.0089,Moneyline,Washington State,0,Basketball,CBB,-135,Washington State @ Oregon State - Washington State - Moneyline,2026-02-05 04:15:00+00
+129845868,Won,-130,0.0019,Moneyline,Pennsylvania,0,Basketball,CBB,-130,Columbia @ Pennsylvania - Pennsylvania - Moneyline,2026-02-14 00:00:00+00
+129845869,Lost,-105,0.0116,Total,Under,147.5,Basketball,CBB,-105,Saint Peters @ Sacred Heart - Under 147.5 - Total,2026-02-14 00:00:00+00
+129845866,Won,-110,0,Total,Under,155.5,Basketball,CBB,-110,Saint Louis @ Loyola Chicago - Under 155.5 - Total,2026-02-14 01:40:00+00
+129846080,Won,112,0.0161,Spread,Miami OH,-9.5,Basketball,CBB,112,Ohio @ Miami OH - Miami OH -9.5 - Spread Alternate - NCAAB,2026-02-14 02:10:00+00
+127158149,Lost,-238,,Spread,LA Kings,1.5,Hockey,NHL,-238,LA Kings @ BUF Sabres - LA Kings +1.5 - Puck Line,2026-01-30 00:00:00+00
+127158146,Won,-225,,Spread,WAS Capitals,1.5,Hockey,NHL,-225,WAS Capitals @ DET Red Wings - WAS Capitals +1.5 - Puck Line,2026-01-30 00:30:00+00
+127158125,Won,110,,Spread,Vermont,-8.5,Basketball,CBB,110,UMBC @ Vermont - Vermont -8.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+126922857,Lost,-183,-0.0313,Spread,Iowa,-7.5,Basketball,CBB,-183,USC @ Iowa - Iowa -7.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126922861,Won,145,0.012,Moneyline,Saint Bonaventure,0,Basketball,CBB,145,Saint Bonaventure @ Duquesne - Saint Bonaventure - Moneyline,2026-01-29 00:00:00+00
+126953821,Won,-120,0.0041,Spread,Tulsa,-8.5,Basketball,CBB,-120,North Texas @ Tulsa - Tulsa -8.5 - Spread,2026-01-29 01:00:00+00
+126042350,Won,102,-0.0024,Moneyline,Louisiana Tech,0,Basketball,CBB,102,Kennesaw State @ Louisiana Tech - Louisiana Tech - Moneyline,2026-01-23 19:00:00+00
+126042352,Lost,-110,-0.0288,Total,Over,148.5,Basketball,CBB,-110,Indiana @ Rutgers - Over 148.5 - Total,2026-01-23 23:00:00+00
+126042354,Won,-105,0.0434,Total,Over,143.5,Basketball,CBB,-105,Kennesaw State @ Louisiana Tech - Over 143.5 - Total,2026-01-23 19:00:00+00
+130092532,Won,-108,0.0046,Total,Over,159.5,Basketball,CBB,-108,IU Indianapolis @ Purdue Fort Wayne - Over 159.5 - Total,2026-02-15 19:00:00+00
+130092536,Won,-110,0.0045,Total,Over,158.5,Basketball,CBB,-110,Wright State @ Cleveland State - Over 158.5 - Total Alternate - NCAAB,2026-02-15 19:00:00+00
+130092533,Won,-110,0,Total,Over,145.5,Basketball,CBB,-110,Green Bay @ Milwaukee - Over 145.5 - Total,2026-02-15 20:00:00+00
+130092538,Won,-110,0,Total,Under,159.5,Basketball,CBB,-110,Charleston @ Campbell - Under 159.5 - Total,2026-02-15 22:00:00+00
+130092537,Won,-105,0.0116,Total,Under,166.5,Basketball,CBB,-105,Belmont @ Murray State - Under 166.5 - Total Alternate - NCAAB,2026-02-15 23:00:00+00
+130092534,Lost,-110,-0.0116,Total,Over,139.5,Basketball,CBB,-110,Seton Hall @ Butler - Over 139.5 - Total,2026-02-15 23:00:00+00
+130092530,Won,-105,0.0333,Spread,Towson,1.5,Basketball,CBB,-105,Towson @ Monmouth - Towson +1.5 - Spread,2026-02-16 00:00:00+00
+130092529,Lost,-108,0,Total,Over,136.5,Basketball,CBB,-108,Oregon State @ Seattle - Over 136.5 - Total,2026-02-16 01:00:00+00
+129721487,Won,-112,0.0212,Total,Under,238.5,Basketball,NBA,-112,DAL Mavericks @ LA Lakers - Under 238.5 - Total,2026-02-13 03:00:00+00
+127158115,Lost,113,-0.0211,Spread,Montana State,-6.5,Basketball,CBB,113,Montana State @ Sacramento State - Montana State -6.5 - Spread Alternate - NCAAB,2026-01-30 03:00:00+00
+125611761,Lost,100,,Moneyline,Napoli,0,Soccer,Italy - Serie A,100,FC Copenhagen vs Napoli - Napoli - Moneyline,2026-01-20 20:00:00+00
+125611765,Lost,750,,Moneyline,Monaco,0,Soccer,France - Ligue 1,750,Real Madrid vs Monaco - Monaco - Moneyline,2026-01-20 20:00:00+00
+125611757,Lost,-130,0.0181,Moneyline,Oklahoma,0,Basketball,CBB,-130,Oklahoma @ South Carolina - Oklahoma - Moneyline,2026-01-21 00:00:00+00
+124499026,Lost,-360,,Moneyline,Iona,0,Basketball,CBB,-360,Iona @ Rider - Iona - Moneyline,2026-01-15 00:00:00+00
+124499027,Won,-410,,Moneyline,Richmond,0,Basketball,CBB,-410,La Salle @ Richmond - Richmond - Moneyline,2026-01-15 00:00:00+00
+130186847,Won,-105,0.0878,Total,Over,141.5,Basketball,CBB,-105,Arkansas-Pine Bluff @ Alabama A&M - Over 141.5 - Total Alternate - NCAAB,2026-02-17 01:00:00+00
+130186848,Won,-108,0.0775,Total,Over,142.5,Basketball,CBB,-108,Syracuse @ Duke - Over 142.5 - Total,2026-02-17 00:00:00+00
+130186844,Won,-105,0.0227,Total,Over,149.5,Basketball,CBB,-105,Bethune-Cookman @ Jackson State - Over 149.5 - Total,2026-02-17 00:00:00+00
+130186845,Won,100,,Total,Over,135.5,Basketball,CBB,100,Houston @ Iowa State - Over 135.5 - Total Alternate - NCAAB,2026-02-17 02:00:00+00
+132774163,Won,-218,-0.0081,Spread,VGK Golden Knights,1.5,Hockey,NHL,-218,VGK Golden Knights @ BUF Sabres - VGK Golden Knights +1.5 - Puck Line,2026-03-04 00:00:00+00
+132774162,Won,-225,0.0019,Spread,MIN Wild,1.5,Hockey,NHL,-225,TB Lightning @ MIN Wild - MIN Wild +1.5 - Puck Line,2026-03-04 02:30:00+00
+130347042,Won,-120,-0.0042,Spread,UCF,1.5,Basketball,CBB,-120,TCU @ UCF - UCF +1.5 - Spread,2026-02-18 00:00:00+00
+130464667,Won,-112,0.0369,Spread,Washington State,-1.5,Basketball,CBB,-112,Pacific @ Washington State - Washington State -1.5 - Spread,2026-02-19 02:30:00+00
+132774164,Won,-265,0.0037,Spread,NJ Devils,1.5,Hockey,NHL,-265,FLA Panthers @ NJ Devils - NJ Devils +1.5 - Puck Line,2026-03-04 00:00:00+00
+132774161,Won,-250,0.0117,Spread,UTA Mammoth,1.5,Hockey,NHL,-250,UTA Mammoth @ WAS Capitals - UTA Mammoth +1.5 - Puck Line,2026-03-04 00:00:00+00
+132774157,Won,-250,0,Spread,PIT Penguins,1.5,Hockey,NHL,-250,PIT Penguins @ BOS Bruins - PIT Penguins +1.5 - Puck Line,2026-03-04 00:00:00+00
+132774160,Won,-238,0.006,Spread,OTT Senators,1.5,Hockey,NHL,-238,OTT Senators @ EDM Oilers - OTT Senators +1.5 - Puck Line,2026-03-04 02:00:00+00
+132774165,Won,-125,0.0097,Total,Under,6.5,Hockey,NHL,-125,UTA Mammoth @ WAS Capitals - Under 6.5 - Total,2026-03-04 00:00:00+00
+132774159,Won,-125,0.0153,Total,Under,6.5,Hockey,NHL,-125,TB Lightning @ MIN Wild - Under 6.5 - Total,2026-03-04 02:30:00+00
+132774158,Lost,124,0.0102,Total,Under,6.5,Hockey,NHL,124,OTT Senators @ EDM Oilers - Under 6.5 - Total,2026-03-04 02:00:00+00
+124088268,Won,124,-0.002,Moneyline,American,0,Basketball,CBB,124,Navy @ American - American - Moneyline,2026-01-13 00:00:00+00
+126373562,Lost,-130,0.0037,Total,Over,142.5,Basketball,CBB,-130,Oregon @ Washington - Over 142.5 - Total Alternate - NCAAB,2026-01-25 20:00:00+00
+126373604,Won,-108,0.0534,Total,Over,150.5,Basketball,CBB,-108,North Carolina @ Virginia - Over 150.5 - Total,2026-01-24 17:00:00+00
+126042358,Lost,-105,-0.0048,Total,Over,138.5,Basketball,CBB,-105,LIU @ Stonehill - Over 138.5 - Total,2026-01-24 00:00:00+00
+126042351,Won,102,0.0605,Moneyline,Longwood,0,Basketball,CBB,102,Charleston Southern @ Longwood - Longwood - Moneyline,2026-01-24 00:00:00+00
+130464659,Lost,-110,0.0111,Total,Over,145.5,Basketball,CBB,-110,La Salle @ Duquesne - Over 145.5 - Total,2026-02-19 00:00:00+00
+124088272,Lost,295,,Moneyline,North Texas,0,Basketball,CBB,295,North Texas @ Wichita State - North Texas - Moneyline,2026-01-11 20:00:00+00
+130464664,Won,-110,0.0023,Total,Over,140.5,Basketball,CBB,-110,ETSU @ Furman - Over 140.5 - Total,2026-02-18 23:30:00+00
+130464656,Won,-110,0,Total,Over,149.5,Basketball,CBB,-110,Oklahoma @ Tennessee - Over 149.5 - Total,2026-02-19 00:00:00+00
+130464657,Won,-105,0.007,Total,Over,137.5,Basketball,CBB,-105,Dayton @ George Mason - Over 137.5 - Total,2026-02-19 00:00:00+00
+130464662,Lost,-105,0.0116,Total,Over,141.5,Basketball,CBB,-105,James Madison @ Coastal Carolina - Over 141.5 - Total,2026-02-19 00:00:00+00
+130464651,Won,-108,0.0422,Total,Over,153.5,Basketball,CBB,-108,Vanderbilt @ Missouri - Over 153.5 - Total,2026-02-19 02:00:00+00
+129721484,Lost,-115,0,Spread,DAL Mavericks,6.5,Basketball,NBA,-115,DAL Mavericks @ LA Lakers - DAL Mavericks +6.5 - Spread,2026-02-13 03:00:00+00
+130464660,Won,-112,0.0369,Total,Over,138.5,Basketball,CBB,-112,Clemson @ Wake Forest - Over 138.5 - Total,2026-02-19 00:00:00+00
+126042353,Lost,-110,0.0111,Total,Over,147.5,Basketball,CBB,-110,Stetson @ Austin Peay - Over 147.5 - Total,2026-01-23 18:00:00+00
+126953846,Lost,-140,0.053,Total,Over,132.5,Basketball,CBB,-140,La Salle @ Fordham - Over 132.5 - Total Alternate - NCAAB,2026-01-29 00:00:00+00
+126953833,Lost,109,-0.0112,Spread,Marshall,-5.5,Basketball,CBB,109,Marshall @ Texas State - Marshall -5.5 - Spread Alternate - NCAAB,2026-01-29 01:00:00+00
+130347039,Won,-112,0.0462,Total,Over,161.5,Basketball,CBB,-112,Miami OH @ UMass - Over 161.5 - Total,2026-02-18 00:00:00+00
+130347032,Lost,-110,0.0023,Total,Over,139.5,Basketball,CBB,-110,Nebraska @ Iowa - Over 139.5 - Total,2026-02-18 02:00:00+00
+130347035,Lost,-110,0.0317,Total,Over,135.5,Basketball,CBB,-110,Minnesota @ Oregon - Over 135.5 - Total,2026-02-18 03:45:00+00
+130347034,Won,-112,0.0066,Total,Over,150.5,Basketball,CBB,-112,LSU @ Texas - Over 150.5 - Total,2026-02-18 02:00:00+00
+130347037,Won,-105,0.0659,Total,Over,145.5,Basketball,CBB,-105,Fresno State @ Wyoming - Over 145.5 - Total,2026-02-18 01:30:00+00
+128956272,Won,116,,Spread,NY Knicks,3.5,Basketball,NBA,116,NY Knicks @ BOS Celtics - NY Knicks +3.5 - Spread,2026-02-08 17:30:00+00
+127663661,Won,-112,0.0253,Spread,UConn,-6.5,Basketball,CBB,-112,UConn @ Creighton - UConn -6.5 - Spread,2026-02-01 01:00:00+00
+128322200,Lost,-120,,Spread,Washington,2.5,Basketball,CBB,-120,Iowa @ Washington - Washington +2.5 - Live Spread,2026-02-05 04:10:00+00
+130347036,Won,-110,0.0067,Total,Over,139.5,Basketball,CBB,-110,UCLA @ Michigan State - Over 139.5 - Total,2026-02-18 01:30:00+00
+130347033,Won,-110,0,Total,Over,159.5,Basketball,CBB,-110,Baylor @ Kansas State - Over 159.5 - Total,2026-02-18 02:00:00+00
+130347041,Won,-105,0.0116,Spread,Gardner-Webb,17.5,Basketball,CBB,-105,Gardner-Webb @ Charleston Southern - Gardner-Webb +17.5 - Spread,2026-02-17 23:00:00+00
+130464655,Won,-105,0.0116,Total,Under,139.5,Basketball,CBB,-105,Lehigh @ Navy - Under 139.5 - Total,2026-02-19 00:00:00+00
+130464658,Won,-110,0.0111,Total,Over,155.5,Basketball,CBB,-110,Queens NC @ North Alabama - Over 155.5 - Total,2026-02-19 00:00:00+00
+130464666,Won,-105,0.0659,Spread,BYU,12.5,Basketball,CBB,-105,BYU @ Arizona - BYU +12.5 - Spread,2026-02-19 02:00:00+00
+130347043,Won,-108,0,Spread,South Carolina,22.5,Basketball,CBB,-108,South Carolina @ Florida - South Carolina +22.5 - Spread,2026-02-18 00:00:00+00
+130347038,Lost,105,-0.007,Total,Over,150.5,Basketball,CBB,105,Virginia Tech @ Miami FL - Over 150.5 - Total Alternate - NCAAB,2026-02-18 01:00:00+00
+130347040,Lost,-115,-0.0398,Total,Over,142.5,Basketball,CBB,-115,Central Michigan @ Eastern Michigan - Over 142.5 - Total,2026-02-17 23:30:00+00
+130464661,Won,-112,-0.0405,Total,Over,141.5,Basketball,CBB,-112,Western Kentucky @ Delaware - Over 141.5 - Total,2026-02-19 00:00:00+00
+130464663,Won,-112,0.0602,Total,Over,145.5,Basketball,CBB,-112,Butler @ Georgetown - Over 145.5 - Total,2026-02-18 23:30:00+00
+130464665,Lost,-112,0.0172,Spread,Lipscomb,-3.5,Basketball,CBB,-112,Lipscomb @ Bellarmine - Lipscomb -3.5 - Spread,2026-02-19 00:30:00+00
+129845867,Lost,142,0.0034,Moneyline,George Mason,0,Basketball,CBB,142,George Mason @ George Washington - George Mason - Moneyline,2026-02-14 00:00:00+00
+128322201,Won,110,,Moneyline,Utah State,0,Basketball,CBB,110,Utah State @ New Mexico - Utah State - Moneyline,2026-02-05 04:15:00+00
+130464654,Lost,-105,0.0205,Total,Over,146.5,Basketball,CBB,-105,North Dakota State @ South Dakota State - Over 146.5 - Total,2026-02-19 01:00:00+00
+123642930,Lost,170,,Moneyline,Campbell,0,Basketball,CBB,170,Campbell @ Elon - Campbell - Moneyline,2026-01-11 00:00:00+00
+123642931,Lost,136,,Moneyline,Western Illinois,0,Basketball,CBB,136,Tennessee Tech @ Western Illinois - Western Illinois - Moneyline,2026-01-10 21:30:00+00
+123642934,Lost,120,,Moneyline,CSUN,0,Basketball,CBB,120,CSUN @ Cal State Fullerton - CSUN - Moneyline,2026-01-11 00:00:00+00
+123642935,Lost,105,,Moneyline,Montana,0,Basketball,CBB,105,Montana @ Eastern Washington - Montana - Moneyline,2026-01-10 22:00:00+00
+123642942,Lost,164,,Moneyline,BKN Nets,0,Basketball,NBA,164,LA Clippers @ BKN Nets - BKN Nets - Moneyline,2026-01-10 00:30:00+00
+123642943,Lost,525,,Moneyline,SAC Kings,0,Basketball,NBA,525,SAC Kings @ GS Warriors - SAC Kings - Moneyline,2026-01-10 03:00:00+00
+123642944,Lost,130,,Moneyline,ORL Magic,0,Basketball,NBA,130,PHI 76ers @ ORL Magic - ORL Magic - Moneyline,2026-01-10 00:00:00+00
+123642946,Lost,180,,Moneyline,MEM Grizzlies,0,Basketball,NBA,180,OKC Thunder @ MEM Grizzlies - MEM Grizzlies - Moneyline,2026-01-10 01:00:00+00
+123642947,Won,-102,0.0096,Moneyline,Miami OH,0,Basketball,CBB,-102,Miami OH @ Toledo - Miami OH - Moneyline,2026-01-09 23:00:00+00
+123642948,Won,154,0.0195,Moneyline,USC,0,Basketball,CBB,154,USC @ Minnesota - USC - Moneyline,2026-01-10 01:30:00+00
+123642949,Lost,-125,0.0078,Moneyline,Saint Peters,0,Basketball,CBB,-125,Saint Peters @ Mount Saint Marys - Saint Peters - Moneyline,2026-01-10 00:00:00+00
+123642950,Won,-298,,Moneyline,Green Bay,0,Basketball,CBB,-298,IU Indianapolis @ Green Bay - Green Bay - Moneyline,2026-01-10 00:00:00+00
+123642951,Won,-395,0.0036,Moneyline,Fairfield,0,Basketball,CBB,-395,Rider @ Fairfield - Fairfield - Moneyline,2026-01-10 00:00:00+00
+123642953,Lost,190,,Moneyline,Stony Brook,0,Basketball,CBB,190,Stony Brook @ Drexel - Stony Brook - Moneyline,2026-01-09 00:00:00+00
+123642954,Won,160,,Moneyline,Old Dominion,0,Basketball,CBB,160,Old Dominion @ Coastal Carolina - Old Dominion - Moneyline,2026-01-09 00:00:00+00
+123642955,Won,124,,Moneyline,Bellarmine,0,Basketball,CBB,124,Central Arkansas @ Bellarmine - Bellarmine - Moneyline,2026-01-09 00:00:00+00
+123642956,Won,-198,,Moneyline,Liberty,0,Basketball,CBB,-198,Liberty @ Louisiana Tech - Liberty - Moneyline,2026-01-09 00:00:00+00
+123642958,Won,-155,,Moneyline,West Georgia,0,Basketball,CBB,-155,West Georgia @ North Florida - West Georgia - Moneyline,2026-01-09 00:00:00+00
+124088274,Won,150,,Moneyline,Green Bay,0,Basketball,CBB,150,Northern Kentucky @ Green Bay - Green Bay - Moneyline,2026-01-11 19:00:00+00
+124088275,Won,-650,,Moneyline,Marist,0,Basketball,CBB,-650,Marist @ Rider - Marist - Moneyline,2026-01-11 19:00:00+00
+124349694,Lost,-150,,Moneyline,AS Roma,0,Soccer,Italy - Serie A,-150,AS Roma vs Torino - AS Roma - Moneyline,2026-01-13 20:00:00+00
+124349696,Lost,-180,,Moneyline,Iowa State,0,Basketball,CBB,-180,Iowa State @ Kansas - Iowa State - Moneyline,2026-01-14 02:00:00+00
+124349697,Won,-258,,Moneyline,Alabama,0,Basketball,CBB,-258,Alabama @ Mississippi State - Alabama - Moneyline,2026-01-14 02:00:00+00
+124349698,Won,-135,0.0255,Moneyline,Villanova,0,Basketball,CBB,-135,Villanova @ Providence - Villanova - Moneyline,2026-01-13 23:30:00+00
+124349699,Won,-218,,Moneyline,Florida,0,Basketball,CBB,-218,Florida @ Oklahoma - Florida - Moneyline,2026-01-14 02:00:00+00
+124349700,Won,-192,,Moneyline,Dayton,0,Basketball,CBB,-192,Dayton @ Duquesne - Dayton - Moneyline,2026-01-14 00:00:00+00
+124349702,Won,-130,-0.0097,Moneyline,Wisconsin,0,Basketball,CBB,-130,Wisconsin @ Minnesota - Wisconsin - Moneyline,2026-01-14 00:00:00+00
+124499021,Won,120,0.0455,Moneyline,DEN Nuggets,0,Basketball,NBA,120,DEN Nuggets @ DAL Mavericks - DEN Nuggets - Moneyline,2026-01-15 02:30:00+00
+124499022,Lost,154,,Moneyline,UTA Jazz,0,Basketball,NBA,154,UTA Jazz @ CHI Bulls - UTA Jazz - Moneyline,2026-01-15 01:00:00+00
+124499024,Lost,-125,,Total,Under,6.5,Hockey,NHL,-125,OTT Senators @ NY Rangers - Under 6.5 - Total,2026-01-15 00:30:00+00
+124594029,Lost,155,0.1634,Moneyline,Augsburg,0,Soccer,Germany - Bundesliga,155,Augsburg vs Union Berlin - Augsburg - Moneyline,2026-01-15 19:30:00+00
+124594031,Lost,145,0.0034,Moneyline,PHI Flyers,0,Hockey,NHL,145,PHI Flyers @ PIT Penguins - PHI Flyers - Moneyline,2026-01-16 00:00:00+00
+124594032,Lost,124,-0.002,Moneyline,MIA Heat,0,Basketball,NBA,124,BOS Celtics @ MIA Heat - MIA Heat - Moneyline,2026-01-16 00:30:00+00
+124594033,Lost,120,0.0106,Moneyline,UTA Jazz,0,Basketball,NBA,120,UTA Jazz @ DAL Mavericks - UTA Jazz - Moneyline,2026-01-16 01:30:00+00
+124594035,Won,140,0,Moneyline,POR Trail Blazers,0,Basketball,NBA,140,ATL Hawks @ POR Trail Blazers - POR Trail Blazers - Moneyline,2026-01-16 03:00:00+00
+124594036,Lost,235,0.0348,Moneyline,MIL Bucks,0,Basketball,NBA,235,MIL Bucks @ SA Spurs - MIL Bucks - Moneyline,2026-01-16 01:00:00+00
+124594037,Won,-205,0.0647,Moneyline,DET Pistons,0,Basketball,NBA,-205,PHO Suns @ DET Pistons - DET Pistons - Moneyline,2026-01-16 00:00:00+00
+124594039,Won,115,,Moneyline,Bologna,0,Soccer,Italy - Serie A,115,Verona vs Bologna - Bologna - Moneyline,2026-01-15 17:30:00+00
+124594040,Lost,125,,Total,Over,2.5,Soccer,Germany - Bundesliga,125,Augsburg vs Union Berlin - Over 2.5 - Total Goals,2026-01-15 19:30:00+00
+124594043,Won,130,,Total,Over,2.5,Soccer,Italy - Serie A,130,Verona vs Bologna - Over 2.5 - Total Goals,2026-01-15 17:30:00+00
+125872667,Lost,-115,,Total,Over,2.5,Soccer,Italy - Serie A,-115,AS Roma vs Stuttgart - Over 2.5 - Total Goals,2026-01-22 20:00:00+00
+125872673,Won,110,,Moneyline,UNC Asheville,0,Basketball,NBA,110,UNC Asheville @ USC Upstate - UNC Asheville - Moneyline,2026-01-21 23:00:00+00
+126373563,Lost,115,0.0066,Total,Under,2.5,Soccer,Germany - Bundesliga,115,Freiburg vs Cologne - Under 2.5 - Total Goals,2026-01-25 16:30:00+00
+126373565,Won,145,0.0017,Total,Over,2.5,Soccer,Italy - Serie A,145,Juventus vs Napoli - Over 2.5 - Total Goals,2026-01-25 17:00:00+00
+126373567,Won,110,0.179,Moneyline,Real Sociedad,0,Soccer,Spain - La Liga,110,Real Sociedad vs Celta Vigo - Real Sociedad - Moneyline,2026-01-25 17:30:00+00
+126373568,Lost,170,0.1771,Moneyline,AS Roma,0,Soccer,Italy - Serie A,170,AS Roma vs AC Milan - AS Roma - Moneyline,2026-01-25 19:45:00+00
+126373569,Lost,210,,Moneyline,Stade Brest,0,Soccer,France - Ligue 1,210,Stade Brest vs Toulouse - Stade Brest - Moneyline,2026-01-25 16:15:00+00
+126373577,Won,124,-0.0116,Moneyline,Arizona State,0,Basketball,CBB,124,Cincinnati @ Arizona State - Arizona State - Moneyline,2026-01-25 03:00:00+00
+126373578,Won,-105,,Total,Over,146.5,Basketball,CBB,-105,Weber State @ Montana State - Over 146.5 - Total,2026-01-25 01:00:00+00
+126373579,Lost,-108,,Total,Over,144.5,Basketball,NBA,-108,UC Irvine @ UC San Diego - Over 144.5 - Total,2026-01-25 03:00:00+00
+126373581,Lost,-110,,Total,Over,150.5,Basketball,NBA,-110,UC Riverside @ UC Davis - Over 150.5 - Total,2026-01-24 22:00:00+00
+126373582,Lost,124,0.0414,Moneyline,Eastern Kentucky,0,Basketball,CBB,124,Eastern Kentucky @ Jacksonville - Eastern Kentucky - Moneyline,2026-01-24 20:00:00+00
+126373583,Lost,-105,,Total,Over,158.5,Basketball,CBB,-105,Bowling Green @ Toledo - Over 158.5 - Total,2026-01-24 22:00:00+00
+126373585,Lost,-110,0.073,Total,Over,143.5,Basketball,CBB,-110,Memphis @ Wichita State - Over 143.5 - Total,2026-01-24 21:00:00+00
+126373586,Won,-110,0.0237,Total,Under,139.5,Basketball,CBB,-110,Rider @ Mount Saint Marys - Under 139.5 - Total,2026-01-24 21:00:00+00
+126373588,Lost,-135,,Total,Under,6.5,Hockey,NHL,-135,FLA Panthers @ MIN Wild - Under 6.5 - Total,2026-01-25 02:00:00+00
+126373589,Lost,105,,Total,Under,6.5,Hockey,NHL,105,WAS Capitals @ EDM Oilers - Under 6.5 - Total,2026-01-25 03:00:00+00
+126373591,Lost,190,,Moneyline,UTA Jazz,0,Basketball,NBA,190,MIA Heat @ UTA Jazz - UTA Jazz - Moneyline,2026-01-25 02:30:00+00
+126373593,Lost,-110,,Total,Over,227.5,Basketball,NBA,-110,CLE Cavaliers @ ORL Magic - Over 227.5 - Total,2026-01-25 00:00:00+00
+126373595,Lost,-102,-0.0288,Moneyline,Nicholls State,0,Basketball,CBB,-102,Nicholls State @ SE Louisiana - Nicholls State - Moneyline,2026-01-24 19:30:00+00
+126373596,Lost,102,,Moneyline,Bucknell,0,Basketball,CBB,102,Bucknell @ Loyola Maryland - Bucknell - Moneyline,2026-01-24 19:00:00+00
+126373599,Won,-112,,Total,Under,159.5,Basketball,CBB,-112,Mercer @ Wofford - Under 159.5 - Total,2026-01-24 16:00:00+00
+126373600,Lost,-112,-0.0022,Total,Over,151.5,Basketball,CBB,-112,Milwaukee @ Youngstown State - Over 151.5 - Total,2026-01-24 18:00:00+00
+126373601,Won,-108,,Total,Under,159.5,Basketball,CBB,-108,Elon @ Charleston - Under 159.5 - Total,2026-01-24 17:00:00+00
+126373602,Won,124,,Moneyline,Drake,0,Basketball,CBB,124,Drake @ Indiana State - Drake - Moneyline,2026-01-24 18:00:00+00
+126373603,Lost,-112,,Total,Over,142.5,Basketball,CBB,-112,Clemson @ Georgia Tech - Over 142.5 - Total,2026-01-24 17:00:00+00
+126373606,Lost,-170,,Total,Under,3.5,Soccer,England - Premier League,-170,Bournemouth vs Liverpool - Under 3.5 - Total Goals,2026-01-24 17:30:00+00
+126402436,Cancelled,-102,-0.0242,Total,Over,222.5,Basketball,NBA,-102,DEN Nuggets @ MEM Grizzlies - Over 222.5 - Total Alternate,2026-01-25 20:30:00+00
+126402437,Won,150,0,Moneyline,MIA Heat,0,Basketball,NBA,150,MIA Heat @ PHO Suns - MIA Heat - Moneyline,2026-01-26 01:00:00+00
+126676289,Lost,108,-0.0363,Total,Over,226.5,Basketball,NBA,108,ORL Magic @ CLE Cavaliers - Over 226.5 - Total Alternate,2026-01-27 00:00:00+00
+126676290,Won,-125,0.0346,Total,Under,6.5,Hockey,NHL,-125,UTA Mammoth @ TB Lightning - Under 6.5 - Total,2026-01-27 00:00:00+00
+126676292,Lost,-108,0.0046,Total,Under,6.5,Hockey,NHL,-108,BOS Bruins @ NY Rangers - Under 6.5 - Total,2026-01-27 00:00:00+00
+126676300,Lost,125,,Moneyline,Girona,0,Soccer,Spain - La Liga,125,Girona vs Getafe - Girona - Moneyline,2026-01-26 20:00:00+00
+126835612,Lost,-105,-0.0122,Total,Under,6.5,Hockey,NHL,-105,SJ Sharks @ VAN Canucks - Under 6.5 - Total,2026-01-28 03:00:00+00
+126835614,Won,-265,,Spread,NSH Predators,1.5,Hockey,NHL,-265,NSH Predators @ BOS Bruins - NSH Predators +1.5 - Puck Line,2026-01-28 00:00:00+00
+126835615,Won,-192,,Spread,UTA Mammoth,1.5,Hockey,NHL,-192,UTA Mammoth @ FLA Panthers - UTA Mammoth +1.5 - Puck Line,2026-01-28 00:00:00+00
+126835616,Won,-258,,Spread,BUF Sabres,1.5,Hockey,NHL,-258,BUF Sabres @ TOR Maple Leafs - BUF Sabres +1.5 - Puck Line,2026-01-28 00:00:00+00
+126835620,Lost,-130,0.0531,Total,Over,140.5,Basketball,CBB,-130,Grand Canyon @ Nevada - Over 140.5 - Total Alternate - NCAAB,2026-01-28 03:30:00+00
+126835621,Won,105,,Total,Over,138.5,Basketball,CBB,105,Eastern Michigan @ Central Michigan - Over 138.5 - Total Alternate - NCAAB,2026-01-28 00:00:00+00
+126835622,Lost,-130,0.0266,Total,Over,164.5,Basketball,CBB,-130,Missouri @ Alabama - Over 164.5 - Total Alternate - NCAAB,2026-01-28 01:00:00+00
+126835623,Lost,-110,-0.0069,Total,Over,151.5,Basketball,CBB,-110,Purdue @ Indiana - Over 151.5 - Total Alternate - NCAAB,2026-01-28 02:00:00+00
+126835624,Won,-135,-0.0093,Total,Over,145.5,Basketball,CBB,-135,Western Michigan @ Northern Illinois - Over 145.5 - Total Alternate - NCAAB,2026-01-28 01:00:00+00
+126835625,Won,-115,-0.0111,Total,Under,155.5,Basketball,CBB,-115,Georgia Tech @ Virginia Tech - Under 155.5 - Total,2026-01-28 01:00:00+00
+126835626,Won,-120,,Total,Over,136.5,Basketball,CBB,-120,Rhode Island @ Dayton - Over 136.5 - Total Alternate - NCAAB,2026-01-28 00:00:00+00
+126835627,Won,-112,0.0066,Total,Under,167.5,Basketball,CBB,-112,George Washington @ Saint Louis - Under 167.5 - Total,2026-01-28 01:00:00+00
+126835628,Lost,-125,-0.0143,Total,Over,145.5,Basketball,CBB,-125,Kansas State @ West Virginia - Over 145.5 - Total Alternate - NCAAB,2026-01-28 01:30:00+00
+126835629,Won,-145,0.0191,Total,Over,138.5,Basketball,CBB,-145,Boise State @ San Jose State - Over 138.5 - Total Alternate - NCAAB,2026-01-28 03:00:00+00
+126835630,Won,-110,0.0257,Total,Over,143.5,Basketball,CBB,-110,Saint Josephs @ Loyola Chicago - Over 143.5 - Total,2026-01-28 02:00:00+00
+126835633,Lost,120,0.0216,Moneyline,Alabama State,0,Basketball,CBB,120,Alabama State @ Texas Southern - Alabama State - Moneyline,2026-01-27 19:00:00+00
+126922859,Lost,-130,0.0181,Total,Over,155.5,Basketball,CBB,-130,California @ Florida State - Over 155.5 - Total Alternate - NCAAB,2026-01-29 00:00:00+00
+126922864,Lost,-130,0.0502,Spread,LSU,-5.5,Basketball,CBB,-130,Mississippi State @ LSU - LSU -5.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953810,Lost,-110,0.0196,Total,Over,230.5,Basketball,NBA,-110,CHA Hornets @ MEM Grizzlies - Over 230.5 - Total,2026-01-29 01:00:00+00
+126953815,Lost,-110,0.0023,Spread,BOS Celtics,-5.5,Basketball,NBA,-110,ATL Hawks @ BOS Celtics - BOS Celtics -5.5 - Spread,2026-01-29 00:30:00+00
+126953818,Won,-108,0.0046,Spread,Georgetown,-3.5,Basketball,CBB,-108,DePaul @ Georgetown - Georgetown -3.5 - Spread,2026-01-29 01:30:00+00
+126953820,Lost,-105,0.0116,Spread,Belmont,-5.5,Basketball,CBB,-105,Belmont @ Valparaiso - Belmont -5.5 - Spread Alternate - NCAAB,2026-01-29 01:00:00+00
+126953822,Lost,114,0.0089,Total,Over,141.5,Basketball,CBB,114,DePaul @ Georgetown - Over 141.5 - Total Alternate - NCAAB,2026-01-29 01:30:00+00
+126953823,Won,-105,0.0227,Total,Under,159.5,Basketball,CBB,-105,Illinois State @ Murray State - Under 159.5 - Total,2026-01-29 02:00:00+00
+126953824,Lost,-120,-0.0106,Total,Over,146.5,Basketball,CBB,-120,Minnesota @ Wisconsin - Over 146.5 - Total Alternate - NCAAB,2026-01-29 02:00:00+00
+126953825,Won,-130,-0.0057,Total,Over,146.5,Basketball,CBB,-130,Stanford @ Miami FL - Over 146.5 - Total Alternate - NCAAB,2026-01-29 02:00:00+00
+126953826,Lost,119,0.0672,Spread,Wisconsin,-10.5,Basketball,CBB,119,Minnesota @ Wisconsin - Wisconsin -10.5 - Spread Alternate - NCAAB,2026-01-29 02:00:00+00
+126953827,Won,-108,0.0157,Total,Over,148.5,Basketball,CBB,-108,Sam Houston @ Missouri State - Over 148.5 - Total,2026-01-29 01:00:00+00
+126953829,Lost,-146,-0.0439,Spread,Arkansas State,-9.5,Basketball,CBB,-146,Old Dominion @ Arkansas State - Arkansas State -9.5 - Spread Alternate - NCAAB,2026-01-29 01:00:00+00
+126953830,Lost,-108,0.0135,Total,Over,129.5,Basketball,CBB,-108,Louisiana Tech @ UTEP - Over 129.5 - Total,2026-01-29 02:00:00+00
+126953835,Lost,-118,-0.0042,Spread,Drake,-8.5,Basketball,CBB,-118,Evansville @ Drake - Drake -8.5 - Spread,2026-01-29 00:30:00+00
+126953838,Lost,-105,0.0333,Total,Over,159.5,Basketball,CBB,-105,IU Indianapolis @ Robert Morris - Over 159.5 - Total Alternate - NCAAB,2026-01-29 00:00:00+00
+126953839,Lost,108,-0.0262,Spread,George Mason,-8.5,Basketball,CBB,108,Davidson @ George Mason - George Mason -8.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953847,Lost,-151,-0.02,Spread,Colgate,-9.5,Basketball,CBB,-151,Holy Cross @ Colgate - Colgate -9.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953849,Won,-130,-0.0097,Spread,Fordham,-4.5,Basketball,CBB,-130,La Salle @ Fordham - Fordham -4.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953850,Won,104,0.0049,Spread,Austin Peay,-3.5,Basketball,CBB,104,Austin Peay @ Eastern Kentucky - Austin Peay -3.5 - Spread Alternate - NCAAB,2026-01-29 00:00:00+00
+126953851,Lost,164,-0.0014,Moneyline,Bucknell,0,Basketball,CBB,164,Bucknell @ Lafayette - Bucknell - Moneyline,2026-01-29 00:00:00+00
+126953852,Won,-105,-0.0122,Spread,Robert Morris,-9.5,Basketball,CBB,-105,IU Indianapolis @ Robert Morris - Robert Morris -9.5 - Spread,2026-01-29 00:00:00+00
+127158117,Lost,-130,,Total,Over,153.5,Basketball,CBB,-130,Oral Roberts @ South Dakota - Over 153.5 - Total Alternate - NCAAB,2026-01-30 01:00:00+00
+127158118,Lost,-115,0.0126,Spread,Portland State,-4.5,Basketball,CBB,-115,Montana @ Portland State - Portland State -4.5 - Spread,2026-01-30 03:00:00+00
+127158119,Lost,-102,,Spread,UC San Diego,-4.5,Basketball,NBA,-102,UC Santa Barbara @ UC San Diego - UC San Diego -4.5 - Spread Alternate - NCAAB,2026-01-30 03:00:00+00
+127158122,Won,101,0.0025,Spread,Lindenwood,-6.5,Basketball,CBB,101,Lindenwood @ Southern Indiana - Lindenwood -6.5 - Spread Alternate - NCAAB,2026-01-30 01:30:00+00
+127158124,Won,108,,Spread,Utah Valley,-5.5,Basketball,CBB,108,Utah Valley @ Tarleton State - Utah Valley -5.5 - Spread Alternate - NCAAB,2026-01-30 01:00:00+00
+127158126,Won,-141,,Spread,Iowa State,-15.5,Basketball,CBB,-141,Colorado @ Iowa State - Iowa State -15.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158127,Lost,109,,Spread,Albany NY,-6.5,Basketball,CBB,109,NJIT @ Albany NY - Albany NY -6.5 - Spread Alternate - NCAAB,2026-01-29 23:30:00+00
+127158132,Lost,-115,,Spread,Florida Gulf Coast,-8.5,Basketball,CBB,-115,North Alabama @ Florida Gulf Coast - Florida Gulf Coast -8.5 - Spread,2026-01-30 00:00:00+00
+127158134,Lost,-105,,Spread,Lipscomb,-5.5,Basketball,CBB,-105,Lipscomb @ Jacksonville - Lipscomb -5.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158138,Lost,-149,,Spread,Troy,-8.5,Basketball,CBB,-149,James Madison @ Troy - Troy -8.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+127158142,Won,-112,,Spread,LIU,-7.5,Basketball,CBB,-112,Le Moyne @ LIU - LIU -7.5 - Spread,2026-01-30 00:00:00+00
+127158144,Won,-205,-0.0111,Spread,VAN Canucks,1.5,Hockey,NHL,-205,ANA Ducks @ VAN Canucks - VAN Canucks +1.5 - Puck Line,2026-01-30 03:00:00+00
+127158145,Lost,-108,0.0199,Total,Under,6.5,Hockey,NHL,-108,TOR Maple Leafs @ SEA Kraken - Under 6.5 - Total,2026-01-30 03:00:00+00
+127158153,Won,-120,0.1049,Spread,HOU Rockets,-3.5,Basketball,NBA,-120,HOU Rockets @ ATL Hawks - HOU Rockets -3.5 - Spread Alternate,2026-01-30 01:00:00+00
+127416369,Lost,-108,-0.029,Spread,Manhattan,-6.5,Basketball,CBB,-108,Rider @ Manhattan - Manhattan -6.5 - Spread,2026-01-31 00:00:00+00
+127416370,Lost,-105,0.0116,Spread,VCU,-18.5,Basketball,CBB,-105,Loyola Chicago @ VCU - VCU -18.5 - Spread,2026-01-31 02:00:00+00
+127416371,Won,-102,,Spread,Saint Peters,-7.5,Basketball,CBB,-102,Mount Saint Marys @ Saint Peters - Saint Peters -7.5 - Spread,2026-01-31 01:00:00+00
+127416372,Won,-118,-0.0086,Spread,Nevada,-7.5,Basketball,CBB,-118,UNLV @ Nevada - Nevada -7.5 - Spread,2026-01-31 03:00:00+00
+127416373,Lost,107,,Spread,Iona,-4.5,Basketball,CBB,107,Fairfield @ Iona - Iona -4.5 - Spread Alternate - NCAAB,2026-01-31 00:00:00+00
+127416374,Won,109,,Spread,Charlotte,-7.5,Basketball,CBB,109,Rice @ Charlotte - Charlotte -7.5 - Spread Alternate - NCAAB,2026-01-31 00:00:00+00
+127416377,Lost,110,,Spread,Siena,-10.5,Basketball,CBB,110,Siena @ Niagara - Siena -10.5 - Spread Alternate - NCAAB,2026-01-30 23:30:00+00
+127416378,Won,-101,,Spread,Saint Louis,-10.5,Basketball,CBB,-101,Dayton @ Saint Louis - Saint Louis -10.5 - Spread Alternate - NCAAB,2026-01-31 01:00:00+00
+127416379,Won,116,,Spread,Harvard,-3.5,Basketball,CBB,116,Harvard @ Brown - Harvard -3.5 - Spread Alternate - NCAAB,2026-01-31 00:00:00+00
+127416381,Lost,116,,Total,Over,220.5,Basketball,NBA,116,SAC Kings @ BOS Celtics - Over 220.5 - Total Alternate,2026-01-31 00:30:00+00
+127663666,Won,-105,0.0116,Spread,DAL Mavericks,10.5,Basketball,NBA,-105,DAL Mavericks @ HOU Rockets - DAL Mavericks +10.5 - Spread,2026-02-01 01:30:00+00
+127663667,Won,103,,Spread,CHI Bulls,5.5,Basketball,NBA,103,CHI Bulls @ MIA Heat - CHI Bulls +5.5 - Spread Alternate,2026-02-01 01:00:00+00
+127663669,Won,100,,Total,Under,5.5,Hockey,NHL,100,NJ Devils @ OTT Senators - Under 5.5 - Total,2026-02-01 00:00:00+00
+127663671,Lost,170,,Moneyline,NY Rangers,0,Hockey,NHL,170,NY Rangers @ PIT Penguins - NY Rangers - Moneyline,2026-01-31 20:30:00+00
+127663672,Lost,102,,Total,Under,6.5,Hockey,NHL,102,MIN Wild @ EDM Oilers - Under 6.5 - Total,2026-02-01 03:00:00+00
+127663673,Won,102,,Total,Under,6.5,Hockey,NHL,102,MTL Canadiens @ BUF Sabres - Under 6.5 - Total,2026-02-01 00:00:00+00
+127663674,Won,-102,0.0096,Total,Under,6.5,Hockey,NHL,-102,TOR Maple Leafs @ VAN Canucks - Under 6.5 - Total,2026-02-01 00:00:00+00
+103238660,Lost,620,,Spread,NY Yankees,8.5,Baseball,MLB,620,NY Yankees @ TOR Blue Jays - NY Yankees +8.5 - Run Line Live Betting,2025-10-04 20:08:00+00
+129921275,Won,-105,0.007,Total,Under,167.5,Basketball,CBB,-105,St. Johns @ Providence - Under 167.5 - Total Alternate - NCAAB,2026-02-14 18:00:00+00
+129921276,Lost,125,0.002,Spread,The Citadel,9.5,Basketball,CBB,125,Mercer @ The Citadel - The Citadel +9.5 - Spread Alternate - NCAAB,2026-02-14 18:00:00+00
+126835604,Lost,201,-0.0044,Spread,UTA Jazz,2.5,Basketball,NBA,201,LA Clippers @ UTA Jazz - UTA Jazz +2.5 - Spread Alternate,2026-01-28 03:00:00+00
+126373597,Lost,-122,0.008,Moneyline,George Mason,0,Basketball,CBB,-122,George Mason @ Rhode Island - George Mason - Moneyline,2026-01-24 19:00:00+00
+125611749,Won,-205,-0.0111,Moneyline,Kansas,0,Basketball,CBB,-205,Kansas @ Colorado - Kansas - Moneyline,2026-01-21 04:10:00+00
+125611752,Won,110,,Moneyline,Miami OH,0,Basketball,CBB,110,Miami OH @ Kent State - Miami OH - Moneyline,2026-01-21 00:00:00+00
+125611755,Won,-485,,Moneyline,Saint Louis,0,Basketball,CBB,-485,Saint Louis @ Duquesne - Saint Louis - Moneyline,2026-01-21 00:00:00+00
+125611759,Won,180,,Moneyline,Tottenham,0,Soccer,England - Premier League,180,Tottenham vs Dortmund - Tottenham - Moneyline,2026-01-20 20:00:00+00
+125872669,Lost,-115,0.0126,Moneyline,MEM Grizzlies,0,Basketball,NBA,-115,ATL Hawks @ MEM Grizzlies - MEM Grizzlies - Moneyline,2026-01-22 01:00:00+00
+125872671,Won,145,-0.0082,Moneyline,VAN Canucks,0,Hockey,NHL,145,WAS Capitals @ VAN Canucks - VAN Canucks - Moneyline,2026-01-22 03:00:00+00
+126676296,Won,-120,0.029,Total,Over,146.5,Basketball,CBB,-120,Alcorn @ Bethune-Cookman - Over 146.5 - Total Alternate - NCAAB,2026-01-27 00:00:00+00
+126835619,Lost,120,0,Total,Over,160.5,Basketball,CBB,120,Kentucky @ Vanderbilt - Over 160.5 - Total Alternate - NCAAB,2026-01-28 02:00:00+00
+126835617,Lost,-125,,Total,Under,6.5,Hockey,NHL,-125,UTA Mammoth @ FLA Panthers - Under 6.5 - Total,2026-01-28 00:00:00+00
+126953814,Lost,117,-0.0164,Total,Over,224.5,Basketball,NBA,117,NY Knicks @ TOR Raptors - Over 224.5 - Total Alternate,2026-01-29 00:30:00+00
+126953828,Won,-219,-0.0199,Spread,Utah State,-10.5,Basketball,CBB,-219,Wyoming @ Utah State - Utah State -10.5 - Spread Alternate - NCAAB,2026-01-29 02:00:00+00
+129721482,Lost,-105,,Total,Over,145.5,Basketball,NBA,-105,UC Santa Barbara @ UC Riverside - Over 145.5 - Total,2026-02-13 03:00:00+00
+127158130,Won,-203,,Spread,UNC Asheville,-14.5,Basketball,CBB,-203,Gardner-Webb @ UNC Asheville - UNC Asheville -14.5 - Spread Alternate - NCAAB,2026-01-29 23:30:00+00
+127158131,Lost,-115,,Spread,Monmouth,-8.5,Basketball,CBB,-115,North Carolina A&T @ Monmouth - Monmouth -8.5 - Spread,2026-01-30 00:00:00+00
+127158129,Lost,119,,Spread,ETSU,-11.5,Basketball,CBB,119,Western Carolina @ ETSU - ETSU -11.5 - Spread Alternate - NCAAB,2026-01-30 00:00:00+00
+129921268,Won,-135,0.0089,Moneyline,Mercyhurst,0,Basketball,CBB,-135,Mercyhurst @ Saint Francis PA - Mercyhurst - Moneyline,2026-02-14 19:00:00+00
+129921269,Lost,-105,0.0453,Total,Over,136.5,Basketball,CBB,-105,Presbyterian @ UNC Asheville - Over 136.5 - Total,2026-02-14 19:00:00+00
+129921270,Lost,-105,0,Total,Over,143.5,Basketball,CBB,-105,Kent State @ Ball State - Over 143.5 - Total,2026-02-14 19:00:00+00
+129921272,Lost,-130,0.0216,Moneyline,SMU,0,Basketball,CBB,-130,SMU @ Syracuse - SMU - Moneyline,2026-02-14 19:00:00+00
+126090221,Won,114,-0.0022,Total,Under,6.5,Hockey,NHL,114,NY Rangers @ SJ Sharks - Under 6.5 - Total,2026-01-24 03:00:00+00
+126090224,Lost,-122,0,Total,Under,6.5,Hockey,NHL,-122,VGK Golden Knights @ TOR Maple Leafs - Under 6.5 - Total,2026-01-24 00:00:00+00
+126090220,Lost,270,-0.0071,Moneyline,BKN Nets,0,Basketball,NBA,270,BOS Celtics @ BKN Nets - BKN Nets - Moneyline,2026-01-24 00:30:00+00
+126090223,Lost,-110,-0.0116,Total,Under,6.5,Hockey,NHL,-110,PHI Flyers @ COL Avalanche - Under 6.5 - Total,2026-01-24 02:00:00+00
+130464653,Won,-105,0.0729,Total,Over,147.5,Basketball,CBB,-105,Virginia @ Georgia Tech - Over 147.5 - Total,2026-02-19 02:00:00+00
+130464650,Lost,-115,0.0502,Total,Over,131.5,Basketball,CBB,-115,Utah @ West Virginia - Over 131.5 - Total,2026-02-19 01:30:00+00

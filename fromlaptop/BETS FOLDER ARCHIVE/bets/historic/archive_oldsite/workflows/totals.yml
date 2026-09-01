@@ -1,0 +1,57 @@
+name: 05 Totals
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas scipy
+
+      - name: Run NBA Totals
+        run: python scripts/totals_nba.py
+
+      - name: Run NCAAB Totals
+        run: python scripts/totals_ncaab.py
+
+      - name: Run NHL Totals
+        run: python scripts/totals_nhl.py
+
+      - name: Validate games master (totals only)
+        run: |
+          python scripts/validate_games_master.py \
+            --error-dir docs/win/errors/05_totals \
+            docs/win/*/totals/*.csv
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            docs/win/nba/totals \
+            docs/win/ncaab/totals \
+            docs/win/nhl/totals \
+            docs/win/errors/05_totals || true
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update totals CSVs"
+            git push
+          fi

@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,epl,2026_03_21,Sat Mar 21st 8:30 AM,Brighton,Liverpool,+210,+265,+120
+Soccer,epl,2026_03_21,Sat Mar 21st 1:30 PM,Everton,Chelsea,+235,+250,+115
+Soccer,epl,2026_03_21,Sat Mar 21st 11:00 AM,Fulham,Burnley,-175,+310,+500
+Soccer,epl,2026_03_21,Sat Mar 21st 4:00 PM,Leeds,Brentford,+145,+250,+180

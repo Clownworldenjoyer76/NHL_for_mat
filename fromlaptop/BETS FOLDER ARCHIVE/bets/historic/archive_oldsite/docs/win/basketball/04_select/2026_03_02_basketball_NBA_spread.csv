@@ -1,0 +1,5 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_02,Basketball,Houston Rockets,Washington Wizards,spread,home,15.5,2026_03_02_Houston Rockets_Washington Wizards,spread,home_spread,-188,home,15.5,0.3771760154738874,0.246212121212121
+2026_03_02,Basketball,Boston Celtics,Milwaukee Bucks,spread,home,7.5,2026_03_02_Boston Celtics_Milwaukee Bucks,spread,home_spread,-131,home,7.5,0.1471250971250968,0.0835005402068218
+2026_03_02,Basketball,Denver Nuggets,Utah Jazz,spread,home,11.5,2026_03_02_Denver Nuggets_Utah Jazz,spread,home_spread,-148,home,11.5,0.2773454913880444,0.1655758924791018
+2026_03_02,Basketball,Los Angeles Clippers,Golden State Warriors,spread,home,1.5,2026_03_02_Los Angeles Clippers_Golden State Warriors,spread,home_spread,-191,home,1.5,0.4300917957544463,0.2825296323515556

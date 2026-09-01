@@ -1,0 +1,10 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_spread,home_spread
+2026_02_23,7:00 PM,ncaab_spreads,ncaab_2026_02_23_Louisville_Cardinals_North_Carolina_Tar_Heels,Louisville Cardinals,North Carolina Tar Heels,,,,,-2.5,2.5
+2026_02_23,7:00 PM,ncaab_spreads,ncaab_2026_02_23_Texas_AM_Corpus_Christi_Islanders_Southeastern_Louisiana_Lions,Texas AM Corpus Christi Islanders,Southeastern Louisiana Lions,,,,,-1.5,1.5
+2026_02_23,7:00 PM,ncaab_spreads,ncaab_2026_02_23_Nicholls_State_Colonels_Lamar_Cardinals,Nicholls State Colonels,Lamar Cardinals,,,,,2.5,-2.5
+2026_02_23,7:30 PM,ncaab_spreads,ncaab_2026_02_23_Incarnate_Word_Cardinals_Northwestern_State_Demons,Incarnate Word Cardinals,Northwestern State Demons,,,,,3.5,-3.5
+2026_02_23,7:30 PM,ncaab_spreads,ncaab_2026_02_23_UT_Rio_Grande_Valley_Vaqueros_McNeese_State_Cowboys,UT Rio Grande Valley Vaqueros,McNeese State Cowboys,,,,,9.5,-9.5
+2026_02_23,7:30 PM,ncaab_spreads,ncaab_2026_02_23_Houston_Christian_Huskies_Texas_AM_Commerce_Lions,Houston Christian Huskies,Texas AM Commerce Lions,,,,,3.5,-3.5
+2026_02_23,7:30 PM,ncaab_spreads,ncaab_2026_02_23_New_Orleans_Privateers_Stephen_F_Austin_Lumberjacks,New Orleans Privateers,Stephen F Austin Lumberjacks,,,,,12.5,-12.5
+2026_02_23,8:00 PM,ncaab_spreads,ncaab_2026_02_23_Mississippi_Valley_State_Delta_Devils_Grambling_State_Tigers,Mississippi Valley State Delta Devils,Grambling State Tigers,,,,,16.5,-16.5
+2026_02_23,9:00 PM,ncaab_spreads,ncaab_2026_02_23_Houston_Cougars_Kansas_Jayhawks,Houston Cougars,Kansas Jayhawks,,,,,-1.5,1.5

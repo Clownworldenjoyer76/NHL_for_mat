@@ -1,0 +1,7 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_24,Basketball,Miami RedHawks,Eastern Michigan Eagles,spread,away,-8.5,2026_02_24_Eastern Michigan Eagles_Miami RedHawks,spread,away_spread,-130,away,-8.5,0.0802015662090065,0.0453819726427903
+2026_02_24,Basketball,Buffalo Bulls,Akron Zips,spread,away,15.5,2026_02_24_Akron Zips_Buffalo Bulls,spread,away_spread,-152,away,15.5,0.2104940998296203,0.1268746695674992
+2026_02_24,Basketball,Western Michigan Broncos,Bowling Green Falcons,spread,away,12.5,2026_02_24_Bowling Green Falcons_Western Michigan Broncos,spread,away_spread,-125,away,12.5,0.1529303055618842,0.0849872186448807
+2026_02_24,Basketball,Minnesota Golden Gophers,Michigan Wolverines,spread,away,22.5,2026_02_24_Michigan Wolverines_Minnesota Golden Gophers,spread,away_spread,-149,away,22.5,0.1985974754558201,0.1188517710256839
+2026_02_24,Basketball,UCF Knights,Brigham Young Cougars,spread,away,12.5,2026_02_24_Brigham Young Cougars_UCF Knights,spread,away_spread,-132,away,12.5,0.1685185185185183,0.0958904109589039
+2026_02_24,Basketball,New Mexico Lobos,Nevada Wolf Pack,spread,away,1.5,2026_02_24_Nevada Wolf Pack_New Mexico Lobos,spread,away_spread,-115,away,1.5,0.0567066267460345,0.0303370646616553

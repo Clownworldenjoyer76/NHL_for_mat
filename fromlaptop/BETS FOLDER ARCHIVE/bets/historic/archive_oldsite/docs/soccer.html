@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Soccer Games Today</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/terminal.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>Soccer</h1>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="ncaab.html">NCAAB</a>
+      <a href="nba.html">NBA</a>
+      <a href="nhl.html">NHL</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="tracker.html">Bet Tracker</a>
+    </nav>
+
+    <section class="controls">
+      <label for="soc-date" class="control-label">Date:</label>
+      <input id="soc-date" type="date" />
+      <span class="hint">Select a date to load historical files.</span>
+    </section>
+
+    <div id="status" class="status"></div>
+    <div id="games" class="games"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    const dateInput = document.getElementById("soc-date");
+    dateInput.value = new Date().toLocaleDateString("en-CA");
+
+    function runLoad() {
+      loadSoccerDaily(dateInput.value);
+    }
+
+    dateInput.addEventListener("change", runLoad);
+    runLoad();
+  </script>
+</body>
+</html>

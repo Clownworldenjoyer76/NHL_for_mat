@@ -1,0 +1,9 @@
+date,time,away_team,home_team,league,game_id,away_spread,home_spread,deci_home_spread_juice_odds,deci_away_spread_juice_odds,deci_dk_away_odds,deci_dk_home_odds
+2026_02_14,12:45PM,UCLA Bruins,Michigan Wolverines,ncaab_spreads,ncaab_2026_02_14_UCLA_Bruins_Michigan_Wolverines,15.5,-15.5,2.34,1.8849557522123892,1.9803921568627447,1.847457627118644
+2026_02_14,02:00PM,Kent State Golden Flashes,Ball State Cardinals,ncaab_spreads,ncaab_2026_02_14_Kent_State_Golden_Flashes_Ball_State_Cardinals,-8.5,8.5,2.31,1.9090909090909087,1.9523809523809523,1.869565217391304
+2026_02_14,03:00PM,Kentucky Wildcats,Florida Gators,ncaab_spreads,ncaab_2026_02_14_Kentucky_Wildcats_Florida_Gators,13.5,-13.5,2.45,1.8403361344537816,1.8928571428571428,1.925925925925926
+2026_02_14,04:00PM,Miami Hurricanes,NC State Wolfpack,ncaab_spreads,ncaab_2026_02_14_Miami_Hurricanes_NC_State_Wolfpack,4.5,-4.5,1.8403361344537816,2.43,1.869565217391304,1.869565217391304
+2026_02_14,04:00PM,Kansas State Wildcats,Houston Cougars,ncaab_spreads,ncaab_2026_02_14_Kansas_State_Wildcats_Houston_Cougars,22.5,-22.5,3.16,1.526315789473684,1.8928571428571428,1.9090909090909087
+2026_02_14,05:00PM,Air Force Falcons,Fresno State Bulldogs,ncaab_spreads,ncaab_2026_02_14_Air_Force_Falcons_Fresno_State_Bulldogs,17.5,-17.5,2.99,1.5917159763313609,1.925925925925926,1.9803921568627447
+2026_02_14,08:30PM,South Carolina Gamecocks,Alabama Crimson Tide,ncaab_spreads,ncaab_2026_02_14_South_Carolina_Gamecocks_Alabama_Crimson_Tide,17.5,-17.5,2.53,1.7874015748031495,1.9523809523809523,1.9090909090909087
+2026_02_14,10:30PM,Saint Marys College Gaels,Pacific Tigers,ncaab_spreads,ncaab_2026_02_14_Saint_Marys_College_Gaels_Pacific_Tigers,-8.5,8.5,2.38,1.862068965517241,1.9523809523809523,1.869565217391304

@@ -1,0 +1,134 @@
+name: _00 Manual Data Text Intake
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        required: true
+        type: string
+      market:
+        required: true
+        type: string
+      source:
+        required: true
+        type: string
+      raw_text:
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: python -m pip install --upgrade pip
+
+      - name: Run Basketball
+        if: ${{ github.event.inputs.league == 'basketball' }}
+        run: |
+          printf "%s" "${{ github.event.inputs.raw_text }}" > dump.txt
+          BASE="docs/win/basketball/scripts/00_parsing"
+
+          if [ "${{ github.event.inputs.source }}" = "DraftKings" ]; then
+            python "$BASE/dk.py" basketball "${{ github.event.inputs.market }}" dump.txt
+          else
+            python "$BASE/drat.py" basketball "${{ github.event.inputs.market }}" dump.txt
+          fi
+
+          python "$BASE/name_normalization.py"
+          python "$BASE/dedupe.py"
+
+      - name: Run Hockey
+        if: ${{ github.event.inputs.league == 'hockey' }}
+        run: |
+          printf "%s" "${{ github.event.inputs.raw_text }}" > dump.txt
+          BASE="docs/win/hockey/scripts/00_parsing"
+
+          if [ "${{ github.event.inputs.source }}" = "DraftKings" ]; then
+            python "$BASE/dk.py" hockey "${{ github.event.inputs.market }}" dump.txt
+          else
+            python "$BASE/drat.py" hockey "${{ github.event.inputs.market }}" dump.txt
+          fi
+
+          python "$BASE/name_normalization.py"
+          python "$BASE/dedupe.py"
+
+      - name: Run Soccer
+        if: ${{ github.event.inputs.league == 'soccer' }}
+        run: |
+          printf "%s" "${{ github.event.inputs.raw_text }}" > dump.txt
+          BASE="docs/win/soccer/scripts/00_parsing"
+
+          if [ "${{ github.event.inputs.source }}" = "DraftKings" ]; then
+            python "$BASE/dk.py" soccer "${{ github.event.inputs.market }}" dump.txt
+          else
+            python "$BASE/drat.py" soccer "${{ github.event.inputs.market }}" dump.txt
+          fi
+
+          python "$BASE/parsing_combine.py"
+          python "$BASE/name_normalization.py"
+          python "$BASE/dedupe.py"
+
+      - name: Run Final Scores
+        if: ${{ github.event.inputs.league == 'final_scores' }}
+        run: |
+          printf "%s" "${{ github.event.inputs.raw_text }}" > dump.txt
+
+          BASE="docs/win/final_scores/scripts/00_parsing"
+
+          python "$BASE/scores.py" "${{ github.event.inputs.market }}" dump.txt
+          python "$BASE/dedupe.py"
+
+      - name: Commit Basketball
+        if: ${{ github.event.inputs.league == 'basketball' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/win/basketball/00_intake/
+          git add mappings/basketball/no_map/
+          git add docs/win/basketball/errors/
+          git commit -m "basketball intake" || echo "No changes"
+          git push
+
+      - name: Commit Hockey
+        if: ${{ github.event.inputs.league == 'hockey' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/win/hockey/00_intake/
+          git add mappings/hockey/no_map/
+          git add docs/win/hockey/errors/
+          git commit -m "hockey intake" || echo "No changes"
+          git push
+
+      - name: Commit Soccer
+        if: ${{ github.event.inputs.league == 'soccer' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/win/soccer/00_intake/
+          git add mappings/soccer/no_map/
+          git add docs/win/soccer/errors/
+          git commit -m "soccer intake" || echo "No changes"
+          git push
+
+      - name: Commit Final Scores
+        if: ${{ github.event.inputs.league == 'final_scores' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/win/final_scores/
+          git add docs/win/final_scores/errors/
+          git commit -m "final scores intake" || echo "No changes"
+          git push

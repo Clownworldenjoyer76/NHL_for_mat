@@ -1,0 +1,4 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,take_bet,take_bet_prob,take_bet_edge_decimal,take_bet_edge_pct,take_team,take_odds,value
+2026_03_02,NHL,Philadelphia Flyers,Toronto Maple Leafs,total,under,6.5,2026_03_02_Toronto Maple Leafs_Philadelphia Flyers,under_total,0.6246896842925848,0.1244414317266526,0.0691341287370291,under,-125,6.5
+2026_03_02,NHL,Detroit Red Wings,Nashville Predators,total,under,6.5,2026_03_02_Nashville Predators_Detroit Red Wings,under_total,0.6179322489445002,0.1122780481001002,0.0623766933889445,under,-125,6.5
+2026_03_02,NHL,Columbus Blue Jackets,New York Rangers,total,under,6.5,2026_03_02_New York Rangers_Columbus Blue Jackets,under_total,0.6128675536684719,0.0843041334134502,0.047650162364124,under,-130,6.5

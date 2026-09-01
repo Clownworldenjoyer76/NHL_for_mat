@@ -1,0 +1,25 @@
+=== NHL COMPUTE EDGES RUN ===
+Timestamp: 2026-03-02T19:13:19.276220Z
+
+Wrote docs/win/hockey/03_edges/2026_02_25_NHL_moneyline.csv | rows=8
+Wrote docs/win/hockey/03_edges/2026_02_26_NHL_moneyline.csv | rows=12
+Wrote docs/win/hockey/03_edges/2026_02_27_NHL_moneyline.csv | rows=4
+Wrote docs/win/hockey/03_edges/2026_03_01_NHL_moneyline.csv | rows=6
+Wrote docs/win/hockey/03_edges/2026_03_02_NHL_moneyline.csv | rows=12
+Wrote docs/win/hockey/03_edges/2026_02_25_NHL_puck_line.csv | rows=8
+Wrote docs/win/hockey/03_edges/2026_02_26_NHL_puck_line.csv | rows=12
+Wrote docs/win/hockey/03_edges/2026_02_27_NHL_puck_line.csv | rows=4
+Wrote docs/win/hockey/03_edges/2026_03_01_NHL_puck_line.csv | rows=6
+Wrote docs/win/hockey/03_edges/2026_03_02_NHL_puck_line.csv | rows=12
+Wrote docs/win/hockey/03_edges/2026_02_25_NHL_total.csv | rows=8
+Wrote docs/win/hockey/03_edges/2026_02_26_NHL_total.csv | rows=12
+Wrote docs/win/hockey/03_edges/2026_02_27_NHL_total.csv | rows=4
+Wrote docs/win/hockey/03_edges/2026_03_01_NHL_total.csv | rows=6
+Wrote docs/win/hockey/03_edges/2026_03_02_NHL_total.csv | rows=12
+
+=== SUMMARY ===
+Files processed: 15
+Rows processed (this run, pre-upsert): 108
+Moneyline files: 5
+Puck line files: 5
+Total files: 5

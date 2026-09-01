@@ -1,0 +1,45 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-02-24,7:10 PM,PHI 76ers,IND Pacers,Over,234.5,-115,,,nba
+2026-02-24,7:10 PM,PHI 76ers,IND Pacers,Under,234.5,-105,,,nba
+2026-02-24,7:10 PM,IND Pacers,PHI 76ers,Over,234.5,-115,,,nba
+2026-02-24,7:10 PM,IND Pacers,PHI 76ers,Under,234.5,-105,,,nba
+2026-02-24,7:40 PM,NY Knicks,CLE Cavaliers,Over,230.5,-110,,,nba
+2026-02-24,7:40 PM,NY Knicks,CLE Cavaliers,Under,230.5,-110,,,nba
+2026-02-24,7:40 PM,CLE Cavaliers,NY Knicks,Over,230.5,-110,,,nba
+2026-02-24,7:40 PM,CLE Cavaliers,NY Knicks,Under,230.5,-110,,,nba
+2026-02-24,7:40 PM,OKC Thunder,TOR Raptors,Over,218.5,-105,,,nba
+2026-02-24,7:40 PM,OKC Thunder,TOR Raptors,Under,218.5,-115,,,nba
+2026-02-24,7:40 PM,TOR Raptors,OKC Thunder,Over,218.5,-105,,,nba
+2026-02-24,7:40 PM,TOR Raptors,OKC Thunder,Under,218.5,-115,,,nba
+2026-02-24,7:40 PM,WAS Wizards,ATL Hawks,Over,235.5,-110,,,nba
+2026-02-24,7:40 PM,WAS Wizards,ATL Hawks,Under,235.5,-110,,,nba
+2026-02-24,7:40 PM,ATL Hawks,WAS Wizards,Over,235.5,-110,,,nba
+2026-02-24,7:40 PM,ATL Hawks,WAS Wizards,Under,235.5,-110,,,nba
+2026-02-24,7:40 PM,DAL Mavericks,BKN Nets,Over,224.5,-108,,,nba
+2026-02-24,7:40 PM,DAL Mavericks,BKN Nets,Under,224.5,-112,,,nba
+2026-02-24,7:40 PM,BKN Nets,DAL Mavericks,Over,224.5,-108,,,nba
+2026-02-24,7:40 PM,BKN Nets,DAL Mavericks,Under,224.5,-112,,,nba
+2026-02-24,8:10 PM,MIA Heat,MIL Bucks,Over,228.5,-110,,,nba
+2026-02-24,8:10 PM,MIA Heat,MIL Bucks,Under,228.5,-110,,,nba
+2026-02-24,8:10 PM,MIL Bucks,MIA Heat,Over,228.5,-110,,,nba
+2026-02-24,8:10 PM,MIL Bucks,MIA Heat,Under,228.5,-110,,,nba
+2026-02-24,8:10 PM,GS Warriors,NO Pelicans,Over,224.5,-108,,,nba
+2026-02-24,8:10 PM,GS Warriors,NO Pelicans,Under,224.5,-112,,,nba
+2026-02-24,8:10 PM,NO Pelicans,GS Warriors,Over,224.5,-108,,,nba
+2026-02-24,8:10 PM,NO Pelicans,GS Warriors,Under,224.5,-112,,,nba
+2026-02-24,8:10 PM,CHA Hornets,CHI Bulls,Over,229.5,-115,,,nba
+2026-02-24,8:10 PM,CHA Hornets,CHI Bulls,Under,229.5,-105,,,nba
+2026-02-24,8:10 PM,CHI Bulls,CHA Hornets,Over,229.5,-115,,,nba
+2026-02-24,8:10 PM,CHI Bulls,CHA Hornets,Under,229.5,-105,,,nba
+2026-02-24,9:10 PM,BOS Celtics,PHO Suns,Over,209.5,-110,,,nba
+2026-02-24,9:10 PM,BOS Celtics,PHO Suns,Under,209.5,-110,,,nba
+2026-02-24,9:10 PM,PHO Suns,BOS Celtics,Over,209.5,-110,,,nba
+2026-02-24,9:10 PM,PHO Suns,BOS Celtics,Under,209.5,-110,,,nba
+2026-02-24,10:10 PM,MIN Timberwolves,POR Trail Blazers,Over,234.5,-105,,,nba
+2026-02-24,10:10 PM,MIN Timberwolves,POR Trail Blazers,Under,234.5,-115,,,nba
+2026-02-24,10:10 PM,POR Trail Blazers,MIN Timberwolves,Over,234.5,-105,,,nba
+2026-02-24,10:10 PM,POR Trail Blazers,MIN Timberwolves,Under,234.5,-115,,,nba
+2026-02-24,10:40 PM,ORL Magic,LA Lakers,Over,230.5,-110,,,nba
+2026-02-24,10:40 PM,ORL Magic,LA Lakers,Under,230.5,-110,,,nba
+2026-02-24,10:40 PM,LA Lakers,ORL Magic,Over,230.5,-110,,,nba
+2026-02-24,10:40 PM,LA Lakers,ORL Magic,Under,230.5,-110,,,nba

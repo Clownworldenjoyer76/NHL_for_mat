@@ -1,0 +1,48 @@
+date,time,team,opponent,win_probability,league,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds,units_to_bet
+01/14/2026,03:00 PM,VCU Rams,Rhode Island Rams,0.699,ncaab,1.430615,-232,1.502146,-199,1.00
+01/14/2026,03:00 PM,ETSU Buccaneers,Western Carolina Catamounts,0.76,ncaab,1.315789,-317,1.381579,-262,1.50
+01/14/2026,03:00 PM,Wofford Terriers,Chattanooga Mocs,0.667,ncaab,1.49925,-200,1.574213,-174,1.00
+01/14/2026,03:00 PM,Holy Cross Crusaders,Army Black Knights,0.682,ncaab,1.466276,-214,1.539589,-185,1.00
+01/14/2026,03:00 PM,Boston University Terriers,Lehigh Mountain Hawks,0.608,ncaab,1.644737,-155,1.726974,-138,1.00
+01/14/2026,03:30 PM,Purdue Boilermakers,Iowa Hawkeyes,0.795,ncaab,1.257862,-388,1.320755,-312,1.00
+01/14/2026,04:00 PM,Tulsa Golden Hurricane,Charlotte 49ers,0.644,ncaab,1.552795,-181,1.630435,-159,1.00
+01/14/2026,04:00 PM,Illinois State Redbirds,Indiana State Sycamores,0.7,ncaab,1.428571,-233,1.5,-200,1.25
+01/14/2026,04:00 PM,Kennesaw State Owls,FIU Golden Panthers,0.616,ncaab,1.623377,-160,1.704545,-142,1.00
+01/14/2026,04:00 PM,George Washington Colonials,Davidson Wildcats,0.835,ncaab,1.197605,-506,1.257485,-388,1.00
+01/14/2026,04:00 PM,Troy Trojans,Southern Miss Golden Eagles,0.785,ncaab,1.273885,-365,1.33758,-296,1.50
+01/14/2026,04:00 PM,UNC Asheville Bulldogs,Presbyterian Blue Hose,0.67,ncaab,1.492537,-203,1.567164,-176,1.00
+01/14/2026,04:00 PM,Kentucky Wildcats,LSU Tigers,0.636,ncaab,1.572327,-175,1.650943,-154,1.00
+01/14/2026,04:00 PM,Charleston Southern Buccaneers,USC Upstate Spartans,0.662,ncaab,1.510574,-196,1.586103,-171,1.00
+01/14/2026,04:00 PM,Fairfield Stags,Manhattan Jaspers,0.67,ncaab,1.492537,-203,1.567164,-176,1.00
+01/14/2026,04:00 PM,Georgia Bulldogs,Ole Miss Rebels,0.839,ncaab,1.191895,-521,1.25149,-398,1.00
+01/14/2026,04:00 PM,Quinnipiac Bobcats,Saint Peter's Peacocks,0.758,ncaab,1.319261,-313,1.385224,-260,1.50
+01/14/2026,04:00 PM,Marshall Thundering Herd,Coastal Carolina Chanticleers,0.784,ncaab,1.27551,-363,1.339286,-295,1.50
+01/14/2026,04:00 PM,Colgate Raiders,Loyola Maryland Greyhounds,0.814,ncaab,1.228501,-438,1.289926,-345,1.00
+01/14/2026,04:00 PM,Richmond Spiders,La Salle Explorers,0.891,ncaab,1.122334,-817,1.178451,-560,1.00
+01/14/2026,04:00 PM,Iona Gaels,Rider Broncs,0.86,ncaab,1.162791,-614,1.22093,-453,1.00
+01/14/2026,04:00 PM,Siena Saints,Sacred Heart Pioneers,0.803,ncaab,1.24533,-408,1.307597,-325,1.00
+01/14/2026,04:00 PM,Radford Highlanders,Gardner Webb Runnin' Bulldogs,0.874,ncaab,1.144165,-694,1.201373,-497,1.00
+01/14/2026,04:00 PM,South Florida Bulls,East Carolina Pirates,0.935,ncaab,1.069519,-1438,1.122995,-813,1.00
+01/14/2026,04:30 PM,Bucknell Bison,Lafayette Leopards,0.671,ncaab,1.490313,-204,1.564829,-177,1.00
+01/14/2026,04:30 PM,Western Kentucky Hilltoppers,Missouri State Bears,0.675,ncaab,1.481481,-208,1.555556,-180,1.00
+01/14/2026,04:30 PM,MTSU Blue Raiders,Louisiana Tech Bulldogs,0.662,ncaab,1.510574,-196,1.586103,-171,1.00
+01/14/2026,05:00 PM,Rice Owls,UTSA Roadrunners,0.677,ncaab,1.477105,-210,1.55096,-182,1.00
+01/14/2026,05:00 PM,Southern Illinois Salukis,Drake Bulldogs,0.66,ncaab,1.515152,-194,1.590909,-169,1.00
+01/14/2026,05:00 PM,North Dakota State Bison,South Dakota State Jackrabbits,0.686,ncaab,1.457726,-218,1.530612,-188,1.00
+01/14/2026,05:00 PM,Memphis Tigers,Temple Owls,0.761,ncaab,1.31406,-318,1.379763,-263,1.50
+01/14/2026,05:00 PM,Saint Louis Billikens,Fordham Rams,0.967,ncaab,1.034126,-2930,1.085832,-1165,1.00
+01/14/2026,05:00 PM,Texas State Bobcats,Louisiana Lafayette,0.798,ncaab,1.253133,-395,1.315789,-317,1.00
+01/14/2026,05:30 PM,UCLA Bruins,Penn State Nittany Lions,0.622,ncaab,1.607717,-165,1.688103,-145,1.00
+01/14/2026,05:30 PM,Illinois Fighting Illini,Northwestern Wildcats,0.849,ncaab,1.177856,-562,1.236749,-422,1.00
+01/14/2026,06:00 PM,Denver Pioneers,Oral Roberts Golden Eagles,0.742,ncaab,1.347709,-288,1.415094,-241,1.25
+01/14/2026,06:00 PM,SMU Mustangs,Virginia Tech Hokies,0.764,ncaab,1.308901,-324,1.374346,-267,1.50
+01/14/2026,06:00 PM,UNC Tar Heels,Stanford Cardinal,0.663,ncaab,1.508296,-197,1.58371,-171,1.00
+01/14/2026,06:00 PM,Texas Tech Red Raiders,Utah Utes,0.96,ncaab,1.041667,-2400,1.09375,-1067,1.00
+01/14/2026,06:00 PM,Vanderbilt Commodores,Texas Longhorns,0.737,ncaab,1.356852,-280,1.424695,-235,1.25
+01/14/2026,06:00 PM,Arkansas Razorbacks,South Carolina Gamecocks,0.858,ncaab,1.165501,-604,1.223776,-447,1.00
+01/14/2026,07:00 PM,Santa Clara Broncos,Pacific Tigers,0.897,ncaab,1.114827,-871,1.170569,-586,1.00
+01/14/2026,07:00 PM,Utah State Aggies,Nevada Wolf Pack,0.846,ncaab,1.182033,-549,1.241135,-415,1.00
+01/14/2026,07:30 PM,Michigan Wolverines,Washington Huskies,0.916,ncaab,1.091703,-1090,1.146288,-684,1.00
+01/14/2026,07:30 PM,Arizona Wildcats,Arizona State Sun Devils,0.984,ncaab,1.01626,-6150,1.067073,-1491,1.00
+01/14/2026,08:00 PM,Duke Blue Devils,California Golden Bears,0.891,ncaab,1.122334,-817,1.178451,-560,1.00
+01/14/2026,08:00 PM,Brigham Young Cougars,TCU Horned Frogs,0.91,ncaab,1.098901,-1011,1.153846,-650,1.00

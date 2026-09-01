@@ -1,0 +1,5 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_puck_line_american,home_dk_puck_line_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+hockey,NHL,2026_02_27,06:07 PM,Florida Panthers,Buffalo Sabres,2026_02_27_Florida Panthers_Buffalo Sabres,0.535000,0.465000,2.87,3.25,6.12,+1.5,-1.5,6.5,-258,+210,+105,-125,-105,-115
+hockey,NHL,2026_02_27,06:07 PM,Washington Capitals,Vegas Golden Knights,2026_02_27_Washington Capitals_Vegas Golden Knights,0.500000,0.500000,3.05,3.06,6.11,+1.5,-1.5,5.5,-270,+220,-130,+110,-105,-115
+hockey,NHL,2026_02_27,08:07 PM,Utah Mammoth,Minnesota Wild,2026_02_27_Utah Mammoth_Minnesota Wild,0.566000,0.434000,2.59,3.30,5.89,+1.5,-1.5,6.5,-225,+185,-105,-115,+114,-135
+hockey,NHL,2026_02_27,09:07 PM,Anaheim Ducks,Winnipeg Jets,2026_02_27_Anaheim Ducks_Winnipeg Jets,0.529000,0.471000,2.91,3.22,6.13,+1.5,-1.5,6.5,-230,+190,+110,-130,+110,-130

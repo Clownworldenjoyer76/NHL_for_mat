@@ -1,0 +1,33 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Maryland_Terrapins_Rutgers_Scarlet_Knights,Maryland Terrapins,Rutgers Scarlet Knights,0.457,0.543,71.8,73.7,145.5,2.19,+119,2.3,+130,1.84,-119,1.93,-108
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Utah_Utes_Cincinnati_Bearcats,Utah Utes,Cincinnati Bearcats,0.148,0.852,67.3,78.2,145.5,6.76,+576,7.1,+610,1.17,-588,1.23,-435
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_UTSA_Roadrunners_Charlotte_49ers,UTSA Roadrunners,Charlotte 49ers,0.091,0.909,66.2,79.7,145.9,10.99,+999,11.54,+1054,1.1,-1000,1.16,-625
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Indiana_Hoosiers_Illinois_Fighting_Illini,Indiana Hoosiers,Illinois Fighting Illini,0.159,0.841,71.9,82.2,154.1,6.29,+529,6.6,+560,1.19,-526,1.25,-400
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Denver_Pioneers_Omaha_Mavericks,Denver Pioneers,Omaha Mavericks,0.43,0.57,79.2,81.8,161.0,2.33,+133,2.45,+145,1.75,-133,1.84,-119
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Holy_Cross_Crusaders_Loyola_Maryland_Greyhounds,Holy Cross Crusaders,Loyola Maryland Greyhounds,0.414,0.586,69.8,73.0,142.8,2.42,+142,2.54,+154,1.71,-141,1.8,-125
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Manhattan_Jaspers_Canisius_Golden_Griffins,Manhattan Jaspers,Canisius Golden Griffins,0.544,0.456,70.9,69.0,139.9,1.84,-119,1.93,-108,2.19,+119,2.3,+130
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Youngstown_State_Penguins_Detroit_Titans,Youngstown State Penguins,Detroit Titans,0.574,0.426,78.4,75.6,154.0,1.74,-135,1.83,-120,2.35,+135,2.47,+147
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Oakland_Golden_Grizzlies_Robert_Morris_Colonials,Oakland Golden Grizzlies,Robert Morris Colonials,0.486,0.514,78.2,78.8,157.0,2.06,+106,2.16,+116,1.95,-105,2.05,+105
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Bradley_University_Braves_Southern_Illinois_Salukis,Bradley University Braves,Southern Illinois Salukis,0.436,0.564,72.4,74.9,147.3,2.29,+129,2.4,+140,1.77,-130,1.86,-116
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_South_Florida_Bulls_Florida_Atlantic_Owls,South Florida Bulls,Florida Atlantic Owls,0.634,0.366,85.3,80.9,166.2,1.58,-172,1.66,-152,2.73,+173,2.87,+187
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Indiana_State_Sycamores_Valparaiso_Beacons,Indiana State Sycamores,Valparaiso Beacons,0.341,0.659,70.0,75.0,145.0,2.93,+193,3.08,+208,1.52,-192,1.6,-167
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Tulane_Green_Wave_UAB_Blazers,Tulane Green Wave,UAB Blazers,0.288,0.712,73.7,80.1,153.8,3.47,+247,3.64,+264,1.4,-250,1.47,-213
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Wright_State_Raiders_Cleveland_State_Vikings,Wright State Raiders,Cleveland State Vikings,0.748,0.252,84.7,76.9,161.6,1.34,-294,1.41,-244,3.97,+297,4.17,+317
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Fairfield_Stags_Saint_Peters_Peacocks,Fairfield Stags,Saint Peters Peacocks,0.39,0.61,68.4,72.0,140.4,2.56,+156,2.69,+169,1.64,-156,1.72,-139
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_North_Texas_Mean_Green_Temple_Owls,North Texas Mean Green,Temple Owls,0.449,0.551,67.7,69.9,137.6,2.23,+123,2.34,+134,1.81,-123,1.9,-111
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Merrimack_Warriors_Quinnipiac_Bobcats,Merrimack Warriors,Quinnipiac Bobcats,0.412,0.588,68.3,71.4,139.7,2.43,+143,2.55,+155,1.7,-143,1.78,-128
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Iona_Gaels_Niagara_Purple_Eagles,Iona Gaels,Niagara Purple Eagles,0.714,0.286,71.3,64.7,136.0,1.4,-250,1.47,-213,3.5,+250,3.68,+268
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_IU_Indianapolis_Jaguars_Purdue_Fort_Wayne_Mastodons,IU Indianapolis Jaguars,Purdue Fort Wayne Mastodons,0.225,0.775,77.6,86.1,163.7,4.44,+344,4.66,+366,1.29,-345,1.35,-286
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Rider_Broncs_Sacred_Heart_Pioneers,Rider Broncs,Sacred Heart Pioneers,0.195,0.805,68.2,77.5,145.7,5.13,+413,5.39,+439,1.24,-417,1.3,-333
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Siena_Saints_Marist_Red_Foxes,Siena Saints,Marist Red Foxes,0.43,0.57,64.5,67.2,131.7,2.33,+133,2.45,+145,1.75,-133,1.84,-119
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Illinois_State_Redbirds_Illinois_Chicago,Illinois State Redbirds,Illinois Chicago,0.526,0.474,71.4,70.3,141.7,1.9,-111,2.0,+100,2.11,+111,2.22,+122
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Drake_Bulldogs_Northern_Iowa_Panthers,Drake Bulldogs,Northern Iowa Panthers,0.174,0.826,63.8,73.8,137.6,5.75,+475,6.04,+504,1.21,-476,1.27,-370
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Wisconsin_Green_Bay_Phoenix_Wisconsin_Milwaukee_Panthers,Wisconsin Green Bay Phoenix,Wisconsin Milwaukee Panthers,0.374,0.626,72.9,76.9,149.8,2.67,+167,2.8,+180,1.6,-167,1.68,-147
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Davidson_Wildcats_Dayton_Flyers,Davidson Wildcats,Dayton Flyers,0.312,0.688,68.3,73.9,142.2,3.21,+221,3.37,+237,1.45,-222,1.52,-192
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Eastern_Kentucky_Colonels_North_Alabama_Lions,Eastern Kentucky Colonels,North Alabama Lions,0.585,0.415,78.2,75.1,153.3,1.71,-141,1.8,-125,2.41,+141,2.53,+153
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Charleston_Cougars_Campbell_Fighting_Camels,Charleston Cougars,Campbell Fighting Camels,0.466,0.534,76.4,78.0,154.4,2.15,+115,2.26,+126,1.87,-115,1.96,-104
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Belmont_Bruins_Murray_State_Racers,Belmont Bruins,Murray State Racers,0.509,0.491,82.6,82.2,164.8,1.96,-104,2.06,+106,2.04,+104,2.14,+114
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Seton_Hall_Pirates_Butler_Bulldogs,Seton Hall Pirates,Butler Bulldogs,0.532,0.468,72.9,71.4,144.3,1.88,-114,1.97,-103,2.14,+114,2.25,+125
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_San_Francisco_Dons_San_Diego_Toreros,San Francisco Dons,San Diego Toreros,0.673,0.327,77.9,72.5,150.4,1.49,-204,1.56,-179,3.06,+206,3.21,+221
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Towson_Tigers_Monmouth_Hawks,Towson Tigers,Monmouth Hawks,0.507,0.493,68.0,67.7,135.7,1.97,-103,2.07,+107,2.03,+103,2.13,+113
+2026_02_15,ncaab_moneyline,ncaab_2026_02_15_Oregon_State_Beavers_Seattle_Redhawks,Oregon State Beavers,Seattle Redhawks,0.297,0.703,66.3,72.2,138.5,3.37,+237,3.54,+254,1.42,-238,1.49,-204

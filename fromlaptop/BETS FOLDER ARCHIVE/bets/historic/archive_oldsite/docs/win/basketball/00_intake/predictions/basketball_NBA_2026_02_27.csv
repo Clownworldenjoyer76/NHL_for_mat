@@ -1,0 +1,6 @@
+league,market,game_date,game_time,home_team,away_team,home_prob,away_prob,away_projected_points,home_projected_points,total_projected_points
+Basketball,NBA,2026_02_27,06:10 PM,Detroit Pistons,Cleveland Cavaliers,0.668000,0.332000,112.1,117.3,229.4
+Basketball,NBA,2026_02_27,06:40 PM,Boston Celtics,Brooklyn Nets,0.902000,0.098000,99.3,112.4,211.7
+Basketball,NBA,2026_02_27,07:10 PM,Milwaukee Bucks,New York Knicks,0.291000,0.709000,114.0,107.8,221.8
+Basketball,NBA,2026_02_27,07:40 PM,Dallas Mavericks,Memphis Grizzlies,0.622000,0.378000,118.2,122.2,240.4
+Basketball,NBA,2026_02_27,08:40 PM,Oklahoma City Thunder,Denver Nuggets,0.744000,0.256000,112.3,119.9,232.2

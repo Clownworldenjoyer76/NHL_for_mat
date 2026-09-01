@@ -1,0 +1,6 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_01,Basketball,Cleveland Cavaliers,Brooklyn Nets,spread,home,11.5,2026_03_01_Brooklyn Nets_Cleveland Cavaliers,spread,home_spread,-120,home,11.5,0.1482182438192667,0.0808974752691774
+2026_03_01,Basketball,Memphis Grizzlies,Indiana Pacers,spread,away,1.5,2026_03_01_Indiana Pacers_Memphis Grizzlies,spread,away_spread,-138,away,1.5,0.1109756097560976,0.0644323814019354
+2026_03_01,Basketball,Philadelphia 76ers,Boston Celtics,spread,away,9.5,2026_03_01_Boston Celtics_Philadelphia 76ers,spread,away_spread,-171,away,9.5,0.3095238095238097,0.1954887218045114
+2026_03_01,Basketball,Oklahoma City Thunder,Dallas Mavericks,spread,home,15.5,2026_03_01_Dallas Mavericks_Oklahoma City Thunder,spread,home_spread,-158,home,15.5,0.2930145335208629,0.1794430089003734
+2026_03_01,Basketball,New Orleans Pelicans,Los Angeles Clippers,spread,away,8.5,2026_03_01_Los Angeles Clippers_New Orleans Pelicans,spread,away_spread,-158,away,8.5,0.3189277149708802,0.1952475330585877

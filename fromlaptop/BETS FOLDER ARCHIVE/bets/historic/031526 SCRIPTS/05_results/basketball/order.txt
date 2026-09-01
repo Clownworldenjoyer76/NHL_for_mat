@@ -1,0 +1,5 @@
+scripts must run in order.
+
+grade
+analyze
+reports

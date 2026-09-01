@@ -1,0 +1,10 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,take_bet,take_bet_prob,take_bet_edge_decimal,take_bet_edge_pct,take_team,take_odds,value
+2026_02_26,NHL,Edmonton Oilers,Los Angeles Kings,total,under,6.5,2026_02_26_Los Angeles Kings_Edmonton Oilers,under_total,0.6061205122033169,0.1673432086878696,0.0868897429725477,under,-108,6.5
+2026_02_26,NHL,Toronto Maple Leafs,Florida Panthers,total,under,6.5,2026_02_26_Florida Panthers_Toronto Maple Leafs,under_total,0.6213104127929228,0.118358743027261,0.0657548572373671,under,-125,6.5
+2026_02_26,NHL,Chicago Blackhawks,Nashville Predators,total,under,6.5,2026_02_26_Nashville Predators_Chicago Blackhawks,under_total,0.6382134551711486,0.1109641627053326,0.0637453700647655,under,-135,6.5
+2026_02_26,NHL,New York Islanders,Montreal Canadiens,total,under,6.5,2026_02_26_Montreal Canadiens_New York Islanders,under_total,0.6280698450661156,0.1112004951169738,0.0628524537617677,under,-130,6.5
+2026_02_26,NHL,Tampa Bay Lightning,Carolina Hurricanes,total,under,6.5,2026_02_26_Carolina Hurricanes_Tampa Bay Lightning,under_total,0.6229999236967303,0.1022306342326766,0.0577825323923824,under,-130,6.5
+2026_02_26,NHL,Seattle Kraken,St. Louis Blues,total,under,5.5,2026_02_26_St. Louis Blues_Seattle Kraken,under_total,0.5275105458038053,0.0813966188978005,0.0397056677550246,under,105,5.5
+2026_02_26,NHL,New Jersey Devils,Pittsburgh Penguins,total,over,5.5,2026_02_26_Pittsburgh Penguins_New Jersey Devils,over_total,0.5935883445062093,0.0684590201111767,0.0380327889506537,over,-125,5.5
+2026_02_26,NHL,Detroit Red Wings,Ottawa Senators,total,over,5.5,2026_02_26_Ottawa Senators_Detroit Red Wings,over_total,0.6118162758689076,0.0650135172532835,0.0373481907625246,over,-135,5.5
+2026_02_26,NHL,Columbus Blue Jackets,Boston Bruins,total,under,6.5,2026_02_26_Boston Bruins_Columbus Blue Jackets,under_total,0.575885030810752,0.0557892231530454,0.0304304853562065,under,-120,6.5

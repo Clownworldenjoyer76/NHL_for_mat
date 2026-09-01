@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,epl,2026_03_22,Sun Mar 22nd 10:15 AM,Aston Villa,West Ham,+100,+250,+285
+Soccer,epl,2026_03_22,Sun Mar 22nd 8:00 AM,Newcastle,Sunderland,-150,+295,+425
+Soccer,epl,2026_03_22,Sun Mar 22nd 10:15 AM,Tottenham Hotspur,Nottingham Forest,+130,+240,+220

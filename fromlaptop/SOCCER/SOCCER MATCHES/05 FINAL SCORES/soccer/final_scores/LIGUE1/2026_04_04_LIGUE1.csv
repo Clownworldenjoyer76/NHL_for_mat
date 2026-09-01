@@ -1,0 +1,17 @@
+sport,league,market,game_date,match_time,home_team,away_team,away_score,home_score
+soccer,LIGUE1,,2026_04_03,06:45 PM,Toulouse,Paris Saint-Germain,3,1
+soccer,LIGUE1,,2026_03_22,07:45 PM,Strasbourg,Nantes,2,3
+soccer,LIGUE1,,2026_03_22,04:15 PM,Metz,Rennes,0,0
+soccer,LIGUE1,,2026_03_22,04:15 PM,Lille,Marseille,1,2
+soccer,LIGUE1,,2026_03_22,04:15 PM,Le Havre,Paris FC,3,2
+soccer,LIGUE1,,2026_03_22,02:00 PM,Monaco,Lyon,1,2
+soccer,LIGUE1,,2026_03_21,08:00 PM,Paris Saint-Germain,Nice,0,4
+soccer,LIGUE1,,2026_03_21,06:00 PM,Brest,Auxerre,3,0
+soccer,LIGUE1,,2026_03_21,04:00 PM,Lorient,Toulouse,1,0
+soccer,LIGUE1,,2026_03_20,07:45 PM,Angers,Lens,5,1
+soccer,LIGUE1,,2026_03_15,07:45 PM,Lille,Rennes,1,2
+soccer,LIGUE1,,2026_03_15,04:15 PM,Toulouse,Metz,3,4
+soccer,LIGUE1,,2026_03_15,04:15 PM,Lyon,Le Havre,0,0
+soccer,LIGUE1,,2026_03_15,02:00 PM,Paris FC,Strasbourg,0,0
+soccer,LIGUE1,,2026_03_14,08:05 PM,Brest,Monaco,2,0
+soccer,LIGUE1,,2026_03_14,06:00 PM,Nice,Angers,0,2

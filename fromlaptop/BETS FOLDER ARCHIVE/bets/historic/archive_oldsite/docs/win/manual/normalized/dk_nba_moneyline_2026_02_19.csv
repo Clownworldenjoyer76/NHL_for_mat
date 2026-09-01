@@ -1,0 +1,11 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_02_19,7:00 PM,nba_moneyline,nba_2026_02_19_Atlanta_Hawks_Philadelphia_76ers,Atlanta Hawks,Philadelphia 76ers,,,,,-102,-118
+2026_02_19,7:00 PM,nba_moneyline,nba_2026_02_19_Brooklyn_Nets_Cleveland_Cavaliers,Brooklyn Nets,Cleveland Cavaliers,,,,,675,-1050
+2026_02_19,7:00 PM,nba_moneyline,nba_2026_02_19_Houston_Rockets_Charlotte_Hornets,Houston Rockets,Charlotte Hornets,,,,,-185,154
+2026_02_19,7:00 PM,nba_moneyline,nba_2026_02_19_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,,,,,-148,124
+2026_02_19,7:30 PM,nba_moneyline,nba_2026_02_19_Detroit_Pistons_New_York_Knicks,Detroit Pistons,New York Knicks,,,,,145,-175
+2026_02_19,8:00 PM,nba_moneyline,nba_2026_02_19_Toronto_Raptors_Chicago_Bulls,Toronto Raptors,Chicago Bulls,,,,,-218,180
+2026_02_19,8:30 PM,nba_moneyline,nba_2026_02_19_Phoenix_Suns_San_Antonio_Spurs,Phoenix Suns,San Antonio Spurs,,,,,235,-290
+2026_02_19,10:00 PM,nba_moneyline,nba_2026_02_19_Boston_Celtics_Golden_State_Warriors,Boston Celtics,Golden State Warriors,,,,,-205,170
+2026_02_19,10:00 PM,nba_moneyline,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,Orlando Magic,Sacramento Kings,,,,,-380,300
+2026_02_19,10:30 PM,nba_moneyline,nba_2026_02_19_Denver_Nuggets_Los_Angeles_Clippers,Denver Nuggets,Los Angeles Clippers,,,,,-180,150

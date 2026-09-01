@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american,dk_btts_yes_american,dk_btts_no_american,game_id
+Soccer,epl,2026_03_16,16:00,Brentford,Wolverhampton,0.613000,0.225000,0.162000,1.82,0.81,2.63,-175,+330,+475,-141,+112,,,,,2026_03_16_brentford_wolverhampton
+Soccer,laliga,2026_03_16,16:00,Vallecano,Levante,0.602000,0.216000,0.182000,1.95,0.97,2.92,-140,+285,+400,-135,-105,,,,,2026_03_16_vallecano_levante
+Soccer,seriea,2026_03_16,15:45,Cremonese,Fiorentina,0.248000,0.247000,0.505000,1.06,1.63,2.69,+285,+235,-110,,,+125,-160,,,2026_03_16_cremonese_fiorentina

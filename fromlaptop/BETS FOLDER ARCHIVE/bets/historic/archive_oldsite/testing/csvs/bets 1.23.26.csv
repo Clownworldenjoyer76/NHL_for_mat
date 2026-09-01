@@ -1,0 +1,19 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-23,Pisa vs Inter OVER 3.5,0.5716,-116,115,231,0.1,Win,0.21,0.11,soc_ou
+2026-01-23,Inter,0.879,-504,-425,79,0.1,Win,0.12,0.02,soc
+2026-01-23,FC St. Pauli,0.416,157,190,33,0.1,Loss,0.0,-0.1,soc
+2026-01-23,Florida Gulf Coast Eagles,0.5412,112,-115,-227,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-23,LIU Sharks,0.5471,110,-105,-215,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,The Citadel Bulldogs,0.5268,119,-110,-229,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,East Carolina Pirates,0.5205,122,-115,-237,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Saint Louis Billikens,0.535,115,-110,-225,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Kennesaw State Owls,0.6391,-132,-105,27,0.1,Won,0.19,0.09,ncaab_ou
+2026-01-23,Stetson Hatters,0.5518,108,-110,-218,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Indiana Hoosiers,0.5294,118,-110,-228,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Longwood Lancers,0.56,-103,102,205,0.1,Win,0.2,0.1,ncaab
+2026-01-23,Louisiana Tech Bulldogs,0.49,146,102,-44,0.1,Win,0.2,0.1,ncaab
+2026-01-23,Furman Paladins,0.5163,124,-112,-236,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Vegas Golden Knights,0.6143,-124,-122,2,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-23,New York Rangers,0.5935,-114,114,228,0.1,Win,0.21,0.11,nhl_ou
+2026-01-23,Philadelphia Flyers,0.5951,-115,-110,5,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-23,Brooklyn Nets,0.437,179,270,91,0.1,Loss,0.0,-0.1,nba

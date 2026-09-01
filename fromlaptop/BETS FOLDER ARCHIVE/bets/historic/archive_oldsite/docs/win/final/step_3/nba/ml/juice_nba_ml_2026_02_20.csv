@@ -1,0 +1,5 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds
+2026_02_20,00:00,Utah Jazz,Memphis Grizzlies,nba_moneyline,nba_2026_02_20_Utah_Jazz_Memphis_Grizzlies,1.641025641025641,2.96,1.7692307692307692,2.1
+2026_02_20,00:00,Dallas Mavericks,Minnesota Timberwolves,nba_moneyline,nba_2026_02_20_Dallas_Mavericks_Minnesota_Timberwolves,1.2551020408163265,5.42,1.1428571428571428,6.0
+2026_02_20,00:00,Brooklyn Nets,Oklahoma City Thunder,nba_moneyline,nba_2026_02_20_Brooklyn_Nets_Oklahoma_City_Thunder,1.1336898395721926,7.52,1.0689655172413792,9.5
+2026_02_20,00:00,Los Angeles Clippers,Los Angeles Lakers,nba_moneyline,nba_2026_02_20_Los_Angeles_Clippers_Los_Angeles_Lakers,1.641025641025641,2.98,1.3703703703703702,3.2

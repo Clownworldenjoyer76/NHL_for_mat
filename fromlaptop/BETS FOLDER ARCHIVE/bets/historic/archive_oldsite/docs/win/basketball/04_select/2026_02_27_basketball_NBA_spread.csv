@@ -1,0 +1,3 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_27,Basketball,Brooklyn Nets,Boston Celtics,spread,away,17.5,2026_02_27_Boston Celtics_Brooklyn Nets,spread,away_spread,-158,away,17.5,0.2930145335208629,0.1794430089003734
+2026_02_27,Basketball,New York Knicks,Milwaukee Bucks,spread,home,8.5,2026_02_27_Milwaukee Bucks_New York Knicks,spread,home_spread,-136,home,8.5,0.217256985438804,0.1252112180904753

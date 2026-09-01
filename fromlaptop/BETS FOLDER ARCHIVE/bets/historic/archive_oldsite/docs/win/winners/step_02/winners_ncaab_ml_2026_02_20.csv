@@ -1,0 +1,5 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
+2026_02_20,7:00 PM,Wisconsin Milwaukee Panthers,Detroit Titans,ncaab_moneyline,ncaab_2026_02_20_Wisconsin_Milwaukee_Panthers_Detroit_Titans,2.0700000000000003,2.09,1.704225352112676,2.2,-0.3657746478873243,0.11000000000000032,120,-142
+2026_02_20,7:00 PM,Marist Red Foxes,Manhattan Jaspers,ncaab_moneyline,ncaab_2026_02_20_Marist_Red_Foxes_Manhattan_Jaspers,3.79,1.411522633744856,2.9,1.434782608695652,-0.8900000000000001,0.023259974950796014,-230,190
+2026_02_20,7:00 PM,VCU Rams,Saint Louis Billikens,ncaab_moneyline,ncaab_2026_02_20_VCU_Rams_Saint_Louis_Billikens,1.495049504950495,3.36,1.263157894736842,4.0,-0.231891610213653,0.6400000000000001,300,-380
+2026_02_20,8:30 PM,Bowling Green Falcons,Miami RedHawks,ncaab_moneyline,ncaab_2026_02_20_Bowling_Green_Falcons_Miami_RedHawks,1.1683501683501682,7.38,1.2439024390243902,4.2,0.07555227067422199,-3.1799999999999997,320,-410

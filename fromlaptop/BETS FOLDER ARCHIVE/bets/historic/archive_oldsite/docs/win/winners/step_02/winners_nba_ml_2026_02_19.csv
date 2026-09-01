@@ -1,0 +1,5 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
+2026_02_19,7:00 PM,Atlanta Hawks,Philadelphia 76ers,nba_moneyline,nba_2026_02_19_Atlanta_Hawks_Philadelphia_76ers,1.6802721088435373,2.85,1.847457627118644,1.9803921568627447,0.16718551827510675,-0.8696078431372554,-102,-118
+2026_02_19,7:00 PM,Brooklyn Nets,Cleveland Cavaliers,nba_moneyline,nba_2026_02_19_Brooklyn_Nets_Cleveland_Cavaliers,1.143266475644699,7.22,1.0952380952380951,7.75,-0.048028380406603954,0.5300000000000002,675,-1050
+2026_02_19,10:00 PM,Orlando Magic,Sacramento Kings,nba_moneyline,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,5.78,1.2369668246445498,4.0,1.263157894736842,-1.7800000000000002,0.026191070092292268,-380,300
+2026_02_19,10:30 PM,Denver Nuggets,Los Angeles Clippers,nba_moneyline,nba_2026_02_19_Denver_Nuggets_Los_Angeles_Clippers,2.34,1.9523809523809523,2.5,1.5555555555555556,0.16000000000000014,-0.39682539682539675,-180,150

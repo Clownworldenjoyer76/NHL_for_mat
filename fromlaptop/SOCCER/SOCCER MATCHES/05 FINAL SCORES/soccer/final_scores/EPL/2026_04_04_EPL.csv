@@ -1,0 +1,17 @@
+sport,league,market,game_date,match_time,home_team,away_team,away_score,home_score
+soccer,EPL,,2026_03_22,02:15 PM,West Ham United,Aston Villa,2,0
+soccer,EPL,,2026_03_22,02:15 PM,Nottingham Forest,Tottenham,0,3
+soccer,EPL,,2026_03_22,12:00 PM,Sunderland,Newcastle United,1,2
+soccer,EPL,,2026_03_21,08:00 PM,Brentford,Leeds United,0,0
+soccer,EPL,,2026_03_21,05:30 PM,Chelsea,Everton,3,0
+soccer,EPL,,2026_03_21,03:00 PM,Burnley,Fulham,3,1
+soccer,EPL,,2026_03_21,12:30 PM,Liverpool,Brighton and Hove Albion,2,1
+soccer,EPL,,2026_03_20,08:00 PM,Manchester United,Bournemouth,2,2
+soccer,EPL,,2026_03_16,08:00 PM,Wolverhampton,Brentford,2,2
+soccer,EPL,,2026_03_15,04:30 PM,Tottenham,Liverpool,1,1
+soccer,EPL,,2026_03_15,02:00 PM,Leeds United,Crystal Palace,0,0
+soccer,EPL,,2026_03_15,02:00 PM,Fulham,Nottingham Forest,0,0
+soccer,EPL,,2026_03_15,02:00 PM,Aston Villa,Manchester United,3,1
+soccer,EPL,,2026_03_14,08:00 PM,Manchester City,West Ham United,1,1
+soccer,EPL,,2026_03_14,05:30 PM,Everton,Arsenal,2,0
+soccer,EPL,,2026_03_14,05:30 PM,Newcastle United,Chelsea,0,1

@@ -1,0 +1,2 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,laliga,2026_03_20,16:00,Villarreal,Real Sociedad,0.502000,0.249000,0.249000,1.61,1.05,2.66

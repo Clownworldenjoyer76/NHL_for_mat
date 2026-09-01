@@ -1,0 +1,3 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
+2026_02_27,7:00 PM,Brown Bears,Columbia Lions,ncaab_moneyline,ncaab_2026_02_27_Brown_Bears_Columbia_Lions,1.33003300330033,4.359999999999999,1.4201680672268908,2.95,0.09013506392656079,-1.4099999999999993,195,-237
+2026_02_27,8:00 PM,Appalachian State Mountaineers,Texas State Bobcats,ncaab_moneyline,ncaab_2026_02_27_Appalachian_State_Mountaineers_Texas_State_Bobcats,2.2,1.9615384615384617,1.847457627118644,1.9803921568627447,-0.35254237288135615,0.01885369532428305,-102,-118

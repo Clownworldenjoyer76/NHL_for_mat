@@ -1,0 +1,12 @@
+league,market,game_date,game_time,home_team,away_team,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NBA,2026_02_24,7:10 PM,Indiana Pacers,Philadelphia 76ers,-9.5,+9.5,233.5,-120,+100,-108,-112,-425,+330
+Basketball,NBA,2026_02_24,7:40 PM,Cleveland Cavaliers,New York Knicks,+4.5,-4.5,231.5,-118,-102,-115,-105,+142,-170
+Basketball,NBA,2026_02_24,7:40 PM,Toronto Raptors,Oklahoma City Thunder,+2.5,-2.5,215.5,-112,-108,-112,-108,+120,-142
+Basketball,NBA,2026_02_24,7:40 PM,Atlanta Hawks,Washington Wizards,+12.5,-12.5,235.5,-118,-102,-112,-108,+470,-650
+Basketball,NBA,2026_02_24,7:40 PM,Brooklyn Nets,Dallas Mavericks,-1.5,+1.5,226.5,-110,-110,-110,-110,-125,+105
+Basketball,NBA,2026_02_24,8:10 PM,Chicago Bulls,Charlotte Hornets,-8.5,+8.5,232.5,+100,-120,-108,-112,-325,+260
+Basketball,NBA,2026_02_24,8:10 PM,Milwaukee Bucks,Miami Heat,-6.5,+6.5,228.5,-108,-112,-110,-110,-238,+195
+Basketball,NBA,2026_02_24,8:10 PM,New Orleans Pelicans,Golden State Warriors,-1.5,+1.5,227.5,-110,-110,-110,-110,-120,+100
+Basketball,NBA,2026_02_24,9:10 PM,Phoenix Suns,Boston Celtics,-5.5,+5.5,206.5,-108,-112,-115,-105,-218,+180
+Basketball,NBA,2026_02_24,10:10 PM,Portland Trail Blazers,Minnesota Timberwolves,-6.5,+6.5,235.5,-110,-110,-108,-112,-250,+205
+Basketball,NBA,2026_02_24,10:40 PM,Los Angeles Lakers,Orlando Magic,+5.5,-5.5,230.5,-112,-108,-105,-115,+170,-205

@@ -1,0 +1,7 @@
+league,market,game_date,game_time,home_team,away_team,home_prob,away_prob,away_projected_goals,home_projected_goals,total_projected_goals
+hockey,NHL,2026_03_02,02:07 PM,Nashville Predators,Detroit Red Wings,0.489000,0.511000,3.12,3.00,6.12
+hockey,NHL,2026_03_02,07:07 PM,New York Rangers,Columbus Blue Jackets,0.505000,0.495000,3.05,3.10,6.15
+hockey,NHL,2026_03_02,07:37 PM,Toronto Maple Leafs,Philadelphia Flyers,0.560000,0.440000,2.72,3.36,6.08
+hockey,NHL,2026_03_02,10:07 PM,Seattle Kraken,Carolina Hurricanes,0.346000,0.654000,3.56,2.33,5.89
+hockey,NHL,2026_03_02,10:07 PM,Vancouver Canucks,Dallas Stars,0.343000,0.657000,3.63,2.39,6.02
+hockey,NHL,2026_03_02,10:37 PM,Los Angeles Kings,Colorado Avalanche,0.359000,0.641000,3.56,2.40,5.96

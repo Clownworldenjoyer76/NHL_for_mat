@@ -1,0 +1,5 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,take_bet,take_bet_prob,take_bet_edge_decimal,take_bet_edge_pct,take_team,take_odds,value
+2026_02_25,NHL,Winnipeg Jets,Vancouver Canucks,total,under,6.5,2026_02_25_Vancouver Canucks_Winnipeg Jets,under_total,0.656805616971864,0.162040706950221,0.0915882256675161,under,-130,6.5
+2026_02_25,NHL,Philadelphia Flyers,Washington Capitals,total,under,6.5,2026_02_25_Washington Capitals_Philadelphia Flyers,under_total,0.6449762332190541,0.141111797233711,0.0797588419147061,under,-130,6.5
+2026_02_25,NHL,Colorado Avalanche,Utah Mammoth,total,over,5.5,2026_02_25_Utah Mammoth_Colorado Avalanche,over_total,0.6328718630811976,0.1016658357339366,0.0584037779748145,over,-135,5.5
+2026_02_25,NHL,Toronto Maple Leafs,Tampa Bay Lightning,total,under,6.5,2026_02_25_Tampa Bay Lightning_Toronto Maple Leafs,under_total,0.6078065622800538,0.0753500717262489,0.0425891709757059,under,-130,6.5

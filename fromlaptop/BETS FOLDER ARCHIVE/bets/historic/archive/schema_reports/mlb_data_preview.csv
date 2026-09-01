@@ -1,0 +1,11 @@
+season,date,home_team,away_team,home_final,away_final,home_close_ml,away_close_ml,home_close_spread,away_close_spread,open_over_under,close_over_under
+2011,20110331.0,Brewers,Nationals,6,0,-110.0,119.0,0.0,0.0,8,8.0
+2011,20110331.0,SDG,Reds,5,7,158.0,-110.0,0.0,0.0,7,7.0
+2011,20110331.0,SFO,Cardinals,1,3,-106.0,-178.0,0.0,0.0,6.5,6.5
+2011,20110331.0,Tigers,LOS,3,2,132.0,-114.0,0.0,0.0,8,8.0
+2011,20110331.0,Angels,Yankees,4,6,-145.0,-152.0,0.0,0.0,8.5,8.5
+2011,20110331.0,Astros,KAN,4,2,230.0,125.0,0.0,0.0,7,7.0
+2011,20110401.0,Pirates,Phillies,6,5,153.0,-270.0,0.0,0.0,8.5,8.5
+2011,20110401.0,Diamondbacks,CUB,7,3,190.0,-173.0,0.0,0.0,8.5,8.5
+2011,20110401.0,Mets,Rockies,2,6,155.0,-220.0,0.0,0.0,7,7.0
+2011,20110401.0,SFO,Marlins,3,6,-103.0,-175.0,0.0,0.0,7,7.0

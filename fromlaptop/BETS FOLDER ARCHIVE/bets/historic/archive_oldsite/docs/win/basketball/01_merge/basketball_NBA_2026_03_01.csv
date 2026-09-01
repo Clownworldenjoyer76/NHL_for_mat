@@ -1,0 +1,12 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_points,home_projected_points,total_projected_points,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NBA,2026_03_01,01:10 PM,New York Knicks,San Antonio Spurs,2026_03_01_New York Knicks_San Antonio Spurs,0.460000,0.540000,115.0,113.4,228.4,-1.5,+1.5,228.5,+100,-120,-105,-115,-112,-108
+Basketball,NBA,2026_03_01,03:40 PM,Brooklyn Nets,Cleveland Cavaliers,2026_03_01_Brooklyn Nets_Cleveland Cavaliers,0.183000,0.817000,117.1,107.5,224.6,-11.5,+11.5,222.5,-118,-102,-112,-108,-600,+440
+Basketball,NBA,2026_03_01,03:40 PM,Chicago Bulls,Milwaukee Bucks,2026_03_01_Chicago Bulls_Milwaukee Bucks,0.403000,0.597000,115.5,112.1,227.6,-3.5,+3.5,228.5,-110,-110,-112,-108,-166,+140
+Basketball,NBA,2026_03_01,03:40 PM,Denver Nuggets,Minnesota Timberwolves,2026_03_01_Denver Nuggets_Minnesota Timberwolves,0.585000,0.415000,115.9,118.9,234.8,+3.5,-3.5,239.5,-120,+100,-108,-112,+130,-155
+Basketball,NBA,2026_03_01,05:10 PM,Indiana Pacers,Memphis Grizzlies,2026_03_01_Indiana Pacers_Memphis Grizzlies,0.478000,0.522000,119.3,118.4,237.7,+1.5,-1.5,237.5,-120,+100,-115,-105,-102,-118
+Basketball,NBA,2026_03_01,06:10 PM,Atlanta Hawks,Portland Trail Blazers,2026_03_01_Atlanta Hawks_Portland Trail Blazers,0.658000,0.342000,115.8,120.9,236.7,+5.5,-5.5,236.5,-112,-108,-115,-105,+164,-198
+Basketball,NBA,2026_03_01,06:10 PM,Orlando Magic,Detroit Pistons,2026_03_01_Orlando Magic_Detroit Pistons,0.359000,0.641000,114.1,109.6,223.7,-5.5,+5.5,223.5,-108,-112,-105,-115,-218,+180
+Basketball,NBA,2026_03_01,08:10 PM,Boston Celtics,Philadelphia 76ers,2026_03_01_Boston Celtics_Philadelphia 76ers,0.673000,0.327000,109.1,114.6,223.7,+9.5,-9.5,221.5,-112,-108,-110,-110,+285,-360
+Basketball,NBA,2026_03_01,08:10 PM,Dallas Mavericks,Oklahoma City Thunder,2026_03_01_Dallas Mavericks_Oklahoma City Thunder,0.140000,0.860000,121.6,110.5,232.1,-15.5,+15.5,233.5,-112,-108,-112,-108,-1050,+675
+Basketball,NBA,2026_03_01,09:10 PM,Los Angeles Clippers,New Orleans Pelicans,2026_03_01_Los Angeles Clippers_New Orleans Pelicans,0.662000,0.338000,110.0,115.1,225.1,+8.5,-8.5,222.5,-105,-115,-108,-112,+285,-360
+Basketball,NBA,2026_03_01,09:40 PM,Los Angeles Lakers,Sacramento Kings,2026_03_01_Los Angeles Lakers_Sacramento Kings,0.862000,0.138000,109.5,120.5,230.0,+12.5,-12.5,232.5,-108,-112,-108,-112,+500,-700

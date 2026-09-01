@@ -1,0 +1,55 @@
+markets:
+
+  epl:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05
+
+  laliga:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05
+
+  bundesliga:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05
+
+  seriea:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05
+
+  ligue1:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05
+
+  mls:
+    result:
+      min_edge: -0.1
+    total:
+      min_edge: -0.1
+    btts:
+      min_edge: -0.1
+      min_edge_from_50: 0.05

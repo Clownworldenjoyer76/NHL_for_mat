@@ -1,0 +1,17 @@
+sport,league,market,game_date,match_time,home_team,away_team,away_score,home_score
+soccer,MLS,,2026_03_22,11:00 PM,Real Salt Lake,San Diego FC,2,2
+soccer,MLS,,2026_03_22,08:45 PM,Los Angeles Galaxy,Portland Timbers,1,1
+soccer,MLS,,2026_03_22,06:30 PM,Seattle Sounders,Minnesota United,0,0
+soccer,MLS,,2026_03_22,05:00 PM,Inter Miami CF,New York City,2,3
+soccer,MLS,,2026_03_22,05:00 PM,Montreal Impact,FC Cincinnati,4,3
+soccer,MLS,,2026_03_22,02:30 AM,San Jose Earthquakes,Vancouver Whitecaps,0,1
+soccer,MLS,,2026_03_22,12:45 AM,Los Angeles FC,Austin FC,0,0
+soccer,MLS,,2026_03_22,12:30 AM,Colorado Rapids,Sporting Kansas City,1,4
+soccer,MLS,,2026_03_22,12:30 AM,New England Revolution,St Louis City,3,1
+soccer,MLS,,2026_03_22,12:30 AM,Houston Dynamo,FC Dallas,4,3
+soccer,MLS,,2026_03_21,11:30 PM,New York Red Bulls,Charlotte FC,6,1
+soccer,MLS,,2026_03_21,11:30 PM,D.C. United,Atlanta United,0,0
+soccer,MLS,,2026_03_21,10:15 PM,Orlando City,Nashville SC,5,0
+soccer,MLS,,2026_03_21,08:30 PM,Chicago Fire,Philadelphia Union,1,2
+soccer,MLS,,2026_03_21,05:00 PM,Columbus Crew,Toronto FC,2,1
+soccer,MLS,,2026_03_15,11:00 PM,Seattle Sounders,San Jose Earthquakes,0,1

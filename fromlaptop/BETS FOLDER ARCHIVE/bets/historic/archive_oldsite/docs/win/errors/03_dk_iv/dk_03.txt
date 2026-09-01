@@ -1,0 +1,284 @@
+DK_03 START
+Run timestamp (UTC): 2026-03-01T14:59:47.232420
+—————————————
+2026_02_10
+Matched Games: 26
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_12
+Matched Games: 52
+Unmatched Games 8
+
+MASTER NOT IN DK:
+Cal State Fullerton Titans vs Long Beach State 49ers
+Coastal Carolina Chanticleers vs Louisiana Ragin Cajuns
+Idaho State Bengals vs Eastern Washington Eagles
+NJIT Highlanders vs New Hampshire Wildcats
+Southeast Missouri State Redhawks vs SIU Edwardsville Cougars
+UC Davis Aggies vs UC San Diego Tritons
+UNC Asheville Bulldogs vs Longwood Lancers
+UT Arlington Mavericks vs Abilene Christian Wildcats
+—————————————
+—————————————
+2026_02_13
+Matched Games: 15
+Unmatched Games 1
+
+MASTER NOT IN DK:
+Yale Bulldogs vs Dartmouth Big Green
+—————————————
+—————————————
+2026_02_14
+Matched Games: 49
+Unmatched Games 83
+
+MASTER NOT IN DK:
+Albany Great Danes vs Binghamton Bearcats
+Appalachian State Mountaineers vs James Madison Dukes
+Arkansas Pine Bluff Golden Lions vs Alabama State Hornets
+Army Black Knights vs American University Eagles
+Bellarmine Knights vs Austin Peay Governors
+Bethune Cookman Wildcats vs Alcorn State Braves
+Brown Bears vs Dartmouth Big Green
+Bryant Bulldogs vs Vermont Catamounts
+Bucknell Bison vs Boston University Terriers
+Cal State Fullerton Titans vs UC Irvine Anteaters
+California Baptist Lancers vs Utah Tech Trailblazers
+Central Connecticut State Blue Devils vs Fairleigh Dickinson Knights
+Charleston Southern Buccaneers vs Radford Highlanders
+Chicago State Cougars vs Le Moyne Dolphins
+Columbia Lions vs Princeton Tigers
+Coppin State Eagles vs North Carolina Central Eagles
+Cornell Big Red vs Penn Quakers
+Delaware Fightin Blue Hens vs Missouri State Bears
+Delaware State Hornets vs Norfolk State Spartans
+Duquesne Dukes vs Saint Bonaventure Bonnies
+East Carolina Pirates vs Rice Owls
+Elon Phoenix vs William Mary Tribe
+Florida AM Rattlers vs Jackson State Tigers
+Georgia State Panthers vs Old Dominion Monarchs
+Grambling State Tigers vs Texas Southern Tigers
+Grand Canyon Antelopes vs San Jose State Spartans
+Hawaii Rainbow Warriors vs Cal State Northridge Matadors
+High Point Panthers vs Gardner Webb Runnin Bulldogs
+Hofstra Pride vs UNC Wilmington Seahawks
+Idaho State Bengals vs Idaho Vandals
+LIU Sharks vs New Haven Chargers
+Lamar Cardinals vs Texas AM Corpus Christi Islanders
+Lehigh Mountain Hawks vs Lafayette Leopards
+Lipscomb Bisons vs Queens Royals
+Little Rock Trojans vs Eastern Illinois Panthers
+Long Beach State 49ers vs UC Davis Aggies
+Louisiana Monroe Warhawks vs Texas State Bobcats
+Louisiana Tech Bulldogs vs FIU Golden Panthers
+Loyola Marymount Lions vs Pepperdine Waves
+Marshall Thundering Herd vs Georgia Southern Eagles
+Maryland Eastern Shore Hawks vs Howard Bison
+McNeese State Cowboys vs Texas AM Commerce Lions
+Memphis Tigers vs Utah State Aggies
+Mercyhurst Lakers vs Saint Francis PA Red Flash
+Middle Tennessee Blue Raiders vs Western Kentucky Hilltoppers
+Minnesota Golden Gophers vs Washington Huskies
+Mississippi Valley State Delta Devils vs Alabama AM Bulldogs
+Montana State Bobcats vs Montana Grizzlies
+Morgan State Bears vs South Carolina State Bulldogs
+NJIT Highlanders vs Maine Black Bears
+Nevada Wolf Pack vs San Diego State Aztecs
+New Mexico State Aggies vs Jacksonville State Gamecocks
+New Orleans Privateers vs Houston Christian Huskies
+Nicholls State Colonels vs Incarnate Word Cardinals
+North Dakota State Bison vs North Dakota Fighting Hawks
+North Florida Ospreys vs Jacksonville Dolphins
+Northern Illinois Huskies vs Central Michigan Chippewas
+Sacramento State Hornets vs Northern Arizona Lumberjacks
+Sam Houston State Bearkats vs Kennesaw State Owls
+South Dakota State Jackrabbits vs Oral Roberts Golden Eagles
+Southeast Missouri State Redhawks vs Lindenwood Lions
+Southeastern Louisiana Lions vs Northwestern State Demons
+Southern University Jaguars vs Prairie View AM Panthers
+St Thomas Tommies vs UMKC Kangaroos
+Stephen F Austin Lumberjacks vs UT Rio Grande Valley Vaqueros
+Stetson Hatters vs Florida Gulf Coast Eagles
+Tarleton State Texans vs Abilene Christian Wildcats
+Tennessee Martin Skyhawks vs SIU Edwardsville Cougars
+Tennessee State Tigers vs Morehead State Eagles
+Tennessee Tech Golden Eagles vs Southern Indiana Screaming Eagles
+Toledo Rockets vs Bowling Green Falcons
+Troy Trojans vs Southern Miss Golden Eagles
+Tulsa Golden Hurricane vs Wichita State Shockers
+UC Riverside Highlanders vs UC San Diego Tritons
+UC Santa Barbara Gauchos vs Cal Poly Mustangs
+UMBC Retrievers vs New Hampshire Wildcats
+USC Upstate Spartans vs Longwood Lancers
+Wagner Seahawks vs Stonehill Skyhawks
+Weber State Wildcats vs Eastern Washington Eagles
+West Georgia Wolves vs Central Arkansas Bears
+Western Carolina Catamounts vs Chattanooga Mocs
+Wofford Terriers vs UNC Greensboro Spartans
+Yale Bulldogs vs Harvard Crimson
+—————————————
+—————————————
+2026_02_15
+Matched Games: 32
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_16
+Matched Games: 23
+Unmatched Games 1
+
+MASTER NOT IN DK:
+Louisiana Ragin Cajuns vs Old Dominion Monarchs
+—————————————
+—————————————
+2026_02_17
+Matched Games: 30
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_18
+Matched Games: 59
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_19
+Matched Games: 53
+Unmatched Games 9
+
+MASTER NOT IN DK:
+Arkansas State Red Wolves vs Louisiana Ragin Cajuns
+California State Bakersfield Roadrunners vs UC Riverside Highlanders
+Eastern Washington Eagles vs Sacramento State Hornets
+Montana State Bobcats vs Weber State Wildcats
+New Hampshire Wildcats vs UMass Lowell River Hawks
+South Dakota Coyotes vs Denver Pioneers
+Tulane Green Wave vs North Texas Mean Green
+UC Davis Aggies vs Cal State Fullerton Titans
+UC Irvine Anteaters vs Long Beach State 49ers
+—————————————
+—————————————
+2026_02_20
+Matched Games: 22
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_21
+Matched Games: 101
+Unmatched Games 53
+
+MASTER NOT IN DK:
+Alabama State Hornets vs Florida AM Rattlers
+Austin Peay Governors vs Jacksonville Dolphins
+Buffalo Bulls vs UMass Minutemen
+Cal State Fullerton Titans vs California State Bakersfield Roadrunners
+Cal State Northridge Matadors vs Long Beach State 49ers
+East Carolina Pirates vs Charlotte 49ers
+Eastern Kentucky Colonels vs Bellarmine Knights
+Florida Gators vs Ole Miss Rebels
+Furman Paladins vs Wofford Terriers
+Georgetown Hoyas vs Seton Hall Pirates
+Grambling State Tigers vs Southern University Jaguars
+Idaho Vandals vs Sacramento State Hornets
+Illinois Fighting Illini vs UCLA Bruins
+Illinois State Redbirds vs Bradley University Braves
+Incarnate Word Cardinals vs Texas AM Commerce Lions
+Indiana State Sycamores vs Belmont Bruins
+Iowa State Cyclones vs Brigham Young Cougars
+Kentucky Wildcats vs Auburn Tigers
+Loyola Marymount Lions vs San Diego Toreros
+Michigan Wolverines vs Duke Blue Devils
+Monmouth Hawks vs Charleston Cougars
+Montana Grizzlies vs Weber State Wildcats
+Montana State Bobcats vs Idaho State Bengals
+New Haven Chargers vs Fairleigh Dickinson Knights
+New Mexico Lobos vs Fresno State Bulldogs
+New Orleans Privateers vs Lamar Cardinals
+Nicholls State Colonels vs Stephen F Austin Lumberjacks
+North Carolina AT Aggies vs Elon Phoenix
+North Carolina Central Eagles vs Howard Bison
+Northern Arizona Lumberjacks vs Northern Colorado Bears
+Pacific Tigers vs Gonzaga Bulldogs
+Pepperdine Waves vs Oregon State Beavers
+Portland Pilots vs Seattle Redhawks
+Prairie View AM Panthers vs Arkansas Pine Bluff Golden Lions
+Providence Friars vs DePaul Blue Demons
+Rutgers Scarlet Knights vs Minnesota Golden Gophers
+Saint Bonaventure Bonnies vs Richmond Spiders
+Saint Marys College Gaels vs Washington State Cougars
+San Diego State Aztecs vs Colorado State Rams
+Santa Clara Broncos vs San Francisco Dons
+South Dakota Coyotes vs Oral Roberts Golden Eagles
+St Thomas Tommies vs Denver Pioneers
+Texas AM Aggies vs Oklahoma Sooners
+Texas AM Corpus Christi Islanders vs McNeese State Cowboys
+Texas State Bobcats vs Louisiana Ragin Cajuns
+UCF Knights vs Utah Utes
+UC San Diego Tritons vs UC Irvine Anteaters
+UC Santa Barbara Gauchos vs Hawaii Rainbow Warriors
+UTEP Miners vs New Mexico State Aggies
+Utah State Aggies vs Nevada Wolf Pack
+Vermont Catamounts vs NJIT Highlanders
+Wake Forest Demon Deacons vs Virginia Tech Hokies
+Wyoming Cowboys vs Grand Canyon Antelopes
+—————————————
+—————————————
+2026_02_22
+Matched Games: 30
+Unmatched Games 2
+
+MASTER NOT IN DK:
+Niagara Purple Eagles vs Rider Broncs
+Saint Peters Peacocks vs Siena Saints
+—————————————
+—————————————
+2026_02_23
+Matched Games: 12
+Unmatched Games 0
+
+—————————————
+—————————————
+2026_02_24
+Matched Games: 46
+Unmatched Games 2
+
+MASTER NOT IN DK:
+Louisiana Ragin Cajuns vs Troy Trojans
+Washington Huskies vs Rutgers Scarlet Knights
+—————————————
+—————————————
+2026_02_26
+Matched Games: 54
+Unmatched Games 2
+
+MASTER NOT IN DK:
+Fairleigh Dickinson Knights vs Le Moyne Dolphins
+Stony Brook Seawolves vs Monmouth Hawks
+—————————————
+—————————————
+2026_02_27
+Matched Games: 17
+Unmatched Games 4
+
+MASTER NOT IN DK:
+Harvard Crimson vs Princeton Tigers
+Louisiana Ragin Cajuns vs Arkansas State Red Wolves
+Manhattan Jaspers vs Saint Peters Peacocks
+Rider Broncs vs Iona Gaels
+—————————————
+—————————————
+2026_03_01
+Matched Games: 20
+Unmatched Games 3
+
+MASTER NOT IN DK:
+Rider Broncs vs Siena Saints
+Rutgers Scarlet Knights vs Maryland Terrapins
+Saint Peters Peacocks vs Marist Red Foxes
+—————————————
+DK_03 END

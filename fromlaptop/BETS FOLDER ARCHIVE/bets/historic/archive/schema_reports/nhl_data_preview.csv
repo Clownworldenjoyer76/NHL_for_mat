@@ -1,0 +1,11 @@
+season,date,home_team,away_team,home_final,away_final,home_close_ml,away_close_ml,home_close_spread,away_close_spread,open_over_under,close_over_under
+2011,20111006.0,Bruins,Flyers,1,2,-130,110,0.0,0.0,5.5,5.5
+2011,20111006.0,Maple Leafs,Canadiens,2,0,-105,-115,0.0,0.0,5.5,5.5
+2011,20111006.0,Canucks,Penguins,3,4,-150,130,0.0,0.0,5.5,5.5
+2011,20111007.0,Sabres,Ducks,4,1,-135,115,0.0,0.0,5.5,5.5
+2011,20111007.0,Kings,Rangers,3,2,-120,100,0.0,0.0,5.0,5.0
+2011,20111007.0,Red Wings,Senators,5,3,-230,190,0.0,0.0,5.5,5.5
+2011,20111007.0,Hurricanes,Lightning,1,5,-105,-115,0.0,0.0,6.0,6.0
+2011,20111007.0,Blue Jackets,Predators,2,3,-120,100,0.0,0.0,5.0,5.0
+2011,20111007.0,Stars,Blackhawks,2,1,110,-130,0.0,0.0,5.5,5.5
+2011,20111008.0,Ducks,Rangers,2,1,120,-140,0.0,0.0,5.5,5.5

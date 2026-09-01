@@ -1,0 +1,7 @@
+date,time,team,opponent,spread,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_23,7:10 PM,San Antonio Spurs,Detroit Pistons,1.5,-115,,,nba_spreads,1.8695652173913042,
+2026_02_23,7:10 PM,Detroit Pistons,San Antonio Spurs,-1.5,-105,,,nba_spreads,1.9523809523809523,
+2026_02_23,8:10 PM,Sacramento Kings,Memphis Grizzlies,3.5,-102,,,nba_spreads,1.9803921568627452,
+2026_02_23,8:10 PM,Memphis Grizzlies,Sacramento Kings,-3.5,-118,,,nba_spreads,1.847457627118644,
+2026_02_23,9:40 PM,Utah Jazz,Houston Rockets,13.5,-112,,,nba_spreads,1.8928571428571428,
+2026_02_23,9:40 PM,Houston Rockets,Utah Jazz,-13.5,-108,,,nba_spreads,1.925925925925926,

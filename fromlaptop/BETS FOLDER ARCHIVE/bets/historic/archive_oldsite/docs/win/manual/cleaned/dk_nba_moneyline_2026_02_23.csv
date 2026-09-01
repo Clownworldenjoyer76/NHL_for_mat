@@ -1,0 +1,7 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_23,7:10 PM,San Antonio Spurs,Detroit Pistons,-102,,,nba_moneyline,1.9803921568627452,
+2026_02_23,7:10 PM,Detroit Pistons,San Antonio Spurs,-118,,,nba_moneyline,1.847457627118644,
+2026_02_23,8:10 PM,Sacramento Kings,Memphis Grizzlies,145,,,nba_moneyline,2.45,
+2026_02_23,8:10 PM,Memphis Grizzlies,Sacramento Kings,-175,,,nba_moneyline,1.5714285714285714,
+2026_02_23,9:40 PM,Utah Jazz,Houston Rockets,575,,,nba_moneyline,6.75,
+2026_02_23,9:40 PM,Houston Rockets,Utah Jazz,-850,,,nba_moneyline,1.1176470588235294,

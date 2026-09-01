@@ -1,0 +1,17 @@
+sport,league,market,game_date,match_time,home_team,away_team,away_score,home_score
+soccer,BUNDESLIGA,,2026_03_22,06:30 PM,VfB Stuttgart,Augsburg,2,5
+soccer,BUNDESLIGA,,2026_03_22,04:30 PM,Freiburg,FC St. Pauli,1,2
+soccer,BUNDESLIGA,,2026_03_22,02:30 PM,Eintracht Frankfurt,Mainz 05,2,1
+soccer,BUNDESLIGA,,2026_03_21,05:30 PM,Hamburger SV,Dortmund,3,2
+soccer,BUNDESLIGA,,2026_03_21,02:30 PM,Union Berlin,Bayern Munich,4,0
+soccer,BUNDESLIGA,,2026_03_21,02:30 PM,Bayer 04 Leverkusen,FC Heidenheim,3,3
+soccer,BUNDESLIGA,,2026_03_21,02:30 PM,Borussia Monchengladbach,FC Koln,3,3
+soccer,BUNDESLIGA,,2026_03_21,02:30 PM,Werder Bremen,Wolfsburg,0,1
+soccer,BUNDESLIGA,,2026_03_20,07:30 PM,Hoffenheim,RB Leipzig,5,0
+soccer,BUNDESLIGA,,2026_03_15,06:30 PM,RB Leipzig,VfB Stuttgart,1,0
+soccer,BUNDESLIGA,,2026_03_15,04:30 PM,Union Berlin,Freiburg,0,1
+soccer,BUNDESLIGA,,2026_03_15,02:30 PM,Mainz 05,Werder Bremen,0,2
+soccer,BUNDESLIGA,,2026_03_14,02:30 PM,Wolfsburg,Hoffenheim,1,1
+soccer,BUNDESLIGA,,2026_03_14,02:30 PM,Bayern Munich,Bayer 04 Leverkusen,1,1
+soccer,BUNDESLIGA,,2026_03_14,02:30 PM,Augsburg,Dortmund,2,0
+soccer,BUNDESLIGA,,2026_03_14,02:30 PM,FC Heidenheim,Eintracht Frankfurt,1,0

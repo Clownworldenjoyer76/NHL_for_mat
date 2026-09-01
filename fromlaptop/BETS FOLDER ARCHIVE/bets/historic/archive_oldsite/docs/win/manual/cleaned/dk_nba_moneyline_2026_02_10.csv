@@ -1,0 +1,9 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_10,07:30PM,New York Knicks,Indiana Pacers,-600,0.82,0.86,nba_moneyline,1.1666666666666667,
+2026_02_10,07:30PM,Indiana Pacers,New York Knicks,440,0.18,0.14,nba_moneyline,5.4,
+2026_02_10,08:00PM,Houston Rockets,Los Angeles Clippers,-290,0.8,0.8,nba_moneyline,1.3448275862068966,
+2026_02_10,08:00PM,Los Angeles Clippers,Houston Rockets,235,0.2,0.2,nba_moneyline,3.35,
+2026_02_10,09:00PM,Phoenix Suns,Dallas Mavericks,-325,0.49,0.73,nba_moneyline,1.3076923076923077,
+2026_02_10,09:00PM,Dallas Mavericks,Phoenix Suns,260,0.51,0.27,nba_moneyline,3.6,
+2026_02_10,10:30PM,Los Angeles Lakers,San Antonio Spurs,270,0.43,0.27,nba_moneyline,3.7,
+2026_02_10,10:30PM,San Antonio Spurs,Los Angeles Lakers,-340,0.57,0.73,nba_moneyline,1.2941176470588236,

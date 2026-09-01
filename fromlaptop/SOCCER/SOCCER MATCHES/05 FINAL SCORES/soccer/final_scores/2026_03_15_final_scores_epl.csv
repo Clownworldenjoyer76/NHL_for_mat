@@ -1,0 +1,5 @@
+league,market,game_date,match_time,home_team,away_team,away_score,home_score
+Soccer,epl,2026_03_15,12:30 PM,Liverpool,Tottenham,1,1
+Soccer,epl,2026_03_15,10:00 AM,Crystal Palace,Leeds United,0,0
+Soccer,epl,2026_03_15,10:00 AM,Nottingham Forest,Fulham,0,0
+Soccer,epl,2026_03_15,10:00 AM,Manchester United,Aston Villa,1,3

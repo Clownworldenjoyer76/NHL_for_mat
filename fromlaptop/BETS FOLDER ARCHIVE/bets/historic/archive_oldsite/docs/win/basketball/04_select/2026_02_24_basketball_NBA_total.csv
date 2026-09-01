@@ -1,0 +1,2 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_24,Basketball,Boston Celtics,Phoenix Suns,total,over,206.5,2026_02_24_Phoenix Suns_Boston Celtics,total,over_bet,-139,over,206.5,0.149001424797144,0.0866003489312587

@@ -1,0 +1,3 @@
+league,market,game_date,match_time,home_team,away_team,game_id,market_type,take_bet,odds_american,odds_decimal,edge_pct,kelly_stake_pct,expected_goals,league_scorefile,market_scorefile,match_time_scorefile,away_score,home_score,bet_result
+Soccer,seriea,2026_03_09,15:45,Lazio,Sassuolo,2026_03_09_lazio_sassuolo,result,home,120,2.2,0.1498,2.08,3.07,Soccer,seriea,03:45 PM,1,1,Loss
+Soccer,laliga,2026_03_09,16:00,Espanyol,Real Oviedo,2026_03_09_espanyol_real_oviedo,result,home,-115,1.869565217391304,0.0478,0.2,2.54,Soccer,laliga,04:00 PM,1,1,Loss

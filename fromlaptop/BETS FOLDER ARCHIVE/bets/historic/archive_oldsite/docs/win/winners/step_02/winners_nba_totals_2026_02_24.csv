@@ -1,0 +1,6 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds,over_edge,under_edge,over_odds,under_odds
+2026_02_24,7:10 PM,Philadelphia 76ers,Indiana Pacers,nba_totals,nba_2026_02_24_Philadelphia_76ers_Indiana_Pacers,234.5,2.9,1.6493506493506491,1.869565217391304,1.9523809523809523,-1.030434782608696,0.3030303030303032,-115,-105
+2026_02_24,7:40 PM,Oklahoma City Thunder,Toronto Raptors,nba_totals,nba_2026_02_24_Oklahoma_City_Thunder_Toronto_Raptors,218.5,1.8403361344537816,2.45,1.9523809523809523,1.869565217391304,0.11204481792717069,-0.5804347826086962,-105,-115
+2026_02_24,8:10 PM,Golden State Warriors,New Orleans Pelicans,nba_totals,nba_2026_02_24_Golden_State_Warriors_New_Orleans_Pelicans,224.5,1.617283950617284,3.0,1.925925925925926,1.8928571428571428,0.308641975308642,-1.1071428571428572,-107,-112
+2026_02_24,9:10 PM,Boston Celtics,Phoenix Suns,nba_totals,nba_2026_02_24_Boston_Celtics_Phoenix_Suns,209.5,1.53475935828877,3.43,1.9090909090909087,1.9090909090909087,0.37433155080213876,-1.5209090909090914,-110,-110
+2026_02_24,10:40 PM,Orlando Magic,Los Angeles Lakers,nba_totals,nba_2026_02_24_Orlando_Magic_Los_Angeles_Lakers,230.5,2.4,1.869565217391304,1.9090909090909087,1.9090909090909087,-0.4909090909090912,0.03952569169960474,-110,-110

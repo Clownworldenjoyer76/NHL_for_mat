@@ -1,0 +1,121 @@
+league,alias,canonical_team
+nba,CHA Hornets,Charlotte Hornets
+nba,WAS Wizards,Washington Wizards
+nba,PHI 76ers,Philadelphia 76ers
+nba,NY Knicks,New York Knicks
+nba,ORL Magic,Orlando Magic
+nba,CLE Cavaliers,Cleveland Cavaliers
+nba,BOS Celtics,Boston Celtics
+nba,DAL Mavericks,Dallas Mavericks
+nba,UTA Jazz,Utah Jazz
+nba,ATL Hawks,Atlanta Hawks
+nba,CHI Bulls,Chicago Bulls
+nba,DEN Nuggets,Denver Nuggets
+nba,GS Warriors,Golden State Warriors
+nba,HOU Rockets,Houston Rockets
+nba,LA Lakers,Los Angeles Lakers
+nba,MIA Heat,Miami Heat
+nba,MIL Bucks,Milwaukee Bucks
+nba,MIN Timberwolves,Minnesota Timberwolves
+nba,NO Pelicans,New Orleans Pelicans
+nba,OKC Thunder,Oklahoma City Thunder
+nba,PHO Suns,Phoenix Suns
+nba,POR Trail Blazers,Portland Trail Blazers
+nba,SA Spurs,San Antonio Spurs
+nba,BKN Nets,Brooklyn Nets
+nba,DET Pistons,Detroit Pistons
+nba,LA Clippers,Los Angeles Clippers
+nba,MEM Grizzlies,Memphis Grizzlies
+nba,SAC Kings,Sacramento Kings
+nba,TOR Raptors,Toronto Raptors
+nba,IND Pacers,Indiana Pacers
+nba_ou,CHA Hornets,Charlotte Hornets
+nba_ou,WAS Wizards,Washington Wizards
+nba_ou,PHI 76ers,Philadelphia 76ers
+nba_ou,NY Knicks,New York Knicks
+nba_ou,ORL Magic,Orlando Magic
+nba_ou,CLE Cavaliers,Cleveland Cavaliers
+nba_ou,BOS Celtics,Boston Celtics
+nba_ou,DAL Mavericks,Dallas Mavericks
+nba_ou,UTA Jazz,Utah Jazz
+nba_ou,ATL Hawks,Atlanta Hawks
+nba_ou,CHI Bulls,Chicago Bulls
+nba_ou,DEN Nuggets,Denver Nuggets
+nba_ou,GS Warriors,Golden State Warriors
+nba_ou,HOU Rockets,Houston Rockets
+nba_ou,LA Lakers,Los Angeles Lakers
+nba_ou,MIA Heat,Miami Heat
+nba_ou,MIL Bucks,Milwaukee Bucks
+nba_ou,MIN Timberwolves,Minnesota Timberwolves
+nba_ou,NO Pelicans,New Orleans Pelicans
+nba_ou,OKC Thunder,Oklahoma City Thunder
+nba_ou,PHO Suns,Phoenix Suns
+nba_ou,POR Trail Blazers,Portland Trail Blazers
+nba_ou,SA Spurs,San Antonio Spurs
+nba_ou,BKN Nets,Brooklyn Nets
+nba_ou,DET Pistons,Detroit Pistons
+nba_ou,LA Clippers,Los Angeles Clippers
+nba_ou,MEM Grizzlies,Memphis Grizzlies
+nba_ou,SAC Kings,Sacramento Kings
+nba_ou,TOR Raptors,Toronto Raptors
+nba_ou,IND Pacers,Indiana Pacers
+nba_spreads,CHA Hornets,Charlotte Hornets
+nba_spreads,WAS Wizards,Washington Wizards
+nba_spreads,PHI 76ers,Philadelphia 76ers
+nba_spreads,NY Knicks,New York Knicks
+nba_spreads,ORL Magic,Orlando Magic
+nba_spreads,CLE Cavaliers,Cleveland Cavaliers
+nba_spreads,BOS Celtics,Boston Celtics
+nba_spreads,DAL Mavericks,Dallas Mavericks
+nba_spreads,UTA Jazz,Utah Jazz
+nba_spreads,ATL Hawks,Atlanta Hawks
+nba_spreads,CHI Bulls,Chicago Bulls
+nba_spreads,DEN Nuggets,Denver Nuggets
+nba_spreads,GS Warriors,Golden State Warriors
+nba_spreads,HOU Rockets,Houston Rockets
+nba_spreads,LA Lakers,Los Angeles Lakers
+nba_spreads,MIA Heat,Miami Heat
+nba_spreads,MIL Bucks,Milwaukee Bucks
+nba_spreads,MIN Timberwolves,Minnesota Timberwolves
+nba_spreads,NO Pelicans,New Orleans Pelicans
+nba_spreads,OKC Thunder,Oklahoma City Thunder
+nba_spreads,PHO Suns,Phoenix Suns
+nba_spreads,POR Trail Blazers,Portland Trail Blazers
+nba_spreads,SA Spurs,San Antonio Spurs
+nba_spreads,BKN Nets,Brooklyn Nets
+nba_spreads,DET Pistons,Detroit Pistons
+nba_spreads,LA Clippers,Los Angeles Clippers
+nba_spreads,MEM Grizzlies,Memphis Grizzlies
+nba_spreads,SAC Kings,Sacramento Kings
+nba_spreads,TOR Raptors,Toronto Raptors
+nba_spreads,IND Pacers,Indiana Pacers
+nba_ml,CHA Hornets,Charlotte Hornets
+nba_ml,WAS Wizards,Washington Wizards
+nba_ml,PHI 76ers,Philadelphia 76ers
+nba_ml,NY Knicks,New York Knicks
+nba_ml,ORL Magic,Orlando Magic
+nba_ml,CLE Cavaliers,Cleveland Cavaliers
+nba_ml,BOS Celtics,Boston Celtics
+nba_ml,DAL Mavericks,Dallas Mavericks
+nba_ml,UTA Jazz,Utah Jazz
+nba_ml,ATL Hawks,Atlanta Hawks
+nba_ml,CHI Bulls,Chicago Bulls
+nba_ml,DEN Nuggets,Denver Nuggets
+nba_ml,GS Warriors,Golden State Warriors
+nba_ml,HOU Rockets,Houston Rockets
+nba_ml,LA Lakers,Los Angeles Lakers
+nba_ml,MIA Heat,Miami Heat
+nba_ml,MIL Bucks,Milwaukee Bucks
+nba_ml,MIN Timberwolves,Minnesota Timberwolves
+nba_ml,NO Pelicans,New Orleans Pelicans
+nba_ml,OKC Thunder,Oklahoma City Thunder
+nba_ml,PHO Suns,Phoenix Suns
+nba_ml,POR Trail Blazers,Portland Trail Blazers
+nba_ml,SA Spurs,San Antonio Spurs
+nba_ml,BKN Nets,Brooklyn Nets
+nba_ml,DET Pistons,Detroit Pistons
+nba_ml,LA Clippers,Los Angeles Clippers
+nba_ml,MEM Grizzlies,Memphis Grizzlies
+nba_ml,SAC Kings,Sacramento Kings
+nba_ml,TOR Raptors,Toronto Raptors
+nba_ml,IND Pacers,Indiana Pacers

@@ -1,0 +1,10 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds
+2026_02_23,ncaab,ncaab_2026_02_23_Louisville_Cardinals_North_Carolina_Tar_Heels,Louisville Cardinals,North Carolina Tar Heels,0.595,0.405,83.5,80.1,163.6,1.6807,-146,1.6807,-146
+2026_02_23,ncaab,ncaab_2026_02_23_Texas_AM_Corpus_Christi_Islanders_Southeastern_Louisiana_Lions,Texas AM Corpus Christi Islanders,Southeastern Louisiana Lions,0.608,0.392,68.2,64.5,132.7,1.6447,-155,1.6447,-155
+2026_02_23,ncaab,ncaab_2026_02_23_Nicholls_State_Colonels_Lamar_Cardinals,Nicholls State Colonels,Lamar Cardinals,0.354,0.646,69.2,74.0,143.2,2.8249,182,2.8249,182
+2026_02_23,ncaab,ncaab_2026_02_23_Incarnate_Word_Cardinals_Northwestern_State_Demons,Incarnate Word Cardinals,Northwestern State Demons,0.446,0.554,68.5,70.7,139.2,2.2422,124,2.2422,124
+2026_02_23,ncaab,ncaab_2026_02_23_UT_Rio_Grande_Valley_Vaqueros_McNeese_State_Cowboys,UT Rio Grande Valley Vaqueros,McNeese State Cowboys,0.148,0.852,65.9,76.7,142.6,6.7568,575,6.7568,575
+2026_02_23,ncaab,ncaab_2026_02_23_Houston_Christian_Huskies_Texas_AM_Commerce_Lions,Houston Christian Huskies,Texas AM Commerce Lions,0.385,0.615,66.7,70.5,137.2,2.5974,159,2.5974,159
+2026_02_23,ncaab,ncaab_2026_02_23_New_Orleans_Privateers_Stephen_F_Austin_Lumberjacks,New Orleans Privateers,Stephen F Austin Lumberjacks,0.151,0.849,68.8,79.5,148.3,6.6225,562,6.6225,562
+2026_02_23,ncaab,ncaab_2026_02_23_Mississippi_Valley_State_Delta_Devils_Grambling_State_Tigers,Mississippi Valley State Delta Devils,Grambling State Tigers,0.07,0.93,62.0,77.4,139.4,14.2857,1328,14.2857,1328
+2026_02_23,ncaab,ncaab_2026_02_23_Houston_Cougars_Kansas_Jayhawks,Houston Cougars,Kansas Jayhawks,0.605,0.395,71.6,68.2,139.8,1.6529,-153,1.6529,-153

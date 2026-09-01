@@ -1,0 +1,21 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33575191,2026_05_04,12:00 PM,Getafe,Athletic Bilbao,3.043,2.845,2.736,3.152,1.344,,,2.41,1.572
+soccer,laliga,33575211,2026_05_04,02:15 PM,Valencia,Celta Vigo,2.371,3.24,3.171,2.223,1.678,,,1.854,1.946
+soccer,laliga,33575212,2026_05_04,04:30 PM,Real Oviedo,Sevilla,2.855,2.894,2.855,2.45,1.562,,,1.946,1.861
+soccer,laliga,33643150,2026_05_04,07:00 PM,Deportivo Alaves,Osasuna,2.509,3.102,3.082,2.302,1.621,,,1.937,1.861
+soccer,ligue1,33575156,2026_05_04,01:00 PM,Angers SCO,Lyon,4.831,3.527,1.791,2.183,1.698,,,2.025,1.797
+soccer,ligue1,33575159,2026_05_04,03:15 PM,Le Havre AC,AJ Auxerre,2.568,3.082,3.003,2.331,1.621,,,1.946,1.861
+soccer,ligue1,33575160,2026_05_04,03:15 PM,Lorient,Paris FC,2.282,3.27,3.319,2.134,1.73,,,1.846,1.956
+soccer,ligue1,33575158,2026_05_04,03:15 PM,Metz,Nantes,2.845,3.25,2.578,2.193,1.693,,,1.869,1.928
+soccer,ligue1,33575161,2026_05_04,06:45 PM,AS Monaco,Olympique Marseille,2.163,3.636,3.24,1.562,2.45,2.361,1.601,1.462,2.717
+soccer,bundesliga,33565592,2026_05_04,01:30 PM,Union Berlin,FC St. Pauli,2.074,3.21,3.797,2.554,1.498,,,2.192,1.653
+soccer,bundesliga,33565588,2026_05_04,03:30 PM,Eintracht Frankfurt,FC Koln,2.035,3.513,3.562,1.708,2.123,2.721,1.437,1.574,2.339
+soccer,seriea,33575174,2026_05_04,01:00 PM,US Cremonese,Bologna FC,3.5,3.3,2.08,1.97,1.81,3.37,1.31,1.79,1.96
+soccer,seriea,33575175,2026_05_04,04:00 PM,Pisa SC,Torino FC,3.132,2.934,2.588,2.341,1.612,,,1.886,1.919
+soccer,seriea,33575176,2026_05_04,06:45 PM,Inter Milan,AS Roma,1.63,3.83,5.11,1.89,1.88,3.2,1.34,1.9,1.84
+soccer,mls,33673831,2026_05_04,12:30 AM,Chicago Fire,Nashville SC,2.529,3.132,3.023,1.765,2.084,2.816,1.43,1.549,2.46
+soccer,mls,33675124,2026_05_04,12:30 AM,Houston Dynamo,Seattle Sounders,2.717,3.329,2.647,1.778,2.065,2.905,1.408,1.589,2.361
+soccer,mls,33673830,2026_05_04,01:30 AM,Los Angeles FC,Orlando City SC,1.279,6.423,7.876,1.32,3.271,1.869,1.937,1.633,2.233
+soccer,mls,33675624,2026_05_04,02:30 AM,Los Angeles Galaxy,Minnesota United FC,1.825,4.071,3.834,1.601,2.331,2.5,1.527,1.545,2.44
+soccer,mls,33675629,2026_05_04,02:30 AM,San Jose Earthquakes,San Diego FC,2.233,3.636,3.043,1.552,2.44,2.331,1.601,1.458,2.697
+soccer,mls,33675621,2026_05_04,02:30 AM,Vancouver Whitecaps FC,Portland Timbers,1.301,5.899,8.35,1.358,3.102,1.956,1.869,1.637,2.252

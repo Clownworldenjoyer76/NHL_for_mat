@@ -1,0 +1,792 @@
+league,alias,canonical_team
+ncaab_ml,Radford,Radford Highlanders
+ncaab_ml,Sam Houston,Sam Houston State Bearkats
+ncaab_ml,Prairie View,Prairie View AM Panthers
+ncaab_ml,Rutgers,Rutgers Scarlet Knights
+ncaab_ml,Rutgers Scarlet Knights,Rutgers Scarlet Knights	
+ncaab_ml,ETSU Buccaneers,East Tennessee State Buccaneers
+ncaab_ml,MD E Shore Fighting Hawks,Maryland Eastern Shore Hawks
+ncaab_ml,Radford Highlanders,Radford Highlanders
+ncaab_ml,St. Bonaventure Bonnies,Saint Bonaventure Bonnies
+ncaab_ml,Pennsylvania,Penn Quakers
+ncaab_ml,Saint Louis,Saint Louis Billikens
+ncaab_ml,Hawaii,Hawaii Rainbow Warriors
+ncaab_ml,Louisiana,Louisiana Ragin' Cajuns
+ncaab_ml,South Alabama,South Alabama Jaguars
+ncaab_ml,USC Upstate,USC Upstate Spartans
+ncaab_ml,Hawaii Rainbow Warriors,Hawaii Rainbow Warriors
+ncaab_ml,Louisiana Lafayette,Louisiana Ragin Cajuns
+ncaab_ml,MTSU Blue Raiders,Middle Tennessee Blue Raiders
+ncaab_ml,South Alabama Jaguars,South Alabama Jaguars
+ncaab_ml,UMKC Kangarros,UMKC Kangaroos
+ncaab_ml,USC Upstate Spartans,USC Upstate Spartans
+ncaab_ml,East Texas AM Lions,Texas AM Commerce Lions
+ncaab_ml,Arkansas–Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_ml,Arkansas–Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_ml,Bethune–Cookman,Bethune Cookman Wildcats
+ncaab_ml,Bethune–Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_ml,Texas A&M–Corpus Christi,Texas AM Corpus Christi Islanders
+ncaab_ml,Texas A&M–Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+ncaab_ml,Ark Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_ml,MS Valley State Delta Devils,Mississippi Valley State Delta Devils
+ncaab_ml,Texas A&M CC Islanders,Texas AM Corpus Christi Islanders
+ncaab_ml,Texas A&M Commerce Lions,Texas AM Commerce Lions
+ncaab_ml,UTRGV Vaqueros,UT Rio Grande Valley Vaqueros
+ncaab_ml,A&M-Corpus Christi,Texas AM Corpus Christi Islanders
+ncaab_ml,Abilene Christian,Abilene Christian Wildcats
+ncaab_ml,Abilene Christian Wildcats,Abilene Christian Wildcats
+ncaab_ml,Air Force,Air Force Falcons
+ncaab_ml,Air Force Falcons,Air Force Falcons
+ncaab_ml,Akron,Akron Zips
+ncaab_ml,Akron Zips,Akron Zips
+ncaab_ml,Alabama,Alabama Crimson Tide
+ncaab_ml,Alabama A&M,Alabama AM Bulldogs
+ncaab_ml,Alabama A&M Bulldogs,Alabama AM Bulldogs
+ncaab_ml,Alabama Crimson Tide,Alabama Crimson Tide
+ncaab_ml,Alabama State,Alabama State Hornets
+ncaab_ml,Alabama State Hornets,Alabama State Hornets
+ncaab_ml,Albany,Albany Great Danes
+ncaab_ml,Albany Great Danes,Albany Great Danes
+ncaab_ml,Albany NY,Albany Great Danes
+ncaab_ml,Alcorn,Alcorn State Braves
+ncaab_ml,Alcorn State,Alcorn State Braves
+ncaab_ml,Alcorn State Braves,Alcorn State Braves
+ncaab_ml,American,American University Eagles
+ncaab_ml,American University Eagles,American University Eagles
+ncaab_ml,Appalachian State,Appalachian State Mountaineers
+ncaab_ml,Appalachian State Mountaineers,Appalachian State Mountaineers
+ncaab_ml,Arizona,Arizona Wildcats
+ncaab_ml,Arizona State,Arizona State Sun Devils
+ncaab_ml,Arizona State Sun Devils,Arizona State Sun Devils
+ncaab_ml,Arizona Wildcats,Arizona Wildcats
+ncaab_ml,Ark Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_ml,Arkansas,Arkansas Razorbacks
+ncaab_ml,Arkansas Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+ncaab_ml,Arkansas Razorbacks,Arkansas Razorbacks
+ncaab_ml,Arkansas State,Arkansas State Red Wolves
+ncaab_ml,Arkansas State Red Wolves,Arkansas State Red Wolves
+ncaab_ml,Arkansas-Pine Bluff,Arkansas Pine Bluff Golden Lions
+ncaab_ml,Army,Army Black Knights
+ncaab_ml,Army Black Knights,Army Black Knights
+ncaab_ml,Auburn,Auburn Tigers
+ncaab_ml,Auburn Tigers,Auburn Tigers
+ncaab_ml,Austin Peay,Austin Peay Governors
+ncaab_ml,Austin Peay Governors,Austin Peay Governors
+ncaab_ml,BYU,Brigham Young Cougars
+ncaab_ml,Ball State,Ball State Cardinals
+ncaab_ml,Ball State Cardinals,Ball State Cardinals
+ncaab_ml,Baylor,Baylor Bears
+ncaab_ml,Baylor Bears,Baylor Bears
+ncaab_ml,Bellarmine,Bellarmine Knights
+ncaab_ml,Bellarmine Knights,Bellarmine Knights
+ncaab_ml,Belmont,Belmont Bruins
+ncaab_ml,Belmont Bruins,Belmont Bruins
+ncaab_ml,Bethune Cookman,Bethune Cookman Wildcats
+ncaab_ml,Bethune Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_ml,Bethune-Cookman,Bethune Cookman Wildcats
+ncaab_ml,Bethune-Cookman Wildcats,Bethune Cookman Wildcats
+ncaab_ml,Binghamton,Binghamton Bearcats
+ncaab_ml,Binghamton Bearcats,Binghamton Bearcats
+ncaab_ml,Boise State,Boise State Broncos
+ncaab_ml,Boise State Broncos,Boise State Broncos
+ncaab_ml,Boston College,Boston College Eagles
+ncaab_ml,Boston College Eagles,Boston College Eagles
+ncaab_ml,Boston University,Boston University Terriers
+ncaab_ml,Boston University Terriers,Boston University Terriers
+ncaab_ml,Bowling Green,Bowling Green Falcons
+ncaab_ml,Bowling Green Falcons,Bowling Green Falcons
+ncaab_ml,Bradley,Bradley University Braves
+ncaab_ml,Bradley University Braves,Bradley University Braves
+ncaab_ml,Brigham Young Cougars,Brigham Young Cougars
+ncaab_ml,Brown,Brown Bears
+ncaab_ml,Brown Bears,Brown Bears
+ncaab_ml,Bryant,Bryant Bulldogs
+ncaab_ml,Bryant Bulldogs,Bryant Bulldogs
+ncaab_ml,Bucknell,Bucknell Bison
+ncaab_ml,Bucknell Bison,Bucknell Bison
+ncaab_ml,Buffalo,Buffalo Bulls
+ncaab_ml,Buffalo Bulls,Buffalo Bulls
+ncaab_ml,Butler,Butler Bulldogs
+ncaab_ml,Butler Bulldogs,Butler Bulldogs
+ncaab_ml,CSU Bakersfield,California State Bakersfield Roadrunners
+ncaab_ml,CSU Bakersfield Roadrunners,California State Bakersfield Roadrunners
+ncaab_ml,CSUN,Cal State Northridge Matadors
+ncaab_ml,Cal Poly,Cal Poly Mustangs
+ncaab_ml,Cal Poly Mustangs,Cal Poly Mustangs
+ncaab_ml,Cal State Fullerton,Cal State Fullerton Titans
+ncaab_ml,Cal State Fullerton Titans,Cal State Fullerton Titans
+ncaab_ml,Cal State Northridge Matadors,Cal State Northridge Matadors
+ncaab_ml,California,California Golden Bears
+ncaab_ml,California Baptist,California Baptist Lancers
+ncaab_ml,California Baptist Lancers,California Baptist Lancers
+ncaab_ml,California Golden Bears,California Golden Bears
+ncaab_ml,California State Bakersfield Roadrunners,California State Bakersfield Roadrunners
+ncaab_ml,Campbell,Campbell Fighting Camels
+ncaab_ml,Campbell Fighting Camels,Campbell Fighting Camels
+ncaab_ml,Canisius,Canisius Golden Griffins
+ncaab_ml,Canisius Golden Griffins,Canisius Golden Griffins
+ncaab_ml,Central Arkansas,Central Arkansas Bears
+ncaab_ml,Central Arkansas Bears,Central Arkansas Bears
+ncaab_ml,Central Connecticut Blue Devils,Central Connecticut State Blue Devils
+ncaab_ml,Central Connecticut State,Central Connecticut State Blue Devils
+ncaab_ml,Central Connecticut State Blue Devils,Central Connecticut State Blue Devils
+ncaab_ml,Central Michigan,Central Michigan Chippewas
+ncaab_ml,Central Michigan Chippewas,Central Michigan Chippewas
+ncaab_ml,Charleston,Charleston Cougars
+ncaab_ml,Charleston Cougars,Charleston Cougars
+ncaab_ml,Charleston Southern,Charleston Southern Buccaneers
+ncaab_ml,Charleston Southern Buccaneers,Charleston Southern Buccaneers
+ncaab_ml,Charlotte,Charlotte 49ers
+ncaab_ml,Charlotte 49ers,Charlotte 49ers
+ncaab_ml,Chattanooga,Chattanooga Mocs
+ncaab_ml,Chattanooga Mocs,Chattanooga Mocs
+ncaab_ml,Chicago State,Chicago State Cougars
+ncaab_ml,Chicago State Cougars,Chicago State Cougars
+ncaab_ml,Cincinnati,Cincinnati Bearcats
+ncaab_ml,Cincinnati Bearcats,Cincinnati Bearcats
+ncaab_ml,Citadel Bulldogs,The Citadel Bulldogs
+ncaab_ml,Clemson,Clemson Tigers
+ncaab_ml,Clemson Tigers,Clemson Tigers
+ncaab_ml,Cleveland State,Cleveland State Vikings
+ncaab_ml,Cleveland State Vikings,Cleveland State Vikings
+ncaab_ml,Coastal Carolina,Coastal Carolina Chanticleers
+ncaab_ml,Coastal Carolina Chanticleers,Coastal Carolina Chanticleers
+ncaab_ml,Colgate,Colgate Raiders
+ncaab_ml,Colgate Raiders,Colgate Raiders
+ncaab_ml,Colorado,Colorado Buffaloes
+ncaab_ml,Colorado Buffaloes,Colorado Buffaloes
+ncaab_ml,Colorado State,Colorado State Rams
+ncaab_ml,Colorado State Rams,Colorado State Rams
+ncaab_ml,Columbia,Columbia Lions
+ncaab_ml,Columbia Lions,Columbia Lions
+ncaab_ml,Connecticut Huskies,Connecticut Huskies
+ncaab_ml,Coppin State,Coppin State Eagles
+ncaab_ml,Coppin State Eagles,Coppin State Eagles
+ncaab_ml,Cornell,Cornell Big Red
+ncaab_ml,Cornell Big Red,Cornell Big Red
+ncaab_ml,Creighton,Creighton Bluejays
+ncaab_ml,Creighton Bluejays,Creighton Bluejays
+ncaab_ml,Dartmouth,Dartmouth Big Green
+ncaab_ml,Dartmouth Big Green,Dartmouth Big Green
+ncaab_ml,Davidson,Davidson Wildcats
+ncaab_ml,Davidson Wildcats,Davidson Wildcats
+ncaab_ml,Dayton,Dayton Flyers
+ncaab_ml,Dayton Flyers,Dayton Flyers
+ncaab_ml,DePaul,DePaul Blue Demons
+ncaab_ml,DePaul Blue Demons,DePaul Blue Demons
+ncaab_ml,Delaware,Delaware Fightin Blue Hens
+ncaab_ml,Delaware Fightin' Blue Hens,Delaware Fightin Blue Hens
+ncaab_ml,Delaware State,Delaware State Hornets
+ncaab_ml,Delaware State Hornets,Delaware State Hornets
+ncaab_ml,Denver,Denver Pioneers
+ncaab_ml,Denver Pioneers,Denver Pioneers
+ncaab_ml,Detroit Mercy,Detroit Titans
+ncaab_ml,Detroit Titans,Detroit Titans
+ncaab_ml,Drake,Drake Bulldogs
+ncaab_ml,Drake Bulldogs,Drake Bulldogs
+ncaab_ml,Drexel,Drexel Dragons
+ncaab_ml,Drexel Dragons,Drexel Dragons
+ncaab_ml,Duke,Duke Blue Devils
+ncaab_ml,Duke Blue Devils,Duke Blue Devils
+ncaab_ml,Duquesne,Duquesne Dukes
+ncaab_ml,Duquesne Dukes,Duquesne Dukes
+ncaab_ml,ETSU,East Tennessee State Buccaneers
+ncaab_ml,East Carolina,East Carolina Pirates
+ncaab_ml,East Carolina Pirates,East Carolina Pirates
+ncaab_ml,East Tennessee State Buccaneers,East Tennessee State Buccaneers
+ncaab_ml,East Texas A&M,Texas AM Commerce Lions
+ncaab_ml,East Texas A&M Lions,Texas AM Commerce Lions
+ncaab_ml,Eastern Illinois,Eastern Illinois Panthers
+ncaab_ml,Eastern Illinois Panthers,Eastern Illinois Panthers
+ncaab_ml,Eastern Kentucky,Eastern Kentucky Colonels
+ncaab_ml,Eastern Kentucky Colonels,Eastern Kentucky Colonels
+ncaab_ml,Eastern Michigan,Eastern Michigan Eagles
+ncaab_ml,Eastern Michigan Eagles,Eastern Michigan Eagles
+ncaab_ml,Eastern Washington,Eastern Washington Eagles
+ncaab_ml,Eastern Washington Eagles,Eastern Washington Eagles
+ncaab_ml,Elon,Elon Phoenix
+ncaab_ml,Elon Phoenix,Elon Phoenix
+ncaab_ml,Evansville,Evansville Purple Aces
+ncaab_ml,Evansville Purple Aces,Evansville Purple Aces
+ncaab_ml,FIU,FIU Golden Panthers
+ncaab_ml,FIU Golden Panthers,FIU Golden Panthers
+ncaab_ml,Fairfield,Fairfield Stags
+ncaab_ml,Fairfield Stags,Fairfield Stags
+ncaab_ml,Fairleigh Dickinson,Fairleigh Dickinson Knights
+ncaab_ml,Fairleigh Dickinson Knights,Fairleigh Dickinson Knights
+ncaab_ml,Florida,Florida Gators
+ncaab_ml,Florida A&M,Florida AM Rattlers
+ncaab_ml,Florida A&M Rattlers,Florida AM Rattlers
+ncaab_ml,Florida Atlantic,Florida Atlantic Owls
+ncaab_ml,Florida Atlantic Owls,Florida Atlantic Owls
+ncaab_ml,Florida Gators,Florida Gators
+ncaab_ml,Florida Gulf Coast,Florida Gulf Coast Eagles
+ncaab_ml,Florida Gulf Coast Eagles,Florida Gulf Coast Eagles
+ncaab_ml,Florida State,Florida State Seminoles
+ncaab_ml,Florida State Seminoles,Florida State Seminoles
+ncaab_ml,Fordham,Fordham Rams
+ncaab_ml,Fordham Rams,Fordham Rams
+ncaab_ml,Fresno State,Fresno State Bulldogs
+ncaab_ml,Fresno State Bulldogs,Fresno State Bulldogs
+ncaab_ml,Furman,Furman Paladins
+ncaab_ml,Furman Paladins,Furman Paladins
+ncaab_ml,Gardner Webb Runnin' Bulldogs,Gardner Webb Runnin Bulldogs
+ncaab_ml,Gardner-Webb,Gardner Webb Runnin Bulldogs
+ncaab_ml,George Mason,George Mason Patriots
+ncaab_ml,George Mason Patriots,George Mason Patriots
+ncaab_ml,George Washington,George Washington Colonials
+ncaab_ml,George Washington Colonials,George Washington Colonials
+ncaab_ml,Georgetown,Georgetown Hoyas
+ncaab_ml,Georgetown Hoyas,Georgetown Hoyas
+ncaab_ml,Georgia,Georgia Bulldogs
+ncaab_ml,Georgia Bulldogs,Georgia Bulldogs
+ncaab_ml,Georgia Southern,Georgia Southern Eagles
+ncaab_ml,Georgia Southern Eagles,Georgia Southern Eagles
+ncaab_ml,Georgia State,Georgia State Panthers
+ncaab_ml,Georgia State Panthers,Georgia State Panthers
+ncaab_ml,Georgia Tech,Georgia Tech Yellow Jackets
+ncaab_ml,Georgia Tech Yellow Jackets,Georgia Tech Yellow Jackets
+ncaab_ml,Gonzaga,Gonzaga Bulldogs
+ncaab_ml,Gonzaga Bulldogs,Gonzaga Bulldogs
+ncaab_ml,Grambling,Grambling State Tigers
+ncaab_ml,Grambling State Tigers,Grambling State Tigers
+ncaab_ml,Grand Canyon,Grand Canyon Antelopes
+ncaab_ml,Grand Canyon Antelopes,Grand Canyon Antelopes
+ncaab_ml,Green Bay,Wisconsin Green Bay Phoenix
+ncaab_ml,Hampton,Hampton Pirates
+ncaab_ml,Hampton Pirates,Hampton Pirates
+ncaab_ml,Harvard,Harvard Crimson
+ncaab_ml,Harvard Crimson,Harvard Crimson
+ncaab_ml,High Point,High Point Panthers
+ncaab_ml,High Point Panthers,High Point Panthers
+ncaab_ml,Hofstra,Hofstra Pride
+ncaab_ml,Hofstra Pride,Hofstra Pride
+ncaab_ml,Holy Cross,Holy Cross Crusaders
+ncaab_ml,Holy Cross Crusaders,Holy Cross Crusaders
+ncaab_ml,Houston,Houston Cougars
+ncaab_ml,Houston Christian,Houston Christian Huskies
+ncaab_ml,Houston Christian Huskies,Houston Christian Huskies
+ncaab_ml,Houston Cougars,Houston Cougars
+ncaab_ml,Howard,Howard Bison
+ncaab_ml,Howard Bison,Howard Bison
+ncaab_ml,IPFW,Purdue Fort Wayne Mastodons
+ncaab_ml,IPFW Mastodons,Purdue Fort Wayne Mastodons
+ncaab_ml,IU Indianapolis,IU Indianapolis Jaguars
+ncaab_ml,IU Indianapolis Jaguars,IU Indianapolis Jaguars
+ncaab_ml,IUPUI,IU Indianapolis Jaguars
+ncaab_ml,IUPUI Jaguars,IU Indianapolis Jaguars
+ncaab_ml,Idaho,Idaho Vandals
+ncaab_ml,Idaho State,Idaho State Bengals
+ncaab_ml,Idaho State Bengals,Idaho State Bengals
+ncaab_ml,Idaho Vandals,Idaho Vandals
+ncaab_ml,Illinois,Illinois Fighting Illini
+ncaab_ml,Illinois Chicago,Illinois Chicago
+ncaab_ml,Illinois Fighting Illini,Illinois Fighting Illini
+ncaab_ml,Illinois State,Illinois State Redbirds
+ncaab_ml,Illinois State Redbirds,Illinois State Redbirds
+ncaab_ml,Incarnate Word,Incarnate Word Cardinals
+ncaab_ml,Incarnate Word Cardinals,Incarnate Word Cardinals
+ncaab_ml,Indiana,Indiana Hoosiers
+ncaab_ml,Indiana Hoosiers,Indiana Hoosiers
+ncaab_ml,Indiana State,Indiana State Sycamores
+ncaab_ml,Indiana State Sycamores,Indiana State Sycamores
+ncaab_ml,Iona,Iona Gaels
+ncaab_ml,Iona Gaels,Iona Gaels
+ncaab_ml,Iowa,Iowa Hawkeyes
+ncaab_ml,Iowa Hawkeyes,Iowa Hawkeyes
+ncaab_ml,Iowa State,Iowa State Cyclones
+ncaab_ml,Iowa State Cyclones,Iowa State Cyclones
+ncaab_ml,Jackson State,Jackson State Tigers
+ncaab_ml,Jackson State Tigers,Jackson State Tigers
+ncaab_ml,Jacksonville,Jacksonville Dolphins
+ncaab_ml,Jacksonville Dolphins,Jacksonville Dolphins
+ncaab_ml,Jacksonville State,Jacksonville State Gamecocks
+ncaab_ml,Jacksonville State Gamecocks,Jacksonville State Gamecocks
+ncaab_ml,James Madison,James Madison Dukes
+ncaab_ml,James Madison Dukes,James Madison Dukes
+ncaab_ml,Kansas,Kansas Jayhawks
+ncaab_ml,Kansas Jayhawks,Kansas Jayhawks
+ncaab_ml,Kansas State,Kansas State Wildcats
+ncaab_ml,Kansas State Wildcats,Kansas State Wildcats
+ncaab_ml,Kennesaw State,Kennesaw State Owls
+ncaab_ml,Kennesaw State Owls,Kennesaw State Owls
+ncaab_ml,Kent State,Kent State Golden Flashes
+ncaab_ml,Kent State Golden Flashes,Kent State Golden Flashes
+ncaab_ml,Kentucky,Kentucky Wildcats
+ncaab_ml,Kentucky Wildcats,Kentucky Wildcats
+ncaab_ml,LIU,LIU Sharks
+ncaab_ml,LIU Sharks,LIU Sharks
+ncaab_ml,LSU,LSU Tigers
+ncaab_ml,LSU Tigers,LSU Tigers
+ncaab_ml,La Salle,La Salle Explorers
+ncaab_ml,La Salle Explorers,La Salle Explorers
+ncaab_ml,Lafayette,Lafayette Leopards
+ncaab_ml,Lafayette Leopards,Lafayette Leopards
+ncaab_ml,Lamar,Lamar Cardinals
+ncaab_ml,Lamar Cardinals,Lamar Cardinals
+ncaab_ml,Le Moyne,Le Moyne Dolphins
+ncaab_ml,Le Moyne Dolphins,Le Moyne Dolphins
+ncaab_ml,Lehigh,Lehigh Mountain Hawks
+ncaab_ml,Lehigh Mountain Hawks,Lehigh Mountain Hawks
+ncaab_ml,Liberty,Liberty Flames
+ncaab_ml,Liberty Flames,Liberty Flames
+ncaab_ml,Lindenwood,Lindenwood Lions
+ncaab_ml,Lindenwood Lions,Lindenwood Lions
+ncaab_ml,Lipscomb,Lipscomb Bisons
+ncaab_ml,Lipscomb Bisons,Lipscomb Bisons
+ncaab_ml,Little Rock,Little Rock Trojans
+ncaab_ml,Little Rock Trojans,Little Rock Trojans
+ncaab_ml,Long Beach State,Long Beach State 49ers
+ncaab_ml,Long Beach State 49ers,Long Beach State 49ers
+ncaab_ml,Longwood,Longwood Lancers
+ncaab_ml,Longwood Lancers,Longwood Lancers
+ncaab_ml,Louisiana Monroe Warhawks,Louisiana Monroe Warhawks
+ncaab_ml,Louisiana Tech,Louisiana Tech Bulldogs
+ncaab_ml,Louisiana Tech Bulldogs,Louisiana Tech Bulldogs
+ncaab_ml,Louisville,Louisville Cardinals
+ncaab_ml,Louisville Cardinals,Louisville Cardinals
+ncaab_ml,Loyola Chicago,Loyola Chicago Ramblers
+ncaab_ml,Loyola Chicago Ramblers,Loyola Chicago Ramblers
+ncaab_ml,Loyola Maryland,Loyola Maryland Greyhounds
+ncaab_ml,Loyola Maryland Greyhounds,Loyola Maryland Greyhounds
+ncaab_ml,Loyola Marymount,Loyola Marymount Lions
+ncaab_ml,Loyola Marymount Lions,Loyola Marymount Lions
+ncaab_ml,MD Eastern Shore,Maryland Eastern Shore Hawks
+ncaab_ml,Maine,Maine Black Bears
+ncaab_ml,Maine Black Bears,Maine Black Bears
+ncaab_ml,Manhattan,Manhattan Jaspers
+ncaab_ml,Manhattan Jaspers,Manhattan Jaspers
+ncaab_ml,Marist,Marist Red Foxes
+ncaab_ml,Marist Red Foxes,Marist Red Foxes
+ncaab_ml,Marquette,Marquette Golden Eagles
+ncaab_ml,Marquette Golden Eagles,Marquette Golden Eagles
+ncaab_ml,Marshall,Marshall Thundering Herd
+ncaab_ml,Marshall Thundering Herd,Marshall Thundering Herd
+ncaab_ml,Maryland,Maryland Terrapins
+ncaab_ml,Maryland Eastern Shore Hawks,Maryland Eastern Shore Hawks
+ncaab_ml,Maryland Terrapins,Maryland Terrapins
+ncaab_ml,McNeese,McNeese State Cowboys
+ncaab_ml,McNeese State,McNeese State Cowboys
+ncaab_ml,McNeese State Cowboys,McNeese State Cowboys
+ncaab_ml,Memphis,Memphis Tigers
+ncaab_ml,Memphis Tigers,Memphis Tigers
+ncaab_ml,Mercer,Mercer Bears
+ncaab_ml,Mercer Bears,Mercer Bears
+ncaab_ml,Mercyhurst,Mercyhurst Lakers
+ncaab_ml,Mercyhurst Lakers,Mercyhurst Lakers
+ncaab_ml,Merrimack,Merrimack Warriors
+ncaab_ml,Merrimack Warriors,Merrimack Warriors
+ncaab_ml,Miami FL,Miami Hurricanes
+ncaab_ml,Miami Hurricanes,Miami Hurricanes
+ncaab_ml,Miami OH,Miami RedHawks
+ncaab_ml,Miami RedHawks,Miami RedHawks
+ncaab_ml,Michigan,Michigan Wolverines
+ncaab_ml,Michigan State,Michigan State Spartans
+ncaab_ml,Michigan State Spartans,Michigan State Spartans
+ncaab_ml,Michigan Wolverines,Michigan Wolverines
+ncaab_ml,Middle Tennessee,Middle Tennessee Blue Raiders
+ncaab_ml,Middle Tennessee Blue Raiders,Middle Tennessee Blue Raiders
+ncaab_ml,Milwaukee,Wisconsin Milwaukee Panthers
+ncaab_ml,Minnesota,Minnesota Golden Gophers
+ncaab_ml,Minnesota Golden Gophers,Minnesota Golden Gophers
+ncaab_ml,Mississippi State,Mississippi State Bulldogs
+ncaab_ml,Mississippi State Bulldogs,Mississippi State Bulldogs
+ncaab_ml,Mississippi Valley,Mississippi Valley State Delta Devils
+ncaab_ml,Mississippi Valley State Delta Devils,Mississippi Valley State Delta Devils
+ncaab_ml,Missouri,Missouri Tigers
+ncaab_ml,Missouri State,Missouri State Bears
+ncaab_ml,Missouri State Bears,Missouri State Bears
+ncaab_ml,Missouri Tigers,Missouri Tigers
+ncaab_ml,Monmouth,Monmouth Hawks
+ncaab_ml,Monmouth Hawks,Monmouth Hawks
+ncaab_ml,Montana,Montana Grizzlies
+ncaab_ml,Montana Grizzlies,Montana Grizzlies
+ncaab_ml,Montana State,Montana State Bobcats
+ncaab_ml,Montana State Bobcats,Montana State Bobcats
+ncaab_ml,Morehead State,Morehead State Eagles
+ncaab_ml,Morehead State Eagles,Morehead State Eagles
+ncaab_ml,Morgan State,Morgan State Bears
+ncaab_ml,Morgan State Bears,Morgan State Bears
+ncaab_ml,Mount Saint Marys,Mount St Marys Mountaineers
+ncaab_ml,Mount St. Mary's,Mount St Marys Mountaineers
+ncaab_ml,Mount St. Mary's Mountaineers,Mount St Marys Mountaineers
+ncaab_ml,Murray State,Murray State Racers
+ncaab_ml,Murray State Racers,Murray State Racers
+ncaab_ml,NC Central,North Carolina Central Eagles
+ncaab_ml,NC State,NC State Wolfpack
+ncaab_ml,NC State Wolfpack,NC State Wolfpack
+ncaab_ml,NJIT,NJIT Highlanders
+ncaab_ml,NJIT Highlanders,NJIT Highlanders
+ncaab_ml,Navy,Navy Midshipmen
+ncaab_ml,Navy Midshipmen,Navy Midshipmen
+ncaab_ml,Nebraska,Nebraska Cornhuskers
+ncaab_ml,Nebraska Cornhuskers,Nebraska Cornhuskers
+ncaab_ml,Nevada,Nevada Wolf Pack
+ncaab_ml,Nevada Wolf Pack,Nevada Wolf Pack
+ncaab_ml,New Hampshire,New Hampshire Wildcats
+ncaab_ml,New Hampshire Wildcats,New Hampshire Wildcats
+ncaab_ml,New Haven,New Haven Chargers
+ncaab_ml,New Haven Chargers,New Haven Chargers
+ncaab_ml,New Mexico,New Mexico Lobos
+ncaab_ml,New Mexico Lobos,New Mexico Lobos
+ncaab_ml,New Mexico State,New Mexico State Aggies
+ncaab_ml,New Mexico State Aggies,New Mexico State Aggies
+ncaab_ml,New Orleans,New Orleans Privateers
+ncaab_ml,New Orleans Privateers,New Orleans Privateers
+ncaab_ml,Niagara,Niagara Purple Eagles
+ncaab_ml,Niagara Purple Eagles,Niagara Purple Eagles
+ncaab_ml,Nicholls State,Nicholls State Colonels
+ncaab_ml,Nicholls State Colonels,Nicholls State Colonels
+ncaab_ml,Norfolk State,Norfolk State Spartans
+ncaab_ml,Norfolk State Spartans,Norfolk State Spartans
+ncaab_ml,North Alabama,North Alabama Lions
+ncaab_ml,North Alabama Lions,North Alabama Lions
+ncaab_ml,North Carolina,North Carolina Tar Heels
+ncaab_ml,North Carolina A&T,North Carolina AT Aggies
+ncaab_ml,North Carolina A&T Aggies,North Carolina AT Aggies
+ncaab_ml,North Carolina Central Eagles,North Carolina Central Eagles
+ncaab_ml,North Carolina Tar Heels,North Carolina Tar Heels
+ncaab_ml,North Dakota,North Dakota Fighting Hawks
+ncaab_ml,North Dakota Fighting Hawks,North Dakota Fighting Hawks
+ncaab_ml,North Dakota State,North Dakota State Bison
+ncaab_ml,North Dakota State Bison,North Dakota State Bison
+ncaab_ml,North Florida,North Florida Ospreys
+ncaab_ml,North Florida Ospreys,North Florida Ospreys
+ncaab_ml,North Texas,North Texas Mean Green
+ncaab_ml,North Texas Mean Green,North Texas Mean Green
+ncaab_ml,Northeastern,Northeastern Huskies
+ncaab_ml,Northeastern Huskies,Northeastern Huskies
+ncaab_ml,Northern Arizona,Northern Arizona Lumberjacks
+ncaab_ml,Northern Arizona Lumberjacks,Northern Arizona Lumberjacks
+ncaab_ml,Northern Colorado,Northern Colorado Bears
+ncaab_ml,Northern Colorado Bears,Northern Colorado Bears
+ncaab_ml,Northern Illinois,Northern Illinois Huskies
+ncaab_ml,Northern Illinois Huskies,Northern Illinois Huskies
+ncaab_ml,Northern Iowa,Northern Iowa Panthers
+ncaab_ml,Northern Iowa Panthers,Northern Iowa Panthers
+ncaab_ml,Northern Kentucky,Northern Kentucky Norse
+ncaab_ml,Northern Kentucky Norse,Northern Kentucky Norse
+ncaab_ml,Northwestern,Northwestern Wildcats
+ncaab_ml,Northwestern State,Northwestern State Demons
+ncaab_ml,Northwestern State Demons,Northwestern State Demons
+ncaab_ml,Northwestern Wildcats,Northwestern Wildcats
+ncaab_ml,Notre Dame,Notre Dame Fighting Irish
+ncaab_ml,Notre Dame Fighting Irish,Notre Dame Fighting Irish
+ncaab_ml,Oakland,Oakland Golden Grizzlies
+ncaab_ml,Oakland Golden Grizzlies,Oakland Golden Grizzlies
+ncaab_ml,Ohio,Ohio Bobcats
+ncaab_ml,Ohio Bobcats,Ohio Bobcats
+ncaab_ml,Ohio State,Ohio State Buckeyes
+ncaab_ml,Ohio State Buckeyes,Ohio State Buckeyes
+ncaab_ml,Oklahoma,Oklahoma Sooners
+ncaab_ml,Oklahoma Sooners,Oklahoma Sooners
+ncaab_ml,Oklahoma State,Oklahoma State Cowboys
+ncaab_ml,Oklahoma State Cowboys,Oklahoma State Cowboys
+ncaab_ml,Old Dominion,Old Dominion Monarchs
+ncaab_ml,Old Dominion Monarchs,Old Dominion Monarchs
+ncaab_ml,Ole Miss,Ole Miss Rebels
+ncaab_ml,Ole Miss Rebels,Ole Miss Rebels
+ncaab_ml,Omaha,Omaha Mavericks
+ncaab_ml,Omaha Mavericks,Omaha Mavericks
+ncaab_ml,Oral Roberts,Oral Roberts Golden Eagles
+ncaab_ml,Oral Roberts Golden Eagles,Oral Roberts Golden Eagles
+ncaab_ml,Oregon,Oregon Ducks
+ncaab_ml,Oregon Ducks,Oregon Ducks
+ncaab_ml,Oregon State,Oregon State Beavers
+ncaab_ml,Oregon State Beavers,Oregon State Beavers
+ncaab_ml,Pacific,Pacific Tigers
+ncaab_ml,Pacific Tigers,Pacific Tigers
+ncaab_ml,Penn,Penn Quakers
+ncaab_ml,Penn Quakers,Penn Quakers
+ncaab_ml,Penn State,Penn State Nittany Lions
+ncaab_ml,Penn State Nittany Lions,Penn State Nittany Lions
+ncaab_ml,Pepperdine,Pepperdine Waves
+ncaab_ml,Pepperdine Waves,Pepperdine Waves
+ncaab_ml,Pitt,Pitt Panthers
+ncaab_ml,Pitt Panthers,Pitt Panthers
+ncaab_ml,Pittsburgh,Pitt Panthers
+ncaab_ml,Portland,Portland Pilots
+ncaab_ml,Portland Pilots,Portland Pilots
+ncaab_ml,Portland State,Portland State Vikings
+ncaab_ml,Portland State Vikings,Portland State Vikings
+ncaab_ml,Prairie View A&M,Prairie View AM Panthers
+ncaab_ml,Prairie View A&M Panthers,Prairie View AM Panthers
+ncaab_ml,Presbyterian,Presbyterian Blue Hose
+ncaab_ml,Presbyterian Blue Hose,Presbyterian Blue Hose
+ncaab_ml,Princeton,Princeton Tigers
+ncaab_ml,Princeton Tigers,Princeton Tigers
+ncaab_ml,Providence,Providence Friars
+ncaab_ml,Providence Friars,Providence Friars
+ncaab_ml,Purdue,Purdue Boilermakers
+ncaab_ml,Purdue Boilermakers,Purdue Boilermakers
+ncaab_ml,Purdue Fort Wayne,Purdue Fort Wayne Mastodons
+ncaab_ml,Purdue Fort Wayne Mastodons,Purdue Fort Wayne Mastodons
+ncaab_ml,Queens,Queens Royals
+ncaab_ml,Queens NC,Queens Royals
+ncaab_ml,Queens Royals,Queens Royals
+ncaab_ml,Quinnipiac,Quinnipiac Bobcats
+ncaab_ml,Quinnipiac Bobcats,Quinnipiac Bobcats
+ncaab_ml,Rhode Island,Rhode Island Rams
+ncaab_ml,Rhode Island Rams,Rhode Island Rams
+ncaab_ml,Rice,Rice Owls
+ncaab_ml,Rice Owls,Rice Owls
+ncaab_ml,Richmond,Richmond Spiders
+ncaab_ml,Richmond Spiders,Richmond Spiders
+ncaab_ml,Rider,Rider Broncs
+ncaab_ml,Rider Broncs,Rider Broncs
+ncaab_ml,Robert Morris,Robert Morris Colonials
+ncaab_ml,Robert Morris Colonials,Robert Morris Colonials
+ncaab_ml,SE Louisiana,Southeastern Louisiana Lions
+ncaab_ml,SE Missouri State,Southeast Missouri State Redhawks
+ncaab_ml,SE Missouri State Redhawks,Southeast Missouri State Redhawks
+ncaab_ml,SIU Edwardsville,SIU Edwardsville Cougars
+ncaab_ml,SIU Edwardsville Cougars,SIU Edwardsville Cougars
+ncaab_ml,SMU,SMU Mustangs
+ncaab_ml,SMU Mustangs,SMU Mustangs
+ncaab_ml,Sacramento State,Sacramento State Hornets
+ncaab_ml,Sacramento State Hornets,Sacramento State Hornets
+ncaab_ml,Sacred Heart,Sacred Heart Pioneers
+ncaab_ml,Sacred Heart Pioneers,Sacred Heart Pioneers
+ncaab_ml,Saint Bonaventure,Saint Bonaventure Bonnies
+ncaab_ml,Saint Bonaventure Bonnies,Saint Bonaventure Bonnies
+ncaab_ml,Saint Francis (PA) Red Flash,Saint Francis PA Red Flash
+ncaab_ml,Saint Francis PA,Saint Francis PA Red Flash
+ncaab_ml,Saint Joseph's,Saint Josephs Hawks
+ncaab_ml,Saint Joseph's Hawks,Saint Josephs Hawks
+ncaab_ml,Saint Josephs,Saint Josephs Hawks
+ncaab_ml,Saint Mary's College Gaels,Saint Marys College Gaels
+ncaab_ml,Saint Marys,Saint Marys College Gaels
+ncaab_ml,Saint Peter's,Saint Peters Peacocks
+ncaab_ml,Saint Peter's Peacocks,Saint Peters Peacocks
+ncaab_ml,Saint Peters,Saint Peters Peacocks
+ncaab_ml,Saint Thomas MN,St Thomas Tommies
+ncaab_ml,Sam Houston State,Sam Houston State Bearkats
+ncaab_ml,Sam Houston State Bearkats,Sam Houston State Bearkats
+ncaab_ml,Samford,Samford Bulldogs
+ncaab_ml,Samford Bulldogs,Samford Bulldogs
+ncaab_ml,San Diego,San Diego Toreros
+ncaab_ml,San Diego State,San Diego State Aztecs
+ncaab_ml,San Diego State Aztecs,San Diego State Aztecs
+ncaab_ml,San Diego Toreros,San Diego Toreros
+ncaab_ml,San Francisco,San Francisco Dons
+ncaab_ml,San Francisco Dons,San Francisco Dons
+ncaab_ml,San Jose State,San Jose State Spartans
+ncaab_ml,San Jose State Spartans,San Jose State Spartans
+ncaab_ml,Santa Clara,Santa Clara Broncos
+ncaab_ml,Santa Clara Broncos,Santa Clara Broncos
+ncaab_ml,Seattle,Seattle Redhawks
+ncaab_ml,Seattle Redhawks,Seattle Redhawks
+ncaab_ml,Seton Hall,Seton Hall Pirates
+ncaab_ml,Seton Hall Pirates,Seton Hall Pirates
+ncaab_ml,Siena,Siena Saints
+ncaab_ml,Siena Saints,Siena Saints
+ncaab_ml,South Carolina,South Carolina Gamecocks
+ncaab_ml,South Carolina Gamecocks,South Carolina Gamecocks
+ncaab_ml,South Carolina State,South Carolina State Bulldogs
+ncaab_ml,South Carolina State Bulldogs,South Carolina State Bulldogs
+ncaab_ml,South Dakota,South Dakota Coyotes
+ncaab_ml,South Dakota Coyotes,South Dakota Coyotes
+ncaab_ml,South Dakota State,South Dakota State Jackrabbits
+ncaab_ml,South Dakota State Jackrabbits,South Dakota State Jackrabbits
+ncaab_ml,South Florida,South Florida Bulls
+ncaab_ml,South Florida Bulls,South Florida Bulls
+ncaab_ml,Southeast Missouri State Redhawks,Southeast Missouri State Redhawks
+ncaab_ml,Southeastern Louisiana,Southeastern Louisiana Lions
+ncaab_ml,Southeastern Louisiana Lions,Southeastern Louisiana Lions
+ncaab_ml,Southern Illinois,Southern Illinois Salukis
+ncaab_ml,Southern Illinois Salukis,Southern Illinois Salukis
+ncaab_ml,Southern Indiana,Southern Indiana Screaming Eagles
+ncaab_ml,Southern Indiana Screaming Eagles,Southern Indiana Screaming Eagles
+ncaab_ml,Southern Miss,Southern Miss Golden Eagles
+ncaab_ml,Southern Miss Golden Eagles,Southern Miss Golden Eagles
+ncaab_ml,Southern University,Southern University Jaguars
+ncaab_ml,Southern University Jaguars,Southern University Jaguars
+ncaab_ml,Southern Utah,Southern Utah Thunderbirds
+ncaab_ml,Southern Utah Thunderbirds,Southern Utah Thunderbirds
+ncaab_ml,St Bonaventure,Saint Bonaventure Bonnies
+ncaab_ml,St. Bonaventure,Saint Bonaventure Bonnies
+ncaab_ml,St. Francis Red Flash,Saint Francis PA Red Flash
+ncaab_ml,St. John's Red Storm,St Johns Red Storm
+ncaab_ml,St. Johns,St Johns Red Storm
+ncaab_ml,St. Thomas,St Thomas Tommies
+ncaab_ml,St. Thomas Tommies,St Thomas Tommies
+ncaab_ml,Stanford,Stanford Cardinal
+ncaab_ml,Stanford Cardinal,Stanford Cardinal
+ncaab_ml,Stephen F. Austin,Stephen F Austin Lumberjacks
+ncaab_ml,Stephen F. Austin Lumberjacks,Stephen F Austin Lumberjacks
+ncaab_ml,Stetson,Stetson Hatters
+ncaab_ml,Stetson Hatters,Stetson Hatters
+ncaab_ml,Stonehill,Stonehill Skyhawks
+ncaab_ml,Stonehill Skyhawks,Stonehill Skyhawks
+ncaab_ml,Stony Brook,Stony Brook Seawolves
+ncaab_ml,Stony Brook Seawolves,Stony Brook Seawolves
+ncaab_ml,Syracuse,Syracuse Orange
+ncaab_ml,Syracuse Orange,Syracuse Orange
+ncaab_ml,TCU,TCU Horned Frogs
+ncaab_ml,TCU Horned Frogs,TCU Horned Frogs
+ncaab_ml,Tarleton State,Tarleton State Texans
+ncaab_ml,Tarleton State Texans,Tarleton State Texans
+ncaab_ml,Temple,Temple Owls
+ncaab_ml,Temple Owls,Temple Owls
+ncaab_ml,Tennessee,Tennessee Volunteers
+ncaab_ml,Tennessee State,Tennessee State Tigers
+ncaab_ml,Tennessee State Tigers,Tennessee State Tigers
+ncaab_ml,Tennessee Tech,Tennessee Tech Golden Eagles
+ncaab_ml,Tennessee Tech Golden Eagles,Tennessee Tech Golden Eagles
+ncaab_ml,Tennessee Volunteers,Tennessee Volunteers
+ncaab_ml,Tennessee-Martin Skyhawks,Tennessee Martin Skyhawks
+ncaab_ml,Texas,Texas Longhorns
+ncaab_ml,Texas A&M,Texas AM Aggies
+ncaab_ml,Texas A&M Aggies,Texas AM Aggies
+ncaab_ml,Texas A&M CC,Texas AM Corpus Christi Islanders
+ncaab_ml,Texas A&M Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+ncaab_ml,Texas Longhorns,Texas Longhorns
+ncaab_ml,Texas Southern,Texas Southern Tigers
+ncaab_ml,Texas Southern Tigers,Texas Southern Tigers
+ncaab_ml,Texas State,Texas State Bobcats
+ncaab_ml,Texas State Bobcats,Texas State Bobcats
+ncaab_ml,Texas Tech,Texas Tech Red Raiders
+ncaab_ml,Texas Tech Red Raiders,Texas Tech Red Raiders
+ncaab_ml,The Citadel,The Citadel Bulldogs
+ncaab_ml,The Citadel Bulldogs,The Citadel Bulldogs
+ncaab_ml,Toledo,Toledo Rockets
+ncaab_ml,Toledo Rockets,Toledo Rockets
+ncaab_ml,Towson,Towson Tigers
+ncaab_ml,Towson Tigers,Towson Tigers
+ncaab_ml,Troy,Troy Trojans
+ncaab_ml,Troy Trojans,Troy Trojans
+ncaab_ml,Tulane,Tulane Green Wave
+ncaab_ml,Tulane Green Wave,Tulane Green Wave
+ncaab_ml,Tulsa,Tulsa Golden Hurricane
+ncaab_ml,Tulsa Golden Hurricane,Tulsa Golden Hurricane
+ncaab_ml,UAB,UAB Blazers
+ncaab_ml,UAB Blazers,UAB Blazers
+ncaab_ml,UC Davis,UC Davis Aggies
+ncaab_ml,UC Davis Aggies,UC Davis Aggies
+ncaab_ml,UC Irvine,UC Irvine Anteaters
+ncaab_ml,UC Irvine Anteaters,UC Irvine Anteaters
+ncaab_ml,UC Riverside,UC Riverside Highlanders
+ncaab_ml,UC Riverside Highlanders,UC Riverside Highlanders
+ncaab_ml,UC San Diego,UC San Diego Tritons
+ncaab_ml,UC San Diego Tritons,UC San Diego Tritons
+ncaab_ml,UC Santa Barbara,UC Santa Barbara Gauchos
+ncaab_ml,UC Santa Barbara Gauchos,UC Santa Barbara Gauchos
+ncaab_ml,UCF,UCF Knights
+ncaab_ml,UCF Knights,UCF Knights
+ncaab_ml,UCLA,UCLA Bruins
+ncaab_ml,UCLA Bruins,UCLA Bruins
+ncaab_ml,UConn,Connecticut Huskies
+ncaab_ml,UIC Flames,Illinois Chicago
+ncaab_ml,ULM,Louisiana Monroe Warhawks
+ncaab_ml,UMBC,UMBC Retrievers
+ncaab_ml,UMBC Retrievers,UMBC Retrievers
+ncaab_ml,UMKC,UMKC Kangaroos
+ncaab_ml,UMKC Kangaroos,UMKC Kangaroos
+ncaab_ml,UMass,UMass Minutemen
+ncaab_ml,UMass Lowell,UMass Lowell River Hawks
+ncaab_ml,UMass Lowell River Hawks,UMass Lowell River Hawks
+ncaab_ml,UMass Minutemen,UMass Minutemen
+ncaab_ml,UNC,North Carolina Tar Heels
+ncaab_ml,UNC Asheville,UNC Asheville Bulldogs
+ncaab_ml,UNC Asheville Bulldogs,UNC Asheville Bulldogs
+ncaab_ml,UNC Greensboro,UNC Greensboro Spartans
+ncaab_ml,UNC Greensboro Spartans,UNC Greensboro Spartans
+ncaab_ml,UNC Tar Heels,North Carolina Tar Heels
+ncaab_ml,UNC Wilmington,UNC Wilmington Seahawks
+ncaab_ml,UNC Wilmington Seahawks,UNC Wilmington Seahawks
+ncaab_ml,UNLV,UNLV Rebels
+ncaab_ml,UNLV Rebels,UNLV Rebels
+ncaab_ml,USC,USC Trojans
+ncaab_ml,USC Trojans,USC Trojans
+ncaab_ml,UT Arlington,UT Arlington Mavericks
+ncaab_ml,UT Arlington Mavericks,UT Arlington Mavericks
+ncaab_ml,UT Martin,Tennessee Martin Skyhawks
+ncaab_ml,UT Martin Skyhawks,Tennessee Martin Skyhawks
+ncaab_ml,UT Rio Grande Valley,UT Rio Grande Valley Vaqueros
+ncaab_ml,UT Rio Grande Valley Vaqueros,UT Rio Grande Valley Vaqueros
+ncaab_ml,UTEP,UTEP Miners
+ncaab_ml,UTEP Miners,UTEP Miners
+ncaab_ml,UTRGV,UT Rio Grande Valley Vaqueros
+ncaab_ml,UTSA,UTSA Roadrunners
+ncaab_ml,UTSA Roadrunners,UTSA Roadrunners
+ncaab_ml,Utah,Utah Utes
+ncaab_ml,Utah State,Utah State Aggies
+ncaab_ml,Utah State Aggies,Utah State Aggies
+ncaab_ml,Utah Tech,Utah Tech Trailblazers
+ncaab_ml,Utah Tech Trailblazers,Utah Tech Trailblazers
+ncaab_ml,Utah Utes,Utah Utes
+ncaab_ml,Utah Valley,Utah Valley Wolverines
+ncaab_ml,Utah Valley Wolverines,Utah Valley Wolverines
+ncaab_ml,VCU,VCU Rams
+ncaab_ml,VCU Rams,VCU Rams
+ncaab_ml,VMI,VMI Keydets
+ncaab_ml,VMI Keydets,VMI Keydets
+ncaab_ml,Valparaiso,Valparaiso Beacons
+ncaab_ml,Valparaiso Beacons,Valparaiso Beacons
+ncaab_ml,Vanderbilt,Vanderbilt Commodores
+ncaab_ml,Vanderbilt Commodores,Vanderbilt Commodores
+ncaab_ml,Vermont,Vermont Catamounts
+ncaab_ml,Vermont Catamounts,Vermont Catamounts
+ncaab_ml,Villanova,Villanova Wildcats
+ncaab_ml,Villanova Wildcats,Villanova Wildcats
+ncaab_ml,Virginia,Virginia Cavaliers
+ncaab_ml,Virginia Cavaliers,Virginia Cavaliers
+ncaab_ml,Virginia Tech,Virginia Tech Hokies
+ncaab_ml,Virginia Tech Hokies,Virginia Tech Hokies
+ncaab_ml,Wagner,Wagner Seahawks
+ncaab_ml,Wagner Seahawks,Wagner Seahawks
+ncaab_ml,Wake Forest,Wake Forest Demon Deacons
+ncaab_ml,Wake Forest Demon Deacons,Wake Forest Demon Deacons
+ncaab_ml,Washington,Washington Huskies
+ncaab_ml,Washington Huskies,Washington Huskies
+ncaab_ml,Washington State,Washington State Cougars
+ncaab_ml,Washington State Cougars,Washington State Cougars
+ncaab_ml,Weber State,Weber State Wildcats
+ncaab_ml,Weber State Wildcats,Weber State Wildcats
+ncaab_ml,West Georgia,West Georgia Wolves
+ncaab_ml,West Georgia Wolves,West Georgia Wolves
+ncaab_ml,West Virginia,West Virginia Mountaineers
+ncaab_ml,West Virginia Mountaineers,West Virginia Mountaineers
+ncaab_ml,Western Carolina,Western Carolina Catamounts
+ncaab_ml,Western Carolina Catamounts,Western Carolina Catamounts
+ncaab_ml,Western Illinois,Western Illinois Leathernecks
+ncaab_ml,Western Illinois Leathernecks,Western Illinois Leathernecks
+ncaab_ml,Western Kentucky,Western Kentucky Hilltoppers
+ncaab_ml,Western Kentucky Hilltoppers,Western Kentucky Hilltoppers
+ncaab_ml,Western Michigan,Western Michigan Broncos
+ncaab_ml,Western Michigan Broncos,Western Michigan Broncos
+ncaab_ml,Wichita State,Wichita State Shockers
+ncaab_ml,Wichita State Shockers,Wichita State Shockers
+ncaab_ml,William & Mary,William Mary Tribe
+ncaab_ml,William & Mary Tribe,William Mary Tribe
+ncaab_ml,Winthrop,Winthrop Eagles
+ncaab_ml,Winthrop Eagles,Winthrop Eagles
+ncaab_ml,Wisconsin,Wisconsin Badgers
+ncaab_ml,Wisconsin Badgers,Wisconsin Badgers
+ncaab_ml,Wisconsin Green Bay,Wisconsin Green Bay Phoenix
+ncaab_ml,Wisconsin Green Bay Phoenix,Wisconsin Green Bay Phoenix
+ncaab_ml,Wisconsin Milwaukee,Wisconsin Milwaukee Panthers
+ncaab_ml,Wisconsin Milwaukee Panthers,Wisconsin Milwaukee Panthers
+ncaab_ml,Wofford,Wofford Terriers
+ncaab_ml,Wofford Terriers,Wofford Terriers
+ncaab_ml,Wright State,Wright State Raiders
+ncaab_ml,Wright State Raiders,Wright State Raiders
+ncaab_ml,Wyoming,Wyoming Cowboys
+ncaab_ml,Wyoming Cowboys,Wyoming Cowboys
+ncaab_ml,Xavier,Xavier Musketeers
+ncaab_ml,Xavier Musketeers,Xavier Musketeers
+ncaab_ml,Yale,Yale Bulldogs
+ncaab_ml,Yale Bulldogs,Yale Bulldogs
+ncaab_ml,Youngstown State,Youngstown State Penguins
+
+ncaab_ml,Youngstown State Penguins,Youngstown State Penguins
+
+
+
+
+
+
+
+
+
+

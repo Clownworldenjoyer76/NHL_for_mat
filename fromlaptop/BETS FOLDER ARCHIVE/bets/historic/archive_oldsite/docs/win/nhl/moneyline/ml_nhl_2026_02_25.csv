@@ -1,0 +1,9 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_goals,home_team_projected_goals,game_projected_goals,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Philadelphia_Flyers_Washington_Capitals,Philadelphia Flyers,Washington Capitals,0.41,0.59,2.5,3.46,5.96,2.44,+144,2.64,+164,1.69,-145,1.83,-120
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Buffalo_Sabres_New_Jersey_Devils,Buffalo Sabres,New Jersey Devils,0.489,0.511,3.0,3.11,6.11,2.04,+104,2.2,+120,1.96,-104,2.12,+112
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Toronto_Maple_Leafs_Tampa_Bay_Lightning,Toronto Maple Leafs,Tampa Bay Lightning,0.368,0.632,2.52,3.66,6.18,2.72,+172,2.94,+194,1.58,-172,1.71,-141
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Seattle_Kraken_Dallas_Stars,Seattle Kraken,Dallas Stars,0.329,0.671,2.18,3.46,5.64,3.04,+204,3.28,+228,1.49,-204,1.61,-164
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Colorado_Avalanche_Utah_Mammoth,Colorado Avalanche,Utah Mammoth,0.571,0.429,3.53,2.77,6.3,1.75,-133,1.89,-112,2.33,+133,2.52,+152
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Vegas_Golden_Knights_Los_Angeles_Kings,Vegas Golden Knights,Los Angeles Kings,0.504,0.496,2.84,2.79,5.63,1.98,-102,2.14,+114,2.02,+102,2.18,+118
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Winnipeg_Jets_Vancouver_Canucks,Winnipeg Jets,Vancouver Canucks,0.577,0.423,3.36,2.53,5.89,1.73,-137,1.87,-115,2.36,+136,2.55,+155
+2026_02_25,nhl_moneyline,nhl_2026_02_25_Edmonton_Oilers_Anaheim_Ducks,Edmonton Oilers,Anaheim Ducks,0.531,0.469,3.57,3.23,6.8,1.88,-114,2.03,+103,2.13,+113,2.3,+130

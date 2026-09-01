@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccer Picks</title>
+    <link rel="stylesheet" href="css/matstheme.css">
+    <style>
+        .master-column { max-width: 800px; margin: 20px auto; display: flex; flex-direction: column; gap: 15px; }
+        
+        .pick-card { 
+            border: 1px solid var(--border-soft); 
+            padding: 20px; 
+            background: rgba(15, 20, 27, 0.8); 
+            backdrop-filter: blur(10px);
+            border-radius: 4px; 
+            color: var(--text-main); 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pick-card:hover { 
+            transform: translateY(-4px); 
+            border-color: var(--accent-green);
+            box-shadow: 0 8px 25px rgba(0, 255, 132, 0.15);
+            background: rgba(22, 27, 34, 0.9);
+        }
+
+        .pick-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            border-bottom: 1px solid var(--border-soft); 
+            padding-bottom: 10px; 
+            margin-bottom: 12px; 
+            color: var(--text-main); 
+            font-size: 1.1em;
+        }
+
+        .pick-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 12px; 
+            font-size: 0.95em;
+        }
+
+        .bet-text { 
+            color: var(--accent-green); 
+            font-weight: 900; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .league-label { 
+            color: var(--text-muted); 
+            font-size: 0.75em; 
+            margin-bottom: 8px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            font-weight: bold;
+        }
+
+        .status { 
+            margin: 20px 0; 
+            font-family: monospace; 
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .loading-pulse {
+            animation: status-glow 1.5s infinite;
+            font-weight: bold;
+        }
+
+        @keyframes status-glow {
+            0% { color: var(--accent-yellow); opacity: 1; }
+            50% { color: var(--accent-green); opacity: 0.5; }
+            100% { color: var(--accent-yellow); opacity: 1; }
+        }
+
+        input[type="date"] {
+            background: var(--bg-card);
+            border: 1px solid var(--border-soft);
+            color: var(--text-main);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="date"]:focus {
+            border-color: var(--accent-green);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Soccer Picks</h1>
+    <div id="nav-placeholder"></div>
+
+    <section class="controls">
+        <label style="font-size: 11px; text-transform: uppercase; color: var(--text-muted); margin-right: 10px;">Date Selection:</label>
+        <input id="p-date" type="date">
+    </section>
+
+    <div id="status" class="status"></div>
+    <div id="games" class="master-column"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/nav.js"></script>
+
+<script>
+    const dateInput = document.getElementById('p-date');
+    const container = document.getElementById('games');
+    const status = document.getElementById('status');
+
+    const leagueMap = {
+        'bundesliga': 'German Bundesliga',
+        'laliga': 'Spain La Liga',
+        'ligue1': 'France Ligue 1',
+        'epl': 'English Premier League',
+        'seriea': 'Italy Serie A'
+    };
+
+    function getOrdinal(n) {
+        const s = ["th", "st", "nd", "rd"];
+        const v = n % 100;
+        return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    }
+
+    function formatDate(dateStr) {
+        if (!dateStr || !dateStr.includes('_')) return dateStr;
+        const parts = dateStr.split('_');
+        const d = new Date(parts[0], parts[1] - 1, parts[2]);
+        const month = d.toLocaleString('en-US', { month: 'long' });
+        return `${month} ${getOrdinal(parseInt(parts[2]))}, ${parts[0]}`;
+    }
+
+    function formatTime(timeStr) {
+        if (!timeStr || !timeStr.includes(':')) return timeStr;
+        let [hours, minutes] = timeStr.split(':');
+        hours = parseInt(hours);
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; 
+        return `${String(hours).padStart(2, '0')}:${minutes} ${ampm} EST`;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        const today = `${y}-${m}-${d}`;
+        dateInput.value = today;
+        loadData(today);
+    });
+
+    dateInput.addEventListener('change', (e) => loadData(e.target.value));
+
+    async function loadData(dateStr) {
+        if (!dateStr) return;
+        const formattedDate = dateStr.replace(/-/g, '_');
+        const targetFile = `win/soccer/04_select/soccer_${formattedDate}.csv`;
+        
+        status.textContent = `FETCHING DATA...`;
+        status.classList.add('loading-pulse');
+        container.innerHTML = "";
+
+        try {
+            const response = await fetch(targetFile);
+            if (!response.ok) throw new Error(`DATA UNAVAILABLE: ${formattedDate}`);
+
+            const text = await response.text();
+            const rows = text.split('\n').map(r => r.trim()).filter(r => r.length > 0);
+            
+            if (rows.length < 2) throw new Error("NO PICKS IN FILE");
+
+            const headers = rows[0].split(',').map(h => h.trim());
+            const getIdx = (name) => headers.indexOf(name);
+
+            rows.slice(1).forEach(row => {
+                const cols = row.split(',').map(c => c.trim());
+                if (cols.length < headers.length) return;
+
+                const away = cols[getIdx('away_team')];
+                const home = cols[getIdx('home_team')];
+                const marketRaw = cols[getIdx('market')];
+                const marketDisplay = leagueMap[marketRaw] || marketRaw;
+                
+                const rawDate = cols[getIdx('match_date')];
+                const rawTime = cols[getIdx('match_time')];
+                
+                const dateDisplay = formatDate(rawDate);
+                const timeDisplay = formatTime(rawTime);
+
+                let rawBet = cols[getIdx('take_bet')];
+                let betDisplay = rawBet;
+
+                if (rawBet === 'away') {
+                    betDisplay = away;
+                } else if (rawBet === 'home') {
+                    betDisplay = home;
+                } else {
+                    betDisplay = (rawBet || "")
+                        .replace('over25', 'Over 2.5')
+                        .replace('under25', 'Under 2.5');
+                }
+                
+                const odds = cols[getIdx('odds_american')];
+                const edgePct = (parseFloat(cols[getIdx('edge_pct')]) * 100).toFixed(2);
+
+                const card = document.createElement('div');
+                card.className = 'pick-card';
+                card.innerHTML = `
+                    <div class="league-label">${marketDisplay}</div>
+                    <div class="pick-header">
+                        <span>${away} at ${home}</span>
+                        <span>${timeDisplay}</span>
+                    </div>
+                    <div class="pick-grid">
+                        <div>${dateDisplay}</div>
+                        <div class="bet-text">Take ${betDisplay} at ${odds}</div>
+                        <div>Edge: ${edgePct}%</div>
+                        <div>Kelly: ${cols[getIdx('kelly_stake_pct')]}%</div>
+                        <div>Projected Goals: ${cols[getIdx('expected_goals')]}</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            status.textContent = "SYSTEM READY";
+            status.classList.remove('loading-pulse');
+        } catch (err) {
+            status.textContent = err.message;
+            status.classList.remove('loading-pulse');
+        }
+    }
+</script>
+</body>
+</html>

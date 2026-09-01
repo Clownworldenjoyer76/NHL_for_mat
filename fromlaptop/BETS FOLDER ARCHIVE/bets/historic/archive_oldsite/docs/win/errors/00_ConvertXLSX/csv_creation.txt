@@ -1,0 +1,44 @@
+CSV CREATION RUN
+================
+Timestamp (UTC): 2026-03-01T14:42:27.935434
+
+Converted: testing/bets 1.22.xlsx -> testing/csvs/bets 1.22.csv
+Converted: testing/Bet_Tracker.xlsx -> testing/csvs/Bet_Tracker.csv
+Converted: testing/ncaa-basketball-2014-15.xlsx -> testing/csvs/ncaa-basketball-2014-15.csv
+Converted: testing/ncaa-basketball-2011-12.xlsx -> testing/csvs/ncaa-basketball-2011-12.csv
+Converted: testing/bets 1.24.26.xlsx -> testing/csvs/bets 1.24.26.csv
+Converted: testing/ncaa-basketball-2007-08.xlsx -> testing/csvs/ncaa-basketball-2007-08.csv
+Converted: testing/ncaa-basketball-2020-21.xlsx -> testing/csvs/ncaa-basketball-2020-21.csv
+Converted: testing/ncaa-basketball-2010-11.xlsx -> testing/csvs/ncaa-basketball-2010-11.csv
+Converted: testing/ncaa-basketball-2015-16.xlsx -> testing/csvs/ncaa-basketball-2015-16.csv
+Converted: testing/bets 1.26.26.xlsx -> testing/csvs/bets 1.26.26.csv
+Converted: testing/ncaa-basketball-2018-19.xlsx -> testing/csvs/ncaa-basketball-2018-19.csv
+Converted: testing/bets 1.30.xlsx -> testing/csvs/bets 1.30.csv
+Converted: testing/ncaa-basketball-2008-09.xlsx -> testing/csvs/ncaa-basketball-2008-09.csv
+Converted: testing/bets 1.31.xlsx -> testing/csvs/bets 1.31.csv
+Converted: testing/ncaa-basketball-2013-14.xlsx -> testing/csvs/ncaa-basketball-2013-14.csv
+Converted: testing/ncaa-basketball-2019-20.xlsx -> testing/csvs/ncaa-basketball-2019-20.csv
+Converted: testing/bets 1.28.26.xlsx -> testing/csvs/bets 1.28.26.csv
+Converted: testing/ncaa-basketball-2009-10.xlsx -> testing/csvs/ncaa-basketball-2009-10.csv
+Converted: testing/bets 1.27.26.xlsx -> testing/csvs/bets 1.27.26.csv
+Converted: testing/bets 1.29.xlsx -> testing/csvs/bets 1.29.csv
+Converted: testing/ncaa-basketball-2012-13.xlsx -> testing/csvs/ncaa-basketball-2012-13.csv
+Converted: testing/ncaa-basketball-2016-17.xlsx -> testing/csvs/ncaa-basketball-2016-17.csv
+Converted: testing/ncaa-basketball-2017-18.xlsx -> testing/csvs/ncaa-basketball-2017-18.csv
+Converted: testing/bets 1.23.26.xlsx -> testing/csvs/bets 1.23.26.csv
+Converted: testing/bets 1.25.26.xlsx -> testing/csvs/bets 1.25.26.csv
+Converted: docs/win/dump/ncaab_227.xlsx -> docs/win/dump/csvs/ncaab_227.csv
+Converted: docs/win/dump/ncaab_224.xlsx -> docs/win/dump/csvs/ncaab_224.csv
+Converted: docs/win/dump/nba_224.xlsx -> docs/win/dump/csvs/nba_224.csv
+Converted: docs/win/dump/nba_223.xlsx -> docs/win/dump/csvs/nba_223.csv
+Converted: docs/win/dump/nba_227.xlsx -> docs/win/dump/csvs/nba_227.csv
+Converted: docs/win/dump/ncaab_0301.xlsx -> docs/win/dump/csvs/ncaab_0301.csv
+Converted: docs/win/dump/nhl_225.xlsx -> docs/win/dump/csvs/nhl_225.csv
+Converted: docs/win/dump/ncaab_223.xlsx -> docs/win/dump/csvs/ncaab_223.csv
+Converted: docs/win/dump/ncaab_226.xlsx -> docs/win/dump/csvs/ncaab_226.csv
+
+SUMMARY
+-------
+Files found: 34
+Files converted: 34
+Files failed: 0

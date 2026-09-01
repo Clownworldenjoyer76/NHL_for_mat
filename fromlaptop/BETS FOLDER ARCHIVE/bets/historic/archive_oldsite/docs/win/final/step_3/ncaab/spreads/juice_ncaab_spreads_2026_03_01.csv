@@ -1,0 +1,3 @@
+date,time,away_team,home_team,league,game_id,away_spread,home_spread,deci_home_spread_juice_odds,deci_away_spread_juice_odds,deci_dk_away_odds,deci_dk_home_odds
+2026_03_01,12:00 PM,Tulane Green Wave,South Florida Bulls,ncaab_spreads,ncaab_2026_03_01_Tulane_Green_Wave_South_Florida_Bulls,15.5,-15.5,2.6100000000000003,1.7246376811594204,1.9090909090909087,1.9523809523809523
+2026_03_01,8:00 PM,Wichita State Shockers,UTSA Roadrunners,ncaab_spreads,ncaab_2026_03_01_Wichita_State_Shockers_UTSA_Roadrunners,-15.5,15.5,1.6944444444444444,2.68,1.925925925925926,1.9523809523809523

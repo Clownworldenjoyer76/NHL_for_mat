@@ -1,0 +1,5 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,take_bet,take_bet_prob,take_bet_edge_decimal,take_bet_edge_pct,take_team,take_odds,value
+2026_02_27,NHL,Minnesota Wild,Utah Mammoth,total,under,6.5,2026_02_27_Utah Mammoth_Minnesota Wild,under_total,0.656805616971864,0.2279409360778324,0.1219218960416314,under,-115,6.5
+2026_02_27,NHL,Buffalo Sabres,Florida Panthers,total,under,6.5,2026_02_27_Florida Panthers_Buffalo Sabres,under_total,0.6179322489445002,0.1122780481001002,0.0623766933889445,under,-125,6.5
+2026_02_27,NHL,Winnipeg Jets,Anaheim Ducks,total,under,6.5,2026_02_27_Anaheim Ducks_Winnipeg Jets,under_total,0.6162436501838485,0.0902772272483474,0.0510262588795006,under,-130,6.5
+2026_02_27,NHL,Vegas Golden Knights,Washington Capitals,total,over,5.5,2026_02_27_Washington Capitals_Vegas Golden Knights,over_total,0.6019190440766047,0.0649336933663005,0.0367016527722567,over,-130,5.5

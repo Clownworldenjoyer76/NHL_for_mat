@@ -1,0 +1,2 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,bundesliga,2026_03_13,15:30,Borussia Monchengladbach,St Pauli,0.531000,0.219000,0.249000,1.96,1.28,3.24

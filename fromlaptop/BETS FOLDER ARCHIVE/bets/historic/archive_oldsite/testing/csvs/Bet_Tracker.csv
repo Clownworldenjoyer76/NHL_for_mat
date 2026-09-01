@@ -1,0 +1,294 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-08,Stony Brook vs Drexel — Stony Brook,0.394,166.0,190,24.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-08,West Georgia vs North Florida — West Georgia,0.652,-164.0,-155,9.0,0.1,Win,0.16,0.06,ncaab
+2026-01-08,Liberty vs Louisiana Tech — Liberty,0.747,-247.0,-198,49.0,0.1,Win,0.15,0.05,ncaab
+2026-01-08,Bellarmine vs Central Arkansas — Bellarmine,0.481,118.0,124,6.0,0.1,Win,0.22,0.12,ncaab
+2026-01-08,Old Dominion vs Coastal Carolina — Old Dominion,0.409,157.0,160,3.0,0.1,Win,0.26,0.16,ncaab
+2026-01-09,Saint Peters vs Mount St Marys — Saint Peters,0.516,103.0,-125,-228.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-09,Fairfield vs Rider — Fairfield,0.858,-447.0,-395,52.0,0.1,Win,0.13,0.03,ncaab
+2026-01-09,Green Bay vs IU Indianapolis — Green Bay,0.79,-304.0,-298,6.0,0.1,Win,0.13,0.03,ncaab
+2026-01-09,USC vs Minnesota — USC,0.494,113.0,154,41.0,0.1,Win,0.25,0.15,ncaab
+2026-01-09,Miami (OH) vs Toledo — Miami (OH),0.615,-141.0,-102,39.0,0.1,Win,0.2,0.1,ncaab
+2026-01-10,Montana vs Eastern Washington — Montana,0.57,-119.0,105,224.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-10,CSUN vs Cal State Fullerton — CSUN,0.486,116.0,120,4.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-10,CSU Bakersfield vs Long Beach State — CSU Bakersfield,0.367,186.0,225,39.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-10,Tennessee Tech vs Western Illinois — Western Illinois,0.442,138.0,136,-2.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-10,Campbell vs Elon — Campbell,0.394,166.0,170,4.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-10,UT Martin vs Southern Indiana — UT Martin,0.729,-227.0,-218,9.0,0.1,Win,0.15,0.05,ncaab
+2026-01-12,Southern University vs Bethune-Cookman — Southern University,0.44,139.0,170,31.0,0.25,Win,0.67,0.42,ncaab
+2026-01-12,New Orleans vs SE Louisiana — New Orleans,0.536,-104.0,130,234.0,0.25,Win,0.57,0.32,ncaab
+2026-01-12,Navy vs American — American,0.501,110.0,124,14.0,0.25,Win,0.56,0.31,ncaab
+2026-01-12,NC Central vs Morgan State — Morgan State,0.508,107.0,124,17.0,0.25,Loss,0.0,-0.25,ncaab
+2026-01-13,Eintracht Frankfurt,0.25,320.0,350,30.0,0.1,Loss,0.0,-0.1,soc
+2026-01-13,Mainz,0.641,-157.0,-135,22.0,0.1,Win,0.17,0.07,soc
+2026-01-13,Man City,0.452,132.0,145,13.0,0.1,Win,0.24,0.14,soc
+2026-01-13,AS Roma,0.708,-207.0,-150,57.0,0.1,Loss,0.0,-0.1,soc
+2026-01-13,Mazatlan FC,0.295,256.0,450,194.0,0.1,Loss,0.0,-0.1,soc
+2026-01-13,Monterrey,0.452,132.0,160,28.0,0.1,Win,0.26,0.16,soc
+2026-01-13,Pachuca,0.642,-157.0,-135,22.0,0.1,Win,0.17,0.07,soc
+2026-01-13,Juarez,0.399,163.0,310,147.0,0.1,Loss,0.0,-0.1,soc
+2026-01-13,Wisconsin vs Minnesota — Wisconsin,0.756,-257.0,-130,127.0,0.25,Win,0.44,0.19,ncaab
+2026-01-13,Kent State vs Buffalo — Kent State,0.639,-155.0,-118,37.0,0.25,Win,0.46,0.21,ncaab
+2026-01-13,Dayton vs Duquesne — Dayton,0.772,-278.0,-192,86.0,0.25,Win,0.38,0.13,ncaab
+2026-01-13,Florida vs Oklahoma — Florida,0.784,-295.0,-218,77.0,0.25,Win,0.36,0.11,ncaab
+2026-01-13,Villanova vs Providence — Villanova,0.693,-194.0,-135,59.0,0.25,Win,0.43,0.18,ncaab
+2026-01-13,Alabama vs Mississippi State — Alabama,0.793,-309.0,-258,51.0,0.25,Win,0.34,0.09,ncaab
+2026-01-13,Iowa State vs Kansas — Iowa State,0.891,-560.0,-180,380.0,0.25,Loss,0.0,-0.25,ncaab
+2026-01-14,OTT Senators vs NY Rangers — Under 6.5,0.6576,-142.0,-125,17.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-14,La Salle vs Richmond — Richmond,0.891,-560.0,-410,150.0,1.0,Win,1.24,0.24,ncaab
+2026-01-14,Iona vs Rider — Iona,0.86,-453.0,-360,93.0,1.0,Loss,0.0,-1.0,ncaab
+2026-01-14,Vanderbilt vs Texas — Vanderbilt,0.737,-235.0,-192,43.0,1.25,Loss,0.0,-1.25,ncaab
+2026-01-14,UNC Asheville vs Presbyterian — UNC Asheville,0.67,-176.0,-175,1.0,1.0,Loss,0.0,-1.0,ncaab
+2026-01-14,DEN Nuggets vs DAL Mavericks — DEN Nuggets,0.527,-101.0,120,221.0,0.1,Win,0.22,0.12,nba
+2026-01-14,UTA Jazz vs CHI Bulls — UTA Jazz,0.426,146.0,154,8.0,0.1,Loss,0.0,-0.1,nba
+2026-01-14,Chelsea vs Arsenal — Chelsea,0.377,179.0,255,76.0,0.1,Loss,0.0,-0.1,soc
+2026-01-14,Nigeria vs Morocco — Morocco,0.504,108.0,120,12.0,0.1,Loss,0.0,-0.1,soc
+2026-01-14,Alaves vs Vallecano — Vallecano,0.337,212.0,245,33.0,0.1,Loss,0.0,-0.1,soc
+2026-01-14,Senegal vs Egypt — Senegal,0.525,100.0,100,0.0,0.1,Win,0.2,0.1,soc
+2026-01-15,Union Berlin vs Augsburg,0.5279,103.0,125,22.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-15,Bologna vs Hellas Verona,0.473,128.0,130,2.0,0.1,Win,0.21,0.10999999999999999,soc_ou
+2026-01-15,Barcelona vs Racing Sant,0.6899,-190.0,135,325.0,0.1,Win,0.23,0.13,soc_ou
+2026-01-15,Augsburg vs Union Berlin,0.369,185.0,155,-30.0,0.1,Loss,0.0,-0.1,soc
+2026-01-15,Como vs Milan,0.351,199.0,205,6.0,0.1,Loss,0.0,-0.1,soc
+2026-01-15,Bologna vs Hellas Verona,0.5,110.0,115,5.0,0.1,Win,0.21,0.11,soc
+2026-01-15,Philadelphia Flyers,0.449,134.0,145,11.0,0.1,Loss,0.0,-0.1,nhl
+2026-01-15,Tarleton State Texans,0.743,-242.0,-218,24.0,1.25,Loss,0.0,-1.25,ncaab
+2026-01-15,Hawaii Rainbow Warriors,0.768,-272.0,-218,54.0,1.5,Win,2.18,0.6800000000000002,ncaab
+2026-01-15,Detroit Pistons,0.706,-205.0,-205,0.0,0.1,Win,0.14,0.04000000000000001,nba
+2026-01-15,Miami Heat,0.479,119.0,124,5.0,0.1,Loss,0.0,-0.1,nba
+2026-01-15,Milwaukee Bucks,0.314,234.0,235,1.0,0.1,Loss,0.0,-0.1,nba
+2026-01-15,Utah Jazz,0.425,147.0,120,-27.0,0.1,Loss,0.0,-0.1,nba
+2026-01-15,Portland Trail Blazers,0.461,128.0,140,12.0,0.1,Win,0.24,0.13999999999999999,nba
+2026-01-20,Oklahoma Sooners,0.619,-144.0,-130,14.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-20,Central Michigan Chippewas,0.623,-146.0,-105,41.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-20,Boise State Broncos,0.6,-133.0,-108,25.0,0.1,Win,0.19,0.09,ncaab
+2026-01-20,Georgia Bulldogs,0.563,-116.0,-102,14.0,0.1,Win,0.19,0.09,ncaab
+2026-01-20,Kansas Jayhawks,0.723,-221.0,-205,16.0,0.1,Win,0.14,0.04000000000000001,ncaab
+2026-01-20,Miami RedHawks,0.652,-164.0,110,274.0,0.1,Win,0.21,0.10999999999999999,ncaab
+2026-01-20,Saint Louis Billikens,0.888,-548.0,-485,63.0,0.1,Win,0.12,0.01999999999999999,ncaab
+2026-01-20,Ajax,0.5531,-108.0,-105,3.0,0.1,Win,0.19,0.09,soc_ou
+2026-01-20,Napoli,0.5494,-106.0,115,221.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-20,Tottenham,0.423,148.0,180,32.0,0.1,Win,0.28,0.18,soc
+2026-01-20,Manchester City,0.78,-289.0,-250,39.0,0.1,Loss,0.0,-0.1,soc
+2026-01-20,Monaco,0.11,855.0,750,-105.0,0.1,Loss,0.0,-0.1,soc
+2026-01-20,Sporting CP,0.295,256.0,320,64.0,0.1,Win,0.42,0.32,soc
+2026-01-20,Inter,0.429,145.0,165,20.0,0.1,Loss,0.0,-0.1,soc
+2026-01-20,Napoli,0.65,-162.0,100,262.0,0.1,Loss,0.0,-0.1,soc
+2026-01-20,Olympiacos,0.214,391.0,200,-191.0,0.1,Loss,0.0,-0.1,soc
+2026-01-21,Atletico Madrid,0.7833,-297.0,-180,117.0,0.1,Win,0.15,0.04999999999999999,soc_ou
+2026-01-21,PSV Eindhoven,0.6097,-135.0,-110,25.0,0.1,Win,0.15,0.04999999999999999,soc_ou
+2026-01-21,Barcelona,0.6461,-157.0,-105,52.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-21,Liverpool,0.735,-233.0,-105,128.0,0.1,Win,0.19,0.09,soc
+2026-01-21,UNC Asheville Bulldogs,0.55,-110.0,110,220.0,0.1,Win,0.21,0.10999999999999999,ncaab
+2026-01-21,Southern Illinois Salukis,0.54,-106.0,105,211.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-21,Memphis Grizzlies,0.57,-116.0,-115,1.0,0.1,Loss,0.0,-0.1,nba
+2026-01-21,Milwaukee Bucks,0.254,317.0,400,83.0,0.1,Loss,0.0,-0.1,nba
+2026-01-21,Vancouver Canucks,0.393999999999999,174.0,145,-29.0,0.1,Win,0.24,0.13999999999999999,nhl
+2026-01-22,Southern Miss Moneyline Southern Miss @ Georgia State,0.56,-103.0,114,217.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-22,UNC Wilmington Moneyline UNC Wilmington @ William & Mary,0.54,-106.0,110,216.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-22,Utrecht Moneyline Utrecht vs Genk,0.385,173.0,200,27.0,0.1,Loss,0.0,-0.1,soc
+2026-01-22,FCSB Moneyline Dinamo Zagreb vs FCSB,0.265,371.0,380,9.0,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Nice Moneyline Nice vs Go Ahead Eagles,0.578,-117.0,105,222.0,0.1,Win,0.2,0.1,soc
+2026-01-22,AS Roma Moneyline AS Roma vs Stuttgart,0.612,-135.0,115,250.0,0.1,Win,0.21,0.10999999999999999,soc
+2026-01-22,Rangers Moneyline Rangers vs Ludogorets Razgrad,0.562,-110.0,115,225.0,0.1,Win,0.21,0.10999999999999999,soc
+2026-01-22,Ferencvaros Moneyline Ferencvaros vs Panathinaikos,0.46,128.0,140,12.0,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Real Betis Moneyline PAOK Saloniki vs Real Betis,0.362,215.0,235,20.0,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Under 2.5 Total Goals Malmo FF vs Red Star Belgrade,0.5979,-129.0,110,239.0,0.1,Win,0.21,0.10999999999999999,soc_ou
+2026-01-22,Over 2.5 Total Goals AS Roma,0.6144,-138.0,-115,23.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-23,Pisa vs Inter OVER 3.5,0.5716,-116.0,115,231.0,0.1,Win,0.21,0.11,soc_ou
+2026-01-23,Inter,0.879,-504.0,-425,79.0,0.1,Win,0.12,0.02,soc
+2026-01-23,FC St. Pauli,0.416,157.0,190,33.0,0.1,Loss,0.0,-0.1,soc
+2026-01-23,Florida Gulf Coast Eagles,0.5412,112.0,-115,-227.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-23,LIU Sharks,0.5471,110.0,-105,-215.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,The Citadel Bulldogs,0.5268,119.0,-110,-229.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,East Carolina Pirates,0.5205,122.0,-115,-237.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Saint Louis Billikens,0.535,115.0,-110,-225.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Kennesaw State Owls,0.6391,-132.0,-105,27.0,0.1,Won,0.19,0.09,ncaab_ou
+2026-01-23,Stetson Hatters,0.5518,108.0,-110,-218.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Indiana Hoosiers,0.5294,118.0,-110,-228.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Longwood Lancers,0.56,-103.0,102,205.0,0.1,Win,0.2,0.1,ncaab 
+2026-01-23,Louisiana Tech Bulldogs,0.49,146.0,102,-44.0,0.1,Win,0.2,0.1,ncaab 
+2026-01-23,Furman Paladins,0.5163,124.0,-112,-236.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-23,Vegas Golden Knights,0.6143,-124.0,-122,2.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-23,New York Rangers,0.5935,-114.0,114,228.0,0.1,Win,0.21,0.11,nhl_ou
+2026-01-23,Philadelphia Flyers,0.5951,-115.0,-110,5.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-23,Brooklyn Nets,0.437,179.0,270,91.0,0.1,Loss,0.0,-0.1,nba
+2026-01-24,Arizona State Moneyline Cincinnati @ Arizona State,0.5,120.0,124,4.0,0.1,Win,0.22,0.12,ncaab
+2026-01-24,Over 146.5 Total Weber State @ Montana State,0.6209,-123.0,-105,18.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-24,Over 144.5 Total UC Irvine @ UC San Diego,0.5817,-105.0,-108,-3.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Alabama A&M Moneyline Alabama A&M @ Texas Southern,0.63,-120.0,-115,5.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-24,Over 150.5 Total UC Riverside @ UC Davis,0.5324,116.0,-110,-226.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Eastern Kentucky Moneyline Eastern Kentucky @ Jacksonville,0.51,116.0,124,8.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-24,Over 158.5 Total Bowling Green @ Toledo,0.6053,-115.0,-105,10.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Over 143.5 Total Memphis @ Wichita State,0.7037,-173.0,-110,63.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Under 139.5 Total Rider @ Mount Saint Marys,0.5913,-109.0,-110,-1.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-24,Under 6.5 Total FLA Panthers @ MIN Wild,0.6352,-135.0,-135,0.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-24,Under 6.5 Total WAS Capitals @ EDM Oilers,0.5678,-103.0,105,208.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-24,CLE Cavaliers Moneyline CLE Cavaliers @ ORL Magic,0.427,185.0,114,-71.0,0.1,Win,0.21,0.11,nba
+2026-01-24,UTA Jazz Moneyline MIA Heat @ UTA Jazz,0.469,149.0,190,41.0,0.1,Loss,0.0,-0.1,nba
+2026-01-24,Over 227.5 Total CLE Cavaliers @ ORL Magic,0.5936,-110.0,-110,0.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-24,Nicholls State Moneyline Nicholls State @ SE Louisiana,0.58,-111.0,-102,9.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-24,Bucknell Moneyline Bucknell @ Loyola Maryland,0.55,100.0,102,2.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-24,George Mason Moneyline George Mason @ Rhode Island,0.69,-133.0,-122,11.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-24,Under 159.5 Total Mercer @ Wofford,0.5854,-106.0,-113,-7.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-24,Over 151.5 Total Milwaukee @ Youngstown State,0.6012,-113.0,-113,0.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Under 159.5 Total Elon @ Charleston,0.5885,-108.0,-108,0.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-24,Drake Moneyline Drake @ Indiana State,0.52,112.0,124,12.0,0.1,Win,0.22,0.12,ncaab
+2026-01-24,Over 142.5 Total Clemson @ Georgia Tech,0.5982,-112.0,-113,-1.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-24,Over 150.5 Total North Carolina @ Virginia,0.608,-116.0,-108,8.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-24,Tottenham Moneyline Burnley vs Tottenham,0.509,106.0,105,-1.0,0.1,Loss,0.0,-0.1,soc
+2026-01-24,Under 3.5 Total Goals Bournemouth vs Liverpool,0.7238,-221.0,-169,52.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-24,Man City Moneyline Man City vs Wolves,0.821,-349.0,-323,26.0,0.1,Win,0.13,0.03,soc
+2026-01-24,Liverpool Moneyline Bournemouth vs Liverpool,0.571,-114.0,-115,-1.0,0.1,Loss,0.0,-0.1,soc
+2026-01-24,Over 3.5 Total Goals Man City vs Wolves,0.466,132.0,140,8.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-25,MIA Heat Moneyline MIA Heat @ PHO Suns,0.469,149.0,150,1.0,0.1,Win,0.25,0.15,nba
+2026-01-25,Over 211.5 Total Alternate BKN Nets @ LA Clippers,0.6074,-116.0,-105,11.0,0.1,Win,0.19,0.09,nba_ou
+2026-01-25,Over 130.5 Total Chicago State @ Mercyhurst,0.6156,-120.0,-115,5.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-25,Over 142.5 Total Alternate - NCAAB Oregon @ Washington,0.7604,-223.0,-130,93.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-25,Under 2.5 Total Goals Freiburg vs Cologne,0.5903,-125.0,115,240.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-25,Lille Moneyline Lille vs Strasbourg,0.525,100.0,145,45.0,0.1,Loss,0.0,-0.1,soc
+2026-01-25,Over 2.5 Total Goals Juventus vs Napoli,0.4763,127.0,145,18.0,0.1,Win,0.24,0.14,soc_ou
+2026-01-25,Real Sociedad Moneyline Real Sociedad vs Celta Vigo,0.496,112.0,110,-2.0,0.1,Win,0.21,0.11,soc
+2026-01-25,AS Roma Moneyline AS Roma vs AC Milan,0.419,156.0,170,14.0,0.1,Loss,0.0,-0.1,soc
+2026-01-25,Stade Brest Moneyline Stade Brest vs Toulouse,0.375,205.0,210,5.0,0.1,Loss,0.0,-0.1,soc
+2026-01-26,Girona vs Getafe,0.519,102.0,125,23.0,0.1,Loss,0.0,-0.1,soc
+2026-01-26,Over 2.5 Leeds Everton,0.5475,-105.0,125,230.0,0.1,Loss,0.0,-0.1,soc_ou
+2026-01-26,Under 151.5 Morgan Norfolk,0.7506,-213.0,100,313.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-26,Over 146.5 Alcorn Bethune-Cookman,0.6308,-128.0,-120,8.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-26,Over 165.5 Arizona BYU,0.612,-118.0,-110,8.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-26,Under 6.5 BOS Bruins NYR,0.632,-128.0,-108,20.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-26,Under 6.5 Utah TB,0.6336,-129.0,-125,4.0,0.1,Win,0.18,0.08,nhl_ou
+2026-01-26,Over 226.5 Orlando Cleveland,0.5526,103.0,108,5.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-27,Werder Bremen,0.396,190.0,245,55.0,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Newells Old Boys,0.417,157.0,240,83.0,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Atletico Tucuman,0.514,104.0,140,36.0,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Fiorentina,0.531,-102.0,240,342.0,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Velez Sarsfield,0.492,113.0,130,17.0,0.1,Win,0.23,0.13,soc
+2026-01-27,Huracan,0.575,-116.0,110,226.0,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Over 141.5 Virginia Notre Dame,0.6573,-142.0,-105,37.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-27,Over 160.5 Kentucky Vanderbilt,0.7458,-208.0,120,328.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 140.5 Grand Canyon Nevada,0.6487,-137.0,-130,7.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 138.5 Eastern Michigan Central Michigan,0.8341,-324.0,105,429.0,0.1,Win,0.2,0.1,ncaab_ou
+2026-01-27,Over 164.5 Missouri Alabama,0.8318,-320.0,-130,190.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 151.5 Purdue Indiana,0.6198,-122.0,-110,12.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 145.5 Western Michigan Northern Illinois,0.7954,-264.0,-135,129.0,0.1,Win,0.17,0.07,ncaab_ou
+2026-01-27,Under 155.5 Georgia Tech Virginia Tech,0.6336,-129.0,-115,14.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-27,Over 136.5 Rhode Island Dayton,0.7367,-200.0,-120,80.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-27,Under 167.5 George Washington Saint Louis,0.6137,-119.0,-112,7.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-27,Over 145.5 Kansas State West Virginia,0.7199,-186.0,-125,61.0,0.1,Loss,0.18,0.08,ncaab_ou
+2026-01-27,Over 138.5 Boise State San Jose State,0.6678,-149.0,-145,4.0,0.1,Win,0.16,0.06,ncaab_ou
+2026-01-27,Over 143.5 Saint Josephs Loyola Chicago,0.5594,104.0,-110,-214.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-27,Alabama State,0.51,116.0,120,4.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-27,UTA Jazz +2.5,,,201,,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-27,NY Knicks -8.5,,,−252,,0.1,Win,0.13,0.03,nba_spread
+2026-01-27,PHI 76ers -6.5,,,−193,,0.1,Win,0.15,0.05,nba_spread
+2026-01-27,DET Pistons -5.5,,,−142,,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-27,Over 211.5 BKN Nets PHO Suns,0.638,-138.0,−105,33.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-27,Over 218.5 DET Pistons DEN Nuggets,0.7541,-218.0,126,344.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-27,Over 219.5 MIL Bucks PHI 76ers,0.5927,-117.0,-112,5.0,0.1,Win,0.18,0.08,nba_ou
+2026-01-27,MTL Canadiens +1.5,0.6412,-303.0,-265,38.0,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,NSH Predators +1.5,0.6313,-278.0,−265,13.0,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,UTA Mammoth +1.5,0.615,-233.0,−192,41.0,0.1,Win,0.15,0.05,nhl_spread
+2026-01-27,BUF Sabres +1.5,0.6459,-332.0,−258,74.0,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,Under 6.5 San Jose Vancouver,0.5503,108.0,-105,-213.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-27,Under 6.5 UTA Mammoth FLA Panthers,0.6432,-134.0,-125,9.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-28,St. Johns,,,-166,,0.1,Win,0.16,0.06,ncaab_spread
+2026-01-28,LSU,,,-130,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,California @ Florida State - Over 155.5 - Total Alternate - NCAAB,0.7032,-173.0,-130,43.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Western Kentucky,0.46,163.0,215,52.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Fordham,,,-130,,0.1,Win,0.17,0.07,ncaab_spread
+2026-01-28,Texas @ Auburn - Over 156.5 - Total Alternate - NCAAB,0.7286,-193.0,110,303.0,0.1,Win,0.21,0.11,ncaab_ou
+2026-01-28,Saint Bonaventure,0.52,112.0,145,33.0,0.1,Win,0.24,0.14,ncaab
+2026-01-28,Illinois State @ Murray State - Under 159.5 - Total,0.6289,-127.0,-105,22.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Baylor @ Cincinnati - Over 147.5 - Total,0.5966,-111.0,-110,1.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Southern University,,,105,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Austin Peay,,,104,,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-28,Navy,,,119,,0.1,Win,0.21,0.11,ncaab_spread
+2026-01-28,DePaul @ Georgetown - Over 141.5 - Total Alternate - NCAAB,0.6049,-115.0,114,229.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,South Dakota State,0.62,-116.0,-115,1.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Temple,,,100,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Tennessee @ Georgia - Over 160.5 - Total Alternate - NCAAB,0.5776,-103.0,100,203.0,0.1,Win,0.2,0.1,ncaab_ou
+2026-01-28,South Dakota State @ Omaha - Over 148.5 - Total,0.6797,-156.0,-115,41.0,0.1,Win,0.18,0.08,ncaab_ou
+2026-01-28,Northern Iowa,0.55,100.0,110,10.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,California,0.52,112.0,142,30.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,La Salle @ Fordham - Over 132.5 - Total Alternate - NCAAB,0.7233,-188.0,-140,48.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Marshall,,,109,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Napoli,0.412,185.0,245,60.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,River Plate [ARG],0.774,-275.0,-195,80.0,0.1,Win,0.15,0.05,soc
+2026-01-28,Ajax,0.464,141.0,215,74.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Corinthians,0.557,-108.0,120,228.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Atletico Madrid,0.831,-374.0,-370,4.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Sao Paulo,0.308,341.0,310,-31.0,0.1,Win,0.41,0.31,soc
+2026-01-28,Iowa,,,-183,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Eintracht Frankfurt,0.509,116.0,380,264.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Barracas Central,0.377,239.0,270,31.0,0.1,Loss,0.0,-0.1,soc
+2026-01-28,Club Brugge,0.591,-124.0,165,289.0,0.1,Win,0.26,0.16,soc
+2026-01-28,Bucknell,0.46,163.0,164,1.0,0.1,Loss,0.0,-0.1,ncaab
+2026-01-28,Denver,,,109,,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-28,PHI Flyers @ CBJ Blue Jackets - PHI Flyers +1.5 - Puck Line,0.5758,-227.0,-245,-18.0,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-28,Georgetown,,,-108,,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-28,MIN Timberwolves @ DAL Mavericks - Over 232.5 - Total Alternate,0.5157,117.0,125,8.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Utah State,,,-219,,0.1,Win,0.14,0.04,ncaab_spread
+2026-01-28,MIN Timberwolves @ DAL Mavericks - MIN Timberwolves -5.5 - Spread Alternate,,,-157,,0.1,Win,0.16,0.06,nba_spread
+2026-01-28,SA Spurs @ HOU Rockets - Over 220.5 - Total,0.6764,-160.0,-108,52.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,SA Spurs @ HOU Rockets - HOU Rockets -2.5 - Spread,,,-112,,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-28,Queens NC,,,-112,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Arkansas State,,,-146,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,IU Indianapolis @ Robert Morris - Over 159.5 - Total Alternate - NCAAB,0.781,-246.0,-105,141.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Colgate,,,-151,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,ATL Hawks @ BOS Celtics - BOS Celtics -5.5 - Spread,,,-110,,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-28,NY Knicks @ TOR Raptors - Over 224.5 - Total Alternate,0.5502,-100.0,117,217.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Denver @ UMKC - Under 161.5 - Total Alternate - NCAAB,0.5973,-112.0,110,222.0,0.1,Win,0.21,0.11,ncaab_ou
+2026-01-28,CHA Hornets @ MEM Grizzlies - Over 230.5 - Total,0.5905,-112.0,-110,2.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-28,Wisconsin,,,119,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,NY Rangers @ NY Islanders - NY Rangers +1.5 - Puck Line,0.6607,-226.0,-218,8.0,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-28,Robert Morris,,,-105,,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-28,American,,,126,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Sam Houston,0.54,104.0,110,6.0,0.1,Win,0.21,0.11,ncaab
+2026-01-28,Belmont @ Valparaiso - Over 145.5 - Total,0.619,-122.0,-105,17.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Belmont,,,-105,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Minnesota @ Wisconsin - Over 146.5 - Total Alternate - NCAAB,0.6548,-141.0,-120,21.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,East Carolina,,,-101,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Davidson @ George Mason - Over 135.5 - Total,0.5908,-109.0,-105,4.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Sam Houston @ Missouri State - Over 148.5 - Total,0.642,-134.0,-108,26.0,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-28,Tulsa,,,-120,,0.1,Win,0.18,0.08,ncaab_spread
+2026-01-28,George Mason,,,108,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Auburn,,,-140,,0.1,Win,0.17,0.07,ncaab_spread
+2026-01-28,Drake,,,-118,,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-28,Louisiana Tech @ UTEP - Over 129.5 - Total,0.6544,-141.0,-108,33.0,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-28,Stanford @ Miami FL - Over 146.5 - Total Alternate - NCAAB,0.678,-155.0,-130,25.0,0.1,Win,0.17,0.07,ncaab_ou
+2026-01-29,TOR Maple Leafs @ SEA Kraken - Under 6.5 - Total,0.632,-128.0,-108,20.0,0.1,Lost,0.0,-0.1,nhl_ou
+2026-01-29,Montana @ Portland State - Over 143.5 - Total,0.6853,-141.0,-110,31.0,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,Eastern Washington @ Northern Arizona - Over 145.5 - Total Alternate - NCAAB,0.6159,115.0,124,9.0,0.1,Won,0.22,0.12,ncaab_ou
+2026-01-29,Oral Roberts @ South Dakota - Over 153.5 - Total Alternate - NCAAB,0.9391,-374.0,-130,244.0,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,WAS Capitals @ DET Red Wings - Under 6.5 - Total,0.6095,-117.0,-110,7.0,0.1,Lost,0.0,-0.1,nhl_ou
+2026-01-29,Lipscomb @ Jacksonville - Over 143.5 - Total Alternate - NCAAB,0.6825,-140.0,100,240.0,0.1,Lost,0.0,-0.1,ncaab_ou
+2026-01-29,MIL Bucks @ WAS Wizards - Over 222.5 - Total,0.574,-109.0,-108,1.0,0.1,Lost,0.0,-0.1,nba_ou
+2026-01-29,BKN Nets @ DEN Nuggets - Over 209.5 - Total,0.6105,-125.0,-110,15.0,0.1,Won,0.19,0.09,nba_ou
+2026-01-29,NY Rangers,0.6363,-284.0,-218,66.0,0.1,Won,0.14,0.04,nhl_spread
+2026-01-29,LA Kings,0.6301,-276.0,-238,38.0,0.1,Lost,0.0,-0.1,nhl_spread
+2026-01-29,WAS Capitals,0.6395,-306.0,-225,81.0,0.1,Won,0.14,0.04,nhl_spread
+2026-01-29,VAN Canucks,0.6009,-210.0,-205,5.0,0.1,Won,0.14,0.04,nhl_spread
+2026-01-30,Manhattan,0.635,-125.0,-108,17.0,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,VCU,0.82,-133.0,-105,28.0,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Saint Peters,0.635,-135.0,-102,33.0,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-30,Nevada,0.655,-147.0,-118,29.0,0.1,Win,0.18,0.08,ncaab_spread
+2026-01-30,Iona,0.57,104.0,107,3.0,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Charlotte,0.645,-141.0,109,250.0,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-30,Quinnipiac,0.68,-163.0,-105,58.0,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Siena,0.71,-104.0,110,214.0,0.1,Win,0.0,-0.1,ncaab_spread
+2026-01-30,Saint Louis,0.72,-108.0,-101,7.0,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-30,Harvard,0.555,111.0,116,5.0,0.1,Win,0.21,0.11,ncaab_spread
+2026-01-30,CHI Blackhawks,0.573,-161.0,-192,-31.0,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-30,SAC Kings @ BOS Celtics - Over 220.5 - Total Alternate,0.5717,-108.0,116,224.0,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-31,UConn,0.651321,-145.0,-112,33.0,0.1,Win,0.18,0.08,ncaab_spread
+2026-01-31,MEM Grizzlies,0.544236,-133.0,111,244.0,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-31,IND Pacers,0.522152,-121.0,-110,11.0,0.1,Win,0.19,0.09,nba_spread
+2026-01-31,NO Pelicans,0.620028,-185.0,-155,30.0,0.1,Win,0.16,0.06,nba_spread
+2026-01-31,DAL Mavericks,0.566184,-146.0,-105,41.0,0.1,Win,0.19,0.09,nba_spread
+2026-01-31,CHI Bulls,0.58793,-160.0,103,263.0,0.1,Win,0.2,0.1,nba_spread
+2026-01-31,Under NJ Devils @ OTT Senators - Under 5.5 - Total,0.5854,-106.0,100,206.0,0.1,Win,0.2,0.1,nhl_ou
+2026-01-31,NY Rangers,0.442,188.0,170,-18.0,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-31,Under MIN Wild @ EDM Oilers - Under 6.5 - Total,0.5694,100.0,102,2.0,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-31,Under MTL Canadiens @ BUF Sabres - Under 6.5 - Total,0.5423,112.0,102,-10.0,0.1,Win,0.2,0.1,nhl_ou
+2026-01-31,Under TOR Maple Leafs @ VAN Canucks - Under 6.5 - Total,0.5822,-105.0,-102,3.0,0.1,Win,0.19,0.09,nhl_ou

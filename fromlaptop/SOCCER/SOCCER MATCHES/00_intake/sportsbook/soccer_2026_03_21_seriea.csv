@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,seriea,2026_03_21,Sat Mar 21st 3:45 PM,Juventus,Sassuolo,-310,+400,+750
+Soccer,seriea,2026_03_21,Sat Mar 21st 1:00 PM,Milan,Torino,-285,+370,+650
+Soccer,seriea,2026_03_21,Sat Mar 21st 10:00 AM,Parma,Cremonese,+105,+195,+300

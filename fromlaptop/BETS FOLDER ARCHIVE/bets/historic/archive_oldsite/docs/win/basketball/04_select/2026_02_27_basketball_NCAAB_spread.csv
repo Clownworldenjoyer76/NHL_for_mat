@@ -1,0 +1,3 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_27,Basketball,Brown Bears,Columbia Lions,spread,home,-5.5,2026_02_27_Columbia Lions_Brown Bears,spread,home_spread,-115,home,-5.5,0.1100358898223958,0.05883151341884
+2026_02_27,Basketball,Louisiana Monroe Warhawks,Troy Trojans,spread,away,19.5,2026_02_27_Troy Trojans_Louisiana Monroe Warhawks,spread,away_spread,-131,away,19.5,0.1305418719211826,0.0740740740740742

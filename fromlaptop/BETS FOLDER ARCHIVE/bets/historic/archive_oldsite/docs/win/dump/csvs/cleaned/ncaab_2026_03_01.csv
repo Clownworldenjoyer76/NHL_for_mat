@@ -1,0 +1,24 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds
+2026_03_01,ncaab,ncaab_2026_03_01_North_Texas_Mean_Green_UAB_Blazers,North Texas Mean Green,UAB Blazers,0.349,0.651,69.4,74.2,143.6,2.8653,186,2.8653,186
+2026_03_01,ncaab,ncaab_2026_03_01_Rutgers_Scarlet_Knights_Maryland_Terrapins,Rutgers Scarlet Knights,Maryland Terrapins,0.347,0.653,69.0,73.9,142.9,2.8818,188,2.8818,188
+2026_03_01,ncaab,ncaab_2026_03_01_Tulane_Green_Wave_South_Florida_Bulls,Tulane Green Wave,South Florida Bulls,0.104,0.896,72.0,84.8,156.8,9.6154,861,9.6154,861
+2026_03_01,ncaab,ncaab_2026_03_01_La_Salle_Explorers_Davidson_Wildcats,La Salle Explorers,Davidson Wildcats,0.152,0.848,62.9,73.6,136.5,6.5789,557,6.5789,557
+2026_03_01,ncaab,ncaab_2026_03_01_Illinois_Chicago_Indiana_State_Sycamores,Illinois Chicago,Indiana State Sycamores,0.624,0.376,74.6,70.6,145.2,1.6026,-165,1.6026,-165
+2026_03_01,ncaab,ncaab_2026_03_01_Quinnipiac_Bobcats_Canisius_Golden_Griffins,Quinnipiac Bobcats,Canisius Golden Griffins,0.759,0.241,72.9,65.0,137.9,1.3175,-314,1.3175,-314
+2026_03_01,ncaab,ncaab_2026_03_01_Purdue_Boilermakers_Ohio_State_Buckeyes,Purdue Boilermakers,Ohio State Buckeyes,0.715,0.285,79.6,73.1,152.7,1.3986,-250,1.3986,-250
+2026_03_01,ncaab,ncaab_2026_03_01_Rice_Owls_Temple_Owls,Rice Owls,Temple Owls,0.275,0.725,68.1,75.0,143.1,3.6364,263,3.6364,263
+2026_03_01,ncaab,ncaab_2026_03_01_Mount_St_Marys_Mountaineers_Fairfield_Stags,Mount St Marys Mountaineers,Fairfield Stags,0.338,0.662,69.0,74.2,143.2,2.9586,195,2.9586,195
+2026_03_01,ncaab,ncaab_2026_03_01_Iona_Gaels_Manhattan_Jaspers,Iona Gaels,Manhattan Jaspers,0.57,0.43,76.0,73.4,149.4,1.7544,-132,1.7544,-132
+2026_03_01,ncaab,ncaab_2026_03_01_Saint_Peters_Peacocks_Marist_Red_Foxes,Saint Peters Peacocks,Marist Red Foxes,0.346,0.654,63.5,68.3,131.8,2.8902,189,2.8902,189
+2026_03_01,ncaab,ncaab_2026_03_01_Murray_State_Racers_Bradley_University_Braves,Murray State Racers,Bradley University Braves,0.369,0.631,76.2,80.3,156.5,2.71,171,2.71,171
+2026_03_01,ncaab,ncaab_2026_03_01_Charlotte_49ers_Florida_Atlantic_Owls,Charlotte 49ers,Florida Atlantic Owls,0.218,0.782,69.9,78.4,148.3,4.5872,358,4.5872,358
+2026_03_01,ncaab,ncaab_2026_03_01_Memphis_Tigers_East_Carolina_Pirates,Memphis Tigers,East Carolina Pirates,0.687,0.313,77.9,72.2,150.1,1.4556,-219,1.4556,-219
+2026_03_01,ncaab,ncaab_2026_03_01_Merrimack_Warriors_Niagara_Purple_Eagles,Merrimack Warriors,Niagara Purple Eagles,0.785,0.215,68.5,59.9,128.4,1.2739,-365,1.2739,-365
+2026_03_01,ncaab,ncaab_2026_03_01_Rider_Broncs_Siena_Saints,Rider Broncs,Siena Saints,0.1,0.9,61.4,74.3,135.7,10.0,900,10.0,900
+2026_03_01,ncaab,ncaab_2026_03_01_Northern_Iowa_Panthers_Drake_Bulldogs,Northern Iowa Panthers,Drake Bulldogs,0.666,0.334,70.5,65.2,135.7,1.5015,-199,1.5015,-199
+2026_03_01,ncaab,ncaab_2026_03_01_Michigan_State_Spartans_Indiana_Hoosiers,Michigan State Spartans,Indiana Hoosiers,0.592,0.408,74.4,71.3,145.7,1.6892,-145,1.6892,-145
+2026_03_01,ncaab,ncaab_2026_03_01_Southern_Illinois_Salukis_Evansville_Purple_Aces,Southern Illinois Salukis,Evansville Purple Aces,0.761,0.239,73.1,65.1,138.2,1.3141,-318,1.3141,-318
+2026_03_01,ncaab,ncaab_2026_03_01_DePaul_Blue_Demons_Marquette_Golden_Eagles,DePaul Blue Demons,Marquette Golden Eagles,0.366,0.634,69.9,74.2,144.1,2.7322,173,2.7322,173
+2026_03_01,ncaab,ncaab_2026_03_01_Belmont_Bruins_Illinois_State_Redbirds,Belmont Bruins,Illinois State Redbirds,0.516,0.484,76.3,75.7,152.0,1.938,-106,1.938,-106
+2026_03_01,ncaab,ncaab_2026_03_01_Charleston_Cougars_UNC_Wilmington_Seahawks,Charleston Cougars,UNC Wilmington Seahawks,0.372,0.628,71.1,75.2,146.3,2.6882,168,2.6882,168
+2026_03_01,ncaab,ncaab_2026_03_01_Wichita_State_Shockers_UTSA_Roadrunners,Wichita State Shockers,UTSA Roadrunners,0.892,0.108,81.3,68.9,150.2,1.1211,-825,1.1211,-825

@@ -1,0 +1,194 @@
+Hockey system
+############################################
+##########**********STEP 1**********########
+
+Raw data input is run through .github/workflows/manual_data.yml
+
+Workflow runs these scripts in order:
+
+docs/win/{league}/scripts/00_parsing/dk.py [sportsbook odds]
+OR
+docs/win/{league}/scripts/00_parsing/drat.py [predictions]
+
+docs/win/{league}/scripts/00_parsing/parsing_combine.py
+docs/win/{league}/scripts/00_parsing/name_normalization.py
+docs/win/{league}/scripts/00_parsing/dedupe.py
+
+######################docs/win/{league}/scripts/00_parsing/dk.py
+dk raw input layout:
+
+And here is what should be done with each part of the block:
+
+WED FEB 25th [this is the 'game_date' value. it should be in YYYY_MM_DD format ie 2026_02_22. If this line instead shows 'Today' then game_date = system date in YYYY_MM_DD FORMAT.  If this line instead shows 'Tomorrow' then game_date = system date + 1 day in YYYY_MM_DD FORMAT.]
+
+Puck Line [this is a header for the scrape and can be ignored] 
+
+Total [this is a header for the scrape and can be ignored]
+
+Moneyline [this is a header for the scrape and can be ignored]
+
+BUF Sabres-logo [this is a logo from the scrape and can be ignored]
+BUF Sabres [value for 'away_team']
+at [this line indicates the next team listed is the home team]
+NJ Devils-logo [this is a logo from the scrape and can be ignored]
+
+NJ Devils [value for 'home_team']
+
++1.5 [this is the 'away_puck_line' value]
+
+
+−258 [value for 'away_dk_puck_line_american']
+
+O [this is a header for the scrape and can be ignored]
+5.5 [this is the 'total' value]
+
+−135 [this is the value for 'dk_total_over_american']
+
+−102 [value for 'away_dk_moneyline_american']
+
+
+-1.5[this is the 'home_puck_line' value]
+
++210 [this is the home_dk_puck_line_american]
+
+
+U [this is a header for the scrape and can be ignored]
+
+5.5 [this is a header for the scrape and can be ignored]
+
++114 [this is 'dk_total_under_american']
+
+−118 [this is home_dk_moneyline_american]
+Wed Feb 25th 7:00 PM [this line you can ignore the {day of week} which in this case is 'Wed'. 'Feb 25th' could be used as a backup confirmation of date but woould need to be converted into the correct format [ie 2026_02_25 for this case] and lastly '7:00 PM' is the value for 'game_time'
+More Bets [indicates end of game block]
+
+---------------------
+output file will be: docs/win/hockey/00_intake/sportsbook/hockey_2026_02_22.csv
+
+with these headers:
+league	[value = {league}]
+market	[value = {market}]
+game_date	
+game_time	
+home_team	
+away_team
+away_puck_line
+home_puck_line
+total
+away_dk_puck_line_american
+home_dk_puck_line_american
+dk_total_over_american
+dk_total_under_american
+away_dk_moneyline_american
+home_dk_moneyline_american
+
+
+######################docs/win/{league}/scripts/00_parsing/drat.py [predictions]
+
+sample hockey raw dump for when source = predictions:
+
+Time	Teams	Goalies	Win	Best
+ML	Best
+Spread	Goals	Total
+Goals	Best
+O/U	Bet
+Value	More Details
+02/25/2026
+07:07 PM
+Philadelphia Flyers (25-20-11)
+Washington Capitals (29-23-7)	Unknown
+Unknown	41.0%
+59.0%	
++140
+-160
++1½-185
+-1½+160
+2.50
+3.46	5.96	
+o6-115
+u6-105
+02/25/2026
+07:07 PM
+Buffalo Sabres (32-19-6)
+New Jersey Devils (28-27-2)	Unknown
+Unknown	48.5%
+51.5%	
+-105
+-115
++1½-250
+-1½+205
+2.98
+3.13	6.11	
+o6-110
+u6-110
+02/25/2026
+07:37 PM
+Toronto Maple Leafs (27-21-9)
+Tampa Bay Lightning (37-14-4)	Unknown
+Unknown	36.8%
+63.2%	
++200
+-245
++1½-125
+-1½+105
+2.52
+3.66	6.18	
+o6-115
+u6-105
+
+
+------------------------
+
+when source = predictions each game block begins with a date. heres the map for this raw data:
+
+Time	Teams	Goalies	Win	Best [this line is a header for the scrape and can be ignored]
+
+ML	Best [this line is a header for the scrape and can be ignored]
+
+Spread	Goals	Total [this line is a header for the scrape and can be ignored]
+  
+Goals	Best [this line is a header for the scrape and can be ignored]
+
+O/U	Bet [this line is a header for the scrape and can be ignored]
+
+Value	More Details [this line is a header for the scrape and can be ignored]
+
+02/25/2026 [KEY VALUE. INDICATES START OF GAME BLOCK. ALSO VALUE = 'game_date' after being converted to YYYY_MM_DD format]	
+
+07:07 PM ['game_time' value]	
+
+Philadelphia Flyers (25-20-11) [first team listed is 'away_team'. the record - (25-20-11) should be dropped and just Philadelphia Flyers is away_team]
+
+Washington Capitals (29-23-7)	Unknown [second team is 'home_team'. the record - (29-23-7) and trailing text (whatever it is) should be dropped and just Washington Capitals  is 'home_team']
+
+
+Unknown	41.0% [leading text is ignored (it wont always say unknown, itll have goalie names). the '41.0%' value is converted to decimal and is the value of 'away_prob']
+
+59.0% [the '59.0%' value is converted to decimal and is the value of 'home_prob']
++140 [ignored]
+-160 [ignored]
++1½-185 [ignored]
+-1½+160 [ignored]
+2.50 [away_projected_goals]
+3.46 [home_projected_goals]	5.96 [total_projected_goals]	
+o6-115 [ignored]
+u6-105 [ignored]
+02/25/2026 [INDICATES START OF NEW GAME BLOCK]
+ 
+
+---------------------
+output file will be: docs/win/hockey/00_intake/predictions/hockey_{YYYY_MM_DD}.csv
+
+with these headers:
+league	[value = {league}]
+market	[value = {market}]
+game_date	
+game_time	
+home_team	
+away_team
+home_prob
+away_prob
+away_projected_goals
+home_projected_goals
+total_projected_goals
+

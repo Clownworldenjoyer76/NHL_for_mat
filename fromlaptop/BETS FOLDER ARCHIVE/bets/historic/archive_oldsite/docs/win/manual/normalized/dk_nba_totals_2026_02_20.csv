@@ -1,0 +1,10 @@
+date,time,league,game_id,away_team,home_team,total,over_odds,under_odds,over_decimal_odds,under_decimal_odds,over_handle_pct,over_bets_pct,under_handle_pct,under_bets_pct
+2026_02_20,7:10 PM,nba_totals,nba_2026_02_20_Utah_Jazz_Memphis_Grizzlies,Utah Jazz,Memphis Grizzlies,237.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_20,7:10 PM,nba_totals,nba_2026_02_20_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,230.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_20,7:10 PM,nba_totals,nba_2026_02_20_Cleveland_Cavaliers_Charlotte_Hornets,Cleveland Cavaliers,Charlotte Hornets,232.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_20,7:40 PM,nba_totals,nba_2026_02_20_Dallas_Mavericks_Minnesota_Timberwolves,Dallas Mavericks,Minnesota Timberwolves,238.5,-108,-112,1.925925925925926,1.8928571428571428,,,,
+2026_02_20,7:40 PM,nba_totals,nba_2026_02_20_Miami_Heat_Atlanta_Hawks,Miami Heat,Atlanta Hawks,243.5,-112,-108,1.8928571428571428,1.925925925925926,,,,
+2026_02_20,8:10 PM,nba_totals,nba_2026_02_20_Milwaukee_Bucks_New_Orleans_Pelicans,Milwaukee Bucks,New Orleans Pelicans,222.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_20,8:10 PM,nba_totals,nba_2026_02_20_Brooklyn_Nets_Oklahoma_City_Thunder,Brooklyn Nets,Oklahoma City Thunder,211.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_20,10:10 PM,nba_totals,nba_2026_02_20_Los_Angeles_Clippers_Los_Angeles_Lakers,Los Angeles Clippers,Los Angeles Lakers,223.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_20,10:10 PM,nba_totals,nba_2026_02_20_Denver_Nuggets_Portland_Trail_Blazers,Denver Nuggets,Portland Trail Blazers,239.5,-105,-115,1.9523809523809523,1.869565217391304,,,,

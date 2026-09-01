@@ -1,0 +1,30 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds
+2026_02_24,6:30 PM,Miami RedHawks,Eastern Michigan Eagles,ncaab_totals,ncaab_2026_02_24_Miami_RedHawks_Eastern_Michigan_Eagles,153.5,1.7246376811594204,2.67,1.8928571428571428,1.925925925925926
+2026_02_24,6:30 PM,George Washington Colonials,La Salle Explorers,ncaab_totals,ncaab_2026_02_24_George_Washington_Colonials_La_Salle_Explorers,146.5,1.8333333333333333,2.46,1.9090909090909087,1.9090909090909087
+2026_02_24,7:00 PM,Saint Louis Billikens,Dayton Flyers,ncaab_totals,ncaab_2026_02_24_Saint_Louis_Billikens_Dayton_Flyers,156.5,2.48,1.8064516129032255,1.8928571428571428,1.925925925925926
+2026_02_24,7:00 PM,Northwestern Wildcats,Indiana Hoosiers,ncaab_totals,ncaab_2026_02_24_Northwestern_Wildcats_Indiana_Hoosiers,145.5,1.5882352941176472,3.03,1.8928571428571428,1.925925925925926
+2026_02_24,7:00 PM,Duke Blue Devils,Notre Dame Fighting Irish,ncaab_totals,ncaab_2026_02_24_Duke_Blue_Devils_Notre_Dame_Fighting_Irish,139.5,1.421940928270042,4.05,1.869565217391304,1.9523809523809523
+2026_02_24,7:00 PM,Cincinnati Bearcats,Texas Tech Red Raiders,ncaab_totals,ncaab_2026_02_24_Cincinnati_Bearcats_Texas_Tech_Red_Raiders,141.5,1.3875968992248062,4.09,1.9523809523809523,1.869565217391304
+2026_02_24,7:00 PM,West Virginia Mountaineers,Oklahoma State Cowboys,ncaab_totals,ncaab_2026_02_24_West_Virginia_Mountaineers_Oklahoma_State_Cowboys,141.5,1.303951367781155,4.98,1.9090909090909087,1.9090909090909087
+2026_02_24,7:00 PM,Kentucky Wildcats,South Carolina Gamecocks,ncaab_totals,ncaab_2026_02_24_Kentucky_Wildcats_South_Carolina_Gamecocks,149.5,1.3460207612456747,4.7,1.8928571428571428,1.925925925925926
+2026_02_24,7:00 PM,Old Dominion Monarchs,Marshall Thundering Herd,ncaab_totals,ncaab_2026_02_24_Old_Dominion_Monarchs_Marshall_Thundering_Herd,159.5,2.88,1.617283950617284,1.9523809523809523,1.869565217391304
+2026_02_24,7:00 PM,Buffalo Bulls,Akron Zips,ncaab_totals,ncaab_2026_02_24_Buffalo_Bulls_Akron_Zips,157.5,1.8,2.64,1.8928571428571428,1.925925925925926
+2026_02_24,7:00 PM,UMass Minutemen,Ball State Cardinals,ncaab_totals,ncaab_2026_02_24_UMass_Minutemen_Ball_State_Cardinals,140.5,1.364963503649635,4.970000000000001,1.869565217391304,1.9523809523809523
+2026_02_24,7:00 PM,Western Michigan Broncos,Bowling Green Falcons,ncaab_totals,ncaab_2026_02_24_Western_Michigan_Broncos_Bowling_Green_Falcons,149.5,1.617283950617284,2.98,1.869565217391304,1.9523809523809523
+2026_02_24,7:00 PM,Northern Illinois Huskies,Toledo Rockets,ncaab_totals,ncaab_2026_02_24_Northern_Illinois_Huskies_Toledo_Rockets,149.5,1.4385964912280702,3.84,1.869565217391304,1.9523809523809523
+2026_02_24,7:30 PM,Xavier Musketeers,Providence Friars,ncaab_totals,ncaab_2026_02_24_Xavier_Musketeers_Providence_Friars,170.5,3.2,1.5617977528089888,1.9090909090909087,1.9090909090909087
+2026_02_24,7:30 PM,Coastal Carolina Chanticleers,Georgia State Panthers,ncaab_totals,ncaab_2026_02_24_Coastal_Carolina_Chanticleers_Georgia_State_Panthers,141.5,1.72992700729927,2.64,1.925925925925926,1.8928571428571428
+2026_02_24,7:30 PM,Southern Indiana Screaming Eagles,Morehead State Eagles,ncaab_totals,ncaab_2026_02_24_Southern_Indiana_Screaming_Eagles_Morehead_State_Eagles,142.5,2.46,1.8333333333333333,1.9523809523809523,1.869565217391304
+2026_02_24,8:00 PM,Bradley University Braves,Illinois Chicago,ncaab_totals,ncaab_2026_02_24_Bradley_University_Braves_Illinois_Chicago,142.5,1.869565217391304,2.4,1.8928571428571428,1.925925925925926
+2026_02_24,8:30 PM,Southern Miss Golden Eagles,Arkansas State Red Wolves,ncaab_totals,ncaab_2026_02_24_Southern_Miss_Golden_Eagles_Arkansas_State_Red_Wolves,158.5,2.76,1.7142857142857144,1.8928571428571428,1.925925925925926
+2026_02_24,8:30 PM,Minnesota Golden Gophers,Michigan Wolverines,ncaab_totals,ncaab_2026_02_24_Minnesota_Golden_Gophers_Michigan_Wolverines,145.5,1.495049504950495,3.43,1.9523809523809523,1.869565217391304
+2026_02_24,9:00 PM,Iowa State Cyclones,Utah Utes,ncaab_totals,ncaab_2026_02_24_Iowa_State_Cyclones_Utah_Utes,144.5,1.4444444444444444,4.75,1.925925925925926,1.8928571428571428
+2026_02_24,9:00 PM,Auburn Tigers,Oklahoma Sooners,ncaab_totals,ncaab_2026_02_24_Auburn_Tigers_Oklahoma_Sooners,157.5,1.4587155963302751,4.41,1.8928571428571428,1.925925925925926
+2026_02_24,9:00 PM,San Jose State Spartans,Air Force Falcons,ncaab_totals,ncaab_2026_02_24_San_Jose_State_Spartans_Air_Force_Falcons,142.5,2.85,1.6666666666666663,1.8928571428571428,1.925925925925926
+2026_02_24,9:00 PM,Miami Hurricanes,Florida State Seminoles,ncaab_totals,ncaab_2026_02_24_Miami_Hurricanes_Florida_State_Seminoles,155.5,1.5494505494505495,3.12,1.9523809523809523,1.869565217391304
+2026_02_24,9:00 PM,Arizona State Sun Devils,TCU Horned Frogs,ncaab_totals,ncaab_2026_02_24_Arizona_State_Sun_Devils_TCU_Horned_Frogs,147.5,1.4484304932735426,3.68,1.869565217391304,1.9523809523809523
+2026_02_24,9:00 PM,Arizona Wildcats,Baylor Bears,ncaab_totals,ncaab_2026_02_24_Arizona_Wildcats_Baylor_Bears,154.5,1.6993006993006992,3.19,1.925925925925926,1.8928571428571428
+2026_02_24,9:00 PM,Wyoming Cowboys,Boise State Broncos,ncaab_totals,ncaab_2026_02_24_Wyoming_Cowboys_Boise_State_Broncos,147.5,1.8264462809917357,2.44,1.9523809523809523,1.869565217391304
+2026_02_24,9:00 PM,Tennessee Volunteers,Missouri Tigers,ncaab_totals,ncaab_2026_02_24_Tennessee_Volunteers_Missouri_Tigers,143.5,1.2415458937198067,7.22,1.925925925925926,1.8928571428571428
+2026_02_24,11:00 PM,USC Trojans,UCLA Bruins,ncaab_totals,ncaab_2026_02_24_USC_Trojans_UCLA_Bruins,150.5,1.8403361344537816,2.43,1.8928571428571428,1.925925925925926
+2026_02_24,11:00 PM,New Mexico Lobos,Nevada Wolf Pack,ncaab_totals,ncaab_2026_02_24_New_Mexico_Lobos_Nevada_Wolf_Pack,151.5,3.05,1.5524861878453038,1.8928571428571428,1.925925925925926

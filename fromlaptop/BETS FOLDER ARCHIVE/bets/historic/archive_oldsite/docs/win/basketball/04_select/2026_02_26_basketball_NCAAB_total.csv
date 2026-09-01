@@ -1,0 +1,13 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,New Hampshire Wildcats,Binghamton Bearcats,total,under,142.5,2026_02_26_Binghamton Bearcats_New Hampshire Wildcats,total,under_bet,-144,under,142.5,0.25808871493803,0.1523283346487766
+2026_02_26,Basketball,Stetson Hatters,Jacksonville Dolphins,total,over,139.5,2026_02_26_Jacksonville Dolphins_Stetson Hatters,total,over_bet,-127,over,139.5,0.1200963438735174,0.0671306365086267
+2026_02_26,Basketball,Chicago State Cougars,LIU Sharks,total,under,141.5,2026_02_26_LIU Sharks_Chicago State Cougars,total,under_bet,-129,under,141.5,0.1498655616126698,0.0843808941542467
+2026_02_26,Basketball,Florida Gulf Coast Eagles,North Florida Ospreys,total,over,159.5,2026_02_26_North Florida Ospreys_Florida Gulf Coast Eagles,total,over_bet,-144,over,159.5,0.2146108063951446,0.126652892561983
+2026_02_26,Basketball,Saint Francis PA Red Flash,Stonehill Skyhawks,total,under,142.5,2026_02_26_Stonehill Skyhawks_Saint Francis PA Red Flash,total,under_bet,-137,under,142.5,0.1405883988461405,0.0813130617705087
+2026_02_26,Basketball,UMass Lowell River Hawks,Vermont Catamounts,total,under,146.5,2026_02_26_Vermont Catamounts_UMass Lowell River Hawks,total,under_bet,-134,under,146.5,0.1620309515046354,0.0927449288738185
+2026_02_26,Basketball,Denver Pioneers,Oral Roberts Golden Eagles,total,over,155.5,2026_02_26_Oral Roberts Golden Eagles_Denver Pioneers,total,over_bet,-131,over,155.5,0.1443850267379676,0.0818181818181816
+2026_02_26,Basketball,Eastern Illinois Panthers,Lindenwood Lions,total,under,144.5,2026_02_26_Lindenwood Lions_Eastern Illinois Panthers,total,under_bet,-135,under,144.5,0.1693325057295642,0.0973310463121782
+2026_02_26,Basketball,Wichita State Shockers,Memphis Tigers,total,over,146.5,2026_02_26_Memphis Tigers_Wichita State Shockers,total,over_bet,-128,over,146.5,0.1289242034743316,0.0724225450726411
+2026_02_26,Basketball,Portland State Vikings,Montana State Bobcats,total,over,138.5,2026_02_26_Montana State Bobcats_Portland State Vikings,total,over_bet,-146,over,138.5,0.1847823109401332,0.1096772232390218
+2026_02_26,Basketball,Long Beach State 49ers,Cal Poly Mustangs,total,over,161.5,2026_02_26_Cal Poly Mustangs_Long Beach State 49ers,total,over_bet,-125,over,161.5,0.1523809523809522,0.0846560846560846
+2026_02_26,Basketball,California State Bakersfield Roadrunners,UC San Diego Tritons,total,over,147.5,2026_02_26_UC San Diego Tritons_California State Bakersfield Roadrunners,total,over_bet,-132,over,147.5,0.1324623699429512,0.0752458323445658

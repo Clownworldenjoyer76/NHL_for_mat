@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,SERIEA,,2026_04_04,01:00 PM,Cagliari,Sassuolo,23.4%,23.2%,53.4%,1.11,1.80,2.91
+soccer,SERIEA,,2026_04_04,04:00 PM,Fiorentina,Hellas Verona,50.6%,25.6%,23.9%,1.54,0.98,2.52
+soccer,SERIEA,,2026_04_04,06:45 PM,Parma,Lazio,20.4%,22.3%,57.2%,1.03,1.88,2.91

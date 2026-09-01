@@ -1,0 +1,60 @@
+name: _03 Compute Edges
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compute-edges:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Run soccer compute_edges.py
+        run: |
+          python docs/win/soccer/scripts/03_edges/compute_edges.py
+
+      - name: Run hockey compute_edges.py
+        run: |
+          python docs/win/hockey/scripts/03_edges/compute_edges.py
+
+      - name: Run basketball compute_edges.py
+        run: |
+          python docs/win/basketball/scripts/03_edges/compute_edges.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs/win/soccer/03_edges/
+          git add docs/win/soccer/errors/03_edges/
+
+          git add docs/win/hockey/03_edges/
+          git add docs/win/hockey/errors/03_edges/
+
+          git add docs/win/basketball/03_edges/
+          git add docs/win/basketball/errors/03_edges/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "03 Compute Edges - automated run"
+            git push
+          fi

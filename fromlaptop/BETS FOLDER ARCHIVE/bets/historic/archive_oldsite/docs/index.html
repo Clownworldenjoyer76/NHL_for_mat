@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bet Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/terminal.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>Bet Tracker</h1>
+
+    <div id="nav-placeholder"></div>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        This site displays <strong>model-qualified bets only</strong>.
+        All data is read directly from the GitHub repository.
+      </p>
+      <p>
+        No calculations are performed here.
+      </p>
+    </section>
+
+  </div>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

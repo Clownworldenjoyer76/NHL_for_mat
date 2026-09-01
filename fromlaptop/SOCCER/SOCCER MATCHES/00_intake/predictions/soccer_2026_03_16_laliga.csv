@@ -1,0 +1,2 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,laliga,2026_03_16,16:00,Vallecano,Levante,0.602000,0.216000,0.182000,1.95,0.97,2.92

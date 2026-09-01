@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american
+Soccer,bundesliga,2026_03_13,3:30 PM,Borussia Monchengladbach,St Pauli,-115,+225,+310,,,,
+Soccer,laliga,2026_03_13,4:00 PM,Alaves,Villarreal,+230,+240,+120,,,,
+Soccer,ligue1,2026_03_13,3:45 PM,Marseille,Auxerre,-235,+400,+600,,,,
+Soccer,seriea,2026_03_13,3:45 PM,Torino,Parma,+110,+190,+290,,,,

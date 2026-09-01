@@ -1,0 +1,16 @@
+league,market,game_date,game_time,home_team,away_team,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NCAAB,2026_03_02,6:00 PM,Morgan State Bears,Norfolk State Spartans,-2.5,+2.5,154.5,-110,-110,-112,-108,-148,+124
+Basketball,NCAAB,2026_03_02,7:00 PM,Delaware State Hornets,South Carolina State Bulldogs,+1.5,-1.5,137.5,-108,-112,-115,-105,+114,-135
+Basketball,NCAAB,2026_03_02,7:00 PM,Cleveland State Vikings,IU Indianapolis Jaguars,+1.5,-1.5,170.5,-110,-110,-105,-115,+105,-125
+Basketball,NCAAB,2026_03_02,7:00 PM,Maryland Eastern Shore Hawks,North Carolina Central Eagles,+1.5,-1.5,133.5,-115,-105,-110,-110,+105,-125
+Basketball,NCAAB,2026_03_02,7:00 PM,Howard Bison,Coppin State Eagles,+19.5,-19.5,137.5,-112,-108,-108,-112,+1500,-3600
+Basketball,NCAAB,2026_03_02,7:30 PM,Incarnate Word Cardinals,Stephen F Austin Lumberjacks,-8.5,+8.5,145.5,-102,-118,-115,-105,-395,+310
+Basketball,NCAAB,2026_03_02,8:00 PM,Northern Colorado Bears,Montana Grizzlies,+6.5,-6.5,154.5,-112,-108,-110,-110,+220,-270
+Basketball,NCAAB,2026_03_02,8:00 PM,Northern Arizona Lumberjacks,Montana State Bobcats,-6.5,+6.5,142.5,-105,-115,-105,-115,-258,+210
+Basketball,NCAAB,2026_03_02,8:00 PM,Texas AM Corpus Christi Islanders,Texas AM Commerce Lions,+7.5,-7.5,136.5,-105,-115,-115,-105,+295,-375
+Basketball,NCAAB,2026_03_02,8:00 PM,New Orleans Privateers,Southeastern Louisiana Lions,+7.5,-7.5,143.5,-108,-112,-115,-105,+285,-360
+Basketball,NCAAB,2026_03_02,8:30 PM,Houston Christian Huskies,Lamar Cardinals,-1.5,+1.5,131.5,-102,-118,-110,-110,-118,-102
+Basketball,NCAAB,2026_03_02,9:00 PM,Arizona Wildcats,Iowa State Cyclones,+7.5,-7.5,147.5,-110,-110,-112,-108,+270,-340
+Basketball,NCAAB,2026_03_02,9:00 PM,Eastern Washington Eagles,Idaho Vandals,+3.5,-3.5,152.5,-115,-105,-115,-105,+136,-162
+Basketball,NCAAB,2026_03_02,10:00 PM,Portland State Vikings,Weber State Wildcats,+4.5,-4.5,145.5,-110,-110,-110,-110,+170,-205
+Basketball,NCAAB,2026_03_02,10:00 PM,Sacramento State Hornets,Idaho State Bengals,+1.5,-1.5,159.5,-110,-110,-108,-112,+105,-125

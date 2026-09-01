@@ -1,0 +1,13 @@
+file,category,column,dtype,non_null_pct,example
+nhl_data.csv,score_columns,home_final,str,1.0,1
+nhl_data.csv,score_columns,away_final,int64,1.0,2
+nhl_data.csv,moneyline_columns,home_close_ml,int64,1.0,-130
+nhl_data.csv,moneyline_columns,away_close_ml,int64,1.0,110
+nhl_data.csv,total_columns,open_over_under,float64,1.0,5.5
+nhl_data.csv,total_columns,close_over_under,float64,1.0,5.5
+nhl_data.csv,spread_columns,home_close_spread,float64,1.0,0.0
+nhl_data.csv,spread_columns,away_close_spread,float64,1.0,0.0
+nhl_data.csv,other_columns,season,int64,1.0,2011
+nhl_data.csv,other_columns,date,float64,1.0,20111006.0
+nhl_data.csv,other_columns,home_team,str,1.0,Bruins
+nhl_data.csv,other_columns,away_team,str,1.0,Flyers

@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,33550033,2026_13_04,07:00 PM,Manchester United,Leeds United,1.572,4.275,5.354,1.697,2.177,2.767,1.44,1.71,2.02
+soccer,laliga,33676133,2026_13_04,07:00 PM,Levante UD,Getafe,2.678,3.004,2.816,2.757,1.428,,,,

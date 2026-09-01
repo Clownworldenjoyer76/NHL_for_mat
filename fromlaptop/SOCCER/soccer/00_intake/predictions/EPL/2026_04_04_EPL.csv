@@ -1,0 +1,2 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,EPL,,2026_04_10,07:00 PM,Wolverhampton,West Ham United,24.8%,26.2%,49.0%,0.98,1.48,2.46

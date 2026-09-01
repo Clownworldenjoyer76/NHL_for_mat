@@ -1,0 +1,798 @@
+league,alias,canonical_team
+NCAAB,Radford,Radford Highlanders
+NCAAB,Sam Houston,Sam Houston State Bearkats
+NCAAB,Prairie View,Prairie View AM Panthers
+NCAAB,Rutgers,Rutgers Scarlet Knights
+NCAAB,Rutgers Scarlet Knights,Rutgers Scarlet Knights
+NCAAB,ETSU Buccaneers,East Tennessee State Buccaneers
+NCAAB,MD E Shore Fighting Hawks,Maryland Eastern Shore Hawks
+NCAAB,Radford Highlanders,Radford Highlanders
+NCAAB,St. Bonaventure Bonnies,Saint Bonaventure Bonnies
+NCAAB,Pennsylvania,Penn Quakers
+NCAAB,Saint Louis,Saint Louis Billikens
+NCAAB,Hawaii,Hawaii Rainbow Warriors
+NCAAB,Louisiana,Louisiana Ragin Cajuns
+NCAAB,South Alabama,South Alabama Jaguars
+NCAAB,USC Upstate,USC Upstate Spartans
+NCAAB,Hawaii Rainbow Warriors,Hawaii Rainbow Warriors
+NCAAB,Louisiana Lafayette,Louisiana Ragin Cajuns
+NCAAB,MTSU Blue Raiders,Middle Tennessee Blue Raiders
+NCAAB,South Alabama Jaguars,South Alabama Jaguars
+NCAAB,UMKC Kangarros,UMKC Kangaroos
+NCAAB,USC Upstate Spartans,USC Upstate Spartans
+NCAAB,East Texas AM Lions,Texas AM Commerce Lions
+NCAAB,Arkansas–Pine Bluff,Arkansas Pine Bluff Golden Lions
+NCAAB,Arkansas–Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+NCAAB,Bethune–Cookman,Bethune Cookman Wildcats
+NCAAB,Bethune–Cookman Wildcats,Bethune Cookman Wildcats
+NCAAB,Texas A&M–Corpus Christi,Texas AM Corpus Christi Islanders
+NCAAB,Texas A&M–Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+NCAAB,Ark Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+NCAAB,MS Valley State Delta Devils,Mississippi Valley State Delta Devils
+NCAAB,Texas A&M CC Islanders,Texas AM Corpus Christi Islanders
+NCAAB,Texas A&M Commerce Lions,Texas AM Commerce Lions
+NCAAB,UTRGV Vaqueros,UT Rio Grande Valley Vaqueros
+NCAAB,A&M-Corpus Christi,Texas AM Corpus Christi Islanders
+NCAAB,Abilene Christian,Abilene Christian Wildcats
+NCAAB,Abilene Christian Wildcats,Abilene Christian Wildcats
+NCAAB,Air Force,Air Force Falcons
+NCAAB,Air Force Falcons,Air Force Falcons
+NCAAB,Akron,Akron Zips
+NCAAB,Akron Zips,Akron Zips
+NCAAB,Alabama,Alabama Crimson Tide
+NCAAB,Alabama A&M,Alabama AM Bulldogs
+NCAAB,Alabama A&M Bulldogs,Alabama AM Bulldogs
+NCAAB,Alabama Crimson Tide,Alabama Crimson Tide
+NCAAB,Alabama State,Alabama State Hornets
+NCAAB,Alabama State Hornets,Alabama State Hornets
+NCAAB,Albany,Albany Great Danes
+NCAAB,Albany Great Danes,Albany Great Danes
+NCAAB,Albany NY,Albany Great Danes
+NCAAB,Alcorn,Alcorn State Braves
+NCAAB,Alcorn State,Alcorn State Braves
+NCAAB,Alcorn State Braves,Alcorn State Braves
+NCAAB,American,American University Eagles
+NCAAB,American University Eagles,American University Eagles
+NCAAB,Appalachian State,Appalachian State Mountaineers
+NCAAB,Appalachian State Mountaineers,Appalachian State Mountaineers
+NCAAB,Arizona,Arizona Wildcats
+NCAAB,Arizona State,Arizona State Sun Devils
+NCAAB,Arizona State Sun Devils,Arizona State Sun Devils
+NCAAB,Arizona Wildcats,Arizona Wildcats
+NCAAB,Ark Pine Bluff,Arkansas Pine Bluff Golden Lions
+NCAAB,Arkansas,Arkansas Razorbacks
+NCAAB,Arkansas Pine Bluff Golden Lions,Arkansas Pine Bluff Golden Lions
+NCAAB,Arkansas Razorbacks,Arkansas Razorbacks
+NCAAB,Arkansas State,Arkansas State Red Wolves
+NCAAB,Arkansas State Red Wolves,Arkansas State Red Wolves
+NCAAB,Arkansas-Pine Bluff,Arkansas Pine Bluff Golden Lions
+NCAAB,Army,Army Black Knights
+NCAAB,Army Black Knights,Army Black Knights
+NCAAB,Auburn,Auburn Tigers
+NCAAB,Auburn Tigers,Auburn Tigers
+NCAAB,Austin Peay,Austin Peay Governors
+NCAAB,Austin Peay Governors,Austin Peay Governors
+NCAAB,BYU,Brigham Young Cougars
+NCAAB,Ball State,Ball State Cardinals
+NCAAB,Ball State Cardinals,Ball State Cardinals
+NCAAB,Baylor,Baylor Bears
+NCAAB,Baylor Bears,Baylor Bears
+NCAAB,Bellarmine,Bellarmine Knights
+NCAAB,Bellarmine Knights,Bellarmine Knights
+NCAAB,Belmont,Belmont Bruins
+NCAAB,Belmont Bruins,Belmont Bruins
+NCAAB,Bethune Cookman,Bethune Cookman Wildcats
+NCAAB,Bethune Cookman Wildcats,Bethune Cookman Wildcats
+NCAAB,Bethune-Cookman,Bethune Cookman Wildcats
+NCAAB,Bethune-Cookman Wildcats,Bethune Cookman Wildcats
+NCAAB,Binghamton,Binghamton Bearcats
+NCAAB,Binghamton Bearcats,Binghamton Bearcats
+NCAAB,Boise State,Boise State Broncos
+NCAAB,Boise State Broncos,Boise State Broncos
+NCAAB,Boston College,Boston College Eagles
+NCAAB,Boston College Eagles,Boston College Eagles
+NCAAB,Boston University,Boston University Terriers
+NCAAB,Boston University Terriers,Boston University Terriers
+NCAAB,Bowling Green,Bowling Green Falcons
+NCAAB,Bowling Green Falcons,Bowling Green Falcons
+NCAAB,Bradley,Bradley University Braves
+NCAAB,Bradley University Braves,Bradley University Braves
+NCAAB,Brigham Young Cougars,Brigham Young Cougars
+NCAAB,Brown,Brown Bears
+NCAAB,Brown Bears,Brown Bears
+NCAAB,Bryant,Bryant Bulldogs
+NCAAB,Bryant Bulldogs,Bryant Bulldogs
+NCAAB,Bucknell,Bucknell Bison
+NCAAB,Bucknell Bison,Bucknell Bison
+NCAAB,Buffalo,Buffalo Bulls
+NCAAB,Buffalo Bulls,Buffalo Bulls
+NCAAB,Butler,Butler Bulldogs
+NCAAB,Butler Bulldogs,Butler Bulldogs
+NCAAB,CSU Bakersfield,California State Bakersfield Roadrunners
+NCAAB,CSU Bakersfield Roadrunners,California State Bakersfield Roadrunners
+NCAAB,CSUN,Cal State Northridge Matadors
+NCAAB,Cal Poly,Cal Poly Mustangs
+NCAAB,Cal Poly Mustangs,Cal Poly Mustangs
+NCAAB,Cal State Fullerton,Cal State Fullerton Titans
+NCAAB,Cal State Fullerton Titans,Cal State Fullerton Titans
+NCAAB,Cal State Northridge Matadors,Cal State Northridge Matadors
+NCAAB,California,California Golden Bears
+NCAAB,California Baptist,California Baptist Lancers
+NCAAB,California Baptist Lancers,California Baptist Lancers
+NCAAB,California Golden Bears,California Golden Bears
+NCAAB,California State Bakersfield Roadrunners,California State Bakersfield Roadrunners
+NCAAB,Campbell,Campbell Fighting Camels
+NCAAB,Campbell Fighting Camels,Campbell Fighting Camels
+NCAAB,Canisius,Canisius Golden Griffins
+NCAAB,Canisius Golden Griffins,Canisius Golden Griffins
+NCAAB,Central Arkansas,Central Arkansas Bears
+NCAAB,Central Arkansas Bears,Central Arkansas Bears
+NCAAB,Central Connecticut Blue Devils,Central Connecticut State Blue Devils
+NCAAB,Central Connecticut State,Central Connecticut State Blue Devils
+NCAAB,Central Connecticut State Blue Devils,Central Connecticut State Blue Devils
+NCAAB,Central Michigan,Central Michigan Chippewas
+NCAAB,Central Michigan Chippewas,Central Michigan Chippewas
+NCAAB,Charleston,Charleston Cougars
+NCAAB,Charleston Cougars,Charleston Cougars
+NCAAB,Charleston Southern,Charleston Southern Buccaneers
+NCAAB,Charleston Southern Buccaneers,Charleston Southern Buccaneers
+NCAAB,Charlotte,Charlotte 49ers
+NCAAB,Charlotte 49ers,Charlotte 49ers
+NCAAB,Chattanooga,Chattanooga Mocs
+NCAAB,Chattanooga Mocs,Chattanooga Mocs
+NCAAB,Chicago State,Chicago State Cougars
+NCAAB,Chicago State Cougars,Chicago State Cougars
+NCAAB,Cincinnati,Cincinnati Bearcats
+NCAAB,Cincinnati Bearcats,Cincinnati Bearcats
+NCAAB,Citadel Bulldogs,The Citadel Bulldogs
+NCAAB,Clemson,Clemson Tigers
+NCAAB,Clemson Tigers,Clemson Tigers
+NCAAB,Cleveland State,Cleveland State Vikings
+NCAAB,Cleveland State Vikings,Cleveland State Vikings
+NCAAB,Coastal Carolina,Coastal Carolina Chanticleers
+NCAAB,Coastal Carolina Chanticleers,Coastal Carolina Chanticleers
+NCAAB,Colgate,Colgate Raiders
+NCAAB,Colgate Raiders,Colgate Raiders
+NCAAB,Colorado,Colorado Buffaloes
+NCAAB,Colorado Buffaloes,Colorado Buffaloes
+NCAAB,Colorado State,Colorado State Rams
+NCAAB,Colorado State Rams,Colorado State Rams
+NCAAB,Columbia,Columbia Lions
+NCAAB,Columbia Lions,Columbia Lions
+NCAAB,Connecticut Huskies,Connecticut Huskies
+NCAAB,Coppin State,Coppin State Eagles
+NCAAB,Coppin State Eagles,Coppin State Eagles
+NCAAB,Cornell,Cornell Big Red
+NCAAB,Cornell Big Red,Cornell Big Red
+NCAAB,Creighton,Creighton Bluejays
+NCAAB,Creighton Bluejays,Creighton Bluejays
+NCAAB,Dartmouth,Dartmouth Big Green
+NCAAB,Dartmouth Big Green,Dartmouth Big Green
+NCAAB,Davidson,Davidson Wildcats
+NCAAB,Davidson Wildcats,Davidson Wildcats
+NCAAB,Dayton,Dayton Flyers
+NCAAB,Dayton Flyers,Dayton Flyers
+NCAAB,DePaul,DePaul Blue Demons
+NCAAB,DePaul Blue Demons,DePaul Blue Demons
+NCAAB,Delaware,Delaware Fightin Blue Hens
+NCAAB,Delaware Fightin' Blue Hens,Delaware Fightin Blue Hens
+NCAAB,Delaware State,Delaware State Hornets
+NCAAB,Delaware State Hornets,Delaware State Hornets
+NCAAB,Denver,Denver Pioneers
+NCAAB,Denver Pioneers,Denver Pioneers
+NCAAB,Detroit Mercy,Detroit Titans
+NCAAB,Detroit Titans,Detroit Titans
+NCAAB,Drake,Drake Bulldogs
+NCAAB,Drake Bulldogs,Drake Bulldogs
+NCAAB,Drexel,Drexel Dragons
+NCAAB,Drexel Dragons,Drexel Dragons
+NCAAB,Duke,Duke Blue Devils
+NCAAB,Duke Blue Devils,Duke Blue Devils
+NCAAB,Duquesne,Duquesne Dukes
+NCAAB,Duquesne Dukes,Duquesne Dukes
+NCAAB,ETSU,East Tennessee State Buccaneers
+NCAAB,East Carolina,East Carolina Pirates
+NCAAB,East Carolina Pirates,East Carolina Pirates
+NCAAB,East Tennessee State Buccaneers,East Tennessee State Buccaneers
+NCAAB,East Texas A&M,Texas AM Commerce Lions
+NCAAB,East Texas A&M Lions,Texas AM Commerce Lions
+NCAAB,Eastern Illinois,Eastern Illinois Panthers
+NCAAB,Eastern Illinois Panthers,Eastern Illinois Panthers
+NCAAB,Eastern Kentucky,Eastern Kentucky Colonels
+NCAAB,Eastern Kentucky Colonels,Eastern Kentucky Colonels
+NCAAB,Eastern Michigan,Eastern Michigan Eagles
+NCAAB,Eastern Michigan Eagles,Eastern Michigan Eagles
+NCAAB,Eastern Washington,Eastern Washington Eagles
+NCAAB,Eastern Washington Eagles,Eastern Washington Eagles
+NCAAB,Elon,Elon Phoenix
+NCAAB,Elon Phoenix,Elon Phoenix
+NCAAB,Evansville,Evansville Purple Aces
+NCAAB,Evansville Purple Aces,Evansville Purple Aces
+NCAAB,FIU,FIU Golden Panthers
+NCAAB,FIU Golden Panthers,FIU Golden Panthers
+NCAAB,Fairfield,Fairfield Stags
+NCAAB,Fairfield Stags,Fairfield Stags
+NCAAB,Fairleigh Dickinson,Fairleigh Dickinson Knights
+NCAAB,Fairleigh Dickinson Knights,Fairleigh Dickinson Knights
+NCAAB,Florida,Florida Gators
+NCAAB,Florida A&M,Florida AM Rattlers
+NCAAB,Florida A&M Rattlers,Florida AM Rattlers
+NCAAB,Florida Atlantic,Florida Atlantic Owls
+NCAAB,Florida Atlantic Owls,Florida Atlantic Owls
+NCAAB,Florida Gators,Florida Gators
+NCAAB,Florida Gulf Coast,Florida Gulf Coast Eagles
+NCAAB,Florida Gulf Coast Eagles,Florida Gulf Coast Eagles
+NCAAB,Florida State,Florida State Seminoles
+NCAAB,Florida State Seminoles,Florida State Seminoles
+NCAAB,Fordham,Fordham Rams
+NCAAB,Fordham Rams,Fordham Rams
+NCAAB,Fresno State,Fresno State Bulldogs
+NCAAB,Fresno State Bulldogs,Fresno State Bulldogs
+NCAAB,Furman,Furman Paladins
+NCAAB,Furman Paladins,Furman Paladins
+NCAAB,Gardner Webb Runnin' Bulldogs,Gardner Webb Runnin Bulldogs
+NCAAB,Gardner-Webb,Gardner Webb Runnin Bulldogs
+NCAAB,George Mason,George Mason Patriots
+NCAAB,George Mason Patriots,George Mason Patriots
+NCAAB,George Washington,George Washington Colonials
+NCAAB,George Washington Colonials,George Washington Colonials
+NCAAB,Georgetown,Georgetown Hoyas
+NCAAB,Georgetown Hoyas,Georgetown Hoyas
+NCAAB,Georgia,Georgia Bulldogs
+NCAAB,Georgia Bulldogs,Georgia Bulldogs
+NCAAB,Georgia Southern,Georgia Southern Eagles
+NCAAB,Georgia Southern Eagles,Georgia Southern Eagles
+NCAAB,Georgia State,Georgia State Panthers
+NCAAB,Georgia State Panthers,Georgia State Panthers
+NCAAB,Georgia Tech,Georgia Tech Yellow Jackets
+NCAAB,Georgia Tech Yellow Jackets,Georgia Tech Yellow Jackets
+NCAAB,Gonzaga,Gonzaga Bulldogs
+NCAAB,Gonzaga Bulldogs,Gonzaga Bulldogs
+NCAAB,Grambling,Grambling State Tigers
+NCAAB,Grambling State Tigers,Grambling State Tigers
+NCAAB,Grand Canyon,Grand Canyon Antelopes
+NCAAB,Grand Canyon Antelopes,Grand Canyon Antelopes
+NCAAB,Green Bay,Wisconsin Green Bay Phoenix
+NCAAB,Hampton,Hampton Pirates
+NCAAB,Hampton Pirates,Hampton Pirates
+NCAAB,Harvard,Harvard Crimson
+NCAAB,Harvard Crimson,Harvard Crimson
+NCAAB,High Point,High Point Panthers
+NCAAB,High Point Panthers,High Point Panthers
+NCAAB,Hofstra,Hofstra Pride
+NCAAB,Hofstra Pride,Hofstra Pride
+NCAAB,Holy Cross,Holy Cross Crusaders
+NCAAB,Holy Cross Crusaders,Holy Cross Crusaders
+NCAAB,Houston,Houston Cougars
+NCAAB,Houston Christian,Houston Christian Huskies
+NCAAB,Houston Christian Huskies,Houston Christian Huskies
+NCAAB,Houston Cougars,Houston Cougars
+NCAAB,Howard,Howard Bison
+NCAAB,Howard Bison,Howard Bison
+NCAAB,IPFW,Purdue Fort Wayne Mastodons
+NCAAB,IPFW Mastodons,Purdue Fort Wayne Mastodons
+NCAAB,IU Indianapolis,IU Indianapolis Jaguars
+NCAAB,IU Indianapolis Jaguars,IU Indianapolis Jaguars
+NCAAB,IUPUI,IU Indianapolis Jaguars
+NCAAB,IUPUI Jaguars,IU Indianapolis Jaguars
+NCAAB,Idaho,Idaho Vandals
+NCAAB,Idaho State,Idaho State Bengals
+NCAAB,Idaho State Bengals,Idaho State Bengals
+NCAAB,Idaho Vandals,Idaho Vandals
+NCAAB,Illinois,Illinois Fighting Illini
+NCAAB,Illinois Chicago,Illinois Chicago
+NCAAB,Illinois Fighting Illini,Illinois Fighting Illini
+NCAAB,Illinois State,Illinois State Redbirds
+NCAAB,Illinois State Redbirds,Illinois State Redbirds
+NCAAB,Incarnate Word,Incarnate Word Cardinals
+NCAAB,Incarnate Word Cardinals,Incarnate Word Cardinals
+NCAAB,Indiana,Indiana Hoosiers
+NCAAB,Indiana Hoosiers,Indiana Hoosiers
+NCAAB,Indiana State,Indiana State Sycamores
+NCAAB,Indiana State Sycamores,Indiana State Sycamores
+NCAAB,Iona,Iona Gaels
+NCAAB,Iona Gaels,Iona Gaels
+NCAAB,Iowa,Iowa Hawkeyes
+NCAAB,Iowa Hawkeyes,Iowa Hawkeyes
+NCAAB,Iowa State,Iowa State Cyclones
+NCAAB,Iowa State Cyclones,Iowa State Cyclones
+NCAAB,Jackson State,Jackson State Tigers
+NCAAB,Jackson State Tigers,Jackson State Tigers
+NCAAB,Jacksonville,Jacksonville Dolphins
+NCAAB,Jacksonville Dolphins,Jacksonville Dolphins
+NCAAB,Jacksonville State,Jacksonville State Gamecocks
+NCAAB,Jacksonville State Gamecocks,Jacksonville State Gamecocks
+NCAAB,James Madison,James Madison Dukes
+NCAAB,James Madison Dukes,James Madison Dukes
+NCAAB,Kansas,Kansas Jayhawks
+NCAAB,Kansas Jayhawks,Kansas Jayhawks
+NCAAB,Kansas State,Kansas State Wildcats
+NCAAB,Kansas State Wildcats,Kansas State Wildcats
+NCAAB,Kennesaw State,Kennesaw State Owls
+NCAAB,Kennesaw State Owls,Kennesaw State Owls
+NCAAB,Kent State,Kent State Golden Flashes
+NCAAB,Kent State Golden Flashes,Kent State Golden Flashes
+NCAAB,Kentucky,Kentucky Wildcats
+NCAAB,Kentucky Wildcats,Kentucky Wildcats
+NCAAB,LIU,LIU Sharks
+NCAAB,LIU Sharks,LIU Sharks
+NCAAB,LSU,LSU Tigers
+NCAAB,LSU Tigers,LSU Tigers
+NCAAB,La Salle,La Salle Explorers
+NCAAB,La Salle Explorers,La Salle Explorers
+NCAAB,Lafayette,Lafayette Leopards
+NCAAB,Lafayette Leopards,Lafayette Leopards
+NCAAB,Lamar,Lamar Cardinals
+NCAAB,Lamar Cardinals,Lamar Cardinals
+NCAAB,Le Moyne,Le Moyne Dolphins
+NCAAB,Le Moyne Dolphins,Le Moyne Dolphins
+NCAAB,Lehigh,Lehigh Mountain Hawks
+NCAAB,Lehigh Mountain Hawks,Lehigh Mountain Hawks
+NCAAB,Liberty,Liberty Flames
+NCAAB,Liberty Flames,Liberty Flames
+NCAAB,Lindenwood,Lindenwood Lions
+NCAAB,Lindenwood Lions,Lindenwood Lions
+NCAAB,Lipscomb,Լipscomb Bisons
+NCAAB,Lipscomb Bisons,Lipscomb Bisons
+NCAAB,Little Rock,Little Rock Trojans
+NCAAB,Little Rock Trojans,Little Rock Trojans
+NCAAB,Long Beach State,Long Beach State 49ers
+NCAAB,Long Beach State 49ers,Long Beach State 49ers
+NCAAB,Longwood,Longwood Lancers
+NCAAB,Longwood Lancers,Longwood Lancers
+NCAAB,Louisiana Monroe Warhawks,Louisiana Monroe Warhawks
+NCAAB,Louisiana Tech,Louisiana Tech Bulldogs
+NCAAB,Louisiana Tech Bulldogs,Louisiana Tech Bulldogs
+NCAAB,Louisville,Louisville Cardinals
+NCAAB,Louisville Cardinals,Louisville Cardinals
+NCAAB,Loyola Chicago,Loyola Chicago Ramblers
+NCAAB,Loyola Chicago Ramblers,Loyola Chicago Ramblers
+NCAAB,Loyola Maryland,Loyola Maryland Greyhounds
+NCAAB,Loyola Maryland Greyhounds,Loyola Maryland Greyhounds
+NCAAB,Loyola Marymount,Loyola Marymount Lions
+NCAAB,Loyola Marymount Lions,Loyola Marymount Lions
+NCAAB,MD Eastern Shore,Maryland Eastern Shore Hawks
+NCAAB,Maine,Maine Black Bears
+NCAAB,Maine Black Bears,Maine Black Bears
+NCAAB,Manhattan,Manhattan Jaspers
+NCAAB,Manhattan Jaspers,Manhattan Jaspers
+NCAAB,Marist,Marist Red Foxes
+NCAAB,Marist Red Foxes,Marist Red Foxes
+NCAAB,Marquette,Marquette Golden Eagles
+NCAAB,Marquette Golden Eagles,Marquette Golden Eagles
+NCAAB,Marshall,Marshall Thundering Herd
+NCAAB,Marshall Thundering Herd,Marshall Thundering Herd
+NCAAB,Maryland,Maryland Terrapins
+NCAAB,Maryland Eastern Shore Hawks,Maryland Eastern Shore Hawks
+NCAAB,Maryland Terrapins,Maryland Terrapins
+NCAAB,McNeese,McNeese State Cowboys
+NCAAB,McNeese State,McNeese State Cowboys
+NCAAB,McNeese State Cowboys,McNeese State Cowboys
+NCAAB,Memphis,Memphis Tigers
+NCAAB,Memphis Tigers,Memphis Tigers
+NCAAB,Mercer,Mercer Bears
+NCAAB,Mercer Bears,Mercer Bears
+NCAAB,Mercyhurst,Mercyhurst Lakers
+NCAAB,Mercyhurst Lakers,Mercyhurst Lakers
+NCAAB,Merrimack,Merrimack Warriors
+NCAAB,Merrimack Warriors,Merrimack Warriors
+NCAAB,Miami FL,Miami Hurricanes
+NCAAB,Miami Hurricanes,Miami Hurricanes
+NCAAB,Miami OH,Miami RedHawks
+NCAAB,Miami RedHawks,Miami RedHawks
+NCAAB,Michigan,Michigan Wolverines
+NCAAB,Michigan State,Michigan State Spartans
+NCAAB,Michigan State Spartans,Michigan State Spartans
+NCAAB,Michigan Wolverines,Michigan Wolverines
+NCAAB,Middle Tennessee,Middle Tennessee Blue Raiders
+NCAAB,Middle Tennessee Blue Raiders,Middle Tennessee Blue Raiders
+NCAAB,Milwaukee,Wisconsin Milwaukee Panthers
+NCAAB,Minnesota,Minnesota Golden Gophers
+NCAAB,Minnesota Golden Gophers,Minnesota Golden Gophers
+NCAAB,Mississippi State,Mississippi State Bulldogs
+NCAAB,Mississippi State Bulldogs,Mississippi State Bulldogs
+NCAAB,Mississippi Valley,Mississippi Valley State Delta Devils
+NCAAB,Mississippi Valley State Delta Devils,Mississippi Valley State Delta Devils
+NCAAB,Missouri,Missouri Tigers
+NCAAB,Missouri State,Missouri State Bears
+NCAAB,Missouri State Bears,Missouri State Bears
+NCAAB,Missouri Tigers,Missouri Tigers
+NCAAB,Monmouth,Monmouth Hawks
+NCAAB,Monmouth Hawks,Monmouth Hawks
+NCAAB,Montana,Montana Grizzlies
+NCAAB,Montana Grizzlies,Montana Grizzlies
+NCAAB,Montana State,Montana State Bobcats
+NCAAB,Montana State Bobcats,Montana State Bobcats
+NCAAB,Morehead State,Morehead State Eagles
+NCAAB,Morehead State Eagles,Morehead State Eagles
+NCAAB,Morgan State,Morgan State Bears
+NCAAB,Morgan State Bears,Morgan State Bears
+NCAAB,Mount Saint Marys,Mount St Marys Mountaineers
+NCAAB,Mount St. Mary's,Mount St Marys Mountaineers
+NCAAB,Mount St. Mary's Mountaineers,Mount St Marys Mountaineers
+NCAAB,Murray State,Murray State Racers
+NCAAB,Murray State Racers,Murray State Racers
+NCAAB,NC Central,North Carolina Central Eagles
+NCAAB,NC State,NC State Wolfpack
+NCAAB,NC State Wolfpack,NC State Wolfpack
+NCAAB,NJIT,NJIT Highlanders
+NCAAB,NJIT Highlanders,NJIT Highlanders
+NCAAB,Navy,Navy Midshipmen
+NCAAB,Navy Midshipmen,Navy Midshipmen
+NCAAB,Nebraska,Nebraska Cornhuskers
+NCAAB,Nebraska Cornhuskers,Nebraska Cornhuskers
+NCAAB,Nevada,Nevada Wolf Pack
+NCAAB,Nevada Wolf Pack,Nevada Wolf Pack
+NCAAB,New Hampshire,New Hampshire Wildcats
+NCAAB,New Hampshire Wildcats,New Hampshire Wildcats
+NCAAB,New Haven,New Haven Chargers
+NCAAB,New Haven Chargers,New Haven Chargers
+NCAAB,New Mexico,New Mexico Lobos
+NCAAB,New Mexico Lobos,New Mexico Lobos
+NCAAB,New Mexico State,New Mexico State Aggies
+NCAAB,New Mexico State Aggies,New Mexico State Aggies
+NCAAB,New Orleans,New Orleans Privateers
+NCAAB,New Orleans Privateers,New Orleans Privateers
+NCAAB,Niagara,Niagara Purple Eagles
+NCAAB,Niagara Purple Eagles,Niagara Purple Eagles
+NCAAB,Nicholls State,Nicholls State Colonels
+NCAAB,Nicholls State Colonels,Nicholls State Colonels
+NCAAB,Norfolk State,Norfolk State Spartans
+NCAAB,Norfolk State Spartans,Norfolk State Spartans
+NCAAB,North Alabama,North Alabama Lions
+NCAAB,North Alabama Lions,North Alabama Lions
+NCAAB,North Carolina,North Carolina Tar Heels
+NCAAB,North Carolina A&T,North Carolina AT Aggies
+NCAAB,North Carolina A&T Aggies,North Carolina AT Aggies
+NCAAB,North Carolina Central Eagles,North Carolina Central Eagles
+NCAAB,North Carolina Tar Heels,North Carolina Tar Heels
+NCAAB,North Dakota,North Dakota Fighting Hawks
+NCAAB,North Dakota Fighting Hawks,North Dakota Fighting Hawks
+NCAAB,North Dakota State,North Dakota State Bison
+NCAAB,North Dakota State Bison,North Dakota State Bison
+NCAAB,North Florida,North Florida Ospreys
+NCAAB,North Florida Ospreys,North Florida Ospreys
+NCAAB,North Texas,North Texas Mean Green
+NCAAB,North Texas Mean Green,North Texas Mean Green
+NCAAB,Northeastern,Northeastern Huskies
+NCAAB,Northeastern Huskies,Northeastern Huskies
+NCAAB,Northern Arizona,Northern Arizona Lumberjacks
+NCAAB,Northern Arizona Lumberjacks,Northern Arizona Lumberjacks
+NCAAB,Northern Colorado,Northern Colorado Bears
+NCAAB,Northern Colorado Bears,Northern Colorado Bears
+NCAAB,Northern Illinois,Northern Illinois Huskies
+NCAAB,Northern Illinois Huskies,Northern Illinois Huskies
+NCAAB,Northern Iowa,Northern Iowa Panthers
+NCAAB,Northern Iowa Panthers,Northern Iowa Panthers
+NCAAB,Northern Kentucky,Northern Kentucky Norse
+NCAAB,Northern Kentucky Norse,Northern Kentucky Norse
+NCAAB,Northwestern,Northwestern Wildcats
+NCAAB,Northwestern State,Northwestern State Demons
+NCAAB,Northwestern State Demons,Northwestern State Demons
+NCAAB,Northwestern Wildcats,Northwestern Wildcats
+NCAAB,Notre Dame,Notre Dame Fighting Irish
+NCAAB,Notre Dame Fighting Irish,Notre Dame Fighting Irish
+NCAAB,Oakland,Oakland Golden Grizzlies
+NCAAB,Oakland Golden Grizzlies,Oakland Golden Grizzlies
+NCAAB,Ohio,Ohio Bobcats
+NCAAB,Ohio Bobcats,Ohio Bobcats
+NCAAB,Ohio State,Ohio State Buckeyes
+NCAAB,Ohio State Buckeyes,Ohio State Buckeyes
+NCAAB,Oklahoma,Oklahoma Sooners
+NCAAB,Oklahoma Sooners,Oklahoma Sooners
+NCAAB,Oklahoma State,Oklahoma State Cowboys
+NCAAB,Oklahoma State Cowboys,Oklahoma State Cowboys
+NCAAB,Old Dominion,Old Dominion Monarchs
+NCAAB,Old Dominion Monarchs,Old Dominion Monarchs
+NCAAB,Ole Miss,Ole Miss Rebels
+NCAAB,Ole Miss Rebels,Ole Miss Rebels
+NCAAB,Omaha,Omaha Mavericks
+NCAAB,Omaha Mavericks,Omaha Mavericks
+NCAAB,Oral Roberts,Oral Roberts Golden Eagles
+NCAAB,Oral Roberts Golden Eagles,Oral Roberts Golden Eagles
+NCAAB,Oregon,Oregon Ducks
+NCAAB,Oregon Ducks,Oregon Ducks
+NCAAB,Oregon State,Oregon State Beavers
+NCAAB,Oregon State Beavers,Oregon State Beavers
+NCAAB,Pacific,Pacific Tigers
+NCAAB,Pacific Tigers,Pacific Tigers
+NCAAB,Penn,Penn Quakers
+NCAAB,Penn Quakers,Penn Quakers
+NCAAB,Penn State,Penn State Nittany Lions
+NCAAB,Penn State Nittany Lions,Penn State Nittany Lions
+NCAAB,Pepperdine,Pepperdine Waves
+NCAAB,Pepperdine Waves,Pepperdine Waves
+NCAAB,Pitt,Pitt Panthers
+NCAAB,Pitt Panthers,Pitt Panthers
+NCAAB,Pittsburgh,Pitt Panthers
+NCAAB,Portland,Portland Pilots
+NCAAB,Portland Pilots,Portland Pilots
+NCAAB,Portland State,Portland State Vikings
+NCAAB,Portland State Vikings,Portland State Vikings
+NCAAB,Prairie View A&M,Prairie View AM Panthers
+NCAAB,Prairie View A&M Panthers,Prairie View AM Panthers
+NCAAB,Presbyterian,Presbyterian Blue Hose
+NCAAB,Presbyterian Blue Hose,Presbyterian Blue Hose
+NCAAB,Princeton,Princeton Tigers
+NCAAB,Princeton Tigers,Princeton Tigers
+NCAAB,Providence,Providence Friars
+NCAAB,Providence Friars,Providence Friars
+NCAAB,Purdue,Purdue Boilermakers
+NCAAB,Purdue Boilermakers,Purdue Boilermakers
+NCAAB,Purdue Fort Wayne,Purdue Fort Wayne Mastodons
+NCAAB,Purdue Fort Wayne Mastodons,Purdue Fort Wayne Mastodons
+NCAAB,Queens,Queens Royals
+NCAAB,Queens NC,Queens Royals
+NCAAB,Queens Royals,Queens Royals
+NCAAB,Quinnipiac,Quinnipiac Bobcats
+NCAAB,Quinnipiac Bobcats,Quinnipiac Bobcats
+NCAAB,Rhode Island,Rhode Island Rams
+NCAAB,Rhode Island Rams,Rhode Island Rams
+NCAAB,Rice,Rice Owls
+NCAAB,Rice Owls,Rice Owls
+NCAAB,Richmond,Richmond Spiders
+NCAAB,Richmond Spiders,Richmond Spiders
+NCAAB,Rider,Rider Broncs
+NCAAB,Rider Broncs,Rider Broncs
+NCAAB,Robert Morris,Robert Morris Colonials
+NCAAB,Robert Morris Colonials,Robert Morris Colonials
+NCAAB,SE Louisiana,Southeastern Louisiana Lions
+NCAAB,SE Missouri State,Southeast Missouri State Redhawks
+NCAAB,SE Missouri State Redhawks,Southeast Missouri State Redhawks
+NCAAB,SIU Edwardsville,SIU Edwardsville Cougars
+NCAAB,SIU Edwardsville Cougars,SIU Edwardsville Cougars
+NCAAB,SMU,SMU Mustangs
+NCAAB,SMU Mustangs,SMU Mustangs
+NCAAB,Sacramento State,Sacramento State Hornets
+NCAAB,Sacramento State Hornets,Sacramento State Hornets
+NCAAB,Sacred Heart,Sacred Heart Pioneers
+NCAAB,Sacred Heart Pioneers,Sacred Heart Pioneers
+NCAAB,Saint Bonaventure,Saint Bonaventure Bonnies
+NCAAB,Saint Bonaventure Bonnies,Saint Bonaventure Bonnies
+NCAAB,Saint Francis (PA) Red Flash,Saint Francis PA Red Flash
+NCAAB,Saint Francis PA,Saint Francis PA Red Flash
+NCAAB,Saint Joseph's,Saint Josephs Hawks
+NCAAB,Saint Joseph's Hawks,Saint Josephs Hawks
+NCAAB,Saint Josephs,Saint Josephs Hawks
+NCAAB,Saint Mary's College Gaels,Saint Marys College Gaels
+NCAAB,Saint Marys,Saint Marys College Gaels
+NCAAB,Saint Peter's,Saint Peters Peacocks
+NCAAB,Saint Peter's Peacocks,Saint Peters Peacocks
+NCAAB,Saint Peters,Saint Peters Peacocks
+NCAAB,Saint Thomas MN,St Thomas Tommies
+NCAAB,Sam Houston State,Sam Houston State Bearkats
+NCAAB,Sam Houston State Bearkats,Sam Houston State Bearkats
+NCAAB,Samford,Samford Bulldogs
+NCAAB,Samford Bulldogs,Samford Bulldogs
+NCAAB,San Diego,San Diego Toreros
+NCAAB,San Diego State,San Diego State Aztecs
+NCAAB,San Diego State Aztecs,San Diego State Aztecs
+NCAAB,San Diego Toreros,San Diego Toreros
+NCAAB,San Francisco,San Francisco Dons
+NCAAB,San Francisco Dons,San Francisco Dons
+NCAAB,San Jose State,San Jose State Spartans
+NCAAB,San Jose State Spartans,San Jose State Spartans
+NCAAB,Santa Clara,Santa Clara Broncos
+NCAAB,Santa Clara Broncos,Santa Clara Broncos
+NCAAB,Seattle,Seattle Redhawks
+NCAAB,Seattle Redhawks,Seattle Redhawks
+NCAAB,Seton Hall,Seton Hall Pirates
+NCAAB,Seton Hall Pirates,Seton Hall Pirates
+NCAAB,Siena,Siena Saints
+NCAAB,Siena Saints,Siena Saints
+NCAAB,South Carolina,South Carolina Gamecocks
+NCAAB,South Carolina Gamecocks,South Carolina Gamecocks
+NCAAB,South Carolina State,South Carolina State Bulldogs
+NCAAB,South Carolina State Bulldogs,South Carolina State Bulldogs
+NCAAB,South Dakota,South Dakota Coyotes
+NCAAB,South Dakota Coyotes,South Dakota Coyotes
+NCAAB,South Dakota State,South Dakota State Jackrabbits
+NCAAB,South Dakota State Jackrabbits,South Dakota State Jackrabbits
+NCAAB,South Florida,South Florida Bulls
+NCAAB,South Florida Bulls,South Florida Bulls
+NCAAB,Southeast Missouri State Redhawks,Southeast Missouri State Redhawks
+NCAAB,Southeastern Louisiana,Southeastern Louisiana Lions
+NCAAB,Southeastern Louisiana Lions,Southeastern Louisiana Lions
+NCAAB,Southern Illinois,Southern Illinois Salukis
+NCAAB,Southern Illinois Salukis,Southern Illinois Salukis
+NCAAB,Southern Indiana,Southern Indiana Screaming Eagles
+NCAAB,Southern Indiana Screaming Eagles,Southern Indiana Screaming Eagles
+NCAAB,Southern Miss,Southern Miss Golden Eagles
+NCAAB,Southern Miss Golden Eagles,Southern Miss Golden Eagles
+NCAAB,Southern University,Southern University Jaguars
+NCAAB,Southern University Jaguars,Southern University Jaguars
+NCAAB,Southern Utah,Southern Utah Thunderbirds
+NCAAB,Southern Utah Thunderbirds,Southern Utah Thunderbirds
+NCAAB,St Bonaventure,Saint Bonaventure Bonnies
+NCAAB,St. Bonaventure,Saint Bonaventure Bonnies
+NCAAB,St. Francis Red Flash,Saint Francis PA Red Flash
+NCAAB,St. John's Red Storm,St Johns Red Storm
+NCAAB,St. Johns,St Johns Red Storm
+NCAAB,St. Thomas,St Thomas Tommies
+NCAAB,St. Thomas Tommies,St Thomas Tommies
+NCAAB,Stanford,Stanford Cardinal
+NCAAB,Stanford Cardinal,Stanford Cardinal
+NCAAB,Stephen F. Austin,Stephen F Austin Lumberjacks
+NCAAB,Stephen F. Austin Lumberjacks,Stephen F Austin Lumberjacks
+NCAAB,Stetson,Stetson Hatters
+NCAAB,Stetson Hatters,Stetson Hatters
+NCAAB,Stonehill,Stonehill Skyhawks
+NCAAB,Stonehill Skyhawks,Stonehill Skyhawks
+NCAAB,Stony Brook,Stony Brook Seawolves
+NCAAB,Stony Brook Seawolves,Stony Brook Seawolves
+NCAAB,Syracuse,Syracuse Orange
+NCAAB,Syracuse Orange,Syracuse Orange
+NCAAB,TCU,TCU Horned Frogs
+NCAAB,TCU Horned Frogs,TCU Horned Frogs
+NCAAB,Tarleton State,Tarleton State Texans
+NCAAB,Tarleton State Texans,Tarleton State Texans
+NCAAB,Temple,Temple Owls
+NCAAB,Temple Owls,Temple Owls
+NCAAB,Tennessee,Tennessee Volunteers
+NCAAB,Tennessee State,Tennessee State Tigers
+NCAAB,Tennessee State Tigers,Tennessee State Tigers
+NCAAB,Tennessee Tech,Tennessee Tech Golden Eagles
+NCAAB,Tennessee Tech Golden Eagles,Tennessee Tech Golden Eagles
+NCAAB,Tennessee Volunteers,Tennessee Volunteers
+NCAAB,Tennessee-Martin Skyhawks,Tennessee Martin Skyhawks
+NCAAB,Texas,Texas Longhorns
+NCAAB,Texas A&M,Texas AM Aggies
+NCAAB,Texas A&M Aggies,Texas AM Aggies
+NCAAB,Texas A&M CC,Texas AM Corpus Christi Islanders
+NCAAB,Texas A&M Corpus Christi Islanders,Texas AM Corpus Christi Islanders
+NCAAB,Texas Longhorns,Texas Longhorns
+NCAAB,Texas Southern,Texas Southern Tigers
+NCAAB,Texas Southern Tigers,Texas Southern Tigers
+NCAAB,Texas State,Texas State Bobcats
+NCAAB,Texas State Bobcats,Texas State Bobcats
+NCAAB,Texas Tech,Texas Tech Red Raiders
+NCAAB,Texas Tech Red Raiders,Texas Tech Red Raiders
+NCAAB,The Citadel,The Citadel Bulldogs
+NCAAB,The Citadel Bulldogs,The Citadel Bulldogs
+NCAAB,Toledo,Toledo Rockets
+NCAAB,Toledo Rockets,Toledo Rockets
+NCAAB,Towson,Towson Tigers
+NCAAB,Towson Tigers,Towson Tigers
+NCAAB,Troy,Troy Trojans
+NCAAB,Troy Trojans,Troy Trojans
+NCAAB,Tulane,Tulane Green Wave
+NCAAB,Tulane Green Wave,Tulane Green Wave
+NCAAB,Tulsa,Tulsa Golden Hurricane
+NCAAB,Tulsa Golden Hurricane,Tulsa Golden Hurricane
+NCAAB,UAB,UAB Blazers
+NCAAB,UAB Blazers,UAB Blazers
+NCAAB,UC Davis,UC Davis Aggies
+NCAAB,UC Davis Aggies,UC Davis Aggies
+NCAAB,UC Irvine,UC Irvine Anteaters
+NCAAB,UC Irvine Anteaters,UC Irvine Anteaters
+NCAAB,UC Riverside,UC Riverside Highlanders
+NCAAB,UC Riverside Highlanders,UC Riverside Highlanders
+NCAAB,UC San Diego,UC San Diego Tritons
+NCAAB,UC San Diego Tritons,UC San Diego Tritons
+NCAAB,UC Santa Barbara,UC Santa Barbara Gauchos
+NCAAB,UC Santa Barbara Gauchos,UC Santa Barbara Gauchos
+NCAAB,UCF,UCF Knights
+NCAAB,UCF Knights,UCF Knights
+NCAAB,UCLA,UCLA Bruins
+NCAAB,UCLA Bruins,UCLA Bruins
+NCAAB,UConn,Connecticut Huskies
+NCAAB,UIC Flames,Illinois Chicago
+NCAAB,ULM,Louisiana Monroe Warhawks
+NCAAB,UMBC,UMBC Retrievers
+NCAAB,UMBC Retrievers,UMBC Retrievers
+NCAAB,UMKC,UMKC Kangaroos
+NCAAB,UMKC Kangaroos,UMKC Kangaroos
+NCAAB,UMass,UMass Minutemen
+NCAAB,UMass Lowell,UMass Lowell River Hawks
+NCAAB,UMass Lowell River Hawks,UMass Lowell River Hawks
+NCAAB,UMass Minutemen,UMass Minutemen
+NCAAB,UNC,North Carolina Tar Heels
+NCAAB,UNC Asheville,UNC Asheville Bulldogs
+NCAAB,UNC Asheville Bulldogs,UNC Asheville Bulldogs
+NCAAB,UNC Greensboro,UNC Greensboro Spartans
+NCAAB,UNC Greensboro Spartans,UNC Greensboro Spartans
+NCAAB,UNC Tar Heels,North Carolina Tar Heels
+NCAAB,UNC Wilmington,UNC Wilmington Seahawks
+NCAAB,UNC Wilmington Seahawks,UNC Wilmington Seahawks
+NCAAB,UNLV,UNLV Rebels
+NCAAB,UNLV Rebels,UNLV Rebels
+NCAAB,USC,USC Trojans
+NCAAB,USC Trojans,USC Trojans
+NCAAB,UT Arlington,UT Arlington Mavericks
+NCAAB,UT Arlington Mavericks,UT Arlington Mavericks
+NCAAB,UT Martin,Tennessee Martin Skyhawks
+NCAAB,UT Martin Skyhawks,Tennessee Martin Skyhawks
+NCAAB,UT Rio Grande Valley,UT Rio Grande Valley Vaqueros
+NCAAB,UT Rio Grande Valley Vaqueros,UT Rio Grande Valley Vaqueros
+NCAAB,UTEP,UTEP Miners
+NCAAB,UTEP Miners,UTEP Miners
+NCAAB,UTRGV,UT Rio Grande Valley Vaqueros
+NCAAB,UTSA,UTSA Roadrunners
+NCAAB,UTSA Roadrunners,UTSA Roadrunners
+NCAAB,Utah,Utah Utes
+NCAAB,Utah State,Utah State Aggies
+NCAAB,Utah State Aggies,Utah State Aggies
+NCAAB,Utah Tech,Utah Tech Trailblazers
+NCAAB,Utah Tech Trailblazers,Utah Tech Trailblazers
+NCAAB,Utah Utes,Utah Utes
+NCAAB,Utah Valley,Utah Valley Wolverines
+NCAAB,Utah Valley Wolverines,Utah Valley Wolverines
+NCAAB,VCU,VCU Rams
+NCAAB,VCU Rams,VCU Rams
+NCAAB,VMI,VMI Keydets
+NCAAB,VMI Keydets,VMI Keydets
+NCAAB,Valparaiso,Valparaiso Beacons
+NCAAB,Valparaiso Beacons,Valparaiso Beacons
+NCAAB,Vanderbilt,Vanderbilt Commodores
+NCAAB,Vanderbilt Commodores,Vanderbilt Commodores
+NCAAB,Vermont,Vermont Catamounts
+NCAAB,Vermont Catamounts,Vermont Catamounts
+NCAAB,Villanova,Villanova Wildcats
+NCAAB,Villanova Wildcats,Villanova Wildcats
+NCAAB,Virginia,Virginia Cavaliers
+NCAAB,Virginia Cavaliers,Virginia Cavaliers
+NCAAB,Virginia Tech,Virginia Tech Hokies
+NCAAB,Virginia Tech Hokies,Virginia Tech Hokies
+NCAAB,Wagner,Wagner Seahawks
+NCAAB,Wagner Seahawks,Wagner Seahawks
+NCAAB,Wake Forest,Wake Forest Demon Deacons
+NCAAB,Wake Forest Demon Deacons,Wake Forest Demon Deacons
+NCAAB,Washington,Washington Huskies
+NCAAB,Washington Huskies,Washington Huskies
+NCAAB,Washington State,Washington State Cougars
+NCAAB,Washington State Cougars,Washington State Cougars
+NCAAB,Weber State,Weber State Wildcats
+NCAAB,Weber State Wildcats,Weber State Wildcats
+NCAAB,West Georgia,West Georgia Wolves
+NCAAB,West Georgia Wolves,West Georgia Wolves
+NCAAB,West Virginia,West Virginia Mountaineers
+NCAAB,West Virginia Mountaineers,West Virginia Mountaineers
+NCAAB,Western Carolina,Western Carolina Catamounts
+NCAAB,Western Carolina Catamounts,Western Carolina Catamounts
+NCAAB,Western Illinois,Western Illinois Leathernecks
+NCAAB,Western Illinois Leathernecks,Western Illinois Leathernecks
+NCAAB,Western Kentucky,Western Kentucky Hilltoppers
+NCAAB,Western Kentucky Hilltoppers,Western Kentucky Hilltoppers
+NCAAB,Western Michigan,Western Michigan Broncos
+NCAAB,Western Michigan Broncos,Western Michigan Broncos
+NCAAB,Wichita State,Wichita State Shockers
+NCAAB,Wichita State Shockers,Wichita State Shockers
+NCAAB,William & Mary,William Mary Tribe
+NCAAB,William & Mary Tribe,William Mary Tribe
+NCAAB,Winthrop,Winthrop Eagles
+NCAAB,Winthrop Eagles,Winthrop Eagles
+NCAAB,Wisconsin,Wisconsin Badgers
+NCAAB,Wisconsin Badgers,Wisconsin Badgers
+NCAAB,Wisconsin Green Bay,Wisconsin Green Bay Phoenix
+NCAAB,Wisconsin Green Bay Phoenix,Wisconsin Green Bay Phoenix
+NCAAB,Wisconsin Milwaukee,Wisconsin Milwaukee Panthers
+NCAAB,Wisconsin Milwaukee Panthers,Wisconsin Milwaukee Panthers
+NCAAB,Wofford,Wofford Terriers
+NCAAB,Wofford Terriers,Wofford Terriers
+NCAAB,Wright State,Wright State Raiders
+NCAAB,Wright State Raiders,Wright State Raiders
+NCAAB,Wyoming,Wyoming Cowboys
+NCAAB,Wyoming Cowboys,Wyoming Cowboys
+NCAAB,Xavier,Xavier Musketeers
+NCAAB,Xavier Musketeers,Xavier Musketeers
+NCAAB,Yale,Yale Bulldogs
+NCAAB,Yale Bulldogs,Yale Bulldogs
+NCAAB,Youngstown State,Youngstown State Penguins
+NCAAB,Youngstown State Penguins,Youngstown State Penguins
+league,alias,canonical_team
+ncaab,Louisiana Ragin Cajuns,Louisiana Ragin Cajuns
+ncaab,Saint Francis PA Red Flash,Saint Francis PA Red Flash
+ncaab,Saint Louis Billikens,Saint Louis Billikens
+ncaab,Delaware Fightin Blue Hens,Delaware Fightin Blue Hens
+ncaab,Florida AM Rattlers,Florida AM Rattlers
+ncaab,Gardner Webb Runnin Bulldogs,Gardner Webb Runnin Bulldogs
+ncaab,Mount St Marys Mountaineers,Mount St Marys Mountaineers
+ncaab,North Carolina AT Aggies,North Carolina AT Aggies
+ncaab,Prairie View AM Panthers,Prairie View AM Panthers
+ncaab,Saint Peters Peacocks,Saint Peters Peacocks
+ncaab,St Thomas Tommies,St Thomas Tommies
+ncaab,Tennessee Martin Skyhawks,Tennessee Martin Skyhawks
+ncaab,William Mary Tribe,William Mary Tribe
+ncaab,Stephen F Austin Lumberjacks,Stephen F Austin Lumberjacks
+ncaab,Texas AM Commerce Lions,Texas AM Commerce Lions
+ncaab,Texas AM Corpus Christi Islanders,Texas AM Corpus Christi Islanders

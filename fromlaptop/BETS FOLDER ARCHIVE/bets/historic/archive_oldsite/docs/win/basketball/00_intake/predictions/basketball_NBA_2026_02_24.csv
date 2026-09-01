@@ -1,0 +1,12 @@
+league,market,game_date,game_time,home_team,away_team,home_prob,away_prob,away_projected_points,home_projected_points,total_projected_points
+Basketball,NBA,2026_02_24,07:10 PM,Indiana Pacers,Philadelphia 76ers,0.241000,0.759000,119.8,111.7,231.5
+Basketball,NBA,2026_02_24,07:40 PM,Brooklyn Nets,Dallas Mavericks,0.451000,0.549000,112.8,110.8,223.6
+Basketball,NBA,2026_02_24,07:40 PM,Toronto Raptors,Oklahoma City Thunder,0.491000,0.509000,109.0,108.6,217.6
+Basketball,NBA,2026_02_24,07:40 PM,Atlanta Hawks,Washington Wizards,0.836000,0.164000,113.2,123.5,236.7
+Basketball,NBA,2026_02_24,07:40 PM,Cleveland Cavaliers,New York Knicks,0.599000,0.401000,113.9,117.4,231.3
+Basketball,NBA,2026_02_24,08:10 PM,New Orleans Pelicans,Golden State Warriors,0.486000,0.514000,114.5,113.9,228.4
+Basketball,NBA,2026_02_24,08:10 PM,Milwaukee Bucks,Miami Heat,0.330000,0.670000,117.0,111.6,228.6
+Basketball,NBA,2026_02_24,08:10 PM,Chicago Bulls,Charlotte Hornets,0.311000,0.689000,118.0,112.2,230.2
+Basketball,NBA,2026_02_24,09:10 PM,Phoenix Suns,Boston Celtics,0.340000,0.660000,107.9,102.9,210.8
+Basketball,NBA,2026_02_24,10:10 PM,Portland Trail Blazers,Minnesota Timberwolves,0.332000,0.668000,120.4,115.1,235.5
+Basketball,NBA,2026_02_24,10:40 PM,Los Angeles Lakers,Orlando Magic,0.652000,0.348000,111.6,116.5,228.1

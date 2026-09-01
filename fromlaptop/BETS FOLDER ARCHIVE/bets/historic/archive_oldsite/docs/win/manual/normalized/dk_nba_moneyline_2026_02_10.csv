@@ -1,0 +1,5 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_02_10,07:30PM,nba_moneyline,nba_2026_02_10_Indiana_Pacers_New_York_Knicks,Indiana Pacers,New York Knicks,0.18,0.82,0.14,0.86,440,-600
+2026_02_10,08:00PM,nba_moneyline,nba_2026_02_10_Los_Angeles_Clippers_Houston_Rockets,Los Angeles Clippers,Houston Rockets,0.2,0.8,0.2,0.8,235,-290
+2026_02_10,09:00PM,nba_moneyline,nba_2026_02_10_Dallas_Mavericks_Phoenix_Suns,Dallas Mavericks,Phoenix Suns,0.51,0.49,0.27,0.73,260,-325
+2026_02_10,10:30PM,nba_moneyline,nba_2026_02_10_San_Antonio_Spurs_Los_Angeles_Lakers,San Antonio Spurs,Los Angeles Lakers,0.57,0.43,0.73,0.27,-340,270

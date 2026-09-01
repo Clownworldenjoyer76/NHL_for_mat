@@ -1,0 +1,60 @@
+name: _04 Select Bets
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  select-bets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Run Soccer 04 Select Script
+        run: |
+          python docs/win/soccer/scripts/04_select/select_bets.py
+
+      - name: Run Hockey 04 Select Script
+        run: |
+          python docs/win/hockey/scripts/04_select/select_bets.py
+
+      - name: Run Basketball 04 Select Script
+        run: |
+          python docs/win/basketball/scripts/04_select/select_bets.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs/win/soccer/04_select/*.csv || true
+          git add docs/win/soccer/errors/04_select/select_bets.txt || true
+
+          git add docs/win/hockey/04_select/*.csv || true
+          git add docs/win/hockey/errors/04_select/select_bets.txt || true
+
+          git add docs/win/basketball/04_select/*.csv || true
+          git add docs/win/basketball/errors/04_select/select_bets.txt || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "04 Select Bets - automated run"
+            git push
+          fi

@@ -1,0 +1,5 @@
+band,band_min,band_max,fav_ud,venue,extra_juice
+1 to 1.5,1.0,2.0,favorite,away,0.5023992322456814
+1 to 1.5,1.0,2.0,favorite,home,0.39661283970066963
+1 to 1.5,1.0,2.0,underdog,away,-0.22147871873628777
+1 to 1.5,1.0,2.0,underdog,home,-0.2510770703685974

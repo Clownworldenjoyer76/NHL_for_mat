@@ -1,0 +1,13 @@
+game_date,league,market,away_team,home_team,away_score,home_score,total,away_spread,home_spread,away_puck_line,home_puck_line
+2026_02_26,Hockey,NHL,Edmonton Oilers,Los Angeles Kings,8,1,9,,,-7,7
+2026_02_26,Hockey,NHL,Calgary Flames,San Jose Sharks,4,1,5,,,-3,3
+2026_02_26,Hockey,NHL,Minnesota Wild,Colorado Avalanche,5,2,7,,,-3,3
+2026_02_26,Hockey,NHL,Chicago Blackhawks,Nashville Predators,2,4,6,,,2,-2
+2026_02_26,Hockey,NHL,Seattle Kraken,St. Louis Blues,1,5,6,,,4,-4
+2026_02_26,Hockey,NHL,Philadelphia Flyers,New York Rangers,3,2,5,,,-1,1
+2026_02_26,Hockey,NHL,Tampa Bay Lightning,Carolina Hurricanes,4,5,9,,,1,-1
+2026_02_26,Hockey,NHL,Columbus Blue Jackets,Boston Bruins,2,4,6,,,2,-2
+2026_02_26,Hockey,NHL,Detroit Red Wings,Ottawa Senators,2,1,3,,,-1,1
+2026_02_26,Hockey,NHL,Toronto Maple Leafs,Florida Panthers,1,5,6,,,4,-4
+2026_02_26,Hockey,NHL,New York Islanders,Montreal Canadiens,4,3,7,,,-1,1
+2026_02_26,Hockey,NHL,New Jersey Devils,Pittsburgh Penguins,1,4,5,,,3,-3

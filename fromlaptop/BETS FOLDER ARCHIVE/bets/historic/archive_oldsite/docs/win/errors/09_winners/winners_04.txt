@@ -1,0 +1,193 @@
+=== WINNERS_04 START ===
+Timestamp: 2026-03-01T15:07:06.606530Z
+INPUT_DIR: docs/win/winners/step_02_1
+OUTPUT_DIR: docs/win/winners/step_02_1
+ERROR_LOG: docs/win/errors/09_winners/winners_04.txt
+
+=== CLEANED SCAN ===
+CWD: /home/runner/work/bet_tracker/bet_tracker
+CLEANED_DIR: docs/win/dump/csvs/cleaned
+Cleaned files found: 9
+USE: docs/win/dump/csvs/cleaned/nba_2026_02_23.csv | loaded_rows=3
+USE: docs/win/dump/csvs/cleaned/nba_2026_02_24.csv | loaded_rows=11
+USE: docs/win/dump/csvs/cleaned/nba_2026_02_27.csv | loaded_rows=5
+USE: docs/win/dump/csvs/cleaned/ncaab_2026_02_23.csv | loaded_rows=9
+USE: docs/win/dump/csvs/cleaned/ncaab_2026_02_24.csv | loaded_rows=37
+USE: docs/win/dump/csvs/cleaned/ncaab_2026_02_26.csv | loaded_rows=56
+USE: docs/win/dump/csvs/cleaned/ncaab_2026_02_27.csv | loaded_rows=21
+USE: docs/win/dump/csvs/cleaned/ncaab_2026_03_01.csv | loaded_rows=23
+SKIP(no game_projected_points): docs/win/dump/csvs/cleaned/nhl_2026_02_25.csv
+
+--- CLEANED SUMMARY ---
+Files scanned: 9
+Files used: 8
+Skipped(no game_projected_points): 1
+Skipped(no game_id): 0
+Projection rows loaded: 165
+
+=== WINNERS SCAN ===
+Winners files found: 17
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_10.csv
+  rows: 37
+  eligible(over_bet/under_bet): 18
+  proj_match: 0
+  proj_miss: 18
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_12.csv
+  rows: 46
+  eligible(over_bet/under_bet): 22
+  proj_match: 0
+  proj_miss: 22
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_13.csv
+  rows: 9
+  eligible(over_bet/under_bet): 6
+  proj_match: 0
+  proj_miss: 6
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_14.csv
+  rows: 46
+  eligible(over_bet/under_bet): 28
+  proj_match: 0
+  proj_miss: 28
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_15.csv
+  rows: 30
+  eligible(over_bet/under_bet): 20
+  proj_match: 0
+  proj_miss: 20
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_16.csv
+  rows: 30
+  eligible(over_bet/under_bet): 16
+  proj_match: 0
+  proj_miss: 16
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_17.csv
+  rows: 45
+  eligible(over_bet/under_bet): 20
+  proj_match: 0
+  proj_miss: 20
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_18.csv
+  rows: 74
+  eligible(over_bet/under_bet): 41
+  proj_match: 0
+  proj_miss: 41
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_19.csv
+  rows: 92
+  eligible(over_bet/under_bet): 40
+  proj_match: 0
+  proj_miss: 40
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_20.csv
+  rows: 34
+  eligible(over_bet/under_bet): 19
+  proj_match: 0
+  proj_miss: 19
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_21.csv
+  rows: 109
+  eligible(over_bet/under_bet): 56
+  proj_match: 0
+  proj_miss: 56
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_22.csv
+  rows: 36
+  eligible(over_bet/under_bet): 19
+  proj_match: 0
+  proj_miss: 19
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 0
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_23.csv
+  rows: 17
+  eligible(over_bet/under_bet): 5
+  proj_match: 5
+  proj_miss: 0
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 5
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_24.csv
+  rows: 69
+  eligible(over_bet/under_bet): 34
+  proj_match: 34
+  proj_miss: 0
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 34
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_26.csv
+  rows: 58
+  eligible(over_bet/under_bet): 31
+  proj_match: 31
+  proj_miss: 0
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 31
+
+FILE: docs/win/winners/step_02_1/winners_2026_02_27.csv
+  rows: 15
+  eligible(over_bet/under_bet): 10
+  proj_match: 10
+  proj_miss: 0
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 10
+
+FILE: docs/win/winners/step_02_1/winners_2026_03_01.csv
+  rows: 14
+  eligible(over_bet/under_bet): 10
+  proj_match: 10
+  proj_miss: 0
+  total_missing: 0
+  total_bad_number: 0
+  rows_updated(proj_total+total_diff): 10
+
+=== GLOBAL SUMMARY ===
+Files processed: 17
+Rows processed: 761
+Eligible rows: 395
+Projection matches: 90
+Projection misses: 305
+Total missing: 0
+Total bad number: 0
+Rows updated: 90
+=== WINNERS_04 COMPLETE ===

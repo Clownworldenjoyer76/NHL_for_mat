@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,ligue1,2026_03_22,Sun Mar 22nd 10:00 AM,Lyon,Monaco,+175,+260,+145
+Soccer,ligue1,2026_03_22,Sun Mar 22nd 12:15 PM,Marseille,Lille,-105,+275,+275
+Soccer,ligue1,2026_03_22,Sun Mar 22nd 3:45 PM,Nantes,Strasbourg,+260,+265,+105
+Soccer,ligue1,2026_03_22,Sun Mar 22nd 12:15 PM,Paris FC,Le Havre,+105,+215,+310
+Soccer,ligue1,2026_03_22,Sun Mar 22nd 12:15 PM,Rennes,Metz,-270,+425,+700

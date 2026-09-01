@@ -1,0 +1,109 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league
+2026-02-26,5:00 PM,Rhode Island,Saint Bonaventure,+150,,,ncaab
+2026-02-26,5:00 PM,Saint Bonaventure,Rhode Island,-180,,,ncaab
+2026-02-26,6:00 PM,Bryant,UMBC,+490,,,ncaab
+2026-02-26,6:00 PM,UMBC,Bryant,-675,,,ncaab
+2026-02-26,6:07 PM,New Hampshire,Binghamton,-162,,,ncaab
+2026-02-26,6:07 PM,Binghamton,New Hampshire,+136,,,ncaab
+2026-02-26,6:30 PM,Bethune-Cookman,Grambling,-112,,,ncaab
+2026-02-26,6:30 PM,Grambling,Bethune-Cookman,-108,,,ncaab
+2026-02-26,6:30 PM,Maine,Albany NY,+200,,,ncaab
+2026-02-26,6:30 PM,Albany NY,Maine,-245,,,ncaab
+2026-02-26,7:00 PM,Northeastern,William & Mary,+550,,,ncaab
+2026-02-26,7:00 PM,William & Mary,Northeastern,-800,,,ncaab
+2026-02-26,7:00 PM,Temple,Florida Atlantic,+170,,,ncaab
+2026-02-26,7:00 PM,Florida Atlantic,Temple,-205,,,ncaab
+2026-02-26,7:00 PM,Chicago State,LIU,+575,,,ncaab
+2026-02-26,7:00 PM,LIU,Chicago State,-850,,,ncaab
+2026-02-26,7:00 PM,Liberty,Kennesaw State,-135,,,ncaab
+2026-02-26,7:00 PM,Kennesaw State,Liberty,+114,,,ncaab
+2026-02-26,7:00 PM,High Point,Presbyterian,-800,,,ncaab
+2026-02-26,7:00 PM,Presbyterian,High Point,+550,,,ncaab
+2026-02-26,7:00 PM,Delaware,Jacksonville State,+310,,,ncaab
+2026-02-26,7:00 PM,Jacksonville State,Delaware,-395,,,ncaab
+2026-02-26,7:00 PM,Winthrop,Charleston Southern,-305,,,ncaab
+2026-02-26,7:00 PM,Charleston Southern,Winthrop,+245,,,ncaab
+2026-02-26,7:00 PM,UNC Asheville,Gardner-Webb,-950,,,ncaab
+2026-02-26,7:00 PM,Gardner-Webb,UNC Asheville,+625,,,ncaab
+2026-02-26,7:00 PM,Elon,Towson,+215,,,ncaab
+2026-02-26,7:00 PM,Towson,Elon,-265,,,ncaab
+2026-02-26,7:00 PM,Florida Gulf Coast,North Florida,-285,,,ncaab
+2026-02-26,7:00 PM,North Florida,Florida Gulf Coast,+230,,,ncaab
+2026-02-26,7:00 PM,Campbell,Drexel,+114,,,ncaab
+2026-02-26,7:00 PM,Drexel,Campbell,-135,,,ncaab
+2026-02-26,7:00 PM,North Carolina A&T,UNC Wilmington,+675,,,ncaab
+2026-02-26,7:00 PM,UNC Wilmington,North Carolina A&T,-1050,,,ncaab
+2026-02-26,7:00 PM,Stetson,Jacksonville,+215,,,ncaab
+2026-02-26,7:00 PM,Jacksonville,Stetson,-265,,,ncaab
+2026-02-26,7:00 PM,UMass Lowell,Vermont,+410,,,ncaab
+2026-02-26,7:00 PM,Vermont,UMass Lowell,-550,,,ncaab
+2026-02-26,7:00 PM,USC Upstate,Radford,+240,,,ncaab
+2026-02-26,7:00 PM,Radford,USC Upstate,-298,,,ncaab
+2026-02-26,7:00 PM,Mercyhurst,Central Connecticut State,+160,,,ncaab
+2026-02-26,7:00 PM,Central Connecticut State,Mercyhurst,-192,,,ncaab
+2026-02-26,7:00 PM,UNC Greensboro,Chattanooga,+154,,,ncaab
+2026-02-26,7:00 PM,Chattanooga,UNC Greensboro,-185,,,ncaab
+2026-02-26,7:00 PM,Saint Francis PA,Stonehill,+205,,,ncaab
+2026-02-26,7:00 PM,Stonehill,Saint Francis PA,-250,,,ncaab
+2026-02-26,7:00 PM,New Haven,Wagner,+114,,,ncaab
+2026-02-26,7:00 PM,Wagner,New Haven,-135,,,ncaab
+2026-02-26,7:30 PM,UTEP,Middle Tennessee,+295,,,ncaab
+2026-02-26,7:30 PM,Middle Tennessee,UTEP,-375,,,ncaab
+2026-02-26,7:30 PM,Missouri State,Louisiana Tech,+124,,,ncaab
+2026-02-26,7:30 PM,Louisiana Tech,Missouri State,-148,,,ncaab
+2026-02-26,7:30 PM,New Mexico State,Western Kentucky,+215,,,ncaab
+2026-02-26,7:30 PM,Western Kentucky,New Mexico State,-265,,,ncaab
+2026-02-26,8:00 PM,Michigan State,Purdue,+260,,,ncaab
+2026-02-26,8:00 PM,Purdue,Michigan State,-325,,,ncaab
+2026-02-26,8:00 PM,VMI,Samford,+1200,,,ncaab
+2026-02-26,8:00 PM,Samford,VMI,-2400,,,ncaab
+2026-02-26,8:00 PM,South Dakota State,UMKC,-800,,,ncaab
+2026-02-26,8:00 PM,UMKC,South Dakota State,+550,,,ncaab
+2026-02-26,8:00 PM,Tarleton State,Utah Valley,+1100,,,ncaab
+2026-02-26,8:00 PM,Utah Valley,Tarleton State,-2100,,,ncaab
+2026-02-26,8:00 PM,Denver,Oral Roberts,-185,,,ncaab
+2026-02-26,8:00 PM,Oral Roberts,Denver,+154,,,ncaab
+2026-02-26,8:00 PM,Morehead State,Little Rock,+142,,,ncaab
+2026-02-26,8:00 PM,Little Rock,Morehead State,-170,,,ncaab
+2026-02-26,8:00 PM,Alcorn,Texas Southern,+250,,,ncaab
+2026-02-26,8:00 PM,Texas Southern,Alcorn,-310,,,ncaab
+2026-02-26,8:30 PM,Tennessee Tech,UT Martin,+285,,,ncaab
+2026-02-26,8:30 PM,UT Martin,Tennessee Tech,-360,,,ncaab
+2026-02-26,8:30 PM,Western Illinois,SIU Edwardsville,+850,,,ncaab
+2026-02-26,8:30 PM,SIU Edwardsville,Western Illinois,-1450,,,ncaab
+2026-02-26,8:30 PM,Eastern Illinois,Lindenwood,+275,,,ncaab
+2026-02-26,8:30 PM,Lindenwood,Eastern Illinois,-345,,,ncaab
+2026-02-26,8:30 PM,Tennessee State,SE Missouri State,+150,,,ncaab
+2026-02-26,8:30 PM,SE Missouri State,Tennessee State,-180,,,ncaab
+2026-02-26,8:30 PM,Florida A&M,Southern University,+390,,,ncaab
+2026-02-26,8:30 PM,Southern University,Florida A&M,-520,,,ncaab
+2026-02-26,9:00 PM,Wichita State,Memphis,+100,,,ncaab
+2026-02-26,9:00 PM,Memphis,Wichita State,-120,,,ncaab
+2026-02-26,9:00 PM,UC Riverside,UC Santa Barbara,+500,,,ncaab
+2026-02-26,9:00 PM,UC Santa Barbara,UC Riverside,-700,,,ncaab
+2026-02-26,9:00 PM,FIU,Sam Houston,+210,,,ncaab
+2026-02-26,9:00 PM,Sam Houston,FIU,-258,,,ncaab
+2026-02-26,9:00 PM,Sacramento State,Montana,+295,,,ncaab
+2026-02-26,9:00 PM,Montana,Sacramento State,-375,,,ncaab
+2026-02-26,9:00 PM,Northern Arizona,Idaho,+490,,,ncaab
+2026-02-26,9:00 PM,Idaho,Northern Arizona,-675,,,ncaab
+2026-02-26,9:00 PM,Northern Colorado,Eastern Washington,-118,,,ncaab
+2026-02-26,9:00 PM,Eastern Washington,Northern Colorado,-102,,,ncaab
+2026-02-26,9:00 PM,North Dakota State,Saint Thomas MN,+154,,,ncaab
+2026-02-26,9:00 PM,Saint Thomas MN,North Dakota State,-185,,,ncaab
+2026-02-26,9:00 PM,Abilene Christian,Utah Tech,+140,,,ncaab
+2026-02-26,9:00 PM,Utah Tech,Abilene Christian,-166,,,ncaab
+2026-02-26,9:00 PM,Portland State,Montana State,+114,,,ncaab
+2026-02-26,9:00 PM,Montana State,Portland State,-135,,,ncaab
+2026-02-26,9:00 PM,Hawaii,UC Davis,-115,,,ncaab
+2026-02-26,9:00 PM,UC Davis,Hawaii,-105,,,ncaab
+2026-02-26,9:30 PM,Jackson State,Prairie View,+200,,,ncaab
+2026-02-26,9:30 PM,Prairie View,Jackson State,-245,,,ncaab
+2026-02-26,10:00 PM,UT Arlington,California Baptist,+225,,,ncaab
+2026-02-26,10:00 PM,California Baptist,UT Arlington,-278,,,ncaab
+2026-02-26,10:00 PM,CSU Bakersfield,UC San Diego,+850,,,ncaab
+2026-02-26,10:00 PM,UC San Diego,CSU Bakersfield,-1450,,,ncaab
+2026-02-26,10:00 PM,Long Beach State,Cal Poly,+190,,,ncaab
+2026-02-26,10:00 PM,Cal Poly,Long Beach State,-230,,,ncaab
+2026-02-26,10:00 PM,UC Irvine,CSUN,+110,,,ncaab
+2026-02-26,10:00 PM,CSUN,UC Irvine,-130,,,ncaab

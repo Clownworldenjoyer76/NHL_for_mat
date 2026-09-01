@@ -1,0 +1,5 @@
+NAME NORMALIZATION DUMP SUMMARY
+===============================
+Files processed: 9
+Values updated: 0
+Unmapped values: 0

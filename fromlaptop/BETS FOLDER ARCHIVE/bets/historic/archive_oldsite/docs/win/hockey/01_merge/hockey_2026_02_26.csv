@@ -1,0 +1,13 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_puck_line_american,home_dk_puck_line_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+hockey,NHL,2026_02_26,07:07 PM,Boston Bruins,Columbus Blue Jackets,2026_02_26_Boston Bruins_Columbus Blue Jackets,0.519000,0.481000,3.08,3.29,6.37,+1.5,-1.5,6.5,-270,+220,+100,-120,-105,-115
+hockey,NHL,2026_02_26,07:07 PM,Carolina Hurricanes,Tampa Bay Lightning,2026_02_26_Carolina Hurricanes_Tampa Bay Lightning,0.573000,0.427000,2.65,3.44,6.09,+1.5,-1.5,6.5,-205,+170,+110,-130,+124,-148
+hockey,NHL,2026_02_26,07:07 PM,Florida Panthers,Toronto Maple Leafs,2026_02_26_Florida Panthers_Toronto Maple Leafs,0.594000,0.406000,2.55,3.55,6.10,+1.5,-1.5,6.5,-192,+160,+105,-125,+130,-155
+hockey,NHL,2026_02_26,07:07 PM,Montreal Canadiens,New York Islanders,2026_02_26_Montreal Canadiens_New York Islanders,0.545000,0.455000,2.79,3.27,6.06,+1.5,-1.5,6.5,-205,+170,+110,-130,+130,-155
+hockey,NHL,2026_02_26,07:07 PM,Ottawa Senators,Detroit Red Wings,2026_02_26_Ottawa Senators_Detroit Red Wings,0.574000,0.426000,2.69,3.48,6.17,+1.5,-1.5,5.5,-192,+160,-135,+114,+130,-155
+hockey,NHL,2026_02_26,07:07 PM,Pittsburgh Penguins,New Jersey Devils,2026_02_26_Pittsburgh Penguins_New Jersey Devils,0.551000,0.449000,2.76,3.30,6.06,+1.5,-1.5,5.5,-198,+164,-125,+105,+136,-162
+hockey,NHL,2026_02_26,08:07 PM,Nashville Predators,Chicago Blackhawks,2026_02_26_Nashville Predators_Chicago Blackhawks,0.611000,0.389000,2.47,3.53,6.00,+1.5,-1.5,6.5,-180,+150,+114,-135,+145,-175
+hockey,NHL,2026_02_26,08:07 PM,New York Rangers,Philadelphia Flyers,2026_02_26_New York Rangers_Philadelphia Flyers,0.574000,0.426000,2.51,3.31,5.82,+1.5,-1.5,5.5,-225,+185,-135,+114,+120,-142
+hockey,NHL,2026_02_26,08:07 PM,St. Louis Blues,Seattle Kraken,2026_02_26_St. Louis Blues_Seattle Kraken,0.536000,0.464000,2.59,2.98,5.57,+1.5,-1.5,5.5,-218,+180,-125,+105,+124,-148
+hockey,NHL,2026_02_26,09:07 PM,Colorado Avalanche,Minnesota Wild,2026_02_26_Colorado Avalanche_Minnesota Wild,0.630000,0.370000,2.67,3.79,6.46,+1.5,-1.5,6.5,-192,+160,-105,-115,+130,-155
+hockey,NHL,2026_02_26,10:07 PM,San Jose Sharks,Calgary Flames,2026_02_26_San Jose Sharks_Calgary Flames,0.500000,0.500000,3.20,3.20,6.40,+1.5,-1.5,6.5,-230,+190,-102,-118,+110,-130
+hockey,NHL,2026_02_26,10:37 PM,Los Angeles Kings,Edmonton Oilers,2026_02_26_Los Angeles Kings_Edmonton Oilers,0.505000,0.495000,3.07,3.12,6.19,-1.5,+1.5,6.5,+225,-278,-112,-108,-110,-110

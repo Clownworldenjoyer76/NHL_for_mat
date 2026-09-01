@@ -1,0 +1,13 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-30,Manhattan,0.635,-125,-108,17,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,VCU,0.82,-133,-105,28,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Saint Peters,0.635,-135,-102,33,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-30,Nevada,0.655,-147,-118,29,0.1,Win,0.18,0.08,ncaab_spread
+2026-01-30,Iona,0.57,104,107,3,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Charlotte,0.645,-141,109,250,0.1,Win,0.2,0.1,ncaab_spread
+2026-01-30,Quinnipiac,0.68,-163,-105,58,0.1,Loss,0.0,-0.1,ncaab_spread
+2026-01-30,Siena,0.71,-104,110,214,0.1,Win,0.0,-0.1,ncaab_spread
+2026-01-30,Saint Louis,0.72,-108,-101,7,0.1,Win,0.19,0.09,ncaab_spread
+2026-01-30,Harvard,0.555,111,116,5,0.1,Win,0.21000000000000002,0.11,ncaab_spread
+2026-01-30,CHI Blackhawks,0.573,-161,-192,-31,0.1,Loss,0.0,-0.1,nhl_spread
+2026-01-30,SAC Kings @ BOS Celtics - Over 220.5 - Total Alternate,0.5717,-108,116,224,0.1,Loss,0.0,-0.1,nba_ou

@@ -1,0 +1,10 @@
+=== MY_BETS_CLEAN_07 RUN @ 2026-03-01T14:57:02.525279Z ===
+Wrote docs/win/my_bets/step_05/juiceReelBets_1771497675097.csv | rows=19
+Wrote docs/win/my_bets/step_05/juiceReelBets_1771584478877.csv | rows=15
+Wrote docs/win/my_bets/step_05/juiceReelBets_1771412824535.csv | rows=12
+Wrote docs/win/my_bets/step_05/juiceReelBets_SYS1771191810114.csv | rows=26
+Wrote docs/win/my_bets/step_05/juiceReelBets_1771242741236.csv | rows=11
+Wrote docs/win/my_bets/step_05/juiceReelBets_17716930331372 - Sheet1.csv | rows=63
+Wrote docs/win/my_bets/step_05/juiceReelBets_1771333174294 - juiceReelBets_1771333174294.csv | rows=11
+Files processed: 7
+Rows processed: 157

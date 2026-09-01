@@ -1,0 +1,6 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds
+2026_02_27,nba,nba_2026_02_27_Cleveland_Cavaliers_Detroit_Pistons,Cleveland Cavaliers,Detroit Pistons,0.332,0.668,112.1,117.3,229.4,3.012,201,3.012,201
+2026_02_27,nba,nba_2026_02_27_Brooklyn_Nets_Boston_Celtics,Brooklyn Nets,Boston Celtics,0.098,0.902,99.3,112.4,211.7,10.2041,920,10.2041,920
+2026_02_27,nba,nba_2026_02_27_New_York_Knicks_Milwaukee_Bucks,New York Knicks,Milwaukee Bucks,0.709,0.291,114.0,107.8,221.8,1.4104,-243,1.4104,-243
+2026_02_27,nba,nba_2026_02_27_Memphis_Grizzlies_Dallas_Mavericks,Memphis Grizzlies,Dallas Mavericks,0.378,0.622,118.2,122.2,240.4,2.6455,164,2.6455,164
+2026_02_27,nba,nba_2026_02_27_Denver_Nuggets_Oklahoma_City_Thunder,Denver Nuggets,Oklahoma City Thunder,0.256,0.744,112.3,119.9,232.2,3.9062,290,3.9062,290

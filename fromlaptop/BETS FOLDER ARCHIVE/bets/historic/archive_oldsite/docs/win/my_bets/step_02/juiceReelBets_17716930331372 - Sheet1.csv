@@ -1,0 +1,64 @@
+date,time,game_id,risk_amount,max_potential_win,bet_result,amount_won_or_lost,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,away_team,home_team,event_start_date
+2026-02-19,,,0.1,0.08,Lost,-0.1,-112,-0.0161,spreads,CHI Bulls,5.5,Basketball,nba,-112,TOR Raptors,CHI Bulls,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-102,0.0072,spreads,PHI 76ers,-1.5,Basketball,nba,-102,ATL Hawks,PHI 76ers,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0623,totals,Over,224.5,Basketball,nba,-105,ORL Magic,SAC Kings,2026-02-19 22:00:00
+2026-02-18,,,0.1,0.08,Won,0.08,-115,-0.0111,totals,Under,153.5,Basketball,ncaab,-115,Troy,ULM,2026-02-18 19:30:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-110,0.0945,totals,Under,162.5,Basketball,ncaab,-110,Lindenwood,Tennessee State,2026-02-19 20:30:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-108,0.0441,totals,Over,161.5,Basketball,ncaab,-108,South Dakota,Denver,2026-02-19 21:00:00
+2026-02-19,,,0.1,0.17,Won,0.17,170,0.0361,moneyline,Marshall,0.0,Basketball,ncaab,170,Marshall,Appalachian State,2026-02-19 18:30:00
+2026-02-19,,,0.1,0.08,Lost,-0.1,-115,0.0106,spreads,BKN Nets,16.5,Basketball,nba,-115,BKN Nets,CLE Cavaliers,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-108,0.0479,totals,Over,149.5,Basketball,ncaab,-108,UMKC,North Dakota,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-110,-0.036,totals,Over,213.5,Basketball,nba,-110,BOS Celtics,GS Warriors,2026-02-19 22:00:00
+2026-02-19,,,0.1,0.08,Won,0.08,-112,0.0172,spreads,Gardner-Webb,19.5,Basketball,ncaab,-112,Gardner-Webb,Radford,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.08,Won,0.08,-112,-0.0161,totals,Under,141.5,Basketball,ncaab,-112,Vermont,UMBC,2026-02-19 18:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0333,totals,Under,168.5,Basketball,ncaab,-105,William & Mary,Campbell,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0473,totals,Under,144.5,Basketball,ncaab,-105,Drexel,Northeastern,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,-0.0244,totals,Under,232.5,Basketball,nba,-105,TOR Raptors,CHI Bulls,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-102,0.0299,spreads,Vermont,-1.5,Basketball,ncaab,-102,Vermont,UMBC,2026-02-19 18:00:00
+2026-02-20,,,0.1,0.08,Lost,-0.1,-115,-0.0111,totals,Over,237.5,Basketball,nba,-115,UTA Jazz,MEM Grizzlies,2026-02-20 19:00:00
+2026-02-20,,,0.1,0.07,Won,0.07,-130,0.0164,moneyline,MEM Grizzlies,0.0,Basketball,nba,-130,UTA Jazz,MEM Grizzlies,2026-02-20 19:00:00
+2026-02-20,,,0.1,0.08,Lost,-0.1,-115,-0.0471,totals,Under,239.5,Basketball,nba,-115,DEN Nuggets,POR Trail Blazers,2026-02-20 22:00:00
+2026-02-20,,,0.1,0.09,Won,0.09,-110,0.0357,totals,Over,222.5,Basketball,nba,-110,MIL Bucks,NO Pelicans,2026-02-20 20:00:00
+2026-02-20,,,0.1,0.09,Lost,-0.1,-105,0.0024,spreads,BKN Nets,16.5,Basketball,nba,-105,BKN Nets,OKC Thunder,2026-02-20 20:00:00
+2026-02-20,,,0.1,0.08,Won,0.08,-112,-0.0161,totals,Under,238.5,Basketball,nba,-112,DAL Mavericks,MIN Timberwolves,2026-02-20 19:30:00
+2026-02-20,,,0.1,0.09,Lost,-0.1,-110,-0.0288,totals,Over,155.5,Basketball,ncaab,-110,Green Bay,Oakland,2026-02-20 19:00:00
+2026-02-16,,,0.1,0.09,Won,0.09,-105,0.0878,totals,Over,141.5,Basketball,ncaab,-105,Arkansas-Pine Bluff,Alabama A&M,2026-02-16 20:00:00
+2026-02-16,,,0.1,0.09,Won,0.09,-108,0.0775,totals,Over,142.5,Basketball,ncaab,-108,Syracuse,Duke,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.09,Won,0.09,-105,0.0227,totals,Over,149.5,Basketball,ncaab,-105,Bethune-Cookman,Jackson State,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.1,Won,0.1,100,,totals,Over,135.5,Basketball,ncaab,100,Houston,Iowa State,2026-02-16 21:00:00
+2026-02-18,,,0.1,0.09,Lost,-0.1,-110,0.0111,totals,Over,145.5,Basketball,ncaab,-110,La Salle,Duquesne,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.08,Won,0.08,-112,0.0369,totals,Over,150.5,Basketball,ncaab,-112,Oral Roberts,Omaha,2026-02-18 20:00:00
+2026-02-18,,,0.1,0.09,Won,0.09,-110,0.0023,totals,Over,140.5,Basketball,ncaab,-110,ETSU,Furman,2026-02-18 18:30:00
+2026-02-18,,,0.1,0.09,Won,0.09,-110,0.0,totals,Over,149.5,Basketball,ncaab,-110,Oklahoma,Tennessee,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.09,Won,0.09,-105,0.007,totals,Over,137.5,Basketball,ncaab,-105,Dayton,George Mason,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.09,Lost,-0.1,-105,0.0116,totals,Over,141.5,Basketball,ncaab,-105,James Madison,Coastal Carolina,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.09,Won,0.09,-108,0.0422,totals,Over,153.5,Basketball,ncaab,-108,Vanderbilt,Missouri,2026-02-18 21:00:00
+2026-02-18,,,0.1,0.08,Won,0.08,-112,0.0369,totals,Over,138.5,Basketball,ncaab,-112,Clemson,Wake Forest,2026-02-18 19:00:00
+2026-02-17,,,0.1,0.08,Won,0.08,-112,0.0462,totals,Over,161.5,Basketball,ncaab,-112,Miami OH,UMass,2026-02-17 19:00:00
+2026-02-17,,,0.1,0.09,Lost,-0.1,-110,0.0023,totals,Over,139.5,Basketball,ncaab,-110,Nebraska,Iowa,2026-02-17 21:00:00
+2026-02-17,,,0.1,0.08,Won,0.08,-112,0.0066,totals,Over,150.5,Basketball,ncaab,-112,LSU,Texas,2026-02-17 21:00:00
+2026-02-17,,,0.1,0.09,Won,0.09,-105,0.0659,totals,Over,145.5,Basketball,ncaab,-105,Fresno State,Wyoming,2026-02-17 20:30:00
+2026-02-17,,,0.1,0.09,Lost,-0.1,-110,0.0317,totals,Over,135.5,Basketball,ncaab,-110,Minnesota,Oregon,2026-02-17 22:45:00
+2026-02-16,,,0.1,0.08,Lost,-0.1,-115,-0.0349,totals,Under,137.5,Basketball,ncaab,-115,Wagner,LIU,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.08,Won,0.08,-112,-0.0091,totals,Over,131.5,Basketball,ncaab,-112,Howard,Delaware State,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.08,Lost,-0.1,-112,0.0568,spreads,Delaware State,12.5,Basketball,ncaab,-112,Howard,Delaware State,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.08,Won,0.08,-115,0.0303,totals,Under,137.5,Basketball,ncaab,-115,Norfolk State,MD Eastern Shore,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.08,Won,0.08,-112,0.0172,spreads,Norfolk State,-1.5,Basketball,ncaab,-112,Norfolk State,MD Eastern Shore,2026-02-16 19:00:00
+2026-02-16,,,0.1,0.08,Lost,-0.1,-112,0.0717,totals,Under,150.5,Basketball,ncaab,-112,Morgan State,NC Central,2026-02-16 19:00:00
+2026-02-17,,,0.1,0.09,Won,0.09,-110,0.0067,totals,Over,139.5,Basketball,ncaab,-110,UCLA,Michigan State,2026-02-17 20:30:00
+2026-02-17,,,0.1,0.09,Won,0.09,-110,0.0,totals,Over,159.5,Basketball,ncaab,-110,Baylor,Kansas State,2026-02-17 21:00:00
+2026-02-17,,,0.1,0.09,Won,0.09,-105,0.0116,spreads,Gardner-Webb,17.5,Basketball,ncaab,-105,Gardner-Webb,Charleston Southern,2026-02-17 18:00:00
+2026-02-18,,,0.1,0.09,Won,0.09,-105,0.0116,totals,Under,139.5,Basketball,ncaab,-105,Lehigh,Navy,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.09,Won,0.09,-110,0.0111,totals,Over,155.5,Basketball,ncaab,-110,Queens NC,North Alabama,2026-02-18 19:00:00
+2026-02-18,,,0.2,0.19,Won,0.19,-105,0.0659,spreads,BYU,12.5,Basketball,ncaab,-105,BYU,Arizona,2026-02-18 21:00:00
+2026-02-17,,,0.1,0.09,Won,0.09,-108,0.0,spreads,South Carolina,22.5,Basketball,ncaab,-108,South Carolina,Florida,2026-02-17 19:00:00
+2026-02-17,,,0.1,0.1,Lost,-0.1,105,-0.007,totals,Over,150.5,Basketball,ncaab,105,Virginia Tech,Miami FL,2026-02-17 20:00:00
+2026-02-17,,,0.1,0.08,Lost,-0.1,-115,-0.0398,totals,Over,142.5,Basketball,ncaab,-115,Central Michigan,Eastern Michigan,2026-02-17 18:30:00
+2026-02-18,,,0.1,0.08,Won,0.08,-112,-0.0405,totals,Over,141.5,Basketball,ncaab,-112,Western Kentucky,Delaware,2026-02-18 19:00:00
+2026-02-18,,,0.1,0.08,Won,0.08,-112,0.0602,totals,Over,145.5,Basketball,ncaab,-112,Butler,Georgetown,2026-02-18 18:30:00
+2026-02-18,,,0.2,0.17,Lost,-0.2,-112,0.0172,spreads,Lipscomb,-3.5,Basketball,ncaab,-112,Lipscomb,Bellarmine,2026-02-18 19:30:00
+2026-02-18,,,0.1,0.09,Lost,-0.1,-105,0.0205,totals,Over,146.5,Basketball,ncaab,-105,North Dakota State,South Dakota State,2026-02-18 20:00:00
+2026-02-17,,,0.1,0.08,Won,0.08,-120,-0.0042,spreads,UCF,1.5,Basketball,ncaab,-120,TCU,UCF,2026-02-17 19:00:00
+2026-02-18,,,0.2,0.17,Won,0.17,-112,0.0369,spreads,Washington State,-1.5,Basketball,ncaab,-112,Pacific,Washington State,2026-02-18 21:30:00
+2026-02-18,,,0.1,0.09,Won,0.09,-105,0.0729,totals,Over,147.5,Basketball,ncaab,-105,Virginia,Georgia Tech,2026-02-18 21:00:00
+2026-02-18,,,0.1,0.08,Lost,-0.1,-115,0.0502,totals,Over,131.5,Basketball,ncaab,-115,Utah,West Virginia,2026-02-18 20:30:00

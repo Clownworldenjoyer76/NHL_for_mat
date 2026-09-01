@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,epl,2026_03_15,10:00 AM,Crystal Palace,Leeds,+175,+225,+165
+Soccer,epl,2026_03_15,12:30 PM,Liverpool,Tottenham Hotspur,-350,+500,+850
+Soccer,epl,2026_03_15,10:00 AM,Manchester United,Aston Villa,-140,+300,+370
+Soccer,epl,2026_03_15,10:00 AM,Nottingham Forest,Fulham,+130,+235,+220

@@ -1,0 +1,12 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american,dk_btts_yes_american,dk_btts_no_american,game_id
+Soccer,bundesliga,2026_03_15,12:30,Freiburg,Union Berlin,0.472000,0.249000,0.279000,1.59,1.16,2.75,+115,+220,+235,,,,,,,2026_03_15_freiburg_union_berlin
+Soccer,bundesliga,2026_03_15,14:30,VfB Stuttgart,RB Leipzig,0.419000,0.252000,0.329000,1.49,1.29,2.78,+140,+275,+150,,,,,,,2026_03_15_vfb_stuttgart_rb_leipzig
+Soccer,bundesliga,2026_03_15,10:30,Werder Bremen,Mainz,0.438000,0.239000,0.322000,1.65,1.39,3.04,+100,+245,+235,,,,,,,2026_03_15_werder_bremen_mainz
+Soccer,epl,2026_03_15,10:00,Crystal Palace,Leeds,0.423000,0.249000,0.328000,1.53,1.32,2.85,+175,+225,+165,,,,,,,2026_03_15_crystal_palace_leeds
+Soccer,epl,2026_03_15,12:30,Liverpool,Tottenham Hotspur,0.726000,0.160000,0.114000,2.55,0.92,3.47,-350,+500,+850,,,,,,,2026_03_15_liverpool_tottenham_hotspur
+Soccer,epl,2026_03_15,10:00,Manchester United,Aston Villa,0.533000,0.240000,0.227000,1.71,1.02,2.73,-140,+300,+370,,,,,,,2026_03_15_manchester_united_aston_villa
+Soccer,epl,2026_03_15,10:00,Nottingham Forest,Fulham,0.439000,0.271000,0.290000,1.37,1.06,2.43,+130,+235,+220,,,,,,,2026_03_15_nottingham_forest_fulham
+Soccer,ligue1,2026_03_15,12:15,Le Havre,Lyon,0.252000,0.244000,0.504000,1.10,1.65,2.75,+260,+245,+110,,,,,,,2026_03_15_le_havre_lyon
+Soccer,ligue1,2026_03_15,12:15,Metz,Toulouse,0.252000,0.268000,0.479000,0.96,1.43,2.39,+290,+245,+100,,,,,,,2026_03_15_metz_toulouse
+Soccer,ligue1,2026_03_15,15:45,Rennes,Lille,0.416000,0.276000,0.308000,1.30,1.08,2.38,+120,+235,+235,,,,,,,2026_03_15_rennes_lille
+Soccer,ligue1,2026_03_15,10:00,Strasbourg,Paris FC,0.564000,0.229000,0.207000,1.81,1.00,2.81,-150,+300,+400,,,,,,,2026_03_15_strasbourg_paris_fc

@@ -1,0 +1,16 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_spread,home_spread
+2026_02_13,06:30PM,ncaab_spreads,ncaab_2026_02_13_Manhattan_Jaspers_Niagara_Purple_Eagles,Manhattan Jaspers,Niagara Purple Eagles,0.61,0.39,0.48,0.52,1.5,-1.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Columbia_Lions_Penn_Quakers,Columbia Lions,Penn Quakers,0.57,0.43,0.48,0.52,2.5,-2.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Cornell_Big_Red_Princeton_Tigers,Cornell Big Red,Princeton Tigers,0.46,0.54,0.6,0.4,-3.5,3.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Quinnipiac_Bobcats_Siena_Saints,Quinnipiac Bobcats,Siena Saints,0.4,0.6,0.29,0.71,3.5,-3.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Saint_Peters_Peacocks_Sacred_Heart_Pioneers,Saint Peters Peacocks,Sacred Heart Pioneers,0.63,0.37,0.7,0.3,-2.5,2.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_George_Mason_Patriots_George_Washington_Colonials,George Mason Patriots,George Washington Colonials,0.46,0.54,0.55,0.45,2.5,-2.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Mount_St_Marys_Mountaineers_Rider_Broncs,Mount St Marys Mountaineers,Rider Broncs,0.7,0.3,0.75,0.25,-5.5,5.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Iona_Gaels_Canisius_Golden_Griffins,Iona Gaels,Canisius Golden Griffins,0.41,0.59,0.73,0.27,-5.5,5.5
+2026_02_13,07:00PM,ncaab_spreads,ncaab_2026_02_13_Brown_Bears_Harvard_Crimson,Brown Bears,Harvard Crimson,0.73,0.27,0.41,0.59,8.5,-8.5
+2026_02_13,08:00PM,ncaab_spreads,ncaab_2026_02_13_Michigan_State_Spartans_Wisconsin_Badgers,Michigan State Spartans,Wisconsin Badgers,0.65,0.35,0.73,0.27,-2.5,2.5
+2026_02_13,08:30PM,ncaab_spreads,ncaab_2026_02_13_Saint_Louis_Billikens_Loyola_Chicago_Ramblers,Saint Louis Billikens,Loyola Chicago Ramblers,0.83,0.17,0.77,0.23,-18.5,18.5
+2026_02_13,09:00PM,ncaab_spreads,ncaab_2026_02_13_Ohio_Bobcats_Miami_RedHawks,Ohio Bobcats,Miami RedHawks,0.21,0.79,0.24,0.76,9.5,-9.5
+2026_02_13,09:00PM,ncaab_spreads,ncaab_2026_02_13_UMass_Minutemen_Akron_Zips,UMass Minutemen,Akron Zips,0.61,0.39,0.47,0.53,12.5,-12.5
+2026_02_13,10:00PM,ncaab_spreads,ncaab_2026_02_13_UNLV_Rebels_Boise_State_Broncos,UNLV Rebels,Boise State Broncos,0.28,0.72,0.37,0.63,9.5,-9.5
+2026_02_13,11:00PM,ncaab_spreads,ncaab_2026_02_13_North_Carolina_AT_Aggies_Hampton_Pirates,North Carolina AT Aggies,Hampton Pirates,0.43,0.57,0.28,0.72,2.5,-2.5

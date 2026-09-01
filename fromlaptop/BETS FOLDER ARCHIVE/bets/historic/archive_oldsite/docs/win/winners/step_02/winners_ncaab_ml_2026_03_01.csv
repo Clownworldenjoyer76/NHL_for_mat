@@ -1,0 +1,3 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
+2026_03_01,2:00 PM,Charlotte 49ers,Florida Atlantic Owls,ncaab_moneyline,ncaab_2026_03_01_Charlotte_49ers_Florida_Atlantic_Owls,1.2597402597402598,4.82,1.2941176470588236,3.7,0.03437738731856377,-1.12,270,-339
+2026_03_01,8:00 PM,Wichita State Shockers,UTSA Roadrunners,ncaab_moneyline,ncaab_2026_03_01_Wichita_State_Shockers_UTSA_Roadrunners,9.72,1.1798561151079137,10.0,1.0625,0.27999999999999936,-0.11735611510791366,-1600,900

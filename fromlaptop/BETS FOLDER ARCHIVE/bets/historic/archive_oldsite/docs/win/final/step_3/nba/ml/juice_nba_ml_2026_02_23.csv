@@ -1,0 +1,3 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds
+2026_02_23,00:00,Sacramento Kings,Memphis Grizzlies,nba_moneyline,nba_2026_02_23_Sacramento_Kings_Memphis_Grizzlies,1.4672897196261685,3.7,1.5714285714285714,2.45
+2026_02_23,00:00,Utah Jazz,Houston Rockets,nba_moneyline,nba_2026_02_23_Utah_Jazz_Houston_Rockets,1.115874855156431,8.58,1.1176470588235294,6.75

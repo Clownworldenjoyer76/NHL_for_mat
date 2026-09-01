@@ -1,0 +1,16 @@
+date,time,game_id,risk_amount,max_potential_win,bet_result,amount_won_or_lost,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,away_team,home_team,event_start_date
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0623,totals,Over,224.5,Basketball,nba,-105,ORL Magic,SAC Kings,2026-02-19 22:00:00
+2026-02-19,,,0.1,0.08,Lost,-0.1,-115,0.0106,spreads,BKN Nets,16.5,Basketball,nba,-115,BKN Nets,CLE Cavaliers,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.08,Lost,-0.1,-112,-0.0161,spreads,CHI Bulls,5.5,Basketball,nba,-112,TOR Raptors,CHI Bulls,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,-0.0244,totals,Under,232.5,Basketball,nba,-105,TOR Raptors,CHI Bulls,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-102,0.0072,spreads,PHI 76ers,-1.5,Basketball,nba,-102,ATL Hawks,PHI 76ers,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-110,-0.036,totals,Over,213.5,Basketball,nba,-110,BOS Celtics,GS Warriors,2026-02-19 22:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-108,0.0441,totals,Over,161.5,Basketball,ncaab,-108,South Dakota,Denver,2026-02-19 21:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-110,0.0945,totals,Under,162.5,Basketball,ncaab,-110,Lindenwood,Tennessee State,2026-02-19 20:30:00
+2026-02-19,,,0.1,0.09,Won,0.09,-108,0.0479,totals,Over,149.5,Basketball,ncaab,-108,UMKC,North Dakota,2026-02-19 20:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0333,totals,Under,168.5,Basketball,ncaab,-105,William & Mary,Campbell,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.08,Won,0.08,-112,-0.0161,totals,Under,141.5,Basketball,ncaab,-112,Vermont,UMBC,2026-02-19 18:00:00
+2026-02-19,,,0.1,0.09,Won,0.09,-105,0.0473,totals,Under,144.5,Basketball,ncaab,-105,Drexel,Northeastern,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.08,Won,0.08,-112,0.0172,spreads,Gardner-Webb,19.5,Basketball,ncaab,-112,Gardner-Webb,Radford,2026-02-19 19:00:00
+2026-02-19,,,0.1,0.09,Lost,-0.1,-102,0.0299,spreads,Vermont,-1.5,Basketball,ncaab,-102,Vermont,UMBC,2026-02-19 18:00:00
+2026-02-19,,,0.1,0.17,Won,0.17,170,0.0361,moneyline,Marshall,0.0,Basketball,ncaab,170,Marshall,Appalachian State,2026-02-19 18:30:00

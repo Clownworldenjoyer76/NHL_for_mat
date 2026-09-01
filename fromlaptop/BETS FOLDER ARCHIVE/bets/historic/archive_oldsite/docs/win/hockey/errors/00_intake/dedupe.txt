@@ -1,0 +1,11 @@
+2026-03-02T13:24:52.926280 | hockey_2026_02_26.csv: removed 0 duplicates, final_rows=12
+2026-03-02T13:24:52.926624 | hockey_2026_02_27.csv: removed 0 duplicates, final_rows=4
+2026-03-02T13:24:52.926948 | hockey_2026_02_25.csv: removed 0 duplicates, final_rows=8
+2026-03-02T13:24:52.927259 | hockey_2026_03_02.csv: removed 0 duplicates, final_rows=6
+2026-03-02T13:24:52.927601 | hockey_2026_03_01.csv: removed 0 duplicates, final_rows=6
+2026-03-02T13:24:52.928017 | hockey_2026_02_26.csv: removed 0 duplicates, final_rows=12
+2026-03-02T13:24:52.928328 | hockey_2026_02_27.csv: removed 0 duplicates, final_rows=4
+2026-03-02T13:24:52.928664 | hockey_2026_02_25.csv: removed 0 duplicates, final_rows=8
+2026-03-02T13:24:52.928987 | hockey_2026_03_02.csv: removed 0 duplicates, final_rows=6
+2026-03-02T13:24:52.929306 | hockey_2026_03_01.csv: removed 0 duplicates, final_rows=6
+2026-03-02T13:24:52.929368 | SUMMARY: files_processed=10

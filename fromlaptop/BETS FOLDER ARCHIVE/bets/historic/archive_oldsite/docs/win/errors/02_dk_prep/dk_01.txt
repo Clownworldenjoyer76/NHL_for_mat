@@ -1,0 +1,24 @@
+DK_01 START
+dk_ncaab_totals_2026_02_24.csv | rows_in=144 rows_out=144
+dk_ncaab_moneyline_2026_02_26.csv | rows_in=108 rows_out=108
+dk_ncaab_spreads_2026_02_24.csv | rows_in=72 rows_out=72
+dk_ncaab_spreads_2026_02_26.csv | rows_in=108 rows_out=108
+dk_ncaab_spreads_2026_02_23.csv | rows_in=18 rows_out=18
+dk_ncaab_totals_2026_02_27.csv | rows_in=72 rows_out=72
+dk_nba_totals_2026_02_23.csv | rows_in=12 rows_out=12
+dk_ncaab_moneyline_2026_02_27.csv | rows_in=32 rows_out=32
+dk_nba_totals_2026_02_24.csv | rows_in=44 rows_out=44
+dk_nba_spreads_2026_02_24.csv | rows_in=22 rows_out=22
+dk_ncaab_moneyline_2026_02_24.csv | rows_in=62 rows_out=62
+dk_ncaab_spreads_2026_03_01.csv | rows_in=40 rows_out=40
+dk_ncaab_moneyline_2026_03_01.csv | rows_in=30 rows_out=30
+dk_ncaab_spreads_2026_02_27.csv | rows_in=36 rows_out=36
+dk_ncaab_moneyline_2026_02_23.csv | rows_in=14 rows_out=14
+dk_nba_moneyline_2026_02_23.csv | rows_in=6 rows_out=6
+dk_ncaab_totals_2026_03_01.csv | rows_in=80 rows_out=80
+dk_ncaab_totals_2026_02_26.csv | rows_in=216 rows_out=216
+dk_nba_spreads_2026_02_23.csv | rows_in=6 rows_out=6
+dk_nba_moneyline_2026_02_24.csv | rows_in=22 rows_out=22
+dk_ncaab_totals_2026_02_23.csv | rows_in=36 rows_out=36
+DK_01 END
+

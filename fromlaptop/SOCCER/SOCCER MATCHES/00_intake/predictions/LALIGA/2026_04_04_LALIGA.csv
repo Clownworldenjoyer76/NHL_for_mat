@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,LALIGA,,2026_04_04,02:15 PM,Real Madrid,Mallorca,60.9%,22.3%,16.8%,1.84,0.85,2.69
+soccer,LALIGA,,2026_04_04,04:30 PM,Espanyol,Betis,21.7%,22.6%,55.8%,1.08,1.86,2.94
+soccer,LALIGA,,2026_04_04,07:00 PM,Barcelona,Atletico Madrid,40.4%,28.4%,31.2%,1.23,1.05,2.28

@@ -1,0 +1,13 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_21,5:10 PM,Orlando Magic,Phoenix Suns,105,,,nba_moneyline,2.05,
+2026_02_21,5:10 PM,Phoenix Suns,Orlando Magic,-125,,,nba_moneyline,1.8,
+2026_02_21,7:10 PM,Philadelphia 76ers,New Orleans Pelicans,-155,,,nba_moneyline,1.6451612903225805,
+2026_02_21,7:10 PM,New Orleans Pelicans,Philadelphia 76ers,130,,,nba_moneyline,2.3,
+2026_02_21,8:10 PM,Detroit Pistons,Chicago Bulls,-575,,,nba_moneyline,1.1739130434782608,
+2026_02_21,8:10 PM,Chicago Bulls,Detroit Pistons,425,,,nba_moneyline,5.25,
+2026_02_21,8:10 PM,Sacramento Kings,San Antonio Spurs,1000,,,nba_moneyline,11.0,
+2026_02_21,8:10 PM,San Antonio Spurs,Sacramento Kings,-1800,,,nba_moneyline,1.0555555555555556,
+2026_02_21,8:10 PM,Memphis Grizzlies,Miami Heat,370,,,nba_moneyline,4.7,
+2026_02_21,8:10 PM,Miami Heat,Memphis Grizzlies,-485,,,nba_moneyline,1.2061855670103092,
+2026_02_21,8:40 PM,Houston Rockets,New York Knicks,136,,,nba_moneyline,2.3600000000000003,
+2026_02_21,8:40 PM,New York Knicks,Houston Rockets,-162,,,nba_moneyline,1.617283950617284,

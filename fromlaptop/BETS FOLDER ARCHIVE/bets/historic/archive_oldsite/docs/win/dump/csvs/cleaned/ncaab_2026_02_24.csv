@@ -1,0 +1,38 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds
+2026_02_24,ncaab,ncaab_2026_02_24_Washington_Huskies_Rutgers_Scarlet_Knights,Washington Huskies,Rutgers Scarlet Knights,0.679,0.321,76.1,70.5,146.6,1.4728,-211,1.4728,-211
+2026_02_24,ncaab,ncaab_2026_02_24_Miami_RedHawks_Eastern_Michigan_Eagles,Miami RedHawks,Eastern Michigan Eagles,0.893,0.107,84.7,72.3,157.0,1.1198,-834,1.1198,-834
+2026_02_24,ncaab,ncaab_2026_02_24_George_Washington_Colonials_La_Salle_Explorers,George Washington Colonials,La Salle Explorers,0.754,0.246,78.5,70.6,149.1,1.3263,-306,1.3263,-306
+2026_02_24,ncaab,ncaab_2026_02_24_Saint_Louis_Billikens_Dayton_Flyers,Saint Louis Billikens,Dayton Flyers,0.663,0.337,80.0,74.8,154.8,1.5083,-196,1.5083,-196
+2026_02_24,ncaab,ncaab_2026_02_24_Northwestern_Wildcats_Indiana_Hoosiers,Northwestern Wildcats,Indiana Hoosiers,0.194,0.806,70.5,79.7,150.2,5.1546,415,5.1546,415
+2026_02_24,ncaab,ncaab_2026_02_24_Duke_Blue_Devils_Notre_Dame_Fighting_Irish,Duke Blue Devils,Notre Dame Fighting Irish,0.938,0.062,81.7,65.8,147.5,1.0661,-1512,1.0661,-1512
+2026_02_24,ncaab,ncaab_2026_02_24_Marquette_Golden_Eagles_Georgetown_Hoyas,Marquette Golden Eagles,Georgetown Hoyas,0.397,0.603,73.3,76.6,149.9,2.5189,151,2.5189,151
+2026_02_24,ncaab,ncaab_2026_02_24_NC_State_Wolfpack_Virginia_Cavaliers,NC State Wolfpack,Virginia Cavaliers,0.341,0.659,74.0,79.1,153.1,2.9326,193,2.9326,193
+2026_02_24,ncaab,ncaab_2026_02_24_Wake_Forest_Demon_Deacons_Boston_College_Eagles,Wake Forest Demon Deacons,Boston College Eagles,0.674,0.326,76.7,71.2,147.9,1.4837,-206,1.4837,-206
+2026_02_24,ncaab,ncaab_2026_02_24_Cincinnati_Bearcats_Texas_Tech_Red_Raiders,Cincinnati Bearcats,Texas Tech Red Raiders,0.241,0.759,70.7,78.6,149.3,4.1494,314,4.1494,314
+2026_02_24,ncaab,ncaab_2026_02_24_West_Virginia_Mountaineers_Oklahoma_State_Cowboys,West Virginia Mountaineers,Oklahoma State Cowboys,0.443,0.557,74.5,76.7,151.2,2.2573,125,2.2573,125
+2026_02_24,ncaab,ncaab_2026_02_24_Kentucky_Wildcats_South_Carolina_Gamecocks,Kentucky Wildcats,South Carolina Gamecocks,0.757,0.243,83.5,75.6,159.1,1.321,-311,1.321,-311
+2026_02_24,ncaab,ncaab_2026_02_24_Old_Dominion_Monarchs_Marshall_Thundering_Herd,Old Dominion Monarchs,Marshall Thundering Herd,0.236,0.764,73.9,82.0,155.9,4.2373,323,4.2373,323
+2026_02_24,ncaab,ncaab_2026_02_24_Buffalo_Bulls_Akron_Zips,Buffalo Bulls,Akron Zips,0.109,0.891,74.8,87.1,161.9,9.1743,817,9.1743,817
+2026_02_24,ncaab,ncaab_2026_02_24_UMass_Minutemen_Ball_State_Cardinals,UMass Minutemen,Ball State Cardinals,0.716,0.284,78.7,72.0,150.7,1.3966,-252,1.3966,-252
+2026_02_24,ncaab,ncaab_2026_02_24_Central_Michigan_Chippewas_Kent_State_Golden_Flashes,Central Michigan Chippewas,Kent State Golden Flashes,0.137,0.863,72.5,83.5,156.0,7.2993,629,7.2993,629
+2026_02_24,ncaab,ncaab_2026_02_24_Western_Michigan_Broncos_Bowling_Green_Falcons,Western Michigan Broncos,Bowling Green Falcons,0.161,0.839,72.0,82.3,154.3,6.2112,521,6.2112,521
+2026_02_24,ncaab,ncaab_2026_02_24_Louisiana_Ragin_Cajuns_Troy_Trojans,Louisiana Ragin Cajuns,Troy Trojans,0.14,0.86,63.0,74.1,137.1,7.1429,614,7.1429,614
+2026_02_24,ncaab,ncaab_2026_02_24_Northern_Illinois_Huskies_Toledo_Rockets,Northern Illinois Huskies,Toledo Rockets,0.132,0.868,72.9,84.2,157.1,7.5758,657,7.5758,657
+2026_02_24,ncaab,ncaab_2026_02_24_Xavier_Musketeers_Providence_Friars,Xavier Musketeers,Providence Friars,0.334,0.666,79.8,85.1,164.9,2.994,199,2.994,199
+2026_02_24,ncaab,ncaab_2026_02_24_Coastal_Carolina_Chanticleers_Georgia_State_Panthers,Coastal Carolina Chanticleers,Georgia State Panthers,0.554,0.446,73.3,71.1,144.4,1.8051,-124,1.8051,-124
+2026_02_24,ncaab,ncaab_2026_02_24_Southern_Indiana_Screaming_Eagles_Morehead_State_Eagles,Southern Indiana Screaming Eagles,Morehead State Eagles,0.253,0.747,66.4,74.0,140.4,3.9526,295,3.9526,295
+2026_02_24,ncaab,ncaab_2026_02_24_Bradley_University_Braves_Illinois_Chicago,Bradley University Braves,Illinois Chicago,0.483,0.517,71.8,72.7,144.5,2.0704,107,2.0704,107
+2026_02_24,ncaab,ncaab_2026_02_24_Southern_Miss_Golden_Eagles_Arkansas_State_Red_Wolves,Southern Miss Golden Eagles,Arkansas State Red Wolves,0.224,0.776,73.1,81.5,154.6,4.4643,346,4.4643,346
+2026_02_24,ncaab,ncaab_2026_02_24_Minnesota_Golden_Gophers_Michigan_Wolverines,Minnesota Golden Gophers,Michigan Wolverines,0.036,0.964,66.1,85.5,151.6,27.7778,2677,27.7778,2677
+2026_02_24,ncaab,ncaab_2026_02_24_Iowa_State_Cyclones_Utah_Utes,Iowa State Cyclones,Utah Utes,0.901,0.099,84.0,70.9,154.9,1.1099,-909,1.1099,-909
+2026_02_24,ncaab,ncaab_2026_02_24_Auburn_Tigers_Oklahoma_Sooners,Auburn Tigers,Oklahoma Sooners,0.594,0.406,85.4,82.1,167.5,1.6835,-146,1.6835,-146
+2026_02_24,ncaab,ncaab_2026_02_24_Fresno_State_Bulldogs_Colorado_State_Rams,Fresno State Bulldogs,Colorado State Rams,0.2,0.8,68.8,77.9,146.7,5.0,400,5.0,400
+2026_02_24,ncaab,ncaab_2026_02_24_San_Jose_State_Spartans_Air_Force_Falcons,San Jose State Spartans,Air Force Falcons,0.611,0.389,71.1,67.5,138.6,1.6367,-157,1.6367,-157
+2026_02_24,ncaab,ncaab_2026_02_24_Miami_Hurricanes_Florida_State_Seminoles,Miami Hurricanes,Florida State Seminoles,0.619,0.381,82.1,78.4,160.5,1.6155,-162,1.6155,-162
+2026_02_24,ncaab,ncaab_2026_02_24_Arizona_State_Sun_Devils_TCU_Horned_Frogs,Arizona State Sun Devils,TCU Horned Frogs,0.277,0.723,73.7,80.7,154.4,3.6101,261,3.6101,261
+2026_02_24,ncaab,ncaab_2026_02_24_Arizona_Wildcats_Baylor_Bears,Arizona Wildcats,Baylor Bears,0.804,0.196,85.4,76.2,161.6,1.2438,-410,1.2438,-410
+2026_02_24,ncaab,ncaab_2026_02_24_Wyoming_Cowboys_Boise_State_Broncos,Wyoming Cowboys,Boise State Broncos,0.254,0.746,70.9,78.6,149.5,3.937,293,3.937,293
+2026_02_24,ncaab,ncaab_2026_02_24_Tennessee_Volunteers_Missouri_Tigers,Tennessee Volunteers,Missouri Tigers,0.67,0.33,81.1,75.7,156.8,1.4925,-203,1.4925,-203
+2026_02_24,ncaab,ncaab_2026_02_24_USC_Trojans_UCLA_Bruins,USC Trojans,UCLA Bruins,0.298,0.702,73.0,78.9,151.9,3.3557,235,3.3557,235
+2026_02_24,ncaab,ncaab_2026_02_24_UCF_Knights_Brigham_Young_Cougars,UCF Knights,Brigham Young Cougars,0.184,0.816,77.5,87.2,164.7,5.4348,443,5.4348,443
+2026_02_24,ncaab,ncaab_2026_02_24_New_Mexico_Lobos_Nevada_Wolf_Pack,New Mexico Lobos,Nevada Wolf Pack,0.538,0.462,74.7,73.1,147.8,1.8587,-116,1.8587,-116

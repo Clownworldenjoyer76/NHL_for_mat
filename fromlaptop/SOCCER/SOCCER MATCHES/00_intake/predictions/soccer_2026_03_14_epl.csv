@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,epl,2026_03_14,13:30,Arsenal,Everton,0.744000,0.160000,0.096000,2.42,0.75,3.17
+Soccer,epl,2026_03_14,11:00,Burnley,Bournemouth,0.231000,0.263000,0.506000,0.91,1.48,2.39
+Soccer,epl,2026_03_14,13:30,Chelsea,Newcastle,0.516000,0.244000,0.239000,1.66,1.05,2.71
+Soccer,epl,2026_03_14,11:00,Sunderland,Brighton,0.285000,0.279000,0.436000,1.00,1.31,2.31
+Soccer,epl,2026_03_14,16:00,West Ham,Manchester City,0.202000,0.217000,0.581000,1.07,1.95,3.02

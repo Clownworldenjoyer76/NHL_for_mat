@@ -1,0 +1,7 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_02_21,5:10 PM,nba_moneyline,nba_2026_02_21_Orlando_Magic_Phoenix_Suns,Orlando Magic,Phoenix Suns,,,,,105,-125
+2026_02_21,7:10 PM,nba_moneyline,nba_2026_02_21_Philadelphia_76ers_New_Orleans_Pelicans,Philadelphia 76ers,New Orleans Pelicans,,,,,-155,130
+2026_02_21,8:10 PM,nba_moneyline,nba_2026_02_21_Sacramento_Kings_San_Antonio_Spurs,Sacramento Kings,San Antonio Spurs,,,,,1000,-1800
+2026_02_21,8:10 PM,nba_moneyline,nba_2026_02_21_Memphis_Grizzlies_Miami_Heat,Memphis Grizzlies,Miami Heat,,,,,370,-485
+2026_02_21,8:10 PM,nba_moneyline,nba_2026_02_21_Detroit_Pistons_Chicago_Bulls,Detroit Pistons,Chicago Bulls,,,,,-575,425
+2026_02_21,8:40 PM,nba_moneyline,nba_2026_02_21_Houston_Rockets_New_York_Knicks,Houston Rockets,New York Knicks,,,,,136,-162

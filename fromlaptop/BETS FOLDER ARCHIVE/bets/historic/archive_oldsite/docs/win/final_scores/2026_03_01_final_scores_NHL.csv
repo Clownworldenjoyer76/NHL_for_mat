@@ -1,0 +1,7 @@
+game_date,league,market,away_team,home_team,away_score,home_score,total,away_spread,home_spread,away_puck_line,home_puck_line
+2026_03_01,Hockey,NHL,Calgary Flames,Anaheim Ducks,2,3,5,,,1,-1
+2026_03_01,Hockey,NHL,Florida Panthers,New York Islanders,4,5,9,,,1,-1
+2026_03_01,Hockey,NHL,St. Louis Blues,Minnesota Wild,3,1,4,,,-2,2
+2026_03_01,Hockey,NHL,Winnipeg Jets,San Jose Sharks,1,2,3,,,1,-1
+2026_03_01,Hockey,NHL,Chicago Blackhawks,Utah Mammoth,4,0,4,,,-4,4
+2026_03_01,Hockey,NHL,Vegas Golden Knights,Pittsburgh Penguins,0,5,5,,,5,-5

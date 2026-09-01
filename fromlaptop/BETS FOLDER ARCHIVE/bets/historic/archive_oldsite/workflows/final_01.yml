@@ -1,0 +1,99 @@
+name: 08 Final Pipeline (final_01 → final_06)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-final-step-01:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Prepare final pipeline report directory
+        run: |
+          set -euo pipefail
+          mkdir -p docs/win/errors/08_Final_Pipeline
+
+      - name: Run final_01 script
+        run: |
+          echo "=== RUNNING final_01 ==="
+          set +e
+          python scripts/final_01.py > docs/win/errors/08_Final_Pipeline/final_01.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Run final_02 script
+        run: |
+          echo "=== RUNNING final_02 ==="
+          set +e
+          python scripts/final_02.py > docs/win/errors/08_Final_Pipeline/final_02.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Run final_03 script
+        run: |
+          echo "=== RUNNING final_03 ==="
+          set +e
+          python scripts/final_03.py > docs/win/errors/08_Final_Pipeline/final_03.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Run final_04 script
+        run: |
+          echo "=== RUNNING final_04 ==="
+          set +e
+          python scripts/final_04.py > docs/win/errors/08_Final_Pipeline/final_04.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Run final_05 script
+        run: |
+          echo "=== RUNNING final_05 ==="
+          set +e
+          python scripts/final_05.py > docs/win/errors/08_Final_Pipeline/final_05.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Run final_06 script
+        run: |
+          echo "=== RUNNING final_06 ==="
+          set +e
+          python scripts/final_06.py > docs/win/errors/08_Final_Pipeline/final_06.txt 2>&1
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -ne 0 ]; then exit $EXIT_CODE; fi
+
+      - name: Commit and push results
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          if git status --porcelain | grep .; then
+            git add docs/win/final docs/win/errors/08_Final_Pipeline
+            git commit -m "Generate final pipeline outputs + reports"
+            git push
+          else
+            echo "No changes to commit"
+          fi

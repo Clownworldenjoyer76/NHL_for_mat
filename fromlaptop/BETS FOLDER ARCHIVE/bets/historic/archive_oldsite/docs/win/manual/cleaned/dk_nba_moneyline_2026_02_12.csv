@@ -1,0 +1,7 @@
+date,time,team,opponent,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_12,07:30PM,Oklahoma City Thunder,Milwaukee Bucks,-750,0.68,0.74,nba_moneyline,1.1333333333333333,
+2026_02_12,07:30PM,Milwaukee Bucks,Oklahoma City Thunder,525,0.32,0.26,nba_moneyline,6.25,
+2026_02_12,09:00PM,Utah Jazz,Portland Trail Blazers,245,0.53,0.41,nba_moneyline,3.45,
+2026_02_12,09:00PM,Portland Trail Blazers,Utah Jazz,-305,0.47,0.59,nba_moneyline,1.3278688524590163,
+2026_02_12,10:00PM,Los Angeles Lakers,Dallas Mavericks,-285,0.59,0.74,nba_moneyline,1.3508771929824561,
+2026_02_12,10:00PM,Dallas Mavericks,Los Angeles Lakers,230,0.41,0.26,nba_moneyline,3.3,

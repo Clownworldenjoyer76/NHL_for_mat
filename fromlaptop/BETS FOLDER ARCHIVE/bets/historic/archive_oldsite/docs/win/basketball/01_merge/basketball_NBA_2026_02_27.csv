@@ -1,0 +1,6 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_points,home_projected_points,total_projected_points,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NBA,2026_02_27,06:10 PM,Detroit Pistons,Cleveland Cavaliers,2026_02_27_Detroit Pistons_Cleveland Cavaliers,0.668000,0.332000,112.1,117.3,229.4,+5.5,-5.5,226.5,-102,-118,-115,-105,+200,-245
+Basketball,NBA,2026_02_27,06:40 PM,Boston Celtics,Brooklyn Nets,2026_02_27_Boston Celtics_Brooklyn Nets,0.902000,0.098000,99.3,112.4,211.7,+17.5,-17.5,210.5,-108,-112,-105,-115,+850,-1450
+Basketball,NBA,2026_02_27,07:10 PM,Milwaukee Bucks,New York Knicks,2026_02_27_Milwaukee Bucks_New York Knicks,0.291000,0.709000,114.0,107.8,221.8,-8.5,+8.5,218.5,-115,-105,-110,-110,-325,+260
+Basketball,NBA,2026_02_27,07:40 PM,Dallas Mavericks,Memphis Grizzlies,2026_02_27_Dallas Mavericks_Memphis Grizzlies,0.622000,0.378000,118.2,122.2,240.4,+3.5,-3.5,238.5,-102,-118,-105,-115,+150,-180
+Basketball,NBA,2026_02_27,08:40 PM,Oklahoma City Thunder,Denver Nuggets,2026_02_27_Oklahoma City Thunder_Denver Nuggets,0.744000,0.256000,112.3,119.9,232.2,+8.5,-8.5,233.5,-118,-102,-112,-108,+250,-310

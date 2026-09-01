@@ -1,0 +1,13 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league,decimal_odds,game_id
+2026_02_23,7:10 PM,San Antonio Spurs,Detroit Pistons,Over,231.5,-115,,,nba_totals,1.8695652173913042,
+2026_02_23,7:10 PM,San Antonio Spurs,Detroit Pistons,Under,231.5,-105,,,nba_totals,1.9523809523809523,
+2026_02_23,7:10 PM,Detroit Pistons,San Antonio Spurs,Over,231.5,-115,,,nba_totals,1.8695652173913042,
+2026_02_23,7:10 PM,Detroit Pistons,San Antonio Spurs,Under,231.5,-105,,,nba_totals,1.9523809523809523,
+2026_02_23,8:10 PM,Sacramento Kings,Memphis Grizzlies,Over,233.5,-108,,,nba_totals,1.925925925925926,
+2026_02_23,8:10 PM,Sacramento Kings,Memphis Grizzlies,Under,233.5,-112,,,nba_totals,1.8928571428571428,
+2026_02_23,8:10 PM,Memphis Grizzlies,Sacramento Kings,Over,233.5,-108,,,nba_totals,1.925925925925926,
+2026_02_23,8:10 PM,Memphis Grizzlies,Sacramento Kings,Under,233.5,-112,,,nba_totals,1.8928571428571428,
+2026_02_23,9:40 PM,Utah Jazz,Houston Rockets,Over,228.5,-108,,,nba_totals,1.925925925925926,
+2026_02_23,9:40 PM,Utah Jazz,Houston Rockets,Under,228.5,-112,,,nba_totals,1.8928571428571428,
+2026_02_23,9:40 PM,Houston Rockets,Utah Jazz,Over,228.5,-108,,,nba_totals,1.925925925925926,
+2026_02_23,9:40 PM,Houston Rockets,Utah Jazz,Under,228.5,-112,,,nba_totals,1.8928571428571428,

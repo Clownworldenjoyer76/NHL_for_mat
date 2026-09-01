@@ -1,0 +1,7 @@
+league,market,game_date,game_time,home_team,away_team,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NBA,2026_03_02,7:10 PM,Washington Wizards,Houston Rockets,-15.5,+15.5,224.5,-110,-110,-110,-110,-1200,+750
+Basketball,NBA,2026_03_02,7:40 PM,Milwaukee Bucks,Boston Celtics,-7.5,+7.5,215.5,-110,-110,-110,-110,-310,+250
+Basketball,NBA,2026_03_02,9:10 PM,Utah Jazz,Denver Nuggets,-11.5,+11.5,244.5,-115,-105,-110,-110,-550,+410
+Basketball,NBA,2026_03_02,10:10 PM,Golden State Warriors,Los Angeles Clippers,-1.5,+1.5,216.5,-115,-105,-110,-110,-122,+102
+Basketball,NBA,2026_03_02,7:30 PM,Toronto Raptors,New York Knicks,-1.5,+1.5,223.5,-110,-110,-110,-110,-125,+105
+Basketball,NBA,2026_03_02,8:00 PM,Philadelphia 76ers,San Antonio Spurs,-6.5,+6.5,231.5,-102,-118,-110,-110,-230,+190

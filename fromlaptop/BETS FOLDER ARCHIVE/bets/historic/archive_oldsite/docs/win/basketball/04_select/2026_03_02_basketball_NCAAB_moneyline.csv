@@ -1,0 +1,7 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_02,Basketball,Coppin State Eagles,Howard Bison,moneyline,away,,2026_03_02_Coppin State Eagles_Howard Bison,moneyline,away_ml,1282,away,0.079,2.1784,0.157608381084679
+2026_03_02,Basketball,Southeastern Louisiana Lions,New Orleans Privateers,moneyline,away,,2026_03_02_Southeastern Louisiana Lions_New Orleans Privateers,moneyline,away_ml,271,away,0.29,0.1394999999999999,0.0375960113192292
+2026_03_02,Basketball,Montana Grizzlies,Northern Colorado Bears,moneyline,away,,2026_03_02_Montana Grizzlies_Northern Colorado Bears,moneyline,away_ml,204,away,0.352,0.1604000000000001,0.0527701013291222
+2026_03_02,Basketball,Lamar Cardinals,Houston Christian Huskies,moneyline,away,,2026_03_02_Lamar Cardinals_Houston Christian Huskies,moneyline,away_ml,-126,away,0.581,0.0525795783381561,0.0292942344321837
+2026_03_02,Basketball,Idaho Vandals,Eastern Washington Eagles,moneyline,away,,2026_03_02_Idaho Vandals_Eastern Washington Eagles,moneyline,away_ml,114,away,0.486,0.2216,0.1036288814066591
+2026_03_02,Basketball,Idaho State Bengals,Sacramento State Hornets,moneyline,away,,2026_03_02_Idaho State Bengals_Sacramento State Hornets,moneyline,away_ml,-120,away,0.567,0.2138461538461533,0.1164641809803097

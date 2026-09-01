@@ -1,0 +1,2 @@
+=== parsing_combine run @ 2026-02-23T19:40:26.259991 ===
+Combine skipped (0 or 1 market file present).

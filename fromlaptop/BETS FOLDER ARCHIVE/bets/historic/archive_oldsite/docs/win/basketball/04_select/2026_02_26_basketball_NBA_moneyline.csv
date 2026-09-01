@@ -1,0 +1,4 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,Charlotte Hornets,Indiana Pacers,moneyline,home,,2026_02_26_Indiana Pacers_Charlotte Hornets,moneyline,home_ml,338,home,0.192,2.1217187500000003,0.4846008350879698
+2026_02_26,Basketball,Washington Wizards,Atlanta Hawks,moneyline,away,,2026_02_26_Atlanta Hawks_Washington Wizards,moneyline,away_ml,373,away,0.195,0.3701538461538467,0.0782591725214677
+2026_02_26,Basketball,Portland Trail Blazers,Chicago Bulls,moneyline,home,,2026_02_26_Chicago Bulls_Portland Trail Blazers,moneyline,home_ml,132,home,0.383,0.1798563968668398,0.0775195106992338

@@ -1,0 +1,7 @@
+league,market,game_date,game_time,home_team,away_team,game_id,home_prob,away_prob,away_projected_goals,home_projected_goals,total_projected_goals,away_puck_line,home_puck_line,total,away_dk_puck_line_american,home_dk_puck_line_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+hockey,NHL,2026_03_01,01:07 PM,Pittsburgh Penguins,Vegas Golden Knights,2026_03_01_Pittsburgh Penguins_Vegas Golden Knights,0.425000,0.575000,3.56,2.76,6.32,-1.5,+1.5,6.5,+164,-198,+100,-120,-148,+124
+hockey,NHL,2026_03_01,04:07 PM,San Jose Sharks,Winnipeg Jets,2026_03_01_San Jose Sharks_Winnipeg Jets,0.429000,0.571000,3.45,2.68,6.13,-1.5,+1.5,6.5,+205,-250,+100,-120,-120,+100
+hockey,NHL,2026_03_01,04:07 PM,Utah Mammoth,Chicago Blackhawks,2026_03_01_Utah Mammoth_Chicago Blackhawks,0.740000,0.260000,2.15,3.71,5.86,+1.5,-1.5,6.5,-105,-115,+105,-125,+250,-310
+hockey,NHL,2026_03_01,05:07 PM,Minnesota Wild,St. Louis Blues,2026_03_01_Minnesota Wild_St. Louis Blues,0.667000,0.333000,2.26,3.52,5.78,+1.5,-1.5,5.5,-122,+102,-135,+114,+200,-245
+hockey,NHL,2026_03_01,06:37 PM,New York Islanders,Florida Panthers,2026_03_01_New York Islanders_Florida Panthers,0.474000,0.526000,3.03,2.75,5.78,-1.5,+1.5,5.5,+180,-218,-130,+110,-142,+120
+hockey,NHL,2026_03_01,08:07 PM,Anaheim Ducks,Calgary Flames,2026_03_01_Anaheim Ducks_Calgary Flames,0.621000,0.379000,2.67,3.76,6.43,+1.5,-1.5,6.5,-170,+142,+100,-120,+150,-180

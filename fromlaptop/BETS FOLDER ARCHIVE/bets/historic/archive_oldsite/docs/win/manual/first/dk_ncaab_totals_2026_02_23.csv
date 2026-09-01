@@ -1,0 +1,37 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-02-23,7:00 PM,Louisville,North Carolina,Over,162.5,-108,,,ncaab
+2026-02-23,7:00 PM,Louisville,North Carolina,Under,162.5,-112,,,ncaab
+2026-02-23,7:00 PM,North Carolina,Louisville,Over,162.5,-108,,,ncaab
+2026-02-23,7:00 PM,North Carolina,Louisville,Under,162.5,-112,,,ncaab
+2026-02-23,7:00 PM,A&M-Corpus Christi,SE Louisiana,Over,130.5,-115,,,ncaab
+2026-02-23,7:00 PM,A&M-Corpus Christi,SE Louisiana,Under,130.5,-105,,,ncaab
+2026-02-23,7:00 PM,SE Louisiana,A&M-Corpus Christi,Over,130.5,-115,,,ncaab
+2026-02-23,7:00 PM,SE Louisiana,A&M-Corpus Christi,Under,130.5,-105,,,ncaab
+2026-02-23,7:00 PM,Nicholls State,Lamar,Over,144.5,-115,,,ncaab
+2026-02-23,7:00 PM,Nicholls State,Lamar,Under,144.5,-105,,,ncaab
+2026-02-23,7:00 PM,Lamar,Nicholls State,Over,144.5,-115,,,ncaab
+2026-02-23,7:00 PM,Lamar,Nicholls State,Under,144.5,-105,,,ncaab
+2026-02-23,7:30 PM,New Orleans,Stephen F. Austin,Over,150.5,-105,,,ncaab
+2026-02-23,7:30 PM,New Orleans,Stephen F. Austin,Under,150.5,-115,,,ncaab
+2026-02-23,7:30 PM,Stephen F. Austin,New Orleans,Over,150.5,-105,,,ncaab
+2026-02-23,7:30 PM,Stephen F. Austin,New Orleans,Under,150.5,-115,,,ncaab
+2026-02-23,7:30 PM,Incarnate Word,Northwestern State,Over,138.5,-115,,,ncaab
+2026-02-23,7:30 PM,Incarnate Word,Northwestern State,Under,138.5,-105,,,ncaab
+2026-02-23,7:30 PM,Northwestern State,Incarnate Word,Over,138.5,-115,,,ncaab
+2026-02-23,7:30 PM,Northwestern State,Incarnate Word,Under,138.5,-105,,,ncaab
+2026-02-23,7:30 PM,Houston Christian,East Texas A&M,Over,137.5,-112,,,ncaab
+2026-02-23,7:30 PM,Houston Christian,East Texas A&M,Under,137.5,-108,,,ncaab
+2026-02-23,7:30 PM,East Texas A&M,Houston Christian,Over,137.5,-112,,,ncaab
+2026-02-23,7:30 PM,East Texas A&M,Houston Christian,Under,137.5,-108,,,ncaab
+2026-02-23,7:30 PM,UT Rio Grande Valley,McNeese,Over,143.5,-112,,,ncaab
+2026-02-23,7:30 PM,UT Rio Grande Valley,McNeese,Under,143.5,-108,,,ncaab
+2026-02-23,7:30 PM,McNeese,UT Rio Grande Valley,Over,143.5,-112,,,ncaab
+2026-02-23,7:30 PM,McNeese,UT Rio Grande Valley,Under,143.5,-108,,,ncaab
+2026-02-23,8:00 PM,Mississippi Valley,Grambling,Over,135.5,-110,,,ncaab
+2026-02-23,8:00 PM,Mississippi Valley,Grambling,Under,135.5,-110,,,ncaab
+2026-02-23,8:00 PM,Grambling,Mississippi Valley,Over,135.5,-110,,,ncaab
+2026-02-23,8:00 PM,Grambling,Mississippi Valley,Under,135.5,-110,,,ncaab
+2026-02-23,9:00 PM,Houston,Kansas,Over,138.5,-108,,,ncaab
+2026-02-23,9:00 PM,Houston,Kansas,Under,138.5,-112,,,ncaab
+2026-02-23,9:00 PM,Kansas,Houston,Over,138.5,-108,,,ncaab
+2026-02-23,9:00 PM,Kansas,Houston,Under,138.5,-112,,,ncaab

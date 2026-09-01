@@ -1,0 +1,3 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_02,Basketball,Boston Celtics,Milwaukee Bucks,total,over,215.5,2026_03_02_Boston Celtics_Milwaukee Bucks,total,over_bet,-130,over,215.5,0.1425311024901099,0.080682862792156
+2026_03_02,Basketball,Los Angeles Clippers,Golden State Warriors,total,over,216.5,2026_03_02_Los Angeles Clippers_Golden State Warriors,total,over_bet,-130,over,216.5,0.1425311024901099,0.080682862792156

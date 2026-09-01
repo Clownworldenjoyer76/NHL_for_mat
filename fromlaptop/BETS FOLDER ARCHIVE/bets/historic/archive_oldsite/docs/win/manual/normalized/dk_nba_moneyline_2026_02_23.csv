@@ -1,0 +1,4 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_02_23,7:10 PM,nba_moneyline,nba_2026_02_23_San_Antonio_Spurs_Detroit_Pistons,San Antonio Spurs,Detroit Pistons,,,,,-102,-118
+2026_02_23,8:10 PM,nba_moneyline,nba_2026_02_23_Sacramento_Kings_Memphis_Grizzlies,Sacramento Kings,Memphis Grizzlies,,,,,145,-175
+2026_02_23,9:40 PM,nba_moneyline,nba_2026_02_23_Utah_Jazz_Houston_Rockets,Utah Jazz,Houston Rockets,,,,,575,-850

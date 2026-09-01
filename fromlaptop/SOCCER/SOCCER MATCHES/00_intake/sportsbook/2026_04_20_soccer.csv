@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,33657522,2026_20_04,08:00 PM,Crystal Palace,West Ham United,2.207,3.077,3.656,1.845,1.988,2.897,1.406,1.65,2.1

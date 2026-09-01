@@ -1,0 +1,3 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob
+soccer,laliga,2026_02_22,12:30 PM,Celta Vigo,Mallorca,0.541000,0.249000,0.210000
+soccer,laliga,2026_02_22,03:00 PM,Villarreal,Valencia,0.638000,0.204000,0.158000

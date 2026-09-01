@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,epl,2026_03_14,1:30 PM,Arsenal,Everton,-250,+370,+750
+Soccer,epl,2026_03_14,11:00 AM,Burnley,Bournemouth,+330,+290,-125
+Soccer,epl,2026_03_14,1:30 PM,Chelsea,Newcastle,-120,+300,+290
+Soccer,epl,2026_03_14,11:00 AM,Sunderland,Brighton,+250,+235,+115
+Soccer,epl,2026_03_14,4:00 PM,West Ham,Manchester City,+360,+320,-145

@@ -1,0 +1,7 @@
+MY_BETS_CLEAN_01 SUMMARY
+=========================
+
+Files processed: 7
+Rows in: 165
+Rows out: 157
+Rows dropped (multi-leg): 8

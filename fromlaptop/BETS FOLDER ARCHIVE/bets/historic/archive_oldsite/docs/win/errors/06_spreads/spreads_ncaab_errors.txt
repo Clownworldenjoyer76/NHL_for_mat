@@ -1,0 +1,30 @@
+2026-03-01T15:04:01.355254Z | === NCAAB SPREADS RUN START ===
+2026-03-01T15:04:01.355348Z | repo_root=/home/runner/work/bet_tracker/bet_tracker
+2026-03-01T15:04:01.355469Z | cwd=/home/runner/work/bet_tracker/bet_tracker
+2026-03-01T15:04:01.355567Z | cleaned_dir=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned exists=True
+2026-03-01T15:04:01.355654Z | normalized_dir=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized exists=True
+2026-03-01T15:04:01.355731Z | output_dir=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads exists=True
+2026-03-01T15:04:01.355812Z | error_log=/home/runner/work/bet_tracker/bet_tracker/docs/win/errors/06_spreads/spreads_ncaab_errors.txt exists=True
+2026-03-01T15:04:01.356145Z | projection_files_count=5
+2026-03-01T15:04:01.356260Z | file=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned/ncaab_2026_02_23.csv date_suffix=2026_02_23
+2026-03-01T15:04:01.356352Z | dk_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized/dk_ncaab_spreads_2026_02_23.csv exists=True out_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_23.csv
+2026-03-01T15:04:01.361731Z | merged_rows=9 dk_rows=9 proj_rows=9
+2026-03-01T15:04:01.367337Z | WROTE | /home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_23.csv rows=9
+2026-03-01T15:04:01.367464Z | file=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned/ncaab_2026_02_24.csv date_suffix=2026_02_24
+2026-03-01T15:04:01.367576Z | dk_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized/dk_ncaab_spreads_2026_02_24.csv exists=True out_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_24.csv
+2026-03-01T15:04:01.371654Z | merged_rows=35 dk_rows=35 proj_rows=37
+2026-03-01T15:04:01.378383Z | WROTE | /home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_24.csv rows=35
+2026-03-01T15:04:01.378507Z | file=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned/ncaab_2026_02_26.csv date_suffix=2026_02_26
+2026-03-01T15:04:01.378614Z | dk_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized/dk_ncaab_spreads_2026_02_26.csv exists=True out_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_26.csv
+2026-03-01T15:04:01.382649Z | merged_rows=54 dk_rows=54 proj_rows=56
+2026-03-01T15:04:01.390895Z | WROTE | /home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_26.csv rows=54
+2026-03-01T15:04:01.391006Z | file=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned/ncaab_2026_02_27.csv date_suffix=2026_02_27
+2026-03-01T15:04:01.391114Z | dk_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized/dk_ncaab_spreads_2026_02_27.csv exists=True out_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_27.csv
+2026-03-01T15:04:01.394856Z | merged_rows=17 dk_rows=17 proj_rows=21
+2026-03-01T15:04:01.399951Z | WROTE | /home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_02_27.csv rows=17
+2026-03-01T15:04:01.400060Z | file=/home/runner/work/bet_tracker/bet_tracker/docs/win/dump/csvs/cleaned/ncaab_2026_03_01.csv date_suffix=2026_03_01
+2026-03-01T15:04:01.400163Z | dk_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/manual/normalized/dk_ncaab_spreads_2026_03_01.csv exists=True out_path=/home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_03_01.csv
+2026-03-01T15:04:01.403805Z | merged_rows=20 dk_rows=20 proj_rows=23
+2026-03-01T15:04:01.409350Z | WROTE | /home/runner/work/bet_tracker/bet_tracker/docs/win/ncaab/spreads/spreads_ncaab_2026_03_01.csv rows=20
+2026-03-01T15:04:01.409446Z | === SUMMARY | files_written=5 files_skipped=0 merge_empty=0 missing_dk=0 missing_cols=0 exceptions=0 total_merged_rows=135 ===
+2026-03-01T15:04:01.409525Z | === NCAAB SPREADS RUN END ===

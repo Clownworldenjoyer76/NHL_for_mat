@@ -1,0 +1,11 @@
+date,time,league,game_id,away_team,home_team,total,over_odds,under_odds,over_decimal_odds,under_decimal_odds,over_handle_pct,over_bets_pct,under_handle_pct,under_bets_pct
+2026_02_19,7:00 PM,nba_totals,nba_2026_02_19_Atlanta_Hawks_Philadelphia_76ers,Atlanta Hawks,Philadelphia 76ers,236.5,-112,-108,1.8928571428571428,1.925925925925926,,,,
+2026_02_19,7:00 PM,nba_totals,nba_2026_02_19_Brooklyn_Nets_Cleveland_Cavaliers,Brooklyn Nets,Cleveland Cavaliers,230.5,-108,-112,1.925925925925926,1.8928571428571428,,,,
+2026_02_19,7:00 PM,nba_totals,nba_2026_02_19_Houston_Rockets_Charlotte_Hornets,Houston Rockets,Charlotte Hornets,216.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_19,7:00 PM,nba_totals,nba_2026_02_19_Indiana_Pacers_Washington_Wizards,Indiana Pacers,Washington Wizards,232.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_19,7:30 PM,nba_totals,nba_2026_02_19_Detroit_Pistons_New_York_Knicks,Detroit Pistons,New York Knicks,223.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_19,8:00 PM,nba_totals,nba_2026_02_19_Toronto_Raptors_Chicago_Bulls,Toronto Raptors,Chicago Bulls,232.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_19,8:30 PM,nba_totals,nba_2026_02_19_Phoenix_Suns_San_Antonio_Spurs,Phoenix Suns,San Antonio Spurs,227.5,-108,-112,1.925925925925926,1.8928571428571428,,,,
+2026_02_19,10:00 PM,nba_totals,nba_2026_02_19_Boston_Celtics_Golden_State_Warriors,Boston Celtics,Golden State Warriors,213.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_19,10:00 PM,nba_totals,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,Orlando Magic,Sacramento Kings,224.5,-105,-115,1.9523809523809523,1.869565217391304,,,,
+2026_02_19,10:30 PM,nba_totals,nba_2026_02_19_Denver_Nuggets_Los_Angeles_Clippers,Denver Nuggets,Los Angeles Clippers,226.5,-108,-112,1.925925925925926,1.8928571428571428,,,,

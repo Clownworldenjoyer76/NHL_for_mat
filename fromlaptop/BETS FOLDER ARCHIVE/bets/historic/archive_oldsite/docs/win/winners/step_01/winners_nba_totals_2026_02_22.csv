@@ -1,0 +1,5 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds
+2026_02_22,5:10 PM,Dallas Mavericks,Indiana Pacers,nba_totals,nba_2026_02_22_Dallas_Mavericks_Indiana_Pacers,233.5,2.54,1.7936507936507935,1.9090909090909087,1.9090909090909087
+2026_02_22,6:40 PM,Boston Celtics,Los Angeles Lakers,nba_totals,nba_2026_02_22_Boston_Celtics_Los_Angeles_Lakers,229.5,1.9433962264150944,2.29,1.9523809523809523,1.869565217391304
+2026_02_22,7:10 PM,Philadelphia 76ers,Minnesota Timberwolves,nba_totals,nba_2026_02_22_Philadelphia_76ers_Minnesota_Timberwolves,238.5,2.37,1.8928571428571428,1.8928571428571428,1.925925925925926
+2026_02_22,8:10 PM,Portland Trail Blazers,Phoenix Suns,nba_totals,nba_2026_02_22_Portland_Trail_Blazers_Phoenix_Suns,222.5,1.869565217391304,2.41,1.9090909090909087,1.9090909090909087

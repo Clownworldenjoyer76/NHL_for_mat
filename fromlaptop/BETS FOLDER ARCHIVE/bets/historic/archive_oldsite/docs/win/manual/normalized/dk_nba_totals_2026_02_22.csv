@@ -1,0 +1,12 @@
+date,time,league,game_id,away_team,home_team,total,over_odds,under_odds,over_decimal_odds,under_decimal_odds,over_handle_pct,over_bets_pct,under_handle_pct,under_bets_pct
+2026_02_22,1:10 PM,nba_totals,nba_2026_02_22_Cleveland_Cavaliers_Oklahoma_City_Thunder,Cleveland Cavaliers,Oklahoma City Thunder,226.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,3:40 PM,nba_totals,nba_2026_02_22_Brooklyn_Nets_Atlanta_Hawks,Brooklyn Nets,Atlanta Hawks,228.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,3:40 PM,nba_totals,nba_2026_02_22_Denver_Nuggets_Golden_State_Warriors,Denver Nuggets,Golden State Warriors,229.5,-105,-115,1.9523809523809523,1.869565217391304,,,,
+2026_02_22,3:40 PM,nba_totals,nba_2026_02_22_Toronto_Raptors_Milwaukee_Bucks,Toronto Raptors,Milwaukee Bucks,219.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,5:10 PM,nba_totals,nba_2026_02_22_Dallas_Mavericks_Indiana_Pacers,Dallas Mavericks,Indiana Pacers,233.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,6:10 PM,nba_totals,nba_2026_02_22_Charlotte_Hornets_Washington_Wizards,Charlotte Hornets,Washington Wizards,226.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,6:40 PM,nba_totals,nba_2026_02_22_Boston_Celtics_Los_Angeles_Lakers,Boston Celtics,Los Angeles Lakers,229.5,-105,-115,1.9523809523809523,1.869565217391304,,,,
+2026_02_22,7:10 PM,nba_totals,nba_2026_02_22_Philadelphia_76ers_Minnesota_Timberwolves,Philadelphia 76ers,Minnesota Timberwolves,238.5,-112,-108,1.8928571428571428,1.925925925925926,,,,
+2026_02_22,8:10 PM,nba_totals,nba_2026_02_22_Portland_Trail_Blazers_Phoenix_Suns,Portland Trail Blazers,Phoenix Suns,222.5,-110,-110,1.9090909090909087,1.9090909090909087,,,,
+2026_02_22,8:10 PM,nba_totals,nba_2026_02_22_New_York_Knicks_Chicago_Bulls,New York Knicks,Chicago Bulls,231.5,-115,-105,1.869565217391304,1.9523809523809523,,,,
+2026_02_22,9:10 PM,nba_totals,nba_2026_02_22_Orlando_Magic_Los_Angeles_Clippers,Orlando Magic,Los Angeles Clippers,215.5,-112,-108,1.8928571428571428,1.925925925925926,,,,

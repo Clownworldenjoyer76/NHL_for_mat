@@ -1,0 +1,6 @@
+date,time,away_team,home_team,league,game_id,away_spread,home_spread,deci_home_spread_juice_odds,deci_away_spread_juice_odds,deci_dk_away_odds,deci_dk_home_odds
+2026_02_20,7:10 PM,Utah Jazz,Memphis Grizzlies,nba_spreads,nba_2026_02_20_Utah_Jazz_Memphis_Grizzlies,1.5,-1.5,1.7936507936507935,2.51,1.8928571428571428,1.847457627118644
+2026_02_20,7:10 PM,Indiana Pacers,Washington Wizards,nba_spreads,nba_2026_02_20_Indiana_Pacers_Washington_Wizards,-1.5,1.5,1.8928571428571428,2.35,1.925925925925926,1.9523809523809523
+2026_02_20,7:40 PM,Dallas Mavericks,Minnesota Timberwolves,nba_spreads,nba_2026_02_20_Dallas_Mavericks_Minnesota_Timberwolves,13.5,-13.5,3.23,1.5208333333333337,1.8928571428571428,1.869565217391304
+2026_02_20,8:10 PM,Brooklyn Nets,Oklahoma City Thunder,nba_spreads,nba_2026_02_20_Brooklyn_Nets_Oklahoma_City_Thunder,16.5,-16.5,3.52,1.4926108374384237,1.8928571428571428,1.8928571428571428
+2026_02_20,10:10 PM,Los Angeles Clippers,Los Angeles Lakers,nba_spreads,nba_2026_02_20_Los_Angeles_Clippers_Los_Angeles_Lakers,6.5,-6.5,2.52,1.8,1.9523809523809523,1.8333333333333333

@@ -1,0 +1,6 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_24,Basketball,Northern Illinois Huskies,Toledo Rockets,total,over,150.5,2026_02_24_Toledo Rockets_Northern Illinois Huskies,total,over_bet,-136,over,150.5,0.2195097016908953,0.1266739820419336
+2026_02_24,Basketball,Coastal Carolina Chanticleers,Georgia State Panthers,total,over,139.5,2026_02_24_Georgia State Panthers_Coastal Carolina Chanticleers,total,over_bet,-136,over,139.5,0.1321167883211675,0.0760406962938606
+2026_02_24,Basketball,Southern Miss Golden Eagles,Arkansas State Red Wolves,total,under,158.5,2026_02_24_Arkansas State Red Wolves_Southern Miss Golden Eagles,total,under_bet,-140,under,158.5,0.2363275495805614,0.1377157314538717
+2026_02_24,Basketball,San Jose State Spartans,Air Force Falcons,total,under,145.5,2026_02_24_Air Force Falcons_San Jose State Spartans,total,under_bet,-145,under,145.5,0.1819611910776004,0.1078222072479081
+2026_02_24,Basketball,Wyoming Cowboys,Boise State Broncos,total,over,144.5,2026_02_24_Boise State Broncos_Wyoming Cowboys,total,over_bet,-133,over,144.5,0.1560181073260178,0.088996935648621

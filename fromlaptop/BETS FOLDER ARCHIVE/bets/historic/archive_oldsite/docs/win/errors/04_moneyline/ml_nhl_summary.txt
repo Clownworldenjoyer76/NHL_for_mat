@@ -1,0 +1,6 @@
+script=ml_nhl
+timestamp=2026-03-01T15:01:06.849125
+files_found=1
+files_written=1
+rows_processed=8
+errors=0

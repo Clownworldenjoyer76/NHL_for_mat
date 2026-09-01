@@ -1,0 +1,7 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,epl,2026_04_11,Sat Apr 11th 7:30 AM,Arsenal,Bournemouth,-310,+425,+750
+Soccer,epl,2026_04_11,Sat Apr 11th 10:00 AM,Brentford,Everton,+115,+225,+235
+Soccer,epl,2026_04_11,Sat Apr 11th 10:00 AM,Burnley,Brighton,+300,+270,-125
+Soccer,epl,2026_04_11,Sat Apr 11th 10:00 AM,Crystal Palace,Newcastle,+175,+240,+145
+Soccer,epl,2026_04_11,Sat Apr 11th 12:30 PM,Liverpool,Fulham,-200,+350,+450
+Soccer,epl,2026_04_11,Sat Apr 11th 10:00 AM,Nottingham Forest,Aston Villa,+150,+230,+175

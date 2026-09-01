@@ -1,0 +1,13 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-02-23,7:10 PM,SA Spurs,DET Pistons,Over,231.5,-115,,,nba
+2026-02-23,7:10 PM,SA Spurs,DET Pistons,Under,231.5,-105,,,nba
+2026-02-23,7:10 PM,DET Pistons,SA Spurs,Over,231.5,-115,,,nba
+2026-02-23,7:10 PM,DET Pistons,SA Spurs,Under,231.5,-105,,,nba
+2026-02-23,8:10 PM,SAC Kings,MEM Grizzlies,Over,233.5,-108,,,nba
+2026-02-23,8:10 PM,SAC Kings,MEM Grizzlies,Under,233.5,-112,,,nba
+2026-02-23,8:10 PM,MEM Grizzlies,SAC Kings,Over,233.5,-108,,,nba
+2026-02-23,8:10 PM,MEM Grizzlies,SAC Kings,Under,233.5,-112,,,nba
+2026-02-23,9:40 PM,UTA Jazz,HOU Rockets,Over,228.5,-108,,,nba
+2026-02-23,9:40 PM,UTA Jazz,HOU Rockets,Under,228.5,-112,,,nba
+2026-02-23,9:40 PM,HOU Rockets,UTA Jazz,Over,228.5,-108,,,nba
+2026-02-23,9:40 PM,HOU Rockets,UTA Jazz,Under,228.5,-112,,,nba

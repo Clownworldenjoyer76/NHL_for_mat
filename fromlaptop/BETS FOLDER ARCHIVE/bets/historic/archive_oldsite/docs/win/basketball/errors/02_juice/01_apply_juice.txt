@@ -1,0 +1,10 @@
+=== APPLY JUICE RUN ===
+Timestamp: 2026-02-22T17:19:47.038451Z
+
+Wrote docs/win/soccer/02_juice/soccer_2026_02_23.csv
+Wrote docs/win/soccer/02_juice/soccer_2026_02_22.csv
+
+=== SUMMARY ===
+Files processed: 2
+Rows processed: 27
+Rows skipped: 0

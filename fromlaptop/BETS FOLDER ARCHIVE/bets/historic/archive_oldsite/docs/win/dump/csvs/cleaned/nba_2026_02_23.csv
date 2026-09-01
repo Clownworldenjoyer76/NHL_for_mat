@@ -1,0 +1,4 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,fair_decimal_odds,fair_american_odds,acceptable_decimal_odds,acceptable_american_odds
+2026_02_23,nba,nba_2026_02_23_San_Antonio_Spurs_Detroit_Pistons,San Antonio Spurs,Detroit Pistons,0.473,0.527,113.2,114.4,227.6,2.1142,111,2.1142,111
+2026_02_23,nba,nba_2026_02_23_Sacramento_Kings_Memphis_Grizzlies,Sacramento Kings,Memphis Grizzlies,0.304,0.696,114.0,119.7,233.7,3.2895,228,3.2895,228
+2026_02_23,nba,nba_2026_02_23_Utah_Jazz_Houston_Rockets,Utah Jazz,Houston Rockets,0.142,0.858,108.5,119.6,228.1,7.0423,604,7.0423,604

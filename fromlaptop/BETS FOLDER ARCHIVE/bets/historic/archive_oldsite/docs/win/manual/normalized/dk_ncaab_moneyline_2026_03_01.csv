@@ -1,0 +1,16 @@
+date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
+2026_03_01,12:00 PM,ncaab_moneyline,ncaab_2026_03_01_North_Texas_Mean_Green_UAB_Blazers,North Texas Mean Green,UAB Blazers,,,,,200,-245
+2026_03_01,12:00 PM,ncaab_moneyline,ncaab_2026_03_01_Tulane_Green_Wave_South_Florida_Bulls,Tulane Green Wave,South Florida Bulls,,,,,800,-1350
+2026_03_01,12:00 PM,ncaab_moneyline,ncaab_2026_03_01_La_Salle_Explorers_Davidson_Wildcats,La Salle Explorers,Davidson Wildcats,,,,,550,-800
+2026_03_01,1:00 PM,ncaab_moneyline,ncaab_2026_03_01_Illinois_Chicago_Indiana_State_Sycamores,Illinois Chicago,Indiana State Sycamores,,,,,-192,160
+2026_03_01,1:00 PM,ncaab_moneyline,ncaab_2026_03_01_Quinnipiac_Bobcats_Canisius_Golden_Griffins,Quinnipiac Bobcats,Canisius Golden Griffins,,,,,-360,285
+2026_03_01,1:30 PM,ncaab_moneyline,ncaab_2026_03_01_Purdue_Boilermakers_Ohio_State_Buckeyes,Purdue Boilermakers,Ohio State Buckeyes,,,,,-305,245
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Rice_Owls_Temple_Owls,Rice Owls,Temple Owls,,,,,260,-325
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Mount_St_Marys_Mountaineers_Fairfield_Stags,Mount St Marys Mountaineers,Fairfield Stags,,,,,164,-198
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Iona_Gaels_Manhattan_Jaspers,Iona Gaels,Manhattan Jaspers,,,,,-135,114
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Murray_State_Racers_Bradley_University_Braves,Murray State Racers,Bradley University Braves,,,,,154,-185
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Charlotte_49ers_Florida_Atlantic_Owls,Charlotte 49ers,Florida Atlantic Owls,,,,,270,-340
+2026_03_01,2:00 PM,ncaab_moneyline,ncaab_2026_03_01_Memphis_Tigers_East_Carolina_Pirates,Memphis Tigers,East Carolina Pirates,,,,,-225,185
+2026_03_01,3:45 PM,ncaab_moneyline,ncaab_2026_03_01_Michigan_State_Spartans_Indiana_Hoosiers,Michigan State Spartans,Indiana Hoosiers,,,,,-148,124
+2026_03_01,4:00 PM,ncaab_moneyline,ncaab_2026_03_01_DePaul_Blue_Demons_Marquette_Golden_Eagles,DePaul Blue Demons,Marquette Golden Eagles,,,,,160,-192
+2026_03_01,8:00 PM,ncaab_moneyline,ncaab_2026_03_01_Wichita_State_Shockers_UTSA_Roadrunners,Wichita State Shockers,UTSA Roadrunners,,,,,-1600,900

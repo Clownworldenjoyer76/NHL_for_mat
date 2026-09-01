@@ -1,0 +1,73 @@
+date,time,team,opponent,side,total,odds,handle_pct,bets_pct,league
+2026-02-27,6:00 PM,Miami OH,Western Michigan,Over,161.5,-110,,,ncaab
+2026-02-27,6:00 PM,Miami OH,Western Michigan,Under,161.5,-110,,,ncaab
+2026-02-27,6:00 PM,Western Michigan,Miami OH,Over,161.5,-110,,,ncaab
+2026-02-27,6:00 PM,Western Michigan,Miami OH,Under,161.5,-110,,,ncaab
+2026-02-27,6:00 PM,Yale,Cornell,Over,165.5,-105,,,ncaab
+2026-02-27,6:00 PM,Yale,Cornell,Under,165.5,-115,,,ncaab
+2026-02-27,6:00 PM,Cornell,Yale,Over,165.5,-105,,,ncaab
+2026-02-27,6:00 PM,Cornell,Yale,Under,165.5,-115,,,ncaab
+2026-02-27,6:30 PM,Quinnipiac,Niagara,Over,136.5,-105,,,ncaab
+2026-02-27,6:30 PM,Quinnipiac,Niagara,Under,136.5,-115,,,ncaab
+2026-02-27,6:30 PM,Niagara,Quinnipiac,Over,136.5,-105,,,ncaab
+2026-02-27,6:30 PM,Niagara,Quinnipiac,Under,136.5,-115,,,ncaab
+2026-02-27,7:00 PM,Dayton,George Washington,Over,152.5,-108,,,ncaab
+2026-02-27,7:00 PM,Dayton,George Washington,Under,152.5,-112,,,ncaab
+2026-02-27,7:00 PM,George Washington,Dayton,Over,152.5,-108,,,ncaab
+2026-02-27,7:00 PM,George Washington,Dayton,Under,152.5,-112,,,ncaab
+2026-02-27,7:00 PM,Brown,Columbia,Over,139.5,-115,,,ncaab
+2026-02-27,7:00 PM,Brown,Columbia,Under,139.5,-105,,,ncaab
+2026-02-27,7:00 PM,Columbia,Brown,Over,139.5,-115,,,ncaab
+2026-02-27,7:00 PM,Columbia,Brown,Under,139.5,-105,,,ncaab
+2026-02-27,7:00 PM,Dartmouth,Pennsylvania,Over,154.5,-112,,,ncaab
+2026-02-27,7:00 PM,Dartmouth,Pennsylvania,Under,154.5,-108,,,ncaab
+2026-02-27,7:00 PM,Pennsylvania,Dartmouth,Over,154.5,-112,,,ncaab
+2026-02-27,7:00 PM,Pennsylvania,Dartmouth,Under,154.5,-108,,,ncaab
+2026-02-27,7:00 PM,ULM,Troy,Over,153.5,-105,,,ncaab
+2026-02-27,7:00 PM,ULM,Troy,Under,153.5,-115,,,ncaab
+2026-02-27,7:00 PM,Troy,ULM,Over,153.5,-105,,,ncaab
+2026-02-27,7:00 PM,Troy,ULM,Under,153.5,-115,,,ncaab
+2026-02-27,7:00 PM,Siena,Fairfield,Over,143.5,-110,,,ncaab
+2026-02-27,7:00 PM,Siena,Fairfield,Under,143.5,-110,,,ncaab
+2026-02-27,7:00 PM,Fairfield,Siena,Over,143.5,-110,,,ncaab
+2026-02-27,7:00 PM,Fairfield,Siena,Under,143.5,-110,,,ncaab
+2026-02-27,7:00 PM,Mount Saint Marys,Sacred Heart,Over,149.5,-110,,,ncaab
+2026-02-27,7:00 PM,Mount Saint Marys,Sacred Heart,Under,149.5,-110,,,ncaab
+2026-02-27,7:00 PM,Sacred Heart,Mount Saint Marys,Over,149.5,-110,,,ncaab
+2026-02-27,7:00 PM,Sacred Heart,Mount Saint Marys,Under,149.5,-110,,,ncaab
+2026-02-27,7:00 PM,Merrimack,Canisius,Over,131.5,-108,,,ncaab
+2026-02-27,7:00 PM,Merrimack,Canisius,Under,131.5,-112,,,ncaab
+2026-02-27,7:00 PM,Canisius,Merrimack,Over,131.5,-108,,,ncaab
+2026-02-27,7:00 PM,Canisius,Merrimack,Under,131.5,-112,,,ncaab
+2026-02-27,7:30 PM,Old Dominion,Georgia State,Over,149.5,-110,,,ncaab
+2026-02-27,7:30 PM,Old Dominion,Georgia State,Under,149.5,-110,,,ncaab
+2026-02-27,7:30 PM,Georgia State,Old Dominion,Over,149.5,-110,,,ncaab
+2026-02-27,7:30 PM,Georgia State,Old Dominion,Under,149.5,-110,,,ncaab
+2026-02-27,8:00 PM,Michigan,Illinois,Over,157.5,-112,,,ncaab
+2026-02-27,8:00 PM,Michigan,Illinois,Under,157.5,-108,,,ncaab
+2026-02-27,8:00 PM,Illinois,Michigan,Over,157.5,-112,,,ncaab
+2026-02-27,8:00 PM,Illinois,Michigan,Under,157.5,-108,,,ncaab
+2026-02-27,8:00 PM,Akron,Kent State,Over,166.5,-105,,,ncaab
+2026-02-27,8:00 PM,Akron,Kent State,Under,166.5,-115,,,ncaab
+2026-02-27,8:00 PM,Kent State,Akron,Over,166.5,-105,,,ncaab
+2026-02-27,8:00 PM,Kent State,Akron,Under,166.5,-115,,,ncaab
+2026-02-27,8:00 PM,Coastal Carolina,James Madison,Over,141.5,-105,,,ncaab
+2026-02-27,8:00 PM,Coastal Carolina,James Madison,Under,141.5,-115,,,ncaab
+2026-02-27,8:00 PM,James Madison,Coastal Carolina,Over,141.5,-105,,,ncaab
+2026-02-27,8:00 PM,James Madison,Coastal Carolina,Under,141.5,-115,,,ncaab
+2026-02-27,8:00 PM,Appalachian State,Texas State,Over,133.5,-110,,,ncaab
+2026-02-27,8:00 PM,Appalachian State,Texas State,Under,133.5,-110,,,ncaab
+2026-02-27,8:00 PM,Texas State,Appalachian State,Over,133.5,-110,,,ncaab
+2026-02-27,8:00 PM,Texas State,Appalachian State,Under,133.5,-110,,,ncaab
+2026-02-27,8:30 PM,Southern Miss,South Alabama,Over,142.5,-110,,,ncaab
+2026-02-27,8:30 PM,Southern Miss,South Alabama,Under,142.5,-110,,,ncaab
+2026-02-27,8:30 PM,South Alabama,Southern Miss,Over,142.5,-110,,,ncaab
+2026-02-27,8:30 PM,South Alabama,Southern Miss,Under,142.5,-110,,,ncaab
+2026-02-27,8:30 PM,Louisiana,Arkansas State,Over,146.5,-105,,,ncaab
+2026-02-27,8:30 PM,Louisiana,Arkansas State,Under,146.5,-115,,,ncaab
+2026-02-27,8:30 PM,Arkansas State,Louisiana,Over,146.5,-105,,,ncaab
+2026-02-27,8:30 PM,Arkansas State,Louisiana,Under,146.5,-115,,,ncaab
+2026-02-27,9:00 PM,Georgia Southern,Marshall,Over,169.5,-112,,,ncaab
+2026-02-27,9:00 PM,Georgia Southern,Marshall,Under,169.5,-108,,,ncaab
+2026-02-27,9:00 PM,Marshall,Georgia Southern,Over,169.5,-112,,,ncaab
+2026-02-27,9:00 PM,Marshall,Georgia Southern,Under,169.5,-108,,,ncaab

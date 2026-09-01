@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,seriea,2026_03_08,10:00 AM,Bologna,Verona,-175,+265,+500
+Soccer,seriea,2026_03_08,10:00 AM,Fiorentina,Parma,-140,+245,+370
+Soccer,seriea,2026_03_08,1:00 PM,Genoa,Roma,+310,+205,-105
+Soccer,seriea,2026_03_08,3:45 PM,Milan,Inter Milan,+220,+200,+130

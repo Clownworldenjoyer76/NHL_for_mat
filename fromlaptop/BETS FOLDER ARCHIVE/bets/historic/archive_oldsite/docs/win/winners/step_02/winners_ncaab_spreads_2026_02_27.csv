@@ -1,0 +1,4 @@
+date,time,away_team,home_team,league,game_id,away_spread,home_spread,deci_home_spread_juice_odds,deci_away_spread_juice_odds,deci_dk_away_odds,deci_dk_home_odds,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds
+2026_02_27,7:00 PM,Brown Bears,Columbia Lions,ncaab_spreads,ncaab_2026_02_27_Brown_Bears_Columbia_Lions,5.5,-5.5,1.869565217391304,2.39,1.847457627118644,1.9090909090909087,0.03952569169960474,-0.5425423728813561,-118,-110
+2026_02_27,7:00 PM,Louisiana Monroe Warhawks,Troy Trojans,ncaab_spreads,ncaab_2026_02_27_Louisiana_Monroe_Warhawks_Troy_Trojans,19.5,-19.5,2.55,1.763358778625954,1.925925925925926,1.8928571428571428,-0.657142857142857,0.16256714729997213,-107,-112
+2026_02_27,8:00 PM,Appalachian State Mountaineers,Texas State Bobcats,ncaab_spreads,ncaab_2026_02_27_Appalachian_State_Mountaineers_Texas_State_Bobcats,1.5,-1.5,2.35,1.9090909090909087,1.925925925925926,1.9523809523809523,-0.39761904761904776,0.016835016835017313,-107,-105

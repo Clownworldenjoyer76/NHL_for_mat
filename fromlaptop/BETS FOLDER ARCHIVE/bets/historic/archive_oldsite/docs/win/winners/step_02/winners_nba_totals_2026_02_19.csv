@@ -1,0 +1,5 @@
+date,time,away_team,home_team,league,game_id,total,deci_over_juice_odds,deci_under_juice_odds,deci_dk_over_odds,deci_dk_under_odds,over_edge,under_edge,over_odds,under_odds
+2026_02_19,8:00 PM,Toronto Raptors,Chicago Bulls,nba_totals,nba_2026_02_19_Toronto_Raptors_Chicago_Bulls,232.5,2.37,1.8849557522123888,1.869565217391304,1.9523809523809523,-0.5004347826086961,0.06742520016856357,-115,-105
+2026_02_19,8:30 PM,Phoenix Suns,San Antonio Spurs,nba_totals,nba_2026_02_19_Phoenix_Suns_San_Antonio_Spurs,227.5,2.43,1.847457627118644,1.925925925925926,1.8928571428571428,-0.5040740740740741,0.045399515738498764,-107,-112
+2026_02_19,10:00 PM,Boston Celtics,Golden State Warriors,nba_totals,nba_2026_02_19_Boston_Celtics_Golden_State_Warriors,213.5,1.704225352112676,2.78,1.9090909090909087,1.9090909090909087,0.20486555697823272,-0.8709090909090911,-110,-110
+2026_02_19,10:00 PM,Orlando Magic,Sacramento Kings,nba_totals,nba_2026_02_19_Orlando_Magic_Sacramento_Kings,224.5,1.847457627118644,2.43,1.9523809523809523,1.869565217391304,0.1049233252623083,-0.5604347826086962,-105,-115

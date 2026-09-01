@@ -1,0 +1,12 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-22,Southern Miss Moneyline Southern Miss @ Georgia State,0.56,-103,114,217,0.1,Loss,0.0,-0.1,ncaam
+2026-01-22,UNC Wilmington Moneyline UNC Wilmington @ William & Mary,0.54,-106,110,216,0.1,Loss,0.0,-0.1,ncaam
+2026-01-22,Utrecht Moneyline Utrecht vs Genk,0.385,173,200,27,0.1,Loss,0.0,-0.1,soc
+2026-01-22,FCSB Moneyline Dinamo Zagreb vs FCSB,0.265,371,380,9,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Nice Moneyline Nice vs Go Ahead Eagles,0.578,-117,105,222,0.1,Win,0.2,0.1,soc
+2026-01-22,AS Roma Moneyline AS Roma vs Stuttgart,0.612,-135,115,250,0.1,Win,0.21,0.11,soc
+2026-01-22,Rangers Moneyline Rangers vs Ludogorets Razgrad,0.562,-110,115,225,0.1,Win,0.21,0.11,soc
+2026-01-22,Ferencvaros Moneyline Ferencvaros vs Panathinaikos,0.46,128,140,12,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Real Betis Moneyline PAOK Saloniki vs Real Betis,0.362,215,235,20,0.1,Loss,0.0,-0.1,soc
+2026-01-22,Under 2.5 Total Goals Malmo FF vs Red Star Belgrade,0.5979,-129,110,239,0.1,Win,0.21,0.11,soc_ou
+2026-01-22,Over 2.5 Total Goals AS Roma,0.6144,-138,-115,23,0.1,Loss,0.0,-0.1,soc_ou

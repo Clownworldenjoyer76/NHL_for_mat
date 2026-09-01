@@ -1,0 +1,13 @@
+league,market,game_date,game_time,home_team,away_team,away_puck_line,home_puck_line,total,away_dk_puck_line_american,home_dk_puck_line_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+hockey,NHL,2026_02_26,7:10 PM,Pittsburgh Penguins,New Jersey Devils,+1.5,-1.5,5.5,-198,+164,-125,+105,+136,-162
+hockey,NHL,2026_02_26,7:10 PM,Florida Panthers,Toronto Maple Leafs,+1.5,-1.5,6.5,-192,+160,+105,-125,+130,-155
+hockey,NHL,2026_02_26,7:10 PM,Boston Bruins,Columbus Blue Jackets,+1.5,-1.5,6.5,-270,+220,+100,-120,-105,-115
+hockey,NHL,2026_02_26,7:10 PM,Montreal Canadiens,New York Islanders,+1.5,-1.5,6.5,-205,+170,+110,-130,+130,-155
+hockey,NHL,2026_02_26,7:10 PM,Carolina Hurricanes,Tampa Bay Lightning,+1.5,-1.5,6.5,-205,+170,+110,-130,+124,-148
+hockey,NHL,2026_02_26,7:10 PM,Ottawa Senators,Detroit Red Wings,+1.5,-1.5,5.5,-192,+160,-135,+114,+130,-155
+hockey,NHL,2026_02_26,8:10 PM,New York Rangers,Philadelphia Flyers,+1.5,-1.5,5.5,-225,+185,-135,+114,+120,-142
+hockey,NHL,2026_02_26,8:10 PM,St. Louis Blues,Seattle Kraken,+1.5,-1.5,5.5,-218,+180,-125,+105,+124,-148
+hockey,NHL,2026_02_26,8:10 PM,Nashville Predators,Chicago Blackhawks,+1.5,-1.5,6.5,-180,+150,+114,-135,+145,-175
+hockey,NHL,2026_02_26,9:10 PM,Colorado Avalanche,Minnesota Wild,+1.5,-1.5,6.5,-192,+160,-105,-115,+130,-155
+hockey,NHL,2026_02_26,10:10 PM,San Jose Sharks,Calgary Flames,+1.5,-1.5,6.5,-230,+190,-102,-118,+110,-130
+hockey,NHL,2026_02_26,10:40 PM,Los Angeles Kings,Edmonton Oilers,-1.5,+1.5,6.5,+225,-278,-112,-108,-110,-110

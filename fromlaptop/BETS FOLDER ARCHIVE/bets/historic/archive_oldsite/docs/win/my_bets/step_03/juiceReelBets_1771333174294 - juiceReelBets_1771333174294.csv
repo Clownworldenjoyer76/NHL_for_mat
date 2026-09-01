@@ -1,0 +1,12 @@
+date,time,game_id,risk_amount,max_potential_win,bet_result,amount_won_or_lost,odds_american,clv_percent,leg_type,bet_on,bet_on_spread_total_number,leg_sport,leg_league,leg_vig,away_team,home_team,league,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds,away_spread,home_spread,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds,over_edge,under_edge,over_odds,under_odds,total,bet
+2026_02_15,,,0.1,0.08,Lost,-0.1,-112,0.0192,totals,over,139.5,Basketball,ncaab,-112,Davidson Wildcats,Dayton Flyers,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Lost,-0.1,-108,0.0,totals,over,136.5,Basketball,ncaab,-108,Oregon State Beavers,Seattle Redhawks,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-105,0.0333,spreads,Towson Tigers,1.5,Basketball,ncaab,-105,Towson Tigers,Monmouth Hawks,ncaab_spreads,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.08,Won,0.08,-115,0.0303,spreads,Wisconsin Milwaukee Panthers,-1.5,Basketball,ncaab,-115,Wisconsin Green Bay Phoenix,Wisconsin Milwaukee Panthers,ncaab_spreads,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-108,0.0046,totals,over,159.5,Basketball,ncaab,-108,IU Indianapolis Jaguars,Purdue Fort Wayne Mastodons,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-110,0.0,totals,over,145.5,Basketball,ncaab,-110,Wisconsin Green Bay Phoenix,Wisconsin Milwaukee Panthers,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Lost,-0.1,-110,-0.0116,totals,over,139.5,Basketball,ncaab,-110,Seton Hall Pirates,Butler Bulldogs,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.08,Won,0.08,-112,-0.0045,totals,over,149.5,Basketball,ncaab,-112,Eastern Kentucky Colonels,North Alabama Lions,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-110,0.0045,totals,over,158.5,Basketball,ncaab,-110,Wright State Raiders,Cleveland State Vikings,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-105,0.0116,totals,under,166.5,Basketball,ncaab,-105,Belmont Bruins,Murray State Racers,ncaab_totals,,,,,,,,,,,,,,,,
+2026_02_15,,,0.1,0.09,Won,0.09,-110,0.0,totals,under,159.5,Basketball,ncaab,-110,Charleston Cougars,Campbell Fighting Camels,ncaab_totals,,,,,,,,,,,,,,,,

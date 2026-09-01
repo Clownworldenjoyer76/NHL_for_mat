@@ -1,0 +1,6 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,ligue1,2026_03_08,10:00 AM,Lens,Metz,-360,+500,+900
+Soccer,ligue1,2026_03_08,12:15 PM,Lille,Lorient,-195,+330,+550
+Soccer,ligue1,2026_03_08,3:45 PM,Lyon,Paris FC,-155,+300,+425
+Soccer,ligue1,2026_03_08,12:15 PM,Nice,Rennes,+170,+260,+150
+Soccer,ligue1,2026_03_08,12:15 PM,Stade Brest,Le Havre,-110,+255,+310

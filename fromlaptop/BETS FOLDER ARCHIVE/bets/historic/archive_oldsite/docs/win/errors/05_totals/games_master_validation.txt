@@ -1,0 +1,7 @@
+GAMES MASTER VALIDATION SUMMARY
+===============================
+
+Files scanned: 25
+Rows checked: 641
+
+No validation errors found.

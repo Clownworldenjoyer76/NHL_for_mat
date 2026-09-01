@@ -1,0 +1,2 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,seriea,2026_03_13,15:45,Torino,Parma,0.481000,0.255000,0.264000,1.54,1.07,2.61

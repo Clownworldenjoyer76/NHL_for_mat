@@ -1,0 +1,142 @@
+Decision Table — NBA Juice (Version 1.0 — All-Time Data-Aligned)
+
+1. Moneyline: tighten the middle, be harsher on tails
+What the data clearly says
+
+From nba_data_ml_bands.csv and the split outputs:
+
+p < 0.30 (≈ +300 and worse)
+• ROI is consistently deeply negative
+• Even when wins spike, variance is extreme
+→ Your +60% juice is justified and possibly conservative
+
+0.30–0.40 range (≈ +180 to +260)
+• Mixed ROI, sharp swings
+• Some isolated profitable bands, but not stable across home/away
+→ Protection needed, but not nuclear
+
+0.45–0.55 (≈ -110 to +110)
+• True anchor zone
+• ROI clusters near breakeven
+• Home underdogs slightly outperform, away favorites slightly underperform
+→ This is where your model is “right but blunt”
+
+p ≥ 0.65 (≈ -180 and stronger)
+• Win rates very high
+• ROI still negative due to price
+• Risk is overconfidence, not losses
+→ Needs cap, not punishment
+
+Suggested v1.1 NBA Moneyline Juice Table
+Probability Bucket	Old Juice	Suggested Juice	Reason
+p ≥ 0.70	+15%	+10%	Wins are real, but over-penalizing costs volume
+0.60–0.70	+10%	+8%	Data supports mild protection only
+0.55–0.60	+8%	+6%	Near-fair, slight favorite tax
+0.50–0.55	+8%	+6%	True anchor; don’t distort
+0.45–0.50	+10%	+8%	Small downside skew confirmed
+0.40–0.45	+15%	+15%	Keep — volatility real
+0.35–0.40	+20%	+25%	Empirical underperformance stronger than expected
+0.30–0.35	+30%	+35%	Still poison-adjacent
+p < 0.30	+60%	+60–70% (cap)	Data fully supports hard wall
+
+Key tweak:
+👉 Reduce juice slightly in the center, increase discrimination just below 40%.
+
+2. Totals (O/U): asymmetric juice, not symmetric
+
+Your example NBA totals file already tells the story:
+
+Low totals (≤ 205)
+• Overs massively outperform
+• Unders get crushed
+
+Mid totals (215–235)
+• Near efficient
+• Slight under bias
+
+High totals (≥ 245)
+• Sample small
+• Market still misprices pace inflation
+
+Recommendation
+
+Do not mirror over/under juice. Treat them separately.
+
+Example NBA Totals Juice Logic
+
+Low total:
+
+Over: +0–3%
+
+Under: +10–15%
+
+Mid total:
+
+Both sides: +4–6%
+
+High total:
+
+Over: +8–10%
+
+Under: +4–6%
+
+This aligns with your own totals ROI, where unders are the structural leak, not overs.
+
+3. Spreads: venue-aware, favorite-aware
+
+From nba_spread_bands.csv:
+
+Small spreads (0–3):
+
+Home underdogs outperform
+
+Away favorites underperform
+
+Mid spreads (3.5–7):
+
+Market close to efficient
+
+Large spreads (10+):
+
+Favorites bleed slowly
+
+Underdogs survive better than expected
+
+Practical adjustment
+
+Instead of a single spread juice:
+
+Add +5–10% extra juice to:
+
+Away favorites
+
+Large-spread favorites
+
+Reduce juice slightly for:
+
+Home underdogs at ≤ 3 points
+
+This is consistent across NBA only — do not generalize to NHL/NFL.
+
+4. Structural recommendation for your flow
+
+You are now at the point where the correct architecture is:
+
+Market odds → implied probability
+
+Bucket → base juice (league + bet type)
+
+Modifiers
+
+venue
+
+favorite/underdog
+
+extreme bands
+
+Final personal line
+
+Only then apply stake logic
+
+Your current table is already step (2).
+The data you’ve generated enables step (3) without guesswork.

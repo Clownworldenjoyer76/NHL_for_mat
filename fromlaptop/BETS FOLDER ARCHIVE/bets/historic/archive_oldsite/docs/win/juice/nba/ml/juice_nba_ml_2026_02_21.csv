@@ -1,0 +1,7 @@
+date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds,home_ml_juice_odds,away_ml_juice_odds
+2026_02_21,nba_moneyline,nba_2026_02_21_Orlando_Magic_Phoenix_Suns,Orlando Magic,Phoenix Suns,0.482,0.518,110.8,111.6,222.4,2.07,107,2.19,119,1.93,-108,2.05,105,101,126
+2026_02_21,nba_moneyline,nba_2026_02_21_Philadelphia_76ers_New_Orleans_Pelicans,Philadelphia 76ers,New Orleans Pelicans,0.607,0.393,115.8,112.3,228.1,1.65,-154,1.75,-133,2.54,154,2.69,169,185,-147
+2026_02_21,nba_moneyline,nba_2026_02_21_Sacramento_Kings_San_Antonio_Spurs,Sacramento Kings,San Antonio Spurs,0.066,0.934,106.4,122.0,228.4,15.15,1415,16.06,1506,1.07,-1429,1.13,-769,-769,1827
+2026_02_21,nba_moneyline,nba_2026_02_21_Memphis_Grizzlies_Miami_Heat,Memphis Grizzlies,Miami Heat,0.252,0.748,114.6,122.4,237.0,3.97,297,4.21,321,1.34,-294,1.42,-238,-312,363
+2026_02_21,nba_moneyline,nba_2026_02_21_Detroit_Pistons_Chicago_Bulls,Detroit Pistons,Chicago Bulls,0.795,0.205,119.9,111.1,231.0,1.26,-385,1.34,-294,4.88,388,5.17,417,469,-406
+2026_02_21,nba_moneyline,nba_2026_02_21_Houston_Rockets_New_York_Knicks,Houston Rockets,New York Knicks,0.428,0.572,109.8,112.6,222.4,2.34,134,2.48,148,1.75,-133,1.86,-116,-121,155

@@ -1,0 +1,4 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,Charlotte Hornets,Indiana Pacers,spread,home,12.5,2026_02_26_Indiana Pacers_Charlotte Hornets,spread,home_spread,-144,home,12.5,0.2570524852276674,0.1516240010169225
+2026_02_26,Basketball,San Antonio Spurs,Brooklyn Nets,spread,home,12.5,2026_02_26_Brooklyn Nets_San Antonio Spurs,spread,home_spread,-143,home,12.5,0.1922689075630252,0.1130602362010179
+2026_02_26,Basketball,Los Angeles Lakers,Phoenix Suns,spread,home,5.5,2026_02_26_Phoenix Suns_Los Angeles Lakers,spread,home_spread,-121,home,5.5,0.1275160875160874,0.0698770029338749

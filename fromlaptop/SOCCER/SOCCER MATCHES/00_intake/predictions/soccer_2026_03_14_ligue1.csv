@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+Soccer,ligue1,2026_03_14,14:00,Angers,Nice,0.310000,0.280000,0.409000,1.06,1.26,2.32
+Soccer,ligue1,2026_03_14,12:00,Lorient,Lens,0.226000,0.261000,0.513000,0.90,1.50,2.40
+Soccer,ligue1,2026_03_14,16:05,Monaco,Stade Brest,0.608000,0.202000,0.190000,2.15,1.12,3.27

@@ -1,0 +1,28 @@
+=== NHL SELECT BETS RUN ===
+Timestamp: 2026-03-02T19:34:14.246564Z
+
+Wrote docs/win/hockey/04_select/2026_02_25_NHL.csv | rows=4
+Moneyline bets: 0
+Puck line bets: 0
+Total bets: 4
+
+Wrote docs/win/hockey/04_select/2026_02_26_NHL.csv | rows=9
+Moneyline bets: 0
+Puck line bets: 0
+Total bets: 9
+
+Wrote docs/win/hockey/04_select/2026_02_27_NHL.csv | rows=4
+Moneyline bets: 0
+Puck line bets: 0
+Total bets: 4
+
+Wrote docs/win/hockey/04_select/2026_03_01_NHL.csv | rows=4
+Moneyline bets: 1
+Puck line bets: 0
+Total bets: 3
+
+Wrote docs/win/hockey/04_select/2026_03_02_NHL.csv | rows=3
+Moneyline bets: 0
+Puck line bets: 0
+Total bets: 3
+

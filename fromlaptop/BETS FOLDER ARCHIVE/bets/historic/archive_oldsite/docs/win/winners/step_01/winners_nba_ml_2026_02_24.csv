@@ -1,0 +1,6 @@
+date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds
+2026_02_24,00:00,Philadelphia 76ers,Indiana Pacers,nba_moneyline,nba_2026_02_24_Philadelphia_76ers_Indiana_Pacers,4.029999999999999,1.3861003861003862,4.1,1.2531645569620251
+2026_02_24,00:00,Washington Wizards,Atlanta Hawks,nba_moneyline,nba_2026_02_24_Washington_Wizards_Atlanta_Hawks,1.1785714285714286,6.28,1.125,6.5
+2026_02_24,00:00,New York Knicks,Cleveland Cavaliers,nba_moneyline,nba_2026_02_24_New_York_Knicks_Cleveland_Cavaliers,1.5747126436781609,3.17,1.617283950617284,2.3600000000000003
+2026_02_24,00:00,Charlotte Hornets,Chicago Bulls,nba_moneyline,nba_2026_02_24_Charlotte_Hornets_Chicago_Bulls,3.4,1.5181347150259068,3.6,1.3076923076923077
+2026_02_24,00:00,Minnesota Timberwolves,Portland Trail Blazers,nba_moneyline,nba_2026_02_24_Minnesota_Timberwolves_Portland_Trail_Blazers,2.72,1.7352941176470589,2.85,1.4444444444444444

@@ -1,0 +1,4 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,seriea,2026_04_06,Mon Apr 6th 12:00 PM,Juventus,Genoa,-290,+340,+650
+Soccer,seriea,2026_04_06,Mon Apr 6th 2:45 PM,Napoli,Milan,+140,+195,+190
+Soccer,seriea,2026_04_06,Mon Apr 6th 9:00 AM,Udinese,Como,+340,+250,-145

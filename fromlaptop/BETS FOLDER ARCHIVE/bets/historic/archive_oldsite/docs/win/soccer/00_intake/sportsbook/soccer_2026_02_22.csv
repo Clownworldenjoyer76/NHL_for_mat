@@ -1,0 +1,22 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+soccer,epl,2026_02_22,Sun Feb 22nd 9:00 AM,Nottingham Forest,Liverpool,+310,+295,-125
+soccer,epl,2026_02_22,Sun Feb 22nd 9:00 AM,Crystal Palace,Wolverhampton Wanderers,-155,+300,+425
+soccer,epl,2026_02_22,Sun Feb 22nd 9:00 AM,Sunderland,Fulham,+170,+225,+170
+soccer,epl,2026_02_22,Sun Feb 22nd 11:30 AM,Tottenham Hotspur,Arsenal,+500,+310,-180
+soccer,ligue1,2026_02_22,Sun Feb 22nd 9:00 AM,Auxerre,Rennes,+195,+245,+140
+soccer,ligue1,2026_02_22,Sun Feb 22nd 11:15 AM,Angers,Lille,+320,+260,-110
+soccer,ligue1,2026_02_22,Sun Feb 22nd 11:15 AM,Nice,Lorient,+110,+255,+240
+soccer,ligue1,2026_02_22,Sun Feb 22nd 11:15 AM,Nantes,Le Havre,+145,+230,+200
+soccer,ligue1,2026_02_22,Sun Feb 22nd 2:45 PM,Strasbourg,Lyon,+135,+260,+190
+soccer,seriea,2026_02_22,Sun Feb 22nd 6:30 AM,Genoa,Torino,+125,+195,+240
+soccer,seriea,2026_02_22,Sun Feb 22nd 9:00 AM,Atalanta,Napoli,+140,+205,+195
+soccer,seriea,2026_02_22,Sun Feb 22nd 12:00 PM,Milan,Parma,-330,+390,+800
+soccer,seriea,2026_02_22,Sun Feb 22nd 2:45 PM,Roma,Cremonese,-300,+360,+800
+soccer,laliga,2026_02_22,Sun Feb 22nd 8:00 AM,Getafe,Sevilla,+140,+195,+240
+soccer,laliga,2026_02_22,Sun Feb 22nd 10:15 AM,Barcelona,Levante,-1000,+1000,+1800
+soccer,laliga,2026_02_22,Sun Feb 22nd 12:30 PM,Celta Vigo,Mallorca,-120,+245,+370
+soccer,laliga,2026_02_22,Sun Feb 22nd 3:00 PM,Villarreal,Valencia,-140,+300,+370
+soccer,bundesliga,2026_02_22,Sun Feb 22nd 9:30 AM,SC Freiburg,Borussia Monchengladbach,-105,+220,+280
+soccer,bundesliga,2026_02_22,Sun Feb 22nd 11:30 AM,FC St Pauli,Werder Bremen,+165,+205,+165
+soccer,bundesliga,2026_02_22,Sun Feb 22nd 1:30 PM,FC Heidenheim,VfB Stuttgart,+330,+295,-150
+soccer,bundesliga,2026_02_22,Sun Feb 22nd 9:30 AM,Freiburg,Borussia Monchengladbach,-105,+220,+280

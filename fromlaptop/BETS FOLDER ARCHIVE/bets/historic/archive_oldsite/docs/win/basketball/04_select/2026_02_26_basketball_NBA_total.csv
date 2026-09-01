@@ -1,0 +1,3 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_02_26,Basketball,Washington Wizards,Atlanta Hawks,total,under,237.5,2026_02_26_Atlanta Hawks_Washington Wizards,total,under_bet,-132,under,237.5,0.1508806728348668,0.0858149211758397
+2026_02_26,Basketball,Sacramento Kings,Dallas Mavericks,total,under,236.5,2026_02_26_Dallas Mavericks_Sacramento Kings,total,under_bet,-148,under,236.5,0.2334709916130417,0.139334099086421

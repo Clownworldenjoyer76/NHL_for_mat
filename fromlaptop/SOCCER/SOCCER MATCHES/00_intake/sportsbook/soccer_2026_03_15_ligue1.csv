@@ -1,0 +1,5 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american
+Soccer,ligue1,2026_03_15,12:15 PM,Le Havre,Lyon,+260,+245,+110
+Soccer,ligue1,2026_03_15,12:15 PM,Metz,Toulouse,+290,+245,+100
+Soccer,ligue1,2026_03_15,3:45 PM,Rennes,Lille,+120,+235,+235
+Soccer,ligue1,2026_03_15,10:00 AM,Strasbourg,Paris FC,-150,+300,+400

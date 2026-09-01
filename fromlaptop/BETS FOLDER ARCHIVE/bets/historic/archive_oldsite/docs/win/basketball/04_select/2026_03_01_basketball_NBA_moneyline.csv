@@ -1,0 +1,4 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_01,Basketball,Philadelphia 76ers,Boston Celtics,moneyline,away,,2026_03_01_Boston Celtics_Philadelphia 76ers,moneyline,away_ml,228,away,0.327,0.5689908256880729,0.1734194558622037
+2026_03_01,Basketball,Oklahoma City Thunder,Dallas Mavericks,moneyline,home,,2026_03_01_Dallas Mavericks_Oklahoma City Thunder,moneyline,home_ml,632,home,0.14,0.4292500000000006,0.0586347027285456
+2026_03_01,Basketball,New Orleans Pelicans,Los Angeles Clippers,moneyline,away,,2026_03_01_Los Angeles Clippers_New Orleans Pelicans,moneyline,away_ml,217,away,0.338,0.6757692307692307,0.2128922815945716

@@ -1,0 +1,44 @@
+name: 02 DK Prep
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: DK 01 – raw clean
+        run: python scripts/dk_01.py
+
+      - name: DK 02 – cleaning (date fix + clear game_id)
+        run: python scripts/dk_02.py
+
+      - name: DK name normalization
+        run: python scripts/name_normalization_manual.py
+
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          git add docs/win/manual/cleaned/*.csv
+          git add mappings/need_map/
+          git add docs/win/errors/02_dk_prep/
+
+          git commit -m "DK prep: clean, date fix, name normalization" || exit 0
+          git push

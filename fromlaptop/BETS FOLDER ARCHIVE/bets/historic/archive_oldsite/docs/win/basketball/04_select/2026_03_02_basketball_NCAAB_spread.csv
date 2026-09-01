@@ -1,0 +1,4 @@
+game_date,league,away_team,home_team,market_type,bet_side,line,game_id,market,take_bet,take_odds,take_team,value,take_bet_edge_decimal,take_bet_edge_pct
+2026_03_02,Basketball,Coppin State Eagles,Howard Bison,spread,away,19.5,2026_03_02_Coppin State Eagles_Howard Bison,spread,away_spread,-181,away,19.5,0.3411330049261087,0.2198412698412701
+2026_03_02,Basketball,Lamar Cardinals,Houston Christian Huskies,spread,away,-1.5,2026_03_02_Lamar Cardinals_Houston Christian Huskies,spread,away_spread,-112,away,-1.5,0.0869053406486559,0.0458969874542976
+2026_03_02,Basketball,Idaho State Bengals,Sacramento State Hornets,spread,away,1.5,2026_03_02_Idaho State Bengals_Sacramento State Hornets,spread,away_spread,-127,away,1.5,0.1199950960932205,0.0670702458870354

@@ -1,0 +1,56 @@
+league,market,game_date,game_time,home_team,away_team,away_spread,home_spread,total,away_dk_spread_american,home_dk_spread_american,dk_total_over_american,dk_total_under_american,away_dk_moneyline_american,home_dk_moneyline_american
+Basketball,NCAAB,2026_02_26,,Hampton Pirates,Charleston Cougars,-12.5,+12.5,144.5,-105,-125,-115,-115,-1600,+800
+Basketball,NCAAB,2026_02_26,5:00 PM,Saint Bonaventure Bonnies,Rhode Island Rams,+3.5,-3.5,143.5,-118,-102,-112,-108,+136,-162
+Basketball,NCAAB,2026_02_26,6:00 PM,UMBC Retrievers,Bryant Bulldogs,+10.5,-10.5,138.5,-118,-102,-110,-110,+425,-575
+Basketball,NCAAB,2026_02_26,6:07 PM,Binghamton Bearcats,New Hampshire Wildcats,-2.5,+2.5,142.5,-118,-102,-115,-105,-162,+136
+Basketball,NCAAB,2026_02_26,6:30 PM,Grambling State Tigers,Bethune Cookman Wildcats,-1.5,+1.5,144.5,+105,-125,-115,-105,-112,-108
+Basketball,NCAAB,2026_02_26,6:30 PM,Albany Great Danes,Maine Black Bears,+5.5,-5.5,131.5,-110,-110,-115,-105,+200,-245
+Basketball,NCAAB,2026_02_26,7:00 PM,LIU Sharks,Chicago State Cougars,+11.5,-11.5,141.5,-105,-115,-112,-108,+550,-800
+Basketball,NCAAB,2026_02_26,7:00 PM,Florida Atlantic Owls,Temple Owls,+4.5,-4.5,145.5,-108,-112,-115,-105,+170,-205
+Basketball,NCAAB,2026_02_26,7:00 PM,William Mary Tribe,Northeastern Huskies,+11.5,-11.5,164.5,-112,-108,-108,-112,+525,-750
+Basketball,NCAAB,2026_02_26,7:00 PM,Kennesaw State Owls,Liberty Flames,-1.5,+1.5,153.5,-115,-105,-110,-110,-135,+114
+Basketball,NCAAB,2026_02_26,7:00 PM,Presbyterian Blue Hose,High Point Panthers,-11.5,+11.5,151.5,-102,-118,-110,-110,-700,+500
+Basketball,NCAAB,2026_02_26,7:00 PM,Jacksonville State Gamecocks,Delaware Fightin Blue Hens,+8.5,-8.5,133.5,-115,-105,-115,-105,+310,-395
+Basketball,NCAAB,2026_02_26,7:00 PM,Charleston Southern Buccaneers,Winthrop Eagles,-6.5,+6.5,162.5,-115,-105,-115,-105,-305,+245
+Basketball,NCAAB,2026_02_26,7:00 PM,Gardner Webb Runnin Bulldogs,UNC Asheville Bulldogs,-12.5,+12.5,144.5,-112,-108,-115,-105,-1000,+650
+Basketball,NCAAB,2026_02_26,7:00 PM,Towson Tigers,Elon Phoenix,+5.5,-5.5,144.5,-105,-115,-105,-115,+215,-265
+Basketball,NCAAB,2026_02_26,7:00 PM,Jacksonville Dolphins,Stetson Hatters,+5.5,-5.5,139.5,-102,-118,-110,-110,+215,-265
+Basketball,NCAAB,2026_02_26,7:00 PM,North Florida Ospreys,Florida Gulf Coast Eagles,-6.5,+6.5,159.5,-108,-112,-110,-110,-285,+230
+Basketball,NCAAB,2026_02_26,7:00 PM,Drexel Dragons,Campbell Fighting Camels,+1.5,-1.5,141.5,-105,-115,-112,-108,+110,-130
+Basketball,NCAAB,2026_02_26,7:00 PM,Radford Highlanders,USC Upstate Spartans,+6.5,-6.5,155.5,-110,-110,-112,-108,+240,-298
+Basketball,NCAAB,2026_02_26,7:00 PM,Stonehill Skyhawks,Saint Francis PA Red Flash,+5.5,-5.5,142.5,-112,-108,-105,-115,+205,-250
+Basketball,NCAAB,2026_02_26,7:00 PM,Central Connecticut State Blue Devils,Mercyhurst Lakers,+3.5,-3.5,139.5,-108,-112,-110,-110,+150,-180
+Basketball,NCAAB,2026_02_26,7:00 PM,Chattanooga Mocs,UNC Greensboro Spartans,+4.5,-4.5,154.5,-115,-105,-110,-110,+160,-192
+Basketball,NCAAB,2026_02_26,7:00 PM,Vermont Catamounts,UMass Lowell River Hawks,+9.5,-9.5,146.5,-112,-108,-110,-110,+410,-550
+Basketball,NCAAB,2026_02_26,7:00 PM,UNC Wilmington Seahawks,North Carolina AT Aggies,+12.5,-12.5,147.5,-115,-105,-105,-115,+650,-1000
+Basketball,NCAAB,2026_02_26,7:00 PM,Wagner Seahawks,New Haven Chargers,+2.5,-2.5,131.5,-120,+100,-108,-112,+114,-135
+Basketball,NCAAB,2026_02_26,7:30 PM,Middle Tennessee Blue Raiders,UTEP Miners,+7.5,-7.5,139.5,-108,-112,-108,-112,+275,-345
+Basketball,NCAAB,2026_02_26,7:30 PM,Western Kentucky Hilltoppers,New Mexico State Aggies,+5.5,-5.5,151.5,-105,-115,-108,-112,+215,-265
+Basketball,NCAAB,2026_02_26,7:30 PM,Louisiana Tech Bulldogs,Missouri State Bears,+3.5,-3.5,136.5,-115,-105,-112,-108,+130,-155
+Basketball,NCAAB,2026_02_26,8:00 PM,Purdue Boilermakers,Michigan State Spartans,+7.5,-7.5,142.5,-105,-115,-110,-110,+280,-355
+Basketball,NCAAB,2026_02_26,8:00 PM,Samford Bulldogs,VMI Keydets,+18.5,-18.5,154.5,-112,-108,-110,-110,+1200,-2400
+Basketball,NCAAB,2026_02_26,8:00 PM,UMKC Kangaroos,South Dakota State Jackrabbits,-11.5,+11.5,149.5,-112,-108,-115,-105,-800,+550
+Basketball,NCAAB,2026_02_26,8:00 PM,Utah Valley Wolverines,Tarleton State Texans,+17.5,-17.5,140.5,-115,-105,-115,-105,+1100,-2100
+Basketball,NCAAB,2026_02_26,8:00 PM,Oral Roberts Golden Eagles,Denver Pioneers,-3.5,+3.5,155.5,-118,-102,-110,-110,-185,+154
+Basketball,NCAAB,2026_02_26,8:00 PM,Texas Southern Tigers,Alcorn State Braves,+6.5,-6.5,148.5,-110,-110,-105,-115,+250,-310
+Basketball,NCAAB,2026_02_26,8:00 PM,Little Rock Trojans,Morehead State Eagles,+3.5,-3.5,139.5,-110,-110,-110,-110,+142,-170
+Basketball,NCAAB,2026_02_26,8:30 PM,Lindenwood Lions,Eastern Illinois Panthers,+7.5,-7.5,144.5,-115,-105,-110,-110,+275,-345
+Basketball,NCAAB,2026_02_26,8:30 PM,Southeast Missouri State Redhawks,Tennessee State Tigers,+3.5,-3.5,155.5,-110,-110,-110,-110,+150,-180
+Basketball,NCAAB,2026_02_26,8:30 PM,Tennessee Martin Skyhawks,Tennessee Tech Golden Eagles,+7.5,-7.5,134.5,-105,-115,-108,-112,+300,-380
+Basketball,NCAAB,2026_02_26,8:30 PM,SIU Edwardsville Cougars,Western Illinois Leathernecks,+14.5,-14.5,133.5,-112,-108,-112,-108,+850,-1450
+Basketball,NCAAB,2026_02_26,8:30 PM,Southern University Jaguars,Florida AM Rattlers,+9.5,-9.5,148.5,-108,-112,-110,-110,+310,-395
+Basketball,NCAAB,2026_02_26,9:00 PM,Memphis Tigers,Wichita State Shockers,+1.5,-1.5,146.5,-110,-110,-110,-110,+100,-120
+Basketball,NCAAB,2026_02_26,9:00 PM,UC Santa Barbara Gauchos,UC Riverside Highlanders,+11.5,-11.5,142.5,-118,-102,-115,-105,+500,-700
+Basketball,NCAAB,2026_02_26,9:00 PM,Idaho Vandals,Northern Arizona Lumberjacks,+10.5,-10.5,146.5,-110,-110,-112,-108,+490,-675
+Basketball,NCAAB,2026_02_26,9:00 PM,Montana Grizzlies,Sacramento State Hornets,+8.5,-8.5,162.5,-118,-102,-108,-112,+285,-360
+Basketball,NCAAB,2026_02_26,9:00 PM,Eastern Washington Eagles,Northern Colorado Bears,-1.5,+1.5,156.5,-102,-118,-108,-112,-115,-105
+Basketball,NCAAB,2026_02_26,9:00 PM,Sam Houston State Bearkats,FIU Golden Panthers,+5.5,-5.5,163.5,-105,-115,-105,-115,+210,-258
+Basketball,NCAAB,2026_02_26,9:00 PM,Montana State Bobcats,Portland State Vikings,+2.5,-2.5,138.5,-115,-105,-115,-105,+120,-142
+Basketball,NCAAB,2026_02_26,9:00 PM,Utah Tech Trailblazers,Abilene Christian Wildcats,+3.5,-3.5,139.5,-115,-105,-108,-112,+140,-166
+Basketball,NCAAB,2026_02_26,9:00 PM,St Thomas Tommies,North Dakota State Bison,+3.5,-3.5,155.5,-105,-115,-115,-105,+154,-185
+Basketball,NCAAB,2026_02_26,9:00 PM,UC Davis Aggies,Hawaii Rainbow Warriors,-1.5,+1.5,147.5,+100,-120,-110,-110,-115,-105
+Basketball,NCAAB,2026_02_26,9:30 PM,Prairie View AM Panthers,Jackson State Tigers,+5.5,-5.5,162.5,-110,-110,-108,-112,+200,-245
+Basketball,NCAAB,2026_02_26,10:00 PM,Cal Poly Mustangs,Long Beach State 49ers,+5.5,-5.5,161.5,-112,-108,-105,-115,+190,-230
+Basketball,NCAAB,2026_02_26,10:00 PM,California Baptist Lancers,UT Arlington Mavericks,+6.5,-6.5,134.5,-108,-112,-112,-108,+225,-278
+Basketball,NCAAB,2026_02_26,10:00 PM,Cal State Northridge Matadors,UC Irvine Anteaters,+1.5,-1.5,154.5,-105,-115,-115,-105,+110,-130
+Basketball,NCAAB,2026_02_26,10:00 PM,UC San Diego Tritons,California State Bakersfield Roadrunners,+13.5,-13.5,147.5,-102,-118,-112,-108,+800,-1350

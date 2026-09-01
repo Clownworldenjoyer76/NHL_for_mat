@@ -1,0 +1,6 @@
+MY_BETS_CLEAN_02 SUMMARY
+=========================
+
+Files processed: 7
+Rows in: 157
+Rows out: 157

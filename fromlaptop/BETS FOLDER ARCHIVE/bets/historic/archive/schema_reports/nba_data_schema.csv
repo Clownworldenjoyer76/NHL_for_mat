@@ -1,0 +1,15 @@
+file,category,column,dtype,non_null_pct,example
+nba_data.csv,score_columns,home_final,int64,1.0,106
+nba_data.csv,score_columns,away_final,int64,1.0,104
+nba_data.csv,moneyline_columns,home_close_ml,int64,1.0,-210
+nba_data.csv,moneyline_columns,away_close_ml,int64,1.0,185
+nba_data.csv,total_columns,open_over_under,float64,1.0,195.5
+nba_data.csv,total_columns,close_over_under,float64,1.0,189.0
+nba_data.csv,spread_columns,home_open_spread,float64,1.0,-5.0
+nba_data.csv,spread_columns,away_open_spread,float64,1.0,5.0
+nba_data.csv,spread_columns,home_close_spread,float64,1.0,-4.5
+nba_data.csv,spread_columns,away_close_spread,float64,1.0,4.5
+nba_data.csv,other_columns,season,int64,1.0,2011
+nba_data.csv,other_columns,date,float64,1.0,20111225.0
+nba_data.csv,other_columns,home_team,str,1.0,Knicks
+nba_data.csv,other_columns,away_team,str,1.0,Celtics

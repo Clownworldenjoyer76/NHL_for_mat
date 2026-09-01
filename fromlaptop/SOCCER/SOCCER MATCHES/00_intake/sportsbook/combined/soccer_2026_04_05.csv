@@ -1,0 +1,11 @@
+league,market,match_date,match_time,home_team,away_team,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american
+Soccer,bundesliga,2026_04_05,Sun Apr 5th 11:30 AM,Eintracht Frankfurt,Koln,+100,+245,+225,,,,
+Soccer,bundesliga,2026_04_05,Sun Apr 5th 9:30 AM,Union Berlin,St Pauli,+100,+220,+235,,,,
+Soccer,ligue1,2026_04_05,Sun Apr 5th 9:00 AM,Angers,Lyon,+350,+235,-130,,,,
+Soccer,ligue1,2026_04_05,Sun Apr 5th 11:15 AM,Le Havre,Auxerre,+140,+195,+195,,,,
+Soccer,ligue1,2026_04_05,Sun Apr 5th 11:15 AM,Lorient,Paris FC,+130,+200,+205,,,,
+Soccer,ligue1,2026_04_05,Sun Apr 5th 11:15 AM,Metz,Nantes,+170,+215,+145,,,,
+Soccer,ligue1,2026_04_05,Sun Apr 5th 2:45 PM,Monaco,Marseille,+140,+235,+165,,,,
+Soccer,seriea,2026_04_05,Sun Apr 5th 9:00 AM,Cremonese,Bologna,+275,+235,-115,,,,
+Soccer,seriea,2026_04_05,Sun Apr 5th 2:45 PM,Inter Milan,Roma,-165,+260,+390,,,,
+Soccer,seriea,2026_04_05,Sun Apr 5th 12:00 PM,Pisa,Torino,+160,+200,+160,,,,

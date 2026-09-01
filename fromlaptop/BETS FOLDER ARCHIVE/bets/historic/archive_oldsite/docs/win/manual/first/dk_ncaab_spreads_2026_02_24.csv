@@ -1,0 +1,73 @@
+date,time,team,opponent,spread,odds,handle_pct,bets_pct,league
+2026-02-24,6:30 PM,Miami OH,Eastern Michigan,-10.5,-102,,,ncaab
+2026-02-24,6:30 PM,Eastern Michigan,Miami OH,+10.5,-118,,,ncaab
+2026-02-24,6:30 PM,George Washington,La Salle,-6.5,-115,,,ncaab
+2026-02-24,6:30 PM,La Salle,George Washington,+6.5,-105,,,ncaab
+2026-02-24,7:00 PM,Cincinnati,Texas Tech,+6.5,-108,,,ncaab
+2026-02-24,7:00 PM,Texas Tech,Cincinnati,-6.5,-112,,,ncaab
+2026-02-24,7:00 PM,Duke,Notre Dame,-17.5,-110,,,ncaab
+2026-02-24,7:00 PM,Notre Dame,Duke,+17.5,-110,,,ncaab
+2026-02-24,7:00 PM,NC State,Virginia,+6.5,-110,,,ncaab
+2026-02-24,7:00 PM,Virginia,NC State,-6.5,-110,,,ncaab
+2026-02-24,7:00 PM,Saint Louis,Dayton,-3.5,-112,,,ncaab
+2026-02-24,7:00 PM,Dayton,Saint Louis,+3.5,-108,,,ncaab
+2026-02-24,7:00 PM,Kentucky,South Carolina,-7.5,-105,,,ncaab
+2026-02-24,7:00 PM,South Carolina,Kentucky,+7.5,-115,,,ncaab
+2026-02-24,7:00 PM,Northwestern,Indiana,+8.5,-102,,,ncaab
+2026-02-24,7:00 PM,Indiana,Northwestern,-8.5,-118,,,ncaab
+2026-02-24,7:00 PM,Marquette,Georgetown,+3.5,-108,,,ncaab
+2026-02-24,7:00 PM,Georgetown,Marquette,-3.5,-112,,,ncaab
+2026-02-24,7:00 PM,Buffalo,Akron,+16.5,-110,,,ncaab
+2026-02-24,7:00 PM,Akron,Buffalo,-16.5,-110,,,ncaab
+2026-02-24,7:00 PM,Old Dominion,Marshall,+6.5,-108,,,ncaab
+2026-02-24,7:00 PM,Marshall,Old Dominion,-6.5,-112,,,ncaab
+2026-02-24,7:00 PM,West Virginia,Oklahoma State,+1.5,-108,,,ncaab
+2026-02-24,7:00 PM,Oklahoma State,West Virginia,-1.5,-112,,,ncaab
+2026-02-24,7:00 PM,Wake Forest,Boston College,-4.5,-112,,,ncaab
+2026-02-24,7:00 PM,Boston College,Wake Forest,+4.5,-108,,,ncaab
+2026-02-24,7:00 PM,Northern Illinois,Toledo,+11.5,-108,,,ncaab
+2026-02-24,7:00 PM,Toledo,Northern Illinois,-11.5,-112,,,ncaab
+2026-02-24,7:00 PM,Central Michigan,Kent State,+10.5,-112,,,ncaab
+2026-02-24,7:00 PM,Kent State,Central Michigan,-10.5,-108,,,ncaab
+2026-02-24,7:00 PM,Western Michigan,Bowling Green,+12.5,-112,,,ncaab
+2026-02-24,7:00 PM,Bowling Green,Western Michigan,-12.5,-108,,,ncaab
+2026-02-24,7:00 PM,UMass,Ball State,-4.5,-118,,,ncaab
+2026-02-24,7:00 PM,Ball State,UMass,+4.5,-102,,,ncaab
+2026-02-24,7:00 PM,Louisiana,Troy,+11.5,-115,,,ncaab
+2026-02-24,7:00 PM,Troy,Louisiana,-11.5,-105,,,ncaab
+2026-02-24,7:30 PM,Xavier,Providence,+5.5,-110,,,ncaab
+2026-02-24,7:30 PM,Providence,Xavier,-5.5,-110,,,ncaab
+2026-02-24,7:30 PM,Southern Indiana,Morehead State,+8.5,-115,,,ncaab
+2026-02-24,7:30 PM,Morehead State,Southern Indiana,-8.5,-105,,,ncaab
+2026-02-24,7:30 PM,Coastal Carolina,Georgia State,-1.5,-102,,,ncaab
+2026-02-24,7:30 PM,Georgia State,Coastal Carolina,+1.5,-118,,,ncaab
+2026-02-24,8:00 PM,Bradley,Illinois Chicago,+3.5,-115,,,ncaab
+2026-02-24,8:00 PM,Illinois Chicago,Bradley,-3.5,-105,,,ncaab
+2026-02-24,8:30 PM,Minnesota,Michigan,+21.5,-105,,,ncaab
+2026-02-24,8:30 PM,Michigan,Minnesota,-21.5,-115,,,ncaab
+2026-02-24,8:30 PM,Southern Miss,Arkansas State,+8.5,-112,,,ncaab
+2026-02-24,8:30 PM,Arkansas State,Southern Miss,-8.5,-108,,,ncaab
+2026-02-24,9:00 PM,Arizona,Baylor,-8.5,-105,,,ncaab
+2026-02-24,9:00 PM,Baylor,Arizona,+8.5,-115,,,ncaab
+2026-02-24,9:00 PM,Iowa State,Utah,-12.5,-118,,,ncaab
+2026-02-24,9:00 PM,Utah,Iowa State,+12.5,-102,,,ncaab
+2026-02-24,9:00 PM,Tennessee,Missouri,-3.5,-110,,,ncaab
+2026-02-24,9:00 PM,Missouri,Tennessee,+3.5,-110,,,ncaab
+2026-02-24,9:00 PM,Miami FL,Florida State,-2.5,-105,,,ncaab
+2026-02-24,9:00 PM,Florida State,Miami FL,+2.5,-115,,,ncaab
+2026-02-24,9:00 PM,Auburn,Oklahoma,-2.5,-108,,,ncaab
+2026-02-24,9:00 PM,Oklahoma,Auburn,+2.5,-112,,,ncaab
+2026-02-24,9:00 PM,Arizona State,TCU,+6.5,-105,,,ncaab
+2026-02-24,9:00 PM,TCU,Arizona State,-6.5,-115,,,ncaab
+2026-02-24,9:00 PM,Fresno State,Colorado State,+8.5,-108,,,ncaab
+2026-02-24,9:00 PM,Colorado State,Fresno State,-8.5,-112,,,ncaab
+2026-02-24,9:00 PM,Wyoming,Boise State,+8.5,-115,,,ncaab
+2026-02-24,9:00 PM,Boise State,Wyoming,-8.5,-105,,,ncaab
+2026-02-24,9:00 PM,San Jose State,Air Force,-7.5,-105,,,ncaab
+2026-02-24,9:00 PM,Air Force,San Jose State,+7.5,-115,,,ncaab
+2026-02-24,11:00 PM,UCF,BYU,+12.5,-118,,,ncaab
+2026-02-24,11:00 PM,BYU,UCF,-12.5,-102,,,ncaab
+2026-02-24,11:00 PM,USC,UCLA,+7.5,-112,,,ncaab
+2026-02-24,11:00 PM,UCLA,USC,-7.5,-108,,,ncaab
+2026-02-24,11:00 PM,New Mexico,Nevada,+1.5,-122,,,ncaab
+2026-02-24,11:00 PM,Nevada,New Mexico,-1.5,+102,,,ncaab

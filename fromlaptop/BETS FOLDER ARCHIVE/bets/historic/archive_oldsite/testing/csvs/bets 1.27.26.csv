@@ -1,0 +1,34 @@
+Date,Game / Team,Win Probability,Acceptable Line (American),Actual Line Taken (American),Edge (Actual - Acceptable),Stake ($),Result (Win/Loss),Payout ($),Net Profit ($),league
+2026-01-27,Werder Bremen,0.396,190,245,55,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Newells Old Boys,0.417,157,240,83,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Atletico Tucuman,0.514,104,140,36,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Fiorentina,0.531,-102,240,342,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Velez Sarsfield,0.492,113,130,17,0.1,Win,0.23,0.13,soc
+2026-01-27,Huracan,0.575,-116,110,226,0.1,Loss,0.0,-0.1,soc
+2026-01-27,Over 141.5 Virginia Notre Dame,0.6573,-142,-105,37,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-27,Over 160.5 Kentucky Vanderbilt,0.7458,-208,120,328,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 140.5 Grand Canyon Nevada,0.6487,-137,-130,7,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 138.5 Eastern Michigan Central Michigan,0.8341,-324,105,429,0.1,Win,0.2,0.1,ncaab_ou
+2026-01-27,Over 164.5 Missouri Alabama,0.8318,-320,-130,190,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 151.5 Purdue Indiana,0.6198,-122,-110,12,0.1,Loss,0.0,-0.1,ncaab_ou
+2026-01-27,Over 145.5 Western Michigan Northern Illinois,0.7954,-264,-135,129,0.1,Win,0.17,0.07,ncaab_ou
+2026-01-27,Under 155.5 Georgia Tech Virginia Tech,0.6336,-129,-115,14,0.1,Win,0.18,0.07999999999999999,ncaab_ou
+2026-01-27,Over 136.5 Rhode Island Dayton,0.7367,-200,-120,80,0.1,Win,0.18,0.07999999999999999,ncaab_ou
+2026-01-27,Under 167.5 George Washington Saint Louis,0.6137,-119,-112,7,0.1,Win,0.18,0.07999999999999999,ncaab_ou
+2026-01-27,Over 145.5 Kansas State West Virginia,0.7199,-186,-125,61,0.1,Loss,0.18,0.07999999999999999,ncaab_ou
+2026-01-27,Over 138.5 Boise State San Jose State,0.6678,-149,-145,4,0.1,Win,0.16,0.06,ncaab_ou
+2026-01-27,Over 143.5 Saint Josephs Loyola Chicago,0.5594,104,-110,-214,0.1,Win,0.19,0.09,ncaab_ou
+2026-01-27,Alabama State,0.51,116,120,4,0.1,Loss,0.0,-0.1,ncaab
+2026-01-27,UTA Jazz +2.5,0.416,173,201,28,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-27,NY Knicks -8.5,0.795,-292,−252,40,0.1,Win,0.13,0.03,nba_spread
+2026-01-27,PHI 76ers -6.5,0.734,-216,−193,23,0.1,Win,0.15,0.04999999999999999,nba_spread
+2026-01-27,DET Pistons -5.5,0.688,-176,−142,34,0.1,Loss,0.0,-0.1,nba_spread
+2026-01-27,Over 211.5 BKN Nets PHO Suns,0.638,-138,−105,33,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-27,Over 218.5 DET Pistons DEN Nuggets,0.7541,-218,126,344,0.1,Loss,0.0,-0.1,nba_ou
+2026-01-27,Over 219.5 MIL Bucks PHI 76ers,0.5927,-117,-112,5,0.1,Win,0.18,0.07999999999999999,nba_ou
+2026-01-27,MTL Canadiens +1.5,0.6412,-303,-265,38,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,NSH Predators +1.5,0.6313,-278,−265,13,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,UTA Mammoth +1.5,0.615,-233,−192,41,0.1,Win,0.15,0.04999999999999999,nhl_spread
+2026-01-27,BUF Sabres +1.5,0.6459,-332,−258,74,0.1,Win,0.13,0.03,nhl_spread
+2026-01-27,Under 6.5 San Jose Vancouver,0.5503,108,-105,-213,0.1,Loss,0.0,-0.1,nhl_ou
+2026-01-27,Under 6.5 UTA Mammoth FLA Panthers,0.6432,-134,-125,9,0.1,Loss,0.0,-0.1,nhl_ou
