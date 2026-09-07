@@ -643,11 +643,15 @@ def validate_reconciliation(
         )
 
     if (
-        row.get(
-            "home_team",
-            "",
-        ).strip()
-        != schedule_expected["home_team"]
+        normalize_team_name(
+            row.get(
+                "home_team",
+                "",
+            )
+        )
+        != normalize_team_name(
+            schedule_expected["home_team"]
+        )
     ):
         raise RuntimeError(
             "Reconciled home team does not match "
@@ -655,11 +659,15 @@ def validate_reconciliation(
         )
 
     if (
-        row.get(
-            "away_team",
-            "",
-        ).strip()
-        != schedule_expected["away_team"]
+        normalize_team_name(
+            row.get(
+                "away_team",
+                "",
+            )
+        )
+        != normalize_team_name(
+            schedule_expected["away_team"]
+        )
     ):
         raise RuntimeError(
             "Reconciled away team does not match "
