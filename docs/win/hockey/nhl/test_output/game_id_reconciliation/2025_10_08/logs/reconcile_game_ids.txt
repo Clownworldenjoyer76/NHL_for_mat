@@ -1,16 +1,16 @@
-=== reconcile_game_ids RUN 2026-09-05T10:30:44.809857-04:00 ===
-2026-09-05T10:30:44.812108-04:00 | Stable NHL team identities loaded: 32
-2026-09-05T10:30:44.814554-04:00 | Sportsbook files found: 1
-2026-09-05T10:30:44.814589-04:00 | Prediction files found: 1
-2026-09-05T10:30:44.814614-04:00 | Dates to reconcile: 1
-2026-09-05T10:30:44.815381-04:00 | DATE 2025_10_08 | official_schedule=4 | sportsbook=1 | predictions=1 | reconciled=1 | orientation_corrections=2 | failures=0 | audit=docs/win/hockey/nhl/00_intake/reconciled/audit/NHL_2025_10_08_reconciliation.csv
-2026-09-05T10:30:44.815412-04:00 | ORIENTATION CORRECTED | source=sportsbook | file=docs/win/hockey/nhl/00_intake/sportsbook/NHL_2025_10_08.csv | row=2 | date=2025_10_08 | original_away=Toronto Maple Leafs | original_home=Montreal Canadiens | official_away=Montreal Canadiens | official_home=Toronto Maple Leafs | official_game_id=2025020004
-2026-09-05T10:30:44.815442-04:00 | ORIENTATION CORRECTED | source=prediction | file=docs/win/hockey/nhl/00_intake/predictions/hockey_2025_10_08.csv | row=2 | date=2025_10_08 | original_away=Toronto Maple Leafs | original_home=Montreal Canadiens | official_away=Montreal Canadiens | official_home=Toronto Maple Leafs | official_game_id=2025020004
-2026-09-05T10:30:44.815920-04:00 | --- SUMMARY ---
-2026-09-05T10:30:44.815951-04:00 | Dates processed: 1
-2026-09-05T10:30:44.815974-04:00 | Exactly reconciled games: 1
-2026-09-05T10:30:44.815994-04:00 | Home/away source rows corrected to official NHL orientation: 2
-2026-09-05T10:30:44.816014-04:00 | All sportsbook game_id values are official NHL game IDs.
-2026-09-05T10:30:44.816033-04:00 | All sportsbook provider IDs are preserved as sportsbook_event_id.
-2026-09-05T10:30:44.816051-04:00 | All D-Ratings prediction game_id values are official NHL game IDs.
-2026-09-05T10:30:44.816070-04:00 | STATUS: SUCCESS
+=== reconcile_game_ids RUN 2026-09-08T09:32:46.651210-04:00 ===
+2026-09-08T09:32:46.653539-04:00 | Stable NHL team identities loaded: 32
+2026-09-08T09:32:46.655969-04:00 | Sportsbook files found: 1
+2026-09-08T09:32:46.656004-04:00 | Prediction files found: 1
+2026-09-08T09:32:46.656030-04:00 | Dates to reconcile: 1
+2026-09-08T09:32:46.656827-04:00 | DATE 2025_10_08 | official_schedule=4 | sportsbook=1 | predictions=1 | reconciled=1 | orientation_corrections=2 | failures=0 | audit=docs/win/hockey/nhl/00_intake/reconciled/audit/NHL_2025_10_08_reconciliation.csv
+2026-09-08T09:32:46.656859-04:00 | ORIENTATION CORRECTED | source=sportsbook | file=docs/win/hockey/nhl/00_intake/sportsbook/NHL_2025_10_08.csv | row=2 | date=2025_10_08 | original_away=Toronto Maple Leafs | original_home=Montreal Canadiens | official_away=Montreal Canadiens | official_home=Toronto Maple Leafs | official_game_id=2025020004
+2026-09-08T09:32:46.656888-04:00 | ORIENTATION CORRECTED | source=prediction | file=docs/win/hockey/nhl/00_intake/predictions/hockey_2025_10_08.csv | row=2 | date=2025_10_08 | original_away=Toronto Maple Leafs | original_home=Montreal Canadiens | official_away=Montreal Canadiens | official_home=Toronto Maple Leafs | official_game_id=2025020004
+2026-09-08T09:32:46.657315-04:00 | --- SUMMARY ---
+2026-09-08T09:32:46.657367-04:00 | Dates processed: 1
+2026-09-08T09:32:46.657397-04:00 | Exactly reconciled games: 1
+2026-09-08T09:32:46.657420-04:00 | Home/away source rows corrected to official NHL orientation: 2
+2026-09-08T09:32:46.657441-04:00 | All sportsbook game_id values are official NHL game IDs.
+2026-09-08T09:32:46.657461-04:00 | All sportsbook provider IDs are preserved as sportsbook_event_id.
+2026-09-08T09:32:46.657481-04:00 | All D-Ratings prediction game_id values are official NHL game IDs.
+2026-09-08T09:32:46.657500-04:00 | STATUS: SUCCESS
