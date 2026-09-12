@@ -186,12 +186,13 @@ def secondary_config() -> dict:
     }
 
 
-def primary_candidate() -> dict:
+def primary_candidate(*, decimal_odds: float = 2.0) -> dict:
     return {
         "game_date": "2026_10_10",
         "market_type": "moneyline",
         "bet_side": "home",
         "line": "",
+        "dk_odds_decimal": decimal_odds,
     }
 
 
@@ -238,6 +239,98 @@ def test_stage04_keeps_high_disagreement_with_secondary_support() -> None:
     assert len(kept) == 1
     assert kept[0]["secondary_decision"] == "high_disagreement_supported"
     assert rejections == {}
+
+
+def test_stage04_moneyline_plus150_45pct_price_aware_support() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+
+    assert 0.45 < 0.50
+    assert module.support_label(
+        market_type="moneyline",
+        bet_side="home",
+        prediction=0.45,
+        line="",
+        decimal_odds=2.50,
+    ) == "supports"
+
+
+def test_stage04_moneyline_plus150_45pct_gate_is_kept() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+    rejections = {}
+    row = signal_row_for_gate(
+        sdv_prob=0.45,
+        weighted_prob=0.39,
+    )
+
+    kept = module.apply_secondary_model_gate(
+        [primary_candidate(decimal_odds=2.50)],
+        row,
+        secondary_config(),
+        market_type="moneyline",
+        rejections=rejections,
+    )
+
+    assert len(kept) == 1
+    assert kept[0]["secondary_challenger_support"] == "supports"
+    assert kept[0]["secondary_decision"] == "high_disagreement_supported"
+    assert rejections == {}
+
+
+def test_stage04_moneyline_minus250_60pct_price_aware_non_support() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+
+    assert 0.60 > 0.50
+    assert module.support_label(
+        market_type="moneyline",
+        bet_side="home",
+        prediction=0.60,
+        line="",
+        decimal_odds=1.40,
+    ) == "opposes"
+
+
+def test_stage04_moneyline_minus250_60pct_gate_is_blocked() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+    rejections = {}
+    row = signal_row_for_gate(
+        sdv_prob=0.60,
+        weighted_prob=0.65,
+    )
+
+    kept = module.apply_secondary_model_gate(
+        [primary_candidate(decimal_odds=1.40)],
+        row,
+        secondary_config(),
+        market_type="moneyline",
+        rejections=rejections,
+    )
+
+    assert kept == []
+    assert sum(rejections.values()) == 1
+
+
+def test_stage04_moneyline_away_support_uses_away_probability_and_price() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+
+    assert module.support_label(
+        market_type="moneyline",
+        bet_side="away",
+        prediction=0.60,
+        line="",
+        decimal_odds=3.00,
+    ) == "supports"
+
+
+def test_stage04_moneyline_missing_decimal_price_is_unavailable() -> None:
+    module = load_module("docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py")
+
+    assert module.support_label(
+        market_type="moneyline",
+        bet_side="home",
+        prediction=0.60,
+        line="",
+        decimal_odds=None,
+    ) == "unavailable"
 
 
 def test_stage04_uses_primary_when_secondary_unavailable() -> None:

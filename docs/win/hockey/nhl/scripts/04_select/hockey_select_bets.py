@@ -20,6 +20,11 @@ REJECTION_FILE = ERROR_DIR / "selection_rejections.csv"
 
 LEAGUE_CODE = "NHL"
 
+# Approved production rule: a secondary moneyline opinion supports a bet only
+# when its side probability exceeds the offered sportsbook break-even
+# probability. No additional safety margin has been validated.
+MONEYLINE_SECONDARY_SUPPORT_MARGIN = 0.0
+
 BLOCKED_PATH_PARTS = {
     "05_final_scores",
     "graded",
@@ -375,17 +380,49 @@ def support_label(
     bet_side: str,
     prediction,
     line,
+    decimal_odds=None,
 ) -> str:
     value = fv(prediction)
     if value is None:
         return "unavailable"
 
     if market_type == "moneyline":
-        if abs(value - 0.5) < 1e-12:
+        decimal_value = fv(decimal_odds)
+        if (
+            decimal_value is None
+            or decimal_value <= 1
+            or not 0 <= value <= 1
+        ):
+            return "unavailable"
+
+        if bet_side == "home":
+            side_probability = value
+        elif bet_side == "away":
+            side_probability = 1.0 - value
+        else:
+            fail(
+                "Unknown moneyline bet_side for secondary support: "
+                f"{bet_side!r}"
+            )
+
+        break_even_probability = 1.0 / decimal_value
+        required_probability = (
+            break_even_probability
+            + MONEYLINE_SECONDARY_SUPPORT_MARGIN
+        )
+        support_margin = (
+            side_probability
+            - required_probability
+        )
+
+        if abs(support_margin) < 1e-12:
             return "neutral"
-        supports_home = value > 0.5
-        supports = supports_home if bet_side == "home" else not supports_home
-        return "supports" if supports else "opposes"
+
+        return (
+            "supports"
+            if support_margin > 0
+            else "opposes"
+        )
 
     if market_type == "puck_line":
         line_value = fv(line)
@@ -500,17 +537,22 @@ def apply_secondary_model_gate(
 
         line = candidate.get("line")
         side = candidate["bet_side"]
+        decimal_odds = candidate.get(
+            "dk_odds_decimal"
+        )
         challenger_support = support_label(
             market_type=market_type,
             bet_side=side,
             prediction=row.get(challenger_field),
             line=line,
+            decimal_odds=decimal_odds,
         )
         derived_support = support_label(
             market_type=market_type,
             bet_side=side,
             prediction=row.get(derived_field),
             line=line,
+            decimal_odds=decimal_odds,
         )
 
         candidate["secondary_challenger_support"] = challenger_support

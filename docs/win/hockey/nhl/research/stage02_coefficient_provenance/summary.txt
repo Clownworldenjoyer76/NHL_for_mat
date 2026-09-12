@@ -1,0 +1,27 @@
+NHL STAGE 02 COEFFICIENT PROVENANCE AUDIT
+=========================================
+research_only=true
+production_files_modified=false
+active_coefficients=118
+moneyline_coefficients=104
+puck_line_coefficients=4
+total_coefficients=10
+direct_roi_or_profit_coefficients=91
+unknown_provenance_coefficients=27
+proper_probability_calibration_coefficients=0
+independent_oos_probability_validation_found=false
+
+Stage 02 active transformation:
+adjusted_decimal = fair_decimal * (1 - model_calibration_adjustment)
+adjusted_probability_raw = 1 / adjusted_decimal
+opposing adjusted probabilities are then normalized to sum to 1
+
+Interpretation:
+Any coefficient classified as ROI, negative ROI, or profit is probabilistically unsupported
+unless independently validated out-of-sample using proper probability metrics.
+No such independent validation was located by this provenance audit.
+
+Artifacts:
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\stage02_coefficient_provenance\stage02_coefficient_provenance.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\stage02_coefficient_provenance\probabilistically_unsupported_coefficients.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\stage02_coefficient_provenance\provenance_classification_counts.csv

@@ -1,0 +1,76 @@
+{
+  "beta_l2_grid": [
+    0.0,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "betting_evaluation_rule": "predicted_ev > 0; fixed before final test; no threshold search",
+  "calibration_fit_unit": "one canonical side per game: home for moneyline/puck_line, over for total",
+  "candidate_count": 18,
+  "candidate_families": [
+    "beta_calibration",
+    "isotonic_regression",
+    "logistic_logit_probability",
+    "platt_logistic_raw_probability",
+    "production_baseline",
+    "raw_baseline"
+  ],
+  "created_at_utc": "2026-09-12T14:41:00.939672+00:00",
+  "development_end": "2026-03-21",
+  "development_game_count": 1108,
+  "development_start": "2025-10-07",
+  "final_test_comparators": [
+    "raw_baseline",
+    "production_baseline",
+    "locked_market_winner"
+  ],
+  "final_test_end": "2026-06-14",
+  "final_test_forbidden_for": [
+    "model family selection",
+    "feature selection",
+    "hyperparameter selection",
+    "calibration method selection",
+    "disagreement threshold selection",
+    "selection threshold selection"
+  ],
+  "final_test_game_count": 285,
+  "final_test_start": "2026-03-22",
+  "initial_train_date_fraction": 0.4,
+  "isotonic_requirements": {
+    "min_class_count": 30,
+    "min_train_decisions": 300,
+    "min_unique_probability": 20
+  },
+  "logistic_C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "opposite_probability_rule": "1 - calibrated canonical probability",
+  "package_versions": {
+    "numpy": "2.4.2",
+    "pandas": "3.0.5",
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "production_adjustment_formula": [
+    "fair_decimal = 1 / raw_probability",
+    "adjusted_decimal = fair_decimal * (1 - model_calibration_adjustment)",
+    "adjusted_probability_raw = 1 / adjusted_decimal",
+    "opposing adjusted probabilities normalized to sum to 1"
+  ],
+  "production_stage02_modified": false,
+  "reliability_bins": 10,
+  "requested_final_fraction": 0.2,
+  "research_only": true,
+  "seed": 20260912,
+  "selection_rule": "lowest development expanding-window aggregate log loss; Brier score tiebreaker",
+  "split_rule": "reserve final chronological 20% of unique games; keep complete cutoff date in final test",
+  "total_probability_definition": "conditional on no-push; push probability retained separately for actual EV",
+  "validation_folds": 4
+}

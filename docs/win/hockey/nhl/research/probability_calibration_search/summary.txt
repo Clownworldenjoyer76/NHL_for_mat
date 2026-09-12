@@ -1,0 +1,38 @@
+NHL RESEARCH-ONLY PROBABILITY CALIBRATION SEARCH
+================================================
+research_only=true
+production_stage02_modified=false
+seed=20260912
+development_start=2025-10-07
+development_end=2026-03-21
+final_test_start=2026-03-22
+final_test_end=2026-06-14
+development_games=1108
+final_test_games=285
+candidate_count=18
+validation_folds=4
+selection_rule=lowest development expanding-window log loss; Brier tiebreaker
+final_test_used_for_selection=false
+betting_rule=predicted_ev > 0 (fixed; not tuned)
+
+LOCKED MARKET WINNERS
+moneyline: logit_logistic_C=100 | family=logistic_logit_probability | hyperparameters={"C": 100.0, "class_weight": null, "max_iter": 5000, "random_state": 20260912, "solver": "lbfgs"}
+puck_line: raw_baseline | family=raw_baseline | hyperparameters={}
+total: production_baseline | family=production_baseline | hyperparameters={}
+
+LOCKED WINNER FINAL-TEST METRICS
+moneyline: Brier=0.239796 | log_loss=0.672490 | ECE=0.044772 | cal_intercept=-0.137439 | cal_slope=1.989451 | edge_MAE=0.485647 | EV_MAE=0.969568 | positive_EV_bets=191 | ROI=-0.017958
+puck_line: Brier=0.229386 | log_loss=0.650996 | ECE=0.071223 | cal_intercept=-0.114599 | cal_slope=1.384776 | edge_MAE=0.468886 | EV_MAE=0.956223 | positive_EV_bets=119 | ROI=0.046387
+total: Brier=0.251363 | log_loss=0.696068 | ECE=0.039523 | cal_intercept=0.122366 | cal_slope=0.413644 | edge_MAE=0.496509 | EV_MAE=0.957001 | positive_EV_bets=193 | ROI=-0.122437
+
+Artifacts:
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\split_manifest.json
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\run_manifest.json
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\research_dataset.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\fold_metrics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\search_results.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\validation_predictions.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\selected_models.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\final_test_predictions.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\final_test_metrics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\probability_calibration_search\reliability_curves.csv

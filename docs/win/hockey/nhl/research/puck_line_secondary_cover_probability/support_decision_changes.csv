@@ -1,0 +1,13 @@
+source,method,current_margin_rule_supports,price_aware_probability_supports,support_overlap,current_only,price_aware_only
+sdv,skellam,230,229,229,1,0
+sdv,empirical_margin_ecdf,230,192,192,38,0
+sdv,direct_cover_logistic,230,150,115,115,35
+sdv,poisson_simulation,230,229,229,1,0
+weighted,skellam,230,181,176,54,5
+weighted,empirical_margin_ecdf,230,133,97,133,36
+weighted,direct_cover_logistic,230,155,133,97,22
+weighted,poisson_simulation,230,183,176,54,7
+meta,skellam,230,163,126,104,37
+meta,empirical_margin_ecdf,230,160,63,167,97
+meta,direct_cover_logistic,230,172,105,125,67
+meta,poisson_simulation,230,170,130,100,40

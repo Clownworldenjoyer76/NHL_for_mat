@@ -1,0 +1,7 @@
+market_type,bet_side,largest_abs_gap_odds_band,odds_band_gap,odds_band_decisions,largest_abs_gap_line_value,line_value_gap,line_value_decisions,min_decisions_for_concentration_flag
+moneyline,home,+120 to +149,-0.060414658999944915,122,,,0,30
+moneyline,away,-119 to -100,0.05501937325360051,209,,,0,30
+puck_line,home,-199 to -150,-0.14221479674547155,106,1.5,-0.1239994967501522,159,30
+puck_line,away,-119 to -100,-0.15659310588441444,30,1.5,-0.08872072777004669,597,30
+total,over,-119 to -100,0.04183375738305223,702,6.0,0.049285987965504985,564,30
+total,under,-119 to -100,-0.04234490885507425,703,6.0,-0.04928598796550493,564,30

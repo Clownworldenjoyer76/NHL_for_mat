@@ -1,0 +1,48 @@
+NHL PUCK-LINE SECONDARY COVER-PROBABILITY RESEARCH
+==================================================
+research_only=true
+production_files_modified=false
+production_promotion_performed=false
+current_rule=expected_margin + side_line > 0
+research_rule=P(cover) > 1 / offered_decimal_odds
+valid_puck_games=1118
+development_games=888
+final_test_games=230
+final_test_start=2026-03-19
+validation_folds=4
+sources=sdv,weighted,meta
+methods=skellam,empirical_margin_ecdf,direct_cover_logistic,poisson_simulation
+
+BEST DEVELOPMENT COMBINATION (informational only)
+source=meta | method=empirical_margin_ecdf | Brier=0.221563 | log_loss=0.634774 | positive_EV_ROI=0.077297
+
+BEST FINAL-TEST COMBINATION (evaluation only; not used for selection)
+source=meta | method=direct_cover_logistic | Brier=0.218264 | log_loss=0.626566 | positive_EV_bets=172 | positive_EV_ROI=-0.012591
+
+FINAL-TEST COMPARISON
+meta / direct_cover_logistic: Brier=0.218264 | log_loss=0.626566 | cal_gap=0.030418 | positive_EV_bets=172 | positive_EV_hit=0.540698 | positive_EV_ROI=-0.012591 | current_margin_rule_ROI=-0.035780
+meta / empirical_margin_ecdf: Brier=0.219672 | log_loss=0.629938 | cal_gap=0.023016 | positive_EV_bets=160 | positive_EV_hit=0.487500 | positive_EV_ROI=0.008848 | current_margin_rule_ROI=-0.035780
+weighted / direct_cover_logistic: Brier=0.220375 | log_loss=0.630956 | cal_gap=0.032433 | positive_EV_bets=155 | positive_EV_hit=0.612903 | positive_EV_ROI=0.025652 | current_margin_rule_ROI=-0.050476
+meta / poisson_simulation: Brier=0.220826 | log_loss=0.631802 | cal_gap=0.032712 | positive_EV_bets=170 | positive_EV_hit=0.552941 | positive_EV_ROI=-0.078804 | current_margin_rule_ROI=-0.035780
+meta / skellam: Brier=0.220829 | log_loss=0.631920 | cal_gap=0.033218 | positive_EV_bets=163 | positive_EV_hit=0.558282 | positive_EV_ROI=-0.069980 | current_margin_rule_ROI=-0.035780
+weighted / empirical_margin_ecdf: Brier=0.220971 | log_loss=0.632530 | cal_gap=0.030518 | positive_EV_bets=133 | positive_EV_hit=0.518797 | positive_EV_ROI=-0.049746 | current_margin_rule_ROI=-0.050476
+sdv / direct_cover_logistic: Brier=0.223468 | log_loss=0.637724 | cal_gap=0.032488 | positive_EV_bets=150 | positive_EV_hit=0.526667 | positive_EV_ROI=-0.061712 | current_margin_rule_ROI=-0.050476
+weighted / skellam: Brier=0.225761 | log_loss=0.642216 | cal_gap=0.020880 | positive_EV_bets=181 | positive_EV_hit=0.591160 | positive_EV_ROI=-0.096311 | current_margin_rule_ROI=-0.050476
+weighted / poisson_simulation: Brier=0.226304 | log_loss=0.643541 | cal_gap=0.021067 | positive_EV_bets=183 | positive_EV_hit=0.579235 | positive_EV_ROI=-0.109355 | current_margin_rule_ROI=-0.050476
+sdv / empirical_margin_ecdf: Brier=0.235507 | log_loss=0.664799 | cal_gap=0.034034 | positive_EV_bets=192 | positive_EV_hit=0.598958 | positive_EV_ROI=-0.085627 | current_margin_rule_ROI=-0.050476
+sdv / poisson_simulation: Brier=0.239668 | log_loss=0.674847 | cal_gap=0.037873 | positive_EV_bets=229 | positive_EV_hit=0.637555 | positive_EV_ROI=-0.046330 | current_margin_rule_ROI=-0.050476
+sdv / skellam: Brier=0.239812 | log_loss=0.675215 | cal_gap=0.038534 | positive_EV_bets=229 | positive_EV_hit=0.637555 | positive_EV_ROI=-0.046330 | current_margin_rule_ROI=-0.050476
+
+Artifacts:
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\split_manifest.json
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\run_manifest.json
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\research_dataset.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\fold_metrics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\development_metrics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\development_ranking.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\validation_cover_predictions.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\validation_side_economics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\final_test_metrics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\final_test_cover_predictions.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\final_test_side_economics.csv
+C:\Users\ntmal\Downloads\mat\NHL_for_mat\docs\win\hockey\nhl\research\puck_line_secondary_cover_probability\support_decision_changes.csv
