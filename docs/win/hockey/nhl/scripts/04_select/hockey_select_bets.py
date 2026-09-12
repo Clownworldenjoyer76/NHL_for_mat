@@ -99,6 +99,12 @@ OUTPUT_COLUMNS = [
     "meta_home_win_prob",
     "meta_exp_margin",
     "meta_exp_total",
+    "sdv_home_cover_prob_puck_line",
+    "sdv_away_cover_prob_puck_line",
+    "weighted_home_cover_prob_puck_line",
+    "weighted_away_cover_prob_puck_line",
+    "meta_home_cover_prob_puck_line",
+    "meta_away_cover_prob_puck_line",
     "secondary_history_max_game_date",
     "secondary_model_status",
     "secondary_signal_version",
@@ -134,6 +140,12 @@ SECONDARY_SIGNAL_COLUMNS = [
     "meta_home_win_prob",
     "meta_exp_margin",
     "meta_exp_total",
+    "sdv_home_cover_prob_puck_line",
+    "sdv_away_cover_prob_puck_line",
+    "weighted_home_cover_prob_puck_line",
+    "weighted_away_cover_prob_puck_line",
+    "meta_home_cover_prob_puck_line",
+    "meta_away_cover_prob_puck_line",
     "secondary_history_max_game_date",
     "secondary_model_status",
     "secondary_signal_version",
@@ -425,17 +437,38 @@ def support_label(
         )
 
     if market_type == "puck_line":
-        line_value = fv(line)
-        if line_value is None:
+        decimal_value = fv(decimal_odds)
+        if (
+            decimal_value is None
+            or decimal_value <= 1
+            or not 0 <= value <= 1
+        ):
             return "unavailable"
-        cover_margin = (
-            value + line_value
-            if bet_side == "home"
-            else -value + line_value
+
+        if bet_side == "home":
+            side_probability = value
+        elif bet_side == "away":
+            side_probability = 1.0 - value
+        else:
+            fail(
+                "Unknown puck-line bet_side for secondary support: "
+                f"{bet_side!r}"
+            )
+
+        break_even_probability = 1.0 / decimal_value
+        support_margin = (
+            side_probability
+            - break_even_probability
         )
-        if abs(cover_margin) < 1e-12:
+
+        if abs(support_margin) < 1e-12:
             return "neutral"
-        return "supports" if cover_margin > 0 else "opposes"
+
+        return (
+            "supports"
+            if support_margin > 0
+            else "opposes"
+        )
 
     if market_type == "total":
         line_value = fv(line)
@@ -464,11 +497,15 @@ def secondary_market_fields(
 
     if market_type == "puck_line":
         derived_field = (
-            "weighted_exp_margin"
+            "weighted_home_cover_prob_puck_line"
             if derived_model == "weighted"
-            else "meta_exp_margin"
+            else "meta_home_cover_prob_puck_line"
         )
-        return "high_margin_disagreement_flag", "sdv_exp_margin", derived_field
+        return (
+            "high_margin_disagreement_flag",
+            "sdv_home_cover_prob_puck_line",
+            derived_field,
+        )
 
     if market_type == "total":
         derived_field = (

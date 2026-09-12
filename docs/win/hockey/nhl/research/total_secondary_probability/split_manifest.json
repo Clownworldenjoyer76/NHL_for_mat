@@ -1,0 +1,26 @@
+{
+  "coverage": {
+    "half_total_rows": 673,
+    "history_rows": 1291,
+    "integer_total_rows": 618,
+    "joined_rows": 1291,
+    "missing_line_or_price": 0,
+    "price_rows": 1393,
+    "realized_pushes": 60,
+    "valid_rows": 1291
+  },
+  "created_at_utc": "2026-09-12T16:16:13.384123+00:00",
+  "development_end": "2026-03-13",
+  "development_games": 1021,
+  "development_start": "2025-10-09",
+  "final_test_end": "2026-04-16",
+  "final_test_games": 270,
+  "final_test_start": "2026-03-14",
+  "production_files_modified": false,
+  "production_promotion_performed": false,
+  "requested_final_test_fraction": 0.2,
+  "research_only": true,
+  "seed": 20260912,
+  "simulations_per_row": 5000,
+  "validation_folds": 4
+}

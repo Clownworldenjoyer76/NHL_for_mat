@@ -1,0 +1,26 @@
+{
+  "candidate_games": 186,
+  "candidate_rows": 376,
+  "candidate_rule": "archived primary model side probability > 1 / offered decimal odds",
+  "created_at_utc": "2026-09-12T16:56:51.659284+00:00",
+  "development_candidates": 268,
+  "development_end": "2026-04-09",
+  "development_start": "2026-03-23",
+  "final_test_candidates": 108,
+  "final_test_end": "2026-04-16",
+  "final_test_start": "2026-04-11",
+  "history_rows": 1291,
+  "markets_yaml_read": false,
+  "minimum_prior_rows": 100,
+  "production_files_modified": false,
+  "quantiles_tested": [
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "research_only": true,
+  "same_day_history_excluded": true
+}

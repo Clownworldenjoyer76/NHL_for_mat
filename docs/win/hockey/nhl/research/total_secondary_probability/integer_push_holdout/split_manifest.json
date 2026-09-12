@@ -1,0 +1,26 @@
+{
+  "actual_holdout_fraction": 0.20064724919093851,
+  "chronology_rule": "all development game dates strictly precede holdout start date",
+  "coverage_from_parent_research": {
+    "half_total_rows": 673,
+    "history_rows": 1291,
+    "integer_total_rows": 618,
+    "joined_rows": 1291,
+    "missing_line_or_price": 0,
+    "price_rows": 1393,
+    "realized_pushes": 60,
+    "valid_rows": 1291
+  },
+  "created_at_utc": "2026-09-12T16:30:51.986145+00:00",
+  "development_end": "2026-01-13",
+  "development_games": 494,
+  "development_start": "2025-10-11",
+  "development_validation_folds": 4,
+  "holdout_end": "2026-02-28",
+  "holdout_games": 124,
+  "holdout_start": "2026-01-14",
+  "integer_total_games": 618,
+  "production_files_modified": false,
+  "requested_holdout_fraction": 0.2,
+  "research_only": true
+}

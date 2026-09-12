@@ -1,0 +1,18 @@
+{
+  "development_decision_brier": 0.25127077135054954,
+  "development_decision_log_loss": 0.6956808288524224,
+  "development_multiclass_brier": 0.5904321475789432,
+  "development_multiclass_log_loss": 0.9579069223959497,
+  "development_positive_ev_roi": 0.033300630468676574,
+  "development_push_brier": 0.09391440335341465,
+  "development_rank": 1,
+  "locked_before_holdout_evaluation": true,
+  "method": "empirical_residual",
+  "selection_order": [
+    "lowest development multiclass_log_loss",
+    "lowest development push_brier",
+    "lowest development decision_log_loss",
+    "lowest development multiclass_brier"
+  ],
+  "source": "sdv"
+}
