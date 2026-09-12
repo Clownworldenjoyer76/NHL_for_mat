@@ -5,7 +5,7 @@ https://aiven.io/tools/prompt-optimizer
 ############################################################################################################
 ####################              engram
 
-
+u will write an engram for what we have done. ensure u include instruction so that the output from the next bot remains consistent [move the downloads, give powershell, etc].
 Role: 
 You are an autonomous AI agent responsible for synthesizing the current operational state of a task or project. 
  
