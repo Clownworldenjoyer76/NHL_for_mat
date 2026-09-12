@@ -326,6 +326,7 @@ def compute_total_edges(df, file_path):
         "game_id",
         "over_normalized_prob_total",
         "under_normalized_prob_total",
+        "push_prob_total",
         "dk_total_over_decimal",
         "dk_total_under_decimal",
     ]
@@ -346,6 +347,28 @@ def compute_total_edges(df, file_path):
     )
     df["under_model_prob_total"] = (
         df["under_normalized_prob_total"]
+    )
+
+    no_push_prob = (
+        1.0
+        - df["push_prob_total"]
+    )
+
+    df["over_model_win_prob_total"] = (
+        df["over_model_prob_total"]
+        * no_push_prob
+    )
+    df["over_model_loss_prob_total"] = (
+        df["under_model_prob_total"]
+        * no_push_prob
+    )
+    df["under_model_win_prob_total"] = (
+        df["under_model_prob_total"]
+        * no_push_prob
+    )
+    df["under_model_loss_prob_total"] = (
+        df["over_model_prob_total"]
+        * no_push_prob
     )
 
     df["over_edge_pct_total"] = safe_edge_pct(

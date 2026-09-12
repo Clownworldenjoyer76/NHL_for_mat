@@ -156,6 +156,7 @@ PUCK_LINE_COLUMNS = BASE_COLUMNS + [
 
 TOTAL_COLUMNS = BASE_COLUMNS + [
     "total","total_projected_goals","over_prob_total","under_prob_total",
+    "over_win_prob_total","under_win_prob_total","push_prob_total",
     "over_fair_decimal_total","under_fair_decimal_total",
     "dk_total_over_american","dk_total_under_american",
     "dk_total_over_decimal","dk_total_under_decimal",
@@ -208,24 +209,68 @@ def calculate_away_puck_probability(away_line, away_projected_goals, home_projec
 
 def calculate_total_probabilities(total_line, total_projected_goals):
     if pd.isna(total_line) or pd.isna(total_projected_goals) or total_projected_goals <= 0:
-        return None, None
+        return None, None, None, None, None
+
     total_line = float(total_line)
+
     if total_line.is_integer():
         push_total = int(total_line)
-        under_prob = poisson.cdf(push_total - 1, total_projected_goals)
-        over_prob = 1 - poisson.cdf(push_total, total_projected_goals)
-        no_push_prob = under_prob + over_prob
+
+        under_win_prob = poisson.cdf(
+            push_total - 1,
+            total_projected_goals,
+        )
+        push_prob = poisson.pmf(
+            push_total,
+            total_projected_goals,
+        )
+        over_win_prob = 1 - poisson.cdf(
+            push_total,
+            total_projected_goals,
+        )
+
+        no_push_prob = (
+            under_win_prob
+            + over_win_prob
+        )
+
         if pd.isna(no_push_prob) or no_push_prob <= 0:
-            return None, None
-        under_prob /= no_push_prob
-        over_prob /= no_push_prob
+            return None, None, None, None, None
+
+        under_prob = under_win_prob / no_push_prob
+        over_prob = over_win_prob / no_push_prob
+
     else:
         cutoff = math.floor(total_line)
-        under_prob = poisson.cdf(cutoff, total_projected_goals)
-        over_prob = 1 - under_prob
-    if pd.isna(over_prob) or pd.isna(under_prob):
-        return None, None
-    return min(max(over_prob, 0.01), 0.99), min(max(under_prob, 0.01), 0.99)
+
+        under_win_prob = poisson.cdf(
+            cutoff,
+            total_projected_goals,
+        )
+        over_win_prob = 1 - under_win_prob
+        push_prob = 0.0
+
+        under_prob = under_win_prob
+        over_prob = over_win_prob
+
+    values = (
+        over_prob,
+        under_prob,
+        over_win_prob,
+        under_win_prob,
+        push_prob,
+    )
+
+    if any(pd.isna(value) for value in values):
+        return None, None, None, None, None
+
+    return (
+        min(max(over_prob, 0.01), 0.99),
+        min(max(under_prob, 0.01), 0.99),
+        float(over_win_prob),
+        float(under_win_prob),
+        float(push_prob),
+    )
 
 def validate_schema(path: Path, df: pd.DataFrame) -> list[str]:
     return [col for col in MERGED_REQUIRED_COLUMNS if col not in df.columns]
@@ -261,16 +306,39 @@ def build_puck_line(df: pd.DataFrame, output_path: Path) -> int:
 
 def build_total(df: pd.DataFrame, output_path: Path) -> int:
     total = df.copy()
-    over_probs, under_probs, over_fair, under_fair = [], [], [], []
+    over_probs, under_probs = [], []
+    over_win_probs, under_win_probs, push_probs = [], [], []
+    over_fair, under_fair = [], []
+
     for idx, row in total.iterrows():
-        op, up = calculate_total_probabilities(row["total"], row["total_projected_goals"])
+        (
+            op,
+            up,
+            over_win,
+            under_win,
+            push_prob,
+        ) = calculate_total_probabilities(
+            row["total"],
+            row["total_projected_goals"],
+        )
+
         if op is None or up is None:
             log(f"ROW ISSUE: total probability unavailable idx={idx} game_id={row.get('game_id','')}")
-        over_probs.append(op); under_probs.append(up)
+
+        over_probs.append(op)
+        under_probs.append(up)
+        over_win_probs.append(over_win)
+        under_win_probs.append(under_win)
+        push_probs.append(push_prob)
+
         over_fair.append(fair_decimal(op) if op is not None else None)
         under_fair.append(fair_decimal(up) if up is not None else None)
+
     total["over_prob_total"] = over_probs
     total["under_prob_total"] = under_probs
+    total["over_win_prob_total"] = over_win_probs
+    total["under_win_prob_total"] = under_win_probs
+    total["push_prob_total"] = push_probs
     total["over_fair_decimal_total"] = over_fair
     total["under_fair_decimal_total"] = under_fair
     total = total[TOTAL_COLUMNS]
