@@ -1,0 +1,686 @@
+# NHL probability/calculation audit
+
+Read-only audit of `Clownworldenjoyer76/NHL_for_mat`. The active `docs/win/hockey/nhl/04_select` directory currently contains only `.gitkeep`, consistent with the offseason state.
+
+## Overall assessment
+
+The basic odds, edge, EV, and binary Kelly mathematics are correct. The larger issues are upstream probability construction/calibration and the secondary confirmation logic.
+
+**Highest-priority findings:**
+
+1. **Critical — Stage 04 secondary “support” is not evaluated against the bet's break-even probability.** Moneyline support uses `0.50`; puck-line and total support use expected margin/total versus the line. That can classify a mathematically negative-EV opinion as “support” and a positive-EV opinion as “opposition.”
+2. **Critical/High — Stage 02 probability adjustments do not have a demonstrated probabilistically valid calibration derivation.** The moneyline coefficients closely reproduce sign-reversed historical ROI-band values; other markets use coefficients resembling historical ROI in a different direction. That is not equivalent to fitting calibrated probabilities with Brier/log-loss optimization.
+3. **High — Integer-total EV is overstated.** The Poisson calculation conditions win/loss probabilities on “no push,” then downstream EV treats that conditional probability as unconditional. The EV sign remains correct, but the EV magnitude is inflated whenever push probability is nonzero. Integer NHL totals such as 6.0 and 7.0 are explicitly supported.
+4. **High — Existing historical calibration output shows material side-specific bias**, particularly puck line and totals.
+5. **High — The current full-season replay does not test the secondary-model selection gate**, so it is not an end-to-end validation of the current final-bet calculation path.
+
+---
+
+## 1. D-Ratings probability conversion
+
+**Calculation Name/Description:** Percentage prediction → moneyline probability
+
+**Purpose:** Convert the external D-Ratings home/away win percentages into numeric probabilities used as the primary moneyline model.
+
+**Methodology:** The intake transformation removes `%`, converts to float, and divides by 100. Example: `57.2% → 0.572`. It separately imports projected home and away goals and defines projected total goals as:
+
+`projected_total = projected_home_goals + projected_away_goals`
+
+The total is rounded to two decimals.
+
+**Accuracy Assessment:** The percentage conversion itself is correct. There is no local model training behind these probabilities; the repository consumes an external prediction. Therefore the underlying D-Ratings training methodology, feature set, probability calibration, and model family cannot be audited from this repository.
+
+The intake also does not establish probabilistic validity of the supplied home/away probabilities. It merely parses them. Consequently, downstream accuracy depends substantially on external calibration quality.
+
+**Assessment:** Mechanically correct; underlying probability-generation accuracy is **not auditable from this repository**.
+
+---
+
+## 2. Fair decimal price from model probability
+
+**Calculation Name/Description:** Model probability → fair decimal odds
+
+**Purpose:** Express the model probability as a no-margin decimal price before later probability adjustments.
+
+**Methodology:**
+
+`fair_decimal = 1 / model_probability`
+
+This is used directly for moneyline probabilities and for derived puck-line/total probabilities.
+
+**Accuracy Assessment:** Mathematically correct when `0 < p <= 1`.
+
+One implementation weakness is that `fair_decimal()` rejects nonpositive probabilities but does not itself reject `p > 1`. Later processing rejects invalid decimal values, so corrupted inputs are eventually stopped, but probability-domain validation should logically occur at probability creation.
+
+**Assessment:** Correct formula; minor validation weakness.
+
+---
+
+## 3. Puck-line probability from projected goals
+
+**Calculation Name/Description:** Independent-Poisson/Skellam puck-line probability
+
+**Purpose:** Convert projected home and away goal means into probabilities of covering the sportsbook puck line.
+
+**Methodology:** Home and away scores are implicitly modeled as independent Poisson variables. Their difference therefore follows a Skellam distribution.
+
+For the home side:
+
+`threshold = floor(-home_line)`
+
+`P(home covers) = 1 - SkellamCDF(threshold; λ_home, λ_away)`
+
+The away calculation reverses the two Poisson means. Probabilities are subsequently forced into `[0.01, 0.99]`.
+
+**Accuracy Assessment:** For the current ±1.5 NHL puck-line structure, the event calculation is mathematically correct. The active calibration table contains only ±1.5 lines, so there is no current push state for these markets.
+
+The larger uncertainty is the distributional assumption. Independent Poisson scoring implies a Skellam margin distribution. NHL scores can depart from that through game-state effects, empty-net behavior, overtime structure, correlation, and variance not captured by two point estimates. The repository does not demonstrate that the resulting cover probabilities themselves have been calibrated out-of-sample.
+
+The `[1%,99%]` hard clamp is also unnecessarily aggressive. It alters legitimate tail estimates and therefore changes fair odds, edge, EV, and Kelly.
+
+**Assessment:** Formula correct under its assumptions; **model-distribution validity requires empirical walk-forward validation**.
+
+---
+
+## 4. Total probability from projected goals
+
+**Calculation Name/Description:** Poisson total-goals probability
+
+**Purpose:** Convert expected total goals into over/under probabilities.
+
+**Methodology:** Total goals are assumed:
+
+`T ~ Poisson(projected_total_goals)`
+
+For half-goal lines:
+
+`P(Under) = P(T <= floor(line))`
+
+`P(Over) = 1 - P(Under)`
+
+For integer lines the script calculates:
+
+`P(Under) = P(T <= line-1)`
+
+`P(Over) = P(T > line)`
+
+It then removes the push probability by dividing both by:
+
+`P(no push) = P(Under) + P(Over)`
+
+The resulting conditional probabilities sum to 1. Probabilities are then clipped to `[0.01,0.99]`.
+
+**Accuracy Assessment:** The Poisson event probabilities are mathematically correct.
+
+The important flaw occurs downstream: for integer lines these probabilities are **conditional on no push**, not actual unconditional win probabilities.
+
+Let:
+
+`W = P(win)`
+`L = P(loss)`
+`R = P(push)`
+
+The code passes:
+
+`p = W / (W + L)`
+
+into EV.
+
+That means reported:
+
+`EV_code = p*d - 1`
+
+while actual per-unit EV is:
+
+`EV_actual = W*(d-1) - L`
+
+and therefore:
+
+`EV_actual = (1-R) * EV_code`
+
+So the **sign is unchanged but the reported magnitude is overstated by `1/(1-R)`**.
+
+This matters because active total lines include integers 6.0 and 7.0.
+
+Interestingly, Kelly is not distorted in the same way: conditioning on the non-push outcomes yields the same Kelly optimum because a push contributes zero log-bankroll change.
+
+**Assessment:** Half-point calculations are sound under Poisson assumptions. **Integer-total EV magnitude is mathematically wrong.**
+
+---
+
+## 5. Probability clipping
+
+**Calculation Name/Description:** 1%-99% probability floor/ceiling
+
+**Purpose:** Prevent extreme probabilities and infinite/near-infinite fair prices.
+
+**Methodology:**
+
+`p_final = min(max(p, 0.01), 0.99)`
+
+for derived puck-line and total probabilities.
+
+**Accuracy Assessment:** Numerical protection is reasonable, but 1% is far too large to be merely a numerical epsilon. It becomes a substantive probability transformation.
+
+If a legitimate model estimate were 0.4%, the pipeline changes it to 1%. Because fair odds, edge, EV, and Kelly all depend directly on probability, that changes betting economics rather than simply preventing numerical instability.
+
+A numerical epsilon such as `1e-6` is fundamentally different from a 1% probability floor.
+
+**Assessment:** Stable computationally; **not probability-neutral**.
+
+---
+
+## 6. American odds → decimal odds
+
+**Calculation Name/Description:** Sportsbook odds conversion
+
+**Purpose:** Obtain payout multiplier and break-even probability.
+
+**Methodology:**
+
+For positive American odds `A`:
+
+`decimal = 1 + A/100`
+
+For negative odds:
+
+`decimal = 1 + 100/abs(A)`
+
+Zero/invalid values are rejected.
+
+**Accuracy Assessment:** Correct standard conversion.
+
+**Assessment:** **No mathematical issue found.**
+
+---
+
+## 7. Model calibration adjustment
+
+**Calculation Name/Description:** Market-band probability adjustment
+
+**Purpose:** Alter the original model probability before edge/EV/Kelly calculations.
+
+**Methodology:** Starting with model probability `p`:
+
+`fair_decimal = 1/p`
+
+For adjustment `a`:
+
+`adjusted_decimal = fair_decimal * (1-a)`
+
+Therefore:
+
+`adjusted_probability_raw = 1 / adjusted_decimal`
+
+or equivalently:
+
+`adjusted_probability_raw = p / (1-a)`
+
+The two opposing raw adjusted probabilities are then normalized to sum to 1. The repository explicitly describes this as model-probability calibration rather than removal of sportsbook overround.
+
+Moneyline processing also quarantines rows when an adjustment drives decimal odds to `<=1`, rather than permitting an invalid probability.
+
+**Accuracy Assessment:** The algebra is internally consistent, but the statistical foundation is questionable.
+
+This transformation is not a standard probability-calibration method such as logistic/Platt calibration, isotonic regression, or beta calibration. It alters probabilities according to a coefficient selected partly from the sportsbook price/line itself.
+
+More importantly, the coefficient provenance raises a significant concern. For moneyline, current coefficients correspond exactly to sign-reversed historical ROI values in archived NHL band data for numerous bands. For example:
+
+* historical `-599 to -500`, home favorite ROI = `-0.1695`;
+* current adjustment = `+0.1695`;
+* historical `-499 to -400`, away favorite ROI = `+0.2427`;
+* current adjustment = `-0.2427`.
+
+The historical repository also contains generator logic elsewhere defining an `extra_juice` adjustment as `-ROI`, confirming that this methodology existed in the legacy system.
+
+Puck-line and total legacy coefficients show a related but not completely identical relationship to historical ROI bands.
+
+**This is not a valid substitute for probability calibration.** Betting ROI mixes true outcome probability, sportsbook price, vig, sample composition, and sampling noise. Multiplying a model's fair price by an ROI-derived number does not mathematically recover calibrated outcome probability.
+
+I did not find sufficient evidence establishing that the current coefficients were subsequently refit using a leakage-safe proper-scoring calibration procedure.
+
+**Assessment:** **Major probability-methodology concern. This is the most important upstream area to research before next-season promotion.**
+
+---
+
+## 8. Opposing-probability normalization
+
+**Calculation Name/Description:** Two-outcome normalization
+
+**Purpose:** Force opposing adjusted model probabilities to sum to exactly 1.
+
+**Methodology:**
+
+For raw adjusted probabilities `q1` and `q2`:
+
+`p1 = q1 / (q1+q2)`
+
+`p2 = q2 / (q1+q2)`
+
+Moneyline implementation follows this exactly.
+
+**Accuracy Assessment:** Mathematically valid normalization for mutually exclusive/exhaustive binary outcomes.
+
+However, normalization does **not repair a bad calibration transform**. It only forces coherence.
+
+Another consequence is that if the same multiplicative adjustment applies to both sides, the adjustment cancels entirely after normalization.
+
+**Assessment:** Correct normalization; quality depends entirely on the pre-normalization probabilities.
+
+---
+
+## 9. Edge calculation
+
+**Calculation Name/Description:** Model probability advantage over offered break-even probability
+
+**Purpose:** Measure how far the model probability exceeds or falls below the probability required to break even at the offered odds.
+
+**Methodology:**
+
+`book_break_even_probability = 1 / decimal_odds`
+
+`edge = model_probability - book_break_even_probability`
+
+**Accuracy Assessment:** Correct.
+
+The bookmaker probability here contains vig, but **de-vigging is not required for betting EV against an actual offered price**. A bettor really does need to beat `1/d`.
+
+It should therefore be understood as an **offered-price break-even edge**, not necessarily a difference from the market's vig-free consensus probability.
+
+There is also an exact relationship to EV:
+
+`EV = decimal_odds × edge`
+
+Thus edge and EV are not independent signals. Any downstream process requiring both is essentially applying two transformations of the same model-price difference.
+
+**Assessment:** **Mathematically correct.**
+
+---
+
+## 10. Expected value
+
+**Calculation Name/Description:** Unit-stake expected return
+
+**Purpose:** Estimate average profit/loss per unit wagered if the model probability is correct.
+
+**Methodology:**
+
+`EV = p*d - 1`
+
+where `p` is model win probability and `d` is sportsbook decimal odds.
+
+Equivalent expression:
+
+`EV = p*(d-1) - (1-p)`
+
+**Accuracy Assessment:** Exactly correct for a binary win/loss wager.
+
+Its accuracy therefore depends almost entirely on whether `p` is genuinely calibrated.
+
+For integer totals, as described above, the supplied probability is conditioned on no push, so the calculated EV magnitude is not actual unit-stake EV.
+
+**Assessment:** Correct binary formula; **integer-total implementation requires correction**.
+
+---
+
+## 11. Kelly fraction
+
+**Calculation Name/Description:** Full-Kelly bankroll fraction
+
+**Purpose:** Quantify optimal wager size under logarithmic bankroll-growth assumptions.
+
+**Methodology:**
+
+`b = d - 1`
+`q = 1 - p`
+
+`Kelly = (b*p - q) / b`
+
+Negative values are clipped to zero.
+
+**Accuracy Assessment:** Standard Kelly formula is correct.
+
+The practical problem is probability estimation error. Kelly is extremely sensitive to overconfidence. The historical calibration biases found in this pipeline therefore matter more for Kelly than for simple bet ranking.
+
+The pipeline calculates full Kelly. Even if it is only being used as a filtering statistic rather than literal stake size, overcalibrated probabilities will mechanically exaggerate Kelly.
+
+For integer totals, the no-push conditional probability actually preserves the correct Kelly optimum, unlike the EV magnitude.
+
+**Assessment:** Formula correct; **reliability depends strongly on calibrated probabilities**.
+
+---
+
+## 12. D-Ratings/SDV disagreement
+
+**Calculation Name/Description:** Absolute model disagreement
+
+**Purpose:** Identify games where the primary prediction and SDV challenger differ unusually strongly.
+
+**Methodology:**
+
+Moneyline:
+
+`|SDV_home_probability - DRAT_home_probability|`
+
+Margin:
+
+`|SDV_expected_margin - DRAT_expected_margin|`
+
+Total:
+
+`|SDV_expected_total - DRAT_expected_total|`
+
+A game is considered high disagreement when the current disagreement is at least the chosen quantile of strictly earlier historical disagreement.
+
+**Accuracy Assessment:** The arithmetic is correct, and the production fitter correctly restricts training history to dates strictly before the target date.
+
+However, **disagreement is not itself uncertainty or error probability**. It only becomes useful if historical out-of-sample evidence shows that disagreement predicts primary-model failure.
+
+There is some evidence supporting that concept. In the 2025-26 research output, D-Ratings moneyline performance degraded materially in the high-disagreement subset:
+
+* DRAT Brier: `0.25329`
+* SDV Brier: `0.24429`
+* DRAT log loss: `0.69971`
+* SDV log loss: `0.68164`
+
+for 224 high-disagreement rows.
+
+That supports using disagreement as a warning signal, but not necessarily the exact current gate.
+
+**Assessment:** Sound signal construction with promising evidence; decision rule still needs downstream validation.
+
+---
+
+## 13. Secondary probability calibration
+
+**Calculation Name/Description:** Past-only logistic recalibration of DRAT and SDV
+
+**Purpose:** Correct systematic bias in each moneyline probability source before combining them.
+
+**Methodology:** For every target date, only historical rows with:
+
+`historical_date < target_date`
+
+are used.
+
+A logistic model is fitted:
+
+`p_calibrated = sigmoid(β0 + β1*p_raw)`
+
+with a small L2 penalty.
+
+**Accuracy Assessment:** The chronological rule is good and substantially reduces leakage risk.
+
+Weaknesses:
+
+* the logistic input is raw probability `p`, rather than `logit(p)`;
+* monotonic direction is not constrained;
+* regularization strength is fixed rather than chronologically tuned;
+* the optimizer result is accepted if the objective is finite; convergence success itself is not checked;
+* no independent final test period is preserved inside this production refit logic.
+
+A logistic calibration on probability can work, but it is not automatically superior to logistic calibration on model log-odds, beta calibration, or isotonic calibration.
+
+**Assessment:** **Reasonable leakage-safe implementation, but model specification has not undergone the MLB-style search requested.**
+
+---
+
+## 14. Weighted DRAT/SDV ensemble
+
+**Calculation Name/Description:** Chronological weighted ensemble
+
+**Purpose:** Blend DRAT and SDV rather than relying completely on either model.
+
+**Methodology:** For moneyline, the two individually calibrated probabilities are combined:
+
+`p_weighted = w*p_DRAT_cal + (1-w)*p_SDV_cal`
+
+`w` is searched over `0.00, 0.01, ..., 1.00` and chosen to minimize log loss on prior rows.
+
+Margin and total weights are independently chosen to minimize prior RMSE:
+
+`prediction = w*DRAT + (1-w)*SDV`
+
+**Accuracy Assessment:** This is considerably stronger methodologically than the Stage 02 adjustment system because the target-date fit is explicitly past-only and moneyline uses a proper probability scoring rule.
+
+The 2025-26 walk-forward research results show:
+
+* weighted moneyline Brier `0.24307`;
+* weighted moneyline log loss `0.67897`;
+* weighted total RMSE `2.29398`.
+
+For comparison, standalone DRAT had Brier `0.24565`; SDV `0.24514`.
+
+However, the weight and calibration parameters are optimized on the same expanding training window. That is acceptable for producing the next prediction, but a separate outer chronological validation/test structure is needed to judge the model-selection methodology itself.
+
+**Assessment:** Strongest probability methodology currently present, but **not yet equivalent to the staged MLB search methodology**.
+
+---
+
+## 15. Secondary meta-model
+
+**Calculation Name/Description:** DRAT + SDV + disagreement meta-model
+
+**Purpose:** Learn a nonlinear/conditional combination rather than using a simple weighted average.
+
+**Methodology:** Moneyline logistic features are:
+
+* DRAT home probability;
+* SDV home probability;
+* absolute probability disagreement.
+
+Margins and totals use linear ridge models with:
+
+* DRAT forecast;
+* SDV forecast;
+* absolute disagreement.
+
+**Accuracy Assessment:** The feature logic is reasonable and uses only prior completed rows for each target date.
+
+The main weaknesses are:
+
+* no broader model-family search;
+* no feature-subset search;
+* effectively fixed hyperparameters;
+* tiny fixed ridge penalty;
+* linear margin/total models can extrapolate;
+* disagreement is mathematically dependent on the two source predictions;
+* no untouched final chronological test period for choosing weighted versus meta approach.
+
+The stored walk-forward metrics show the meta model improved total RMSE to `2.28162`, but weighted moneyline performed better than meta moneyline in the stored comparison.
+
+That itself demonstrates why independent component/model selection is appropriate rather than requiring one family for every output.
+
+**Assessment:** Promising research-quality method, but **not fully searched or independently validated**.
+
+---
+
+## 16. Moneyline secondary-support calculation
+
+**Calculation Name/Description:** Secondary confirmation of moneyline side
+
+**Purpose:** Decide whether a secondary forecast supports the primary candidate during high model disagreement.
+
+**Methodology:** A secondary home-win prediction:
+
+* `> 0.50` supports home;
+* `< 0.50` supports away;
+* exactly `0.50` is neutral.
+
+**Accuracy Assessment:** **This is mathematically inappropriate for betting confirmation.**
+
+The proper question is not “Which team is more likely to win?” It is “Does this probability support this wager at this price?”
+
+Example:
+
+A home team at `+150` has break-even probability:
+
+`1 / 2.50 = 40%`
+
+If the secondary model says home wins `45%`, it supports the wager economically:
+
+`0.45 × 2.50 - 1 = +12.5% EV`
+
+but the current logic labels it **opposition**, because `45% < 50%`.
+
+Conversely, a `-250` favorite has break-even probability about `71.43%`. A secondary forecast of `60%` is labeled **support**, even though:
+
+`0.60 × 1.40 - 1 = -16% EV`.
+
+This is a direct probability-logic defect.
+
+**Assessment:** **Critical flaw.**
+
+---
+
+## 17. Puck-line secondary-support calculation
+
+**Calculation Name/Description:** Expected-margin support test
+
+**Purpose:** Determine whether the secondary model's expected goal margin points toward the selected puck-line side.
+
+**Methodology:** For home:
+
+`expected_home_margin + home_line > 0`
+
+means support.
+
+The analogous sign reversal is used for away.
+
+**Accuracy Assessment:** This tests the **mean margin**, not the probability of covering the spread.
+
+Those are not equivalent.
+
+A distribution can have expected margin above the spread threshold while having cover probability below 50%, particularly with discrete or skewed outcomes. More importantly, even 51% cover probability may not support a bet priced at a break-even probability of 60%.
+
+Correct betting support should ultimately compare:
+
+`P(cover | secondary model)`
+
+against:
+
+`1 / offered_decimal_odds`
+
+not merely expected margin against the line.
+
+**Assessment:** **High-severity conceptual flaw.**
+
+---
+
+## 18. Total secondary-support calculation
+
+**Calculation Name/Description:** Expected-total support test
+
+**Purpose:** Determine whether the secondary model supports over or under.
+
+**Methodology:**
+
+`expected_total > line → supports Over`
+
+`expected_total < line → supports Under`
+
+**Accuracy Assessment:** Same issue as puck line. Expected total is not over probability.
+
+A mean of 6.6 on a 6.5 total does not establish that the Over probability exceeds either 50% or the offered-price break-even probability.
+
+The pipeline already possesses Poisson-based machinery for translating a mean total into a probability. Applying a comparable probabilistic treatment to secondary forecasts would be mathematically more coherent, although the distribution itself must still be validated.
+
+**Assessment:** **High-severity conceptual flaw.**
+
+---
+
+## 19. High-disagreement confirmation gate
+
+**Calculation Name/Description:** Require secondary support only when models disagree strongly
+
+**Purpose:** Leave primary decisions alone under normal disagreement, but add skepticism when DRAT and SDV diverge substantially.
+
+**Methodology:** When high disagreement is flagged, the candidate survives when **either**:
+
+* raw SDV supports the bet; or
+* the configured derived secondary model supports the bet.
+
+Otherwise the candidate is rejected.
+
+**Accuracy Assessment:** The concept is defensible and the 2025-26 research demonstrates that DRAT deteriorated materially in the high-moneyline-disagreement group.
+
+The implementation is too coarse:
+
+* support is binary;
+* magnitude of secondary advantage is ignored;
+* one supporting model is sufficient even if another strongly opposes;
+* puck-line/total support is based on means rather than probabilities;
+* moneyline uses 50% rather than price-specific break-even.
+
+Thus the gate does not currently use the strongest available probabilistic information.
+
+**Assessment:** Good concept; **current execution needs revalidation/redesign**.
+
+---
+
+## 20. Candidate comparison by EV or probability
+
+**Calculation Name/Description:** Within-market candidate preference
+
+**Purpose:** Resolve multiple eligible sides/candidates when a single candidate is desired.
+
+**Methodology:** The selector supports choosing the maximum EV or maximum model probability; alternatively all qualifying candidates can survive.
+
+**Accuracy Assessment:** Maximum EV is economically meaningful if probabilities are calibrated.
+
+Maximum probability is not equivalent to maximum betting value. It naturally favors higher-probability favorites even when their price makes them inferior bets.
+
+**Assessment:** `best_ev` is probabilistically/economically defensible; `best_prob` is not a value criterion.
+
+---
+
+# Historical evidence against assuming current probabilities are calibrated
+
+The repository's own 2025-26 calibration audit reports:
+
+| Market/side    | Mean predicted | Realized |      Gap |
+| -------------- | -------------: | -------: | -------: |
+| Moneyline home |         53.85% |   51.94% | −1.90 pp |
+| Moneyline away |         46.15% |   48.06% | +1.90 pp |
+| Puck line home |         36.47% |   40.87% | +4.40 pp |
+| Puck line away |         63.53% |   59.13% | −4.40 pp |
+| Total over     |         48.36% |   51.80% | +3.44 pp |
+| Total under    |         51.64% |   48.20% | −3.44 pp |
+
+Those are not minor rounding artifacts. They show systematic side bias in the historical probability outputs. The first-half/second-half split shows the directional biases persist across both portions of the 2025-26 season, particularly puck line and totals.
+
+This does **not prove the next season will have identical bias**, but it is strong evidence that the current probabilities should not be assumed calibrated.
+
+# Backtest integrity finding
+
+The existing full-season replay has several good properties: it uses an isolated workspace, reconstructs historical daily inputs, runs the current Stage 01/02/03 calculations, and does not overwrite production.
+
+However, before selection it fabricates unavailable secondary fields and explicitly runs the historical selection with the secondary model disabled. The resulting replay therefore does **not validate the current DRAT/SDV disagreement gate or its final-bet effects**.
+
+That is a significant gap because the secondary gate is now part of the calculation chain that determines whether a bet reaches `04_select`.
+
+# Comparison with the MLB methodology you specified
+
+The NHL repository has already completed part of the required foundation:
+
+* SDV research predictions are explicitly walk-forward and use only information preceding each target date.
+* Production secondary fitting also uses `historical_date < target_date`.
+* Standalone DRAT/SDV metrics and walk-forward weighted/meta metrics are saved.
+* The research summary explicitly records no automatic production replacement and labels deployment role unresolved.
+
+It has **not** yet completed the MLB-style process you described. Specifically, I found no evidence of a broad staged family/feature/hyperparameter search for the local ensemble/meta models, an untouched final chronological model-selection test period, exhaustive joint evaluation of the winning moneyline/margin/total component combinations against downstream bet-selection metrics, or numerical reproduction of a research winner through the complete production final-selection path.
+
+## Recommended research order — no production change
+
+The highest-value next investigation would be:
+
+1. **Freeze a true final chronological test period.**
+2. **Reconstruct the exact point-in-time DRAT, SDV, odds, lines, and results history.**
+3. **Replace ROI-derived/legacy calibration research with proper probability-calibration candidates**: unadjusted baseline, logistic-on-logit, beta calibration, isotonic where sample size supports it, and appropriately regularized models.
+4. **Search moneyline, margin and total components independently**, because the existing results already show different methods win different targets.
+5. **For margin/total candidates, evaluate actual cover/O/U probabilities**, not merely RMSE of expected margin/total.
+6. **Evaluate every retained component combination through edge → EV → Kelly → final selection**, including ROI, CLV where available, calibration, Brier/log loss, bet count, drawdown, and stability across chronological slices.
+7. **Test the secondary gate itself as a model-selection problem:** primary-only baseline versus disagreement rejection, SDV probability confirmation, weighted confirmation, meta confirmation, and price-aware probability confirmation.
+8. **Run the winner through an isolated true historical production replay with secondary calculations enabled** and numerically reconcile research versus production predictions before any promotion decision.
+
+No repository changes were made.
