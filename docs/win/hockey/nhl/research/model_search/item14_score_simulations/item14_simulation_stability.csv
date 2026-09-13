@@ -1,0 +1,16 @@
+distribution,iterations,games_checked,max_abs_probability_change_vs_prior,max_95_half_width,stable,selected,status
+independent_poisson,10000.0,24,,0.009799716971913015,False,False,ok
+independent_poisson,25000.0,24,0.012519999999999976,0.006198053721838041,False,False,ok
+independent_poisson,50000.0,24,0.008440000000000003,0.004382683755247326,False,False,ok
+independent_poisson,100000.0,24,0.005799999999999972,0.0030990288938868575,False,False,ok
+independent_poisson,200000.0,24,0.004529999999999923,0.002191342013377875,True,True,ok
+bivariate_poisson,,0,,,False,False,unsupported_nonpositive_training_residual_covariance
+negative_binomial,10000.0,24,,0.009799759897058702,False,False,ok
+negative_binomial,25000.0,24,0.016220000000000012,0.006197841357285098,False,False,ok
+negative_binomial,50000.0,24,0.010280000000000011,0.004382618498071125,False,False,ok
+negative_binomial,100000.0,24,0.00607000000000002,0.0030990298006644593,False,False,ok
+negative_binomial,200000.0,24,0.003695000000000004,0.002191344053086644,True,True,ok
+empirical_residual,10000.0,24,,0.009799943355836298,False,False,ok
+empirical_residual,25000.0,24,0.010820000000000052,0.0061980463634793825,False,False,ok
+empirical_residual,50000.0,24,0.007319999999999993,0.004382690679912147,False,False,ok
+empirical_residual,100000.0,24,0.003290000000000015,0.0030990139831524478,True,True,ok

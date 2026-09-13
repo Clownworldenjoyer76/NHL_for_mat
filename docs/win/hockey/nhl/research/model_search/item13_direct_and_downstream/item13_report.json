@@ -1,0 +1,73 @@
+{
+  "candidate_count": 8,
+  "candidate_scope": "Eight Item 12 weighted/meta target mappings. Item 11 development winners excluded because they are locked for genuinely unseen 2026-27 validation.",
+  "clv_status": "unavailable:no_backtest_clv_file",
+  "downstream_metrics": [
+    "bet_count",
+    "hit_rate",
+    "realized_roi",
+    "average_expected_ev",
+    "realized_return_by_predicted_ev_bucket",
+    "kelly_distribution",
+    "max_drawdown_units",
+    "clv_where_available",
+    "selection_stability",
+    "market_side_concentration"
+  ],
+  "ensemble_metrics_crosscheck": "passed",
+  "ensemble_prediction_source": {
+    "builder": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\scripts\\research\\build_sdv_challenger.py",
+    "builder_version": "SDV-P6-2026-08-30-v2",
+    "expected_rows": 1189,
+    "min_train_rows": 100,
+    "mode": "reconstructed_in_memory",
+    "path": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\sdv_challenger\\season_2025\\standalone_comparison.csv",
+    "reconstructed": true
+  },
+  "ensemble_walkforward_rows": 1189,
+  "graded_primary_bet_rows": 7252,
+  "guardrails": {
+    "bet_count": "reject if outside 75%-125% of reference",
+    "concentration": "reject if max market/side share >50% and >10 percentage points above reference",
+    "expected_ev": "reject if average EV is >0.01 below reference",
+    "max_drawdown": "reject if above max(1.25x reference, reference + 1 unit)",
+    "realized_performance": "ROI alone never rejects; reject only if ROI is >5 percentage points worse AND hit rate is >3 percentage points worse",
+    "selection_stability": "reject if Jaccard < 0.75"
+  },
+  "max_drawdown_definition": "Maximum peak-to-trough decline in cumulative flat-risk realized units after aggregating results by game date.",
+  "model_metrics": [
+    "moneyline_brier",
+    "moneyline_log_loss",
+    "calibration_gap_signed",
+    "calibration_gap_abs",
+    "ece_10",
+    "margin_mae",
+    "margin_rmse",
+    "total_mae",
+    "total_rmse"
+  ],
+  "outputs": {
+    "candidate_decisions": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_candidate_decisions.csv",
+    "candidate_summary": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_candidate_summary.csv",
+    "ev_bucket_returns": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_ev_bucket_returns.csv",
+    "market_side_concentration": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_market_side_concentration.csv",
+    "report": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_report.json"
+  },
+  "promotion_decision": null,
+  "purpose": "Item 13 direct-model plus downstream betting evaluation; research only; no automatic production promotion.",
+  "reconstructed_ensemble_output": "C:\\Users\\ntmal\\Downloads\\mat\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\model_search\\item13_direct_and_downstream\\item13_reconstructed_ensemble_walkforward_predictions.csv",
+  "reference_candidate_id": "ml_weighted__margin_meta__total_meta",
+  "reference_mapping": {
+    "margin": "meta",
+    "moneyline": "weighted",
+    "total": "meta"
+  },
+  "rejected_candidates": 0,
+  "retained_for_comparison": 7,
+  "script_version": "ITEM13-DIRECT-DOWNSTREAM-2026-09-12-v7",
+  "selection_stability_definition": {
+    "daily_bet_count_mae_vs_reference": "Mean absolute difference in daily selected-bet counts versus current production mapping.",
+    "selection_jaccard_vs_reference": "Jaccard similarity of candidate selected-bet set versus current production mapping."
+  },
+  "status": "COMPLETE"
+}

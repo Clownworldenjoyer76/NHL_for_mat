@@ -1,0 +1,39 @@
+{
+  "bivariate_poisson": {
+    "fitted": false,
+    "parameters": {
+      "common_lambda": 0.0,
+      "raw_training_residual_covariance": -0.2878841592201462,
+      "support_cap": 2.07385
+    },
+    "support_note": "Supported only when training residual covariance is positive. A common Poisson component preserves game-specific means."
+  },
+  "empirical_residual": {
+    "fitted": true,
+    "parameters": {
+      "away_residual_mean_before_centering": 0.2140617384240455,
+      "away_residual_std": 1.6813276043824532,
+      "home_residual_mean_before_centering": 0.012428919577579202,
+      "home_residual_std": 1.743176251888121,
+      "paired_resampling": true,
+      "residual_correlation": -0.09921384433985352,
+      "residual_rows": 1231,
+      "residuals_centered": true
+    },
+    "support_note": "Samples paired centered training residuals with replacement, then rounds/clips scores to nonnegative integers."
+  },
+  "independent_poisson": {
+    "fitted": true,
+    "parameters": {},
+    "support_note": "No fitted dispersion/correlation parameters."
+  },
+  "negative_binomial": {
+    "fitted": true,
+    "parameters": {
+      "alpha_away": 0.0021507653786512343,
+      "alpha_home": 0.0,
+      "variance_formula": "mu + alpha * mu^2"
+    },
+    "support_note": "Method-of-moments overdispersion fitted on training scores only; alpha=0 degenerates to Poisson."
+  }
+}
