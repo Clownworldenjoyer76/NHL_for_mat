@@ -1,0 +1,196 @@
+{
+  "broad_candidates": 128,
+  "broad_fit_failures": 0,
+  "feature_sets": {
+    "margin": {
+      "drat_only": [
+        "drat_exp_margin"
+      ],
+      "drat_sdv": [
+        "drat_exp_margin",
+        "sdv_exp_margin"
+      ],
+      "drat_sdv_disagreement": [
+        "drat_exp_margin",
+        "sdv_exp_margin",
+        "margin_disagreement"
+      ],
+      "sdv_only": [
+        "sdv_exp_margin"
+      ],
+      "verified_pregame_full": [
+        "drat_home_win_prob",
+        "sdv_home_win_prob",
+        "prob_disagreement",
+        "drat_exp_margin",
+        "sdv_exp_margin",
+        "margin_disagreement",
+        "drat_exp_total",
+        "sdv_exp_total",
+        "total_disagreement",
+        "neutral_site_num"
+      ]
+    },
+    "moneyline": {
+      "drat_only": [
+        "drat_home_win_prob"
+      ],
+      "drat_sdv": [
+        "drat_home_win_prob",
+        "sdv_home_win_prob"
+      ],
+      "drat_sdv_disagreement": [
+        "drat_home_win_prob",
+        "sdv_home_win_prob",
+        "prob_disagreement"
+      ],
+      "sdv_only": [
+        "sdv_home_win_prob"
+      ],
+      "verified_pregame_full": [
+        "drat_home_win_prob",
+        "sdv_home_win_prob",
+        "prob_disagreement",
+        "drat_exp_margin",
+        "sdv_exp_margin",
+        "margin_disagreement",
+        "drat_exp_total",
+        "sdv_exp_total",
+        "total_disagreement",
+        "neutral_site_num"
+      ]
+    },
+    "total": {
+      "drat_only": [
+        "drat_exp_total"
+      ],
+      "drat_sdv": [
+        "drat_exp_total",
+        "sdv_exp_total"
+      ],
+      "drat_sdv_disagreement": [
+        "drat_exp_total",
+        "sdv_exp_total",
+        "total_disagreement"
+      ],
+      "sdv_only": [
+        "sdv_exp_total"
+      ],
+      "verified_pregame_full": [
+        "drat_home_win_prob",
+        "sdv_home_win_prob",
+        "prob_disagreement",
+        "drat_exp_margin",
+        "sdv_exp_margin",
+        "margin_disagreement",
+        "drat_exp_total",
+        "sdv_exp_total",
+        "total_disagreement",
+        "neutral_site_num"
+      ]
+    }
+  },
+  "feature_whitelist": [
+    "drat_home_win_prob",
+    "sdv_home_win_prob",
+    "prob_disagreement",
+    "drat_exp_margin",
+    "sdv_exp_margin",
+    "margin_disagreement",
+    "drat_exp_total",
+    "sdv_exp_total",
+    "total_disagreement",
+    "neutral_site_num"
+  ],
+  "final_retained_counts": {
+    "margin": 5,
+    "moneyline": 5,
+    "total": 5
+  },
+  "future_outcomes_allowed_in_training": false,
+  "history_first_date": "2025-10-09",
+  "history_last_date": "2026-04-16",
+  "history_rows": 1291,
+  "input_files": [
+    "C:\\Users\\Mat\\Documents\\GitHub\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\sdv_challenger\\season_2025\\standalone_comparison.csv"
+  ],
+  "promotion_decision": null,
+  "purpose": "Item 11 staged research search; no automatic production promotion.",
+  "refinement_candidates": 199,
+  "refinement_fit_failures": 0,
+  "retained_component_combinations": 125,
+  "same_day_outcomes_allowed_in_training": false,
+  "script_version": "ITEM11-2026-09-12-v2",
+  "selection_metrics": {
+    "margin": [
+      "rmse",
+      "mae"
+    ],
+    "moneyline": [
+      "log_loss",
+      "brier"
+    ],
+    "total": [
+      "rmse",
+      "mae"
+    ]
+  },
+  "status": "COMPLETE",
+  "validation_folds": [
+    {
+      "fold": 1,
+      "train_end": "2025-10-23",
+      "train_rows": 102,
+      "train_start": "2025-10-09",
+      "validation_end": "2025-11-18",
+      "validation_rows": 192,
+      "validation_start": "2025-10-24"
+    },
+    {
+      "fold": 2,
+      "train_end": "2025-11-18",
+      "train_rows": 294,
+      "train_start": "2025-10-09",
+      "validation_end": "2025-12-14",
+      "validation_rows": 199,
+      "validation_start": "2025-11-19"
+    },
+    {
+      "fold": 3,
+      "train_end": "2025-12-14",
+      "train_rows": 493,
+      "train_start": "2025-10-09",
+      "validation_end": "2026-01-11",
+      "validation_rows": 201,
+      "validation_start": "2025-12-15"
+    },
+    {
+      "fold": 4,
+      "train_end": "2026-01-11",
+      "train_rows": 694,
+      "train_start": "2025-10-09",
+      "validation_end": "2026-02-05",
+      "validation_rows": 193,
+      "validation_start": "2026-01-12"
+    },
+    {
+      "fold": 5,
+      "train_end": "2026-02-05",
+      "train_rows": 887,
+      "train_start": "2025-10-09",
+      "validation_end": "2026-03-21",
+      "validation_rows": 201,
+      "validation_start": "2026-02-25"
+    },
+    {
+      "fold": 6,
+      "train_end": "2026-03-21",
+      "train_rows": 1088,
+      "train_start": "2025-10-09",
+      "validation_end": "2026-04-16",
+      "validation_rows": 203,
+      "validation_start": "2026-03-22"
+    }
+  ],
+  "walk_forward_rule": "training_date < first_validation_date for every fold"
+}

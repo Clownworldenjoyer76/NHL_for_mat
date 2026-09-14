@@ -475,6 +475,100 @@ def apply_linear(model: LinearModel, x: np.ndarray) -> np.ndarray:
     return design @ model.coefficients
 
 
+
+# === ITEM16 PERMANENT PRODUCTION WINNER SUPPORT START ===
+ITEM11_SEED = 20260912
+ITEM11_MONEYLINE_FEATURES = ("sdv_home_win_prob",)
+ITEM11_MARGIN_FEATURES = ("sdv_exp_margin",)
+ITEM11_TOTAL_FEATURES = ("sdv_exp_total",)
+ITEM11_TOTAL_BOOTSTRAPS = 25
+
+
+def _item11_require_finite(frame: pd.DataFrame, columns: tuple[str, ...], label: str) -> np.ndarray:
+    missing = [column for column in columns if column not in frame.columns]
+    if missing:
+        raise ValueError(f"{label} missing required columns: {missing}")
+    values = frame[list(columns)].to_numpy(float)
+    if not np.isfinite(values).all():
+        raise ValueError(f"{label} contains non-finite values")
+    return values
+
+
+def item11_moneyline_predict(train: pd.DataFrame, valid: pd.DataFrame) -> np.ndarray:
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import StandardScaler
+
+    x = _item11_require_finite(train, ITEM11_MONEYLINE_FEATURES, "Item11 moneyline train")
+    xv = _item11_require_finite(valid, ITEM11_MONEYLINE_FEATURES, "Item11 moneyline inference")
+    if "actual_home_win" not in train.columns:
+        raise ValueError("Item11 moneyline train missing actual_home_win")
+    y = train["actual_home_win"].to_numpy(int)
+    if not np.isfinite(y).all() or not np.isin(y, [0, 1]).all():
+        raise ValueError("Item11 moneyline target must be finite 0/1")
+
+    model = Pipeline([
+        ("s", StandardScaler()),
+        ("m", LogisticRegression(
+            C=1e12,
+            l1_ratio=0.0,
+            solver="lbfgs",
+            max_iter=3000,
+            random_state=ITEM11_SEED,
+        )),
+    ])
+    model.fit(x, y)
+    prediction = model.predict_proba(xv)[:, 1]
+    return np.clip(np.asarray(prediction, float), EPS, 1.0 - EPS)
+
+
+def item11_margin_predict(train: pd.DataFrame, valid: pd.DataFrame) -> np.ndarray:
+    from sklearn.linear_model import HuberRegressor
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import StandardScaler
+
+    x = _item11_require_finite(train, ITEM11_MARGIN_FEATURES, "Item11 margin train")
+    xv = _item11_require_finite(valid, ITEM11_MARGIN_FEATURES, "Item11 margin inference")
+    if "actual_margin" not in train.columns:
+        raise ValueError("Item11 margin train missing actual_margin")
+    y = train["actual_margin"].to_numpy(float)
+    if not np.isfinite(y).all():
+        raise ValueError("Item11 margin target contains non-finite values")
+
+    model = Pipeline([
+        ("s", StandardScaler()),
+        ("m", HuberRegressor(epsilon=1.35, alpha=0.0001, max_iter=2000)),
+    ])
+    model.fit(x, y)
+    return np.asarray(model.predict(xv), float)
+
+
+def item11_total_predict(train: pd.DataFrame, valid: pd.DataFrame) -> np.ndarray:
+    from sklearn.linear_model import Ridge
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import StandardScaler
+
+    x = _item11_require_finite(train, ITEM11_TOTAL_FEATURES, "Item11 total train")
+    xv = _item11_require_finite(valid, ITEM11_TOTAL_FEATURES, "Item11 total inference")
+    if "actual_total" not in train.columns:
+        raise ValueError("Item11 total train missing actual_total")
+    y = train["actual_total"].to_numpy(float)
+    if not np.isfinite(y).all():
+        raise ValueError("Item11 total target contains non-finite values")
+
+    rng = np.random.default_rng(ITEM11_SEED + len(train) + len(ITEM11_TOTAL_FEATURES) * 997)
+    predictions = []
+    for _ in range(ITEM11_TOTAL_BOOTSTRAPS):
+        ix = rng.integers(0, len(train), len(train))
+        model = Pipeline([
+            ("s", StandardScaler()),
+            ("m", Ridge(alpha=1.0)),
+        ])
+        model.fit(x[ix], y[ix])
+        predictions.append(model.predict(xv))
+    return np.mean(np.vstack(predictions), axis=0)
+# === ITEM16 PERMANENT PRODUCTION WINNER SUPPORT END ===
+
 def select_probability_weight(
     y: np.ndarray,
     p_drat: np.ndarray,

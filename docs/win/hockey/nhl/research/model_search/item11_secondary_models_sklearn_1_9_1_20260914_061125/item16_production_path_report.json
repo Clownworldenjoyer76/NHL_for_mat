@@ -1,0 +1,36 @@
+{
+  "absolute_tolerance": 1e-10,
+  "environment": {
+    "lightgbm": "4.7.0",
+    "python": "3.11.9",
+    "scikit_learn": "1.9.1"
+  },
+  "prediction_parity": [
+    {
+      "component": "margin",
+      "max_abs_diff": 2.220446049250313e-16,
+      "mean_abs_diff": 2.5515909370086213e-17,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    },
+    {
+      "component": "moneyline",
+      "max_abs_diff": 5.551115123125783e-17,
+      "mean_abs_diff": 9.710949921027441e-18,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    },
+    {
+      "component": "total",
+      "max_abs_diff": 8.881784197001252e-16,
+      "mean_abs_diff": 3.660281124079574e-17,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    }
+  ],
+  "stage04_currently_accepts_only_weighted_meta": true,
+  "status": "PREDICTION_PARITY_PASS_STAGE04_NOT_INTEGRATED"
+}
