@@ -1,0 +1,19 @@
+NHL ITEM 15 — SECONDARY-ENABLED END-TO-END REPLAY
+================================================
+script_version=ITEM15-SECONDARY-E2E-2026-09-12-v2
+status=COMPLETE
+season_master_first_date=2025_10_07
+season_master_last_date=2026_06_14
+season_master_games=1394
+games_with_historical_sdv=1291
+games_without_historical_sdv=103
+secondary_status_counts={'ready': 1189, 'sdv_unavailable': 102, 'insufficient_history': 102}
+secondary_ready_rows=1189
+secondary_decision_counts={'normal_disagreement_primary': 3542, 'fallback_primary:puck_line_probability_unavailable': 1476, 'high_disagreement_supported': 803, 'fallback_primary:sdv_unavailable': 524, 'fallback_primary:insufficient_history': 500}
+secondary_gate_rejection_count=407
+selected_rows=6845
+graded_daily_rows=6845
+leakage_violations=0
+historical_features_fabricated=false
+live_04_select_unchanged=true
+output=C:\Users\Mat\Documents\GitHub\NHL_for_mat\docs\win\hockey\nhl\backtest\2025_2026_secondary_enabled

@@ -1,0 +1,4 @@
+check,rows_checked,violations,rule,passed
+ready_history_strictly_before_target,1189,0,secondary_history_max_game_date < game_date,True
+sdv_source_as_of_rule,1291,0,source_game_date < target_game_date,True
+live_04_select_unchanged,1,0,before_manifest == after_manifest,True

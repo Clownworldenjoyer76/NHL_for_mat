@@ -50,7 +50,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
-SCRIPT_VERSION = "ITEM15-SECONDARY-E2E-2026-09-12-v1"
+SCRIPT_VERSION = "ITEM15-SECONDARY-E2E-2026-09-12-v3"
 NHL_REL = Path("docs/win/hockey/nhl")
 SEASON = "2025_2026"
 
@@ -671,6 +671,153 @@ def copy_final_scores_and_build_status(
     }
 
 
+PUCK_LINE_SECONDARY_PROBABILITY_COLUMNS = [
+    "sdv_home_cover_prob_puck_line",
+    "sdv_away_cover_prob_puck_line",
+    "weighted_home_cover_prob_puck_line",
+    "weighted_away_cover_prob_puck_line",
+    "meta_home_cover_prob_puck_line",
+    "meta_away_cover_prob_puck_line",
+]
+
+
+def suppress_isolated_ev_performance_warnings(fake_nhl: Path) -> dict[str, Any]:
+    """
+    Suppress only pandas PerformanceWarning in the TEMPORARY replay copy of
+    compute_ev_kelly.py. Production/local pipeline files are not modified.
+    """
+    path = (
+        fake_nhl
+        / "scripts"
+        / "03_edges"
+        / "compute_ev_kelly.py"
+    )
+    require(path, "isolated compute_ev_kelly.py")
+
+    text = path.read_text(encoding="utf-8")
+
+    if "pd.errors.PerformanceWarning" in text:
+        return {
+            "patched": False,
+            "reason": "warning filter already present",
+            "path": str(path),
+        }
+
+    marker = "import pandas as pd"
+    if marker not in text:
+        raise RuntimeError(
+            "Could not safely install PerformanceWarning filter in isolated "
+            "compute_ev_kelly.py: pandas import marker not found."
+        )
+
+    replacement = (
+        marker
+        + "\nimport warnings\n"
+        + "warnings.filterwarnings("
+        + '"ignore", category=pd.errors.PerformanceWarning'
+        + ")\n"
+    )
+
+    text = text.replace(marker, replacement, 1)
+    path.write_text(text, encoding="utf-8")
+
+    return {
+        "patched": True,
+        "warning_class": "pandas.errors.PerformanceWarning",
+        "scope": "isolated temporary compute_ev_kelly.py only",
+        "path": str(path),
+    }
+
+
+def ensure_selector_secondary_schema(
+    secondary_dir: Path,
+) -> dict[str, Any]:
+    """
+    Selector requires six puck-line secondary probability columns that the
+    current secondary builder does not emit.
+
+    Never fabricate them. Add them blank and make otherwise-ready puck-line
+    rows unavailable so markets.yaml use_primary fallback is exercised.
+    """
+    files = sorted(secondary_dir.glob("*_NHL_*.csv"))
+    if not files:
+        raise RuntimeError(
+            f"No secondary signal files found in {secondary_dir}"
+        )
+
+    files_changed = 0
+    columns_added = 0
+    puck_line_rows_downgraded = 0
+    affected_files: list[str] = []
+
+    for path in files:
+        df = pd.read_csv(path, dtype={"game_id": str})
+
+        missing = [
+            col
+            for col in PUCK_LINE_SECONDARY_PROBABILITY_COLUMNS
+            if col not in df.columns
+        ]
+
+        if not missing:
+            continue
+
+        if missing:
+            # Add all compatibility columns in one operation to avoid pandas
+            # DataFrame fragmentation / PerformanceWarning spam.
+            df = df.copy()
+            blank_columns = pd.DataFrame(
+                {
+                    col: pd.Series(pd.NA, index=df.index, dtype="object")
+                    for col in missing
+                },
+                index=df.index,
+            )
+            df = pd.concat([df, blank_columns], axis=1)
+            columns_added += len(missing)
+
+        if path.name.endswith("_NHL_puck_line.csv"):
+            if "secondary_model_status" not in df.columns:
+                raise RuntimeError(
+                    f"{path.name} missing secondary_model_status"
+                )
+
+            ready = (
+                df["secondary_model_status"]
+                .astype(str)
+                .eq("ready")
+            )
+
+            puck_line_rows_downgraded += int(ready.sum())
+
+            df.loc[
+                ready,
+                "secondary_model_status",
+            ] = "puck_line_probability_unavailable"
+
+        df.to_csv(path, index=False)
+        files_changed += 1
+        affected_files.append(path.name)
+
+    return {
+        "required_columns": PUCK_LINE_SECONDARY_PROBABILITY_COLUMNS,
+        "policy": (
+            "missing selector-required puck-line secondary probabilities "
+            "remain blank; no historical values are fabricated"
+        ),
+        "puck_line_behavior": (
+            "otherwise-ready puck-line rows are marked "
+            "puck_line_probability_unavailable so Stage 04 uses use_primary"
+        ),
+        "moneyline_secondary_remains_enabled": True,
+        "total_secondary_remains_enabled": True,
+        "files_changed": files_changed,
+        "column_insertions": columns_added,
+        "puck_line_rows_marked_unavailable": puck_line_rows_downgraded,
+        "affected_files": affected_files,
+    }
+
+
 def load_secondary_outputs(
     secondary_dir: Path,
 ) -> tuple[pd.DataFrame, dict[str, int]]:
@@ -916,6 +1063,12 @@ def main() -> int:
         for rel in scripts:
             copy_file(nhl / rel, fake_nhl / rel)
 
+        # Suppress pandas fragmentation PerformanceWarning messages only in
+        # the isolated replay copy.
+        performance_warning_patch = suppress_isolated_ev_performance_warnings(
+            fake_nhl
+        )
+
         # Copy the entire local config tree, preserving the exact current
         # production markets.yaml and juice/config dependencies.
         copy_tree(nhl / "config", fake_nhl / "config")
@@ -954,6 +1107,13 @@ def main() -> int:
         )
 
         secondary_games, secondary_status_counts = load_secondary_outputs(
+            fake_nhl / "03_edges" / "secondary_signals"
+        )
+
+        # Selector schema currently expects six puck-line probability fields
+        # that the builder cannot historically supply. Keep them unavailable
+        # rather than fabricating values.
+        selector_schema_compatibility = ensure_selector_secondary_schema(
             fake_nhl / "03_edges" / "secondary_signals"
         )
 
@@ -1122,6 +1282,8 @@ def main() -> int:
             "secondary_builder_source": (
                 "current local scripts/03_edges/build_secondary_model_signals.py"
             ),
+            "isolated_performance_warning_patch": performance_warning_patch,
+            "selector_schema_compatibility": selector_schema_compatibility,
             "historical_sdv_source": str(sdv_history_path),
             "historical_sdv_copy_in_isolated_workspace": str(
                 fake_history_path
@@ -1238,3 +1400,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+
