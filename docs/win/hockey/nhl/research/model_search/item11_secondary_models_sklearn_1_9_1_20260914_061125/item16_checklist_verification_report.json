@@ -1,0 +1,102 @@
+{
+  "absolute_tolerance": 1e-10,
+  "different_component_feature_lists_verified": true,
+  "environment": {
+    "lightgbm": "4.7.0",
+    "python": "3.11.9",
+    "scikit_learn": "1.9.1"
+  },
+  "github_writes": false,
+  "integration_failure_rule": "fail if any abs difference exceeds 1e-10",
+  "item": 16,
+  "prediction_parity": [
+    {
+      "component": "margin",
+      "max_abs_diff": 2.220446049250313e-16,
+      "mean_abs_diff": 2.5515909370086213e-17,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    },
+    {
+      "component": "moneyline",
+      "max_abs_diff": 5.551115123125783e-17,
+      "mean_abs_diff": 9.710949921027441e-18,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    },
+    {
+      "component": "total",
+      "max_abs_diff": 8.881784197001252e-16,
+      "mean_abs_diff": 3.660281124079574e-17,
+      "prediction_parity_pass": true,
+      "rows": 1189,
+      "tolerance": 1e-10
+    }
+  ],
+  "production_file_sha256": {
+    "builder": "ecb5fafa098648430147e0f61aebd3bdfaea4e997f5c7ee25826db96b125ab19",
+    "selector": "80cfeb5099c26cc5d68c8a09d4989b7f9ec1223743aa9fc40d0a8abc7357b3dc"
+  },
+  "production_files_inspected": [
+    "C:\\Users\\Mat\\Documents\\GitHub\\NHL_for_mat\\docs\\win\\hockey\\nhl\\scripts\\03_edges\\build_secondary_model_signals.py",
+    "C:\\Users\\Mat\\Documents\\GitHub\\NHL_for_mat\\docs\\win\\hockey\\nhl\\scripts\\04_select\\hockey_select_bets.py"
+  ],
+  "production_files_modified_by_verification": false,
+  "promotion_performed": false,
+  "relative_tolerance": 0.0,
+  "research_winner_loaded_through_production_compatible_inference": true,
+  "stage04_inspection": {
+    "apply_secondary_model_gate_present": true,
+    "secondary_market_fields_present": true
+  },
+  "status": "COMPLETE",
+  "winning_model_support": {
+    "margin": {
+      "constructor": {
+        "alpha": 0.0001,
+        "epsilon": 1.35,
+        "max_iter": 2000
+      },
+      "family": "HuberRegressor",
+      "missing_value_behavior": "rejects_non_finite",
+      "ordered_features": [
+        "sdv_exp_margin"
+      ],
+      "preprocessing": "StandardScaler",
+      "probability_method": null,
+      "random_seed": null
+    },
+    "moneyline": {
+      "constructor": {
+        "C": 1000000000000.0,
+        "l1_ratio": 0.0,
+        "max_iter": 3000,
+        "solver": "lbfgs"
+      },
+      "family": "LogisticRegression",
+      "missing_value_behavior": "rejects_non_finite",
+      "ordered_features": [
+        "sdv_home_win_prob"
+      ],
+      "preprocessing": "StandardScaler",
+      "probability_method": "predict_proba[:,1]",
+      "random_seed": 20260912
+    },
+    "total": {
+      "constructor": {
+        "alpha": 1.0,
+        "n_bootstrap": 25
+      },
+      "family": "bootstrap Ridge",
+      "missing_value_behavior": "rejects_non_finite",
+      "ordered_features": [
+        "sdv_exp_total"
+      ],
+      "preprocessing": "StandardScaler",
+      "probability_method": null,
+      "random_seed_rule": "20260912 + len(train) + len(cols) * 997"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+=== build_juice_files RUN 2026-09-14T12:13:35.035375+00:00 ===
+2026-09-14T12:13:35.035375+00:00 | Wiped pre-juice CSV outputs: 0
+2026-09-14T12:13:35.035375+00:00 | Input files found: 1
+2026-09-14T12:13:35.052049+00:00 | WROTE docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_16_NHL_moneyline.csv (6 rows)
+2026-09-14T12:13:35.069475+00:00 | WROTE docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_16_NHL_puck_line.csv (6 rows)
+2026-09-14T12:13:35.069475+00:00 | WROTE docs\win\hockey\nhl\01_merge\01_merguiced\2026_04_16_NHL_total.csv (6 rows)
+2026-09-14T12:13:35.069475+00:00 | Files written: 3
+2026-09-14T12:13:35.069475+00:00 | STATUS: SUCCESS

@@ -1,0 +1,2023 @@
+{
+  "finite_output_checks": [
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_moneyline.csv",
+      "inf_count": 0,
+      "numeric_columns": 92
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_puck_line.csv",
+      "inf_count": 0,
+      "numeric_columns": 94
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "inf_count": 0,
+      "numeric_columns": 97
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\2026_04_16_NHL_merged.csv",
+      "inf_count": 0,
+      "numeric_columns": 106
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "inf_count": 0,
+      "numeric_columns": 95
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "inf_count": 0,
+      "numeric_columns": 97
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "inf_count": 0,
+      "numeric_columns": 100
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "inf_count": 0,
+      "numeric_columns": 99
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "inf_count": 0,
+      "numeric_columns": 101
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "inf_count": 0,
+      "numeric_columns": 108
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "inf_count": 0,
+      "numeric_columns": 103
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "inf_count": 0,
+      "numeric_columns": 105
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "inf_count": 0,
+      "numeric_columns": 112
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "inf_count": 0,
+      "numeric_columns": 139
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "inf_count": 0,
+      "numeric_columns": 141
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "inf_count": 0,
+      "numeric_columns": 148
+    },
+    {
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "inf_count": 0,
+      "numeric_columns": 40
+    }
+  ],
+  "git_status_after": [
+    " M docs/win/hockey/nhl/errors/01_merge/build_juice_files.txt",
+    " M docs/win/hockey/nhl/errors/01_merge/merge_intake.txt",
+    "?? docs/win/hockey/nhl/research/integration_tests/",
+    "?? docs/win/hockey/nhl/research/model_search/item11_secondary_models_sklearn_1_9_1_20260914_061125/item16_checklist_prediction_comparison.csv",
+    "?? docs/win/hockey/nhl/research/model_search/item11_secondary_models_sklearn_1_9_1_20260914_061125/item16_checklist_verification_report.json"
+  ],
+  "git_status_before": [
+    " M docs/win/hockey/nhl/errors/01_merge/build_juice_files.txt",
+    " M docs/win/hockey/nhl/errors/01_merge/merge_intake.txt",
+    "?? docs/win/hockey/nhl/research/model_search/item11_secondary_models_sklearn_1_9_1_20260914_061125/item16_checklist_prediction_comparison.csv",
+    "?? docs/win/hockey/nhl/research/model_search/item11_secondary_models_sklearn_1_9_1_20260914_061125/item16_checklist_verification_report.json"
+  ],
+  "github_writes": false,
+  "historical_sdv_audit": {
+    "chronology_rule_verified_for_every_row": true,
+    "first_date": "2025-10-09",
+    "last_date": "2026-04-16",
+    "rows": 1291,
+    "sdv_as_of_rule": "source_game_date < target_game_date"
+  },
+  "historical_training_rule": "training game_date < target_date",
+  "isolated_builder_patch": {
+    "compiled": true,
+    "patch_end": "# === ITEM17 ISOLATED WALKFORWARD WINNER INTEGRATION END ===",
+    "patch_start": "# === ITEM17 ISOLATED WALKFORWARD WINNER INTEGRATION START ===",
+    "path": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\scripts\\03_edges\\build_secondary_model_signals.py",
+    "syntax_validated": true
+  },
+  "isolated_ev_warning_patch": {
+    "patched": true,
+    "path": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\scripts\\03_edges\\compute_ev_kelly.py",
+    "scope": "isolated temporary compute_ev_kelly.py only",
+    "warning_class": "pandas.errors.PerformanceWarning"
+  },
+  "item": 17,
+  "model_and_cutoff_verification": {
+    "active_stage04_slot_mapping": {
+      "moneyline": "weighted_home_win_prob <- Item11 LogisticRegression winner",
+      "puck_line": "meta_exp_margin/meta_home_cover_prob_puck_line <- Item11 HuberRegressor winner + prior residual conversion",
+      "total": "meta_exp_total <- Item11 bootstrap Ridge winner"
+    },
+    "integrated_prediction_diffs": {
+      "margin_max_abs_diff": 8.326672684688674e-17,
+      "moneyline_max_abs_diff": 0.0,
+      "total_max_abs_diff": 8.881784197001252e-16
+    },
+    "integrated_prediction_tolerance": 1e-10,
+    "item16_helper_parity_diffs": {
+      "margin": 0.0,
+      "moneyline": 0.0,
+      "total": 0.0
+    },
+    "item16_helper_parity_tolerance": 1e-10,
+    "model_checks": {
+      "history_max_game_date": "2026-04-15",
+      "margin_alpha": 0.0001,
+      "margin_epsilon": 1.35,
+      "margin_family": "HuberRegressor",
+      "margin_feature_order": [
+        "sdv_exp_margin"
+      ],
+      "margin_max_iter": 2000,
+      "margin_preprocessing": "StandardScaler",
+      "moneyline_C": 1000000000000.0,
+      "moneyline_family": "LogisticRegression",
+      "moneyline_feature_order": [
+        "sdv_home_win_prob"
+      ],
+      "moneyline_l1_ratio": 0.0,
+      "moneyline_max_iter": 3000,
+      "moneyline_preprocessing": "StandardScaler",
+      "moneyline_random_state": 20260912,
+      "moneyline_solver": "lbfgs",
+      "target_date": "2026-04-16",
+      "total_alpha": 1.0,
+      "total_family": "Ridge",
+      "total_feature_order": [
+        "sdv_exp_total"
+      ],
+      "total_model_count": 25,
+      "total_preprocessing": "StandardScaler",
+      "total_seed_rule": "20260912 + training_row_count + feature_count*997",
+      "train_rows": 1285
+    },
+    "secondary_rows": 6,
+    "secondary_status_counts": {
+      "ready": 6
+    }
+  },
+  "pipeline": [
+    {
+      "script": "scripts/01_merge/build_juice_files.py",
+      "started_at": "2026-09-14T12:13:34.104749+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/02_juice/apply_moneyline_juice.py",
+      "started_at": "2026-09-14T12:13:35.183012+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/02_juice/apply_puck_line_juice.py",
+      "started_at": "2026-09-14T12:13:35.809974+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/02_juice/apply_total_juice.py",
+      "started_at": "2026-09-14T12:13:36.426270+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/03_edges/compute_edges.py",
+      "started_at": "2026-09-14T12:13:37.015819+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/03_edges/compute_ev_kelly.py",
+      "started_at": "2026-09-14T12:13:37.622019+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/03_edges/build_secondary_model_signals.py",
+      "started_at": "2026-09-14T12:13:38.230010+00:00",
+      "status": "PASS"
+    },
+    {
+      "script": "scripts/04_select/hockey_select_bets.py",
+      "started_at": "2026-09-14T12:13:39.805179+00:00",
+      "status": "PASS"
+    }
+  ],
+  "probability_range_checks": [
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.579298262930928,
+      "min": 0.2294227558580435,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7705772441419565,
+      "min": 0.420701737069072,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "push_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\01_merguiced\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\2026_04_16_NHL_merged.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\2026_04_16_NHL_merged.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\2026_04_16_NHL_merged.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5724086182870619,
+      "min": 0.2286251174444096,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7747247296895149,
+      "min": 0.5038927335640138,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.579298262930928,
+      "min": 0.4277208851557428,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5722791148442572,
+      "min": 0.420701737069072,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.8519092101925412,
+      "min": 0.6290013016996218,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.4402147037263517,
+      "min": 0.323616720822363,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "over_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "push_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5113845763300389,
+      "min": 0.3466789440625586,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6156071210058954,
+      "min": 0.4556073639460574,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\02_juice\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5724086182870619,
+      "min": 0.2286251174444096,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7747247296895149,
+      "min": 0.5038927335640138,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.579298262930928,
+      "min": 0.4277208851557428,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5722791148442572,
+      "min": 0.420701737069072,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.8519092101925412,
+      "min": 0.6290013016996218,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.4402147037263517,
+      "min": 0.323616720822363,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "over_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "push_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5113845763300389,
+      "min": 0.3466789440625586,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6156071210058954,
+      "min": 0.4556073639460574,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5724086182870619,
+      "min": 0.2286251174444096,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7747247296895149,
+      "min": 0.5038927335640138,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.579298262930928,
+      "min": 0.4277208851557428,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5722791148442572,
+      "min": 0.420701737069072,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.8519092101925412,
+      "min": 0.6290013016996218,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.4402147037263517,
+      "min": 0.323616720822363,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "over_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "push_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5113845763300389,
+      "min": 0.3466789440625586,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6156071210058954,
+      "min": 0.4556073639460574,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\ev_kelly\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.534,
+      "min": 0.219,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5724086182870619,
+      "min": 0.2286251174444096,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7747247296895149,
+      "min": 0.5038927335640138,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.5318293220598539,
+      "min": 0.227861815195845,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_moneyline",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.468170677940146,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "drat_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.0457519987207147,
+      "min": 0.0006617340448435,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement_threshold_p75_prior",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.0737356175605523,
+      "min": 0.0737356175605523,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "high_prob_disagreement_flag",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_prob_drat_weight",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.01,
+      "min": 0.01,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.4194490181219491,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7450833467266161,
+      "min": 0.4239354672836722,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.733852140077821,
+      "min": 0.3011673151750972,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6988326848249027,
+      "min": 0.266147859922179,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7307392996108949,
+      "min": 0.3743190661478599,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6256809338521401,
+      "min": 0.2692607003891051,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6630350194552529,
+      "min": 0.3392996108949416,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.3369649805447471,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.4194490181219491,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6630350194552529,
+      "min": 0.3392996108949416,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_moneyline.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.3369649805447471,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "away_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.579298262930928,
+      "min": 0.4277208851557428,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5722791148442572,
+      "min": 0.420701737069072,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.8519092101925412,
+      "min": 0.6290013016996218,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_juiced_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.4402147037263517,
+      "min": 0.323616720822363,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_normalized_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "away_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7247047365914211,
+      "min": 0.5882827216461551,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "home_model_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.411717278353845,
+      "min": 0.2752952634085789,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "drat_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.608,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5845246086844735,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.0457519987207147,
+      "min": 0.0006617340448435,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement_threshold_p75_prior",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.0737356175605523,
+      "min": 0.0737356175605523,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "high_prob_disagreement_flag",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_prob_drat_weight",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.01,
+      "min": 0.01,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.5454464832727175,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7450833467266161,
+      "min": 0.5466794528256187,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.3517509727626459,
+      "min": 0.3011673151750972,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.6988326848249027,
+      "min": 0.648249027237354,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5058365758754864,
+      "min": 0.3743190661478599,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.6256809338521401,
+      "min": 0.4941634241245136,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5478599221789884,
+      "min": 0.3392996108949416,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.4521400778210116,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.5454464832727175,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.5478599221789884,
+      "min": 0.3392996108949416,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_puck_line.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.4521400778210116,
+      "non_null": 4,
+      "within_0_1": true
+    },
+    {
+      "column": "over_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5216122678566396,
+      "min": 0.3536125229438098,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6463874770561902,
+      "min": 0.4783877321433604,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "push_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.5113845763300389,
+      "min": 0.3466789440625586,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_juiced_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6156071210058954,
+      "min": 0.4556073639460574,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_normalized_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "over_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_win_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6397340077475849,
+      "min": 0.4711594222967071,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "under_model_loss_prob_total",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.528840577703293,
+      "min": 0.360265992252415,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "drat_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0457519987207147,
+      "min": 0.0006617340448435,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement_threshold_p75_prior",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0737356175605523,
+      "min": 0.0737356175605523,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "high_prob_disagreement_flag",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_prob_drat_weight",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.01,
+      "min": 0.01,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.4194490181219491,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7450833467266161,
+      "min": 0.4239354672836722,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.733852140077821,
+      "min": 0.3011673151750972,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6988326848249027,
+      "min": 0.266147859922179,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7307392996108949,
+      "min": 0.3743190661478599,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6256809338521401,
+      "min": 0.2692607003891051,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6630350194552529,
+      "min": 0.3392996108949416,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.3369649805447471,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.4194490181219491,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6630350194552529,
+      "min": 0.3392996108949416,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "item11_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\03_edges\\secondary_signals\\2026_04_16_NHL_total.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.3369649805447471,
+      "non_null": 6,
+      "within_0_1": true
+    },
+    {
+      "column": "model_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.772138184804155,
+      "min": 0.227861815195845,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "drat_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.781,
+      "min": 0.466,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.7352480012792852,
+      "min": 0.5014179843470629,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.0457519987207147,
+      "min": 0.0006617340448435,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "prob_disagreement_threshold_p75_prior",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.0737356175605523,
+      "min": 0.0737356175605523,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "high_prob_disagreement_flag",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.0,
+      "min": 0.0,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_prob_drat_weight",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.01,
+      "min": 0.01,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.7507058746848465,
+      "min": 0.4194490181219491,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_win_prob",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.7450833467266161,
+      "min": 0.4239354672836722,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.733852140077821,
+      "min": 0.3011673151750972,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "sdv_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.6988326848249027,
+      "min": 0.266147859922179,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.7307392996108949,
+      "min": 0.3743190661478599,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "weighted_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.6256809338521401,
+      "min": 0.2692607003891051,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_home_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.6630350194552529,
+      "min": 0.3392996108949416,
+      "non_null": 29,
+      "within_0_1": true
+    },
+    {
+      "column": "meta_away_cover_prob_puck_line",
+      "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+      "finite": true,
+      "max": 0.6607003891050583,
+      "min": 0.3369649805447471,
+      "non_null": 29,
+      "within_0_1": true
+    }
+  ],
+  "production_files_sha256_unchanged": true,
+  "required_pipeline_steps": {
+    "calibration": true,
+    "edge_calculation": true,
+    "ev": true,
+    "kelly": true,
+    "probability_conversion": true,
+    "production_compatible_prediction_path": true,
+    "secondary_signals": true,
+    "stage04_selection": true,
+    "train_finalize_prior_only": true
+  },
+  "run_timestamp_utc": "2026-09-14T12:13:41.094011+00:00",
+  "stage04_schema": {
+    "files": [
+      {
+        "exact_schema_match": true,
+        "file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\04_select\\2026_04_16_NHL.csv",
+        "rows": 29
+      }
+    ],
+    "total_rows": 29
+  },
+  "stage04_selected_market_counts": {
+    "moneyline": 12,
+    "puck_line": 6,
+    "total": 11
+  },
+  "stage04_selected_rows": 29,
+  "status": "COMPLETE",
+  "target_date": "2026-04-16",
+  "target_date_selection": {
+    "candidate_dates": 142,
+    "games_on_target_date": 6,
+    "prior_history_max_date": "2026-04-15",
+    "prior_training_rows": 1285,
+    "season_master_rows_with_unparseable_game_date_ignored": 1,
+    "selection_rule": "latest historical date where every game has complete D-Ratings predictions, SDV predictions, moneyline/puck-line/total prices and lines, non-integer opposite puck lines, and at least production min_train_rows prior completed history rows"
+  },
+  "target_input": {
+    "other_date_files_removed": 0,
+    "target_file": "C:\\Users\\Mat\\AppData\\Local\\Temp\\nhl_item17_walkforward_7hzwze9m\\docs\\win\\hockey\\nhl\\01_merge\\2026_04_16_NHL_merged.csv",
+    "target_rows": 6
+  },
+  "verification_output_root": "C:\\Users\\Mat\\Documents\\GitHub\\NHL_for_mat\\docs\\win\\hockey\\nhl\\research\\integration_tests\\item17_walkforward_2026_04_16_20260914_121333"
+}

@@ -1,0 +1,36 @@
+=== compute_ev_kelly RUN 2026-09-14T12:13:38.107447+00:00 ===
+2026-09-14T12:13:38.107447+00:00 | INFO  | INPUT_DIR : C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges
+2026-09-14T12:13:38.107447+00:00 | INFO  | OUTPUT_DIR: C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\ev_kelly
+2026-09-14T12:13:38.107447+00:00 | INFO  | --- FILE: 2026_04_16_NHL_moneyline.csv market=moneyline
+2026-09-14T12:13:38.127211+00:00 | WARN  | 2026_04_16_NHL_moneyline.csv | 6 negative Kelly values clipped to 0 (min=-0.2869)
+2026-09-14T12:13:38.129218+00:00 | WARN  | 2026_04_16_NHL_moneyline.csv | 2 negative Kelly values clipped to 0 (min=-0.1525)
+2026-09-14T12:13:38.134235+00:00 | INFO  | WROTE: C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\ev_kelly\2026_04_16_NHL_moneyline.csv (6 rows, 8 Kelly values clipped)
+2026-09-14T12:13:38.134235+00:00 | INFO  | --- FILE: 2026_04_16_NHL_puck_line.csv market=puck_line
+2026-09-14T12:13:38.137246+00:00 | WARN  | 2026_04_16_NHL_puck_line.csv | 2 negative Kelly values clipped to 0 (min=-0.0758)
+2026-09-14T12:13:38.137246+00:00 | WARN  | 2026_04_16_NHL_puck_line.csv | 4 negative Kelly values clipped to 0 (min=-0.4985)
+2026-09-14T12:13:38.153311+00:00 | INFO  | WROTE: C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\ev_kelly\2026_04_16_NHL_puck_line.csv (4 rows, 6 Kelly values clipped)
+2026-09-14T12:13:38.153311+00:00 | INFO  | --- FILE: 2026_04_16_NHL_total.csv market=total
+2026-09-14T12:13:38.171409+00:00 | WARN  | 2026_04_16_NHL_total.csv | 6 negative Kelly values clipped to 0 (min=-0.2009)
+2026-09-14T12:13:38.172018+00:00 | WARN  | 2026_04_16_NHL_total.csv | 3 negative Kelly values clipped to 0 (min=-0.0975)
+2026-09-14T12:13:38.172018+00:00 | INFO  | WROTE: C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\ev_kelly\2026_04_16_NHL_total.csv (6 rows, 9 Kelly values clipped)
+
+============================================================
+SUMMARY  2026-09-14T12:13:38.172018+00:00
+============================================================
+  files_processed  : 3
+  rows_processed   : 16
+  moneyline_files  : 1
+  puck_line_files  : 1
+  total_files      : 1
+  skipped          : 0
+  neg_kelly_clipped: 23
+  schema_errors    : 0
+  errors           : 0
+
+  file                                             market        rows  neg_kelly       status
+  2026_04_16_NHL_moneyline.csv                     moneyline        6          8           ok
+  2026_04_16_NHL_puck_line.csv                     puck_line        4          6           ok
+  2026_04_16_NHL_total.csv                         total            6          9           ok
+
+STATUS: SUCCESS
+============================================================

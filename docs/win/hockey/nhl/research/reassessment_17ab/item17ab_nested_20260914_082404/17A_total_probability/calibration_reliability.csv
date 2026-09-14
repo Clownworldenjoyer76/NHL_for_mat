@@ -1,0 +1,24 @@
+outer_fold,source,method,period,fold,probability_type,bucket,sample_size,mean_probability,realized_rate,calibration_gap
+1,production_total,direct_multinomial,outer_oos,1,unconditional_over,"(0.3, 0.4]",16,0.3835480595191302,0.6875,0.3039519404808698
+1,production_total,direct_multinomial,outer_oos,1,unconditional_over,"(0.4, 0.5]",114,0.4544178855524541,0.5175438596491229,0.06312597409666876
+1,production_total,direct_multinomial,outer_oos,1,unconditional_over,"(0.5, 0.6]",51,0.5256875587961264,0.5294117647058824,0.003724205909755973
+1,production_total,direct_multinomial,outer_oos,1,unconditional_under,"(0.3, 0.4]",21,0.38155262124886763,0.38095238095238093,-0.0006002402964866982
+1,production_total,direct_multinomial,outer_oos,1,unconditional_under,"(0.4, 0.5]",94,0.44084575752572497,0.40425531914893614,-0.036590438376788825
+1,production_total,direct_multinomial,outer_oos,1,unconditional_under,"(0.5, 0.6]",52,0.5495595583684899,0.4230769230769231,-0.12648263529156684
+1,production_total,direct_multinomial,outer_oos,1,unconditional_under,"(0.6, 0.7]",14,0.6184496698456233,0.2857142857142857,-0.33273538413133763
+1,production_total,direct_multinomial,outer_oos,1,push,"(-0.001, 0.1]",176,0.051464120337198466,0.0625,0.011035879662801534
+1,production_total,direct_multinomial,outer_oos,1,push,"(0.1, 0.2]",5,0.10086855002404549,0.2,0.09913144997595452
+2,production_total,direct_multinomial,outer_oos,2,unconditional_over,"(0.4, 0.5]",95,0.4769789832000936,0.4842105263157895,0.007231543115695904
+2,production_total,direct_multinomial,outer_oos,2,unconditional_over,"(0.5, 0.6]",69,0.5234134473177129,0.5797101449275363,0.056296697609823365
+2,production_total,direct_multinomial,outer_oos,2,unconditional_under,"(0.3, 0.4]",10,0.3929992305229049,0.7,0.30700076947709504
+2,production_total,direct_multinomial,outer_oos,2,unconditional_under,"(0.4, 0.5]",146,0.44174966246993186,0.410958904109589,-0.03079075836034284
+2,production_total,direct_multinomial,outer_oos,2,unconditional_under,"(0.5, 0.6]",8,0.5047782535376031,0.375,-0.12977825353760308
+2,production_total,direct_multinomial,outer_oos,2,push,"(-0.001, 0.1]",164,0.06163292485932314,0.04878048780487805,-0.012852437054445089
+3,production_total,empirical_residual,outer_oos,3,unconditional_over,"(0.4, 0.5]",70,0.4780420571246807,0.37142857142857144,-0.10661348569610923
+3,production_total,empirical_residual,outer_oos,3,unconditional_over,"(0.5, 0.6]",96,0.5470030408022314,0.53125,-0.01575304080223139
+3,production_total,empirical_residual,outer_oos,3,unconditional_over,"(0.6, 0.7]",2,0.6090425531914894,0.5,-0.10904255319148937
+3,production_total,empirical_residual,outer_oos,3,unconditional_under,"(0.3, 0.4]",10,0.3883576023185128,0.4,0.011642397681487227
+3,production_total,empirical_residual,outer_oos,3,unconditional_under,"(0.4, 0.5]",113,0.44300120933110054,0.45132743362831856,0.008326224297218021
+3,production_total,empirical_residual,outer_oos,3,unconditional_under,"(0.5, 0.6]",45,0.5170951536643026,0.6666666666666666,0.14957151300236404
+3,production_total,empirical_residual,outer_oos,3,push,"(-0.001, 0.1]",136,0.0,0.0,0.0
+3,production_total,empirical_residual,outer_oos,3,push,"(0.1, 0.2]",32,0.11233388704318936,0.15625,0.04391611295681064
