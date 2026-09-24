@@ -1,9 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020794,hockey,nhl,2026_01_22,19:00,Boston Bruins,Vegas Golden Knights,0.447,0.553,3.25,2.69,5.94
-2025020795,hockey,nhl,2026_01_22,19:00,Montreal Canadiens,Buffalo Sabres,0.55,0.45,2.91,3.45,6.36
-2025020796,hockey,nhl,2026_01_22,19:00,Carolina Hurricanes,Chicago Blackhawks,0.734,0.266,2.24,3.74,5.98
-2025020797,hockey,nhl,2026_01_22,19:00,Columbus Blue Jackets,Dallas Stars,0.458,0.542,3.38,2.92,6.30
-2025020798,hockey,nhl,2026_01_22,20:00,Nashville Predators,Ottawa Senators,0.503,0.497,3.06,3.10,6.16
-2025020799,hockey,nhl,2026_01_22,20:00,Winnipeg Jets,Florida Panthers,0.495,0.505,2.87,2.82,5.69
-2025020800,hockey,nhl,2026_01_22,21:00,Edmonton Oilers,Pittsburgh Penguins,0.628,0.372,2.81,3.94,6.75
-2025020801,hockey,nhl,2026_01_22,21:30,Minnesota Wild,Detroit Red Wings,0.576,0.424,2.59,3.41,6.00

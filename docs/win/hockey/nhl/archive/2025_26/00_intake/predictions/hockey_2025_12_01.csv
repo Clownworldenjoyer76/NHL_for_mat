@@ -1,6 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020406,hockey,nhl,2025_12_01,19:00,New Jersey Devils,Columbus Blue Jackets,0.59,0.41,2.71,3.68,6.39
-2025020407,hockey,nhl,2025_12_01,19:00,Philadelphia Flyers,Pittsburgh Penguins,0.584,0.416,2.49,3.40,5.89
-2025020408,hockey,nhl,2025_12_01,19:30,Buffalo Sabres,Winnipeg Jets,0.472,0.528,3.16,2.86,6.02
-2025020409,hockey,nhl,2025_12_01,20:00,St Louis Blues,Anaheim Ducks,0.534,0.466,2.96,3.33,6.29
-2025020410,hockey,nhl,2025_12_01,22:00,San Jose Sharks,Utah Mammoth,0.408,0.592,3.63,2.64,6.27

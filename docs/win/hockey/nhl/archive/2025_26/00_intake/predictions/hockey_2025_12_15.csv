@@ -1,6 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020514,hockey,nhl,2025_12_15,19:00,Tampa Bay Lightning,Florida Panthers,0.508,0.492,2.96,3.05,6.01
-2025020515,hockey,nhl,2025_12_15,19:00,New York Rangers,Anaheim Ducks,0.56,0.44,2.78,3.42,6.20
-2025020516,hockey,nhl,2025_12_15,19:30,Winnipeg Jets,Ottawa Senators,0.538,0.462,2.69,3.09,5.78
-2025020517,hockey,nhl,2025_12_15,20:00,St Louis Blues,Nashville Predators,0.501,0.499,2.89,2.91,5.80
-2025020518,hockey,nhl,2025_12_15,20:00,Dallas Stars,Los Angeles Kings,0.586,0.414,2.30,3.22,5.52

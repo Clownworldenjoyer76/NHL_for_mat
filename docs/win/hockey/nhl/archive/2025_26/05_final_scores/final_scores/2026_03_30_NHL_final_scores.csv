@@ -1,6 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2026_03_30,2025021173,Penguins,Islanders,8,3,11,5,-5
-hockey,nhl,2026_03_30,2025021174,Flames,Avalanche,2,9,11,-7,7
-hockey,nhl,2026_03_30,2025021175,Canucks,Golden Knights,2,4,6,-2,2
-hockey,nhl,2026_03_30,2025021176,Maple Leafs,Ducks,5,4,9,1,-1
-hockey,nhl,2026_03_30,2025021177,Blues,Sharks,4,5,9,-1,1

@@ -1,4 +1,0 @@
-component,old_candidate_id,new_candidate_id,same_winner,old_primary_metric,new_primary_metric,old_secondary_metric,new_secondary_metric
-moneyline,moneyline|logistic|sdv_only|{},moneyline|logistic|sdv_only|{},True,0.6773160567796372,0.6773160567796372,0.2422649530331347,0.2422649530331347
-margin,"margin|robust_huber|sdv_only|{""alpha"":0.0001,""epsilon"":1.35}","margin|robust_huber|sdv_only|{""alpha"":0.0001,""epsilon"":1.35}",True,2.524830104614677,2.524830104614677,2.1228727975355324,2.1228727975355324
-total,"total|bootstrap_ridge_simulation|sdv_only|{""alpha"":1,""n_bootstrap"":25}","total|bootstrap_ridge_simulation|sdv_only|{""alpha"":1,""n_bootstrap"":25}",True,2.2771169833672884,2.2771169833672884,1.8248184355860173,1.8248184355860173

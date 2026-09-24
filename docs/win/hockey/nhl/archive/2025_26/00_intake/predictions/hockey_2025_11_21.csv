@@ -1,5 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020331,hockey,nhl,2025_11_21,19:00,Buffalo Sabres,Chicago Blackhawks,0.557,0.443,2.80,3.41,6.21
-2025020332,hockey,nhl,2025_11_21,19:00,Pittsburgh Penguins,Minnesota Wild,0.524,0.476,3.18,3.43,6.61
-2025020333,hockey,nhl,2025_11_21,20:00,Winnipeg Jets,Carolina Hurricanes,0.515,0.485,2.86,3.01,5.87
-2025020334,hockey,nhl,2025_11_21,22:30,Los Angeles Kings,Boston Bruins,0.615,0.385,2.37,3.44,5.81

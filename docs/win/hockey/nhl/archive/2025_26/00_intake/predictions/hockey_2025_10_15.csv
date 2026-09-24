@@ -1,5 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020057,hockey,nhl,2025_10_15,19:00,Buffalo Sabres,Ottawa Senators,0.489,0.511,3.14,3.03,6.17
-2025020058,hockey,nhl,2025_10_15,19:00,Detroit Red Wings,Florida Panthers,0.43,0.57,3.39,2.65,6.04
-2025020059,hockey,nhl,2025_10_15,21:30,St Louis Blues,Chicago Blackhawks,0.655,0.345,2.25,3.47,5.72
-2025020060,hockey,nhl,2025_10_15,21:30,Utah Mammoth,Calgary Flames,0.66,0.34,2.31,3.54,5.85

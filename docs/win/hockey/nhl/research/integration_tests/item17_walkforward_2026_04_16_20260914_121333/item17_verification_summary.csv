@@ -1,7 +1,0 @@
-check,status,value
-historical cutoff,PASS,2026-04-15 < 2026-04-16
-winner families/hyperparameters/features/preprocessing,PASS,verified from fitted isolated production-path models
-winner inference parity,PASS,"{'moneyline_max_abs_diff': 0.0, 'margin_max_abs_diff': 8.326672684688674e-17, 'total_max_abs_diff': 8.881784197001252e-16}"
-probability ranges,PASS,195 probability columns checked
-finite numeric outputs,PASS,17 files checked
-Stage 04 schema,PASS,29 selected rows

@@ -1,6 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020617,hockey,nhl,2025_12_30,19:00,Toronto Maple Leafs,New Jersey Devils,0.493,0.507,3.09,3.02,6.11
-2025020618,hockey,nhl,2025_12_30,19:00,Florida Panthers,Montreal Canadiens,0.596,0.404,2.44,3.45,5.89
-2025020619,hockey,nhl,2025_12_30,19:00,Pittsburgh Penguins,Carolina Hurricanes,0.412,0.588,3.65,2.70,6.35
-2025020620,hockey,nhl,2025_12_30,20:30,Chicago Blackhawks,New York Islanders,0.389,0.611,3.55,2.48,6.03
-2025020621,hockey,nhl,2025_12_30,22:00,Vancouver Canucks,Philadelphia Flyers,0.468,0.532,3.06,2.71,5.77

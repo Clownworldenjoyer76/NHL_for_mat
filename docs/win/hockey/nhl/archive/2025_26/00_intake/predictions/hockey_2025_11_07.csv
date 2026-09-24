@@ -1,5 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020227,hockey,nhl,2025_11_07,19:00,Detroit Red Wings,New York Rangers,0.521,0.479,2.80,3.02,5.82
-2025020228,hockey,nhl,2025_11_07,19:00,New York Islanders,Minnesota Wild,0.546,0.454,2.87,3.36,6.23
-2025020229,hockey,nhl,2025_11_07,21:00,Calgary Flames,Chicago Blackhawks,0.58,0.42,2.42,3.27,5.69
-2025020230,hockey,nhl,2025_11_07,22:00,San Jose Sharks,Winnipeg Jets,0.345,0.655,3.66,2.44,6.10

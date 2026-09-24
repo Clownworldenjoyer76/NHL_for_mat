@@ -1,6 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2025_12_08,2025020461,Lightning,Maple Leafs,0,2,2,-2,2
-hockey,nhl,2025_12_08,2025020462,Kings,Mammoth,4,2,6,2,-2
-hockey,nhl,2025_12_08,2025020463,Sabres,Flames,4,7,11,-3,3
-hockey,nhl,2025_12_08,2025020464,Red Wings,Canucks,4,0,4,4,-4
-hockey,nhl,2025_12_08,2025020465,Wild,Kraken,4,1,5,3,-3

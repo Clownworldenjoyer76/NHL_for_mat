@@ -1,4 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020108,hockey,nhl,2025_10_22,19:00,New Jersey Devils,Minnesota Wild,0.536,0.464,2.72,3.10,5.82
-2025020109,hockey,nhl,2025_10_22,19:30,Buffalo Sabres,Detroit Red Wings,0.513,0.487,3.07,3.20,6.27
-2025020110,hockey,nhl,2025_10_22,20:30,Calgary Flames,Montreal Canadiens,0.493,0.507,2.94,2.87,5.81

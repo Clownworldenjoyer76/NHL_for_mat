@@ -1,7 +1,0 @@
-=== build_secondary_model_signals RUN 2026-09-14T12:13:38.920647+00:00 ===
-2026-09-14T12:13:38.984121+00:00 | Loaded P6 completed comparison history: rows=1291 files=1
-2026-09-14T12:13:39.621970+00:00 | WROTE C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\secondary_signals\2026_04_16_NHL_moneyline.csv rows=6
-2026-09-14T12:13:39.643107+00:00 | WROTE C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\secondary_signals\2026_04_16_NHL_puck_line.csv rows=4
-2026-09-14T12:13:39.665226+00:00 | WROTE C:\Users\Mat\AppData\Local\Temp\nhl_item17_walkforward_7hzwze9m\docs\win\hockey\nhl\03_edges\secondary_signals\2026_04_16_NHL_total.csv rows=6
-2026-09-14T12:13:39.666230+00:00 | STATUS: SUCCESS | signal_rows=6 files_written=3 status_counts={'ready': 6}
-2026-09-14T12:13:40.514908+00:00 | Loaded P6 completed comparison history: rows=1291 files=1
