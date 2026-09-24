@@ -1,7 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025021301,hockey,nhl,2026_04_15,19:00,Buffalo Sabres,Dallas Stars,0.519000,0.481000,2.95,3.15,6.10
-2025021302,hockey,nhl,2026_04_15,19:00,Tampa Bay Lightning,New York Rangers,0.644000,0.356000,2.45,3.64,6.09
-2025021303,hockey,nhl,2026_04_15,19:00,Florida Panthers,Detroit Red Wings,0.459000,0.541000,3.23,2.79,6.02
-2025021304,hockey,nhl,2026_04_15,19:30,Ottawa Senators,Toronto Maple Leafs,0.642000,0.358000,2.48,3.65,6.13
-2025021305,hockey,nhl,2026_04_15,20:30,Chicago Blackhawks,San Jose Sharks,0.495000,0.505000,3.13,3.08,6.21
-2025021306,hockey,nhl,2026_04_15,22:00,Vegas Golden Knights,Seattle Kraken,0.676000,0.324000,2.49,3.79,6.28

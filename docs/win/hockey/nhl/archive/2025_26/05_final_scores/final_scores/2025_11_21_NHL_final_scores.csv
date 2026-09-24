@@ -1,5 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2025_11_21,2025020331,Blackhawks,Sabres,3,9,12,-6,6
-hockey,nhl,2025_11_21,2025020332,Wild,Penguins,5,0,5,5,-5
-hockey,nhl,2025_11_21,2025020333,Hurricanes,Jets,4,3,7,1,-1
-hockey,nhl,2025_11_21,2025020334,Bruins,Kings,2,1,3,1,-1

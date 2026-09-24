@@ -1,2 +1,0 @@
-total_line,sample_size,realized_pushes,realized_push_rate,mean_predicted_push_probability,push_calibration_gap,realized_push_rate_ci95_low,realized_push_rate_ci95_high
-6.0,124,12,0.0967741935483871,0.11179649099964194,-0.015022297451254843,0.056228207656693285,0.16155293374707905

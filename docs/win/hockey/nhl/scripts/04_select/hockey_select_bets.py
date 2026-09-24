@@ -20,11 +20,6 @@ REJECTION_FILE = ERROR_DIR / "selection_rejections.csv"
 
 LEAGUE_CODE = "NHL"
 
-# Approved production rule: a secondary moneyline opinion supports a bet only
-# when its side probability exceeds the offered sportsbook break-even
-# probability. No additional safety margin has been validated.
-MONEYLINE_SECONDARY_SUPPORT_MARGIN = 0.0
-
 BLOCKED_PATH_PARTS = {
     "05_final_scores",
     "graded",
@@ -99,12 +94,6 @@ OUTPUT_COLUMNS = [
     "meta_home_win_prob",
     "meta_exp_margin",
     "meta_exp_total",
-    "sdv_home_cover_prob_puck_line",
-    "sdv_away_cover_prob_puck_line",
-    "weighted_home_cover_prob_puck_line",
-    "weighted_away_cover_prob_puck_line",
-    "meta_home_cover_prob_puck_line",
-    "meta_away_cover_prob_puck_line",
     "secondary_history_max_game_date",
     "secondary_model_status",
     "secondary_signal_version",
@@ -140,12 +129,6 @@ SECONDARY_SIGNAL_COLUMNS = [
     "meta_home_win_prob",
     "meta_exp_margin",
     "meta_exp_total",
-    "sdv_home_cover_prob_puck_line",
-    "sdv_away_cover_prob_puck_line",
-    "weighted_home_cover_prob_puck_line",
-    "weighted_away_cover_prob_puck_line",
-    "meta_home_cover_prob_puck_line",
-    "meta_away_cover_prob_puck_line",
     "secondary_history_max_game_date",
     "secondary_model_status",
     "secondary_signal_version",
@@ -392,83 +375,30 @@ def support_label(
     bet_side: str,
     prediction,
     line,
-    decimal_odds=None,
 ) -> str:
     value = fv(prediction)
     if value is None:
         return "unavailable"
 
     if market_type == "moneyline":
-        decimal_value = fv(decimal_odds)
-        if (
-            decimal_value is None
-            or decimal_value <= 1
-            or not 0 <= value <= 1
-        ):
-            return "unavailable"
-
-        if bet_side == "home":
-            side_probability = value
-        elif bet_side == "away":
-            side_probability = 1.0 - value
-        else:
-            fail(
-                "Unknown moneyline bet_side for secondary support: "
-                f"{bet_side!r}"
-            )
-
-        break_even_probability = 1.0 / decimal_value
-        required_probability = (
-            break_even_probability
-            + MONEYLINE_SECONDARY_SUPPORT_MARGIN
-        )
-        support_margin = (
-            side_probability
-            - required_probability
-        )
-
-        if abs(support_margin) < 1e-12:
+        if abs(value - 0.5) < 1e-12:
             return "neutral"
-
-        return (
-            "supports"
-            if support_margin > 0
-            else "opposes"
-        )
+        supports_home = value > 0.5
+        supports = supports_home if bet_side == "home" else not supports_home
+        return "supports" if supports else "opposes"
 
     if market_type == "puck_line":
-        decimal_value = fv(decimal_odds)
-        if (
-            decimal_value is None
-            or decimal_value <= 1
-            or not 0 <= value <= 1
-        ):
+        line_value = fv(line)
+        if line_value is None:
             return "unavailable"
-
-        if bet_side == "home":
-            side_probability = value
-        elif bet_side == "away":
-            side_probability = 1.0 - value
-        else:
-            fail(
-                "Unknown puck-line bet_side for secondary support: "
-                f"{bet_side!r}"
-            )
-
-        break_even_probability = 1.0 / decimal_value
-        support_margin = (
-            side_probability
-            - break_even_probability
+        cover_margin = (
+            value + line_value
+            if bet_side == "home"
+            else -value + line_value
         )
-
-        if abs(support_margin) < 1e-12:
+        if abs(cover_margin) < 1e-12:
             return "neutral"
-
-        return (
-            "supports"
-            if support_margin > 0
-            else "opposes"
-        )
+        return "supports" if cover_margin > 0 else "opposes"
 
     if market_type == "total":
         line_value = fv(line)
@@ -497,15 +427,11 @@ def secondary_market_fields(
 
     if market_type == "puck_line":
         derived_field = (
-            "weighted_home_cover_prob_puck_line"
+            "weighted_exp_margin"
             if derived_model == "weighted"
-            else "meta_home_cover_prob_puck_line"
+            else "meta_exp_margin"
         )
-        return (
-            "high_margin_disagreement_flag",
-            "sdv_home_cover_prob_puck_line",
-            derived_field,
-        )
+        return "high_margin_disagreement_flag", "sdv_exp_margin", derived_field
 
     if market_type == "total":
         derived_field = (
@@ -574,22 +500,17 @@ def apply_secondary_model_gate(
 
         line = candidate.get("line")
         side = candidate["bet_side"]
-        decimal_odds = candidate.get(
-            "dk_odds_decimal"
-        )
         challenger_support = support_label(
             market_type=market_type,
             bet_side=side,
             prediction=row.get(challenger_field),
             line=line,
-            decimal_odds=decimal_odds,
         )
         derived_support = support_label(
             market_type=market_type,
             bet_side=side,
             prediction=row.get(derived_field),
             line=line,
-            decimal_odds=decimal_odds,
         )
 
         candidate["secondary_challenger_support"] = challenger_support

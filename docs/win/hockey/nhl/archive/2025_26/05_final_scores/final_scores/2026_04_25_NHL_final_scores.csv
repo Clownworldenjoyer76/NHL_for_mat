@@ -1,4 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2026_04_25,2025030134,Hurricanes,Senators,4,2,6,2,-2
-hockey,nhl,2026_04_25,2025030144,Penguins,Flyers,4,2,6,2,-2
-hockey,nhl,2026_04_25,2025030164,Stars,Wild,2,3,5,-1,1

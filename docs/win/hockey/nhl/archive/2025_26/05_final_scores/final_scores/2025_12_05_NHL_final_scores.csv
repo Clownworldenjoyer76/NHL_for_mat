@@ -1,6 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2025_12_05,2025020436,Golden Knights,Devils,3,0,3,3,-3
-hockey,nhl,2025_12_05,2025020437,Sabres,Jets,1,4,5,-3,3
-hockey,nhl,2025_12_05,2025020438,Sharks,Stars,1,4,5,-3,3
-hockey,nhl,2025_12_05,2025020439,Mammoth,Canucks,4,1,5,3,-3
-hockey,nhl,2025_12_05,2025020440,Capitals,Ducks,3,4,7,-1,1

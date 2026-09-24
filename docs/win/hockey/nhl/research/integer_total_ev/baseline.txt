@@ -1,6 +1,0 @@
-baseline_status=PASS
-baseline_tests=114
-baseline_failures=0
-python_version=Python 3.12.10
-pytest_version=pytest 9.1.1
-git_commit=0ce2e470f3acb32dcce48cf7c757e1633364e79b

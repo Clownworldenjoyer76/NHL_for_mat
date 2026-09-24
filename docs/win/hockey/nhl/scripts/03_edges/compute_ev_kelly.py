@@ -191,73 +191,6 @@ def compute_ev(
     return out
 
 
-def compute_push_aware_ev(
-    win_prob,
-    loss_prob,
-    push_prob,
-    book_decimal,
-):
-    w = pd.to_numeric(
-        win_prob,
-        errors="coerce",
-    )
-    l = pd.to_numeric(
-        loss_prob,
-        errors="coerce",
-    )
-    r = pd.to_numeric(
-        push_prob,
-        errors="coerce",
-    )
-    d = pd.to_numeric(
-        book_decimal,
-        errors="coerce",
-    )
-
-    out = pd.Series(
-        np.nan,
-        index=w.index,
-        dtype="float64",
-    )
-
-    probability_sum = (
-        w + l + r
-    )
-
-    valid = (
-        w.notna()
-        & l.notna()
-        & r.notna()
-        & d.notna()
-        & np.isfinite(w)
-        & np.isfinite(l)
-        & np.isfinite(r)
-        & np.isfinite(d)
-        & (w >= 0)
-        & (l >= 0)
-        & (r >= 0)
-        & (r < 1)
-        & (d > 1)
-        & np.isclose(
-            probability_sum,
-            1.0,
-            atol=1e-9,
-            rtol=0.0,
-        )
-    )
-
-    out.loc[valid] = (
-        w.loc[valid]
-        * (
-            d.loc[valid]
-            - 1.0
-        )
-        - l.loc[valid]
-    )
-
-    return out
-
-
 def compute_kelly(
     model_prob,
     book_decimal,
@@ -458,11 +391,6 @@ def process_total(
         "game_id",
         "over_model_prob_total",
         "under_model_prob_total",
-        "over_model_win_prob_total",
-        "over_model_loss_prob_total",
-        "under_model_win_prob_total",
-        "under_model_loss_prob_total",
-        "push_prob_total",
         "dk_total_over_decimal",
         "dk_total_under_decimal",
         "over_edge_pct_total",
@@ -480,16 +408,12 @@ def process_total(
         required_cols[1:],
     )
 
-    df["over_ev_total"] = compute_push_aware_ev(
-        df["over_model_win_prob_total"],
-        df["over_model_loss_prob_total"],
-        df["push_prob_total"],
+    df["over_ev_total"] = compute_ev(
+        df["over_model_prob_total"],
         df["dk_total_over_decimal"],
     )
-    df["under_ev_total"] = compute_push_aware_ev(
-        df["under_model_win_prob_total"],
-        df["under_model_loss_prob_total"],
-        df["push_prob_total"],
+    df["under_ev_total"] = compute_ev(
+        df["under_model_prob_total"],
         df["dk_total_under_decimal"],
     )
 

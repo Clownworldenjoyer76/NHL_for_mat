@@ -1,6 +1,0 @@
-sport,league,game_date,game_id,away_team,home_team,away_score,home_score,total_score,away_puck_line_result,home_puck_line_result
-hockey,nhl,2026_01_11,2025020711,Devils,Jets,3,4,7,-1,1
-hockey,nhl,2026_01_11,2025020712,Penguins,Bruins,0,1,1,-1,1
-hockey,nhl,2026_01_11,2025020713,Capitals,Predators,2,3,5,-1,1
-hockey,nhl,2026_01_11,2025020714,Blue Jackets,Mammoth,3,2,5,1,-1
-hockey,nhl,2026_01_11,2025020715,Golden Knights,Sharks,7,2,9,5,-5

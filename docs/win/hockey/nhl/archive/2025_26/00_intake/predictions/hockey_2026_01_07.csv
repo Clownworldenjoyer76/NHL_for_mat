@@ -1,6 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020677,hockey,nhl,2026_01_07,19:00,Washington Capitals,Dallas Stars,0.524,0.476,2.79,3.05,5.84
-2025020678,hockey,nhl,2026_01_07,19:30,Montreal Canadiens,Calgary Flames,0.573,0.427,2.52,3.31,5.83
-2025020679,hockey,nhl,2026_01_07,21:30,Chicago Blackhawks,St Louis Blues,0.497,0.503,2.83,2.81,5.64
-2025020680,hockey,nhl,2026_01_07,21:30,Utah Mammoth,Ottawa Senators,0.549,0.451,2.65,3.18,5.83
-2025020681,hockey,nhl,2026_01_07,22:30,Los Angeles Kings,San Jose Sharks,0.657,0.343,2.32,3.54,5.86

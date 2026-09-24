@@ -1,6 +1,0 @@
-﻿game_id,sport,league,game_date,game_time,home_team,away_team,home_prob_moneyline,away_prob_moneyline,away_projected_goals,home_projected_goals,total_projected_goals
-2025020970,hockey,nhl,2026_03_04,19:00,Detroit Red Wings,Vegas Golden Knights,0.531,0.469,2.85,3.19,6.04
-2025020971,hockey,nhl,2026_03_04,19:00,New Jersey Devils,Toronto Maple Leafs,0.501,0.499,2.90,2.90,5.80
-2025020972,hockey,nhl,2026_03_04,22:00,Vancouver Canucks,Carolina Hurricanes,0.307,0.693,3.82,2.47,6.29
-2025020973,hockey,nhl,2026_03_04,22:00,Anaheim Ducks,New York Islanders,0.481,0.519,3.24,3.03,6.27
-2025020974,hockey,nhl,2026_03_04,22:00,Seattle Kraken,St Louis Blues,0.516,0.484,2.67,2.83,5.50
