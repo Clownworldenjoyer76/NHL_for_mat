@@ -1,6 +1,0 @@
-league,market,game_date,match_time,home_team,away_team,game_id,market_type,take_bet,odds_american,odds_decimal,edge_pct,kelly_stake_pct,expected_goals,league_scorefile,market_scorefile,match_time_scorefile,away_score,home_score,bet_result
-Soccer,seriea,2026_03_16,15:45,Cremonese,Fiorentina,2026_03_16_cremonese_fiorentina,result,away,-110.0,1.9090909090909087,0.0005,0.0,2.69,Soccer,seriea,03:45 PM,4,1,Win
-Soccer,epl,2026_03_16,16:00,Brentford,Wolverhampton,2026_03_16_brentford_wolverhampton,result,away,475.0,5.75,0.3094,1.36,2.63,Soccer,epl,04:00 PM,2,2,Loss
-Soccer,epl,2026_03_16,16:00,Brentford,Wolverhampton,2026_03_16_brentford_wolverhampton,total,under25,112.0,2.12,-0.0035,0.0,2.63,Soccer,epl,04:00 PM,2,2,Loss
-Soccer,laliga,2026_03_16,16:00,Vallecano,Levante,2026_03_16_vallecano_levante,result,away,400.0,5.0,0.1542,0.7,2.92,Soccer,laliga,04:00 PM,1,1,Loss
-Soccer,laliga,2026_03_16,16:00,Vallecano,Levante,2026_03_16_vallecano_levante,total,over25,-135.0,1.7407407407407407,0.0286,0.0,2.92,Soccer,laliga,04:00 PM,1,1,Loss

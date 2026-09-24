@@ -1,4 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,laliga,2026_03_08,11:15,Getafe,Real Betis,0.348000,0.284000,0.368000,1.13,1.17,2.30
-Soccer,laliga,2026_03_08,13:30,Sevilla,Vallecano,0.386000,0.291000,0.323000,1.16,1.03,2.19
-Soccer,laliga,2026_03_08,16:00,Valencia,Alaves,0.431000,0.281000,0.288000,1.29,1.00,2.29

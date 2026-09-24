@@ -1,7 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,bundesliga,2026_03_20,15:30,RB Leipzig,Hoffenheim,0.508000,0.221000,0.271000,1.94,1.37,3.31
-Soccer,epl,2026_03_20,16:00,Bournemouth,Manchester United,0.295000,0.277000,0.428000,1.04,1.30,2.34
-Soccer,laliga,2026_03_20,16:00,Villarreal,Real Sociedad,0.502000,0.249000,0.249000,1.61,1.05,2.66
-Soccer,ligue1,2026_03_20,15:45,Lens,Angers,0.711000,0.184000,0.104000,2.13,0.67,2.80
-Soccer,seriea,2026_03_20,13:30,Cagliari,Napoli,0.165000,0.216000,0.619000,0.88,1.92,2.80
-Soccer,seriea,2026_03_20,15:45,Genoa,Udinese,0.474000,0.255000,0.271000,1.54,1.09,2.63

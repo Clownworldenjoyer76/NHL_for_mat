@@ -1,9 +1,0 @@
-date,time,team,opponent,spread,odds,handle_pct,bets_pct,league,decimal_odds,game_id
-2026_02_10,07:30PM,New York Knicks,Indiana Pacers,-11.5,-112,0.66,0.61,nba_spreads,1.8928571428571428,
-2026_02_10,07:30PM,Indiana Pacers,New York Knicks,11.5,-108,0.34,0.39,nba_spreads,1.925925925925926,
-2026_02_10,08:00PM,Houston Rockets,Los Angeles Clippers,-7.5,-115,0.77,0.51,nba_spreads,1.8695652173913042,
-2026_02_10,08:00PM,Los Angeles Clippers,Houston Rockets,7.5,-105,0.23,0.49,nba_spreads,1.9523809523809523,
-2026_02_10,09:00PM,Phoenix Suns,Dallas Mavericks,-8.5,-108,0.58,0.45,nba_spreads,1.925925925925926,
-2026_02_10,09:00PM,Dallas Mavericks,Phoenix Suns,8.5,-112,0.42,0.55,nba_spreads,1.8928571428571428,
-2026_02_10,10:30PM,San Antonio Spurs,Los Angeles Lakers,-9.5,100,0.79,0.52,nba_spreads,2.0,
-2026_02_10,10:30PM,Los Angeles Lakers,San Antonio Spurs,9.5,-120,0.21,0.48,nba_spreads,1.8333333333333335,

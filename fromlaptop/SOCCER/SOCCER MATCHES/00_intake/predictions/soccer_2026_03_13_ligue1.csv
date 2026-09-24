@@ -1,2 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,ligue1,2026_03_13,15:45,Marseille,Auxerre,0.659000,0.199000,0.141000,2.07,0.83,2.90

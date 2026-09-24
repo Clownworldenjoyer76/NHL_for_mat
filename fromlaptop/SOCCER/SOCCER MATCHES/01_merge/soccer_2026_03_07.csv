@@ -1,3 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american,dk_btts_yes_american,dk_btts_no_american,game_id
-Soccer,seriea,2026_03_07,12:00 PM,Atalanta,Udinese,0.697000,0.172000,0.130000,2.43,0.95,3.38,-145,+250,+390,,,,,,,2026_03_07_atalanta_udinese
-Soccer,seriea,2026_03_07,02:45 PM,Juventus,Pisa,0.837000,0.113000,0.050000,2.83,0.57,3.40,-525,+500,+1100,,,,,,,2026_03_07_juventus_pisa

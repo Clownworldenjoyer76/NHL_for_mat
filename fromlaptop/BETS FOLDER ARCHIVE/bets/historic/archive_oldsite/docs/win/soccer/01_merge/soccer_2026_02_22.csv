@@ -1,6 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_american,draw_american,away_american,game_id
-soccer,bundesliga,2026_02_22,01:30 PM,FC Heidenheim,VfB Stuttgart,0.189000,0.212000,0.599000,+330,+295,-150,2026_02_22_FC Heidenheim_VfB Stuttgart
-soccer,laliga,2026_02_22,12:30 PM,Celta Vigo,Mallorca,0.541000,0.249000,0.210000,-120,+245,+370,2026_02_22_Celta Vigo_Mallorca
-soccer,laliga,2026_02_22,03:00 PM,Villarreal,Valencia,0.638000,0.204000,0.158000,-140,+300,+370,2026_02_22_Villarreal_Valencia
-soccer,ligue1,2026_02_22,02:45 PM,Strasbourg,Lyon,0.399000,0.268000,0.333000,+135,+260,+190,2026_02_22_Strasbourg_Lyon
-soccer,seriea,2026_02_22,02:45 PM,Roma,Cremonese,0.800000,0.130000,0.069000,-300,+360,+800,2026_02_22_Roma_Cremonese

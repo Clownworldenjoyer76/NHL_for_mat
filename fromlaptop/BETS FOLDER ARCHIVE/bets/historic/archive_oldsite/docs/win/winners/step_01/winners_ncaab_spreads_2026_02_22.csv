@@ -1,4 +1,0 @@
-date,time,away_team,home_team,league,game_id,away_spread,home_spread,deci_home_spread_juice_odds,deci_away_spread_juice_odds,deci_dk_away_odds,deci_dk_home_odds
-2026_02_22,1:00 PM,Wisconsin Green Bay Phoenix,Detroit Titans,ncaab_spreads,ncaab_2026_02_22_Wisconsin_Green_Bay_Phoenix_Detroit_Titans,-1.5,1.5,1.847457627118644,2.46,1.9523809523809523,1.9090909090909087
-2026_02_22,1:00 PM,Ohio State Buckeyes,Michigan State Spartans,ncaab_spreads,ncaab_2026_02_22_Ohio_State_Buckeyes_Michigan_State_Spartans,10.5,-10.5,2.41,1.862068965517241,1.9090909090909087,2.0
-2026_02_22,4:00 PM,UTSA Roadrunners,Tulsa Golden Hurricane,ncaab_spreads,ncaab_2026_02_22_UTSA_Roadrunners_Tulsa_Golden_Hurricane,22.5,-22.5,2.98,1.5714285714285714,1.9523809523809523,1.9803921568627447

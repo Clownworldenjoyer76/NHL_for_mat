@@ -1,4 +1,0 @@
-date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
-2026_02_23,7:00 PM,Texas AM Corpus Christi Islanders,Southeastern Louisiana Lions,ncaab_moneyline,ncaab_2026_02_23_Texas_AM_Corpus_Christi_Islanders_Southeastern_Louisiana_Lions,2.71,1.6944444444444444,2.2,1.704225352112676,-0.5099999999999998,0.009780907668231587,-142,120
-2026_02_23,7:30 PM,New Orleans Privateers,Stephen F Austin Lumberjacks,ncaab_moneyline,ncaab_2026_02_23_New_Orleans_Privateers_Stephen_F_Austin_Lumberjacks,1.1779359430604983,6.95,1.1,7.5,-0.07793594306049823,0.5499999999999998,650,-999
-2026_02_23,9:00 PM,Houston Cougars,Kansas Jayhawks,ncaab_moneyline,ncaab_2026_02_23_Houston_Cougars_Kansas_Jayhawks,2.69,1.704225352112676,2.1,1.7692307692307692,-0.5899999999999999,0.06500541711809316,-130,110

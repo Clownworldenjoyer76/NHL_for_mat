@@ -1,2 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,epl,2026_03_16,16:00,Brentford,Wolverhampton,0.613000,0.225000,0.162000,1.82,0.81,2.63

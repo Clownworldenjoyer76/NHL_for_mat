@@ -1,7 +1,0 @@
-date,time,team,opponent,spread,odds,handle_pct,bets_pct,league,decimal_odds,game_id
-2026_02_12,07:30PM,Oklahoma City Thunder,Milwaukee Bucks,-13.5,-112,0.62,0.64,nba_spreads,1.8928571428571428,
-2026_02_12,07:30PM,Milwaukee Bucks,Oklahoma City Thunder,13.5,-108,0.38,0.36,nba_spreads,1.925925925925926,
-2026_02_12,09:00PM,Portland Trail Blazers,Utah Jazz,-7.5,-118,0.51,0.38,nba_spreads,1.847457627118644,
-2026_02_12,09:00PM,Utah Jazz,Portland Trail Blazers,7.5,-102,0.49,0.62,nba_spreads,1.9803921568627452,
-2026_02_12,10:00PM,Los Angeles Lakers,Dallas Mavericks,-6.5,-112,0.81,0.69,nba_spreads,1.8928571428571428,
-2026_02_12,10:00PM,Dallas Mavericks,Los Angeles Lakers,6.5,-108,0.19,0.31,nba_spreads,1.925925925925926,

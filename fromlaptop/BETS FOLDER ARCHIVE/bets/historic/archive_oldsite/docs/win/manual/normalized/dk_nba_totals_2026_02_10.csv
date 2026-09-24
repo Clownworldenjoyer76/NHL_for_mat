@@ -1,5 +1,0 @@
-date,time,league,game_id,away_team,home_team,total,over_odds,under_odds,over_decimal_odds,under_decimal_odds,over_handle_pct,over_bets_pct,under_handle_pct,under_bets_pct
-2026_02_10,07:30PM,nba_totals,nba_2026_02_10_Indiana_Pacers_New_York_Knicks,Indiana Pacers,New York Knicks,224.5,-115,-105,1.869565217391304,1.9523809523809523,0.71,0.65,0.29,0.35
-2026_02_10,08:00PM,nba_totals,nba_2026_02_10_Los_Angeles_Clippers_Houston_Rockets,Los Angeles Clippers,Houston Rockets,213.5,-105,-115,1.9523809523809523,1.869565217391304,0.69,0.75,0.31,0.25
-2026_02_10,09:00PM,nba_totals,nba_2026_02_10_Dallas_Mavericks_Phoenix_Suns,Dallas Mavericks,Phoenix Suns,228.5,-115,-105,1.869565217391304,1.9523809523809523,0.75,0.65,0.25,0.35
-2026_02_10,10:30PM,nba_totals,nba_2026_02_10_San_Antonio_Spurs_Los_Angeles_Lakers,San Antonio Spurs,Los Angeles Lakers,227.5,-110,-110,1.9090909090909087,1.9090909090909087,0.47,0.63,0.53,0.37

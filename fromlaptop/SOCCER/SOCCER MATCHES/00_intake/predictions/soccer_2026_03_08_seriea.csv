@@ -1,5 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,seriea,2026_03_08,10:00,Bologna,Verona,0.682000,0.184000,0.133000,2.25,0.88,3.13
-Soccer,seriea,2026_03_08,10:00,Fiorentina,Parma,0.588000,0.216000,0.196000,1.96,1.04,3.00
-Soccer,seriea,2026_03_08,13:00,Genoa,Roma,0.270000,0.259000,0.470000,1.07,1.49,2.56
-Soccer,seriea,2026_03_08,15:45,Milan,Inter Milan,0.315000,0.274000,0.411000,1.11,1.30,2.41

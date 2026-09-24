@@ -1,3 +1,0 @@
-date,time,away_team,home_team,league,game_id,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds,away_spread,home_spread,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds,over_edge,under_edge,over_odds,under_odds,away_spread.1,home_spread.1,total,bet,proj_total,total_diff
-2026_02_13,06:30PM,Manhattan Jaspers,Niagara Purple Eagles,ncaab_moneyline,ncaab_2026_02_13_Manhattan_Jaspers_Niagara_Purple_Eagles,-0.5607692307692309,0.2228070175438596,110.0,-130.0,,,,,,,,,,,,,,away_ml,,
-2026_02_13,09:00PM,Ohio Bobcats,Miami RedHawks,ncaab_totals,ncaab_2026_02_13_Ohio_Bobcats_Miami_RedHawks,,,,,,,,,,,-0.7609090909090912,0.1844532279314883,-110.0,-110.0,,,163.5,under_bet,,

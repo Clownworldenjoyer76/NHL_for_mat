@@ -1,5 +1,0 @@
-date,league,game_id,away_team,home_team,away_team_moneyline_win_prob,home_team_moneyline_win_prob,away_team_projected_points,home_team_projected_points,game_projected_points,away_ml_fair_decimal_odds,away_ml_fair_american_odds,away_ml_acceptable_decimal_odds,away_ml_acceptable_american_odds,home_ml_fair_decimal_odds,home_ml_fair_american_odds,home_ml_acceptable_decimal_odds,home_ml_acceptable_american_odds
-2026_02_10,nba_moneyline,nba_2026_02_10_Indiana_Pacers_New_York_Knicks,Indiana Pacers,New York Knicks,0.16,0.84,107.3,117.8,225.1,6.25,+525,6.62,+562,1.19,-526,1.26,-385
-2026_02_10,nba_moneyline,nba_2026_02_10_Los_Angeles_Clippers_Houston_Rockets,Los Angeles Clippers,Houston Rockets,0.308,0.692,103.4,109.3,212.7,3.25,+225,3.44,+244,1.45,-222,1.54,-185
-2026_02_10,nba_moneyline,nba_2026_02_10_Dallas_Mavericks_Phoenix_Suns,Dallas Mavericks,Phoenix Suns,0.284,0.716,110.7,117.2,227.9,3.52,+252,3.73,+273,1.4,-250,1.48,-208
-2026_02_10,nba_moneyline,nba_2026_02_10_San_Antonio_Spurs_Los_Angeles_Lakers,San Antonio Spurs,Los Angeles Lakers,0.794,0.206,119.9,110.9,230.8,1.26,-385,1.34,-294,4.85,+385,5.14,+414

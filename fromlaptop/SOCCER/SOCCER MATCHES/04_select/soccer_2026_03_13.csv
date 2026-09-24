@@ -1,5 +1,0 @@
-league,market,game_date,match_time,home_team,away_team,game_id,market_type,take_bet,odds_american,odds_decimal,edge_pct,kelly_stake_pct,expected_goals
-Soccer,bundesliga,2026_03_13,15:30,Borussia Monchengladbach,St Pauli,2026_03_13_borussia_monchengladbach_st_pauli,result,away,310,4.1,0.0826,0.26,3.24
-Soccer,ligue1,2026_03_13,15:45,Marseille,Auxerre,2026_03_13_marseille_auxerre,result,away,600,7.0,0.6033,2.29,2.9
-Soccer,seriea,2026_03_13,15:45,Torino,Parma,2026_03_13_torino_parma,result,home,110,2.1,0.0337,0.0,2.61
-Soccer,laliga,2026_03_13,16:00,Alaves,Villarreal,2026_03_13_alaves_villarreal,result,away,120,2.2,0.0243,0.0,2.23

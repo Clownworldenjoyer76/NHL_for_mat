@@ -1,4 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,seriea,2026_03_14,10:00,Inter Milan,Atalanta,0.629000,0.202000,0.169000,2.10,1.00,3.10
-Soccer,seriea,2026_03_14,13:00,Napoli,Lecce,0.772000,0.141000,0.087000,2.71,0.82,3.53
-Soccer,seriea,2026_03_14,15:45,Udinese,Juventus,0.157000,0.222000,0.621000,0.80,1.83,2.63

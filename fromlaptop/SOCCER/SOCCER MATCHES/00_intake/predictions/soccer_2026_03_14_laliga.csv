@@ -1,5 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,laliga,2026_03_14,11:15,Atletico Madrid,Getafe,0.687000,0.192000,0.121000,2.10,0.75,2.85
-Soccer,laliga,2026_03_14,09:00,Girona,Athletic Club,0.354000,0.277000,0.369000,1.18,1.22,2.40
-Soccer,laliga,2026_03_14,16:00,Real Madrid,Elche,0.783000,0.141000,0.075000,2.58,0.68,3.26
-Soccer,laliga,2026_03_14,13:30,Real Oviedo,Valencia,0.339000,0.294000,0.367000,1.05,1.11,2.16

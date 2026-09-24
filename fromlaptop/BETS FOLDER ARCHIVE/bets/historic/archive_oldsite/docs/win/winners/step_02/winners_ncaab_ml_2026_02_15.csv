@@ -1,8 +1,0 @@
-date,time,away_team,home_team,league,game_id,deci_home_ml_juice_odds,deci_away_ml_juice_odds,deci_dk_home_odds,deci_dk_away_odds,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds
-2026_02_15,02:00PM,Merrimack Warriors,Quinnipiac Bobcats,ncaab_moneyline,ncaab_2026_02_15_Merrimack_Warriors_Quinnipiac_Bobcats,1.763358778625954,2.58,1.8333333333333333,2.0,0.06997455470737934,-0.5800000000000001,100,-120
-2026_02_15,02:00PM,Iona Gaels,Niagara Purple Eagles,ncaab_moneyline,ncaab_2026_02_15_Iona_Gaels_Niagara_Purple_Eagles,3.77,1.411522633744856,2.95,1.4201680672268908,-0.8199999999999998,0.008645433482034726,-237,195
-2026_02_15,02:00PM,IU Indianapolis Jaguars,Purdue Fort Wayne Mastodons,ncaab_moneyline,ncaab_2026_02_15_IU_Indianapolis_Jaguars_Purdue_Fort_Wayne_Mastodons,1.2824858757062148,4.66,1.3225806451612905,3.5,0.04009476945507573,-1.1600000000000001,250,-309
-2026_02_15,03:00PM,Wisconsin Green Bay Phoenix,Wisconsin Milwaukee Panthers,ncaab_moneyline,ncaab_2026_02_15_Wisconsin_Green_Bay_Phoenix_Wisconsin_Milwaukee_Panthers,1.65359477124183,2.84,1.8,2.05,0.14640522875817008,-0.79,104,-125
-2026_02_15,04:00PM,Davidson Wildcats,Dayton Flyers,ncaab_moneyline,ncaab_2026_02_15_Davidson_Wildcats_Dayton_Flyers,1.4761904761904765,3.44,1.5050505050505052,2.64,0.028860028860028697,-0.7999999999999998,164,-197
-2026_02_15,04:00PM,Eastern Kentucky Colonels,North Alabama Lions,ncaab_moneyline,ncaab_2026_02_15_Eastern_Kentucky_Colonels_North_Alabama_Lions,2.56,1.78125,2.64,1.5050505050505052,0.08000000000000007,-0.2761994949494948,-197,164
-2026_02_15,07:00PM,Towson Tigers,Monmouth Hawks,ncaab_moneyline,ncaab_2026_02_15_Towson_Tigers_Monmouth_Hawks,2.1100000000000003,2.05,1.704225352112676,2.2,-0.4057746478873243,0.15000000000000036,120,-142

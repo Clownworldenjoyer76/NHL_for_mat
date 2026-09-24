@@ -1,3 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_american,dk_draw_american,dk_away_american,dk_over25_american,dk_under25_american,dk_over35_american,dk_under35_american,dk_btts_yes_american,dk_btts_no_american,game_id
-Soccer,laliga,2026_03_09,16:00,Espanyol,Real Oviedo,0.537000,0.249000,0.215000,1.62,0.92,2.54,-115,+240,+350,,,,,,,2026_03_09_espanyol_real_oviedo
-Soccer,seriea,2026_03_09,15:45,Lazio,Sassuolo,0.519000,0.228000,0.253000,1.84,1.23,3.07,+120,+205,+230,,,,,,,2026_03_09_lazio_sassuolo

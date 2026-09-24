@@ -1,7 +1,0 @@
-date,time,away_team,home_team,league,game_id,home_ml_edge,away_ml_edge,away_ml_odds,home_ml_odds,away_spread,home_spread,home_spread_edge,away_spread_edge,away_spread_odds,home_spread_odds,over_edge,under_edge,over_odds,under_odds,away_spread.1,home_spread.1,total,bet,proj_total,total_diff
-2026_02_15,03:00PM,Wisconsin Green Bay Phoenix,Wisconsin Milwaukee Panthers,ncaab_moneyline,ncaab_2026_02_15_Wisconsin_Green_Bay_Phoenix_Wisconsin_Milwaukee_Panthers,0.14640522875817,-0.79,104.0,-125.0,,,,,,,,,,,,,,home_ml,,
-2026_02_15,07:00PM,Towson Tigers,Monmouth Hawks,ncaab_moneyline,ncaab_2026_02_15_Towson_Tigers_Monmouth_Hawks,-0.4057746478873243,0.1500000000000003,120.0,-142.0,,,,,,,,,,,,,,away_ml,,
-2026_02_15,12:00PM,UTSA Roadrunners,Charlotte 49ers,ncaab_totals,ncaab_2026_02_15_UTSA_Roadrunners_Charlotte_49ers,,,,,,,,,,,-0.880434782608696,0.2481556002682763,-115.0,-105.0,,,149.5,under_bet,,
-2026_02_15,02:00PM,Merrimack Warriors,Quinnipiac Bobcats,ncaab_totals,ncaab_2026_02_15_Merrimack_Warriors_Quinnipiac_Bobcats,,,,,,,,,,,-0.6909090909090914,0.1398601398601395,-110.0,-110.0,,,142.5,under_bet,,
-2026_02_15,05:00PM,Charleston Cougars,Campbell Fighting Camels,ncaab_totals,ncaab_2026_02_15_Charleston_Cougars_Campbell_Fighting_Camels,,,,,,,,,,,-1.3176190476190477,0.359361135758651,-105.0,-115.0,,,159.5,under_bet,,
-2026_02_15,06:00PM,Belmont Bruins,Murray State Racers,ncaab_totals,ncaab_2026_02_15_Belmont_Bruins_Murray_State_Racers,,,,,,,,,,,-0.9771428571428572,0.3198653198653201,-112.0,-107.0,,,166.5,under_bet,,

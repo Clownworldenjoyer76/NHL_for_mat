@@ -1,4 +1,0 @@
-=== WINNERS_02 RUN @ 2026-03-01T15:07:05.374466Z ===
-Files processed: 75
-Rows processed: 761
-Times updated: 211

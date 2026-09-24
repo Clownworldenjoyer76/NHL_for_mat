@@ -1,2 +1,0 @@
-league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-Soccer,bundesliga,2026_03_20,15:30,RB Leipzig,Hoffenheim,0.508000,0.221000,0.271000,1.94,1.37,3.31

@@ -1,4 +1,0 @@
-date,time,league,game_id,away_team,home_team,away_handle_pct,home_handle_pct,away_bets_pct,home_bets_pct,away_odds,home_odds
-2026_02_12,07:30PM,nba_moneyline,nba_2026_02_12_Milwaukee_Bucks_Oklahoma_City_Thunder,Milwaukee Bucks,Oklahoma City Thunder,0.32,0.68,0.26,0.74,525,-750
-2026_02_12,09:00PM,nba_moneyline,nba_2026_02_12_Portland_Trail_Blazers_Utah_Jazz,Portland Trail Blazers,Utah Jazz,0.47,0.53,0.59,0.41,-305,245
-2026_02_12,10:00PM,nba_moneyline,nba_2026_02_12_Dallas_Mavericks_Los_Angeles_Lakers,Dallas Mavericks,Los Angeles Lakers,0.41,0.59,0.26,0.74,230,-285
