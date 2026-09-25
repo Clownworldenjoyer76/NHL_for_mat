@@ -6,7 +6,7 @@ import re
 import traceback
 import unicodedata
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 PREDICTIONS_DIR = Path("docs/win/hockey/nhl/00_intake/predictions")
@@ -20,12 +20,12 @@ LOG_FILE = ERROR_DIR / "pred_name_normalization.txt"
 NO_MAP_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(f"=== pred_name_normalization RUN {datetime.utcnow().isoformat()} ===\n")
+    f.write(f"=== pred_name_normalization RUN {datetime.now(timezone.utc).isoformat()} ===\n")
 
 
 def log(msg: str) -> None:
     with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.utcnow().isoformat()} | {msg}\n")
+        f.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
 
 
 def normalize_alias_key(value: str) -> str:
