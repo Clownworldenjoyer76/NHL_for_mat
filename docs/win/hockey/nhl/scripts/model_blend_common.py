@@ -50,15 +50,23 @@ def select_numeric_weight(
     return float(grid[int(np.argmin(losses))])
 
 
+def design_matrix(
+    x: np.ndarray,
+) -> np.ndarray:
+    features = np.asarray(x, dtype=float)
+    if features.ndim == 1:
+        features = features[:, None]
+    return np.column_stack(
+        [np.ones(len(features)), features]
+    )
+
+
 def ridge_linear_coefficients(
     x: np.ndarray,
     y: np.ndarray,
 ) -> np.ndarray:
-    features = np.asarray(x, dtype=float)
     target = np.asarray(y, dtype=float)
-    if features.ndim == 1:
-        features = features[:, None]
-    design = np.column_stack([np.ones(len(features)), features])
+    design = design_matrix(x)
     ridge = 1e-6 * np.eye(design.shape[1])
     ridge[0, 0] = 0.0
     return np.linalg.solve(

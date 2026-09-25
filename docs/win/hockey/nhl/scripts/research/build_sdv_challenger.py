@@ -92,6 +92,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 # noinspection PyPep8
 from model_blend_common import (
+    design_matrix,
     fit_blend_weights,
     ridge_linear_coefficients,
 )
@@ -752,11 +753,8 @@ def metrics_to_frame(frame: pd.DataFrame) -> pd.DataFrame:
 
 def fit_logistic(x: np.ndarray, y: np.ndarray) -> LogisticModel:
     """L2-stabilized logistic regression using SciPy; no sklearn dependency."""
-    x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
 
     def objective(coefficients: np.ndarray) -> float:
         z = np.clip(design @ coefficients, -35.0, 35.0)
@@ -780,18 +778,12 @@ def fit_linear(
 
 
 def apply_logistic(model: LogisticModel, x: np.ndarray) -> np.ndarray:
-    x = np.asarray(x, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
     return model.predict_proba(design)
 
 
 def apply_linear(model: LinearModel, x: np.ndarray) -> np.ndarray:
-    x = np.asarray(x, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
     return model.predict(design)
 
 

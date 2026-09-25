@@ -23,6 +23,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 # noinspection PyPep8
 from model_blend_common import (
+    design_matrix,
     fit_blend_weights,
     ridge_linear_coefficients,
 )
@@ -309,11 +310,8 @@ def rmse(y: np.ndarray, pred: np.ndarray) -> float:
 
 
 def fit_logistic(x: np.ndarray, y: np.ndarray) -> LogisticModel:
-    x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
 
     def objective(beta: np.ndarray) -> float:
         z = np.clip(design @ beta, -35.0, 35.0)
@@ -331,10 +329,7 @@ def fit_logistic(x: np.ndarray, y: np.ndarray) -> LogisticModel:
 
 
 def apply_logistic(model: LogisticModel, x: np.ndarray) -> np.ndarray:
-    x = np.asarray(x, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
     z = np.clip(design @ model.coefficients, -35.0, 35.0)
     return 1.0 / (1.0 + np.exp(-z))
 
@@ -349,10 +344,7 @@ def fit_linear(
 
 
 def apply_linear(model: LinearModel, x: np.ndarray) -> np.ndarray:
-    x = np.asarray(x, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
+    design = design_matrix(x)
     return design @ model.coefficients
 
 
