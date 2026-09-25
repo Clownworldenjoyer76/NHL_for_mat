@@ -1,4 +1,4 @@
-name: Qodana
+﻿name: Qodana
 
 on:
   workflow_dispatch:
@@ -35,6 +35,10 @@ jobs:
           args: |
             --linter qodana-python
             --within-docker false
+            --clear-cache
+          use-caches: false
+          upload-result: true
+          artifact-name: qodana-clean-project-model
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_960613749 }}
           QODANA_ENDPOINT: "https://qodana.cloud"
