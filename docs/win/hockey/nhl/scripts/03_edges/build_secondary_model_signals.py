@@ -9,6 +9,7 @@ import traceback
 from dataclasses import dataclass
 from datetime import UTC, date, datetime
 from pathlib import Path
+from typing import Never
 
 import numpy as np
 import pandas as pd
@@ -130,7 +131,7 @@ def log(message: str) -> None:
         f.write(f"{now()} | {message}\n")
 
 
-def fail(message: str) -> None:
+def fail(message: str) -> Never:
     log(f"FATAL | {message}")
     raise SystemExit(message)
 

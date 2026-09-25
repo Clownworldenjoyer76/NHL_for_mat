@@ -9,7 +9,7 @@ import sys
 import traceback
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Never
 from zoneinfo import ZoneInfo
 
 import pandas as pd
@@ -89,7 +89,7 @@ def log(msg: str) -> None:
         f.write(f"{stamp} | {msg}\n")
 
 
-def fail(msg: str) -> None:
+def fail(msg: str) -> Never:
     log(f"ERROR: {msg}")
     raise RuntimeError(msg)
 

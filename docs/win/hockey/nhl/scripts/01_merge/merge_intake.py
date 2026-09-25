@@ -5,6 +5,7 @@ import csv
 import re
 import traceback
 from pathlib import Path
+from typing import Never
 from datetime import datetime, UTC, timedelta
 from zoneinfo import ZoneInfo
 
@@ -382,7 +383,7 @@ def log(msg: str) -> None:
         )
 
 
-def fail(message: str) -> None:
+def fail(message: str) -> Never:
     log(f"FATAL: {message}")
     log("STATUS: FAILED")
     raise SystemExit(message)
