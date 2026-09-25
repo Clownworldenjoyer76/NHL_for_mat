@@ -2,12 +2,23 @@
 # docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
 
 import traceback
+import sys
 from datetime import datetime, UTC
 from pathlib import Path
 from typing import Never
 
 import pandas as pd
 import yaml
+
+
+SCRIPTS_DIR = str(Path(__file__).resolve().parents[1])
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+# noinspection PyPep8
+from selection_schema_common import (
+    SELECTION_COLUMNS as OUTPUT_COLUMNS,
+)
 
 
 INPUT_DIR = Path("docs/win/hockey/nhl/03_edges/secondary_signals")
@@ -46,62 +57,6 @@ REJECTION_ORDER = {
     "secondary_model": 7,
     "pick_preference": 8,
 }
-
-OUTPUT_COLUMNS = [
-    "sport",
-    "league",
-    "game_date",
-    "game_time",
-    "game_id",
-    "away_team",
-    "home_team",
-    "market_type",
-    "bet_side",
-    "line",
-    "take_bet",
-    "dk_odds_american",
-    "dk_odds_decimal",
-    "model_prob",
-    "edge",
-    "ev",
-    "kelly",
-    "selected_provider_id",
-    "selected_provider_name",
-    "odds_source",
-    "pulled_at",
-    "drat_home_win_prob",
-    "drat_exp_margin",
-    "drat_exp_total",
-    "sdv_home_win_prob",
-    "sdv_exp_margin",
-    "sdv_exp_total",
-    "prob_disagreement",
-    "margin_disagreement",
-    "total_disagreement",
-    "prob_disagreement_threshold_p75_prior",
-    "margin_disagreement_threshold_p75_prior",
-    "total_disagreement_threshold_p75_prior",
-    "high_prob_disagreement_flag",
-    "high_margin_disagreement_flag",
-    "high_total_disagreement_flag",
-    "ensemble_train_rows",
-    "weighted_prob_drat_weight",
-    "weighted_margin_drat_weight",
-    "weighted_total_drat_weight",
-    "weighted_home_win_prob",
-    "weighted_exp_margin",
-    "weighted_exp_total",
-    "meta_home_win_prob",
-    "meta_exp_margin",
-    "meta_exp_total",
-    "secondary_history_max_game_date",
-    "secondary_model_status",
-    "secondary_signal_version",
-    "secondary_challenger_support",
-    "secondary_derived_model",
-    "secondary_derived_support",
-    "secondary_decision",
-]
 
 SECONDARY_SIGNAL_COLUMNS = [
     "drat_home_win_prob",
@@ -298,6 +253,51 @@ def side_rule_failures(
         failures.append("kelly")
 
     return failures
+
+
+def market_side_values(
+    row,
+    side: str,
+    market_type: str,
+) -> dict[str, float | None]:
+    if market_type == "moneyline":
+        suffix = "moneyline"
+        return {
+            "odds": fv(row.get(f"{side}_dk_{suffix}_american")),
+            "decimal": fv(row.get(f"{side}_dk_{suffix}_decimal")),
+            "line": None,
+            "prob": fv(row.get(f"{side}_model_prob_{suffix}")),
+            "edge": fv(row.get(f"{side}_edge_pct_{suffix}")),
+            "ev": fv(row.get(f"{side}_ev_{suffix}")),
+            "kelly": fv(row.get(f"{side}_kelly_{suffix}")),
+        }
+
+    if market_type == "puck_line":
+        suffix = "puck_line"
+        return {
+            "odds": fv(row.get(f"{side}_dk_{suffix}_american")),
+            "decimal": fv(row.get(f"{side}_dk_{suffix}_decimal")),
+            "line": fv(row.get(f"{side}_{suffix}")),
+            "prob": fv(row.get(f"{side}_model_prob_{suffix}")),
+            "edge": fv(row.get(f"{side}_edge_pct_{suffix}")),
+            "ev": fv(row.get(f"{side}_ev_{suffix}")),
+            "kelly": fv(row.get(f"{side}_kelly_{suffix}")),
+        }
+
+    if market_type == "total":
+        return {
+            "odds": fv(row.get(f"dk_total_{side}_american")),
+            "decimal": fv(row.get(f"dk_total_{side}_decimal")),
+            "line": fv(row.get("total")),
+            "prob": fv(row.get(f"{side}_model_prob_total")),
+            "edge": fv(row.get(f"{side}_edge_pct_total")),
+            "ev": fv(row.get(f"{side}_ev_total")),
+            "kelly": fv(row.get(f"{side}_kelly_total")),
+        }
+
+    raise ValueError(
+        f"Unsupported market_type: {market_type}"
+    )
 
 
 def check_side_rules(
@@ -620,12 +620,13 @@ def process_moneyline(row, config, slate_key, rejections):
     for side in ["home", "away"]:
         side_rules = market_config[side]
 
-        odds = fv(row.get(f"{side}_dk_moneyline_american"))
-        dec = fv(row.get(f"{side}_dk_moneyline_decimal"))
-        prob = fv(row.get(f"{side}_model_prob_moneyline"))
-        edge = fv(row.get(f"{side}_edge_pct_moneyline"))
-        ev = fv(row.get(f"{side}_ev_moneyline"))
-        kelly = fv(row.get(f"{side}_kelly_moneyline"))
+        values = market_side_values(row, side, "moneyline")
+        odds = values["odds"]
+        dec = values["decimal"]
+        prob = values["prob"]
+        edge = values["edge"]
+        ev = values["ev"]
+        kelly = values["kelly"]
 
         failures = side_rule_failures(
             rules=side_rules,
@@ -712,13 +713,14 @@ def process_puck_line(row, config, slate_key, rejections):
     for side in ["home", "away"]:
         side_rules = market_config[side]
 
-        odds = fv(row.get(f"{side}_dk_puck_line_american"))
-        dec = fv(row.get(f"{side}_dk_puck_line_decimal"))
-        line = fv(row.get(f"{side}_puck_line"))
-        prob = fv(row.get(f"{side}_model_prob_puck_line"))
-        edge = fv(row.get(f"{side}_edge_pct_puck_line"))
-        ev = fv(row.get(f"{side}_ev_puck_line"))
-        kelly = fv(row.get(f"{side}_kelly_puck_line"))
+        values = market_side_values(row, side, "puck_line")
+        odds = values["odds"]
+        dec = values["decimal"]
+        line = values["line"]
+        prob = values["prob"]
+        edge = values["edge"]
+        ev = values["ev"]
+        kelly = values["kelly"]
 
         failures = side_rule_failures(
             rules=side_rules,
@@ -805,13 +807,14 @@ def process_total(row, config, slate_key, rejections):
     for side in ["over", "under"]:
         side_rules = market_config[side]
 
-        odds = fv(row.get(f"dk_total_{side}_american"))
-        dec = fv(row.get(f"dk_total_{side}_decimal"))
-        line = fv(row.get("total"))
-        prob = fv(row.get(f"{side}_model_prob_total"))
-        edge = fv(row.get(f"{side}_edge_pct_total"))
-        ev = fv(row.get(f"{side}_ev_total"))
-        kelly = fv(row.get(f"{side}_kelly_total"))
+        values = market_side_values(row, side, "total")
+        odds = values["odds"]
+        dec = values["decimal"]
+        line = values["line"]
+        prob = values["prob"]
+        edge = values["edge"]
+        ev = values["ev"]
+        kelly = values["kelly"]
 
         failures = side_rule_failures(
             rules=side_rules,

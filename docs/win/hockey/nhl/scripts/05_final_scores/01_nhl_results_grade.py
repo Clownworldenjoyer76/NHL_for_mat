@@ -3,9 +3,22 @@
 
 from datetime import UTC, datetime
 from pathlib import Path
+import sys
 import re
 
 import pandas as pd
+
+
+SCRIPTS_DIR = str(Path(__file__).resolve().parents[1])
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+# noinspection PyPep8
+from selection_schema_common import (
+    SELECTION_COLUMNS as SELECT_REQUIRED_COLUMNS,
+)
+# noinspection PyPep8
+from market_common import normalize_market, normalize_side
 
 
 ###############################################################
@@ -38,62 +51,6 @@ UNRESOLVED_FILE = ERROR_DIR / "01_nhl_results_grade_unresolved.csv"
 
 FINAL_GAME_STATES = {"FINAL", "OFF"}
 GAME_ID_RE = re.compile(r"^\d{10}$")
-
-SELECT_REQUIRED_COLUMNS = [
-    "sport",
-    "league",
-    "game_date",
-    "game_time",
-    "game_id",
-    "away_team",
-    "home_team",
-    "market_type",
-    "bet_side",
-    "line",
-    "take_bet",
-    "dk_odds_american",
-    "dk_odds_decimal",
-    "model_prob",
-    "edge",
-    "ev",
-    "kelly",
-    "selected_provider_id",
-    "selected_provider_name",
-    "odds_source",
-    "pulled_at",
-    "drat_home_win_prob",
-    "drat_exp_margin",
-    "drat_exp_total",
-    "sdv_home_win_prob",
-    "sdv_exp_margin",
-    "sdv_exp_total",
-    "prob_disagreement",
-    "margin_disagreement",
-    "total_disagreement",
-    "prob_disagreement_threshold_p75_prior",
-    "margin_disagreement_threshold_p75_prior",
-    "total_disagreement_threshold_p75_prior",
-    "high_prob_disagreement_flag",
-    "high_margin_disagreement_flag",
-    "high_total_disagreement_flag",
-    "ensemble_train_rows",
-    "weighted_prob_drat_weight",
-    "weighted_margin_drat_weight",
-    "weighted_total_drat_weight",
-    "weighted_home_win_prob",
-    "weighted_exp_margin",
-    "weighted_exp_total",
-    "meta_home_win_prob",
-    "meta_exp_margin",
-    "meta_exp_total",
-    "secondary_history_max_game_date",
-    "secondary_model_status",
-    "secondary_signal_version",
-    "secondary_challenger_support",
-    "secondary_derived_model",
-    "secondary_derived_support",
-    "secondary_decision",
-]
 
 SCORE_REQUIRED_COLUMNS = [
     "sport",
@@ -210,23 +167,24 @@ def normalize_team(value) -> str:
     return str(value).strip()
 
 
-def normalize_market(value) -> str:
-    value = str(value).strip().lower()
-
-    if value in {"moneyline", "ml"}:
-        return "moneyline"
-
-    if value in {"puck_line", "puckline", "spread"}:
-        return "puck_line"
-
-    if value in {"total", "totals"}:
-        return "total"
-
-    return value
-
-
-def normalize_side(value) -> str:
-    return str(value).strip().lower()
+def normalize_identity_columns(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
+    df["game_date"] = (
+        df["game_date"].map(normalize_date)
+    )
+    df["away_team"] = (
+        df["away_team"].map(normalize_team)
+    )
+    df["home_team"] = (
+        df["home_team"].map(normalize_team)
+    )
+    df["game_id"] = (
+        df["game_id"]
+        .astype(str)
+        .str.strip()
+    )
+    return df
 
 
 def to_float(value):
@@ -333,20 +291,7 @@ def load_select_rows() -> pd.DataFrame:
 
         df = df.copy()
         df["source_select_file"] = path.name
-        df["game_date"] = (
-            df["game_date"].map(normalize_date)
-        )
-        df["away_team"] = (
-            df["away_team"].map(normalize_team)
-        )
-        df["home_team"] = (
-            df["home_team"].map(normalize_team)
-        )
-        df["game_id"] = (
-            df["game_id"]
-            .astype(str)
-            .str.strip()
-        )
+        df = normalize_identity_columns(df)
         df["market_type"] = (
             df["market_type"].map(
                 normalize_market
@@ -438,20 +383,7 @@ def load_score_rows() -> pd.DataFrame:
 
         df = df.copy()
         df["source_score_file"] = path.name
-        df["game_date"] = (
-            df["game_date"].map(normalize_date)
-        )
-        df["away_team"] = (
-            df["away_team"].map(normalize_team)
-        )
-        df["home_team"] = (
-            df["home_team"].map(normalize_team)
-        )
-        df["game_id"] = (
-            df["game_id"]
-            .astype(str)
-            .str.strip()
-        )
+        df = normalize_identity_columns(df)
 
         validate_game_ids(
             df,
@@ -498,20 +430,7 @@ def load_status_rows() -> pd.DataFrame:
     df["source_status_file"] = (
         STATUS_FILE.name
     )
-    df["game_date"] = (
-        df["game_date"].map(normalize_date)
-    )
-    df["away_team"] = (
-        df["away_team"].map(normalize_team)
-    )
-    df["home_team"] = (
-        df["home_team"].map(normalize_team)
-    )
-    df["game_id"] = (
-        df["game_id"]
-        .astype(str)
-        .str.strip()
-    )
+    df = normalize_identity_columns(df)
     df["game_state"] = (
         df["game_state"]
         .astype(str)

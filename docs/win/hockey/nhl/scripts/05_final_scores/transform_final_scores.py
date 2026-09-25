@@ -994,6 +994,51 @@ def official_team_name(
     ).strip()
 
 
+def official_team_payloads(
+    game: dict[str, Any],
+    game_id: str,
+    context: str,
+) -> tuple[
+    dict[str, Any],
+    dict[str, Any],
+    str,
+    str,
+]:
+    away_team_data = game.get(
+        "awayTeam",
+        {},
+    )
+    home_team_data = game.get(
+        "homeTeam",
+        {},
+    )
+
+    if not isinstance(
+        away_team_data,
+        dict,
+    ):
+        fail(
+            f"{context} {game_id} "
+            "has invalid awayTeam data"
+        )
+
+    if not isinstance(
+        home_team_data,
+        dict,
+    ):
+        fail(
+            f"{context} {game_id} "
+            "has invalid homeTeam data"
+        )
+
+    return (
+        away_team_data,
+        home_team_data,
+        official_team_name(away_team_data),
+        official_team_name(home_team_data),
+    )
+
+
 def fetch_official_score_payload(
     game_date: str,
 ) -> dict[str, Any]:
@@ -1134,40 +1179,15 @@ def build_official_status_rows(
             )
         ).strip().upper()
 
-        away_team_data = game.get(
-            "awayTeam",
-            {},
-        )
-
-        home_team_data = game.get(
-            "homeTeam",
-            {},
-        )
-
-        if not isinstance(
+        (
             away_team_data,
-            dict,
-        ):
-            fail(
-                f"Official NHL game {game_id} "
-                "has invalid awayTeam data"
-            )
-
-        if not isinstance(
             home_team_data,
-            dict,
-        ):
-            fail(
-                f"Official NHL game {game_id} "
-                "has invalid homeTeam data"
-            )
-
-        away_team = official_team_name(
-            away_team_data
-        )
-
-        home_team = official_team_name(
-            home_team_data
+            away_team,
+            home_team,
+        ) = official_team_payloads(
+            game,
+            game_id,
+            'Official NHL game',
         )
 
         if (
@@ -1277,40 +1297,15 @@ def build_official_final_rows(
                 f"date={game_date} | game_id={game_id}"
             )
 
-        away_team_data = game.get(
-            "awayTeam",
-            {},
-        )
-
-        home_team_data = game.get(
-            "homeTeam",
-            {},
-        )
-
-        if not isinstance(
+        (
             away_team_data,
-            dict,
-        ):
-            fail(
-                f"Official final game {game_id} "
-                "has invalid awayTeam data"
-            )
-
-        if not isinstance(
             home_team_data,
-            dict,
-        ):
-            fail(
-                f"Official final game {game_id} "
-                "has invalid homeTeam data"
-            )
-
-        away_team = official_team_name(
-            away_team_data
-        )
-
-        home_team = official_team_name(
-            home_team_data
+            away_team,
+            home_team,
+        ) = official_team_payloads(
+            game,
+            game_id,
+            'Official final game',
         )
 
         away_score = parse_int_score(

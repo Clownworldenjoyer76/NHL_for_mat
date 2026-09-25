@@ -86,6 +86,14 @@ import polars as pl
 from scipy.optimize import minimize
 
 
+RESEARCH_DIR = Path(__file__).resolve().parent
+if str(RESEARCH_DIR) not in sys.path:
+    sys.path.insert(0, str(RESEARCH_DIR))
+
+# noinspection PyPep8
+from sdv_ratings_common import prior_adjusted_ratings
+
+
 SCRIPTS_DIR = Path(__file__).resolve().parents[1]
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
@@ -386,63 +394,43 @@ def load_p5_game_rates(season: int) -> tuple[pl.DataFrame, pl.DataFrame]:
     return schedule, game_rates
 
 
-def ratings_from_prior_games(game_rates: pl.DataFrame, target_date: date) -> pl.DataFrame:
-    """Reconstruct nhl_team_ratings from rows strictly before target_date."""
-    from sportsdataverse.nhl.nhl_prediction_constants import get_constants
-    from sportsdataverse.nhl.nhl_team_ratings import adjust_rate_opponent
-
-    prior = game_rates.filter(pl.col("date") < pl.lit(target_date))
-    if prior.is_empty():
-        return pl.DataFrame()
-
-    const = get_constants("nhl")
-    xg_adj = adjust_rate_opponent(
-        prior,
-        for_col="xgf",
-        against_col="xga",
-        hfa=const.hfa,
-        avg=const.avg_xgf,
-        shrink_k=const.shrink_k,
+def ratings_from_prior_games(
+    game_rates: pl.DataFrame,
+    target_date: date,
+) -> pl.DataFrame:
+    out = prior_adjusted_ratings(
+        game_rates,
+        target_date,
     )
-    goal_adj = adjust_rate_opponent(
-        prior,
-        for_col="gf",
-        against_col="ga",
-        hfa=const.hfa,
-        avg=const.avg_total_goals / 2.0,
-        shrink_k=const.shrink_k,
-    )
-    if xg_adj.is_empty():
-        return pl.DataFrame()
-
-    out = xg_adj.join(
-        goal_adj.select(
-            "team",
-            pl.col("adj_for").alias("adj_gf"),
-            pl.col("adj_against").alias("adj_ga"),
-        ),
-        on="team",
-        how="left",
-    ).rename(
-        {
-            "adj_for": "adj_xgf",
-            "adj_against": "adj_xga",
-            "adj_net": "adj_xg_net",
-        }
-    )
+    if out.is_empty():
+        return out
 
     net_mean = out.get_column("adj_xg_net").mean()
     net_std = out.get_column("adj_xg_net").std()
+
     out = out.with_columns(
-        pl.col("adj_xgf").rank(method="ordinal", descending=True).cast(pl.Int64).alias("off_rank"),
-        pl.col("adj_xga").rank(method="ordinal", descending=False).cast(pl.Int64).alias("def_rank"),
-        pl.col("adj_xg_net").rank(method="ordinal", descending=True).cast(pl.Int64).alias("net_rank"),
+        pl.col("adj_xgf")
+        .rank(method="ordinal", descending=True)
+        .cast(pl.Int64)
+        .alias("off_rank"),
+        pl.col("adj_xga")
+        .rank(method="ordinal", descending=False)
+        .cast(pl.Int64)
+        .alias("def_rank"),
+        pl.col("adj_xg_net")
+        .rank(method="ordinal", descending=True)
+        .cast(pl.Int64)
+        .alias("net_rank"),
         (
-            ((pl.col("adj_xg_net") - float(net_mean)) / float(net_std))
+            (
+                (pl.col("adj_xg_net") - float(net_mean))
+                / float(net_std)
+            )
             if net_std
             else pl.lit(0.0)
         ).alias("net_z"),
     )
+
     return out.select(
         "season",
         "team",

@@ -440,6 +440,20 @@ def is_game_row(row):
     return len(row) >= 6 and "\n" in row[1]
 
 
+def split_pair(
+    value: str,
+    *,
+    strip: bool = False,
+) -> tuple[str, str]:
+    parts = str(value).split("\n")
+    first, second = parts[0], parts[1]
+
+    if strip:
+        return first.strip(), second.strip()
+
+    return first, second
+
+
 def parse_nhl(row):
     if not is_game_row(row):
         return None
@@ -447,19 +461,13 @@ def parse_nhl(row):
     try:
         if len(row) == 11:
             date_time = convert_utc_to_et(row[0].replace("\n", " "))
-            t = row[1].split("\n")
-            team1, team2 = t[0].strip(), t[1].strip()
-            wp = row[3].split("\n")
-            wp1, wp2 = wp[0], wp[1]
-            ml = row[4].split("\n")
-            ml1, ml2 = ml[0], ml[1]
-            sp = row[5].split("\n")
-            sp1, sp2 = sp[0], sp[1]
-            ps = row[6].split("\n")
-            proj1, proj2 = ps[0], ps[1]
+            team1, team2 = split_pair(row[1], strip=True)
+            wp1, wp2 = split_pair(row[3])
+            ml1, ml2 = split_pair(row[4])
+            sp1, sp2 = split_pair(row[5])
+            proj1, proj2 = split_pair(row[6])
             total = row[7]
-            ou = row[8].split("\n")
-            over_line, under_line = ou[0], ou[1]
+            over_line, under_line = split_pair(row[8])
 
             return {
                 "sport": "NHL",
@@ -484,16 +492,11 @@ def parse_nhl(row):
 
         if len(row) == 8:
             date_time = convert_utc_to_et(row[0].replace("\n", " "))
-            t = row[1].split("\n")
-            team1, team2 = t[0].strip(), t[1].strip()
-            wp = row[2].split("\n")
-            wp1, wp2 = wp[0], wp[1]
-            ml = row[3].split("\n")
-            ml1, ml2 = ml[0], ml[1]
-            sp = row[4].split("\n")
-            sp1, sp2 = sp[0], sp[1]
-            sc = row[5].split("\n")
-            score1, score2 = sc[0].strip(), sc[1].strip()
+            team1, team2 = split_pair(row[1], strip=True)
+            wp1, wp2 = split_pair(row[2])
+            ml1, ml2 = split_pair(row[3])
+            sp1, sp2 = split_pair(row[4])
+            score1, score2 = split_pair(row[5], strip=True)
 
             return {
                 "sport": "NHL",

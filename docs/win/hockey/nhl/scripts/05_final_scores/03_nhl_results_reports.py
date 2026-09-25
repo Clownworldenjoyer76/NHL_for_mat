@@ -3,9 +3,18 @@
 
 from datetime import datetime, UTC
 from pathlib import Path
+import sys
 
 import numpy as np
 import pandas as pd
+
+
+SCRIPTS_DIR = str(Path(__file__).resolve().parents[1])
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+# noinspection PyPep8
+from market_common import normalize_market, normalize_side
 
 
 ###############################################################
@@ -254,25 +263,6 @@ def safe_read(path: Path) -> pd.DataFrame:
         raise RuntimeError(
             f"READ ERROR | {path} | {e}"
         ) from e
-
-
-def normalize_market(value) -> str:
-    value = str(value).strip().lower()
-
-    if value in {"moneyline", "ml"}:
-        return "moneyline"
-
-    if value in {"puck_line", "puckline", "spread"}:
-        return "puck_line"
-
-    if value in {"total", "totals"}:
-        return "total"
-
-    return value
-
-
-def normalize_side(value) -> str:
-    return str(value).strip().lower()
 
 
 def side_group(row) -> str:

@@ -527,27 +527,12 @@ def validate_adjustment_value(
     return True
 
 
-def validate_moneyline_adjusted_decimal(
+def iter_valid_adjustments(
     df: pd.DataFrame,
+    path: Path,
     errors: list[str],
-    warnings: list[str],
-) -> None:
-    """
-    Moneyline fair decimal is 1 / model_probability.
-
-    Positive calibration adjustments can produce an adjusted decimal
-    of 1 or lower for sufficiently strong model probabilities.
-
-    That possibility is logged as a warning because the Stage 02
-    application script already rejects/quarantines an actual invalid
-    adjusted decimal when one occurs.
-
-    Structurally impossible calibration values such as adjustment >= 1
-    remain validation errors.
-    """
-
+):
     for idx, row in df.iterrows():
-
         value = row[
             ADJUSTMENT_COLUMN
         ]
@@ -560,18 +545,16 @@ def validate_moneyline_adjusted_decimal(
         adjustment = float(
             value
         )
-
         row_number = (
             int(idx)
             + 2
         )
-
         band = str(
             row["band"]
         )
 
         if not validate_adjustment_value(
-            MONEYLINE_FILE,
+            path,
             row_number,
             band,
             adjustment,
@@ -579,8 +562,28 @@ def validate_moneyline_adjusted_decimal(
         ):
             continue
 
-        if adjustment > 0:
+        yield (
+            row_number,
+            band,
+            adjustment,
+        )
 
+
+def validate_moneyline_adjusted_decimal(
+    df: pd.DataFrame,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    for (
+        row_number,
+        band,
+        adjustment,
+    ) in iter_valid_adjustments(
+        df,
+        MONEYLINE_FILE,
+        errors,
+    ):
+        if adjustment > 0:
             threshold = (
                 1
                 / (
@@ -608,55 +611,15 @@ def validate_clipped_adjusted_decimal(
     errors: list[str],
     warnings: list[str],
 ) -> None:
-    """
-    build_juice_files.py clips puck-line and total model probabilities
-    to a maximum of 0.99.
-
-    Their smallest possible fair decimal is 1 / 0.99.
-
-    If a calibration adjustment could make that smallest possible fair
-    decimal become 1 or lower, the risk is logged as a warning.
-
-    The Stage 02 application scripts remain responsible for rejecting
-    or quarantining an actual invalid adjusted decimal.
-
-    Structurally impossible calibration values such as adjustment >= 1
-    remain validation errors.
-    """
-
-    for idx, row in df.iterrows():
-
-        value = row[
-            ADJUSTMENT_COLUMN
-        ]
-
-        if pd.isna(
-            value
-        ):
-            continue
-
-        adjustment = float(
-            value
-        )
-
-        row_number = (
-            int(idx)
-            + 2
-        )
-
-        band = str(
-            row["band"]
-        )
-
-        if not validate_adjustment_value(
-            path,
-            row_number,
-            band,
-            adjustment,
-            errors,
-        ):
-            continue
-
+    for (
+        row_number,
+        band,
+        adjustment,
+    ) in iter_valid_adjustments(
+        df,
+        path,
+        errors,
+    ):
         adjusted_decimal = (
             CLIPPED_MIN_FAIR_DECIMAL
             * (

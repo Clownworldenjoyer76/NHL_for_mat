@@ -53,6 +53,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import time
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
@@ -68,6 +69,14 @@ import pandas as pd
 import polars as pl
 from scipy.optimize import minimize
 import sportsdataverse.nhl as nhl
+
+
+RESEARCH_DIR = Path(__file__).resolve().parent
+if str(RESEARCH_DIR) not in sys.path:
+    sys.path.insert(0, str(RESEARCH_DIR))
+
+# noinspection PyPep8
+from sdv_ratings_common import prior_adjusted_ratings
 
 
 SCRIPT_VERSION = "SDV-P9-2026-08-30-v1"
@@ -681,6 +690,65 @@ def normalize_zone_pbp(pbp: pl.DataFrame) -> tuple[pl.DataFrame | None, str]:
     return out, "available"
 
 
+def expand_team_game_features(
+    schedule: pl.DataFrame,
+    agg: pl.DataFrame,
+    features: Sequence[str],
+) -> pd.DataFrame:
+    schedule_pd = schedule.select(
+        "game_id",
+        "date",
+        "home_abbr",
+        "away_abbr",
+    ).to_pandas()
+    agg_pd = agg.to_pandas()
+
+    by_key = {
+        (str(row.game_id), str(row.team)): row
+        for row in agg_pd.itertuples(index=False)
+    }
+
+    rows: list[dict[str, Any]] = []
+
+    for game in schedule_pd.itertuples(index=False):
+        game_id = str(game.game_id)
+
+        for team, opponent in (
+            (
+                str(game.home_abbr),
+                str(game.away_abbr),
+            ),
+            (
+                str(game.away_abbr),
+                str(game.home_abbr),
+            ),
+        ):
+            rec = by_key.get(
+                (
+                    game_id,
+                    team,
+                )
+            )
+
+            row = {
+                "game_id": game_id,
+                "date": game.date,
+                "team": team,
+                "opponent": opponent,
+            }
+
+            for feature in features:
+                row[feature] = (
+                    getattr(rec, feature)
+                    if rec is not None
+                    else np.nan
+                )
+
+            rows.append(row)
+
+    return pd.DataFrame(rows)
+
+
 def shot_team_game_features(
     schedule: pl.DataFrame,
     pbp: pl.DataFrame,
@@ -726,33 +794,11 @@ def shot_team_game_features(
         .rename({"_team": "team"})
     )
 
-    schedule_pd = schedule.select(
-        "game_id", "date", "home_abbr", "away_abbr"
-    ).to_pandas()
-    agg_pd = agg.to_pandas()
-    by_key = {
-        (str(row.game_id), str(row.team)): row
-        for row in agg_pd.itertuples(index=False)
-    }
-
-    rows: list[dict[str, Any]] = []
-    for game in schedule_pd.itertuples(index=False):
-        game_id = str(game.game_id)
-        for team, opponent in (
-            (str(game.home_abbr), str(game.away_abbr)),
-            (str(game.away_abbr), str(game.home_abbr)),
-        ):
-            rec = by_key.get((game_id, team))
-            row = {
-                "game_id": game_id,
-                "date": game.date,
-                "team": team,
-                "opponent": opponent,
-            }
-            for feature in SHOT_FEATURES:
-                row[feature] = getattr(rec, feature) if rec is not None else np.nan
-            rows.append(row)
-    return pd.DataFrame(rows)
+    return expand_team_game_features(
+        schedule,
+        agg,
+        SHOT_FEATURES,
+    )
 
 
 def zone_team_game_features(
@@ -821,33 +867,14 @@ def zone_team_game_features(
         )
     )
 
-    schedule_pd = schedule.select(
-        "game_id", "date", "home_abbr", "away_abbr"
-    ).to_pandas()
-    agg_pd = agg.to_pandas()
-    by_key = {
-        (str(row.game_id), str(row.team)): row
-        for row in agg_pd.itertuples(index=False)
-    }
-
-    rows: list[dict[str, Any]] = []
-    for game in schedule_pd.itertuples(index=False):
-        game_id = str(game.game_id)
-        for team, opponent in (
-            (str(game.home_abbr), str(game.away_abbr)),
-            (str(game.away_abbr), str(game.home_abbr)),
-        ):
-            rec = by_key.get((game_id, team))
-            row = {
-                "game_id": game_id,
-                "date": game.date,
-                "team": team,
-                "opponent": opponent,
-            }
-            for feature in ZONE_FEATURES:
-                row[feature] = getattr(rec, feature) if rec is not None else np.nan
-            rows.append(row)
-    return pd.DataFrame(rows), "available"
+    return (
+        expand_team_game_features(
+            schedule,
+            agg,
+            ZONE_FEATURES,
+        ),
+        "available",
+    )
 
 
 def build_team_game_rates(
@@ -864,50 +891,14 @@ def build_team_game_rates(
     return game_rates
 
 
-def ratings_from_prior_games(game_rates: pl.DataFrame, target_date: date) -> pl.DataFrame:
-    from sportsdataverse.nhl.nhl_prediction_constants import get_constants
-    from sportsdataverse.nhl.nhl_team_ratings import adjust_rate_opponent
-
-    prior = game_rates.filter(pl.col("date") < pl.lit(target_date))
-    if prior.is_empty():
-        return pl.DataFrame()
-
-    const = get_constants("nhl")
-    xg_adj = adjust_rate_opponent(
-        prior,
-        for_col="xgf",
-        against_col="xga",
-        hfa=const.hfa,
-        avg=const.avg_xgf,
-        shrink_k=const.shrink_k,
+def ratings_from_prior_games(
+    game_rates: pl.DataFrame,
+    target_date: date,
+) -> pl.DataFrame:
+    return prior_adjusted_ratings(
+        game_rates,
+        target_date,
     )
-    goal_adj = adjust_rate_opponent(
-        prior,
-        for_col="gf",
-        against_col="ga",
-        hfa=const.hfa,
-        avg=const.avg_total_goals / 2.0,
-        shrink_k=const.shrink_k,
-    )
-    if xg_adj.is_empty():
-        return pl.DataFrame()
-
-    out = xg_adj.join(
-        goal_adj.select(
-            "team",
-            pl.col("adj_for").alias("adj_gf"),
-            pl.col("adj_against").alias("adj_ga"),
-        ),
-        on="team",
-        how="left",
-    ).rename(
-        {
-            "adj_for": "adj_xgf",
-            "adj_against": "adj_xga",
-            "adj_net": "adj_xg_net",
-        }
-    )
-    return out
 
 
 def prior_team_means(

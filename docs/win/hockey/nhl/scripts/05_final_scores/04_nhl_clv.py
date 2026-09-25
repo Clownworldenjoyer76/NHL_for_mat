@@ -267,37 +267,73 @@ def ordered_provider_rows(rows: list[dict]) -> list[dict]:
     )
 
 
-def moneyline_market(row: dict) -> dict | None:
+def market_price(
+    row: dict,
+    american_keys: tuple[str, ...],
+    decimal_keys: tuple[str, ...],
+) -> tuple[float, float] | None:
+    american = numeric(
+        first_value(
+            row,
+            *american_keys,
+        )
+    )
+    if american is None or american == 0:
+        return None
+
+    decimal = numeric(
+        first_value(
+            row,
+            *decimal_keys,
+        )
+    )
+    if decimal is None or decimal <= 1:
+        decimal = american_to_decimal(
+            american
+        )
+    if decimal is None or decimal <= 1:
+        return None
+
+    return (
+        american,
+        decimal,
+    )
+
+
+def moneyline_market(
+    row: dict,
+) -> dict | None:
     sides = {}
+
     for side in ("home", "away"):
-        american = numeric(
-            first_value(
-                row,
+        price = market_price(
+            row,
+            (
                 f"{side}_team_odds_current_money_line_american",
                 f"{side}_team_odds_money_line",
-            )
-        )
-        if american is None or american == 0:
-            return None
-        decimal = numeric(
-            first_value(
-                row,
+            ),
+            (
                 f"{side}_team_odds_current_money_line_decimal",
-            )
+            ),
         )
-        if decimal is None or decimal <= 1:
-            decimal = american_to_decimal(american)
-        if decimal is None or decimal <= 1:
+
+        if price is None:
             return None
+
+        american, decimal = price
+
         sides[side] = {
             "line": None,
             "american": american,
             "decimal": decimal,
         }
+
     return sides
 
 
-def puck_line_market(row: dict) -> dict | None:
+def puck_line_market(
+    row: dict,
+) -> dict | None:
     home_line = numeric(
         first_value(
             row,
@@ -312,12 +348,14 @@ def puck_line_market(row: dict) -> dict | None:
             "away_team_odds_current_point_spread_alternate_display_value",
         )
     )
+
     if home_line is None and away_line is not None:
         home_line = -away_line
     if away_line is None and home_line is not None:
         away_line = -home_line
     if home_line is None or away_line is None:
         return None
+
     if (
         abs(abs(home_line) - 1.5) > 1e-9
         or abs(abs(away_line) - 1.5) > 1e-9
@@ -325,35 +363,39 @@ def puck_line_market(row: dict) -> dict | None:
         return None
 
     sides = {}
-    for side, line in (("home", home_line), ("away", away_line)):
-        american = numeric(
-            first_value(
-                row,
+
+    for side, line in (
+        ("home", home_line),
+        ("away", away_line),
+    ):
+        price = market_price(
+            row,
+            (
                 f"{side}_team_odds_current_spread_american",
                 f"{side}_team_odds_spread_odds",
-            )
-        )
-        if american is None or american == 0:
-            return None
-        decimal = numeric(
-            first_value(
-                row,
+            ),
+            (
                 f"{side}_team_odds_current_spread_decimal",
-            )
+            ),
         )
-        if decimal is None or decimal <= 1:
-            decimal = american_to_decimal(american)
-        if decimal is None or decimal <= 1:
+
+        if price is None:
             return None
+
+        american, decimal = price
+
         sides[side] = {
             "line": line,
             "american": american,
             "decimal": decimal,
         }
+
     return sides
 
 
-def total_market(row: dict) -> dict | None:
+def total_market(
+    row: dict,
+) -> dict | None:
     total = numeric(
         first_value(
             row,
@@ -362,35 +404,39 @@ def total_market(row: dict) -> dict | None:
             "over_under",
         )
     )
-    if total is None or total < TOTAL_MIN or total > TOTAL_MAX:
+
+    if (
+        total is None
+        or total < TOTAL_MIN
+        or total > TOTAL_MAX
+    ):
         return None
 
     sides = {}
+
     for side in ("over", "under"):
-        american = numeric(
-            first_value(
-                row,
+        price = market_price(
+            row,
+            (
                 f"current_{side}_american",
                 f"{side}_odds",
-            )
-        )
-        if american is None or american == 0:
-            return None
-        decimal = numeric(
-            first_value(
-                row,
+            ),
+            (
                 f"current_{side}_decimal",
-            )
+            ),
         )
-        if decimal is None or decimal <= 1:
-            decimal = american_to_decimal(american)
-        if decimal is None or decimal <= 1:
+
+        if price is None:
             return None
+
+        american, decimal = price
+
         sides[side] = {
             "line": total,
             "american": american,
             "decimal": decimal,
         }
+
     return sides
 
 
