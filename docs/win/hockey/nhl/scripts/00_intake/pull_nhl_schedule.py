@@ -151,7 +151,7 @@ def to_et_time(start_time_utc: str) -> str:
     try:
         dt = datetime.fromisoformat(start_time_utc.replace("Z", "+00:00"))
         return dt.astimezone(ET).strftime("%H:%M")
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return ""
 
 

@@ -158,7 +158,7 @@ def numeric(
         out = float(
             value
         )
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
 
     if (
@@ -324,7 +324,7 @@ def to_et_date_time(
             ),
         )
 
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return "", ""
 
 

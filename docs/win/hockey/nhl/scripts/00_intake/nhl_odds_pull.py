@@ -84,7 +84,7 @@ def json_safe(value: Any) -> Any:
     if hasattr(value, "item"):
         try:
             return value.item()
-        except Exception:
+        except (TypeError, ValueError):
             pass
 
     if (

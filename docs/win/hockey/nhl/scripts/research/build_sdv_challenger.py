@@ -537,7 +537,7 @@ def load_dratings_predictions(season: int) -> pd.DataFrame:
     for path in prediction_csv_paths():
         try:
             frame = pd.read_csv(path, dtype={"game_id": "string"})
-        except Exception:
+        except (OSError, UnicodeError, ValueError):
             continue
         if not required.issubset(frame.columns):
             continue
@@ -602,7 +602,7 @@ def load_final_scores(season: int) -> pd.DataFrame:
     for path in sorted(FINAL_SCORES_ROOT.glob("*.csv")):
         try:
             frame = pd.read_csv(path, dtype={"game_id": "string"})
-        except Exception:
+        except (OSError, UnicodeError, ValueError):
             continue
         if not required.issubset(frame.columns):
             continue

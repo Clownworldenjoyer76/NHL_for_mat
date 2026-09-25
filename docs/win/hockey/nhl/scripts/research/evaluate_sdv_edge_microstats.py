@@ -490,7 +490,7 @@ def sample_ids(
         for raw in pbp.get_column(column).drop_nulls().unique().to_list():
             try:
                 value = int(float(raw))
-            except Exception:
+            except (TypeError, ValueError, OverflowError):
                 continue
             # NHL player ids are currently 7 digits; keep this permissive but sane.
             if value > 0:

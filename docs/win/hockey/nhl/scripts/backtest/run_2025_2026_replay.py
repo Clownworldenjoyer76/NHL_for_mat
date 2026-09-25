@@ -196,7 +196,7 @@ def run_script(fake_repo_root: Path, rel: Path) -> None:
 def american_to_decimal(value):
     try:
         a = float(value)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return np.nan
     if not np.isfinite(a) or a == 0:
         return np.nan

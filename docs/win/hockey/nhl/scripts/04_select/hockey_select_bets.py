@@ -215,7 +215,7 @@ def fv(x):
         if pd.isna(x):
             return None
         return float(x)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
 
 
@@ -1233,6 +1233,7 @@ def main():
     except SystemExit:
         raise
     except Exception as e:
+        # noinspection PyBroadException
         try:
             _log(f"FATAL: {e}\n{traceback.format_exc()}", "ERROR")
         except Exception:

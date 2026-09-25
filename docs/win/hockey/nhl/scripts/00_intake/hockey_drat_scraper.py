@@ -45,7 +45,7 @@ def convert_utc_to_et(date_time_str: str) -> str:
         dt_utc = UTC.localize(dt)
         dt_et = dt_utc.astimezone(ET)
         return dt_et.strftime("%m/%d/%Y %I:%M %p")
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return date_time_str
 
 

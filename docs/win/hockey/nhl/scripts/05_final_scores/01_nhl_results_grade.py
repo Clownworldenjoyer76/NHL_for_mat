@@ -241,7 +241,7 @@ def to_float(value):
 
         return float(text)
 
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
 
 

@@ -419,7 +419,7 @@ def process_file(
                     "home_fair_decimal_moneyline"
                 ]
             )
-        except Exception:
+        except (TypeError, ValueError, OverflowError):
             reason = "bad_numeric_parse"
             skipped_bad += 1
             quarantine_row(

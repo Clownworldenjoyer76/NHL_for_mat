@@ -311,7 +311,7 @@ def bucket_value(value, bands: list[tuple[float, float]]) -> str:
 
     try:
         v = float(value)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return "missing"
 
     for low, high in bands:
@@ -333,7 +333,7 @@ def american_to_profit_per_unit(odds) -> float:
 
     try:
         odds = float(odds)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return np.nan
 
     if odds > 0:

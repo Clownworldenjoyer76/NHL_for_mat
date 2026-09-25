@@ -192,7 +192,7 @@ def parse_date(date_str: str) -> str:
     try:
         dt = datetime.strptime(str(date_str).strip(), "%m/%d/%Y %I:%M %p")
         return dt.strftime("%Y_%m_%d")
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return str(date_str).strip().replace("/", "_").replace(" ", "_")
 
 
@@ -207,14 +207,14 @@ def parse_probability(value) -> str:
     try:
         parsed = float(str(value).replace("%", "").strip()) / 100
         return f"{parsed:.6f}"
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return ""
 
 
 def parse_float(value):
     try:
         return float(str(value).strip())
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return ""
 
 

@@ -167,7 +167,7 @@ def parse_int_score(value: Any) -> int | None:
 
     try:
         number = float(text)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
 
     if not number.is_integer():

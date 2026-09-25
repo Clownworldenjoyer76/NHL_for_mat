@@ -65,7 +65,7 @@ def to_float(value):
 
         return value if math.isfinite(value) else None
 
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
 
 

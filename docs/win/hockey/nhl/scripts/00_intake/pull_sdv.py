@@ -382,7 +382,7 @@ def official_schedule_cutoff_lookup() -> dict[
                 path,
                 dtype=str,
             ).fillna("")
-        except Exception:
+        except (OSError, UnicodeError, ValueError):
             continue
 
         if (
@@ -2717,7 +2717,7 @@ def pull_goalie_live_profiles(
                 player_id = int(
                     value
                 )
-            except Exception:
+            except (TypeError, ValueError, OverflowError):
                 continue
 
             parsed = safe_pull(
@@ -5291,6 +5291,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    # noinspection PyBroadException
     try:
         main()
 

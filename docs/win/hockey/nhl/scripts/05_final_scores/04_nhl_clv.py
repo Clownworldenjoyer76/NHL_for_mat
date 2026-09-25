@@ -166,7 +166,7 @@ def numeric(value) -> float | None:
         return None
     try:
         out = float(value)
-    except Exception:
+    except (TypeError, ValueError, OverflowError):
         return None
     if math.isnan(out) or math.isinf(out):
         return None

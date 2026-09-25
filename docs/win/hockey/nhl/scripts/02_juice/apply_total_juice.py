@@ -412,7 +412,7 @@ def process_file(
                     "under_fair_decimal_total"
                 ]
             )
-        except Exception:
+        except (TypeError, ValueError, OverflowError):
             reason = "bad_numeric_parse"
             skipped_bad += 1
             quarantine_row(
