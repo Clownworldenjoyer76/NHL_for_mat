@@ -1267,20 +1267,50 @@ def grade(
     )
 
 
+SETTLED_RESULTS = (
+    "Win",
+    "Loss",
+    "Push",
+)
+
+
+def settled_rows(
+    graded,
+):
+    return graded[
+        graded[
+            "bet_result"
+        ].isin(
+            SETTLED_RESULTS
+        )
+    ].copy()
+
+
+def add_time_split_columns(
+    settled,
+):
+    out = settled.copy()
+    out[
+        "season"
+    ] = out[
+        "game_date"
+    ].map(
+        season_label
+    )
+    out[
+        "season_half"
+    ] = out[
+        "game_date"
+    ].map(
+        season_half_label
+    )
+    return out
+
+
 def metrics(
     df,
 ):
-    settled = df[
-        df[
-            "bet_result"
-        ].isin(
-            [
-                "Win",
-                "Loss",
-                "Push",
-            ]
-        )
-    ].copy()
+    settled = settled_rows(df)
 
     decisions = settled[
         settled[
@@ -1584,17 +1614,7 @@ def bucket_label(
 def build_reliability(
     graded,
 ):
-    settled = graded[
-        graded[
-            "bet_result"
-        ].isin(
-            [
-                "Win",
-                "Loss",
-                "Push",
-            ]
-        )
-    ].copy()
+    settled = settled_rows(graded)
 
     if settled.empty:
         return pd.DataFrame()
@@ -1640,6 +1660,49 @@ def build_reliability(
     )
 
 
+def _positive_signal_bucket(
+    value: float,
+):
+    buckets = (
+        (
+            0.02,
+            1,
+            "0.00-0.02",
+        ),
+        (
+            0.05,
+            2,
+            "0.02-0.05",
+        ),
+        (
+            0.10,
+            3,
+            "0.05-0.10",
+        ),
+        (
+            0.20,
+            4,
+            "0.10-0.20",
+        ),
+    )
+
+    for (
+        threshold,
+        order,
+        label,
+    ) in buckets:
+        if value < threshold:
+            return (
+                order,
+                label,
+            )
+
+    return (
+        5,
+        "0.20+",
+    )
+
+
 def ev_bucket(
     value,
 ):
@@ -1653,33 +1716,8 @@ def ev_bucket(
             "<0.00",
         )
 
-    if value < 0.02:
-        return (
-            1,
-            "0.00-0.02",
-        )
-
-    if value < 0.05:
-        return (
-            2,
-            "0.02-0.05",
-        )
-
-    if value < 0.10:
-        return (
-            3,
-            "0.05-0.10",
-        )
-
-    if value < 0.20:
-        return (
-            4,
-            "0.10-0.20",
-        )
-
-    return (
-        5,
-        "0.20+",
+    return _positive_signal_bucket(
+        value
     )
 
 
@@ -1696,33 +1734,8 @@ def kelly_bucket(
             "0.00",
         )
 
-    if value < 0.02:
-        return (
-            1,
-            "0.00-0.02",
-        )
-
-    if value < 0.05:
-        return (
-            2,
-            "0.02-0.05",
-        )
-
-    if value < 0.10:
-        return (
-            3,
-            "0.05-0.10",
-        )
-
-    if value < 0.20:
-        return (
-            4,
-            "0.10-0.20",
-        )
-
-    return (
-        5,
-        "0.20+",
+    return _positive_signal_bucket(
+        value
     )
 
 
@@ -1772,17 +1785,7 @@ def add_signal_bucket_columns(
 def build_signal_buckets(
     graded,
 ):
-    settled = graded[
-        graded[
-            "bet_result"
-        ].isin(
-            [
-                "Win",
-                "Loss",
-                "Push",
-            ]
-        )
-    ].copy()
+    settled = settled_rows(graded)
 
     if settled.empty:
         return pd.DataFrame()
@@ -1891,36 +1894,12 @@ def season_half_label(
 def build_time_splits(
     graded,
 ):
-    settled = graded[
-        graded[
-            "bet_result"
-        ].isin(
-            [
-                "Win",
-                "Loss",
-                "Push",
-            ]
-        )
-    ].copy()
+    settled = settled_rows(graded)
 
     if settled.empty:
         return pd.DataFrame()
 
-    settled[
-        "season"
-    ] = settled[
-        "game_date"
-    ].map(
-        season_label
-    )
-
-    settled[
-        "season_half"
-    ] = settled[
-        "game_date"
-    ].map(
-        season_half_label
-    )
+    settled = add_time_split_columns(settled)
 
     rows = []
 
@@ -1963,36 +1942,12 @@ def build_time_splits(
 def build_signal_time_splits(
     graded,
 ):
-    settled = graded[
-        graded[
-            "bet_result"
-        ].isin(
-            [
-                "Win",
-                "Loss",
-                "Push",
-            ]
-        )
-    ].copy()
+    settled = settled_rows(graded)
 
     if settled.empty:
         return pd.DataFrame()
 
-    settled[
-        "season"
-    ] = settled[
-        "game_date"
-    ].map(
-        season_label
-    )
-
-    settled[
-        "season_half"
-    ] = settled[
-        "game_date"
-    ].map(
-        season_half_label
-    )
+    settled = add_time_split_columns(settled)
 
     rows = []
 
