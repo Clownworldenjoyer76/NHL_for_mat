@@ -1,4 +1,4 @@
-version: "1.0"
+﻿version: "1.0"
 
 linter: qodana-python
 
@@ -15,6 +15,7 @@ include:
   - name: CheckDependencyLicenses
 
 exclude:
+  - name: PyClassHasNoInit
   - name: All
     paths:
       - docs/win/hockey/nhl/00_intake/predictions/archive
