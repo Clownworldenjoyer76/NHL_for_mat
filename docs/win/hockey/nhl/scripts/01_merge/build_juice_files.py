@@ -227,7 +227,7 @@ def calculate_total_probabilities(total_line, total_projected_goals):
         return None, None
     return min(max(over_prob, 0.01), 0.99), min(max(under_prob, 0.01), 0.99)
 
-def validate_schema(path: Path, df: pd.DataFrame) -> list[str]:
+def validate_schema(df: pd.DataFrame) -> list[str]:
     return [col for col in MERGED_REQUIRED_COLUMNS if col not in df.columns]
 
 def build_moneyline(df: pd.DataFrame, output_path: Path) -> int:
@@ -283,7 +283,7 @@ def process_file(path: Path) -> list[tuple[str, int]]:
     if df.empty:
         log(f"EMPTY: {path} — skipping")
         return []
-    missing = validate_schema(path, df)
+    missing = validate_schema(df)
     if missing:
         raise ValueError(f"{path} missing required columns: {missing}")
     numeric_columns = [

@@ -4057,7 +4057,7 @@ def test_pull_sdv_goalie_features_use_only_prior_games(
 
     def fake_gsax(
         prior_pbp,
-        prior_shifts,
+        _prior_shifts,
     ):
         ids = sorted(
             set(
@@ -4841,7 +4841,7 @@ def test_pull_sdv_lineup_features_use_only_prior_games_and_t60(
 
     def fake_metrics(
         prior_pbp,
-        prior_shifts,
+        _prior_shifts,
     ):
         ids = sorted(
             prior_pbp[
@@ -5637,7 +5637,7 @@ def _clv_moneyline_bet() -> pd.DataFrame:
 
 
 def _clv_snapshot(
-    module,
+    _module,
     *,
     snapshot_at,
     home_decimal: float,
