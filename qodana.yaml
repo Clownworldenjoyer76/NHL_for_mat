@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "1.0"
 
 linter: qodana-python
@@ -18,3 +19,15 @@ exclude:
   - name: All
     paths:
       - docs/win/hockey/nhl/00_intake/predictions/archive
+=======
+####################################################################################################################
+# WARNING: Do not store sensitive information in this file, as its contents will be included in the Qodana report. #
+####################################################################################################################
+
+version: "1.0"
+linter: qodana-python
+profile:
+  name: qodana.recommended
+include:
+  - name: CheckDependencyLicenses
+>>>>>>> 421e749a89bbab187dd48917bce6453fefe7c069
