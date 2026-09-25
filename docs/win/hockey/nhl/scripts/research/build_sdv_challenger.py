@@ -63,6 +63,8 @@ based on regular-season games, matching SportsDataverse ``nhl_team_ratings``.
 
 from __future__ import annotations
 
+import sys
+
 import argparse
 import json
 import math
@@ -82,6 +84,17 @@ import numpy as np
 import pandas as pd
 import polars as pl
 from scipy.optimize import minimize
+
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+
+# noinspection PyPep8
+from model_blend_common import (
+    fit_blend_weights,
+    ridge_linear_coefficients,
+)
 
 
 SCRIPT_VERSION = "SDV-P6-2026-08-30-v2"
@@ -757,16 +770,13 @@ def fit_logistic(x: np.ndarray, y: np.ndarray) -> LogisticModel:
     return LogisticModel(beta)
 
 
-def fit_linear(x: np.ndarray, y: np.ndarray) -> LinearModel:
-    x = np.asarray(x, dtype=float)
-    y = np.asarray(y, dtype=float)
-    if x.ndim == 1:
-        x = x[:, None]
-    design = np.column_stack([np.ones(len(x)), x])
-    ridge = 1e-6 * np.eye(design.shape[1])
-    ridge[0, 0] = 0.0
-    beta = np.linalg.solve(design.T @ design + ridge, design.T @ y)
-    return LinearModel(beta)
+def fit_linear(
+    x: np.ndarray,
+    y: np.ndarray,
+) -> LinearModel:
+    return LinearModel(
+        ridge_linear_coefficients(x, y)
+    )
 
 
 def apply_logistic(model: LogisticModel, x: np.ndarray) -> np.ndarray:
@@ -783,20 +793,6 @@ def apply_linear(model: LinearModel, x: np.ndarray) -> np.ndarray:
         x = x[:, None]
     design = np.column_stack([np.ones(len(x)), x])
     return model.predict(design)
-
-
-def select_probability_weight(y: np.ndarray, p_drat: np.ndarray, p_sdv: np.ndarray) -> float:
-    """Choose past-only weight on calibrated D-Ratings probability by log loss."""
-    grid = np.linspace(0.0, 1.0, 101)
-    losses = [log_loss(y, w * p_drat + (1.0 - w) * p_sdv) for w in grid]
-    return float(grid[int(np.argmin(losses))])
-
-
-def select_numeric_weight(y: np.ndarray, drat: np.ndarray, sdv: np.ndarray) -> float:
-    """Choose past-only D-Ratings weight by RMSE."""
-    grid = np.linspace(0.0, 1.0, 101)
-    losses = [rmse(y, w * drat + (1.0 - w) * sdv) for w in grid]
-    return float(grid[int(np.argmin(losses))])
 
 
 def build_walkforward_ensemble(frame: pd.DataFrame, min_train_rows: int) -> pd.DataFrame:
@@ -823,28 +819,30 @@ def build_walkforward_ensemble(frame: pd.DataFrame, min_train_rows: int) -> pd.D
             continue
 
         y_train = train["actual_home_win"].to_numpy(float)
-
-        # Calibrate each probability independently using only past rows.
-        drat_cal = fit_logistic(train[["drat_home_win_prob"]].to_numpy(float), y_train)
-        sdv_cal = fit_logistic(train[["sdv_home_win_prob"]].to_numpy(float), y_train)
-        drat_train_cal = apply_logistic(drat_cal, train[["drat_home_win_prob"]].to_numpy(float))
-        sdv_train_cal = apply_logistic(sdv_cal, train[["sdv_home_win_prob"]].to_numpy(float))
-        prob_weight = select_probability_weight(y_train, drat_train_cal, sdv_train_cal)
-
-        drat_test_cal = apply_logistic(drat_cal, test[["drat_home_win_prob"]].to_numpy(float))
-        sdv_test_cal = apply_logistic(sdv_cal, test[["sdv_home_win_prob"]].to_numpy(float))
-        weighted_prob = prob_weight * drat_test_cal + (1.0 - prob_weight) * sdv_test_cal
-
-        # Margin / total weighted models are independently tuned on prior rows.
-        margin_weight = select_numeric_weight(
-            train["actual_margin"].to_numpy(float),
-            train["drat_exp_margin"].to_numpy(float),
-            train["sdv_exp_margin"].to_numpy(float),
+        (
+            drat_cal,
+            sdv_cal,
+            prob_weight,
+            margin_weight,
+            total_weight,
+        ) = fit_blend_weights(
+            train,
+            y_train,
+            fit_logistic,
+            apply_logistic,
         )
-        total_weight = select_numeric_weight(
-            train["actual_total"].to_numpy(float),
-            train["drat_exp_total"].to_numpy(float),
-            train["sdv_exp_total"].to_numpy(float),
+
+        drat_test_cal = apply_logistic(
+            drat_cal,
+            test[["drat_home_win_prob"]].to_numpy(float),
+        )
+        sdv_test_cal = apply_logistic(
+            sdv_cal,
+            test[["sdv_home_win_prob"]].to_numpy(float),
+        )
+        weighted_prob = (
+            prob_weight * drat_test_cal
+            + (1.0 - prob_weight) * sdv_test_cal
         )
 
         # Meta-model: both models + disagreement enter as features. Fits use
