@@ -5,6 +5,7 @@ import sys
 import traceback
 from datetime import datetime, UTC
 from pathlib import Path
+from typing import Never
 
 import pandas as pd
 import yaml
@@ -144,7 +145,7 @@ def _log(msg: str, level: str = "INFO"):
         f.write(f"{_now()} | {level:<5} | {msg.rstrip()}\n")
 
 
-def fail(msg: str):
+def fail(msg: str) -> Never:
     _log(msg, "ERROR")
     raise SystemExit(msg)
 
