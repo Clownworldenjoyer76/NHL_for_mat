@@ -397,7 +397,7 @@ def process_file(
     skipped_bad = 0
     skipped_noband = 0
 
-    for idx, row in df.iterrows():
+    for row_number, (idx, row) in enumerate(df.iterrows()):
         try:
             total_line = float(
                 row["total"]
@@ -423,7 +423,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -445,7 +445,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -476,7 +476,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason} "
                 f"total={total_line}"
             )
@@ -512,7 +512,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -542,7 +542,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue

@@ -428,13 +428,23 @@ def split_status_history_by_date(
     if status_df.empty:
         return {}
 
-    return {
-        str(game_date): group.copy().reset_index(drop=True)
-        for game_date, group in status_df.groupby(
-            "game_date",
-            sort=False,
+    history: dict[str, pd.DataFrame] = {}
+
+    for game_date, group in status_df.groupby(
+        "game_date",
+        sort=False,
+    ):
+        if not isinstance(game_date, str):
+            fail(
+                "Existing NHL status history contains "
+                "a non-string game_date key."
+            )
+
+        history[game_date] = (
+            group.copy().reset_index(drop=True)
         )
-    }
+
+    return history
 
 
 def load_existing_final_scores_for_date(

@@ -11,6 +11,7 @@ import sys
 import tempfile
 import unicodedata
 from pathlib import Path
+from typing import Any
 
 
 REPO_ROOT = Path.cwd()
@@ -108,7 +109,7 @@ def fixture_dates() -> list[str]:
 
 def fixture_sportsbook_expectations(
     test_date: str,
-) -> dict[str, object]:
+) -> dict[str, Any]:
     path = (
         FIXTURE_SPORTSBOOK_DIR
         / f"NHL_{test_date}.csv"
@@ -272,7 +273,7 @@ def run_script(
 def validate_transformed_sportsbook(
     work_base: Path,
     test_date: str,
-    expected: dict[str, object],
+    expected: dict[str, Any],
 ) -> None:
     generated_path = (
         work_base
@@ -429,7 +430,7 @@ def validate_transformed_predictions(
 def validate_schedule(
     work_base: Path,
     test_date: str,
-    sportsbook_expected: dict[str, object],
+    sportsbook_expected: dict[str, Any],
 ) -> dict[str, str]:
     path = (
         work_base
@@ -536,7 +537,7 @@ def validate_schedule(
 def validate_reconciliation(
     work_base: Path,
     test_date: str,
-    sportsbook_expected: dict[str, object],
+    sportsbook_expected: dict[str, Any],
     schedule_expected: dict[str, str],
 ) -> None:
     sportsbook_path = (
@@ -786,7 +787,7 @@ def validate_reconciliation(
 def validate_games(
     work_base: Path,
     test_date: str,
-    sportsbook_expected: dict[str, object],
+    sportsbook_expected: dict[str, Any],
     schedule_expected: dict[str, str],
 ) -> None:
     path = (
@@ -837,7 +838,7 @@ def validate_games(
 def save_test_output(
     work_base: Path,
     test_date: str,
-    sportsbook_expected: dict[str, object],
+    sportsbook_expected: dict[str, Any],
     schedule_expected: dict[str, str],
 ) -> Path:
     output_dir = (

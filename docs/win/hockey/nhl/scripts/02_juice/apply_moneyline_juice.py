@@ -397,7 +397,7 @@ def process_file(
     skipped_bad = 0
     skipped_noband = 0
 
-    for idx, row in df.iterrows():
+    for row_number, (idx, row) in enumerate(df.iterrows()):
         try:
             away_american = float(
                 row[
@@ -430,7 +430,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -453,7 +453,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -496,7 +496,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason} "
                 f"away_american={away_american} "
                 f"home_american={home_american}"
@@ -532,7 +532,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue
@@ -562,7 +562,7 @@ def process_file(
             )
             log(
                 f"ROW QUARANTINE: "
-                f"{path.name} idx={idx} "
+                f"{path.name} row_number={row_number} "
                 f"reason={reason}"
             )
             continue

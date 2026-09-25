@@ -871,6 +871,11 @@ def apply_current_config(
         "market_type",
         sort=False,
     ):
+        if not isinstance(market, str):
+            raise RuntimeError(
+                "market_type must be a string"
+            )
+
         preference = config[
             market
         ].get(

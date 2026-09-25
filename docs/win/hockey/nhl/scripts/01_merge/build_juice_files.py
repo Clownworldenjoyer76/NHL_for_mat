@@ -242,11 +242,11 @@ def build_moneyline(df: pd.DataFrame, output_path: Path) -> int:
 def build_puck_line(df: pd.DataFrame, output_path: Path) -> int:
     puck_line = df.copy()
     away_probs, home_probs, away_fair, home_fair = [], [], [], []
-    for idx, row in puck_line.iterrows():
+    for row_number, (_, row) in enumerate(puck_line.iterrows()):
         hp = calculate_home_puck_probability(row["home_puck_line"], row["home_projected_goals"], row["away_projected_goals"])
         ap = calculate_away_puck_probability(row["away_puck_line"], row["away_projected_goals"], row["home_projected_goals"])
         if hp is None or ap is None:
-            log(f"ROW ISSUE: puck-line probability unavailable idx={idx} game_id={row.get('game_id','')}")
+            log(f"ROW ISSUE: puck-line probability unavailable row_number={row_number} game_id={row.get('game_id','')}")
         home_probs.append(hp); away_probs.append(ap)
         home_fair.append(fair_decimal(hp) if hp is not None else None)
         away_fair.append(fair_decimal(ap) if ap is not None else None)
@@ -262,10 +262,10 @@ def build_puck_line(df: pd.DataFrame, output_path: Path) -> int:
 def build_total(df: pd.DataFrame, output_path: Path) -> int:
     total = df.copy()
     over_probs, under_probs, over_fair, under_fair = [], [], [], []
-    for idx, row in total.iterrows():
+    for row_number, (_, row) in enumerate(total.iterrows()):
         op, up = calculate_total_probabilities(row["total"], row["total_projected_goals"])
         if op is None or up is None:
-            log(f"ROW ISSUE: total probability unavailable idx={idx} game_id={row.get('game_id','')}")
+            log(f"ROW ISSUE: total probability unavailable row_number={row_number} game_id={row.get('game_id','')}")
         over_probs.append(op); under_probs.append(up)
         over_fair.append(fair_decimal(op) if op is not None else None)
         under_fair.append(fair_decimal(up) if up is not None else None)
