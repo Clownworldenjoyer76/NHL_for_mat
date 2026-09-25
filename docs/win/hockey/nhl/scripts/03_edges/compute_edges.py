@@ -6,8 +6,19 @@ import traceback
 from datetime import datetime, UTC
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+# noinspection PyPep8
+from edge_pipeline_common import (
+    prepare_probability_decimal,
+    read_nonempty_csv,
+    run_market_patterns,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -120,36 +131,14 @@ def to_numeric(df, cols):
 
 
 def safe_edge_pct(book_decimal, model_prob):
-    d = pd.to_numeric(
-        book_decimal,
-        errors="coerce",
-    )
-    p = pd.to_numeric(
+    p, d, out, valid = prepare_probability_decimal(
         model_prob,
-        errors="coerce",
+        book_decimal,
     )
-
-    out = pd.Series(
-        np.nan,
-        index=p.index,
-        dtype="float64",
-    )
-
-    valid = (
-        d.notna()
-        & p.notna()
-        & np.isfinite(d)
-        & np.isfinite(p)
-        & (d > 1)
-        & (p > 0)
-        & (p < 1)
-    )
-
     out.loc[valid] = (
         p.loc[valid]
         - (1 / d.loc[valid])
     )
-
     return out
 
 
@@ -404,21 +393,15 @@ def process_pattern(
         )
 
         try:
-            df = pd.read_csv(
-                input_path
+            df = read_nonempty_csv(
+                input_path,
+                pf,
+                summary,
+                per_file,
+                _log,
             )
-
-            if df.empty:
-                _log(
-                    f"{input_path.name} empty — skipping"
-                )
-                pf["status"] = "empty"
-                summary["skipped"] += 1
-                per_file.append(pf)
+            if df is None:
                 continue
-
-            pf["rows"] = len(df)
-            summary["rows_processed"] += len(df)
 
             out_df, edge_columns = compute_fn(
                 df,
@@ -561,46 +544,30 @@ def main():
     ):
         quarantine_file.unlink()
 
-    try:
-        process_pattern(
-            "*_NHL_moneyline.csv",
-            compute_moneyline_edges,
-            "moneyline",
-            summary,
-            per_file,
-        )
-
-        process_pattern(
-            "*_NHL_puck_line.csv",
-            compute_puck_line_edges,
-            "puck_line",
-            summary,
-            per_file,
-        )
-
-        process_pattern(
-            "*_NHL_total.csv",
-            compute_total_edges,
-            "total",
-            summary,
-            per_file,
-        )
-
-    except Exception as e:
-        summary["errors"] += 1
-
-        _log(
-            f"FATAL: {e}\n"
-            f"{traceback.format_exc()}",
-            "ERROR",
-        )
-
-        _write_summary(
-            summary,
-            per_file,
-        )
-
-        raise
+    run_market_patterns(
+        [
+            (
+                "*_NHL_moneyline.csv",
+                compute_moneyline_edges,
+                "moneyline",
+            ),
+            (
+                "*_NHL_puck_line.csv",
+                compute_puck_line_edges,
+                "puck_line",
+            ),
+            (
+                "*_NHL_total.csv",
+                compute_total_edges,
+                "total",
+            ),
+        ],
+        summary,
+        per_file,
+        process_pattern,
+        _log,
+        _write_summary,
+    )
 
     _write_summary(
         summary,

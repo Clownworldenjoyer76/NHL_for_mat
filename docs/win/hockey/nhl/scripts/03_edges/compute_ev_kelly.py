@@ -6,8 +6,19 @@ import traceback
 from datetime import datetime, UTC
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+# noinspection PyPep8
+from edge_pipeline_common import (
+    prepare_probability_decimal,
+    read_nonempty_csv,
+    run_market_patterns,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -159,35 +170,13 @@ def compute_ev(
     model_prob,
     book_decimal,
 ):
-    p = pd.to_numeric(
+    p, d, out, valid = prepare_probability_decimal(
         model_prob,
-        errors="coerce",
-    )
-    d = pd.to_numeric(
         book_decimal,
-        errors="coerce",
     )
-
-    out = pd.Series(
-        np.nan,
-        index=p.index,
-        dtype="float64",
-    )
-
-    valid = (
-        d.notna()
-        & p.notna()
-        & np.isfinite(d)
-        & np.isfinite(p)
-        & (d > 1)
-        & (p > 0)
-        & (p < 1)
-    )
-
     out.loc[valid] = (
         p.loc[valid] * d.loc[valid]
     ) - 1
-
     return out
 
 
@@ -196,33 +185,12 @@ def compute_kelly(
     book_decimal,
     file_name="",
 ):
-    p = pd.to_numeric(
+    p, d, k, valid = prepare_probability_decimal(
         model_prob,
-        errors="coerce",
-    )
-    d = pd.to_numeric(
         book_decimal,
-        errors="coerce",
     )
-
     b = d - 1
     q = 1 - p
-
-    k = pd.Series(
-        np.nan,
-        index=p.index,
-        dtype="float64",
-    )
-
-    valid = (
-        b.notna()
-        & p.notna()
-        & np.isfinite(b)
-        & np.isfinite(p)
-        & (b > 0)
-        & (p > 0)
-        & (p < 1)
-    )
 
     k.loc[valid] = (
         (
@@ -478,21 +446,15 @@ def process_pattern(
         )
 
         try:
-            df = pd.read_csv(
-                input_path
+            df = read_nonempty_csv(
+                input_path,
+                pf,
+                summary,
+                per_file,
+                _log,
             )
-
-            if df.empty:
-                _log(
-                    f"{input_path.name} empty — skipping"
-                )
-                pf["status"] = "empty"
-                summary["skipped"] += 1
-                per_file.append(pf)
+            if df is None:
                 continue
-
-            pf["rows"] = len(df)
-            summary["rows_processed"] += len(df)
 
             out_df, neg_kelly = process_fn(
                 df,
@@ -587,46 +549,30 @@ def main():
     ):
         output_file.unlink()
 
-    try:
-        process_pattern(
-            "*_NHL_moneyline.csv",
-            process_moneyline,
-            "moneyline",
-            summary,
-            per_file,
-        )
-
-        process_pattern(
-            "*_NHL_puck_line.csv",
-            process_puck_line,
-            "puck_line",
-            summary,
-            per_file,
-        )
-
-        process_pattern(
-            "*_NHL_total.csv",
-            process_total,
-            "total",
-            summary,
-            per_file,
-        )
-
-    except Exception as e:
-        summary["errors"] += 1
-
-        _log(
-            f"FATAL: {e}\n"
-            f"{traceback.format_exc()}",
-            "ERROR",
-        )
-
-        _write_summary(
-            summary,
-            per_file,
-        )
-
-        raise
+    run_market_patterns(
+        [
+            (
+                "*_NHL_moneyline.csv",
+                process_moneyline,
+                "moneyline",
+            ),
+            (
+                "*_NHL_puck_line.csv",
+                process_puck_line,
+                "puck_line",
+            ),
+            (
+                "*_NHL_total.csv",
+                process_total,
+                "total",
+            ),
+        ],
+        summary,
+        per_file,
+        process_pattern,
+        _log,
+        _write_summary,
+    )
 
     _write_summary(
         summary,
