@@ -4,10 +4,29 @@
 import math
 import sys
 import traceback
-from datetime import datetime, UTC
 from pathlib import Path
 
 import pandas as pd
+
+JUICE_HELPER_DIR = str(Path(__file__).resolve().parent)
+if JUICE_HELPER_DIR not in sys.path:
+    sys.path.insert(0, JUICE_HELPER_DIR)
+
+from juice_common import (
+    FATIGUE_FEATURE_COLUMNS,
+    GOALIE_FEATURE_COLUMNS,
+    GOALIE_NUMERIC_FEATURE_COLUMNS,
+    LINEUP_FEATURE_COLUMNS,
+    LINEUP_NUMERIC_FEATURE_COLUMNS,
+    TEAM_STRENGTH_FEATURE_COLUMNS,
+    finalize_processed_file,
+    load_juice_config,
+    make_logger,
+    quarantine_row,
+    run_input_files,
+    validate_columns,
+    wipe_market_outputs,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -19,114 +38,10 @@ JUICE_FILE = BASE_DIR / "config" / "juice" / "nhl_total_juice.csv"
 ERROR_DIR = BASE_DIR / "errors" / "02_juice"
 LOG_FILE = ERROR_DIR / "apply_total_juice.txt"
 
-FATIGUE_FEATURE_COLUMNS = [
-    "home_days_rest",
-    "away_days_rest",
-    "home_back_to_back",
-    "away_back_to_back",
-    "home_games_in_4_days",
-    "away_games_in_4_days",
-    "home_three_in_four",
-    "away_three_in_four",
-    "home_games_in_6_days",
-    "away_games_in_6_days",
-    "home_four_in_six",
-    "away_four_in_six",
-    "home_games_in_7_days",
-    "away_games_in_7_days",
-    "rest_differential",
-]
-
-TEAM_STRENGTH_FEATURE_COLUMNS = [
-    "home_adj_xgf",
-    "away_adj_xgf",
-    "adj_xgf_differential",
-    "home_adj_xga",
-    "away_adj_xga",
-    "adj_xga_differential",
-    "home_adj_xg_net",
-    "away_adj_xg_net",
-    "adj_xg_net_differential",
-    "home_adj_gf",
-    "away_adj_gf",
-    "adj_gf_differential",
-    "home_adj_ga",
-    "away_adj_ga",
-    "adj_ga_differential",
-    "home_off_rank",
-    "away_off_rank",
-    "off_rank_differential",
-    "home_def_rank",
-    "away_def_rank",
-    "def_rank_differential",
-    "home_net_rank",
-    "away_net_rank",
-    "net_rank_differential",
-    "home_net_z",
-    "away_net_z",
-    "net_z_differential",
-]
-
-
-LINEUP_NUMERIC_FEATURE_COLUMNS = [
-    "home_skater_rapm",
-    "away_skater_rapm",
-    "skater_rapm_differential",
-    "home_skater_war",
-    "away_skater_war",
-    "skater_war_differential",
-    "home_pp_value",
-    "away_pp_value",
-    "pp_value_differential",
-    "home_pk_value",
-    "away_pk_value",
-    "pk_value_differential",
-    "home_forward_line_strength",
-    "away_forward_line_strength",
-    "forward_line_strength_differential",
-    "home_defense_pair_strength",
-    "away_defense_pair_strength",
-    "defense_pair_strength_differential",
-]
-
-LINEUP_METADATA_COLUMNS = [
-    "home_lineup_status",
-    "away_lineup_status",
-    "home_lineup_observed_at",
-    "away_lineup_observed_at",
-    "home_lineup_source",
-    "away_lineup_source",
-]
-
-LINEUP_FEATURE_COLUMNS = [
-    *LINEUP_NUMERIC_FEATURE_COLUMNS,
-    *LINEUP_METADATA_COLUMNS,
-]
-
-
-GOALIE_FEATURE_COLUMNS = [
-    "home_expected_starter",
-    "away_expected_starter",
-    "home_starter_gsax",
-    "away_starter_gsax",
-    "home_backup_gsax",
-    "away_backup_gsax",
-    "starter_gsax_differential",
-    "home_goalie_status",
-    "away_goalie_status",
-    "home_goalie_status_observed_at",
-    "away_goalie_status_observed_at",
-    "home_goalie_status_source",
-    "away_goalie_status_source",
-]
-
-GOALIE_NUMERIC_FEATURE_COLUMNS = [
-    "home_starter_gsax",
-    "away_starter_gsax",
-    "home_backup_gsax",
-    "away_backup_gsax",
-    "starter_gsax_differential",
-]
+reset_log, log = make_logger(
+    LOG_FILE,
+    "apply_total_juice",
+)
 
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -179,37 +94,6 @@ OUTPUT_COLUMNS = REQUIRED_INPUT_COLUMNS + [
 ]
 
 
-def now() -> str:
-    return datetime.now(UTC).isoformat()
-
-
-def reset_log() -> None:
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(f"=== apply_total_juice RUN {now()} ===\n")
-
-
-def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{now()} | {msg}\n")
-
-
-def wipe_outputs() -> int:
-    removed = 0
-
-    for path in OUTPUT_DIR.glob("*total*.csv"):
-        path.unlink()
-        removed += 1
-
-    for path in ERROR_DIR.glob("*total*_quarantine.csv"):
-        path.unlink()
-        removed += 1
-
-    log(
-        f"Wiped total output/quarantine CSVs: {removed}"
-    )
-    return removed
-
-
 def validate_columns(
     path: Path,
     df: pd.DataFrame,
@@ -225,58 +109,6 @@ def validate_columns(
         raise ValueError(
             f"{path} missing required columns: {missing}"
         )
-
-
-def load_config() -> pd.DataFrame:
-    if not JUICE_FILE.exists():
-        raise FileNotFoundError(
-            f"Missing config file: {JUICE_FILE}"
-        )
-
-    juice_df = pd.read_csv(JUICE_FILE)
-
-    validate_columns(
-        JUICE_FILE,
-        juice_df,
-        REQUIRED_CONFIG_COLUMNS,
-    )
-
-    juice_df["band_min"] = pd.to_numeric(
-        juice_df["band_min"],
-        errors="coerce",
-    )
-    juice_df["band_max"] = pd.to_numeric(
-        juice_df["band_max"],
-        errors="coerce",
-    )
-    juice_df["model_calibration_adjustment"] = pd.to_numeric(
-        juice_df["model_calibration_adjustment"],
-        errors="coerce",
-    )
-    juice_df["side"] = (
-        juice_df["side"]
-        .astype(str)
-        .str.strip()
-    )
-
-    if (
-        juice_df[
-            [
-                "band_min",
-                "band_max",
-                "model_calibration_adjustment",
-            ]
-        ]
-        .isna()
-        .any()
-        .any()
-    ):
-        raise ValueError(
-            f"{JUICE_FILE} has non-numeric "
-            "band_min, band_max, or model_calibration_adjustment values"
-        )
-
-    return juice_df
 
 
 def find_model_calibration_adjustment(
@@ -296,53 +128,6 @@ def find_model_calibration_adjustment(
     return float(
         band.iloc[0]["model_calibration_adjustment"]
     )
-
-
-def quarantine_row(
-    original_df: pd.DataFrame,
-    idx,
-    reason: str,
-    quarantine_rows: list[dict],
-) -> None:
-    rejected = original_df.loc[idx].to_dict()
-    rejected["rejection_reason"] = reason
-    quarantine_rows.append(rejected)
-
-
-def write_quarantine(
-    path: Path,
-    original_columns: list[str],
-    quarantine_rows: list[dict],
-) -> Path | None:
-    quarantine_path = (
-        ERROR_DIR
-        / f"{path.stem}_quarantine.csv"
-    )
-
-    if not quarantine_rows:
-        if quarantine_path.exists():
-            quarantine_path.unlink()
-        return None
-
-    quarantine_columns = (
-        original_columns
-        + ["rejection_reason"]
-    )
-
-    quarantine_df = pd.DataFrame(
-        quarantine_rows
-    )
-
-    quarantine_df = quarantine_df.reindex(
-        columns=quarantine_columns
-    )
-
-    quarantine_df.to_csv(
-        quarantine_path,
-        index=False,
-    )
-
-    return quarantine_path
 
 
 def process_file(
@@ -586,52 +371,19 @@ def process_file(
         accepted_indices.append(idx)
         applied += 1
 
-    out_path = (
-        OUTPUT_DIR
-        / path.name
-    )
-
-    accepted_df = df.loc[
-        accepted_indices,
-        OUTPUT_COLUMNS,
-    ].copy()
-
-    accepted_df.to_csv(
-        out_path,
-        index=False,
-    )
-
-    quarantine_path = write_quarantine(
-        path,
-        list(original_df.columns),
-        quarantine_rows,
-    )
-
-    log(
-        f"WROTE {out_path} "
-        f"rows={len(accepted_df)} "
-        f"applied={applied}"
-    )
-
-    if quarantine_path is not None:
-        log(
-            f"WROTE {quarantine_path} "
-            f"rows={len(quarantine_rows)}"
-        )
-
-    log(
-        f"FILE SUMMARY: {path.name} "
-        f"input={len(original_df)} "
-        f"accepted={len(accepted_df)} "
-        f"quarantined={len(quarantine_rows)} "
-        f"bad={skipped_bad} "
-        f"no_band={skipped_noband}"
-    )
-
-    return (
-        applied,
-        skipped_bad,
-        skipped_noband,
+    return finalize_processed_file(
+        path=path,
+        df=df,
+        original_df=original_df,
+        accepted_indices=accepted_indices,
+        output_columns=OUTPUT_COLUMNS,
+        output_dir=OUTPUT_DIR,
+        error_dir=ERROR_DIR,
+        quarantine_rows=quarantine_rows,
+        applied=applied,
+        skipped_bad=skipped_bad,
+        skipped_noband=skipped_noband,
+        log=log,
     )
 
 
@@ -639,14 +391,25 @@ def main() -> None:
     reset_log()
 
     try:
-        wipe_outputs()
+        wipe_market_outputs(
+            OUTPUT_DIR,
+            ERROR_DIR,
+            output_glob="*total*.csv",
+            quarantine_glob="*total*_quarantine.csv",
+            label="total",
+            log=log,
+        )
 
         log(f"INPUT_DIR: {INPUT_DIR}")
         log(f"OUTPUT_DIR: {OUTPUT_DIR}")
         log(f"JUICE_FILE: {JUICE_FILE}")
         log(f"QUARANTINE_DIR: {ERROR_DIR}")
 
-        juice_df = load_config()
+        juice_df = load_juice_config(
+            JUICE_FILE,
+            REQUIRED_CONFIG_COLUMNS,
+            text_columns=["side"],
+        )
 
         input_files = sorted(
             INPUT_DIR.glob(
@@ -665,65 +428,12 @@ def main() -> None:
                 f"found in {INPUT_DIR}"
             )
 
-        files_written = 0
-        total_applied = 0
-        total_skipped_bad = 0
-        total_skipped_noband = 0
-
-        for path in input_files:
-            log(
-                f"Processing input: {path}"
-            )
-
-            (
-                applied,
-                skipped_bad,
-                skipped_noband,
-            ) = process_file(
-                path,
-                juice_df,
-            )
-
-            files_written += 1
-            total_applied += applied
-            total_skipped_bad += (
-                skipped_bad
-            )
-            total_skipped_noband += (
-                skipped_noband
-            )
-
-        total_quarantined = (
-            total_skipped_bad
-            + total_skipped_noband
+        run_input_files(
+            input_files=input_files,
+            juice_df=juice_df,
+            process_file=process_file,
+            log=log,
         )
-
-        log("--- SUMMARY ---")
-        log(
-            f"Files processed: "
-            f"{len(input_files)}"
-        )
-        log(
-            f"Files written: "
-            f"{files_written}"
-        )
-        log(
-            f"Rows applied: "
-            f"{total_applied}"
-        )
-        log(
-            f"Rows quarantined bad: "
-            f"{total_skipped_bad}"
-        )
-        log(
-            f"Rows quarantined no band: "
-            f"{total_skipped_noband}"
-        )
-        log(
-            f"Rows quarantined total: "
-            f"{total_quarantined}"
-        )
-        log("STATUS: SUCCESS")
 
         print(
             "apply_total_juice complete."
