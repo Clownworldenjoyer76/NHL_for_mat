@@ -19,6 +19,7 @@ from juice_common import (
     LINEUP_FEATURE_COLUMNS,
     LINEUP_NUMERIC_FEATURE_COLUMNS,
     TEAM_STRENGTH_FEATURE_COLUMNS,
+    apply_adjustments_or_quarantine,
     finalize_processed_file,
     load_juice_config,
     make_logger,
@@ -267,36 +268,31 @@ def process_file(
             home_fav_ud,
         )
 
-        if (
-            away_adjustment is None
-            or home_adjustment is None
-        ):
-            reason = "no_config_band"
+        adjusted_decimals = apply_adjustments_or_quarantine(
+            original_df=original_df,
+            idx=idx,
+            path=path,
+            row_number=row_number,
+            quarantine_rows=quarantine_rows,
+            log=log,
+            away_fair=away_fair,
+            home_fair=home_fair,
+            away_adjustment=away_adjustment,
+            home_adjustment=home_adjustment,
+            diagnostic_fields={
+                "away_line": away_line,
+                "home_line": home_line,
+            },
+        )
+
+        if adjusted_decimals is None:
             skipped_noband += 1
-            quarantine_row(
-                original_df,
-                idx,
-                reason,
-                quarantine_rows,
-            )
-            log(
-                f"ROW QUARANTINE: "
-                f"{path.name} row_number={row_number} "
-                f"reason={reason} "
-                f"away_line={away_line} "
-                f"home_line={home_line}"
-            )
             continue
 
-        away_juiced_decimal = (
-            away_fair
-            * (1 - away_adjustment)
-        )
-
-        home_juiced_decimal = (
-            home_fair
-            * (1 - home_adjustment)
-        )
+        (
+            away_juiced_decimal,
+            home_juiced_decimal,
+        ) = adjusted_decimals
 
         if (
             not math.isfinite(

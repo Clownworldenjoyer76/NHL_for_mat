@@ -150,6 +150,58 @@ def quarantine_row(
     quarantine_rows.append(rejected)
 
 
+def apply_adjustments_or_quarantine(
+    *,
+    original_df: pd.DataFrame,
+    idx: Any,
+    path: Path,
+    row_number: int,
+    quarantine_rows: list[dict],
+    log: Callable[[str], None],
+    away_fair: float,
+    home_fair: float,
+    away_adjustment: float | None,
+    home_adjustment: float | None,
+    diagnostic_fields: dict[str, Any],
+) -> tuple[float, float] | None:
+    if (
+        away_adjustment is None
+        or home_adjustment is None
+    ):
+        reason = "no_config_band"
+        quarantine_row(
+            original_df,
+            idx,
+            reason,
+            quarantine_rows,
+        )
+
+        details = " ".join(
+            f"{name}={value}"
+            for name, value in diagnostic_fields.items()
+        )
+        detail_suffix = (
+            f" {details}"
+            if details
+            else ""
+        )
+
+        log(
+            f"ROW QUARANTINE: "
+            f"{path.name} row_number={row_number} "
+            f"reason={reason}"
+            f"{detail_suffix}"
+        )
+        return None
+
+    return (
+        away_fair
+        * (1 - away_adjustment),
+        home_fair
+        * (1 - home_adjustment),
+    )
+
+
 def write_quarantine(
     error_dir: Path,
     path: Path,
