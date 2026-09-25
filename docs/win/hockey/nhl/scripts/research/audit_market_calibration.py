@@ -2243,10 +2243,10 @@ if __name__ == "__main__":
     try:
         main()
 
-    except Exception as exc:
+    except Exception as main_exc:
         print(
             "audit_market_calibration "
-            f"failed: {exc}",
+            f"failed: {main_exc}",
             file=sys.stderr,
         )
 

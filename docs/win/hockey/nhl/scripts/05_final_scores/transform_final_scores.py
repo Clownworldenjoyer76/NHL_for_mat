@@ -1969,16 +1969,16 @@ if __name__ == "__main__":
             main()
         )
 
-    except Exception as e:
+    except Exception as main_exc:
         ensure_dirs()
 
         log(
-            f"FATAL: {e}\n"
+            f"FATAL: {main_exc}\n"
             f"{traceback.format_exc()}"
         )
 
         print(
-            f"transform_final_scores failed: {e}",
+            f"transform_final_scores failed: {main_exc}",
             file=sys.stderr,
         )
 

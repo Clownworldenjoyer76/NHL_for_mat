@@ -3232,21 +3232,21 @@ def goalie_usage_candidates(
         combined.to_dict(
             orient="records"
         ),
-        key=lambda row: (
+        key=lambda candidate_row: (
             -int(
-                row.get(
+                candidate_row.get(
                     "prior_appearances",
                     0,
                 )
             ),
             str(
-                row.get(
+                candidate_row.get(
                     "goalie",
                     "",
                 )
             ),
             str(
-                row.get(
+                candidate_row.get(
                     "player_id",
                     "",
                 )

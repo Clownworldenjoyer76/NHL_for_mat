@@ -38,8 +38,8 @@ OUTPUT_COLUMNS = [
 ]
 
 
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(f"=== transform_hockey RUN {datetime.now().isoformat()} ===\n")
+with open(LOG_FILE, "w", encoding="utf-8") as startup_log:
+    startup_log.write(f"=== transform_hockey RUN {datetime.now().isoformat()} ===\n")
 
 
 def log(msg: str) -> None:

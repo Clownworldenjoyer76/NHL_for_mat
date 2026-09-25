@@ -283,7 +283,7 @@ if __name__ == "__main__":
     except SystemExit:
         raise
     except Exception as exc:
-        lines = [
+        error_lines = [
             "NHL build_games.py summary",
             f"Started: {now_stamp()}",
             f"Input directory: {RECONCILED_DIR}",
@@ -298,6 +298,6 @@ if __name__ == "__main__":
             traceback.format_exc(),
             f"Finished: {now_stamp()}",
         ]
-        write_log(lines)
-        print_log(lines)
+        write_log(error_lines)
+        print_log(error_lines)
         raise SystemExit(1)

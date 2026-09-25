@@ -368,8 +368,8 @@ REQUIRED_TEAM_STRENGTH_COLUMNS = [
 ]
 
 
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(
+with open(LOG_FILE, "w", encoding="utf-8") as startup_log:
+    startup_log.write(
         f"=== merge_intake RUN "
         f"{datetime.now(UTC).isoformat()} ===\n"
     )

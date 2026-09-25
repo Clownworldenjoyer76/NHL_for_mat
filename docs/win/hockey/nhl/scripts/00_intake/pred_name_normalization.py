@@ -24,8 +24,8 @@ with open(LOG_FILE, "w", encoding="utf-8") as f:
 
 
 def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as log_handle:
+        log_handle.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
 
 
 def normalize_alias_key(value: str) -> str:
@@ -49,8 +49,8 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
     identity_by_id: dict[str, tuple[str, str]] = {}
     allowed_sources = {source, "shared", "official_nhl"}
 
-    with open(MAP_FILE, newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
+    with open(MAP_FILE, newline="", encoding="utf-8-sig") as map_handle:
+        map_reader = csv.DictReader(map_handle)
 
         required = {
             "league",
@@ -60,30 +60,30 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
             "nhl_team_id",
             "nhl_abbrev",
         }
-        fieldnames = set(reader.fieldnames or [])
-        missing = sorted(required - fieldnames)
+        map_fieldnames = set(map_reader.fieldnames or [])
+        missing = sorted(required - map_fieldnames)
 
         if missing:
             raise ValueError(
                 f"{MAP_FILE} missing required columns: {missing}"
             )
 
-        for row_number, row in enumerate(reader, start=2):
-            league = str(row.get("league", "")).strip().lower()
-            row_source = str(row.get("source", "")).strip().lower()
+        for row_number, map_row in enumerate(map_reader, start=2):
+            league = str(map_row.get("league", "")).strip().lower()
+            row_source = str(map_row.get("source", "")).strip().lower()
 
             if league != "nhl" or row_source not in allowed_sources:
                 continue
 
-            alias = str(row.get("alias", "")).strip()
-            canonical = str(row.get("canonical_team", "")).strip()
-            team_id = str(row.get("nhl_team_id", "")).strip()
-            abbrev = str(row.get("nhl_abbrev", "")).strip().upper()
+            alias = str(map_row.get("alias", "")).strip()
+            map_canonical = str(map_row.get("canonical_team", "")).strip()
+            team_id = str(map_row.get("nhl_team_id", "")).strip()
+            abbrev = str(map_row.get("nhl_abbrev", "")).strip().upper()
 
-            if not alias or not canonical:
+            if not alias or not map_canonical:
                 continue
 
-            if canonical != "TBD":
+            if map_canonical != "TBD":
                 if not team_id or not team_id.isdigit():
                     raise ValueError(
                         f"{MAP_FILE} row {row_number} has invalid "
@@ -97,7 +97,7 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
                     )
 
                 prior_identity = identity_by_id.get(team_id)
-                identity_value = (canonical, abbrev)
+                identity_value = (map_canonical, abbrev)
 
                 if (
                     prior_identity is not None
@@ -111,8 +111,8 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
 
                 identity_by_id[team_id] = identity_value
 
-            identity = {
-                "canonical_team": canonical,
+            map_identity = {
+                "canonical_team": map_canonical,
                 "nhl_team_id": team_id,
                 "nhl_abbrev": abbrev,
             }
@@ -120,13 +120,13 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
             key = normalize_alias_key(alias)
             prior = mapping.get(key)
 
-            if prior is not None and prior != identity:
+            if prior is not None and prior != map_identity:
                 raise ValueError(
                     f"{MAP_FILE} has conflicting {source} mapping for "
                     f"alias={alias!r}: {prior} != {identity}"
                 )
 
-            mapping[key] = identity
+            mapping[key] = map_identity
 
     if not mapping:
         raise ValueError(
@@ -134,9 +134,9 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
         )
 
     stable_ids = {
-        identity["nhl_team_id"]
-        for identity in mapping.values()
-        if identity["nhl_team_id"]
+        stable_identity["nhl_team_id"]
+        for stable_identity in mapping.values()
+        if stable_identity["nhl_team_id"]
     }
 
     log(

@@ -162,8 +162,8 @@ TOTAL_COLUMNS = BASE_COLUMNS + [
     *TOTAL_PROVENANCE_COLUMNS,
 ]
 
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(f"=== build_juice_files RUN {datetime.now(UTC).isoformat()} ===\n")
+with open(LOG_FILE, "w", encoding="utf-8") as startup_log:
+    startup_log.write(f"=== build_juice_files RUN {datetime.now(UTC).isoformat()} ===\n")
 
 def log(msg: str) -> None:
     with open(LOG_FILE, "a", encoding="utf-8") as f:

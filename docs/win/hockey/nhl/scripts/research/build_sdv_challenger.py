@@ -746,11 +746,11 @@ def fit_logistic(x: np.ndarray, y: np.ndarray) -> LogisticModel:
         x = x[:, None]
     design = np.column_stack([np.ones(len(x)), x])
 
-    def objective(beta: np.ndarray) -> float:
-        z = np.clip(design @ beta, -35.0, 35.0)
+    def objective(coefficients: np.ndarray) -> float:
+        z = np.clip(design @ coefficients, -35.0, 35.0)
         p = 1.0 / (1.0 + np.exp(-z))
         nll = -np.sum(y * np.log(np.clip(p, EPS, 1 - EPS)) + (1 - y) * np.log(np.clip(1 - p, EPS, 1 - EPS)))
-        penalty = 1e-4 * float(np.sum(beta[1:] ** 2))
+        penalty = 1e-4 * float(np.sum(coefficients[1:] ** 2))
         return float(nll + penalty)
 
     result = minimize(objective, np.zeros(design.shape[1]), method="BFGS")

@@ -30,8 +30,8 @@ LOG_FILE = ERROR_DIR / "hockey_drat_scraper.txt"
 
 EXPECTED_GAME_TYPES = {"2", "3"}
 
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(f"=== hockey_drat_scraper RUN {datetime.now(ET).isoformat()} ===\n")
+with open(LOG_FILE, "w", encoding="utf-8") as startup_log:
+    startup_log.write(f"=== hockey_drat_scraper RUN {datetime.now(ET).isoformat()} ===\n")
 
 
 def log(msg: str) -> None:
