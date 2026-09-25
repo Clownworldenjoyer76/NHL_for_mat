@@ -68,7 +68,6 @@ import json
 import math
 import os
 import re
-import sys
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from importlib.metadata import PackageNotFoundError, version

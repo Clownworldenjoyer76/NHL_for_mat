@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # docs/win/hockey/nhl/scripts/04_select/hockey_select_bets.py
 
-import sys
 import traceback
 from datetime import datetime, UTC
 from pathlib import Path
