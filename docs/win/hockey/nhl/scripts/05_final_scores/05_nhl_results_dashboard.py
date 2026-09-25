@@ -17,6 +17,7 @@ from __future__ import annotations
 
 from datetime import datetime, UTC
 from pathlib import Path
+from typing import TypedDict
 import html
 import json
 import sys
@@ -31,7 +32,14 @@ HISTORICAL_ROOT = BASE / "seasons"
 OUTPUT = Path("frontend/nhl_dashboard.html")
 MASTER_OUTPUT = Path("frontend/hockey_dashboard.html")
 
-MARKETS = [
+class MarketSpec(TypedDict):
+    key: str
+    display: str
+    folder: str
+    prefix: str
+    dimensions: list[str]
+
+MARKETS: list[MarketSpec] = [
     {
         "key": "moneyline",
         "display": "Moneyline",
