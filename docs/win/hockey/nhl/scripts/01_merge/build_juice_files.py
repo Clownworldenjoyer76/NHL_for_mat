@@ -184,27 +184,54 @@ def fair_decimal(prob):
         return None
     return 1 / prob
 
-def calculate_home_puck_probability(home_line, home_projected_goals, away_projected_goals):
-    if any(pd.isna(v) for v in (home_line, home_projected_goals, away_projected_goals)):
+def _calculate_puck_probability(
+    line,
+    projected_goals,
+    opponent_projected_goals,
+):
+    if any(
+        pd.isna(value)
+        for value in (
+            line,
+            projected_goals,
+            opponent_projected_goals,
+        )
+    ):
         return None
-    if home_projected_goals <= 0 or away_projected_goals <= 0:
+    if projected_goals <= 0 or opponent_projected_goals <= 0:
         return None
-    threshold = math.floor(-home_line)
-    probability = 1 - skellam.cdf(threshold, home_projected_goals, away_projected_goals)
+    threshold = math.floor(-line)
+    probability = 1 - skellam.cdf(
+        threshold,
+        projected_goals,
+        opponent_projected_goals,
+    )
     if pd.isna(probability):
         return None
     return min(max(probability, 0.01), 0.99)
 
-def calculate_away_puck_probability(away_line, away_projected_goals, home_projected_goals):
-    if any(pd.isna(v) for v in (away_line, away_projected_goals, home_projected_goals)):
-        return None
-    if away_projected_goals <= 0 or home_projected_goals <= 0:
-        return None
-    threshold = math.floor(-away_line)
-    probability = 1 - skellam.cdf(threshold, away_projected_goals, home_projected_goals)
-    if pd.isna(probability):
-        return None
-    return min(max(probability, 0.01), 0.99)
+
+def calculate_home_puck_probability(
+    home_line,
+    home_projected_goals,
+    away_projected_goals,
+):
+    return _calculate_puck_probability(
+        home_line,
+        home_projected_goals,
+        away_projected_goals,
+    )
+
+def calculate_away_puck_probability(
+    away_line,
+    away_projected_goals,
+    home_projected_goals,
+):
+    return _calculate_puck_probability(
+        away_line,
+        away_projected_goals,
+        home_projected_goals,
+    )
 
 def calculate_total_probabilities(total_line, total_projected_goals):
     if pd.isna(total_line) or pd.isna(total_projected_goals) or total_projected_goals <= 0:
@@ -239,17 +266,56 @@ def build_moneyline(df: pd.DataFrame, output_path: Path) -> int:
     log(f"WROTE {output_path} ({len(moneyline)} rows)")
     return len(moneyline)
 
+def _append_probability_pair(
+    first_probability,
+    second_probability,
+    first_probabilities,
+    second_probabilities,
+    first_fair_prices,
+    second_fair_prices,
+    issue_label,
+    row_number,
+    game_id,
+) -> None:
+    if first_probability is None or second_probability is None:
+        log(
+            f"ROW ISSUE: {issue_label} probability unavailable "
+            f"row_number={row_number} game_id={game_id}"
+        )
+    first_probabilities.append(first_probability)
+    second_probabilities.append(second_probability)
+    first_fair_prices.append(
+        fair_decimal(first_probability)
+        if first_probability is not None
+        else None
+    )
+    second_fair_prices.append(
+        fair_decimal(second_probability)
+        if second_probability is not None
+        else None
+    )
+
+
 def build_puck_line(df: pd.DataFrame, output_path: Path) -> int:
     puck_line = df.copy()
     away_probs, home_probs, away_fair, home_fair = [], [], [], []
+
     for row_number, (_, row) in enumerate(puck_line.iterrows()):
-        hp = calculate_home_puck_probability(row["home_puck_line"], row["home_projected_goals"], row["away_projected_goals"])
-        ap = calculate_away_puck_probability(row["away_puck_line"], row["away_projected_goals"], row["home_projected_goals"])
-        if hp is None or ap is None:
-            log(f"ROW ISSUE: puck-line probability unavailable row_number={row_number} game_id={row.get('game_id','')}")
-        home_probs.append(hp); away_probs.append(ap)
-        home_fair.append(fair_decimal(hp) if hp is not None else None)
-        away_fair.append(fair_decimal(ap) if ap is not None else None)
+        hp = calculate_home_puck_probability(
+            row["home_puck_line"],
+            row["home_projected_goals"],
+            row["away_projected_goals"],
+        )
+        ap = calculate_away_puck_probability(
+            row["away_puck_line"],
+            row["away_projected_goals"],
+            row["home_projected_goals"],
+        )
+        _append_probability_pair(
+            hp, ap, home_probs, away_probs, home_fair, away_fair,
+            "puck-line", row_number, row.get("game_id", ""),
+        )
+
     puck_line["away_prob_puck_line"] = away_probs
     puck_line["home_prob_puck_line"] = home_probs
     puck_line["away_fair_decimal_puck_line"] = away_fair
@@ -262,13 +328,17 @@ def build_puck_line(df: pd.DataFrame, output_path: Path) -> int:
 def build_total(df: pd.DataFrame, output_path: Path) -> int:
     total = df.copy()
     over_probs, under_probs, over_fair, under_fair = [], [], [], []
+
     for row_number, (_, row) in enumerate(total.iterrows()):
-        op, up = calculate_total_probabilities(row["total"], row["total_projected_goals"])
-        if op is None or up is None:
-            log(f"ROW ISSUE: total probability unavailable row_number={row_number} game_id={row.get('game_id','')}")
-        over_probs.append(op); under_probs.append(up)
-        over_fair.append(fair_decimal(op) if op is not None else None)
-        under_fair.append(fair_decimal(up) if up is not None else None)
+        op, up = calculate_total_probabilities(
+            row["total"],
+            row["total_projected_goals"],
+        )
+        _append_probability_pair(
+            op, up, over_probs, under_probs, over_fair, under_fair,
+            "total", row_number, row.get("game_id", ""),
+        )
+
     total["over_prob_total"] = over_probs
     total["under_prob_total"] = under_probs
     total["over_fair_decimal_total"] = over_fair
