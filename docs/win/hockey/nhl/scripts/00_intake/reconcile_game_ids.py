@@ -4,12 +4,24 @@
 from __future__ import annotations
 
 import csv
+import sys
 import re
 import traceback
 import unicodedata
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+# noinspection PyPep8
+from team_map_common import (
+    parse_nhl_team_map_row,
+    register_team_identity,
+)
 from zoneinfo import ZoneInfo
 
 
@@ -97,7 +109,9 @@ def normalize_text_key(value: str) -> str:
 
 def load_team_map() -> dict:
     if not MAP_PATH.exists():
-        raise FileNotFoundError(f"Missing team mapping file: {MAP_PATH}")
+        raise FileNotFoundError(
+            f"Missing team mapping file: {MAP_PATH}"
+        )
 
     by_source: dict[
         str,
@@ -105,9 +119,19 @@ def load_team_map() -> dict:
     ] = defaultdict(dict)
     by_id: dict[str, dict[str, str]] = {}
     by_abbrev: dict[str, dict[str, str]] = {}
+    supported_sources = {
+        "dratings",
+        "sportsbook",
+        "official_nhl",
+        "shared",
+    }
 
-    with MAP_PATH.open("r", newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
+    with MAP_PATH.open(
+        "r",
+        newline="",
+        encoding="utf-8-sig",
+    ) as handle:
+        reader = csv.DictReader(handle)
 
         required = {
             "league",
@@ -121,63 +145,41 @@ def load_team_map() -> dict:
         missing = sorted(required - fieldnames)
 
         if missing:
-            raise ValueError(f"{MAP_PATH} missing required columns: {missing}")
+            raise ValueError(
+                f"{MAP_PATH} missing required columns: {missing}"
+            )
 
         for row_number, row in enumerate(reader, start=2):
-            if str(row.get("league", "")).strip().lower() != "nhl":
+            parsed = parse_nhl_team_map_row(
+                row,
+                row_number,
+                MAP_PATH,
+                supported_sources=supported_sources,
+            )
+            if parsed is None:
                 continue
 
-            source = str(row.get("source", "")).strip().lower()
-            alias = str(row.get("alias", "")).strip()
-            canonical = str(row.get("canonical_team", "")).strip()
-            team_id = str(row.get("nhl_team_id", "")).strip()
-            abbrev = str(row.get("nhl_abbrev", "")).strip().upper()
+            (
+                source,
+                alias,
+                team_id,
+                abbrev,
+                identity,
+            ) = parsed
 
-            if not source or not alias or not canonical:
-                continue
-
-            if source not in {
-                "dratings",
-                "sportsbook",
-                "official_nhl",
-                "shared",
-            }:
-                raise ValueError(
-                    f"{MAP_PATH} row {row_number} has unsupported "
-                    f"source={source!r}"
-                )
-
-            if canonical != "TBD":
-                if not team_id or not team_id.isdigit():
-                    raise ValueError(
-                        f"{MAP_PATH} row {row_number} has invalid "
-                        f"nhl_team_id={team_id!r}"
-                    )
-
-                if not re.fullmatch(r"[A-Z]{3}", abbrev):
-                    raise ValueError(
-                        f"{MAP_PATH} row {row_number} has invalid "
-                        f"nhl_abbrev={abbrev!r}"
-                    )
-
-            identity = {
-                "canonical_team": canonical,
-                "nhl_team_id": team_id,
-                "nhl_abbrev": abbrev,
-            }
-
-            if team_id:
-                prior_id = by_id.get(team_id)
-                if prior_id is not None and prior_id != identity:
-                    raise ValueError(
-                        f"{MAP_PATH} has conflicting identity for "
-                        f"nhl_team_id={team_id}: {prior_id} != {identity}"
-                    )
-                by_id[team_id] = identity
+            register_team_identity(
+                by_id,
+                team_id,
+                identity,
+                MAP_PATH,
+            )
 
             if abbrev:
                 prior_abbrev = by_abbrev.get(abbrev)
-                if prior_abbrev is not None and prior_abbrev != identity:
+                if (
+                    prior_abbrev is not None
+                    and prior_abbrev != identity
+                ):
                     raise ValueError(
                         f"{MAP_PATH} has conflicting identity for "
                         f"nhl_abbrev={abbrev}: "
@@ -188,7 +190,10 @@ def load_team_map() -> dict:
             key = normalize_text_key(alias)
             prior_alias = by_source[source].get(key)
 
-            if prior_alias is not None and prior_alias != identity:
+            if (
+                prior_alias is not None
+                and prior_alias != identity
+            ):
                 raise ValueError(
                     f"{MAP_PATH} has conflicting mapping for "
                     f"source={source} alias={alias!r}: "
