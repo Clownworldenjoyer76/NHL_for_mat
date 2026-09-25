@@ -1,25 +1,21 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 from __future__ import annotations
 
 import csv
+import sys
 import re
 import traceback
-import unicodedata
 from collections.abc import Callable, Iterable
 from datetime import datetime, timezone
 from pathlib import Path
 
 
-def normalize_alias_key(value: str) -> str:
-    text = unicodedata.normalize("NFKD", str(value).strip())
-    text = "".join(
-        char
-        for char in text
-        if not unicodedata.combining(char)
-    )
-    text = text.lower().replace("&", " and ")
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+# noinspection PyPep8
+from team_map_common import normalize_alias_key
 
 
 def make_logger(

@@ -5,9 +5,7 @@ from __future__ import annotations
 
 import csv
 import sys
-import re
 import traceback
-import unicodedata
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -19,8 +17,10 @@ if str(SCRIPT_DIR) not in sys.path:
 
 # noinspection PyPep8
 from team_map_common import (
+    normalize_team_alias_key,
     parse_nhl_team_map_row,
     register_team_identity,
+    strip_record,
 )
 from zoneinfo import ZoneInfo
 
@@ -92,19 +92,6 @@ def normalize_date(value: str) -> str:
             continue
 
     return ""
-
-
-def strip_record(value: str) -> str:
-    return re.sub(r"\s*\(\d+[-–]\d+[-–]?\d*\)\s*$", "", str(value)).strip()
-
-
-def normalize_text_key(value: str) -> str:
-    text = strip_record(value)
-    text = unicodedata.normalize("NFKD", text)
-    text = "".join(char for char in text if not unicodedata.combining(char))
-    text = text.lower().replace("&", " and ")
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
 
 
 def load_team_map() -> dict:
@@ -187,7 +174,7 @@ def load_team_map() -> dict:
                     )
                 by_abbrev[abbrev] = identity
 
-            key = normalize_text_key(alias)
+            key = normalize_team_alias_key(alias)
             prior_alias = by_source[source].get(key)
 
             if (
@@ -250,7 +237,7 @@ def resolve_team_identity(
     if not raw:
         return None
 
-    key = normalize_text_key(raw)
+    key = normalize_team_alias_key(raw)
     source_key = mapping_source(source)
     by_source = team_map["by_source"]
 

@@ -3,9 +3,7 @@
 import csv
 import sys
 import json
-import re
 import traceback
-import unicodedata
 from pathlib import Path
 
 
@@ -15,8 +13,10 @@ if str(SCRIPT_DIR) not in sys.path:
 
 # noinspection PyPep8
 from team_map_common import (
+    normalize_team_alias_key,
     parse_nhl_team_map_row,
     register_team_identity,
+    strip_record,
 )
 from datetime import datetime
 
@@ -64,23 +64,6 @@ def convert_utc_to_et(date_time_str: str) -> str:
 def parse_et_datetime(date_time_str: str) -> datetime:
     dt = datetime.strptime(str(date_time_str).strip(), "%m/%d/%Y %I:%M %p")
     return ET.localize(dt)
-
-
-def strip_record(name: str) -> str:
-    return re.sub(r"\s*\(\d+[-–]\d+[-–]?\d*\)\s*$", "", str(name)).strip()
-
-
-def normalize_alias_key(value: str) -> str:
-    text = strip_record(value)
-    text = unicodedata.normalize("NFKD", text)
-    text = "".join(
-        char
-        for char in text
-        if not unicodedata.combining(char)
-    )
-    text = text.lower().replace("&", " and ")
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
 
 
 def load_team_map() -> dict:
@@ -139,7 +122,7 @@ def load_team_map() -> dict:
                 TEAM_MAP_PATH,
             )
 
-            key = normalize_alias_key(alias)
+            key = normalize_team_alias_key(alias)
             source_map = by_source.setdefault(
                 source,
                 {},
@@ -182,7 +165,7 @@ def resolve_team_identity(
     source: str,
     team_map: dict,
 ) -> dict[str, str] | None:
-    key = normalize_alias_key(value)
+    key = normalize_team_alias_key(value)
 
     for candidate_source in (source, "shared", "official_nhl"):
         identity = (

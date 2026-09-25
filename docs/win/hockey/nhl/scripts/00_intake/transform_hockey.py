@@ -3,8 +3,19 @@
 
 import re
 import traceback
-import unicodedata
+import sys
 from pathlib import Path
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+# noinspection PyPep8
+from team_map_common import (
+    normalize_team_alias_key,
+    strip_record,
+)
 from datetime import datetime
 
 import pandas as pd
@@ -45,22 +56,6 @@ with open(LOG_FILE, "w", encoding="utf-8") as startup_log:
 def log(msg: str) -> None:
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"{datetime.now().isoformat()} | {msg}\n")
-
-
-def strip_record(name: str) -> str:
-    return re.sub(r"\s*\(\d+[-–]\d+[-–]?\d*\)\s*$", "", str(name)).strip()
-
-
-def normalize_alias_key(value: str) -> str:
-    text = strip_record(value)
-    text = unicodedata.normalize("NFKD", text)
-    text = "".join(
-        char for char in text
-        if not unicodedata.combining(char)
-    )
-    text = text.lower().replace("&", " and ")
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
 
 
 def load_team_map(source: str) -> dict[str, dict[str, str]]:
@@ -134,7 +129,7 @@ def load_team_map(source: str) -> dict[str, dict[str, str]]:
             "nhl_abbrev": abbrev,
         }
 
-        key = normalize_alias_key(alias)
+        key = normalize_team_alias_key(alias)
         prior = mapping.get(key)
 
         if prior is not None and prior != identity:
@@ -171,7 +166,7 @@ def normalize_team(
     source_file: str,
 ) -> str:
     stripped = strip_record(name)
-    key = normalize_alias_key(stripped)
+    key = normalize_team_alias_key(stripped)
     identity = team_map.get(key)
 
     if identity is not None:

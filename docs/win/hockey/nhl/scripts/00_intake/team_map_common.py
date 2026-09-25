@@ -2,12 +2,50 @@
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections.abc import Collection, Mapping, MutableMapping
 from pathlib import Path
 from typing import Any
 
 
 TeamIdentity = dict[str, str]
+
+
+def strip_record(value: str) -> str:
+    return re.sub(
+        r"\s*\(\d+[-–]\d+[-–]?\d*\)\s*$",
+        "",
+        str(value),
+    ).strip()
+
+
+def normalize_alias_key(value: str) -> str:
+    text = unicodedata.normalize(
+        "NFKD",
+        str(value).strip(),
+    )
+    text = "".join(
+        char
+        for char in text
+        if not unicodedata.combining(char)
+    )
+    text = text.lower().replace("&", " and ")
+    text = re.sub(
+        r"[^a-z0-9]+",
+        " ",
+        text,
+    )
+    return re.sub(
+        r"\s+",
+        " ",
+        text,
+    ).strip()
+
+
+def normalize_team_alias_key(value: str) -> str:
+    return normalize_alias_key(
+        strip_record(value)
+    )
 
 
 def parse_nhl_team_map_row(
