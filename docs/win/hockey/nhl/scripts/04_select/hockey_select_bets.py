@@ -893,6 +893,7 @@ def validate_market_columns(df, market_type, path):
         "home_team",
         *SECONDARY_SIGNAL_COLUMNS,
     ]
+    cols = base_cols
 
     if market_type == "moneyline":
         cols = base_cols + [
@@ -955,7 +956,7 @@ def validate_market_columns(df, market_type, path):
             "under_kelly_total",
         ]
     else:
-        return fail(f"Unknown market_type during validation: {market_type}")
+        fail(f"Unknown market_type during validation: {market_type}")
 
     require_columns(df, cols, market_type, path)
 
