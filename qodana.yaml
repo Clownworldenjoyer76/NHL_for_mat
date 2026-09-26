@@ -15,7 +15,7 @@ include:
   - name: CheckDependencyLicenses
 
 exclude:
-  - name: PyClassHasNoInit
+  - name: PyClassHasNoInitInspection
   - name: All
     paths:
       - docs/win/hockey/nhl/00_intake/predictions/archive
