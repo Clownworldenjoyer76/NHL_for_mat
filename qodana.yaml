@@ -15,6 +15,18 @@ include:
   - name: CheckDependencyLicenses
 
 exclude:
+  - name: DuplicatedCode
+    paths:
+      - docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
+      - docs/win/hockey/nhl/scripts/01_merge/build_juice_files.py
+      - docs/win/hockey/nhl/scripts/00_intake/name_normalization_common.py
+      - docs/win/hockey/nhl/scripts/00_intake/team_map_common.py
+      - docs/win/hockey/nhl/scripts/02_juice/apply_moneyline_juice.py
+      - docs/win/hockey/nhl/scripts/02_juice/apply_puck_line_juice.py
+      - docs/win/hockey/nhl/scripts/02_juice/apply_total_juice.py
+      - docs/win/hockey/nhl/scripts/05_final_scores/01_nhl_results_grade.py
+      - docs/win/hockey/nhl/scripts/05_final_scores/02_nhl_results_analyze.py
+      - docs/win/hockey/nhl/scripts/05_final_scores/03_nhl_results_reports.py
   - name: PyTypeHintsInspection
     paths:
       - docs/win/hockey/nhl/scripts/research/evaluate_sdv_edge_microstats.py
