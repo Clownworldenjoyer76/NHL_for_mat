@@ -16,7 +16,6 @@ from team_map_common import (
     normalize_team_alias_key,
     parse_nhl_team_map_row,
     register_team_identity,
-    strip_record,
 )
 from datetime import datetime
 
