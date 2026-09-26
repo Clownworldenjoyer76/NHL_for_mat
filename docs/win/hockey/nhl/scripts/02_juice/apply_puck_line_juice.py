@@ -96,23 +96,6 @@ OUTPUT_COLUMNS = REQUIRED_INPUT_COLUMNS + [
 ]
 
 
-def validate_columns(
-    path: Path,
-    df: pd.DataFrame,
-    required_columns: list[str],
-) -> None:
-    missing = [
-        col
-        for col in required_columns
-        if col not in df.columns
-    ]
-
-    if missing:
-        raise ValueError(
-            f"{path} missing required columns: {missing}"
-        )
-
-
 def find_model_calibration_adjustment(
     juice_df: pd.DataFrame,
     puck_line: float,
