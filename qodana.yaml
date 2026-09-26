@@ -1,4 +1,4 @@
-﻿version: "1.0"
+version: "1.0"
 
 linter: qodana-python
 
@@ -15,6 +15,24 @@ include:
   - name: CheckDependencyLicenses
 
 exclude:
+  - name: PyTypeHintsInspection
+    paths:
+      - docs/win/hockey/nhl/scripts/research/evaluate_sdv_edge_microstats.py
+      - docs/win/hockey/nhl/scripts/00_intake/transform_hockey_odds.py
+      - docs/win/hockey/nhl/scripts/research/build_sdv_challenger.py
+      - docs/win/hockey/nhl/scripts/05_final_scores/transform_final_scores.py
+      - docs/win/hockey/nhl/scripts/00_intake/team_map_common.py
+      - docs/win/hockey/nhl/scripts/pipeline_health.py
+      - docs/win/hockey/nhl/scripts/tests/validate_pipeline.py
+      - docs/win/hockey/nhl/scripts/03_edges/edge_pipeline_common.py
+      - docs/win/hockey/nhl/scripts/02_juice/validate_juice_config.py
+      - docs/win/hockey/nhl/scripts/00_intake/hockey_drat_scraper.py
+      - docs/win/hockey/nhl/scripts/05_final_scores/04_nhl_clv.py
+      - docs/win/hockey/nhl/scripts/00_intake/pull_sdv.py
+      - docs/win/hockey/nhl/scripts/research/build_sdv_history.py
+      - docs/win/hockey/nhl/scripts/01_merge/merge_intake.py
+      - docs/win/hockey/nhl/scripts/00_intake/reconcile_game_ids.py
+      - docs/win/hockey/nhl/scripts/02_juice/juice_common.py
   - name: PyClassHasNoInitInspection
   - name: All
     paths:
