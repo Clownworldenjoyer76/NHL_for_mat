@@ -652,3 +652,7 @@
 2026-08-26T16:57:16.443811+00:00 | Rows quarantined no band: 0
 2026-08-26T16:57:16.444042+00:00 | Rows quarantined total: 3
 2026-08-26T16:57:16.444270+00:00 | STATUS: SUCCESS
+2026-09-26T13:24:00.455070+00:00 | WROTE C:\Users\Mat\AppData\Local\Temp\pytest-of-Mat\pytest-10\test_moneyline_juice_applicati0\out\2026_01_01_NHL_moneyline.csv rows=1 applied=1
+2026-09-26T13:24:00.455070+00:00 | FILE SUMMARY: 2026_01_01_NHL_moneyline.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0
+2026-09-26T13:27:29.840355+00:00 | WROTE C:\Users\Mat\AppData\Local\Temp\pytest-of-Mat\pytest-11\test_moneyline_juice_applicati0\out\2026_01_01_NHL_moneyline.csv rows=1 applied=1
+2026-09-26T13:27:29.840355+00:00 | FILE SUMMARY: 2026_01_01_NHL_moneyline.csv input=1 accepted=1 quarantined=0 bad=0 no_band=0

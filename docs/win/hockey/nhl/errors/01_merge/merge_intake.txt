@@ -1,1 +1,3 @@
-=== merge_intake RUN 2026-08-30T20:42:59.165333+00:00 ===
+=== merge_intake RUN 2026-09-26T13:27:30.383914+00:00 ===
+2026-09-26T13:27:30.384921+00:00 | FATAL: Unsafe SportsDataverse lineup snapshot timestamp: game_id=2025020001 lineup_snapshot_as_of_utc=2026-01-01T23:00:01+00:00 lineup_decision_cutoff_utc=2026-01-01T23:00:00+00:00 file=fixture.csv
+2026-09-26T13:27:30.384921+00:00 | STATUS: FAILED
