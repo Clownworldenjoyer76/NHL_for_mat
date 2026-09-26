@@ -31,8 +31,8 @@ def make_logger(
         )
 
     def log(message: str) -> None:
-        with log_file.open("a", encoding="utf-8") as handle:
-            handle.write(
+        with log_file.open("a", encoding="utf-8") as log_handle:
+            log_handle.write(
                 f"{datetime.now(timezone.utc).isoformat()} | "
                 f"{message}\n"
             )
