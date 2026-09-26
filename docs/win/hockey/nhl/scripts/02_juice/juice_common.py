@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections.abc import Callable
+import math
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -201,6 +202,88 @@ def apply_adjustments_or_quarantine(
         * (1 - home_adjustment),
     )
 
+
+
+def calculate_juiced_probabilities_or_quarantine(
+    *,
+    original_df: pd.DataFrame,
+    idx: Any,
+    path: Path,
+    row_number: int,
+    quarantine_rows: list[dict],
+    log: Callable[[str], None],
+    first_decimal: float,
+    second_decimal: float,
+    diagnostic_fields: dict[str, Any] | None = None,
+) -> tuple[float, float, float] | None:
+    if (
+        not math.isfinite(first_decimal)
+        or not math.isfinite(second_decimal)
+        or first_decimal <= 1
+        or second_decimal <= 1
+    ):
+        reason = "bad_juiced_decimal"
+        quarantine_row(
+            original_df,
+            idx,
+            reason,
+            quarantine_rows,
+        )
+
+        details = diagnostic_fields or {}
+        detail_text = " ".join(
+            f"{name}={value}"
+            for name, value
+            in details.items()
+        )
+        detail_suffix = (
+            f" {detail_text}"
+            if detail_text
+            else ""
+        )
+
+        log(
+            f"ROW QUARANTINE: "
+            f"{path.name} row_number={row_number} "
+            f"reason={reason}"
+            f"{detail_suffix}"
+        )
+        return None
+
+    first_prob = (
+        1 / first_decimal
+    )
+    second_prob = (
+        1 / second_decimal
+    )
+    prob_total = (
+        first_prob
+        + second_prob
+    )
+
+    if (
+        not math.isfinite(prob_total)
+        or prob_total <= 0
+    ):
+        reason = "bad_probability_total"
+        quarantine_row(
+            original_df,
+            idx,
+            reason,
+            quarantine_rows,
+        )
+        log(
+            f"ROW QUARANTINE: "
+            f"{path.name} row_number={row_number} "
+            f"reason={reason}"
+        )
+        return None
+
+    return (
+        first_prob,
+        second_prob,
+        prob_total,
+    )
 
 def write_quarantine(
     error_dir: Path,

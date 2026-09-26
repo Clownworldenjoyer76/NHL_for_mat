@@ -604,39 +604,67 @@ def apply_pick_preference(
     return winners
 
 
-def process_moneyline(row, config, slate_key, rejections):
-    market_config = config.get("moneyline", {})
-    if not market_config.get("enabled", False):
+MARKET_SIDES = {
+    "moneyline": ("home", "away"),
+    "puck_line": ("home", "away"),
+    "total": ("over", "under"),
+}
+
+
+def process_market(
+    row,
+    config,
+    slate_key,
+    rejections,
+    market_type: str,
+):
+    market_config = config.get(
+        market_type,
+        {},
+    )
+    if not market_config.get(
+        "enabled",
+        False,
+    ):
         return []
 
-    require_keys = ["home", "away"]
-    for key in require_keys:
-        if key not in market_config:
-            fail(f"moneyline config missing side: {key}")
+    sides = MARKET_SIDES.get(
+        market_type
+    )
+    if sides is None:
+        return fail(
+            f"Unsupported market_type during selection: {market_type}"
+        )
+
+    for side in sides:
+        if side not in market_config:
+            fail(
+                f"{market_type} config missing side: {side}"
+            )
 
     candidates = []
     meta = get_base_meta(row)
+    check_line = (
+        market_type != "moneyline"
+    )
 
-    for side in ["home", "away"]:
+    for side in sides:
         side_rules = market_config[side]
-
-        values = market_side_values(row, side, "moneyline")
-        odds = values["odds"]
-        dec = values["decimal"]
-        prob = values["prob"]
-        edge = values["edge"]
-        ev = values["ev"]
-        kelly = values["kelly"]
+        values = market_side_values(
+            row,
+            side,
+            market_type,
+        )
 
         failures = side_rule_failures(
             rules=side_rules,
-            odds=odds,
-            line=None,
-            prob=prob,
-            edge=edge,
-            ev=ev,
-            kelly=kelly,
-            check_line=False,
+            odds=values["odds"],
+            line=values["line"],
+            prob=values["prob"],
+            edge=values["edge"],
+            ev=values["ev"],
+            kelly=values["kelly"],
+            check_line=check_line,
         )
 
         if failures is None:
@@ -647,241 +675,125 @@ def process_moneyline(row, config, slate_key, rejections):
                 add_rejection(
                     rejections,
                     game_date=meta["game_date"],
-                    market_type="moneyline",
+                    market_type=market_type,
                     bet_side=side,
                     failing_condition=condition,
                 )
             continue
 
-        candidates.append({
-            **meta,
-            "market_type": "moneyline",
-            "bet_side": side,
-            "line": "",
-            "take_bet": f"{side}_moneyline",
-            "dk_odds_american": odds,
-            "dk_odds_decimal": dec,
-            "model_prob": prob,
-            "edge": edge,
-            "ev": ev,
-            "kelly": kelly,
-            "selected_provider_id": sv(
-                row.get("moneyline_provider_id")
-            ),
-            "selected_provider_name": sv(
-                row.get("moneyline_provider_name")
-            ),
-            "odds_source": sv(
-                row.get("odds_source")
-            ),
-            "pulled_at": sv(
-                row.get("pulled_at")
-            ),
-        })
+        candidates.append(
+            {
+                **meta,
+                "market_type": market_type,
+                "bet_side": side,
+                "line": (
+                    ""
+                    if market_type == "moneyline"
+                    else values["line"]
+                ),
+                "take_bet": (
+                    f"{side}_{market_type}"
+                ),
+                "dk_odds_american": values[
+                    "odds"
+                ],
+                "dk_odds_decimal": values[
+                    "decimal"
+                ],
+                "model_prob": values[
+                    "prob"
+                ],
+                "edge": values[
+                    "edge"
+                ],
+                "ev": values[
+                    "ev"
+                ],
+                "kelly": values[
+                    "kelly"
+                ],
+                "selected_provider_id": sv(
+                    row.get(
+                        f"{market_type}_provider_id"
+                    )
+                ),
+                "selected_provider_name": sv(
+                    row.get(
+                        f"{market_type}_provider_name"
+                    )
+                ),
+                "odds_source": sv(
+                    row.get("odds_source")
+                ),
+                "pulled_at": sv(
+                    row.get("pulled_at")
+                ),
+            }
+        )
 
     candidates = apply_secondary_model_gate(
         candidates,
         row,
         config,
-        market_type="moneyline",
+        market_type=market_type,
         rejections=rejections,
     )
 
     return apply_pick_preference(
         candidates,
-        market_config.get("pick_preference", "all"),
+        market_config.get(
+            "pick_preference",
+            "all",
+        ),
         slate_key,
         row.get("game_id"),
+        market_type,
+        rejections,
+    )
+
+
+def process_moneyline(
+    row,
+    config,
+    slate_key,
+    rejections,
+):
+    return process_market(
+        row,
+        config,
+        slate_key,
+        rejections,
         "moneyline",
-        rejections,
     )
 
 
-def process_puck_line(row, config, slate_key, rejections):
-    market_config = config.get("puck_line", {})
-    if not market_config.get("enabled", False):
-        return []
-
-    require_keys = ["home", "away"]
-    for key in require_keys:
-        if key not in market_config:
-            fail(f"puck_line config missing side: {key}")
-
-    candidates = []
-    meta = get_base_meta(row)
-
-    for side in ["home", "away"]:
-        side_rules = market_config[side]
-
-        values = market_side_values(row, side, "puck_line")
-        odds = values["odds"]
-        dec = values["decimal"]
-        line = values["line"]
-        prob = values["prob"]
-        edge = values["edge"]
-        ev = values["ev"]
-        kelly = values["kelly"]
-
-        failures = side_rule_failures(
-            rules=side_rules,
-            odds=odds,
-            line=line,
-            prob=prob,
-            edge=edge,
-            ev=ev,
-            kelly=kelly,
-            check_line=True,
-        )
-
-        if failures is None:
-            continue
-
-        if failures:
-            for condition in failures:
-                add_rejection(
-                    rejections,
-                    game_date=meta["game_date"],
-                    market_type="puck_line",
-                    bet_side=side,
-                    failing_condition=condition,
-                )
-            continue
-
-        candidates.append({
-            **meta,
-            "market_type": "puck_line",
-            "bet_side": side,
-            "line": line,
-            "take_bet": f"{side}_puck_line",
-            "dk_odds_american": odds,
-            "dk_odds_decimal": dec,
-            "model_prob": prob,
-            "edge": edge,
-            "ev": ev,
-            "kelly": kelly,
-            "selected_provider_id": sv(
-                row.get("puck_line_provider_id")
-            ),
-            "selected_provider_name": sv(
-                row.get("puck_line_provider_name")
-            ),
-            "odds_source": sv(
-                row.get("odds_source")
-            ),
-            "pulled_at": sv(
-                row.get("pulled_at")
-            ),
-        })
-
-    candidates = apply_secondary_model_gate(
-        candidates,
+def process_puck_line(
+    row,
+    config,
+    slate_key,
+    rejections,
+):
+    return process_market(
         row,
         config,
-        market_type="puck_line",
-        rejections=rejections,
-    )
-
-    return apply_pick_preference(
-        candidates,
-        market_config.get("pick_preference", "all"),
         slate_key,
-        row.get("game_id"),
+        rejections,
         "puck_line",
-        rejections,
     )
 
 
-def process_total(row, config, slate_key, rejections):
-    market_config = config.get("total", {})
-    if not market_config.get("enabled", False):
-        return []
-
-    require_keys = ["over", "under"]
-    for key in require_keys:
-        if key not in market_config:
-            fail(f"total config missing side: {key}")
-
-    candidates = []
-    meta = get_base_meta(row)
-
-    for side in ["over", "under"]:
-        side_rules = market_config[side]
-
-        values = market_side_values(row, side, "total")
-        odds = values["odds"]
-        dec = values["decimal"]
-        line = values["line"]
-        prob = values["prob"]
-        edge = values["edge"]
-        ev = values["ev"]
-        kelly = values["kelly"]
-
-        failures = side_rule_failures(
-            rules=side_rules,
-            odds=odds,
-            line=line,
-            prob=prob,
-            edge=edge,
-            ev=ev,
-            kelly=kelly,
-            check_line=True,
-        )
-
-        if failures is None:
-            continue
-
-        if failures:
-            for condition in failures:
-                add_rejection(
-                    rejections,
-                    game_date=meta["game_date"],
-                    market_type="total",
-                    bet_side=side,
-                    failing_condition=condition,
-                )
-            continue
-
-        candidates.append({
-            **meta,
-            "market_type": "total",
-            "bet_side": side,
-            "line": line,
-            "take_bet": f"{side}_total",
-            "dk_odds_american": odds,
-            "dk_odds_decimal": dec,
-            "model_prob": prob,
-            "edge": edge,
-            "ev": ev,
-            "kelly": kelly,
-            "selected_provider_id": sv(
-                row.get("total_provider_id")
-            ),
-            "selected_provider_name": sv(
-                row.get("total_provider_name")
-            ),
-            "odds_source": sv(
-                row.get("odds_source")
-            ),
-            "pulled_at": sv(
-                row.get("pulled_at")
-            ),
-        })
-
-    candidates = apply_secondary_model_gate(
-        candidates,
+def process_total(
+    row,
+    config,
+    slate_key,
+    rejections,
+):
+    return process_market(
         row,
         config,
-        market_type="total",
-        rejections=rejections,
-    )
-
-    return apply_pick_preference(
-        candidates,
-        market_config.get("pick_preference", "all"),
         slate_key,
-        row.get("game_id"),
-        "total",
         rejections,
+        "total",
     )
 
 

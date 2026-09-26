@@ -19,6 +19,7 @@ from juice_common import (
     LINEUP_FEATURE_COLUMNS,
     LINEUP_NUMERIC_FEATURE_COLUMNS,
     TEAM_STRENGTH_FEATURE_COLUMNS,
+    calculate_juiced_probabilities_or_quarantine,
     finalize_processed_file,
     load_juice_config,
     make_logger,
@@ -260,60 +261,28 @@ def process_file(
             * (1 - under_adjustment)
         )
 
-        if (
-            not math.isfinite(
-                over_juiced_decimal
+        probabilities = (
+            calculate_juiced_probabilities_or_quarantine(
+                original_df=original_df,
+                idx=idx,
+                path=path,
+                row_number=row_number,
+                quarantine_rows=quarantine_rows,
+                log=log,
+                first_decimal=over_juiced_decimal,
+                second_decimal=under_juiced_decimal,
             )
-            or not math.isfinite(
-                under_juiced_decimal
-            )
-            or over_juiced_decimal <= 1
-            or under_juiced_decimal <= 1
-        ):
-            reason = "bad_juiced_decimal"
-            skipped_bad += 1
-            quarantine_row(
-                original_df,
-                idx,
-                reason,
-                quarantine_rows,
-            )
-            log(
-                f"ROW QUARANTINE: "
-                f"{path.name} row_number={row_number} "
-                f"reason={reason}"
-            )
-            continue
-
-        over_juiced_prob = (
-            1 / over_juiced_decimal
-        )
-        under_juiced_prob = (
-            1 / under_juiced_decimal
-        )
-        prob_total = (
-            over_juiced_prob
-            + under_juiced_prob
         )
 
-        if (
-            not math.isfinite(prob_total)
-            or prob_total <= 0
-        ):
-            reason = "bad_probability_total"
+        if probabilities is None:
             skipped_bad += 1
-            quarantine_row(
-                original_df,
-                idx,
-                reason,
-                quarantine_rows,
-            )
-            log(
-                f"ROW QUARANTINE: "
-                f"{path.name} row_number={row_number} "
-                f"reason={reason}"
-            )
             continue
+
+        (
+            over_juiced_prob,
+            under_juiced_prob,
+            prob_total,
+        ) = probabilities
 
         df.at[
             idx,
