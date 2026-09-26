@@ -171,12 +171,12 @@ def load_secondary_config() -> dict:
     try:
         payload = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
     except Exception as exc:
-        fail(f"Unable to read {CONFIG_PATH}: {exc}")
+        return fail(f"Unable to read {CONFIG_PATH}: {exc}")
 
     try:
         config = payload["markets"]["nhl"]["secondary_model"]
     except Exception as exc:
-        fail(f"Missing markets.nhl.secondary_model in {CONFIG_PATH}: {exc}")
+        return fail(f"Missing markets.nhl.secondary_model in {CONFIG_PATH}: {exc}")
 
     return config
 

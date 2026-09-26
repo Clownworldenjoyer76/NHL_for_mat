@@ -340,7 +340,7 @@ def load_existing_status_snapshot() -> pd.DataFrame:
             dtype=str,
         ).fillna("")
     except Exception as e:
-        fail(
+        return fail(
             f"Failed reading existing status snapshot "
             f"{STATUS_FILE}: {e}"
         )
@@ -463,7 +463,7 @@ def load_existing_final_scores_for_date(
             dtype=str,
         ).fillna("")
     except Exception as e:
-        fail(
+        return fail(
             f"Failed reading existing official final-score file "
             f"{path}: {e}"
         )
@@ -1065,7 +1065,7 @@ def fetch_official_score_payload(
         )
 
     except Exception as e:
-        fail(
+        return fail(
             f"Official NHL API request failed "
             f"for {game_date}: {e}"
         )
@@ -1081,7 +1081,7 @@ def fetch_official_score_payload(
         payload = response.json()
 
     except Exception as e:
-        fail(
+        return fail(
             f"Official NHL API returned invalid JSON "
             f"for {game_date}: {e}"
         )

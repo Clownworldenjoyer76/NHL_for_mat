@@ -340,7 +340,7 @@ def read_market_file(path: Path, market_type: str):
     try:
         df = pd.read_csv(path)
     except Exception as e:
-        fail(f"Failed reading {market_type} file: {path} | {e}")
+        return fail(f"Failed reading {market_type} file: {path} | {e}")
 
     if "game_id" not in df.columns:
         fail(f"{market_type} file missing game_id: {path}")
@@ -576,7 +576,7 @@ def apply_pick_preference(
         max_prob = max(c["model_prob"] for c in candidates)
         winners = [c for c in candidates if c["model_prob"] == max_prob]
     else:
-        fail(
+        return fail(
             f"Invalid pick_preference for {market_type}: {pick_preference} | "
             f"slate={slate_key} | game_id={game_id}"
         )
@@ -1043,7 +1043,7 @@ def validate_market_columns(df, market_type, path):
             "under_kelly_total",
         ]
     else:
-        fail(f"Unknown market_type during validation: {market_type}")
+        return fail(f"Unknown market_type during validation: {market_type}")
 
     require_columns(df, cols, market_type, path)
 

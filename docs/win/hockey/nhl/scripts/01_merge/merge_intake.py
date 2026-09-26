@@ -3193,7 +3193,7 @@ def load_sdv_prediction_index() -> dict[str, dict[str, str]]:
             try:
                 value = float(raw)
             except ValueError:
-                fail(
+                return fail(
                     "SportsDataverse prediction row has non-numeric required value: "
                     f"{SDV_PREDICTIONS_PATH} row={row_number} "
                     f"game_id={game_id} column={source_col} value={raw!r}"
