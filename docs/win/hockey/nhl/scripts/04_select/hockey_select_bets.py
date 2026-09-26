@@ -410,7 +410,7 @@ def support_label(
         supports = supports_over if bet_side == "over" else not supports_over
         return "supports" if supports else "opposes"
 
-    fail(f"Unknown market_type for secondary support: {market_type}")
+    return fail(f"Unknown market_type for secondary support: {market_type}")
 
 
 def secondary_market_fields(
@@ -441,7 +441,7 @@ def secondary_market_fields(
         )
         return "high_total_disagreement_flag", "sdv_exp_total", derived_field
 
-    fail(f"Unknown market_type for secondary model: {market_type}")
+    return fail(f"Unknown market_type for secondary model: {market_type}")
 
 
 def apply_secondary_model_gate(

@@ -47,7 +47,8 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         newline="",
         encoding="utf-8-sig",
     ) as handle:
-        return list(csv.DictReader(handle))
+        rows = list(csv.DictReader(handle))
+    return rows
 
 
 def normalize_team_name(value: str) -> str:
