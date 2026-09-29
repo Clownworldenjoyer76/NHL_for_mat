@@ -1,0 +1,6 @@
+=== build_secondary_model_signals RUN 2026-09-29T13:53:04.443706+00:00 ===
+2026-09-29T13:53:04.478474+00:00 | Loaded P6 completed comparison history: rows=1291 files=1
+2026-09-29T13:53:04.509907+00:00 | WROTE /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/03_edges/secondary_signals/2026_09_29_NHL_moneyline.csv rows=5
+2026-09-29T13:53:04.518894+00:00 | WROTE /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/03_edges/secondary_signals/2026_09_29_NHL_puck_line.csv rows=3
+2026-09-29T13:53:04.527501+00:00 | WROTE /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/03_edges/secondary_signals/2026_09_29_NHL_total.csv rows=5
+2026-09-29T13:53:04.528625+00:00 | STATUS: SUCCESS | signal_rows=5 files_written=3 status_counts={'ready': 5}

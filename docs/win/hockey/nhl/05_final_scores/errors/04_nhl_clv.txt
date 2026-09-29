@@ -1,0 +1,8 @@
+=== 04_nhl_clv RUN 2026-09-29T14:21:01.939624+00:00 ===
+2026-09-29T14:21:01.965259+00:00 | selected_bets=7
+2026-09-29T14:21:01.965304+00:00 | game_event_mappings=5
+2026-09-29T14:21:01.965331+00:00 | immutable_snapshots=1
+2026-09-29T14:21:01.979150+00:00 | WROTE docs/win/hockey/nhl/05_final_scores/clv/NHL_clv.csv rows=7
+2026-09-29T14:21:01.979190+00:00 | WROTE docs/win/hockey/nhl/05_final_scores/clv/NHL_clv_snapshot_history.csv rows=0
+2026-09-29T14:21:01.979840+00:00 | clv_status_counts={'no_later_closing_snapshot': 7}
+2026-09-29T14:21:01.979879+00:00 | STATUS: SUCCESS

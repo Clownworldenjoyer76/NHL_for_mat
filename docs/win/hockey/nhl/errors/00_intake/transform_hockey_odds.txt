@@ -1,12 +1,18 @@
-=== transform_hockey_odds RUN 2026-08-31T05:36:25.284814-04:00 ===
-2026-08-31T05:36:25.285036-04:00 | Odds input directory: /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds
-2026-08-31T05:36:25.285085-04:00 | JSON files found: 2
-2026-08-31T05:36:25.285211-04:00 | READ /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds/2026_08_29.json | events=0 | provider_rows=0
-2026-08-31T05:36:25.285351-04:00 | READ /home/runner/work/NHL_for_mat/NHL_for_mat/docs/win/hockey/nhl/odds/2026_08_31.json | events=0 | provider_rows=0
-2026-08-31T05:36:25.285383-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
-2026-08-31T05:36:25.285407-04:00 | Live Odds providers excluded from production selection
-2026-08-31T05:36:25.285429-04:00 | --- SUMMARY ---
-2026-08-31T05:36:25.285453-04:00 | events_found: 0
-2026-08-31T05:36:25.285477-04:00 | json_files_processed: 2
-2026-08-31T05:36:25.285498-04:00 | odds_provider_rows_found: 0
-2026-08-31T05:36:25.285519-04:00 | STATUS: SUCCESS
+=== transform_hockey_odds RUN 2026-09-29T09:00:38.249523-04:00 ===
+2026-09-29T09:00:38.249703-04:00 | Odds input directory: /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/odds
+2026-09-29T09:00:38.249726-04:00 | JSON files found: 1
+2026-09-29T09:00:38.251154-04:00 | READ /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/odds/2026_09_29.json | events=5 | provider_rows=5
+2026-09-29T09:00:38.251591-04:00 | WROTE /home/runner/work/bet_tracker/bet_tracker/docs/win/hockey/nhl/00_intake/sportsbook/NHL_2026_09_29.csv rows=5
+2026-09-29T09:00:38.251606-04:00 | Provider priority: Titanbets -> MGM -> Bet365 -> Caesars Sportsbook -> SugarHouse -> others
+2026-09-29T09:00:38.251616-04:00 | Live Odds providers excluded from production selection
+2026-09-29T09:00:38.251624-04:00 | --- SUMMARY ---
+2026-09-29T09:00:38.251637-04:00 | csv_files_written: 1
+2026-09-29T09:00:38.251645-04:00 | events_found: 5
+2026-09-29T09:00:38.251652-04:00 | json_files_processed: 1
+2026-09-29T09:00:38.251665-04:00 | moneyline_provider:DraftKings: 5
+2026-09-29T09:00:38.251676-04:00 | odds_provider_rows_found: 5
+2026-09-29T09:00:38.251689-04:00 | puck_line_provider:DraftKings: 5
+2026-09-29T09:00:38.251696-04:00 | rows_added: 5
+2026-09-29T09:00:38.251703-04:00 | rows_built: 5
+2026-09-29T09:00:38.251710-04:00 | total_provider:DraftKings: 5
+2026-09-29T09:00:38.251717-04:00 | STATUS: SUCCESS

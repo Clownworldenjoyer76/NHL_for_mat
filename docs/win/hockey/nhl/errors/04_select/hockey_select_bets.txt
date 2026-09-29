@@ -1,22 +1,25 @@
-=== NHL hockey_select_bets RUN 2026-09-08T20:14:46.152428+00:00 ===
-2026-09-08T20:14:46.157777+00:00 | INFO  | INPUT_DIR: docs/win/hockey/nhl/03_edges/secondary_signals
-2026-09-08T20:14:46.157814+00:00 | INFO  | OUTPUT_DIR: docs/win/hockey/nhl/04_select
-2026-09-08T20:14:46.157834+00:00 | INFO  | CONFIG_PATH: docs/win/hockey/nhl/config/markets.yaml
-2026-09-08T20:14:46.157853+00:00 | INFO  | LOG_FILE: docs/win/hockey/nhl/errors/04_select/hockey_select_bets.txt
-2026-09-08T20:14:46.157871+00:00 | INFO  | REJECTION_FILE: docs/win/hockey/nhl/errors/04_select/selection_rejections.csv
-2026-09-08T20:14:46.161190+00:00 | INFO  | Slates found: 0
-2026-09-08T20:14:46.161845+00:00 | INFO  | WROTE: docs/win/hockey/nhl/errors/04_select/selection_rejections.csv | rows=0 | rejections=0
+=== NHL hockey_select_bets RUN 2026-09-29T14:20:59.261808+00:00 ===
+2026-09-29T14:20:59.269632+00:00 | INFO  | INPUT_DIR: docs/win/hockey/nhl/03_edges/secondary_signals
+2026-09-29T14:20:59.269676+00:00 | INFO  | OUTPUT_DIR: docs/win/hockey/nhl/04_select
+2026-09-29T14:20:59.269703+00:00 | INFO  | CONFIG_PATH: docs/win/hockey/nhl/config/markets.yaml
+2026-09-29T14:20:59.269728+00:00 | INFO  | LOG_FILE: docs/win/hockey/nhl/errors/04_select/hockey_select_bets.txt
+2026-09-29T14:20:59.269752+00:00 | INFO  | REJECTION_FILE: docs/win/hockey/nhl/errors/04_select/selection_rejections.csv
+2026-09-29T14:20:59.274590+00:00 | INFO  | Slates found: 1
+2026-09-29T14:20:59.274676+00:00 | INFO  | --- SLATE: 2026_09_29
+2026-09-29T14:20:59.350782+00:00 | INFO  | WROTE: docs/win/hockey/nhl/04_select/2026_09_29_NHL.csv | bets=7 | moneyline=3 | puck_line=3 | total=1
+2026-09-29T14:20:59.352483+00:00 | INFO  | WROTE: docs/win/hockey/nhl/errors/04_select/selection_rejections.csv | rows=7 | rejections=20
 
 ============================================================
-SUMMARY 2026-09-08T20:14:46.161868+00:00
+SUMMARY 2026-09-29T14:20:59.352511+00:00
 ============================================================
-slates_written : 0
-total_bets     : 0
-moneyline_bets : 0
-puck_line_bets : 0
-total_bets_mkt : 0
+slates_written : 1
+total_bets     : 7
+moneyline_bets : 3
+puck_line_bets : 3
+total_bets_mkt : 1
 
 slate                  bets     ml     pl  total
+2026_09_29                7      3      3      1
 
 STATUS: SUCCESS
 ============================================================

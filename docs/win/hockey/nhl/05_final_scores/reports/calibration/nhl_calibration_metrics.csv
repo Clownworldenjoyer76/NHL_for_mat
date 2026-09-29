@@ -1,0 +1,5 @@
+league,market_type,bets,expected_win_rate,realized_win_rate,calibration_gap,brier_score,log_loss,expected_wins,realized_wins
+nhl,ALL,0,,,,,,0.0,0.0
+nhl,moneyline,0,,,,,,0.0,0.0
+nhl,puck_line,0,,,,,,0.0,0.0
+nhl,total,0,,,,,,0.0,0.0

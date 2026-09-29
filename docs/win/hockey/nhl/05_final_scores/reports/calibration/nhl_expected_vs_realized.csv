@@ -1,0 +1,5 @@
+league,market_type,bets,expected_probability,realized_probability,difference,expected_wins,realized_wins
+nhl,ALL,0,,,,0.0,0.0
+nhl,moneyline,0,,,,0.0,0.0
+nhl,puck_line,0,,,,0.0,0.0
+nhl,total,0,,,,0.0,0.0

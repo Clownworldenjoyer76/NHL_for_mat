@@ -1,0 +1,1 @@
+league,market_type,through_game_date,Win,Loss,Push,bets_excluding_pushes,bets_including_pushes,win_pct,units,roi,avg_odds,avg_ev,avg_kelly,avg_model_prob,expected_win_rate,realized_win_rate,calibration_gap,brier_score,log_loss

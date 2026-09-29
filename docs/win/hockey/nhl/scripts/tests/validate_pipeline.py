@@ -12,7 +12,7 @@ import pandas as pd
 
 
 NHL = Path("docs/win/hockey/nhl")
-WORKFLOW = Path(".github/workflows/nhl_pipeline.yml")
+WORKFLOW = Path(".github/workflows/nhl_01_pipeline.yml")
 REQUIREMENTS = NHL / "requirements.txt"
 
 REQUIRED_DIRS = [

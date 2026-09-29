@@ -1,1 +1,8 @@
 game_date,market_type,bet_side,failing_condition,rejection_count
+2026_09_29,moneyline,away,ev,3
+2026_09_29,moneyline,away,secondary_model,1
+2026_09_29,moneyline,home,odds,1
+2026_09_29,moneyline,home,ev,3
+2026_09_29,puck_line,home,ev,3
+2026_09_29,total,over,ev,5
+2026_09_29,total,under,ev,4

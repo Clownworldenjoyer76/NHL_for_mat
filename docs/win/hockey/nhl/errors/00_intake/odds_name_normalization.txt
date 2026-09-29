@@ -1,10 +1,10 @@
-=== odds_name_normalization RUN 2026-08-31T09:36:25.326536 ===
-2026-08-31T09:36:25.327996 | Team map loaded: 39 aliases | source=sportsbook | stable_ids=32
-2026-08-31T09:36:25.328366 | Files to process: 2
-2026-08-31T09:36:25.328635 | --- SUMMARY ---
-2026-08-31T09:36:25.328662 | Files processed: 2
-2026-08-31T09:36:25.328684 | Rows processed: 2
-2026-08-31T09:36:25.328703 | Names normalized: 0
-2026-08-31T09:36:25.328723 | Unmapped teams: 0
-2026-08-31T09:36:25.328743 | No-map output: docs/win/hockey/nhl/config/mapping/no_map_nhl_odds.csv
-2026-08-31T09:36:25.328762 | STATUS: SUCCESS
+=== odds_name_normalization RUN 2026-09-29T13:00:38.286329+00:00 ===
+2026-09-29T13:00:38.287298+00:00 | Team map loaded: 39 aliases | source=sportsbook | stable_ids=32
+2026-09-29T13:00:38.287322+00:00 | Files to process: 1
+2026-09-29T13:00:38.287792+00:00 | --- SUMMARY ---
+2026-09-29T13:00:38.287807+00:00 | Files processed: 1
+2026-09-29T13:00:38.287816+00:00 | Rows processed: 5
+2026-09-29T13:00:38.287823+00:00 | Names normalized: 0
+2026-09-29T13:00:38.287830+00:00 | Unmapped teams: 0
+2026-09-29T13:00:38.287839+00:00 | No-map output: docs/win/hockey/nhl/config/mapping/no_map_nhl_odds.csv
+2026-09-29T13:00:38.287846+00:00 | STATUS: SUCCESS

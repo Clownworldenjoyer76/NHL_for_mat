@@ -1,2 +1,1 @@
 league,market_type,side_group,variable,Win,Loss,Push,Total,bets_excluding_pushes,bets_including_pushes,Win_Pct,units,roi,avg_odds,avg_ev,avg_kelly,avg_win_prob
-nhl,puck_line,ALL,-999_to_-200,39,14,0,53,53,53,0.7358490566037735,3.4323419263491255,0.06476116842168161,-226.54716981132074,0.10548729130961411,0.2355736529591021,0.7656446052175339
